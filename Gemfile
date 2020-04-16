@@ -5,6 +5,8 @@ ruby '2.7.1'
 
 gem 'pg'
 gem 'rails_12factor', group: :production
+gem 'activerecord-postgis-adapter'
+gem "rgeo-geojson"
 
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 gem 'puma', '~> 4.1'
@@ -24,8 +26,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-
-  gem "rgeo-geojson"
   gem 'pry'
 
 end
