@@ -9,19 +9,53 @@ namespace :geojson do
     problem_features = problem_features.sort_by{|p| p["id"]}
 
     problem_features.each do |feature|
-      Problem.create(id: feature["id"], name: feature["name"], grade: feature["grade"], location: feature.geometry )
+      if feature["circuit"]
+        circuit = Circuit.find_or_create_by(color: feature["circuit"])
+      else
+        circuit = nil
+      end
+
+      Problem.create(
+        id: feature["id"],
+        name: feature["name"],
+        grade: feature["grade"],
+        location: feature.geometry,
+        circuit_number: feature["circuitNumber"],
+        circuit: circuit,
+        steepness: feature["steepness"],
+        height: feature["height"],
+        photo_line: feature["photoLine"],
+      )
     end
+
+    # boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PolygonImpl) }
+
+    # boulder_features.each do |feature|
+    #   Boulder.create(polygon: feature.geometry )
+    # end
   end
 
   task export: :environment do
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    features = Problem.all.map do |problem|
-      factory.feature(problem.location, nil, {id: problem.id, name: problem.name, grade: problem.grade})
+    problem_features = Problem.all.map do |problem|
+      hash = problem.slice(:id, :name, :grade, :circuit_number, :steepness, :height, :photo_line)
+      hash[:circuit] = problem.circuit.color
+      hash.deep_transform_keys! { |key| key.camelize(:lower) }
+
+      factory.feature(problem.location, nil, hash)
     end
 
-    feature_collection = factory.feature_collection(features)
+    boulder_features = Boulder.all.map do |boulder|
+      factory.feature(boulder.polygon, nil, {id: boulder.id})
+    end
 
-    puts RGeo::GeoJSON.encode(feature_collection).to_json
+    feature_collection = factory.feature_collection(problem_features + boulder_features)
+
+    geo_json = RGeo::GeoJSON.encode(feature_collection).to_json
+
+    File.open(Rails.root.join('lib', 'tasks', "export.geojson"),"w") do |f|
+      f.write(geo_json)
+    end
   end
 end
