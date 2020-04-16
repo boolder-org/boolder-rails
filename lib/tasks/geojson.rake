@@ -50,7 +50,12 @@ namespace :geojson do
       factory.feature(boulder.polygon, nil, {id: boulder.id})
     end
 
-    feature_collection = factory.feature_collection(problem_features + boulder_features)
+    circuit_features = Circuit.all.map do |circuit|
+      line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
+      factory.feature(line_string, nil, {circuit: circuit.color})
+    end
+
+    feature_collection = factory.feature_collection(problem_features + boulder_features + circuit_features)
 
     geo_json = RGeo::GeoJSON.encode(feature_collection).to_json
 
