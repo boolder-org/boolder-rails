@@ -2,7 +2,7 @@ require 'rgeo/geo_json'
 
 namespace :geojson do
   task import: :environment do
-    file = File.read(Rails.root.join('lib', 'tasks', "rochercanon.geojson"))
+    file = File.read(Rails.root.join('lib', 'tasks', "input.geojson"))
     data = RGeo::GeoJSON.decode(file)
 
     problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
@@ -59,7 +59,7 @@ namespace :geojson do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    File.open(Rails.root.join('lib', 'tasks', "export.geojson"),"w") do |f|
+    File.open(Rails.root.join('lib', 'tasks', "rochercanon.geojson"),"w") do |f|
       f.write(geo_json)
     end
   end
