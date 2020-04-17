@@ -57,7 +57,7 @@ namespace :geojson do
 
     feature_collection = factory.feature_collection(problem_features + boulder_features + circuit_features)
 
-    geo_json = RGeo::GeoJSON.encode(feature_collection).to_json
+    geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
     File.open(Rails.root.join('lib', 'tasks', "export.geojson"),"w") do |f|
       f.write(geo_json)
