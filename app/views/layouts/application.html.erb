@@ -7,9 +7,17 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-light">
+    <div class="py-5 text-center">
+      <h1>Boolder</h1>
+    </div>
+    <div class="container">
+
+      <%= yield %>
+    </div
   </body>
 </html>

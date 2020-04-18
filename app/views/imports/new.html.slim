@@ -1,0 +1,10 @@
+h1 New import
+
+= form_with scope: :import, url: imports_path, local: true do |form|
+	div class="form-group"
+	p
+		= form.label :geojson
+		= form.text_area :geojson, class: "form-control", rows: "20"
+
+	p
+		= form.submit("Import", class: "btn btn-primary")
