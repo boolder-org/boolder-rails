@@ -39,7 +39,7 @@ namespace :geojson do
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     problem_features = Problem.all.map do |problem|
-      hash = problem.slice(:id, :name, :grade, :circuit_number, :steepness, :height, :photo_line)
+      hash = problem.slice(:id, :name, :grade, :circuit_number, :steepness, :height)
       hash[:circuit] = problem.circuit.color
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
