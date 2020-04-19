@@ -1,5 +1,6 @@
 class Problem < ApplicationRecord
   belongs_to :circuit
+  belongs_to :area
   has_many :topos
 
   %i(yellow orange blue skyblue red white).each do |color|

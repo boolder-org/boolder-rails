@@ -13,6 +13,17 @@ namespace :topos do
   end
 
   task export: :environment do
-  	# topo.photo.open{|file| FileUtils.cp(file.path, Rails.root.join('_import', 'test.jpg'))}
+  	area_id = 1
+  	topos = []
+
+  	Topo.joins(:problem).where(problems: { area_id: area_id }).each do |topo|
+  		topos << { id: topo.id, line: topo.line }
+  		topo.photo.open{|file| FileUtils.cp(file.path, Rails.root.join('export', "area-#{area_id}", "topos", "topo-#{topo.id}.jpg"))}
+  	end
+
+  	File.open(Rails.root.join('export', "area-#{area_id}", "area-#{area_id}-topos.json"),"w") do |f|
+  		output = { topos: topos }
+      f.write(JSON.pretty_generate(output))
+    end
   end
 end

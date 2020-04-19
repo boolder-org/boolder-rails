@@ -1,4 +1,5 @@
 class Circuit < ApplicationRecord
+  belongs_to :area
   has_many :problems
 
   def sorted_problems

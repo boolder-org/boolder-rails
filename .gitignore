@@ -22,6 +22,9 @@
 /storage/*
 !/storage/.keep
 
+# Ignore exports (json & photos for client apps)
+/export/*
+
 /public/assets
 .byebug_history
 

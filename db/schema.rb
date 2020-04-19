@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_18_210357) do
+ActiveRecord::Schema.define(version: 2020_04_19_083712) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,12 @@ ActiveRecord::Schema.define(version: 2020_04_18_210357) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "areas", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "boulders", force: :cascade do |t|
     t.geography "polygon", limit: {:srid=>4326, :type=>"st_polygon", :geographic=>true}
     t.datetime "created_at", precision: 6, null: false
@@ -47,6 +53,8 @@ ActiveRecord::Schema.define(version: 2020_04_18_210357) do
     t.string "color"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "area_id"
+    t.index ["area_id"], name: "index_circuits_on_area_id"
   end
 
   create_table "problems", force: :cascade do |t|
@@ -59,6 +67,8 @@ ActiveRecord::Schema.define(version: 2020_04_18_210357) do
     t.string "circuit_number"
     t.string "steepness"
     t.integer "height"
+    t.bigint "area_id"
+    t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["location"], name: "index_problems_on_location", using: :gist
   end
@@ -72,4 +82,6 @@ ActiveRecord::Schema.define(version: 2020_04_18_210357) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "circuits", "areas"
+  add_foreign_key "problems", "areas"
 end

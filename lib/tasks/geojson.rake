@@ -36,18 +36,22 @@ namespace :geojson do
   end
 
   task export: :environment do
+    area_id = 1
+
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     problem_features = Problem.all.map do |problem|
-      hash = problem.slice(:id, :name, :grade, :circuit_number, :steepness, :height)
+      hash = {type: 'problem', id: problem.id}.with_indifferent_access
+      hash.merge!(problem.slice(:name, :grade, :circuit_number, :steepness, :height))
       hash[:circuit] = problem.circuit.color
+      hash[:topos] = problem.topos.map{|t| {id: t.id} } if problem.topos.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
       factory.feature(problem.location, nil, hash)
     end
 
     boulder_features = Boulder.all.map do |boulder|
-      factory.feature(boulder.polygon, nil, {id: boulder.id})
+      factory.feature(boulder.polygon, nil, {type: 'boulder', id: boulder.id})
     end
 
     circuit_features = Circuit.all.map do |circuit|
@@ -59,7 +63,7 @@ namespace :geojson do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    File.open(Rails.root.join('lib', 'tasks', "rochercanon.geojson"),"w") do |f|
+    File.open(Rails.root.join('export', "area-#{area_id}", "area-#{area_id}-data.geojson"),"w") do |f|
       f.write(geo_json)
     end
   end
