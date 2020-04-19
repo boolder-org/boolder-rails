@@ -8,6 +8,6 @@ class Problem < ApplicationRecord
   end
 
   def circuit_desc
-		[circuit.color, circuit_number].compact.join('-')
+		[circuit.try(:color), circuit_number].compact.join('-')
   end
 end

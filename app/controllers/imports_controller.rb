@@ -31,7 +31,6 @@ class ImportsController < ApplicationController
         circuit_number: feature["circuitNumber"],
         steepness: feature["steepness"],
         height: feature["height"],
-        photo_line: feature["photoLine"],
       )
 
       @objects << problem
