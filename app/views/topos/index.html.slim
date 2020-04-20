@@ -1,0 +1,15 @@
+h1 Topos
+br
+table class="table table-striped table-bordered"
+	thead class="thead-dark"
+		tr
+			th scope="col" Id
+			th scope="col" Problem
+			th scope="col" Photo
+	tbody
+	- @topos.each do |topo|
+		tr 
+			td= topo.id
+			td= topo.problem.circuit_desc
+			td= link_to(image_tag(topo.photo, height: 100), topo)
+				

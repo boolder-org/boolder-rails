@@ -10,7 +10,6 @@ gem 'puma', '~> 4.1'
 gem 'pg', '~> 1.2.3'
 gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', '~> 6.0.0'
-gem 'rgeo-geojson', '~> 2.1.1'
 
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0.1'
@@ -21,6 +20,7 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
+gem 'rgeo-geojson', '~> 2.1.1'
 gem 'mini_magick', '~> 4.10.1'
 
 # Use Redis adapter to run Action Cable in production
