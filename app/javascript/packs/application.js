@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+
 require("jquery")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -21,3 +22,4 @@ require("jquery")
 // https://blog.capsens.eu/how-to-write-javascript-in-rails-6-webpacker-yarn-and-sprockets-cdf990387463
 // https://medium.com/@adrian_teh/ruby-on-rails-6-with-webpacker-and-bootstrap-step-by-step-guide-41b52ef4081f
 import 'bootstrap'
+import "controllers"
