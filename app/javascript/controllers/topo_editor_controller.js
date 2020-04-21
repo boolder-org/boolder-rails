@@ -12,6 +12,7 @@ export default class extends Controller {
 		var image = this.imageTarget
 		var container = this.containerTarget
 		var canvas = this.canvasTarget
+		var self = this
 
 		this.detectImageSize(function(width, height){
   		image.width = width
@@ -20,6 +21,8 @@ export default class extends Controller {
   		container.height = height
   		canvas.width = width
   		canvas.height = height
+
+  		self.drawOriginalPoints()
 		})
 	}
 
@@ -37,15 +40,24 @@ export default class extends Controller {
 
   	var x = event.pageX - container.offsetLeft
     var y = event.pageY - container.offsetTop
-    var point = {'x': this.limitPrecision(x/canvas.width), 'y': this.limitPrecision(y/canvas.height) }
+
+    var percentX = this.limitPrecision(x/canvas.width)
+    var percentY = this.limitPrecision(y/canvas.height)
+
+    var point = {'x': percentX, 'y': percentY }
 
     this.points.push(point)
     textarea.value = JSON.stringify(this.points)
 
-    this.draw(x,y)
+    this.draw(point)
   }
 
-  draw(x,y) {
+  limitPrecision(value) {
+  	return parseFloat(value.toFixed(4))
+  }
+
+  draw(point) {
+  	// console.log(point.x + ";" + point.y)
   	var canvas = this.canvasTarget
 
   	var canvasWidth = canvas.width
@@ -56,11 +68,17 @@ export default class extends Controller {
 		var pointSize = 8
 
     ctx.beginPath(); //Start path
-    ctx.arc(x, y, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
+    ctx.arc(point.x * canvasWidth, point.y * canvasHeight, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
     ctx.fill(); // Close the path and fill.
   }
 
-  limitPrecision(value) {
-  	return parseFloat(value.toFixed(4))
+  drawOriginalPoints() {
+  	var originalPoints = JSON.parse(this.textareaTarget.value)
+  	var self = this
+
+  	originalPoints.forEach(function (point, index) {
+  		console.log(point + " " + index)
+  		self.draw(point)
+		})
   }
 }
