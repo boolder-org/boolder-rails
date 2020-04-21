@@ -5,32 +5,27 @@ export default class extends Controller {
 
 	connect() {
 		this.points = []
-		this.resize()
+
+		var image = this.imageTarget
+		var self = this
+
+	  image.onload = function() {
+	    self.resize(image.naturalWidth, image.naturalHeight)
+	    self.drawOriginalPoints()
+	  }
 	}
 
-	resize() {
+	resize(width, height) {
 		var image = this.imageTarget
 		var container = this.containerTarget
 		var canvas = this.canvasTarget
-		var self = this
 
-		this.detectImageSize(function(width, height){
-  		image.width = width
-  		image.height = height
-  		container.width = width
-  		container.height = height
-  		canvas.width = width
-  		canvas.height = height
-
-  		self.drawOriginalPoints()
-		})
-	}
-
-	detectImageSize(callback) {
-	  var image = this.imageTarget
-	  image.onload = function() {
-	    callback(image.naturalWidth, image.naturalHeight)
-	  }
+		image.width = width
+		image.height = height
+		container.width = width
+		container.height = height
+		canvas.width = width
+		canvas.height = height
 	}
 
   createPoint(event) {
@@ -49,14 +44,14 @@ export default class extends Controller {
     this.points.push(point)
     textarea.value = JSON.stringify(this.points)
 
-    this.draw(point)
+    this.draw(point, "#ff2626")
   }
 
   limitPrecision(value) {
   	return parseFloat(value.toFixed(4))
   }
 
-  draw(point) {
+  draw(point, color) {
   	// console.log(point.x + ";" + point.y)
   	var canvas = this.canvasTarget
 
@@ -64,12 +59,12 @@ export default class extends Controller {
 		var canvasHeight = canvas.height
 		var ctx = canvas.getContext("2d")
 
-		ctx.fillStyle = "#ff2626"; // Red color
+		ctx.fillStyle = color
 		var pointSize = 8
 
-    ctx.beginPath(); //Start path
-    ctx.arc(point.x * canvasWidth, point.y * canvasHeight, pointSize, 0, Math.PI * 2, true); // Draw a point using the arc function of the canvas with a point structure.
-    ctx.fill(); // Close the path and fill.
+    ctx.beginPath() //Start path
+    ctx.arc(point.x * canvasWidth, point.y * canvasHeight, pointSize, 0, Math.PI * 2, true) // Draw a point using the arc function of the canvas with a point structure.
+    ctx.fill() // Close the path and fill.
   }
 
   drawOriginalPoints() {
@@ -77,8 +72,7 @@ export default class extends Controller {
   	var self = this
 
   	originalPoints.forEach(function (point, index) {
-  		console.log(point + " " + index)
-  		self.draw(point)
+  		self.draw(point, "#0000ff")
 		})
   }
 }
