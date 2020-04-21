@@ -21,5 +21,8 @@ require("jquery")
 // I just copy-pasted stuff from 
 // https://blog.capsens.eu/how-to-write-javascript-in-rails-6-webpacker-yarn-and-sprockets-cdf990387463
 // https://medium.com/@adrian_teh/ruby-on-rails-6-with-webpacker-and-bootstrap-step-by-step-guide-41b52ef4081f
-import 'bootstrap'
+// https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
+import 'bootstrap';
+
+// Stimulus controllers
 import "controllers"
