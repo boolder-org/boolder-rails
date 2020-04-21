@@ -1,7 +1,7 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-	static targets = [ "textarea", "canvas", "container", "image" ]
+	static targets = [ "textarea", "canvas", "container", "image", "form" ]
 
 	connect() {
 		this.points = []
@@ -13,7 +13,9 @@ export default class extends Controller {
 	    self.resize(image.naturalWidth, image.naturalHeight)
 	    self.drawOriginalPoints()
 	  }
-	}
+
+    this.submitOnCmdSave()
+  }
 
 	resize(width, height) {
 		var image = this.imageTarget
@@ -74,5 +76,20 @@ export default class extends Controller {
   	originalPoints.forEach(function (point, index) {
   		self.draw(point, "#0000ff")
 		})
+  }
+
+  submitOnCmdSave() {
+    var form = this.formTarget
+
+    $(window).bind('keydown', function(event) {
+      if (event.ctrlKey || event.metaKey) {
+        switch (String.fromCharCode(event.which).toLowerCase()) {
+          case 's':
+            event.preventDefault();
+            form.submit()
+            break;
+        }
+      }
+    })
   }
 }
