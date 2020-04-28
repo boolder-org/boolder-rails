@@ -8,7 +8,8 @@ namespace :geojson do
 
     problem_features = Problem.all.map do |problem|
       hash = {type: 'problem', id: problem.id}.with_indifferent_access
-      hash.merge!(problem.slice(:name, :grade, :circuit_number, :steepness, :height))
+      hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :height))
+      hash[:name] = problem.name.presence
       hash[:circuit] = problem.circuit.color
       hash[:topos] = problem.topos.map{|t| {id: t.id} } if problem.topos.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
