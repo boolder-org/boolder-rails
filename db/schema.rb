@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_28_120744) do
+ActiveRecord::Schema.define(version: 2020_04_28_150852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,9 +68,11 @@ ActiveRecord::Schema.define(version: 2020_04_28_120744) do
     t.string "steepness", null: false
     t.integer "height"
     t.bigint "area_id"
+    t.string "tags", default: [], null: false, array: true
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["location"], name: "index_problems_on_location", using: :gist
+    t.index ["tags"], name: "index_problems_on_tags", using: :gin
   end
 
   create_table "topos", force: :cascade do |t|

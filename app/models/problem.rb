@@ -11,6 +11,10 @@ class Problem < ApplicationRecord
   	scope color, -> { joins(:circuit).where(circuits: { color: color }) }	
   end
 
+  scope :all_tags, -> (array){ where("tags @> ARRAY[?]::varchar[]", array) }
+  scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
+  
+
   def circuit_desc
 		[circuit.try(:color), circuit_number].compact.join('-')
   end
