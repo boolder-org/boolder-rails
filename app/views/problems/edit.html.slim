@@ -34,6 +34,6 @@ div class="row"
           = form.submit("Update", class: "btn btn-primary")
   div class="col-md-auto"
     - @problem.topos.each do |topo|
-      = image_tag(topo.photo, height: "500")
+      = link_to image_tag(topo.photo, height: "500"), edit_topo_path(topo)
 
     
