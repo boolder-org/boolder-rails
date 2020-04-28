@@ -19,6 +19,8 @@ table class="table table-striped table-bordered"
 					= problem.steepness
 					- if problem.height.present?
 						= " (#{problem.height}m)"
+				div
+					= problem.tags.join(", ")
 			td
 				- problem.topos.each do |topo|
 					= link_to(image_tag(topo.photo, height: 100), edit_topo_path(topo))
