@@ -1,40 +1,6 @@
 require 'rgeo/geo_json'
 
 namespace :geojson do
-  task import: :environment do
-    file = File.read(Rails.root.join('lib', 'tasks', "input.geojson"))
-    data = RGeo::GeoJSON.decode(file)
-
-    problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
-    problem_features = problem_features.sort_by{|p| p["id"]}
-
-    problem_features.each do |feature|
-      if feature["circuit"]
-        circuit = Circuit.find_or_create_by(color: feature["circuit"])
-      else
-        circuit = nil
-      end
-
-      Problem.create(
-        id: feature["id"],
-        name: feature["name"],
-        grade: feature["grade"],
-        location: feature.geometry,
-        circuit_number: feature["circuitNumber"],
-        circuit: circuit,
-        steepness: feature["steepness"],
-        height: feature["height"],
-        photo_line: feature["photoLine"],
-      )
-    end
-
-    # boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PolygonImpl) }
-
-    # boulder_features.each do |feature|
-    #   Boulder.create(polygon: feature.geometry )
-    # end
-  end
-
   task export: :environment do
     area_id = 1
 
