@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_19_083712) do
+ActiveRecord::Schema.define(version: 2020_04_28_120744) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2020_04_19_083712) do
     t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.bigint "circuit_id"
     t.string "circuit_number"
-    t.string "steepness"
+    t.string "steepness", null: false
     t.integer "height"
     t.bigint "area_id"
     t.index ["area_id"], name: "index_problems_on_area_id"
