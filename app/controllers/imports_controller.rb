@@ -44,7 +44,11 @@ class ImportsController < ApplicationController
       end
 
       boulder_features.each do |feature|
-        boulder = Boulder.new(polygon: feature.geometry, area_id: area_id)
+        boulder = Boulder.where("ST_AsText(ST_Intersection(polygon, '#{feature.geometry.to_s}'::geometry)) != 'POLYGON EMPTY'").first
+
+        if !boulder
+          boulder = Boulder.new(polygon: feature.geometry, area_id: area_id)
+        end
 
         boulder.save! if save
         @objects << boulder
