@@ -2,11 +2,11 @@ require 'rgeo/geo_json'
 
 namespace :geojson do
   task export: :environment do
-    area_id = 1
+    area_id = 2
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    problem_features = Problem.all.map do |problem|
+    problem_features = Problem.where(area_id: area_id).map do |problem|
       hash = {type: 'problem', id: problem.id}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :height))
       hash[:name] = problem.name.presence
@@ -18,11 +18,11 @@ namespace :geojson do
       factory.feature(problem.location, nil, hash)
     end
 
-    boulder_features = Boulder.all.map do |boulder|
+    boulder_features = Boulder.where(area_id: area_id).map do |boulder|
       factory.feature(boulder.polygon, nil, {type: 'boulder', id: boulder.id})
     end
 
-    circuit_features = Circuit.all.map do |circuit|
+    circuit_features = Circuit.where(area_id: area_id).map do |circuit|
       line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
       factory.feature(line_string, nil, {circuit: circuit.color})
     end
