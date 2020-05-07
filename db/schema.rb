@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_28_150852) do
+ActiveRecord::Schema.define(version: 2020_05_07_130052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,8 @@ ActiveRecord::Schema.define(version: 2020_04_28_150852) do
     t.geography "polygon", limit: {:srid=>4326, :type=>"st_polygon", :geographic=>true}
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "area_id"
+    t.index ["area_id"], name: "index_boulders_on_area_id"
   end
 
   create_table "circuits", force: :cascade do |t|
@@ -84,6 +86,7 @@ ActiveRecord::Schema.define(version: 2020_04_28_150852) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "boulders", "areas"
   add_foreign_key "circuits", "areas"
   add_foreign_key "problems", "areas"
 end
