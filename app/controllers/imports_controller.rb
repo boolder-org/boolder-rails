@@ -23,13 +23,10 @@ class ImportsController < ApplicationController
 
         if feature["id"].present?
         	problem = Problem.find_or_initialize_by(id: feature["id"])
-          puts "if:::1"
         elsif circuit && feature["circuitNumber"].present?
         	problem = Problem.find_or_initialize_by(circuit: circuit, circuit_number: feature["circuitNumber"], area_id: area_id)
-          puts "if:::2"
         else
         	problem = Problem.new
-          puts "if:::3"
         end
 
         problem.assign_attributes(
