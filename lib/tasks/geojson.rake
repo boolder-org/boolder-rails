@@ -7,7 +7,7 @@ namespace :geojson do
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     problem_features = Problem.where(area_id: area_id).map do |problem|
-      hash = {type: 'problem', id: problem.id}.with_indifferent_access
+      hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :height))
       hash[:name] = problem.name.presence
       hash[:circuit] = problem.circuit.color
@@ -15,16 +15,16 @@ namespace :geojson do
       hash[:topos] = problem.topos.map{|t| {id: t.id} } if problem.topos.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-      factory.feature(problem.location, nil, hash)
+      factory.feature(problem.location, "problem_#{problem.id}", hash)
     end
 
     boulder_features = Boulder.where(area_id: area_id).map do |boulder|
-      factory.feature(boulder.polygon, nil, {type: 'boulder', id: boulder.id})
+      factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
     end
 
     circuit_features = Circuit.where(area_id: area_id).map do |circuit|
       line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
-      factory.feature(line_string, nil, {circuit: circuit.color})
+      factory.feature(line_string, "circuit_#{circuit.id}", { color: circuit.color, name: circuit.name })
     end
 
     feature_collection = factory.feature_collection(problem_features + boulder_features + circuit_features)
