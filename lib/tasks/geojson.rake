@@ -2,7 +2,10 @@ require 'rgeo/geo_json'
 
 namespace :geojson do
   task export: :environment do
-    area_id = 2
+    area_id = ENV["area_id"]
+    raise "please specify an area_id" unless area_id.present?
+
+    puts "exporting area #{area_id}"
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
@@ -44,6 +47,8 @@ namespace :geojson do
     File.open(Rails.root.join('export', "area-#{area_id}", "area-#{area_id}-data.geojson"),"w") do |f|
       f.write(geo_json)
     end
+
+    puts "exported area-#{area_id}-data.geojson"
 
     # `tokml file.geojson > file.kml`
   end
