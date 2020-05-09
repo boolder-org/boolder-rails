@@ -2,7 +2,7 @@ require 'rgeo/geo_json'
 
 namespace :geojson do
   task export: :environment do
-    area_id = 1
+    area_id = 2
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
@@ -32,8 +32,8 @@ namespace :geojson do
     end
 
     poiroute_features = Poi.where(area_id: area_id).map do |poi|
-      factory.feature(poi.route, "poiroute_#{poi.id}", { })
-    end
+      factory.feature(poi.route, "poiroute_#{poi.id}", { }) if poi.route
+    end.compact
 
     feature_collection = factory.feature_collection(
       problem_features + boulder_features + circuit_features + poi_features + poiroute_features
