@@ -232,6 +232,46 @@ ALTER SEQUENCE public.circuits_id_seq OWNED BY public.circuits.id;
 
 
 --
+-- Name: pois; Type: TABLE; Schema: public; Owner: nicolas
+--
+
+CREATE TABLE public.pois (
+    id bigint NOT NULL,
+    title character varying,
+    subtitle character varying,
+    description character varying,
+    location public.geography(Point,4326),
+    route public.geography(LineString,4326),
+    area_id bigint,
+    created_at timestamp(6) without time zone NOT NULL,
+    updated_at timestamp(6) without time zone NOT NULL
+);
+
+
+ALTER TABLE public.pois OWNER TO nicolas;
+
+--
+-- Name: pois_id_seq; Type: SEQUENCE; Schema: public; Owner: nicolas
+--
+
+CREATE SEQUENCE public.pois_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.pois_id_seq OWNER TO nicolas;
+
+--
+-- Name: pois_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nicolas
+--
+
+ALTER SEQUENCE public.pois_id_seq OWNED BY public.pois.id;
+
+
+--
 -- Name: problems; Type: TABLE; Schema: public; Owner: nicolas
 --
 
@@ -354,6 +394,13 @@ ALTER TABLE ONLY public.boulders ALTER COLUMN id SET DEFAULT nextval('public.bou
 --
 
 ALTER TABLE ONLY public.circuits ALTER COLUMN id SET DEFAULT nextval('public.circuits_id_seq'::regclass);
+
+
+--
+-- Name: pois id; Type: DEFAULT; Schema: public; Owner: nicolas
+--
+
+ALTER TABLE ONLY public.pois ALTER COLUMN id SET DEFAULT nextval('public.pois_id_seq'::regclass);
 
 
 --
@@ -1071,6 +1118,15 @@ COPY public.circuits (id, color, created_at, updated_at, area_id) FROM stdin;
 
 
 --
+-- Data for Name: pois; Type: TABLE DATA; Schema: public; Owner: nicolas
+--
+
+COPY public.pois (id, title, subtitle, description, location, route, area_id, created_at, updated_at) FROM stdin;
+1	Parking	2 min de marche	Parking Rocher Canon	0101000020E6100000446ADAC534530540A818E76F423B4840	0102000020E6100000140000003EB308E2265305406432F5C9423B4840894D9EDBB3520540BC1A6094533B48406EAD0070235205405D3038FF523B484020F2AAC0D0500540A3CDD5195B3B48400E2FA1667C500540B64DCED9543B4840A2B8775BB3500540B57DF1884C3B4840079CB7293351054037DF6F4F4A3B48403DAB6D4F47510540DBD34F90483B48403DAB6D4F47510540743F39EF463B4840BDEDB14E2651054034E644BA453B484035B76A8DEC5005401423172A453B4840821BBBB9C5500540F5D885A0453B48407DBCF89AA85005405721D643453B48409ED5C13CA45005400FDFDD75443B4840DC83E44FB25005404396E5A7433B484073C71C49D45005405777A85A433B4840FEA498FCE1500540368D5D43423B48400539D378E1500540A4999680413B484016BAE760D8500540F18CB5B4403B48405CA07A6AC150054081A940813F3B4840	1	2020-05-09 19:45:02.796229	2020-05-09 19:50:49.931636
+\.
+
+
+--
 -- Data for Name: problems; Type: TABLE DATA; Schema: public; Owner: nicolas
 --
 
@@ -1484,6 +1540,7 @@ COPY public.schema_migrations (version) FROM stdin;
 20200428120744
 20200428150852
 20200507130052
+20200509193959
 \.
 
 
@@ -1763,6 +1820,13 @@ SELECT pg_catalog.setval('public.circuits_id_seq', 12, true);
 
 
 --
+-- Name: pois_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
+--
+
+SELECT pg_catalog.setval('public.pois_id_seq', 1, true);
+
+
+--
 -- Name: problems_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
@@ -1825,6 +1889,14 @@ ALTER TABLE ONLY public.circuits
 
 
 --
+-- Name: pois pois_pkey; Type: CONSTRAINT; Schema: public; Owner: nicolas
+--
+
+ALTER TABLE ONLY public.pois
+    ADD CONSTRAINT pois_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: problems problems_pkey; Type: CONSTRAINT; Schema: public; Owner: nicolas
 --
 
@@ -1881,6 +1953,20 @@ CREATE INDEX index_boulders_on_area_id ON public.boulders USING btree (area_id);
 --
 
 CREATE INDEX index_circuits_on_area_id ON public.circuits USING btree (area_id);
+
+
+--
+-- Name: index_pois_on_area_id; Type: INDEX; Schema: public; Owner: nicolas
+--
+
+CREATE INDEX index_pois_on_area_id ON public.pois USING btree (area_id);
+
+
+--
+-- Name: index_pois_on_location; Type: INDEX; Schema: public; Owner: nicolas
+--
+
+CREATE INDEX index_pois_on_location ON public.pois USING gist (location);
 
 
 --

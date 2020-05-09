@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_07_130052) do
+ActiveRecord::Schema.define(version: 2020_05_09_193959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,19 @@ ActiveRecord::Schema.define(version: 2020_05_07_130052) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "area_id"
     t.index ["area_id"], name: "index_circuits_on_area_id"
+  end
+
+  create_table "pois", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.string "description"
+    t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.geography "route", limit: {:srid=>4326, :type=>"line_string", :geographic=>true}
+    t.bigint "area_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["area_id"], name: "index_pois_on_area_id"
+    t.index ["location"], name: "index_pois_on_location", using: :gist
   end
 
   create_table "problems", force: :cascade do |t|
