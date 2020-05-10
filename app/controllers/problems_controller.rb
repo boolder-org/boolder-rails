@@ -1,6 +1,13 @@
 class ProblemsController < ApplicationController
 	def index
-		@problems = Problem.all
+		arel = Problem.all
+		arel = arel.where(area_id: params[:area_id]) if params[:area_id].present?
+		arel = arel.joins(:circuit).where(circuits: { color: params[:color] }) if params[:color].present?
+
+		@problems = arel.sort_by{|p| p.circuit_number.to_i + (p.circuit_number.include?('b') ? 0.5 : 0) }
+
+		@circuits = Circuit.all
+		@circuits = @circuits.where(area_id: params[:area_id]) if params[:area_id].present?
 	end
 
 	def edit
@@ -13,7 +20,7 @@ class ProblemsController < ApplicationController
 		problem.update(problem_params)
 
 		flash[:notice] = "Problem updated"
-		redirect_to problems_path(anchor: problem.id)
+		redirect_to problems_path(anchor: problem.id, area_id: problem.area_id, color: problem.circuit&.color)
 	end
 
 	private 

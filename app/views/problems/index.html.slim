@@ -1,5 +1,31 @@
 h1 Problems
-br
+p= "#{@problems.count} results"
+
+p
+	div
+		- Area.all.each do |area|
+			- if params[:area_id] == area.id.to_s
+				= area.name
+			- else
+				= link_to area.name, problems_path(area_id: area.id, color: params[:color])
+			= " | "
+		- if params[:area_id]
+			= link_to "Aucun", problems_path(color: params[:color])
+		- else 
+			= "Aucun"
+	- if params[:area_id].present?
+		div
+			- @circuits.each do |circuit|
+				- if params[:color] == circuit.color
+					= circuit.name
+				- else
+					= link_to circuit.name, problems_path(area_id: params[:area_id], color: circuit.color)
+				= " | "
+			- if params[:color]
+				= link_to "Aucun", problems_path(area_id: params[:area_id])
+			- else 
+				= "Aucun"
+
 table class="table table-striped table-bordered"
 	thead class="thead-dark"
 		tr
