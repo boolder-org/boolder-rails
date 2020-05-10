@@ -10,6 +10,6 @@ table class="table table-striped table-bordered"
 	- @topos.each do |topo|
 		tr 
 			td= topo.id
-			td= topo.problem.circuit_desc
+			td= circle_view(topo.problem)
 			td= link_to(image_tag(topo.photo, height: 100), edit_topo_path(topo))
 				

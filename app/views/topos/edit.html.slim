@@ -1,7 +1,7 @@
 h1= "Topo ##{@topo.id}"
 
 div data-controller="topo-editor"
-	p= @topo.problem.circuit_desc
+	p= circle_view(@topo.problem)
 	div style="" data-target="topo-editor.container"
 		= image_tag(@topo.photo, data: {target: "topo-editor.image"}, style: "position:absolute;z-index:1;")
 		canvas data-target="topo-editor.canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"

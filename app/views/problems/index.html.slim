@@ -12,7 +12,7 @@ table class="table table-striped table-bordered"
 			td= link_to(problem.id, edit_problem_path(problem), id: problem.id)
 			td
 				= circle_view(problem)
-				div= problem.name
+				div= problem.name || "Sans nom"
 				div= problem.grade
 				div
 					= problem.steepness
