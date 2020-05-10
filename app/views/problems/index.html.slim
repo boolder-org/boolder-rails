@@ -8,8 +8,8 @@ table class="table table-striped table-bordered"
 			th scope="col" Topo
 	tbody
 	- @problems.each do |problem|
-		tr 
-			td= link_to(problem.id, edit_problem_path(problem))
+		tr
+			td= link_to(problem.id, edit_problem_path(problem), id: problem.id)
 			td
 				div
 					strong= problem.circuit_desc
@@ -24,4 +24,4 @@ table class="table table-striped table-bordered"
 			td
 				- problem.topos.each do |topo|
 					= link_to(image_tag(topo.photo, height: 100), edit_topo_path(topo))
-				
+div style="margin-bottom: 1500px"

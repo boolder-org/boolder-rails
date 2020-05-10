@@ -6,10 +6,6 @@ div class="row"
     = form_with model: @problem, local: true do |form|
       div class="form-group"
         p
-          = form.label :name
-          = form.text_field :name, class: "form-control"
-
-        p
           div class="row"
             div class="col"
               = form.label :circuit_id
@@ -19,12 +15,16 @@ div class="row"
               = form.text_field :circuit_number, class: "form-control"
 
         p
-          = form.label :grade
-          = form.text_field :grade, class: "form-control"
+          = form.label :name
+          = form.text_field :name, class: "form-control"
 
         p
           = form.label :steepness
           = form.select :steepness, Problem::STEEPNESS_VALUES, { include_blank: false }, class: "form-control"
+
+        p
+          = form.label :grade
+          = form.text_field :grade, class: "form-control"
 
         p
           = form.label :height

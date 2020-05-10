@@ -13,7 +13,7 @@ class ProblemsController < ApplicationController
 		problem.update(problem_params)
 
 		flash[:notice] = "Problem updated"
-		redirect_to edit_problem_path(problem)
+		redirect_to problems_path(anchor: problem.id)
 	end
 
 	private 
