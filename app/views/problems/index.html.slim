@@ -11,8 +11,7 @@ table class="table table-striped table-bordered"
 		tr
 			td= link_to(problem.id, edit_problem_path(problem), id: problem.id)
 			td
-				div
-					strong= problem.circuit_desc
+				= circle_view(problem)
 				div= problem.name
 				div= problem.grade
 				div

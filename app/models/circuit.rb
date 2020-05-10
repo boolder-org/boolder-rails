@@ -2,6 +2,10 @@ class Circuit < ApplicationRecord
   belongs_to :area
   has_many :problems
 
+  COLOR_VALUES = %w(yellow orange blue skyblue red black white)
+
+  validates :color, inclusion: { in: COLOR_VALUES }
+
   def sorted_problems
     problems.sort_by{|p| p.circuit_number.to_i + (p.circuit_number.include?('b') ? 0.5 : 0) }
   end
