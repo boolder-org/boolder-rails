@@ -2,6 +2,8 @@ class Circuit < ApplicationRecord
   belongs_to :area
   has_many :problems
 
+  default_scope { order(order: :asc, id: :asc) }
+
   COLOR_VALUES = %w(yellow orange blue skyblue red black white)
 
   validates :color, inclusion: { in: COLOR_VALUES }
