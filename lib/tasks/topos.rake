@@ -1,3 +1,5 @@
+require 'vips'
+
 namespace :topos do
   
   task import: :environment do
@@ -34,12 +36,19 @@ namespace :topos do
   end
 
   task export: :environment do
-  	area_id = 1
-  	topos = []
+  	area_id = ENV["area_id"]
+    raise "please specify an area_id" unless area_id.present?
+
+    topos = []
 
   	Topo.joins(:problem).where(problems: { area_id: area_id }).each do |topo|
   		topos << { id: topo.id, line: topo.line }
-  		topo.photo.open{|file| FileUtils.cp(file.path, Rails.root.join('export', "area-#{area_id}", "topos", "topo-#{topo.id}.jpg"))}
+      output_file = Rails.root.join('export', "area-#{area_id}", "topos", "topo-#{topo.id}.jpg").to_s
+      
+  		topo.photo.open do |file| 
+        im = Vips::Image.new_from_file file.path.to_s
+        im.thumbnail_image(800).write_to_file output_file
+      end
   	end
 
   	File.open(Rails.root.join('export', "area-#{area_id}", "area-#{area_id}-topos.json"),"w") do |f|
