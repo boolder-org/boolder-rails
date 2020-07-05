@@ -1,14 +1,35 @@
 namespace :topos do
   
   task import: :environment do
-  	Dir.foreach(Rails.root.join('_import')) do |filename|
-		  next if filename == '.' or filename == '..' or filename == '.DS_Store'
-		  
-		  problem_id = File.basename(filename, '.jpg').to_i
-		  problem = Problem.find(problem_id)
+    area_id = ENV["area_id"]
+    raise "please specify an area_id" unless area_id.present?
 
-		  topo = problem.topos.first_or_create
-  		topo.photo.attach(io: File.open(Rails.root.join('_import', filename)), filename: 'photo.jpg')
+  	Dir.foreach(Rails.root.join('lib', 'tasks', '_import')) do |filename|
+		  next if filename == '.' or filename == '..' or filename == '.DS_Store'
+
+      puts "processing #{filename}"
+		  
+		  problem_name = File.basename(filename, '.jpeg')
+      color, number = problem_name.split("-")
+
+      puts "#{color} #{number}"
+
+		  problem = Problem.joins(:circuit).
+        where(area_id: area_id).
+        where(circuits: { color: color }, circuit_number: number).first!
+
+      puts "found problem ##{problem.id}"
+
+      # if problem.topos.any?
+      #   puts "skipping (topo already exists for problem #{problem.id})"
+      #   next
+      # else
+  		  topo = problem.topos.first_or_create
+    		topo.photo.attach(io: File.open(Rails.root.join('lib', 'tasks', '_import', filename)), filename: 'photo.jpg')
+        topo.save!
+
+        puts "created topo ##{topo.id}"
+      # end
 		end
   end
 

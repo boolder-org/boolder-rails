@@ -17,9 +17,9 @@ gem 'slim-rails', '~> 3.2.0'
 gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
+gem 'image_processing', '~> 1.2'
 
 gem 'rgeo-geojson', '~> 2.1.1'
-gem 'mini_magick', '~> 4.10.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
