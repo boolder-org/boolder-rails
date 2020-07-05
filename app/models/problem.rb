@@ -11,6 +11,8 @@ class Problem < ApplicationRecord
   	scope color, -> { joins(:circuit).where(circuits: { color: color }) }	
   end
 
+  scope :area, -> (area_id){ where(area_id: area_id) } 
+
   scope :all_tags, -> (array){ where("tags @> ARRAY[?]::varchar[]", array) }
   scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
 end
