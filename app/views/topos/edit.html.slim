@@ -3,7 +3,7 @@ h1= "Topo ##{@topo.id}"
 div data-controller="topo-editor"
 	p= circle_view(@topo.problem)
 	div style="" data-target="topo-editor.container"
-		= image_tag(@topo.photo, data: {target: "topo-editor.image"}, style: "position:absolute;z-index:1;")
+		= image_tag(@topo.photo.variant(resize_to_limit: [800, 800]), data: {target: "topo-editor.image"}, style: "position:absolute;z-index:1;")
 		canvas data-target="topo-editor.canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"
 
 	= form_with model: @topo, local: true, data: {target: "topo-editor.form"} do |form|
