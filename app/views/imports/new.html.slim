@@ -11,11 +11,5 @@ h1 New import
 
 	p
 		= form.submit("Preview", class: "btn btn-outline-primary")
-	br
-	br
-	br
-	br
-	br
-
 	p
-		= form.submit("Import", class: "btn btn-danger")
+		= form.submit("Import", data: {confirm: "Are you sure?"}, class: "btn btn-danger")
