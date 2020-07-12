@@ -7,4 +7,15 @@ h1 New import
 		= form.text_area :geojson, class: "form-control", rows: "10"
 
 	p
-		= form.submit("Import", class: "btn btn-primary")
+		= form.select :area_id, Area.all.collect {|a| [ a.name, a.id ] }, { include_blank: true }, class: "form-control"
+
+	p
+		= form.submit("Preview", class: "btn btn-outline-primary")
+	br
+	br
+	br
+	br
+	br
+
+	p
+		= form.submit("Import", class: "btn btn-danger")

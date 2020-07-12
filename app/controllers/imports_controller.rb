@@ -3,8 +3,10 @@ class ImportsController < ApplicationController
   end
 
   def create
-    area_id = 2
-    save = false
+    area_id = params[:import][:area_id]
+    raise "please choose an area_id" unless area_id
+
+    save = (params[:commit] == "Import")
 
   	data = RGeo::GeoJSON.decode(params[:import][:geojson])
   	problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
@@ -15,8 +17,8 @@ class ImportsController < ApplicationController
     ActiveRecord::Base.transaction do
     	problem_features.each do |feature|
 
-        if feature["circuit"].present?
-          circuit = Circuit.find_or_initialize_by(color: feature["circuit"], area_id: area_id)
+        if feature["circuitColor"].present?
+          circuit = Circuit.find_or_initialize_by(color: feature["circuitColor"], area_id: area_id)
         else
           circuit = nil
         end
@@ -47,8 +49,12 @@ class ImportsController < ApplicationController
         boulder = Boulder.where("ST_AsText(ST_Intersection(polygon, '#{feature.geometry.to_s}'::geometry)) != 'POLYGON EMPTY'").first
 
         if !boulder
-          boulder = Boulder.new(polygon: feature.geometry, area_id: area_id)
+          boulder = Boulder.new(area_id: area_id)
         end
+
+        boulder.assign_attributes(
+          polygon: feature.geometry
+        )
 
         boulder.save! if save
         @objects << boulder
