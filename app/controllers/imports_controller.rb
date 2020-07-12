@@ -53,7 +53,7 @@ class ImportsController < ApplicationController
         end
 
         boulder.assign_attributes(
-          polygon: feature.geometry
+          polygon: feature.geometry.to_s
         )
 
         boulder.save! if save
