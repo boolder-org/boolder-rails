@@ -27,7 +27,7 @@ namespace :geojson do
 
     circuit_features = Circuit.where(area_id: area_id).map do |circuit|
       line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
-      factory.feature(line_string, "circuit_#{circuit.id}", { color: circuit.color, name: circuit.name })
+      factory.feature(line_string, "circuit_#{circuit.id}", { color: circuit.color, level: circuit.level })
     end
 
     poi_features = Poi.where(area_id: area_id).map do |poi|
