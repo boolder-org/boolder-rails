@@ -13,6 +13,10 @@ class Circuit < ApplicationRecord
   end
 
   def level
-  	id == 1 ? "beginner" : "unknown"
+  	id == 1 ? :beginner : :unknown
+  end
+
+  def name
+      I18n.t("circuit.name.#{color}") + (level == :beginner ? " (débutant)" : "")
   end
 end
