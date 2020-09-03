@@ -648,6 +648,45 @@ COPY public.active_storage_attachments (id, name, record_type, record_id, blob_i
 223	photo	Topo	222	223	2020-04-18 20:37:04.300302
 224	photo	Topo	223	224	2020-04-18 20:37:04.349661
 225	photo	Topo	224	225	2020-04-18 20:37:04.392447
+688	photo	Topo	361	688	2020-09-03 20:46:57.963127
+689	photo	Topo	362	689	2020-09-03 20:46:58.074955
+690	photo	Topo	363	690	2020-09-03 20:46:58.256322
+691	photo	Topo	364	691	2020-09-03 20:46:58.378397
+692	photo	Topo	365	692	2020-09-03 20:46:58.486815
+693	photo	Topo	366	693	2020-09-03 20:46:58.599957
+694	photo	Topo	367	694	2020-09-03 20:46:58.723536
+695	photo	Topo	368	695	2020-09-03 20:46:59.072133
+696	photo	Topo	369	696	2020-09-03 20:46:59.243435
+697	photo	Topo	370	697	2020-09-03 20:46:59.360176
+698	photo	Topo	371	698	2020-09-03 20:46:59.509299
+699	photo	Topo	372	699	2020-09-03 20:46:59.685702
+700	photo	Topo	373	700	2020-09-03 20:46:59.870181
+701	photo	Topo	374	701	2020-09-03 20:47:00.12823
+702	photo	Topo	375	702	2020-09-03 20:47:00.262661
+703	photo	Topo	376	703	2020-09-03 20:47:00.370248
+704	photo	Topo	377	704	2020-09-03 20:47:00.50847
+705	photo	Topo	378	705	2020-09-03 20:47:00.654337
+706	photo	Topo	379	706	2020-09-03 20:47:00.900117
+707	photo	Topo	380	707	2020-09-03 20:47:01.081351
+708	photo	Topo	381	708	2020-09-03 20:47:01.241689
+709	photo	Topo	441	709	2020-09-03 20:47:01.330914
+710	photo	Topo	382	710	2020-09-03 20:47:01.442889
+711	photo	Topo	383	711	2020-09-03 20:47:01.602531
+712	photo	Topo	384	712	2020-09-03 20:47:01.822416
+713	photo	Topo	385	713	2020-09-03 20:47:01.933397
+714	photo	Topo	386	714	2020-09-03 20:47:02.040891
+715	photo	Topo	387	715	2020-09-03 20:47:02.17587
+716	photo	Topo	388	716	2020-09-03 20:47:02.290204
+717	photo	Topo	389	717	2020-09-03 20:47:02.465318
+718	photo	Topo	390	718	2020-09-03 20:47:02.625828
+719	photo	Topo	391	719	2020-09-03 20:47:02.79386
+720	photo	Topo	392	720	2020-09-03 20:47:02.934156
+721	photo	Topo	393	721	2020-09-03 20:47:03.050405
+722	photo	Topo	394	722	2020-09-03 20:47:03.185595
+723	photo	Topo	395	723	2020-09-03 20:47:03.44132
+724	photo	Topo	396	724	2020-09-03 20:47:03.685468
+725	photo	Topo	397	725	2020-09-03 20:47:03.806298
+726	photo	Topo	398	726	2020-09-03 20:47:03.922463
 265	photo	Topo	225	265	2020-07-05 20:03:39.897451
 266	photo	Topo	226	266	2020-07-05 20:03:39.985474
 267	photo	Topo	227	267	2020-07-05 20:03:40.064203
@@ -688,6 +727,179 @@ COPY public.active_storage_attachments (id, name, record_type, record_id, blob_i
 302	photo	Topo	262	302	2020-07-05 20:03:42.944274
 303	photo	Topo	263	303	2020-07-05 20:03:43.02952
 304	photo	Topo	264	304	2020-07-05 20:03:43.14347
+727	photo	Topo	399	727	2020-09-03 20:47:04.015525
+728	photo	Topo	400	728	2020-09-03 20:47:04.125253
+729	photo	Topo	401	729	2020-09-03 20:47:04.272478
+730	photo	Topo	402	730	2020-09-03 20:47:04.505438
+731	photo	Topo	403	731	2020-09-03 20:47:04.686007
+732	photo	Topo	404	732	2020-09-03 20:47:04.818108
+733	photo	Topo	405	733	2020-09-03 20:47:04.922405
+734	photo	Topo	406	734	2020-09-03 20:47:05.0746
+735	photo	Topo	407	735	2020-09-03 20:47:05.214144
+736	photo	Topo	408	736	2020-09-03 20:47:05.331979
+737	photo	Topo	409	737	2020-09-03 20:47:05.654713
+738	photo	Topo	410	738	2020-09-03 20:47:05.754011
+739	photo	Topo	411	739	2020-09-03 20:47:05.855519
+740	photo	Topo	412	740	2020-09-03 20:47:05.951747
+741	photo	Topo	413	741	2020-09-03 20:47:06.03682
+742	photo	Topo	414	742	2020-09-03 20:47:06.142798
+743	photo	Topo	415	743	2020-09-03 20:47:06.283184
+744	photo	Topo	416	744	2020-09-03 20:47:06.620602
+745	photo	Topo	417	745	2020-09-03 20:47:06.762706
+746	photo	Topo	418	746	2020-09-03 20:47:06.872018
+747	photo	Topo	419	747	2020-09-03 20:47:06.966732
+748	photo	Topo	420	748	2020-09-03 20:47:07.073137
+749	photo	Topo	421	749	2020-09-03 20:47:07.165501
+750	photo	Topo	422	750	2020-09-03 20:47:07.38858
+751	photo	Topo	423	751	2020-09-03 20:47:07.640136
+752	photo	Topo	424	752	2020-09-03 20:47:07.732468
+753	photo	Topo	425	753	2020-09-03 20:47:07.825045
+754	photo	Topo	426	754	2020-09-03 20:47:07.920909
+755	photo	Topo	427	755	2020-09-03 20:47:08.015384
+756	photo	Topo	428	756	2020-09-03 20:47:08.141765
+757	photo	Topo	265	757	2020-09-03 20:47:08.418075
+758	photo	Topo	429	758	2020-09-03 20:47:08.523515
+759	photo	Topo	430	759	2020-09-03 20:47:08.613983
+760	photo	Topo	431	760	2020-09-03 20:47:08.696705
+761	photo	Topo	432	761	2020-09-03 20:47:08.802392
+762	photo	Topo	433	762	2020-09-03 20:47:08.891759
+763	photo	Topo	434	763	2020-09-03 20:47:09.001358
+764	photo	Topo	435	764	2020-09-03 20:47:09.306017
+765	photo	Topo	436	765	2020-09-03 20:47:09.431518
+766	photo	Topo	437	766	2020-09-03 20:47:09.521963
+767	photo	Topo	438	767	2020-09-03 20:47:09.61253
+768	photo	Topo	439	768	2020-09-03 20:47:09.707852
+769	photo	Topo	440	769	2020-09-03 20:47:09.797219
+770	photo	Topo	442	770	2020-09-03 20:47:09.89875
+771	photo	Topo	443	771	2020-09-03 20:47:10.000761
+772	photo	Topo	459	772	2020-09-03 20:47:10.30379
+773	photo	Topo	444	773	2020-09-03 20:47:10.400558
+774	photo	Topo	445	774	2020-09-03 20:47:10.489856
+775	photo	Topo	460	775	2020-09-03 20:47:10.590189
+776	photo	Topo	461	776	2020-09-03 20:47:10.718362
+777	photo	Topo	462	777	2020-09-03 20:47:10.831159
+778	photo	Topo	446	778	2020-09-03 20:47:10.979693
+779	photo	Topo	447	779	2020-09-03 20:47:11.202984
+780	photo	Topo	463	780	2020-09-03 20:47:11.320452
+781	photo	Topo	464	781	2020-09-03 20:47:11.44342
+782	photo	Topo	465	782	2020-09-03 20:47:11.589348
+783	photo	Topo	466	783	2020-09-03 20:47:11.83497
+784	photo	Topo	448	784	2020-09-03 20:47:12.039638
+785	photo	Topo	449	785	2020-09-03 20:47:12.151632
+786	photo	Topo	450	786	2020-09-03 20:47:12.306506
+787	photo	Topo	467	787	2020-09-03 20:47:12.399009
+788	photo	Topo	451	788	2020-09-03 20:47:12.490272
+789	photo	Topo	452	789	2020-09-03 20:47:12.649603
+790	photo	Topo	453	790	2020-09-03 20:47:12.81247
+791	photo	Topo	468	791	2020-09-03 20:47:12.953721
+792	photo	Topo	469	792	2020-09-03 20:47:13.083301
+793	photo	Topo	470	793	2020-09-03 20:47:13.200863
+794	photo	Topo	454	794	2020-09-03 20:47:13.302549
+795	photo	Topo	455	795	2020-09-03 20:47:13.537794
+796	photo	Topo	471	796	2020-09-03 20:47:13.645811
+797	photo	Topo	456	797	2020-09-03 20:47:13.74569
+798	photo	Topo	457	798	2020-09-03 20:47:13.888299
+799	photo	Topo	472	799	2020-09-03 20:47:13.988395
+800	photo	Topo	473	800	2020-09-03 20:47:14.087346
+801	photo	Topo	474	801	2020-09-03 20:47:14.353664
+802	photo	Topo	458	802	2020-09-03 20:47:14.531306
+803	photo	Topo	475	803	2020-09-03 20:47:14.780252
+804	photo	Topo	476	804	2020-09-03 20:47:14.867073
+593	photo	Topo	266	593	2020-09-03 20:46:42.282532
+594	photo	Topo	267	594	2020-09-03 20:46:42.450484
+595	photo	Topo	268	595	2020-09-03 20:46:42.603841
+596	photo	Topo	269	596	2020-09-03 20:46:42.813111
+597	photo	Topo	270	597	2020-09-03 20:46:43.051896
+598	photo	Topo	271	598	2020-09-03 20:46:43.179962
+599	photo	Topo	272	599	2020-09-03 20:46:43.28863
+600	photo	Topo	273	600	2020-09-03 20:46:43.403705
+601	photo	Topo	274	601	2020-09-03 20:46:43.572709
+602	photo	Topo	275	602	2020-09-03 20:46:43.789318
+603	photo	Topo	276	603	2020-09-03 20:46:43.918042
+604	photo	Topo	277	604	2020-09-03 20:46:44.045615
+605	photo	Topo	278	605	2020-09-03 20:46:44.159941
+606	photo	Topo	279	606	2020-09-03 20:46:44.272314
+607	photo	Topo	280	607	2020-09-03 20:46:44.41385
+608	photo	Topo	281	608	2020-09-03 20:46:44.650312
+609	photo	Topo	282	609	2020-09-03 20:46:44.762164
+610	photo	Topo	283	610	2020-09-03 20:46:44.975473
+611	photo	Topo	284	611	2020-09-03 20:46:45.097664
+612	photo	Topo	285	612	2020-09-03 20:46:45.208861
+613	photo	Topo	286	613	2020-09-03 20:46:45.427515
+614	photo	Topo	287	614	2020-09-03 20:46:45.515025
+615	photo	Topo	288	615	2020-09-03 20:46:45.628659
+616	photo	Topo	289	616	2020-09-03 20:46:45.757452
+617	photo	Topo	290	617	2020-09-03 20:46:45.933042
+618	photo	Topo	291	618	2020-09-03 20:46:46.207722
+619	photo	Topo	292	619	2020-09-03 20:46:46.433381
+620	photo	Topo	293	620	2020-09-03 20:46:46.565465
+621	photo	Topo	294	621	2020-09-03 20:46:46.719892
+622	photo	Topo	295	622	2020-09-03 20:46:46.833548
+623	photo	Topo	296	623	2020-09-03 20:46:46.954504
+624	photo	Topo	297	624	2020-09-03 20:46:47.062601
+625	photo	Topo	298	625	2020-09-03 20:46:47.207283
+626	photo	Topo	299	626	2020-09-03 20:46:47.491298
+627	photo	Topo	300	627	2020-09-03 20:46:47.618614
+628	photo	Topo	301	628	2020-09-03 20:46:47.839889
+629	photo	Topo	302	629	2020-09-03 20:46:47.94703
+630	photo	Topo	303	630	2020-09-03 20:46:48.08461
+631	photo	Topo	304	631	2020-09-03 20:46:48.3893
+632	photo	Topo	305	632	2020-09-03 20:46:48.531859
+633	photo	Topo	306	633	2020-09-03 20:46:48.646116
+634	photo	Topo	307	634	2020-09-03 20:46:48.737952
+635	photo	Topo	308	635	2020-09-03 20:46:48.835829
+636	photo	Topo	309	636	2020-09-03 20:46:48.949839
+637	photo	Topo	310	637	2020-09-03 20:46:49.291268
+638	photo	Topo	311	638	2020-09-03 20:46:49.52093
+639	photo	Topo	312	639	2020-09-03 20:46:49.629321
+640	photo	Topo	313	640	2020-09-03 20:46:49.752178
+641	photo	Topo	314	641	2020-09-03 20:46:49.860419
+642	photo	Topo	315	642	2020-09-03 20:46:49.963817
+643	photo	Topo	316	643	2020-09-03 20:46:50.178294
+644	photo	Topo	317	644	2020-09-03 20:46:50.472048
+645	photo	Topo	318	645	2020-09-03 20:46:50.617728
+646	photo	Topo	319	646	2020-09-03 20:46:50.747643
+647	photo	Topo	320	647	2020-09-03 20:46:50.87306
+648	photo	Topo	321	648	2020-09-03 20:46:51.010226
+649	photo	Topo	322	649	2020-09-03 20:46:51.124619
+650	photo	Topo	323	650	2020-09-03 20:46:51.560405
+651	photo	Topo	324	651	2020-09-03 20:46:51.703244
+652	photo	Topo	325	652	2020-09-03 20:46:51.837368
+653	photo	Topo	326	653	2020-09-03 20:46:52.05418
+654	photo	Topo	327	654	2020-09-03 20:46:52.249751
+655	photo	Topo	328	655	2020-09-03 20:46:52.613427
+656	photo	Topo	329	656	2020-09-03 20:46:52.770193
+657	photo	Topo	330	657	2020-09-03 20:46:52.89124
+658	photo	Topo	331	658	2020-09-03 20:46:53.009175
+659	photo	Topo	332	659	2020-09-03 20:46:53.178774
+660	photo	Topo	333	660	2020-09-03 20:46:53.32076
+661	photo	Topo	334	661	2020-09-03 20:46:53.595577
+662	photo	Topo	335	662	2020-09-03 20:46:53.892568
+663	photo	Topo	336	663	2020-09-03 20:46:54.010303
+664	photo	Topo	337	664	2020-09-03 20:46:54.135899
+665	photo	Topo	338	665	2020-09-03 20:46:54.248536
+666	photo	Topo	339	666	2020-09-03 20:46:54.415575
+667	photo	Topo	340	667	2020-09-03 20:46:54.571707
+668	photo	Topo	341	668	2020-09-03 20:46:54.848274
+669	photo	Topo	342	669	2020-09-03 20:46:54.996246
+670	photo	Topo	343	670	2020-09-03 20:46:55.110248
+671	photo	Topo	344	671	2020-09-03 20:46:55.235667
+672	photo	Topo	345	672	2020-09-03 20:46:55.442092
+673	photo	Topo	346	673	2020-09-03 20:46:55.671713
+674	photo	Topo	347	674	2020-09-03 20:46:55.937204
+675	photo	Topo	348	675	2020-09-03 20:46:56.046864
+676	photo	Topo	349	676	2020-09-03 20:46:56.140131
+677	photo	Topo	350	677	2020-09-03 20:46:56.230002
+678	photo	Topo	351	678	2020-09-03 20:46:56.32783
+679	photo	Topo	352	679	2020-09-03 20:46:56.458144
+680	photo	Topo	353	680	2020-09-03 20:46:56.72835
+681	photo	Topo	354	681	2020-09-03 20:46:56.895326
+682	photo	Topo	355	682	2020-09-03 20:46:57.013191
+683	photo	Topo	356	683	2020-09-03 20:46:57.141901
+684	photo	Topo	357	684	2020-09-03 20:46:57.289263
+685	photo	Topo	358	685	2020-09-03 20:46:57.432568
+686	photo	Topo	359	686	2020-09-03 20:46:57.560502
+687	photo	Topo	360	687	2020-09-03 20:46:57.818153
 \.
 
 
@@ -920,6 +1132,16 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 224	z8kpibpl6ghihpwtk965sbz0r9y6	photo.jpg	image/jpeg	{"identified":true}	559787	6u0kI7pPzkfssbnbKI85og==	2020-04-18 20:37:04.343688
 223	01nt181065tu4w4gqum3dc2xkt02	photo.jpg	image/jpeg	{"identified":true,"analyzed":true}	632161	zDH4+DUK+aQgecxF66Nt6A==	2020-04-18 20:37:04.296588
 225	66tkapd2v566ggh3ebc9qgf4kib7	photo.jpg	image/jpeg	{"identified":true}	429829	c/3YtapllMupCNzrwsugPA==	2020-04-18 20:37:04.385608
+593	i4fltkuzm9ezutl1hl3aws7hm9y5	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12052891	LjXR5YQvXWHwE9o/G7eurA==	2020-09-03 20:46:42.279863
+594	cabm5m4tny5cubxfn0tyvmzteq6q	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13538722	0mcAdCAt6Abi9GOfR/Ehcw==	2020-09-03 20:46:42.439646
+595	f8eoggfp4ki65o1nr91re6abd8jx	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12668967	ixSpkxhrXTpgjS8D7FKHTQ==	2020-09-03 20:46:42.598308
+596	1enu8idag7fhbz4jsn70qp7xr4w4	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13137960	7be5UvsIgpXi1TzGvb32EA==	2020-09-03 20:46:42.809788
+599	2959cu4hobk6atn4t7ymddfc265o	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11885364	SA9ncu7edKvB377IxxI0cg==	2020-09-03 20:46:43.282
+601	4jqsjd09nhkwy01aaervldkz8k8c	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12420724	SmU2xzRCT1TwL5JLFHmGag==	2020-09-03 20:46:43.557355
+602	phajc7ggwfbnv38asi6rrhsavhfc	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12708044	a98Gwpfc0vcOtVP17fn6nA==	2020-09-03 20:46:43.785283
+603	041ob7e6mojtbsmqyyigwziun6q0	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12629203	Huu9d1CMSEG5qGH22ouPZg==	2020-09-03 20:46:43.914808
+756	5yg6uobmbwoj2svz686s7dh459hm	photo.jpg	image/jpeg	{"identified":true}	12509382	TESEbmSX6K+Ma6Qo6v1M5g==	2020-09-03 20:47:08.137712
+757	yop10eney6m23aphhn4v24z2czq4	photo.jpg	image/jpeg	{"identified":true}	12709511	Iv9dymVkhOUL8HBQ+7BWWQ==	2020-09-03 20:47:08.4145
 276	c2gi0husx7443o6iszh47k3owbzy	photo.jpg	image/jpeg	{"identified":true,"analyzed":true}	4693832	E6FVyTXXYZzb1vpsZXcqFg==	2020-07-05 20:03:40.725012
 277	61h2j0nck5fc3vw8b7ym4hskblkp	photo.jpg	image/jpeg	{"identified":true,"analyzed":true}	4848581	Kh0cxeN7E6F967ldXgGZBw==	2020-07-05 20:03:40.789325
 278	84opfrji694amu1t00n118vhciqa	photo.jpg	image/jpeg	{"identified":true,"analyzed":true}	4643995	d1XXjjV+jDeq4JtAcF4/0g==	2020-07-05 20:03:40.866124
@@ -961,6 +1183,284 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 275	10x0x0s9la0ramf29jgpv2gb6f8a	photo.jpg	image/jpeg	{"identified":true,"analyzed":true}	4863717	Vh28nM5y5HLy7+C7LYJwRg==	2020-07-05 20:03:40.646704
 303	x4d5q9sb4hu7wfsljnila7z5sivl	photo.jpg	image/jpeg	{"identified":true}	3886187	mYw+3f2/vpnT3cEdlUvDwg==	2020-07-05 20:03:43.027067
 304	n4drw607bctfenkjjz41j77p3i3t	photo.jpg	image/jpeg	{"identified":true}	4841578	73PzXoygujwK69NeSQ7cxA==	2020-07-05 20:03:43.140573
+305	rkh8ffsdlfarvz2wkk3b5arwhzat	photo.jpg	image/jpeg	{"identified":true}	12709511	Iv9dymVkhOUL8HBQ+7BWWQ==	2020-09-03 19:26:29.494057
+306	qmibkqwnb939884ijgb60bg5k27t	photo.jpg	image/jpeg	{"identified":true}	12709511	Iv9dymVkhOUL8HBQ+7BWWQ==	2020-09-03 19:27:58.970537
+307	ltcf36x5bg8hw96ev2zfakbc2pq6	photo.jpg	image/jpeg	{"identified":true}	12709511	Iv9dymVkhOUL8HBQ+7BWWQ==	2020-09-03 19:28:25.510985
+597	gj4xiyzgpwfma1pctkm4r7fmxvm7	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11809878	RFABai+n2SRFlFMmHO5kkw==	2020-09-03 20:46:43.048642
+628	rv76sx4k3klnhm0q8g0ueo2vt4te	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11943255	qRDatL6RoiBNv6qrNgHBFA==	2020-09-03 20:46:47.836841
+632	p9fcn4elqykd8jruf7tf1g1hjae3	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13071236	laGti68kLczzhmx01zjXZA==	2020-09-03 20:46:48.518042
+641	pc0evspe8imivws4tddvc10kelsk	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12411159	tHs3DmFUxVQS69LW7yQhsA==	2020-09-03 20:46:49.857791
+649	752h6268vkmhepwdyqd4eaf7mc0w	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12747280	3wBnNYk5STU/AN6RRIUGXg==	2020-09-03 20:46:51.122232
+758	rkisoie2gbl76byr292br9xv15my	photo.jpg	image/jpeg	{"identified":true}	11753536	5Iv6dS6a8cOhcPkJ81sDXg==	2020-09-03 20:47:08.519948
+759	tkvchyp0xu9f4ksdo0xgp3sfsw43	photo.jpg	image/jpeg	{"identified":true}	11557945	A/G04p55vI41iEUr+V9OcA==	2020-09-03 20:47:08.611335
+760	26ovkya4xsonleikb4hgmrwtbtdz	photo.jpg	image/jpeg	{"identified":true}	11715658	6g4syMmEvOYDEP1gAMWpIQ==	2020-09-03 20:47:08.694323
+761	ivtfy7ltfjg8wrpgmr1w5s2cne6c	photo.jpg	image/jpeg	{"identified":true}	12204006	9QHpq1IoXMoP7ME5WbOhjA==	2020-09-03 20:47:08.798998
+762	g2nfz26oy6hxa091yxgbyyv64b4p	photo.jpg	image/jpeg	{"identified":true}	11088441	dqylx4tLa8xhsCmfJ8RxBA==	2020-09-03 20:47:08.889242
+763	qglexs8wwksrxrryg6hgah6jdrpl	photo.jpg	image/jpeg	{"identified":true}	14671113	mpXJccG4Rz3sYTSlz2Dp2w==	2020-09-03 20:47:08.995679
+774	zqxt7nxva8qh1hmgxonmfr4lv3qw	photo.jpg	image/jpeg	{"identified":true}	11930470	f/YQQfbRp5C23/HJRmXLrQ==	2020-09-03 20:47:10.487095
+775	zin606hdicnn8vm48n2zgohjjgpo	photo.jpg	image/jpeg	{"identified":true}	13008013	kGUZwfls2bkw0t7pduOI/g==	2020-09-03 20:47:10.586857
+776	93cfp191a45nwxg16vnt50c5voxz	photo.jpg	image/jpeg	{"identified":true}	10851240	vMmx0DTtG3/sFpBCG7eOxA==	2020-09-03 20:47:10.715165
+764	7hfnew7fy1fz9f8wrdasfofav9w3	photo.jpg	image/jpeg	{"identified":true}	13199274	ky+po13EVImC0Ea3WX2IeQ==	2020-09-03 20:47:09.302989
+765	3n00avtawhx2xyfpc8pcenwvbvae	photo.jpg	image/jpeg	{"identified":true}	12335782	aqbzTzc9QO7V270Jp7JhLQ==	2020-09-03 20:47:09.427866
+766	8fmd7za9zi4irpvgad0nurmqqk2l	photo.jpg	image/jpeg	{"identified":true}	11285667	k5CddUZzQSrn+95YPrM+sQ==	2020-09-03 20:47:09.51879
+767	mwve6h79gzo9lv8uyhpq46xxiq21	photo.jpg	image/jpeg	{"identified":true}	13577225	uZ8/Z2sPvhIjGhvT3ftuhQ==	2020-09-03 20:47:09.609441
+777	i39lp88c9xjt5qs1sjaan3c2ibp8	photo.jpg	image/jpeg	{"identified":true}	11006336	4K8aIULMnf8y3LQpmz0Yrw==	2020-09-03 20:47:10.828106
+778	gjbaqvydvp8z0w65ddmi5b93v7aq	photo.jpg	image/jpeg	{"identified":true}	14154706	9zLXM6zlqmbeiPbaC/LH7w==	2020-09-03 20:47:10.973488
+768	5gpnsxuupqpgzaxjurg53iqzwby1	photo.jpg	image/jpeg	{"identified":true}	13055461	KfVs/uNJZCNC4JTT25GCJQ==	2020-09-03 20:47:09.705219
+769	up03p89rpnz9txx6cri1divbeoz9	photo.jpg	image/jpeg	{"identified":true}	12411159	tHs3DmFUxVQS69LW7yQhsA==	2020-09-03 20:47:09.79467
+770	u9hcltpjk7im10g23qcneq1fwi39	photo.jpg	image/jpeg	{"identified":true}	9178021	Gz+ON5kwxOJB/Zv2h4ARNg==	2020-09-03 20:47:09.895608
+771	05lacnnwosg485kd4yzxp46ghd2p	photo.jpg	image/jpeg	{"identified":true}	12950270	lcwrH6OjRuPeZcs0FE7iWg==	2020-09-03 20:47:09.99658
+772	82uwob5vo0j5mpmkausd2e03nqhx	photo.jpg	image/jpeg	{"identified":true}	13442173	Il6D+gHZqE1IBvvgxq09Mg==	2020-09-03 20:47:10.292297
+773	dy7vmg00jjdpx5vbe753dcxgok4v	photo.jpg	image/jpeg	{"identified":true}	12400237	RSD77HVeiC+0lmy/7fdoIQ==	2020-09-03 20:47:10.397305
+779	ixg5od0buehdnmunnaa4zb6y3r5h	photo.jpg	image/jpeg	{"identified":true}	14264827	9sWU+89qPvwxJMfPkjsgkQ==	2020-09-03 20:47:11.198455
+780	rrkx74c3kro4coxi94euu0n2k3fz	photo.jpg	image/jpeg	{"identified":true}	12859050	t1jV5fYfSl/qi/q7gps+hw==	2020-09-03 20:47:11.315398
+781	dpnl925tf1fhq4pjy3j2gd8juvfx	photo.jpg	image/jpeg	{"identified":true}	11669153	MGXBMP3vRPJbRW5bwbZJ2A==	2020-09-03 20:47:11.440106
+782	i2rtst6klfbz9as8baz3ay7lhokb	photo.jpg	image/jpeg	{"identified":true}	14132098	QyymjZ1R0Ij6WFdD8nkoug==	2020-09-03 20:47:11.581798
+783	pgdu5uvywvr6j2md2z8sjde82cy1	photo.jpg	image/jpeg	{"identified":true}	13228383	VVIIqoHlnJ7oML3GNIBFng==	2020-09-03 20:47:11.829209
+784	luqjcsgs6hgzgnugnx0r3ofe7zxc	photo.jpg	image/jpeg	{"identified":true}	13105019	omQDgVMGQpUg1t72uFMs9g==	2020-09-03 20:47:12.035726
+785	a1rjmc88pqzr7xft87o2us2wlt96	photo.jpg	image/jpeg	{"identified":true}	14148755	jULwvDPVF3Dfypp+oCvVig==	2020-09-03 20:47:12.145931
+786	h500qtit8sawdqg7a511rljml73g	photo.jpg	image/jpeg	{"identified":true}	13351969	ygAbbLJGUgC6mRR51sywBA==	2020-09-03 20:47:12.303167
+787	144uyabzoxqobqjhfjzvc81cz4m0	photo.jpg	image/jpeg	{"identified":true}	8924293	NVmFU973wgkeQZmWn0r9bg==	2020-09-03 20:47:12.395007
+788	iqrm00dthku23n4tgqjpzcckybmw	photo.jpg	image/jpeg	{"identified":true}	10772965	q93KwY2ne26eykZbhZv4WQ==	2020-09-03 20:47:12.48449
+789	cnnu7p6o7vrv9sblae8sidfv197s	photo.jpg	image/jpeg	{"identified":true}	11796734	bZI7wf1W9pgQphCBAahW5g==	2020-09-03 20:47:12.644844
+790	uz1autyadme2vvyyilvmwbxy6i6w	photo.jpg	image/jpeg	{"identified":true}	11344943	JHgsfu6Yqv3fb8G7+R8ZpQ==	2020-09-03 20:47:12.808902
+791	di2efu84neo9urlj8wtyas63k043	photo.jpg	image/jpeg	{"identified":true}	13247017	h4yaYymKznKx9W/1iJJM/g==	2020-09-03 20:47:12.948711
+792	8ac1t0ra34u094a35xg0uxwb8icz	photo.jpg	image/jpeg	{"identified":true}	12055149	D7zT29Pm/dZLNPhMjXHhXQ==	2020-09-03 20:47:13.079434
+793	ro2d8ku5cru6se9rwvxnvid62rr9	photo.jpg	image/jpeg	{"identified":true}	12946604	jWr0ECBPJI1b8YvBSfEgnw==	2020-09-03 20:47:13.198323
+794	zkbigv3bzqbk7cojldcf59xcze15	photo.jpg	image/jpeg	{"identified":true}	11921188	sAB5iRttNzh3P9Sxh4wrkA==	2020-09-03 20:47:13.299143
+795	zqfnvebx9gq5a8fleo3xdz53u0ak	photo.jpg	image/jpeg	{"identified":true}	11167384	2sYyZHudHV85jzY4JdgcdQ==	2020-09-03 20:47:13.528014
+796	hhn29k3vov16dzxj5cvqca8np579	photo.jpg	image/jpeg	{"identified":true}	13361673	QinvJYlDJdDWbVE5/hnw0g==	2020-09-03 20:47:13.643352
+797	er23j3mhbui1ydwzguwubkoyof31	photo.jpg	image/jpeg	{"identified":true}	13361673	QinvJYlDJdDWbVE5/hnw0g==	2020-09-03 20:47:13.743498
+798	xyd9cfl1kvlxngu7e6iwsf29unsg	photo.jpg	image/jpeg	{"identified":true}	12020426	ACHpDZNMsm/387VODXylJQ==	2020-09-03 20:47:13.884648
+799	eaxl1m62zng4walt8mk7s19bqo4t	photo.jpg	image/jpeg	{"identified":true}	12287076	x0qXVG+Wt1zREiQmXXS/tw==	2020-09-03 20:47:13.985371
+800	c0rejsofdrl9q471i4lo0ilh1tlp	photo.jpg	image/jpeg	{"identified":true}	14520711	PoE1WzseYCpvAgNr0D85uw==	2020-09-03 20:47:14.080262
+801	gagkq7siio7yg1jy47l4ao2wi31o	photo.jpg	image/jpeg	{"identified":true}	11167384	2sYyZHudHV85jzY4JdgcdQ==	2020-09-03 20:47:14.350431
+605	9yu7nigmdv80jv3j51kqbdb05397	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12193084	/4DQP3TsPqRzHKRW4KpmhQ==	2020-09-03 20:46:44.156455
+606	m0ho6rpetf8vnut16keiwufbbops	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13685498	DenPmMXSexbQL/PFbnYgRg==	2020-09-03 20:46:44.269254
+607	q609aq8wfn39iutwpvo5acar9j64	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11506557	ZoDu+PjH81P6sUyGlQOBAQ==	2020-09-03 20:46:44.406783
+608	cn2naql8lpzhxl3zxmgfsi3mnqmw	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10950151	0OvxwsBEbmM4MzTsYXhjrw==	2020-09-03 20:46:44.645308
+609	pu5hwj69dy0smz6vcrv5uzyq5p2v	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	15254222	Nx4uTs4Tm6QQ9fIlZNqwYQ==	2020-09-03 20:46:44.757182
+612	n28a5sz4zmpvf8jzs5gldne9t3ep	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10022485	fmsSiiMvzH+72/AzYeqFGA==	2020-09-03 20:46:45.201939
+611	b78b5da2pnc25u6x84s26onvgy6o	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11952530	e3O5CArBNgPrkqxomOXazA==	2020-09-03 20:46:45.094491
+610	jta9zpljy4vy24dtk98e7s8ezrid	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13485877	EXVSnABJfo83koUaQvSZSw==	2020-09-03 20:46:44.970801
+613	y17v7eb17ksfh0zdzz81ngkwhqq3	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11333384	tvgfv6pBFxJ8ySOWO+Oj7w==	2020-09-03 20:46:45.422452
+615	edr25oe7cnd7gj4xgltuqhql26mq	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12879651	CTgAGEwVcyqVXIFyrTL8ww==	2020-09-03 20:46:45.625398
+616	65akdf5xioe34agbzamggapozxna	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13023633	Kajcp8zKICv59x+yFj/EEw==	2020-09-03 20:46:45.753273
+614	yy85zqegckc1ifukaq1dilbjlyqm	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13920397	8FhNdbM2MdO5ZvI8wk1zZQ==	2020-09-03 20:46:45.511852
+617	muaewogeqo97t2svi32aulz5buzx	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12172660	yK8Mgy9A6XdhNNjJOMr7dQ==	2020-09-03 20:46:45.929544
+618	scgapi2yv3p5ul70x015eex6obd0	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11706862	6E97KPpLvtKNmbxnBWB5rw==	2020-09-03 20:46:46.192591
+620	r6aq9psetivhsr7ckw5khxqjf4f5	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10838014	158IxlC7lXoqlBA9LniGiA==	2020-09-03 20:46:46.560555
+619	ya3ahq1iioc80xu9nq9b7ci0l3rq	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12954948	+Qrbrsp3toxYjhZZtiycMg==	2020-09-03 20:46:46.429105
+621	0082wu7fbueiz9bjlu1xw07zb84p	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12368301	0zbeA1WG9GUUIBCMdrdzQQ==	2020-09-03 20:46:46.71654
+622	8hhzf0m4ajy5j4bkv0g3ujessrm7	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12284560	p+PX93LOYTAHzpFy75lusA==	2020-09-03 20:46:46.830649
+624	98vucqv836llj2i6tx8goaaifjj0	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10935978	glN5kbNUixMn1QKDxLdmfw==	2020-09-03 20:46:47.059886
+625	wqov69dhf63r2g9d0sd34nupptmi	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10624428	kJt0f00qV7ouJVei+k2a6g==	2020-09-03 20:46:47.199037
+623	b4ulhfgly8cr00wey157abelmy7x	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	15975273	R94NJEzU1EVSvpyC4NLupg==	2020-09-03 20:46:46.951733
+629	heaxg3e907x3yaxrfhnabw2cfy61	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	15995441	yrQcRV8iI3FARwJcfNjtpw==	2020-09-03 20:46:47.944552
+630	o5daklgq1c2fazwuly1uc10nphc8	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12688989	tl22Wgl0UFHV9ubUd+ebcA==	2020-09-03 20:46:48.074909
+633	jon4wtozlzzawups66pfhwr3q25m	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9201128	1/iD+E7EnNJIofGYomN3KA==	2020-09-03 20:46:48.642328
+634	fclund8lera8gapz6siowr0cskhk	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13011790	4XrRLhi4/5XNnlg4dDIOmg==	2020-09-03 20:46:48.735193
+635	q1jfcq3w2dtjqdy7124e5aevsmmm	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12708044	a98Gwpfc0vcOtVP17fn6nA==	2020-09-03 20:46:48.832477
+636	75w27lfpz9bg7in0f7xhb8ns9kss	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12855677	jnCXrf7nR9/hna7C7sWP3A==	2020-09-03 20:46:48.946579
+638	ixdo6bqbpxrxaanly6l8m66edxa6	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12386631	RiZKmVdZFo2CBQ5DY/xe0g==	2020-09-03 20:46:49.511033
+639	rg0d9swkazglxyg5m4u8zyqmt7fs	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13132116	KleosxBubMBBvmufw4q57Q==	2020-09-03 20:46:49.624525
+640	rbvdxz3ct20rtq44s6o3zbplnh3j	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13038900	9oOe+bsQ7tdaFaBVdhNZwg==	2020-09-03 20:46:49.748446
+642	ng5ctg7muntiq8ja0fqug15ji97r	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11748063	uRvJOtw+ojHqdaQQWaf1uw==	2020-09-03 20:46:49.95722
+643	2lud29t9haut5nwwnhfo94kj4ioa	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13538722	0mcAdCAt6Abi9GOfR/Ehcw==	2020-09-03 20:46:50.163895
+644	74zkl6030xdn5hzfb608bx9llhbj	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12994163	ei0+n1DjXpIt42Jsi54/bg==	2020-09-03 20:46:50.467998
+646	ls3sp09p25xokhj83mimvreqoufy	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13928676	ifzRKSV4ZvlrigggBZRlzg==	2020-09-03 20:46:50.74393
+647	r9w7s1y2lo98puu610a4zmkqvm1g	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11335696	zxBfqrIVbwmcM8bai8z8rQ==	2020-09-03 20:46:50.868036
+648	lqkyae5ezf84bau750zvraotgjet	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13002684	6yLwDGhZOcexcysGUwFosA==	2020-09-03 20:46:51.005833
+650	2ja4uvl76thtl4kf8jvuj0u47w7i	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	8836833	rgABtL0QQXzp0nwFgl1a1A==	2020-09-03 20:46:51.556732
+651	5aexrgxrocm81vonfqgmli015ed8	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13440722	UDuiy+kmyM8gHhC34JTLLg==	2020-09-03 20:46:51.69821
+598	v9e7t0kax8hj0id8xx4jalo7yvuf	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10484680	qz1NP8hOybvtgq5PW0y0XA==	2020-09-03 20:46:43.170263
+627	6krwk99lo4roi2kwfr4b0dhy0xrz	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12386631	RiZKmVdZFo2CBQ5DY/xe0g==	2020-09-03 20:46:47.613423
+713	lza1ydj1s5tpk3ig96f6ggj474va	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10910934	gKEZ/z1cLzxXPCeqSjv2rg==	2020-09-03 20:47:01.930015
+600	y5nk5ds0if258vt17325s6encl2q	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9689040	yEqSzYTXZ554GrV1Fmwemg==	2020-09-03 20:46:43.397353
+637	moway0kmmqfnoqpd1f1xthrls778	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	15231837	H71QuLssyq4O44k1e4kBHA==	2020-09-03 20:46:49.286786
+645	y48v6chfj87qyf672x6f0uzj4ypo	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13595190	t0oGv4vVoLiHIfbTJGIh7w==	2020-09-03 20:46:50.60358
+802	35o1qva50en91hv0xkji7uyhmleg	photo.jpg	image/jpeg	{"identified":true}	13189541	r34UUBbAt/QT9KSwErYCRQ==	2020-09-03 20:47:14.522832
+803	k4szs2ed3fs0b9yyg9ijb5qxf2of	photo.jpg	image/jpeg	{"identified":true}	11859973	T93dxJoEWn3uCYohQEtUDQ==	2020-09-03 20:47:14.777055
+804	x92daem6nguytvlwuyxqh2jhtjql	photo.jpg	image/jpeg	{"identified":true}	10162788	7CN5oHE2iQjypawQl3HakQ==	2020-09-03 20:47:14.864372
+446	gr9h5hzo9g7zhudhyo2g36e1lvyk	photo.jpg	image/jpeg	{"identified":true}	12287076	x0qXVG+Wt1zREiQmXXS/tw==	2020-09-03 20:43:28.947692
+447	q3ysoxc62350f4t81k4plaxc1yqx	photo.jpg	image/jpeg	{"identified":true}	10984727	zbShp9JgSF2Ab2su+ZnK3w==	2020-09-03 20:43:29.046729
+604	oe48clrmumli71vsoc3b073054v4	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13789824	B10XM2CF/nc3/mb4y/F2kg==	2020-09-03 20:46:44.042287
+626	bevlzsgvko05maru4wdhyt3yxe4u	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12627287	81RxfXZKQLVpuQFDmQgptw==	2020-09-03 20:46:47.487918
+631	6uuk4e7ke0sgaf7blgkokx62u4id	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10878374	VCpWAKvC83y3oqRt02VFYg==	2020-09-03 20:46:48.384628
+652	jsnxwn973hvrdok5ypt1kh22a73e	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10673929	7NTZdt+VxNJuWDZcYSnYrQ==	2020-09-03 20:46:51.833317
+653	14v4xnuprp2orcv7kz2amxbq7usr	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11242769	oSZ4f7WwtN11h6Go3eXUQA==	2020-09-03 20:46:52.049788
+654	3vlcuzhtthfihkvd35m4h6p97yd9	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13569812	6c51Qb8E2gszhePxkzzk2w==	2020-09-03 20:46:52.244929
+655	qbdqs0pvrk6tdg6j5mr5d3ak9hjk	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13118977	fq4YYSoNB38f/SYAW4Omlw==	2020-09-03 20:46:52.600786
+657	w616udtu89bsxk6t9xol81h9xwln	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12293922	gtrWGnRs+FOp2sgWvf+x2g==	2020-09-03 20:46:52.887675
+656	8fa26fqxgve10gkf9va0ys0gbi1m	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	14329280	RvwBvQeEz/wKjBhcgqebpQ==	2020-09-03 20:46:52.765855
+658	w2gftmrxohg5aiq077ndbibvid78	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12609273	iDvJWPKqt5Nz8/cypmlzvQ==	2020-09-03 20:46:53.004903
+659	p65n9wv9g8w3l2rv7mr468m0xyip	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9769390	Ye9Y828vcW7h+CsqoMukNg==	2020-09-03 20:46:53.175063
+660	0qiyn7vtnfpiyo597fc0k3myi71l	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13745853	jOrBDnTkPVYcd5pStiv2mg==	2020-09-03 20:46:53.316206
+661	qptu2artaka7w1zfneafxq47t2xn	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	14203770	lNtmoge5GG0pGu7j3dZp+A==	2020-09-03 20:46:53.591786
+662	icg5yjs7lf44wgaudymfgdxiffvm	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12971194	QyyGbxcLHD48xvjD+jZp2g==	2020-09-03 20:46:53.888171
+663	g18btzecpffsb6scg8idnm9xtkpx	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13064306	DhOA1uakew4ZYawBXCkCJw==	2020-09-03 20:46:54.006673
+664	teh4a7pqigs98lb008c1f5898aaf	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9855967	pK29+TFdS2FUNT/ueNMRLg==	2020-09-03 20:46:54.126558
+665	8arsh5c8zwwnv5ssi9cmjuug0m5g	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9359635	tgWlreeg2W6jvLP1mNQbaw==	2020-09-03 20:46:54.243274
+666	aegzl3amri3fufem4dkmh9150u4l	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13698725	eo8DMweR68cYZ1k11SecDw==	2020-09-03 20:46:54.39879
+667	ucw62hls03pxqrfosf3jc3ksw5q9	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11930470	f/YQQfbRp5C23/HJRmXLrQ==	2020-09-03 20:46:54.563807
+668	1ky2omxd1mfynd7lwa0167brrfk3	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11788985	fBSgGNGQl7blK9PCW7Rn7g==	2020-09-03 20:46:54.844651
+669	y6gi6d0vu8ues5z39ero8626ea3g	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10686567	t5AI3DXxTrZWus6zmS58tA==	2020-09-03 20:46:54.992664
+670	ux8jbiqj5dxn8h8ljg45rusy0pac	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13761982	6iUdRrg0xsoAelI2QJreog==	2020-09-03 20:46:55.10664
+671	f9mnzbpj6n8o9i241qq4xp6mnugk	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11877651	HXeLUgjbuN9yB5bdBomWpg==	2020-09-03 20:46:55.231063
+673	c7w2sq1hu5u5rqw9y7700i7wuc6c	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10780623	bae5SbIWs+n4FTCXTVwWCw==	2020-09-03 20:46:55.664454
+672	v21hn41s4cowdn90td9snsbnhpub	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13867922	PSaoZVwhHMTTNjvjMgyLsg==	2020-09-03 20:46:55.439123
+674	un85pztl48diu1gao0a32br3xx63	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12118342	yEa+jyRg1iuz+z6kOgF+WQ==	2020-09-03 20:46:55.934545
+676	5n9ny5s9tlzb8dcxc4a9e7slook1	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	8924293	NVmFU973wgkeQZmWn0r9bg==	2020-09-03 20:46:56.13677
+677	kk2oqzj47cvmwadzc929nppzdx5n	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10793112	apm04pxWt4j3l6QHwtPJLQ==	2020-09-03 20:46:56.226429
+675	uj019ts0alfcvwxvkt95bwod0u21	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12532101	ZzTOjoiT5mcKqndA1oGK6A==	2020-09-03 20:46:56.043657
+678	isvd7qy7fbm8ecqpfgojzb6ldssz	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12148827	4zs9fePQYmGY6df6OdsR/g==	2020-09-03 20:46:56.324261
+680	3oguf7aqtgnaexot1p0av2bc867c	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	8919624	k6s7k/PzsSoNmZH6vr5Tuw==	2020-09-03 20:46:56.722668
+679	v4p1a2konm0n25pdllimqyrcgp86	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12668967	ixSpkxhrXTpgjS8D7FKHTQ==	2020-09-03 20:46:56.45345
+681	6x9n2ajpn0r4n1p7odunqsjq55ng	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12093188	cWBqM24ArhDx7YzGQfssug==	2020-09-03 20:46:56.891317
+682	bjcjs0p793ha8jqhzxxcul6bhwt0	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13886264	V32PYZP8/XPORMTy4bI3uQ==	2020-09-03 20:46:57.009381
+683	1de67p9sa1uy3kc9yon1b7cqdwoo	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	14181501	KDYwAkaoelcJl4QvycfTgQ==	2020-09-03 20:46:57.138778
+685	e9i1n1jo04td7u9akfab1psn39q1	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11177381	7/je1sGw0OysJn5bwjBQmw==	2020-09-03 20:46:57.4291
+684	x2kp6wq0hyya47uhai1jjvvd6aml	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13440459	Slz+NcmdLmi3aKFFXNehwA==	2020-09-03 20:46:57.285559
+686	wwnfszy0wj9ppi8qfxzn4tgzrsbz	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9401133	/0L1UkswfrvIWltWe9vBsQ==	2020-09-03 20:46:57.553335
+687	czdwtzfbzvpe4se69rfboshakubi	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12400237	RSD77HVeiC+0lmy/7fdoIQ==	2020-09-03 20:46:57.814015
+728	ra8d17iqwozy0nuovjlwsyqzg7e6	photo.jpg	image/jpeg	{"identified":true}	13994536	nWGW+UHqNhi3Jhd5CFfNEQ==	2020-09-03 20:47:04.117957
+729	yex2y02kqjtewybbxrc8mjsw0a4n	photo.jpg	image/jpeg	{"identified":true}	12095882	0fGwkz0jSiQyHTI0LuBOOg==	2020-09-03 20:47:04.258147
+730	af1ehabzk3zkl1vsn5jyukzfs056	photo.jpg	image/jpeg	{"identified":true}	13489747	0VAxEHjO9uPFgV3lC325Vw==	2020-09-03 20:47:04.500112
+731	0fbnlbx0j1kvv4g83jwl2t3bdfw9	photo.jpg	image/jpeg	{"identified":true}	14697995	sibxthK5KfIUqxz/vAC7Ww==	2020-09-03 20:47:04.682616
+732	ax2yzg161i8gxe8bohclq20figt1	photo.jpg	image/jpeg	{"identified":true}	12287076	x0qXVG+Wt1zREiQmXXS/tw==	2020-09-03 20:47:04.813799
+733	gknw875cgqyelxhpf2aty34cvs3j	photo.jpg	image/jpeg	{"identified":true}	10984727	zbShp9JgSF2Ab2su+ZnK3w==	2020-09-03 20:47:04.918827
+734	ccicufsrym4m4tu0ua5909nvrdlm	photo.jpg	image/jpeg	{"identified":true}	9920115	2KhBptEBXxCMRRLlWNR51w==	2020-09-03 20:47:05.071315
+735	sew1w49wuhlt61zhlro6jdwjhkp3	photo.jpg	image/jpeg	{"identified":true}	12890940	quj3tlLSqHil+IFR0UeBCA==	2020-09-03 20:47:05.202415
+736	wapezodkwvf9lly1d60lhqedu7wi	photo.jpg	image/jpeg	{"identified":true}	12799011	K9M/aRu++tSZnZiNJVF28g==	2020-09-03 20:47:05.326331
+737	94orid3w83c19zxuemgosnftwv3y	photo.jpg	image/jpeg	{"identified":true}	10526840	jOOfBonXWR1L2I8ue4zW5w==	2020-09-03 20:47:05.650451
+738	ev7c8je10j542p47dlv7ma7m1xs9	photo.jpg	image/jpeg	{"identified":true}	13847685	mLkyOSd7bTlSljOFvGa1lw==	2020-09-03 20:47:05.75015
+739	8nomp9auybjlbg6rm4ko1pwj3kcz	photo.jpg	image/jpeg	{"identified":true}	10022485	fmsSiiMvzH+72/AzYeqFGA==	2020-09-03 20:47:05.851867
+690	r797v8v8axzu2g5sgsoa22bmgxv4	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11169025	Y5MljmZNR3Kb9hgD4AnJ0Q==	2020-09-03 20:46:58.252478
+692	ibs9tkomsi9nhfdjvoz8rrbuy7n6	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10587718	msqvtGCZKcUuD3y5hCgp1g==	2020-09-03 20:46:58.483258
+691	slypamc80cq33t9xzs3yzc3od8fn	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13084009	jOaTj96ejyGz3LSKcCP1Lg==	2020-09-03 20:46:58.374336
+694	fqulmzyy5bzzalpruutlmd4c4516	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11515904	1SyDYeRRqs+wYF9bI2Tm6A==	2020-09-03 20:46:58.720198
+696	rf9kbuvnef4wlevmaq0f0jz9i1oi	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12052891	LjXR5YQvXWHwE9o/G7eurA==	2020-09-03 20:46:59.23842
+695	0iyjjznj4dfhc7cjfhicczu95jpt	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13300183	ss4wPYWe7sstXoe1ojt87Q==	2020-09-03 20:46:59.067067
+698	dg9ieacslrhj8f374zdgm3s0gpmp	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13781506	0uME1tDp1C8c87ja7WSulw==	2020-09-03 20:46:59.503601
+702	sne77ubvms79nubnka141ir0e4t3	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9202066	jLy83b6TlKrJiC7TqAayNw==	2020-09-03 20:47:00.259518
+700	m7d7yj9iym32s3o2lxq4iujyj0xq	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13713623	mQXWC962mnKzggBFkqKINg==	2020-09-03 20:46:59.861988
+701	nfttt6h4uygxmym09tefybgrtwbh	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12915121	8S6jjFIk0lyEze//PU3b2g==	2020-09-03 20:47:00.124938
+705	ez7tsdlz9y0jllvi7g7okb6rufg0	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11820206	y4tNtmV5fmuAk1vtYOjbbw==	2020-09-03 20:47:00.649178
+703	b0zd893hd78wxf5hcdwmifqloz27	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	14877013	7yB7aWgPQZZEFBG1ba2j4Q==	2020-09-03 20:47:00.366379
+706	t389s9kve9qaly394l910h7t1xl5	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13478884	RF8pbyB7kumEzo6Z+PWadw==	2020-09-03 20:47:00.896775
+709	c0l0xp9gknnv1fsgfxv6cey5mjkj	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	4215078	Okt9/BP0y0FK477zDqjbYw==	2020-09-03 20:47:01.32738
+707	64raguho8kk5cyfa3fdvluzncdmt	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11088441	dqylx4tLa8xhsCmfJ8RxBA==	2020-09-03 20:47:01.059154
+710	yy19sa4hndd1papwrz5oboui1d59	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	14044351	tMSpNiinPKcVDpc0veMC8g==	2020-09-03 20:47:01.439026
+711	zopbm57jftivwm6vv9frqf12swsj	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11242769	oSZ4f7WwtN11h6Go3eXUQA==	2020-09-03 20:47:01.599602
+712	3wrnycvd4p4s688w9p51v657gaa9	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9918005	CiKthXSjv3ZmjvZSyAcdQw==	2020-09-03 20:47:01.818216
+714	jh1wiq3ycxcuvx9hwamq0y6ljlsq	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10413997	VpogOGez7S+JM2NRgorfyQ==	2020-09-03 20:47:02.034451
+715	ih6yizdjs66igfzwxcf74g9si3o2	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11968768	Jcm1Z4EokJ0FC1g5f51iUw==	2020-09-03 20:47:02.172277
+716	gz0h26q5m2t83rsfwn0tmwlmurhc	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12535345	ao5PSRGXFRue99rXHBjatA==	2020-09-03 20:47:02.287312
+718	h730d18mzknm5jmiwnw5cim6rgna	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13614346	vzw15zO9Y9MqBIgP23SD/Q==	2020-09-03 20:47:02.619548
+719	anpmgg3jhbi2j9pingwkvi87lt7b	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12035784	cR4Hw3jeLaVOxGVPbXAtPA==	2020-09-03 20:47:02.789225
+721	pe1xisy6jefxysxl015210ebsvi1	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10825900	RLEscjNnnSKqv02xjQVTqw==	2020-09-03 20:47:03.045086
+722	lk9309u5m0m14btxkiawtoipkuv7	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12287076	x0qXVG+Wt1zREiQmXXS/tw==	2020-09-03 20:47:03.179147
+723	t3zqe5rvujngyke3huu8mtpsuzlm	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	14089610	EE7RrNNQ1moa26gTbe+AIQ==	2020-09-03 20:47:03.43556
+724	weg4qxqqdf2o3ukw09fz0864x8ld	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13400565	4IbZIeHgx1F27K37204mdQ==	2020-09-03 20:47:03.680187
+726	0c0rxqk9qxmpox7f1adg7ilixnsz	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10909194	EGT8QuVAsTvj1KbVDFv2yA==	2020-09-03 20:47:03.918551
+727	sq6w1y9jloq3j9qnj7g4m37i2ayn	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10283069	ZHWxHyZSmTXscjdthDIG/w==	2020-09-03 20:47:04.012543
+448	1y1lzb61h2i7cmmddpe89zwtg49p	photo.jpg	image/jpeg	{"identified":true}	9920115	2KhBptEBXxCMRRLlWNR51w==	2020-09-03 20:43:29.142161
+449	e669mmkdrr42ixuotxlmd892xroy	photo.jpg	image/jpeg	{"identified":true}	12890940	quj3tlLSqHil+IFR0UeBCA==	2020-09-03 20:43:29.249435
+450	ivdomf38tcw36eruubw7xjhauv60	photo.jpg	image/jpeg	{"identified":true}	12799011	K9M/aRu++tSZnZiNJVF28g==	2020-09-03 20:43:29.555602
+451	vjkjrythh2o3y4wukoemtt0etpv3	photo.jpg	image/jpeg	{"identified":true}	10526840	jOOfBonXWR1L2I8ue4zW5w==	2020-09-03 20:43:29.654599
+452	r65od9jf0uzjtc5o9lkz0know52n	photo.jpg	image/jpeg	{"identified":true}	13847685	mLkyOSd7bTlSljOFvGa1lw==	2020-09-03 20:43:29.748709
+453	ekzy3xri1a7ij5gvaefxl8yfpj4a	photo.jpg	image/jpeg	{"identified":true}	10022485	fmsSiiMvzH+72/AzYeqFGA==	2020-09-03 20:43:29.843206
+454	6tpm8av98nawf178s48v2v5odldk	photo.jpg	image/jpeg	{"identified":true}	9359635	tgWlreeg2W6jvLP1mNQbaw==	2020-09-03 20:43:29.921725
+455	vqs1w7a5fvlll4patya5lov7pikj	photo.jpg	image/jpeg	{"identified":true}	10243701	g0eOiddk6wV9ExNvvm0Ezw==	2020-09-03 20:43:30.039634
+456	dc81uonqyyc2cnglef5av7347ey1	photo.jpg	image/jpeg	{"identified":true}	12945129	3qcIxbJRH94GcSHd4aEukQ==	2020-09-03 20:43:30.145633
+457	eg5f70p9lhr2gkuelcsix133fa5o	photo.jpg	image/jpeg	{"identified":true}	13569812	6c51Qb8E2gszhePxkzzk2w==	2020-09-03 20:43:30.443458
+458	bm6j0ecbj73kxpw1xhi4f1zzbk0q	photo.jpg	image/jpeg	{"identified":true}	11601812	1/uaWnCWrycIbqmzcADfOQ==	2020-09-03 20:43:30.552502
+459	bfw3mmnpn16m5g5pb1sb2eq7fmei	photo.jpg	image/jpeg	{"identified":true}	12769182	Ta0bqMzr9wpQaZU6BeEBkg==	2020-09-03 20:43:30.730635
+460	262cnujx1fda3tbrcis9bj42uy03	photo.jpg	image/jpeg	{"identified":true}	12045271	ZNhbzWHxse59t0LdUPISNg==	2020-09-03 20:43:30.861978
+461	n5zfqh6hhri9pvj4wvg102dibktp	photo.jpg	image/jpeg	{"identified":true}	13453817	XFKMfTDfYg5QJjpJP1S/8w==	2020-09-03 20:43:31.033226
+462	t5r827dk26xhmr9fen0om4k5znph	photo.jpg	image/jpeg	{"identified":true}	13935560	40T59IC516cu2S9t2KBvHg==	2020-09-03 20:43:31.329199
+463	4jo9lkp2zjtvdqdcwj9of5m3hl86	photo.jpg	image/jpeg	{"identified":true}	13621254	qUmtowKW5I9dcZap6NWxKQ==	2020-09-03 20:43:31.47145
+464	wb7pbl42yo1odr7xn0pa8k8ygv9t	photo.jpg	image/jpeg	{"identified":true}	13331055	80bnjP7xgd6/QW4pRfNEmA==	2020-09-03 20:43:31.588721
+465	adhf4iyzo6daro420mem2r07ua07	photo.jpg	image/jpeg	{"identified":true}	13759630	NK8B8WgNbL9wqtvMR6N6TA==	2020-09-03 20:43:31.702534
+466	lyjst38apdotktt1sx4nn5g6vwjs	photo.jpg	image/jpeg	{"identified":true}	12106831	G+KWKj8CUq53iTFODpyZHQ==	2020-09-03 20:43:31.85006
+467	54lyrweerwfx9z9mr1az6xykaxkl	photo.jpg	image/jpeg	{"identified":true}	12580558	MvWSEzlLzvNhWHZ2GdGJag==	2020-09-03 20:43:32.004993
+468	x97mv4j5tib45x60jl01c60o6hug	photo.jpg	image/jpeg	{"identified":true}	12768848	1qaOiDn6gSeDCuEJk8s/sg==	2020-09-03 20:43:32.209485
+469	iearv10zfd4l7xgmvz6muxlmsdot	photo.jpg	image/jpeg	{"identified":true}	10967227	6ys0UhjSRcnf7Q2fJn+yVQ==	2020-09-03 20:43:32.319103
+470	kbput8au20qnfdn2aqwd6xcxfsv6	photo.jpg	image/jpeg	{"identified":true}	12509382	TESEbmSX6K+Ma6Qo6v1M5g==	2020-09-03 20:43:32.43823
+471	122drbezy70hfwskigz1oe3wzgry	photo.jpg	image/jpeg	{"identified":true}	12709511	Iv9dymVkhOUL8HBQ+7BWWQ==	2020-09-03 20:43:32.544611
+472	qab4oes5z0omh1a4mnht5iuscqcb	photo.jpg	image/jpeg	{"identified":true}	11753536	5Iv6dS6a8cOhcPkJ81sDXg==	2020-09-03 20:43:32.734699
+473	jx56owq6wf07zaxmecd7hm9147t8	photo.jpg	image/jpeg	{"identified":true}	11557945	A/G04p55vI41iEUr+V9OcA==	2020-09-03 20:43:32.853605
+474	6abuy96mtq7ki95w6cs6tc5drbiv	photo.jpg	image/jpeg	{"identified":true}	11715658	6g4syMmEvOYDEP1gAMWpIQ==	2020-09-03 20:43:33.107214
+475	o9wq43pcvf5nlkrwi5yocezr3il8	photo.jpg	image/jpeg	{"identified":true}	12204006	9QHpq1IoXMoP7ME5WbOhjA==	2020-09-03 20:43:33.211487
+476	l03ex0u37fvn0ip54t068555ojt9	photo.jpg	image/jpeg	{"identified":true}	11088441	dqylx4tLa8xhsCmfJ8RxBA==	2020-09-03 20:43:33.316063
+477	gnmp4n7l7xx50u0joe7lkqaub24p	photo.jpg	image/jpeg	{"identified":true}	14671113	mpXJccG4Rz3sYTSlz2Dp2w==	2020-09-03 20:43:33.433691
+478	qwtug52w3xnmxh9hdn964uqa23ci	photo.jpg	image/jpeg	{"identified":true}	13199274	ky+po13EVImC0Ea3WX2IeQ==	2020-09-03 20:43:33.568728
+479	w2yxozi9nl51g9jjw68n6rixtd9f	photo.jpg	image/jpeg	{"identified":true}	12335782	aqbzTzc9QO7V270Jp7JhLQ==	2020-09-03 20:43:33.670677
+480	b8bph9cqtyzbxsr20pp83adp7yzu	photo.jpg	image/jpeg	{"identified":true}	11285667	k5CddUZzQSrn+95YPrM+sQ==	2020-09-03 20:43:33.810935
+481	fx92o66w555r46a7xh8ul3pussoi	photo.jpg	image/jpeg	{"identified":true}	13577225	uZ8/Z2sPvhIjGhvT3ftuhQ==	2020-09-03 20:43:34.025227
+482	l7txweb3kxjfuiqkloaupfwo8fgv	photo.jpg	image/jpeg	{"identified":true}	13055461	KfVs/uNJZCNC4JTT25GCJQ==	2020-09-03 20:43:34.194444
+483	j15kietdlchl9ds8cvz1cktjjl3n	photo.jpg	image/jpeg	{"identified":true}	12411159	tHs3DmFUxVQS69LW7yQhsA==	2020-09-03 20:43:34.28291
+740	6ylan3io6kn3fnmqvyjixat7fwb4	photo.jpg	image/jpeg	{"identified":true}	9359635	tgWlreeg2W6jvLP1mNQbaw==	2020-09-03 20:47:05.948126
+741	kcm5jo3k0980n3ogd0mj48dchly5	photo.jpg	image/jpeg	{"identified":true}	10243701	g0eOiddk6wV9ExNvvm0Ezw==	2020-09-03 20:47:06.033385
+742	k90gqecocceonytdm1a33qlx3su0	photo.jpg	image/jpeg	{"identified":true}	12945129	3qcIxbJRH94GcSHd4aEukQ==	2020-09-03 20:47:06.139161
+743	zcpiohixnm8k5unqajxn52d0i9a4	photo.jpg	image/jpeg	{"identified":true}	13569812	6c51Qb8E2gszhePxkzzk2w==	2020-09-03 20:47:06.276132
+744	aais6og23g8pk0skax4jsq347x28	photo.jpg	image/jpeg	{"identified":true}	11601812	1/uaWnCWrycIbqmzcADfOQ==	2020-09-03 20:47:06.617539
+745	lyljzare2lchdl1rzkhaaubunt1l	photo.jpg	image/jpeg	{"identified":true}	12769182	Ta0bqMzr9wpQaZU6BeEBkg==	2020-09-03 20:47:06.759051
+746	4q68h4tgojycu9ftuy8jy441zs1p	photo.jpg	image/jpeg	{"identified":true}	12045271	ZNhbzWHxse59t0LdUPISNg==	2020-09-03 20:47:06.862787
+747	c0ie4vzskvtkj6slebr11cy7hfw3	photo.jpg	image/jpeg	{"identified":true}	13453817	XFKMfTDfYg5QJjpJP1S/8w==	2020-09-03 20:47:06.963955
+748	ggztdqvihhb7s89rag5ubgend426	photo.jpg	image/jpeg	{"identified":true}	13935560	40T59IC516cu2S9t2KBvHg==	2020-09-03 20:47:07.069944
+749	4zpf2j01qvtc680kpje0lsojfv5k	photo.jpg	image/jpeg	{"identified":true}	13621254	qUmtowKW5I9dcZap6NWxKQ==	2020-09-03 20:47:07.163297
+750	y5xw4krcg45jsce4j2eusa7mgy86	photo.jpg	image/jpeg	{"identified":true}	13331055	80bnjP7xgd6/QW4pRfNEmA==	2020-09-03 20:47:07.385337
+751	kosjvs3odfu31oeuep8dsetlvfsf	photo.jpg	image/jpeg	{"identified":true}	13759630	NK8B8WgNbL9wqtvMR6N6TA==	2020-09-03 20:47:07.637336
+752	c8jhr8kgh2439xgtio9ixtar2rvn	photo.jpg	image/jpeg	{"identified":true}	12106831	G+KWKj8CUq53iTFODpyZHQ==	2020-09-03 20:47:07.729772
+753	izbj8hei8pzn6ved8kbuyaff4jln	photo.jpg	image/jpeg	{"identified":true}	12580558	MvWSEzlLzvNhWHZ2GdGJag==	2020-09-03 20:47:07.821277
+754	euebjzfhoo80603lqlm4ameer3sm	photo.jpg	image/jpeg	{"identified":true}	12768848	1qaOiDn6gSeDCuEJk8s/sg==	2020-09-03 20:47:07.91788
+755	g2gjegi4tncptyf59alpeexlhecr	photo.jpg	image/jpeg	{"identified":true}	10967227	6ys0UhjSRcnf7Q2fJn+yVQ==	2020-09-03 20:47:08.012223
+688	pcrm1fnfe4mzqklqvwshcrk100km	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10248534	+QXHnpMUlebeDVyZLzXVbg==	2020-09-03 20:46:57.958508
+720	8y0ly5gc60v07aey39mlph4t8o1h	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12143601	WNLc6g2yVXl87erMlSVvAA==	2020-09-03 20:47:02.930447
+725	xdu5wm07hh50ap2q9x77e1hntbt1	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12023608	pxX/fCbzQ6pq7cflPyH2ng==	2020-09-03 20:47:03.802462
+558	1dfbmhuxezafj0tppe6qvvnlzmfa	photo.jpg	image/jpeg	{"identified":true}	10984727	zbShp9JgSF2Ab2su+ZnK3w==	2020-09-03 20:45:09.817218
+559	wkr0x00kn0fwh3p3qh4vqa4ceuwm	photo.jpg	image/jpeg	{"identified":true}	12799011	K9M/aRu++tSZnZiNJVF28g==	2020-09-03 20:45:09.926832
+560	z6s0dprqxeoujsnarmds2z4p2ho9	photo.jpg	image/jpeg	{"identified":true}	10022485	fmsSiiMvzH+72/AzYeqFGA==	2020-09-03 20:45:10.055842
+561	f0znok7dyxwdhgutw7u96vclwhy2	photo.jpg	image/jpeg	{"identified":true}	12945129	3qcIxbJRH94GcSHd4aEukQ==	2020-09-03 20:45:10.263646
+562	10usnr91kipaxs5x5tu6pkgrsvwp	photo.jpg	image/jpeg	{"identified":true}	12769182	Ta0bqMzr9wpQaZU6BeEBkg==	2020-09-03 20:45:10.52071
+563	cvl7sitzhleaqk3g6rwcweqr18g2	photo.jpg	image/jpeg	{"identified":true}	12045271	ZNhbzWHxse59t0LdUPISNg==	2020-09-03 20:45:10.707652
+564	swo81xqyw1cvwubeq494g6v5t041	photo.jpg	image/jpeg	{"identified":true}	13453817	XFKMfTDfYg5QJjpJP1S/8w==	2020-09-03 20:45:10.885589
+565	07fx9c7kpgoxckbhct2uivrg9735	photo.jpg	image/jpeg	{"identified":true}	13935560	40T59IC516cu2S9t2KBvHg==	2020-09-03 20:45:11.026542
+566	mxovivyls9z63z869h7weicfdl43	photo.jpg	image/jpeg	{"identified":true}	13331055	80bnjP7xgd6/QW4pRfNEmA==	2020-09-03 20:45:11.193742
+567	ifz0wyn4qejk0xc50lz1kd41wf7m	photo.jpg	image/jpeg	{"identified":true}	13759630	NK8B8WgNbL9wqtvMR6N6TA==	2020-09-03 20:45:11.60157
+568	9l91u38xq3yvscb4j3t7ceds28h3	photo.jpg	image/jpeg	{"identified":true}	12106831	G+KWKj8CUq53iTFODpyZHQ==	2020-09-03 20:45:11.799707
+569	k64xjcvq5ng3xzux2ze8t8u9x7o6	photo.jpg	image/jpeg	{"identified":true}	12509382	TESEbmSX6K+Ma6Qo6v1M5g==	2020-09-03 20:45:11.943893
+570	5jjgh2oozy13ybmjyjrv839wkjbm	photo.jpg	image/jpeg	{"identified":true}	11753536	5Iv6dS6a8cOhcPkJ81sDXg==	2020-09-03 20:45:12.089601
+571	o90so41i8jtz88ubsa0f4ys6lfvv	photo.jpg	image/jpeg	{"identified":true}	12204006	9QHpq1IoXMoP7ME5WbOhjA==	2020-09-03 20:45:12.23649
+572	hkx3gidrzv5e2lbkmxvyjqcseghp	photo.jpg	image/jpeg	{"identified":true}	12335782	aqbzTzc9QO7V270Jp7JhLQ==	2020-09-03 20:45:12.358221
+573	bo0r5mhqr8njnd11r2trz6s9cumu	photo.jpg	image/jpeg	{"identified":true}	11285667	k5CddUZzQSrn+95YPrM+sQ==	2020-09-03 20:45:12.656224
+574	d5hq1vbbqu3ln5pvusrcl2qclilj	photo.jpg	image/jpeg	{"identified":true}	13577225	uZ8/Z2sPvhIjGhvT3ftuhQ==	2020-09-03 20:45:13.000644
+575	ptols28z3wyz1du4njjx0njjppss	photo.jpg	image/jpeg	{"identified":true}	13055461	KfVs/uNJZCNC4JTT25GCJQ==	2020-09-03 20:45:13.12162
+576	zgqsq8ytl8evwrqzlz8fm1x50ero	photo.jpg	image/jpeg	{"identified":true}	9178021	Gz+ON5kwxOJB/Zv2h4ARNg==	2020-09-03 20:45:13.248252
+577	cwypgxzofyzeplule79g56mrdsk5	photo.jpg	image/jpeg	{"identified":true}	12950270	lcwrH6OjRuPeZcs0FE7iWg==	2020-09-03 20:45:13.344344
+578	6g3z4ea39nw3omqvo6aeg3k5fcb5	photo.jpg	image/jpeg	{"identified":true}	12400237	RSD77HVeiC+0lmy/7fdoIQ==	2020-09-03 20:45:13.453747
+579	apfs1jbnrhkumg5ywqyarc5chqsi	photo.jpg	image/jpeg	{"identified":true}	11930470	f/YQQfbRp5C23/HJRmXLrQ==	2020-09-03 20:45:13.56691
+580	nt0xxs0dexqu4r3umtreob60zq9d	photo.jpg	image/jpeg	{"identified":true}	14154706	9zLXM6zlqmbeiPbaC/LH7w==	2020-09-03 20:45:13.733332
+581	mvwut15z7afp4h3emtbfixjavh1b	photo.jpg	image/jpeg	{"identified":true}	14264827	9sWU+89qPvwxJMfPkjsgkQ==	2020-09-03 20:45:14.078906
+582	8zxd0iv2o04hnllwnazx389ac9fv	photo.jpg	image/jpeg	{"identified":true}	13105019	omQDgVMGQpUg1t72uFMs9g==	2020-09-03 20:45:14.222623
+583	4rkyb8bf5r2bz162nn6okmtfso4g	photo.jpg	image/jpeg	{"identified":true}	14148755	jULwvDPVF3Dfypp+oCvVig==	2020-09-03 20:45:14.359897
+584	wnhirr9bmiywd8xasdaf6b2twswf	photo.jpg	image/jpeg	{"identified":true}	13351969	ygAbbLJGUgC6mRR51sywBA==	2020-09-03 20:45:14.507016
+585	tgh7zrvzngk5y8199feskk557zve	photo.jpg	image/jpeg	{"identified":true}	10772965	q93KwY2ne26eykZbhZv4WQ==	2020-09-03 20:45:14.641174
+586	wkr8yu46fjezgoul5g4z15nf7659	photo.jpg	image/jpeg	{"identified":true}	11796734	bZI7wf1W9pgQphCBAahW5g==	2020-09-03 20:45:14.794003
+587	e4kzjueyikwlkqoulpxeok6yx9f9	photo.jpg	image/jpeg	{"identified":true}	11344943	JHgsfu6Yqv3fb8G7+R8ZpQ==	2020-09-03 20:45:15.080562
+588	atnrfgc930bz6syk91ksdbmlq2yn	photo.jpg	image/jpeg	{"identified":true}	11921188	sAB5iRttNzh3P9Sxh4wrkA==	2020-09-03 20:45:15.184047
+689	oxdofogka0ic9jwkcrqbe5eusc60	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11958581	pkOgyObKiui73AMzQRWo/w==	2020-09-03 20:46:58.070987
+699	gg0y5xaxsekgm36f3tsj7wm2h02w	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12400237	RSD77HVeiC+0lmy/7fdoIQ==	2020-09-03 20:46:59.683107
+704	naohqe2ewnx35mjab0yxbxakjvmk	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13781506	0uME1tDp1C8c87ja7WSulw==	2020-09-03 20:47:00.503712
+708	70apgn1gi044iqh4nmmhnlbhv8vj	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13109470	7tudk8tiyxTjiqDoSFaMUQ==	2020-09-03 20:47:01.238003
+717	ebctc12uw0jzc1ady3w6y7jid66k	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	8836833	rgABtL0QQXzp0nwFgl1a1A==	2020-09-03 20:47:02.461521
+589	jgp4cntxfthx3aaqqh92i6bhesr9	photo.jpg	image/jpeg	{"identified":true}	11167384	2sYyZHudHV85jzY4JdgcdQ==	2020-09-03 20:45:15.310946
+590	pv00tmmacx1opuchha6sx2u28yt7	photo.jpg	image/jpeg	{"identified":true}	13361673	QinvJYlDJdDWbVE5/hnw0g==	2020-09-03 20:45:15.458434
+591	w2o08jur6dwhmkjgv8ffw3nyumfo	photo.jpg	image/jpeg	{"identified":true}	12020426	ACHpDZNMsm/387VODXylJQ==	2020-09-03 20:45:15.561233
+592	71e8mx0yk86lzb0gd8582hrkf4v0	photo.jpg	image/jpeg	{"identified":true}	13189541	r34UUBbAt/QT9KSwErYCRQ==	2020-09-03 20:45:15.656877
+693	ecqh4paf22fd0vmjko59d720g8cs	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13002684	6yLwDGhZOcexcysGUwFosA==	2020-09-03 20:46:58.596316
+697	3vqwejgq2vkvx0q1ve0dhny31zts	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12980327	zpvBGY/GE1HgtUbXQ5qiQA==	2020-09-03 20:46:59.355795
 \.
 
 
@@ -1647,84 +2147,62 @@ COPY public.spatial_ref_sys (srid, auth_name, auth_srid, srtext, proj4text) FROM
 --
 
 COPY public.topos (id, line, problem_id, created_at, updated_at, published) FROM stdin;
-6	[{"x":0.4178,"y":0.9134},{"x":0.3906,"y":0.7149},{"x":0.3577,"y":0.5219},{"x":0.3923,"y":0.3443}]	176	2020-04-18 20:36:55.470758	2020-04-21 13:38:05.098216	t
-4	[{"x":0.375,"y":0.9539},{"x":0.3808,"y":0.6776},{"x":0.4112,"y":0.42},{"x":0.3618,"y":0.1195}]	77	2020-04-18 20:36:55.36101	2020-04-21 13:35:44.876981	t
-10	[{"x":0.7785,"y":0.9178},{"x":0.7599,"y":0.5789},{"x":0.8213,"y":0.4309},{"x":0.8575,"y":0.259}]	200	2020-04-18 20:36:55.630165	2020-04-21 13:39:37.301329	t
-11	[{"x":0.3882,"y":0.9561},{"x":0.3906,"y":0.5614},{"x":0.4013,"y":0.3805},{"x":0.3931,"y":0.0724}]	201	2020-04-18 20:36:55.670284	2020-04-21 13:39:47.1239	t
-13	[{"x":0.6291,"y":0.9375},{"x":0.6735,"y":0.7632},{"x":0.7656,"y":0.6217},{"x":0.7845,"y":0.455},{"x":0.7837,"y":0.33},{"x":0.75,"y":0.3037}]	229	2020-04-18 20:36:55.734295	2020-04-21 13:40:19.956168	t
-16	[{"x":0.3339,"y":0.8542},{"x":0.3224,"y":0.6261},{"x":0.3026,"y":0.432},{"x":0.3051,"y":0.2083},{"x":0.3331,"y":0.0395}]	163	2020-04-18 20:36:55.834834	2020-04-21 13:41:03.797073	t
-19	[{"x":0.4572,"y":0.7807},{"x":0.4589,"y":0.4583},{"x":0.4285,"y":0.318},{"x":0.4202,"y":0.102}]	74	2020-04-18 20:36:55.933529	2020-04-21 13:41:50.114825	t
-24	[{"x":0.5351,"y":0.7813},{"x":0.5318,"y":0.5164},{"x":0.5143,"y":0.3405},{"x":0.5428,"y":0.1924},{"x":0.6294,"y":0.1209}]	161	2020-04-18 20:36:56.114268	2020-04-21 13:42:55.93633	t
-28	[{"x":0.375,"y":0.9474},{"x":0.3618,"y":0.7007},{"x":0.3396,"y":0.4287},{"x":0.3725,"y":0.1524}]	202	2020-04-18 20:36:56.250382	2020-04-21 13:43:49.882216	t
-33	[{"x":0.7122,"y":0.8235},{"x":0.7105,"y":0.5888},{"x":0.7418,"y":0.0779}]	61	2020-04-18 20:36:56.437838	2020-04-21 13:44:36.373651	t
-35	[{"x":0.2196,"y":0.8684},{"x":0.2097,"y":0.5998},{"x":0.2196,"y":0.4057},{"x":0.2311,"y":0.193}]	59	2020-04-18 20:36:56.514756	2020-04-21 13:44:56.257547	t
-37	[{"x":0.347,"y":0.92},{"x":0.3594,"y":0.648},{"x":0.4194,"y":0.1985},{"x":0.4688,"y":0.0307}]	65	2020-04-18 20:36:56.59497	2020-04-21 13:45:15.734954	t
-43	[{"x":0.3479,"y":0.9386},{"x":0.3405,"y":0.6491},{"x":0.3709,"y":0.3794},{"x":0.3166,"y":0.0493}]	213	2020-04-18 20:36:56.842231	2020-04-21 13:46:20.678616	t
-48	[{"x":0.4605,"y":0.8503},{"x":0.4693,"y":0.5403},{"x":0.5,"y":0.3734},{"x":0.6075,"y":0.1505}]	64	2020-04-18 20:36:57.044109	2020-04-21 13:47:17.608002	t
-51	[{"x":0.2385,"y":0.8904},{"x":0.2525,"y":0.614},{"x":0.2961,"y":0.3333},{"x":0.3594,"y":0.2204},{"x":0.4046,"y":0.0647}]	198	2020-04-18 20:36:57.165773	2020-04-21 13:54:23.394209	t
-53	[{"x":0.6423,"y":0.9627},{"x":0.653,"y":0.636},{"x":0.6752,"y":0.3498},{"x":0.6785,"y":0.0691}]	72	2020-04-18 20:36:57.24196	2020-04-21 13:54:42.252805	t
-58	[{"x":0.7459,"y":0.8476},{"x":0.7418,"y":0.534},{"x":0.7171,"y":0.4134},{"x":0.7459,"y":0.2763},{"x":0.7155,"y":0.2029}]	239	2020-04-18 20:36:57.438395	2020-04-21 13:57:10.082725	t
-64	[{"x":0.287,"y":0.8454},{"x":0.2969,"y":0.5614},{"x":0.3051,"y":0.3739},{"x":0.3742,"y":0.1239}]	98	2020-04-18 20:36:57.702249	2020-04-21 13:58:09.335409	t
-65	[{"x":0.403,"y":0.92},{"x":0.4095,"y":0.6908},{"x":0.4013,"y":0.1086},{"x":0.4063,"y":0.0581}]	73	2020-04-18 20:36:57.737684	2020-04-21 13:58:16.883117	t
-67	[{"x":0.4942,"y":0.9035},{"x":0.491,"y":0.6382},{"x":0.4893,"y":0.4079},{"x":0.5107,"y":0.1754}]	67	2020-04-18 20:36:57.823657	2020-04-21 13:58:30.694166	t
-70	[{"x":0.6554,"y":0.8136},{"x":0.6316,"y":0.4923},{"x":0.6135,"y":0.284},{"x":0.5905,"y":0.1042}]	28	2020-04-18 20:36:57.949455	2020-04-21 13:59:07.983045	t
-72	[{"x":0.6809,"y":0.8462},{"x":0.6305,"y":0.5641},{"x":0.6053,"y":0.3914},{"x":0.5735,"y":0.2253}]	115	2020-04-18 20:36:58.032896	2020-04-21 13:59:21.053191	t
-78	[{"x":0.5345,"y":0.9518},{"x":0.5058,"y":0.568},{"x":0.4589,"y":0.2796},{"x":0.4498,"y":0.0154}]	116	2020-04-18 20:36:58.267143	2020-04-21 14:07:20.936282	t
-81	[{"x":0.1897,"y":0.8865},{"x":0.2193,"y":0.5765},{"x":0.2719,"y":0.4063},{"x":0.3531,"y":0.2023}]	117	2020-04-18 20:36:58.382356	2020-04-21 14:07:44.578106	t
-86	[{"x":0.426,"y":0.9682},{"x":0.4054,"y":0.6458},{"x":0.4786,"y":0.4221},{"x":0.5329,"y":0.2357},{"x":0.5584,"y":0.0592}]	112	2020-04-18 20:36:58.589598	2020-04-21 14:08:26.92738	t
-90	[{"x":0.4811,"y":0.8805},{"x":0.491,"y":0.6305},{"x":0.5493,"y":0.2675}]	110	2020-04-18 20:36:58.761552	2020-04-21 14:09:04.451284	t
-93	[{"x":0.0748,"y":0.9178},{"x":0.0863,"y":0.7237},{"x":0.1299,"y":0.5493},{"x":0.2122,"y":0.2719},{"x":0.2113,"y":0.182}]	111	2020-04-18 20:36:58.889003	2020-04-21 14:09:24.585363	t
-96	[{"x":0.6785,"y":0.8871},{"x":0.6949,"y":0.6239},{"x":0.662,"y":0.4452},{"x":0.6094,"y":0.3366},{"x":0.5543,"y":0.1316}]	21	2020-04-18 20:36:59.010758	2020-04-21 14:10:09.307452	t
-102	[{"x":0.0702,"y":0.6867},{"x":0.1151,"y":0.5156},{"x":0.159,"y":0.4202},{"x":0.2478,"y":0.2673},{"x":0.2763,"y":0.2549}]	135	2020-04-18 20:36:59.257692	2020-04-21 14:11:02.064592	t
-103	[{"x":0.5471,"y":0.8544},{"x":0.5296,"y":0.6176},{"x":0.5011,"y":0.4753},{"x":0.5493,"y":0.148}]	121	2020-04-18 20:36:59.295566	2020-04-21 14:11:07.912406	t
-106	[{"x":0.3799,"y":0.8827},{"x":0.3956,"y":0.534},{"x":0.3873,"y":0.3048},{"x":0.4137,"y":0.1765}]	36	2020-04-18 20:36:59.424191	2020-04-21 14:11:28.731251	t
-109	[{"x":0.4235,"y":0.8454},{"x":0.4416,"y":0.5022},{"x":0.4408,"y":0.2697},{"x":0.4745,"y":0.0526}]	123	2020-04-18 20:36:59.583821	2020-04-21 14:12:05.382211	t
-111	[{"x":0.4046,"y":0.8076},{"x":0.2522,"y":0.4293},{"x":0.2599,"y":0.273},{"x":0.3257,"y":0.1661}]	240	2020-04-18 20:36:59.668278	2020-04-21 14:13:50.688338	t
-119	[{"x":0.2952,"y":0.9507},{"x":0.2722,"y":0.7259},{"x":0.4211,"y":0.5066},{"x":0.4186,"y":0.2895},{"x":0.3964,"y":0.1941},{"x":0.3339,"y":0.0241}]	245	2020-04-18 20:36:59.981833	2020-04-21 14:15:00.359853	t
-122	[{"x":0.8174,"y":0.8925},{"x":0.8092,"y":0.648},{"x":0.7278,"y":0.545},{"x":0.7015,"y":0.3816},{"x":0.6891,"y":0.1886},{"x":0.6801,"y":0.1086}]	32	2020-04-18 20:37:00.094688	2020-04-21 14:15:26.89932	t
-124	[{"x":0.5345,"y":0.9079},{"x":0.5419,"y":0.602},{"x":0.5724,"y":0.4507},{"x":0.6209,"y":0.2007}]	30	2020-04-18 20:37:00.175966	2020-04-21 14:15:39.112112	t
-3	[{"x":0.7451,"y":0.8531},{"x":0.7064,"y":0.625},{"x":0.7344,"y":0.4737},{"x":0.7311,"y":0.3805},{"x":0.7229,"y":0.3355}]	189	2020-04-18 20:36:55.332313	2020-04-21 13:35:23.860365	t
-132	[{"x":0.259,"y":0.7873},{"x":0.2706,"y":0.5493},{"x":0.264,"y":0.3015},{"x":0.2887,"y":0.1875}]	25	2020-04-18 20:37:00.470415	2020-04-21 14:16:54.233764	t
-5	[{"x":0.5584,"y":0.9254},{"x":0.5699,"y":0.5504},{"x":0.5905,"y":0.3191},{"x":0.5707,"y":0.0515}]	162	2020-04-18 20:36:55.415765	2020-04-21 13:37:51.669785	t
-136	[{"x":0.5584,"y":0.8443},{"x":0.5082,"y":0.5252},{"x":0.4581,"y":0.2884},{"x":0.4515,"y":0.0603}]	56	2020-04-18 20:37:00.616095	2020-04-21 14:17:31.761511	t
-138	[{"x":0.4465,"y":0.9627},{"x":0.4655,"y":0.6009},{"x":0.4951,"y":0.3805},{"x":0.5099,"y":0.2511},{"x":0.537,"y":0.102}]	194	2020-04-18 20:37:00.681426	2020-04-21 14:17:55.803696	t
-7	[{"x":0.5469,"y":0.9342},{"x":0.5107,"y":0.5888},{"x":0.4794,"y":0.3695},{"x":0.44,"y":0.0987}]	88	2020-04-18 20:36:55.537502	2020-04-21 13:38:18.631501	t
+441	\N	133	2020-09-03 20:45:07.590769	2020-09-03 20:47:01.333408	t
+442	\N	86	2020-09-03 20:45:13.195164	2020-09-03 20:47:09.900825	t
+443	\N	24	2020-09-03 20:45:13.29638	2020-09-03 20:47:10.004318	t
+444	\N	237	2020-09-03 20:45:13.39879	2020-09-03 20:47:10.402884	t
+445	\N	221	2020-09-03 20:45:13.513872	2020-09-03 20:47:10.491293	t
+446	\N	201	2020-09-03 20:45:13.638024	2020-09-03 20:47:10.984866	t
+447	\N	202	2020-09-03 20:45:14.008603	2020-09-03 20:47:11.205575	t
 91	[{"x":0.1195,"y":0.7212},{"x":0.0998,"y":0.5206},{"x":0.1107,"y":0.3257},{"x":0.1612,"y":0.2155}]	138	2020-04-18 20:36:58.806167	2020-07-05 19:48:04.184823	f
 113	[{"x":0.2393,"y":0.8684},{"x":0.25,"y":0.466},{"x":0.2796,"y":0.2862},{"x":0.3405,"y":0.1393}]	136	2020-04-18 20:36:59.740272	2020-07-05 19:48:04.188926	f
 56	[{"x":0.4161,"y":0.9156},{"x":0.4449,"y":0.682},{"x":0.5107,"y":0.3202},{"x":0.5781,"y":0.0658},{"x":0.5995,"y":0.0066}]	211	2020-04-18 20:36:57.358564	2020-07-05 19:48:04.244806	f
 27	[{"x":0.176,"y":0.739},{"x":0.1801,"y":0.4605},{"x":0.19,"y":0.318},{"x":0.2525,"y":0.0691}]	216	2020-04-18 20:36:56.219626	2020-07-05 19:48:04.255106	f
-141	[{"x":0.5748,"y":0.9145},{"x":0.5485,"y":0.4726},{"x":0.5617,"y":0.2719},{"x":0.5304,"y":0.0548}]	143	2020-04-18 20:37:00.793299	2020-04-21 14:18:18.074817	t
-151	[{"x":0.3791,"y":0.9024},{"x":0.398,"y":0.5647},{"x":0.4137,"y":0.2072},{"x":0.4334,"y":0.1711},{"x":0.5197,"y":0.1491}]	94	2020-04-18 20:37:01.170633	2020-04-21 14:20:08.23647	t
-153	[{"x":0.6908,"y":0.8224},{"x":0.6702,"y":0.5515},{"x":0.6719,"y":0.4254},{"x":0.6168,"y":0.2796},{"x":0.5617,"y":0.1382}]	181	2020-04-18 20:37:01.243795	2020-04-21 14:20:23.751017	t
-156	[{"x":0.6012,"y":0.83},{"x":0.5913,"y":0.58},{"x":0.5724,"y":0.3487},{"x":0.574,"y":0.2632}]	43	2020-04-18 20:37:01.362609	2020-04-21 14:20:45.906389	t
-158	[{"x":0.6143,"y":0.8816},{"x":0.5938,"y":0.4704},{"x":0.5896,"y":0.2708},{"x":0.5502,"y":0.0877}]	41	2020-04-18 20:37:01.442855	2020-04-21 14:21:10.477079	t
-160	[{"x":0.4161,"y":0.9331},{"x":0.4021,"y":0.5702},{"x":0.361,"y":0.3684},{"x":0.3462,"y":0.1711},{"x":0.3536,"y":0.0932}]	197	2020-04-18 20:37:01.521857	2020-04-21 14:21:27.404796	t
-15	[{"x":0.3035,"y":0.9518},{"x":0.2985,"y":0.6809},{"x":0.2969,"y":0.4989},{"x":0.2911,"y":0.4068},{"x":0.2656,"y":0.1864}]	89	2020-04-18 20:36:55.80428	2020-04-21 13:40:50.080939	t
-162	[{"x":0.648,"y":0.9885},{"x":0.5307,"y":0.5683},{"x":0.4901,"y":0.3956},{"x":0.4814,"y":0.1168}]	96	2020-04-18 20:37:01.58881	2020-04-21 14:21:51.610035	t
-165	[{"x":0.8158,"y":0.9419},{"x":0.8215,"y":0.614},{"x":0.7697,"y":0.5022},{"x":0.7278,"y":0.2961}]	154	2020-04-18 20:37:01.717044	2020-04-21 14:22:12.776146	t
-17	[{"x":0.5115,"y":0.932},{"x":0.5,"y":0.5998},{"x":0.4901,"y":0.3991},{"x":0.5313,"y":0.0428}]	188	2020-04-18 20:36:55.868135	2020-04-21 13:41:12.446243	t
-18	[{"x":0.5011,"y":0.8618},{"x":0.5208,"y":0.6094},{"x":0.5406,"y":0.3898},{"x":0.5,"y":0.1875}]	62	2020-04-18 20:36:55.907439	2020-04-21 13:41:40.533038	t
-173	[{"x":0.19,"y":0.9079},{"x":0.2179,"y":0.5877},{"x":0.241,"y":0.398},{"x":0.3191,"y":0.1864},{"x":0.4071,"y":0.1053}]	83	2020-04-18 20:37:02.053489	2020-04-21 14:24:12.165629	t
-177	[{"x":0.097,"y":0.6228},{"x":0.1003,"y":0.5768},{"x":0.1094,"y":0.4134},{"x":0.153,"y":0.2061}]	196	2020-04-18 20:37:02.203214	2020-04-21 14:24:58.328323	t
-20	[{"x":0.9375,"y":0.8772},{"x":0.9202,"y":0.6283},{"x":0.9104,"y":0.4167},{"x":0.8602,"y":0.1129}]	60	2020-04-18 20:36:55.965327	2020-04-21 13:41:59.934637	t
-178	[{"x":0.7917,"y":0.8396},{"x":0.7357,"y":0.5173},{"x":0.6382,"y":0.3882},{"x":0.6239,"y":0.2434}]	54	2020-04-18 20:37:02.240658	2020-04-21 14:25:19.176772	t
-181	[{"x":0.7393,"y":0.818},{"x":0.7229,"y":0.5186},{"x":0.7015,"y":0.3081},{"x":0.6414,"y":0.0241}]	186	2020-04-18 20:37:02.357726	2020-04-21 14:25:39.811476	t
-183	[{"x":0.4397,"y":0.9071},{"x":0.4287,"y":0.5411},{"x":0.4079,"y":0.4021},{"x":0.4364,"y":0.2747}]	50	2020-04-18 20:37:02.43824	2020-04-21 14:25:56.306132	t
-188	[{"x":0.5625,"y":0.8528},{"x":0.5395,"y":0.4868},{"x":0.5384,"y":0.3051},{"x":0.5318,"y":0.0831}]	87	2020-04-18 20:37:02.634556	2020-04-21 14:26:42.837949	t
-194	[{"x":0.4079,"y":0.9638},{"x":0.4359,"y":0.5274},{"x":0.5033,"y":0.3004},{"x":0.5337,"y":0.1327},{"x":0.5247,"y":0.0395}]	86	2020-04-18 20:37:02.863059	2020-04-21 14:27:52.029331	t
-197	[{"x":0.2928,"y":0.8421},{"x":0.3067,"y":0.5482},{"x":0.3799,"y":0.3958},{"x":0.3882,"y":0.2862},{"x":0.384,"y":0.2083},{"x":0.3775,"y":0.1228}]	144	2020-04-18 20:37:02.996215	2020-04-21 14:28:25.041611	t
-199	[{"x":0.5559,"y":0.9923},{"x":0.5773,"y":0.5669},{"x":0.5913,"y":0.3213},{"x":0.6324,"y":0.1009}]	3	2020-04-18 20:37:03.096536	2020-04-21 14:28:48.1651	t
-202	[{"x":0.5444,"y":0.8586},{"x":0.5263,"y":0.5987},{"x":0.5115,"y":0.3059},{"x":0.4548,"y":0.0789}]	193	2020-04-18 20:37:03.240685	2020-04-21 14:29:09.165992	t
-205	[{"x":0.5263,"y":0.8695},{"x":0.5296,"y":0.5691},{"x":0.5304,"y":0.3794},{"x":0.5699,"y":0.216}]	47	2020-04-18 20:37:03.3901	2020-04-21 14:29:29.618748	t
-210	[{"x":0.6176,"y":0.8936},{"x":0.5954,"y":0.5789},{"x":0.6209,"y":0.4112},{"x":0.5814,"y":0.2007}]	90	2020-04-18 20:37:03.70411	2020-04-21 14:30:54.515781	t
-212	[{"x":0.443,"y":0.8725},{"x":0.4715,"y":0.5658},{"x":0.5022,"y":0.4688},{"x":0.5954,"y":0.3495},{"x":0.6272,"y":0.2689},{"x":0.5768,"y":0.2286}]	224	2020-04-18 20:37:03.793979	2020-04-21 14:31:20.75183	t
-217	[{"x":0.5181,"y":0.7873},{"x":0.528,"y":0.5154},{"x":0.551,"y":0.33},{"x":0.5214,"y":0.1634}]	91	2020-04-18 20:37:04.016163	2020-04-21 14:32:18.099099	t
-221	[{"x":0.364,"y":0.8396},{"x":0.341,"y":0.5107},{"x":0.3618,"y":0.338},{"x":0.4342,"y":0.1719}]	52	2020-04-18 20:37:04.229757	2020-04-21 14:32:52.633474	t
-223	[{"x":0.3109,"y":0.9134},{"x":0.2648,"y":0.5625},{"x":0.2599,"y":0.3586},{"x":0.2459,"y":0.1831}]	190	2020-04-18 20:37:04.316844	2020-04-21 14:33:15.704427	t
-31	[{"x":0.5329,"y":0.9408},{"x":0.4298,"y":0.5995},{"x":0.3531,"y":0.44},{"x":0.3311,"y":0.2969},{"x":0.3607,"y":0.1867},{"x":0.4375,"y":0.0946},{"x":0.4912,"y":0.0724}]	148	2020-04-18 20:36:56.364656	2020-04-21 13:44:21.09593	t
-34	[{"x":0.5189,"y":0.943},{"x":0.4597,"y":0.6217},{"x":0.3512,"y":0.3882},{"x":0.2294,"y":0.0592}]	75	2020-04-18 20:36:56.477018	2020-04-21 13:44:45.791506	t
-36	[{"x":0.6678,"y":0.7675},{"x":0.662,"y":0.5658},{"x":0.6291,"y":0.3893},{"x":0.69,"y":0.2478},{"x":0.69,"y":0.0779}]	71	2020-04-18 20:36:56.548958	2020-04-21 13:45:06.832291	t
-41	[{"x":0.7064,"y":0.7752},{"x":0.6793,"y":0.5866},{"x":0.6817,"y":0.2675},{"x":0.6579,"y":0.0833}]	206	2020-04-18 20:36:56.762915	2020-04-21 13:46:03.259615	t
+6	[{"x":0.4178,"y":0.9134},{"x":0.3906,"y":0.7149},{"x":0.3577,"y":0.5219},{"x":0.3923,"y":0.3443}]	176	2020-04-18 20:36:55.470758	2020-04-21 13:38:05.098216	f
+448	\N	222	2020-09-03 20:45:14.14531	2020-09-03 20:47:12.043153	t
+449	\N	236	2020-09-03 20:45:14.290367	2020-09-03 20:47:12.155868	t
+450	\N	23	2020-09-03 20:45:14.444203	2020-09-03 20:47:12.309051	t
+451	\N	89	2020-09-03 20:45:14.587615	2020-09-03 20:47:12.495458	t
+452	\N	205	2020-09-03 20:45:14.702762	2020-09-03 20:47:12.652357	t
+453	\N	19	2020-09-03 20:45:15.022446	2020-09-03 20:47:12.815235	t
+454	\N	43	2020-09-03 20:45:15.13407	2020-09-03 20:47:13.30507	t
+455	\N	218	2020-09-03 20:45:15.247934	2020-09-03 20:47:13.541667	t
+456	\N	126	2020-09-03 20:45:15.401371	2020-09-03 20:47:13.747802	t
+457	\N	38	2020-09-03 20:45:15.514203	2020-09-03 20:47:13.890939	t
+458	\N	94	2020-09-03 20:45:15.607977	2020-09-03 20:47:14.534566	t
+335	\N	118	2020-09-03 20:43:18.951922	2020-09-03 20:46:53.894926	t
+336	\N	36	2020-09-03 20:43:19.101768	2020-09-03 20:46:54.013125	t
+337	\N	167	2020-09-03 20:43:19.240292	2020-09-03 20:46:54.144526	t
+340	\N	160	2020-09-03 20:43:19.627973	2020-09-03 20:46:54.575035	t
+344	\N	164	2020-09-03 20:43:20.31303	2020-09-03 20:46:55.238792	t
+346	\N	83	2020-09-03 20:43:20.568496	2020-09-03 20:46:55.674554	t
+349	\N	184	2020-09-03 20:43:21.114301	2020-09-03 20:46:56.141957	t
+352	\N	120	2020-09-03 20:43:21.379969	2020-09-03 20:46:56.467498	t
+354	\N	47	2020-09-03 20:43:21.743311	2020-09-03 20:46:56.897958	t
+355	\N	61	2020-09-03 20:43:21.869664	2020-09-03 20:46:57.015987	t
+357	\N	93	2020-09-03 20:43:22.085541	2020-09-03 20:46:57.299854	t
+359	\N	182	2020-09-03 20:43:22.532018	2020-09-03 20:46:57.567494	t
+360	\N	101	2020-09-03 20:43:22.635688	2020-09-03 20:46:57.821266	t
+361	\N	80	2020-09-03 20:43:22.739605	2020-09-03 20:46:57.965758	t
+364	\N	232	2020-09-03 20:43:23.037111	2020-09-03 20:46:58.381011	t
+365	\N	170	2020-09-03 20:43:23.236699	2020-09-03 20:46:58.490179	t
+368	\N	129	2020-09-03 20:43:23.608932	2020-09-03 20:46:59.07591	t
+370	\N	48	2020-09-03 20:43:23.833831	2020-09-03 20:46:59.363715	t
+371	\N	14	2020-09-03 20:43:24.021995	2020-09-03 20:46:59.512202	t
+372	\N	104	2020-09-03 20:43:24.205189	2020-09-03 20:46:59.687867	t
+375	\N	88	2020-09-03 20:43:24.598253	2020-09-03 20:47:00.264896	t
+376	\N	30	2020-09-03 20:43:24.715427	2020-09-03 20:47:00.372735	t
+377	\N	66	2020-09-03 20:43:24.916022	2020-09-03 20:47:00.511144	t
+379	\N	102	2020-09-03 20:43:25.196881	2020-09-03 20:47:00.902557	t
+380	\N	223	2020-09-03 20:43:25.309849	2020-09-03 20:47:01.084161	t
+381	\N	142	2020-09-03 20:43:25.394459	2020-09-03 20:47:01.245016	t
+386	\N	190	2020-09-03 20:43:26.175029	2020-09-03 20:47:02.044287	t
+389	\N	185	2020-09-03 20:43:26.719561	2020-09-03 20:47:02.467967	t
+392	\N	74	2020-09-03 20:43:27.084976	2020-09-03 20:47:02.944046	t
+394	\N	145	2020-09-03 20:43:27.330896	2020-09-03 20:47:03.189632	t
+396	\N	9	2020-09-03 20:43:27.823918	2020-09-03 20:47:03.688696	t
+397	\N	122	2020-09-03 20:43:27.927183	2020-09-03 20:47:03.808955	t
+399	\N	189	2020-09-03 20:43:28.146374	2020-09-03 20:47:04.01804	t
 172	[{"x":0.5765,"y":0.9671},{"x":0.5518,"y":0.5614},{"x":0.5411,"y":0.3662},{"x":0.5115,"y":0.1173}]	155	2020-04-18 20:37:02.015801	2020-07-05 19:48:04.192297	f
 29	[{"x":0.5995,"y":0.9759},{"x":0.6012,"y":0.6272},{"x":0.6127,"y":0.477},{"x":0.5913,"y":0.3235},{"x":0.5313,"y":0.1798},{"x":0.5148,"y":0.0713}]	160	2020-04-18 20:36:56.293222	2020-07-05 19:48:04.203956	f
 185	[{"x":0.4827,"y":0.9145},{"x":0.4803,"y":0.5987},{"x":0.472,"y":0.398},{"x":0.4926,"y":0.2292},{"x":0.4712,"y":0.0932}]	151	2020-04-18 20:37:02.527586	2020-07-05 19:48:04.220702	f
@@ -1737,131 +2215,119 @@ COPY public.topos (id, line, problem_id, created_at, updated_at, published) FROM
 26	[{"x":0.3692,"y":0.7664},{"x":0.3495,"y":0.5395},{"x":0.315,"y":0.2851},{"x":0.3092,"y":0.1612},{"x":0.3224,"y":0.0998}]	217	2020-04-18 20:36:56.179514	2020-07-05 19:48:04.253773	f
 12	[{"x":0.5214,"y":0.8575},{"x":0.5016,"y":0.523},{"x":0.4984,"y":0.42},{"x":0.4934,"y":0.2752},{"x":0.514,"y":0.1765}]	215	2020-04-18 20:36:55.708032	2020-07-05 19:48:04.256694	f
 9	[{"x":0.2048,"y":0.9364},{"x":0.2122,"y":0.557},{"x":0.1719,"y":0.3849},{"x":0.1102,"y":0.2237},{"x":0.1209,"y":0.1173},{"x":0.1176,"y":0.0691},{"x":0.0921,"y":0.0307}]	214	2020-04-18 20:36:55.602905	2020-07-05 19:48:04.25843	f
-47	[{"x":0.3158,"y":0.7807},{"x":0.3026,"y":0.4178},{"x":0.287,"y":0.2807},{"x":0.2993,"y":0.2083},{"x":0.3174,"y":0.1513}]	171	2020-04-18 20:36:57.006742	2020-04-21 13:46:56.983921	t
-50	[{"x":0.5,"y":0.8742},{"x":0.4814,"y":0.6217},{"x":0.341,"y":0.4992},{"x":0.3026,"y":0.4079},{"x":0.3509,"y":0.259},{"x":0.4715,"y":0.1875}]	8	2020-04-18 20:36:57.13078	2020-04-21 13:54:15.891098	t
-52	[{"x":0.6886,"y":0.9367},{"x":0.682,"y":0.5888},{"x":0.6195,"y":0.3964},{"x":0.6305,"y":0.2278},{"x":0.6612,"y":0.0773}]	66	2020-04-18 20:36:57.208816	2020-04-21 13:54:34.290804	t
-54	[{"x":0.2738,"y":0.852},{"x":0.2837,"y":0.6195},{"x":0.3002,"y":0.5088},{"x":0.4202,"y":0.5296},{"x":0.6497,"y":0.5395},{"x":0.7286,"y":0.4397},{"x":0.7401,"y":0.2325},{"x":0.7146,"y":0.1721}]	99	2020-04-18 20:36:57.278584	2020-04-21 13:54:59.756131	t
-59	[{"x":0.5633,"y":0.9496},{"x":0.5592,"y":0.5373},{"x":0.435,"y":0.3805},{"x":0.3742,"y":0.2401},{"x":0.3479,"y":0.0954},{"x":0.3372,"y":0.0318}]	238	2020-04-18 20:36:57.477727	2020-04-21 13:57:21.293261	t
-62	[{"x":0.6201,"y":0.8366},{"x":0.6143,"y":0.5779},{"x":0.616,"y":0.4792},{"x":0.6612,"y":0.2796},{"x":0.6554,"y":0.2138},{"x":0.625,"y":0.1952}]	172	2020-04-18 20:36:57.608789	2020-04-21 13:57:53.901354	t
-63	[{"x":0.4523,"y":0.9737},{"x":0.4433,"y":0.6086},{"x":0.4169,"y":0.4189},{"x":0.4178,"y":0.261},{"x":0.4934,"y":0.1075},{"x":0.5016,"y":0.0471}]	166	2020-04-18 20:36:57.645884	2020-04-21 13:58:02.516215	t
-66	[{"x":0.4613,"y":0.9342},{"x":0.4507,"y":0.6184},{"x":0.412,"y":0.4221},{"x":0.4194,"y":0.261},{"x":0.3775,"y":0.0669}]	199	2020-04-18 20:36:57.776354	2020-04-21 13:58:24.888369	t
-68	[{"x":0.4104,"y":0.9013},{"x":0.4219,"y":0.5592},{"x":0.44,"y":0.3344},{"x":0.4901,"y":0.0757}]	9	2020-04-18 20:36:57.869007	2020-04-21 13:58:49.147925	t
-69	[{"x":0.5439,"y":0.9375},{"x":0.5428,"y":0.56},{"x":0.443,"y":0.4581},{"x":0.3882,"y":0.3396},{"x":0.3925,"y":0.3076}]	14	2020-04-18 20:36:57.917624	2020-04-21 13:59:00.438455	t
-74	[{"x":0.3651,"y":0.909},{"x":0.3405,"y":0.5395},{"x":0.2549,"y":0.3706},{"x":0.2656,"y":0.2533},{"x":0.3363,"y":0.1338},{"x":0.3947,"y":0.0384}]	100	2020-04-18 20:36:58.1157	2020-04-21 13:59:37.918714	t
-76	[{"x":0.0781,"y":0.7873},{"x":0.1086,"y":0.5658},{"x":0.1579,"y":0.4397},{"x":0.2549,"y":0.3991},{"x":0.4301,"y":0.4035},{"x":0.6776,"y":0.3618},{"x":0.8487,"y":0.3333},{"x":0.8429,"y":0.2083}]	29	2020-04-18 20:36:58.189541	2020-04-21 13:59:56.095516	t
-79	[{"x":0.7681,"y":0.841},{"x":0.7887,"y":0.6678},{"x":0.8191,"y":0.568},{"x":0.8125,"y":0.5175},{"x":0.7418,"y":0.3421}]	102	2020-04-18 20:36:58.312885	2020-04-21 14:07:29.523718	t
-80	[{"x":0.7664,"y":0.9079},{"x":0.7459,"y":0.5548},{"x":0.6801,"y":0.2654},{"x":0.5715,"y":0.0307}]	103	2020-04-18 20:36:58.3403	2020-04-21 14:07:37.450912	t
-82	[{"x":0.0428,"y":0.5658},{"x":0.1217,"y":0.477},{"x":0.2286,"y":0.4868}]	16	2020-04-18 20:36:58.429653	2020-04-21 14:07:57.310638	t
-84	[{"x":0.5181,"y":0.8509},{"x":0.4901,"y":0.5395},{"x":0.4786,"y":0.4101},{"x":0.5296,"y":0.2522},{"x":0.5995,"y":0.1228}]	107	2020-04-18 20:36:58.512773	2020-04-21 14:08:12.238051	t
-85	[{"x":0.4967,"y":0.8465},{"x":0.5107,"y":0.5493},{"x":0.5419,"y":0.3914},{"x":0.5074,"y":0.1875},{"x":0.4778,"y":0.1239}]	106	2020-04-18 20:36:58.546359	2020-04-21 14:08:18.648392	t
-88	[{"x":0.8141,"y":0.932},{"x":0.7393,"y":0.6393},{"x":0.5526,"y":0.5022},{"x":0.3799,"y":0.3268},{"x":0.2977,"y":0.1502}]	11	2020-04-18 20:36:58.676284	2020-04-21 14:08:49.87644	t
-94	[{"x":0.4572,"y":0.9605},{"x":0.4781,"y":0.7393},{"x":0.5614,"y":0.4786},{"x":0.5691,"y":0.2368},{"x":0.4934,"y":0.1447}]	105	2020-04-18 20:36:58.933692	2020-04-21 14:09:31.670298	t
-95	[{"x":0.6118,"y":0.9452},{"x":0.6044,"y":0.6064},{"x":0.611,"y":0.3717},{"x":0.5806,"y":0.1261}]	38	2020-04-18 20:36:58.969379	2020-04-21 14:09:37.15947	t
-97	[{"x":0.4792,"y":0.9326},{"x":0.4605,"y":0.5518},{"x":0.477,"y":0.3166},{"x":0.4298,"y":0.0946}]	108	2020-04-18 20:36:59.048247	2020-04-21 14:10:15.547684	t
-100	[{"x":0.7771,"y":0.6787},{"x":0.7804,"y":0.4923},{"x":0.8281,"y":0.2467},{"x":0.838,"y":0.1656},{"x":0.8059,"y":0.1151}]	242	2020-04-18 20:36:59.180781	2020-04-21 14:10:46.673199	t
-101	[{"x":0.4523,"y":0.9836},{"x":0.4729,"y":0.83},{"x":0.5633,"y":0.5757},{"x":0.5781,"y":0.364},{"x":0.5691,"y":0.1908},{"x":0.5337,"y":0.0373}]	243	2020-04-18 20:36:59.221288	2020-04-21 14:10:54.777981	t
-104	[{"x":0.3594,"y":0.9397},{"x":0.352,"y":0.6162},{"x":0.3257,"y":0.386},{"x":0.3257,"y":0.1985},{"x":0.3536,"y":0.1469}]	109	2020-04-18 20:36:59.337064	2020-04-21 14:11:15.910804	t
-105	[{"x":0.5658,"y":0.9232},{"x":0.5411,"y":0.6689},{"x":0.5206,"y":0.3991},{"x":0.4803,"y":0.0581}]	20	2020-04-18 20:36:59.377541	2020-04-21 14:11:22.297359	t
-176	[{"x":0.5632,"y":0.1807},{"x":0.4645,"y":0.1842},{"x":0.4303,"y":0.486},{"x":0.2605,"y":0.5193},{"x":0.0039,"y":0.4702}]	68	2020-04-18 20:37:02.167926	2020-04-18 21:00:40.317518	t
-108	[{"x":0.6472,"y":0.7873},{"x":0.6645,"y":0.4441},{"x":0.6612,"y":0.3465},{"x":0.6316,"y":0.2544},{"x":0.5946,"y":0.1579}]	137	2020-04-18 20:36:59.511006	2020-04-21 14:11:59.803475	t
-110	[{"x":0.4079,"y":0.8109},{"x":0.2982,"y":0.4613},{"x":0.1316,"y":0.3692},{"x":0.1612,"y":0.3191},{"x":0.2171,"y":0.2607}]	241	2020-04-18 20:36:59.62738	2020-04-21 14:13:30.484403	t
-114	[{"x":0.3026,"y":0.9452},{"x":0.3018,"y":0.6075},{"x":0.2813,"y":0.3958},{"x":0.3224,"y":0.1502}]	23	2020-04-18 20:36:59.778806	2020-04-21 14:14:11.228392	t
-115	[{"x":0.4688,"y":0.9781},{"x":0.4581,"y":0.6195},{"x":0.5625,"y":0.4682},{"x":0.6028,"y":0.3015},{"x":0.5822,"y":0.17},{"x":0.5576,"y":0.0526}]	37	2020-04-18 20:36:59.827503	2020-04-21 14:14:21.075759	t
-117	[{"x":0.4161,"y":0.9178},{"x":0.384,"y":0.6601},{"x":0.3544,"y":0.3947},{"x":0.3495,"y":0.1908}]	126	2020-04-18 20:36:59.899503	2020-04-21 14:14:32.068886	t
-118	[{"x":0.6787,"y":0.8857},{"x":0.5757,"y":0.5115},{"x":0.3564,"y":0.4169},{"x":0.2599,"y":0.2796},{"x":0.2566,"y":0.1842},{"x":0.3059,"y":0.1538},{"x":0.3673,"y":0.1398}]	244	2020-04-18 20:36:59.937785	2020-04-21 14:14:52.284167	t
-120	[{"x":0.3117,"y":0.92},{"x":0.3306,"y":0.6009},{"x":0.3791,"y":0.3651},{"x":0.3931,"y":0.1732},{"x":0.3931,"y":0.0998}]	127	2020-04-18 20:37:00.023369	2020-04-21 14:15:07.080822	t
-121	[{"x":0.477,"y":0.8838},{"x":0.4975,"y":0.5252},{"x":0.5222,"y":0.3015},{"x":0.5123,"y":0.1842},{"x":0.4046,"y":0.1425},{"x":0.3939,"y":0.1118},{"x":0.4219,"y":0.0855}]	133	2020-04-18 20:37:00.059559	2020-04-21 14:15:17.253113	t
-123	[{"x":0.3429,"y":0.8607},{"x":0.3602,"y":0.6283},{"x":0.3923,"y":0.4463},{"x":0.4235,"y":0.1513}]	24	2020-04-18 20:37:00.141466	2020-04-21 14:15:33.05313	t
-125	[{"x":0.7577,"y":0.8306},{"x":0.6996,"y":0.509},{"x":0.6732,"y":0.3512},{"x":0.6107,"y":0.1571}]	125	2020-04-18 20:37:00.214023	2020-04-21 14:15:46.721659	t
-126	[{"x":0.7336,"y":0.8717},{"x":0.7508,"y":0.5976},{"x":0.7944,"y":0.4002},{"x":0.7821,"y":0.3081},{"x":0.7467,"y":0.1952}]	131	2020-04-18 20:37:00.242728	2020-04-21 14:15:54.966413	t
+141	[{"x":0.5748,"y":0.9145},{"x":0.5485,"y":0.4726},{"x":0.5617,"y":0.2719},{"x":0.5304,"y":0.0548}]	143	2020-04-18 20:37:00.793299	2020-04-21 14:18:18.074817	f
+334	\N	7	2020-09-03 20:43:18.548004	2020-09-03 20:46:53.599428	t
+400	\N	10	2020-09-03 20:43:28.255468	2020-09-03 20:47:04.128589	t
+401	\N	114	2020-09-03 20:43:28.448959	2020-09-03 20:47:04.275689	t
+402	\N	76	2020-09-03 20:43:28.703133	2020-09-03 20:47:04.512738	t
+338	\N	183	2020-09-03 20:43:19.370627	2020-09-03 20:46:54.25162	t
+339	\N	100	2020-09-03 20:43:19.476015	2020-09-03 20:46:54.419156	t
+404	\N	146	2020-09-03 20:43:28.905181	2020-09-03 20:47:04.820608	t
+341	\N	82	2020-09-03 20:43:19.88968	2020-09-03 20:46:54.851872	t
+342	\N	165	2020-09-03 20:43:20.035905	2020-09-03 20:46:54.998818	t
+343	\N	12	2020-09-03 20:43:20.186461	2020-09-03 20:46:55.112926	t
+406	\N	191	2020-09-03 20:43:29.102152	2020-09-03 20:47:05.07683	t
+345	\N	11	2020-09-03 20:43:20.418341	2020-09-03 20:46:55.444237	t
+333	\N	115	2020-09-03 20:43:18.426828	2020-09-03 20:46:53.324721	t
+347	\N	159	2020-09-03 20:43:20.856688	2020-09-03 20:46:55.939272	t
+348	\N	99	2020-09-03 20:43:20.999853	2020-09-03 20:46:56.049404	t
+350	\N	78	2020-09-03 20:43:21.193527	2020-09-03 20:46:56.232679	t
+351	\N	117	2020-09-03 20:43:21.278169	2020-09-03 20:46:56.331384	t
+353	\N	166	2020-09-03 20:43:21.636651	2020-09-03 20:46:56.731988	t
+356	\N	15	2020-09-03 20:43:21.979379	2020-09-03 20:46:57.144416	t
+358	\N	137	2020-09-03 20:43:22.200856	2020-09-03 20:46:57.434445	t
+362	\N	65	2020-09-03 20:43:22.818346	2020-09-03 20:46:58.07756	t
+363	\N	27	2020-09-03 20:43:22.909369	2020-09-03 20:46:58.259127	t
+366	\N	139	2020-09-03 20:43:23.413173	2020-09-03 20:46:58.602423	t
+367	\N	98	2020-09-03 20:43:23.511853	2020-09-03 20:46:58.72607	t
+369	\N	31	2020-09-03 20:43:23.719149	2020-09-03 20:46:59.245887	t
+373	\N	58	2020-09-03 20:43:24.357977	2020-09-03 20:46:59.873685	t
+374	\N	196	2020-09-03 20:43:24.492434	2020-09-03 20:47:00.130901	t
+378	\N	231	2020-09-03 20:43:25.090944	2020-09-03 20:47:00.658619	t
+382	\N	203	2020-09-03 20:43:25.5381	2020-09-03 20:47:01.447794	t
+383	\N	198	2020-09-03 20:43:25.833561	2020-09-03 20:47:01.605153	t
+384	\N	169	2020-09-03 20:43:25.935033	2020-09-03 20:47:01.836583	t
+385	\N	180	2020-09-03 20:43:26.048919	2020-09-03 20:47:01.935758	t
+387	\N	158	2020-09-03 20:43:26.290592	2020-09-03 20:47:02.178177	t
+388	\N	95	2020-09-03 20:43:26.400934	2020-09-03 20:47:02.292075	t
+390	\N	136	2020-09-03 20:43:26.831756	2020-09-03 20:47:02.633903	t
+391	\N	228	2020-09-03 20:43:26.959321	2020-09-03 20:47:02.803189	t
+393	\N	34	2020-09-03 20:43:27.205109	2020-09-03 20:47:03.056306	t
+395	\N	116	2020-09-03 20:43:27.602234	2020-09-03 20:47:03.447087	t
+398	\N	187	2020-09-03 20:43:28.045965	2020-09-03 20:47:03.925216	t
+403	\N	33	2020-09-03 20:43:28.804019	2020-09-03 20:47:04.689022	t
+405	\N	229	2020-09-03 20:43:29.002378	2020-09-03 20:47:04.924914	t
+407	\N	134	2020-09-03 20:43:29.191382	2020-09-03 20:47:05.216585	t
+463	\N	75	2020-09-03 20:47:11.263842	2020-09-03 20:47:11.323424	t
+464	\N	204	2020-09-03 20:47:11.394255	2020-09-03 20:47:11.446366	t
+465	\N	149	2020-09-03 20:47:11.515127	2020-09-03 20:47:11.595649	t
+466	\N	150	2020-09-03 20:47:11.679263	2020-09-03 20:47:11.838841	t
+467	\N	69	2020-09-03 20:47:12.356262	2020-09-03 20:47:12.401308	t
+468	\N	109	2020-09-03 20:47:12.887322	2020-09-03 20:47:12.957535	t
+469	\N	155	2020-09-03 20:47:13.029937	2020-09-03 20:47:13.086535	t
+470	\N	57	2020-09-03 20:47:13.1449	2020-09-03 20:47:13.202421	t
+471	\N	49	2020-09-03 20:47:13.592136	2020-09-03 20:47:13.648829	t
+408	\N	96	2020-09-03 20:43:29.496963	2020-09-03 20:47:05.337621	t
+409	\N	157	2020-09-03 20:43:29.610172	2020-09-03 20:47:05.65755	t
+410	\N	81	2020-09-03 20:43:29.696855	2020-09-03 20:47:05.758634	t
+411	\N	179	2020-09-03 20:43:29.801718	2020-09-03 20:47:05.858302	t
+412	\N	193	2020-09-03 20:43:29.884973	2020-09-03 20:47:05.954083	t
+413	\N	168	2020-09-03 20:43:29.985013	2020-09-03 20:47:06.039675	t
+414	\N	135	2020-09-03 20:43:30.083597	2020-09-03 20:47:06.145052	t
+415	\N	130	2020-09-03 20:43:30.370288	2020-09-03 20:47:06.291364	t
+416	\N	141	2020-09-03 20:43:30.500046	2020-09-03 20:47:06.623007	t
+417	\N	224	2020-09-03 20:43:30.656251	2020-09-03 20:47:06.766149	t
+418	\N	230	2020-09-03 20:43:30.803272	2020-09-03 20:47:06.874226	t
+419	\N	103	2020-09-03 20:43:30.944575	2020-09-03 20:47:06.969551	t
+420	\N	29	2020-09-03 20:43:31.250204	2020-09-03 20:47:07.076541	t
+421	\N	67	2020-09-03 20:43:31.40184	2020-09-03 20:47:07.172349	t
+422	\N	186	2020-09-03 20:43:31.523419	2020-09-03 20:47:07.390489	t
+423	\N	132	2020-09-03 20:43:31.654505	2020-09-03 20:47:07.642366	t
+424	\N	13	2020-09-03 20:43:31.788177	2020-09-03 20:47:07.734449	t
+425	\N	127	2020-09-03 20:43:31.940934	2020-09-03 20:47:07.827459	t
+426	\N	59	2020-09-03 20:43:32.149391	2020-09-03 20:47:07.923986	t
+427	\N	216	2020-09-03 20:43:32.273362	2020-09-03 20:47:08.0176	t
 71	[{"x":0.4309,"y":0.8893},{"x":0.4178,"y":0.5011},{"x":0.4112,"y":0.2654},{"x":0.4317,"y":0.068}]	129	2020-04-18 20:36:57.994555	2020-07-05 19:48:04.190697	f
 92	[{"x":0.591,"y":0.8783},{"x":0.5691,"y":0.5584},{"x":0.5592,"y":0.3799},{"x":0.534,"y":0.1209}]	139	2020-04-18 20:36:58.84357	2020-07-05 19:48:04.224448	f
 55	[{"x":0.19,"y":0.7489},{"x":0.1982,"y":0.5746},{"x":0.2023,"y":0.4232},{"x":0.2007,"y":0.2906},{"x":0.2155,"y":0.2193}]	173	2020-04-18 20:36:57.324444	2020-07-05 19:48:04.22753	f
 46	[{"x":0.6316,"y":0.8739},{"x":0.5888,"y":0.5768},{"x":0.5502,"y":0.4474},{"x":0.5502,"y":0.2895},{"x":0.5419,"y":0.0976}]	165	2020-04-18 20:36:56.963857	2020-07-05 19:48:04.237147	f
 61	[{"x":0.7196,"y":0.9485},{"x":0.7007,"y":0.58},{"x":0.6785,"y":0.2774},{"x":0.662,"y":0.1217}]	210	2020-04-18 20:36:57.55429	2020-07-05 19:48:04.252467	f
-127	[{"x":0.5814,"y":0.9496},{"x":0.5773,"y":0.6886},{"x":0.5921,"y":0.398},{"x":0.6283,"y":0.1107}]	119	2020-04-18 20:37:00.277291	2020-04-21 14:16:00.190411	t
-133	[{"x":0.3454,"y":0.773},{"x":0.3183,"y":0.568},{"x":0.2919,"y":0.4364},{"x":0.3117,"y":0.2906},{"x":0.3561,"y":0.1952}]	19	2020-04-18 20:37:00.508484	2020-04-21 14:17:01.895109	t
-130	[{"x":0.4926,"y":0.9276},{"x":0.4309,"y":0.7686},{"x":0.4383,"y":0.6184},{"x":0.4391,"y":0.3509},{"x":0.4622,"y":0.0307}]	124	2020-04-18 20:37:00.390445	2020-04-21 14:16:39.76611	t
-135	[{"x":0.5641,"y":0.9945},{"x":0.5115,"y":0.591},{"x":0.347,"y":0.5154},{"x":0.2229,"y":0.4715},{"x":0.1414,"y":0.3377}]	4	2020-04-18 20:37:00.574293	2020-04-21 14:17:24.043921	t
-137	[{"x":0.3734,"y":0.8564},{"x":0.3479,"y":0.58},{"x":0.3199,"y":0.4474},{"x":0.3298,"y":0.1886}]	180	2020-04-18 20:37:00.644319	2020-04-21 14:17:39.759349	t
-139	[{"x":0.5748,"y":0.8333},{"x":0.5584,"y":0.6919},{"x":0.5033,"y":0.3684}]	81	2020-04-18 20:37:00.724581	2020-04-21 14:18:03.044723	t
-140	[{"x":0.5008,"y":0.8618},{"x":0.5008,"y":0.5548},{"x":0.5099,"y":0.3607},{"x":0.4877,"y":0.1557}]	95	2020-04-18 20:37:00.75431	2020-04-21 14:18:10.383882	t
-144	[{"x":0.8904,"y":0.5214},{"x":0.7873,"y":0.5321},{"x":0.6458,"y":0.5025},{"x":0.4287,"y":0.4786},{"x":0.2621,"y":0.4342},{"x":0.136,"y":0.3758},{"x":0.1765,"y":0.2566},{"x":0.2588,"y":0.1184}]	235	2020-04-18 20:37:00.903547	2020-04-21 14:18:46.691454	t
-146	[{"x":0.7771,"y":0.7993},{"x":0.7722,"y":0.5768},{"x":0.7632,"y":0.4408},{"x":0.7755,"y":0.2917},{"x":0.7294,"y":0.182}]	220	2020-04-18 20:37:00.976245	2020-04-21 14:19:06.364658	t
-147	[{"x":0.4814,"y":0.8355},{"x":0.4792,"y":0.7459},{"x":0.4868,"y":0.6036},{"x":0.3629,"y":0.5},{"x":0.3191,"y":0.3586},{"x":0.3465,"y":0.2574},{"x":0.4419,"y":0.1604}]	234	2020-04-18 20:37:01.020426	2020-04-21 14:19:15.476912	t
-152	[{"x":0.8117,"y":0.7763},{"x":0.7615,"y":0.5822},{"x":0.69,"y":0.4167},{"x":0.6595,"y":0.2895},{"x":0.6176,"y":0.1634}]	195	2020-04-18 20:37:01.206705	2020-04-21 14:20:16.746208	t
-154	[{"x":0.7204,"y":0.9507},{"x":0.602,"y":0.6316},{"x":0.5088,"y":0.44},{"x":0.3991,"y":0.1891},{"x":0.3333,"y":0.0962}]	5	2020-04-18 20:37:01.28052	2020-04-21 14:20:31.018999	t
-155	[{"x":0.514,"y":0.9901},{"x":0.5,"y":0.8311},{"x":0.4704,"y":0.6612},{"x":0.301,"y":0.6107},{"x":0.1217,"y":0.5395},{"x":0.0732,"y":0.4046}]	57	2020-04-18 20:37:01.321264	2020-04-21 14:20:39.317409	t
-157	[{"x":0.6206,"y":0.9786},{"x":0.5932,"y":0.5699},{"x":0.6184,"y":0.4309},{"x":0.727,"y":0.3199},{"x":0.8103,"y":0.2714}]	7	2020-04-18 20:37:01.395994	2020-04-21 14:20:54.694699	t
-159	[{"x":0.3602,"y":0.8805},{"x":0.3059,"y":0.67},{"x":0.273,"y":0.5548},{"x":0.2081,"y":0.3925},{"x":0.1982,"y":0.148},{"x":0.2113,"y":0.0044}]	69	2020-04-18 20:37:01.480908	2020-04-21 14:21:20.724616	t
-161	[{"x":0.7607,"y":0.7061},{"x":0.7747,"y":0.5537},{"x":0.8281,"y":0.3651},{"x":0.8446,"y":0.1996},{"x":0.8026,"y":0.1447}]	183	2020-04-18 20:37:01.555363	2020-04-21 14:21:40.675913	t
-164	[{"x":0.259,"y":0.9561},{"x":0.2582,"y":0.7379},{"x":0.2681,"y":0.6075},{"x":0.3084,"y":0.4287},{"x":0.3824,"y":0.2971}]	82	2020-04-18 20:37:01.678052	2020-04-21 14:22:04.976207	t
-168	[{"x":0.0724,"y":0.6853},{"x":0.199,"y":0.5296},{"x":0.2829,"y":0.5044},{"x":0.3947,"y":0.5044},{"x":0.5058,"y":0.5175},{"x":0.6546,"y":0.511},{"x":0.7928,"y":0.5219},{"x":0.8923,"y":0.4934},{"x":0.9441,"y":0.5099},{"x":0.9605,"y":0.5329}]	236	2020-04-18 20:37:01.838319	2020-04-21 14:23:30.237815	t
-170	[{"x":0.6998,"y":0.9331},{"x":0.6891,"y":0.511},{"x":0.7023,"y":0.2785},{"x":0.7113,"y":0.1107},{"x":0.6867,"y":0.0614}]	223	2020-04-18 20:37:01.917484	2020-04-21 14:23:50.423655	t
-174	[{"x":0.4868,"y":0.9145},{"x":0.4803,"y":0.5471},{"x":0.491,"y":0.364},{"x":0.5715,"y":0.1173}]	97	2020-04-18 20:37:02.087672	2020-04-21 14:24:17.974863	t
-175	[{"x":0.4934,"y":0.6469},{"x":0.4942,"y":0.557},{"x":0.477,"y":0.4792},{"x":0.4671,"y":0.3421},{"x":0.4153,"y":0.1601},{"x":0.3988,"y":0.0844}]	182	2020-04-18 20:37:02.133861	2020-04-21 14:24:31.273464	t
-179	[{"x":0.5156,"y":0.9309},{"x":0.5099,"y":0.4583},{"x":0.4885,"y":0.2204},{"x":0.4811,"y":0.1217},{"x":0.5296,"y":0.0592}]	192	2020-04-18 20:37:02.279234	2020-04-21 14:25:26.643225	t
-211	[{"x":0.4829,"y":0.7614},{"x":0.4921,"y":0.7561},{"x":0.5276,"y":0.7263},{"x":0.5395,"y":0.6947},{"x":0.5447,"y":0.6509},{"x":0.5592,"y":0.6158},{"x":0.5961,"y":0.5579},{"x":0.6079,"y":0.5439},{"x":0.6237,"y":0.4561},{"x":0.6211,"y":0.3579},{"x":0.6079,"y":0.2667},{"x":0.5789,"y":0.1614},{"x":0.5645,"y":0.1053}]	230	2020-04-18 20:37:03.757978	2020-04-18 21:00:40.391042	t
-215	[{"x":0.8711,"y":0.507},{"x":0.7961,"y":0.5333},{"x":0.6026,"y":0.5246},{"x":0.4316,"y":0.4632},{"x":0.2763,"y":0.4807},{"x":0.1829,"y":0.4491},{"x":0.1658,"y":0.3018},{"x":0.1855,"y":0.1772},{"x":0.1974,"y":0.1316},{"x":0.2211,"y":0.1035}]	225	2020-04-18 20:37:03.924789	2020-04-18 21:00:40.401858	t
-216	[{"x":0.7961,"y":0.5053},{"x":0.7316,"y":0.4526},{"x":0.6711,"y":0.414},{"x":0.5737,"y":0.414},{"x":0.4474,"y":0.4123},{"x":0.3461,"y":0.4263},{"x":0.2671,"y":0.4719},{"x":0.1724,"y":0.4702},{"x":0.1395,"y":0.4193},{"x":0.1592,"y":0.4}]	231	2020-04-18 20:37:03.972043	2020-04-18 21:00:40.404725	t
-1	[{"x":0.0222,"y":0.7818},{"x":0.0781,"y":0.5855},{"x":0.1793,"y":0.4605},{"x":0.2508,"y":0.4101},{"x":0.352,"y":0.4287},{"x":0.5016,"y":0.4309},{"x":0.5896,"y":0.2686},{"x":0.5699,"y":0.1601}]	1	2020-04-18 19:51:17.374644	2020-04-21 13:33:46.367889	t
-2	[{"x":0.491,"y":0.8805},{"x":0.4901,"y":0.6502},{"x":0.4696,"y":0.4079},{"x":0.4819,"y":0.0877}]	63	2020-04-18 20:36:55.239653	2020-04-21 13:34:27.027339	t
-8	[{"x":0.3651,"y":0.8761},{"x":0.3898,"y":0.5482},{"x":0.3577,"y":0.352},{"x":0.4227,"y":0.2796},{"x":0.4622,"y":0.1875},{"x":0.4671,"y":0.1096}]	228	2020-04-18 20:36:55.565201	2020-04-21 13:39:07.618489	t
-21	[{"x":0.0288,"y":0.7599},{"x":0.0535,"y":0.5844},{"x":0.1316,"y":0.5493},{"x":0.2492,"y":0.5208},{"x":0.3906,"y":0.5033},{"x":0.5214,"y":0.5186},{"x":0.6209,"y":0.4879},{"x":0.6414,"y":0.3355},{"x":0.6694,"y":0.1897}]	48	2020-04-18 20:36:56.005996	2020-04-21 13:42:23.230116	t
-22	[{"x":0.44,"y":0.9046},{"x":0.4161,"y":0.6458},{"x":0.2516,"y":0.659},{"x":0.1143,"y":0.6382},{"x":0.0419,"y":0.5274},{"x":0.0238,"y":0.3925},{"x":0.0855,"y":0.3114},{"x":0.1669,"y":0.216}]	149	2020-04-18 20:36:56.039619	2020-04-21 13:42:41.227811	t
-32	[{"x":0.625,"y":0.8465},{"x":0.5913,"y":0.568},{"x":0.5715,"y":0.3509},{"x":0.528,"y":0.0658}]	49	2020-04-18 20:36:56.409067	2020-04-21 13:44:29.35076	t
+47	[{"x":0.3158,"y":0.7807},{"x":0.3026,"y":0.4178},{"x":0.287,"y":0.2807},{"x":0.2993,"y":0.2083},{"x":0.3174,"y":0.1513}]	171	2020-04-18 20:36:57.006742	2020-04-21 13:46:56.983921	f
+472	\N	144	2020-09-03 20:47:13.940905	2020-09-03 20:47:13.991324	t
+473	\N	210	2020-09-03 20:47:14.033073	2020-09-03 20:47:14.089665	t
+474	\N	219	2020-09-03 20:47:14.29126	2020-09-03 20:47:14.35634	t
+475	\N	175	2020-09-03 20:47:14.734561	2020-09-03 20:47:14.782766	t
+476	\N	217	2020-09-03 20:47:14.826322	2020-09-03 20:47:14.869572	t
+428	\N	242	2020-09-03 20:43:32.382498	2020-09-03 20:47:08.145458	t
+429	\N	91	2020-09-03 20:43:32.666251	2020-09-03 20:47:08.52589	t
+430	\N	178	2020-09-03 20:43:32.791996	2020-09-03 20:47:08.615377	t
+431	\N	152	2020-09-03 20:43:33.058935	2020-09-03 20:47:08.698594	t
+432	\N	39	2020-09-03 20:43:33.159751	2020-09-03 20:47:08.804505	t
+433	\N	143	2020-09-03 20:43:33.26214	2020-09-03 20:47:08.894009	t
+434	\N	211	2020-09-03 20:43:33.363073	2020-09-03 20:47:09.004465	t
+435	\N	110	2020-09-03 20:43:33.516038	2020-09-03 20:47:09.308985	t
+436	\N	3	2020-09-03 20:43:33.62075	2020-09-03 20:47:09.433962	t
+437	\N	188	2020-09-03 20:43:33.740351	2020-09-03 20:47:09.524234	t
+438	\N	42	2020-09-03 20:43:33.964429	2020-09-03 20:47:09.614824	t
+439	\N	20	2020-09-03 20:43:34.142284	2020-09-03 20:47:09.709233	t
+440	\N	156	2020-09-03 20:43:34.241131	2020-09-03 20:47:09.799312	t
+459	\N	68	2020-09-03 20:47:10.23744	2020-09-03 20:47:10.307423	t
+460	\N	161	2020-09-03 20:47:10.534196	2020-09-03 20:47:10.592046	t
+461	\N	140	2020-09-03 20:47:10.675226	2020-09-03 20:47:10.729338	t
+462	\N	72	2020-09-03 20:47:10.775991	2020-09-03 20:47:10.833028	t
 166	[{"x":0.3109,"y":0.9452},{"x":0.3224,"y":0.5735},{"x":0.315,"y":0.4024},{"x":0.3454,"y":0.2204},{"x":0.3717,"y":0.0658},{"x":0.3783,"y":0.0296}]	140	2020-04-18 20:37:01.758745	2020-07-05 19:48:04.209448	f
 171	[{"x":0.5658,"y":0.9748},{"x":0.5592,"y":0.6184},{"x":0.5674,"y":0.466},{"x":0.5609,"y":0.2566},{"x":0.5362,"y":0.1349},{"x":0.5197,"y":0.0307}]	141	2020-04-18 20:37:01.957603	2020-07-05 19:48:04.211608	f
 142	[{"x":0.4408,"y":0.9287},{"x":0.4104,"y":0.5658},{"x":0.3717,"y":0.3542},{"x":0.3808,"y":0.0746}]	157	2020-04-18 20:37:00.833463	2020-07-05 19:48:04.214745	f
 150	[{"x":0.3487,"y":0.9334},{"x":0.3618,"y":0.6299},{"x":0.4923,"y":0.5526},{"x":0.4989,"y":0.384},{"x":0.4912,"y":0.1998},{"x":0.4112,"y":0.1168}]	142	2020-04-18 20:37:01.136938	2020-07-05 19:48:04.226055	f
 44	[{"x":0.2673,"y":0.8827},{"x":0.2788,"y":0.5384},{"x":0.389,"y":0.1184},{"x":0.4202,"y":0.0691}]	207	2020-04-18 20:36:56.891662	2020-07-05 19:48:04.249711	f
 23	[{"x":0.2622,"y":0.7071},{"x":0.2252,"y":0.4478},{"x":0.2477,"y":0.2989},{"x":0.2667,"y":0.1765}]	175	2020-04-18 20:36:56.077299	2020-07-05 19:48:04.259785	f
-49	[{"x":0.528,"y":0.8114},{"x":0.5625,"y":0.5844},{"x":0.565,"y":0.4221},{"x":0.5732,"y":0.2456},{"x":0.5872,"y":0.1316},{"x":0.5674,"y":0.0954}]	70	2020-04-18 20:36:57.09079	2020-04-21 13:53:48.459033	t
-57	[{"x":0.3569,"y":0.8553},{"x":0.3692,"y":0.7259},{"x":0.2878,"y":0.6853},{"x":0.2253,"y":0.5197},{"x":0.199,"y":0.3849},{"x":0.2039,"y":0.2697},{"x":0.2212,"y":0.205},{"x":0.2549,"y":0.1524}]	205	2020-04-18 20:36:57.40939	2020-04-21 13:56:29.971594	t
-182	[{"x":0.1678,"y":0.8169},{"x":0.213,"y":0.614},{"x":0.2706,"y":0.5461},{"x":0.4211,"y":0.5362},{"x":0.5222,"y":0.4298},{"x":0.6192,"y":0.1524}]	2	2020-04-18 20:37:02.392176	2020-04-21 14:25:50.476895	t
-184	[{"x":0.3865,"y":0.9156},{"x":0.3405,"y":0.5987},{"x":0.3224,"y":0.3893},{"x":0.3503,"y":0.1261},{"x":0.3651,"y":0.0954}]	44	2020-04-18 20:37:02.476536	2020-04-21 14:26:06.387603	t
-187	[{"x":0.5411,"y":0.9243},{"x":0.5304,"y":0.5186},{"x":0.5016,"y":0.307},{"x":0.4934,"y":0.1217}]	93	2020-04-18 20:37:02.59408	2020-04-21 14:26:26.252653	t
-189	[{"x":0.6965,"y":0.818},{"x":0.7072,"y":0.5296},{"x":0.7664,"y":0.3607},{"x":0.7854,"y":0.2204},{"x":0.7541,"y":0.182}]	179	2020-04-18 20:37:02.66842	2020-04-21 14:26:50.542769	t
-190	[{"x":0.8838,"y":0.5},{"x":0.761,"y":0.5247},{"x":0.4496,"y":0.5263},{"x":0.3169,"y":0.4457},{"x":0.2884,"y":0.315},{"x":0.3553,"y":0.2253}]	227	2020-04-18 20:37:02.700822	2020-04-21 14:27:11.891713	t
-193	[{"x":0.7917,"y":0.9038},{"x":0.7368,"y":0.6192},{"x":0.6217,"y":0.4268},{"x":0.5943,"y":0.2714},{"x":0.5746,"y":0.1735},{"x":0.5713,"y":0.0518}]	226	2020-04-18 20:37:02.825696	2020-04-21 14:27:44.605272	t
-195	[{"x":0.2442,"y":0.9002},{"x":0.2401,"y":0.6886},{"x":0.2393,"y":0.5899},{"x":0.338,"y":0.4912},{"x":0.5189,"y":0.5044},{"x":0.7401,"y":0.5548},{"x":0.8717,"y":0.4726},{"x":0.8808,"y":0.3618},{"x":0.8413,"y":0.17}]	178	2020-04-18 20:37:02.900519	2020-04-21 14:28:09.272792	t
-196	[{"x":0.7023,"y":0.8706},{"x":0.6628,"y":0.5504},{"x":0.7007,"y":0.3882},{"x":0.7023,"y":0.3015},{"x":0.6513,"y":0.2292},{"x":0.6176,"y":0.1524},{"x":0.6135,"y":0.1075}]	92	2020-04-18 20:37:02.947674	2020-04-21 14:28:17.773065	t
-200	[{"x":0.3824,"y":0.9627},{"x":0.3503,"y":0.5581},{"x":0.4169,"y":0.3454},{"x":0.4613,"y":0.0329}]	51	2020-04-18 20:37:03.141585	2020-04-21 14:28:55.985865	t
-201	[{"x":0.4457,"y":0.9671},{"x":0.4038,"y":0.5866},{"x":0.3906,"y":0.3673},{"x":0.3183,"y":0.1557},{"x":0.3067,"y":0.0636}]	187	2020-04-18 20:37:03.190245	2020-04-21 14:29:03.092361	t
-203	[{"x":0.4334,"y":0.8838},{"x":0.4021,"y":0.5406},{"x":0.3289,"y":0.2577},{"x":0.3495,"y":0.1162},{"x":0.3742,"y":0.0296}]	185	2020-04-18 20:37:03.285476	2020-04-21 14:29:15.925628	t
-204	[{"x":0.4748,"y":0.9391},{"x":0.4496,"y":0.5543},{"x":0.511,"y":0.4021},{"x":0.5735,"y":0.2459},{"x":0.5987,"y":0.1464},{"x":0.5669,"y":0.0913}]	191	2020-04-18 20:37:03.340594	2020-04-21 14:29:23.914335	t
-206	[{"x":0.102,"y":0.8432},{"x":0.1694,"y":0.4868},{"x":0.3528,"y":0.5011},{"x":0.5666,"y":0.5143},{"x":0.7138,"y":0.4989},{"x":0.8322,"y":0.4518},{"x":0.9038,"y":0.4123}]	53	2020-04-18 20:37:03.438698	2020-04-21 14:29:53.73391	t
-209	[{"x":0.6382,"y":0.8246},{"x":0.6299,"y":0.5603},{"x":0.6488,"y":0.4693},{"x":0.759,"y":0.4485},{"x":0.8701,"y":0.4221},{"x":0.903,"y":0.318},{"x":0.9235,"y":0.3103}]	84	2020-04-18 20:37:03.659325	2020-04-21 14:30:48.856758	t
-213	[{"x":0.6349,"y":0.9112},{"x":0.6086,"y":0.5702},{"x":0.5724,"y":0.3838},{"x":0.5313,"y":0.1974},{"x":0.4663,"y":0.0537}]	218	2020-04-18 20:37:03.840809	2020-04-21 14:31:27.057385	t
-214	[{"x":0.3561,"y":0.9331},{"x":0.3676,"y":0.5526},{"x":0.2804,"y":0.3893},{"x":0.264,"y":0.2445},{"x":0.3035,"y":0.1897}]	219	2020-04-18 20:37:03.878065	2020-04-21 14:31:35.509429	t
-220	[{"x":0.4482,"y":0.9287},{"x":0.4564,"y":0.5208},{"x":0.4704,"y":0.3684},{"x":0.5329,"y":0.1217}]	147	2020-04-18 20:37:04.18197	2020-04-21 14:32:47.255802	t
-222	[{"x":0.2325,"y":0.9169},{"x":0.318,"y":0.5444},{"x":0.3607,"y":0.4589},{"x":0.489,"y":0.491},{"x":0.6634,"y":0.4416},{"x":0.7511,"y":0.3586},{"x":0.7204,"y":0.2845},{"x":0.659,"y":0.2245}]	46	2020-04-18 20:37:04.272266	2020-04-21 14:33:08.414593	t
-224	[{"x":0.443,"y":0.5765},{"x":0.4726,"y":0.5123},{"x":0.5439,"y":0.236},{"x":0.5384,"y":0.0757}]	184	2020-04-18 20:37:04.370683	2020-04-21 14:33:22.248228	t
-73	[{"x":0.4112,"y":0.9671},{"x":0.3832,"y":0.5417},{"x":0.3487,"y":0.3224},{"x":0.3668,"y":0.1754},{"x":0.3758,"y":0.1031}]	114	2020-04-18 20:36:58.06937	2020-04-21 13:59:28.574715	t
-77	[{"x":0.7664,"y":0.9496},{"x":0.7541,"y":0.6031},{"x":0.676,"y":0.1952}]	17	2020-04-18 20:36:58.231256	2020-04-21 14:00:09.212403	t
-83	[{"x":0.7179,"y":0.7971},{"x":0.6933,"y":0.6075},{"x":0.6299,"y":0.4364},{"x":0.5888,"y":0.2818},{"x":0.5995,"y":0.0866}]	113	2020-04-18 20:36:58.472796	2020-04-21 14:08:05.246821	t
-87	[{"x":0.5938,"y":0.8706},{"x":0.5707,"y":0.5998},{"x":0.5724,"y":0.3662},{"x":0.5189,"y":0.2237}]	13	2020-04-18 20:36:58.632095	2020-04-21 14:08:32.891521	t
-89	[{"x":0.5987,"y":0.9046},{"x":0.6162,"y":0.685},{"x":0.5987,"y":0.5313},{"x":0.5011,"y":0.4391},{"x":0.3684,"y":0.3692},{"x":0.3344,"y":0.2763},{"x":0.3366,"y":0.2196},{"x":0.3509,"y":0.1785}]	104	2020-04-18 20:36:58.719967	2020-04-21 14:08:59.329816	t
-98	[{"x":0.4071,"y":0.9189},{"x":0.3939,"y":0.6086},{"x":0.4063,"y":0.455},{"x":0.3183,"y":0.3268},{"x":0.3092,"y":0.1941}]	120	2020-04-18 20:36:59.095596	2020-04-21 14:10:33.239133	t
-107	[{"x":0.6571,"y":0.9002},{"x":0.5921,"y":0.5296},{"x":0.4893,"y":0.4123},{"x":0.4087,"y":0.2664},{"x":0.4087,"y":0.1623},{"x":0.426,"y":0.1261}]	22	2020-04-18 20:36:59.462889	2020-04-21 14:11:41.816482	t
-112	[{"x":0.2541,"y":0.9189},{"x":0.2467,"y":0.6151},{"x":0.2697,"y":0.4518},{"x":0.3207,"y":0.3333},{"x":0.3799,"y":0.205},{"x":0.4441,"y":0.1371},{"x":0.5288,"y":0.0921}]	122	2020-04-18 20:36:59.707148	2020-04-21 14:13:59.603559	t
-116	[{"x":0.3454,"y":0.9145},{"x":0.3339,"y":0.5219},{"x":0.3561,"y":0.2862},{"x":0.3832,"y":0.1228}]	132	2020-04-18 20:36:59.860067	2020-04-21 14:14:26.69707	t
-128	[{"x":0.4235,"y":0.9507},{"x":0.4227,"y":0.5998},{"x":0.4441,"y":0.3542},{"x":0.4482,"y":0.1393}]	118	2020-04-18 20:37:00.32277	2020-04-21 14:16:15.859574	t
-131	[{"x":0.3668,"y":0.9101},{"x":0.3618,"y":0.6985},{"x":0.278,"y":0.5515},{"x":0.25,"y":0.3772},{"x":0.2442,"y":0.2478},{"x":0.3035,"y":0.0417}]	31	2020-04-18 20:37:00.435148	2020-04-21 14:16:47.902917	t
-134	[{"x":0.6924,"y":0.7456},{"x":0.69,"y":0.4485},{"x":0.6308,"y":0.3169},{"x":0.5247,"y":0.261}]	42	2020-04-18 20:37:00.539647	2020-04-21 14:17:11.53666	t
-145	[{"x":0.4087,"y":0.9638},{"x":0.4408,"y":0.6557},{"x":0.5214,"y":0.5362},{"x":0.5321,"y":0.3629},{"x":0.4712,"y":0.2423},{"x":0.2673,"y":0.1283},{"x":0.2549,"y":0.0779},{"x":0.2673,"y":0.057}]	221	2020-04-18 20:37:00.939492	2020-04-21 14:18:59.706697	t
-167	[{"x":0.8972,"y":0.5011},{"x":0.838,"y":0.4748},{"x":0.7352,"y":0.4507},{"x":0.6612,"y":0.4627},{"x":0.5181,"y":0.4287},{"x":0.4301,"y":0.409},{"x":0.347,"y":0.3618},{"x":0.1933,"y":0.3586},{"x":0.1012,"y":0.3816},{"x":0.051,"y":0.3794}]	222	2020-04-18 20:37:01.793838	2020-04-21 14:22:52.009377	t
+127	[{"x":0.5814,"y":0.9496},{"x":0.5773,"y":0.6886},{"x":0.5921,"y":0.398},{"x":0.6283,"y":0.1107}]	119	2020-04-18 20:37:00.277291	2020-04-21 14:16:00.190411	f
+133	[{"x":0.3454,"y":0.773},{"x":0.3183,"y":0.568},{"x":0.2919,"y":0.4364},{"x":0.3117,"y":0.2906},{"x":0.3561,"y":0.1952}]	19	2020-04-18 20:37:00.508484	2020-04-21 14:17:01.895109	f
 219	[{"x":0.5329,"y":0.9452},{"x":0.5419,"y":0.5779},{"x":0.5543,"y":0.3476},{"x":0.6234,"y":0.08}]	153	2020-04-18 20:37:04.125333	2020-07-05 19:48:04.222687	f
 163	[{"x":0.5674,"y":0.8618},{"x":0.5469,"y":0.4879},{"x":0.4926,"y":0.2971},{"x":0.4679,"y":0.1886},{"x":0.4556,"y":0.0757}]	168	2020-04-18 20:37:01.633238	2020-07-05 19:48:04.238635	f
 60	[{"x":0.1916,"y":0.7961},{"x":0.1612,"y":0.6173},{"x":0.111,"y":0.5},{"x":0.1283,"y":0.3476},{"x":0.1735,"y":0.2423}]	204	2020-04-18 20:36:57.522941	2020-07-05 19:48:04.248263	f
-169	[{"x":0.3465,"y":0.8446},{"x":0.3355,"y":0.6645},{"x":0.432,"y":0.537},{"x":0.4254,"y":0.4375},{"x":0.352,"y":0.3742},{"x":0.3125,"y":0.2632},{"x":0.3465,"y":0.1785}]	237	2020-04-18 20:37:01.877461	2020-04-21 14:23:42.781271	t
-180	[{"x":0.4153,"y":0.8662},{"x":0.4095,"y":0.545},{"x":0.4013,"y":0.4057},{"x":0.3997,"y":0.2785},{"x":0.4276,"y":0.1809}]	78	2020-04-18 20:37:02.323557	2020-04-21 14:25:33.574261	t
-186	[{"x":0.5633,"y":0.8333},{"x":0.5559,"y":0.58},{"x":0.5206,"y":0.4035},{"x":0.5049,"y":0.25},{"x":0.5082,"y":0.17}]	145	2020-04-18 20:37:02.559485	2020-04-21 14:26:20.715785	t
-191	[{"x":0.5313,"y":0.9364},{"x":0.5748,"y":0.5768},{"x":0.6743,"y":0.4605},{"x":0.7204,"y":0.2818},{"x":0.7056,"y":0.1952}]	233	2020-04-18 20:37:02.742198	2020-04-21 14:27:22.589374	t
-192	[{"x":0.1689,"y":0.8766},{"x":0.1941,"y":0.7607},{"x":0.2412,"y":0.7056},{"x":0.4375,"y":0.6801},{"x":0.5735,"y":0.588},{"x":0.5318,"y":0.4589},{"x":0.3706,"y":0.3717},{"x":0.2478,"y":0.3059},{"x":0.2434,"y":0.2525},{"x":0.3279,"y":0.1842}]	232	2020-04-18 20:37:02.78092	2020-04-21 14:27:35.967984	t
-207	[{"x":0.9424,"y":0.545},{"x":0.8355,"y":0.5603},{"x":0.7245,"y":0.5296},{"x":0.5979,"y":0.5263},{"x":0.4737,"y":0.545},{"x":0.3865,"y":0.6031},{"x":0.2837,"y":0.5877},{"x":0.1711,"y":0.5362},{"x":0.0896,"y":0.5373},{"x":0.0559,"y":0.5504}]	146	2020-04-18 20:37:03.54561	2020-04-21 14:30:15.077179	t
-208	[{"x":0.3363,"y":0.9046},{"x":0.3692,"y":0.6634},{"x":0.4729,"y":0.5625},{"x":0.5411,"y":0.4474},{"x":0.5403,"y":0.1678},{"x":0.5321,"y":0.1305}]	152	2020-04-18 20:37:03.608045	2020-04-21 14:30:33.573556	t
-218	[{"x":0.7327,"y":0.9836},{"x":0.7007,"y":0.6502},{"x":0.5798,"y":0.5768},{"x":0.3906,"y":0.5055},{"x":0.3224,"y":0.3728},{"x":0.3051,"y":0.2412},{"x":0.3092,"y":0.1711},{"x":0.4219,"y":0.045}]	85	2020-04-18 20:37:04.067592	2020-04-21 14:32:35.398081	t
+49	[{"x":0.528,"y":0.8114},{"x":0.5625,"y":0.5844},{"x":0.565,"y":0.4221},{"x":0.5732,"y":0.2456},{"x":0.5872,"y":0.1316},{"x":0.5674,"y":0.0954}]	70	2020-04-18 20:36:57.09079	2020-04-21 13:53:48.459033	f
+184	[{"x":0.3865,"y":0.9156},{"x":0.3405,"y":0.5987},{"x":0.3224,"y":0.3893},{"x":0.3503,"y":0.1261},{"x":0.3651,"y":0.0954}]	44	2020-04-18 20:37:02.476536	2020-04-21 14:26:06.387603	f
 129	[{"x":0.5378,"y":0.8717},{"x":0.4836,"y":0.602},{"x":0.4383,"y":0.4287},{"x":0.4539,"y":0.1272}]	130	2020-04-18 20:37:00.356404	2020-07-05 19:48:04.174192	f
 75	[{"x":0.8832,"y":0.8925},{"x":0.8569,"y":0.6436},{"x":0.8479,"y":0.4452},{"x":0.7903,"y":0.2862}]	128	2020-04-18 20:36:58.149081	2020-07-05 19:48:04.182182	f
 99	[{"x":0.6283,"y":0.9211},{"x":0.6439,"y":0.6491},{"x":0.7229,"y":0.4474},{"x":0.7878,"y":0.1842}]	134	2020-04-18 20:36:59.136377	2020-07-05 19:48:04.186949	f
@@ -1871,46 +2337,292 @@ COPY public.topos (id, line, problem_id, created_at, updated_at, published) FROM
 40	[{"x":0.472,"y":0.9671},{"x":0.4992,"y":0.6305},{"x":0.5485,"y":0.4189},{"x":0.6291,"y":0.2752},{"x":0.6414,"y":0.1754},{"x":0.6209,"y":0.0493}]	158	2020-04-18 20:36:56.726179	2020-07-05 19:48:04.21796	f
 143	[{"x":0.4326,"y":0.9254},{"x":0.4309,"y":0.5779},{"x":0.44,"y":0.4989},{"x":0.56,"y":0.4803},{"x":0.6678,"y":0.4518},{"x":0.7212,"y":0.2774},{"x":0.7286,"y":0.17},{"x":0.69,"y":0.0877}]	209	2020-04-18 20:37:00.867425	2020-07-05 19:48:04.24344	f
 25	[{"x":0.3037,"y":0.8051},{"x":0.2906,"y":0.5387},{"x":0.2906,"y":0.3306},{"x":0.3454,"y":0.1538}]	203	2020-04-18 20:36:56.142631	2020-07-05 19:48:04.246732	f
-238	[{"x":0.59,"y":0.9137},{"x":0.5133,"y":0.5275},{"x":0.3567,"y":0.3},{"x":0.41,"y":0.15}]	165	2020-07-05 20:00:23.336479	2020-07-05 20:48:35.483552	t
-236	[{"x":0.475,"y":0.7137},{"x":0.4367,"y":0.415},{"x":0.5367,"y":0.1613}]	177	2020-07-05 20:00:23.153873	2020-07-05 20:46:55.998953	t
-239	[{"x":0.555,"y":0.8013},{"x":0.49,"y":0.4525},{"x":0.315,"y":0.1963},{"x":0.285,"y":0.075}]	164	2020-07-05 20:00:23.41996	2020-07-05 20:47:51.248305	t
-235	[{"x":0.6267,"y":0.9637},{"x":0.5033,"y":0.5025},{"x":0.5283,"y":0.03}]	138	2020-07-05 20:00:23.089874	2020-07-05 20:56:51.930827	t
-234	[{"x":0.5717,"y":0.9263},{"x":0.5533,"y":0.4075},{"x":0.5267,"y":0.1212}]	128	2020-07-05 20:00:23.031964	2020-07-05 20:58:07.096604	t
-248	[{"x":0.5,"y":0.8862},{"x":0.4217,"y":0.5525},{"x":0.5317,"y":0.34},{"x":0.5333,"y":0.0425}]	136	2020-07-05 20:00:24.028446	2020-07-05 20:57:36.176498	t
-258	[{"x":0.52,"y":0.9175},{"x":0.4533,"y":0.6262},{"x":0.5667,"y":0.07}]	207	2020-07-05 20:00:24.821282	2020-07-05 20:59:45.697978	t
-264	[{"x":0.6517,"y":0.98},{"x":0.5933,"y":0.695},{"x":0.5083,"y":0.525},{"x":0.4917,"y":0.2762},{"x":0.5183,"y":0.0475}]	217	2020-07-05 20:00:25.199488	2020-07-05 20:50:02.765213	t
-241	[{"x":0.625,"y":0.85},{"x":0.68,"y":0.415},{"x":0.4483,"y":0.1537}]	170	2020-07-05 20:00:23.58865	2020-07-05 20:47:23.746741	t
-245	[{"x":0.6167,"y":0.9125},{"x":0.565,"y":0.545},{"x":0.4217,"y":0.09}]	203	2020-07-05 20:00:23.820682	2020-07-05 20:58:48.461421	t
-262	[{"x":0.5817,"y":0.9337},{"x":0.5467,"y":0.4487},{"x":0.4283,"y":0.0638}]	210	2020-07-05 20:00:25.072006	2020-07-05 21:01:05.681477	t
-251	[{"x":0.53,"y":0.9063},{"x":0.5267,"y":0.4462},{"x":0.5817,"y":0.0862}]	168	2020-07-05 20:00:24.277451	2020-07-05 20:49:08.967762	t
-246	[{"x":0.6117,"y":0.89},{"x":0.4833,"y":0.5387},{"x":0.4883,"y":0.4437},{"x":0.5483,"y":0.2},{"x":0.5733,"y":0.1212}]	169	2020-07-05 20:00:23.895763	2020-07-05 20:49:38.169032	t
-226	[{"x":0.6867,"y":0.895},{"x":0.5967,"y":0.53},{"x":0.415,"y":0.0725}]	212	2020-07-05 20:00:22.197966	2020-07-05 21:01:43.23582	t
-232	[{"x":0.595,"y":0.8962},{"x":0.52,"y":0.4288},{"x":0.535,"y":0.0712}]	215	2020-07-05 20:00:22.83111	2020-07-05 20:51:00.345056	t
-230	[{"x":0.4817,"y":0.805},{"x":0.52,"y":0.3538},{"x":0.4617,"y":0.1537}]	151	2020-07-05 20:00:22.674697	2020-07-05 20:53:01.832122	t
-253	[{"x":0.5467,"y":0.8975},{"x":0.4967,"y":0.3937},{"x":0.46,"y":0.0712}]	141	2020-07-05 20:00:24.405026	2020-07-05 20:55:22.041861	t
-260	[{"x":0.5683,"y":0.87},{"x":0.565,"y":0.46},{"x":0.53,"y":0.155}]	150	2020-07-05 20:00:24.949955	2020-07-05 20:53:52.404558	t
-240	[{"x":0.4867,"y":0.8575},{"x":0.4317,"y":0.4113},{"x":0.575,"y":0.1537}]	159	2020-07-05 20:00:23.512448	2020-07-05 20:44:12.466362	t
-254	[{"x":0.515,"y":0.8825},{"x":0.4717,"y":0.6312},{"x":0.555,"y":0.37},{"x":0.6317,"y":0.0988}]	216	2020-07-05 20:00:24.467166	2020-07-05 20:50:39.727558	t
-247	[{"x":0.5583,"y":0.845},{"x":0.48,"y":0.5425},{"x":0.6267,"y":0.2762},{"x":0.645,"y":0.1363}]	158	2020-07-05 20:00:23.973393	2020-07-05 20:45:45.703562	t
-263	[{"x":0.4567,"y":0.7638},{"x":0.51,"y":0.5313},{"x":0.6467,"y":0.41},{"x":0.755,"y":0.3362},{"x":0.7917,"y":0.2062}]	175	2020-07-05 20:00:25.130154	2020-07-05 20:39:26.079322	t
-225	[{"x":0.52,"y":0.8712},{"x":0.475,"y":0.6225},{"x":0.4467,"y":0.4662},{"x":0.5617,"y":0.3725},{"x":0.575,"y":0.1963}]	174	2020-07-05 19:59:51.026596	2020-07-05 20:41:35.67124	t
-233	[{"x":0.3767,"y":0.8475},{"x":0.4067,"y":0.5363},{"x":0.4233,"y":0.1313}]	173	2020-07-05 20:00:22.940122	2020-07-05 20:42:56.896923	t
-237	[{"x":0.5967,"y":0.8488},{"x":0.63,"y":0.4425},{"x":0.5083,"y":0.265},{"x":0.4617,"y":0.0638}]	160	2020-07-05 20:00:23.240223	2020-07-05 20:43:35.314439	t
-250	[{"x":0.5633,"y":0.8125},{"x":0.5733,"y":0.5112},{"x":0.4417,"y":0.195}]	157	2020-07-05 20:00:24.200784	2020-07-05 20:46:26.696137	t
-261	[{"x":0.5133,"y":0.8688},{"x":0.5083,"y":0.5075},{"x":0.475,"y":0.15}]	155	2020-07-05 20:00:25.013763	2020-07-05 20:52:07.44383	t
-227	[{"x":0.525,"y":0.9087},{"x":0.5783,"y":0.415},{"x":0.5033,"y":0.1837},{"x":0.5633,"y":0.085}]	214	2020-07-05 20:00:22.395586	2020-07-05 20:51:30.282205	t
-256	[{"x":0.605,"y":0.8413},{"x":0.6733,"y":0.5925},{"x":0.5917,"y":0.395},{"x":0.4317,"y":0.28},{"x":0.275,"y":0.1837}]	156	2020-07-05 20:00:24.600909	2020-07-05 20:52:39.119319	t
-229	[{"x":0.5067,"y":0.93},{"x":0.4033,"y":0.4738},{"x":0.555,"y":0.1087}]	153	2020-07-05 20:00:22.587219	2020-07-05 20:53:33.457952	t
-257	[{"x":0.4883,"y":0.9675},{"x":0.4417,"y":0.4763},{"x":0.53,"y":0.2687},{"x":0.4667,"y":0.07}]	140	2020-07-05 20:00:24.674593	2020-07-05 20:54:43.695953	t
-244	[{"x":0.4233,"y":0.9475},{"x":0.4633,"y":0.675},{"x":0.64,"y":0.3825},{"x":0.675,"y":0.055}]	142	2020-07-05 20:00:23.757752	2020-07-05 20:56:08.651943	t
-242	[{"x":0.6017,"y":0.9337},{"x":0.555,"y":0.2637},{"x":0.5333,"y":0.0425}]	139	2020-07-05 20:00:23.641112	2020-07-05 20:56:28.026397	t
-249	[{"x":0.435,"y":0.965},{"x":0.4867,"y":0.6188},{"x":0.6833,"y":0.37},{"x":0.7133,"y":0.12}]	134	2020-07-05 20:00:24.076408	2020-07-05 20:57:13.173349	t
-243	[{"x":0.56,"y":0.88},{"x":0.5233,"y":0.37},{"x":0.5033,"y":0.0612}]	129	2020-07-05 20:00:23.705781	2020-07-05 20:57:52.819884	t
-252	[{"x":0.57,"y":0.8475},{"x":0.5883,"y":0.6238},{"x":0.4417,"y":0.4075},{"x":0.43,"y":0.1812}]	130	2020-07-05 20:00:24.343704	2020-07-05 20:58:27.140479	t
-259	[{"x":0.5733,"y":0.8688},{"x":0.34,"y":0.4288},{"x":0.4483,"y":0.1225}]	204	2020-07-05 20:00:24.8884	2020-07-05 20:59:22.910444	t
-231	[{"x":0.5733,"y":0.9163},{"x":0.5617,"y":0.3688},{"x":0.4667,"y":0.0825}]	208	2020-07-05 20:00:22.774222	2020-07-05 20:59:59.497821	t
-228	[{"x":0.1713,"y":0.9617},{"x":0.2537,"y":0.5},{"x":0.5475,"y":0.3883},{"x":0.7087,"y":0.3717},{"x":0.805,"y":0.16}]	209	2020-07-05 20:00:22.460859	2020-07-05 21:00:38.433076	t
-255	[{"x":0.52,"y":0.9525},{"x":0.545,"y":0.5138},{"x":0.64,"y":0.0013}]	211	2020-07-05 20:00:24.524308	2020-07-05 21:01:25.976397	t
+4	[{"x":0.375,"y":0.9539},{"x":0.3808,"y":0.6776},{"x":0.4112,"y":0.42},{"x":0.3618,"y":0.1195}]	77	2020-04-18 20:36:55.36101	2020-04-21 13:35:44.876981	f
+10	[{"x":0.7785,"y":0.9178},{"x":0.7599,"y":0.5789},{"x":0.8213,"y":0.4309},{"x":0.8575,"y":0.259}]	200	2020-04-18 20:36:55.630165	2020-04-21 13:39:37.301329	f
+11	[{"x":0.3882,"y":0.9561},{"x":0.3906,"y":0.5614},{"x":0.4013,"y":0.3805},{"x":0.3931,"y":0.0724}]	201	2020-04-18 20:36:55.670284	2020-04-21 13:39:47.1239	f
+13	[{"x":0.6291,"y":0.9375},{"x":0.6735,"y":0.7632},{"x":0.7656,"y":0.6217},{"x":0.7845,"y":0.455},{"x":0.7837,"y":0.33},{"x":0.75,"y":0.3037}]	229	2020-04-18 20:36:55.734295	2020-04-21 13:40:19.956168	f
+16	[{"x":0.3339,"y":0.8542},{"x":0.3224,"y":0.6261},{"x":0.3026,"y":0.432},{"x":0.3051,"y":0.2083},{"x":0.3331,"y":0.0395}]	163	2020-04-18 20:36:55.834834	2020-04-21 13:41:03.797073	f
+19	[{"x":0.4572,"y":0.7807},{"x":0.4589,"y":0.4583},{"x":0.4285,"y":0.318},{"x":0.4202,"y":0.102}]	74	2020-04-18 20:36:55.933529	2020-04-21 13:41:50.114825	f
+24	[{"x":0.5351,"y":0.7813},{"x":0.5318,"y":0.5164},{"x":0.5143,"y":0.3405},{"x":0.5428,"y":0.1924},{"x":0.6294,"y":0.1209}]	161	2020-04-18 20:36:56.114268	2020-04-21 13:42:55.93633	f
+28	[{"x":0.375,"y":0.9474},{"x":0.3618,"y":0.7007},{"x":0.3396,"y":0.4287},{"x":0.3725,"y":0.1524}]	202	2020-04-18 20:36:56.250382	2020-04-21 13:43:49.882216	f
+33	[{"x":0.7122,"y":0.8235},{"x":0.7105,"y":0.5888},{"x":0.7418,"y":0.0779}]	61	2020-04-18 20:36:56.437838	2020-04-21 13:44:36.373651	f
+35	[{"x":0.2196,"y":0.8684},{"x":0.2097,"y":0.5998},{"x":0.2196,"y":0.4057},{"x":0.2311,"y":0.193}]	59	2020-04-18 20:36:56.514756	2020-04-21 13:44:56.257547	f
+37	[{"x":0.347,"y":0.92},{"x":0.3594,"y":0.648},{"x":0.4194,"y":0.1985},{"x":0.4688,"y":0.0307}]	65	2020-04-18 20:36:56.59497	2020-04-21 13:45:15.734954	f
+43	[{"x":0.3479,"y":0.9386},{"x":0.3405,"y":0.6491},{"x":0.3709,"y":0.3794},{"x":0.3166,"y":0.0493}]	213	2020-04-18 20:36:56.842231	2020-04-21 13:46:20.678616	f
+48	[{"x":0.4605,"y":0.8503},{"x":0.4693,"y":0.5403},{"x":0.5,"y":0.3734},{"x":0.6075,"y":0.1505}]	64	2020-04-18 20:36:57.044109	2020-04-21 13:47:17.608002	f
+51	[{"x":0.2385,"y":0.8904},{"x":0.2525,"y":0.614},{"x":0.2961,"y":0.3333},{"x":0.3594,"y":0.2204},{"x":0.4046,"y":0.0647}]	198	2020-04-18 20:36:57.165773	2020-04-21 13:54:23.394209	f
+53	[{"x":0.6423,"y":0.9627},{"x":0.653,"y":0.636},{"x":0.6752,"y":0.3498},{"x":0.6785,"y":0.0691}]	72	2020-04-18 20:36:57.24196	2020-04-21 13:54:42.252805	f
+58	[{"x":0.7459,"y":0.8476},{"x":0.7418,"y":0.534},{"x":0.7171,"y":0.4134},{"x":0.7459,"y":0.2763},{"x":0.7155,"y":0.2029}]	239	2020-04-18 20:36:57.438395	2020-04-21 13:57:10.082725	f
+64	[{"x":0.287,"y":0.8454},{"x":0.2969,"y":0.5614},{"x":0.3051,"y":0.3739},{"x":0.3742,"y":0.1239}]	98	2020-04-18 20:36:57.702249	2020-04-21 13:58:09.335409	f
+65	[{"x":0.403,"y":0.92},{"x":0.4095,"y":0.6908},{"x":0.4013,"y":0.1086},{"x":0.4063,"y":0.0581}]	73	2020-04-18 20:36:57.737684	2020-04-21 13:58:16.883117	f
+67	[{"x":0.4942,"y":0.9035},{"x":0.491,"y":0.6382},{"x":0.4893,"y":0.4079},{"x":0.5107,"y":0.1754}]	67	2020-04-18 20:36:57.823657	2020-04-21 13:58:30.694166	f
+70	[{"x":0.6554,"y":0.8136},{"x":0.6316,"y":0.4923},{"x":0.6135,"y":0.284},{"x":0.5905,"y":0.1042}]	28	2020-04-18 20:36:57.949455	2020-04-21 13:59:07.983045	f
+72	[{"x":0.6809,"y":0.8462},{"x":0.6305,"y":0.5641},{"x":0.6053,"y":0.3914},{"x":0.5735,"y":0.2253}]	115	2020-04-18 20:36:58.032896	2020-04-21 13:59:21.053191	f
+78	[{"x":0.5345,"y":0.9518},{"x":0.5058,"y":0.568},{"x":0.4589,"y":0.2796},{"x":0.4498,"y":0.0154}]	116	2020-04-18 20:36:58.267143	2020-04-21 14:07:20.936282	f
+81	[{"x":0.1897,"y":0.8865},{"x":0.2193,"y":0.5765},{"x":0.2719,"y":0.4063},{"x":0.3531,"y":0.2023}]	117	2020-04-18 20:36:58.382356	2020-04-21 14:07:44.578106	f
+86	[{"x":0.426,"y":0.9682},{"x":0.4054,"y":0.6458},{"x":0.4786,"y":0.4221},{"x":0.5329,"y":0.2357},{"x":0.5584,"y":0.0592}]	112	2020-04-18 20:36:58.589598	2020-04-21 14:08:26.92738	f
+90	[{"x":0.4811,"y":0.8805},{"x":0.491,"y":0.6305},{"x":0.5493,"y":0.2675}]	110	2020-04-18 20:36:58.761552	2020-04-21 14:09:04.451284	f
+93	[{"x":0.0748,"y":0.9178},{"x":0.0863,"y":0.7237},{"x":0.1299,"y":0.5493},{"x":0.2122,"y":0.2719},{"x":0.2113,"y":0.182}]	111	2020-04-18 20:36:58.889003	2020-04-21 14:09:24.585363	f
+96	[{"x":0.6785,"y":0.8871},{"x":0.6949,"y":0.6239},{"x":0.662,"y":0.4452},{"x":0.6094,"y":0.3366},{"x":0.5543,"y":0.1316}]	21	2020-04-18 20:36:59.010758	2020-04-21 14:10:09.307452	f
+102	[{"x":0.0702,"y":0.6867},{"x":0.1151,"y":0.5156},{"x":0.159,"y":0.4202},{"x":0.2478,"y":0.2673},{"x":0.2763,"y":0.2549}]	135	2020-04-18 20:36:59.257692	2020-04-21 14:11:02.064592	f
+103	[{"x":0.5471,"y":0.8544},{"x":0.5296,"y":0.6176},{"x":0.5011,"y":0.4753},{"x":0.5493,"y":0.148}]	121	2020-04-18 20:36:59.295566	2020-04-21 14:11:07.912406	f
+106	[{"x":0.3799,"y":0.8827},{"x":0.3956,"y":0.534},{"x":0.3873,"y":0.3048},{"x":0.4137,"y":0.1765}]	36	2020-04-18 20:36:59.424191	2020-04-21 14:11:28.731251	f
+109	[{"x":0.4235,"y":0.8454},{"x":0.4416,"y":0.5022},{"x":0.4408,"y":0.2697},{"x":0.4745,"y":0.0526}]	123	2020-04-18 20:36:59.583821	2020-04-21 14:12:05.382211	f
+111	[{"x":0.4046,"y":0.8076},{"x":0.2522,"y":0.4293},{"x":0.2599,"y":0.273},{"x":0.3257,"y":0.1661}]	240	2020-04-18 20:36:59.668278	2020-04-21 14:13:50.688338	f
+119	[{"x":0.2952,"y":0.9507},{"x":0.2722,"y":0.7259},{"x":0.4211,"y":0.5066},{"x":0.4186,"y":0.2895},{"x":0.3964,"y":0.1941},{"x":0.3339,"y":0.0241}]	245	2020-04-18 20:36:59.981833	2020-04-21 14:15:00.359853	f
+122	[{"x":0.8174,"y":0.8925},{"x":0.8092,"y":0.648},{"x":0.7278,"y":0.545},{"x":0.7015,"y":0.3816},{"x":0.6891,"y":0.1886},{"x":0.6801,"y":0.1086}]	32	2020-04-18 20:37:00.094688	2020-04-21 14:15:26.89932	f
+124	[{"x":0.5345,"y":0.9079},{"x":0.5419,"y":0.602},{"x":0.5724,"y":0.4507},{"x":0.6209,"y":0.2007}]	30	2020-04-18 20:37:00.175966	2020-04-21 14:15:39.112112	f
+3	[{"x":0.7451,"y":0.8531},{"x":0.7064,"y":0.625},{"x":0.7344,"y":0.4737},{"x":0.7311,"y":0.3805},{"x":0.7229,"y":0.3355}]	189	2020-04-18 20:36:55.332313	2020-04-21 13:35:23.860365	f
+132	[{"x":0.259,"y":0.7873},{"x":0.2706,"y":0.5493},{"x":0.264,"y":0.3015},{"x":0.2887,"y":0.1875}]	25	2020-04-18 20:37:00.470415	2020-04-21 14:16:54.233764	f
+5	[{"x":0.5584,"y":0.9254},{"x":0.5699,"y":0.5504},{"x":0.5905,"y":0.3191},{"x":0.5707,"y":0.0515}]	162	2020-04-18 20:36:55.415765	2020-04-21 13:37:51.669785	f
+136	[{"x":0.5584,"y":0.8443},{"x":0.5082,"y":0.5252},{"x":0.4581,"y":0.2884},{"x":0.4515,"y":0.0603}]	56	2020-04-18 20:37:00.616095	2020-04-21 14:17:31.761511	f
+138	[{"x":0.4465,"y":0.9627},{"x":0.4655,"y":0.6009},{"x":0.4951,"y":0.3805},{"x":0.5099,"y":0.2511},{"x":0.537,"y":0.102}]	194	2020-04-18 20:37:00.681426	2020-04-21 14:17:55.803696	f
+7	[{"x":0.5469,"y":0.9342},{"x":0.5107,"y":0.5888},{"x":0.4794,"y":0.3695},{"x":0.44,"y":0.0987}]	88	2020-04-18 20:36:55.537502	2020-04-21 13:38:18.631501	f
+151	[{"x":0.3791,"y":0.9024},{"x":0.398,"y":0.5647},{"x":0.4137,"y":0.2072},{"x":0.4334,"y":0.1711},{"x":0.5197,"y":0.1491}]	94	2020-04-18 20:37:01.170633	2020-04-21 14:20:08.23647	f
+153	[{"x":0.6908,"y":0.8224},{"x":0.6702,"y":0.5515},{"x":0.6719,"y":0.4254},{"x":0.6168,"y":0.2796},{"x":0.5617,"y":0.1382}]	181	2020-04-18 20:37:01.243795	2020-04-21 14:20:23.751017	f
+156	[{"x":0.6012,"y":0.83},{"x":0.5913,"y":0.58},{"x":0.5724,"y":0.3487},{"x":0.574,"y":0.2632}]	43	2020-04-18 20:37:01.362609	2020-04-21 14:20:45.906389	f
+158	[{"x":0.6143,"y":0.8816},{"x":0.5938,"y":0.4704},{"x":0.5896,"y":0.2708},{"x":0.5502,"y":0.0877}]	41	2020-04-18 20:37:01.442855	2020-04-21 14:21:10.477079	f
+160	[{"x":0.4161,"y":0.9331},{"x":0.4021,"y":0.5702},{"x":0.361,"y":0.3684},{"x":0.3462,"y":0.1711},{"x":0.3536,"y":0.0932}]	197	2020-04-18 20:37:01.521857	2020-04-21 14:21:27.404796	f
+15	[{"x":0.3035,"y":0.9518},{"x":0.2985,"y":0.6809},{"x":0.2969,"y":0.4989},{"x":0.2911,"y":0.4068},{"x":0.2656,"y":0.1864}]	89	2020-04-18 20:36:55.80428	2020-04-21 13:40:50.080939	f
+162	[{"x":0.648,"y":0.9885},{"x":0.5307,"y":0.5683},{"x":0.4901,"y":0.3956},{"x":0.4814,"y":0.1168}]	96	2020-04-18 20:37:01.58881	2020-04-21 14:21:51.610035	f
+165	[{"x":0.8158,"y":0.9419},{"x":0.8215,"y":0.614},{"x":0.7697,"y":0.5022},{"x":0.7278,"y":0.2961}]	154	2020-04-18 20:37:01.717044	2020-04-21 14:22:12.776146	f
+17	[{"x":0.5115,"y":0.932},{"x":0.5,"y":0.5998},{"x":0.4901,"y":0.3991},{"x":0.5313,"y":0.0428}]	188	2020-04-18 20:36:55.868135	2020-04-21 13:41:12.446243	f
+18	[{"x":0.5011,"y":0.8618},{"x":0.5208,"y":0.6094},{"x":0.5406,"y":0.3898},{"x":0.5,"y":0.1875}]	62	2020-04-18 20:36:55.907439	2020-04-21 13:41:40.533038	f
+173	[{"x":0.19,"y":0.9079},{"x":0.2179,"y":0.5877},{"x":0.241,"y":0.398},{"x":0.3191,"y":0.1864},{"x":0.4071,"y":0.1053}]	83	2020-04-18 20:37:02.053489	2020-04-21 14:24:12.165629	f
+177	[{"x":0.097,"y":0.6228},{"x":0.1003,"y":0.5768},{"x":0.1094,"y":0.4134},{"x":0.153,"y":0.2061}]	196	2020-04-18 20:37:02.203214	2020-04-21 14:24:58.328323	f
+20	[{"x":0.9375,"y":0.8772},{"x":0.9202,"y":0.6283},{"x":0.9104,"y":0.4167},{"x":0.8602,"y":0.1129}]	60	2020-04-18 20:36:55.965327	2020-04-21 13:41:59.934637	f
+178	[{"x":0.7917,"y":0.8396},{"x":0.7357,"y":0.5173},{"x":0.6382,"y":0.3882},{"x":0.6239,"y":0.2434}]	54	2020-04-18 20:37:02.240658	2020-04-21 14:25:19.176772	f
+181	[{"x":0.7393,"y":0.818},{"x":0.7229,"y":0.5186},{"x":0.7015,"y":0.3081},{"x":0.6414,"y":0.0241}]	186	2020-04-18 20:37:02.357726	2020-04-21 14:25:39.811476	f
+183	[{"x":0.4397,"y":0.9071},{"x":0.4287,"y":0.5411},{"x":0.4079,"y":0.4021},{"x":0.4364,"y":0.2747}]	50	2020-04-18 20:37:02.43824	2020-04-21 14:25:56.306132	f
+188	[{"x":0.5625,"y":0.8528},{"x":0.5395,"y":0.4868},{"x":0.5384,"y":0.3051},{"x":0.5318,"y":0.0831}]	87	2020-04-18 20:37:02.634556	2020-04-21 14:26:42.837949	f
+194	[{"x":0.4079,"y":0.9638},{"x":0.4359,"y":0.5274},{"x":0.5033,"y":0.3004},{"x":0.5337,"y":0.1327},{"x":0.5247,"y":0.0395}]	86	2020-04-18 20:37:02.863059	2020-04-21 14:27:52.029331	f
+197	[{"x":0.2928,"y":0.8421},{"x":0.3067,"y":0.5482},{"x":0.3799,"y":0.3958},{"x":0.3882,"y":0.2862},{"x":0.384,"y":0.2083},{"x":0.3775,"y":0.1228}]	144	2020-04-18 20:37:02.996215	2020-04-21 14:28:25.041611	f
+199	[{"x":0.5559,"y":0.9923},{"x":0.5773,"y":0.5669},{"x":0.5913,"y":0.3213},{"x":0.6324,"y":0.1009}]	3	2020-04-18 20:37:03.096536	2020-04-21 14:28:48.1651	f
+202	[{"x":0.5444,"y":0.8586},{"x":0.5263,"y":0.5987},{"x":0.5115,"y":0.3059},{"x":0.4548,"y":0.0789}]	193	2020-04-18 20:37:03.240685	2020-04-21 14:29:09.165992	f
+205	[{"x":0.5263,"y":0.8695},{"x":0.5296,"y":0.5691},{"x":0.5304,"y":0.3794},{"x":0.5699,"y":0.216}]	47	2020-04-18 20:37:03.3901	2020-04-21 14:29:29.618748	f
+210	[{"x":0.6176,"y":0.8936},{"x":0.5954,"y":0.5789},{"x":0.6209,"y":0.4112},{"x":0.5814,"y":0.2007}]	90	2020-04-18 20:37:03.70411	2020-04-21 14:30:54.515781	f
+212	[{"x":0.443,"y":0.8725},{"x":0.4715,"y":0.5658},{"x":0.5022,"y":0.4688},{"x":0.5954,"y":0.3495},{"x":0.6272,"y":0.2689},{"x":0.5768,"y":0.2286}]	224	2020-04-18 20:37:03.793979	2020-04-21 14:31:20.75183	f
+217	[{"x":0.5181,"y":0.7873},{"x":0.528,"y":0.5154},{"x":0.551,"y":0.33},{"x":0.5214,"y":0.1634}]	91	2020-04-18 20:37:04.016163	2020-04-21 14:32:18.099099	f
+221	[{"x":0.364,"y":0.8396},{"x":0.341,"y":0.5107},{"x":0.3618,"y":0.338},{"x":0.4342,"y":0.1719}]	52	2020-04-18 20:37:04.229757	2020-04-21 14:32:52.633474	f
+223	[{"x":0.3109,"y":0.9134},{"x":0.2648,"y":0.5625},{"x":0.2599,"y":0.3586},{"x":0.2459,"y":0.1831}]	190	2020-04-18 20:37:04.316844	2020-04-21 14:33:15.704427	f
+31	[{"x":0.5329,"y":0.9408},{"x":0.4298,"y":0.5995},{"x":0.3531,"y":0.44},{"x":0.3311,"y":0.2969},{"x":0.3607,"y":0.1867},{"x":0.4375,"y":0.0946},{"x":0.4912,"y":0.0724}]	148	2020-04-18 20:36:56.364656	2020-04-21 13:44:21.09593	f
+34	[{"x":0.5189,"y":0.943},{"x":0.4597,"y":0.6217},{"x":0.3512,"y":0.3882},{"x":0.2294,"y":0.0592}]	75	2020-04-18 20:36:56.477018	2020-04-21 13:44:45.791506	f
+36	[{"x":0.6678,"y":0.7675},{"x":0.662,"y":0.5658},{"x":0.6291,"y":0.3893},{"x":0.69,"y":0.2478},{"x":0.69,"y":0.0779}]	71	2020-04-18 20:36:56.548958	2020-04-21 13:45:06.832291	f
+41	[{"x":0.7064,"y":0.7752},{"x":0.6793,"y":0.5866},{"x":0.6817,"y":0.2675},{"x":0.6579,"y":0.0833}]	206	2020-04-18 20:36:56.762915	2020-04-21 13:46:03.259615	f
+50	[{"x":0.5,"y":0.8742},{"x":0.4814,"y":0.6217},{"x":0.341,"y":0.4992},{"x":0.3026,"y":0.4079},{"x":0.3509,"y":0.259},{"x":0.4715,"y":0.1875}]	8	2020-04-18 20:36:57.13078	2020-04-21 13:54:15.891098	f
+52	[{"x":0.6886,"y":0.9367},{"x":0.682,"y":0.5888},{"x":0.6195,"y":0.3964},{"x":0.6305,"y":0.2278},{"x":0.6612,"y":0.0773}]	66	2020-04-18 20:36:57.208816	2020-04-21 13:54:34.290804	f
+54	[{"x":0.2738,"y":0.852},{"x":0.2837,"y":0.6195},{"x":0.3002,"y":0.5088},{"x":0.4202,"y":0.5296},{"x":0.6497,"y":0.5395},{"x":0.7286,"y":0.4397},{"x":0.7401,"y":0.2325},{"x":0.7146,"y":0.1721}]	99	2020-04-18 20:36:57.278584	2020-04-21 13:54:59.756131	f
+59	[{"x":0.5633,"y":0.9496},{"x":0.5592,"y":0.5373},{"x":0.435,"y":0.3805},{"x":0.3742,"y":0.2401},{"x":0.3479,"y":0.0954},{"x":0.3372,"y":0.0318}]	238	2020-04-18 20:36:57.477727	2020-04-21 13:57:21.293261	f
+62	[{"x":0.6201,"y":0.8366},{"x":0.6143,"y":0.5779},{"x":0.616,"y":0.4792},{"x":0.6612,"y":0.2796},{"x":0.6554,"y":0.2138},{"x":0.625,"y":0.1952}]	172	2020-04-18 20:36:57.608789	2020-04-21 13:57:53.901354	f
+63	[{"x":0.4523,"y":0.9737},{"x":0.4433,"y":0.6086},{"x":0.4169,"y":0.4189},{"x":0.4178,"y":0.261},{"x":0.4934,"y":0.1075},{"x":0.5016,"y":0.0471}]	166	2020-04-18 20:36:57.645884	2020-04-21 13:58:02.516215	f
+66	[{"x":0.4613,"y":0.9342},{"x":0.4507,"y":0.6184},{"x":0.412,"y":0.4221},{"x":0.4194,"y":0.261},{"x":0.3775,"y":0.0669}]	199	2020-04-18 20:36:57.776354	2020-04-21 13:58:24.888369	f
+68	[{"x":0.4104,"y":0.9013},{"x":0.4219,"y":0.5592},{"x":0.44,"y":0.3344},{"x":0.4901,"y":0.0757}]	9	2020-04-18 20:36:57.869007	2020-04-21 13:58:49.147925	f
+69	[{"x":0.5439,"y":0.9375},{"x":0.5428,"y":0.56},{"x":0.443,"y":0.4581},{"x":0.3882,"y":0.3396},{"x":0.3925,"y":0.3076}]	14	2020-04-18 20:36:57.917624	2020-04-21 13:59:00.438455	f
+74	[{"x":0.3651,"y":0.909},{"x":0.3405,"y":0.5395},{"x":0.2549,"y":0.3706},{"x":0.2656,"y":0.2533},{"x":0.3363,"y":0.1338},{"x":0.3947,"y":0.0384}]	100	2020-04-18 20:36:58.1157	2020-04-21 13:59:37.918714	f
+76	[{"x":0.0781,"y":0.7873},{"x":0.1086,"y":0.5658},{"x":0.1579,"y":0.4397},{"x":0.2549,"y":0.3991},{"x":0.4301,"y":0.4035},{"x":0.6776,"y":0.3618},{"x":0.8487,"y":0.3333},{"x":0.8429,"y":0.2083}]	29	2020-04-18 20:36:58.189541	2020-04-21 13:59:56.095516	f
+79	[{"x":0.7681,"y":0.841},{"x":0.7887,"y":0.6678},{"x":0.8191,"y":0.568},{"x":0.8125,"y":0.5175},{"x":0.7418,"y":0.3421}]	102	2020-04-18 20:36:58.312885	2020-04-21 14:07:29.523718	f
+80	[{"x":0.7664,"y":0.9079},{"x":0.7459,"y":0.5548},{"x":0.6801,"y":0.2654},{"x":0.5715,"y":0.0307}]	103	2020-04-18 20:36:58.3403	2020-04-21 14:07:37.450912	f
+82	[{"x":0.0428,"y":0.5658},{"x":0.1217,"y":0.477},{"x":0.2286,"y":0.4868}]	16	2020-04-18 20:36:58.429653	2020-04-21 14:07:57.310638	f
+84	[{"x":0.5181,"y":0.8509},{"x":0.4901,"y":0.5395},{"x":0.4786,"y":0.4101},{"x":0.5296,"y":0.2522},{"x":0.5995,"y":0.1228}]	107	2020-04-18 20:36:58.512773	2020-04-21 14:08:12.238051	f
+85	[{"x":0.4967,"y":0.8465},{"x":0.5107,"y":0.5493},{"x":0.5419,"y":0.3914},{"x":0.5074,"y":0.1875},{"x":0.4778,"y":0.1239}]	106	2020-04-18 20:36:58.546359	2020-04-21 14:08:18.648392	f
+88	[{"x":0.8141,"y":0.932},{"x":0.7393,"y":0.6393},{"x":0.5526,"y":0.5022},{"x":0.3799,"y":0.3268},{"x":0.2977,"y":0.1502}]	11	2020-04-18 20:36:58.676284	2020-04-21 14:08:49.87644	f
+94	[{"x":0.4572,"y":0.9605},{"x":0.4781,"y":0.7393},{"x":0.5614,"y":0.4786},{"x":0.5691,"y":0.2368},{"x":0.4934,"y":0.1447}]	105	2020-04-18 20:36:58.933692	2020-04-21 14:09:31.670298	f
+95	[{"x":0.6118,"y":0.9452},{"x":0.6044,"y":0.6064},{"x":0.611,"y":0.3717},{"x":0.5806,"y":0.1261}]	38	2020-04-18 20:36:58.969379	2020-04-21 14:09:37.15947	f
+97	[{"x":0.4792,"y":0.9326},{"x":0.4605,"y":0.5518},{"x":0.477,"y":0.3166},{"x":0.4298,"y":0.0946}]	108	2020-04-18 20:36:59.048247	2020-04-21 14:10:15.547684	f
+100	[{"x":0.7771,"y":0.6787},{"x":0.7804,"y":0.4923},{"x":0.8281,"y":0.2467},{"x":0.838,"y":0.1656},{"x":0.8059,"y":0.1151}]	242	2020-04-18 20:36:59.180781	2020-04-21 14:10:46.673199	f
+101	[{"x":0.4523,"y":0.9836},{"x":0.4729,"y":0.83},{"x":0.5633,"y":0.5757},{"x":0.5781,"y":0.364},{"x":0.5691,"y":0.1908},{"x":0.5337,"y":0.0373}]	243	2020-04-18 20:36:59.221288	2020-04-21 14:10:54.777981	f
+104	[{"x":0.3594,"y":0.9397},{"x":0.352,"y":0.6162},{"x":0.3257,"y":0.386},{"x":0.3257,"y":0.1985},{"x":0.3536,"y":0.1469}]	109	2020-04-18 20:36:59.337064	2020-04-21 14:11:15.910804	f
+105	[{"x":0.5658,"y":0.9232},{"x":0.5411,"y":0.6689},{"x":0.5206,"y":0.3991},{"x":0.4803,"y":0.0581}]	20	2020-04-18 20:36:59.377541	2020-04-21 14:11:22.297359	f
+176	[{"x":0.5632,"y":0.1807},{"x":0.4645,"y":0.1842},{"x":0.4303,"y":0.486},{"x":0.2605,"y":0.5193},{"x":0.0039,"y":0.4702}]	68	2020-04-18 20:37:02.167926	2020-04-18 21:00:40.317518	f
+108	[{"x":0.6472,"y":0.7873},{"x":0.6645,"y":0.4441},{"x":0.6612,"y":0.3465},{"x":0.6316,"y":0.2544},{"x":0.5946,"y":0.1579}]	137	2020-04-18 20:36:59.511006	2020-04-21 14:11:59.803475	f
+110	[{"x":0.4079,"y":0.8109},{"x":0.2982,"y":0.4613},{"x":0.1316,"y":0.3692},{"x":0.1612,"y":0.3191},{"x":0.2171,"y":0.2607}]	241	2020-04-18 20:36:59.62738	2020-04-21 14:13:30.484403	f
+114	[{"x":0.3026,"y":0.9452},{"x":0.3018,"y":0.6075},{"x":0.2813,"y":0.3958},{"x":0.3224,"y":0.1502}]	23	2020-04-18 20:36:59.778806	2020-04-21 14:14:11.228392	f
+115	[{"x":0.4688,"y":0.9781},{"x":0.4581,"y":0.6195},{"x":0.5625,"y":0.4682},{"x":0.6028,"y":0.3015},{"x":0.5822,"y":0.17},{"x":0.5576,"y":0.0526}]	37	2020-04-18 20:36:59.827503	2020-04-21 14:14:21.075759	f
+117	[{"x":0.4161,"y":0.9178},{"x":0.384,"y":0.6601},{"x":0.3544,"y":0.3947},{"x":0.3495,"y":0.1908}]	126	2020-04-18 20:36:59.899503	2020-04-21 14:14:32.068886	f
+118	[{"x":0.6787,"y":0.8857},{"x":0.5757,"y":0.5115},{"x":0.3564,"y":0.4169},{"x":0.2599,"y":0.2796},{"x":0.2566,"y":0.1842},{"x":0.3059,"y":0.1538},{"x":0.3673,"y":0.1398}]	244	2020-04-18 20:36:59.937785	2020-04-21 14:14:52.284167	f
+120	[{"x":0.3117,"y":0.92},{"x":0.3306,"y":0.6009},{"x":0.3791,"y":0.3651},{"x":0.3931,"y":0.1732},{"x":0.3931,"y":0.0998}]	127	2020-04-18 20:37:00.023369	2020-04-21 14:15:07.080822	f
+121	[{"x":0.477,"y":0.8838},{"x":0.4975,"y":0.5252},{"x":0.5222,"y":0.3015},{"x":0.5123,"y":0.1842},{"x":0.4046,"y":0.1425},{"x":0.3939,"y":0.1118},{"x":0.4219,"y":0.0855}]	133	2020-04-18 20:37:00.059559	2020-04-21 14:15:17.253113	f
+123	[{"x":0.3429,"y":0.8607},{"x":0.3602,"y":0.6283},{"x":0.3923,"y":0.4463},{"x":0.4235,"y":0.1513}]	24	2020-04-18 20:37:00.141466	2020-04-21 14:15:33.05313	f
+125	[{"x":0.7577,"y":0.8306},{"x":0.6996,"y":0.509},{"x":0.6732,"y":0.3512},{"x":0.6107,"y":0.1571}]	125	2020-04-18 20:37:00.214023	2020-04-21 14:15:46.721659	f
+126	[{"x":0.7336,"y":0.8717},{"x":0.7508,"y":0.5976},{"x":0.7944,"y":0.4002},{"x":0.7821,"y":0.3081},{"x":0.7467,"y":0.1952}]	131	2020-04-18 20:37:00.242728	2020-04-21 14:15:54.966413	f
+130	[{"x":0.4926,"y":0.9276},{"x":0.4309,"y":0.7686},{"x":0.4383,"y":0.6184},{"x":0.4391,"y":0.3509},{"x":0.4622,"y":0.0307}]	124	2020-04-18 20:37:00.390445	2020-04-21 14:16:39.76611	f
+135	[{"x":0.5641,"y":0.9945},{"x":0.5115,"y":0.591},{"x":0.347,"y":0.5154},{"x":0.2229,"y":0.4715},{"x":0.1414,"y":0.3377}]	4	2020-04-18 20:37:00.574293	2020-04-21 14:17:24.043921	f
+137	[{"x":0.3734,"y":0.8564},{"x":0.3479,"y":0.58},{"x":0.3199,"y":0.4474},{"x":0.3298,"y":0.1886}]	180	2020-04-18 20:37:00.644319	2020-04-21 14:17:39.759349	f
+139	[{"x":0.5748,"y":0.8333},{"x":0.5584,"y":0.6919},{"x":0.5033,"y":0.3684}]	81	2020-04-18 20:37:00.724581	2020-04-21 14:18:03.044723	f
+140	[{"x":0.5008,"y":0.8618},{"x":0.5008,"y":0.5548},{"x":0.5099,"y":0.3607},{"x":0.4877,"y":0.1557}]	95	2020-04-18 20:37:00.75431	2020-04-21 14:18:10.383882	f
+144	[{"x":0.8904,"y":0.5214},{"x":0.7873,"y":0.5321},{"x":0.6458,"y":0.5025},{"x":0.4287,"y":0.4786},{"x":0.2621,"y":0.4342},{"x":0.136,"y":0.3758},{"x":0.1765,"y":0.2566},{"x":0.2588,"y":0.1184}]	235	2020-04-18 20:37:00.903547	2020-04-21 14:18:46.691454	f
+146	[{"x":0.7771,"y":0.7993},{"x":0.7722,"y":0.5768},{"x":0.7632,"y":0.4408},{"x":0.7755,"y":0.2917},{"x":0.7294,"y":0.182}]	220	2020-04-18 20:37:00.976245	2020-04-21 14:19:06.364658	f
+147	[{"x":0.4814,"y":0.8355},{"x":0.4792,"y":0.7459},{"x":0.4868,"y":0.6036},{"x":0.3629,"y":0.5},{"x":0.3191,"y":0.3586},{"x":0.3465,"y":0.2574},{"x":0.4419,"y":0.1604}]	234	2020-04-18 20:37:01.020426	2020-04-21 14:19:15.476912	f
+152	[{"x":0.8117,"y":0.7763},{"x":0.7615,"y":0.5822},{"x":0.69,"y":0.4167},{"x":0.6595,"y":0.2895},{"x":0.6176,"y":0.1634}]	195	2020-04-18 20:37:01.206705	2020-04-21 14:20:16.746208	f
+154	[{"x":0.7204,"y":0.9507},{"x":0.602,"y":0.6316},{"x":0.5088,"y":0.44},{"x":0.3991,"y":0.1891},{"x":0.3333,"y":0.0962}]	5	2020-04-18 20:37:01.28052	2020-04-21 14:20:31.018999	f
+155	[{"x":0.514,"y":0.9901},{"x":0.5,"y":0.8311},{"x":0.4704,"y":0.6612},{"x":0.301,"y":0.6107},{"x":0.1217,"y":0.5395},{"x":0.0732,"y":0.4046}]	57	2020-04-18 20:37:01.321264	2020-04-21 14:20:39.317409	f
+157	[{"x":0.6206,"y":0.9786},{"x":0.5932,"y":0.5699},{"x":0.6184,"y":0.4309},{"x":0.727,"y":0.3199},{"x":0.8103,"y":0.2714}]	7	2020-04-18 20:37:01.395994	2020-04-21 14:20:54.694699	f
+159	[{"x":0.3602,"y":0.8805},{"x":0.3059,"y":0.67},{"x":0.273,"y":0.5548},{"x":0.2081,"y":0.3925},{"x":0.1982,"y":0.148},{"x":0.2113,"y":0.0044}]	69	2020-04-18 20:37:01.480908	2020-04-21 14:21:20.724616	f
+161	[{"x":0.7607,"y":0.7061},{"x":0.7747,"y":0.5537},{"x":0.8281,"y":0.3651},{"x":0.8446,"y":0.1996},{"x":0.8026,"y":0.1447}]	183	2020-04-18 20:37:01.555363	2020-04-21 14:21:40.675913	f
+164	[{"x":0.259,"y":0.9561},{"x":0.2582,"y":0.7379},{"x":0.2681,"y":0.6075},{"x":0.3084,"y":0.4287},{"x":0.3824,"y":0.2971}]	82	2020-04-18 20:37:01.678052	2020-04-21 14:22:04.976207	f
+168	[{"x":0.0724,"y":0.6853},{"x":0.199,"y":0.5296},{"x":0.2829,"y":0.5044},{"x":0.3947,"y":0.5044},{"x":0.5058,"y":0.5175},{"x":0.6546,"y":0.511},{"x":0.7928,"y":0.5219},{"x":0.8923,"y":0.4934},{"x":0.9441,"y":0.5099},{"x":0.9605,"y":0.5329}]	236	2020-04-18 20:37:01.838319	2020-04-21 14:23:30.237815	f
+170	[{"x":0.6998,"y":0.9331},{"x":0.6891,"y":0.511},{"x":0.7023,"y":0.2785},{"x":0.7113,"y":0.1107},{"x":0.6867,"y":0.0614}]	223	2020-04-18 20:37:01.917484	2020-04-21 14:23:50.423655	f
+174	[{"x":0.4868,"y":0.9145},{"x":0.4803,"y":0.5471},{"x":0.491,"y":0.364},{"x":0.5715,"y":0.1173}]	97	2020-04-18 20:37:02.087672	2020-04-21 14:24:17.974863	f
+175	[{"x":0.4934,"y":0.6469},{"x":0.4942,"y":0.557},{"x":0.477,"y":0.4792},{"x":0.4671,"y":0.3421},{"x":0.4153,"y":0.1601},{"x":0.3988,"y":0.0844}]	182	2020-04-18 20:37:02.133861	2020-04-21 14:24:31.273464	f
+179	[{"x":0.5156,"y":0.9309},{"x":0.5099,"y":0.4583},{"x":0.4885,"y":0.2204},{"x":0.4811,"y":0.1217},{"x":0.5296,"y":0.0592}]	192	2020-04-18 20:37:02.279234	2020-04-21 14:25:26.643225	f
+211	[{"x":0.4829,"y":0.7614},{"x":0.4921,"y":0.7561},{"x":0.5276,"y":0.7263},{"x":0.5395,"y":0.6947},{"x":0.5447,"y":0.6509},{"x":0.5592,"y":0.6158},{"x":0.5961,"y":0.5579},{"x":0.6079,"y":0.5439},{"x":0.6237,"y":0.4561},{"x":0.6211,"y":0.3579},{"x":0.6079,"y":0.2667},{"x":0.5789,"y":0.1614},{"x":0.5645,"y":0.1053}]	230	2020-04-18 20:37:03.757978	2020-04-18 21:00:40.391042	f
+215	[{"x":0.8711,"y":0.507},{"x":0.7961,"y":0.5333},{"x":0.6026,"y":0.5246},{"x":0.4316,"y":0.4632},{"x":0.2763,"y":0.4807},{"x":0.1829,"y":0.4491},{"x":0.1658,"y":0.3018},{"x":0.1855,"y":0.1772},{"x":0.1974,"y":0.1316},{"x":0.2211,"y":0.1035}]	225	2020-04-18 20:37:03.924789	2020-04-18 21:00:40.401858	f
+216	[{"x":0.7961,"y":0.5053},{"x":0.7316,"y":0.4526},{"x":0.6711,"y":0.414},{"x":0.5737,"y":0.414},{"x":0.4474,"y":0.4123},{"x":0.3461,"y":0.4263},{"x":0.2671,"y":0.4719},{"x":0.1724,"y":0.4702},{"x":0.1395,"y":0.4193},{"x":0.1592,"y":0.4}]	231	2020-04-18 20:37:03.972043	2020-04-18 21:00:40.404725	f
+1	[{"x":0.0222,"y":0.7818},{"x":0.0781,"y":0.5855},{"x":0.1793,"y":0.4605},{"x":0.2508,"y":0.4101},{"x":0.352,"y":0.4287},{"x":0.5016,"y":0.4309},{"x":0.5896,"y":0.2686},{"x":0.5699,"y":0.1601}]	1	2020-04-18 19:51:17.374644	2020-04-21 13:33:46.367889	f
+2	[{"x":0.491,"y":0.8805},{"x":0.4901,"y":0.6502},{"x":0.4696,"y":0.4079},{"x":0.4819,"y":0.0877}]	63	2020-04-18 20:36:55.239653	2020-04-21 13:34:27.027339	f
+8	[{"x":0.3651,"y":0.8761},{"x":0.3898,"y":0.5482},{"x":0.3577,"y":0.352},{"x":0.4227,"y":0.2796},{"x":0.4622,"y":0.1875},{"x":0.4671,"y":0.1096}]	228	2020-04-18 20:36:55.565201	2020-04-21 13:39:07.618489	f
+21	[{"x":0.0288,"y":0.7599},{"x":0.0535,"y":0.5844},{"x":0.1316,"y":0.5493},{"x":0.2492,"y":0.5208},{"x":0.3906,"y":0.5033},{"x":0.5214,"y":0.5186},{"x":0.6209,"y":0.4879},{"x":0.6414,"y":0.3355},{"x":0.6694,"y":0.1897}]	48	2020-04-18 20:36:56.005996	2020-04-21 13:42:23.230116	f
+22	[{"x":0.44,"y":0.9046},{"x":0.4161,"y":0.6458},{"x":0.2516,"y":0.659},{"x":0.1143,"y":0.6382},{"x":0.0419,"y":0.5274},{"x":0.0238,"y":0.3925},{"x":0.0855,"y":0.3114},{"x":0.1669,"y":0.216}]	149	2020-04-18 20:36:56.039619	2020-04-21 13:42:41.227811	f
+32	[{"x":0.625,"y":0.8465},{"x":0.5913,"y":0.568},{"x":0.5715,"y":0.3509},{"x":0.528,"y":0.0658}]	49	2020-04-18 20:36:56.409067	2020-04-21 13:44:29.35076	f
+57	[{"x":0.3569,"y":0.8553},{"x":0.3692,"y":0.7259},{"x":0.2878,"y":0.6853},{"x":0.2253,"y":0.5197},{"x":0.199,"y":0.3849},{"x":0.2039,"y":0.2697},{"x":0.2212,"y":0.205},{"x":0.2549,"y":0.1524}]	205	2020-04-18 20:36:57.40939	2020-04-21 13:56:29.971594	f
+182	[{"x":0.1678,"y":0.8169},{"x":0.213,"y":0.614},{"x":0.2706,"y":0.5461},{"x":0.4211,"y":0.5362},{"x":0.5222,"y":0.4298},{"x":0.6192,"y":0.1524}]	2	2020-04-18 20:37:02.392176	2020-04-21 14:25:50.476895	f
+187	[{"x":0.5411,"y":0.9243},{"x":0.5304,"y":0.5186},{"x":0.5016,"y":0.307},{"x":0.4934,"y":0.1217}]	93	2020-04-18 20:37:02.59408	2020-04-21 14:26:26.252653	f
+189	[{"x":0.6965,"y":0.818},{"x":0.7072,"y":0.5296},{"x":0.7664,"y":0.3607},{"x":0.7854,"y":0.2204},{"x":0.7541,"y":0.182}]	179	2020-04-18 20:37:02.66842	2020-04-21 14:26:50.542769	f
+190	[{"x":0.8838,"y":0.5},{"x":0.761,"y":0.5247},{"x":0.4496,"y":0.5263},{"x":0.3169,"y":0.4457},{"x":0.2884,"y":0.315},{"x":0.3553,"y":0.2253}]	227	2020-04-18 20:37:02.700822	2020-04-21 14:27:11.891713	f
+193	[{"x":0.7917,"y":0.9038},{"x":0.7368,"y":0.6192},{"x":0.6217,"y":0.4268},{"x":0.5943,"y":0.2714},{"x":0.5746,"y":0.1735},{"x":0.5713,"y":0.0518}]	226	2020-04-18 20:37:02.825696	2020-04-21 14:27:44.605272	f
+195	[{"x":0.2442,"y":0.9002},{"x":0.2401,"y":0.6886},{"x":0.2393,"y":0.5899},{"x":0.338,"y":0.4912},{"x":0.5189,"y":0.5044},{"x":0.7401,"y":0.5548},{"x":0.8717,"y":0.4726},{"x":0.8808,"y":0.3618},{"x":0.8413,"y":0.17}]	178	2020-04-18 20:37:02.900519	2020-04-21 14:28:09.272792	f
+196	[{"x":0.7023,"y":0.8706},{"x":0.6628,"y":0.5504},{"x":0.7007,"y":0.3882},{"x":0.7023,"y":0.3015},{"x":0.6513,"y":0.2292},{"x":0.6176,"y":0.1524},{"x":0.6135,"y":0.1075}]	92	2020-04-18 20:37:02.947674	2020-04-21 14:28:17.773065	f
+200	[{"x":0.3824,"y":0.9627},{"x":0.3503,"y":0.5581},{"x":0.4169,"y":0.3454},{"x":0.4613,"y":0.0329}]	51	2020-04-18 20:37:03.141585	2020-04-21 14:28:55.985865	f
+201	[{"x":0.4457,"y":0.9671},{"x":0.4038,"y":0.5866},{"x":0.3906,"y":0.3673},{"x":0.3183,"y":0.1557},{"x":0.3067,"y":0.0636}]	187	2020-04-18 20:37:03.190245	2020-04-21 14:29:03.092361	f
+203	[{"x":0.4334,"y":0.8838},{"x":0.4021,"y":0.5406},{"x":0.3289,"y":0.2577},{"x":0.3495,"y":0.1162},{"x":0.3742,"y":0.0296}]	185	2020-04-18 20:37:03.285476	2020-04-21 14:29:15.925628	f
+204	[{"x":0.4748,"y":0.9391},{"x":0.4496,"y":0.5543},{"x":0.511,"y":0.4021},{"x":0.5735,"y":0.2459},{"x":0.5987,"y":0.1464},{"x":0.5669,"y":0.0913}]	191	2020-04-18 20:37:03.340594	2020-04-21 14:29:23.914335	f
+206	[{"x":0.102,"y":0.8432},{"x":0.1694,"y":0.4868},{"x":0.3528,"y":0.5011},{"x":0.5666,"y":0.5143},{"x":0.7138,"y":0.4989},{"x":0.8322,"y":0.4518},{"x":0.9038,"y":0.4123}]	53	2020-04-18 20:37:03.438698	2020-04-21 14:29:53.73391	f
+209	[{"x":0.6382,"y":0.8246},{"x":0.6299,"y":0.5603},{"x":0.6488,"y":0.4693},{"x":0.759,"y":0.4485},{"x":0.8701,"y":0.4221},{"x":0.903,"y":0.318},{"x":0.9235,"y":0.3103}]	84	2020-04-18 20:37:03.659325	2020-04-21 14:30:48.856758	f
+213	[{"x":0.6349,"y":0.9112},{"x":0.6086,"y":0.5702},{"x":0.5724,"y":0.3838},{"x":0.5313,"y":0.1974},{"x":0.4663,"y":0.0537}]	218	2020-04-18 20:37:03.840809	2020-04-21 14:31:27.057385	f
+214	[{"x":0.3561,"y":0.9331},{"x":0.3676,"y":0.5526},{"x":0.2804,"y":0.3893},{"x":0.264,"y":0.2445},{"x":0.3035,"y":0.1897}]	219	2020-04-18 20:37:03.878065	2020-04-21 14:31:35.509429	f
+220	[{"x":0.4482,"y":0.9287},{"x":0.4564,"y":0.5208},{"x":0.4704,"y":0.3684},{"x":0.5329,"y":0.1217}]	147	2020-04-18 20:37:04.18197	2020-04-21 14:32:47.255802	f
+222	[{"x":0.2325,"y":0.9169},{"x":0.318,"y":0.5444},{"x":0.3607,"y":0.4589},{"x":0.489,"y":0.491},{"x":0.6634,"y":0.4416},{"x":0.7511,"y":0.3586},{"x":0.7204,"y":0.2845},{"x":0.659,"y":0.2245}]	46	2020-04-18 20:37:04.272266	2020-04-21 14:33:08.414593	f
+224	[{"x":0.443,"y":0.5765},{"x":0.4726,"y":0.5123},{"x":0.5439,"y":0.236},{"x":0.5384,"y":0.0757}]	184	2020-04-18 20:37:04.370683	2020-04-21 14:33:22.248228	f
+73	[{"x":0.4112,"y":0.9671},{"x":0.3832,"y":0.5417},{"x":0.3487,"y":0.3224},{"x":0.3668,"y":0.1754},{"x":0.3758,"y":0.1031}]	114	2020-04-18 20:36:58.06937	2020-04-21 13:59:28.574715	f
+77	[{"x":0.7664,"y":0.9496},{"x":0.7541,"y":0.6031},{"x":0.676,"y":0.1952}]	17	2020-04-18 20:36:58.231256	2020-04-21 14:00:09.212403	f
+83	[{"x":0.7179,"y":0.7971},{"x":0.6933,"y":0.6075},{"x":0.6299,"y":0.4364},{"x":0.5888,"y":0.2818},{"x":0.5995,"y":0.0866}]	113	2020-04-18 20:36:58.472796	2020-04-21 14:08:05.246821	f
+87	[{"x":0.5938,"y":0.8706},{"x":0.5707,"y":0.5998},{"x":0.5724,"y":0.3662},{"x":0.5189,"y":0.2237}]	13	2020-04-18 20:36:58.632095	2020-04-21 14:08:32.891521	f
+89	[{"x":0.5987,"y":0.9046},{"x":0.6162,"y":0.685},{"x":0.5987,"y":0.5313},{"x":0.5011,"y":0.4391},{"x":0.3684,"y":0.3692},{"x":0.3344,"y":0.2763},{"x":0.3366,"y":0.2196},{"x":0.3509,"y":0.1785}]	104	2020-04-18 20:36:58.719967	2020-04-21 14:08:59.329816	f
+98	[{"x":0.4071,"y":0.9189},{"x":0.3939,"y":0.6086},{"x":0.4063,"y":0.455},{"x":0.3183,"y":0.3268},{"x":0.3092,"y":0.1941}]	120	2020-04-18 20:36:59.095596	2020-04-21 14:10:33.239133	f
+107	[{"x":0.6571,"y":0.9002},{"x":0.5921,"y":0.5296},{"x":0.4893,"y":0.4123},{"x":0.4087,"y":0.2664},{"x":0.4087,"y":0.1623},{"x":0.426,"y":0.1261}]	22	2020-04-18 20:36:59.462889	2020-04-21 14:11:41.816482	f
+112	[{"x":0.2541,"y":0.9189},{"x":0.2467,"y":0.6151},{"x":0.2697,"y":0.4518},{"x":0.3207,"y":0.3333},{"x":0.3799,"y":0.205},{"x":0.4441,"y":0.1371},{"x":0.5288,"y":0.0921}]	122	2020-04-18 20:36:59.707148	2020-04-21 14:13:59.603559	f
+116	[{"x":0.3454,"y":0.9145},{"x":0.3339,"y":0.5219},{"x":0.3561,"y":0.2862},{"x":0.3832,"y":0.1228}]	132	2020-04-18 20:36:59.860067	2020-04-21 14:14:26.69707	f
+128	[{"x":0.4235,"y":0.9507},{"x":0.4227,"y":0.5998},{"x":0.4441,"y":0.3542},{"x":0.4482,"y":0.1393}]	118	2020-04-18 20:37:00.32277	2020-04-21 14:16:15.859574	f
+131	[{"x":0.3668,"y":0.9101},{"x":0.3618,"y":0.6985},{"x":0.278,"y":0.5515},{"x":0.25,"y":0.3772},{"x":0.2442,"y":0.2478},{"x":0.3035,"y":0.0417}]	31	2020-04-18 20:37:00.435148	2020-04-21 14:16:47.902917	f
+134	[{"x":0.6924,"y":0.7456},{"x":0.69,"y":0.4485},{"x":0.6308,"y":0.3169},{"x":0.5247,"y":0.261}]	42	2020-04-18 20:37:00.539647	2020-04-21 14:17:11.53666	f
+145	[{"x":0.4087,"y":0.9638},{"x":0.4408,"y":0.6557},{"x":0.5214,"y":0.5362},{"x":0.5321,"y":0.3629},{"x":0.4712,"y":0.2423},{"x":0.2673,"y":0.1283},{"x":0.2549,"y":0.0779},{"x":0.2673,"y":0.057}]	221	2020-04-18 20:37:00.939492	2020-04-21 14:18:59.706697	f
+167	[{"x":0.8972,"y":0.5011},{"x":0.838,"y":0.4748},{"x":0.7352,"y":0.4507},{"x":0.6612,"y":0.4627},{"x":0.5181,"y":0.4287},{"x":0.4301,"y":0.409},{"x":0.347,"y":0.3618},{"x":0.1933,"y":0.3586},{"x":0.1012,"y":0.3816},{"x":0.051,"y":0.3794}]	222	2020-04-18 20:37:01.793838	2020-04-21 14:22:52.009377	f
+169	[{"x":0.3465,"y":0.8446},{"x":0.3355,"y":0.6645},{"x":0.432,"y":0.537},{"x":0.4254,"y":0.4375},{"x":0.352,"y":0.3742},{"x":0.3125,"y":0.2632},{"x":0.3465,"y":0.1785}]	237	2020-04-18 20:37:01.877461	2020-04-21 14:23:42.781271	f
+180	[{"x":0.4153,"y":0.8662},{"x":0.4095,"y":0.545},{"x":0.4013,"y":0.4057},{"x":0.3997,"y":0.2785},{"x":0.4276,"y":0.1809}]	78	2020-04-18 20:37:02.323557	2020-04-21 14:25:33.574261	f
+186	[{"x":0.5633,"y":0.8333},{"x":0.5559,"y":0.58},{"x":0.5206,"y":0.4035},{"x":0.5049,"y":0.25},{"x":0.5082,"y":0.17}]	145	2020-04-18 20:37:02.559485	2020-04-21 14:26:20.715785	f
+191	[{"x":0.5313,"y":0.9364},{"x":0.5748,"y":0.5768},{"x":0.6743,"y":0.4605},{"x":0.7204,"y":0.2818},{"x":0.7056,"y":0.1952}]	233	2020-04-18 20:37:02.742198	2020-04-21 14:27:22.589374	f
+192	[{"x":0.1689,"y":0.8766},{"x":0.1941,"y":0.7607},{"x":0.2412,"y":0.7056},{"x":0.4375,"y":0.6801},{"x":0.5735,"y":0.588},{"x":0.5318,"y":0.4589},{"x":0.3706,"y":0.3717},{"x":0.2478,"y":0.3059},{"x":0.2434,"y":0.2525},{"x":0.3279,"y":0.1842}]	232	2020-04-18 20:37:02.78092	2020-04-21 14:27:35.967984	f
+207	[{"x":0.9424,"y":0.545},{"x":0.8355,"y":0.5603},{"x":0.7245,"y":0.5296},{"x":0.5979,"y":0.5263},{"x":0.4737,"y":0.545},{"x":0.3865,"y":0.6031},{"x":0.2837,"y":0.5877},{"x":0.1711,"y":0.5362},{"x":0.0896,"y":0.5373},{"x":0.0559,"y":0.5504}]	146	2020-04-18 20:37:03.54561	2020-04-21 14:30:15.077179	f
+208	[{"x":0.3363,"y":0.9046},{"x":0.3692,"y":0.6634},{"x":0.4729,"y":0.5625},{"x":0.5411,"y":0.4474},{"x":0.5403,"y":0.1678},{"x":0.5321,"y":0.1305}]	152	2020-04-18 20:37:03.608045	2020-04-21 14:30:33.573556	f
+218	[{"x":0.7327,"y":0.9836},{"x":0.7007,"y":0.6502},{"x":0.5798,"y":0.5768},{"x":0.3906,"y":0.5055},{"x":0.3224,"y":0.3728},{"x":0.3051,"y":0.2412},{"x":0.3092,"y":0.1711},{"x":0.4219,"y":0.045}]	85	2020-04-18 20:37:04.067592	2020-04-21 14:32:35.398081	f
+238	[{"x":0.59,"y":0.9137},{"x":0.5133,"y":0.5275},{"x":0.3567,"y":0.3},{"x":0.41,"y":0.15}]	165	2020-07-05 20:00:23.336479	2020-07-05 20:48:35.483552	f
+236	[{"x":0.475,"y":0.7137},{"x":0.4367,"y":0.415},{"x":0.5367,"y":0.1613}]	177	2020-07-05 20:00:23.153873	2020-07-05 20:46:55.998953	f
+239	[{"x":0.555,"y":0.8013},{"x":0.49,"y":0.4525},{"x":0.315,"y":0.1963},{"x":0.285,"y":0.075}]	164	2020-07-05 20:00:23.41996	2020-07-05 20:47:51.248305	f
+235	[{"x":0.6267,"y":0.9637},{"x":0.5033,"y":0.5025},{"x":0.5283,"y":0.03}]	138	2020-07-05 20:00:23.089874	2020-07-05 20:56:51.930827	f
+234	[{"x":0.5717,"y":0.9263},{"x":0.5533,"y":0.4075},{"x":0.5267,"y":0.1212}]	128	2020-07-05 20:00:23.031964	2020-07-05 20:58:07.096604	f
+248	[{"x":0.5,"y":0.8862},{"x":0.4217,"y":0.5525},{"x":0.5317,"y":0.34},{"x":0.5333,"y":0.0425}]	136	2020-07-05 20:00:24.028446	2020-07-05 20:57:36.176498	f
+258	[{"x":0.52,"y":0.9175},{"x":0.4533,"y":0.6262},{"x":0.5667,"y":0.07}]	207	2020-07-05 20:00:24.821282	2020-07-05 20:59:45.697978	f
+264	[{"x":0.6517,"y":0.98},{"x":0.5933,"y":0.695},{"x":0.5083,"y":0.525},{"x":0.4917,"y":0.2762},{"x":0.5183,"y":0.0475}]	217	2020-07-05 20:00:25.199488	2020-07-05 20:50:02.765213	f
+241	[{"x":0.625,"y":0.85},{"x":0.68,"y":0.415},{"x":0.4483,"y":0.1537}]	170	2020-07-05 20:00:23.58865	2020-07-05 20:47:23.746741	f
+245	[{"x":0.6167,"y":0.9125},{"x":0.565,"y":0.545},{"x":0.4217,"y":0.09}]	203	2020-07-05 20:00:23.820682	2020-07-05 20:58:48.461421	f
+262	[{"x":0.5817,"y":0.9337},{"x":0.5467,"y":0.4487},{"x":0.4283,"y":0.0638}]	210	2020-07-05 20:00:25.072006	2020-07-05 21:01:05.681477	f
+251	[{"x":0.53,"y":0.9063},{"x":0.5267,"y":0.4462},{"x":0.5817,"y":0.0862}]	168	2020-07-05 20:00:24.277451	2020-07-05 20:49:08.967762	f
+246	[{"x":0.6117,"y":0.89},{"x":0.4833,"y":0.5387},{"x":0.4883,"y":0.4437},{"x":0.5483,"y":0.2},{"x":0.5733,"y":0.1212}]	169	2020-07-05 20:00:23.895763	2020-07-05 20:49:38.169032	f
+226	[{"x":0.6867,"y":0.895},{"x":0.5967,"y":0.53},{"x":0.415,"y":0.0725}]	212	2020-07-05 20:00:22.197966	2020-07-05 21:01:43.23582	f
+232	[{"x":0.595,"y":0.8962},{"x":0.52,"y":0.4288},{"x":0.535,"y":0.0712}]	215	2020-07-05 20:00:22.83111	2020-07-05 20:51:00.345056	f
+230	[{"x":0.4817,"y":0.805},{"x":0.52,"y":0.3538},{"x":0.4617,"y":0.1537}]	151	2020-07-05 20:00:22.674697	2020-07-05 20:53:01.832122	f
+253	[{"x":0.5467,"y":0.8975},{"x":0.4967,"y":0.3937},{"x":0.46,"y":0.0712}]	141	2020-07-05 20:00:24.405026	2020-07-05 20:55:22.041861	f
+260	[{"x":0.5683,"y":0.87},{"x":0.565,"y":0.46},{"x":0.53,"y":0.155}]	150	2020-07-05 20:00:24.949955	2020-07-05 20:53:52.404558	f
+240	[{"x":0.4867,"y":0.8575},{"x":0.4317,"y":0.4113},{"x":0.575,"y":0.1537}]	159	2020-07-05 20:00:23.512448	2020-07-05 20:44:12.466362	f
+254	[{"x":0.515,"y":0.8825},{"x":0.4717,"y":0.6312},{"x":0.555,"y":0.37},{"x":0.6317,"y":0.0988}]	216	2020-07-05 20:00:24.467166	2020-07-05 20:50:39.727558	f
+247	[{"x":0.5583,"y":0.845},{"x":0.48,"y":0.5425},{"x":0.6267,"y":0.2762},{"x":0.645,"y":0.1363}]	158	2020-07-05 20:00:23.973393	2020-07-05 20:45:45.703562	f
+263	[{"x":0.4567,"y":0.7638},{"x":0.51,"y":0.5313},{"x":0.6467,"y":0.41},{"x":0.755,"y":0.3362},{"x":0.7917,"y":0.2062}]	175	2020-07-05 20:00:25.130154	2020-07-05 20:39:26.079322	f
+225	[{"x":0.52,"y":0.8712},{"x":0.475,"y":0.6225},{"x":0.4467,"y":0.4662},{"x":0.5617,"y":0.3725},{"x":0.575,"y":0.1963}]	174	2020-07-05 19:59:51.026596	2020-07-05 20:41:35.67124	f
+233	[{"x":0.3767,"y":0.8475},{"x":0.4067,"y":0.5363},{"x":0.4233,"y":0.1313}]	173	2020-07-05 20:00:22.940122	2020-07-05 20:42:56.896923	f
+237	[{"x":0.5967,"y":0.8488},{"x":0.63,"y":0.4425},{"x":0.5083,"y":0.265},{"x":0.4617,"y":0.0638}]	160	2020-07-05 20:00:23.240223	2020-07-05 20:43:35.314439	f
+250	[{"x":0.5633,"y":0.8125},{"x":0.5733,"y":0.5112},{"x":0.4417,"y":0.195}]	157	2020-07-05 20:00:24.200784	2020-07-05 20:46:26.696137	f
+261	[{"x":0.5133,"y":0.8688},{"x":0.5083,"y":0.5075},{"x":0.475,"y":0.15}]	155	2020-07-05 20:00:25.013763	2020-07-05 20:52:07.44383	f
+227	[{"x":0.525,"y":0.9087},{"x":0.5783,"y":0.415},{"x":0.5033,"y":0.1837},{"x":0.5633,"y":0.085}]	214	2020-07-05 20:00:22.395586	2020-07-05 20:51:30.282205	f
+256	[{"x":0.605,"y":0.8413},{"x":0.6733,"y":0.5925},{"x":0.5917,"y":0.395},{"x":0.4317,"y":0.28},{"x":0.275,"y":0.1837}]	156	2020-07-05 20:00:24.600909	2020-07-05 20:52:39.119319	f
+229	[{"x":0.5067,"y":0.93},{"x":0.4033,"y":0.4738},{"x":0.555,"y":0.1087}]	153	2020-07-05 20:00:22.587219	2020-07-05 20:53:33.457952	f
+257	[{"x":0.4883,"y":0.9675},{"x":0.4417,"y":0.4763},{"x":0.53,"y":0.2687},{"x":0.4667,"y":0.07}]	140	2020-07-05 20:00:24.674593	2020-07-05 20:54:43.695953	f
+244	[{"x":0.4233,"y":0.9475},{"x":0.4633,"y":0.675},{"x":0.64,"y":0.3825},{"x":0.675,"y":0.055}]	142	2020-07-05 20:00:23.757752	2020-07-05 20:56:08.651943	f
+242	[{"x":0.6017,"y":0.9337},{"x":0.555,"y":0.2637},{"x":0.5333,"y":0.0425}]	139	2020-07-05 20:00:23.641112	2020-07-05 20:56:28.026397	f
+249	[{"x":0.435,"y":0.965},{"x":0.4867,"y":0.6188},{"x":0.6833,"y":0.37},{"x":0.7133,"y":0.12}]	134	2020-07-05 20:00:24.076408	2020-07-05 20:57:13.173349	f
+243	[{"x":0.56,"y":0.88},{"x":0.5233,"y":0.37},{"x":0.5033,"y":0.0612}]	129	2020-07-05 20:00:23.705781	2020-07-05 20:57:52.819884	f
+252	[{"x":0.57,"y":0.8475},{"x":0.5883,"y":0.6238},{"x":0.4417,"y":0.4075},{"x":0.43,"y":0.1812}]	130	2020-07-05 20:00:24.343704	2020-07-05 20:58:27.140479	f
+259	[{"x":0.5733,"y":0.8688},{"x":0.34,"y":0.4288},{"x":0.4483,"y":0.1225}]	204	2020-07-05 20:00:24.8884	2020-07-05 20:59:22.910444	f
+231	[{"x":0.5733,"y":0.9163},{"x":0.5617,"y":0.3688},{"x":0.4667,"y":0.0825}]	208	2020-07-05 20:00:22.774222	2020-07-05 20:59:59.497821	f
+228	[{"x":0.1713,"y":0.9617},{"x":0.2537,"y":0.5},{"x":0.5475,"y":0.3883},{"x":0.7087,"y":0.3717},{"x":0.805,"y":0.16}]	209	2020-07-05 20:00:22.460859	2020-07-05 21:00:38.433076	f
+255	[{"x":0.52,"y":0.9525},{"x":0.545,"y":0.5138},{"x":0.64,"y":0.0013}]	211	2020-07-05 20:00:24.524308	2020-07-05 21:01:25.976397	f
+296	\N	213	2020-09-03 20:43:13.070933	2020-09-03 20:46:46.956668	t
+267	\N	112	2020-09-03 20:43:09.066618	2020-09-03 20:46:42.452612	t
+269	\N	37	2020-09-03 20:43:09.358572	2020-09-03 20:46:42.81525	t
+268	\N	119	2020-09-03 20:43:09.212717	2020-09-03 20:46:42.612011	t
+270	\N	162	2020-09-03 20:43:09.53689	2020-09-03 20:46:43.054732	t
+274	\N	239	2020-09-03 20:43:10.026726	2020-09-03 20:46:43.579761	t
+271	\N	77	2020-09-03 20:43:09.725049	2020-09-03 20:46:43.1831	t
+272	\N	176	2020-09-03 20:43:09.802016	2020-09-03 20:46:43.293062	t
+273	\N	192	2020-09-03 20:43:09.91377	2020-09-03 20:46:43.405875	t
+275	\N	174	2020-09-03 20:43:10.117387	2020-09-03 20:46:43.796734	t
+278	\N	244	2020-09-03 20:43:10.468419	2020-09-03 20:46:44.162532	t
+276	\N	84	2020-09-03 20:43:10.206095	2020-09-03 20:46:43.919948	t
+277	\N	22	2020-09-03 20:43:10.306558	2020-09-03 20:46:44.047728	t
+279	\N	212	2020-09-03 20:43:10.714358	2020-09-03 20:46:44.280666	t
+281	\N	214	2020-09-03 20:43:10.945796	2020-09-03 20:46:44.654125	t
+280	\N	40	2020-09-03 20:43:10.839785	2020-09-03 20:46:44.416082	t
+285	\N	70	2020-09-03 20:43:11.752567	2020-09-03 20:46:45.218405	t
+282	\N	209	2020-09-03 20:43:11.057285	2020-09-03 20:46:44.76531	t
+283	\N	153	2020-09-03 20:43:11.273067	2020-09-03 20:46:44.977771	t
+284	\N	235	2020-09-03 20:43:11.634621	2020-09-03 20:46:45.102461	t
+287	\N	123	2020-09-03 20:43:11.915017	2020-09-03 20:46:45.51829	t
+286	\N	26	2020-09-03 20:43:11.832075	2020-09-03 20:46:45.430282	t
+288	\N	125	2020-09-03 20:43:12.022253	2020-09-03 20:46:45.632347	t
+290	\N	107	2020-09-03 20:43:12.257348	2020-09-03 20:46:45.937063	t
+289	\N	18	2020-09-03 20:43:12.136503	2020-09-03 20:46:45.760572	t
+292	\N	45	2020-09-03 20:43:12.68985	2020-09-03 20:46:46.438107	t
+291	\N	44	2020-09-03 20:43:12.588162	2020-09-03 20:46:46.215167	t
+293	\N	55	2020-09-03 20:43:12.79275	2020-09-03 20:46:46.575249	t
+295	\N	106	2020-09-03 20:43:12.969104	2020-09-03 20:46:46.83568	t
+294	\N	17	2020-09-03 20:43:12.883136	2020-09-03 20:46:46.722452	t
+297	\N	87	2020-09-03 20:43:13.261344	2020-09-03 20:46:47.064254	t
+298	\N	71	2020-09-03 20:43:13.477945	2020-09-03 20:46:47.214027	t
+300	\N	220	2020-09-03 20:43:13.698263	2020-09-03 20:46:47.621888	t
+299	\N	25	2020-09-03 20:43:13.583996	2020-09-03 20:46:47.496234	t
+301	\N	151	2020-09-03 20:43:13.81249	2020-09-03 20:46:47.842363	t
+304	\N	215	2020-09-03 20:43:14.469957	2020-09-03 20:46:48.393933	t
+302	\N	208	2020-09-03 20:43:13.910241	2020-09-03 20:46:47.94896	t
+303	\N	2	2020-09-03 20:43:14.164997	2020-09-03 20:46:48.087643	t
+306	\N	21	2020-09-03 20:43:14.644759	2020-09-03 20:46:48.64867	t
+305	\N	41	2020-09-03 20:43:14.551584	2020-09-03 20:46:48.534674	t
+307	\N	85	2020-09-03 20:43:14.714869	2020-09-03 20:46:48.739921	t
+310	\N	238	2020-09-03 20:43:15.05152	2020-09-03 20:46:49.300976	t
+308	\N	173	2020-09-03 20:43:14.81373	2020-09-03 20:46:48.838223	t
+309	\N	90	2020-09-03 20:43:14.936171	2020-09-03 20:46:48.951654	t
+311	\N	172	2020-09-03 20:43:15.274958	2020-09-03 20:46:49.523148	t
+313	\N	147	2020-09-03 20:43:15.481285	2020-09-03 20:46:49.754705	t
+312	\N	1	2020-09-03 20:43:15.376475	2020-09-03 20:46:49.632012	t
+316	\N	113	2020-09-03 20:43:15.883583	2020-09-03 20:46:50.182351	t
+314	\N	154	2020-09-03 20:43:15.577919	2020-09-03 20:46:49.861994	t
+315	\N	121	2020-09-03 20:43:15.704623	2020-09-03 20:46:49.969517	t
+318	\N	128	2020-09-03 20:43:16.256737	2020-09-03 20:46:50.624176	t
+317	\N	200	2020-09-03 20:43:16.113958	2020-09-03 20:46:50.475222	t
+320	\N	97	2020-09-03 20:43:16.555801	2020-09-03 20:46:50.876758	t
+319	\N	32	2020-09-03 20:43:16.399836	2020-09-03 20:46:50.751781	t
+321	\N	138	2020-09-03 20:43:16.69628	2020-09-03 20:46:51.013146	t
+324	\N	28	2020-09-03 20:43:17.160889	2020-09-03 20:46:51.705675	t
+322	\N	177	2020-09-03 20:43:16.802821	2020-09-03 20:46:51.126073	t
+323	\N	233	2020-09-03 20:43:17.048019	2020-09-03 20:46:51.562799	t
+325	\N	79	2020-09-03 20:43:17.259839	2020-09-03 20:46:51.839992	t
+327	\N	131	2020-09-03 20:43:17.528583	2020-09-03 20:46:52.257071	t
+326	\N	194	2020-09-03 20:43:17.350891	2020-09-03 20:46:52.092237	t
+328	\N	60	2020-09-03 20:43:17.676112	2020-09-03 20:46:52.617394	t
+330	\N	92	2020-09-03 20:43:18.069393	2020-09-03 20:46:52.896481	t
+329	\N	16	2020-09-03 20:43:17.944815	2020-09-03 20:46:52.772796	t
+332	\N	163	2020-09-03 20:43:18.332379	2020-09-03 20:46:53.18166	t
+331	\N	46	2020-09-03 20:43:18.189322	2020-09-03 20:46:53.01235	t
+265	\N	195	2020-09-03 19:26:29.409872	2020-09-03 20:47:08.421223	t
+266	\N	199	2020-09-03 20:43:08.882963	2020-09-03 20:46:42.284814	t
 \.
 
 
@@ -1918,14 +2630,14 @@ COPY public.topos (id, line, problem_id, created_at, updated_at, published) FROM
 -- Name: active_storage_attachments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
-SELECT pg_catalog.setval('public.active_storage_attachments_id_seq', 304, true);
+SELECT pg_catalog.setval('public.active_storage_attachments_id_seq', 804, true);
 
 
 --
 -- Name: active_storage_blobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
-SELECT pg_catalog.setval('public.active_storage_blobs_id_seq', 304, true);
+SELECT pg_catalog.setval('public.active_storage_blobs_id_seq', 804, true);
 
 
 --
@@ -1967,7 +2679,7 @@ SELECT pg_catalog.setval('public.problems_id_seq', 385, true);
 -- Name: topos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
-SELECT pg_catalog.setval('public.topos_id_seq', 264, true);
+SELECT pg_catalog.setval('public.topos_id_seq', 476, true);
 
 
 --
