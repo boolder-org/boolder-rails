@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :topos
   resources :problems
 
-  root 'welcome#index'
+  root 'problems#index'
 end
