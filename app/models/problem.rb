@@ -12,6 +12,7 @@ class Problem < ApplicationRecord
   end
 
   scope :area, -> (area_id){ where(area_id: area_id) } 
+  scope :number, -> (circuit_number){ where(circuit_number: circuit_number) } 
 
   scope :all_tags, -> (array){ where("tags @> ARRAY[?]::varchar[]", array) }
   scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
