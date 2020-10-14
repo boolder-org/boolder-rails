@@ -13,4 +13,9 @@ div data-controller="topo-editor"
 			= form.text_area :line, class: "form-control", rows: "4", data: {target: 'topo-editor.textarea'}, value: @topo.line.to_json
 
 		p
+			= form.label :photo
+			= form.file_field :photo, class: "form-control"
+
+		p
 			= form.submit("Update", class: "btn btn-primary")
+div style="margin-bottom: 300px"

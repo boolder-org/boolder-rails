@@ -17,12 +17,11 @@ class ToposController < ApplicationController
 		json_line = JSON.parse(params[:topo][:line])
 		topo.update(line: json_line)
 
+		if photo = params[:topo][:photo]
+			topo.update(photo: params[:topo][:photo])
+		end
+
 		flash[:notice] = "Topo updated"
 		redirect_to edit_topo_path(topo)
-	end
-
-	private
-	def topo_params
-		params.require(:topo).permit(:line)
 	end
 end
