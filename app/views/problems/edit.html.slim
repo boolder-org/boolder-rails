@@ -1,9 +1,9 @@
 h1= "Problem ##{@problem.id}"
 
-div class="row"
-  div class="col-md-auto"
-  
-    = form_with model: @problem, local: true do |form|
+= form_with model: @problem, local: true do |form|
+  div class="row"
+    div class="col-md-auto"
+    
       div class="form-group"
         p
           div class="row"
@@ -30,17 +30,16 @@ div class="row"
           = form.label :height
           = form.text_field :height, class: "form-control"
 
+    div class="col-md-auto"
+      - @problem.topos.select(&:persisted?).each do |topo|
+        = link_to image_tag(topo.photo, height: "500"), edit_topo_path(topo)
         p
-          = form.submit("Update", class: "btn btn-primary")
-
-        = form.fields_for :topos do |topos_form|
-          p
+          = "Topo ##{topo.id} "
+          = link_to "(delete)", topo, method: :delete, data: { confirm: 'Are you sure?' }
+      = form.fields_for :topos, @problem.topos.reject(&:persisted?) do |topos_form|
+          p class="mt-5"
             = topos_form.label :photo, "Add a topo photo"
             = topos_form.file_field :photo, class: "form-control"
-          
 
-  div class="col-md-auto"
-    - @problem.topos.each do |topo|
-      = link_to image_tag(topo.photo, height: "500"), edit_topo_path(topo) if topo.photo.present?
-
-    
+  p
+    = form.submit("Update", class: "btn btn-primary")

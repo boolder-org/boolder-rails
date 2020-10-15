@@ -24,4 +24,14 @@ class ToposController < ApplicationController
 		flash[:notice] = "Topo updated"
 		redirect_to edit_topo_path(topo)
 	end
+
+	def destroy
+		topo = Topo.find(params[:id])
+		
+		problem = topo.problem	
+		topo.delete
+
+		flash[:notice] = "Topo deleted"
+		redirect_to edit_problem_path(problem)
+	end
 end

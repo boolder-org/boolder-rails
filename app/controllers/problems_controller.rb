@@ -13,7 +13,7 @@ class ProblemsController < ApplicationController
 	def edit
 		@problem = Problem.find(params[:id])
 
-		@problem.topos.build if @problem.topos.none?
+		@problem.topos.build
 	end
 
 	def update
