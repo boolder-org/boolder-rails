@@ -3,4 +3,6 @@ class Topo < ApplicationRecord
 	has_one_attached :photo
 
 	default_scope { where(published: true) }
+
+	validates :photo, presence: true
 end

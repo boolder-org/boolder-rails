@@ -12,6 +12,8 @@ class ProblemsController < ApplicationController
 
 	def edit
 		@problem = Problem.find(params[:id])
+
+		@problem.topos.build if @problem.topos.none?
 	end
 
 	def update
@@ -25,6 +27,7 @@ class ProblemsController < ApplicationController
 
 	private 
 	def problem_params
-		params.require(:problem).permit(:name, :grade, :steepness, :height, :circuit_number, :circuit)
+		params.require(:problem).permit(:name, :grade, :steepness, :height, :circuit_number, :circuit_id, 
+			topos_attributes: [:photo])
 	end
 end

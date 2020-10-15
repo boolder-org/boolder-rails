@@ -32,8 +32,15 @@ div class="row"
 
         p
           = form.submit("Update", class: "btn btn-primary")
+
+        = form.fields_for :topos do |topos_form|
+          p
+            = topos_form.label :photo, "Add a topo photo"
+            = topos_form.file_field :photo, class: "form-control"
+          
+
   div class="col-md-auto"
     - @problem.topos.each do |topo|
-      = link_to image_tag(topo.photo, height: "500"), edit_topo_path(topo)
+      = link_to image_tag(topo.photo, height: "500"), edit_topo_path(topo) if topo.photo.present?
 
     
