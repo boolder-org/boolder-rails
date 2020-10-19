@@ -30,6 +30,7 @@ gem 'rgeo-geojson', '~> 2.1.1'
 # gem 'image_processing', '~> 1.2'
 
 gem 'differ', '~> 0.1.2'
+gem "breadcrumbs_on_rails", '~> 4.0.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

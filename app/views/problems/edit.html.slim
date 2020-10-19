@@ -1,3 +1,6 @@
+- add_breadcrumb @problem.area.name, problems_path(area_id: @problem.area.id, color: @problem.circuit.color)
+- add_breadcrumb "Problem ##{@problem.id}"
+
 h1= "Problem ##{@problem.id}"
 
 = form_with model: @problem, local: true do |form|

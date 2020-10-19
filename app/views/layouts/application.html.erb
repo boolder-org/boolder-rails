@@ -19,6 +19,11 @@
         </div>
       <% end %>
       
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <%= render_breadcrumbs :tag => :li %>
+        </ol>
+      </nav>
       <%= yield %>
     </div>
   </body>
