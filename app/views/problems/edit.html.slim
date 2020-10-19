@@ -1,5 +1,5 @@
 - add_breadcrumb @problem.area.name, problems_path(area_id: @problem.area.id, color: @problem.circuit.color)
-- add_breadcrumb "Problem ##{@problem.id}"
+- add_breadcrumb "Problem ##{@problem.id}", nil, class: "active"
 
 h1= "Problem ##{@problem.id}"
 
