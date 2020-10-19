@@ -1,5 +1,5 @@
 
-- add_breadcrumb @topo.problem.area.name, problems_path(area_id: @topo.problem.area.id, color: @topo.problem.circuit.color)
+- add_breadcrumb @topo.problem.area.name, problems_path(area_id: @topo.problem.area.id, color: @topo.problem.circuit.color, anchor: @topo.problem.id)
 - add_breadcrumb "Problem ##{@topo.problem.id}", edit_problem_path(@topo.problem)
 - add_breadcrumb "Topo ##{@topo.id}", nil, class: "active"
 
