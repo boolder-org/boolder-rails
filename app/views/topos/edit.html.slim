@@ -9,12 +9,21 @@ div data-controller="topo-editor"
 	= form_with model: @topo, local: true, data: {target: "topo-editor.form"} do |form|
 		div class="form-group"
 		p
+			= form.label :photo, "Change photo"
+			= form.file_field :photo, class: "form-control"
+
+		p
 			= form.label :line
 			= form.text_area :line, class: "form-control", rows: "4", data: {target: 'topo-editor.textarea'}, value: @topo.line.to_json
 
 		p
-			= form.label :photo
-			= form.file_field :photo, class: "form-control"
+			div Metadata
+			code
+				pre
+					= JSON.pretty_generate(@topo.metadata)
+		p
+			= form.label :metadata, "Change metadata"
+			= form.file_field :metadata, class: "form-control"
 
 		p
 			= form.submit("Update", class: "btn btn-primary")
