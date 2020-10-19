@@ -1,2 +1,2 @@
-I18n.available_locales = [:fr]
-I18n.default_locale = :fr
+I18n.available_locales = [:en]
+I18n.default_locale = :en

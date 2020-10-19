@@ -30,4 +30,13 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  circuit:
+    name:
+      white_for_kids: "White (kids)"
+      yellow: "Yellow"
+      orange: "Orange"
+      blue: "Blue"
+      skyblue: "Sky blue"
+      red: "Red"
+      white: "White"
+      black: "Black"
