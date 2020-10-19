@@ -17,8 +17,10 @@ class ToposController < ApplicationController
 		json_line = JSON.parse(params[:topo][:line])
 		topo.update(line: json_line)
 
-		if xml_metadata = params[:topo][:metadata].read
-			topo.update(metadata: Hash.from_xml(xml_metadata))
+		if params[:topo][:metadata].present?
+			if xml_metadata = params[:topo][:metadata].read
+				topo.update(metadata: Hash.from_xml(xml_metadata))
+			end
 		end
 
 		if photo = params[:topo][:photo]
