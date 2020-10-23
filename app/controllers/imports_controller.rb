@@ -10,23 +10,15 @@ class ImportsController < ApplicationController
 
   	data = RGeo::GeoJSON.decode(params[:import][:geojson].read)
   	problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
-    boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PolygonImpl) }
+    boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::LineStringImpl) }
 
   	@objects = []
 
     ActiveRecord::Base.transaction do
     	problem_features.each do |feature|
 
-        if feature["circuitColor"].present?
-          circuit = Circuit.find_or_initialize_by(color: feature["circuitColor"], area_id: area_id)
-        else
-          circuit = nil
-        end
-
-        if feature["id"].present?
-        	problem = Problem.find_or_initialize_by(id: feature["id"])
-        elsif circuit && feature["circuitNumber"].present?
-        	problem = Problem.find_or_initialize_by(circuit: circuit, circuit_number: feature["circuitNumber"], area_id: area_id)
+        if feature["problemId"].present?
+        	problem = Problem.find_by(id: feature["problemId"])
         else
         	problem = Problem.new
         end
@@ -34,11 +26,6 @@ class ImportsController < ApplicationController
         problem.assign_attributes(
           area_id: area_id,
         	location: FACTORY.point(feature.geometry.x, feature.geometry.y),
-        	name: feature["name"].presence,
-          grade: feature["grade"].presence,
-          circuit_number: feature["circuitNumber"].presence,
-          steepness: feature["steepness"].presence || "other",
-          height: feature["height"].presence,
         )
 
         problem.save! if save
@@ -46,14 +33,15 @@ class ImportsController < ApplicationController
       end
 
       boulder_features.each do |feature|
-        boulder = Boulder.where("ST_AsText(ST_Intersection(polygon, '#{feature.geometry.to_s}'::geometry)) != 'POLYGON EMPTY'").first
 
-        if !boulder
+        if feature["boulderId"].present?
+          boulder = Boulder.find_by(id: feature["boulderId"])
+        else
           boulder = Boulder.new(area_id: area_id)
         end
 
         boulder.assign_attributes(
-          polygon: feature.geometry.to_s
+          polygon: FACTORY.polygon(feature.geometry)
         )
 
         boulder.save! if save
