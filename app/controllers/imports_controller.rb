@@ -8,7 +8,7 @@ class ImportsController < ApplicationController
 
     save = (params[:commit] == "Import")
 
-  	data = RGeo::GeoJSON.decode(params[:import][:geojson])
+  	data = RGeo::GeoJSON.decode(params[:import][:geojson].read)
   	problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
     boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PolygonImpl) }
 

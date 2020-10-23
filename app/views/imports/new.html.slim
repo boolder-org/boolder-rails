@@ -4,9 +4,10 @@ h1 New import
 	div class="form-group"
 	p
 		= form.label :geojson
-		= form.text_area :geojson, class: "form-control", rows: "10"
+		= form.file_field :geojson, class: "form-control"
 
 	p
+		= form.label :area_id, "Area"
 		= form.select :area_id, Area.all.collect {|a| [ a.name, a.id ] }, { include_blank: true }, class: "form-control"
 
 	p
