@@ -19,6 +19,7 @@ class ImportsController < ApplicationController
 
         if feature["problemId"].present?
         	problem = Problem.find_by(id: feature["problemId"])
+          raise "wrong area for problem #{problem.id}: #{problem.area_id} instead of #{area_id}" if (problem.area_id != area_id.to_i)
         else
         	problem = Problem.new
         end
@@ -36,6 +37,7 @@ class ImportsController < ApplicationController
 
         if feature["boulderId"].present?
           boulder = Boulder.find_by(id: feature["boulderId"])
+          raise "wrong area for boulder #{boulder.id}: #{boulder.area_id} instead of #{area_id}" if (boulder.area_id != area_id.to_i)
         else
           boulder = Boulder.new(area_id: area_id)
         end
