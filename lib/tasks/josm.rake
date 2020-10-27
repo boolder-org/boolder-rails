@@ -51,7 +51,7 @@ namespace :josm do
       hash = {}.with_indifferent_access
       hash[:name] = [problem.circuit&.color, problem.circuit_number, problem.name.presence].join(" ")
       hash[:problem_id] = problem.id
-      hash[:positioning_error] = problem.topos.first&.location_positioning_error_from_metadata&.round(1)
+      hash[:positioning_error] = problem.topos.first&.location_positioning_error_from_metadata&.to_f&.round(1)
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
       factory.feature(problem.topos.first&.location_from_metadata, nil, hash)
