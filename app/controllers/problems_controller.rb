@@ -4,7 +4,12 @@ class ProblemsController < ApplicationController
 
 		arel = Problem.all
 		arel = arel.where(area_id: params[:area_id]) if params[:area_id].present?
-		arel = arel.joins(:circuit).where(circuits: { color: params[:color] }) if params[:color].present?
+
+		if params[:color] == "off_circuit"
+			arel = arel.where(circuit_id: nil)
+		else
+			arel = arel.joins(:circuit).where(circuits: { color: params[:color] }) if params[:color].present?
+		end
 
 		@problems = arel.sort_by{|p| p.enumerable_circuit_number }
 
