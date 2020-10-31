@@ -10,9 +10,9 @@ p
 				= link_to area.name, problems_path(area_id: area.id, color: params[:color])
 			= " | "
 		- if params[:area_id]
-			= link_to "Aucun", problems_path(color: params[:color])
+			= link_to "None", problems_path(color: params[:color])
 		- else 
-			= "Aucun"
+			= "None"
 	- if params[:area_id].present?
 		div
 			- @circuits.each do |circuit|
@@ -22,9 +22,12 @@ p
 					= link_to circuit.name, problems_path(area_id: params[:area_id], color: circuit.color)
 				= " | "
 			- if params[:color]
-				= link_to "Aucun", problems_path(area_id: params[:area_id])
+				= link_to "None", problems_path(area_id: params[:area_id])
 			- else 
-				= "Aucun"
+				= "None"
+
+p
+	= link_to "New problem", new_problem_path(area_id: params[:area_id])
 
 table class="table table-striped table-bordered"
 	thead class="thead-dark"
