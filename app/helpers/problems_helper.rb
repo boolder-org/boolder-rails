@@ -6,7 +6,7 @@ module ProblemsHelper
 	end
 
 	def uicolor(circuit_color)
-		color_mapping[circuit_color.to_sym] || "#CCC"
+		color_mapping[circuit_color] || "#CCC"
 	end
 
 	private
@@ -19,7 +19,7 @@ module ProblemsHelper
 			red: 			"#FF3B2F",
 			black: 		"#000000",
 			white: 		"#FFFFFF",
-		}
+		}.with_indifferent_access
 	end
 
 	def text_color(circuit_color)

@@ -1,0 +1,25 @@
+h1 New problem
+
+= form_with scope: :problem, url: problems_path, local: true do |form|
+  div class="row"
+    div class="col-md-auto"
+    
+      div class="form-group"
+      	p
+					= form.label :area_id, "Area"
+					= form.select :area_id, options_for_select(Area.all.collect {|a| [ a.name, a.id ] }, params[:area_id]), { include_blank: true }, class: "form-control"
+        p
+          = form.label :name
+          = form.text_field :name, class: "form-control"
+        p
+          = form.label :steepness
+          = form.select :steepness, options_for_select(Problem::STEEPNESS_VALUES, :other), { include_blank: false }, class: "form-control"
+        p
+          = form.label :grade
+          = form.text_field :grade, class: "form-control"
+
+        p
+          = form.label :height
+          = form.text_field :height, class: "form-control"
+  p
+    = form.submit("Create", class: "btn btn-primary")

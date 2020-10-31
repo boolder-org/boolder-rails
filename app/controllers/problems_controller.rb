@@ -1,13 +1,28 @@
 class ProblemsController < ApplicationController
 	def index
+		redirect_to problems_path(area_id: 1) if params[:area_id].blank?
+
 		arel = Problem.all
 		arel = arel.where(area_id: params[:area_id]) if params[:area_id].present?
 		arel = arel.joins(:circuit).where(circuits: { color: params[:color] }) if params[:color].present?
 
-		@problems = arel.sort_by{|p| p.circuit_number.to_i + (p.circuit_number.include?('b') ? 0.5 : 0) }
+		@problems = arel.sort_by{|p| p.enumerable_circuit_number }
 
 		@circuits = Circuit.all
 		@circuits = @circuits.where(area_id: params[:area_id]) if params[:area_id].present?
+	end
+
+	def new
+	end
+
+	def create
+		@problem = Problem.create!(problem_params)
+		redirect_to @problem
+	end
+
+	def show
+		problem = Problem.find(params[:id])
+		redirect_to edit_problem_path(problem)
 	end
 
 	def edit
@@ -27,7 +42,7 @@ class ProblemsController < ApplicationController
 
 	private 
 	def problem_params
-		params.require(:problem).permit(:name, :grade, :steepness, :height, :circuit_number, :circuit_id, 
+		params.require(:problem).permit(:area_id, :name, :grade, :steepness, :height, :circuit_number, :circuit_id, 
 			topos_attributes: [:photo])
 	end
 end

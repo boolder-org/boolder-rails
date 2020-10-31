@@ -1,5 +1,5 @@
 class Problem < ApplicationRecord
-  belongs_to :circuit
+  belongs_to :circuit, optional: true
   belongs_to :area
   has_many :topos
   accepts_nested_attributes_for :topos, reject_if: lambda {|attributes| attributes['photo'].blank?}
@@ -17,4 +17,12 @@ class Problem < ApplicationRecord
 
   scope :all_tags, -> (array){ where("tags @> ARRAY[?]::varchar[]", array) }
   scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
+
+  def enumerable_circuit_number
+    if circuit_number.present?
+      circuit_number.to_i + (circuit_number.include?('b') ? 0.5 : 0)
+    else
+      1_000
+    end
+  end
 end
