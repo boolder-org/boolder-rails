@@ -10,6 +10,7 @@ h1 New line
         p
           = form.label :topo_id, "Topo id"
           = form.text_field :topo_id, class: "form-control"
+          = link_to "New topo", new_topo_path
 
   p
     = form.submit("Create", class: "btn btn-primary")
