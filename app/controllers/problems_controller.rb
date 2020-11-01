@@ -32,8 +32,6 @@ class ProblemsController < ApplicationController
 
 	def edit
 		@problem = Problem.find(params[:id])
-
-		@problem.topos.build
 	end
 
 	def update

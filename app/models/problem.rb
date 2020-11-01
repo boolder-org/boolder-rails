@@ -1,8 +1,8 @@
 class Problem < ApplicationRecord
   belongs_to :circuit, optional: true
   belongs_to :area
-  has_many :topos
-  accepts_nested_attributes_for :topos, reject_if: lambda {|attributes| attributes['photo'].blank?}
+  has_many :lines
+  has_many :topos, through: :lines
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
 

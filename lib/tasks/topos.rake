@@ -26,6 +26,7 @@ namespace :topos do
       #   puts "skipping (topo already exists for problem #{problem.id})"
       #   next
       # else
+        raise "WIP"
   		  topo = problem.topos.first_or_create
     		topo.photo.attach(io: File.open(Rails.root.join('lib', 'tasks', '_import', filename)), filename: 'photo.jpg')
         topo.save!

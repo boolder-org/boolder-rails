@@ -1,0 +1,15 @@
+h1 New line
+
+= form_with scope: :line, url: lines_path, local: true do |form|
+  div class="row"
+    div class="col-md-auto"
+      div class="form-group"
+        p
+          = form.label :problem_id, "Problem id"
+          = form.text_field :problem_id, value: params[:problem_id], class: "form-control"
+        p
+          = form.label :topo_id, "Topo id"
+          = form.text_field :topo_id, class: "form-control"
+
+  p
+    = form.submit("Create", class: "btn btn-primary")

@@ -1,32 +1,32 @@
-
-- add_breadcrumb @topo.problem.area.name, problems_path(area_id: @topo.problem.area.id, color: @topo.problem.circuit.color, anchor: @topo.problem.id)
-- add_breadcrumb "Problem ##{@topo.problem.id}", edit_problem_path(@topo.problem)
 - add_breadcrumb "Topo ##{@topo.id}", nil, class: "active"
 
 h1= "Topo ##{@topo.id}"
 
+div class="my-3" 
+  - @topo.problems.each do |problem|
+    span class="mr-3" 
+      = circle_view_with_name(problem)
+
 div data-controller="topo-editor"
-	p= circle_view(@topo.problem)
 	div style="" data-target="topo-editor.container"
 		= image_tag(@topo.photo.variant(resize_to_limit: [800, 800]), data: {target: "topo-editor.image"}, style: "position:absolute;z-index:1;")
 		canvas data-target="topo-editor.canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"
 
 	= form_with model: @topo, local: true, data: {target: "topo-editor.form"} do |form|
+		div class="form-group form-check"
+			= form.check_box :published, class: "form-check-input"
+			= form.label :published
+
 		div class="form-group"
+			p
+				div Metadata
+				code
+					pre
+						= JSON.pretty_generate(@topo.metadata)
+			p
+				= form.label :metadata, "Change metadata"
+				= form.file_field :metadata, class: "form-control"
 
-		p
-			= form.label :line
-			= form.text_area :line, class: "form-control", rows: "4", data: {target: 'topo-editor.textarea'}, value: @topo.line.to_json
-
-		p
-			div Metadata
-			code
-				pre
-					= JSON.pretty_generate(@topo.metadata)
-		p
-			= form.label :metadata, "Change metadata"
-			= form.file_field :metadata, class: "form-control"
-
-		p
-			= form.submit("Update", class: "btn btn-primary")
+			p
+				= form.submit("Update", class: "btn btn-primary")
 div style="margin-bottom: 300px"

@@ -1,8 +1,11 @@
 class Topo < ApplicationRecord
-	belongs_to :problem
-	has_one_attached :photo
+	self.ignored_columns = %w(line problem_id) # FIXME: remove once migration is done
 
-	default_scope { where(published: true) }
+	has_one_attached :photo
+	has_many :lines
+	has_many :problems, through: :lines
+
+	scope :published, -> { where(published: true) }
 
 	validates :photo, presence: true
 

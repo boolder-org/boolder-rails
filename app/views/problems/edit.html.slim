@@ -38,15 +38,14 @@ h1= "Problem ##{@problem.id}"
           = form.text_field :bleau_info_id, class: "form-control"
 
     div class="col-md-auto"
-      - @problem.topos.select(&:persisted?).each do |topo|
-        = link_to image_tag(topo.photo, height: "500"), edit_topo_path(topo)
+      - @problem.lines.published.each do |line|
+        = link_to image_tag(line.topo.photo, height: "500"), edit_line_path(line)
         p
-          = "Topo ##{topo.id} "
-          = link_to "(delete)", topo, method: :delete, data: { confirm: 'Are you sure?' }
-      = form.fields_for :topos, @problem.topos.reject(&:persisted?) do |topos_form|
-          p class="mt-5"
-            = topos_form.label :photo, "Add a topo photo"
-            = topos_form.file_field :photo, class: "form-control"
+          = link_to "Line ##{line.id}", edit_line_path(line)
+          = " | "
+          = link_to "Topo ##{line.topo.id} ", edit_topo_path(line.topo)
+      p
+        = link_to "Add topo line", new_line_path(problem_id: @problem.id)
 
   p
     = form.submit("Update", class: "btn btn-primary")
