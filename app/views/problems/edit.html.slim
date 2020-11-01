@@ -39,6 +39,11 @@ h1= "Problem ##{@problem.id}"
         = form.label :bleau_info_id, "Bleau.info id"
         = form.text_field :bleau_info_id, class: "form-control"
 
+      div class="form-group"
+        = form.label :joined_tags, 'Tags'
+        = form.text_field :joined_tags, value: @problem.tags.join(","), class: "form-control"
+        / div= @problem.tags.join(" ")
+
     div class="col-md-auto"
       - @problem.lines.published.each do |line|
         = link_to image_tag(line.topo.photo, height: "500"), edit_line_path(line)
