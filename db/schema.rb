@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_01_094419) do
+ActiveRecord::Schema.define(version: 2020_11_01_100712) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,16 @@ ActiveRecord::Schema.define(version: 2020_11_01_094419) do
     t.bigint "area_id"
     t.integer "order"
     t.index ["area_id"], name: "index_circuits_on_area_id"
+  end
+
+  create_table "lines", force: :cascade do |t|
+    t.json "coordinates"
+    t.bigint "problem_id"
+    t.bigint "topo_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["problem_id"], name: "index_lines_on_problem_id"
+    t.index ["topo_id"], name: "index_lines_on_topo_id"
   end
 
   create_table "pois", force: :cascade do |t|
