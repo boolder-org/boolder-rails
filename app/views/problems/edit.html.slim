@@ -6,36 +6,38 @@ h1= "Problem ##{@problem.id}"
 = form_with model: @problem, local: true do |form|
   div class="row"
     div class="col-md-auto"
+
+      div class="my-3"
+        = circle_view_with_name(@problem)
     
       div class="form-group"
-        p
-          div class="row"
-            div class="col"
-              = form.label :circuit_id
-              = form.select :circuit_id, @problem.area.circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }, class: "form-control"
-            div class="col"
-              = form.label :circuit_number
-              = form.text_field :circuit_number, class: "form-control"
+        div class="row"
+          div class="col"
+            = form.label :circuit_id
+            = form.select :circuit_id, @problem.area.circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }, class: "form-control"
+          div class="col"
+            = form.label :circuit_number
+            = form.text_field :circuit_number, class: "form-control"
 
-        p
-          = form.label :name
-          = form.text_field :name, class: "form-control"
+      div class="form-group"
+        = form.label :name
+        = form.text_field :name, class: "form-control"
 
-        p
-          = form.label :steepness
-          = form.select :steepness, Problem::STEEPNESS_VALUES, { include_blank: false }, class: "form-control"
+      div class="form-group"
+        = form.label :steepness
+        = form.select :steepness, Problem::STEEPNESS_VALUES, { include_blank: false }, class: "form-control"
 
-        p
-          = form.label :grade
-          = form.text_field :grade, class: "form-control"
+      div class="form-group"
+        = form.label :grade
+        = form.text_field :grade, class: "form-control"
 
-        p
-          = form.label :height
-          = form.text_field :height, class: "form-control"
+      div class="form-group"
+        = form.label :height
+        = form.text_field :height, class: "form-control"
 
-        p
-          = form.label :bleau_info_id, "Bleau.info id"
-          = form.text_field :bleau_info_id, class: "form-control"
+      div class="form-group"
+        = form.label :bleau_info_id, "Bleau.info id"
+        = form.text_field :bleau_info_id, class: "form-control"
 
     div class="col-md-auto"
       - @problem.lines.published.each do |line|
