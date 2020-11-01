@@ -1,6 +1,6 @@
 class ProblemsController < ApplicationController
 	def index
-		redirect_to problems_path(area_id: 1) if params[:area_id].blank?
+		redirect_to problems_path(area_id: 1, color: :yellow) if params[:area_id].blank?
 
 		arel = Problem.all
 		arel = arel.where(area_id: params[:area_id]) if params[:area_id].present?
