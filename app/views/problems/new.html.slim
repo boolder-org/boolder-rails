@@ -21,5 +21,9 @@ h1 New problem
         p
           = form.label :height
           = form.text_field :height, class: "form-control"
+
+        p
+          = form.label :bleau_info_id, "Bleau.info id"
+          = form.text_field :bleau_info_id, class: "form-control"
   p
     = form.submit("Create", class: "btn btn-primary")

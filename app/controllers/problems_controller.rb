@@ -47,7 +47,7 @@ class ProblemsController < ApplicationController
 
 	private 
 	def problem_params
-		params.require(:problem).permit(:area_id, :name, :grade, :steepness, :height, :circuit_number, :circuit_id, 
+		params.require(:problem).permit(:area_id, :name, :grade, :steepness, :height, :bleau_info_id, :circuit_number, :circuit_id, 
 			topos_attributes: [:photo])
 	end
 end

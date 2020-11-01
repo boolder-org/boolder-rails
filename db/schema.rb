@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_19_194907) do
+ActiveRecord::Schema.define(version: 2020_11_01_094419) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,6 +85,7 @@ ActiveRecord::Schema.define(version: 2020_10_19_194907) do
     t.integer "height"
     t.bigint "area_id"
     t.string "tags", default: [], null: false, array: true
+    t.string "bleau_info_id"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["location"], name: "index_problems_on_location", using: :gist

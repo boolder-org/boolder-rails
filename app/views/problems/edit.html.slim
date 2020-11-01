@@ -33,6 +33,10 @@ h1= "Problem ##{@problem.id}"
           = form.label :height
           = form.text_field :height, class: "form-control"
 
+        p
+          = form.label :bleau_info_id, "Bleau.info id"
+          = form.text_field :bleau_info_id, class: "form-control"
+
     div class="col-md-auto"
       - @problem.topos.select(&:persisted?).each do |topo|
         = link_to image_tag(topo.photo, height: "500"), edit_topo_path(topo)
