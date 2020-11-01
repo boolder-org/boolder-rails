@@ -40,7 +40,7 @@ class ProblemsController < ApplicationController
 		problem.update(problem_params)
 
 		flash[:notice] = "Problem updated"
-		redirect_to problems_path(anchor: problem.id, area_id: problem.area_id, color: problem.circuit&.color)
+		redirect_to problems_path(anchor: problem.id, area_id: problem.area_id, color: problem.circuit&.color || "off_circuit")
 	end
 
 	private 
