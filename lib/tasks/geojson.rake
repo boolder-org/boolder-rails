@@ -15,7 +15,7 @@ namespace :geojson do
       hash[:name] = problem.name.presence
       hash[:circuit_color] = problem.circuit&.color
       hash[:tags] = problem.tags if problem.tags.present?
-      hash[:topos] = problem.topos.map{|t| {id: t.id} } if problem.topos.any?
+      hash[:lines] = problem.lines.published.map{|line| {id: line.id} } if problem.lines.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
       factory.feature(problem.location, "problem_#{problem.id}", hash)
