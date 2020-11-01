@@ -1,6 +1,4 @@
 class Topo < ApplicationRecord
-	self.ignored_columns = %w(line problem_id) # FIXME: remove once migration is done
-
 	has_one_attached :photo
 	has_many :lines
 	has_many :problems, through: :lines
