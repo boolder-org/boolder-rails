@@ -5,9 +5,9 @@ h1 New problem
     div class="col-md-auto"
     
       div class="form-group"
-      	p
-					= form.label :area_id, "Area"
-					= form.select :area_id, options_for_select(Area.all.collect {|a| [ a.name, a.id ] }, params[:area_id]), { include_blank: true }, class: "form-control"
+        p
+          = form.label :area_id, "Area"
+          = form.select :area_id, options_for_select(Area.all.collect {|a| [ a.name, a.id ] }, params[:area_id]), { include_blank: true }, class: "form-control"
         p
           = form.label :name
           = form.text_field :name, class: "form-control"
