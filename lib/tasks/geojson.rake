@@ -13,7 +13,7 @@ namespace :geojson do
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :height))
       hash[:name] = problem.name.presence
-      hash[:circuit_color] = problem.circuit.color
+      hash[:circuit_color] = problem.circuit&.color
       hash[:tags] = problem.tags if problem.tags.present?
       hash[:topos] = problem.topos.map{|t| {id: t.id} } if problem.topos.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
