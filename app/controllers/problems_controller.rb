@@ -37,7 +37,9 @@ class ProblemsController < ApplicationController
 	def update
 		problem = Problem.find(params[:id])
 
-		problem.update(problem_params)
+		problem.update_attributes(problem_params)
+		problem.tags = params[:problem][:joined_tags].split(',')
+		problem.save!
 
 		flash[:notice] = "Problem updated"
 		redirect_to problems_path(anchor: problem.id, area_id: problem.area_id, color: problem.circuit&.color || "off_circuit")
@@ -45,6 +47,7 @@ class ProblemsController < ApplicationController
 
 	private 
 	def problem_params
-		params.require(:problem).permit(:area_id, :name, :grade, :steepness, :height, :bleau_info_id, :circuit_number, :circuit_id)
+		params.require(:problem).
+			permit(:area_id, :name, :grade, :steepness, :height, :bleau_info_id, :circuit_number, :circuit_id)
 	end
 end
