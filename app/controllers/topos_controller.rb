@@ -3,10 +3,6 @@ class ToposController < ApplicationController
 		@topos = Topo.all.order(:id)
 	end
 
-	def show
-		@topo = Topo.find(params[:id])
-	end
-
 	def new
 	end
 
@@ -29,6 +25,7 @@ class ToposController < ApplicationController
 
 	def edit
 		@topo = Topo.find(params[:id])
+		session[:last_topo_visited] = @topo.id
 	end
 
 	def update

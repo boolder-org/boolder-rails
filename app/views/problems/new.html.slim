@@ -9,20 +9,20 @@ h1 New problem
         = form.select :area_id, options_for_select(Area.all.collect {|a| [ a.name, a.id ] }, params[:area_id]), { include_blank: true }, class: "form-control"
       div class="form-group"
         = form.label :name
-        = form.text_field :name, class: "form-control"
+        = form.text_field :name, class: "form-control", autocomplete: "off"
       div class="form-group"
         = form.label :steepness
         = form.select :steepness, options_for_select(Problem::STEEPNESS_VALUES, :other), { include_blank: false }, class: "form-control"
       div class="form-group"
         = form.label :grade
-        = form.text_field :grade, class: "form-control"
+        = form.text_field :grade, class: "form-control", autocomplete: "off"
 
       div class="form-group"
         = form.label :height
-        = form.text_field :height, class: "form-control"
+        = form.text_field :height, class: "form-control", autocomplete: "off"
 
       div class="form-group"
         = form.label :bleau_info_id, "Bleau.info id"
-        = form.text_field :bleau_info_id, class: "form-control"
+        = form.text_field :bleau_info_id, class: "form-control", autocomplete: "off"
       div class="form-group"
         = form.submit("Create", class: "btn btn-primary")

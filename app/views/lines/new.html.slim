@@ -5,10 +5,10 @@ h1 New line
     div class="col-md-auto"
       div class="form-group"
         = form.label :problem_id, "Problem id"
-        = form.text_field :problem_id, value: params[:problem_id], class: "form-control"
+        = form.text_field :problem_id, value: params[:problem_id], class: "form-control", autocomplete: "off"
       div class="form-group"
         = form.label :topo_id, "Topo id"
-        = form.text_field :topo_id, class: "form-control"
+        = form.text_field :topo_id, value: session[:last_topo_visited], class: "form-control", autocomplete: "off", autofocus: "true", onFocus:"this.select()"
         = link_to "New topo", new_topo_path
 
       div class="form-group"
