@@ -6,6 +6,8 @@ namespace :topos do
   	area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
 
+    puts "exporting area #{area_id}"
+
     with_photos = (ENV["with_photos"] == "true")
     puts "skipping photos" if !with_photos
 
