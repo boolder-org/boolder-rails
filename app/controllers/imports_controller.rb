@@ -34,16 +34,21 @@ class ImportsController < ApplicationController
       end
 
       boulder_features.each do |feature|
+        polygon = FACTORY.polygon(feature.geometry)
 
         if feature["boulderId"].present?
           boulder = Boulder.find_by(id: feature["boulderId"])
           raise "wrong area for boulder #{boulder.id}: #{boulder.area_id} instead of #{area_id}" if (boulder.area_id != area_id.to_i)
         else
-          boulder = Boulder.new(area_id: area_id)
+          if existing_boulder = Boulder.where(polygon: polygon).first
+            raise "boulder already exists (boulder_id=#{existing_boulder.id})" 
+          else
+            boulder = Boulder.new(area_id: area_id)
+          end
         end
 
         boulder.assign_attributes(
-          polygon: FACTORY.polygon(feature.geometry)
+          polygon: polygon
         )
 
         boulder.save! if save
