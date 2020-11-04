@@ -14,10 +14,6 @@ class Circuit < ApplicationRecord
       sort_by{|p| p.circuit_number.to_i + (p.circuit_number.include?('b') ? 0.5 : 0) }
   end
 
-  def level
-  	id == 1 ? :beginner : :unknown
-  end
-
   def name
       I18n.t("circuit.name.#{color}")
   end
