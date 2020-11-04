@@ -37,7 +37,7 @@ class ProblemsController < ApplicationController
 	def update
 		problem = Problem.find(params[:id])
 
-		problem.update_attributes(problem_params)
+		problem.assign_attributes(problem_params)
 		problem.tags = params[:problem][:joined_tags].split(',')
 		problem.save!
 
