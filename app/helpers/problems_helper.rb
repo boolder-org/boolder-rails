@@ -7,7 +7,7 @@ module ProblemsHelper
 
 	def circle_view_with_name(problem)
 		content_tag(:span, circle_view(problem), class: "mr-1") + 
-			(link_to (problem.name || "No name"), edit_problem_path(problem))
+			(link_to (problem.name.presence || "No name"), edit_problem_path(problem))
 	end
 
 	def uicolor(circuit_color)
