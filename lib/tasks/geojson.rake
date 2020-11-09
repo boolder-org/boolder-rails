@@ -13,6 +13,7 @@ namespace :geojson do
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :height))
       hash[:name] = problem.name.presence
+      hash[:bleau_info_id] = problem.bleau_info_id
       hash[:circuit_color] = problem.circuit&.color
       hash[:tags] = problem.tags if problem.tags.present?
       hash[:lines] = problem.lines.published.map{|line| {id: line.id} } if problem.lines.any?
