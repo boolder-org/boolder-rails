@@ -45,7 +45,7 @@ namespace :geojson do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    File.open(Rails.root.join('export', "area-#{area_id}", "area-#{area_id}-data.geojson"),"w") do |f|
+    File.open(Rails.root.join('export', 'app', "area-#{area_id}", "area-#{area_id}-data.geojson"),"w") do |f|
       f.write(geo_json)
     end
 

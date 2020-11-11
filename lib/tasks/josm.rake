@@ -32,7 +32,7 @@ namespace :josm do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    File.open(Rails.root.join('export', "josm", "area-#{area_id}-data.geojson"),"w") do |f|
+    File.open(Rails.root.join('export', "josm", "area-#{area_id}", "area-#{area_id}-data.geojson"),"w") do |f|
       f.write(geo_json)
     end
 
@@ -63,7 +63,7 @@ namespace :josm do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    File.open(Rails.root.join('export', "josm", "area-#{area_id}-metadata.geojson"),"w") do |f|
+    File.open(Rails.root.join('export', "josm", "area-#{area_id}", "area-#{area_id}-metadata.geojson"),"w") do |f|
       f.write(geo_json)
     end
 
