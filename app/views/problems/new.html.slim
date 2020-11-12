@@ -3,6 +3,15 @@ h1 New problem
 = form_with scope: :problem, url: problems_path, local: true do |form|
   div class="row"
     div class="col-md-auto"
+
+      div class="form-group"
+          div class="row"
+            div class="col"
+              = form.label :circuit_id
+              = form.select :circuit_id, Area.find(params[:area_id]).circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }, class: "form-control"
+            div class="col"
+              = form.label :circuit_number
+              = form.text_field :circuit_number, class: "form-control", autocomplete: "off"
     
       div class="form-group"
         = form.label :area_id, "Area"
@@ -17,9 +26,9 @@ h1 New problem
         = form.label :grade
         = form.text_field :grade, class: "form-control", autocomplete: "off"
 
-      div class="form-group"
-        = form.label :height
-        = form.text_field :height, class: "form-control", autocomplete: "off"
+      / div class="form-group"
+      /   = form.label :height
+      /   = form.text_field :height, class: "form-control", autocomplete: "off"
 
       div class="form-group"
         = form.label :bleau_info_id, "Bleau.info id"
