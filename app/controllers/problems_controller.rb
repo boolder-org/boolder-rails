@@ -1,9 +1,13 @@
 class ProblemsController < ApplicationController
 	def index
-		redirect_to problems_path(area_id: 1, color: :yellow) if params[:area_id].blank?
+		redirect_to problems_path(area_id: (session[:area_id] || 1), color: :yellow) if params[:area_id].blank?
 
 		arel = Problem.all
-		arel = arel.where(area_id: params[:area_id]) if params[:area_id].present?
+
+		if params[:area_id].present?
+			arel = arel.where(area_id: params[:area_id]) 
+			session[:area_id] = params[:area_id]
+		end
 
 		if params[:color] == "off_circuit"
 			arel = arel.where(circuit_id: nil)
@@ -18,6 +22,28 @@ class ProblemsController < ApplicationController
 	end
 
 	def new
+		extracted_params = params[:extracted]
+
+		if extracted_params.present?
+			@extracted_name = extracted_params[:name].strip
+			@extracted_grade = extracted_params[:grade].strip
+			@extracted_id = extracted_params[:id].strip
+
+			if extracted_params[:tags].include?("travers")
+				@extracted_steepness = :traverse
+			elsif extracted_params[:tags].include?("toit")
+				@extracted_steepness = :roof
+			elsif extracted_params[:tags].include?("dévers") || extracted_params[:tags].include?("surplomb")
+				@extracted_steepness = :overhang
+			elsif extracted_params[:tags].include?("dalle")
+				@extracted_steepness = :slab
+			elsif extracted_params[:tags].include?("mur")
+				@extracted_steepness = :wall
+			else
+				@extracted_steepness = :other
+			end						
+		end
+
 	end
 
 	def create
@@ -32,6 +58,7 @@ class ProblemsController < ApplicationController
 
 	def edit
 		@problem = Problem.find(params[:id])
+		session[:area_id] = @problem.area_id
 	end
 
 	def update
