@@ -32,7 +32,11 @@ namespace :josm do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    File.open(Rails.root.join('export', "josm", "area-#{area_id}", "area-#{area_id}-data.geojson"),"w") do |f|
+    file_name = Rails.root.join('export', "josm", "area-#{area_id}", "area-#{area_id}-data.geojson")
+
+    raise "file already exists" if File.exist?(file_name)
+
+    File.open(file_name,"w") do |f|
       f.write(geo_json)
     end
 
