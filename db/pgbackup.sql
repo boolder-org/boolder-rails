@@ -883,6 +883,15 @@ COPY public.active_storage_attachments (id, name, record_type, record_id, blob_i
 890	photo	Topo	558	890	2020-10-27 11:28:48.426109
 891	photo	Topo	559	891	2020-11-01 14:02:20.952555
 894	photo	Topo	562	894	2020-12-13 14:40:38.63127
+897	photo	Topo	565	897	2020-12-13 15:14:45.487819
+898	photo	Topo	566	898	2020-12-13 15:16:28.789495
+899	photo	Topo	567	899	2020-12-13 15:17:22.715553
+900	photo	Topo	568	900	2020-12-13 15:18:28.728919
+901	photo	Topo	569	901	2020-12-13 15:20:29.379794
+902	photo	Topo	570	902	2020-12-13 15:21:47.654973
+903	photo	Topo	571	903	2020-12-13 15:22:51.636103
+904	photo	Topo	572	904	2020-12-13 15:23:45.216957
+905	photo	Topo	573	905	2020-12-13 15:25:58.607457
 805	photo	Topo	477	805	2020-09-04 19:56:30.910566
 809	photo	Topo	265	809	2020-10-14 17:04:55.028542
 810	photo	Topo	479	810	2020-10-15 13:01:45.749114
@@ -925,6 +934,68 @@ COPY public.active_storage_attachments (id, name, record_type, record_id, blob_i
 893	photo	Topo	561	893	2020-12-12 20:44:53.431325
 895	photo	Topo	563	895	2020-12-13 14:42:17.361562
 896	photo	Topo	564	896	2020-12-13 14:45:28.124551
+906	photo	Topo	574	906	2020-12-13 15:27:32.135712
+907	photo	Topo	575	907	2020-12-13 15:31:28.730761
+908	photo	Topo	576	908	2020-12-13 15:33:22.580024
+909	photo	Topo	577	909	2020-12-13 15:34:31.363062
+910	photo	Topo	578	910	2020-12-13 15:35:21.755969
+911	photo	Topo	579	911	2020-12-13 15:36:18.754202
+912	photo	Topo	580	912	2020-12-13 15:37:29.462849
+913	photo	Topo	581	913	2020-12-13 15:38:33.14526
+914	photo	Topo	582	914	2020-12-13 15:41:02.465591
+915	photo	Topo	583	915	2020-12-13 15:42:01.064537
+916	photo	Topo	584	916	2020-12-13 15:49:22.178174
+917	photo	Topo	585	917	2020-12-13 15:50:12.86155
+918	photo	Topo	586	918	2020-12-13 15:51:10.746248
+919	photo	Topo	587	919	2020-12-13 15:51:53.192507
+920	photo	Topo	588	920	2020-12-13 15:52:51.505938
+921	photo	Topo	589	921	2020-12-13 15:53:44.587988
+922	photo	Topo	590	922	2020-12-13 15:54:32.150722
+923	photo	Topo	591	923	2020-12-13 15:55:36.350506
+924	photo	Topo	592	924	2020-12-13 15:56:42.239252
+925	photo	Topo	593	925	2020-12-13 15:57:40.258898
+926	photo	Topo	594	926	2020-12-13 15:58:57.960732
+927	photo	Topo	595	927	2020-12-13 15:59:53.803598
+928	photo	Topo	596	928	2020-12-13 16:00:51.695791
+929	photo	Topo	597	929	2020-12-13 16:01:53.89957
+930	photo	Topo	598	930	2020-12-13 16:03:03.692708
+931	photo	Topo	599	931	2020-12-13 16:04:20.342989
+932	photo	Topo	600	932	2020-12-13 16:04:54.427253
+933	photo	Topo	601	933	2020-12-13 16:05:44.383969
+934	photo	Topo	602	934	2020-12-13 16:06:56.023866
+935	photo	Topo	603	935	2020-12-13 16:08:00.51815
+936	photo	Topo	604	936	2020-12-13 16:20:41.536935
+937	photo	Topo	605	937	2020-12-13 16:21:26.709685
+938	photo	Topo	606	938	2020-12-13 16:22:11.303206
+939	photo	Topo	607	939	2020-12-13 16:23:04.197006
+940	photo	Topo	608	940	2020-12-13 16:24:02.305314
+941	photo	Topo	609	941	2020-12-13 16:25:21.344659
+942	photo	Topo	610	942	2020-12-13 16:26:21.65112
+943	photo	Topo	611	943	2020-12-13 16:27:33.994966
+944	photo	Topo	612	944	2020-12-13 16:28:19.790555
+945	photo	Topo	613	945	2020-12-13 16:29:22.959788
+946	photo	Topo	614	946	2020-12-13 16:30:03.743639
+947	photo	Topo	615	947	2020-12-13 16:31:04.741436
+948	photo	Topo	616	948	2020-12-13 16:31:51.424456
+949	photo	Topo	617	949	2020-12-13 16:32:44.278079
+950	photo	Topo	618	950	2020-12-13 16:34:38.754015
+951	photo	Topo	619	951	2020-12-13 16:35:44.491743
+952	photo	Topo	620	952	2020-12-13 16:36:43.745637
+953	photo	Topo	621	953	2020-12-13 16:37:42.90734
+954	photo	Topo	622	954	2020-12-13 16:38:49.262395
+955	photo	Topo	623	955	2020-12-13 16:40:15.036787
+956	photo	Topo	624	956	2020-12-13 16:40:47.894728
+957	photo	Topo	625	957	2020-12-13 16:46:35.383864
+958	photo	Topo	626	958	2020-12-13 16:47:26.934081
+959	photo	Topo	627	959	2020-12-13 16:48:30.95514
+960	photo	Topo	628	960	2020-12-13 16:49:06.06689
+961	photo	Topo	629	961	2020-12-13 16:49:45.775297
+962	photo	Topo	630	962	2020-12-13 16:51:17.809463
+963	photo	Topo	631	963	2020-12-13 16:52:16.574727
+964	photo	Topo	632	964	2020-12-13 16:52:59.938363
+965	photo	Topo	633	965	2020-12-13 16:53:55.575546
+966	photo	Topo	634	966	2020-12-13 16:54:23.736121
+967	photo	Topo	635	967	2020-12-13 16:54:53.418809
 593	photo	Topo	266	593	2020-09-03 20:46:42.282532
 594	photo	Topo	267	594	2020-09-03 20:46:42.450484
 595	photo	Topo	268	595	2020-09-03 20:46:42.603841
@@ -1031,6 +1102,56 @@ COPY public.active_storage_attachments (id, name, record_type, record_id, blob_i
 845	photo	Topo	513	845	2020-10-27 10:20:19.900054
 846	photo	Topo	514	846	2020-10-27 10:22:14.178047
 849	photo	Topo	517	849	2020-10-27 10:26:02.621596
+968	photo	Topo	636	968	2020-12-13 16:55:40.796694
+969	photo	Topo	637	969	2020-12-13 16:56:57.938043
+970	photo	Topo	638	970	2020-12-13 16:57:44.880488
+971	photo	Topo	639	971	2020-12-13 16:58:39.46952
+972	photo	Topo	640	972	2020-12-13 17:00:18.212596
+973	photo	Topo	641	973	2020-12-13 17:00:59.601078
+974	photo	Topo	642	974	2020-12-13 17:01:31.269275
+975	photo	Topo	643	975	2020-12-13 17:02:40.450018
+976	photo	Topo	644	976	2020-12-13 17:03:32.207593
+983	photo	Topo	651	983	2020-12-13 17:13:05.24423
+986	photo	Topo	654	986	2020-12-13 17:16:53.244383
+987	photo	Topo	655	987	2020-12-13 17:18:05.004586
+988	photo	Topo	656	988	2020-12-13 17:19:24.422735
+989	photo	Topo	657	989	2020-12-13 17:21:01.041303
+990	photo	Topo	658	990	2020-12-13 17:22:39.316133
+977	photo	Topo	645	977	2020-12-13 17:04:40.87108
+978	photo	Topo	646	978	2020-12-13 17:05:17.358501
+979	photo	Topo	647	979	2020-12-13 17:10:01.337472
+980	photo	Topo	648	980	2020-12-13 17:10:28.350648
+981	photo	Topo	649	981	2020-12-13 17:11:05.087171
+982	photo	Topo	650	982	2020-12-13 17:11:47.642869
+984	photo	Topo	652	984	2020-12-13 17:14:20.029338
+985	photo	Topo	653	985	2020-12-13 17:15:14.567709
+991	photo	Topo	659	991	2020-12-13 17:23:55.46501
+992	photo	Topo	660	992	2020-12-13 17:24:40.276555
+993	photo	Topo	661	993	2020-12-13 17:26:07.728368
+994	photo	Topo	662	994	2020-12-13 17:26:53.617826
+995	photo	Topo	663	995	2020-12-13 17:28:02.783787
+996	photo	Topo	664	996	2020-12-13 17:28:47.473151
+997	photo	Topo	665	997	2020-12-13 17:29:21.38656
+998	photo	Topo	666	998	2020-12-13 17:30:02.772654
+999	photo	Topo	667	999	2020-12-13 17:31:10.526258
+1000	photo	Topo	668	1000	2020-12-13 17:32:24.17444
+1001	photo	Topo	669	1001	2020-12-13 17:32:59.628699
+1002	photo	Topo	670	1002	2020-12-13 17:33:38.867921
+1003	photo	Topo	671	1003	2020-12-13 17:34:32.788001
+1004	photo	Topo	672	1004	2020-12-13 17:35:20.068858
+1005	photo	Topo	673	1005	2020-12-13 17:36:22.271579
+1006	photo	Topo	674	1006	2020-12-13 17:37:35.708717
+1007	photo	Topo	675	1007	2020-12-13 17:38:05.976449
+1008	photo	Topo	676	1008	2020-12-13 17:38:58.707839
+1009	photo	Topo	677	1009	2020-12-13 17:40:01.163358
+1010	photo	Topo	678	1010	2020-12-13 17:41:05.249408
+1011	photo	Topo	679	1011	2020-12-13 17:42:20.446801
+1012	photo	Topo	680	1012	2020-12-13 17:42:56.716651
+1013	photo	Topo	681	1013	2020-12-13 17:43:47.132203
+1014	photo	Topo	682	1014	2020-12-13 17:44:44.566006
+1015	photo	Topo	683	1015	2020-12-13 17:45:37.907263
+1016	photo	Topo	684	1016	2020-12-13 17:46:34.160404
+1017	photo	Topo	685	1017	2020-12-13 17:47:29.109187
 \.
 
 
@@ -1404,6 +1525,7 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 648	lqkyae5ezf84bau750zvraotgjet	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13002684	6yLwDGhZOcexcysGUwFosA==	2020-09-03 20:46:51.005833
 650	2ja4uvl76thtl4kf8jvuj0u47w7i	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	8836833	rgABtL0QQXzp0nwFgl1a1A==	2020-09-03 20:46:51.556732
 651	5aexrgxrocm81vonfqgmli015ed8	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13440722	UDuiy+kmyM8gHhC34JTLLg==	2020-09-03 20:46:51.69821
+897	1fl38t2ajpudmw6ug7xj28wkzjch	1c.jpg	image/jpeg	{"identified":true,"width":1287,"height":958,"analyzed":true}	567958	uHF92SNYvGzQLJUIRt05HQ==	2020-12-13 15:14:45.48596
 598	v9e7t0kax8hj0id8xx4jalo7yvuf	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10484680	qz1NP8hOybvtgq5PW0y0XA==	2020-09-03 20:46:43.170263
 627	6krwk99lo4roi2kwfr4b0dhy0xrz	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12386631	RiZKmVdZFo2CBQ5DY/xe0g==	2020-09-03 20:46:47.613423
 809	132qn4z51jp2l4mxfmj0bjbvmviu	orange-1.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12709511	Iv9dymVkhOUL8HBQ+7BWWQ==	2020-10-14 17:04:55.026023
@@ -1423,6 +1545,26 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 876	uzhqakq63thhapd7m8v2myn5c4yc	IMG_1010.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13229466	XH7T0i+rXdqgkHQl1C79Cg==	2020-10-27 11:14:31.60673
 881	i9ysfr1dynlf0vnz75irgs2oglhj	IMG_1018.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13995555	WllURgP6Z6hxVAIO5d2EBQ==	2020-10-27 11:19:06.933686
 883	rmaz1f7slk2as0r75ijztamuya32	IMG_1022.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12756726	4TcJqgW9DqtX0bQiWNeRxA==	2020-10-27 11:21:07.540441
+898	dngyr1bl4qj7so4lhz01dw3u70wy	3.jpg	image/jpeg	{"identified":true,"width":702,"height":943,"analyzed":true}	295128	VIz352av9Dpkw7BF2K9L2w==	2020-12-13 15:16:28.786834
+899	653cw4d67nkbicf25yr2f49eyxgn	3b.jpg	image/jpeg	{"identified":true,"width":657,"height":917,"analyzed":true}	290548	LmVo8FhNnoUX3Uiji1h17w==	2020-12-13 15:17:22.713108
+900	v4e2huwbne15uo3tawbzz5tqtyu3	3c.jpg	image/jpeg	{"identified":true,"width":1700,"height":916,"analyzed":true}	748272	B9IfTggbmoVQYMTbCk4g7g==	2020-12-13 15:18:28.724455
+901	6omxycy43d6w0qnv1hmd1nvy3uir	3d.jpg	image/jpeg	{"identified":true,"width":898,"height":895,"analyzed":true}	366949	K8AdqXz7LwEBX5lAxzL0yg==	2020-12-13 15:20:29.3759
+956	s2ceokci1c9t15fjy06j3a0l1dvb	46.jpg	image/jpeg	{"identified":true,"width":862,"height":915,"analyzed":true}	265984	3pu9Tgv1NTdsxiaAh2m0hQ==	2020-12-13 16:40:47.892882
+957	7g8j4u5capg60pwz9f8ejnzjos3s	47.jpg	image/jpeg	{"identified":true,"width":1224,"height":883,"analyzed":true}	380627	PJhR1ZtYDM/tvRxQAWByZw==	2020-12-13 16:46:35.381476
+958	33herkvru18awbg08tz1lihw4de1	47b.jpg	image/jpeg	{"identified":true,"width":1223,"height":947,"analyzed":true}	388347	PTmLmSSTB4/tEwwRsMgxLA==	2020-12-13 16:47:26.93241
+959	7p3worfkqw2i2ch15a2zb9jp4vn0	46b.jpg	image/jpeg	{"identified":true,"width":717,"height":835,"analyzed":true}	222906	8BqkRe9CoPjfUwpVOsVdUA==	2020-12-13 16:48:30.953152
+962	dw717j5ddvlpy56g8euxgi6vme6t	49.jpg	image/jpeg	{"identified":true,"width":795,"height":878,"analyzed":true}	284543	uJtwXbZ23uQSzPhCJFJ+IQ==	2020-12-13 16:51:17.806843
+963	n726pyefi7srkhwgnns2aqu8v9ux	49b.jpg	image/jpeg	{"identified":true,"width":839,"height":928,"analyzed":true}	307732	YxjIYTBu3jh/uvOYrRwaCA==	2020-12-13 16:52:16.57247
+964	bq5bxmbmfd46dlgv7qjtseyflptq	49c.jpg	image/jpeg	{"identified":true,"width":775,"height":939,"analyzed":true}	251029	QVLp1DohdJNQemO7b7ku0g==	2020-12-13 16:52:59.935853
+966	256mmjie8qzulh08ehbseo6je28g	51.jpg	image/jpeg	{"identified":true,"width":908,"height":965,"analyzed":true}	339181	D+YRH9qSK1W+o8tmjG9GTA==	2020-12-13 16:54:23.733351
+967	his314g4ycxxs2grhrz1w48qdt8o	51b.jpg	image/jpeg	{"identified":true,"width":745,"height":933,"analyzed":true}	235469	Eko9XCSzlZCr67CoD+joZw==	2020-12-13 16:54:53.416444
+968	er9m3a7rgqgp8ridwupvdyoydm1g	52.jpg	image/jpeg	{"identified":true,"width":1025,"height":865,"analyzed":true}	316887	65LOywbuSMP0dajAMNCSNQ==	2020-12-13 16:55:40.794949
+969	6a33xlvjsvambxdgn75mmcdhywbo	52b.jpg	image/jpeg	{"identified":true,"width":722,"height":904,"analyzed":true}	210399	xB704zOroIqAiAK6jiZabQ==	2020-12-13 16:56:57.935431
+970	uh9eru57ziwnhf42wy4grg7bsgzg	53.jpg	image/jpeg	{"identified":true,"width":676,"height":927,"analyzed":true}	200997	37ZN5DrVWhLN0bdONL046Q==	2020-12-13 16:57:44.875752
+971	mt5ixeflwsaqsj4tn1v1np532uma	53b.jpg	image/jpeg	{"identified":true,"width":1408,"height":832,"analyzed":true}	457477	YKOu6HhGI03OD+lb/nvwUg==	2020-12-13 16:58:39.467367
+972	cwhtxn5m93qqbf4kyq2ezoac3weg	54.jpg	image/jpeg	{"identified":true,"width":745,"height":902,"analyzed":true}	213578	mSkn/4FSPaCyi3uNJ+UH+Q==	2020-12-13 17:00:18.210675
+973	fa8qkcbwiu4g8qetbmy7hnp4ml4j	55.jpg	image/jpeg	{"identified":true,"width":599,"height":818,"analyzed":true}	204975	VyGJiA/ChqGoWMbxmJ9fwA==	2020-12-13 17:00:59.599286
+974	w6tkye839pwfd9aoddjqi5vq6vwt	56.jpg	image/jpeg	{"identified":true,"width":925,"height":869,"analyzed":true}	278175	O3QNt64jVejaV1nCEwZbow==	2020-12-13 17:01:31.267189
 600	y5nk5ds0if258vt17325s6encl2q	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9689040	yEqSzYTXZ554GrV1Fmwemg==	2020-09-03 20:46:43.397353
 637	moway0kmmqfnoqpd1f1xthrls778	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	15231837	H71QuLssyq4O44k1e4kBHA==	2020-09-03 20:46:49.286786
 645	y48v6chfj87qyf672x6f0uzj4ypo	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13595190	t0oGv4vVoLiHIfbTJGIh7w==	2020-09-03 20:46:50.60358
@@ -1444,8 +1586,26 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 886	0ia6452kci1hhpv0g1n5njp5icm1	IMG_1027.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9727024	AUrKnNoh1yzhRtm1WWzdyg==	2020-10-27 11:24:43.028235
 887	uzjzm1axx89w483zvhxqgf1t9ftt	IMG_1029.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10189311	ljrk7AYjpo+pMG4YdVZkJw==	2020-10-27 11:26:29.529345
 890	qg6jtac2tbghzy14vlijpp4kgz91	IMG_1035.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9673223	/UsveMtz3GVFGjsYJuaYPg==	2020-10-27 11:28:48.424322
+902	nwykxm54pl9qrmb1cpyub48dnzbw	4.jpg	image/jpeg	{"identified":true,"width":744,"height":890,"analyzed":true}	292543	nzoFGzQQvH6NJQhgqFzFog==	2020-12-13 15:21:47.650982
+903	fm6gs6kvhrdote6coucinnpd55ew	4b.jpg	image/jpeg	{"identified":true,"width":598,"height":871,"analyzed":true}	252504	VEdegmg1Fj4YZsqmq4q4nQ==	2020-12-13 15:22:51.633035
+904	g9ztmsg5gdmq5gh5q0hcjsibn8s6	4c.jpg	image/jpeg	{"identified":true,"width":1199,"height":873,"analyzed":true}	445260	FDkkD5WHaxbWsh7P0l2hDg==	2020-12-13 15:23:45.214236
+905	6jxp1ehky81naaffj5jui4qqsufo	6.jpg	image/jpeg	{"identified":true,"width":1198,"height":872,"analyzed":true}	393602	cvResMcIGZ94ukFflEpC5g==	2020-12-13 15:25:58.604407
+906	0sqjlnkcfjcfbxmpvm6niibz173l	7.jpg	image/jpeg	{"identified":true,"width":1361,"height":940,"analyzed":true}	474032	jIci+SDJq6dZUfyJMDGpnw==	2020-12-13 15:27:32.133745
+907	deeqfi4zk7b5l8f4k7ftqk7woi4c	6b.jpg	image/jpeg	{"identified":true,"width":821,"height":861,"analyzed":true}	286895	rpm33IuMsDrn+Elu5J88dA==	2020-12-13 15:31:28.726138
+908	zzrm1h6fbatulw3uye9cgifom762	6c.jpg	image/jpeg	{"identified":true,"width":1044,"height":911,"analyzed":true}	396253	yh2KNawFVrtyipERWdCiaA==	2020-12-13 15:33:22.576674
 446	gr9h5hzo9g7zhudhyo2g36e1lvyk	photo.jpg	image/jpeg	{"identified":true}	12287076	x0qXVG+Wt1zREiQmXXS/tw==	2020-09-03 20:43:28.947692
 447	q3ysoxc62350f4t81k4plaxc1yqx	photo.jpg	image/jpeg	{"identified":true}	10984727	zbShp9JgSF2Ab2su+ZnK3w==	2020-09-03 20:43:29.046729
+909	vlwqiqlevi1c7llg2oqm2zxghu4g	7b.jpg	image/jpeg	{"identified":true,"width":660,"height":934,"analyzed":true}	219376	j2JdBH96O1OT3zc4yFH9HA==	2020-12-13 15:34:31.360703
+910	88y53uf9tm5kmxmrxssqj50sjtb3	7c.jpg	image/jpeg	{"identified":true,"width":868,"height":868,"analyzed":true}	293209	0cp47SScZqtaMlvVBR+nAw==	2020-12-13 15:35:21.753763
+911	3vpxjsdevihfeg72cudhn20g835k	7d.jpg	image/jpeg	{"identified":true,"width":943,"height":924,"analyzed":true}	306032	udQry/QTlWMxknRS40Do9Q==	2020-12-13 15:36:18.751445
+912	ucilrax543euep8mhiwcoo9jf64w	7e.jpg	image/jpeg	{"identified":true,"width":684,"height":946,"analyzed":true}	229112	hG12t4oXFMnHXllV7HdZww==	2020-12-13 15:37:29.460569
+913	476yuov97bmtmf15w04hpy687kgf	9.jpg	image/jpeg	{"identified":true,"width":955,"height":935,"analyzed":true}	372589	VAEmIHg7PfhEipZ6kCQ13A==	2020-12-13 15:38:33.142788
+914	q4gaixjj2y7s15bzurp3a6l2zay5	9b.jpg	image/jpeg	{"identified":true,"width":616,"height":976,"analyzed":true}	218172	225kd7PwS1obo++1i0ucMQ==	2020-12-13 15:41:02.463077
+915	ci7m126hl4v3141yuwk5u0k3b7on	9c.jpg	image/jpeg	{"identified":true,"width":993,"height":997,"analyzed":true}	340123	Nt7SGh5Eq1UFBFRhwKeYFg==	2020-12-13 15:42:01.062537
+984	f8fq6uyodubn73ve2zv3j4yrcg2d	63c.jpg	image/jpeg	{"identified":true,"width":621,"height":911,"analyzed":true}	192042	F1VNOhhnUitaNUXd+LQvMw==	2020-12-13 17:14:20.027177
+985	sbaoe7zvjiyj9t8w1mc4udi08uvv	64.jpg	image/jpeg	{"identified":true,"width":738,"height":840,"analyzed":true}	242008	fFYgcawyEwBvlYatUl02Gg==	2020-12-13 17:15:14.564793
+986	2u4j2jz742qe6yv3m7gshn7t8c9r	64b.jpg	image/jpeg	{"identified":true,"width":797,"height":897,"analyzed":true}	282439	Kz/spMyNQv5bf/HqOIjUOQ==	2020-12-13 17:16:53.242354
+987	khzejfgle1zmf6e82uwujuvz4jvi	64c.jpg	image/jpeg	{"identified":true,"width":731,"height":886,"analyzed":true}	218046	f6OcOYhCKdKWg8wlhrm13Q==	2020-12-13 17:18:05.001221
 604	oe48clrmumli71vsoc3b073054v4	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13789824	B10XM2CF/nc3/mb4y/F2kg==	2020-09-03 20:46:44.042287
 811	3sioprnpalduj205s7vgktyesckk	orange-1.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12709511	Iv9dymVkhOUL8HBQ+7BWWQ==	2020-10-15 13:24:49.711501
 626	bevlzsgvko05maru4wdhyt3yxe4u	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12627287	81RxfXZKQLVpuQFDmQgptw==	2020-09-03 20:46:47.487918
@@ -1456,6 +1616,35 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 870	3jby8nnyhxn2nj1izucxxq8zu89l	IMG_1002.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13188628	EQDADyg6g5M3jRtWAG4YJw==	2020-10-27 11:04:40.669624
 873	zw0owzqz0xfa9772t3dqjrkxbigy	IMG_1004.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12194921	FfKgAcj26RtKxHwGsLyyIA==	2020-10-27 11:07:43.218401
 888	3h59pg8ytr47j3ijkas324ldv1r7	IMG_1031.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	8843050	XFHHXLiXPQZfaVXUsyR57g==	2020-10-27 11:27:08.040643
+916	5z4pxfow0qnm8ji9ebo405c9vmxi	9d.jpg	image/jpeg	{"identified":true,"width":810,"height":860,"analyzed":true}	211183	YAUQBBUcsmxyPbwxPzHdOQ==	2020-12-13 15:49:22.175526
+917	ycd4mhamcsvnslebleph86eww5ao	10.jpg	image/jpeg	{"identified":true,"width":1629,"height":994,"analyzed":true}	504241	cLUVvAh7WuYsbvaXgCUMFA==	2020-12-13 15:50:12.859557
+918	4eaea082nv5jlqg51kbq3lqbx80l	10b.jpg	image/jpeg	{"identified":true,"width":817,"height":851,"analyzed":true}	231602	qjoUK6UkJs/EtHNUIa1JrA==	2020-12-13 15:51:10.74379
+919	8c3jjhrv7blcl2bnr5g2o360rsa4	10c.jpg	image/jpeg	{"identified":true,"width":1473,"height":934,"analyzed":true}	455478	PVIzbUxGcwYyxwgDGmTrCA==	2020-12-13 15:51:53.191037
+920	qvv4ng2kfh9mvikr9x5cn08tsgwy	11.jpg	image/jpeg	{"identified":true,"width":790,"height":871,"analyzed":true}	230742	GDhQ4m57wrIEl0DyWfx1jA==	2020-12-13 15:52:51.502507
+921	rd81qpdhv7ea3jp8ozwah63sgxm3	11b.jpg	image/jpeg	{"identified":true,"width":887,"height":933,"analyzed":true}	279508	YXoiHNTXkqNIGocpwDEQRw==	2020-12-13 15:53:44.562362
+922	74no9q7szcv2je54frk2uno510g8	12.jpg	image/jpeg	{"identified":true,"width":748,"height":963,"analyzed":true}	224042	TOfauq/6EICEwsGAbEoIQg==	2020-12-13 15:54:32.149146
+924	m1gqz6vkiof66gp73tb34o5aqfws	14b.jpg	image/jpeg	{"identified":true,"width":865,"height":958,"analyzed":true}	290341	YClqkhb+KrRxzdFaKwFsog==	2020-12-13 15:56:42.236808
+925	1i55t7lg5slks71p4htn6c6b2p3u	15.jpg	image/jpeg	{"identified":true,"width":759,"height":985,"analyzed":true}	237622	bxSRUZ9NPadKDjtcS6vQBQ==	2020-12-13 15:57:40.256728
+927	b5ewb41nsdrc1a640i8r1w0t07ys	17.jpg	image/jpeg	{"identified":true,"width":896,"height":880,"analyzed":true}	289665	BtxdUVSWbfmkI4QBWPOR4A==	2020-12-13 15:59:53.800418
+928	kc3wo21y5aklh8ort77c7g27vhe4	18.jpg	image/jpeg	{"identified":true,"width":590,"height":864,"analyzed":true}	199194	DLcVSMwdZdHZjz8VX34C9g==	2020-12-13 16:00:51.693789
+929	49pma1xzae0zzytk5cqx5jlp2xb4	20.jpg	image/jpeg	{"identified":true,"width":1088,"height":848,"analyzed":true}	373547	OMsEUyOCpX75KKSKbhBjuQ==	2020-12-13 16:01:53.8952
+930	q7hed5n0uy7b1afmqhqojtyllq7h	19.jpg	image/jpeg	{"identified":true,"width":774,"height":864,"analyzed":true}	292468	PRRHFX+r5mAswhum3fi9Gg==	2020-12-13 16:03:03.690446
+931	xo5k7qi2t4c4fr7r5pcqytw0py42	19b.jpg	image/jpeg	{"identified":true,"width":592,"height":864,"analyzed":true}	216678	OA+0Iy8ctdHN53w0lDDGxA==	2020-12-13 16:04:20.340884
+932	nf428aj7v69pu42ww6em4cah0z1s	22.jpg	image/jpeg	{"identified":true,"width":977,"height":867,"analyzed":true}	348311	QPIyRumYGYU/21e3KgJ32g==	2020-12-13 16:04:54.425539
+933	whipabq0d85s25id465c96q8hwku	21.jpg	image/jpeg	{"identified":true,"width":1501,"height":851,"analyzed":true}	488785	7WVIaCnWV8D6/s08uGQJvQ==	2020-12-13 16:05:44.381053
+934	emb08xw29whnatvlcfz0rfzrcmmz	23.jpg	image/jpeg	{"identified":true,"width":807,"height":885,"analyzed":true}	269131	ZtPH7LzAQg5MVs0LSnX5Kw==	2020-12-13 16:06:56.021095
+935	e25nr7tj8g9m14rbfyh9wkgi9ajf	20b.jpg	image/jpeg	{"identified":true,"width":818,"height":868,"analyzed":true}	283090	l7F4DvNHKxQZoT/qlPdG8w==	2020-12-13 16:08:00.514853
+988	jjc6tuxgrb219mkghs16ybnam4bi	65.jpg	image/jpeg	{"identified":true,"width":1638,"height":1005,"analyzed":true}	561287	6U3YnnjH+kv8pTMbhleLeQ==	2020-12-13 17:19:24.420376
+989	xjmjxadjdmadbcejh2zd1yna8awa	65b.jpg	image/jpeg	{"identified":true,"width":721,"height":921,"analyzed":true}	219713	46dD+/ukNLa2pBHpkYyt+g==	2020-12-13 17:21:01.038204
+990	pvpzf7uht9px8c62p8sws6wz9kya	66.jpg	image/jpeg	{"identified":true,"width":1263,"height":1364,"analyzed":true}	707784	scLsQIfthzG0Qsn/aInLVA==	2020-12-13 17:22:39.313613
+991	uvr1fwoqpvymi5pr7pzo7yeu33fp	66b.jpg	image/jpeg	{"identified":true,"width":1111,"height":1383,"analyzed":true}	646529	8TSIAc72/F8WUmZVHcMaTw==	2020-12-13 17:23:55.462554
+992	bhlhh2a494zicmezk9c24fosrvnu	66c.jpg	image/jpeg	{"identified":true,"width":1158,"height":1149,"analyzed":true}	604033	iy/I3fG9RmbWIbq1fW52aQ==	2020-12-13 17:24:40.274223
+993	hsbl2007io3mmsocxkwy0rb3hqbw	66c.jpg	image/jpeg	{"identified":true,"width":1158,"height":1149,"analyzed":true}	604033	iy/I3fG9RmbWIbq1fW52aQ==	2020-12-13 17:26:07.726058
+994	qryup1mpdi279ufhzbzkihle776y	65c.jpg	image/jpeg	{"identified":true,"width":1235,"height":1178,"analyzed":true}	600970	nx4eW5Xt2kVYuO3OZ3X+Uw==	2020-12-13 17:26:53.616032
+995	yer47klkm2glwl88wjtldu00b1iw	70.jpg	image/jpeg	{"identified":true,"width":558,"height":879,"analyzed":true}	193271	xriNCWEBuIqzoCJr9A2vRw==	2020-12-13 17:28:02.780971
+996	cwqhi2kl3x32hj0xdodywb2ms9vc	71.jpg	image/jpeg	{"identified":true,"width":531,"height":857,"analyzed":true}	174285	qz1vDZ23YXoqivB6ONQ4Fw==	2020-12-13 17:28:47.470483
+997	vk9p6au77alxcggc32pg2b82klrj	72.jpg	image/jpeg	{"identified":true,"width":658,"height":868,"analyzed":true}	237554	ijiHH1gmvyPQwFIecbVvqQ==	2020-12-13 17:29:21.383865
+998	wjch7bgkumugb9znhil6357xeksi	72b.jpg	image/jpeg	{"identified":true,"width":596,"height":903,"analyzed":true}	225812	F/2Am2NG+VrctxORCgz9+Q==	2020-12-13 17:30:02.770433
 812	t1x08u643pt3mf3jamhoookfhswu	orange-1-edited.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	4439568	woV6Y/MU6CrEUxCafSPk3A==	2020-10-15 13:39:03.016498
 813	3h9b6e6ydgppearwcwfnt80vfjs4	orange-1-edited.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	4439568	woV6Y/MU6CrEUxCafSPk3A==	2020-10-15 13:44:53.441931
 652	jsnxwn973hvrdok5ypt1kh22a73e	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	10673929	7NTZdt+VxNJuWDZcYSnYrQ==	2020-09-03 20:46:51.833317
@@ -1597,6 +1786,20 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 889	bxkt19typp88l7tuhqhv09djxxlz	IMG_1033.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	9321905	9uzu93eCEHGH9n9B8MENJQ==	2020-10-27 11:27:50.314338
 720	8y0ly5gc60v07aey39mlph4t8o1h	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12143601	WNLc6g2yVXl87erMlSVvAA==	2020-09-03 20:47:02.930447
 725	xdu5wm07hh50ap2q9x77e1hntbt1	photo.jpg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12023608	pxX/fCbzQ6pq7cflPyH2ng==	2020-09-03 20:47:03.802462
+923	vxnuf93k7v9v7rzej2tdq14z994r	14.jpg	image/jpeg	{"identified":true,"width":801,"height":946,"analyzed":true}	247777	xdYuOMYcc4xCIs/lFS3IbA==	2020-12-13 15:55:36.347869
+926	nq0i1ytwb2fr24e7qtk8ztb645qt	16.jpg	image/jpeg	{"identified":true,"width":968,"height":865,"analyzed":true}	311350	Jiug5+no+kMLSCbWO0gCNw==	2020-12-13 15:58:57.958313
+999	fd30gqayupmbokv8bs7dcgoru7eq	73.jpg	image/jpeg	{"identified":true,"width":956,"height":909,"analyzed":true}	333699	hcKxwqUtPpOEdsXtVXlkNw==	2020-12-13 17:31:10.523684
+1000	ehva66fgqec4ow4gy3wirb0b8d60	73b.jpg	image/jpeg	{"identified":true,"width":812,"height":939,"analyzed":true}	298160	un47IFIMWxoRXOlZVQN5ww==	2020-12-13 17:32:24.172024
+1001	q8xbge89zom1dkyl4o95nfwj1hr6	74.jpg	image/jpeg	{"identified":true,"width":918,"height":865,"analyzed":true}	332270	Qgo57FuKcIrVcQoPZlR92w==	2020-12-13 17:32:59.626965
+1002	m9xvdfv70spw73a95h16tzpx4ok7	75.jpg	image/jpeg	{"identified":true,"width":782,"height":909,"analyzed":true}	253370	/UyX99PB2HAkJGVjCunm3Q==	2020-12-13 17:33:38.866163
+1003	0b3zm7w0g5axc7bbxjewq4hve0e1	76.jpg	image/jpeg	{"identified":true,"width":741,"height":858,"analyzed":true}	267302	gwdys5ARl5TPoyct447Ulg==	2020-12-13 17:34:32.78644
+1004	tyf3c40wm8o4lsveai3r890dre27	76b.jpg	image/jpeg	{"identified":true,"width":929,"height":907,"analyzed":true}	348420	Itbq5/Mh2FiviCWYXz6Rpg==	2020-12-13 17:35:20.067173
+1005	ixo6714odr1yo7c4dtrv8nrwo3ql	76c.jpg	image/jpeg	{"identified":true,"width":1539,"height":942,"analyzed":true}	558584	iPCvV2GI8moZiC/l4pwDeg==	2020-12-13 17:36:22.267822
+1006	t7ppzq5t2ik4rvk6qdpdkl0yutmu	77.jpg	image/jpeg	{"identified":true,"width":610,"height":898,"analyzed":true}	180297	Zzac1F9pSfWUjKiDLxxFNQ==	2020-12-13 17:37:35.706121
+1007	saz7zssk4ph0uasg2k3u2jlsrpcn	78.jpg	image/jpeg	{"identified":true,"width":794,"height":933,"analyzed":true}	268109	qRiWmWWxIQxZ1ldpBf+/BQ==	2020-12-13 17:38:05.97501
+1008	euwbw6bw6walg51750uwrols0frl	78b.jpg	image/jpeg	{"identified":true,"width":1152,"height":904,"analyzed":true}	407250	XzojiYuKU9k8Iwq2i0qQXg==	2020-12-13 17:38:58.706174
+1009	6dq3mq9r8wu27mud67m5ff2gp8as	79.jpg	image/jpeg	{"identified":true,"width":1399,"height":874,"analyzed":true}	503901	NtC0x2UsSQwKJ0Fi0prkaQ==	2020-12-13 17:40:01.159975
+1010	fvkjtear7c9d2lwrlf4o5w1j74wc	79b.jpg	image/jpeg	{"identified":true,"width":1148,"height":887,"analyzed":true}	415443	2+4+hQQ9js2ffG7zxPs6Kw==	2020-12-13 17:41:05.246858
 817	uel9pzuxd8zh1i0gyywvsle4o6oj	IMG_0893.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13262020	8/PtqOu4+18GTjcT2Zr5eA==	2020-10-19 19:41:22.711328
 839	y0bqm165v89yko135ku6pszlbnu1	IMG_0937.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11677487	jVuYPac8uOuvXquyvFmM3Q==	2020-10-27 10:07:49.613961
 844	xgixg14y9srdz3r4w4mdf2hu385c	IMG_0946.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11559217	6G9lJ6qZ7JaXStVoRM7/4A==	2020-10-27 10:18:52.375609
@@ -1606,6 +1809,7 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 852	fz0oftjo6sllfqrjmxuy7hhftud5	IMG_0963.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	14431837	w48KBjPvdTStecVeItU8Xg==	2020-10-27 10:29:11.967378
 891	6wfmuwr4r8y63gv26hkucxm37zvg	IMG_0937.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11677487	jVuYPac8uOuvXquyvFmM3Q==	2020-11-01 14:02:20.947625
 893	8q0vwebcphrgpq0get12ct9v7vyi	size_xl-ae240c5aeb27.jpg	image/jpeg	{"identified":true,"width":1520,"height":855,"analyzed":true}	512022	ufHTAnziJ6zuSs/u6GGHfQ==	2020-12-12 20:44:53.426595
+936	0zjy9i79diqtin2goxnybe8qvtxg	25.jpg	image/jpeg	{"identified":true,"width":797,"height":850,"analyzed":true}	221659	CYc5M1IShrrb8AScY5qFZw==	2020-12-13 16:20:41.534225
 558	1dfbmhuxezafj0tppe6qvvnlzmfa	photo.jpg	image/jpeg	{"identified":true}	10984727	zbShp9JgSF2Ab2su+ZnK3w==	2020-09-03 20:45:09.817218
 559	wkr0x00kn0fwh3p3qh4vqa4ceuwm	photo.jpg	image/jpeg	{"identified":true}	12799011	K9M/aRu++tSZnZiNJVF28g==	2020-09-03 20:45:09.926832
 560	z6s0dprqxeoujsnarmds2z4p2ho9	photo.jpg	image/jpeg	{"identified":true}	10022485	fmsSiiMvzH+72/AzYeqFGA==	2020-09-03 20:45:10.055842
@@ -1621,6 +1825,7 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 570	5jjgh2oozy13ybmjyjrv839wkjbm	photo.jpg	image/jpeg	{"identified":true}	11753536	5Iv6dS6a8cOhcPkJ81sDXg==	2020-09-03 20:45:12.089601
 571	o90so41i8jtz88ubsa0f4ys6lfvv	photo.jpg	image/jpeg	{"identified":true}	12204006	9QHpq1IoXMoP7ME5WbOhjA==	2020-09-03 20:45:12.23649
 572	hkx3gidrzv5e2lbkmxvyjqcseghp	photo.jpg	image/jpeg	{"identified":true}	12335782	aqbzTzc9QO7V270Jp7JhLQ==	2020-09-03 20:45:12.358221
+937	upfhh4fdvwlyyqf8y6u0mft7hmlh	25b.jpg	image/jpeg	{"identified":true,"width":719,"height":833,"analyzed":true}	199098	5Hp7b2Rrt/UM+BLwZY7i+A==	2020-12-13 16:21:26.708085
 573	bo0r5mhqr8njnd11r2trz6s9cumu	photo.jpg	image/jpeg	{"identified":true}	11285667	k5CddUZzQSrn+95YPrM+sQ==	2020-09-03 20:45:12.656224
 574	d5hq1vbbqu3ln5pvusrcl2qclilj	photo.jpg	image/jpeg	{"identified":true}	13577225	uZ8/Z2sPvhIjGhvT3ftuhQ==	2020-09-03 20:45:13.000644
 575	ptols28z3wyz1du4njjx0njjppss	photo.jpg	image/jpeg	{"identified":true}	13055461	KfVs/uNJZCNC4JTT25GCJQ==	2020-09-03 20:45:13.12162
@@ -1628,13 +1833,17 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 577	cwypgxzofyzeplule79g56mrdsk5	photo.jpg	image/jpeg	{"identified":true}	12950270	lcwrH6OjRuPeZcs0FE7iWg==	2020-09-03 20:45:13.344344
 578	6g3z4ea39nw3omqvo6aeg3k5fcb5	photo.jpg	image/jpeg	{"identified":true}	12400237	RSD77HVeiC+0lmy/7fdoIQ==	2020-09-03 20:45:13.453747
 579	apfs1jbnrhkumg5ywqyarc5chqsi	photo.jpg	image/jpeg	{"identified":true}	11930470	f/YQQfbRp5C23/HJRmXLrQ==	2020-09-03 20:45:13.56691
+938	gm5ufwspzlkyrn247mknvo80252m	25c.jpg	image/jpeg	{"identified":true,"width":804,"height":898,"analyzed":true}	235034	OQKRVhgdq4/cHaTBCTX2gw==	2020-12-13 16:22:11.301297
+943	927ilzrg7cms7pgg0tbshqtxvlpz	27.jpg	image/jpeg	{"identified":true,"width":1543,"height":848,"analyzed":true}	428300	lKaY5X2S71LSUGJMwVlweg==	2020-12-13 16:27:33.992735
 580	nt0xxs0dexqu4r3umtreob60zq9d	photo.jpg	image/jpeg	{"identified":true}	14154706	9zLXM6zlqmbeiPbaC/LH7w==	2020-09-03 20:45:13.733332
 581	mvwut15z7afp4h3emtbfixjavh1b	photo.jpg	image/jpeg	{"identified":true}	14264827	9sWU+89qPvwxJMfPkjsgkQ==	2020-09-03 20:45:14.078906
 582	8zxd0iv2o04hnllwnazx389ac9fv	photo.jpg	image/jpeg	{"identified":true}	13105019	omQDgVMGQpUg1t72uFMs9g==	2020-09-03 20:45:14.222623
+944	kh6vm3nbyqfv3ol42qao4ddytl1r	28.jpg	image/jpeg	{"identified":true,"width":746,"height":849,"analyzed":true}	207556	UPK/oTViaqAxDNyAz98GaQ==	2020-12-13 16:28:19.787691
 583	4rkyb8bf5r2bz162nn6okmtfso4g	photo.jpg	image/jpeg	{"identified":true}	14148755	jULwvDPVF3Dfypp+oCvVig==	2020-09-03 20:45:14.359897
 584	wnhirr9bmiywd8xasdaf6b2twswf	photo.jpg	image/jpeg	{"identified":true}	13351969	ygAbbLJGUgC6mRR51sywBA==	2020-09-03 20:45:14.507016
 585	tgh7zrvzngk5y8199feskk557zve	photo.jpg	image/jpeg	{"identified":true}	10772965	q93KwY2ne26eykZbhZv4WQ==	2020-09-03 20:45:14.641174
 586	wkr8yu46fjezgoul5g4z15nf7659	photo.jpg	image/jpeg	{"identified":true}	11796734	bZI7wf1W9pgQphCBAahW5g==	2020-09-03 20:45:14.794003
+945	jhvs9nwg8irnwky2ij2gkv2guiy9	33.jpg	image/jpeg	{"identified":true,"width":1121,"height":864,"analyzed":true}	290287	nlv96TH5O5/yGwQtpUgZOg==	2020-12-13 16:29:22.956589
 587	e4kzjueyikwlkqoulpxeok6yx9f9	photo.jpg	image/jpeg	{"identified":true}	11344943	JHgsfu6Yqv3fb8G7+R8ZpQ==	2020-09-03 20:45:15.080562
 588	atnrfgc930bz6syk91ksdbmlq2yn	photo.jpg	image/jpeg	{"identified":true}	11921188	sAB5iRttNzh3P9Sxh4wrkA==	2020-09-03 20:45:15.184047
 818	fyi0dl45agbyocof9rnudgno5e8q	IMG_0898.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11937363	LADdI0N7UCBiDN4fWM2VgA==	2020-10-19 21:37:29.33913
@@ -1655,6 +1864,22 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 859	srt7zfkp9a5b5czf9sihnn7fr7c5	IMG_0981.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	13261469	3LKQUOSnpT5rKvCf7onKZg==	2020-10-27 10:41:28.861824
 892	khrjploh86ksjtwv01d8irl295pd	IMG_0937.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	11677487	jVuYPac8uOuvXquyvFmM3Q==	2020-11-01 14:02:46.822801
 894	42cl1zz4xtui3w8zgiufq65lylhh	1.jpg	image/jpeg	{"identified":true,"width":908,"height":980,"analyzed":true}	376360	kkbfprB8HsE8UJhaY4+dAA==	2020-12-13 14:40:38.620839
+939	677hvslg8oi5v68i6epsc8wzl2go	26.jpg	image/jpeg	{"identified":true,"width":725,"height":808,"analyzed":true}	232582	mpDn1YyTYuCiB6R8vffAyg==	2020-12-13 16:23:04.174132
+940	txqg4a7c2g7as6kadncf1if7l4zl	26b.jpg	image/jpeg	{"identified":true,"width":1136,"height":867,"analyzed":true}	333421	qvv4WRiGfxSrqn6HstGLlg==	2020-12-13 16:24:02.303637
+941	h33aks0oknjl90ebv0pcwmxki92u	29.jpg	image/jpeg	{"identified":true,"width":1384,"height":842,"analyzed":true}	379544	w/0EfjO1YasMTQVXhStgdg==	2020-12-13 16:25:21.341851
+942	b9xpolt4yqe1jfr4vmzsx81rwy7h	26c.jpg	image/jpeg	{"identified":true,"width":864,"height":876,"analyzed":true}	247012	UqB9QhApllu/oiZ9Fgx/eQ==	2020-12-13 16:26:21.6487
+946	lef95qeqh1qqiyaj4hspk859ks4v	41.jpg	image/jpeg	{"identified":true,"width":1467,"height":901,"analyzed":true}	467103	h5vTwFsWYdkjeIeBfkBzeQ==	2020-12-13 16:30:03.741683
+947	p6e67lse20l799by3jlsxymluf03	43.jpg	image/jpeg	{"identified":true,"width":862,"height":894,"analyzed":true}	261239	OotZ0hni/YS0yfGWo/LX9A==	2020-12-13 16:31:04.739139
+948	okz13h8fb717jrjbq8hp1cpas6y9	43b.jpg	image/jpeg	{"identified":true,"width":970,"height":902,"analyzed":true}	275604	L6GSmsITH4jM5mV8pVdttw==	2020-12-13 16:31:51.421925
+949	xk8w7y2zf3c7t7k68qwl86usy8pd	43b.jpg	image/jpeg	{"identified":true,"width":970,"height":902,"analyzed":true}	275604	L6GSmsITH4jM5mV8pVdttw==	2020-12-13 16:32:44.275206
+950	diud0n3x9adgrsoy3mr9jzi0q1e6	41b.jpg	image/jpeg	{"identified":true,"width":714,"height":901,"analyzed":true}	219911	S7wJll/VZtHH6yqzT/o1tw==	2020-12-13 16:34:38.751471
+1011	tj5xzy94jx6z1axx9xrsf4dpw9lj	80.jpg	image/jpeg	{"identified":true,"width":684,"height":908,"analyzed":true}	241576	oLXvH+aTsCaq2Sshff8Uhw==	2020-12-13 17:42:20.438928
+1012	uy92es5wruze1aqm9xr0lnlwyugk	83.jpg	image/jpeg	{"identified":true,"width":1153,"height":873,"analyzed":true}	386651	7deHIUaMY5VUeMaXZTYczQ==	2020-12-13 17:42:56.71458
+1013	3bqhyq3xe7nyta5gmqfqbixtfvn7	83.jpg	image/jpeg	{"identified":true,"width":1153,"height":873,"analyzed":true}	386651	7deHIUaMY5VUeMaXZTYczQ==	2020-12-13 17:43:47.128446
+1014	qjyfthsodi1e3aemlix7p9ysg947	84.jpg	image/jpeg	{"identified":true,"width":682,"height":894,"analyzed":true}	280340	vA8ReOMiYHAA8tUAQZoWkQ==	2020-12-13 17:44:44.564191
+1015	27is3gjfr5bbniojiogm0mzsepq3	85.jpg	image/jpeg	{"identified":true,"width":1019,"height":913,"analyzed":true}	354760	0k+Exkjwk6eY2e6/utWj5w==	2020-12-13 17:45:37.905701
+1016	xchg8420tq3mrs3abo384nr5lf3l	85b.jpg	image/jpeg	{"identified":true,"width":708,"height":886,"analyzed":true}	255693	eK9Byp7yyhO8YfcvFDB6NQ==	2020-12-13 17:46:34.157018
+1017	qvkg5a1e39wu7n8xcmofmvpbclmj	86.jpg	image/jpeg	{"identified":true,"width":767,"height":895,"analyzed":true}	298416	qCBkm1tou0B9R1SgI/kL8w==	2020-12-13 17:47:29.106577
 589	jgp4cntxfthx3aaqqh92i6bhesr9	photo.jpg	image/jpeg	{"identified":true}	11167384	2sYyZHudHV85jzY4JdgcdQ==	2020-09-03 20:45:15.310946
 590	pv00tmmacx1opuchha6sx2u28yt7	photo.jpg	image/jpeg	{"identified":true}	13361673	QinvJYlDJdDWbVE5/hnw0g==	2020-09-03 20:45:15.458434
 591	w2o08jur6dwhmkjgv8ffw3nyumfo	photo.jpg	image/jpeg	{"identified":true}	12020426	ACHpDZNMsm/387VODXylJQ==	2020-09-03 20:45:15.561233
@@ -1679,6 +1904,23 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, byt
 858	9o76vc023z1ay8go055ki3xo906d	IMG_0979.jpeg	image/jpeg	{"identified":true,"width":4032,"height":3024,"analyzed":true}	12542906	LbNjlsCOjzFYI+nD46rdqA==	2020-10-27 10:40:08.177272
 895	h2mq0dof95djo5p7y6dyplls4zxa	1b.jpg	image/jpeg	{"identified":true,"width":998,"height":1003,"analyzed":true}	425770	bnoT7s3lbfoOwOF5mLTVFA==	2020-12-13 14:42:17.35331
 896	exihcrhn6n9pemlfm02bnd7a54g9	2.jpg	image/jpeg	{"identified":true,"width":769,"height":960,"analyzed":true}	320801	VSt0VOumMbib2sAPDAXDWw==	2020-12-13 14:45:28.122397
+951	6doizcctsrlz4l9hx865rgcy23tc	43c.jpg	image/jpeg	{"identified":true,"width":977,"height":891,"analyzed":true}	308117	Ud/XPNEOjVF5lgST+F2rNg==	2020-12-13 16:35:44.487949
+952	gmplbhgajdgz653rbsjx2oroozrp	44.jpg	image/jpeg	{"identified":true,"width":697,"height":895,"analyzed":true}	235987	7SzqJBgmUTBRFKU7G/ryxg==	2020-12-13 16:36:43.743456
+953	aed92lbwhit749a8ax9cct77cere	44b.jpg	image/jpeg	{"identified":true,"width":878,"height":903,"analyzed":true}	302457	BOIi+zwWfb3xOAIm/KErBw==	2020-12-13 16:37:42.904983
+954	xa6u7smjo8go2qlwl9rg1857k2it	44c.jpg	image/jpeg	{"identified":true,"width":993,"height":914,"analyzed":true}	317811	R72QVMli2BSeSVhzBYZ3dg==	2020-12-13 16:38:49.260213
+955	enwsdqr3ky51v59b1hmm4ln0rst2	45.jpg	image/jpeg	{"identified":true,"width":672,"height":890,"analyzed":true}	207147	w8a6AHcpL3gYC82Occni1g==	2020-12-13 16:40:15.034122
+960	6zadh7h11m793z6lr0yos6t3zt4y	46c.jpg	image/jpeg	{"identified":true,"width":604,"height":891,"analyzed":true}	221233	Oj/tycgsTdCR6x2ML3IM+A==	2020-12-13 16:49:06.064888
+961	tjjcmuumg39jamapaykprnmjp5xm	48.jpg	image/jpeg	{"identified":true,"width":1094,"height":930,"analyzed":true}	368657	f93EfTlgN9wKKAA31U0JTw==	2020-12-13 16:49:45.771878
+965	bjrsyrqob77em5f7r0tsnpuvbwhn	50.jpg	image/jpeg	{"identified":true,"width":764,"height":935,"analyzed":true}	276983	Pq9ZUYoI6/JwKNwVpsRSwg==	2020-12-13 16:53:55.572604
+975	vcdfwkjjyzmxypl59zykml85zypz	57.jpg	image/jpeg	{"identified":true,"width":790,"height":892,"analyzed":true}	219268	lOwZh9sU7v+2SV/juXeFTA==	2020-12-13 17:02:40.448479
+976	qpvxemjdjqqpl1151akvyfipq1xq	58.jpg	image/jpeg	{"identified":true,"width":761,"height":877,"analyzed":true}	261746	pCqD+dlBW45VhUJQM/BUjA==	2020-12-13 17:03:32.205145
+977	bj9u14j4n4ydccdff7j086az3g2t	59.jpg	image/jpeg	{"identified":true,"width":818,"height":922,"analyzed":true}	288260	Ikpv9ybiLR6aMH3T9qQW2A==	2020-12-13 17:04:40.869019
+978	r144bl7o6qommlefv02w4ph3aw8a	60.jpg	image/jpeg	{"identified":true,"width":771,"height":933,"analyzed":true}	223766	qMCQ0hxPvCh0AFTJIVZ8XA==	2020-12-13 17:05:17.356547
+979	4gzrxoz98gsymizorwxihlafw1mt	61.jpg	image/jpeg	{"identified":true,"width":739,"height":818,"analyzed":true}	206091	bpw6pkvlsh//aBUbkOxyHw==	2020-12-13 17:10:01.334678
+980	wmcan0nc5ssom7akxl6ckg4qci0m	62.jpg	image/jpeg	{"identified":true,"width":715,"height":871,"analyzed":true}	224254	sCKJ9aB5PswEf7mjEvwocg==	2020-12-13 17:10:28.349196
+981	o7se5psz929bjyl83ilpyff9of9v	62b.jpg	image/jpeg	{"identified":true,"width":841,"height":942,"analyzed":true}	288390	Sqd7Qn/HxfM6piN/Cr/d8w==	2020-12-13 17:11:05.085102
+982	buxv5wy0uxhmfsvisbyja7jhl75b	63.jpg	image/jpeg	{"identified":true,"width":877,"height":800,"analyzed":true}	271240	zqsvKLyirCk/0yU19r6RYQ==	2020-12-13 17:11:47.641219
+983	hksqm0irl08epm2yodgynnc85101	63b.jpg	image/jpeg	{"identified":true,"width":770,"height":861,"analyzed":true}	262306	fF9/RVmcFZGespM6rIau1A==	2020-12-13 17:13:05.242138
 \.
 
 
@@ -2735,6 +2977,10 @@ COPY public.lines (id, coordinates, problem_id, topo_id, created_at, updated_at)
 582	[{"x":0.6663,"y":0.705},{"x":0.6388,"y":0.5333},{"x":0.6538,"y":0.405},{"x":0.6637,"y":0.2517}]	575	380	2020-11-02 11:19:28.940421	2020-11-02 11:19:46.400471
 414	[{"x":0.6412,"y":0.8083},{"x":0.6212,"y":0.655},{"x":0.5225,"y":0.2817},{"x":0.455,"y":0.205},{"x":0.4313,"y":0.1517}]	226	508	2020-11-01 10:44:23.004873	2020-11-02 11:24:40.750339
 583	[{"x":0.5175,"y":0.8417},{"x":0.5387,"y":0.5383},{"x":0.5262,"y":0.26},{"x":0.5038,"y":0.08}]	583	507	2020-11-02 12:29:25.031158	2020-11-02 12:30:00.468073
+672	\N	1198	566	2020-12-13 15:16:31.784468	2020-12-13 15:16:31.784468
+673	\N	1199	566	2020-12-13 15:16:44.461012	2020-12-13 15:16:44.461012
+674	\N	1200	567	2020-12-13 15:17:24.745314	2020-12-13 15:17:24.745314
+675	\N	1201	567	2020-12-13 15:17:37.028168	2020-12-13 15:17:37.028168
 509	[{"x":0.3962,"y":0.8383},{"x":0.39,"y":0.5817},{"x":0.375,"y":0.2933},{"x":0.3738,"y":0.1067}]	197	507	2020-11-01 10:44:23.339137	2020-11-02 12:30:20.860638
 584	[{"x":0.6012,"y":0.8633},{"x":0.61,"y":0.6317},{"x":0.5875,"y":0.4017},{"x":0.5587,"y":0.1867},{"x":0.54,"y":0.0767}]	584	507	2020-11-02 12:32:41.493915	2020-11-02 12:33:03.221712
 610	[{"x":0.18,"y":0.425},{"x":0.295,"y":0.4483},{"x":0.4788,"y":0.4633},{"x":0.6362,"y":0.44},{"x":0.74,"y":0.4233},{"x":0.8275,"y":0.3967},{"x":0.8825,"y":0.355}]	612	336	2020-11-03 09:20:14.068796	2020-11-03 09:21:14.702426
@@ -2777,6 +3023,7 @@ COPY public.lines (id, coordinates, problem_id, topo_id, created_at, updated_at)
 621	[{"x":0.2362,"y":0.9117},{"x":0.2963,"y":0.4967},{"x":0.3675,"y":0.0917}]	624	284	2020-11-03 10:05:15.79608	2020-11-03 10:05:28.23099
 622	[{"x":0.2412,"y":0.6983},{"x":0.2737,"y":0.455},{"x":0.3162,"y":0.29},{"x":0.3725,"y":0.2017}]	625	320	2020-11-03 10:07:27.026377	2020-11-03 10:07:39.294232
 596	[{"x":0.8612,"y":0.6383},{"x":0.8063,"y":0.5167},{"x":0.7275,"y":0.3767},{"x":0.6737,"y":0.2667}]	598	305	2020-11-02 13:20:01.198625	2020-11-09 18:46:39.50482
+676	\N	1202	567	2020-12-13 15:17:45.515685	2020-12-13 15:17:45.515685
 623	[{"x":0.785,"y":0.86},{"x":0.8337,"y":0.7083},{"x":0.8625,"y":0.445},{"x":0.8413,"y":0.27},{"x":0.79,"y":0.1533}]	626	367	2020-11-03 10:12:18.202625	2020-11-03 10:12:32.625715
 624	[{"x":0.895,"y":0.8317},{"x":0.94,"y":0.5983},{"x":0.935,"y":0.3717},{"x":0.8812,"y":0.2117},{"x":0.82,"y":0.1617}]	627	367	2020-11-03 10:13:30.437942	2020-11-03 10:13:51.164409
 625	[{"x":0.3237,"y":0.84},{"x":0.2637,"y":0.555},{"x":0.2338,"y":0.28}]	628	348	2020-11-03 10:18:01.318159	2020-11-03 10:18:15.30963
@@ -2825,6 +3072,329 @@ COPY public.lines (id, coordinates, problem_id, topo_id, created_at, updated_at)
 664	\N	1195	564	2020-12-13 14:45:30.840775	2020-12-13 14:45:30.840775
 665	\N	1196	564	2020-12-13 14:45:41.540846	2020-12-13 14:45:41.540846
 666	\N	1197	564	2020-12-13 14:45:51.361746	2020-12-13 14:45:51.361746
+667	\N	1189	565	2020-12-13 15:14:54.355053	2020-12-13 15:14:54.355053
+668	\N	1190	565	2020-12-13 15:15:10.783598	2020-12-13 15:15:10.783598
+669	\N	1191	565	2020-12-13 15:15:34.916234	2020-12-13 15:15:34.916234
+670	\N	1192	565	2020-12-13 15:15:47.358027	2020-12-13 15:15:47.358027
+671	\N	1193	565	2020-12-13 15:15:57.000545	2020-12-13 15:15:57.000545
+677	\N	1203	568	2020-12-13 15:18:31.921965	2020-12-13 15:18:31.921965
+678	\N	1204	568	2020-12-13 15:18:43.498903	2020-12-13 15:18:43.498903
+679	\N	1205	568	2020-12-13 15:18:51.180838	2020-12-13 15:18:51.180838
+680	\N	1206	568	2020-12-13 15:19:01.377531	2020-12-13 15:19:01.377531
+681	\N	1208	568	2020-12-13 15:19:10.049287	2020-12-13 15:19:10.049287
+682	\N	1209	568	2020-12-13 15:19:51.115928	2020-12-13 15:19:51.115928
+683	\N	1210	569	2020-12-13 15:20:33.689503	2020-12-13 15:20:33.689503
+684	\N	1212	569	2020-12-13 15:20:43.995914	2020-12-13 15:20:43.995914
+685	\N	1213	569	2020-12-13 15:20:53.289979	2020-12-13 15:20:53.289979
+686	\N	1214	569	2020-12-13 15:21:05.09099	2020-12-13 15:21:05.09099
+687	\N	1216	570	2020-12-13 15:21:51.105818	2020-12-13 15:21:51.105818
+688	\N	1217	570	2020-12-13 15:22:01.698895	2020-12-13 15:22:01.698895
+689	\N	1218	570	2020-12-13 15:22:10.662996	2020-12-13 15:22:10.662996
+690	\N	1219	571	2020-12-13 15:22:53.569616	2020-12-13 15:22:53.569616
+691	\N	1220	571	2020-12-13 15:23:05.404798	2020-12-13 15:23:05.404798
+692	\N	1215	572	2020-12-13 15:23:50.38397	2020-12-13 15:23:50.38397
+693	\N	1221	572	2020-12-13 15:23:59.530555	2020-12-13 15:23:59.530555
+694	\N	1222	572	2020-12-13 15:24:07.942176	2020-12-13 15:24:07.942176
+695	\N	1223	572	2020-12-13 15:24:14.749011	2020-12-13 15:24:14.749011
+696	\N	1225	573	2020-12-13 15:26:01.480659	2020-12-13 15:26:01.480659
+697	\N	1227	573	2020-12-13 15:26:14.065562	2020-12-13 15:26:14.065562
+698	\N	1228	573	2020-12-13 15:26:34.433718	2020-12-13 15:26:34.433718
+699	\N	1229	573	2020-12-13 15:26:44.291691	2020-12-13 15:26:44.291691
+700	\N	1230	573	2020-12-13 15:26:51.755508	2020-12-13 15:26:51.755508
+701	\N	1241	574	2020-12-13 15:27:34.532916	2020-12-13 15:27:34.532916
+702	\N	1242	574	2020-12-13 15:27:42.421184	2020-12-13 15:27:42.421184
+703	\N	1243	574	2020-12-13 15:27:52.839118	2020-12-13 15:27:52.839118
+704	\N	1244	574	2020-12-13 15:28:02.116868	2020-12-13 15:28:02.116868
+705	\N	1245	574	2020-12-13 15:28:11.553937	2020-12-13 15:28:11.553937
+706	\N	1246	574	2020-12-13 15:28:49.669797	2020-12-13 15:28:49.669797
+707	\N	1250	574	2020-12-13 15:30:38.149948	2020-12-13 15:30:38.149948
+708	\N	1231	575	2020-12-13 15:31:33.361085	2020-12-13 15:31:33.361085
+709	\N	1232	575	2020-12-13 15:31:44.115017	2020-12-13 15:31:44.115017
+710	\N	1233	575	2020-12-13 15:31:58.637497	2020-12-13 15:31:58.637497
+711	\N	1234	575	2020-12-13 15:32:09.067537	2020-12-13 15:32:09.067537
+712	\N	1235	575	2020-12-13 15:32:39.352624	2020-12-13 15:32:39.352624
+713	\N	1237	576	2020-12-13 15:33:25.175749	2020-12-13 15:33:25.175749
+714	\N	1238	576	2020-12-13 15:33:37.637767	2020-12-13 15:33:37.637767
+715	\N	1239	576	2020-12-13 15:33:44.644664	2020-12-13 15:33:44.644664
+716	\N	1240	576	2020-12-13 15:33:53.319749	2020-12-13 15:33:53.319749
+717	\N	1248	577	2020-12-13 15:34:36.709481	2020-12-13 15:34:36.709481
+718	\N	1252	577	2020-12-13 15:34:49.90751	2020-12-13 15:34:49.90751
+719	\N	1254	578	2020-12-13 15:35:24.277299	2020-12-13 15:35:24.277299
+720	\N	1255	578	2020-12-13 15:35:33.545511	2020-12-13 15:35:33.545511
+721	\N	1256	578	2020-12-13 15:35:42.150347	2020-12-13 15:35:42.150347
+722	\N	1257	579	2020-12-13 15:36:22.897322	2020-12-13 15:36:22.897322
+723	\N	1260	579	2020-12-13 15:36:34.202284	2020-12-13 15:36:34.202284
+724	\N	1258	580	2020-12-13 15:37:32.545415	2020-12-13 15:37:32.545415
+725	\N	1259	580	2020-12-13 15:37:41.487788	2020-12-13 15:37:41.487788
+726	\N	1261	580	2020-12-13 15:37:58.506479	2020-12-13 15:37:58.506479
+727	\N	1263	581	2020-12-13 15:38:36.309129	2020-12-13 15:38:36.309129
+728	\N	1265	581	2020-12-13 15:38:55.426537	2020-12-13 15:38:55.426537
+729	\N	1266	581	2020-12-13 15:39:26.416961	2020-12-13 15:39:26.416961
+730	\N	1269	581	2020-12-13 15:39:42.668372	2020-12-13 15:39:42.668372
+731	\N	1271	582	2020-12-13 15:41:06.158412	2020-12-13 15:41:06.158412
+732	\N	1272	582	2020-12-13 15:41:23.855245	2020-12-13 15:41:23.855245
+733	\N	1273	583	2020-12-13 15:42:03.743839	2020-12-13 15:42:03.743839
+734	\N	1274	583	2020-12-13 15:42:16.900425	2020-12-13 15:42:16.900425
+735	\N	1275	583	2020-12-13 15:42:25.885445	2020-12-13 15:42:25.885445
+736	\N	1276	583	2020-12-13 15:42:35.260779	2020-12-13 15:42:35.260779
+737	\N	1278	584	2020-12-13 15:49:24.688732	2020-12-13 15:49:24.688732
+738	\N	1279	584	2020-12-13 15:49:33.962094	2020-12-13 15:49:33.962094
+739	\N	1280	585	2020-12-13 15:50:14.795726	2020-12-13 15:50:14.795726
+740	\N	1283	585	2020-12-13 15:50:23.670233	2020-12-13 15:50:23.670233
+741	\N	1281	585	2020-12-13 15:50:33.31453	2020-12-13 15:50:33.31453
+742	\N	1285	586	2020-12-13 15:51:12.653064	2020-12-13 15:51:12.653064
+743	\N	1286	587	2020-12-13 15:51:55.407628	2020-12-13 15:51:55.407628
+744	\N	1287	587	2020-12-13 15:52:03.32294	2020-12-13 15:52:03.32294
+745	\N	1288	587	2020-12-13 15:52:11.131031	2020-12-13 15:52:11.131031
+746	\N	1289	588	2020-12-13 15:52:53.576108	2020-12-13 15:52:53.576108
+747	\N	1290	588	2020-12-13 15:53:03.725613	2020-12-13 15:53:03.725613
+748	\N	1291	589	2020-12-13 15:53:46.353415	2020-12-13 15:53:46.353415
+749	\N	1292	589	2020-12-13 15:53:54.745119	2020-12-13 15:53:54.745119
+750	\N	1293	589	2020-12-13 15:54:03.548679	2020-12-13 15:54:03.548679
+751	\N	1294	590	2020-12-13 15:54:36.035404	2020-12-13 15:54:36.035404
+752	\N	1295	590	2020-12-13 15:54:45.299769	2020-12-13 15:54:45.299769
+753	\N	1296	590	2020-12-13 15:54:54.222791	2020-12-13 15:54:54.222791
+754	\N	1298	591	2020-12-13 15:55:37.95031	2020-12-13 15:55:37.95031
+755	\N	1299	591	2020-12-13 15:55:50.019498	2020-12-13 15:55:50.019498
+756	\N	1300	592	2020-12-13 15:56:44.874672	2020-12-13 15:56:44.874672
+757	\N	1301	592	2020-12-13 15:56:56.598293	2020-12-13 15:56:56.598293
+758	\N	1302	592	2020-12-13 15:57:04.540809	2020-12-13 15:57:04.540809
+759	\N	1305	593	2020-12-13 15:57:43.526327	2020-12-13 15:57:43.526327
+760	\N	1306	593	2020-12-13 15:57:56.412705	2020-12-13 15:57:56.412705
+761	\N	1303	593	2020-12-13 15:58:04.773172	2020-12-13 15:58:04.773172
+762	\N	1304	593	2020-12-13 15:58:14.897938	2020-12-13 15:58:14.897938
+763	\N	1307	594	2020-12-13 15:58:59.738797	2020-12-13 15:58:59.738797
+764	\N	1308	594	2020-12-13 15:59:09.999382	2020-12-13 15:59:09.999382
+765	\N	1309	594	2020-12-13 15:59:19.224158	2020-12-13 15:59:19.224158
+766	\N	1311	595	2020-12-13 15:59:56.677343	2020-12-13 15:59:56.677343
+767	\N	1312	595	2020-12-13 16:00:05.138547	2020-12-13 16:00:05.138547
+768	\N	1313	596	2020-12-13 16:00:54.135165	2020-12-13 16:00:54.135165
+769	\N	1319	597	2020-12-13 16:01:58.513126	2020-12-13 16:01:58.513126
+770	\N	1314	598	2020-12-13 16:03:05.796853	2020-12-13 16:03:05.796853
+771	\N	1315	598	2020-12-13 16:03:27.802816	2020-12-13 16:03:27.802816
+772	\N	1316	598	2020-12-13 16:03:41.257389	2020-12-13 16:03:41.257389
+773	\N	1317	599	2020-12-13 16:04:22.397791	2020-12-13 16:04:22.397791
+774	\N	1329	600	2020-12-13 16:04:56.385234	2020-12-13 16:04:56.385234
+775	\N	1330	600	2020-12-13 16:05:04.575858	2020-12-13 16:05:04.575858
+776	\N	1331	600	2020-12-13 16:05:12.156666	2020-12-13 16:05:12.156666
+777	\N	1322	601	2020-12-13 16:05:46.64889	2020-12-13 16:05:46.64889
+778	\N	1323	601	2020-12-13 16:05:53.039395	2020-12-13 16:05:53.039395
+779	\N	1324	601	2020-12-13 16:05:59.526011	2020-12-13 16:05:59.526011
+780	\N	1325	601	2020-12-13 16:06:08.09204	2020-12-13 16:06:08.09204
+781	\N	1326	601	2020-12-13 16:06:26.257577	2020-12-13 16:06:26.257577
+782	\N	1332	602	2020-12-13 16:06:58.353865	2020-12-13 16:06:58.353865
+783	\N	1333	602	2020-12-13 16:07:06.254084	2020-12-13 16:07:06.254084
+784	\N	1318	603	2020-12-13 16:08:02.582476	2020-12-13 16:08:02.582476
+785	\N	1321	603	2020-12-13 16:08:20.325471	2020-12-13 16:08:20.325471
+786	\N	1336	604	2020-12-13 16:20:44.128118	2020-12-13 16:20:44.128118
+787	\N	1337	604	2020-12-13 16:20:53.31977	2020-12-13 16:20:53.31977
+788	\N	1338	604	2020-12-13 16:21:01.136221	2020-12-13 16:21:01.136221
+789	\N	1339	605	2020-12-13 16:21:28.991004	2020-12-13 16:21:28.991004
+790	\N	1341	605	2020-12-13 16:21:45.674054	2020-12-13 16:21:45.674054
+791	\N	1342	606	2020-12-13 16:22:14.202585	2020-12-13 16:22:14.202585
+792	\N	1343	606	2020-12-13 16:22:25.729763	2020-12-13 16:22:25.729763
+793	\N	1344	607	2020-12-13 16:23:06.326043	2020-12-13 16:23:06.326043
+794	\N	1345	607	2020-12-13 16:23:17.765855	2020-12-13 16:23:17.765855
+795	\N	1346	607	2020-12-13 16:23:26.092802	2020-12-13 16:23:26.092802
+796	\N	1347	608	2020-12-13 16:24:04.431572	2020-12-13 16:24:04.431572
+797	\N	1348	608	2020-12-13 16:24:19.629167	2020-12-13 16:24:19.629167
+798	\N	1349	608	2020-12-13 16:24:31.364169	2020-12-13 16:24:31.364169
+799	\N	1350	608	2020-12-13 16:24:39.611532	2020-12-13 16:24:39.611532
+800	\N	1351	608	2020-12-13 16:24:47.627616	2020-12-13 16:24:47.627616
+801	\N	1365	609	2020-12-13 16:25:23.621174	2020-12-13 16:25:23.621174
+802	\N	1366	609	2020-12-13 16:25:36.109404	2020-12-13 16:25:36.109404
+803	\N	1367	609	2020-12-13 16:25:42.993148	2020-12-13 16:25:42.993148
+843	\N	1405	623	2020-12-13 16:40:17.440849	2020-12-13 16:40:17.440849
+844	\N	1406	624	2020-12-13 16:40:51.46058	2020-12-13 16:40:51.46058
+845	\N	1407	624	2020-12-13 16:40:59.10125	2020-12-13 16:40:59.10125
+846	\N	1413	625	2020-12-13 16:46:37.928821	2020-12-13 16:46:37.928821
+847	\N	1414	625	2020-12-13 16:46:45.777069	2020-12-13 16:46:45.777069
+848	\N	1415	625	2020-12-13 16:46:55.527396	2020-12-13 16:46:55.527396
+849	\N	1416	626	2020-12-13 16:47:29.878931	2020-12-13 16:47:29.878931
+850	\N	1417	626	2020-12-13 16:47:42.332935	2020-12-13 16:47:42.332935
+851	\N	1418	626	2020-12-13 16:47:50.846657	2020-12-13 16:47:50.846657
+855	\N	1419	629	2020-12-13 16:49:47.747843	2020-12-13 16:49:47.747843
+856	\N	1420	629	2020-12-13 16:49:56.024738	2020-12-13 16:49:56.024738
+857	\N	1421	629	2020-12-13 16:50:18.46757	2020-12-13 16:50:18.46757
+858	\N	1422	629	2020-12-13 16:50:38.669625	2020-12-13 16:50:38.669625
+859	\N	1426	630	2020-12-13 16:51:21.829367	2020-12-13 16:51:21.829367
+860	\N	1427	630	2020-12-13 16:51:32.154913	2020-12-13 16:51:32.154913
+861	\N	1429	630	2020-12-13 16:51:42.066719	2020-12-13 16:51:42.066719
+862	\N	1430	631	2020-12-13 16:52:18.515912	2020-12-13 16:52:18.515912
+863	\N	1431	631	2020-12-13 16:52:27.966881	2020-12-13 16:52:27.966881
+868	\N	1438	633	2020-12-13 16:53:57.365442	2020-12-13 16:53:57.365442
+869	\N	1442	634	2020-12-13 16:54:25.437693	2020-12-13 16:54:25.437693
+870	\N	1444	635	2020-12-13 16:54:55.047703	2020-12-13 16:54:55.047703
+871	\N	1445	635	2020-12-13 16:55:03.85734	2020-12-13 16:55:03.85734
+872	\N	1455	636	2020-12-13 16:55:42.273797	2020-12-13 16:55:42.273797
+873	\N	1457	636	2020-12-13 16:55:54.594702	2020-12-13 16:55:54.594702
+874	\N	1458	637	2020-12-13 16:57:05.330711	2020-12-13 16:57:05.330711
+875	\N	1462	638	2020-12-13 16:57:47.630438	2020-12-13 16:57:47.630438
+876	\N	1464	639	2020-12-13 16:58:41.824452	2020-12-13 16:58:41.824452
+877	\N	1466	639	2020-12-13 16:58:52.499311	2020-12-13 16:58:52.499311
+878	\N	1465	639	2020-12-13 16:59:16.888361	2020-12-13 16:59:16.888361
+879	\N	1463	639	2020-12-13 16:59:25.670888	2020-12-13 16:59:25.670888
+880	\N	1468	640	2020-12-13 17:00:20.396375	2020-12-13 17:00:20.396375
+881	\N	1469	640	2020-12-13 17:00:31.171056	2020-12-13 17:00:31.171056
+882	\N	1470	641	2020-12-13 17:01:02.029458	2020-12-13 17:01:02.029458
+883	\N	1492	642	2020-12-13 17:01:34.092637	2020-12-13 17:01:34.092637
+884	\N	1494	643	2020-12-13 17:02:42.289074	2020-12-13 17:02:42.289074
+885	\N	1493	643	2020-12-13 17:02:51.518264	2020-12-13 17:02:51.518264
+896	\N	1514	650	2020-12-13 17:11:50.520344	2020-12-13 17:11:50.520344
+804	\N	1352	610	2020-12-13 16:26:23.357337	2020-12-13 16:26:23.357337
+805	\N	1353	610	2020-12-13 16:26:30.535035	2020-12-13 16:26:30.535035
+806	\N	1355	610	2020-12-13 16:26:42.753377	2020-12-13 16:26:42.753377
+807	\N	1354	610	2020-12-13 16:26:50.795273	2020-12-13 16:26:50.795273
+808	\N	1356	610	2020-12-13 16:26:57.90578	2020-12-13 16:26:57.90578
+809	\N	1357	610	2020-12-13 16:27:04.228115	2020-12-13 16:27:04.228115
+810	\N	1361	611	2020-12-13 16:27:35.717513	2020-12-13 16:27:35.717513
+811	\N	1359	611	2020-12-13 16:27:44.875153	2020-12-13 16:27:44.875153
+812	\N	1360	611	2020-12-13 16:27:52.333209	2020-12-13 16:27:52.333209
+813	\N	1362	612	2020-12-13 16:28:22.956148	2020-12-13 16:28:22.956148
+814	\N	1363	612	2020-12-13 16:28:30.33479	2020-12-13 16:28:30.33479
+815	\N	1364	612	2020-12-13 16:28:40.426278	2020-12-13 16:28:40.426278
+816	\N	1371	613	2020-12-13 16:29:26.13447	2020-12-13 16:29:26.13447
+817	\N	1370	613	2020-12-13 16:29:33.653888	2020-12-13 16:29:33.653888
+818	\N	1374	614	2020-12-13 16:30:06.199065	2020-12-13 16:30:06.199065
+819	\N	1375	614	2020-12-13 16:30:16.559354	2020-12-13 16:30:16.559354
+820	\N	1376	614	2020-12-13 16:30:23.891773	2020-12-13 16:30:23.891773
+821	\N	1377	614	2020-12-13 16:30:30.034155	2020-12-13 16:30:30.034155
+822	\N	1384	615	2020-12-13 16:31:08.104401	2020-12-13 16:31:08.104401
+823	\N	1385	615	2020-12-13 16:31:16.519264	2020-12-13 16:31:16.519264
+824	\N	1386	615	2020-12-13 16:31:23.831212	2020-12-13 16:31:23.831212
+825	\N	1387	616	2020-12-13 16:31:53.610766	2020-12-13 16:31:53.610766
+826	\N	1388	616	2020-12-13 16:32:00.416402	2020-12-13 16:32:00.416402
+827	\N	1389	616	2020-12-13 16:32:07.616332	2020-12-13 16:32:07.616332
+829	\N	1378	618	2020-12-13 16:34:41.613319	2020-12-13 16:34:41.613319
+830	\N	1379	618	2020-12-13 16:34:49.382266	2020-12-13 16:34:49.382266
+831	\N	1380	618	2020-12-13 16:34:56.82946	2020-12-13 16:34:56.82946
+832	\N	1390	619	2020-12-13 16:35:47.800206	2020-12-13 16:35:47.800206
+833	\N	1391	619	2020-12-13 16:36:04.0673	2020-12-13 16:36:04.0673
+834	\N	1393	620	2020-12-13 16:36:46.783867	2020-12-13 16:36:46.783867
+835	\N	1394	620	2020-12-13 16:36:54.010962	2020-12-13 16:36:54.010962
+836	\N	1395	620	2020-12-13 16:37:05.740522	2020-12-13 16:37:05.740522
+837	\N	1396	621	2020-12-13 16:37:46.262518	2020-12-13 16:37:46.262518
+838	\N	1397	621	2020-12-13 16:37:55.678456	2020-12-13 16:37:55.678456
+839	\N	1398	621	2020-12-13 16:38:05.15707	2020-12-13 16:38:05.15707
+840	\N	1400	622	2020-12-13 16:38:51.916465	2020-12-13 16:38:51.916465
+841	\N	1403	622	2020-12-13 16:39:22.809619	2020-12-13 16:39:22.809619
+842	\N	1404	622	2020-12-13 16:39:35.446834	2020-12-13 16:39:35.446834
+852	\N	1410	627	2020-12-13 16:48:33.266693	2020-12-13 16:48:33.266693
+853	\N	1408	628	2020-12-13 16:49:07.789817	2020-12-13 16:49:07.789817
+854	\N	1409	628	2020-12-13 16:49:15.896186	2020-12-13 16:49:15.896186
+864	\N	1433	632	2020-12-13 16:53:01.638309	2020-12-13 16:53:01.638309
+865	\N	1434	632	2020-12-13 16:53:10.290056	2020-12-13 16:53:10.290056
+866	\N	1437	632	2020-12-13 16:53:19.864114	2020-12-13 16:53:19.864114
+867	\N	1435	632	2020-12-13 16:53:28.097132	2020-12-13 16:53:28.097132
+886	\N	1496	644	2020-12-13 17:03:35.478073	2020-12-13 17:03:35.478073
+887	\N	1499	645	2020-12-13 17:04:43.108355	2020-12-13 17:04:43.108355
+888	\N	1500	645	2020-12-13 17:04:51.11321	2020-12-13 17:04:51.11321
+889	\N	1502	646	2020-12-13 17:05:19.619016	2020-12-13 17:05:19.619016
+890	\N	1503	646	2020-12-13 17:05:29.945746	2020-12-13 17:05:29.945746
+891	\N	1495	647	2020-12-13 17:10:03.590164	2020-12-13 17:10:03.590164
+892	\N	1504	648	2020-12-13 17:10:30.191447	2020-12-13 17:10:30.191447
+893	\N	1505	648	2020-12-13 17:10:39.071169	2020-12-13 17:10:39.071169
+894	\N	1506	649	2020-12-13 17:11:08.355244	2020-12-13 17:11:08.355244
+895	\N	1507	649	2020-12-13 17:11:19.762382	2020-12-13 17:11:19.762382
+897	\N	1515	650	2020-12-13 17:11:59.713549	2020-12-13 17:11:59.713549
+898	\N	1517	650	2020-12-13 17:12:12.64941	2020-12-13 17:12:12.64941
+899	\N	1518	650	2020-12-13 17:12:24.540594	2020-12-13 17:12:24.540594
+900	\N	1516	650	2020-12-13 17:12:36.318541	2020-12-13 17:12:36.318541
+901	\N	1519	651	2020-12-13 17:13:07.604515	2020-12-13 17:13:07.604515
+902	\N	1520	651	2020-12-13 17:13:16.93021	2020-12-13 17:13:16.93021
+903	\N	1521	651	2020-12-13 17:13:25.696496	2020-12-13 17:13:25.696496
+904	\N	1522	652	2020-12-13 17:14:25.386716	2020-12-13 17:14:25.386716
+905	\N	1523	652	2020-12-13 17:14:33.28421	2020-12-13 17:14:33.28421
+906	\N	1524	652	2020-12-13 17:14:41.00218	2020-12-13 17:14:41.00218
+907	\N	1526	653	2020-12-13 17:15:17.86939	2020-12-13 17:15:17.86939
+908	\N	1529	654	2020-12-13 17:16:56.451305	2020-12-13 17:16:56.451305
+909	\N	1530	654	2020-12-13 17:17:03.606524	2020-12-13 17:17:03.606524
+910	\N	1531	654	2020-12-13 17:17:10.985809	2020-12-13 17:17:10.985809
+911	\N	1532	655	2020-12-13 17:18:07.186015	2020-12-13 17:18:07.186015
+912	\N	1534	655	2020-12-13 17:18:23.805811	2020-12-13 17:18:23.805811
+913	\N	1533	655	2020-12-13 17:18:31.095656	2020-12-13 17:18:31.095656
+914	\N	1535	655	2020-12-13 17:18:42.562362	2020-12-13 17:18:42.562362
+915	\N	1536	656	2020-12-13 17:19:27.077045	2020-12-13 17:19:27.077045
+916	\N	1537	656	2020-12-13 17:19:45.908693	2020-12-13 17:19:45.908693
+917	\N	1546	656	2020-12-13 17:19:56.483089	2020-12-13 17:19:56.483089
+918	\N	1545	656	2020-12-13 17:20:13.318876	2020-12-13 17:20:13.318876
+920	\N	1553	657	2020-12-13 17:21:03.261848	2020-12-13 17:21:03.261848
+921	\N	1554	657	2020-12-13 17:21:13.421852	2020-12-13 17:21:13.421852
+922	\N	1555	657	2020-12-13 17:21:21.385908	2020-12-13 17:21:21.385908
+923	\N	1557	657	2020-12-13 17:21:45.258568	2020-12-13 17:21:45.258568
+924	\N	1558	658	2020-12-13 17:22:43.397936	2020-12-13 17:22:43.397936
+925	\N	1559	658	2020-12-13 17:22:51.161977	2020-12-13 17:22:51.161977
+926	\N	1560	658	2020-12-13 17:23:05.267911	2020-12-13 17:23:05.267911
+927	\N	1561	658	2020-12-13 17:23:15.026799	2020-12-13 17:23:15.026799
+928	\N	1562	659	2020-12-13 17:23:57.79409	2020-12-13 17:23:57.79409
+929	\N	1566	660	2020-12-13 17:24:42.186181	2020-12-13 17:24:42.186181
+930	\N	1567	660	2020-12-13 17:24:53.954526	2020-12-13 17:24:53.954526
+931	\N	1568	660	2020-12-13 17:25:04.00011	2020-12-13 17:25:04.00011
+932	\N	1569	660	2020-12-13 17:25:10.603582	2020-12-13 17:25:10.603582
+933	\N	1570	660	2020-12-13 17:25:19.787495	2020-12-13 17:25:19.787495
+934	\N	1571	660	2020-12-13 17:25:32.034639	2020-12-13 17:25:32.034639
+936	\N	1547	662	2020-12-13 17:26:57.106991	2020-12-13 17:26:57.106991
+937	\N	1551	662	2020-12-13 17:27:05.476574	2020-12-13 17:27:05.476574
+938	\N	1550	662	2020-12-13 17:27:15.308612	2020-12-13 17:27:15.308612
+939	\N	1552	662	2020-12-13 17:27:24.931678	2020-12-13 17:27:24.931678
+940	\N	1549	662	2020-12-13 17:27:34.965736	2020-12-13 17:27:34.965736
+941	\N	1573	663	2020-12-13 17:28:06.285109	2020-12-13 17:28:06.285109
+942	\N	1575	663	2020-12-13 17:28:14.49517	2020-12-13 17:28:14.49517
+943	\N	1576	664	2020-12-13 17:28:50.239964	2020-12-13 17:28:50.239964
+944	\N	1578	665	2020-12-13 17:29:25.540392	2020-12-13 17:29:25.540392
+945	\N	1580	666	2020-12-13 17:30:05.576715	2020-12-13 17:30:05.576715
+946	\N	1579	666	2020-12-13 17:30:12.812875	2020-12-13 17:30:12.812875
+947	\N	1581	667	2020-12-13 17:31:12.592625	2020-12-13 17:31:12.592625
+948	\N	1587	667	2020-12-13 17:31:25.631632	2020-12-13 17:31:25.631632
+949	\N	1585	667	2020-12-13 17:31:36.310048	2020-12-13 17:31:36.310048
+950	\N	1582	668	2020-12-13 17:32:26.732683	2020-12-13 17:32:26.732683
+951	\N	1588	669	2020-12-13 17:33:01.341007	2020-12-13 17:33:01.341007
+952	\N	1589	669	2020-12-13 17:33:12.878426	2020-12-13 17:33:12.878426
+953	\N	1590	670	2020-12-13 17:33:41.09967	2020-12-13 17:33:41.09967
+954	\N	1591	671	2020-12-13 17:34:35.067093	2020-12-13 17:34:35.067093
+955	\N	1593	671	2020-12-13 17:34:42.741253	2020-12-13 17:34:42.741253
+956	\N	1596	672	2020-12-13 17:35:22.823337	2020-12-13 17:35:22.823337
+957	\N	1594	672	2020-12-13 17:35:33.703237	2020-12-13 17:35:33.703237
+958	\N	1598	672	2020-12-13 17:35:41.90447	2020-12-13 17:35:41.90447
+959	\N	1599	673	2020-12-13 17:36:24.983825	2020-12-13 17:36:24.983825
+960	\N	1600	673	2020-12-13 17:36:34.547483	2020-12-13 17:36:34.547483
+961	\N	1601	673	2020-12-13 17:36:46.805383	2020-12-13 17:36:46.805383
+962	\N	1602	673	2020-12-13 17:36:56.820006	2020-12-13 17:36:56.820006
+963	\N	1603	674	2020-12-13 17:37:38.725336	2020-12-13 17:37:38.725336
+964	\N	1611	675	2020-12-13 17:38:09.166025	2020-12-13 17:38:09.166025
+965	\N	1610	675	2020-12-13 17:38:17.344164	2020-12-13 17:38:17.344164
+985	\N	1637	682	2020-12-13 17:44:48.935963	2020-12-13 17:44:48.935963
+986	\N	1638	682	2020-12-13 17:44:56.312843	2020-12-13 17:44:56.312843
+987	\N	1639	682	2020-12-13 17:45:03.669056	2020-12-13 17:45:03.669056
+988	\N	1640	682	2020-12-13 17:45:11.769604	2020-12-13 17:45:11.769604
+989	\N	1641	683	2020-12-13 17:45:39.984072	2020-12-13 17:45:39.984072
+990	\N	1642	683	2020-12-13 17:45:51.885605	2020-12-13 17:45:51.885605
+966	\N	1604	676	2020-12-13 17:39:00.566143	2020-12-13 17:39:00.566143
+967	\N	1605	676	2020-12-13 17:39:08.54132	2020-12-13 17:39:08.54132
+968	\N	1606	676	2020-12-13 17:39:15.246042	2020-12-13 17:39:15.246042
+969	\N	1607	676	2020-12-13 17:39:25.090436	2020-12-13 17:39:25.090436
+970	\N	1608	676	2020-12-13 17:39:34.339208	2020-12-13 17:39:34.339208
+971	\N	1612	677	2020-12-13 17:40:02.827971	2020-12-13 17:40:02.827971
+972	\N	1613	677	2020-12-13 17:40:09.954815	2020-12-13 17:40:09.954815
+973	\N	1614	677	2020-12-13 17:40:18.069464	2020-12-13 17:40:18.069464
+974	\N	1617	677	2020-12-13 17:40:30.279496	2020-12-13 17:40:30.279496
+975	\N	1618	677	2020-12-13 17:40:37.164796	2020-12-13 17:40:37.164796
+976	\N	1620	678	2020-12-13 17:41:07.484903	2020-12-13 17:41:07.484903
+977	\N	1619	678	2020-12-13 17:41:15.461328	2020-12-13 17:41:15.461328
+978	\N	1621	678	2020-12-13 17:41:28.22572	2020-12-13 17:41:28.22572
+979	\N	1624	678	2020-12-13 17:41:36.053645	2020-12-13 17:41:36.053645
+980	\N	1625	678	2020-12-13 17:41:42.507853	2020-12-13 17:41:42.507853
+981	\N	1628	679	2020-12-13 17:42:22.398605	2020-12-13 17:42:22.398605
+982	\N	1635	680	2020-12-13 17:42:59.080194	2020-12-13 17:42:59.080194
+983	\N	1636	680	2020-12-13 17:43:06.500799	2020-12-13 17:43:06.500799
+991	\N	1643	684	2020-12-13 17:46:36.458484	2020-12-13 17:46:36.458484
+992	\N	1646	684	2020-12-13 17:46:44.130764	2020-12-13 17:46:44.130764
+993	\N	1647	684	2020-12-13 17:46:52.603672	2020-12-13 17:46:52.603672
+994	\N	1648	684	2020-12-13 17:47:01.771779	2020-12-13 17:47:01.771779
+995	\N	1651	685	2020-12-13 17:47:31.915708	2020-12-13 17:47:31.915708
+996	\N	1652	685	2020-12-13 17:47:39.459585	2020-12-13 17:47:39.459585
+997	\N	1653	685	2020-12-13 17:47:48.925158	2020-12-13 17:47:48.925158
+998	\N	1654	685	2020-12-13 17:47:58.936058	2020-12-13 17:47:58.936058
 \.
 
 
@@ -4816,9 +5386,28 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 228	2020-07-05 20:00:22.460859	2020-07-05 21:00:38.433076	f	\N
 255	2020-07-05 20:00:24.524308	2020-07-05 21:01:25.976397	f	\N
 318	2020-09-03 20:43:16.256737	2020-10-22 08:22:39.577703	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.018706090746503663","GPSTimeStamp":"2020-09-01T13:05:40Z","GPSImgDirection":"111.61694153000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6625549999999998","GPSLatitude":"48.463046670000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.799999999999997","GPSHPositioningError":"10.033350703491402","DateCreated":"2020-09-01T15:05:39+02:00"}}}}
+565	2020-12-13 15:14:45.477632	2020-12-13 15:14:45.491011	t	\N
 326	2020-09-03 20:43:17.350891	2020-10-22 17:06:49.187211	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.058897156270842896","GPSTimeStamp":"2020-09-01T15:53:24Z","GPSImgDirection":"80.443298340000013","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634783299999998","GPSLatitude":"48.462125","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97.400000000000006","GPSHPositioningError":"5.645715267044479","DateCreated":"2020-09-01T17:53:23+02:00"}}}}
 314	2020-09-03 20:43:15.577919	2020-10-22 17:28:14.99357	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.010091121308486545","GPSTimeStamp":"2020-09-01T16:30:23Z","GPSImgDirection":"173.28211991000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635333299999995","GPSLatitude":"48.462630000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96","GPSHPositioningError":"7.9926532190500739","DateCreated":"2020-09-01T18:30:22+02:00"}}}}
 293	2020-09-03 20:43:12.79275	2020-10-22 16:47:50.377763	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.11071044208701972","GPSTimeStamp":"2020-09-01T15:05:00Z","GPSImgDirection":"317.51951600000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6641866700000003","GPSLatitude":"48.460799999999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.900000000000006","GPSHPositioningError":"5.3056777289084369","DateCreated":"2020-09-01T17:05:00+02:00"}}}}
+566	2020-12-13 15:16:28.779184	2020-12-13 15:16:28.792347	t	\N
+567	2020-12-13 15:17:22.708294	2020-12-13 15:17:22.717602	t	\N
+568	2020-12-13 15:18:28.696064	2020-12-13 15:18:28.732368	t	\N
+569	2020-12-13 15:20:29.370699	2020-12-13 15:20:29.383368	t	\N
+570	2020-12-13 15:21:47.646237	2020-12-13 15:21:47.656949	t	\N
+571	2020-12-13 15:22:51.628329	2020-12-13 15:22:51.637895	t	\N
+572	2020-12-13 15:23:45.208688	2020-12-13 15:23:45.218797	t	\N
+573	2020-12-13 15:25:58.599366	2020-12-13 15:25:58.609339	t	\N
+574	2020-12-13 15:27:32.127178	2020-12-13 15:27:32.137133	t	\N
+575	2020-12-13 15:31:28.714514	2020-12-13 15:31:28.732913	t	\N
+576	2020-12-13 15:33:22.572405	2020-12-13 15:33:22.582497	t	\N
+577	2020-12-13 15:34:31.356523	2020-12-13 15:34:31.36504	t	\N
+578	2020-12-13 15:35:21.746785	2020-12-13 15:35:21.757469	t	\N
+579	2020-12-13 15:36:18.73746	2020-12-13 15:36:18.756401	t	\N
+580	2020-12-13 15:37:29.455626	2020-12-13 15:37:29.464994	t	\N
+581	2020-12-13 15:38:33.13884	2020-12-13 15:38:33.147343	t	\N
+582	2020-12-13 15:41:02.458446	2020-12-13 15:41:02.467266	t	\N
+583	2020-12-13 15:42:01.058014	2020-12-13 15:42:01.066444	t	\N
 495	2020-10-19 21:46:52.965584	2020-10-19 21:47:14.804112	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.02714896761450029","GPSTimeStamp":"2020-10-18T14:53:19Z","GPSImgDirection":"331.02767920999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6379866700000001","GPSLatitude":"48.447361669999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"89.900000000000006","GPSHPositioningError":"16.497946963216425","DateCreated":"2020-10-18T16:53:19+02:00"}}}}
 428	2020-09-03 20:43:32.382498	2020-10-22 16:49:34.452259	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.24529595667282642","GPSTimeStamp":"2020-09-01T15:14:12Z","GPSImgDirection":"137.74995039000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6638700000000002","GPSLatitude":"48.461120000000001","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97.200000000000003","GPSHPositioningError":"7.4783245459871122","DateCreated":"2020-09-01T17:14:11+02:00"}}}}
 315	2020-09-03 20:43:15.704623	2020-10-22 16:52:15.18831	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.031640324750192163","GPSTimeStamp":"2020-09-01T15:17:56Z","GPSImgDirection":"184.72368624000003","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6637116700000001","GPSLatitude":"48.461216670000013","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.200000000000003","GPSHPositioningError":"12.349507129868886","DateCreated":"2020-09-01T17:17:55+02:00"}}}}
@@ -4828,6 +5417,16 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 499	2020-10-19 21:50:01.830685	2020-10-19 21:50:21.744742	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.015429579662481697","GPSTimeStamp":"2020-10-18T15:02:38Z","GPSImgDirection":"101.25133033","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6389916700000002","GPSLatitude":"48.447303329999997","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.200000000000003","GPSHPositioningError":"5.0407586632457537","DateCreated":"2020-10-18T17:02:37+02:00"}}}}
 439	2020-09-03 20:43:34.142284	2020-10-22 16:58:53.891305	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.061494074727580533","GPSTimeStamp":"2020-09-01T15:37:08Z","GPSImgDirection":"172.25637834000003","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6637300000000002","GPSLatitude":"48.461741670000002","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.200000000000003","GPSHPositioningError":"4.5619078311311636","DateCreated":"2020-09-01T17:37:07+02:00"}}}}
 501	2020-10-19 21:51:38.373555	2020-10-19 21:51:58.424568	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.091703087110289683","GPSTimeStamp":"2020-10-18T15:05:04Z","GPSImgDirection":"150.34474175","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6391300000000002","GPSLatitude":"48.447188330000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.299999999999997","GPSHPositioningError":"25.832432194821749","DateCreated":"2020-10-18T17:05:03+02:00"}}}}
+584	2020-12-13 15:49:22.170017	2020-12-13 15:49:22.180321	t	\N
+585	2020-12-13 15:50:12.856193	2020-12-13 15:50:12.871585	t	\N
+586	2020-12-13 15:51:10.733519	2020-12-13 15:51:10.748494	t	\N
+587	2020-12-13 15:51:53.181919	2020-12-13 15:51:53.193763	t	\N
+588	2020-12-13 15:52:51.498177	2020-12-13 15:52:51.508222	t	\N
+589	2020-12-13 15:53:44.557661	2020-12-13 15:53:44.59104	t	\N
+592	2020-12-13 15:56:42.212262	2020-12-13 15:56:42.242095	t	\N
+593	2020-12-13 15:57:40.25345	2020-12-13 15:57:40.259977	t	\N
+595	2020-12-13 15:59:53.795863	2020-12-13 15:59:53.805789	t	\N
+596	2020-12-13 16:00:51.689823	2020-12-13 16:00:51.697148	t	\N
 500	2020-10-19 21:50:58.540016	2020-10-19 21:51:22.724708	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.015429579662481697","GPSTimeStamp":"2020-10-18T15:02:38Z","GPSImgDirection":"101.25133033","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6389916700000002","GPSLatitude":"48.447303329999997","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.200000000000003","GPSHPositioningError":"5.0407586632457537","DateCreated":"2020-10-18T17:02:37+02:00"}}}}
 397	2020-09-03 20:43:27.927183	2020-10-22 16:50:03.234472	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.31038084635577728","GPSTimeStamp":"2020-09-01T15:15:41Z","GPSImgDirection":"159.06182090999999","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6636383299999999","GPSLatitude":"48.461220000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97.099999999999994","GPSHPositioningError":"5.7552511083654334","DateCreated":"2020-09-01T17:15:40+02:00"}}}}
 274	2020-09-03 20:43:10.026726	2020-10-22 16:53:57.76362	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.57298487404569243","GPSTimeStamp":"2020-09-01T15:24:04Z","GPSImgDirection":"213.46614835999998","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6637549999999997","GPSLatitude":"48.461395000000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.299999999999997","GPSHPositioningError":"12.21033234191129","DateCreated":"2020-09-01T17:24:04+02:00"}}}}
@@ -4837,6 +5436,9 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 389	2020-09-03 20:43:26.719561	2020-10-22 17:09:26.918801	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.019792985178228736","GPSTimeStamp":"2020-09-01T16:00:13Z","GPSImgDirection":"206.56737518","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634366699999998","GPSLatitude":"48.462216670000011","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.400000000000006","GPSHPositioningError":"13.012424503882658","DateCreated":"2020-09-01T18:00:12+02:00"}}}}
 323	2020-09-03 20:43:17.048019	2020-10-22 17:09:46.716599	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.019792985178228736","GPSTimeStamp":"2020-09-01T16:00:13Z","GPSImgDirection":"206.56737518","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634366699999998","GPSLatitude":"48.462216670000011","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.400000000000006","GPSHPositioningError":"13.012424503882658","DateCreated":"2020-09-01T18:00:12+02:00"}}}}
 385	2020-09-03 20:43:26.048919	2020-10-22 17:10:59.024483	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.076863460223387275","GPSTimeStamp":"2020-09-01T16:04:09Z","GPSImgDirection":"17.764648440000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634116700000003","GPSLatitude":"48.462208329999996","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97","GPSHPositioningError":"9.1920039980009989","DateCreated":"2020-09-01T18:04:09+02:00"}}}}
+590	2020-12-13 15:54:32.142463	2020-12-13 15:54:32.152064	t	\N
+591	2020-12-13 15:55:36.342888	2020-12-13 15:55:36.352632	t	\N
+594	2020-12-13 15:58:57.950568	2020-12-13 15:58:57.962792	t	\N
 502	2020-10-19 21:52:18.619209	2020-10-19 21:52:39.180495	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.028580306106596242","GPSTimeStamp":"2020-10-18T15:05:52Z","GPSImgDirection":"94.890315049999998","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6391616700000005","GPSLatitude":"48.447138329999994","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.299999999999997","GPSHPositioningError":"9.420692928334125","DateCreated":"2020-10-18T17:05:51+02:00"}}}}
 352	2020-09-03 20:43:21.379969	2020-10-22 16:51:27.735615	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.039257347598406461","GPSTimeStamp":"2020-09-01T15:16:34Z","GPSImgDirection":"101.69729515000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635916700000002","GPSLatitude":"48.46125","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97","GPSHPositioningError":"15.882587631803933","DateCreated":"2020-09-01T17:16:33+02:00"}}}}
 267	2020-09-03 20:43:09.066618	2020-10-22 16:52:53.04437	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.19659231592420842","GPSTimeStamp":"2020-09-01T15:19:25Z","GPSImgDirection":"50.09347537","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634283299999999","GPSLatitude":"48.461404999999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.299999999999997","GPSHPositioningError":"5.0551461656814318","DateCreated":"2020-09-01T17:19:24+02:00"}}}}
@@ -4846,6 +5448,13 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 451	2020-09-03 20:45:14.587615	2020-10-22 17:03:04.400209	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.45097115624393896","GPSTimeStamp":"2020-09-01T15:41:06Z","GPSImgDirection":"180.33879093000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6637999999999997","GPSLatitude":"48.461916670000008","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.299999999999997","GPSHPositioningError":"9.1801792828685258","DateCreated":"2020-09-01T17:41:06+02:00"}}}}
 363	2020-09-03 20:43:22.909369	2020-10-22 17:08:46.338973	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.11389227962858829","GPSTimeStamp":"2020-09-01T15:58:24Z","GPSImgDirection":"56.671112070000007","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6632866700000006","GPSLatitude":"48.462186670000001","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.700000000000003","GPSHPositioningError":"8.6110228716645487","DateCreated":"2020-09-01T17:58:23+02:00"}}}}
 353	2020-09-03 20:43:21.636651	2020-10-22 17:14:44.70424	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.077524565207362645","GPSTimeStamp":"2020-09-01T16:13:04Z","GPSImgDirection":"4.5338745099999995","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635783299999995","GPSLatitude":"48.462379999999996","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.099999999999994","GPSHPositioningError":"9.1925255646288537","DateCreated":"2020-09-01T18:13:04+02:00"}}}}
+597	2020-12-13 16:01:53.887973	2020-12-13 16:01:53.901589	t	\N
+598	2020-12-13 16:03:03.686447	2020-12-13 16:03:03.694514	t	\N
+599	2020-12-13 16:04:20.336457	2020-12-13 16:04:20.344634	t	\N
+600	2020-12-13 16:04:54.422026	2020-12-13 16:04:54.42874	t	\N
+601	2020-12-13 16:05:44.357336	2020-12-13 16:05:44.386187	t	\N
+602	2020-12-13 16:06:56.003004	2020-12-13 16:06:56.026637	t	\N
+603	2020-12-13 16:08:00.502418	2020-12-13 16:08:00.520347	t	\N
 503	2020-10-19 21:52:57.926932	2020-10-19 21:53:20.925375	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.059276506331989325","GPSTimeStamp":"2020-10-18T15:06:54Z","GPSImgDirection":"346.16073619999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6391633300000001","GPSLatitude":"48.447066670000005","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"89.799999999999997","GPSHPositioningError":"10.112441156691325","DateCreated":"2020-10-18T17:06:53+02:00"}}}}
 316	2020-09-03 20:43:15.883583	2020-10-22 16:52:36.188869	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.19659231592420842","GPSTimeStamp":"2020-09-01T15:19:25Z","GPSImgDirection":"50.09347537","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634283299999999","GPSLatitude":"48.461404999999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.299999999999997","GPSHPositioningError":"5.0551461656814318","DateCreated":"2020-09-01T17:19:24+02:00"}}}}
 442	2020-09-03 20:45:13.195164	2020-10-22 16:58:16.121294	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.11092346161853146","GPSTimeStamp":"2020-09-01T15:35:27Z","GPSImgDirection":"251.26528926","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.66393667","GPSLatitude":"48.461800000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.900000000000006","GPSHPositioningError":"4.8190930204131526","DateCreated":"2020-09-01T17:35:26+02:00"}}}}
@@ -4855,6 +5464,12 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 422	2020-09-03 20:43:31.523419	2020-10-22 17:07:46.697124	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.071529552318056619","GPSTimeStamp":"2020-09-01T15:56:13Z","GPSImgDirection":"144.82843792","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6633699999999996","GPSLatitude":"48.462070000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.900000000000006","GPSHPositioningError":"4.8832338464760712","DateCreated":"2020-09-01T17:56:12+02:00"}}}}
 273	2020-09-03 20:43:09.91377	2020-10-22 17:08:13.92129	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.22566017508085809","GPSTimeStamp":"2020-09-01T15:57:08Z","GPSImgDirection":"76.837219250000004","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6632666699999996","GPSLatitude":"48.46213667","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97.099999999999994","GPSHPositioningError":"4.3336347197106688","DateCreated":"2020-09-01T17:57:07+02:00"}}}}
 286	2020-09-03 20:43:11.832075	2020-10-22 17:08:30.629165	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0049835224646217618","GPSTimeStamp":"2020-09-01T15:57:49Z","GPSImgDirection":"5.2379455600000009","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6633049999999998","GPSLatitude":"48.462146670000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.400000000000006","GPSHPositioningError":"10.988661274472749","DateCreated":"2020-09-01T17:57:49+02:00"}}}}
+604	2020-12-13 16:20:41.526456	2020-12-13 16:20:41.539042	t	\N
+605	2020-12-13 16:21:26.701714	2020-12-13 16:21:26.711908	t	\N
+606	2020-12-13 16:22:11.295145	2020-12-13 16:22:11.304775	t	\N
+611	2020-12-13 16:27:33.984873	2020-12-13 16:27:33.998375	t	\N
+612	2020-12-13 16:28:19.783631	2020-12-13 16:28:19.793372	t	\N
+613	2020-12-13 16:29:22.951837	2020-12-13 16:29:22.961699	t	\N
 505	2020-10-19 21:55:06.277444	2020-10-19 21:56:02.693855	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.041779741646286561","GPSTimeStamp":"2020-10-18T15:09:07Z","GPSImgDirection":"73.654449450000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6390800000000003","GPSLatitude":"48.447021670000005","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"89.299999999999997","GPSHPositioningError":"7.0256808854620072","DateCreated":"2020-10-18T17:09:06+02:00"}}}}
 265	2020-09-03 19:26:29.409872	2020-10-22 07:55:09.559066	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.019590001552799639","GPSTimeStamp":"2020-09-01T09:23:12Z","GPSImgDirection":"162.30752572","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6644083299999997","GPSLatitude":"48.462630000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.799999999999997","GPSHPositioningError":"4.7281319814401099","DateCreated":"2020-09-01T11:23:11+02:00"}}}}
 475	2020-09-03 20:47:14.734561	2020-10-22 07:57:31.68864	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0035671633635930783","GPSTimeStamp":"2020-09-01T09:26:30Z","GPSImgDirection":"47.465637230000013","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.66432","GPSLatitude":"48.462788329999995","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.799999999999997","GPSHPositioningError":"10.566194262011752","DateCreated":"2020-09-01T11:26:30+02:00"}}}}
@@ -4863,6 +5478,10 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 272	2020-09-03 20:43:09.802016	2020-10-22 08:02:02.674842	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.024772532296343609","GPSTimeStamp":"2020-09-01T10:03:02Z","GPSImgDirection":"174.96537795999998","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6641583299999998","GPSLatitude":"48.462630000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.299999999999997","GPSHPositioningError":"4.7580126056054715","DateCreated":"2020-09-01T12:03:01+02:00"}}}}
 300	2020-09-03 20:43:13.698263	2020-11-01 13:09:10.682496	f	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.12778234475780956","GPSTimeStamp":"2020-09-01T09:50:16Z","GPSImgDirection":"232.56666565","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.66431167","GPSLatitude":"48.462661670000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"93","GPSHPositioningError":"16.66792463002399","DateCreated":"2020-09-01T11:50:15+02:00"}}}}
 308	2020-09-03 20:43:14.81373	2020-11-03 12:42:02.985664	f	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.029905255883599581","GPSTimeStamp":"2020-09-01T09:53:09Z","GPSImgDirection":"270.81240839999998","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.66431167","GPSLatitude":"48.462628329999987","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"91.900000000000006","GPSHPositioningError":"5.4790813458604353","DateCreated":"2020-09-01T11:53:08+02:00"}}}}
+607	2020-12-13 16:23:04.169977	2020-12-13 16:23:04.202056	t	\N
+608	2020-12-13 16:24:02.287882	2020-12-13 16:24:02.306884	t	\N
+609	2020-12-13 16:25:21.336626	2020-12-13 16:25:21.346795	t	\N
+610	2020-12-13 16:26:21.63753	2020-12-13 16:26:21.653148	t	\N
 387	2020-09-03 20:43:26.290592	2020-10-22 08:03:38.354892	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0084827113958236","GPSTimeStamp":"2020-09-01T10:08:08Z","GPSImgDirection":"142.39834982999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6638999999999999","GPSLatitude":"48.462738330000001","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.799999999999997","GPSHPositioningError":"4.2584955158318589","DateCreated":"2020-09-01T12:08:07+02:00"}}}}
 347	2020-09-03 20:43:20.856688	2020-10-22 08:04:14.793489	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.011668536810832495","GPSTimeStamp":"2020-09-01T10:10:13Z","GPSImgDirection":"146.02148438","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6639250000000003","GPSLatitude":"48.462769999999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.200000000000003","GPSHPositioningError":"9.2059849600744244","DateCreated":"2020-09-01T12:10:13+02:00"}}}}
 465	2020-09-03 20:47:11.515127	2020-10-22 08:06:46.068942	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.019751429571711988","GPSTimeStamp":"2020-09-01T11:05:06Z","GPSImgDirection":"338.11833171999996","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634783299999998","GPSLatitude":"48.462978329999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.599999999999994","GPSHPositioningError":"4.2553576272719056","DateCreated":"2020-09-01T13:05:06+02:00"}}}}
@@ -4871,6 +5490,27 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 380	2020-09-03 20:43:25.309849	2020-10-22 08:11:49.613422	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0018275622260678301","GPSTimeStamp":"2020-09-01T11:33:23Z","GPSImgDirection":"307.16761769000004","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634000000000002","GPSLatitude":"48.463013330000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.5","GPSHPositioningError":"4.2002902584966035","DateCreated":"2020-09-01T13:33:22+02:00"}}}}
 472	2020-09-03 20:47:13.940905	2020-10-22 08:12:14.120328	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0031289604957932989","GPSTimeStamp":"2020-09-01T11:35:19Z","GPSImgDirection":"200.92263792000006","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6633666700000003","GPSLatitude":"48.463108329999997","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.400000000000006","GPSHPositioningError":"4.1334751063297475","DateCreated":"2020-09-01T13:35:19+02:00"}}}}
 394	2020-09-03 20:43:27.330896	2020-10-22 08:12:30.530359	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0031289604957932989","GPSTimeStamp":"2020-09-01T11:35:19Z","GPSImgDirection":"200.92263792000006","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6633666700000003","GPSLatitude":"48.463108329999997","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.400000000000006","GPSHPositioningError":"4.1334751063297475","DateCreated":"2020-09-01T13:35:19+02:00"}}}}
+614	2020-12-13 16:30:03.73762	2020-12-13 16:30:03.745544	t	\N
+615	2020-12-13 16:31:04.73375	2020-12-13 16:31:04.743725	t	\N
+616	2020-12-13 16:31:51.414271	2020-12-13 16:31:51.426827	t	\N
+617	2020-12-13 16:32:44.271314	2020-12-13 16:32:44.279955	t	\N
+618	2020-12-13 16:34:38.747478	2020-12-13 16:34:38.756602	t	\N
+619	2020-12-13 16:35:44.482912	2020-12-13 16:35:44.493697	t	\N
+620	2020-12-13 16:36:43.73918	2020-12-13 16:36:43.747904	t	\N
+621	2020-12-13 16:37:42.89976	2020-12-13 16:37:42.908991	t	\N
+622	2020-12-13 16:38:49.256431	2020-12-13 16:38:49.264299	t	\N
+623	2020-12-13 16:40:15.029964	2020-12-13 16:40:15.038887	t	\N
+628	2020-12-13 16:49:06.061812	2020-12-13 16:49:06.067981	t	\N
+629	2020-12-13 16:49:45.742257	2020-12-13 16:49:45.776946	t	\N
+633	2020-12-13 16:53:55.548914	2020-12-13 16:53:55.577215	t	\N
+645	2020-12-13 17:04:40.865212	2020-12-13 17:04:40.882715	t	\N
+646	2020-12-13 17:05:17.352779	2020-12-13 17:05:17.359781	t	\N
+647	2020-12-13 17:10:01.330567	2020-12-13 17:10:01.339054	t	\N
+648	2020-12-13 17:10:28.346126	2020-12-13 17:10:28.351631	t	\N
+649	2020-12-13 17:11:05.07552	2020-12-13 17:11:05.088323	t	\N
+650	2020-12-13 17:11:47.612182	2020-12-13 17:11:47.644091	t	\N
+652	2020-12-13 17:14:20.023289	2020-12-13 17:14:20.030786	t	\N
+653	2020-12-13 17:15:14.560295	2020-12-13 17:15:14.569691	t	\N
 340	2020-09-03 20:43:19.627973	2020-10-22 08:04:46.011112	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0099056977778837277","GPSTimeStamp":"2020-09-01T10:12:20Z","GPSImgDirection":"179.54981242000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6641166700000003","GPSLatitude":"48.462886670000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.400000000000006","GPSHPositioningError":"4.0258050980803528","DateCreated":"2020-09-01T12:12:19+02:00"}}}}
 466	2020-09-03 20:47:11.679263	2020-10-22 08:07:25.866359	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.010556058027161955","GPSTimeStamp":"2020-09-01T11:11:30Z","GPSImgDirection":"332.34907530000004","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634166700000002","GPSLatitude":"48.462830000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92","GPSHPositioningError":"3.6244654984488975","DateCreated":"2020-09-01T13:11:30+02:00"}}}}
 391	2020-09-03 20:43:26.959321	2020-10-22 08:14:20.501946	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.030921187244622738","GPSTimeStamp":"2020-09-01T11:44:05Z","GPSImgDirection":"214.16986062999999","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6632083299999998","GPSLatitude":"48.463136670000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.299999999999997","GPSHPositioningError":"15.748833138856476","DateCreated":"2020-09-01T13:44:05+02:00"}}}}
@@ -4880,6 +5520,16 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 305	2020-09-03 20:43:14.551584	2020-10-22 08:20:42.736332	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.030074430637431617","GPSTimeStamp":"2020-09-01T12:57:44Z","GPSImgDirection":"165.05345912000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6627416700000004","GPSLatitude":"48.463183329999993","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.700000000000003","GPSHPositioningError":"5.5264409881061303","DateCreated":"2020-09-01T14:57:44+02:00"}}}}
 401	2020-09-03 20:43:28.448959	2020-10-22 16:53:38.816441	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.14174170796950686","GPSTimeStamp":"2020-09-01T15:23:31Z","GPSImgDirection":"225.3848418","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6637549999999997","GPSLatitude":"48.46143","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.099999999999994","GPSHPositioningError":"4.8050290719625464","DateCreated":"2020-09-01T17:23:30+02:00"}}}}
 395	2020-09-03 20:43:27.602234	2020-10-22 16:54:25.680844	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.26531285026702717","GPSTimeStamp":"2020-09-01T15:24:55Z","GPSImgDirection":"339.04374678000011","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6638216700000004","GPSLatitude":"48.461333329999995","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.5","GPSHPositioningError":"5.2347213770320788","DateCreated":"2020-09-01T17:24:54+02:00"}}}}
+624	2020-12-13 16:40:47.88599	2020-12-13 16:40:47.896638	t	\N
+625	2020-12-13 16:46:35.374182	2020-12-13 16:46:35.385762	t	\N
+626	2020-12-13 16:47:26.929221	2020-12-13 16:47:26.935194	t	\N
+627	2020-12-13 16:48:30.9496	2020-12-13 16:48:30.956567	t	\N
+630	2020-12-13 16:51:17.800599	2020-12-13 16:51:17.812543	t	\N
+631	2020-12-13 16:52:16.567814	2020-12-13 16:52:16.57629	t	\N
+632	2020-12-13 16:52:59.932369	2020-12-13 16:52:59.939848	t	\N
+634	2020-12-13 16:54:23.728781	2020-12-13 16:54:23.737761	t	\N
+635	2020-12-13 16:54:53.398828	2020-12-13 16:54:53.42076	t	\N
+636	2020-12-13 16:55:40.762818	2020-12-13 16:55:40.798164	t	\N
 445	2020-09-03 20:45:13.513872	2020-10-22 08:05:25.637031	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0099056977778837277","GPSTimeStamp":"2020-09-01T10:12:20Z","GPSImgDirection":"179.54981242000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6641166700000003","GPSLatitude":"48.462886670000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.400000000000006","GPSHPositioningError":"4.0258050980803528","DateCreated":"2020-09-01T12:12:19+02:00"}}}}
 381	2020-09-03 20:43:25.394459	2020-10-22 08:10:24.25469	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.012022621926642482","GPSTimeStamp":"2020-09-01T11:30:13Z","GPSImgDirection":"100.13042160000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6630783299999998","GPSLatitude":"48.46298333","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"91.5","GPSHPositioningError":"3.9709783531409166","DateCreated":"2020-09-01T13:30:12+02:00"}}}}
 354	2020-09-03 20:43:21.743311	2020-10-22 08:13:34.084079	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0045873536703514156","GPSTimeStamp":"2020-09-01T11:39:26Z","GPSImgDirection":"324.66569525","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6631","GPSLatitude":"48.463055000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"89.700000000000003","GPSHPositioningError":"4.2499816189986026","DateCreated":"2020-09-01T13:39:25+02:00"}}}}
@@ -4889,6 +5539,15 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 432	2020-09-03 20:43:33.159751	2020-10-22 08:21:32.247863	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.072175562392837483","GPSTimeStamp":"2020-09-01T13:01:59Z","GPSImgDirection":"231.48693835000003","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6625383299999998","GPSLatitude":"48.463283329999996","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"89.299999999999997","GPSHPositioningError":"10.078772979905942","DateCreated":"2020-09-01T15:01:58+02:00"}}}}
 320	2020-09-03 20:43:16.555801	2020-10-22 16:55:49.955878	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.093045607219456941","GPSTimeStamp":"2020-09-01T15:29:30Z","GPSImgDirection":"217.86584481999998","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6638083299999997","GPSLatitude":"48.461588329999998","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94","GPSHPositioningError":"5.2690461199433338","DateCreated":"2020-09-01T17:29:30+02:00"}}}}
 284	2020-09-03 20:43:11.634621	2020-10-22 16:56:52.663439	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.03707556427870462","GPSTimeStamp":"2020-09-01T15:32:39Z","GPSImgDirection":"93.237563090000009","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6638366699999998","GPSLatitude":"48.461608330000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.799999999999997","GPSHPositioningError":"4.652587607333488","DateCreated":"2020-09-01T17:32:39+02:00"}}}}
+637	2020-12-13 16:56:57.927932	2020-12-13 16:56:57.939388	t	\N
+638	2020-12-13 16:57:44.872798	2020-12-13 16:57:44.882035	t	\N
+639	2020-12-13 16:58:39.46422	2020-12-13 16:58:39.47073	t	\N
+640	2020-12-13 17:00:18.207259	2020-12-13 17:00:18.214492	t	\N
+641	2020-12-13 17:00:59.595835	2020-12-13 17:00:59.602211	t	\N
+642	2020-12-13 17:01:31.260693	2020-12-13 17:01:31.270654	t	\N
+643	2020-12-13 17:02:40.442933	2020-12-13 17:02:40.451366	t	\N
+644	2020-12-13 17:03:32.19094	2020-12-13 17:03:32.20912	t	\N
+651	2020-12-13 17:13:05.238095	2020-12-13 17:13:05.245429	t	\N
 460	2020-09-03 20:47:10.534196	2020-10-22 08:05:57.950554	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0071893511313432376","GPSTimeStamp":"2020-09-01T11:00:06Z","GPSImgDirection":"231.00778209999999","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6641116700000005","GPSLatitude":"48.462855000000005","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"91.400000000000006","GPSHPositioningError":"11.539567966280295","DateCreated":"2020-09-01T13:00:06+02:00"}}}}
 448	2020-09-03 20:45:14.14531	2020-10-22 08:07:50.053285	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.029999323196318189","GPSTimeStamp":"2020-09-01T11:12:48Z","GPSImgDirection":"171.87188729000005","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634199999999999","GPSLatitude":"48.462903329999989","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.5","GPSHPositioningError":"3.9197500526574456","DateCreated":"2020-09-01T13:12:48+02:00"}}}}
 370	2020-09-03 20:43:23.833831	2020-10-22 08:08:07.540121	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.022397335632935857","GPSTimeStamp":"2020-09-01T11:18:11Z","GPSImgDirection":"242.42816167000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6632866700000006","GPSLatitude":"48.46289500000001","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.900000000000006","GPSHPositioningError":"13.187570575899338","DateCreated":"2020-09-01T13:18:10+02:00"}}}}
@@ -4898,6 +5557,12 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 325	2020-09-03 20:43:17.259839	2020-10-22 17:14:27.879242	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.19029724598860948","GPSTimeStamp":"2020-09-01T16:12:10Z","GPSImgDirection":"296.25936884000004","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635633300000001","GPSLatitude":"48.462345000000006","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.099999999999994","GPSHPositioningError":"4.7999586691465179","DateCreated":"2020-09-01T18:12:09+02:00"}}}}
 384	2020-09-03 20:43:25.935033	2020-10-22 17:15:57.556056	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.15567186469868008","GPSTimeStamp":"2020-09-01T16:16:43Z","GPSImgDirection":"5.5561828600000016","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6636383299999999","GPSLatitude":"48.462383329999994","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"99.299999999999997","GPSHPositioningError":"4.8707272117962468","DateCreated":"2020-09-01T18:16:42+02:00"}}}}
 361	2020-09-03 20:43:22.739605	2020-10-22 17:16:11.08826	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.014758470470195781","GPSTimeStamp":"2020-09-01T16:17:23Z","GPSImgDirection":"322.71452328000004","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6636583299999996","GPSLatitude":"48.462375000000002","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.299999999999997","GPSHPositioningError":"12.651575931232092","DateCreated":"2020-09-01T18:17:22+02:00"}}}}
+654	2020-12-13 17:16:53.237325	2020-12-13 17:16:53.245613	t	\N
+655	2020-12-13 17:18:04.995527	2020-12-13 17:18:05.00688	t	\N
+656	2020-12-13 17:19:24.414327	2020-12-13 17:19:24.424635	t	\N
+657	2020-12-13 17:21:01.032796	2020-12-13 17:21:01.04628	t	\N
+658	2020-12-13 17:22:39.307413	2020-12-13 17:22:39.317747	t	\N
+659	2020-12-13 17:23:55.458009	2020-12-13 17:23:55.466931	t	\N
 416	2020-09-03 20:43:30.500046	2020-10-22 08:08:46.159935	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0071317264808258354","GPSTimeStamp":"2020-09-01T11:20:42Z","GPSImgDirection":"232.77038570999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6632216699999995","GPSLatitude":"48.463004999999995","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.299999999999997","GPSHPositioningError":"4.2970234525425335","DateCreated":"2020-09-01T13:20:41+02:00"}}}}
 477	2020-09-04 19:56:30.839176	2020-10-22 08:09:54.497125	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0061442186150877107","GPSTimeStamp":"2020-09-01T11:27:44Z","GPSImgDirection":"295.48345936000004","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6632199999999999","GPSLatitude":"48.462903329999989","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"91.900000000000006","GPSHPositioningError":"14.548550016291951","DateCreated":"2020-09-01T13:27:43+02:00"}}}}
 291	2020-09-03 20:43:12.588162	2020-10-22 08:17:23.783188	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.1242322624070001","GPSTimeStamp":"2020-09-01T11:58:36Z","GPSImgDirection":"320.36532593999999","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6630050000000001","GPSLatitude":"48.463088329999998","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92","GPSHPositioningError":"4.9442558684323759","DateCreated":"2020-09-01T13:58:36+02:00"}}}}
@@ -4907,6 +5572,12 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 359	2020-09-03 20:43:22.532018	2020-10-22 17:10:43.934642	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.31042724828204366","GPSTimeStamp":"2020-09-01T16:03:39Z","GPSImgDirection":"242.93817133999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634783299999998","GPSLatitude":"48.462196670000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.900000000000006","GPSHPositioningError":"11.824170704435334","DateCreated":"2020-09-01T18:03:38+02:00"}}}}
 411	2020-09-03 20:43:29.801718	2020-10-22 17:11:39.399357	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.17961595963371332","GPSTimeStamp":"2020-09-01T16:06:42Z","GPSImgDirection":"250.77439886999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635666700000002","GPSLatitude":"48.462229999999998","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.599999999999994","GPSHPositioningError":"10.598370170326676","DateCreated":"2020-09-01T18:06:41+02:00"}}}}
 285	2020-09-03 20:43:11.752567	2020-10-22 17:11:49.412157	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.17961595963371332","GPSTimeStamp":"2020-09-01T16:06:42Z","GPSImgDirection":"250.77439886999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635666700000002","GPSLatitude":"48.462229999999998","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.599999999999994","GPSHPositioningError":"10.598370170326676","DateCreated":"2020-09-01T18:06:41+02:00"}}}}
+660	2020-12-13 17:24:40.269989	2020-12-13 17:24:40.278532	t	\N
+661	2020-12-13 17:26:07.711491	2020-12-13 17:26:07.730393	t	\N
+662	2020-12-13 17:26:53.611962	2020-12-13 17:26:53.619035	t	\N
+663	2020-12-13 17:28:02.776656	2020-12-13 17:28:02.785758	t	\N
+665	2020-12-13 17:29:21.378893	2020-12-13 17:29:21.388243	t	\N
+666	2020-12-13 17:30:02.75503	2020-12-13 17:30:02.774238	t	\N
 292	2020-09-03 20:43:12.68985	2020-10-22 08:17:04.51096	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0038689440079819402","GPSTimeStamp":"2020-09-01T11:57:10Z","GPSImgDirection":"319.25639344000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6629883299999997","GPSLatitude":"48.463038330000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"93.299999999999997","GPSHPositioningError":"4.6336432916171431","DateCreated":"2020-09-01T13:57:10+02:00"}}}}
 438	2020-09-03 20:43:33.964429	2020-10-22 08:18:05.409068	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.036332234757256943","GPSTimeStamp":"2020-09-01T12:41:36Z","GPSImgDirection":"24.816314689999999","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6628616700000003","GPSLatitude":"48.463178329999991","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"93.099999999999994","GPSHPositioningError":"4.4668196923498575","DateCreated":"2020-09-01T14:41:35+02:00"}}}}
 417	2020-09-03 20:43:30.656251	2020-10-22 08:19:10.904446	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.051333803684816881","GPSTimeStamp":"2020-09-01T12:49:51Z","GPSImgDirection":"310.08003234","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6632799999999994","GPSLatitude":"48.463199999999993","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"90.900000000000006","GPSHPositioningError":"12.01358438112087","DateCreated":"2020-09-01T14:49:51+02:00"}}}}
@@ -4916,6 +5587,8 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 415	2020-09-03 20:43:30.370288	2020-10-22 15:57:13.654837	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.010520919225947258","GPSTimeStamp":"2020-09-01T13:10:26Z","GPSImgDirection":"259.84294117999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6627300000000003","GPSLatitude":"48.462821670000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.700000000000003","GPSHPositioningError":"10.667075252812678","DateCreated":"2020-09-01T15:10:26+02:00"}}}}
 423	2020-09-03 20:43:31.654505	2020-10-22 15:58:02.193219	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.12640155858388044","GPSTimeStamp":"2020-09-01T13:11:36Z","GPSImgDirection":"73.582244849999981","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6627049999999999","GPSLatitude":"48.462861670000002","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"93.299999999999997","GPSHPositioningError":"4.5731531159719356","DateCreated":"2020-09-01T15:11:35+02:00"}}}}
 336	2020-09-03 20:43:19.101768	2020-10-22 15:59:14.397831	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.010520919225947258","GPSTimeStamp":"2020-09-01T13:10:26Z","GPSImgDirection":"259.84294117999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6627300000000003","GPSLatitude":"48.462821670000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.700000000000003","GPSHPositioningError":"10.667075252812678","DateCreated":"2020-09-01T15:10:26+02:00"}}}}
+664	2020-12-13 17:28:47.465267	2020-12-13 17:28:47.475199	t	\N
+667	2020-12-13 17:31:10.516665	2020-12-13 17:31:10.528338	t	\N
 403	2020-09-03 20:43:28.804019	2020-10-22 15:59:57.11255	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.10229159893503914","GPSTimeStamp":"2020-09-01T13:13:39Z","GPSImgDirection":"180.28170783000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.66281167","GPSLatitude":"48.462604999999996","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.200000000000003","GPSHPositioningError":"4.2414083321643989","DateCreated":"2020-09-01T15:13:38+02:00"}}}}
 430	2020-09-03 20:43:32.791996	2020-10-22 17:11:16.182256	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.10621782389500921","GPSTimeStamp":"2020-09-01T16:05:21Z","GPSImgDirection":"113.00597569000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6633916699999998","GPSLatitude":"48.462246669999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97.400000000000006","GPSHPositioningError":"10.590409150901891","DateCreated":"2020-09-01T18:05:20+02:00"}}}}
 332	2020-09-03 20:43:18.332379	2020-10-22 17:12:15.677143	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.011793705633672973","GPSTimeStamp":"2020-09-01T16:08:05Z","GPSImgDirection":"41.145874020000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635466700000001","GPSLatitude":"48.462291669999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.299999999999997","GPSHPositioningError":"4.6977336230984168","DateCreated":"2020-09-01T18:08:04+02:00"}}}}
@@ -4925,6 +5598,9 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 322	2020-09-03 20:43:16.802821	2020-10-22 17:32:02.345351	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.049918767064557619","GPSTimeStamp":"2020-09-01T16:51:56Z","GPSImgDirection":"102.3353386","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6640666700000004","GPSLatitude":"48.462628329999987","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.700000000000003","GPSHPositioningError":"4.4832489857375881","DateCreated":"2020-09-01T18:51:55+02:00"}}}}
 508	2020-10-27 10:10:54.154253	2020-10-27 10:11:18.815273	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.050399914387146909","GPSTimeStamp":"2020-10-26T13:34:37Z","GPSImgDirection":"149.03082277000004","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634166700000002","GPSLatitude":"48.463413329999995","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"87.799999999999997","GPSHPositioningError":"11.779223001882595","DateCreated":"2020-10-26T14:34:37+01:00"}}}}
 324	2020-09-03 20:43:17.160889	2020-10-27 10:41:21.391016	f	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.039670463620696907","GPSTimeStamp":"2020-09-01T14:15:29Z","GPSImgDirection":"180.45736698000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6631916699999998","GPSLatitude":"48.462161670000008","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.200000000000003","GPSHPositioningError":"8.0463432609355348","DateCreated":"2020-09-01T16:15:28+02:00"}}}}
+668	2020-12-13 17:32:24.166947	2020-12-13 17:32:24.176334	t	\N
+669	2020-12-13 17:32:59.622082	2020-12-13 17:32:59.630087	t	\N
+670	2020-12-13 17:33:38.843298	2020-12-13 17:33:38.869462	t	\N
 393	2020-09-03 20:43:27.205109	2020-10-22 16:01:16.401049	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.022893533110281406","GPSTimeStamp":"2020-09-01T13:16:41Z","GPSImgDirection":"36.111968989999994","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6628166700000002","GPSLatitude":"48.462708329999998","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.599999999999994","GPSHPositioningError":"4.8140628433311363","DateCreated":"2020-09-01T15:16:41+02:00"}}}}
 369	2020-09-03 20:43:23.719149	2020-10-22 16:02:01.760827	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0055735092631202729","GPSTimeStamp":"2020-09-01T13:18:46Z","GPSImgDirection":"266.53277592000006","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6629833300000003","GPSLatitude":"48.462428329999995","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.299999999999997","GPSHPositioningError":"4.9489894516466704","DateCreated":"2020-09-01T15:18:46+02:00"}}}}
 266	2020-09-03 20:43:08.882963	2020-10-22 16:02:22.865535	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0055735092631202729","GPSTimeStamp":"2020-09-01T13:18:46Z","GPSImgDirection":"266.53277592000006","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6629833300000003","GPSLatitude":"48.462428329999995","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.299999999999997","GPSHPositioningError":"4.9489894516466704","DateCreated":"2020-09-01T15:18:46+02:00"}}}}
@@ -4933,7 +5609,15 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 386	2020-09-03 20:43:26.175029	2020-10-22 17:16:44.097617	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.11150857813327229","GPSTimeStamp":"2020-09-01T16:19:15Z","GPSImgDirection":"259.85726949999997","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6638283300000003","GPSLatitude":"48.462441670000011","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"99.200000000000003","GPSHPositioningError":"9.1217137390125771","DateCreated":"2020-09-01T18:19:14+02:00"}}}}
 473	2020-09-03 20:47:14.033073	2020-10-27 10:25:44.948487	f	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.46515577986994078","GPSTimeStamp":"2020-09-01T13:53:59Z","GPSImgDirection":"342.09960937999995","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6621633299999994","GPSLatitude":"48.462333329999993","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.900000000000006","GPSHPositioningError":"15.237731622887395","DateCreated":"2020-09-01T15:53:59+02:00"}}}}
 282	2020-09-03 20:43:11.057285	2020-10-27 10:26:50.239983	f	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.018118841572369787","GPSTimeStamp":"2020-09-01T13:53:20Z","GPSImgDirection":"42.087738069999993","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6620866699999999","GPSLatitude":"48.46237167000001","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.099999999999994","GPSHPositioningError":"4.1252931411557006","DateCreated":"2020-09-01T15:53:19+02:00"}}}}
+671	2020-12-13 17:34:32.776285	2020-12-13 17:34:32.815839	t	\N
 527	2020-10-27 10:41:28.85943	2020-10-27 10:41:52.883237	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.0021529786752946074","GPSTimeStamp":"2020-10-26T14:25:45Z","GPSImgDirection":"153.75562284","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6631833299999998","GPSLatitude":"48.462146670000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95.799999999999997","GPSHPositioningError":"9.3747888048189232","DateCreated":"2020-10-26T15:25:44+01:00"}}}}
+672	2020-12-13 17:35:20.048276	2020-12-13 17:35:20.070081	t	\N
+673	2020-12-13 17:36:22.251285	2020-12-13 17:36:22.273645	t	\N
+674	2020-12-13 17:37:35.699653	2020-12-13 17:37:35.710493	t	\N
+675	2020-12-13 17:38:05.971928	2020-12-13 17:38:05.994613	t	\N
+676	2020-12-13 17:38:58.691346	2020-12-13 17:38:58.709146	t	\N
+683	2020-12-13 17:45:37.879696	2020-12-13 17:45:37.908462	t	\N
+684	2020-12-13 17:46:34.130348	2020-12-13 17:46:34.162141	t	\N
 302	2020-09-03 20:43:13.910241	2020-10-22 16:07:20.738991	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.009447998361583965","GPSTimeStamp":"2020-09-01T13:23:50Z","GPSImgDirection":"118.08135792","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6620116700000005","GPSLatitude":"48.462446670000006","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"92.900000000000006","GPSHPositioningError":"4.2855626816776633","DateCreated":"2020-09-01T15:23:49+02:00"}}}}
 462	2020-09-03 20:47:10.775991	2020-10-22 17:13:43.299546	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.011102675453247897","GPSTimeStamp":"2020-09-01T16:10:04Z","GPSImgDirection":"125.30550775000002","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6636216699999999","GPSLatitude":"48.462311669999998","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"98.5","GPSHPositioningError":"9.245792736935341","DateCreated":"2020-09-01T18:10:04+02:00"}}}}
 337	2020-09-03 20:43:19.240292	2020-10-22 17:15:34.478413	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.14673645808549451","GPSTimeStamp":"2020-09-01T16:15:29Z","GPSImgDirection":"79.12335204","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635366700000001","GPSLatitude":"48.462454999999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"97.5","GPSHPositioningError":"5.9804199581392208","DateCreated":"2020-09-01T18:15:29+02:00"}}}}
@@ -4942,6 +5626,13 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 463	2020-09-03 20:47:11.263842	2020-10-22 17:26:45.582808	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.086901605133918078","GPSTimeStamp":"2020-09-01T16:27:41Z","GPSImgDirection":"127.51781472999998","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634700000000002","GPSLatitude":"48.462416670000003","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96.700000000000003","GPSHPositioningError":"4.6343133306484088","DateCreated":"2020-09-01T18:27:41+02:00"}}}}
 440	2020-09-03 20:43:34.241131	2020-10-22 17:27:57.724371	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.010091121308486545","GPSTimeStamp":"2020-09-01T16:30:23Z","GPSImgDirection":"173.28211991000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6635333299999995","GPSLatitude":"48.462630000000004","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"96","GPSHPositioningError":"7.9926532190500739","DateCreated":"2020-09-01T18:30:22+02:00"}}}}
 392	2020-09-03 20:43:27.084976	2020-10-22 17:28:57.542732	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.15585859133546603","GPSTimeStamp":"2020-09-01T16:32:29Z","GPSImgDirection":"251.03739931000001","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6634450000000003","GPSLatitude":"48.462729999999993","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"95","GPSHPositioningError":"9.1245602165087956","DateCreated":"2020-09-01T18:32:29+02:00"}}}}
+677	2020-12-13 17:40:01.149436	2020-12-13 17:40:01.165473	t	\N
+678	2020-12-13 17:41:05.242138	2020-12-13 17:41:05.251339	t	\N
+679	2020-12-13 17:42:20.434787	2020-12-13 17:42:20.449533	t	\N
+680	2020-12-13 17:42:56.71037	2020-12-13 17:42:56.718328	t	\N
+681	2020-12-13 17:43:47.123388	2020-12-13 17:43:47.134376	t	\N
+682	2020-12-13 17:44:44.560442	2020-12-13 17:44:44.567272	t	\N
+685	2020-12-13 17:47:29.098608	2020-12-13 17:47:29.111022	t	\N
 317	2020-09-03 20:43:16.113958	2020-10-22 16:18:39.885321	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.047838434575067465","GPSTimeStamp":"2020-09-01T14:07:45Z","GPSImgDirection":"167.97685242000003","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6628366700000003","GPSLatitude":"48.462366670000002","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"93.400000000000006","GPSHPositioningError":"4.4813729440638852","DateCreated":"2020-09-01T16:07:45+02:00"}}}}
 364	2020-09-03 20:43:23.037111	2020-10-22 16:18:57.433486	t	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.012533367612629369","GPSTimeStamp":"2020-09-01T14:08:46Z","GPSImgDirection":"194.62842574999999","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6628616700000003","GPSLatitude":"48.462336669999999","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"94.599999999999994","GPSHPositioningError":"4.3634561374525029","DateCreated":"2020-09-01T16:08:45+02:00"}}}}
 374	2020-09-03 20:43:24.492434	2020-10-27 10:19:44.559616	f	{"xmpmeta":{"xmlns:x":"adobe:ns:meta/","x:xmptk":"XMP Core 5.4.0","RDF":{"xmlns:rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","Description":{"rdf:about":"","xmlns:exif":"http://ns.adobe.com/exif/1.0/","xmlns:photoshop":"http://ns.adobe.com/photoshop/1.0/","GPSSpeedRef":"K","GPSSpeed":"0.014216504063955585","GPSTimeStamp":"2020-09-01T14:03:50Z","GPSImgDirection":"81.985321099999993","GPSLongitudeRef":"E","GPSAltitudeRef":"0","GPSLongitude":"2.6621866699999996","GPSLatitude":"48.462775000000001","GPSLatitudeRef":"N","GPSImgDirectionRef":"T","GPSAltitude":"91.099999999999994","GPSHPositioningError":"6.9534042319921063","DateCreated":"2020-09-01T16:03:50+02:00"}}}}
@@ -5065,14 +5756,14 @@ COPY public.topos (id, created_at, updated_at, published, metadata) FROM stdin;
 -- Name: active_storage_attachments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
-SELECT pg_catalog.setval('public.active_storage_attachments_id_seq', 896, true);
+SELECT pg_catalog.setval('public.active_storage_attachments_id_seq', 1017, true);
 
 
 --
 -- Name: active_storage_blobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
-SELECT pg_catalog.setval('public.active_storage_blobs_id_seq', 896, true);
+SELECT pg_catalog.setval('public.active_storage_blobs_id_seq', 1017, true);
 
 
 --
@@ -5100,7 +5791,7 @@ SELECT pg_catalog.setval('public.circuits_id_seq', 23, true);
 -- Name: lines_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
-SELECT pg_catalog.setval('public.lines_id_seq', 666, true);
+SELECT pg_catalog.setval('public.lines_id_seq', 998, true);
 
 
 --
@@ -5121,7 +5812,7 @@ SELECT pg_catalog.setval('public.problems_id_seq', 1655, true);
 -- Name: topos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: nicolas
 --
 
-SELECT pg_catalog.setval('public.topos_id_seq', 564, true);
+SELECT pg_catalog.setval('public.topos_id_seq', 685, true);
 
 
 --
