@@ -20,7 +20,7 @@ namespace :topos do
 
       if with_photos
         puts "processing photo for line ##{line.id}"
-        output_file = Rails.root.join('export', "area-#{area_id}", "topos", "topo-#{line.topo.id}.jpg").to_s
+        output_file = Rails.root.join('export', 'app', "area-#{area_id}", "topos", "topo-#{line.topo.id}.jpg").to_s
         
         # FIXME: iterate on topos (not lines) to avoid double processing
     		line.topo.photo.open do |file| 
@@ -30,7 +30,7 @@ namespace :topos do
       end
   	end
 
-  	File.open(Rails.root.join('export', "area-#{area_id}", "area-#{area_id}-topo-lines.json"),"w") do |f|
+  	File.open(Rails.root.join('export', 'app', "area-#{area_id}", "area-#{area_id}-topo-lines.json"),"w") do |f|
   		output = { lines: lines }
       f.write(JSON.pretty_generate(output))
     end
