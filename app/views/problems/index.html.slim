@@ -37,17 +37,21 @@ div class="flex flex-col my-6"
           thead class="bg-gray-50"
             tr
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Info
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Topo Lines
           tbody class="bg-white divide-y divide-gray-200"
             - @problems.each do |problem|
-              tr class="place-content-start align-top"
-                td class="px-6 py-2 whitespace-nowrap"
+              tr class="place-content-start align-top h-16"
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
                   div class="text-sm text-gray-500"= link_to(problem.id, edit_problem_path(problem), id: problem.id)
-                td class="px-6 py-2 whitespace-nowrap"
+                td class="px-6 py-2 whitespace-nowrap w-3/12"
                   div class="text-sm text-gray-900"
                     = circle_view_with_name(problem)
-                    span class="ml-1 text-gray-500"= problem.grade
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  span class="ml-1 text-gray-500"= problem.grade
+                td class="px-6 py-2 whitespace-nowrap w-4/12"
                   div class="text-sm text-gray-500"
                     = problem.steepness
                     - if problem.height.present?
@@ -56,7 +60,6 @@ div class="flex flex-col my-6"
                     = problem.tags.join(", ")
                 td class="px-6 py-0 whitespace-nowrap"
                   - problem.lines.published.each do |line|
-                    = link_to(image_tag(line.topo.photo, class: "h-16 hover:h-32"), edit_line_path(line))
-                  / span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800" Active
+                    = link_to(image_tag(line.topo.photo, class: "h-16"), edit_line_path(line))
 
 div style="margin-bottom: 400px"
