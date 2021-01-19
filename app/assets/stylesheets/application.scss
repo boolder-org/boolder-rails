@@ -13,14 +13,5 @@
  */
 
 
-// Custom bootstrap variables must be set or imported *before* bootstrap.
-
-// note to self: not sure what I'm doing
-// I just copy-pasted stuff from 
-// https://blog.capsens.eu/how-to-write-javascript-in-rails-6-webpacker-yarn-and-sprockets-cdf990387463
-// https://medium.com/@adrian_teh/ruby-on-rails-6-with-webpacker-and-bootstrap-step-by-step-guide-41b52ef4081f
-@import 'bootstrap/scss/bootstrap';
-
-// app
-@import "imports";
-@import "problems";
+// nothing in the asset pipeline for now
+// javascript and css lives in webpack (in app/javascript)
