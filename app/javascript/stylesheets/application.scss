@@ -33,4 +33,19 @@
   .breadcrumb .active {
     @apply text-gray-900;
   }
+
+  del,
+  ins {
+      display: inline-block;
+      text-decoration: none;
+  }
+
+  del {
+      background-color: #fbb;
+  }
+
+  ins {
+      background-color: #d4fcbc;
+  }
+
 }
