@@ -21,7 +21,7 @@
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
           <!-- <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-green-500.svg" alt="Workflow">
           </div> -->
           <div class="hidden md:block">
             <div class="flex items-baseline space-x-4">
@@ -43,6 +43,27 @@
       </nav>
     </div>
   </header>
+
+
+<% flash.each do |type, msg| %>
+<div class="bg-green-600">
+  <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between flex-wrap">
+      <div class="w-0 flex-1 flex items-center">
+        <p class="ml-3 font-medium text-white truncate">
+          <span>
+            <%= msg %>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+
+
+
   <main>
     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
       <%= yield %>
@@ -50,15 +71,5 @@
   </main>
 </div>
 
-
-<!--     <div class="container" style="margin-top: 40px;">
-      <% flash.each do |type, msg| %>
-        <div class="alert alert-info">
-          <%= msg %>
-        </div>
-      <% end %>
-      
-      
-    </div> -->
   </body>
 </html>
