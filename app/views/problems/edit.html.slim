@@ -4,12 +4,12 @@
 h1 class="my-3"= "Problem ##{@problem.id}"
 
 div class="mt-10 sm:mt-0"
-    div class="md:grid md:grid-cols-4 md:gap-6"
-      div class="mt-5 md:mt-0 md:col-span-2"
-        = form_with model: @problem, local: true do |form|
-          div class="shadow overflow-hidden sm:rounded-md"
-            div class="px-4 py-5 bg-white sm:p-6"
-              div class="grid grid-cols-6 gap-6"
+  div class="md:grid md:grid-cols-4 md:gap-6"
+    div class="mt-5 md:mt-0 md:col-span-2"
+      = form_with model: @problem, local: true do |form|
+        div class="shadow overflow-hidden sm:rounded-md"
+          div class="px-4 py-5 bg-white sm:p-6"
+            div class="grid grid-cols-6 gap-6"
 
                 div class="col-span-6 sm:col-span-2"
                   = form.label :circuit_id
@@ -51,15 +51,15 @@ div class="mt-10 sm:mt-0"
                 div class="col-span-6 sm:col-span-2"
                   = form.label :bleau_info_id, "Bleau.info id"
                   = form.text_field :bleau_info_id, autocomplete: "off"
-            div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
-              button type="submit" class="btn" Update
-      div class="md:col-span-2"
-        div class="px-4 sm:px-0"
-          - @problem.lines.published.each do |line|
-            = link_to image_tag(line.topo.photo, height: "500"), edit_line_path(line)
-            p
-              = link_to "Line ##{line.id}", edit_line_path(line)
-              = " | "
-              = link_to "Topo ##{line.topo.id} ", edit_topo_path(line.topo)
+          div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
+            button type="submit" class="btn" Update
+    div class="md:col-span-2"
+      div class="px-4 sm:px-0"
+        - @problem.lines.published.each do |line|
+          = link_to image_tag(line.topo.photo, height: "500"), edit_line_path(line)
           p
-            = link_to "Add topo line", new_line_path(problem_id: @problem.id)
+            = link_to "Line ##{line.id}", edit_line_path(line)
+            = " | "
+            = link_to "Topo ##{line.topo.id} ", edit_topo_path(line.topo)
+        p
+          = link_to "Add topo line", new_line_path(problem_id: @problem.id)
