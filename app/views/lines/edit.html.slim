@@ -3,7 +3,7 @@
 - add_breadcrumb "Problem ##{@line.problem.id}", edit_problem_path(@line.problem)
 - add_breadcrumb "Line ##{@line.id}", nil, class: "active"
 
-h1= "Line ##{@line.id}"
+h1 class="my-3"= "Line ##{@line.id}"
 
 div class="my-3" = circle_view_with_name(@line.problem)
 div class="my-3" = link_to "Topo ##{@line.topo.id}", edit_topo_path(@line.topo)
@@ -13,12 +13,13 @@ div data-controller="topo-editor"
     = image_tag(@line.topo.photo.variant(resize_to_limit: [800, 800]), data: {target: "topo-editor.image"}, style: "position:absolute;z-index:1;")
     canvas data-target="topo-editor.canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"
 
-  = form_with model: @line, local: true, data: {target: "topo-editor.form"} do |form|
-    div class="form-group"
-      = form.label :coordinates
-      = form.text_area :coordinates, class: "form-control", rows: "4", data: {target: 'topo-editor.textarea'}, value: @line.coordinates.to_json
+  div class="my-3"
+	  = form_with model: @line, local: true, data: {target: "topo-editor.form"} do |form|
+	    div class="my-3"
+	      = form.label :coordinates
+	      = form.text_area :coordinates, rows: "4", data: {target: 'topo-editor.textarea'}, value: @line.coordinates.to_json
 
-    div class="form-group"
-      = form.submit("Update", class: "btn btn-primary")
+	    div class="my-3"
+	    	= form.submit("Save", class: "btn")
       
 div style="margin-bottom: 300px"
