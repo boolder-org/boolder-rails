@@ -1,15 +1,7 @@
 @import "tailwindcss/base";
 
 @layer base {
-  h1 {
-    @apply text-2xl font-bold leading-tight text-gray-900;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  h3 {
-    @apply text-lg;
-  }
+
 }
 
 @import "tailwindcss/components";
