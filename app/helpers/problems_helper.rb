@@ -1,13 +1,13 @@
 module ProblemsHelper
 	def circle_view(problem)
-    content_tag(:div, problem.circuit_number.presence || "&nbsp;".html_safe, 
+    content_tag(:span, problem.circuit_number.presence || "&nbsp;".html_safe, 
       style: "background: #{uicolor(problem.circuit&.color)}; color: #{text_color(problem.circuit&.color)}",
-      class: "circle_view")
+      class: "rounded-full h-6 w-6 inline-flex leading-6 justify-center")
 	end
 
 	def circle_view_with_name(problem)
-		content_tag(:span, circle_view(problem), class: "mr-1") + 
-			(link_to (problem.name.presence || "No name"), edit_problem_path(problem))
+		circle_view(problem) + 
+			(link_to (problem.name.presence || "No name"), edit_problem_path(problem), class: "ml-1 font-semibold")
 	end
 
 	def uicolor(circuit_color)

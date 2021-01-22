@@ -1,15 +1,21 @@
-h1 New import
+h1 class="my-3" New import
 
-= form_with scope: :import, url: imports_path, local: true do |form|
-  div class="form-group"
-    = form.label :geojson
-    = form.file_field :geojson, class: "form-control"
+div class="mt-10 sm:mt-0"
+  div class="md:grid md:grid-cols-4 md:gap-6"
+    div class="mt-5 md:mt-0 md:col-span-2"
+      = form_with scope: :import, url: imports_path, local: true do |form|
+        div class="shadow overflow-hidden sm:rounded-md"
+          div class="px-4 py-5 bg-white sm:p-6"
+            div class="grid grid-cols-6 gap-6"
 
-  div class="form-group"
-    = form.label :area_id, "Area"
-    = form.select :area_id, Area.all.collect {|a| [ a.name, a.id ] }, { include_blank: true }, class: "form-control"
+              div class="col-span-6 sm:col-span-6"
+                = form.label :geojson
+                = form.file_field :geojson
 
-  div class="form-group"
-    = form.submit("Preview", class: "btn btn-outline-primary")
-  div class="form-group"
-    = form.submit("Import", data: {confirm: "Are you sure?"}, class: "btn btn-danger")
+              div class="col-span-6 sm:col-span-2"
+                = form.label :area_id, "Area"
+                = form.select :area_id, Area.all.collect {|a| [ a.name, a.id ] }, { include_blank: true }
+
+          div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
+              = form.submit("Preview", class: "btn mr-2")
+              = form.submit("Import", data: {confirm: "Are you sure?"}, class: "btn btn-danger")

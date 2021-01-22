@@ -14,7 +14,7 @@ gem 'activerecord-postgis-adapter', '~> 6.0.0'
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0.1'
 gem 'slim-rails', '~> 3.2.0'
-gem 'webpacker', '~> 4.0'
+gem "webpacker", github: "rails/webpacker", ref: 'b6c2180' # upgrade webpacker when postcss8 works (https://davidteren.medium.com/tailwindcss-2-0-with-rails-6-1-postcss-8-0-9645e235892d)
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'

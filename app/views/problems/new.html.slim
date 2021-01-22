@@ -1,37 +1,51 @@
-h1 New problem
+h1 class="my-3" New problem
 
-= form_with scope: :problem, url: problems_path, local: true do |form|
-  div class="row"
-    div class="col-md-auto"
+div class="mt-10 sm:mt-0"
+    div class="md:grid md:grid-cols-4 md:gap-6"
+      div class="mt-5 md:mt-0 md:col-span-2"
+        = form_with scope: :problem, url: problems_path, local: true do |form|
+          div class="shadow overflow-hidden sm:rounded-md"
+            div class="px-4 py-5 bg-white sm:p-6"
+              div class="grid grid-cols-6 gap-6"
 
-      div class="form-group"
-          div class="row"
-            div class="col"
-              = form.label :circuit_id
-              = form.select :circuit_id, Area.find(session[:area_id]).circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }, class: "form-control"
-            div class="col"
-              = form.label :circuit_number
-              = form.text_field :circuit_number, class: "form-control", autocomplete: "off"
-    
-      div class="form-group"
-        = form.label :area_id, "Area"
-        = form.select :area_id, options_for_select(Area.all.collect {|a| [ a.name, a.id ] }, params[:area_id] || session[:area_id]), { include_blank: true }, class: "form-control"
-      div class="form-group"
-        = form.label :name
-        = form.text_field :name, class: "form-control", autocomplete: "off", value: @extracted_name
-      div class="form-group"
-        = form.label :steepness
-        = form.select :steepness, options_for_select(Problem::STEEPNESS_VALUES, @extracted_steepness || :other), { include_blank: false }, class: "form-control"
-      div class="form-group"
-        = form.label :grade
-        = form.text_field :grade, class: "form-control", autocomplete: "off", value: @extracted_grade
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :area_id, "Area"
+                  = form.select :area_id, options_for_select(Area.all.collect {|a| [ a.name, a.id ] }, params[:area_id] || session[:area_id]), { include_blank: true }
 
-      / div class="form-group"
-      /   = form.label :height
-      /   = form.text_field :height, class: "form-control", autocomplete: "off"
+                div class="hidden sm:block col-span-6 sm:col-span-4"
 
-      div class="form-group"
-        = form.label :bleau_info_id, "Bleau.info id"
-        = form.text_field :bleau_info_id, class: "form-control", autocomplete: "off", value: @extracted_id
-      div class="form-group"
-        = form.submit("Create", class: "btn btn-primary")
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :circuit_id
+                  = form.select :circuit_id, Area.find(session[:area_id]).circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }
+
+                div class="col-span-6 sm:col-span-1"
+                  = form.label :circuit_number, "Number"
+                  = form.text_field :circuit_number, autocomplete: "off"
+
+                div class="hidden sm:block col-span-6 sm:col-span-3"
+
+                div class="col-span-6 sm:col-span-4"
+                  = form.label :name
+                  = form.text_field :name, autocomplete: "off", value: @extracted_name
+                
+                div class="col-span-6 sm:col-span-1"
+                  = form.label :grade
+                  = form.text_field :grade, autocomplete: "off", value: @extracted_grade
+
+                div class="hidden sm:block col-span-6 sm:col-span-1"
+                
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :steepness
+                  = form.select :steepness, options_for_select(Problem::STEEPNESS_VALUES, @extracted_steepness || :other), { include_blank: false }
+
+                div class="hidden sm:block col-span-6 sm:col-span-4"
+
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :bleau_info_id, "Bleau.info id"
+                  = form.text_field :bleau_info_id, autocomplete: "off", value: @extracted_id
+
+            div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
+              button type="submit" class="btn" Save
+
+        div class="md:col-span-2"
+          div class="px-4 sm:px-0"

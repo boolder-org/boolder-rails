@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold leading-tight text-gray-900;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+}
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+	.btn {
+	  @apply inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500;
+	}
+
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 focus:ring-red-500;
+  }
+
+  .breadcrumb li+li:before {
+    content: "/\00a0";
+    @apply text-gray-900;
+    @apply ml-1;
+  }
+
+  .breadcrumb .active {
+    @apply text-gray-900;
+  }
+
+  del,
+  ins {
+      display: inline-block;
+      text-decoration: none;
+  }
+
+  del {
+      background-color: #fbb;
+  }
+
+  ins {
+      background-color: #d4fcbc;
+  }
+
+}

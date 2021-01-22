@@ -29,27 +29,37 @@ p
       - else 
         = "All"
 
-table class="table table-striped table-bordered"
-  thead class="thead-dark"
-    tr
-      th scope="col" Id
-      th scope="col" Properties
-      th scope="col" Topo line
-  tbody
-  - @problems.each do |problem|
-    tr
-      td= link_to(problem.id, edit_problem_path(problem), id: problem.id)
-      td
-        = circle_view_with_name(problem)
-        div= problem.grade
-        div
-          = problem.steepness
-          - if problem.height.present?
-            = " (#{problem.height}m)"
-        div
-          = problem.tags.join(", ")
-      td
-        - problem.lines.published.each do |line|
-          = link_to(image_tag(line.topo.photo, height: 100), edit_line_path(line))
+div class="flex flex-col my-6"
+  div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
+    div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
+      div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+        table class="min-w-full divide-y divide-gray-200"
+          thead class="bg-gray-50"
+            tr
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Info
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Topo Lines
+          tbody class="bg-white divide-y divide-gray-200"
+            - @problems.each do |problem|
+              tr class="place-content-start align-top h-16"
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  div class="text-sm text-gray-500"= link_to(problem.id, edit_problem_path(problem), id: problem.id)
+                td class="px-6 py-2 whitespace-nowrap w-3/12"
+                  div class="text-sm text-gray-900"
+                    = circle_view_with_name(problem)
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  span class="ml-1 text-gray-500"= problem.grade
+                td class="px-6 py-2 whitespace-nowrap w-4/12"
+                  div class="text-sm text-gray-500"
+                    = problem.steepness
+                    - if problem.height.present?
+                      = " (#{problem.height}m)"
+                  div class="text-sm text-gray-500"
+                    = problem.tags.join(", ")
+                td class="px-6 py-0 whitespace-nowrap"
+                  - problem.lines.published.each do |line|
+                    = link_to(image_tag(line.topo.photo, class: "h-16"), edit_line_path(line))
 
 div style="margin-bottom: 400px"
