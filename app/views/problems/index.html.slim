@@ -1,33 +1,12 @@
-h1 Problems
-p= "#{@problems.count} results"
 
-p
-  div
-    - Area.all.each do |area|
-      - if params[:area_id] == area.id.to_s
-        = area.name
-      - else
-        = link_to area.name, problems_path(area_id: area.id, color: params[:color])
-      = " | "
-  - if params[:area_id].present?
-    div
-      - @circuits.each do |circuit|
-        - if params[:color] == circuit.color
-          = circuit.name
-        - else
-          = link_to circuit.name, problems_path(area_id: params[:area_id], color: circuit.color)
-        = " | "
+div class="border-b border-gray-200"
+  nav class="-mb-px flex space-x-8" aria-label="Tabs"
+    - @circuit_tabs.each do |color, name|
+      - if params[:color] == color
+        = link_to name, problems_path(area_id: params[:area_id], color: color), class: "border-green-500 text-green-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm", aria: {current: "page"}
+      - else  
+        = link_to name, problems_path(area_id: params[:area_id], color: color), class: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" 
 
-      - if params[:color] == "off_circuit"
-        = "Off-circuit"
-      - else 
-        = link_to "Off-circuit", problems_path(area_id: params[:area_id], color: :off_circuit)
-      = " | "
-      
-      - if params[:color]
-        = link_to "All", problems_path(area_id: params[:area_id])
-      - else 
-        = "All"
 
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
@@ -61,5 +40,7 @@ div class="flex flex-col my-6"
                 td class="px-6 py-0 whitespace-nowrap"
                   - problem.lines.published.each do |line|
                     = link_to(image_tag(line.topo.photo, class: "h-16"), edit_line_path(line))
+
+p= "#{@problems.count} results"
 
 div style="margin-bottom: 400px"

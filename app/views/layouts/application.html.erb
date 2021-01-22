@@ -20,13 +20,16 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
-          <!-- <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-green-500.svg" alt="Workflow">
-          </div> -->
           <div class="hidden md:block">
             <div class="flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Problems</a>
+              <% Area.all.each do |area| %>
+                <% if params[:area_id] == area.id.to_s %>
+                  <%= link_to area.name, problems_path(area_id: area.id, color: "first"), class: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" %>
+                <% else %>
+                  <%= link_to area.name, problems_path(area_id: area.id, color: "first"), class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+                <% end %>
+              <% end %>
             </div>
           </div>
         </div>
