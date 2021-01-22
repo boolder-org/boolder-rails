@@ -1,7 +1,7 @@
-class ProblemsController < ApplicationController
+class Admin::ProblemsController < ApplicationController
 	def index
-		redirect_to problems_path(area_id: (session[:area_id] || 1), color: :yellow) if params[:area_id].blank?
-		redirect_to problems_path(area_id: params[:area_id], color: Area.find(params[:area_id]).circuits.first.color) if params[:color] == "first"
+		redirect_to admin_problems_path(area_id: (session[:area_id] || 1), color: :yellow) if params[:area_id].blank?
+		redirect_to admin_problems_path(area_id: params[:area_id], color: Area.find(params[:area_id]).circuits.first.color) if params[:color] == "first"
 
 		arel = Problem.all
 
@@ -46,16 +46,18 @@ class ProblemsController < ApplicationController
 			end						
 		end
 
+		@problem = Problem.new
+
 	end
 
 	def create
 		@problem = Problem.create!(problem_params)
-		redirect_to @problem
+		redirect_to [:admin, @problem]
 	end
 
 	def show
 		problem = Problem.find(params[:id])
-		redirect_to edit_problem_path(problem)
+		redirect_to edit_admin_problem_path(problem)
 	end
 
 	def edit
@@ -71,7 +73,7 @@ class ProblemsController < ApplicationController
 		problem.save!
 
 		flash[:notice] = "Problem updated"
-		redirect_to problems_path(anchor: problem.id, area_id: problem.area_id, color: problem.circuit&.color || "off_circuit")
+		redirect_to admin_problems_path(anchor: problem.id, area_id: problem.area_id, color: problem.circuit&.color || "off_circuit")
 	end
 
 	private 

@@ -7,7 +7,7 @@ module ProblemsHelper
 
 	def circle_view_with_name(problem)
 		circle_view(problem) + 
-			(link_to (problem.name.presence || "No name"), edit_problem_path(problem), class: "ml-2 font-semibold")
+			(link_to (problem.name.presence || "No name"), edit_admin_problem_path(problem), class: "ml-2 font-semibold")
 	end
 
 	def uicolor(circuit_color)

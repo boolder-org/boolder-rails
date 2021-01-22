@@ -12,7 +12,7 @@ div data-controller="topo-editor"
     = image_tag(@topo.photo.variant(resize_to_limit: [800, 800]), data: {target: "topo-editor.image"}, style: "position:absolute;z-index:1;")
     canvas data-target="topo-editor.canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"
 
-  = form_with model: @topo, local: true, data: {target: "topo-editor.form"} do |form|
+  = form_with model: [:admin, @topo], local: true, data: {target: "topo-editor.form"} do |form|
     div class="form-group form-check"
       = form.check_box :published, class: "form-check-input"
       = form.label :published

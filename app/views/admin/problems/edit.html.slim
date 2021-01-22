@@ -1,4 +1,4 @@
-- add_breadcrumb @problem.area.name, problems_path(area_id: @problem.area.id, color: @problem.circuit&.color || "off_circuit", anchor: @problem.id)
+- add_breadcrumb @problem.area.name, admin_problems_path(area_id: @problem.area.id, color: @problem.circuit&.color || "off_circuit", anchor: @problem.id)
 - add_breadcrumb "Problem ##{@problem.id}", nil, class: "active"
 
 h1 class="my-3"= "Problem ##{@problem.id}"
@@ -6,7 +6,7 @@ h1 class="my-3"= "Problem ##{@problem.id}"
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"
     div class="mt-5 md:mt-0 md:col-span-2"
-      = form_with model: @problem, local: true do |form|
+      = form_with model: [:admin, @problem], local: true do |form|
         div class="shadow overflow-hidden sm:rounded-md"
           div class="px-4 py-5 bg-white sm:p-6"
             div class="grid grid-cols-6 gap-6"
@@ -56,10 +56,10 @@ div class="mt-10 sm:mt-0"
     div class="md:col-span-2"
       div class="px-4 sm:px-0"
         - @problem.lines.published.each do |line|
-          = link_to image_tag(line.topo.photo, height: "500"), edit_line_path(line)
+          = link_to image_tag(line.topo.photo, height: "500"), edit_admin_line_path(line)
           p
-            = link_to "Line ##{line.id}", edit_line_path(line)
+            = link_to "Line ##{line.id}", edit_admin_line_path(line)
             = " | "
-            = link_to "Topo ##{line.topo.id} ", edit_topo_path(line.topo)
+            = link_to "Topo ##{line.topo.id} ", edit_admin_topo_path(line.topo)
         p
-          = link_to "Add topo line", new_line_path(problem_id: @problem.id)
+          = link_to "Add topo line", new_admin_line_path(problem_id: @problem.id)

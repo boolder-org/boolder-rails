@@ -1,12 +1,12 @@
 
-- add_breadcrumb @line.problem.area.name, problems_path(area_id: @line.problem.area.id, color: @line.problem.circuit&.color || "off_circuit", anchor: @line.problem.id)
-- add_breadcrumb "Problem ##{@line.problem.id}", edit_problem_path(@line.problem)
+- add_breadcrumb @line.problem.area.name, admin_problems_path(area_id: @line.problem.area.id, color: @line.problem.circuit&.color || "off_circuit", anchor: @line.problem.id)
+- add_breadcrumb "Problem ##{@line.problem.id}", edit_admin_problem_path(@line.problem)
 - add_breadcrumb "Line ##{@line.id}", nil, class: "active"
 
 h1 class="my-3"= "Line ##{@line.id}"
 
 div class="my-3" = circle_view_with_name(@line.problem)
-div class="my-3" = link_to "Topo ##{@line.topo.id}", edit_topo_path(@line.topo)
+div class="my-3" = link_to "Topo ##{@line.topo.id}", edit_admin_topo_path(@line.topo)
 
 div data-controller="topo-editor"
   div style="" data-target="topo-editor.container"
@@ -14,7 +14,7 @@ div data-controller="topo-editor"
     canvas data-target="topo-editor.canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"
 
   div class="my-3"
-	  = form_with model: @line, local: true, data: {target: "topo-editor.form"} do |form|
+	  = form_with model: [:admin, @line], local: true, data: {target: "topo-editor.form"} do |form|
 	    div class="my-3"
 	      = form.label :coordinates
 	      = form.text_area :coordinates, rows: "4", data: {target: 'topo-editor.textarea'}, value: @line.coordinates.to_json

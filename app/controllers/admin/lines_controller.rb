@@ -1,6 +1,10 @@
-class LinesController < ApplicationController
+class Admin::LinesController < ApplicationController
 	def edit
 		@line = Line.find(params[:id])
+	end
+
+	def new 
+		@line = Line.new
 	end
 
 	def update
@@ -10,12 +14,12 @@ class LinesController < ApplicationController
 		line.update(coordinates: coordinates)
 
 		flash[:notice] = "Line updated"
-		redirect_to edit_line_path(line)
+		redirect_to edit_admin_line_path(line)
 	end
 
 	def create
 		line = Line.create!(line_params)
-		redirect_to edit_line_path(line)
+		redirect_to edit_admin_line_path(line)
 	end
 
 	private 

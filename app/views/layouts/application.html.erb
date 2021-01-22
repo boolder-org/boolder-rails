@@ -25,9 +25,9 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <% Area.all.each do |area| %>
                 <% if params[:area_id] == area.id.to_s %>
-                  <%= link_to area.name, problems_path(area_id: area.id, color: "first"), class: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" %>
+                  <%= link_to area.name, admin_problems_path(area_id: area.id, color: "first"), class: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" %>
                 <% else %>
-                  <%= link_to area.name, problems_path(area_id: area.id, color: "first"), class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+                  <%= link_to area.name, admin_problems_path(area_id: area.id, color: "first"), class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
                 <% end %>
               <% end %>
             </div>

@@ -1,5 +1,6 @@
-class ToposController < ApplicationController
+class Admin::ToposController < ApplicationController
 	def new
+		@topo = Topo.new
 	end
 
 	def create
@@ -16,7 +17,7 @@ class ToposController < ApplicationController
 		end
 
 		flash[:notice] = "Topo created"
-		redirect_to edit_topo_path(topo)
+		redirect_to edit_admin_topo_path(topo)
 	end
 
 	def edit
@@ -40,7 +41,7 @@ class ToposController < ApplicationController
 		topo.update(topo_params)
 
 		flash[:notice] = "Topo updated"
-		redirect_to edit_topo_path(topo)
+		redirect_to edit_admin_topo_path(topo)
 	end
 
 	def destroy
@@ -50,7 +51,7 @@ class ToposController < ApplicationController
 		topo.delete
 
 		flash[:notice] = "Topo deleted"
-		redirect_to edit_problem_path(problem)
+		redirect_to edit_admin_problem_path(problem)
 	end
 
 	private
