@@ -15,56 +15,12 @@
 
   <body class="bg-gray-100">
 
-<div>
-  <nav class="bg-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center">
-          <div class="hidden md:block">
-            <div class="flex items-baseline space-x-4">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <% Area.all.each do |area| %>
-                <% if params[:area_id] == area.id.to_s %>
-                  <%= link_to area.name, admin_problems_path(area_id: area.id, color: "first"), class: "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" %>
-                <% else %>
-                  <%= link_to area.name, admin_problems_path(area_id: area.id, color: "first"), class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
-                <% end %>
-              <% end %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-<%= render "layouts/breadcrumbs" if breadcrumbs.count > 0 %>
-
-
-<% flash.each do |type, msg| %>
-<div class="bg-green-600">
-  <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between flex-wrap">
-      <div class="w-0 flex-1 flex items-center">
-        <p class="ml-3 font-medium text-white truncate">
-          <span>
-            <%= msg %>
-          </span>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>
-
-
-
-
   <main>
     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
       <%= yield %>
     </div>
   </main>
-</div>
+
 
   </body>
 </html>

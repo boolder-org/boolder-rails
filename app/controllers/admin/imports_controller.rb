@@ -1,4 +1,4 @@
-class Admin::ImportsController < ApplicationController
+class Admin::ImportsController < Admin::BaseController
   def new
   end
 

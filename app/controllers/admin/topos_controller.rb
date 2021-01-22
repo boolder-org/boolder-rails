@@ -1,4 +1,4 @@
-class Admin::ToposController < ApplicationController
+class Admin::ToposController < Admin::BaseController
 	def new
 		@topo = Topo.new
 	end

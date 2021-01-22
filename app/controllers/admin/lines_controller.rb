@@ -1,4 +1,4 @@
-class Admin::LinesController < ApplicationController
+class Admin::LinesController < Admin::BaseController
 	def edit
 		@line = Line.find(params[:id])
 	end
