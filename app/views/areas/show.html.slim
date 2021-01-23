@@ -4,22 +4,12 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
   div class="grid grid-cols-3 gap-4"
   	div class="col-span-2"
 
-      div class="pb-5 border-b border-gray-200"
-        h3 class="text-xl leading-6 font-medium text-gray-900" Circuits
+      div class="mb-16 mt-4"
+        div class="pb-5 border-b border-gray-200"
+          h3 class="text-xl leading-6 font-medium text-gray-900" Circuits
 
-      div class="flex flex-col my-6"
-        div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
-          div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
-            div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
-              table class="min-w-full divide-y divide-gray-200"
-                tbody class="bg-white divide-y divide-gray-200"
-                  - @area.circuits.each do |circuit|
-                    tr class="place-content-start align-top"
-                      td class="px-6 py-2 whitespace-nowrap w-9/12"
-                        div class="text-sm text-gray-900"
-                          = circle_view_with_name(problem)
-                      td class="px-6 py-2 whitespace-nowrap w-3/12"
-                        span class="ml-1 text-gray-500"= problem.grade
+        div class="mt-8"
+          = render "circuits"
 
       div 
         div class="pb-5 border-b border-gray-200 sm:flex sm:items-center sm:justify-between"
@@ -60,4 +50,4 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
   		                td class="px-6 py-2 whitespace-nowrap w-3/12"
   		                  span class="ml-1 text-gray-500"= problem.grade
   	div 
-  		= image_tag("map-area-1.jpg", class:"w-full rounded-lg")
+  		/ = image_tag("map-area-1.jpg", class:"w-full rounded-lg")
