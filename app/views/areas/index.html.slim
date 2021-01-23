@@ -1,0 +1,5 @@
+div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
+  h1 class="text-4xl font-bold my-4" Fontainebleau
+
+  - @areas.each do |area|
+  	div= link_to area.name, area

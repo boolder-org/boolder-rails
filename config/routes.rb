@@ -10,5 +10,7 @@ Rails.application.routes.draw do
 
 	get 'guide', to: "guide#index"
 
+	resources :areas, only: [:index, :show]
+
   root 'welcome#index'
 end
