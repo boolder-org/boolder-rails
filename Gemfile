@@ -3,13 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
-gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
+gem 'rails', '~> 6.1.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'puma', '~> 4.1'
 gem 'pg', '~> 1.2.3'
 gem 'rails_12factor', '~> 0.0.3', group: :production
-gem 'activerecord-postgis-adapter', '~> 6.0.0'
+gem 'activerecord-postgis-adapter', '~> 6.0.1'
 
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0.1'
