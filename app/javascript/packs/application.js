@@ -5,6 +5,7 @@
 
 require("@rails/activestorage").start()
 require("channels")
+require("@hotwired/turbo-rails")
 
 require("jquery")
 
@@ -23,6 +24,6 @@ require("stylesheets/application.scss")
 // Stimulus controllers
 import "controllers"
 
-// $(document).on("turbo:load"), () => {
-// 	console.log("Turbo!")
-// }
+// document.addEventListener("turbo:load", function() {
+//   console.log("Turbo loaded!")
+// })
