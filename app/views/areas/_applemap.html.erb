@@ -1,0 +1,46 @@
+<script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+
+<div id="map" class="h-96 bg-gray-500"></div>
+
+
+<script>
+        
+        var MarkerAnnotation = mapkit.MarkerAnnotation,
+            clickAnnotation;
+        var avonTrainStation = new mapkit.Coordinate(48.416398, 2.726505),
+        		boisLeRoiTrainStation = new mapkit.Coordinate(48.475550, 2.691822),
+            parking = new mapkit.Coordinate(48.462965, 2.665628);
+        
+        mapkit.init({
+			    authorizationCallback: function(done) {
+			        done("eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ilo2R05BUDc5N1QifQ.eyJpc3MiOiI4WTQ2QkNaVUw5IiwiaWF0IjoxNjExNTY4NTQ4LCJleHAiOjE5MzU2NTQ5NDh9.AwRdcYE4F3lTvEPUHtXAsGAHw2OXf4zBaGhK9_wGjM9hSsCzzrUPByzUYHSeuLrg8TJpt6-8q7DhpWaFLDe1Vg");
+			    },
+			    language: "fr"
+				});
+        var map = new mapkit.Map("map", {
+            isRotationEnabled: false
+        });
+        
+        // Setting properties on creation:
+        var avonTrainStationAnnotation = new MarkerAnnotation(avonTrainStation, { color: "#ccc", title: "Fontainebleau", subtitle: "Gare Avon", glyphText: "🚆" });
+
+        var boisLeRoiTrainStationAnnotation = new MarkerAnnotation(boisLeRoiTrainStation, { color: "#ccc", title: "Bois le Roi", subtitle: "Gare", glyphText: "🚆" });
+        
+        // Setting properties after creation:
+        var parkingAnnotation = new MarkerAnnotation(parking);
+        parkingAnnotation.color = "#059669"; 
+        parkingAnnotation.title = "Rocher Canon";
+        parkingAnnotation.subtitle = "Parking";
+        // parkingAnnotation.selected = "true";
+        parkingAnnotation.glyphText = "";
+        
+        // Add and show both annotations on the map
+        map.showItems([avonTrainStationAnnotation, boisLeRoiTrainStationAnnotation, parkingAnnotation]);
+
+
+         map.region = new mapkit.CoordinateRegion(
+            parking,
+            new mapkit.CoordinateSpan(0.10, 0.11)
+        )
+        
+        </script>
