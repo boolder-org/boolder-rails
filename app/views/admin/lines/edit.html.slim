@@ -14,7 +14,7 @@ div data-controller="topo-editor"
     canvas data-topo-editor-target="canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"
 
   div class="my-3"
-	  = form_with model: [:admin, @line], local: true, data: {topo_editor_target: "form"} do |form|
+	  = form_with model: [:admin, @line], data: {topo_editor_target: "form"} do |form|
 	    div class="my-3"
 	      = form.label :coordinates
 	      = form.text_area :coordinates, rows: "4", data: {topo_editor_target: 'textarea'}, value: @line.coordinates.to_json
