@@ -178,6 +178,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redis (4.2.5)
     regexp_parser (1.7.0)
     rgeo (2.2.0)
     rgeo-activerecord (6.2.2)
@@ -224,9 +225,8 @@ GEM
     temple (0.8.2)
     thor (1.1.0)
     tilt (2.0.10)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
+    turbo-rails (0.5.8)
+      rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     web-console (4.0.1)
@@ -264,6 +264,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.1.1)
   rails_12factor (~> 0.0.3)
+  redis (~> 4.0)
   rgeo-geojson (~> 2.1.1)
   sass-rails (>= 6)
   selenium-webdriver
@@ -271,7 +272,7 @@ DEPENDENCIES
   slim-rails (~> 3.2.0)
   spring
   spring-watcher-listen (~> 2.0.0)
-  turbolinks (~> 5)
+  turbo-rails (~> 0.5.8)
   web-console (>= 3.3.0)
   webdrivers
   webpacker!
