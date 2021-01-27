@@ -1,13 +1,16 @@
+
 div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
 
-  h1 class="text-4xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" Voies
+  h1 class="mb-8 text-4xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" Voies
 
   = turbo_frame_tag "filtered_problems" do
     div class="md:grid md:grid-cols-4 md:gap-6"
       div class="col-span-1"
-        - %w(yellow orange blue skyblue red white).each do |color|
-          div class="mr-2"= link_to color, area_problems_path(color: color)
-
+        = form_with scope: :search, url: area_problems_path, method: :get, data: { controller: "problem-search" } do |form|
+          = form.label :circuit_id, "Circuit"
+          = form.select :circuit_id, @area.circuits.collect {|c| [ c.color, c.id ] }, { include_blank: true, selected: params.dig(:search, :circuit_id)  }, data: { action: "change->problem-search#submit" }
+          = form.submit "search", class:"hidden", data: { problem_search_target: "submit" }
+          
       div class="col-span-3"
         div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:max-w-none"
           = render partial: "areas/problem", collection: @problems
