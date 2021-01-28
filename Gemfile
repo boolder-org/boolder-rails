@@ -19,6 +19,8 @@ gem "webpacker", github: "rails/webpacker", ref: 'b6c2180' # upgrade webpacker w
 gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'
 
+gem 'kaminari', '~> 1.2.1'
+
 gem 'rgeo-geojson', '~> 2.1.1'
 
 # Use Redis adapter to run Action Cable in production

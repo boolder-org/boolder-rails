@@ -16,4 +16,8 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
         = form.submit "search", class:"hidden", data: { problem_search_target: "submit" }
       
     div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
-      = render partial: "areas/problem", collection: @problems
+      = turbo_frame_tag "page", class: "contents"
+        = render partial: "areas/problem", collection: @problems
+        - if @problems.total_pages > @page.to_i
+          = turbo_frame_tag "page", src: area_problems_path(page: @page.to_i+1, level: params[:level]), class: "contents" do
+            | loading

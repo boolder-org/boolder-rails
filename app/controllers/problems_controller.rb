@@ -1,7 +1,7 @@
 class ProblemsController < ApplicationController
   def index
   	@area = Area.find(params[:area_id])
-  	@problems = @area.problems.order("grade ASC")
+  	@problems = @area.problems.order("grade ASC, id ASC")
 
   	if params[:level] == "beginner"
   		@problems = @problems.beginner
@@ -12,6 +12,11 @@ class ProblemsController < ApplicationController
     else
       params[:level] = "all"
   	end
+
+    @page = params[:page].presence || 1
+    @problems = @problems.page(@page).per(100)
+
+    # sleep 2.seconds
 
     # @problems = @problems.take(12)
 
