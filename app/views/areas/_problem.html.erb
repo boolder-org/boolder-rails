@@ -2,7 +2,7 @@
 <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
   <div class="flex-shrink-0">
     <% if line = problem.lines.published.first %>
-      <%= image_tag(line.topo.photo, class: "h-96 sm:h-48 w-full object-cover") %>
+      <%= image_tag(line.topo.photo.variant(resize_to_limit: [400, 400]), class: "h-96 sm:h-48 w-full object-cover") %>
     <% else %>
       <!-- <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80" alt=""> -->
       <% end %>
@@ -11,6 +11,9 @@
     <div class="flex-1">
       <!-- <a href="#" class="block mt-2"> -->
           <%= circle_view_with_name(problem) %>
+          <div class="inline text-gray-500">
+            <%= problem.grade %>
+          </div>
       <!-- </a> -->
     </div>
   </div>

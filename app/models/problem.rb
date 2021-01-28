@@ -16,6 +16,7 @@ class Problem < ApplicationRecord
     8a 8a+ 8b 8b+ 8c 8c+ 
     9a 9a+ 9b 9b+ 9c 9c+
   )
+  LEVELS = %w(all beginner intermediate advanced)
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
@@ -29,6 +30,10 @@ class Problem < ApplicationRecord
 
   scope :all_tags, -> (array){ where("tags @> ARRAY[?]::varchar[]", array) }
   scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
+
+  scope :beginner, -> { where("grade < '4a'") }
+  scope :intermediate, -> { where("grade >= '4a' AND grade < '6a'") }
+  scope :advanced, -> { where("grade >= '6a'") }
 
   def enumerable_circuit_number
     if circuit_number.present?
