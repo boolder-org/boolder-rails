@@ -147,7 +147,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.4)
-    puma (4.3.3)
+    puma (4.3.7)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -274,7 +274,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   pg (~> 1.2.3)
   pry (~> 0.13.1)
-  puma (~> 4.1)
+  puma (~> 4.3.4)
   rails (~> 6.1.1)
   rails_12factor (~> 0.0.3)
   redis (~> 4.0)
@@ -291,7 +291,7 @@ DEPENDENCIES
   webpacker!
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4
