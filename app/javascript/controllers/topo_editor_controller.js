@@ -13,8 +13,6 @@ export default class extends Controller {
 	    self.resize(image.naturalWidth, image.naturalHeight)
 	    self.drawOriginalPoints()
 	  }
-
-    this.submitOnCmdSave()
   }
 
 	resize(width, height) {
@@ -76,20 +74,5 @@ export default class extends Controller {
   	originalPoints.forEach(function (point, index) {
   		self.draw(point, "#0000ff")
 		})
-  }
-
-  submitOnCmdSave() {
-    var form = this.formTarget
-
-    $(window).bind('keydown', function(event) {
-      if (event.ctrlKey || event.metaKey) {
-        switch (String.fromCharCode(event.which).toLowerCase()) {
-          case 's':
-            event.preventDefault();
-            form.submit()
-            break;
-        }
-      }
-    })
   }
 }
