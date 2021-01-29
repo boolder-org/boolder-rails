@@ -13,7 +13,7 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
           div class=""
             / = form.label :steepness, "Type"
             / = form.select :circuit_id, @area.circuits.collect {|c| [ c.color, c.id ] }, { include_blank: true, selected: params.dig(:search, :circuit_id)  }, data: { action: "change->problem-search#submit" }
-        = form.submit "search", class:"hidden", data: { problem_search_target: "submit" }
+        = form.submit "search", class:"hidden"
       
     div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
       = turbo_frame_tag "page", class: "contents"
