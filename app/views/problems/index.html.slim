@@ -5,7 +5,7 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
 
   = turbo_frame_tag "filtered_problems" do
     div class="my-4"
-      = form_with url: area_problems_path, method: :get, data: { controller: "problem-search" } do |form|
+      = form_with url: area_problems_path, method: :get do |form|
         
         div class="flex flex-wrap justify-between items-end space-x-4"
           div class=""
@@ -17,7 +17,7 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
       
     div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
       = turbo_frame_tag "page", class: "contents"
-        = render partial: "areas/problem", collection: @problems
+        = render partial: "problem", collection: @problems
         - if @problems.total_pages > @page.to_i
           = turbo_frame_tag "page", src: area_problems_path(page: @page.to_i+1, level: params[:level]), class: "contents" do
             | loading...

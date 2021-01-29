@@ -14,5 +14,7 @@ Rails.application.routes.draw do
 		resources :problems, only: [:index, :show]
 	end
 
+	resources :circuits, only: [:show]
+
   root 'welcome#index'
 end
