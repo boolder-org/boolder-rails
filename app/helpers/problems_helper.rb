@@ -10,6 +10,13 @@ module ProblemsHelper
 			(link_to (problem.name.presence || "No name"), edit_admin_problem_path(problem), class: "ml-2 font-semibold")
 	end
 
+	# FIXME: make it DRY
+	def circuit_circle_view(circuit)
+		content_tag(:span, "&nbsp;".html_safe, 
+      style: "background: #{uicolor(circuit&.color)}; color: #{text_color(circuit&.color)}",
+      class: "rounded-full h-6 w-6 inline-flex leading-6 justify-center")
+	end
+
 	def uicolor(circuit_color)
 		color_mapping[circuit_color] || "#CCC"
 	end
