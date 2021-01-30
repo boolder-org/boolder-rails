@@ -1,15 +1,21 @@
 div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
 
   = link_to @circuit.area.name, area_path(@circuit.area), class: "text-sm font-medium text-gray-500 hover:text-gray-700"
-  h1 class="text-4xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" Circuits
+  h1 class="mb-4 text-4xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" Circuits
 
   = turbo_frame_tag "problems" do
-    div class="my-4 flex flex-wrap justify-between items-end space-x-4"
-      div class="hidden sm:block"
-        nav class="flex space-x-4" aria-label="Circuits"
-          / Current: "bg-green-100 text-green-700", Default: "text-gray-500 hover:text-gray-700"
-          - @circuit.area.circuits.each do |circuit|
-            = link_to circuit.name, circuit_path(circuit), class: (circuit.id == @circuit.id) ? "bg-green-100 text-green-700 px-3 py-2 font-medium text-sm rounded-md" : "text-gray-500 hover:text-gray-700 px-3 py-2 font-medium text-sm rounded-md"
 
-    div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
-      = render partial: "problems/problem", collection: @problems
+    div class="md:grid md:grid-cols-4 md:gap-5"
+      div class="col-span-1"
+    
+        nav class="space-y-1 sticky top-8" aria-label="Circuits"
+          - @circuit.area.circuits.each do |circuit|
+            = link_to circuit_path(circuit), class: (circuit.id == @circuit.id) ? "bg-green-100 text-green-700 flex items-center px-3 py-2 text-sm font-medium rounded-md" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md" do
+              span class="truncate"= circuit.name
+        div
+          div class="sticky top-8" 
+
+      div class="col-span-3"
+
+        div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 sm:max-w-none"
+          = render partial: "problems/problem", collection: @problems
