@@ -4,21 +4,16 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
   = link_to @area.name, area_path(@area), class: "text-sm font-medium text-gray-500 hover:text-gray-700"
   h1 class="mb-8 text-4xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" Voies
 
-  = turbo_frame_tag "filtered_problems" do
-    div class="my-4"
-      = form_with url: area_problems_path, method: :get do |form|
-        
-        div class="flex flex-wrap justify-between items-end space-x-4"
-          div class=""
-            = render 'level_filter'
-          div class=""
-            / = form.label :steepness, "Type"
-            / = form.select :circuit_id, @area.circuits.collect {|c| [ c.color, c.id ] }, { include_blank: true, selected: params.dig(:search, :circuit_id)  }, data: { action: "change->problem-search#submit" }
-        = form.submit "search", class:"hidden"
-      
-    div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
-      = turbo_frame_tag "page", class: "contents"
-        = render partial: "problem", collection: @problems
-        - if @problems.total_pages > @page.to_i
-          = turbo_frame_tag "page", src: area_problems_path(page: @page.to_i+1, level: params[:level]), class: "contents" do
-            | loading...
+  = turbo_frame_tag "problems" do
+    
+    div class="md:grid md:grid-cols-4 md:gap-5"
+      div class="col-span-1"
+        = render "level_filter"
+
+      div class="col-span-3"
+        div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:max-w-none"
+          = turbo_frame_tag "page", class: "contents"
+            = render partial: "problem", collection: @problems
+            - if @problems.total_pages > @page.to_i
+              = turbo_frame_tag "page", src: area_problems_path(page: @page.to_i+1, level: params[:level]), class: "contents" do
+                | loading...

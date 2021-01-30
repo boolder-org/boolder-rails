@@ -3,23 +3,8 @@ class ProblemsController < ApplicationController
     @area = Area.find(params[:area_id])
     @problems = @area.problems.order("grade ASC, id ASC")
 
-    # FIXME: make it DRY
-    if params[:level] == "level1"
-      @problems = @problems.level1
-    elsif params[:level] == "level2"
-      @problems = @problems.level2
-    elsif params[:level] == "level3"
-      @problems = @problems.level3
-    elsif params[:level] == "level4"
-      @problems = @problems.level4
-    elsif params[:level] == "level5"
-      @problems = @problems.level5
-    elsif params[:level] == "level6"
-      @problems = @problems.level6
-    elsif params[:level] == "level7"
-      @problems = @problems.level7
-    elsif params[:level] == "level8"
-      @problems = @problems.level8
+    if params[:level].to_i.in?(1..8)
+      @problems = @problems.level(params[:level].to_i)
     else
       params[:level] = "all"
     end

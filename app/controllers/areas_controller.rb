@@ -11,7 +11,7 @@ class AreasController < ApplicationController
       labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
       datasets: [{
           label: 'problems',
-          data: 1.upto(8).map{|i| @area.problems.send("level#{i}").count },
+          data: 1.upto(8).map{|i| @area.problems.level(i).count },
           backgroundColor: 'rgba(5, 150, 105, 0.4)',
         	borderColor: 'rgba(5, 150, 105, 1)',
           
