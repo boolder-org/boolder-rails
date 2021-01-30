@@ -37,7 +37,9 @@ export default class extends Controller {
 
   setupMap(annotationHash, poisHash, span) {
     this.map = new mapkit.Map(this.mapTarget, {
-        isRotationEnabled: false
+        isRotationEnabled: false,
+        showsScale: mapkit.FeatureVisibility.Visible,
+        showsUserLocationControl: true,
     });
 
     var MarkerAnnotation = mapkit.MarkerAnnotation;
