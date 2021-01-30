@@ -2,27 +2,25 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 	static targets = [ "map" ]
+  static values = { key: String, language: String }
 
 	connect() {
-    console.log("connect")
-
-    this.initMapkit() // FIXME: no need to call it everytime
+    let language = this.hasLanguageValue ? this.languageValue : 'en'
+    this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
     this.setupMap()
   }
 
   disconnect() {
-    console.log("disconnect")
-
     this.map.destroy()
     this.map = undefined
   }
 
-  initMapkit() {
+  initMapkit(key, language) {
     mapkit.init({
       authorizationCallback: function(done) {
-          done("eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ilo2R05BUDc5N1QifQ.eyJpc3MiOiI4WTQ2QkNaVUw5IiwiaWF0IjoxNjExNTY4NTQ4LCJleHAiOjE5MzU2NTQ5NDh9.AwRdcYE4F3lTvEPUHtXAsGAHw2OXf4zBaGhK9_wGjM9hSsCzzrUPByzUYHSeuLrg8TJpt6-8q7DhpWaFLDe1Vg");
+          done(key);
       },
-      language: "fr"
+      language: language
     });
   }
 
