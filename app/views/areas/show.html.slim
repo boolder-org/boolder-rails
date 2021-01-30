@@ -13,20 +13,20 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
             | Against common knowledge, this area is actually pretty huge.
           p
             | There are more than 500 problems littered around the forest. The boulders are ... 
-            strong Voir plus
+            strong class="text-green-600" Voir plus
 
       div class="mb-8 mt-4 md:grid md:grid-cols-2 md:gap-6"
         div class="col-span-1"
 
           div class="mb-8 mt-4"
             div class="pb-5 border-b border-gray-200"
-              h3 class="text-xl leading-6 font-medium text-gray-900" Par niveau
+              h3 class="text-xl leading-6 font-medium text-gray-900" Voies par niveau
             div class="mt-8"
           
-              div class="bg-white shadow overflow-hidden sm:rounded-md mb-8"
+              = render "chart"
+              div class="bg-white shadow overflow-hidden sm:rounded-md mt-8"
                 ul class="divide-y divide-gray-200"
                   = render "level"
-              = render "chart"
               
               / div class="bg-white shadow overflow-hidden sm:rounded-md"
               /   ul class="divide-y divide-gray-200"
@@ -48,7 +48,7 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
         div class="pb-5 border-b border-gray-200"
           h3 class="text-xl leading-6 font-medium text-gray-900" Accès
         div class="mt-8"
-          = render "applemap"
+           = render "applemap"
 
       div class="mb-16 mt-4"
         div class="pb-5 border-b border-gray-200"

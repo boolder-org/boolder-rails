@@ -59,7 +59,7 @@ class AreasController < ApplicationController
       },
       tooltips: {
       	enabled: false
-      }
+      },
     }
   end
 end
