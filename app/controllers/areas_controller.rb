@@ -7,10 +7,11 @@ class AreasController < ApplicationController
   	@area = Area.find(params[:id])
   	@problems = @area.problems.order(Arel.sql('RANDOM()')).take(3)
 
-    parking = @area.pois.first
+    @parkings = @area.pois
+
     @annotation = {
-      latitude: parking.location.latitude,
-      longitude: parking.location.longitude,
+      latitude: @parkings.first&.location&.latitude,
+      longitude: @parkings.first&.location&.longitude,
       color: "#059669",
       title: @area.name,
       glyphText: "",
