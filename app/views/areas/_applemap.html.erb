@@ -1,13 +1,3 @@
-<% annotation = {
-    latitude: 48.462965,
-    longitude: 2.665628,
-    color: "#059669",
-    title: "Rocher Canon",
-    subtitle: "Parking",
-    glyphText: "",
-  } 
-%>
-
 <% pois = [
     {
       latitude: 48.416398,
@@ -30,11 +20,11 @@
 
 <div 
 data-controller="apple-map" 
-data-apple-map-annotation-value="<%= annotation.to_json %>"
+data-apple-map-annotation-value="<%= @annotation.to_json %>"
 data-apple-map-pois-value="<%= pois.to_json %>"
 data-apple-map-key-value="eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ilo2R05BUDc5N1QifQ.eyJpc3MiOiI4WTQ2QkNaVUw5IiwiaWF0IjoxNjExNTY4NTQ4LCJleHAiOjE5MzU2NTQ5NDh9.AwRdcYE4F3lTvEPUHtXAsGAHw2OXf4zBaGhK9_wGjM9hSsCzzrUPByzUYHSeuLrg8TJpt6-8q7DhpWaFLDe1Vg"
 data-apple-map-language-value="fr"
-data-apple-map-span-value="0.10"
+data-apple-map-span-value="0.20"
 >
   <div data-apple-map-target="map" class="h-96 bg-gray-500"></div>
 </div>

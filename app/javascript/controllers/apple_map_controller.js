@@ -42,11 +42,6 @@ export default class extends Controller {
 
     var MarkerAnnotation = mapkit.MarkerAnnotation;
 
-    // main annotation
-    var center = new mapkit.Coordinate(annotationHash.latitude, annotationHash.longitude);
-    delete annotationHash['latitude']; delete annotationHash['longitude']; 
-    this.map.addAnnotation(new MarkerAnnotation(center, annotationHash));
-
     // points of interests
     var pois = poisHash.map(function (poiHash) {
       var coord = new mapkit.Coordinate(poiHash.latitude, poiHash.longitude);
@@ -55,7 +50,12 @@ export default class extends Controller {
     });
     this.map.addAnnotations(pois);
 
+    // main annotation
+    var center = new mapkit.Coordinate(annotationHash.latitude, annotationHash.longitude);
+    delete annotationHash['latitude']; delete annotationHash['longitude']; 
+    this.map.addAnnotation(new MarkerAnnotation(center, annotationHash));
 
+    // set up visible viewport
     this.map.region = new mapkit.CoordinateRegion(
       center,
       new mapkit.CoordinateSpan(span, span)
