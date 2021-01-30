@@ -11,7 +11,7 @@ gem 'pg', '~> 1.2.3'
 gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', '~> 6.0.1'
 
-gem 'turbo-rails', '~> 0.5.8'
+gem 'turbo-rails', '~> 0.5.9'
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0.1'
 gem 'slim-rails', '~> 3.2.0'
