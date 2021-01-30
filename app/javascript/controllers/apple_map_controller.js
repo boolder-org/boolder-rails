@@ -2,12 +2,23 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 	static targets = [ "map" ]
-  static values = { key: String, language: String }
+  static values = { 
+    key: String, 
+    language: String,
+    annotation: Object,
+    pois: Array,
+    span: Number,
+  }
 
 	connect() {
     let language = this.hasLanguageValue ? this.languageValue : 'en'
     this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
-    this.setupMap()
+
+    let annotation = this.hasAnnotationValue ? this.annotationValue : {}
+    let pois = this.hasPoisValue ? this.poisValue : []
+    let span = this.hasSpanValue ? this.spanValue : 0.1
+    this.setupMap(this.annotationValue, pois, span)
+    
   }
 
   disconnect() {
@@ -24,37 +35,30 @@ export default class extends Controller {
     });
   }
 
-  setupMap() {
+  setupMap(annotationHash, poisHash, span) {
     this.map = new mapkit.Map(this.mapTarget, {
         isRotationEnabled: false
     });
 
-    var MarkerAnnotation = mapkit.MarkerAnnotation,
-            clickAnnotation;
-    var avonTrainStation = new mapkit.Coordinate(48.416398, 2.726505),
-        boisLeRoiTrainStation = new mapkit.Coordinate(48.475550, 2.691822),
-        parking = new mapkit.Coordinate(48.462965, 2.665628);
+    var MarkerAnnotation = mapkit.MarkerAnnotation;
 
-        // Setting properties on creation:
-    var avonTrainStationAnnotation = new MarkerAnnotation(avonTrainStation, { color: "#ccc", title: "Fontainebleau", subtitle: "Gare Avon", glyphText: "🚆" });
+    // main annotation
+    var center = new mapkit.Coordinate(annotationHash.latitude, annotationHash.longitude);
+    delete annotationHash['latitude']; delete annotationHash['longitude']; 
+    this.map.addAnnotation(new MarkerAnnotation(center, annotationHash));
 
-    var boisLeRoiTrainStationAnnotation = new MarkerAnnotation(boisLeRoiTrainStation, { color: "#ccc", title: "Bois le Roi", subtitle: "Gare", glyphText: "🚆" });
-    
-    // Setting properties after creation:
-    var parkingAnnotation = new MarkerAnnotation(parking);
-    parkingAnnotation.color = "#059669"; 
-    parkingAnnotation.title = "Rocher Canon";
-    parkingAnnotation.subtitle = "Parking";
-    // parkingAnnotation.selected = "true";
-    parkingAnnotation.glyphText = "";
-    
-    // Add and show both annotations on the map
-    this.map.showItems([avonTrainStationAnnotation, boisLeRoiTrainStationAnnotation, parkingAnnotation]);
+    // points of interests
+    var pois = poisHash.map(function (poiHash) {
+      var coord = new mapkit.Coordinate(poiHash.latitude, poiHash.longitude);
+      delete poiHash['latitude']; delete poiHash['longitude']; 
+      return new MarkerAnnotation(coord, poiHash)
+    });
+    this.map.addAnnotations(pois);
 
 
     this.map.region = new mapkit.CoordinateRegion(
-      parking,
-      new mapkit.CoordinateSpan(0.10, 0.11)
+      center,
+      new mapkit.CoordinateSpan(span, span)
     )
   }
 }
