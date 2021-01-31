@@ -1,7 +1,7 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-	static targets = [ "svg", "image" ]
+	static targets = [ "svg", "image", "circle" ]
   static values = { 
     coordinates: Array,
     color: String,
@@ -13,6 +13,8 @@ export default class extends Controller {
     var self = this
 
     image.onload = function() {
+      self.circleTarget.classList.remove("hidden")
+
       setTimeout(function(){
         self.createPath()
         self.animatePath()
