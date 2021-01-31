@@ -11,9 +11,10 @@ Rails.application.routes.draw do
 	get 'guide', to: "guide#index"
 
 	resources :areas, only: [:index, :show] do 
-		resources :problems, only: [:index, :show]
+		resources :problems, only: [:index]
 	end
 
+	resources :problems, only: [:show]
 	resources :circuits, only: [:show]
 
   root 'welcome#index'
