@@ -64,53 +64,26 @@ export default class extends Controller {
 
   pathString() {
     let scaledCoordinates = this.coordinatesValue.map(point => ({ "x": point.x*400, "y": point.y*300 }));
-    return this.bezierCurve(scaledCoordinates, 0.3, 1);
+    return this.bezierCurve(scaledCoordinates);
   }
 
 
-  // inspired by https://stackoverflow.com/a/39559854/230309
-  bezierCurve(points = [], f, t) {
-    if(points.length == 0) { return "" }
+  // inspired by https://stackoverflow.com/a/7058606/230309
+  bezierCurve(points = []) {
+    if(points.length < 1) { return "" }
 
-    //f = 0, will be straight line
-    //t suppose to be 1, but changing the value can control the smoothness too
-    if (typeof(f) == 'undefined') f = 0.3;
-    if (typeof(t) == 'undefined') t = 0.6;
+    var string = "M " + points[0].x + " " + points[0].y + " Q "
 
-    var string = "M " + points[0].x + " " + points[0].y + " C "
+    for (var i = 1; i < points.length - 2; i ++)
+    {
+      var xc = (points[i].x + points[i + 1].x) / 2;
+      var yc = (points[i].y + points[i + 1].y) / 2;
 
-    var m = 0;
-    var dx1 = 0;
-    var dy1 = 0;
-    var dx2 = 0;
-    var dy2 = 0;
-
-    var preP = points[0];
-    for (var i = 1; i < points.length; i++) {
-      var curP = points[i];
-      var nexP = points[i + 1];
-      if (nexP) {
-        m = this.gradient(preP, nexP);
-        dx2 = (nexP.x - curP.x) * -f;
-        dy2 = dx2 * m * t;
-      } else {
-        dx2 = 0;
-        dy2 = 0;
-      }
-
-      string += " " + Math.round(preP.x - dx1) + " " + Math.round(preP.y - dy1) 
-        + " " + Math.round(curP.x + dx2) + " " + Math.round(curP.y + dy2) 
-        + " " + Math.round(curP.x) + " " + Math.round(curP.y)
-              
-      dx1 = dx2;
-      dy1 = dy2;
-      preP = curP;
+      string += " " + Math.round(points[i].x) + " " + Math.round(points[i].y) + " " + Math.round(xc) + " " + Math.round(yc)
     }
 
-    return string
-  }
+    string += " " + Math.round(points[i].x) + " " + Math.round(points[i].y) + " " + Math.round(points[i+1].x) + " " + Math.round(points[i+1].y)
 
-  gradient(a, b) {
-    return (b.y-a.y)/(b.x-a.x);
+    return string
   }
 }
