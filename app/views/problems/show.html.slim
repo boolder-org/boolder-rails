@@ -3,11 +3,11 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
   = link_to @problem.area.name, area_path(@problem.area), class: "text-sm font-medium text-gray-500 hover:text-gray-700"
   h1 class="text-4xl font-bold mt-2 mb-4"= @problem.name
 
-  div class="md:grid md:grid-cols-3 md:gap-6"
+  div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6"
     div class="col-span-2"
       div class="relative"
         - @problem.lines.published.each do |line|
-          = image_tag(line.topo.photo.variant(resize_to_limit: [800, 800]), class: "w-full object-cover")
+          = image_tag(line.topo.photo.variant(resize_to_limit: [800, 800]), id: "image", class: "w-full object-cover rounded-lg")
           canvas id="myCanvas" class="hidden absolute top-0 left-0 w-full" width="1600" height="1200"
           div class="absolute top-0 left-0 w-full"
             = render "line"

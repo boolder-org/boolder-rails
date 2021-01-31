@@ -99,8 +99,19 @@
             // Define our transition
             path.style.transition = path.style.WebkitTransition =
               'stroke-dashoffset 0.5s ease-in-out';
-            // Go!
-            path.style.strokeDashoffset = '0';
+
+
+
+            var image = document.getElementById('image');
+
+            image.onload = function () {
+                console.log("image loaded")
+                setTimeout(function(){
+                    console.log("start animation")
+                    path.style.strokeDashoffset = '0';
+                }, 500);
+            }
+            
                  
 
     	</script>
