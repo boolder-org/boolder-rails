@@ -18,7 +18,7 @@ module ProblemsHelper
 	end
 
 	def uicolor(circuit_color)
-		color_mapping[circuit_color] || "#CCC"
+		color_mapping[circuit_color] || "rgb(80% 80% 80%)"
 	end
 
 	private
@@ -36,7 +36,7 @@ module ProblemsHelper
 
 	def text_color(circuit_color)
 		if circuit_color.to_s == "white"
-			"#000"
+			"#333"
 		else
 			"#FFF"
 		end

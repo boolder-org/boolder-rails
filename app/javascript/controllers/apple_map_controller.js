@@ -81,11 +81,21 @@ export default class extends Controller {
                     }
                 };
 
+                let colorMapping = {
+                  "yellow":   "#FFCC02",
+                  "orange":   "#FF9500",
+                  "blue":     "#017AFF",
+                  "skyblue":  "#5AC7FA",
+                  "red":      "#FF3B2F",
+                  "black":    "#000000",
+                  "white":    "#FFFFFF",
+                }
 
                 overlay.animates = false
                 overlay.displayPriority = (geoJSON.properties.circuitNumber && geoJSON.properties.circuitNumber.length > 0)  ? mapkit.Annotation.DisplayPriority.High : mapkit.Annotation.DisplayPriority.Low
-                overlay.color = geoJSON.properties.circuitColor || "#ccc"
+                overlay.color = colorMapping[geoJSON.properties.circuitColor] || "rgb(66% 66% 66%)"
                 overlay.glyphText = geoJSON.properties.circuitNumber || " "
+                overlay.glyphColor = (geoJSON.properties.circuitColor == "white") ? "#333" : "FFF"
                 overlay.callout = calloutDelegate
             }
             // circuit
