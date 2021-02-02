@@ -256,7 +256,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-postgis-adapter (~> 6.0.1)
-  bootsnap
+  bootsnap (~> 1.7.0)
   breadcrumbs_on_rails (~> 4.0.0)
   byebug
   capybara (>= 2.15)
