@@ -21,3 +21,4 @@ test:
 production:
   <<: *default
   database: boolder-production
+  url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
