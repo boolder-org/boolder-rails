@@ -5,7 +5,7 @@ export default class extends Controller {
   static values = { 
     key: String, 
     language: String,
-
+    geojson: String,
   }
 
 	connect() {
@@ -13,7 +13,7 @@ export default class extends Controller {
     this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
 
     this.setupMap()
-    
+    this.loadGeoJSON(this.geojsonValue)
   }
 
   disconnect() {
@@ -36,10 +36,12 @@ export default class extends Controller {
         showsScale: mapkit.FeatureVisibility.Visible,
         showsUserLocationControl: true,
     });
+  }
 
+  loadGeoJSON(file) {
     var map = this.map
 
-    mapkit.importGeoJSON("/area-1-data.geojson", {
+    mapkit.importGeoJSON(file, {
         
         itemForFeature: function(overlay, geoJSON) {
             overlay.data = {
@@ -96,7 +98,7 @@ export default class extends Controller {
                 overlay.displayPriority = (geoJSON.properties.circuitNumber && geoJSON.properties.circuitNumber.length > 0)  ? mapkit.Annotation.DisplayPriority.High : mapkit.Annotation.DisplayPriority.Low
                 overlay.color = colorMapping[geoJSON.properties.circuitColor] || "rgb(66% 66% 66%)"
                 overlay.glyphText = geoJSON.properties.circuitNumber || " "
-                overlay.glyphColor = (geoJSON.properties.circuitColor == "white") ? "#333" : "FFF"
+                overlay.glyphColor = (geoJSON.properties.circuitColor == "white") ? "#333" : "#FFF"
                 overlay.callout = calloutDelegate
             }
             // circuit
