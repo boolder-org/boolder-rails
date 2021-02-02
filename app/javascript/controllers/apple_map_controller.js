@@ -5,20 +5,15 @@ export default class extends Controller {
   static values = { 
     key: String, 
     language: String,
-    annotation: Object,
-    pois: Array,
-    span: Number,
+    geojson: String,
   }
 
 	connect() {
     let language = this.hasLanguageValue ? this.languageValue : 'en'
     this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
 
-    let annotation = this.hasAnnotationValue ? this.annotationValue : {}
-    let pois = this.hasPoisValue ? this.poisValue : []
-    let span = this.hasSpanValue ? this.spanValue : 0.1
-    this.setupMap(this.annotationValue, pois, span)
-    
+    this.setupMap()
+    this.loadGeoJSON(this.geojsonValue)
   }
 
   disconnect() {
@@ -35,32 +30,114 @@ export default class extends Controller {
     });
   }
 
-  setupMap(annotationHash, poisHash, span) {
+  setupMap() {
     this.map = new mapkit.Map(this.mapTarget, {
         isRotationEnabled: false,
         showsScale: mapkit.FeatureVisibility.Visible,
         showsUserLocationControl: true,
     });
+  }
 
-    var MarkerAnnotation = mapkit.MarkerAnnotation;
+  loadGeoJSON(file) {
+    var map = this.map
 
-    // points of interests
-    var pois = poisHash.map(function (poiHash) {
-      var coord = new mapkit.Coordinate(poiHash.latitude, poiHash.longitude);
-      delete poiHash['latitude']; delete poiHash['longitude']; 
-      return new MarkerAnnotation(coord, poiHash)
+    mapkit.importGeoJSON(file, {
+        
+        itemForFeature: function(overlay, geoJSON) {
+            overlay.data = {
+                name: geoJSON.properties.name,
+                id: geoJSON.id,
+            };
+
+            // boulder
+            if(geoJSON.geometry.type == "Polygon") {
+                overlay.style = new mapkit.Style({
+                    lineWidth: 1,
+                    fillColor: "rgb(80% 80% 80%)",
+                    fillOpacity: 1.0,
+                    strokeColor: "rgb(70% 70% 70%)",
+                    // strokeOpacity: .2,
+                    lineJoin: "round",
+                    // lineDash: [2, 2, 6, 2, 6, 2]
+                });
+            }
+            // problem
+            else if(geoJSON.geometry.type == "Point" && geoJSON.id.startsWith("problem")) {
+
+              overlay.data.grade = geoJSON.properties.grade
+
+                var calloutDelegate = {
+
+                    // same thing as calloutContentForAnnotation but without the container
+                    // calloutElementForAnnotation: function(annotation) {
+                    // },
+
+                    calloutContentForAnnotation: function(annotation) {
+                        var element = document.createElement("div");
+                        element.className = "problem-callout-content";
+                        var link = element.appendChild(document.createElement("a"));
+                        link.href = `/geojson/${annotation.data.id}`;
+                        link.target = "_blank"
+                        link.textContent = `${annotation.data.name || ""} ${annotation.data.grade}`
+                        
+                        return element;
+                    }
+                };
+
+                let colorMapping = {
+                  "yellow":   "#FFCC02",
+                  "orange":   "#FF9500",
+                  "blue":     "#017AFF",
+                  "skyblue":  "#5AC7FA",
+                  "red":      "#FF3B2F",
+                  "black":    "#000000",
+                  "white":    "#FFFFFF",
+                }
+
+                overlay.animates = false
+                overlay.displayPriority = (geoJSON.properties.circuitNumber && geoJSON.properties.circuitNumber.length > 0)  ? mapkit.Annotation.DisplayPriority.High : mapkit.Annotation.DisplayPriority.Low
+                overlay.color = colorMapping[geoJSON.properties.circuitColor] || "rgb(66% 66% 66%)"
+                overlay.glyphText = geoJSON.properties.circuitNumber || " "
+                overlay.glyphColor = (geoJSON.properties.circuitColor == "white") ? "#333" : "#FFF"
+                overlay.callout = calloutDelegate
+            }
+            // circuit
+            else if(geoJSON.geometry.type == "LineString" && geoJSON.id.startsWith("circuit")) {
+              return null;
+            }
+            // poi
+            else if(geoJSON.geometry.type == "Point" && geoJSON.id.startsWith("poi")) {
+              overlay.color = "rgb(128 128 128)"
+              overlay.glyphText = "P"
+              overlay.title = "Parking"
+            }
+            // poi route
+            else if(geoJSON.geometry.type == "LineString" && geoJSON.id.startsWith("poiroute")) {
+              overlay.style = new mapkit.Style({
+                  lineWidth: 2,
+                  strokeColor: "rgb(128 128 128)",
+                  // strokeOpacity: .2,
+                  lineJoin: "round",
+                  lineDash: [5, 5]
+              });
+
+              overlay.color = "rgb(128 128 128)"
+              overlay.lineWidth = 2
+              overlay.lineJoin = "round"
+              overlay.lineDash = [5, 5]
+            }
+            else {
+                
+            }
+
+            return overlay;
+        },
+    
+        geoJSONDidComplete: function(overlays) {
+            map.addItems(overlays);
+            map.showItems(overlays.getFlattenedItemList());
+        }
     });
-    this.map.addAnnotations(pois);
 
-    // main annotation
-    var center = new mapkit.Coordinate(annotationHash.latitude, annotationHash.longitude);
-    delete annotationHash['latitude']; delete annotationHash['longitude']; 
-    this.map.addAnnotation(new MarkerAnnotation(center, annotationHash));
-
-    // set up visible viewport
-    this.map.region = new mapkit.CoordinateRegion(
-      center,
-      new mapkit.CoordinateSpan(span, span)
-    )
   }
 }
