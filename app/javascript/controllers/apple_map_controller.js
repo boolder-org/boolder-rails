@@ -5,19 +5,14 @@ export default class extends Controller {
   static values = { 
     key: String, 
     language: String,
-    annotation: Object,
-    pois: Array,
-    span: Number,
+
   }
 
 	connect() {
     let language = this.hasLanguageValue ? this.languageValue : 'en'
     this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
 
-    let annotation = this.hasAnnotationValue ? this.annotationValue : {}
-    let pois = this.hasPoisValue ? this.poisValue : []
-    let span = this.hasSpanValue ? this.spanValue : 0.1
-    this.setupMap(this.annotationValue, pois, span)
+    this.setupMap()
     
   }
 
@@ -35,32 +30,76 @@ export default class extends Controller {
     });
   }
 
-  setupMap(annotationHash, poisHash, span) {
+  setupMap() {
     this.map = new mapkit.Map(this.mapTarget, {
         isRotationEnabled: false,
         showsScale: mapkit.FeatureVisibility.Visible,
         showsUserLocationControl: true,
     });
 
-    var MarkerAnnotation = mapkit.MarkerAnnotation;
+    var map = this.map
 
-    // points of interests
-    var pois = poisHash.map(function (poiHash) {
-      var coord = new mapkit.Coordinate(poiHash.latitude, poiHash.longitude);
-      delete poiHash['latitude']; delete poiHash['longitude']; 
-      return new MarkerAnnotation(coord, poiHash)
+    mapkit.importGeoJSON("/area-1-data.geojson", {
+        
+        itemForFeature: function(overlay, geoJSON) {
+            overlay.data = {
+                name: geoJSON.properties.name,
+                id: geoJSON.id,
+            };
+
+            // boulder
+            if(geoJSON.geometry.type == "Polygon") {
+                overlay.style = new mapkit.Style({
+                    fillOpacity: 0.7,
+                    lineWidth: 0.3,
+                    fillColor: "#ccc",
+                    strokeColor: "aaa",
+                    // strokeOpacity: .2,
+                    // lineJoin: "round",
+                    // lineDash: [2, 2, 6, 2, 6, 2]
+                });
+            }
+            // problem
+            else if(geoJSON.geometry.type == "Point") {
+
+              overlay.data.grade = geoJSON.properties.grade
+
+                var calloutDelegate = {
+
+                    // same thing as calloutContentForAnnotation but without the container
+                    // calloutElementForAnnotation: function(annotation) {
+                    // },
+
+                    calloutContentForAnnotation: function(annotation) {
+                        var element = document.createElement("div");
+                        element.className = "problem-callout-content";
+                        var link = element.appendChild(document.createElement("a"));
+                        link.href = `/geojson/${annotation.data.id}`;
+                        link.textContent = `${annotation.data.name || ""} ${annotation.data.grade}`
+                        
+                        return element;
+                    }
+                };
+
+
+                overlay.animates = false
+                overlay.displayPriority = (geoJSON.properties.circuitNumber && geoJSON.properties.circuitNumber.length > 0)  ? mapkit.Annotation.DisplayPriority.High : mapkit.Annotation.DisplayPriority.Low
+                overlay.color = geoJSON.properties.circuitColor || "#ccc"
+                overlay.glyphText = geoJSON.properties.circuitNumber || " "
+                overlay.callout = calloutDelegate
+            }
+            else {
+                
+            }
+
+            return overlay;
+        },
+    
+        geoJSONDidComplete: function(overlays) {
+            map.addItems(overlays);
+            map.showItems(overlays.getFlattenedItemList());
+        }
     });
-    this.map.addAnnotations(pois);
 
-    // main annotation
-    var center = new mapkit.Coordinate(annotationHash.latitude, annotationHash.longitude);
-    delete annotationHash['latitude']; delete annotationHash['longitude']; 
-    this.map.addAnnotation(new MarkerAnnotation(center, annotationHash));
-
-    // set up visible viewport
-    this.map.region = new mapkit.CoordinateRegion(
-      center,
-      new mapkit.CoordinateSpan(span, span)
-    )
   }
 }

@@ -40,4 +40,8 @@
       background-color: #d4fcbc;
   }
 
+  .problem-callout-content a {
+    @apply text-green-600 underline font-medium
+  }
+
 }
