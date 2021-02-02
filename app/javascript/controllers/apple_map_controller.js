@@ -50,17 +50,17 @@ export default class extends Controller {
             // boulder
             if(geoJSON.geometry.type == "Polygon") {
                 overlay.style = new mapkit.Style({
-                    fillOpacity: 0.7,
-                    lineWidth: 0.3,
-                    fillColor: "#ccc",
-                    strokeColor: "aaa",
+                    lineWidth: 1,
+                    fillColor: "rgb(80% 80% 80%)",
+                    fillOpacity: 1.0,
+                    strokeColor: "rgb(70% 70% 70%)",
                     // strokeOpacity: .2,
-                    // lineJoin: "round",
+                    lineJoin: "round",
                     // lineDash: [2, 2, 6, 2, 6, 2]
                 });
             }
             // problem
-            else if(geoJSON.geometry.type == "Point") {
+            else if(geoJSON.geometry.type == "Point" && geoJSON.id.startsWith("problem")) {
 
               overlay.data.grade = geoJSON.properties.grade
 
@@ -87,6 +87,31 @@ export default class extends Controller {
                 overlay.color = geoJSON.properties.circuitColor || "#ccc"
                 overlay.glyphText = geoJSON.properties.circuitNumber || " "
                 overlay.callout = calloutDelegate
+            }
+            // circuit
+            else if(geoJSON.geometry.type == "LineString" && geoJSON.id.startsWith("circuit")) {
+              return null;
+            }
+            // poi
+            else if(geoJSON.geometry.type == "Point" && geoJSON.id.startsWith("poi")) {
+              overlay.color = "rgb(128 128 128)"
+              overlay.glyphText = "P"
+              overlay.title = "Parking"
+            }
+            // poi route
+            else if(geoJSON.geometry.type == "LineString" && geoJSON.id.startsWith("poiroute")) {
+              overlay.style = new mapkit.Style({
+                  lineWidth: 2,
+                  strokeColor: "rgb(128 128 128)",
+                  // strokeOpacity: .2,
+                  lineJoin: "round",
+                  lineDash: [5, 5]
+              });
+
+              overlay.color = "rgb(128 128 128)"
+              overlay.lineWidth = 2
+              overlay.lineJoin = "round"
+              overlay.lineDash = [5, 5]
             }
             else {
                 
