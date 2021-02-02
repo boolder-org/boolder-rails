@@ -75,6 +75,7 @@ export default class extends Controller {
                         element.className = "problem-callout-content";
                         var link = element.appendChild(document.createElement("a"));
                         link.href = `/geojson/${annotation.data.id}`;
+                        link.target = "_blank"
                         link.textContent = `${annotation.data.name || ""} ${annotation.data.grade}`
                         
                         return element;
