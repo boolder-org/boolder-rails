@@ -8,6 +8,7 @@ gem 'bootsnap', '~> 1.7.0', require: false
 
 gem 'puma', '~> 4.3.4'
 gem 'pg', '~> 1.2.3'
+gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', '~> 6.0.1'
 
 gem 'turbo-rails', '~> 0.5.9'
