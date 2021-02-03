@@ -10,6 +10,7 @@ gem 'puma', '~> 4.3.4'
 gem 'pg', '~> 1.2.3'
 gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', '~> 7.0.1'
+gem 'aws-sdk-s3', '~> 1.88.0'
 
 gem 'turbo-rails', '~> 0.5.9'
 gem 'sass-rails', '>= 6'
