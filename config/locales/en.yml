@@ -1,13 +1,38 @@
 en:
   circuit:
     name:
-      white_for_kids: "White (kids)"
-      yellow: "Yellow"
-      orange: "Orange"
-      blue: "Blue"
-      skyblue: "Sky blue"
-      red: "Red"
-      white: "White"
-      black: "Black"
+      white_for_kids: White (kids)
+      yellow: Yellow
+      orange: Orange
+      blue: Blue
+      skyblue: Sky blue
+      red: Red
+      white: White
+      black: Black
   problem:
-    no_name: "No name"
+    no_name: No name
+    problems: Problems
+    level_x: Level %{level} 
+  layout:
+    title: Bouldering in Fontainebleau
+    nav:
+      open_menu: Open main menu
+      discover: Discover
+      areas: Areas
+      app: App
+  homepage:
+    title1: Your guide to bouldering
+    title2: in nature
+    subtitle: Discover the best areas for all levels
+    read_guide: Read the guide
+    download_app: Download the app
+  area:
+    see_more: Voir plus
+    problems_by_level: Problems by level
+    circuits: Circuits
+    most_popular: Most popular problems
+    problems_count: 
+      zero: "%{count} problem"
+      one: "%{count} problem"
+      other: "%{count} problems"
+    see_all_problems: See all problems

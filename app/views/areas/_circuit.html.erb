@@ -12,7 +12,7 @@
           <p class="text-sm font-medium text-gray-900 truncate"><%= circuit.name %></p>
           <p class="flex items-center text-sm text-gray-500">
             
-            <span class="truncate"><%= circuit.problems.count %> voies</span>
+            <span class="truncate"><%= t("area.problems_count", count: circuit.problems.count) %></span>
           </p>
         </div>
       </div>

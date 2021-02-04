@@ -13,14 +13,14 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
             | Against common knowledge, this area is actually pretty huge.
           p
             | There are more than 500 problems littered around the forest. The boulders are ... 
-            strong class="text-green-600" Voir plus
+            strong class="text-green-600"= t("area.see_more")
 
       div class="mb-8 mt-4 md:grid md:grid-cols-2 md:gap-6"
         div class="col-span-1"
 
           div class="mb-8 mt-4"
             div class="pb-5 border-b border-gray-200"
-              h3 class="text-xl leading-6 font-medium text-gray-900" Voies par niveau
+              h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.problems_by_level")
             div class="mt-8"
           
               = render "chart"
@@ -31,7 +31,7 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
         div class="col-span-1"
           div class="mb-8 mt-4"
             div class="pb-5 border-b border-gray-200"
-              h3 class="text-xl leading-6 font-medium text-gray-900" Circuits
+              h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.circuits")
             div class="mt-8"
               div class="bg-white shadow overflow-hidden sm:rounded-md"
                 ul class="divide-y divide-gray-200"
@@ -45,7 +45,7 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
 
       div class="mb-16 mt-4"
         div class="pb-5 border-b border-gray-200"
-          h3 class="text-xl leading-6 font-medium text-gray-900" Voies les plus populaires      
+          h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.most_popular")
      
         div class="mt-8 max-w-lg mx-auto grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:max-w-none"
           = render partial: "problems/problem", collection: @problems

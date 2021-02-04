@@ -3,7 +3,7 @@
   <% link_color = (level == params[:level]) ? "bg-green-100 text-green-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
   <% link_path = (level == params[:level]) ? area_problems_path : area_problems_path(level: level) %>
   <%= link_to link_path, class: link_color + " flex items-center px-3 py-2 text-sm font-medium rounded-md" do %>
-      <span class="truncate">Niveau <%= level %></span>
+      <span class="truncate"><%= t("problem.level_x", level: level) %></span>
       <% badge_color = (level == params[:level]) ? "bg-white" : "bg-gray-200 group-hover:bg-gray-300" %>
       <span class="<%= badge_color %> ml-auto inline-block py-0.5 px-3 text-xs rounded-full">
         <%= @area.problems.level(level.to_i).count %>

@@ -1,13 +1,38 @@
 fr:
   circuit:
     name:
-      white_for_kids: "Blanc (enfant)"
-      yellow: "Jaune"
-      orange: "Orange"
-      blue: "Bleu"
-      skyblue: "Bleu ciel"
-      red: "Rouge"
-      white: "Blanc"
-      black: "Noir"
+      white_for_kids: Blanc (enfant)
+      yellow: Jaune
+      orange: Orange
+      blue: Bleu
+      skyblue: Bleu ciel
+      red: Rouge
+      white: Blanc
+      black: Noir
   problem:
-    no_name: "Sans nom"
+    no_name: Sans nom
+    problems: Voies
+    level_x: Niveau %{level} 
+  layout:
+    title: Escalade de blocs à Fontainebleau
+    nav:
+      open_menu: Ouvrir le menu principal
+      discover: Découvrir
+      areas: Secteurs
+      app: Appli
+  homepage:
+    title1: Escalade de blocs
+    title2: en pleine nature
+    subtitle: Découvrez les meilleurs secteurs pour grimper, pour tous les niveaux.
+    read_guide: Lire le guide
+    download_app: Télécharger l'appli
+  area:
+    see_more: Voir plus
+    problems_by_level: Voies par niveau
+    circuits: Circuits
+    most_popular: Voies les plus populaires
+    problems_count: 
+      zero: "%{count} voie"
+      one: "%{count} voie"
+      other: "%{count} voies"
+    see_all_problems: Voir toutes les voies
