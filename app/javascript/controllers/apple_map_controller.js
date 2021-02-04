@@ -1,14 +1,14 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-	static targets = [ "map" ]
+  static targets = [ "map" ]
   static values = { 
     key: String, 
     language: String,
     geojson: String,
   }
 
-	connect() {
+  connect() {
     let language = this.hasLanguageValue ? this.languageValue : 'en'
     this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
 

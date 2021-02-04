@@ -7,9 +7,9 @@ namespace :geo do
     puts %w(problem_id circuit_color circuit_number distance error).join ";"
 
     Problem.where(area_id: area_id).map do |p|  
-			distance = p.topos.first&.location_from_metadata&.distance(p.location) || '-1'
+      distance = p.topos.first&.location_from_metadata&.distance(p.location) || '-1'
 
-			puts [p.id, p.circuit.color, p.circuit_number, distance, p.topos.first&.location_positioning_error_from_metadata].join(";")
-		end
+      puts [p.id, p.circuit.color, p.circuit_number, distance, p.topos.first&.location_positioning_error_from_metadata].join(";")
+    end
   end
 end

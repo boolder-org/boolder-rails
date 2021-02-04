@@ -1,11 +1,11 @@
 class AreasController < ApplicationController
   def index
-  	@areas = Area.all
+    @areas = Area.all
   end
 
   def show
-  	@area = Area.find(params[:id])
-  	@problems = @area.problems.order(Arel.sql('RANDOM()')).take(3)
+    @area = Area.find(params[:id])
+    @problems = @area.problems.order(Arel.sql('RANDOM()')).take(3)
 
     @parkings = @area.pois
 
@@ -17,13 +17,13 @@ class AreasController < ApplicationController
       glyphText: "",
     } 
 
-  	@chart_data = {
+    @chart_data = {
       labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
       datasets: [{
           label: 'problems',
           data: 1.upto(8).map{|i| @area.problems.level(i).count },
           backgroundColor: 'rgba(5, 150, 105, 0.4)',
-        	borderColor: 'rgba(5, 150, 105, 1)',
+          borderColor: 'rgba(5, 150, 105, 1)',
           borderWidth: 1
       }]
     }
@@ -34,24 +34,24 @@ class AreasController < ApplicationController
               ticks: {
                   beginAtZero: true,
                   max: 150,
-	                stepSize: 50,
+                  stepSize: 50,
               },
               # display: false,
               gridLines: {
-              	color: "rgba(200, 200, 200, 0.3)",
+                color: "rgba(200, 200, 200, 0.3)",
               }
           }],
           xAxes: [{
-          	gridLines: {
-          		display: false,
-          	}
+            gridLines: {
+              display: false,
+            }
           }]
       },
       legend: {
-      	display: false
+        display: false
       },
       tooltips: {
-      	enabled: false
+        enabled: false
       },
     }
   end

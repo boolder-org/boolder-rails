@@ -1,14 +1,14 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-	static targets = [ "svg", "image", "circle" ]
+  static targets = [ "svg", "image", "circle" ]
   static values = { 
     coordinates: Array,
     color: String,
     strokeWidth: String,
   }
 
-	connect() {
+  connect() {
     var image = this.imageTarget
     var self = this
 

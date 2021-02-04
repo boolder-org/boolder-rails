@@ -14,12 +14,12 @@ div data-controller="topo-editor"
     canvas data-topo-editor-target="canvas" data-action="click->topo-editor#createPoint" style="position:relative;z-index:20;"
 
   div class="my-3"
-	  = form_with model: [:admin, @line], data: {"topo-editor-target": "form"} do |form|
-	    div class="my-3"
-	      = form.label :coordinates
-	      = form.text_area :coordinates, rows: "4", data: {"topo-editor-target": 'textarea'}, value: @line.coordinates.to_json
+    = form_with model: [:admin, @line], data: {"topo-editor-target": "form"} do |form|
+      div class="my-3"
+        = form.label :coordinates
+        = form.text_area :coordinates, rows: "4", data: {"topo-editor-target": 'textarea'}, value: @line.coordinates.to_json
 
-	    div class="my-3"
-	    	= form.submit("Save", class: "btn")
+      div class="my-3"
+        = form.submit("Save", class: "btn")
       
 div style="margin-bottom: 300px"

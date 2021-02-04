@@ -8,25 +8,25 @@ class Admin::ImportsController < Admin::BaseController
 
     save = (params[:commit] == "Import")
 
-  	data = RGeo::GeoJSON.decode(params[:import][:geojson].read)
-  	problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
+    data = RGeo::GeoJSON.decode(params[:import][:geojson].read)
+    problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
     boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::LineStringImpl) }
 
-  	@objects = []
+    @objects = []
 
     ActiveRecord::Base.transaction do
-    	problem_features.each do |feature|
+      problem_features.each do |feature|
 
         if feature["problemId"].present?
-        	problem = Problem.find_by(id: feature["problemId"])
+          problem = Problem.find_by(id: feature["problemId"])
           raise "wrong area for problem #{problem.id}: #{problem.area_id} instead of #{area_id}" if (problem.area_id != area_id.to_i)
         else
-        	problem = Problem.new
+          problem = Problem.new
         end
 
         problem.assign_attributes(
           area_id: area_id,
-        	location: FACTORY.point(feature.geometry.x, feature.geometry.y),
+          location: FACTORY.point(feature.geometry.x, feature.geometry.y),
         )
 
         problem.save! if save

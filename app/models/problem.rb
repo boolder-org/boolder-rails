@@ -21,7 +21,7 @@ class Problem < ApplicationRecord
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
 
   %i(yellow orange blue skyblue red white).each do |color|
-  	scope color, -> { joins(:circuit).where(circuits: { color: color }) }	
+    scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
   end
 
   scope :area, -> (area_id){ where(area_id: area_id) } 
