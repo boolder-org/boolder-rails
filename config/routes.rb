@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     resources :circuits, only: [:show]
 
     # apple maps redirect (apple_map_controller.js)
-    get '/geojson/problem_:id', to: redirect('/problems/%{id}')
+    get '/geojson/problem_:id', to: redirect("/%{locale}/problems/%{id}")
   end
 
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized

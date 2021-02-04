@@ -6,6 +6,7 @@ export default class extends Controller {
     key: String, 
     language: String,
     geojson: String,
+    redirect: String,
   }
 
   connect() {
@@ -13,7 +14,7 @@ export default class extends Controller {
     this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
 
     this.setupMap()
-    this.loadGeoJSON(this.geojsonValue)
+    this.loadGeoJSON(this.geojsonValue, this.redirectValue)
   }
 
   disconnect() {
@@ -38,7 +39,7 @@ export default class extends Controller {
     });
   }
 
-  loadGeoJSON(file) {
+  loadGeoJSON(file, redirect) {
     var map = this.map
 
     mapkit.importGeoJSON(file, {
@@ -76,7 +77,7 @@ export default class extends Controller {
                         var element = document.createElement("div");
                         element.className = "problem-callout-content";
                         var link = element.appendChild(document.createElement("a"));
-                        link.href = `/geojson/${annotation.data.id}`;
+                        link.href = redirect + annotation.data.id;
                         link.target = "_blank"
                         link.textContent = `${annotation.data.name || ""} ${annotation.data.grade}`
                         
