@@ -32,6 +32,16 @@ class Problem < ApplicationRecord
 
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
 
+  def name_with_fallback
+    if name.present?
+      name
+    elsif circuit_number.present? && circuit.id
+      circuit.name + " " + circuit_number
+    else
+      I18n.t("problem.no_name")
+    end 
+  end
+
   def enumerable_circuit_number
     if circuit_number.present?
       circuit_number.to_i + (circuit_number.include?('b') ? 0.5 : 0)

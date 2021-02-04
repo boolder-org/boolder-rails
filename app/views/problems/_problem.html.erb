@@ -15,7 +15,7 @@
     <div class="flex-1 flex justify-between w-full">
       <div>
         <%= circle_view(problem) %>
-        <span class="ml-2 font-medium"><%= problem.name %></span>
+        <span class="ml-2 font-medium"><%= problem.name_with_fallback %></span>
       </div>
       <div class="text-gray-500 ml-1">
         <%= problem.grade %>
