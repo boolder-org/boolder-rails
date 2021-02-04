@@ -7,13 +7,12 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
 
   div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6"
     div class="col-span-2"
-      - @problem.lines.published.take(1).each do |line|
-        <div class="relative" data-controller="topo-line" data-action="turbo:before-cache@window->topo-line#hidePath" data-topo-line-coordinates-value="#{line.coordinates.to_json}" data-topo-line-color-value="#{uicolor(line.problem.circuit&.color)}">
-          = image_tag(line.topo.photo.variant(resize_to_limit: [800, 800]), data: {'topo-line-target': 'image'}, class: "w-full object-cover rounded-lg")
-          div class="absolute top-0 left-0 w-full"
-            svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"
-          <div class="absolute" style="left:#{line.coordinates.first['x']*100}%; top: #{line.coordinates.first['y']*100}%">
-            div class="relative hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle"
-              = circle_view(@problem)
+      - if @line
+        = render 'topo_with_line', line: @line
+      - else
+        div class="w-full aspect-w-4 aspect-h-3 bg-gray-300 rounded-lg"
+          div class="flex flex-wrap justify-center content-center"
+            span class="text-gray-400"
+              = render 'svg/nophoto'
 
     div class="col-span-1"
