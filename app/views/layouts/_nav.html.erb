@@ -9,7 +9,7 @@
             <%= image_tag 'logo-text.svg', class: "hidden lg:block h-8 w-auto", alt:"Boolder" %>
           <% end %>
         </div>
-        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+        <div class="ml-6 flex space-x-8">
           <!-- Current: "border-green-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
           <%= link_to guide_path, class: "inline-flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" do %>
             <%= t("layout.nav.discover") %>
@@ -21,31 +21,6 @@
             <%= t("layout.nav.app") %>
           <% end %>
         </div>
-      </div>
-
-      <div class="flex items-center sm:hidden">
-        <!-- Mobile menu button -->
-        <button class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500" aria-expanded="false">
-          <span class="sr-only"><%= t("layout.nav.open_menu") %></span>
-          <!-- Icon when menu is closed. -->
-          <!--
-            Heroicon name: menu
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <!-- Icon when menu is open. -->
-          <!--
-            Heroicon name: x
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
       </div>
     </div>
   </div>
