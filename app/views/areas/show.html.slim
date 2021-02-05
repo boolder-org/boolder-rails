@@ -5,15 +5,9 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
   div class="md:grid md:grid-cols-3 md:gap-6"
     div class="col-span-2"
 
-      div class="mb-12"
+      div class="mb-8"
         div class="rounded-lg overflow-hidden"
           = image_tag("areas/rocher-canon-1.jpg", class: "h-96 sm:h-64 w-full object-cover")
-        div class="my-4"  
-          p
-            | Against common knowledge, this area is actually pretty huge.
-          p
-            | There are more than 500 problems littered around the forest. The boulders are ... 
-            strong class="text-green-600"= t("area.see_more")
 
       div class="mb-8 mt-4 md:grid md:grid-cols-2 md:gap-6"
         div class="col-span-1"
@@ -39,9 +33,26 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
                     li
                       = render "circuit", circuit: circuit
 
-      div class="mb-16 mt-4"
+      div class="mb-8 mt-4"
         = render "map"
         = render "access"
+
+
+      - if @area.id == 1 && I18n.locale == :fr
+        div class="col-span-1"
+          div class="mb-16 mt-4"
+            div class="pb-5 border-b border-gray-200"
+              h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.tips")
+            div class="mt-8"
+              div class="my-4 prose max-w-full" data-controller="reveal"
+                p 
+                  | Rocher Canon est un secteur relativement vaste, avec de nombreux blocs pour tous les niveaux. 
+                p 
+                  | Il est facile d'accès depuis la gare de Bois-le-Roi en vélo (~10 min) ou même à pied (~30 min), ce qui le rend assez fréquenté.
+                p 
+                  | Le terrain est assez "valloné", il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (par exemple via l'appli Boolder).
+                p 
+                  | Attention à ne pas confondre les différents marquages bleus : il existe un circuit bleu, un circuit bleu ciel, et un circuit de randonnée. Vérifiez bien de quel bleu il s'agit quand vous vous orientez ;)
 
       div class="mb-16 mt-4"
         div class="pb-5 border-b border-gray-200"
