@@ -10,3 +10,6 @@ application.load(definitionsFromContext(context))
 
 import Chart from "stimulus-chartjs"
 application.register("chart", Chart)
+
+import { Tabs } from "tailwindcss-stimulus-components"
+application.register('tabs', Tabs)
