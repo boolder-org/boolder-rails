@@ -6,9 +6,6 @@ class AreasController < ApplicationController
     @intermediate_areas = Area.all.map{|a| [a, a.problems.where("grade >= '4a' AND grade < '6a'").count ]}.sort_by(&:second).reverse
     @advanced_areas = Area.all.map{|a| [a, a.problems.where("grade >= '6a'").count ]}.sort_by(&:second).reverse
 
-    @area = @areas.first
-    @parkings = @area.pois
-
     @annotations = @areas.map do |area| 
       {
         latitude: area.pois.first&.location&.latitude,
