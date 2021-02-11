@@ -11,8 +11,10 @@ Rails.application.routes.draw do
 
     get 'guide', to: "guide#index"
 
-    resources :areas, only: [:index, :show] do 
-      resources :problems, only: [:index]
+    scope 'fontainebleau' do
+      resources :areas, only: [:index, :show] do 
+        resources :problems, only: [:index]
+      end
     end
 
     resources :problems, only: [:show]
