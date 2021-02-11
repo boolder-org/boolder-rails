@@ -1,5 +1,14 @@
 div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
-  h1 class="text-4xl font-bold my-4" Fontainebleau
+  h1 class="text-4xl font-bold mb-8" Fontainebleau
 
-  - @areas.each do |area|
-    div= link_to area.name, area
+  div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
+    - @areas.each do |area|
+      = link_to area_path(area) do
+        = image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg"
+
+
+  div class="my-16"
+    = render "areas/index/map"
+
+  h2 class="mt-8 mb-4 text-2xl font-semi"= t("area.top_areas_by_level")
+  = render "areas/index/levels"

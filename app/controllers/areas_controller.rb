@@ -1,6 +1,20 @@
 class AreasController < ApplicationController
   def index
-    @areas = Area.all
+    @areas = Area.order(:name).all
+
+    @beginner_areas = Area.all.map{|a| [a, a.problems.where("grade < '4a'").count ]}.sort_by(&:second).reverse
+    @intermediate_areas = Area.all.map{|a| [a, a.problems.where("grade >= '4a' AND grade < '6a'").count ]}.sort_by(&:second).reverse
+    @advanced_areas = Area.all.map{|a| [a, a.problems.where("grade >= '6a'").count ]}.sort_by(&:second).reverse
+
+    @annotations = @areas.map do |area| 
+      {
+        latitude: area.pois.first&.location&.latitude,
+        longitude: area.pois.first&.location&.longitude,
+        color: "#059669",
+        title: area.name,
+        glyphText: "",
+      } 
+    end
   end
 
   def show

@@ -1,0 +1,48 @@
+<div data-controller="tabs" data-tabs-active-tab="border-green-500 text-green-600" data-tabs-inactive-tab="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+  <div class="block">
+    <div class="border-b border-gray-200">
+      <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+        <a href="#" class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" aria-current="page" data-tabs-target="tab" data-action="click->tabs#change">
+          <%= t("area.level.beginner") %>
+        </a>
+        <a href="#" class=" whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-tabs-target="tab" data-action="click->tabs#change">
+          <%= t("area.level.intermediate") %>
+        </a>
+        <a href="#" class=" whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-tabs-target="tab" data-action="click->tabs#change">
+          <%= t("area.level.advanced") %>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="hidden py-4" data-tabs-target="panel">
+    <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none">
+      <% @beginner_areas.take(3).each do |area, count| %>
+        <%= link_to area_path(area) do %>
+          <%= image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg" %>
+          <div class="mt-2 text-gray-400"><%= t("area.level.problems_count_for_beginner", count: count) %></div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div class="hidden py-4" data-tabs-target="panel">
+    <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none">
+      <% @intermediate_areas.take(3).each do |area, count| %>
+        <%= link_to area_path(area) do %>
+          <%= image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg" %>
+          <div class="mt-2 text-gray-400"><%= t("area.level.problems_count", count: count, level_min: "4a", level_max: "5c+") %></div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+  <div class="hidden py-4" data-tabs-target="panel">
+    <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none">
+      <% @advanced_areas.take(3).each do |area, count| %>
+        <%= link_to area_path(area) do %>
+          <%= image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg" %>
+          <div class="mt-2 text-gray-400"><%= t("area.level.problems_count", count: count, level_min: "6a", level_max: "8c+") %></div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

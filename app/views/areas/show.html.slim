@@ -17,10 +17,10 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
               h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.problems_by_level")
             div class="mt-8"
           
-              = render "chart"
+              = render "areas/show/chart"
               div class="bg-white shadow overflow-hidden sm:rounded-md mt-8"
                 ul class="divide-y divide-gray-200"
-                  = render "level"
+                  = render "areas/show/level"
 
         div class="col-span-1"
           div class="mb-8 mt-4"
@@ -31,11 +31,11 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
                 ul class="divide-y divide-gray-200"
                   - @area.circuits.each do |circuit|
                     li
-                      = render "circuit", circuit: circuit
+                      = render "areas/show/circuit", circuit: circuit
 
       div class="mb-8 mt-4"
-        = render "map"
-        = render "access"
+        = render "areas/show/map"
+        = render "areas/show/access"
 
 
       - if @area.id == 1 && I18n.locale == :fr
