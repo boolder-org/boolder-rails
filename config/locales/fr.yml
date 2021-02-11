@@ -35,6 +35,8 @@ fr:
       one: "%{count} voie"
       other: "%{count} voies"
     see_all_problems: Voir toutes les voies
+    train_station: "Gare %{name}"
+    train_station_generic: "Gare"
     top_areas_by_level: Top secteurs par niveau
     level:
       beginner: Débutant
