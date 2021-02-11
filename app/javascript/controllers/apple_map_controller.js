@@ -50,7 +50,6 @@ export default class extends Controller {
       delete poiHash['latitude']; delete poiHash['longitude']; 
       return new MarkerAnnotation(coord, poiHash)
     });
-    // this.map.addAnnotations(pois);
 
     // annotations
     var annotations = annotationsHash.map(function (annotationHash) {
@@ -58,7 +57,6 @@ export default class extends Controller {
       delete annotationHash['latitude']; delete annotationHash['longitude']; 
       return new MarkerAnnotation(coord, annotationHash)
     });
-    // this.map.addAnnotations(annotations);
 
     this.map.showItems(pois.concat(annotations));
   }
