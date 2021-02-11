@@ -36,3 +36,15 @@ en:
       other: "%{count} problems"
     see_all_problems: See all problems
     top_areas_by_level: Top areas by level
+    level:
+      beginner: Beginner
+      intermediate: Intermediate
+      advanced: Advanced
+      problems_count:
+        zero: "%{count} problem between %{level_min} and %{level_max}"
+        one: "%{count} problem between %{level_min} and %{level_max}"
+        other: "%{count} problems between %{level_min} and %{level_max}"
+      problems_count_for_beginner: 
+        zero: "%{count} problem for beginners"
+        one: "%{count} problem for beginners"
+        other: "%{count} problems for beginners"

@@ -36,3 +36,15 @@ fr:
       other: "%{count} voies"
     see_all_problems: Voir toutes les voies
     top_areas_by_level: Top secteurs par niveau
+    level:
+      beginner: Débutant
+      intermediate: Intermédiaire
+      advanced: Avancé
+      problems_count:
+        zero: "%{count} voie entre %{level_min} et %{level_max}"
+        one: "%{count} voie entre %{level_min} et %{level_max}"
+        other: "%{count} voies entre %{level_min} et %{level_max}"
+      problems_count_for_beginner: 
+        zero: "%{count} voie de niveau débutant"
+        one: "%{count} voie de niveau débutant"
+        other: "%{count} voies de niveau débutant"
