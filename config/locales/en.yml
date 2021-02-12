@@ -23,7 +23,7 @@ en:
   homepage:
     title1: Your guide to bouldering
     title2: in nature
-    subtitle: Discover the best areas for all levels
+    subtitle: Discover thousands of problems & circuits for all levels.
     read_guide: Read the guide
     download_app: Download the app
   area:
@@ -40,8 +40,8 @@ en:
     top_areas_by_level: Top areas by level
     level:
       beginner: Beginner
-      intermediate: Intermediate
-      advanced: Advanced
+      intermediate: Between 4 and 6
+      advanced: Between 6 and 8
       problems_count:
         zero: "%{count} problem between %{level_min} and %{level_max}"
         one: "%{count} problem between %{level_min} and %{level_max}"
@@ -50,3 +50,16 @@ en:
         zero: "%{count} problem for beginners"
         one: "%{count} problem for beginners"
         other: "%{count} problems for beginners"
+  app_landing:
+    title: The bouldering guide that fits in your pocket
+    subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
+    selling_points:
+      map:
+        title: Interactive map and geolocation
+        subtitle: Find your way in the forest thanks to the GPS and the compass.
+      photos:
+        title: Thousands of problems with photos
+        subtitle: Find problems that match your taste.
+      offline:
+        title: Offline mode
+        subtitle: The app woks even in airplane mode.

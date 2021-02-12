@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     resources :problems, only: [:show]
     resources :circuits, only: [:show]
 
+    get 'app', to: 'pages#app', as: :app
+
     # apple maps redirect (apple_map_controller.js)
     get '/geojson/problem_:id', to: redirect("/%{locale}/problems/%{id}")
 
