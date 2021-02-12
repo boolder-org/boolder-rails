@@ -63,14 +63,14 @@
                 Mode hors-ligne
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                L'appli fonctionne même si vous passez en mode avion.
+                L'appli fonctionne même en mode avion.
               </dd>
             </div>
           </div>
 
 
           <div class="flex justify-center py-8">
-          <%= link_to "#" do %>
+          <%= link_to "https://apps.apple.com/#{I18n.locale == :en ? "us" : "fr"}/app/boolder/id1506614493#?platform=iphone" do %>
             <%= render 'svg/app_store_badge', height: 40*2, width: 126.5*2 %>
           <% end %>
         </div>
@@ -82,9 +82,7 @@
           <div class="relative">
             
 
-            <video autoplay loop muted width="301" src="/videos/demo.en.mov" class="absolute bg-gray-900 h-full" style="top:15px; left:18px; height: 648px">
-
-                <%= image_tag 'app-screenshot.png', class: "relative mx-auto", width: "300" %>
+            <video autoplay loop muted width="301" src="/videos/app-demo.<%= I18n.locale %>.mov" class="absolute bg-gray-900 h-full" style="top:15px; left:18px; height: 648px">
             </video>
 
             <%= image_tag 'iphone-frame.png', class: "relative mx-auto absolute top-0 left-0", width: "336" %>
