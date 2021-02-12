@@ -27,7 +27,7 @@ en:
     title1: Your guide to bouldering
     title2: in nature
     subtitle: Discover thousands of problems & circuits for all levels.
-    read_guide: Read the guide
+    read_guide: Read the beginner's guide
     download_app: Download the app
   area:
     problems_by_level: Problems by level
@@ -43,8 +43,8 @@ en:
     top_areas_by_level: Top areas by level
     level:
       beginner: Beginner
-      intermediate: Between 4 and 6
-      advanced: Between 6 and 8
+      intermediate: From 4 to 6
+      advanced: From 6 to 8
       problems_count:
         zero: "%{count} problem between %{level_min} and %{level_max}"
         one: "%{count} problem between %{level_min} and %{level_max}"

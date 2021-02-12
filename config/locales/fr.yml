@@ -27,7 +27,7 @@ fr:
     title1: L'escalade de blocs
     title2: en pleine nature
     subtitle: Découvrez des milliers de blocs et circuits pour tous les niveaux.
-    read_guide: Lire le guide
+    read_guide: Lire le guide du débutant
     download_app: Télécharger l'appli
   area:
     problems_by_level: Voies par niveau
@@ -43,8 +43,8 @@ fr:
     top_areas_by_level: Top secteurs par niveau
     level:
       beginner: Débutant
-      intermediate: Entre 4 et 6
-      advanced: Entre 6 et 8
+      intermediate: De 4 à 6
+      advanced: De 6 à 8
       problems_count:
         zero: "%{count} voie entre %{level_min} et %{level_max}"
         one: "%{count} voie entre %{level_min} et %{level_max}"
