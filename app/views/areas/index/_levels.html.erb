@@ -20,7 +20,7 @@
       <% @beginner_areas.take(3).each do |area, count| %>
         <%= link_to area_path(area) do %>
           <%= image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg" %>
-          <div class="mt-2 text-gray-400"><%= t("area.level.problems_count_for_beginner", count: count) %></div>
+          <div class="mt-2 text-gray-400"><%= t("area.level.problems_count", count: count, level_min: "1a", level_max: "3c+") %></div>
         <% end %>
       <% end %>
     </div>

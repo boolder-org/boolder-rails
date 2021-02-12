@@ -44,16 +44,12 @@ en:
     top_areas_by_level: Top areas by level
     level:
       beginner: Beginner
-      intermediate: From 4 to 6
-      advanced: From 6 to 8
+      intermediate: Intermediate
+      advanced: Advanced
       problems_count:
         zero: "%{count} problem between %{level_min} and %{level_max}"
         one: "%{count} problem between %{level_min} and %{level_max}"
         other: "%{count} problems between %{level_min} and %{level_max}"
-      problems_count_for_beginner: 
-        zero: "%{count} problem for beginners"
-        one: "%{count} problem for beginners"
-        other: "%{count} problems for beginners"
   app_landing:
     title: The bouldering guide that fits in your pocket
     subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
