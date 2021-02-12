@@ -23,7 +23,7 @@ fr:
   homepage:
     title1: Escalade de blocs
     title2: en pleine nature
-    subtitle: Découvrez les meilleurs secteurs pour grimper, pour tous les niveaux.
+    subtitle: Découvrez les meilleurs secteurs pour grimper.
     read_guide: Lire le guide
     download_app: Télécharger l'appli
   area:
@@ -40,8 +40,8 @@ fr:
     top_areas_by_level: Top secteurs par niveau
     level:
       beginner: Débutant
-      intermediate: Intermédiaire
-      advanced: Avancé
+      intermediate: Entre 4 et 6
+      advanced: Entre 6 et 8
       problems_count:
         zero: "%{count} voie entre %{level_min} et %{level_max}"
         one: "%{count} voie entre %{level_min} et %{level_max}"

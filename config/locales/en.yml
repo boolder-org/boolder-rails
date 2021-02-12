@@ -23,7 +23,7 @@ en:
   homepage:
     title1: Your guide to bouldering
     title2: in nature
-    subtitle: Discover the best areas for all levels
+    subtitle: Discover the best climbing areas.
     read_guide: Read the guide
     download_app: Download the app
   area:
@@ -40,8 +40,8 @@ en:
     top_areas_by_level: Top areas by level
     level:
       beginner: Beginner
-      intermediate: Intermediate
-      advanced: Advanced
+      intermediate: Between 4 and 6
+      advanced: Between 6 and 8
       problems_count:
         zero: "%{count} problem between %{level_min} and %{level_max}"
         one: "%{count} problem between %{level_min} and %{level_max}"
