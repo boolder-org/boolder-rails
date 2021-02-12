@@ -33,6 +33,30 @@
   </div>
 </div>
 
-<div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-  
+<div class="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
+
+  <h2 class="text-2xl font-bold text-gray-900"><%= t("homepage.areas_for_beginners") %></h2>
+
+  <div class="py-4" data-tabs-target="panel">
+    <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none">
+      <% @beginner_areas.take(3).each do |area, count| %>
+        <%= link_to area_path(area) do %>
+          <%= image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg" %>
+          <div class="mt-2 text-gray-400"><%= t("area.level.problems_count_for_beginner", count: count) %></div>
+        <% end %>
+      <% end %>
+      
+      <a href="<%= areas_path %>" class="place-self-center">
+        <div class="text-green-500 flex space-x-2">
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 ">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <div><%= t("homepage.all_areas") %></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
 </div>

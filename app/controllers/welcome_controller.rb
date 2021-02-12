@@ -9,6 +9,8 @@ class WelcomeController < ApplicationController
       session[:beta] = nil
     end
     puts "session beta : #{session[:beta]}"
+
+    @beginner_areas = Area.all.map{|a| [a, a.problems.where("grade < '4a'").count ]}.sort_by(&:second).reverse
   end
 
   def root
