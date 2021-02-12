@@ -19,7 +19,7 @@ class AreasController < ApplicationController
 
   def show
     @area = Area.find(params[:id])
-    @problems = @area.problems.order(Arel.sql('RANDOM()')).take(3)
+    @problems = @area.problems.joins(:topos).order(Arel.sql('RANDOM()')).take(3)
 
     @parkings = @area.pois
 
