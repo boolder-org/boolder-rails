@@ -3,11 +3,11 @@
 
     <div class="relative my-12 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
       <div class="relative">
-        <h3 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mt-8">
-            Le topo qui tient dans votre poche.
-          </h3>
+        <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mt-8">
+            <%= t("app_landing.title") %>
+          </h1>
         <p class="mt-3 text-lg text-gray-500">
-          L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :
+          <%= t("app_landing.subtitle") %>
         </p>
 
         <dl class="mt-10 space-y-10">
@@ -23,10 +23,10 @@
             </div>
             <div class="ml-4">
               <dt class="text-lg leading-6 font-medium text-gray-900">
-                Carte géolocalisée
+                <%= t("app_landing.selling_points.map.title") %>
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                Repérez-vous facilement dans la forêt grâce au GPS et à la boussole.
+                <%= t("app_landing.selling_points.map.subtitle") %>
               </dd>
             </div>
           </div>
@@ -42,10 +42,10 @@
             </div>
             <div class="ml-4">
               <dt class="text-lg leading-6 font-medium text-gray-900">
-                Des milliers de voies avec photos
+                <%= t("app_landing.selling_points.photos.title") %>
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                Trouvez facilement les voies qui vous conviennent.
+                <%= t("app_landing.selling_points.photos.subtitle") %>
               </dd>
             </div>
           </div>
@@ -60,10 +60,10 @@
             </div>
             <div class="ml-4">
               <dt class="text-lg leading-6 font-medium text-gray-900">
-                Mode hors-ligne
+                <%= t("app_landing.selling_points.offline.title") %>
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                L'appli fonctionne même en mode avion.
+                <%= t("app_landing.selling_points.offline.subtitle") %>
               </dd>
             </div>
           </div>

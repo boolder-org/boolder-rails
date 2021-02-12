@@ -50,3 +50,16 @@ en:
         zero: "%{count} problem for beginners"
         one: "%{count} problem for beginners"
         other: "%{count} problems for beginners"
+  app_landing:
+    title: The bouldering guide that fits in your pocket
+    subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
+    selling_points:
+      map:
+        title: Interactive map and geolocation
+        subtitle: Find your way in the forest thanks to the GPS and the compass.
+      photos:
+        title: Thousands of problems with photos
+        subtitle: Find problems that match your taste.
+      offline:
+        title: Offline mode
+        subtitle: The app woks even in airplane mode.

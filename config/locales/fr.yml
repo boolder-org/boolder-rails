@@ -50,3 +50,17 @@ fr:
         zero: "%{count} voie de niveau débutant"
         one: "%{count} voie de niveau débutant"
         other: "%{count} voies de niveau débutant"
+  app_landing:
+    title: Le topo qui tient dans votre poche.
+    subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"
+    selling_points:
+      map:
+        title: Carte géolocalisée
+        subtitle: Repérez-vous facilement dans la forêt grâce au GPS et à la boussole.
+      photos:
+        title: Des milliers de voies avec photos
+        subtitle: Trouvez facilement les voies qui vous conviennent.
+      offline:
+        title: Mode hors-ligne
+        subtitle: L'appli fonctionne même en mode avion.
+    
