@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     resources :circuits, only: [:show]
 
     get 'app', to: 'pages#app', as: :app
+    get 'privacy', to: 'pages#privacy', as: :privacy
 
     # apple maps redirect (apple_map_controller.js)
     get '/geojson/problem_:id', to: redirect("/%{locale}/problems/%{id}")

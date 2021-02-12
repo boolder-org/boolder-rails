@@ -14,8 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body class="bg-gray-100">
-    <%= render "layouts/nav" %>
-    <%= yield %>
-  </body>
+  <body class="bg-white">
+    <div class="bg-gray-100">
+      <%= render "layouts/nav" %>
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </body>
+  </div>
 </html>
