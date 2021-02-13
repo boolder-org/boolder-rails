@@ -14,7 +14,6 @@ en:
     problems: Problems
     level_x: Level %{level} 
   layout:
-    title: Bouldering in Fontainebleau
     nav:
       open_menu: Open main menu
       discover: Discover
@@ -63,3 +62,29 @@ en:
       offline:
         title: Offline mode
         subtitle: The app woks even in airplane mode.
+  meta_tags:
+    welcome:
+      index:
+        title: Bouldering in Fontainebleau
+        description: Discover thousands of problems & circuits for all levels.
+        keywords: climb, climbing, boulder, bouldering, font, fontainebleau, topo, guide
+    areas:
+      index:
+        title: Areas in Fontainebleau
+        description: Discover the best areas to climb in Fontainebleau
+    circuits:
+      show:
+        title: "%{circuit} circuit in %{area}"
+    pages:
+      privacy:
+        title: Privacy
+      app:
+        title: iPhone app
+        description: The bouldering guide that fits in your pocket
+        keywords: application, app, iphone, ios, download, store, android
+    problems:
+      index:
+        title: Problems in %{area}
+      show: 
+        title: "%{problem} - %{area}"
+    

@@ -1,3 +1,5 @@
+- set_meta_tags title: t("meta_tags.circuits.show.title", circuit: @circuit.name, area: @circuit.area.name)
+
 div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
 
   = link_to @circuit.area.name, area_path(@circuit.area), class: "text-sm font-medium text-gray-500 hover:text-gray-700"

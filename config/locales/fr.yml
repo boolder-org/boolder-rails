@@ -14,7 +14,6 @@ fr:
     problems: Voies
     level_x: Niveau %{level} 
   layout:
-    title: Escalade de blocs à Fontainebleau
     nav:
       open_menu: Ouvrir le menu principal
       discover: Découvrir
@@ -63,4 +62,29 @@ fr:
       offline:
         title: Mode hors-ligne
         subtitle: L'appli fonctionne même en mode avion.
+  meta_tags:
+    welcome:
+      index:
+        title: Escalade de blocs à Fontainebleau
+        description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
+        keywords: escalade, bloc, fontainebleau, grimpe, topo
+    areas:
+      index:
+        title: Secteurs à Fontainebleau
+        description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau
+    circuits:
+      show:
+        title: "Circuit %{circuit} à %{area}"
+    pages:
+      privacy:
+        title: Confidentialité
+      app:
+        title: Appli iPhone
+        description: Le topo d'escalade qui tient dans votre poche
+        keywords: appli, app, iphone, ios, télécharger, store, android
+    problems:
+      index:
+        title: Voies à %{area}
+      show: 
+        title: "%{problem} - %{area}"
     
