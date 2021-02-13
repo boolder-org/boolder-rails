@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   default_form_builder DefaultFormBuilder
   around_action :switch_locale
   before_action :beta_blocker
+  before_action :set_alternate_tags
 
   def default_url_options
     { locale: I18n.locale }
@@ -14,5 +15,12 @@ class ApplicationController < ActionController::Base
 
   def beta_blocker
     redirect_to soon_path unless (session[:beta] == "true" || params[:beta] == "true")
+  end
+
+  def set_alternate_tags
+    set_meta_tags alternate: { 
+      "fr" => request.env['PATH_INFO'].sub("/#{I18n.locale}", '/fr'),
+      "en" => request.env['PATH_INFO'].sub("/#{I18n.locale}", '/en') 
+    }
   end
 end
