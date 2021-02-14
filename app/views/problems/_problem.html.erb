@@ -4,8 +4,8 @@
     <% if line = problem.lines.published.first %>
       <%= image_tag(line.topo.photo.variant(resize_to_limit: [400, 400]), class: "h-96 sm:h-48 w-full object-cover", loading: "lazy") %>
     <% else %>
-      <div class="text-gray-400 h-96 sm:h-48 w-full object-cover">
-        <div class="flex flex-wrap justify-center content-center h-96 sm:h-48">
+      <div class="text-gray-400 h-64 sm:h-48 w-full object-cover">
+        <div class="flex flex-wrap justify-center content-center h-64 sm:h-48">
           <%= render 'svg/nophoto', width: 49, height: 49 %>
         </div>
       </div>
