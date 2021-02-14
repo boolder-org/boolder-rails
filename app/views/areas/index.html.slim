@@ -1,7 +1,7 @@
 - set_meta_tags title: t("meta_tags.areas.index.title"),
                 description: t("meta_tags.areas.index.description")
 
-div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
+div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
   h1 class="text-4xl font-bold mb-8" Fontainebleau
 
   div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
@@ -9,9 +9,10 @@ div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
       = link_to area_path(area) do
         = image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg"
 
-
-  div class="my-16"
+div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
+  div class="my-4"
     = render "areas/index/map"
 
-  h2 class="mt-8 mb-4 text-2xl font-semi"= t("area.top_areas_by_level")
+div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
+  h2 class="text-2xl font-semi"= t("area.top_areas_by_level")
   = render "areas/index/levels"

@@ -1,16 +1,16 @@
 - set_meta_tags title: t("meta_tags.circuits.show.title", circuit: @circuit.name, area: @circuit.area.name)
 
-div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8"
+div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
 
   = link_to @circuit.area.name, area_path(@circuit.area), class: "text-sm font-medium text-gray-500 hover:text-gray-700"
-  h1 class="mb-4 text-4xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" Circuits
+  h1 class="mb-4 text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate" Circuits
 
   = turbo_frame_tag "problems" do
 
     div class="md:grid md:grid-cols-4 md:gap-5"
       div class="col-span-1"
     
-        nav class="space-y-1" aria-label="Circuits"
+        nav class="space-y-1 mb-8" aria-label="Circuits"
           - @circuit.area.circuits.each do |circuit|
             = link_to circuit_path(circuit), class: (circuit.id == @circuit.id) ? "bg-green-100 text-green-700 flex items-center px-3 py-2 text-sm font-medium rounded-md" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md" do
               span class="truncate"= circuit.name
