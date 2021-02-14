@@ -9,7 +9,11 @@ Rails.application.routes.draw do
       root 'problems#index'
     end
 
-    get 'guide', to: "guide#index"
+    scope "articles" do
+      get 'equipment', to: "articles#equipment", as: :equipment
+      get 'choose-area', to: "articles#choose_area", as: :choose_area
+      root to: "articles#index", as: :articles
+    end
 
     scope 'fontainebleau' do
       resources :areas, only: [:index, :show] do 
