@@ -1,6 +1,6 @@
 class Admin::ProblemImportsController < Admin::BaseController
   def create
-    params[:import][:json].each do |file|
+    params[:import][:json].sort_by{|file| file.original_filename }.each do |file|
       hash = JSON.parse(file.read)
       problem = Problem.find hash["problemId"]
 
@@ -13,6 +13,6 @@ class Admin::ProblemImportsController < Admin::BaseController
     end
 
     flash[:notice] = "#{params[:import][:json].count} problems updated"
-    redirect_to admin_problem_imports_path
+    redirect_to new_admin_problem_import_path
   end
 end
