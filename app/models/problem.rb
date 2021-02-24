@@ -16,9 +16,13 @@ class Problem < ApplicationRecord
     8a 8a+ 8b 8b+ 8c 8c+ 
     9a 9a+ 9b 9b+ 9c 9c+
   )
+  LANDING_VALUES = %w(easy medium hard)
+  DESCENT_VALUES = %w(easy medium hard)
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
+  validates :landing, inclusion: { in: LANDING_VALUES }
+  validates :descent, inclusion: { in: DESCENT_VALUES }
 
   %i(yellow orange blue skyblue red white).each do |color|
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 

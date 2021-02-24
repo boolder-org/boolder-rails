@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :imports
       resources :topos
       resources :problems
+      resources :problem_imports
       resources :lines
 
       root 'problems#index'
