@@ -21,8 +21,8 @@ class Problem < ApplicationRecord
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
-  validates :landing, inclusion: { in: LANDING_VALUES }
-  validates :descent, inclusion: { in: DESCENT_VALUES }
+  validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
+  validates :descent, inclusion: { in: DESCENT_VALUES }, allow_blank: true
 
   %i(yellow orange blue skyblue red white).each do |color|
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
