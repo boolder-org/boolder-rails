@@ -9,8 +9,8 @@ class Admin::ImportsController < Admin::BaseController
     save = (params[:commit] == "Import")
 
     data = RGeo::GeoJSON.decode(params[:import][:geojson].read)
-    problem_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::PointImpl) }
-    boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Cartesian::LineStringImpl) }
+    problem_features = data.select{|f| f.geometry.is_a?(RGeo::Geos::CAPIPointImpl) }
+    boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Geos::CAPILineStringImpl) }
 
     @objects = []
 
