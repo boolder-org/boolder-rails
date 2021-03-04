@@ -11,7 +11,7 @@ namespace :josm do
 
     problem_features = Problem.where(area_id: area_id).map do |problem|
       hash = {}.with_indifferent_access
-      hash[:name] = [problem.circuit&.color, problem.circuit_number, problem.name.presence].join(" ")
+      hash[:name] = problem.name_with_fallback
       hash[:problem_id] = problem.id
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
@@ -49,20 +49,29 @@ namespace :josm do
 
     puts "exporting metadata for area #{area_id}"
 
-    factory = RGeo::GeoJSON::EntityFactory.instance
+    geojson_factory = RGeo::GeoJSON::EntityFactory.instance
+    features = []
 
-    problem_features = Problem.where(area_id: area_id).map do |problem|
+    Topo.published.joins(:problems).merge(Problem.area(area_id)).each do |topo|
       hash = {}.with_indifferent_access
-      hash[:name] = [problem.circuit&.color, problem.circuit_number, problem.name.presence].join(" ")
-      hash[:problem_id] = problem.id
-      hash[:positioning_error] = problem.topos.first&.location_positioning_error_from_metadata&.to_f&.round(1)
+
+      hash[:name] = topo.problems.map(&:name_with_fallback).join(" | ")
+      hash[:topo_id] = topo.id
+      hash[:horizontal_accuracy] = topo.metadata_horizontal_accuracy.to_f.round(1)
+      hash[:heading] = topo.metadata_heading.to_f.round(1)
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-      factory.feature(problem.topos.first&.location_from_metadata, nil, hash)
+      features << geojson_factory.feature(topo.location_from_metadata, nil, hash)
+
+      heading = FACTORY.line_string([
+        topo.location_from_metadata, 
+        move_point(topo.metadata_longitude, topo.metadata_latitude, 3 * Math.cos(to_radian(topo.metadata_heading)), 3 * Math.sin(to_radian(topo.metadata_heading)))
+      ])
+      features << geojson_factory.feature(heading, nil, {})
     end
 
-    feature_collection = factory.feature_collection(
-      problem_features
+    feature_collection = geojson_factory.feature_collection(
+      features
     )
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
@@ -73,4 +82,18 @@ namespace :josm do
 
     puts "exported area-#{area_id}-metadata.geojson"
   end
+end
+
+def to_radian(degrees)
+  Math::PI/2 - (degrees / 180 * Math::PI)
+end
+
+# https://stackoverflow.com/a/24688213/230309
+def move_point(lon, lat, x_offset_meters, y_offset_meters)
+  wgs84 = RGeo::Geographic.simple_mercator_factory.point(lon, lat)
+  wgs84_factory = wgs84.factory
+  webmercator = wgs84_factory.project wgs84
+  webmercator_factory = webmercator.factory
+  webmercator_moved = webmercator_factory.point(webmercator.x+x_offset_meters, webmercator.y+y_offset_meters)
+  wgs84_factory.unproject webmercator_moved
 end
