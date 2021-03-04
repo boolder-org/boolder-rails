@@ -7,14 +7,6 @@ class Topo < ApplicationRecord
 
   validates :photo, presence: true
 
-  # TODO: remove
-  def location_from_metadata
-    FACTORY.point(
-      metadata_longitude, 
-      metadata_latitude
-    )
-  end
-
   def metadata_latitude
     metadata["latitude"] 
   end

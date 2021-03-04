@@ -61,10 +61,15 @@ namespace :josm do
       hash[:heading] = topo.metadata_heading.to_f.round(1)
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-      features << geojson_factory.feature(topo.location_from_metadata, nil, hash)
+      topo_location = FACTORY.point(
+        topo.metadata_longitude, 
+        topo.metadata_latitude
+      )
+
+      features << geojson_factory.feature(topo_location, nil, hash)
 
       heading = FACTORY.line_string([
-        topo.location_from_metadata, 
+        topo_location, 
         move_point(topo.metadata_longitude, topo.metadata_latitude, 3 * Math.cos(to_radian(topo.metadata_heading)), 3 * Math.sin(to_radian(topo.metadata_heading)))
       ])
       features << geojson_factory.feature(heading, nil, {})
