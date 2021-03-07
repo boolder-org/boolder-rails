@@ -7,7 +7,10 @@ div class="my-3"
 
 div
   div style="" 
-    = image_tag(@topo.photo.variant(resize_to_limit: [800, 800]))
+    - if params[:full_size] == "true"
+      = image_tag(@topo.photo)
+    - else
+      = image_tag(@topo.photo.variant(resize_to_limit: [800, 800]))
 
   = form_with model: [:admin, @topo] do |form|
     div class="form-group form-check"
