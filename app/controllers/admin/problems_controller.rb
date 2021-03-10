@@ -1,7 +1,9 @@
 class Admin::ProblemsController < Admin::BaseController
   def index
     redirect_to admin_problems_path(area_id: (session[:area_id] || 1), color: :yellow) if params[:area_id].blank?
-    redirect_to admin_problems_path(area_id: params[:area_id], color: Area.find(params[:area_id]).circuits.first.color) if params[:color] == "first"
+    if params[:color] == "first" && (color = Area.find(params[:area_id]).circuits.first&.color)
+      redirect_to admin_problems_path(area_id: params[:area_id], color: color) 
+    end
 
     arel = Problem.all
 
