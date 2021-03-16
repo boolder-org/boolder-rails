@@ -17,9 +17,9 @@
 
   <body class="bg-white">
     <div class="bg-gray-100">
-      <%= render "layouts/nav" %>
+      <%= render "layouts/nav" unless @hide_nav %>
       <%= yield %>
-      <%= render "layouts/footer" %>
+      <%= render "layouts/footer" unless @hide_nav %>
     </body>
   </div>
 </html>

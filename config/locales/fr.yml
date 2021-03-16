@@ -30,14 +30,6 @@ fr:
     areas_for_beginners: Secteurs pour bien débuter à Fontainebleau
     all_areas: Voir tous les secteurs
   area:
-    problems_by_level: Voies par niveau
-    circuits: Circuits
-    most_popular: Voies les plus populaires
-    problems_count: 
-      zero: "%{count} voie"
-      one: "%{count} voie"
-      other: "%{count} voies"
-    see_all_problems: Voir toutes les voies
     train_station: "Gare %{name}"
     train_station_generic: "Gare"
     top_areas_by_level: Top secteurs par niveau
@@ -49,6 +41,16 @@ fr:
         zero: "%{count} voie entre %{level_min} et %{level_max}"
         one: "%{count} voie entre %{level_min} et %{level_max}"
         other: "%{count} voies entre %{level_min} et %{level_max}"
+    tabs:
+      area: Secteur
+      problems: Voies
+      circuits: Circuits
+      map: Topo
+    approach: "Accès : "
+    map:
+      banner:
+        title: Avec l'appli Boolder, profitez d'une meilleur expérience et du mode hors-ligne.
+        cta: Découvrir l'appli
   app_landing:
     title: Le topo qui tient dans votre poche.
     subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"
@@ -72,6 +74,8 @@ fr:
       index:
         title: Secteurs à Fontainebleau
         description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau
+      map:
+        title: Topo %{area}
     circuits:
       show:
         title: "Circuit %{circuit} à %{area}"
@@ -85,6 +89,7 @@ fr:
     problems:
       index:
         title: Voies à %{area}
+        title_with_level: Voies de niveau %{level} à %{area}
       show: 
         title: "%{problem} - %{area}"
     

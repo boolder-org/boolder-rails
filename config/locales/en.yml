@@ -30,14 +30,6 @@ en:
     areas_for_beginners: Top areas for beginners in Fontainebleau
     all_areas: See all areas
   area:
-    problems_by_level: Problems by level
-    circuits: Circuits
-    most_popular: Most popular problems
-    problems_count: 
-      zero: "%{count} problem"
-      one: "%{count} problem"
-      other: "%{count} problems"
-    see_all_problems: See all problems
     train_station: "%{name} train station"
     train_station_generic: "Train station"
     top_areas_by_level: Top areas by level
@@ -49,6 +41,16 @@ en:
         zero: "%{count} problem between %{level_min} and %{level_max}"
         one: "%{count} problem between %{level_min} and %{level_max}"
         other: "%{count} problems between %{level_min} and %{level_max}"
+    tabs:
+      area: Area
+      problems: Problems
+      circuits: Circuits
+      map: Map
+    approach: "Access:"
+    map:
+      banner:
+        title: Get a better experience and offline mode with the Boolder app.
+        cta: See the app
   app_landing:
     title: The bouldering guide that fits in your pocket
     subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
@@ -72,6 +74,8 @@ en:
       index:
         title: Areas in Fontainebleau
         description: Discover the best areas to climb in Fontainebleau
+      map:
+        title: Map with topos %{area}
     circuits:
       show:
         title: "%{circuit} circuit in %{area}"
@@ -85,6 +89,7 @@ en:
     problems:
       index:
         title: Problems in %{area}
+        title_with_level: Problems of level %{level} in %{area}
       show: 
         title: "%{problem} - %{area}"
     

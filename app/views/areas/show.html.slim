@@ -1,59 +1,61 @@
 - set_meta_tags title: @area.name
 
-div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8"
-  = link_to "Fontainebleau", areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700"  
-  h1 class="text-4xl font-bold mt-2 mb-4"= @area.name
-div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
-  div class="lg:grid lg:grid-cols-3 lg:gap-6"
-    div class="col-span-2"
+= render "areas/show/header", area: @area, selected: 0
 
-      div class="mb-8 mt-4"
-        = render "areas/show/map"
-        = render "areas/show/access"
-
-      div class="mb-8 mt-4 md:grid md:grid-cols-2 md:gap-6"
-        div class="col-span-1"
-
-          div class="mb-8 mt-4"
-            div class="sm:pb-5 sm:border-b sm:border-gray-200 px-4 sm:px-0"
-              h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.problems_by_level")
-            div class="mt-8"
-              div class=" px-4 sm:px-0"
-                = render "areas/show/chart"
-              div class="bg-white shadow overflow-hidden sm:rounded-md mt-8"
-                ul class="divide-y divide-gray-200"
-                  = render "areas/show/level"
-
-        div class="col-span-1"
-          div class="mb-8 mt-4"
-            div class="sm:pb-5 sm:border-b sm:border-gray-200 px-4 sm:px-0"
-              h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.circuits")
-            div class="mt-8"
-              div class="bg-white shadow overflow-hidden sm:rounded-md"
-                ul class="divide-y divide-gray-200"
-                  - @area.circuits.each do |circuit|
-                    li
-                      = render "areas/show/circuit", circuit: circuit
-
-
-      - if @area.id == 1 && I18n.locale == :fr
-        div class="my-12 px-4 sm:px-0"
-          div class="my-4 prose max-w-full" data-controller="reveal"
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
+  div class="md:grid md:grid-cols-2 md:gap-16"
+    div class="col-span-1 pb-8"
+      - if @area.id == 1
+        div class="px-4 sm:px-0"
+          div class="prose" 
             p 
               | Rocher Canon est un secteur relativement étendu, avec de nombreux blocs pour tous les niveaux. 
             p 
               | Il est facile d'accès depuis la gare de Bois-le-Roi en vélo (~10 min) ou même à pied (~30 min), ce qui le rend assez fréquenté.
             p 
-              | Le terrain est assez "valloné", il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (par exemple via l'appli Boolder).
+              | Le terrain est assez "valloné", il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (par exemple via l'<a href="#{app_path}">appli Boolder</a>).
             p 
               | Attention à ne pas confondre les différents marquages bleus : il existe un circuit bleu, un circuit bleu ciel, et un circuit de randonnée. Vérifiez bien de quel bleu il s'agit quand vous vous orientez ;)
 
-      div class="mb-16 mt-4 px-4 sm:px-0"
-        div class="sm:pb-5 sm:border-b sm:border-gray-200"
-          h3 class="text-xl leading-6 font-medium text-gray-900"= t("area.most_popular")
-     
-        div class="mt-8 max-w-lg mx-auto grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:max-w-none"
-          = render partial: "problems/problem", collection: @problems
+      - if @area.id == 2
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Cul de Chien est un secteur parfait pour débuter, avec de nombreux blocs peu hauts et une bonne réception au sol. 
+            p
+              | Le décor avec ses grandes étendues de sable blanc est vraiment magnifique. Idéal pour les enfants et les pique-niques !
 
-    div 
-      
+            p 
+              | Comptez une quinzaine de minutes à pieds pour rejoindre le secteur depuis le parking.
+            
+
+      - if @area.id == 4
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Cuvier est un secteur très connu pour ses nombreuses voies dans le 5, 6, 7.
+            p
+              | Le secteur est assez plat, ce qui facilite la réception au sol pour la majorité des voies. En revanche les descentes sont parfois difficiles, il est préférable d'avoir quelqu'un pour vous aider.
+            p
+              | Le secteur très facile d'accès (parking à 30 secondes à pieds). L'inconvénient est que l'on entend les voitures.
+            p
+              | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le topo en mode hors-ligne.
+            p
+              | La peinture du circuit orange est presque complètement effacée, le topo est vraiment nécessaire.
+
+      - if @area.id == 5
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Franchard Isatis offre plus de 500 voies, pour tous les niveaux. 
+            p 
+              | L'accès est très facile depuis le parking, ce qui rend le secteur assez fréquenté. N'hésitez pas à "monter" un peu sur les hauteurs pour être plus tranquilles.
+    
+    div class="col-span-1"
+      = render "areas/show/map"
+      div class="px-4 sm:px-0"
+        = render "areas/show/access"
+
+
+
+  
