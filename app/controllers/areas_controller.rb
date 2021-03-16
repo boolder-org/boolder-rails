@@ -31,6 +31,15 @@ class AreasController < ApplicationController
         glyphText: "",
       } 
     ]
+
+    @center = {}
+
+    if location = @area.pois.first&.location
+      @center = { 
+        latitude: location.latitude, 
+        longitude: location.longitude 
+      }
+    end
   end
 
   def map 

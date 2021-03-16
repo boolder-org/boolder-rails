@@ -8,6 +8,7 @@ export default class extends Controller {
     annotations: Array,
     pois: Array,
     span: Number,
+    center: Object,
   }
 
   connect() {
@@ -17,7 +18,8 @@ export default class extends Controller {
     let annotations = this.hasAnnotationsValue ? this.annotationsValue : []
     let pois = this.hasPoisValue ? this.poisValue : []
     let span = this.hasSpanValue ? this.spanValue : 0.1
-    this.setupMap(annotations, pois, span)
+    let center = this.hasCenterValue ? this.centerValue : null
+    this.setupMap(annotations, pois, center, span)
     
   }
 
@@ -35,7 +37,7 @@ export default class extends Controller {
     });
   }
 
-  setupMap(annotationsHash, poisHash, span) {
+  setupMap(annotationsHash, poisHash, center, span) {
     this.map = new mapkit.Map(this.mapTarget, {
         isRotationEnabled: false,
         showsScale: mapkit.FeatureVisibility.Visible,
@@ -59,5 +61,13 @@ export default class extends Controller {
     });
 
     this.map.showItems(pois.concat(annotations));
+
+    // set up visible viewport
+    if (center) {
+      this.map.region = new mapkit.CoordinateRegion(
+        new mapkit.Coordinate(center.latitude, center.longitude),
+        new mapkit.CoordinateSpan(span, span)
+      )
+    }
   }
 }
