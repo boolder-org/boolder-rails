@@ -21,6 +21,16 @@ class AreasController < ApplicationController
     @area = Area.find(params[:id])
 
     @parkings = @area.pois
+
+    @annotations = [
+      {
+        latitude: @area.pois.first&.location&.latitude,
+        longitude: @area.pois.first&.location&.longitude,
+        color: "#059669",
+        title: @area.name,
+        glyphText: "",
+      } 
+    ]
   end
 
   def map 
