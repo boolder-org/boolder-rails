@@ -30,14 +30,6 @@ fr:
     areas_for_beginners: Secteurs pour bien débuter à Fontainebleau
     all_areas: Voir tous les secteurs
   area:
-    problems_by_level: Voies par niveau
-    circuits: Circuits
-    most_popular: Voies les plus populaires
-    problems_count: 
-      zero: "%{count} voie"
-      one: "%{count} voie"
-      other: "%{count} voies"
-    see_all_problems: Voir toutes les voies
     train_station: "Gare %{name}"
     train_station_generic: "Gare"
     top_areas_by_level: Top secteurs par niveau

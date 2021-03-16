@@ -30,14 +30,6 @@ en:
     areas_for_beginners: Top areas for beginners in Fontainebleau
     all_areas: See all areas
   area:
-    problems_by_level: Problems by level
-    circuits: Circuits
-    most_popular: Most popular problems
-    problems_count: 
-      zero: "%{count} problem"
-      one: "%{count} problem"
-      other: "%{count} problems"
-    see_all_problems: See all problems
     train_station: "%{name} train station"
     train_station_generic: "Train station"
     top_areas_by_level: Top areas by level
