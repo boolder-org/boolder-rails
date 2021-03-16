@@ -3,59 +3,59 @@
 = render "areas/show/header", area: @area, selected: 0
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
-  div class="py-6"
-    div class="md:grid md:grid-cols-2 md:gap-16"
-      div class="col-span-1"
-        - if @area.id == 1
-          div class="px-4 sm:px-0"
-            div class="prose" 
-              p 
-                | Rocher Canon est un secteur relativement étendu, avec de nombreux blocs pour tous les niveaux. 
-              p 
-                | Il est facile d'accès depuis la gare de Bois-le-Roi en vélo (~10 min) ou même à pied (~30 min), ce qui le rend assez fréquenté.
-              p 
-                | Le terrain est assez "valloné", il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (par exemple via l'<a href="#{app_path}">appli Boolder</a>).
-              p 
-                | Attention à ne pas confondre les différents marquages bleus : il existe un circuit bleu, un circuit bleu ciel, et un circuit de randonnée. Vérifiez bien de quel bleu il s'agit quand vous vous orientez ;)
+  div class="md:grid md:grid-cols-2 md:gap-16"
+    div class="col-span-1 pb-8"
+      - if @area.id == 1
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Rocher Canon est un secteur relativement étendu, avec de nombreux blocs pour tous les niveaux. 
+            p 
+              | Il est facile d'accès depuis la gare de Bois-le-Roi en vélo (~10 min) ou même à pied (~30 min), ce qui le rend assez fréquenté.
+            p 
+              | Le terrain est assez "valloné", il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (par exemple via l'<a href="#{app_path}">appli Boolder</a>).
+            p 
+              | Attention à ne pas confondre les différents marquages bleus : il existe un circuit bleu, un circuit bleu ciel, et un circuit de randonnée. Vérifiez bien de quel bleu il s'agit quand vous vous orientez ;)
 
-        - if @area.id == 2
-          div class="px-4 sm:px-0"
-            div class="prose" 
-              p 
-                | Cul de Chien est un secteur parfait pour débuter, avec de nombreux blocs peu hauts et une bonne réception au sol. 
-              p
-                | Le décor avec ses grandes étendues de sable blanc est vraiment magnifique. Idéal pour les enfants et les pique-niques !
+      - if @area.id == 2
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Cul de Chien est un secteur parfait pour débuter, avec de nombreux blocs peu hauts et une bonne réception au sol. 
+            p
+              | Le décor avec ses grandes étendues de sable blanc est vraiment magnifique. Idéal pour les enfants et les pique-niques !
 
-              p 
-                | Comptez une quinzaine de minutes à pieds pour rejoindre le secteur depuis le parking.
-              
+            p 
+              | Comptez une quinzaine de minutes à pieds pour rejoindre le secteur depuis le parking.
+            
 
-        - if @area.id == 4
-          div class="px-4 sm:px-0"
-            div class="prose" 
-              p 
-                | Cuvier est un secteur très connu pour ses nombreuses voies dans le 5, 6, 7.
-              p
-                | Le secteur est assez plat, ce qui facilite la réception au sol pour la majorité des voies. En revanche les descentes sont parfois difficiles, il est préférable d'avoir quelqu'un pour vous aider.
-              p
-                | Le secteur très facile d'accès (parking à 30 secondes à pieds). L'inconvénient est que l'on entend les voitures.
-              p
-                | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le topo en mode hors-ligne.
-              p
-                | La peinture du circuit orange est presque complètement effacée, le topo est vraiment nécessaire.
+      - if @area.id == 4
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Cuvier est un secteur très connu pour ses nombreuses voies dans le 5, 6, 7.
+            p
+              | Le secteur est assez plat, ce qui facilite la réception au sol pour la majorité des voies. En revanche les descentes sont parfois difficiles, il est préférable d'avoir quelqu'un pour vous aider.
+            p
+              | Le secteur très facile d'accès (parking à 30 secondes à pieds). L'inconvénient est que l'on entend les voitures.
+            p
+              | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le topo en mode hors-ligne.
+            p
+              | La peinture du circuit orange est presque complètement effacée, le topo est vraiment nécessaire.
 
-        - if @area.id == 5
-          div class="px-4 sm:px-0"
-            div class="prose" 
-              p 
-                | Franchard Isatis offre plus de 500 voies, pour tous les niveaux. 
-              p 
-                | L'accès est très facile depuis le parking, ce qui rend le secteur assez fréquenté. N'hésitez pas à "monter" un peu sur les hauteurs pour être plus tranquilles.
-      
-      div class="col-span-1"
-        = render "areas/show/map"
+      - if @area.id == 5
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Franchard Isatis offre plus de 500 voies, pour tous les niveaux. 
+            p 
+              | L'accès est très facile depuis le parking, ce qui rend le secteur assez fréquenté. N'hésitez pas à "monter" un peu sur les hauteurs pour être plus tranquilles.
+    
+    div class="col-span-1"
+      = render "areas/show/map"
+      div class="px-4 sm:px-0"
         = render "areas/show/access"
 
 
 
-    
+  
