@@ -6,6 +6,40 @@ data-apple-map-geojson-language-value="<%= I18n.locale %>"
 data-apple-map-geojson-redirect-value="/<%= I18n.locale %>/geojson/"
 >
   <div class="">
-    <div data-apple-map-geojson-target="map" class="apple-map bg-gray-500 h-96 sm:h-screen"></div>
+    <div data-apple-map-geojson-target="map" class="apple-map bg-gray-500 h-screen"></div>
   </div>
 </div>
+
+<div class="fixed bottom-0 inset-x-0 pb-2 sm:pb-5" data-controller="reveal" data-reveal-target="item">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="p-2 rounded-lg bg-green-600 shadow-lg sm:p-3">
+      <div class="flex items-center justify-between flex-wrap">
+        <div class="w-0 flex-1 flex items-center">
+          
+          <p class="ml-3 font-medium text-white truncate">
+            <span class="md:hidden">
+              L'appli Boolder avec topo hors-ligne, c'est par ici.
+            </span>
+            <span class="hidden md:inline">
+              L'appli Boolder avec une meilleur expérience et un topo hors-ligne, c'est par ici.
+            </span>
+          </p>
+        </div>
+        <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
+          <a href="<%= app_path %>" class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-green-600 bg-white hover:bg-green-50" >
+            Découvrir l'appli
+          </a>
+        </div>
+        <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+          <button type="button" class="-mr-1 flex p-2 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-white" data-action="reveal#hide">
+            <span class="sr-only">Dismiss</span>
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
