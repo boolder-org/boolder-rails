@@ -1,3 +1,5 @@
+<% set_meta_tags title: t("meta_tags.areas.map.title", area: @area.name) %>
+
 <div 
 data-controller="apple-map-geojson" 
 data-apple-map-geojson-geojson-value="<%= asset_path "area-#{@area.id}-data.geojson" %>"

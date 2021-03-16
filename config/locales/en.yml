@@ -74,6 +74,8 @@ en:
       index:
         title: Areas in Fontainebleau
         description: Discover the best areas to climb in Fontainebleau
+      map:
+        title: Map with topos %{area}
     circuits:
       show:
         title: "%{circuit} circuit in %{area}"
@@ -87,6 +89,7 @@ en:
     problems:
       index:
         title: Problems in %{area}
+        title_with_level: Problems of level %{level} in %{area}
       show: 
         title: "%{problem} - %{area}"
     

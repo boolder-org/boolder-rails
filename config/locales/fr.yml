@@ -74,6 +74,8 @@ fr:
       index:
         title: Secteurs à Fontainebleau
         description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau
+      map:
+        title: Topo %{area}
     circuits:
       show:
         title: "Circuit %{circuit} à %{area}"
@@ -87,6 +89,7 @@ fr:
     problems:
       index:
         title: Voies à %{area}
+        title_with_level: Voies de niveau %{level} à %{area}
       show: 
         title: "%{problem} - %{area}"
     

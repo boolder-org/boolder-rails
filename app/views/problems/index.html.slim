@@ -1,8 +1,12 @@
-- set_meta_tags title: t("meta_tags.problems.index.title", area: @area.name)
+- if (1..8).map(&:to_s).include?(params[:level])
+  - set_meta_tags title: t("meta_tags.problems.index.title_with_level", level: params[:level], area: @area.name)
+- else 
+  - set_meta_tags title: t("meta_tags.problems.index.title", area: @area.name)
+
 
 = render "areas/show/header", area: @area, selected: 1
 
-div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+div class="max-w-7xl mx-auto mb-8 px-4 sm:px-6 lg:px-8"
 
   = turbo_frame_tag "problems" do
     
