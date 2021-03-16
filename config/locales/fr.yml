@@ -47,6 +47,10 @@ fr:
       circuits: Circuits
       map: Topo
     approach: "Accès : "
+    map:
+      banner:
+        title: Avec l'appli Boolder, profitez d'une meilleur expérience et du mode hors-ligne.
+        cta: Découvrir l'appli
   app_landing:
     title: Le topo qui tient dans votre poche.
     subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"

@@ -47,6 +47,10 @@ en:
       circuits: Circuits
       map: Map
     approach: "Access:"
+    map:
+      banner:
+        title: Get a better experience and offline mode with the Boolder app.
+        cta: See the app
   app_landing:
     title: The bouldering guide that fits in your pocket
     subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
