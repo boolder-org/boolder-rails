@@ -6,8 +6,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class=""
     div class="md:grid md:grid-cols-2 md:gap-5"
       div class="col-span-1"
-
-
         - if @area.id == 1 && I18n.locale == :fr
           div class="px-4 sm:px-0"
             div class="my-4 prose max-w-full" data-controller="reveal"
@@ -33,7 +31,12 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
                 | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le topo en mode hors-ligne.
               p
                 | La peinture du circuit orange est presque complètement effacée, le topo est vraiment nécessaire.
+
+
+      
       div class="col-span-1"
+        = render "areas/show/map"
+        = render "areas/show/access"
 
 
 
