@@ -4,12 +4,11 @@
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class=""
-    div class="md:grid md:grid-cols-2 md:gap-5"
     div class="md:grid md:grid-cols-2 md:gap-16"
       div class="col-span-1"
-        - if @area.id == 1 && I18n.locale == :fr
+        - if @area.id == 1
           div class="px-4 sm:px-0"
-            div class="my-4 prose max-w-full" data-controller="reveal"
+            div class="my-4 prose max-w-full" 
               p 
                 | Rocher Canon est un secteur relativement étendu, avec de nombreux blocs pour tous les niveaux. 
               p 
@@ -19,9 +18,21 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
               p 
                 | Attention à ne pas confondre les différents marquages bleus : il existe un circuit bleu, un circuit bleu ciel, et un circuit de randonnée. Vérifiez bien de quel bleu il s'agit quand vous vous orientez ;)
 
-        - if @area.id == 4 && I18n.locale == :fr
+        - if @area.id == 2
           div class="px-4 sm:px-0"
-            div class="my-4 prose max-w-full" data-controller="reveal"
+            div class="my-4 prose max-w-full" 
+              p 
+                | Cul de Chien est un secteur parfait pour débuter, avec de nombreux blocs peu hauts et une bonne réception au sol. 
+              p
+                | Le décor avec ses grandes étendues de sable blanc est vraiment magnifique. Idéal pour les enfants et les pique-niques !
+
+              p 
+                | Comptez une quinzaine de minutes à pieds pour rejoindre le secteur depuis le parking.
+              
+
+        - if @area.id == 4
+          div class="px-4 sm:px-0"
+            div class="my-4 prose max-w-full" 
               p 
                 | Cuvier est un secteur très connu pour ses nombreuses voies dans le 5, 6, 7.
               p
@@ -33,7 +44,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
               p
                 | La peinture du circuit orange est presque complètement effacée, le topo est vraiment nécessaire.
 
-
+        - if @area.id == 5
+          div class="px-4 sm:px-0"
+            div class="my-4 prose max-w-full" 
+              p 
+                | Isatis
       
       div class="col-span-1"
         = render "areas/show/map"
