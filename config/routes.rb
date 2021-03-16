@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     scope 'fontainebleau' do
       resources :areas, only: [:index, :show] do 
         resources :problems, only: [:index]
+        member { get 'map' }
       end
     end
 
