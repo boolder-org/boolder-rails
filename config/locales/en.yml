@@ -49,6 +49,12 @@ en:
         zero: "%{count} problem between %{level_min} and %{level_max}"
         one: "%{count} problem between %{level_min} and %{level_max}"
         other: "%{count} problems between %{level_min} and %{level_max}"
+    tabs:
+      area: Area
+      problems: Problems
+      circuits: Circuits
+      map: Map
+    approach: "Access:"
   app_landing:
     title: The bouldering guide that fits in your pocket
     subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"

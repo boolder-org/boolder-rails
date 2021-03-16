@@ -49,6 +49,12 @@ fr:
         zero: "%{count} voie entre %{level_min} et %{level_max}"
         one: "%{count} voie entre %{level_min} et %{level_max}"
         other: "%{count} voies entre %{level_min} et %{level_max}"
+    tabs:
+      area: Secteur
+      problems: Voies
+      circuits: Circuits
+      map: Topo
+    approach: "Accès : "
   app_landing:
     title: Le topo qui tient dans votre poche.
     subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"
