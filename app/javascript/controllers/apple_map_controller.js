@@ -7,8 +7,8 @@ export default class extends Controller {
     language: String,
     annotations: Array,
     pois: Array,
-    span: Number,
     center: Object,
+    span: Number,
   }
 
   connect() {
@@ -17,8 +17,8 @@ export default class extends Controller {
 
     let annotations = this.hasAnnotationsValue ? this.annotationsValue : []
     let pois = this.hasPoisValue ? this.poisValue : []
-    let span = this.hasSpanValue ? this.spanValue : 0.1
     let center = this.hasCenterValue ? this.centerValue : null
+    let span = this.hasSpanValue ? this.spanValue : 0.1
     this.setupMap(annotations, pois, center, span)
     
   }

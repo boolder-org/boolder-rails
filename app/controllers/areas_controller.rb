@@ -55,6 +55,13 @@ class AreasController < ApplicationController
       glyphText: "",
     } 
 
+    if problem = Area.find(@area.id).problems.where(id: params[:problem]).first
+      @center = { 
+        latitude: problem.location.latitude, 
+        longitude: problem.location.longitude 
+      }
+    end
+
     @hide_nav = true
   end
 end

@@ -7,14 +7,19 @@ export default class extends Controller {
     language: String,
     geojson: String,
     redirect: String,
+    center: Object,
+    span: Number,
   }
 
   connect() {
     let language = this.hasLanguageValue ? this.languageValue : 'en'
     this.initMapkit(this.keyValue, language) // FIXME: no need to call it everytime
 
+    let center = this.hasCenterValue ? this.centerValue : null
+    let span = this.hasSpanValue ? this.spanValue : 0.1
+
     this.setupMap()
-    this.loadGeoJSON(this.geojsonValue, this.redirectValue)
+    this.loadGeoJSON(this.geojsonValue, this.redirectValue, center, span)
   }
 
   disconnect() {
@@ -39,7 +44,7 @@ export default class extends Controller {
     });
   }
 
-  loadGeoJSON(file, redirect) {
+  loadGeoJSON(file, redirect, center, span) {
     var map = this.map
 
     mapkit.importGeoJSON(file, {
@@ -137,6 +142,15 @@ export default class extends Controller {
         geoJSONDidComplete: function(overlays) {
             map.addItems(overlays);
             map.showItems(overlays.getFlattenedItemList());
+
+            // set up visible viewport
+            if (center) {
+              console.log("coucou")
+              map.region = new mapkit.CoordinateRegion(
+                new mapkit.Coordinate(center.latitude, center.longitude),
+                new mapkit.CoordinateSpan(span, span)
+              )
+            }
         }
     });
 
