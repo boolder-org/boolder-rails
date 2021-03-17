@@ -11,5 +11,6 @@ application.load(definitionsFromContext(context))
 import Chart from "stimulus-chartjs"
 application.register("chart", Chart)
 
-import { Tabs } from "tailwindcss-stimulus-components"
+import { Dropdown, Tabs } from "tailwindcss-stimulus-components"
+application.register('dropdown', Dropdown)
 application.register('tabs', Tabs)
