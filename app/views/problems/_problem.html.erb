@@ -2,11 +2,13 @@
 <%= link_to problem_path(problem), data: {'turbo-frame': '_top'} do %>
   <div class="flex-shrink-0 bg-gray-300">
     <% if line = problem.lines.published.first %>
-      <%= image_tag(line.topo.photo.variant(resize_to_limit: [400, 400]), class: "h-96 sm:h-48 w-full object-cover", loading: "lazy") %>
+      <%= image_tag(line.topo.photo.variant(resize_to_limit: [400, 400]), class: "w-full object-cover", loading: "lazy") %>
     <% else %>
-      <div class="text-gray-400 h-48 w-full object-cover">
-        <div class="flex flex-wrap justify-center content-center h-48">
-          <%= render 'svg/nophoto', width: 49, height: 49 %>
+      <div class="text-gray-400 w-full object-cover aspect-w-4 aspect-h-3">
+        <div class="flex flex-wrap justify-center content-center">
+          <span class="text-gray-400">
+            <%= render 'svg/nophoto', width: 49, height: 49 %>
+          </span>
         </div>
       </div>
     <% end %>
