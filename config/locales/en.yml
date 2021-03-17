@@ -15,6 +15,15 @@ en:
     level_x: Level %{level} 
     see_on_bleau_info: See on bleau.info
     see_on_map: See on the map
+    steepness:
+      wall: Wall
+      slab: Slab
+      overhang: Overhang
+      roof: Roof
+      traverse: Traverse
+      other: Other
+    sit_start: Sit start
+    risky: Risky
   layout:
     nav:
       open_menu: Open main menu

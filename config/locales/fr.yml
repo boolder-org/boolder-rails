@@ -15,6 +15,15 @@ fr:
     level_x: Niveau %{level} 
     see_on_bleau_info: Voir sur bleau.info
     see_on_map: Voir sur la carte
+    steepness:
+      wall: Mur
+      slab: Dalle
+      overhang: Dévers
+      roof: Toit
+      traverse: Traversée
+      other: Autre
+    sit_start: Départ assis
+    risky: Risqué en cas de chute
   layout:
     nav:
       open_menu: Ouvrir le menu principal
