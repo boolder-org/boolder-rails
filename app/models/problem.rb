@@ -53,4 +53,16 @@ class Problem < ApplicationRecord
       1_000
     end
   end
+
+  def next
+    if circuit_number.present?
+      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1)).first
+    end
+  end
+
+  def previous
+    if circuit_number.present?
+      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1)).first
+    end
+  end
 end
