@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   layout false, only: [:soon]
 
   def index
-    @beginner_areas = Area.all.map{|a| [a, a.problems.where("grade < '4a'").count ]}.sort_by(&:second).reverse
+    @beginner_areas = Area.published.map{|a| [a, a.problems.where("grade < '4a'").count ]}.sort_by(&:second).reverse
   end
 
   def root
