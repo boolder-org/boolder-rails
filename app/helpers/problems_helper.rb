@@ -26,8 +26,10 @@ module ProblemsHelper
      {
       yellow:   "#FFCC02",
       orange:   "#FF9500",
+      green:    "#00AF61",
       blue:     "#017AFF",
       skyblue:  "#5AC7FA",
+      salmon:   "#FDAF8A",
       red:      "#FF3B2F",
       black:    "#000000",
       white:    "#FFFFFF",

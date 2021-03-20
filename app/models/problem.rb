@@ -24,7 +24,7 @@ class Problem < ApplicationRecord
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
   validates :descent, inclusion: { in: DESCENT_VALUES }, allow_blank: true
 
-  %i(yellow orange blue skyblue red white).each do |color|
+  Circuit::COLOR_VALUES.each do |color|
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
   end
 
