@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
     namespace :admin do 
+      resources :areas
       resources :imports
       resources :topos
       resources :problems
       resources :problem_imports
       resources :lines
 
-      root 'problems#index'
+      root 'areas#index'
     end
 
     scope "articles" do
