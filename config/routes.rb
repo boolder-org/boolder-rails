@@ -1,4 +1,8 @@
+require 'sidekiq/web'
+
 Rails.application.routes.draw do
+  mount Sidekiq::Web => "/sidekiqq"
+
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
     namespace :admin do 
       resources :areas
