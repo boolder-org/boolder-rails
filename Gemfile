@@ -13,7 +13,6 @@ gem 'activerecord-postgis-adapter', '~> 7.0.1'
 gem 'aws-sdk-s3', '~> 1.88.0'
 gem 'sidekiq', '~> 6.2.0'
 gem 'redis', '~> 4.2.5'
-gem 'redis-rails', '~> 5.0.2'
 
 gem 'turbo-rails', '~> 0.5.9'
 gem 'sass-rails', '>= 6'
