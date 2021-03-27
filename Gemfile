@@ -12,6 +12,8 @@ gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', '~> 7.0.1'
 gem 'aws-sdk-s3', '~> 1.88.0'
 gem 'sidekiq', '~> 6.2.0'
+gem 'redis', '~> 4.2.5'
+gem 'redis-rails', '~> 5.0.2'
 
 gem 'turbo-rails', '~> 0.5.9'
 gem 'sass-rails', '>= 6'
@@ -25,9 +27,6 @@ gem 'kaminari', '~> 1.2.1'
 
 gem 'rgeo-geojson', '~> 2.1.1'
 
-# Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.2.5'
-gem 'redis-rails', '~> 5.0.2'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
