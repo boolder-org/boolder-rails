@@ -1,28 +1,30 @@
-<div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white">
-<%= link_to problem_path(problem), data: {'turbo-frame': '_top'} do %>
-  <div class="flex-shrink-0 bg-gray-300 aspect-w-4 aspect-h-3">
-    <% if line = problem.lines.published.first %>
-      <%= image_tag(line.topo.photo.variant(resize_to_limit: [400, 400]), class: "w-full object-cover", loading: "lazy") %>
-    <% else %>
-      <div class="text-gray-400 w-full object-cover aspect-w-4 aspect-h-3">
-        <div class="flex flex-wrap justify-center content-center">
-          <span class="text-gray-400">
-            <%= render 'svg/nophoto', width: 49, height: 49 %>
-          </span>
+<% cache problem do %>
+  <div class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white">
+    <%= link_to problem_path(problem), data: {'turbo-frame': '_top'} do %>
+      <div class="flex-shrink-0 bg-gray-300 aspect-w-4 aspect-h-3">
+        <% if line = problem.lines.published.first %>
+          <%= image_tag(line.topo.photo.variant(resize_to_limit: [400, 400]), class: "w-full object-cover", loading: "lazy") %>
+        <% else %>
+          <div class="text-gray-400 w-full object-cover aspect-w-4 aspect-h-3">
+            <div class="flex flex-wrap justify-center content-center">
+              <span class="text-gray-400">
+                <%= render 'svg/nophoto', width: 49, height: 49 %>
+              </span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+        <div class="flex-1 flex justify-between w-full">
+          <div>
+            <%= circle_view(problem) %>
+            <span class="ml-2 font-medium"><%= problem.name_with_fallback %></span>
+          </div>
+          <div class="text-gray-500 ml-1">
+            <%= problem.grade %>
+          </div>
         </div>
       </div>
     <% end %>
   </div>
-  <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-    <div class="flex-1 flex justify-between w-full">
-      <div>
-        <%= circle_view(problem) %>
-        <span class="ml-2 font-medium"><%= problem.name_with_fallback %></span>
-      </div>
-      <div class="text-gray-500 ml-1">
-        <%= problem.grade %>
-      </div>
-    </div>
-  </div>
 <% end %>
-</div>
