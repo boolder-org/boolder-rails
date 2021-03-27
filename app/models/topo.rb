@@ -7,6 +7,11 @@ class Topo < ApplicationRecord
 
   validates :photo, presence: true
 
+  VARIANTS = [
+    [400,400],
+    [800,800],
+  ]
+
   def metadata_latitude
     metadata["latitude"] 
   end
