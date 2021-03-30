@@ -27,6 +27,8 @@
                 <%= image_tag 'logo.svg', class: "h-8 w-auto", alt:"Boolder admin" %>
               <% end %>
 
+              <%= link_to "Areas", admin_areas_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+
               <div class="relative" data-controller="dropdown">
                 <%= link_to "Import", "#", { class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium", 'data-action': "click->dropdown#toggle click@window->dropdown#hide", 'data-dropdown-target': "button" } %>
 

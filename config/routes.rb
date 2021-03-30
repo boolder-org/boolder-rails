@@ -5,10 +5,12 @@ Rails.application.routes.draw do
 
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
     namespace :admin do 
-      resources :areas
+      resources :areas do
+        resources :problems, only: :index
+      end
+      resources :problems, except: :index
       resources :imports
       resources :topos
-      resources :problems
       resources :problem_imports
       resources :lines
 

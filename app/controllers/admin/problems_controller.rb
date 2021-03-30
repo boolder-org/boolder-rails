@@ -1,28 +1,25 @@
 class Admin::ProblemsController < Admin::BaseController
   def index
-    redirect_to admin_problems_path(area_id: (session[:area_id] || 1), color: :yellow) if params[:area_id].blank?
-    if params[:color] == "first" && (color = Area.find(params[:area_id]).circuits.first&.color)
-      redirect_to admin_problems_path(area_id: params[:area_id], color: color) 
+    @area = Area.find(params[:area_id])
+
+    if params[:circuit_id] == "first" && (id = @area.circuits.first&.id)
+      redirect_to admin_area_problems_path(area_id: @area.id, circuit_id: id) 
     end
 
-    arel = Problem.all
+    arel = Problem.where(area_id: @area.id) 
+    session[:area_id] = @area.id
 
-    if params[:area_id].present?
-      arel = arel.where(area_id: params[:area_id]) 
-      session[:area_id] = params[:area_id]
-    end
-
-    if params[:color] == "off_circuit"
+    if params[:circuit_id] == "off_circuit"
       arel = arel.where(circuit_id: nil)
     else
-      arel = arel.joins(:circuit).where(circuits: { color: params[:color] }) if params[:color].present?
+      arel = arel.where(circuit_id: params[:circuit_id]) if params[:circuit_id].present?
     end
 
     @problems = arel.sort_by{|p| p.enumerable_circuit_number }
 
     circuits = Circuit.all
     circuits = circuits.where(area_id: params[:area_id]) if params[:area_id].present?
-    @circuit_tabs = circuits.map{|c| [c.color, c.name] }.push(["off_circuit", "Off circuit"]).push([nil, "All"])
+    @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push([nil, "All"])
   end
 
   def new
