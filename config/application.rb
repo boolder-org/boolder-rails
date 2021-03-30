@@ -18,6 +18,6 @@ module Boolder
 
     # config.active_storage.variant_processor = :vips
 
-    config.active_job.queue_adapter = :sidekiq
+    # config.active_job.queue_adapter = :sidekiq
   end
 end
