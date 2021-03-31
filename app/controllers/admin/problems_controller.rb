@@ -72,7 +72,7 @@ class Admin::ProblemsController < Admin::BaseController
     problem.save!
 
     flash[:notice] = "Problem updated"
-    redirect_to admin_problems_path(anchor: problem.id, area_id: problem.area_id, color: problem.circuit&.color || "off_circuit")
+    redirect_to admin_area_problems_path(anchor: problem.id, area_id: problem.area_id, circuit_id: problem.circuit_id || "off_circuit")
   end
 
   private 
