@@ -10,13 +10,13 @@ div class="mt-10 sm:mt-0"
           div class="px-4 py-5 bg-white sm:p-6"
             div class="grid grid-cols-6 gap-6"
 
-                div class="col-span-6 sm:col-span-2"
-                  = form.label :circuit_id
-                  = form.select :circuit_id, @problem.area.circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }
-
                 div class="col-span-6 sm:col-span-1"
                   = form.label :circuit_number, "Number"
                   = form.text_field :circuit_number, autocomplete: "off"
+
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :circuit_id
+                  = form.select :circuit_id, @problem.area.circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }
 
                 div class="col-span-6 sm:col-span-4"
                   = form.label :name
@@ -49,9 +49,11 @@ div class="mt-10 sm:mt-0"
                 div class="col-span-6 sm:col-span-4"
                   = form.label :joined_tags, 'Tags'
                   = form.text_field :joined_tags, value: @problem.tags.join(",")
-                  / div= @problem.tags.join(" ")
 
-                div class="hidden sm:block col-span-6 sm:col-span-2"
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :risky
+                  = form.select :risky, [["true", true], ["false", false]]
+
 
                 div class="col-span-6 sm:col-span-2"
                   = form.label :bleau_info_id, "Bleau.info id"

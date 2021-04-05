@@ -14,13 +14,13 @@ div class="mt-10 sm:mt-0"
 
                 div class="hidden sm:block col-span-6 sm:col-span-3"
 
-                div class="col-span-6 sm:col-span-2"
-                  = form.label :circuit_id
-                  = form.select :circuit_id, Area.find(session[:area_id]).circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }
-
                 div class="col-span-6 sm:col-span-1"
                   = form.label :circuit_number, "Number"
                   = form.text_field :circuit_number, autocomplete: "off"
+
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :circuit_id
+                  = form.select :circuit_id, Area.find(session[:area_id]).circuits.all.collect {|c| [ c.color, c.id ] }, { include_blank: true }
 
                 div class="hidden sm:block col-span-6 sm:col-span-3"
 
