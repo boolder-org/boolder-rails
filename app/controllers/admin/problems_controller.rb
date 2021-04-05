@@ -24,12 +24,32 @@ class Admin::ProblemsController < Admin::BaseController
 
   def new
     @problem = Problem.new
+    area = Area.find(session[:area_id])
+    @circuits = area.circuits.all
     extracted_params = params[:extracted]
 
     if extracted_params.present?
       @problem.name = extracted_params[:name].strip
       @problem.grade = extracted_params[:grade].strip
       @problem.bleau_info_id = extracted_params[:id].strip
+
+      @problem.circuit_number = extracted_params[:circuit_number].strip
+
+      if extracted_params[:circuit].include?("jaune")
+        @problem.circuit_id = area.circuits.yellow.first.id
+      elsif extracted_params[:circuit].include?("orange")
+        @problem.circuit_id = area.circuits.orange.first.id
+      elsif extracted_params[:circuit].include?("bleu ciel")
+        @problem.circuit_id = area.circuits.skyblue.first.id
+      elsif extracted_params[:circuit].include?("bleu")
+        @problem.circuit_id = area.circuits.blue.first.id
+      elsif extracted_params[:circuit].include?("rouge")
+        @problem.circuit_id = area.circuits.red.first.id
+      elsif extracted_params[:circuit].include?("noir")
+        @problem.circuit_id = area.circuits.black.first.id
+      elsif extracted_params[:circuit].include?("blanc")
+        @problem.circuit_id = area.circuits.white.first.id
+      end
 
       if extracted_params[:tags].include?("travers")
         @problem.steepness = :traverse
@@ -70,6 +90,7 @@ class Admin::ProblemsController < Admin::BaseController
 
   def edit
     @problem = Problem.find(params[:id])
+    @circuits = @problem.area.circuits.all
     session[:area_id] = @problem.area_id
   end
 

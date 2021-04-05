@@ -6,6 +6,10 @@ class Circuit < ApplicationRecord
 
   COLOR_VALUES = %w(yellow orange green blue skyblue salmon red black white)
 
+  COLOR_VALUES.each do |color|
+    scope color, -> { where(color: color) } 
+  end
+
   validates :color, inclusion: { in: COLOR_VALUES }
 
   def sorted_problems
