@@ -54,8 +54,13 @@ class Admin::ProblemsController < Admin::BaseController
   end
 
   def create
-    @problem = Problem.create!(problem_params)
-    redirect_to [:admin, @problem]
+    problem = Problem.new
+    problem.assign_attributes(problem_params)
+    problem.tags = params[:problem][:joined_tags].split(',')
+    problem.save!
+
+    flash[:notice] = "Problem created"
+    redirect_to [:admin, problem]
   end
 
   def show
