@@ -23,30 +23,34 @@ class Admin::ProblemsController < Admin::BaseController
   end
 
   def new
+    @problem = Problem.new
     extracted_params = params[:extracted]
 
     if extracted_params.present?
-      @extracted_name = extracted_params[:name].strip
-      @extracted_grade = extracted_params[:grade].strip
-      @extracted_id = extracted_params[:id].strip
+      @problem.name = extracted_params[:name].strip
+      @problem.grade = extracted_params[:grade].strip
+      @problem.bleau_info_id = extracted_params[:id].strip
 
       if extracted_params[:tags].include?("travers")
-        @extracted_steepness = :traverse
+        @problem.steepness = :traverse
       elsif extracted_params[:tags].include?("toit")
-        @extracted_steepness = :roof
+        @problem.steepness = :roof
       elsif extracted_params[:tags].include?("dévers") || extracted_params[:tags].include?("surplomb")
-        @extracted_steepness = :overhang
+        @problem.steepness = :overhang
       elsif extracted_params[:tags].include?("dalle")
-        @extracted_steepness = :slab
+        @problem.steepness = :slab
       elsif extracted_params[:tags].include?("mur")
-        @extracted_steepness = :wall
+        @problem.steepness = :wall
       else
-        @extracted_steepness = :other
-      end           
+        @problem.steepness = :other
+      end
+
+      if extracted_params[:tags].include?("assis")
+        @problem.tags << "sit_start"
+      end
+
+      @problem.risky = extracted_params[:tags].include?("expo") || extracted_params[:tags].include?("haut")
     end
-
-    @problem = Problem.new
-
   end
 
   def create

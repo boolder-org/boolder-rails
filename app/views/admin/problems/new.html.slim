@@ -26,23 +26,44 @@ div class="mt-10 sm:mt-0"
 
                 div class="col-span-6 sm:col-span-4"
                   = form.label :name
-                  = form.text_field :name, autocomplete: "off", value: @extracted_name
+                  = form.text_field :name, autocomplete: "off"
                 
                 div class="col-span-6 sm:col-span-1"
                   = form.label :grade
-                  = form.text_field :grade, autocomplete: "off", value: @extracted_grade
+                  = form.text_field :grade, autocomplete: "off"
 
                 div class="hidden sm:block col-span-6 sm:col-span-1"
                 
                 div class="col-span-6 sm:col-span-2"
                   = form.label :steepness
-                  = form.select :steepness, options_for_select(Problem::STEEPNESS_VALUES, @extracted_steepness || :other), { include_blank: false }
+                  = form.select :steepness, options_for_select(Problem::STEEPNESS_VALUES, @problem.steepness || :other), { include_blank: false }
 
                 div class="hidden sm:block col-span-6 sm:col-span-4"
 
                 div class="col-span-6 sm:col-span-2"
+                  = form.label :height
+                  = form.text_field :height, autocomplete: "off"
+
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :landing
+                  = form.select :landing, Problem::LANDING_VALUES, { include_blank: true }
+
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :descent
+                  = form.select :descent, Problem::DESCENT_VALUES, { include_blank: true }
+
+                div class="col-span-6 sm:col-span-4"
+                  = form.label :joined_tags, 'Tags'
+                  = form.text_field :joined_tags, value: @problem.tags.join(","), autocomplete: "off"
+
+                div class="col-span-6 sm:col-span-2"
+                  = form.label :risky
+                  = form.select :risky, [["true", true], ["false", false]]
+
+
+                div class="col-span-6 sm:col-span-2"
                   = form.label :bleau_info_id, "Bleau.info id"
-                  = form.text_field :bleau_info_id, autocomplete: "off", value: @extracted_id
+                  = form.text_field :bleau_info_id, autocomplete: "off"
 
             div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
               button type="submit" class="btn" Save
