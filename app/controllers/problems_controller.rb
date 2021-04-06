@@ -17,4 +17,9 @@ class ProblemsController < ApplicationController
     @problem = Problem.find(params[:id])
     @line = @problem.lines.published.first
   end
+
+  def bleau_info
+    @problem = Problem.find(params[:id])
+    redirect_to "https://bleau.info/c/#{@problem.bleau_info_id}.html"
+  end
 end

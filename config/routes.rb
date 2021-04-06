@@ -30,7 +30,9 @@ Rails.application.routes.draw do
       end
     end
 
-    resources :problems, only: [:show]
+    resources :problems, only: [:show] do
+      member { get 'bleau_info' }
+    end
     resources :circuits, only: [:show]
 
     get 'app', to: 'pages#app', as: :app
