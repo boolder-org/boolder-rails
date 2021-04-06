@@ -15,7 +15,11 @@ namespace :geojson do
       hash[:name] = problem.name.presence
       hash[:bleau_info_id] = problem.bleau_info_id
       hash[:circuit_color] = problem.circuit&.color
-      hash[:tags] = problem.tags if problem.tags.present?
+      
+      tags = problem.tags.present? ? problem.tags : []
+      tags << "risky" if problem.risky # FIXME: decide whether to keep this hack when I revamp the risk level info
+      hash[:tags] = tags 
+
       hash[:lines] = problem.lines.published.map{|line| {id: line.id} } if problem.lines.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
