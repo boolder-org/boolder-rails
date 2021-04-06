@@ -24,6 +24,9 @@ class Admin::ImportsController < Admin::BaseController
           problem = Problem.new
         end
 
+        # TODO: raise if problemId is not present but other attribute is present
+        # it might be a mistake when I created the point in josm
+
         problem.assign_attributes(
           area_id: area_id,
           location: FACTORY.point(feature.geometry.x, feature.geometry.y),
