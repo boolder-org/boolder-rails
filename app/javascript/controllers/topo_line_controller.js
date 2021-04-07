@@ -31,6 +31,7 @@ export default class extends Controller {
 
     this.path.setAttribute("d", this.pathString());
     this.path.setAttribute("stroke", this.hasColorValue ? this.colorValue : "black" );
+    this.path.setAttribute("stroke-linecap", "round");
     this.path.setAttribute("stroke-width", this.hasStrokeWidthValue ? this.strokeWidthValue : "3");
     this.path.setAttribute("fill", "none");
     
