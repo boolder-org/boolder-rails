@@ -55,10 +55,10 @@ fr:
         one: "%{count} voie entre %{level_min} et %{level_max}"
         other: "%{count} voies entre %{level_min} et %{level_max}"
     tabs:
-      area: Secteur
+      infos: Infos pratiques
       problems: Voies
       circuits: Circuits
-      map: Carte
+      map: Carte (topo)
     map:
       banner:
         title: Avec l'appli Boolder, profitez d'une meilleur expérience et du mode hors-ligne.
