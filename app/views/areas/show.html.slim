@@ -9,13 +9,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         div class="px-4 sm:px-0"
           div class="prose" 
             p 
-              | Rocher Canon est un secteur relativement étendu, avec de nombreux blocs pour tous les niveaux. 
+              | Rocher Canon est un secteur assez étendu, avec de nombreux blocs pour tous les niveaux. 
             p 
-              | Il est facile d'accès depuis la gare de Bois-le-Roi en vélo (~10 min) ou même à pied (~30 min), ce qui le rend assez fréquenté.
+              | Il est facile d'accès depuis la gare de Bois-le-Roi en vélo (~10 min) ou même à pieds (~30 min), ce qui le rend assez fréquenté.
             p 
-              | Le terrain est assez "valloné", il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (par exemple via l'<a href="#{app_path}">appli Boolder</a>).
-            p 
-              | Attention à ne pas confondre les différents marquages bleus : il existe un circuit bleu, un circuit bleu ciel, et un circuit de randonnée. Vérifiez bien de quel bleu il s'agit quand vous vous orientez ;)
+              | Le terrain a du relief, il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>).
 
       - if @area.id == 2
         div class="px-4 sm:px-0"
@@ -61,7 +59,15 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
             p 
               | Les grimpeurs intermédiaires/expérimentés préféreront la zone centrale ainsi que les circuits bleu, rouge et blanc. 
             p
-              | À savoir : dans la zone centrale la roche sèche assez vite grâce à l'altitude de 95,2 mètres (d'où le secteur tire son nom) et de l'exposition au soleil.
+              | À savoir : dans la zone centrale la roche sèche assez vite grâce à son altitude (de 95,2 mètres, d'où le secteur tire son nom) et de l'exposition au soleil.
+
+      - if @area.id == 7
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Apremont est un secteur offrant de nombreuses voies pour tous les niveaux.
+            p 
+              | Le terrain a beaucoup de relief et les blocs sont très nombreux : il n'est pas facile de se déplacer ni de se repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>), ou alors de rester plutôt dans la zone Ouest (circuit bleu) qui a moins de relief.
     
     div class="col-span-1"
       = render "areas/show/map"
