@@ -68,6 +68,20 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
               | Apremont est un secteur offrant de nombreuses voies pour tous les niveaux.
             p 
               | Le terrain a beaucoup de relief et les blocs sont très nombreux : il n'est pas facile de se déplacer ni de se repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>), ou alors de rester plutôt dans la zone Ouest (circuit bleu) qui a moins de relief.
+
+      - if @area.id == 9
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Éléphant est un secteur somptueux, offrant environ 250 voies.
+            p 
+              | Attention, les blocs sont en moyenne (très) hauts ! Les crash pads et les pareurs sont de rigeur. Et attention à ne pas sous-estimer la descente.
+            p 
+              | Les débutants préféreront le circuit jaune (avec des blocs de moins de 2 ou 3 mètres) qui se situe dans la partie Nord du secteur.
+            p 
+              | Le passage de la partie Nord (circuit jaune) à la partie Sud (circuits bleu et noir) est assez difficile à cause de nombreux blocs très hauts en enfilade.
+            p 
+              | Attention : Depuis 2018 le bloc de l'Éléphant est interdit à la grimpe à cause d'un risque d'éboulement.
     
     div class="col-span-1"
       = render "areas/show/map"
