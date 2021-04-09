@@ -14,7 +14,9 @@ div class="max-w-7xl mx-auto mb-8 px-4 sm:px-6 lg:px-8"
             = link_to circuit_path(circuit), class: (circuit.id == @circuit.id) ? "bg-green-100 text-green-700 flex items-center px-3 py-2 text-sm font-medium rounded-md" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md" do
               span class="truncate"= circuit.name
               - badge_color = (circuit.id == @circuit.id) ? "bg-white" : "bg-gray-200 group-hover:bg-gray-300"
-              span class="#{badge_color} ml-auto inline-block py-0.5 px-3 text-xs rounded-full"= circuit.problems.count
+              span class="#{badge_color} ml-auto inline-block py-0.5 px-3 text-xs rounded-full"
+                - cache "circuit/#{circuit.id}/count", expires_in: 12.hours do
+                  = circuit.problems.count
 
       div class="col-span-3"
 

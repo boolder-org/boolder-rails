@@ -6,7 +6,9 @@
       <span class="truncate"><%= t("problem.level_x", level: level) %></span>
       <% badge_color = (level == params[:level]) ? "bg-white" : "bg-gray-200 group-hover:bg-gray-300" %>
       <span class="<%= badge_color %> ml-auto inline-block py-0.5 px-3 text-xs rounded-full">
-        <%= @area.problems.level(level.to_i).count %>
+        <% cache "area/#{@area.id}/level/#{level}/count", expires_in: 12.hours do %>
+          <%= @area.problems.level(level.to_i).count %>
+        <% end %>
       </span>
   <% end %>
 <% end %>
