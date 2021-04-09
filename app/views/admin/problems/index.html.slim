@@ -21,7 +21,7 @@ div class="flex flex-col my-6"
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Info
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Topo Lines
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
           tbody class="bg-white divide-y divide-gray-200"
             - @problems.each do |problem|
               tr class="place-content-start align-top h-16"
@@ -42,8 +42,7 @@ div class="flex flex-col my-6"
                   - if problem.risky
                     div class="text-sm text-gray-500" risky
                 td class="px-6 py-0 whitespace-nowrap"
-                  - problem.lines.published.each do |line|
-                    = link_to(image_tag(line.topo.photo.variant(resize_to_limit: [400, 400]), class: "h-16"), edit_admin_line_path(line))
+                  
 
 p= "#{@problems.count} results"
 

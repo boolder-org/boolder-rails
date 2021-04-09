@@ -19,5 +19,11 @@ module Boolder
     # config.active_storage.variant_processor = :vips
 
     # config.active_job.queue_adapter = :sidekiq
+
+    config.imgix = {
+      source: "boolder.imgix.net",
+      use_https: true,
+      include_library_param: true
+    }
   end
 end

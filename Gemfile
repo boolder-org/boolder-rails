@@ -23,6 +23,7 @@ gem "webpacker", github: "rails/webpacker", ref: 'b6c2180' # upgrade webpacker w
 gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'
 gem 'rack-cors', '~> 1.1.1'
+gem 'imgix-rails', '~> 4.2.0'
 
 gem 'kaminari', '~> 1.2.1'
 

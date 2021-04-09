@@ -21,8 +21,6 @@ class Admin::ToposController < Admin::BaseController
       metadata_hash["problem_ids"].uniq.each do |problem_id|
         Line.create(topo_id: topo.id, problem_id: problem_id)
       end
-      
-      PrecomputeTopoVariantsJob.perform_later(topo)
 
       flash[:notice] = "Topo created"
       redirect_to edit_admin_topo_path(topo)
