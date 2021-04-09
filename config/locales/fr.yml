@@ -55,7 +55,7 @@ fr:
         one: "%{count} voie entre %{level_min} et %{level_max}"
         other: "%{count} voies entre %{level_min} et %{level_max}"
     tabs:
-      infos: Infos pratiques
+      infos: Infos
       problems: Voies
       circuits: Circuits
       map: Carte topo

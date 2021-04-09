@@ -55,7 +55,7 @@ en:
         one: "%{count} problem between %{level_min} and %{level_max}"
         other: "%{count} problems between %{level_min} and %{level_max}"
     tabs:
-      infos: Practical info
+      infos: Info
       problems: Problems
       circuits: Circuits
       map: Map
