@@ -44,14 +44,17 @@ namespace :geojson do
       factory.feature(poi.route, "poiroute_#{poi.id}", { }) if poi.route
     end.compact
 
+    readme = "****PLEASE READ ME***** This data belongs to boolder.com. Want to use it in your app? Let's discuss: hello@boolder.com"
+    readme_feature = factory.feature("POINT(0 0)", nil, { readme: readme })
+
     feature_collection = factory.feature_collection(
-      problem_features + boulder_features + circuit_features + poi_features + poiroute_features
+      [readme_feature] + problem_features + boulder_features + circuit_features + poi_features + poiroute_features
     )
 
-    geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+    geo_json = RGeo::GeoJSON.encode(feature_collection)
 
     File.open(Rails.root.join('export', 'app', "area-#{area_id}", "area-#{area_id}-data.geojson"),"w") do |f|
-      f.write(geo_json)
+      f.write(JSON.pretty_generate(geo_json))
     end
 
     puts "exported area-#{area_id}-data.geojson"
