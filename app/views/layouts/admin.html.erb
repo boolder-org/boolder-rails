@@ -32,7 +32,9 @@
               <%= link_to "Pois", admin_pois_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
 
               <div class="relative" data-controller="dropdown">
-                <%= link_to "Import", "#", { class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium", 'data-action': "click->dropdown#toggle click@window->dropdown#hide", 'data-dropdown-target': "button" } %>
+                <div class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer"  data-action="click->dropdown#toggle click@window->dropdown#hide" data-dropdown-target="button">
+                  Import
+                </div>
 
                 <div class="hidden origin-top-left absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu" data-dropdown-target="menu">
                   <%= link_to "Import GeoJSON", new_admin_import_path, class: "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100",  role: "menuitem" %>
