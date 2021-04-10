@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       resources :topos
       resources :problem_imports
       resources :lines
+      resources :pois
 
       root 'areas#index'
     end
