@@ -24,7 +24,7 @@ class Admin::ProblemsController < Admin::BaseController
 
   def new
     @problem = Problem.new
-    area = Area.find(session[:area_id])
+    area = Area.find(params[:area_id] || session[:area_id])
     @circuits = area.circuits.all
     extracted_params = params[:extracted]
 
