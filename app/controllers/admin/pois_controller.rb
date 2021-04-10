@@ -3,6 +3,17 @@ class Admin::PoisController < Admin::BaseController
     @pois = Poi.order(:id)
   end
 
+  def new
+    @poi = Poi.new
+  end
+
+  def create
+    poi = Poi.create!(poi_params)
+
+    flash[:notice] = "Poi created"
+    redirect_to admin_pois_path
+  end
+
   def edit
     @poi = Poi.find(params[:id])
   end
