@@ -20,8 +20,12 @@ div class="flex flex-col my-6"
                     = link_to(area.name, admin_area_problems_path(area_id: area.id, circuit_id: "first"))
                   span class="ml-2 text-gray-500 text-sm"
                     = "(#{area.problems.count})"
+                  - if !area.published?
+                    div class="text-yellow-500 text-sm" not published
                 td class="px-6 py-2 whitespace-nowrap w-2/12"
                   = render "level_chart", area: area
                 td class="px-6 py-2 whitespace-nowrap w-6/12"
+                  div class="flex justify-end"
+                    = render "more", area: area
 
 p= "#{@areas.count} results"
