@@ -21,6 +21,10 @@ module ProblemsHelper
     color_mapping[circuit_color] || "rgb(80% 80% 80%)"
   end
 
+  def bleau_info_url(problem)
+    "https://bleau.info/c/#{problem.bleau_info_id}.html" if problem.bleau_info_id.present?
+  end
+
   private
   def color_mapping
      {

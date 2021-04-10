@@ -11,7 +11,12 @@ div class="mt-10 sm:mt-0"
             div class="grid grid-cols-6 gap-6"
                 = render "form", form: form
 
-          div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
+          div class="px-4 py-3 bg-gray-50 flex justify-between sm:px-6"
+            div class="flex items-center"
+              - items = []
+              - items << OpenStruct.new(text: "see on boolder.com", link: problem_path(@problem))
+              - items << OpenStruct.new(text: "see on bleau.info", link: bleau_info_url(@problem)) if @problem.bleau_info_id.present?
+              = render 'shared/dot_menu', items: items
             button type="submit" class="btn" Update
     div class="md:col-span-2"
       div class="px-4 sm:px-0"
