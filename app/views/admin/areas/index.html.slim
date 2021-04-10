@@ -26,6 +26,8 @@ div class="flex flex-col my-6"
                   = render "level_chart", area: area
                 td class="px-6 py-2 whitespace-nowrap w-6/12"
                   div class="flex justify-end"
-                    = render "more", area: area
+                    - items = []
+                    - items << OpenStruct.new(text: "Edit", link: edit_admin_area_path(area))
+                    = render "shared/dot_menu", items: items, align_class: "right-0"
 
 p= "#{@areas.count} results"
