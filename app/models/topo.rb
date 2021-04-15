@@ -1,6 +1,6 @@
 class Topo < ApplicationRecord
   has_one_attached :photo
-  has_many :lines
+  has_many :lines, dependent: :destroy
   has_many :problems, through: :lines
 
   scope :published, -> { where(published: true) }
