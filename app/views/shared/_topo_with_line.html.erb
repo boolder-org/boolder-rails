@@ -1,5 +1,5 @@
 <div class="relative" data-controller="topo-line" data-action="turbo:before-cache@window->topo-line#hidePath" data-topo-line-coordinates-value="<%= line.coordinates.to_json %>" data-topo-line-color-value="<%= uicolor(line.problem.circuit&.color) %>">
-  <%= render 'topo_image', line: line %>
+  <%= render 'shared/topo_image', line: line %>
   <% if line.coordinates %>
     <div class="absolute top-0 left-0 w-full">
       <svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"></svg>
