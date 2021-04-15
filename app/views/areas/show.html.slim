@@ -82,6 +82,17 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
               | Le passage de la partie Nord (circuit jaune) à la partie Sud (circuits bleu et noir) est assez difficile à cause de nombreux blocs très hauts en enfilade.
             p 
               | Attention : Depuis 2018 le bloc de l'Éléphant est interdit à la grimpe à cause d'un risque d'éboulement.
+
+      - if @area.id == 12
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Roche aux Sabots est un secteur de petite taille, avec des blocs pour tous les niveaux.
+
+            p 
+              | Les blocs font en moyenne 3 ou 4 mètres de haut, avec une bonne réception au sol, ce qui permet de grimper en confiance.
+            p 
+              | Il est très facile de se repérer vu le terrain plat et le faible nombre de blocs.
     
     div class="col-span-1"
       = render "areas/show/map"
