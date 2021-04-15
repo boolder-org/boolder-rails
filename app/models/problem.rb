@@ -1,7 +1,7 @@
 class Problem < ApplicationRecord
   belongs_to :circuit, optional: true
   belongs_to :area
-  has_many :lines
+  has_many :lines, dependent: :destroy
   has_many :topos, through: :lines
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
