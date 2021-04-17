@@ -4,7 +4,7 @@ class Circuit < ApplicationRecord
 
   default_scope { order(order: :asc, id: :asc) }
 
-  COLOR_VALUES = %w(yellow orange green blue skyblue salmon red black white)
+  COLOR_VALUES = %w(yellow purple orange green blue skyblue salmon red black white)
 
   COLOR_VALUES.each do |color|
     scope color, -> { where(color: color) } 
