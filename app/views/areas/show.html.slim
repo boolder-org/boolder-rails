@@ -87,12 +87,21 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         div class="px-4 sm:px-0"
           div class="prose" 
             p 
-              | Roche aux Sabots est un secteur de petite taille, avec des blocs pour tous les niveaux.
-
+              | La Roche aux Sabots est un secteur de petite taille, avec des blocs pour tous les niveaux.
             p 
               | Les blocs font en moyenne 3 ou 4 mètres de haut, avec une bonne réception au sol, ce qui permet de grimper en confiance.
             p 
-              | Il est très facile de se repérer vu le terrain plat et le faible nombre de blocs.
+              | Il est très facile de se repérer vu le terrain plat et les espaces entre les blocs.
+
+      - if @area.id == 13
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | La Canche aux Merciers est un secteur qui offre des voies pour tous les niveaux.
+            p 
+              | Il est très facile de s'y repérer, et le terrain est plat.
+            p 
+              | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
     
     div class="col-span-1"
       = render "areas/show/map"
