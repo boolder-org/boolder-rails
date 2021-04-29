@@ -114,6 +114,22 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
               | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
             p 
               | Les étendues de sable blanc sont également idéales pour les enfants et pour piquer-niquer !
+
+      - if @area.id == 14
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Le Rocher du Potala est un secteur de taille moyenne, avec une bonne diversité de voies jusqu'au niveau 6.
+            p 
+              | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
+
+      - if @area.id == 15
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Gorge aux Châts est un secteur de petite taille (environ 200 voies), avec une bonne densité de voies de niveau 6.
+            p 
+              | Il n'y a pas de parking officiel, mais vous pouvez vous garer le long de la route.
     
     div class="col-span-1"
       = render "areas/show/map"
