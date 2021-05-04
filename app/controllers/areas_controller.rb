@@ -8,8 +8,8 @@ class AreasController < ApplicationController
 
     @annotations = @areas.map do |area| 
       {
-        latitude: area.pois.first&.location&.latitude,
-        longitude: area.pois.first&.location&.longitude,
+        latitude: area.pois.first&.route&.points&.last&.latitude,
+        longitude: area.pois.first&.route&.points&.last&.longitude,
         color: "#059669",
         title: area.name,
         glyphText: "",
