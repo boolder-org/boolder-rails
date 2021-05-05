@@ -5,4 +5,8 @@ class Area < ApplicationRecord
   has_many :pois
 
   scope :published, -> { where(published: true) }
+
+  def start_location
+    @start_location ||= pois.first&.route&.points&.last
+  end
 end

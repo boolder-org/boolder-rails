@@ -145,7 +145,6 @@ export default class extends Controller {
 
             // set up visible viewport
             if (center) {
-              console.log("coucou")
               map.region = new mapkit.CoordinateRegion(
                 new mapkit.Coordinate(center.latitude, center.longitude),
                 new mapkit.CoordinateSpan(span, span)
