@@ -8,11 +8,12 @@ class AreasController < ApplicationController
 
     @annotations = @areas.map do |area| 
       {
-        latitude: area.pois.first&.route&.points&.last&.latitude,
-        longitude: area.pois.first&.route&.points&.last&.longitude,
+        latitude: area.start_location&.latitude,
+        longitude: area.start_location&.longitude,
         color: "#059669",
         title: area.name,
         glyphText: "",
+        clusteringIdentifier: area.start_location.distance(Area.find(2).start_location) < 1_500 ? "trois-pignons" : nil,
       } 
     end
   end
