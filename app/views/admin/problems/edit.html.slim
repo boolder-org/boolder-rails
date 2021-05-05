@@ -14,8 +14,8 @@ div class="mt-10 sm:mt-0"
           div class="px-4 py-3 bg-gray-50 flex justify-between sm:px-6"
             div class="flex items-center"
               - items = []
-              - items << OpenStruct.new(text: "see on boolder.com", link: problem_path(@problem))
-              - items << OpenStruct.new(text: "see on bleau.info", link: bleau_info_url(@problem)) if @problem.bleau_info_id.present?
+              - items << { text: "see on boolder.com", link: problem_path(@problem), target: "_blank" }
+              - items << { text: "see on bleau.info", link: bleau_info_url(@problem), target: "_blank" } if @problem.bleau_info_id.present?
               = render 'shared/dot_menu', items: items, align_class: "bottom-0"
             button type="submit" class="btn" Update
     div class="md:col-span-2"

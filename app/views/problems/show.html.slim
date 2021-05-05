@@ -12,8 +12,8 @@ div class="max-w-7xl mx-auto pt-6 pb-12 sm:px-6 lg:px-8"
             h1 class="text-4xl font-bold"= @problem.name_with_fallback
             div class="text-gray-400 text-4xl font-bold"= @problem.grade
           - items = []
-          - items << OpenStruct.new(text: t("problem.see_on_map"), link: map_area_path(@problem.area, problem: @problem.id))
-          - items << OpenStruct.new(text: t("problem.see_on_bleau_info"), link: bleau_info_url(@problem)) if @problem.bleau_info_id.present?
+          - items << { text: t("problem.see_on_map"), link: map_area_path(@problem.area, problem: @problem.id) }
+          - items << { text: t("problem.see_on_bleau_info"), link: bleau_info_url(@problem), target: "_blank" } if @problem.bleau_info_id.present?
           = render "shared/dot_menu", items: items, align_class: "right-0"
 
         div class="text-gray-500 flex space-x-2 mt-2"
