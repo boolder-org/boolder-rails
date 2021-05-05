@@ -22,6 +22,14 @@ class Admin::LinesController < Admin::BaseController
     redirect_to edit_admin_line_path(line)
   end
 
+  def destroy
+    line = Line.find(params[:id])
+    line.destroy!
+
+    flash[:notice] = "Line destroyed"
+    redirect_to edit_admin_problem_path(line.problem)
+  end
+
   private 
   def line_params
     params.require(:line).permit(:problem_id, :topo_id)

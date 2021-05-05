@@ -19,5 +19,8 @@ div data-controller="topo-editor"
 
       div class="my-3"
         = form.submit("Save", class: "btn")
+        - items = []
+        - items << { text: "destroy", link: admin_line_path, method: :delete, data: { confirm: 'Are you sure?' } }
+        = render 'shared/dot_menu', items: items, align_class: "bottom-0"
       
 div style="margin-bottom: 300px"

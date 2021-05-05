@@ -24,7 +24,7 @@
   <div data-dropdown-target="menu" class="hidden z-50 origin-top-right absolute <%= align_class %> mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
     <div class="py-1" role="none">
       <% items.each do |item| %>
-        <%= link_to item.text, item.link, class: "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900", role: "menuitem" %>
+        <%= link_to item[:text], item[:link], class: "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900", role: "menuitem", method: (item[:method] || :get), data: item[:data], target: item[:target]  %>
       <% end %>
     </div>
   </div>
