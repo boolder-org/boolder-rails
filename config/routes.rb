@@ -37,7 +37,7 @@ Rails.application.routes.draw do
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
 
-    # apple maps redirect (apple_map_controller.js)
+    # apple maps redirect (apple_map_geojson_controller.js)
     get '/geojson/problem_:id', to: redirect("/%{locale}/problems/%{id}")
 
     get '/soon', to: 'welcome#soon', as: :soon
