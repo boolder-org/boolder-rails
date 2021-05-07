@@ -44,6 +44,9 @@ en:
     areas_for_beginners: Top areas for beginners in Fontainebleau
     all_areas: See all areas
   area:
+    index:
+      map:
+        see: "See"
     train_station: "%{name} train station"
     train_station_generic: "Train station"
     top_areas_by_level: Top areas by level

@@ -12,6 +12,8 @@ class AreasController < ApplicationController
         longitude: area.start_location&.longitude,
         color: "#059669",
         title: area.name,
+        linkUrl: area_path(area),
+        linkText: t("area.index.map.see"),
         glyphText: "",
         clusteringIdentifier: area.start_location.distance(Area.find(2).start_location) < 1_500 ? "trois-pignons" : nil,
       } 

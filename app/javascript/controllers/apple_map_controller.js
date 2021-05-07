@@ -57,7 +57,24 @@ export default class extends Controller {
     var annotations = annotationsHash.map(function (annotationHash) {
       var coord = new mapkit.Coordinate(annotationHash.latitude, annotationHash.longitude);
       delete annotationHash['latitude']; delete annotationHash['longitude']; 
-      return new MarkerAnnotation(coord, annotationHash)
+      var annotation = new MarkerAnnotation(coord, annotationHash)
+
+      if(annotationHash["linkUrl"]) {
+        annotation.callout = {
+          calloutContentForAnnotation: function(annotation) {
+            var element = document.createElement("div");
+            element.className = "apple-map-callout-content";
+            var link = element.appendChild(document.createElement("a"));
+            link.href = annotationHash["linkUrl"];
+            link.target = "_blank"
+            link.textContent = annotationHash["linkText"]
+            
+            return element;
+          }
+        };
+      }
+
+      return annotation
     });
 
     this.map.showItems(pois.concat(annotations));

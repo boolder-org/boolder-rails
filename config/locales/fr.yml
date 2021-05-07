@@ -44,6 +44,9 @@ fr:
     areas_for_beginners: Secteurs pour bien débuter à Fontainebleau
     all_areas: Voir tous les secteurs
   area:
+    index:
+      map:
+        see: "Voir"
     train_station: "Gare %{name}"
     train_station_generic: "Gare"
     top_areas_by_level: Top secteurs par niveau

@@ -80,7 +80,7 @@ export default class extends Controller {
 
                     calloutContentForAnnotation: function(annotation) {
                         var element = document.createElement("div");
-                        element.className = "problem-callout-content";
+                        element.className = "apple-map-callout-content";
                         var link = element.appendChild(document.createElement("a"));
                         link.href = redirect + annotation.data.id;
                         link.target = "_blank"
