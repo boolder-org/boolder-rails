@@ -20,8 +20,17 @@
             <%= circle_view(problem) %>
             <span class="ml-2 font-medium"><%= problem.name_with_fallback %></span>
           </div>
-          <div class="text-gray-500 ml-1">
-            <%= problem.grade %>
+          <div>
+            <div class="flex space-x-2">
+              <% if problem.featured %>
+                <div class="text-red-400">
+                  <%= render 'svg/heart', width: 24, height: 24 %>
+                </div>
+              <% end %>
+              <div class="text-gray-500">
+                <%= problem.grade %>
+              </div>
+            </div>
           </div>
         </div>
       </div>
