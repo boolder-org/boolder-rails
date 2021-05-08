@@ -1,26 +1,37 @@
 <div class="space-y-4 sm:sticky sm:top-20">
 
-  <nav class="space-y-1" aria-label="Level filter">
+  <div class="space-y-1" aria-label="Level filter">
   <% (1..8).to_a.map(&:to_s).each do |level| %>
     <% link_color = (level == params[:level]) ? "bg-green-100 text-green-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
-    <% new_params = { featured: params[:featured] } %>
+    <% new_params = { } %>
     <% new_params[:level] = level if level != params[:level] %>
     <%= link_to area_problems_path(new_params), class: link_color + " flex items-center px-3 py-2 text-sm font-medium rounded-md" do %>
         <span class="truncate"><%= t("problem.level_x", level: level) %></span>
         <% badge_color = (level == params[:level]) ? "bg-white" : "bg-gray-200 group-hover:bg-gray-300" %>
         <span class="<%= badge_color %> ml-auto inline-block py-0.5 px-3 text-xs rounded-full">
-          <% cache "area/#{@area.id}/level/#{level}/featured/#{params[:featured]}/count", expires_in: 12.hours do %>
-            <%= @area.problems.merge(params[:featured] == "true" ? Problem.featured : Problem.all).level(level.to_i).count %>
+          <% cache "area/#{@area.id}/level/#{level}/count", expires_in: 12.hours do %>
+            <%= @area.problems.level(level.to_i).count %>
           <% end %>
         </span>
     <% end %>
   <% end %>
-  </nav>
+  </div>
+
+  <div class="space-y-1">
+    <% @area.circuits.each do |circuit| %>
+      <% link_color = (params[:circuit_id].to_i == circuit.id) ? "bg-green-100 text-green-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
+      <% link_path = area_problems_path(circuit_id: circuit.id) %>
+      <%= link_to link_path, class: link_color + " flex items-center px-3 py-2 text-sm font-medium rounded-md" do %>
+          <span class="truncate">Circuit <%= circuit.name %></span>
+
+      <% end %>
+    <% end %>
+  </div>
 
   <% if params[:featured].present? || @area.problems.featured.any? %>
     <div class="">
       <% link_color = (params[:featured] == "true") ? "bg-red-100 text-red-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
-      <% link_path = area_problems_path(level: params[:level], featured: params[:featured] == "true" ? false : true) %>
+      <% link_path = area_problems_path(featured: params[:featured] == "true" ? false : true) %>
       <%= link_to link_path, class: link_color + " flex items-center px-3 py-2 text-sm font-medium rounded-md" do %>
           <div class="flex space-x-2 items-center">
             <%= render 'svg/heart', width: 24, height: 24 %>
