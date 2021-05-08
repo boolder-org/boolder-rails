@@ -35,6 +35,7 @@ class Problem < ApplicationRecord
   scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
 
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
+  scope :featured, -> { where(featured: true) }
 
   def name_with_fallback
     if name.present?
