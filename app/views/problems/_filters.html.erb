@@ -7,10 +7,10 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
         </svg>
-        Par niveau
+        Niveau
       </h3>
     </a>
-    <div class="mt-2 space-y-1 <%= "hidden" unless params[:level] != "all" %>" data-reveal-target="item">
+    <div class="mt-2 space-y-1 hidden <%= "sm:block" if params[:level] != "all" %>" data-reveal-target="item">
       <% (1..8).to_a.map(&:to_s).each do |level| %>
         <% link_color = (level == params[:level]) ? "bg-green-100 text-green-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
         <% new_params = { } %>
@@ -38,13 +38,16 @@
         Circuit
       </h3>
     </a>
-    <div class="mt-2 space-y-1 <%= "hidden" unless params[:circuit_id].present? %>" data-reveal-target="item">
+    <div class="mt-2 space-y-1 hidden <%= "sm:block" if params[:circuit_id].present? %>" data-reveal-target="item">
       
       <% @area.circuits.each do |circuit| %>
         <% link_color = (params[:circuit_id].to_i == circuit.id) ? "bg-green-100 text-green-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
         <% link_path = area_problems_path(circuit_id: circuit.id) %>
         <%= link_to link_path, class: link_color + " flex items-center px-3 py-2 text-sm font-medium rounded-md" do %>
-            <span class="truncate">Circuit <%= circuit.name %></span>
+            <div class="flex space-x-2 items-center">
+              <%= circuit_circle_view(circuit, klass: "h-4 w-4 leading-4") %>
+              <span class="truncate">Circuit <%= circuit.name %></span>
+            </div>
 
             <% badge_color = (circuit.id == params[:circuit_id].to_i) ? "bg-white" : "bg-gray-200 group-hover:bg-gray-300" %>
             <span class="<%= badge_color %> ml-auto inline-block py-0.5 px-3 text-xs rounded-full">
@@ -68,12 +71,12 @@
         Sélection
       </h3>
     </a>
-      <div class="mt-2 space-y-1 <%= "hidden" unless params[:featured].present? %>" data-reveal-target="item">
-        <% link_color = (params[:featured] == "true") ? "bg-red-100 text-red-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
+      <div class="mt-2 space-y-1 hidden <%= "sm:block" if params[:featured].present? %>" data-reveal-target="item">
+        <% link_color = (params[:featured] == "true") ? "bg-green-100 text-green-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>
         <% link_path = area_problems_path(featured: params[:featured] == "true" ? false : true) %>
         <%= link_to link_path, class: link_color + " flex items-center px-3 py-2 text-sm font-medium rounded-md" do %>
-            <div class="flex space-x-2 items-center justify-between">
-              <%= render 'svg/heart', width: 24, height: 24 %>
+            <div class="flex space-x-2 items-center">
+              <span class="text-red-400"><%= render 'svg/heart', width: 24, height: 24 %></span>
               <span class="truncate"><%= t("problem.featured") %></span>
             </div>
 

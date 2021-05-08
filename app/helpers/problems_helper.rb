@@ -11,10 +11,10 @@ module ProblemsHelper
   end
 
   # FIXME: make it DRY
-  def circuit_circle_view(circuit)
+  def circuit_circle_view(circuit, klass: "h-6 w-6 leading-6")
     content_tag(:span, "&nbsp;".html_safe, 
       style: "background: #{uicolor(circuit&.color)}; color: #{text_color(circuit&.color)}",
-      class: "rounded-full h-6 w-6 inline-flex leading-6 justify-center")
+      class: "rounded-full #{klass} inline-flex justify-center")
   end
 
   def uicolor(circuit_color)
