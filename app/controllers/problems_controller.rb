@@ -3,6 +3,8 @@ class ProblemsController < ApplicationController
     @area = Area.find(params[:area_id])
     @problems = @area.problems.order("grade ASC, id ASC")
 
+    @problems = @problems.featured if params[:featured] == "true"
+
     if params[:level].to_i.in?(1..8)
       @problems = @problems.level(params[:level].to_i)
     else
