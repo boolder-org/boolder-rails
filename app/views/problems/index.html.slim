@@ -14,8 +14,8 @@ div class="max-w-7xl mx-auto mb-8 px-4 sm:px-6 lg:px-8"
 
     div class="col-span-3"
       div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:max-w-none"
-        / FIXME
-        / https://stackoverflow.com/questions/8502505/order-varchar-string-as-numeric
+        / FIXME: sort circuit_number via SQL instead of ruby
+        / eg. https://stackoverflow.com/questions/8502505/order-varchar-string-as-numeric
         - collection = params[:circuit_id].present? ? @problems.sort_by{|p| p.enumerable_circuit_number } : @problems
         = render partial: "problem", collection: collection, cached: true
       - unless params[:circuit_id].present? 
