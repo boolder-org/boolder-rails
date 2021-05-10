@@ -12,6 +12,7 @@ fr:
       red: Rouge
       white: Blanc
       black: Noir
+    long_name: "Circuit %{name}"
   problem:
     no_name: Sans nom
     problems: Voies
@@ -28,6 +29,10 @@ fr:
     sit_start: Départ assis
     risky: Dangereux en cas de chute
     featured: Coup de cœur
+    filters:
+      level: Niveau
+      circuit: Circuit
+      selection: Sélection
   layout:
     nav:
       open_menu: Ouvrir le menu principal
@@ -82,6 +87,13 @@ fr:
       offline:
         title: Mode hors-ligne
         subtitle: L'appli fonctionne même en mode avion.
+  views:
+    pagination:
+      first: "Début"
+      last: "Fin"
+      previous: "Précédent"
+      next: "Suivant"
+      truncate: "&hellip;"
   meta_tags:
     welcome:
       index:
