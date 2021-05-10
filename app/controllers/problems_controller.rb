@@ -16,7 +16,7 @@ class ProblemsController < ApplicationController
     end
 
     @page = params[:page].presence || 1
-    @problems = @problems.page(@page).per(200)
+    @problems = @problems.page(@page).per(100)
   end
 
   def show

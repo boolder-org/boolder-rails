@@ -1,0 +1,14 @@
+<%
+ # Link showing page number
+ #  - available local variables
+ #    page         : a page object for "this" page
+ #    url          : url to this page
+ #    current_page : a page object for the currently displayed page
+ #    total_pages  : total number of pages
+ #    per_page     : number of items to fetch per page
+ #    remote       : data-remote
+%>
+
+<% klass = page.current? ? "border-green-500 text-green-600" : "order-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" %>
+
+<%= link_to page, url, remote: remote, rel: page.rel, class: "#{klass} border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium" %>
