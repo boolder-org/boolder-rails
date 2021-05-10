@@ -82,6 +82,13 @@ fr:
       offline:
         title: Mode hors-ligne
         subtitle: L'appli fonctionne même en mode avion.
+  views:
+    pagination:
+      first: "Début"
+      last: "Fin"
+      previous: "Précédent"
+      next: "Suivant"
+      truncate: "&hellip;"
   meta_tags:
     welcome:
       index:

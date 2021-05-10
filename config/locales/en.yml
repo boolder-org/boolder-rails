@@ -82,6 +82,13 @@ en:
       offline:
         title: Offline mode
         subtitle: The app woks even in airplane mode.
+  views:
+    pagination:
+      first: "First"
+      last: "Last"
+      previous: "Previous"
+      next: "Next"
+      truncate: "&hellip;"
   meta_tags:
     welcome:
       index:

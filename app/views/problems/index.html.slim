@@ -18,3 +18,6 @@ div class="max-w-7xl mx-auto mb-8 px-4 sm:px-6 lg:px-8"
         / https://stackoverflow.com/questions/8502505/order-varchar-string-as-numeric
         - collection = params[:circuit_id].present? ? @problems.sort_by{|p| p.enumerable_circuit_number } : @problems
         = render partial: "problem", collection: collection, cached: true
+      - unless params[:circuit_id].present? 
+        div class="mt-8"
+          = paginate collection
