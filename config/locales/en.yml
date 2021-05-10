@@ -12,6 +12,7 @@ en:
       red: Red
       white: White
       black: Black
+    long_name: "%{name} circuit"
   problem:
     no_name: No name
     problems: Problems
@@ -28,6 +29,10 @@ en:
     sit_start: Sit start
     risky: Risky
     featured: Featured
+    filters:
+      level: Level
+      circuit: Circuit
+      selection: Selection
   layout:
     nav:
       open_menu: Open main menu
