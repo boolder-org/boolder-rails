@@ -27,6 +27,13 @@ module ProblemsHelper
     "https://bleau.info/c/#{problem.bleau_info_id}.html" if problem.bleau_info_id.present?
   end
 
+  def filter_section(name:, highlighted:, &block)
+    render(
+      partial: 'problems/filter_section',
+      locals: { name: name, highlighted: highlighted, block: block }
+    )
+  end
+
   private
 
   def circle_view(content, background_color:, text_color:, klass: "h-6 w-6 leading-6")
