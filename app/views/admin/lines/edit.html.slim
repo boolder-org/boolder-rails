@@ -3,7 +3,7 @@
 - add_breadcrumb "Problem ##{@line.problem.id}", edit_admin_problem_path(@line.problem)
 - add_breadcrumb "Line ##{@line.id}", nil, class: "active"
 
-div class="my-3" = circle_view_with_name(@line.problem)
+div class="my-3" = problem_circle_view_with_name(@line.problem)
 div class="my-3" = link_to "Topo ##{@line.topo.id}", edit_admin_topo_path(@line.topo)
 
 div data-controller="topo-editor"
