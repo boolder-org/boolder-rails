@@ -5,7 +5,7 @@
       <svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"></svg>
       <div class="absolute" style="left:<%= line.coordinates.first['x']*100 %>%; top: <%= line.coordinates.first['y']*100 %>%">
         <div class="relative hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
-          <%= circle_view(@problem) %>
+          <%= problem_circle_view(@problem) %>
         </div>
       </div>
     </div>

@@ -32,15 +32,12 @@ Rails.application.routes.draw do
     end
 
     resources :problems, only: [:show]
-    resources :circuits, only: [:show]
 
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
 
     # apple maps redirect (apple_map_geojson_controller.js)
     get '/geojson/problem_:id', to: redirect("/%{locale}/problems/%{id}")
-
-    get '/soon', to: 'welcome#soon', as: :soon
   end
 
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized

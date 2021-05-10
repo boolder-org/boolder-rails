@@ -39,12 +39,12 @@ div class="max-w-7xl mx-auto pt-6 pb-12 sm:px-6 lg:px-8"
         div
           - if previous = @problem.previous
             = link_to problem_path(previous) do
-              = circle_view(previous)
+              = problem_circle_view(previous)
               span class="ml-2 font-medium"= previous.name_with_fallback
         div
           - if nexxt = @problem.next
             = link_to problem_path(nexxt) do
-              = circle_view(nexxt)
+              = problem_circle_view(nexxt)
               span class="ml-2 font-medium"= nexxt.name_with_fallback
 
     div class="col-span-1"

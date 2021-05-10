@@ -11,8 +11,12 @@ class ProblemsController < ApplicationController
       params[:level] = "all"
     end
 
+    if params[:circuit_id].present? && circuit = Circuit.find(params[:circuit_id].to_i)
+      @problems = @problems.where(circuit_id: circuit.id)
+    end
+
     @page = params[:page].presence || 1
-    @problems = @problems.page(@page).per(200)
+    @problems = @problems.page(@page).per(100)
   end
 
   def show
