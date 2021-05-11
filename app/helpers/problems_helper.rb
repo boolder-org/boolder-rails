@@ -45,6 +45,7 @@ module ProblemsHelper
   def color_mapping
      {
       yellow:   "#FFCC02",
+      purple:   "#D783FF",
       orange:   "#FF9500",
       green:    "#77C344",
       blue:     "#017AFF",
