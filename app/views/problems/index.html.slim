@@ -1,5 +1,9 @@
 - if (1..8).map(&:to_s).include?(params[:level])
-  - set_meta_tags title: t("meta_tags.problems.index.title_with_level", level: params[:level], area: @area.name)
+  - set_meta_tags title: t("meta_tags.problems.index.title_level", level: params[:level], area: @area.name)
+- elsif params[:circuit_id].present? && circuit = Circuit.find(params[:circuit_id])
+  - set_meta_tags title: t("meta_tags.problems.index.title_circuit", circuit: circuit.name, area: @area.name)
+- elsif params[:featured].present?
+  - set_meta_tags title: t("meta_tags.problems.index.title_featured", area: @area.name)
 - else 
   - set_meta_tags title: t("meta_tags.problems.index.title", area: @area.name)
 
