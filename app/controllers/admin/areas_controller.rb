@@ -23,6 +23,6 @@ class Admin::AreasController < Admin::BaseController
   private 
   def area_params
     params.require(:area).
-      permit(:name, :published)
+      permit(:name, :published, :cluster)
   end
 end
