@@ -42,6 +42,8 @@ module ProblemsHelper
       class: "rounded-full #{klass} inline-flex justify-center")
   end
 
+  # FIXME: you also have to manually update colors in apple_map_geojson_controller.js
+  # https://github.com/nmondollot/boolder/blob/dbcf31e7408005f2aa6305187987108a92a63762/app/javascript/controllers/apple_map_geojson_controller.js#L93
   def color_mapping
      {
       yellow:   "#FFCC02",
