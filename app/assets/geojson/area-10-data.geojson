@@ -4817,6 +4817,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.53082212044,
+          48.38466553922
+        ]
+      },
+      "properties": {
+        "grade": "6b",
+        "circuitNumber": "",
+        "steepness": "overhang",
+        "height": null,
+        "name": "Rheingold",
+        "bleauInfoId": "9537",
+        "circuitColor": null,
+        "circuitId": null,
+        "tags": [
+
+        ],
+        "lines": [
+          {
+            "id": 4732
+          }
+        ]
+      },
+      "id": "problem_3152"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.52735821522,
           48.38540044201
         ]
@@ -5105,30 +5134,6 @@
         ]
       },
       "id": "problem_2906"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.53082212044,
-          48.38466553922
-        ]
-      },
-      "properties": {
-        "grade": "6b",
-        "circuitNumber": "",
-        "steepness": "overhang",
-        "height": null,
-        "name": "Rheingold",
-        "bleauInfoId": "9537",
-        "circuitColor": null,
-        "circuitId": null,
-        "tags": [
-
-        ]
-      },
-      "id": "problem_3152"
     },
     {
       "type": "Feature",
@@ -5512,24 +5517,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.52742359398,
-          48.38571484053
+          2.53185074768,
+          48.38603352319
         ]
       },
       "properties": {
-        "grade": "6b+",
+        "grade": "7a+",
         "circuitNumber": "",
-        "steepness": "wall",
+        "steepness": "other",
         "height": null,
-        "name": "This is Sparta!",
-        "bleauInfoId": "15416",
+        "name": "P'tite Mousse (assis)",
+        "bleauInfoId": "17670",
         "circuitColor": null,
         "circuitId": null,
         "tags": [
           "sit_start"
+        ],
+        "lines": [
+          {
+            "id": 4734
+          }
         ]
       },
-      "id": "problem_2915"
+      "id": "problem_3052"
     },
     {
       "type": "Feature",
@@ -5733,30 +5743,6 @@
         ]
       },
       "id": "problem_3037"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.53185074768,
-          48.38603352319
-        ]
-      },
-      "properties": {
-        "grade": "7a+",
-        "circuitNumber": "",
-        "steepness": "other",
-        "height": null,
-        "name": "P'tite Mousse (assis)",
-        "bleauInfoId": "17670",
-        "circuitColor": null,
-        "circuitId": null,
-        "tags": [
-          "sit_start"
-        ]
-      },
-      "id": "problem_3052"
     },
     {
       "type": "Feature",
@@ -6201,6 +6187,93 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.53104822236,
+          48.38475794535
+        ]
+      },
+      "properties": {
+        "grade": "7a",
+        "circuitNumber": "",
+        "steepness": "overhang",
+        "height": null,
+        "name": "Télépathie (gauche)",
+        "bleauInfoId": "21464",
+        "circuitColor": null,
+        "circuitId": null,
+        "tags": [
+          "sit_start"
+        ],
+        "lines": [
+          {
+            "id": 4736
+          }
+        ]
+      },
+      "id": "problem_3131"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.52742359398,
+          48.38571484053
+        ]
+      },
+      "properties": {
+        "grade": "6b+",
+        "circuitNumber": "",
+        "steepness": "wall",
+        "height": null,
+        "name": "This is Sparta!",
+        "bleauInfoId": "15416",
+        "circuitColor": null,
+        "circuitId": null,
+        "tags": [
+          "sit_start"
+        ],
+        "lines": [
+          {
+            "id": 4733
+          }
+        ]
+      },
+      "id": "problem_2915"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5293920002,
+          48.38572207696
+        ]
+      },
+      "properties": {
+        "grade": "5c",
+        "circuitNumber": "",
+        "steepness": "other",
+        "height": null,
+        "name": "28 blanc (assis)",
+        "bleauInfoId": "24008",
+        "circuitColor": null,
+        "circuitId": null,
+        "tags": [
+          "sit_start"
+        ],
+        "lines": [
+          {
+            "id": 4735
+          }
+        ]
+      },
+      "id": "problem_2996"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.52738310951,
           48.38540726102
         ]
@@ -6335,30 +6408,6 @@
         ]
       },
       "id": "problem_3205"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.5293920002,
-          48.38572207696
-        ]
-      },
-      "properties": {
-        "grade": "5c",
-        "circuitNumber": "",
-        "steepness": "other",
-        "height": null,
-        "name": "28 blanc (assis)",
-        "bleauInfoId": "24008",
-        "circuitColor": null,
-        "circuitId": null,
-        "tags": [
-          "sit_start"
-        ]
-      },
-      "id": "problem_2996"
     },
     {
       "type": "Feature",
@@ -6800,30 +6849,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.53104822236,
-          48.38475794535
-        ]
-      },
-      "properties": {
-        "grade": "7a",
-        "circuitNumber": "",
-        "steepness": "overhang",
-        "height": null,
-        "name": "Télépathie (gauche)",
-        "bleauInfoId": "21464",
-        "circuitColor": null,
-        "circuitId": null,
-        "tags": [
-          "sit_start"
-        ]
-      },
-      "id": "problem_3131"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.52771050661,
           48.38581732014
         ]
@@ -6876,6 +6901,35 @@
         ]
       },
       "id": "problem_3199"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.52721999763,
+          48.38576666482
+        ]
+      },
+      "properties": {
+        "grade": "6a",
+        "circuitNumber": "",
+        "steepness": "overhang",
+        "height": null,
+        "name": "Pompeux",
+        "bleauInfoId": "23487",
+        "circuitColor": null,
+        "circuitId": null,
+        "tags": [
+
+        ],
+        "lines": [
+          {
+            "id": 4737
+          }
+        ]
+      },
+      "id": "problem_2901"
     },
     {
       "type": "Feature",
@@ -7534,24 +7588,29 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.52721999763,
-          48.38576666482
+          2.5274206604,
+          48.38566335006
         ]
       },
       "properties": {
-        "grade": "6a",
+        "grade": "7b",
         "circuitNumber": "",
-        "steepness": "overhang",
+        "steepness": "other",
         "height": null,
-        "name": "Pompeux",
-        "bleauInfoId": "23487",
+        "name": "Tentation (assis)",
+        "bleauInfoId": "13798",
         "circuitColor": null,
         "circuitId": null,
         "tags": [
-
+          "sit_start"
+        ],
+        "lines": [
+          {
+            "id": 4738
+          }
         ]
       },
-      "id": "problem_2901"
+      "id": "problem_2912"
     },
     {
       "type": "Feature",
@@ -7745,30 +7804,6 @@
         ]
       },
       "id": "problem_3134"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.5274206604,
-          48.38566335006
-        ]
-      },
-      "properties": {
-        "grade": "7b",
-        "circuitNumber": "",
-        "steepness": "other",
-        "height": null,
-        "name": "Tentation (assis)",
-        "bleauInfoId": "13798",
-        "circuitColor": null,
-        "circuitId": null,
-        "tags": [
-          "sit_start"
-        ]
-      },
-      "id": "problem_2912"
     },
     {
       "type": "Feature",
@@ -8117,6 +8152,64 @@
         ]
       },
       "id": "problem_2928"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.53099076433,
+          48.38541847773
+        ]
+      },
+      "properties": {
+        "grade": "7a",
+        "circuitNumber": "",
+        "steepness": "overhang",
+        "height": null,
+        "name": "Parapluie",
+        "bleauInfoId": "303688",
+        "circuitColor": null,
+        "circuitId": null,
+        "tags": [
+          "sit_start"
+        ],
+        "lines": [
+          {
+            "id": 4739
+          }
+        ]
+      },
+      "id": "problem_3091"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.53091147161,
+          48.38471012795
+        ]
+      },
+      "properties": {
+        "grade": "7a+",
+        "circuitNumber": "",
+        "steepness": "other",
+        "height": null,
+        "name": "Le Smarty (assis)",
+        "bleauInfoId": "19301",
+        "circuitColor": null,
+        "circuitId": null,
+        "tags": [
+          "sit_start"
+        ],
+        "lines": [
+          {
+            "id": 4740
+          }
+        ]
+      },
+      "id": "problem_3148"
     },
     {
       "type": "Feature",
@@ -8639,30 +8732,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.53099076433,
-          48.38541847773
-        ]
-      },
-      "properties": {
-        "grade": "7a",
-        "circuitNumber": "",
-        "steepness": "overhang",
-        "height": null,
-        "name": "Parapluie",
-        "bleauInfoId": "303688",
-        "circuitColor": null,
-        "circuitId": null,
-        "tags": [
-          "sit_start"
-        ]
-      },
-      "id": "problem_3091"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.53057250745,
           48.38500488056
         ]
@@ -8773,30 +8842,6 @@
         ]
       },
       "id": "problem_3203"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.53091147161,
-          48.38471012795
-        ]
-      },
-      "properties": {
-        "grade": "7a+",
-        "circuitNumber": "",
-        "steepness": "other",
-        "height": null,
-        "name": "Le Smarty (assis)",
-        "bleauInfoId": "19301",
-        "circuitColor": null,
-        "circuitId": null,
-        "tags": [
-          "sit_start"
-        ]
-      },
-      "id": "problem_3148"
     },
     {
       "type": "Feature",

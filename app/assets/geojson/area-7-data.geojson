@@ -13,6 +13,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.6320610940480904,
+          48.435547272719845
+        ]
+      },
+      "properties": {
+        "grade": "6a",
+        "circuitNumber": "29",
+        "steepness": "wall",
+        "height": 5,
+        "name": "Le Trou trop Loin",
+        "bleauInfoId": "2468",
+        "circuitColor": "salmon",
+        "circuitId": 28,
+        "tags": [
+
+        ],
+        "lines": [
+          {
+            "id": 4693
+          }
+        ]
+      },
+      "id": "problem_2139"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.63131220357,
           48.43599244666
         ]
@@ -11058,35 +11087,6 @@
         ]
       },
       "id": "problem_2116"
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.6320610940480904,
-          48.435547272719845
-        ]
-      },
-      "properties": {
-        "grade": "6a",
-        "circuitNumber": "29",
-        "steepness": "wall",
-        "height": 5,
-        "name": "Le Trou trop Loin",
-        "bleauInfoId": "2468",
-        "circuitColor": "salmon",
-        "circuitId": 28,
-        "tags": [
-
-        ],
-        "lines": [
-          {
-            "id": 4693
-          }
-        ]
-      },
-      "id": "problem_2139"
     },
     {
       "type": "Feature",
