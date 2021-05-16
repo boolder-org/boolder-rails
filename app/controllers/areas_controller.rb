@@ -1,10 +1,18 @@
 class AreasController < ApplicationController
   def index
-    @areas = Area.order(:name).published
+    @areas = Area.published.sort{|a,b| ActiveSupport::Inflector.transliterate(a.name) <=> ActiveSupport::Inflector.transliterate(b.name) }
 
-    @beginner_areas = Area.published.map{|a| [a, a.problems.where("grade < '4a'").count ]}.sort_by(&:second).reverse
-    @intermediate_areas = Area.published.map{|a| [a, a.problems.where("grade >= '4a' AND grade < '6a'").count ]}.sort_by(&:second).reverse
-    @advanced_areas = Area.published.map{|a| [a, a.problems.where("grade >= '6a'").count ]}.sort_by(&:second).reverse
+    @beginner_areas = Area.published.reject{|a| a.id == 7}.
+      map{|a| [a, a.problems.where("grade < '4a'").count ]}.
+      sort_by(&:second).reverse
+    
+    @intermediate_areas = Area.published.
+      map{|a| [a, a.problems.where("grade >= '4a' AND grade < '6a'").count ]}.
+      sort_by(&:second).reverse
+    
+    @advanced_areas = Area.published.
+      map{|a| [a, a.problems.where("grade >= '6a'").count ]}.
+      sort_by(&:second).reverse
 
     @annotations = @areas.map do |area| 
       {
