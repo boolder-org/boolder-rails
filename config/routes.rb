@@ -41,5 +41,6 @@ Rails.application.routes.draw do
   end
 
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
+  get '/boom', to: 'welcome#boom'
   root to: 'welcome#root'
 end
