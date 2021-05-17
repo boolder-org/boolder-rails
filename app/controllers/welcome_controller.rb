@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
     http_lang = extract_locale_from_accept_language_header
     logger.debug "HTTP_ACCEPT_LANGUAGE: #{http_lang}"
 
-    preferred_locale = ([http_lang.to_sym] & I18n.available_locales).first
+    preferred_locale = ([http_lang&.to_sym] & I18n.available_locales).first
     redirect_to root_localized_path(locale: preferred_locale || I18n.default_locale)
   end
 
