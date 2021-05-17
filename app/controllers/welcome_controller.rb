@@ -15,6 +15,10 @@ class WelcomeController < ApplicationController
     redirect_to root_localized_path(locale: preferred_locale || I18n.default_locale)
   end
 
+  def boom
+    raise "this is a test"
+  end
+
   private
     def extract_locale_from_accept_language_header
       request.env['HTTP_ACCEPT_LANGUAGE']&.scan(/^[a-z]{2}/)&.first
