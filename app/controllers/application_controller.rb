@@ -13,9 +13,15 @@ class ApplicationController < ActionController::Base
   end
 
   def set_alternate_tags
-    set_meta_tags alternate: { 
-      "fr" => request.env['PATH_INFO'].sub("/#{I18n.locale}", '/fr'),
-      "en" => request.env['PATH_INFO'].sub("/#{I18n.locale}", '/en') 
-    }
+    locales = (I18n.available_locales - [I18n.locale])
+
+    paths = locales.map do |locale| 
+      [
+        locale,
+        request.env['PATH_INFO'].sub("/#{I18n.locale}", "/#{locale}")
+      ]
+    end
+
+    set_meta_tags alternate: paths.to_h
   end
 end
