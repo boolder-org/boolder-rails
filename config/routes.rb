@@ -25,13 +25,19 @@ Rails.application.routes.draw do
     end
 
     scope 'fontainebleau' do
-      resources :areas, only: [:index, :show] do 
-        resources :problems, only: [:index]
-        member { get 'map' }
-      end
+      get ":area_id/problems", to: "problems#index", as: :area_problems
+      get ":area_id/problems/:id", to: "problems#show", as: :area_problem
+      get ":id/map", to: "areas#map", as: :map_area
+      get ":id", to: "areas#show", as: :area
+      get "/", to: "areas#index", as: :areas
+
+      # resources :areas, only: [:index, :show] do 
+      #   resources :problems, only: [:index]
+      #   member { get 'map' }
+      # end
     end
 
-    resources :problems, only: [:show]
+    # resources :problems, only: [:show]
 
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy

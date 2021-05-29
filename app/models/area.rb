@@ -9,4 +9,9 @@ class Area < ApplicationRecord
   def start_location
     @start_location ||= pois.first&.route&.points&.last
   end
+
+  def to_param
+    [id, name.parameterize.presence].compact.join("-")
+  end
+
 end
