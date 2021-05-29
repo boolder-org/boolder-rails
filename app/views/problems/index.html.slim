@@ -22,7 +22,9 @@ div class="max-w-7xl mx-auto mb-8 px-4 sm:px-6 lg:px-8"
         / FIXME: sort circuit_number via SQL instead of ruby
         / eg. https://stackoverflow.com/questions/8502505/order-varchar-string-as-numeric
         - collection = params[:circuit_id].present? ? @problems.sort_by{|p| p.enumerable_circuit_number } : @problems
-        = render partial: "problem", collection: collection, cached: true
+        - collection.each do |problem|
+          - cache [problem, I18n.locale]
+            = render problem
       - unless params[:circuit_id].present? 
         div class="mt-8"
           = paginate collection
