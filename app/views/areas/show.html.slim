@@ -1,6 +1,8 @@
 - set_meta_tags title: t("meta_tags.areas.show.title", area: @area.name) , 
                 description: t("meta_tags.areas.show.description", area: @area.name) 
 
+- set_meta_tags og: { type: "website", image: image_url("areas/cover-area-#{@area.id}.jpg") }
+
 = render "areas/show/header", area: @area, selected: 0
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
