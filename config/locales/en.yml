@@ -102,10 +102,14 @@ en:
         keywords: climb, climbing, boulder, bouldering, font, fontainebleau, topo, guide
     areas:
       index:
-        title: Areas in Fontainebleau
-        description: Discover the best areas to climb in Fontainebleau
+        title: All areas in Fontainebleau
+        description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
       map:
-        title: Map with topos %{area}
+        title: Map with topos for %{area}
+        description: Interactive map for %{area} in Fontainebleau
+      show: 
+        title: "%{area}, Fontainebleau"
+        description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, access, ..."
     pages:
       privacy:
         title: Privacy
@@ -115,10 +119,11 @@ en:
         keywords: application, app, iphone, ios, download, store, android
     problems:
       index:
-        title: Problems in %{area}
+        title: Problems and circuits in %{area}
         title_level: Problems of level %{level} in %{area}
         title_featured: Featured problems in %{area}
         title_circuit: "%{circuit} circuit in %{area}"
+        description: All the photos and grades for boulders in %{area}.
       show: 
-        title: "%{problem} - %{area}"
+        title: "%{problem} - %{grade} - %{area}"
     
