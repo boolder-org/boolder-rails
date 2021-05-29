@@ -102,10 +102,14 @@ fr:
         keywords: escalade, bloc, fontainebleau, grimpe, topo
     areas:
       index:
-        title: Secteurs à Fontainebleau
-        description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau
+        title: Tous les secteurs à Fontainebleau
+        description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau, le meilleur spot d'escalade de bloc en France.
       map:
         title: Topo %{area}
+        description: Carte interactive pour le secteur %{area} à Fontainebleau
+      show: 
+        title: "%{area}, Fontainebleau"
+        description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte, accès, ..."
     pages:
       privacy:
         title: Confidentialité
@@ -115,10 +119,11 @@ fr:
         keywords: appli, app, iphone, ios, télécharger, store, android
     problems:
       index:
-        title: Voies à %{area}
+        title: Voies et circuits à %{area}, Fontainebleau
         title_level: Voies de niveau %{level} à %{area}
         title_featured: Voies coup de cœur à %{area}
         title_circuit: "Circuit %{circuit} à %{area}"
+        description: Toutes les photos et cotations des blocs à %{area} pour escalader en prenant plaisir.
       show: 
-        title: "%{problem} - %{area}"
+        title: "%{problem} - %{grade} - %{area}"
     

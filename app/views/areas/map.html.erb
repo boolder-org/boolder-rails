@@ -1,4 +1,6 @@
-<% set_meta_tags title: t("meta_tags.areas.map.title", area: @area.name) %>
+<% set_meta_tags title: t("meta_tags.areas.map.title", area: @area.name),
+                  description: t("meta_tags.areas.map.description", area: @area.name) 
+%>
 <% set_meta_tags canonical: map_area_url %>
 
 <div 

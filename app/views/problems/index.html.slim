@@ -7,6 +7,8 @@
 - else 
   - set_meta_tags title: t("meta_tags.problems.index.title", area: @area.name)
 
+- set_meta_tags description: t("meta_tags.problems.index.description", area: @area.name)
+
 - set_meta_tags canonical: area_problems_url(area_id: @area.id)
 
 = render "areas/show/header", area: @area, selected: 1
