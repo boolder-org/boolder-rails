@@ -37,6 +37,10 @@ class Problem < ApplicationRecord
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
   scope :featured, -> { where(featured: true) }
 
+  def to_param
+    [id, name.parameterize.presence].compact.join("-")
+  end
+
   def name_with_fallback
     if name.present?
       name

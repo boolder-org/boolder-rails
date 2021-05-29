@@ -41,12 +41,12 @@ div class="max-w-7xl mx-auto pt-6 pb-12 sm:px-6 lg:px-8"
       div class="px-4 sm:px-0 py-4 flex justify-between items-center"
         div
           - if previous = @problem.previous
-            = link_to problem_path(previous) do
+            = link_to area_problem_path(previous.area, previous) do
               = problem_circle_view(previous)
               span class="ml-2 font-medium"= previous.name_with_fallback
         div
           - if nexxt = @problem.next
-            = link_to problem_path(nexxt) do
+            = link_to area_problem_path(nexxt.area, nexxt) do
               = problem_circle_view(nexxt)
               span class="ml-2 font-medium"= nexxt.name_with_fallback
 
