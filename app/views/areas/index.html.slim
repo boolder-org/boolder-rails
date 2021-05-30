@@ -8,7 +8,7 @@ div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
 
   div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
     - @areas.each do |area|
-      = link_to area_path(slug: area.slug) do
+      = link_to area_path(area) do
         = image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg"
 
 div class="py-6"

@@ -1,6 +1,6 @@
 class ProblemsController < ApplicationController
   def index
-    @area = Area.find(params[:area_id])
+    @area = Area.find_by(slug: params[:slug])
     @problems = @area.problems.order("grade ASC, id ASC")
 
     @problems = @problems.featured if params[:featured] == "true"
