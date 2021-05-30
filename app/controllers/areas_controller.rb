@@ -67,10 +67,12 @@ class AreasController < ApplicationController
     } 
 
     if problem = Area.find(@area.id).problems.where(id: params[:problem]).first
-      @center = { 
-        latitude: problem.location.latitude, 
-        longitude: problem.location.longitude 
-      }
+      if problem.location.present?
+        @center = { 
+          latitude: problem.location.latitude, 
+          longitude: problem.location.longitude 
+        }
+      end
     end
 
     @hide_nav = true
