@@ -57,7 +57,7 @@ class Admin::ToposController < Admin::BaseController
     topo.destroy!
 
     flash[:notice] = "Topo destroyed"
-    redirect_to admin_area_problems_path(area_id: area.id, circuit_id: "first")
+    redirect_to admin_area_problems_path(area_slug: area.slug, circuit_id: "first")
   end
 
   private

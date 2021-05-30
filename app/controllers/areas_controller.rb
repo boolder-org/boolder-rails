@@ -29,7 +29,7 @@ class AreasController < ApplicationController
   end
 
   def show
-    @area = Area.find(params[:id])
+    @area = Area.find_by(slug: params[:slug])
 
     @parkings = @area.pois
 
@@ -54,7 +54,7 @@ class AreasController < ApplicationController
   end
 
   def map 
-    @area = Area.find(params[:id])
+    @area = Area.find_by(slug: params[:slug])
 
     @parkings = @area.pois
 

@@ -19,6 +19,26 @@ class WelcomeController < ApplicationController
     raise "this is a test"
   end
 
+  def redirect_area
+    area = Area.find(params[:id])
+    redirect_to area_path(area)
+  end
+
+  def redirect_area_map
+    area = Area.find(params[:id])
+    redirect_to map_area_path(area)
+  end
+
+  def redirect_problems
+    area = Area.find(params[:id])
+    redirect_to area_problems_path(area, level: params[:level], circuit_id: params[:circuit_id], featured: params[:featured])
+  end
+
+  def redirect_problem
+    problem = Problem.find(params[:id])
+    redirect_to area_problem_path(problem.area, problem)
+  end
+
   private
     def extract_locale_from_accept_language_header
       request.env['HTTP_ACCEPT_LANGUAGE']&.scan(/^[a-z]{2}/)&.first

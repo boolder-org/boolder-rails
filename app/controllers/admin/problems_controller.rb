@@ -1,9 +1,9 @@
 class Admin::ProblemsController < Admin::BaseController
   def index
-    @area = Area.find(params[:area_id])
+    @area = Area.find_by(slug: params[:area_slug])
 
     if params[:circuit_id] == "first" && (id = @area.circuits.first&.id)
-      redirect_to admin_area_problems_path(area_id: @area.id, circuit_id: id) 
+      redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
     end
 
     arel = Problem.where(area_id: @area.id) 
@@ -17,8 +17,7 @@ class Admin::ProblemsController < Admin::BaseController
 
     @problems = arel.sort_by{|p| p.enumerable_circuit_number }
 
-    circuits = Circuit.all
-    circuits = circuits.where(area_id: params[:area_id]) if params[:area_id].present?
+    circuits = @area.circuits
     @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push([nil, "All"])
   end
 
@@ -102,7 +101,7 @@ class Admin::ProblemsController < Admin::BaseController
     problem.save!
 
     flash[:notice] = "Problem updated"
-    redirect_to admin_area_problems_path(anchor: problem.id, area_id: problem.area_id, circuit_id: problem.circuit_id || "off_circuit")
+    redirect_to admin_area_problems_path(anchor: problem.id, area_slug: problem.area.slug, circuit_id: problem.circuit_id || "off_circuit")
   end
 
   private 

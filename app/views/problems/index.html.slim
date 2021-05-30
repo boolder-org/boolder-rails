@@ -11,7 +11,7 @@
 
 - set_meta_tags og: { type: "website", image: image_url("areas/cover-area-#{@area.id}.jpg") }
 
-- set_meta_tags canonical: area_problems_url(area_id: @area.id)
+- set_meta_tags canonical: area_problems_url(@area)
 
 = render "areas/show/header", area: @area, selected: 1
 

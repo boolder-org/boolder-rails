@@ -9,4 +9,8 @@ class Area < ApplicationRecord
   def start_location
     @start_location ||= pois.first&.route&.points&.last
   end
+
+  def to_param
+    slug
+  end
 end
