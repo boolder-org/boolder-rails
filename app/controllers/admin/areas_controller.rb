@@ -4,16 +4,16 @@ class Admin::AreasController < Admin::BaseController
   end
 
   def edit
-    @area = Area.find(params[:id])
+    @area = Area.find_by(slug: params[:slug])
   end
 
   def show
-    @area = Area.find(params[:id])
+    @area = Area.find_by(slug: params[:slug])
     redirect_to admin_area_problems_path(@area, circuit_id: 'first')
   end
 
   def update
-    area = Area.find(params[:id])
+    area = Area.find_by(slug: params[:slug])
     area.update!(area_params)
 
     flash[:notice] = "Area updated"
