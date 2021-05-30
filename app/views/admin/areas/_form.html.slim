@@ -3,6 +3,10 @@ div class="col-span-6 sm:col-span-4"
   = form.text_field :name, autocomplete: "off"
 
 div class="col-span-6 sm:col-span-4"
+  = form.label :slug
+  = form.text_field :slug, autocomplete: "off"
+
+div class="col-span-6 sm:col-span-4"
   = form.label :cluster
   = form.text_field :cluster, autocomplete: "off"
 

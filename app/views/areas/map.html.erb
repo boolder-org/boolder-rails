@@ -2,7 +2,7 @@
                   description: t("meta_tags.areas.map.description", area: @area.name) 
 %>
 <% set_meta_tags og: { type: "website", image: image_url("areas/cover-area-#{@area.id}.jpg") } %>
-<% set_meta_tags canonical: map_area_url %>
+<% set_meta_tags canonical: map_area_url(@area) %>
 
 <div 
 data-controller="apple-map-geojson" 

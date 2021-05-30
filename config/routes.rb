@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
     namespace :admin do 
-      resources :areas do
+      resources :areas, param: :slug do
         resources :problems, only: :index
       end
       resources :problems, except: :index
@@ -25,13 +25,22 @@ Rails.application.routes.draw do
     end
 
     scope 'fontainebleau' do
-      resources :areas, only: [:index, :show] do 
-        resources :problems, only: [:index]
-        member { get 'map' }
-      end
-    end
+      # ========================================================
+      # Legacy routes: keep until end of 2021 for SEO purposes
+      get "areas", to: redirect('/%{locale}/fontainebleau'), as: :area_legacy_redirect
+      get "areas/:id", to: "welcome#redirect_area"
+      get "areas/:id/map", to: "welcome#redirect_area_map"
+      get "areas/:id/problems", to: "welcome#redirect_problems"
+      # ========================================================
 
-    resources :problems, only: [:show]
+      get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
+      get ":slug/problems", to: "problems#index", as: :area_problems
+      get ":slug/map", to: "areas#map", as: :map_area
+      get ":slug", to: "areas#show", as: :area
+      get "/", to: "areas#index", as: :areas
+    end
+    
+    get "problems/:id", to: "welcome#redirect_problem" # Legacy route: keep until end of 2021 for SEO purposes
 
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
