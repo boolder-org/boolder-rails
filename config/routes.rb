@@ -33,8 +33,8 @@ Rails.application.routes.draw do
       get "areas/:id/problems", to: "welcome#redirect_problems"
       # ========================================================
 
+      get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/problems", to: "problems#index", as: :area_problems
-      get ":slug/problems/:id", to: "problems#show", as: :area_problem
       get ":slug/map", to: "areas#map", as: :map_area
       get ":slug", to: "areas#show", as: :area
       get "/", to: "areas#index", as: :areas
