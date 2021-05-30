@@ -25,19 +25,16 @@ Rails.application.routes.draw do
     end
 
     scope 'fontainebleau' do
-      get ":area_id/problems", to: "problems#index", as: :area_problems
-      get ":area_id/problems/:id", to: "problems#show", as: :area_problem
-      get ":id/map", to: "areas#map", as: :map_area
-      get ":id", to: "areas#show", as: :area
+      get ":slug/problems", to: "problems#index", as: :area_problems
+      get ":slug/problems/:id", to: "problems#show", as: :area_problem
+      get ":slug/map", to: "areas#map", as: :map_area
+      get ":slug", to: "areas#show", as: :area
       get "/", to: "areas#index", as: :areas
 
-      # resources :areas, only: [:index, :show] do 
-      #   resources :problems, only: [:index]
-      #   member { get 'map' }
-      # end
+      # TODO: redirect old routes
     end
 
-    # resources :problems, only: [:show]
+    # TODO: redirect old problem show route
 
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
