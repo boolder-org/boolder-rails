@@ -7,7 +7,7 @@ class Admin::ProblemsController < Admin::BaseController
     end
 
     arel = Problem.where(area_id: @area.id) 
-    session[:area_id] = @area.id # FIXME
+    session[:area_id] = @area.id
 
     if params[:circuit_id] == "off_circuit"
       arel = arel.where(circuit_id: nil)
