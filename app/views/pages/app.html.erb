@@ -87,7 +87,8 @@
           <div class="relative">
             
 
-            <video autoplay loop muted width="301" src="/videos/app-demo.<%= I18n.locale %>.mov" class="absolute bg-gray-900 h-full" style="top:15px; left:18px; height: 648px">
+            <video autoplay loop muted playsinline width="301" class="absolute bg-gray-900 h-full" style="top:15px; left:18px; height: 648px">
+              <source src="/videos/app-demo.<%= I18n.locale %>.mov" type="video/mp4">
             </video>
 
             <%= image_tag 'iphone-frame.png', class: "relative mx-auto absolute top-0 left-0", width: "336" %>
