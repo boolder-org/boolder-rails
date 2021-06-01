@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     scope "articles" do
       get 'equipment', to: "articles#equipment", as: :equipment
       get 'choose-area', to: "articles#choose_area", as: :choose_area
+      get 'choose-problems', to: "articles#choose_problems", as: :choose_problems
       root to: "articles#index", as: :articles
     end
 
