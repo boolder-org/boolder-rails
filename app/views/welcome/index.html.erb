@@ -3,7 +3,7 @@
                  keywords: t("meta_tags.welcome.index.keywords")
 %>
 
-<% set_meta_tags og: { type: "website", image: image_url("hero-boulder.jpg") } %>
+<% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto">
@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <%= image_tag "hero-boulder.jpg", class: "h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" %>
+    <%= image_tag "hero-homepage.jpg", class: "h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" %>
   </div>
 </div>
 
@@ -38,7 +38,7 @@
 
     <h2 class="text-2xl font-bold text-gray-900"><%= t("homepage.areas_for_beginners") %></h2>
 
-    <div class="py-4" data-tabs-target="panel">
+    <div class="py-4">
       <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none">
         <% @beginner_areas.take(3).each do |area, count| %>
           <%= link_to area_path(area) do %>
