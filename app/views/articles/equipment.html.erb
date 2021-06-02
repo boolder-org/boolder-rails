@@ -1,13 +1,5 @@
 <div class="bg-white">
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-    <div class="grid gap-5 lg:grid-cols-12">
-
-      <div class="col-span-2">
-        <%= render "outline" %>
-      </div>
-
-      <div class="col-span-9">
-
 
         <div class="text-lg max-w-prose mx-auto mb-16">
           <h1>
@@ -16,32 +8,45 @@
           <p class="mt-8 text-xl text-gray-500 leading-8">Voici le matériel dont vous aurez besoin pour vos sorties d'escalade en pleine nature.</p>
         </div>
         <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
-          <h2>Des chaussons</h2>
+          <h2>Des chaussons d'escalade</h2>
+
+          <div class="flex justify-center">
+            <%= image_tag("articles/chaussons.jpg", class: "w-1/2 rounded-lg") %>
+          </div>
+
+          <p>
+            Conseil : prenez des chaussons taillant petit, vous aurez une plus grande confiance dans vos appuis.
+          </p>
 
           <h2>Un crash pad</h2>
+
+          <p>
+            Un crash pad est un matelas conçu pour amortir vos chutes. 
+          </p>
+
+          <%= image_tag("articles/crashpad.jpg", class: "rounded-lg") %>
+
+          <p>
+            Nous vous recommandons de prendre un crash pad épais et avec une grande surface au sol, même s'il est plus encombrant.
+          </p>
 
           <h2>Un topo</h2>
 
           <p>Un <i>topo</i>, ou <i>topoguide</i>, vous permet de vous repérer dans un secteur d'escalade.</p>
 
-          <p>Nous vous recommandons <a href="<%= app_path %>">l’appli Boolder</a>, disponible sur iPhone. Vous aurez accès à une carte géolocalisée et aux photos des voies.</p>
+          <p>Nous vous recommandons <a href="<%= app_path %>">l’appli Boolder</a>, disponible sur iPhone. Vous aurez accès à une carte géolocalisée (GPS et boussole) et aux photos des voies.</p>
 
           <!-- <blockquote>
             <p>Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
           </blockquote> -->
 
-          <div class="px-4 py-8 sm:px-0">
-            <div class="border-4 border-dashed border-gray-200 rounded-lg h-64 flex flex-wrap content-center justify-center">
-              <div>Screenshot appli Boolder</div>
-            </div>
-          </div>
           <!-- <figure>
             <%= image_tag("hero-boulder.jpg", class: "w-full rounded-lg", width:"1310", height:"873") %>
             <figcaption>Sagittis scelerisque nulla cursus in enim consectetur quam.</figcaption>
           </figure> -->
 
           <p>
-            Si vous préférez un topo en version papier, nous vous recommandons Fun Bloc, qui liste une dizaine de secteurs les plus populaires de Fontainebleau avec des voies et circuits pour tous les niveaux.
+            Si vous préférez un topo en version papier, nous vous recommandons Fun Bloc, qui liste une vingtaine de secteurs les plus populaires de Fontainebleau avec des voies et circuits pour tous les niveaux.
           </p>
 
           <h2>
@@ -49,10 +54,13 @@
           </h2>
 
           <ul>
-            <li>des <strong>crash pads supplémentaires</strong>, cf. <a href="#">“grimper en sécurité”</a></li>
-            <li>un <strong>tapis</strong> pour essuyer vos chaussons avant de commencer une voie</li>
+            <li>un <strong>paillasson</strong> (ou chiffon) pour essuyer vos chaussons avant de commencer une voie</li>
+            <li>des <strong>crash pads supplémentaires</strong>, cf. <a href="<%= climb_safely_path %>">“Grimper en sécurité”</a></li>
             <li>
               de la <strong>magnésie</strong> pour mieux adhérer à la roche
+            </li>
+            <li>
+              une <strong>brosse souple</strong> pour nettoyer la roche et enlever les traces de magnésie
             </li>
           </ul>
 
@@ -67,7 +75,7 @@
               </div>
               <div class="ml-3">
                 <div class="text-base font-medium text-yellow-800">
-                  N’abusez pas de la magnésie car cela abîme la roche, cf <a href="#" class="">“respect de la forêt”</a>.
+                  N’abusez pas de la magnésie car cela abîme la roche, cf. <a href="<%= rules_path %>" class="">“Règles à respecter”</a>.
                 </div>
               </div>
             </div>
@@ -82,9 +90,7 @@
           
         </div>
 
+        <%= render 'pagination', prev_path: articles_path, prev_text: t('articles.table_of_contents'), next_path: choose_area_path, next_text: "2. #{t('articles.beginners_guide.choose_area')}" %>
 
-
-      </div>
     </div>
-  </div>
 </div>

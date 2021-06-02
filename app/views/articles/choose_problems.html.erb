@@ -1,0 +1,82 @@
+<div class="bg-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <div class="text-lg max-w-prose mx-auto mb-16">
+          <h1>
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Choisir ses voies</span>
+          </h1>
+          <p class="mt-8 text-xl text-gray-500 leading-8">
+            Une fois arrivé sur un <%= link_to "secteur", choose_area_path %>, voici quelques conseils pour trouver facilement des voies qui vous correspondent.
+          </p>
+        </div>
+
+        <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+          <h2>Filtrer par niveau</h2>
+          
+          <p>
+            Grâce à l’<%= link_to "appli Boolder", app_path %>, vous pouvez filtrer les voies correspondant à votre niveau.
+          </p>
+
+          <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <div class="flex justify-center">
+              <div class="relative">
+                
+
+                <video autoplay loop muted playsinline width="301" class="absolute bg-gray-900 h-full" style="top:15px; left:18px; height: 648px">
+                  <source src="/videos/level-filter.<%= I18n.locale %>.mov" type="video/mp4">
+                </video>
+
+                <%= image_tag 'iphone-frame.png', class: "relative mx-auto absolute top-0 left-0", width: "336" %>
+              
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Vous pouvez ainsi facilement identifier les zones ayant une bonne densité de voies correspondant à votre niveau.
+          </p>
+
+
+          <h2>Suivre un circuit</h2>
+
+          <p>
+            Les circuits regroupent des voies de niveau (relativement) homogène, selon un parcours numéroté.
+          </p>
+
+          <div class="flex justify-center">
+            <%= image_tag("articles/yellow-circuit.jpg", class: "sm:w-1/2 rounded-lg") %>
+          </div>
+
+          <p>
+            Chaque voie est représentée par un numéro de couleur et une flèche, peints directement sur la roche.
+          </p>
+
+          <div class="flex justify-center">
+            <%= image_tag("articles/yellow-circuit-start.jpg", class: "sm:w-1/2 rounded-lg") %>
+          </div>
+
+          <p>
+            Il existe 5 couleurs principales (jaune, orange, bleu, rouge et noir/blanc) qui correspondent à des niveaux croissants. 
+          </p>
+
+          <div class="flex justify-center">
+            <%= image_tag("articles/circuits.jpg", class: "sm:w-1/2 rounded-lg") %>
+          </div>
+
+          <p>
+            En suivant un <strong>circuit jaune</strong> (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
+          </p>
+
+          <p>
+            Bon à savoir : vous pouvez également filtrer par circuit dans l'<%= link_to "appli Boolder", choose_area_path %>.
+          </p>
+
+          
+
+        </div>
+
+        <%= render 'pagination', prev_path: choose_area_path, prev_text: "2. #{t('articles.beginners_guide.choose_area')}", next_path: climb_safely_path, next_text: "4. #{t('articles.beginners_guide.climb_safely')}" %>
+
+      </div>
+
+</div>
