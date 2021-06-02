@@ -21,7 +21,7 @@
         <div class="py-8 sm:mx-20 sm:text-lg sm:max-w-prose sm:mx-auto">
           <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-2 sm:max-w-none">
             <% problem = Problem.find(306) %>
-            <%= link_to area_problem_path(problem.area, problem) do %>
+            <%= link_to problem_friendly_path(problem) do %>
               <%= render 'shared/topo_image', topo: problem.lines.first.topo, klass: "rounded-lg" %>
             <% end %>
             <div class="text-green-500 sm:px-4 pb-4 self-center">
@@ -40,7 +40,7 @@
 
           <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-2 sm:max-w-none">
             <% problem = Problem.find(2344) %>
-            <%= link_to area_problem_path(problem.area, problem) do %>
+            <%= link_to problem_friendly_path(problem) do %>
               <%= render 'shared/topo_image', topo: problem.lines.first.topo, klass: "rounded-lg" %>
             <% end %>
             <div class="text-red-500 sm:px-4 pb-4 self-center">
