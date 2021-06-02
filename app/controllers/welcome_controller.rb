@@ -36,7 +36,7 @@ class WelcomeController < ApplicationController
 
   def redirect_problem
     problem = Problem.find(params[:id])
-    redirect_to area_problem_path(problem.area, problem)
+    redirect_to problem_friendly_path(problem)
   end
 
   private
