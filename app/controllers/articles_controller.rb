@@ -4,7 +4,4 @@ class ArticlesController < ApplicationController
       map{|a| [a, a.problems.where("grade < '4a'").count ]}.
       sort_by(&:second).reverse
   end
-
-  def choose_problems
-  end
 end

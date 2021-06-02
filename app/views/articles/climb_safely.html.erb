@@ -1,0 +1,108 @@
+<div class="bg-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-5 lg:grid-cols-12">
+
+      <div class="col-span-2">
+        <%= render "outline" %>
+      </div>
+
+      <div class="col-span-9">
+
+        <div class="text-lg max-w-prose mx-auto mb-16">
+          <h1>
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Grimper en sécurité</span>
+          </h1>
+          <p class="mt-8 text-xl text-gray-500 leading-8">
+            Voici quelques conseils pour minimiser les risques de chute et de blessure, et grimper l’esprit plus tranquille.
+          </p>
+        </div>
+
+        <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+          <h2>Éviter les voies risquées</h2>
+          
+          <p>
+            En tant que débutant privilégiez les voies de <strong>moins de 3 ou 4 mètres</strong>, avec une <strong>bonne réception au sol</strong> (terrain plat, sans rocher ni racine).
+          </p>
+        </div>
+
+        <div class="sm:mx-20 py-4">
+          <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-2 sm:max-w-none">
+            <% problem = Problem.find(306) %>
+            <%= link_to area_problem_path(problem.area, problem) do %>
+              <%= render 'shared/topo_image', topo: problem.lines.first.topo, klass: "rounded-lg" %>
+            <% end %>
+            <div class="text-green-500 sm:px-4 pb-4 self-center">
+              <ul>
+                <li>Hauteur : 2m</li>
+                <li>Réception sur terrain plat (sable)</li>
+                <li>Descente facile</li>
+              </ul>
+              <div class="mt-4 flex space-x-2 font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Parfait pour grimper en confiance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-2 sm:max-w-none">
+            <% problem = Problem.find(2344) %>
+            <%= link_to area_problem_path(problem.area, problem) do %>
+              <%= render 'shared/topo_image', topo: problem.lines.first.topo, klass: "rounded-lg" %>
+            <% end %>
+            <div class="text-red-500 sm:px-4 pb-4 self-center">
+              <ul>
+                <li>Hauteur : 5m</li>
+                <li>Réception difficile au sol</li>
+                <li>Descente difficile</li>
+              </ul>
+              <div class="mt-4 flex space-x-2 font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <span>À éviter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+          <h2>Prendre plusieurs crash pads</h2>
+
+          <p>
+            Il est parfois rassurant d’avoir plusieurs <%= link_to "crash pads", equipment_path %> pour couvrir une surface au sol plus grande. 
+          </p>
+
+          <p>
+            Si vous grimpez à plusieurs, vous pouvez aussi demander de l’aide pour déplacer le crash pad pendant que vous grimpez, pour qu’il reste à la verticale de votre position.
+          </p>
+
+          <h2>Parer</h2>
+
+          <p>
+            Pour aider vos amis à grimper en sécurité, vous pouvez les <i>parer</i>.
+          </p>
+
+          <p>
+            La parade consiste à accompagner la chute de votre ami(e) — par exemple avec les mains sur la taille — pour qu'il/elle retombe sur le crash pad sans se faire mal.
+          </p>
+
+          <p>
+            Attention : n'essayez pas de ralentir vous-même la chute de votre ami(e), vous risqueriez de vous blesser !
+          </p>
+
+          <h2>Anticiper la descente</h2>
+
+          <p>
+            Une fois en haut d’une voie, il est parfois difficile de redescendre.
+            Pensez à repérer la descente avant de grimper — surtout si vous êtes seul !
+          </p>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
