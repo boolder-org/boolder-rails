@@ -1,0 +1,22 @@
+<div class="text-lg max-w-prose mx-auto">
+  <nav class="mt-16 px-4 flex items-center justify-between sm:px-0">
+    <div class="-mt-px w-0 flex-1 flex">
+      <%= link_to prev_path, class: "pt-4 pr-1 inline-flex items-center font-medium text-green-600 hover:text-green-700 text-base" do %>
+        <!-- Heroicon name: solid/arrow-narrow-left -->
+        <svg class="mr-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        <%= prev_text %>
+      <% end %>
+    </div>
+    <div class="-mt-px w-0 flex-1 flex justify-end">
+      <%= link_to next_path, class: "pt-4 pr-1 inline-flex items-center font-medium text-green-600 hover:text-green-700 text-base" do %>
+        <%= next_text %>
+        <!-- Heroicon name: solid/arrow-narrow-right -->
+        <svg class="ml-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      <% end %>
+    </div>
+  </nav>
+</div>

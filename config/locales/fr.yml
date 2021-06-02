@@ -87,6 +87,14 @@ fr:
       offline:
         title: Mode hors-ligne
         subtitle: L'appli fonctionne même en mode avion.
+  articles:
+    table_of_contents: Sommaire
+    beginners_guide:
+      equipment: Le matériel nécessaire
+      choose_area: Choisir un secteur
+      choose_problems: Choisir ses voies
+      climb_safely: Grimper en sécurité
+      rules: Règles à respecter
   views:
     pagination:
       first: "Début"
