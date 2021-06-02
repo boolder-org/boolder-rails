@@ -1,12 +1,5 @@
 <div class="bg-white">
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-    <div class="grid gap-5 lg:grid-cols-12">
-
-      <div class="col-span-2">
-        <%= render "outline" %>
-      </div>
-
-      <div class="col-span-9">
 
         <div class="text-lg max-w-prose mx-auto mb-16">
           <h1>
@@ -25,7 +18,7 @@
           </p>
         </div>
 
-        <div class="sm:mx-20 py-4">
+        <div class="py-8 sm:mx-20 sm:text-lg sm:max-w-prose sm:mx-auto">
           <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-2 sm:max-w-none">
             <% problem = Problem.find(306) %>
             <%= link_to area_problem_path(problem.area, problem) do %>
@@ -100,7 +93,4 @@
         </div>
       </div>
 
-
-    </div>
-  </div>
 </div>
