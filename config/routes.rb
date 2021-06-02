@@ -23,6 +23,7 @@ Rails.application.routes.draw do
       get 'choose-area', to: "articles#choose_area", as: :choose_area
       get 'choose-problems', to: "articles#choose_problems", as: :choose_problems
       get 'climb-safely', to: "articles#climb_safely", as: :climb_safely
+      get 'rules', to: "articles#rules", as: :rules
       root to: "articles#index", as: :articles
     end
 
