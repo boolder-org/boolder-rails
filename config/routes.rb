@@ -19,11 +19,14 @@ Rails.application.routes.draw do
     end
 
     scope "articles" do
-      get 'equipment', to: "articles#equipment", as: :equipment
-      get 'choose-area', to: "articles#choose_area", as: :choose_area
-      get 'choose-problems', to: "articles#choose_problems", as: :choose_problems
-      get 'climb-safely', to: "articles#climb_safely", as: :climb_safely
-      get 'rules', to: "articles#rules", as: :rules
+      scope "beginners-guide" do
+        get '/', to: "articles#equipment", as: :beginners_guide
+        get 'equipment', to: "articles#equipment", as: :equipment
+        get 'choose-area', to: "articles#choose_area", as: :choose_area
+        get 'choose-problems', to: "articles#choose_problems", as: :choose_problems
+        get 'climb-safely', to: "articles#climb_safely", as: :climb_safely
+        get 'rules', to: "articles#rules", as: :rules
+      end
       root to: "articles#index", as: :articles
     end
 
