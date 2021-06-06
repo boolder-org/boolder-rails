@@ -1,13 +1,16 @@
-
+<% set_meta_tags title: t("meta_tags.articles.index.title") %>
+<% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
   <div class="relative max-w-7xl mx-auto">
     <div class="text-center">
       <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-        Bien débuter l'escalade de bloc en nature
+        <%= t('articles.beginners_guide.title') %>
       </h2>
-      <span class="mt-3 sm:mt-4 block text-base text-center text-green-600 font-semibold tracking-wide uppercase">Le guide en 5 chapitres</span>
+      <span class="mt-3 sm:mt-4 block text-base text-center text-green-600 font-semibold tracking-wide uppercase">
+        <%= t('articles.beginners_guide.subtitle') %>
+      </span>
     </div>
     <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-1 lg:max-w-none lg:w-1/3">
       
