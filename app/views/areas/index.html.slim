@@ -3,8 +3,10 @@
 
 - set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") }
 
+- set_meta_tags canonical: areas_url
+
 div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
-  h1 class="text-4xl font-bold mb-4" Fontainebleau
+  h1 class="text-4xl font-bold mb-6" Fontainebleau
 
   div class="flex flex-wrap"
     span class="text-gray-600 mr-2 pb-2" Filtrer par :
@@ -14,12 +16,15 @@ div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
         = link_to areas_path(tag: tag)
           div class="text-xs inline-flex items-center font-semibold leading-sm px-3 py-1 bg-green-100 text-green-600 rounded-full whitespace-nowrap #{klass}" 
             = t("area_model.tags.#{tag}").capitalize
+      - if params[:tag].present?
+        = link_to areas_path
+          div class="text-xs inline-flex items-center font-semibold leading-sm px-3 py-1 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
+            | Tous
 
   div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
     - @areas.each do |area|
       = link_to area_path(area) do
         = image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg"
 
-div class="py-6"
-  div class="my-4"
-    = render "areas/index/map"
+div class="pt-8"
+  = render "areas/index/map"
