@@ -14,7 +14,10 @@ class Admin::AreasController < Admin::BaseController
 
   def update
     area = Area.find_by(slug: params[:slug])
-    area.update!(area_params)
+    
+    area.assign_attributes(area_params)
+    area.tags = params[:area][:joined_tags].split(',')
+    area.save!
 
     flash[:notice] = "Area updated"
     redirect_to admin_areas_path
@@ -23,6 +26,6 @@ class Admin::AreasController < Admin::BaseController
   private 
   def area_params
     params.require(:area).
-      permit(:name, :slug, :published, :cluster)
+      permit(:name, :slug, :published, :cluster, :tags)
   end
 end
