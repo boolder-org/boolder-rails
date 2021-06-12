@@ -33,6 +33,12 @@ fr:
       level: Niveau
       circuit: Circuit
       selection: Sélection
+  area_model:
+    tags:
+      beginner_friendly: parfait pour débuter
+      dry_fast: sèche vite
+      train_station_closeby: proche d'une gare
+      less_crowded: moins fréquenté
   layout:
     nav:
       open_menu: Ouvrir le menu principal
