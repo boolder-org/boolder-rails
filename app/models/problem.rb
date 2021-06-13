@@ -30,10 +30,7 @@ class Problem < ApplicationRecord
 
   scope :area, -> (area_id){ where(area_id: area_id) } 
   scope :number, -> (circuit_number){ where(circuit_number: circuit_number) } 
-
-  scope :all_tags, -> (array){ where("tags @> ARRAY[?]::varchar[]", array) }
-  scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
-
+  include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
   scope :featured, -> { where(featured: true) }
 
