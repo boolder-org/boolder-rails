@@ -11,15 +11,15 @@
         <div class="ml-6 flex space-x-8">
           <!-- Current: "border-green-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
           <%= link_to areas_path, class: "inline-flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" do %>
-            <%= t("layout.nav.areas") %>
+            <%= t("views.layout.nav.areas") %>
           <% end %>
           <% if I18n.locale == :fr %>
             <%= link_to articles_path, class: "inline-flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" do %>
-              <%= t("layout.nav.articles") %>
+              <%= t("views.layout.nav.articles") %>
             <% end %>
           <% end %>
           <%= link_to app_path, class: "inline-flex items-center px-1 pt-1 font-medium text-green-600 hover:text-green-5000" do %>
-            <%= t("layout.nav.app") %>
+            <%= t("views.layout.nav.app") %>
           <% end %>
         </div>
       </div>

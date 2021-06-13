@@ -33,120 +33,131 @@ fr:
       level: Niveau
       circuit: Circuit
       selection: Sélection
-  layout:
-    nav:
-      open_menu: Ouvrir le menu principal
-      discover: Découvrir
-      areas: Secteurs
-      articles: Découvrir
-      app: Appli
-    footer:
-      contact: Contact
-      privacy: Confidentialité
-  homepage:
-    title1: Escaladez
-    title2: en pleine nature
-    subtitle: Découvrez des milliers de blocs et circuits pour tous les niveaux.
-    read_guide: Lire le guide du débutant
-    areas_for_beginners: Secteurs pour bien débuter à Fontainebleau
-    all_areas: Voir tous les secteurs
   area:
-    index:
-      map:
-        see: "Voir"
-    train_station: "Gare %{name}"
-    train_station_generic: "Gare"
-    top_areas_by_level: Top secteurs par niveau
-    level:
-      beginner: Débutant
-      intermediate: Intermédiaire
-      advanced: Avancé
-      problems_count:
-        zero: "%{count} voie entre %{level_min} et %{level_max}"
-        one: "%{count} voie entre %{level_min} et %{level_max}"
-        other: "%{count} voies entre %{level_min} et %{level_max}"
-    tabs:
-      infos: Infos
-      problems: Voies
-      circuits: Circuits
-      map: Carte topo
-    map:
-      banner:
-        title: Avec l'appli Boolder, profitez d'une meilleur expérience et du mode hors-ligne.
-        title_short: Mode hors ligne et GPS/boussole par ici.
-        cta: Découvrir l'appli
-  app_landing:
-    title: Le topo qui tient dans votre poche.
-    subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"
-    selling_points:
-      map:
-        title: Carte et géolocalisation
-        subtitle: Repérez-vous facilement dans la forêt grâce au GPS et à la boussole.
-      photos:
-        title: Des milliers de voies avec photos
-        subtitle: Trouvez facilement les voies qui vous conviennent.
-      offline:
-        title: Mode hors-ligne
-        subtitle: L'appli fonctionne même en mode avion.
-  articles:
-    table_of_contents: Sommaire
-    beginners_guide:
-      title: Le guide du débutant
-      subtitle: Pour découvrir l'escalade de bloc en nature
-      equipment: Le matériel nécessaire
-      choose_area: Choisir un secteur
-      choose_problems: Choisir ses voies
-      climb_safely: Grimper en sécurité
-      rules: Règles à connaitre
+    tags:
+      beginner_friendly: parfait pour débuter
+      dry_fast: sèche vite
+      train_station_closeby: proche d'une gare
+      less_crowded: moins fréquenté
   views:
+    homepage:
+      title1: Escaladez
+      title2: en pleine nature
+      subtitle: Découvrez des milliers de blocs et circuits pour tous les niveaux.
+      read_guide: Lire le guide du débutant
+      areas_for_beginners: Secteurs pour bien débuter à Fontainebleau
+      all_areas: Voir tous les secteurs
+      metas:
+        title: Escalade de blocs à Fontainebleau
+        description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
+    app_landing:
+      title: Le topo qui tient dans votre poche.
+      subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"
+      selling_points:
+        map:
+          title: Carte et géolocalisation
+          subtitle: Repérez-vous facilement dans la forêt grâce au GPS et à la boussole.
+        photos:
+          title: Des milliers de voies avec photos
+          subtitle: Trouvez facilement les voies qui vous conviennent.
+        offline:
+          title: Mode hors-ligne
+          subtitle: L'appli fonctionne même en mode avion.
+      metas:
+        title: Appli iPhone
+        description: Le topo d'escalade qui tient dans votre poche
+    privacy:
+      metas:
+        title: Confidentialité
+    areas:
+      index:
+        filter: "Filtrer par :"
+        metas:
+          title: Tous les secteurs à Fontainebleau
+          description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau, le meilleur spot d'escalade de bloc en France.
+        map:
+          see: "Voir"
+      show:
+        metas:
+          title: "%{area}, Fontainebleau"
+          description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte, accès, ..."
+      train_station: "Gare %{name}"
+      train_station_generic: "Gare"
+      top_areas_by_level: Top secteurs par niveau
+      level:
+        beginner: Débutant
+        intermediate: Intermédiaire
+        advanced: Avancé
+        problems_count:
+          zero: "%{count} voie entre %{level_min} et %{level_max}"
+          one: "%{count} voie entre %{level_min} et %{level_max}"
+          other: "%{count} voies entre %{level_min} et %{level_max}"
+      tabs:
+        infos: Infos
+        problems: Voies
+        circuits: Circuits
+        map: Carte topo
+      map:
+        banner:
+          title: Avec l'appli Boolder, profitez d'une meilleur expérience et du mode hors-ligne.
+          title_short: Mode hors ligne et GPS/boussole par ici.
+          cta: Découvrir l'appli
+        metas:
+          title: Topo %{area}
+          description: Carte interactive pour le secteur %{area} à Fontainebleau
+    problems:
+      index:
+        metas:
+          title: Voies et circuits à %{area}, Fontainebleau
+          title_level: Voies de niveau %{level} à %{area}
+          title_featured: Voies coup de cœur à %{area}
+          title_circuit: "Circuit %{circuit} à %{area}"
+          description: Toutes les photos et cotations des blocs à %{area} pour escalader en prenant du plaisir.
+      show:
+        metas:
+          title: "%{problem} - %{grade} - %{area}"
+    articles:
+      index:
+        metas:
+          title: Découvrez l'escalade de bloc en nature
+      table_of_contents: Sommaire
+      beginners_guide:
+        title: Le guide du débutant
+        subtitle: Pour découvrir l'escalade de bloc en nature
+        equipment: 
+          title: Le matériel nécessaire
+          metas:
+            title: Le matériel nécessaire pour faire du bloc en extérieur
+        choose_area: 
+          title: Choisir un secteur
+          metas:
+            title: Comment choisir un secteur de bloc en extérieur
+        choose_problems: 
+          title: Choisir ses voies
+          metas:
+            title: Comment choisir les bonnes voies en bloc en extérieur
+        climb_safely: 
+          title: Grimper en sécurité
+          metas:
+            title: Les règles de sécurité pour le bloc en extérieur
+        rules: 
+          title: Règles à connaitre
+          metas:
+            title: Les règles à respecter pour faire du bloc en forêt
+    layout:
+      nav:
+        open_menu: Ouvrir le menu principal
+        discover: Découvrir
+        areas: Secteurs
+        articles: Découvrir
+        app: Appli
+      footer:
+        contact: Contact
+        privacy: Confidentialité
     pagination:
       first: "Début"
       last: "Fin"
       previous: "Précédent"
       next: "Suivant"
       truncate: "&hellip;"
-  meta_tags:
-    welcome:
-      index:
-        title: Escalade de blocs à Fontainebleau
-        description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
-    areas:
-      index:
-        title: Tous les secteurs à Fontainebleau
-        description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau, le meilleur spot d'escalade de bloc en France.
-      map:
-        title: Topo %{area}
-        description: Carte interactive pour le secteur %{area} à Fontainebleau
-      show: 
-        title: "%{area}, Fontainebleau"
-        description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte, accès, ..."
-    pages:
-      privacy:
-        title: Confidentialité
-      app:
-        title: Appli iPhone
-        description: Le topo d'escalade qui tient dans votre poche
-    problems:
-      index:
-        title: Voies et circuits à %{area}, Fontainebleau
-        title_level: Voies de niveau %{level} à %{area}
-        title_featured: Voies coup de cœur à %{area}
-        title_circuit: "Circuit %{circuit} à %{area}"
-        description: Toutes les photos et cotations des blocs à %{area} pour escalader en prenant plaisir.
-      show: 
-        title: "%{problem} - %{grade} - %{area}"
-    articles:
-      index:
-        title: Découvrez l'escalade de bloc en nature
-      beginners_guide:
-        equipment:
-          title: Le matériel nécessaire pour faire du bloc en extérieur
-        choose_area:
-          title: Comment choisir un secteur de bloc en extérieur
-        choose_problems:
-          title: Comment choisir les bonnes voies en bloc outdoor
-        climb_safely: 
-          title: Les règles de sécurité pour le bloc en extérieur
-        rules:
-          title: Les règles à respecter pour faire du bloc en forêt
     

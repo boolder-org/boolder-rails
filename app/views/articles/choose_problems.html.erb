@@ -1,4 +1,4 @@
-<% set_meta_tags title: t("meta_tags.articles.beginners_guide.choose_problems.title") %>
+<% set_meta_tags title: t("views.articles.beginners_guide.choose_problems.metas.title") %>
 <% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
 <div class="bg-white">
@@ -6,10 +6,12 @@
 
         <div class="text-lg max-w-prose mx-auto mb-16">
           <span class="mt-3 sm:mt-4 block text-base text-center text-green-600 font-semibold tracking-wide uppercase">
-            <%= t('articles.beginners_guide.title') %>
+            <%= t('views.articles.beginners_guide.title') %>
           </span>
           <h1>
-            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Choisir ses voies</span>
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <%= t('views.articles.beginners_guide.choose_problems.title') %>
+            </span>
           </h1>
           <p class="mt-8 text-xl text-gray-500 leading-8">
             Une fois arrivé sur un <%= link_to "secteur", choose_area_path %>, voici quelques conseils pour trouver facilement des voies qui vous correspondent.
@@ -81,7 +83,7 @@
 
         </div>
 
-        <%= render 'pagination', prev_path: choose_area_path, prev_text: "2. #{t('articles.beginners_guide.choose_area')}", next_path: climb_safely_path, next_text: "4. #{t('articles.beginners_guide.climb_safely')}" %>
+        <%= render 'pagination', prev_path: choose_area_path, prev_text: "2. #{t('views.articles.beginners_guide.choose_area.title')}", next_path: climb_safely_path, next_text: "4. #{t('views.articles.beginners_guide.climb_safely.title')}" %>
 
       </div>
 
