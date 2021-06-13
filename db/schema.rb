@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_29_140523) do
+ActiveRecord::Schema.define(version: 2021_06_09_100827) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,7 +51,9 @@ ActiveRecord::Schema.define(version: 2021_05_29_140523) do
     t.boolean "published", default: false, null: false
     t.string "cluster"
     t.string "slug"
+    t.string "tags", default: [], null: false, array: true
     t.index ["slug"], name: "index_areas_on_slug", unique: true
+    t.index ["tags"], name: "index_areas_on_tags", using: :gin
   end
 
   create_table "boulders", force: :cascade do |t|

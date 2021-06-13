@@ -1,4 +1,4 @@
-<% set_meta_tags title: t("meta_tags.articles.beginners_guide.choose_area.title") %>
+<% set_meta_tags title: t("views.articles.beginners_guide.choose_area.metas.title") %>
 <% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
 <div class="bg-white">
@@ -6,10 +6,12 @@
 
         <div class="text-lg max-w-prose mx-auto mb-16">
           <span class="mt-3 sm:mt-4 block text-base text-center text-green-600 font-semibold tracking-wide uppercase">
-            <%= t('articles.beginners_guide.title') %>
+            <%= t('views.articles.beginners_guide.title') %>
           </span>
           <h1>
-            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Choisir un secteur</span>
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <%= t('views.articles.beginners_guide.choose_area.title') %>
+            </span>
           </h1>
           <p class="mt-8 text-xl text-gray-500 leading-8">
             Voici quelques conseils pour vous aider à choisir votre secteur d'escalade de bloc.
@@ -28,36 +30,11 @@
           </p>
 
           <p>
-            Voici quelques exemples à Fontainebleau :
+            <%= link_to areas_path(tag: :beginner_friendly) do %>
+              Voir la liste de secteurs pour bien débuter à Fontainebleau.
+            <% end %>
           </p>
-        </div>
-
-        <div class="sm:mx-20 sm:text-lg sm:max-w-prose sm:mx-auto">
-
-          <div class="py-4">
-            <div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 sm:max-w-none">
-              <% @beginner_areas.take(3).each do |area, count| %>
-                <%= link_to area_path(area) do %>
-                  <%= image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg py-0 my-0" %>
-                  <div class="mt-2 text-gray-400"><%= t("area.level.problems_count", count: count, level_min: "1a", level_max: "3c+") %></div>
-                <% end %>
-              <% end %>
-            </div>
-            <div class="mt-4">
-              <a href="<%= areas_path %>" class="place-self-center">
-                <div class="text-green-500 flex space-x-2">
-
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 ">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <div><%= t("homepage.all_areas") %></div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+        
 
           <h2>
             Temps d’approche
@@ -79,7 +56,12 @@
 
           <p>
             Certains secteurs sèchent plus vite que d’autres, en fonction de l’exposition au soleil et du vent.
-            Consultez la fiche des secteurs pour avoir plus de conseils.
+          </p>
+
+          <p>
+            <%= link_to areas_path(tag: :dry_fast) do %>
+              Voir la liste de secteurs qui séchent plus vite.
+            <% end %>
           </p>
 
 
@@ -92,9 +74,15 @@
           <p>
             Si vous voulez être au calme, penchez plutôt vers des secteurs moins faciles d'accès.
           </p>
+
+          <p>
+            <%= link_to areas_path(tag: :less_crowded) do %>
+              Voir la liste de secteurs moins fréquentés.
+            <% end %>
+          </p>
         </div>
 
-        <%= render 'pagination', prev_path: equipment_path, prev_text: "1. #{t('articles.beginners_guide.equipment')}", next_path: choose_problems_path, next_text: "3. #{t('articles.beginners_guide.choose_problems')}" %>
+        <%= render 'pagination', prev_path: equipment_path, prev_text: "1. #{t('views.articles.beginners_guide.equipment.title')}", next_path: choose_problems_path, next_text: "3. #{t('views.articles.beginners_guide.choose_problems.title')}" %>
 
         </div>
       </div>
