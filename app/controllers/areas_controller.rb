@@ -11,7 +11,7 @@ class AreasController < ApplicationController
         color: "#059669",
         title: area.name,
         linkUrl: area_path(area),
-        linkText: t("area.index.map.see"),
+        linkText: t("views.areas.index.map.see"),
         glyphText: "",
         clusteringIdentifier: area.cluster,
       } 
