@@ -7,10 +7,7 @@ class Area < ApplicationRecord
   TAGS = %i(beginner_friendly train_station_closeby dry_fast less_crowded)
 
   scope :published, -> { where(published: true) }
-
-  # FIXME: use concern
-  scope :all_tags, -> (array){ where("tags @> ARRAY[?]::varchar[]", array) }
-  scope :any_tags, -> (array){ where("tags && ARRAY[?]::varchar[]", array) }
+  include HasTagsConcern
 
   def start_location
     @start_location ||= pois.first&.route&.points&.last
