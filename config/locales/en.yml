@@ -117,20 +117,33 @@ en:
         metas:
           title: "%{problem} - %{grade} - %{area}"
     articles:
+      index:
+        metas:
+          title: Discover outdoor bouldering
       table_of_contents: Go back
       beginners_guide:
         title: The beginner's guide
         subtitle: Discover outdoor bouldering
         equipment: 
           title: Equipment
+          metas:
+            title: The equipment you need for outdoor bouldering
         choose_area: 
           title: Choose an area
+          metas:
+            title: How to choose an outdoor bouldering area
         choose_problems: 
           title: Choose problems
+          metas:
+            title: How to choose problems when bouldering outdoors
         climb_safely: 
           title: Climb safely
+          metas:
+            title: Safety tips for outdoor bouldering
         rules: 
           title: Rules
+          metas:
+            title: Rules to follow when bouldering outdoors
     layout:
       nav:
         open_menu: Open main menu
@@ -147,19 +160,4 @@ en:
       previous: "Previous"
       next: "Next"
       truncate: "&hellip;"
-  meta_tags:
-    articles:
-      index:
-        title: Discover outdoor bouldering
-      beginners_guide:
-        equipment:
-          title: The equipment you need for outdoor bouldering
-        choose_area:
-          title: How to choose an outdoor bouldering area
-        choose_problems:
-          title: How to choose problems when bouldering outdoors
-        climb_safely: 
-          title: Safety tips for outdoor bouldering
-        rules:
-          title: Rules to follow when bouldering outdoors
     
