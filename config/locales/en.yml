@@ -47,6 +47,9 @@ en:
       read_guide: Read the beginner's guide
       areas_for_beginners: Top areas for beginners in Fontainebleau
       all_areas: See all areas
+      metas:
+        title: Bouldering in Fontainebleau
+        description: Discover thousands of problems & circuits for all levels.
     app_landing:
       title: The bouldering guide that fits in your pocket
       subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
@@ -60,11 +63,24 @@ en:
         offline:
           title: Offline mode
           subtitle: The app woks even in airplane mode.
+      metas:
+        title: iPhone app
+        description: The bouldering guide that fits in your pocket
+    privacy:
+      metas:
+        title: Privacy
     areas:
       index:
         filter: "Filter by:"
+        metas: 
+          title: All areas in Fontainebleau
+          description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
         map:
           see: "See"
+      show:
+        metas:
+          title: "%{area}, Fontainebleau"
+          description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, access, ..."
       train_station: "%{name} train station"
       train_station_generic: "Train station"
       top_areas_by_level: Top areas by level
@@ -86,6 +102,20 @@ en:
           title: Get a better experience and offline mode with the Boolder app.
           title_short: Get offline mode and GPS + compass.
           cta: See the app
+        metas:
+          title: Map with topos for %{area}
+          description: Interactive map for %{area} in Fontainebleau
+    problems:
+      index:
+        metas:
+          title: Problems and circuits in %{area}
+          title_level: Problems of level %{level} in %{area}
+          title_featured: Featured problems in %{area}
+          title_circuit: "%{circuit} circuit in %{area}"
+          description: All the photos and grades for boulders in %{area}.
+      show:
+        metas:
+          title: "%{problem} - %{grade} - %{area}"
     articles:
       table_of_contents: Go back
       beginners_guide:
@@ -113,35 +143,6 @@ en:
       next: "Next"
       truncate: "&hellip;"
   meta_tags:
-    welcome:
-      index:
-        title: Bouldering in Fontainebleau
-        description: Discover thousands of problems & circuits for all levels.
-    areas:
-      index:
-        title: All areas in Fontainebleau
-        description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
-      map:
-        title: Map with topos for %{area}
-        description: Interactive map for %{area} in Fontainebleau
-      show: 
-        title: "%{area}, Fontainebleau"
-        description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, access, ..."
-    pages:
-      privacy:
-        title: Privacy
-      app:
-        title: iPhone app
-        description: The bouldering guide that fits in your pocket
-    problems:
-      index:
-        title: Problems and circuits in %{area}
-        title_level: Problems of level %{level} in %{area}
-        title_featured: Featured problems in %{area}
-        title_circuit: "%{circuit} circuit in %{area}"
-        description: All the photos and grades for boulders in %{area}.
-      show: 
-        title: "%{problem} - %{grade} - %{area}"
     articles:
       index:
         title: Discover outdoor bouldering
