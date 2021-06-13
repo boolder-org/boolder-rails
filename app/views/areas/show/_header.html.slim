@@ -2,6 +2,16 @@ div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8"
   = link_to "Fontainebleau", areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700"  
   h1 class="text-4xl font-bold mt-2 mb-4"= area.name
 
+  - if area.id == 5
+    div class="my-4"
+      = warning_box do
+        - if I18n.locale == :en
+          span June 2021 : the orange and blue circuits were modified.
+          div class="font-normal" An update is scheduled to reflect these changes.
+        - if I18n.locale == :fr
+          span Juin 2021 : les circuits orange et bleu ont été remaniés. 
+          div class="font-normal" Ils seront mis à jour sur Boolder prochainement.
+
 - klass_active = "border-green-500 text-green-600"
 - klass_inactive = "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
 
