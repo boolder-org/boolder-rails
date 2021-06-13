@@ -121,11 +121,16 @@ en:
       beginners_guide:
         title: The beginner's guide
         subtitle: Discover outdoor bouldering
-        equipment: Equipment
-        choose_area: Choose an area
-        choose_problems: Choose problems
-        climb_safely: Climb safely
-        rules: Rules
+        equipment: 
+          title: Equipment
+        choose_area: 
+          title: Choose an area
+        choose_problems: 
+          title: Choose problems
+        climb_safely: 
+          title: Climb safely
+        rules: 
+          title: Rules
     layout:
       nav:
         open_menu: Open main menu
