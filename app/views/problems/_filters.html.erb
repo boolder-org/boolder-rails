@@ -1,5 +1,9 @@
 <div class="space-y-4 sm:sticky sm:top-20">
 
+  <span class="text-gray-600 mr-2 mb-2 sm:mb-0 pb-2">
+    <%= t("views.problems.index.filter") %>
+  </span>
+
   <%= filter_section(name: t("problem.filters.level"), highlighted: params[:level] != "all") do %>
     <% (1..8).to_a.map(&:to_s).each do |level| %>
         <% link_color = (level == params[:level]) ? "bg-green-100 text-green-700" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900" %>

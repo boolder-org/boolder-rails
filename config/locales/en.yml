@@ -97,6 +97,7 @@ en:
           description: Interactive map for %{area} in Fontainebleau
     problems:
       index:
+        filter: "Filter by:"
         metas:
           title: Problems and circuits in %{area}
           title_level: Problems of level %{level} in %{area}

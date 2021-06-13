@@ -97,6 +97,7 @@ fr:
           description: Carte interactive pour le secteur %{area} à Fontainebleau
     problems:
       index:
+        filter: "Filtrer par :"
         metas:
           title: Voies et circuits à %{area}, Fontainebleau
           title_level: Voies de niveau %{level} à %{area}
