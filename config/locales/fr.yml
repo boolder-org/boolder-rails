@@ -121,11 +121,16 @@ fr:
       beginners_guide:
         title: Le guide du débutant
         subtitle: Pour découvrir l'escalade de bloc en nature
-        equipment: Le matériel nécessaire
-        choose_area: Choisir un secteur
-        choose_problems: Choisir ses voies
-        climb_safely: Grimper en sécurité
-        rules: Règles à connaitre
+        equipment: 
+          title: Le matériel nécessaire
+        choose_area: 
+          title: Choisir un secteur
+        choose_problems: 
+          title: Choisir ses voies
+        climb_safely: 
+          title: Grimper en sécurité
+        rules: 
+          title: Règles à connaitre
     layout:
       nav:
         open_menu: Ouvrir le menu principal

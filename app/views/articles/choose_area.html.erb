@@ -9,7 +9,9 @@
             <%= t('views.articles.beginners_guide.title') %>
           </span>
           <h1>
-            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Choisir un secteur</span>
+            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <%= t('views.articles.beginners_guide.choose_area.title') %>
+            </span>
           </h1>
           <p class="mt-8 text-xl text-gray-500 leading-8">
             Voici quelques conseils pour vous aider à choisir votre secteur d'escalade de bloc.
@@ -80,7 +82,7 @@
           </p>
         </div>
 
-        <%= render 'pagination', prev_path: equipment_path, prev_text: "1. #{t('views.articles.beginners_guide.equipment')}", next_path: choose_problems_path, next_text: "3. #{t('views.articles.beginners_guide.choose_problems')}" %>
+        <%= render 'pagination', prev_path: equipment_path, prev_text: "1. #{t('views.articles.beginners_guide.equipment.title')}", next_path: choose_problems_path, next_text: "3. #{t('views.articles.beginners_guide.choose_problems.title')}" %>
 
         </div>
       </div>
