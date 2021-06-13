@@ -83,19 +83,9 @@ en:
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, access, ..."
       train_station: "%{name} train station"
       train_station_generic: "Train station"
-      top_areas_by_level: Top areas by level
-      level:
-        beginner: Beginner
-        intermediate: Intermediate
-        advanced: Advanced
-        problems_count:
-          zero: "%{count} problem between %{level_min} and %{level_max}"
-          one: "%{count} problem between %{level_min} and %{level_max}"
-          other: "%{count} problems between %{level_min} and %{level_max}"
       tabs:
         infos: Info
         problems: Problems
-        circuits: Circuits
         map: Map
       map:
         banner:
