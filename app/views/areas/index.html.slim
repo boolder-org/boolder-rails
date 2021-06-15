@@ -8,18 +8,18 @@
 div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
   h1 class="text-4xl font-bold mb-6" Fontainebleau
 
-  div class="md:flex"
-    span class="text-gray-600 mr-2 mb-1 sm:mb-0 pb-2" = t("views.areas.index.filter")
+  div class="md:flex md:items-center"
+    div class="text-gray-600 mr-2 mb-2 sm:mb-0" = t("views.areas.index.filter")
     div class=""
       - Area::TAGS.each do |tag|
         - selected = params[:tag] == tag.to_s
         - klass = selected ? "border border-green-600" : ""
         = link_to (selected ? areas_path : areas_path(tag: tag))
-          span class="mr-2 mb-1 text-xs inline-flex items-center font-semibold leading-sm px-3 py-1 bg-green-100 text-green-600 rounded-full whitespace-nowrap #{klass}" 
+          span class="mr-2 my-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap #{klass}" 
             = t("area.tags.#{tag}").capitalize
       - if params[:tag].present?
         = link_to areas_path
-          span class="mr-2 mb-1 text-xs inline-flex items-center font-semibold leading-sm px-3 py-1 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
+          span class="mr-2 my-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
             = t("views.areas.index.all")
 
   div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
