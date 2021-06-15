@@ -12,7 +12,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
       div class="mb-4 px-4 sm:px-0"
         - @area.tags.each do |tag|
           = link_to (areas_path(tag: tag))
-            span class="mr-2 mb-1 text-xs inline-flex items-center font-semibold leading-sm px-3 py-1 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
+            span class="mr-2 mb-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
               = t("area.tags.#{tag}").capitalize
 
       - if @area.id == 1
