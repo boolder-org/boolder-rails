@@ -105,6 +105,7 @@ fr:
           title_circuit: "Circuit %{circuit} à %{area}"
           description: Toutes les photos et cotations des blocs à %{area} pour escalader en prenant du plaisir.
       show:
+        variants: Autres variantes
         metas:
           title: "%{problem} - %{grade} - %{area}"
     articles:
