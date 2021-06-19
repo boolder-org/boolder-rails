@@ -3,6 +3,8 @@ class Problem < ApplicationRecord
   belongs_to :area
   has_many :lines, dependent: :destroy
   has_many :topos, through: :lines
+  has_many :variants, class_name: "Problem", foreign_key: "parent_id"
+  belongs_to :parent, class_name: "Problem", optional: true
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
@@ -65,6 +67,14 @@ class Problem < ApplicationRecord
   def previous
     if circuit_number.present?
       Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1)).first
+    end
+  end
+
+  def all_variants
+    if parent
+      [parent] + parent.variants - [self]
+    else
+      variants
     end
   end
 end

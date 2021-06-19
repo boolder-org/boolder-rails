@@ -49,4 +49,8 @@ div class="col-span-6 sm:col-span-2"
 div class="col-span-6 sm:col-span-2"
   = form.label :featured
   = form.select :featured, [["true", true], ["false", false]]
+
+div class="col-span-6 sm:col-span-2"
+  = form.label :parent_id, "Parent"
+  = form.text_field :parent_id, autocomplete: "off"
   
