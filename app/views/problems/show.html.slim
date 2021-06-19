@@ -55,7 +55,7 @@ div class="max-w-7xl mx-auto pt-6 pb-12 sm:px-6 lg:px-8"
       - if @problem.all_variants.any?
         h2 class="text-xl font-semibold"= t("views.problems.show.variants")
         div class="prose prose-green"
-          - @problem.all_variants.all.sort_by(&:grade).reverse.each do |variant|
+          - @problem.all_variants.sort_by(&:grade).reverse.each do |variant|
             div= link_to [variant.name_with_fallback, variant.grade].compact.join(" - "), problem_friendly_path(variant)
 
     div class="col-span-1"
