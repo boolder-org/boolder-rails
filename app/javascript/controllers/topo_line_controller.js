@@ -10,10 +10,13 @@ export default class extends Controller {
 
   connect() {
     var image = this.imageTarget
+    var circleTargets = this.circleTargets
     var self = this
 
     image.onload = function() {
-      self.circleTarget.classList.remove("hidden")
+      circleTargets.forEach(circle => {
+        circle.classList.remove("hidden")
+      })
 
       setTimeout(function(){
         self.createPath()
