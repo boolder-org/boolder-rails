@@ -19,8 +19,8 @@ div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
             = t("area.tags.#{tag}").capitalize
       - if params[:tag].present?
         = link_to areas_path
-          span class="mr-2 my-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
-            = t("views.areas.index.all")
+          span class="mr-2 my-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-gray-200 text-gray-600 rounded-full whitespace-nowrap" 
+            = t("views.areas.index.remove_filter")
 
   div class="mt-4 max-w-lg mx-auto grid gap-5 sm:grid-cols-3 lg:grid-cols-4 sm:max-w-none"
     - @areas.each do |area|
