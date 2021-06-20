@@ -37,7 +37,7 @@ en:
     tags:
       beginner_friendly: beginner friendly
       dry_fast: dries fast
-      train_station_closeby: accessible by train+bicycle
+      train_station_closeby: access by train+bicycle
   views:
     homepage:
       title1: Your guide to bouldering
@@ -71,7 +71,7 @@ en:
     areas:
       index:
         filter: "Filter by:"
-        all: All
+        remove_filter: Remove filter
         metas: 
           title: All areas in Fontainebleau
           description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
