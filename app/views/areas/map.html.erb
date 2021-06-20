@@ -15,8 +15,16 @@ data-apple-map-geojson-center-value="<%= @center.to_json %>"
 data-apple-map-geojson-span-value="0.0002"
 <% end %>
 >
-  <div class="">
-    <div data-apple-map-geojson-target="map" class="apple-map bg-gray-500 h-screen"></div>
+  <div class="h-screen flex flex-col">
+    <div class="px-4 py-2 bg-green-600 text-white font-medium">
+      <%= link_to area_path(@area), class: "flex items-center space-x-2" do %>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <div><%= @area.name %></div>
+      <% end %>
+    </div>
+    <div data-apple-map-geojson-target="map" class="apple-map bg-gray-500 flex-auto"></div>
   </div>
 </div>
 
