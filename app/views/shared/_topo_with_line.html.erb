@@ -2,7 +2,7 @@
   <%= render 'shared/topo_image', topo: line.topo, klass: "sm:rounded-lg" %>
   <% if line.coordinates %>
     <div class="absolute top-0 left-0 w-full">
-      <svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"></svg>
+      <svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="filter: drop-shadow(0px 0px 8px rgba(0.2,0.2,0.2,0.6));"></svg>
     </div>
   <% end %>
 
