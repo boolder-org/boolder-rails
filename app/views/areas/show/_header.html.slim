@@ -1,5 +1,6 @@
 div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8"
-  = link_to "Fontainebleau", areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700"  
+  = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
+    div Fontainebleau  
   h1 class="text-4xl font-bold mt-2 mb-4"= area.name
 
   - if area.id == 5
