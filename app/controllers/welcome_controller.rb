@@ -15,10 +15,6 @@ class WelcomeController < ApplicationController
     redirect_to root_localized_path(locale: preferred_locale || I18n.default_locale)
   end
 
-  def boom
-    raise "this is a test"
-  end
-
   def redirect_area
     area = Area.find(params[:id])
     redirect_to area_path(area)
