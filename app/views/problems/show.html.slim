@@ -5,7 +5,7 @@
 - if line = @problem.lines.published.first
   - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, w: 200, ar:'4:3', fit: 'crop', dpr: 2, q: 50) }
 
-div class="max-w-7xl mx-auto pt-6 pb-12 sm:px-6 lg:px-8"
+div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
 
   div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8"
     div class="col-span-2"
@@ -17,7 +17,7 @@ div class="max-w-7xl mx-auto pt-6 pb-12 sm:px-6 lg:px-8"
             path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
           div= link_to @problem.area.name, area_path(@problem.area), class: "hover:text-gray-700"
         div class="flex justify-between items-center"
-          div class="flex space-x-4 mt-2"
+          div class="flex justify-between items-center w-full mt-2"
             h1 class="text-4xl font-bold"= @problem.name_with_fallback
             div class="text-gray-400 text-4xl font-bold"= @problem.grade
 
@@ -40,36 +40,53 @@ div class="max-w-7xl mx-auto pt-6 pb-12 sm:px-6 lg:px-8"
               span class="text-gray-400"
                 = render 'svg/nophoto', width: 98, height: 98
 
-      div class="px-4 sm:px-0 py-4 flex justify-between items-center"
-        div
-          - if previous = @problem.previous
-            = link_to problem_friendly_path(previous) do
-              = problem_circle_view(previous)
-              span class="ml-2 font-medium"= previous.name_with_fallback
-        div
-          - if nexxt = @problem.next
-            = link_to problem_friendly_path(nexxt) do
-              = problem_circle_view(nexxt)
-              span class="ml-2 font-medium"= nexxt.name_with_fallback
+      - if @problem.previous || @problem.next
+        div class="px-4 sm:px-0 py-2 flex justify-between items-center"
+          div
+            - if previous = @problem.previous
+              = link_to problem_friendly_path(previous) do
+                div class="flex items-center space-x-2 text-green-600"
+                  svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"
+                  divt= t('views.pagination.previous').html_safe
+          div
+            - if nexxt = @problem.next
+              = link_to problem_friendly_path(nexxt) do
+                div class="flex items-center space-x-2 text-green-600"
+                  divt= t('views.pagination.next').html_safe
+                  svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"
 
-      - if @problem.all_variants.any?
-        div class="px-4 sm:px-0 py-4"
-          h2 class="text-xl font-semibold"= t("views.problems.show.variants")
-          div class="prose prose-green"
-            - @problem.all_variants.sort_by(&:grade).reverse.each do |variant|
-              div= link_to [variant.name_with_fallback, variant.grade].compact.join(" - "), problem_friendly_path(variant)
 
-      div class="px-4 sm:px-0 py-4"
+      div class="px-4 sm:px-0 py-2"
+
+        - if @problem.circuit_id.present?
+          = link_to area_problems_path(circuit_id: @problem.circuit_id) do
+            div class="flex items-center space-x-2 text-green-600 mt-2"
+              svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              div= t('views.problems.show.see_circuit')
 
         = link_to map_area_path(@problem.area, problem: @problem.id), rel: "nofollow" do
-          div class="flex items-center space-x-2 text-green-600"
+          div class="flex items-center space-x-2 text-green-600 mt-2"
             svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
               path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
             div= t("problem.see_on_map")
 
         - if @problem.bleau_info_id.present?
-          = link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank"
+          = link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do
             div class="flex items-center space-x-2 text-green-600 mt-2"
               svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                 path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
               div= t("problem.see_on_bleau_info")
+
+
+      - if @problem.all_variants.any?
+        div class="px-4 sm:px-0 py-4"
+          h2 class="text-xl font-semibold mb-3"= t("views.problems.show.variants")
+          div class=""
+            - @problem.all_variants.sort_by(&:grade).reverse.each do |variant|
+              = link_to problem_friendly_path(variant) do
+                = problem_circle_view(variant)
+                span class="ml-2 font-medium"= variant.name_with_fallback
+                span class="ml-2 text-gray-400"= variant.grade
