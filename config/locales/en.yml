@@ -105,6 +105,7 @@ en:
           title_circuit: "%{circuit} circuit in %{area}"
           description: All the photos and grades for boulders in %{area}.
       show:
+        see_circuit: See the circuit
         variants: Variants
         metas:
           title: "%{problem} - %{grade} - %{area}"
