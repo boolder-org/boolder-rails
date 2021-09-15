@@ -47,7 +47,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
             p
               | Le secteur très facile d'accès (parking à 30 secondes à pieds). L'inconvénient est que l'on entend les voitures.
             p
-              | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le topo en mode hors-ligne.
+              | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
             p
               | La peinture du circuit orange est presque complètement effacée, le topo est vraiment nécessaire.
 
@@ -58,6 +58,16 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
               | Franchard Isatis offre plus de 500 voies, pour tous les niveaux. 
             p 
               | L'accès est très facile depuis le parking, ce qui rend le secteur assez fréquenté. N'hésitez pas à "monter" un peu sur les hauteurs pour être plus tranquille.
+
+      - if @area.id == 6
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Cuvier Bellevue est un petit secteur à 5 min de marche de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+            p
+              | La majorité des voies sont de niveau 5, 6 et 7.
+            p
+              | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
 
       - if @area.id == 10
         div class="px-4 sm:px-0"
