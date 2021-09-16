@@ -68,6 +68,7 @@ namespace :josm do
 
       features << geojson_factory.feature(topo_location, nil, hash)
 
+      next if topo.id=925 # FIXME: this topo doesn't have metadata
       heading = FACTORY.line_string([
         topo_location, 
         move_point(topo.metadata_longitude, topo.metadata_latitude, 3 * Math.cos(to_radian(topo.metadata_heading)), 3 * Math.sin(to_radian(topo.metadata_heading)))
