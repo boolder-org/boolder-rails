@@ -21,11 +21,15 @@
 #       if with_photos
 #         puts "processing photo for line ##{line.id}"
 #         output_file = Rails.root.join('export', 'app', "area-#{area_id}", "topos", "topo-#{line.topo.id}.jpg").to_s
-        
-#         # FIXME: iterate on topos (not lines) to avoid double processing
-#         line.topo.photo.open do |file| 
-#           im = Vips::Image.new_from_file file.path.to_s
-#           im.thumbnail_image(800).write_to_file output_file
+
+#         if File.exist?(output_file)
+#           puts "topo-#{line.topo.id}.jpg already exists"
+#         else
+#           # FIXME: iterate on topos (not lines) to avoid double processing
+#           line.topo.photo.open do |file| 
+#             im = Vips::Image.new_from_file file.path.to_s
+#             im.thumbnail_image(800).write_to_file output_file
+#           end
 #         end
 #       end
 #     end
