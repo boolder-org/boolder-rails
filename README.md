@@ -33,4 +33,4 @@ We use it to edit GeoJson files.
 - Go to File > Preferences > Plugins
 - Click on the chexkbox next to `Fastdraw` and `PicLayer`, and then click on OK
 - Restart Josm
-- In the menu bar (on the left), click on `Fast Drawing mode` and then type `Q` to enter the options dialog. Click on `Draw closed polygons only`
+- In the menu bar (on the left), click on `Fast Drawing mode` and then type `Q` to enter the options dialog. Click on `Draw closed polygons only`, choose `3` for `Starting Epsilon` and `Simplify with initial epsilon` for `Enter key mode`
