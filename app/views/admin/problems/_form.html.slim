@@ -14,8 +14,6 @@ div class="col-span-6 sm:col-span-2"
   = form.label :grade
   = form.text_field :grade, autocomplete: "off"
 
-div class="hidden sm:block col-span-6 sm:col-span-1"
-
 div class="col-span-6 sm:col-span-2"
   = form.label :steepness
   = form.select :steepness, Problem::STEEPNESS_VALUES, { include_blank: false, default: :other }
