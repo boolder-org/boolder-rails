@@ -18,8 +18,11 @@ class Admin::ToposController < Admin::BaseController
       topo.update(photo: photo)
       topo.update(metadata: metadata_hash)
       
-      metadata_hash["problem_ids"].uniq.each do |problem_id|
-        Line.create(topo_id: topo.id, problem_id: problem_id)
+      problems = Problem.find(metadata_hash["problem_ids"])
+      problems = problems + problems.flat_map(&:all_variants)
+
+      problems.uniq.each do |problem|
+        Line.create(topo_id: topo.id, problem_id: problem.id)
       end
 
       flash[:notice] = "Topo created"
