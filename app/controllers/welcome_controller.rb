@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   layout false, only: [:soon]
 
   def index
-    @beginner_areas = Area.published.reject{|a| a.id == 7}.
+    @beginner_areas = Area.any_tags(:beginner_friendly).reject{|a| a.id == 7}.
       map{|a| [a, a.problems.where("grade < '4a'").count ]}.
       sort_by(&:second).reverse
   end
