@@ -150,6 +150,19 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
               | Gorge aux Châts est un secteur de petite taille (environ 200 voies), avec une bonne densité de voies de niveau 6.
             p 
               | Il n'y a pas de parking officiel, mais vous pouvez vous garer le long de la route.
+
+      - if @area.id == 18
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Diplodocus est un petit secteur offrant une centaine de voies faciles dans les niveaux 2/3/4 — idéal pour débuter ou pour des sorties en famille.
+            p 
+              | Les blocs sont peu hauts, et les réceptions sont généralement assez bonnes.
+            p 
+              | Comptez une petit quart d'heure de marche depuis le parking.
+
+            p
+              | À savoir : le réception téléphonique est assez mauvaise dans le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
     
     div class="col-span-1"
       = render "areas/show/map"
