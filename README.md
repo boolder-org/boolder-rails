@@ -28,6 +28,17 @@ Run the app:
 
 - `brew install vips`
 
+## Bug 
+
+If you have an error like this: `Could not open library 'glib-2.0.0': dlopen(glib-2.0.0, 5): image not found.`
+It's probably a bug related to the M1 processor.
+
+Then you can try this:
+`mkdir -p /opt/local/lib`
+`sudo ln -s /opt/homebrew/lib /usr/local/lib`
+
+source: https://issueexplorer.com/issue/libvips/ruby-vips/284
+
 # Optional: JOSM
 
 Josm is an open-source tool used by the OpenStreetMap community.
