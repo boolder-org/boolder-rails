@@ -315,6 +315,7 @@ DEPENDENCIES
   rails_12factor (~> 0.0.3)
   redis (~> 4.2.5)
   rgeo-geojson (~> 2.1.1)
+  ruby-vips
   sass-rails (>= 6)
   selenium-webdriver
   sidekiq (~> 6.2.0)

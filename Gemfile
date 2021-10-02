@@ -49,6 +49,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'jwt', '~> 2.2.2'
+  gem 'ruby-vips'
 end
 
 group :test do
