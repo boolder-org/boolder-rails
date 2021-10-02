@@ -2,12 +2,12 @@
 
 To get started on mac OS:
 
-Basics:
+# Basics
 - install homebrew: https://brew.sh/
 - install rvm: https://rvm.io
 
 
-Postgre:
+# Postgre
 - cd to the app directory
 - `brew install postgres`
 - `brew install postgis`
@@ -15,7 +15,7 @@ Postgre:
 - `createdb dump-prod`
 - `pg_restore -d dump-prod db/prod.dump`
 
-App:
+# App
 - cd to the app directory
 - install rails: `sudo gem install rails`
 - `bundle install`
@@ -24,7 +24,11 @@ Run the app:
 - `rails s`
 
 
-## Optional: JOSM
+# Optional: Vips (image processing)
+
+- `brew install vips`
+
+# Optional: JOSM
 
 Josm is an open-source tool used by the OpenStreetMap community.
 We use it to edit GeoJson files.
