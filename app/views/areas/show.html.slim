@@ -163,6 +163,15 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
             p
               | À savoir : le réception téléphonique est assez mauvaise dans le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
+
+      - if @area.id == 17
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Rocher Guichot est un petit secteur, offrant des voies pour tous les niveaux.
+
+            p 
+              | L'accès est très facile (1 minute de marche depuis le parking).
     
     div class="col-span-1"
       = render "areas/show/map"
