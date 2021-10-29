@@ -182,6 +182,16 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
             p 
               | L'accès est très facile (1 minute de marche depuis le parking).
+
+      - if @area.id == 19
+        div class="px-4 sm:px-0"
+          div class="prose" 
+            p 
+              | Rocher des Potets est un tout petit secteur avec des voies majoritairement de niveau 2 et 3, idéal pour les débutants.
+            p 
+              | Les blocs sont peu hauts, et les réceptions sont généralement très bonnes.
+            p 
+              | Comptez une douzaine de minutes de marche depuis le parking.
     
     div class="col-span-1"
       = render "areas/show/map"
