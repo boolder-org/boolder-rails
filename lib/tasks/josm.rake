@@ -11,7 +11,7 @@ namespace :josm do
 
     problem_features = Problem.where(area_id: area_id).map do |problem|
       hash = {}.with_indifferent_access
-      hash[:name] = problem.name_with_fallback
+      hash[:name] = problem.name_debug
       hash[:problem_id] = problem.id
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
@@ -55,7 +55,7 @@ namespace :josm do
     Topo.published.joins(:problems).merge(Problem.area(area_id)).each do |topo|
       hash = {}.with_indifferent_access
 
-      hash[:name] = topo.problems.map(&:name_with_fallback).join(" | ")
+      hash[:name] = topo.problems.map(&:name_debug).join(" | ")
       hash[:topo_id] = topo.id
       hash[:horizontal_accuracy] = topo.metadata_horizontal_accuracy.to_f.round(1)
       hash[:heading] = topo.metadata_heading.to_f.round(1)

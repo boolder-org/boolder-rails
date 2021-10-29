@@ -50,6 +50,15 @@ class Problem < ApplicationRecord
     end 
   end
 
+  def name_debug
+    circuit_debug = nil
+    if circuit_number.present? && circuit.id
+      circuit_debug = [circuit.name, circuit_number.to_s].join(" ")
+    end
+
+    [circuit_debug, name].compact.join(" ")
+  end
+
   def enumerable_circuit_number
     if circuit_number.present?
       circuit_number.to_i + (circuit_number.include?('b') ? 0.5 : 0)
