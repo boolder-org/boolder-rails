@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+raise "are you crazy?" unless Rails.env.development?
+
+`dropdb dump-prod && createdb dump-prod`
+`pg_restore -d dump-prod db/prod.dump`
