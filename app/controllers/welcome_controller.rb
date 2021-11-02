@@ -27,7 +27,7 @@ class WelcomeController < ApplicationController
 
   def redirect_problems
     area = Area.find(params[:id])
-    redirect_to area_problems_path(area, level: params[:level], circuit_id: params[:circuit_id], featured: params[:featured])
+    redirect_to area_path(area)
   end
 
   def redirect_problem

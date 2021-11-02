@@ -3,201 +3,56 @@
 
 - set_meta_tags og: { type: "website", image: image_url("areas/cover-area-#{@area.id}.jpg") }
 
-= render "areas/show/header", area: @area, selected: 0
+div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-1"
+  = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
+    div Fontainebleau  
+  div class="flex justify-between sm:justify-start sm:space-x-8 items-center mb-2"
+    h1 class="text-4xl font-bold mt-2 mb-4"= @area.name
+    = link_to map_area_path do
+      div class="flex items-center space-x-2 btn"
+        svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+        span= t("views.areas.show.map")
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
   div class="md:grid md:grid-cols-2 md:gap-16"
-    div class="col-span-1 pb-8"
-
-      div class="mb-4 px-4 sm:px-0"
-        - @area.tags.each do |tag|
-          = link_to (areas_path(tag: tag))
-            span class="mr-2 mb-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
-              = t("area.tags.#{tag}").capitalize
-
-      - if @area.id == 1
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Rocher Canon est un secteur assez étendu, avec de nombreux blocs pour tous les niveaux. 
-            p 
-              | Il est facile d'accès depuis la gare de Bois-le-Roi en vélo (~10 min) ou même à pieds (~30 min), ce qui le rend assez fréquenté.
-            p 
-              | Le terrain a du relief, il n'est pas facile de s'y repérer. Nous vous conseillons d'utiliser le GPS et la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>).
-
-      - if @area.id == 2
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Cul de Chien est un secteur parfait pour débuter, avec de nombreux blocs peu hauts et une bonne réception au sol. 
-            p
-              | Le décor avec ses grandes étendues de sable blanc est vraiment magnifique. Idéal pour les enfants et les pique-niques !
-
-            p 
-              | Comptez une quinzaine de minutes à pieds pour rejoindre le secteur depuis le parking.
-            
-
-      - if @area.id == 4
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Cuvier est un secteur mythique, parmi les plus connus de Fontainebleau. Il offre de nombreuses voies dans le 5, 6, 7.
-            p
-              | Le secteur est assez plat, ce qui facilite la réception au sol pour la majorité des voies. En revanche les descentes sont parfois difficiles, il est préférable d'avoir quelqu'un pour vous aider / vous parer.
-            p
-              | Le secteur très facile d'accès (parking à 30 secondes à pieds). L'inconvénient est que l'on entend les voitures.
-            p
-              | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
-            p
-              | La peinture du circuit orange est presque complètement effacée, le topo est vraiment nécessaire.
-
-      - if @area.id == 5
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Franchard Isatis offre plus de 500 voies, pour tous les niveaux. 
-            p 
-              | L'accès est très facile depuis le parking, ce qui rend le secteur assez fréquenté. N'hésitez pas à "monter" un peu sur les hauteurs pour être plus tranquille.
-
-      - if @area.id == 6
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Cuvier Bellevue est un petit secteur à 5 min de marche de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
-            p
-              | La majorité des voies sont de niveau 5, 6 et 7.
-            p
-              | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
-
-      - if @area.id == 8
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Rocher Fin est un secteur avec un peu plus de 200 voies, pour tous les niveaux.
-            p 
-              | Le cadre est magnifique, et il est facile de s'y répérer.
-            p 
-              | Comptez une vingtaine de minutes de marche depuis le parking.
-
-      - if @area.id == 10
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | 95.2 est un secteur qui offre de nombreuses voies pour tous les niveaux.
-            p 
-              | Les débutants peuvent profiter de deux circuits orange (un à l'Est, un à l'Ouest du secteur).
-            p 
-              | Les grimpeurs intermédiaires/expérimentés préféreront la zone centrale ainsi que les circuits bleu, rouge et blanc. 
-            p
-              | À savoir : dans la zone centrale la roche sèche assez vite grâce à son altitude (de 95,2 mètres, d'où le secteur tire son nom) et de l'exposition au soleil.
-
-      - if @area.id == 7
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Apremont est un secteur offrant de nombreuses voies pour tous les niveaux.
-            p 
-              | Le terrain a beaucoup de relief et les blocs sont très nombreux : il n'est pas facile de se déplacer ni de se repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>), ou alors de rester plutôt dans la zone Ouest (circuit bleu) qui a moins de relief.
-
-      - if @area.id == 9
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Éléphant est un secteur somptueux, offrant environ 250 voies.
-            p 
-              | Attention, les blocs sont en moyenne (très) hauts ! Les crash pads et les pareurs sont de rigeur. Et attention à ne pas sous-estimer la descente.
-            p 
-              | Les débutants préféreront le circuit jaune (avec des blocs de moins de 2 ou 3 mètres) qui se situe dans la partie Nord du secteur.
-            p 
-              | Le passage de la partie Nord (circuit jaune) à la partie Sud (circuits bleu et noir) est assez difficile à cause de nombreux blocs très hauts en enfilade.
-            p 
-              | Attention : Depuis 2018 le bloc de l'Éléphant est interdit à la grimpe à cause d'un risque d'éboulement.
-
-      - if @area.id == 11
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Franchard Cuisinière offre une grande richesse de blocs pour tous les niveaux.
-            p
-              | Le secteur était très populaire il y a quelques années. La fermeture du parking le rend maintenant moins fréquenté, ce qui est une aubaine. Comptez une quinzaine de minutes de marche depuis le parking de Franchard Isatis.
-            p 
-              | Le terrain est assez valloné, il n'est pas facile de se repérer. Nous vous conseillons d'utiliser le GPS et la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>).
-
-      - if @area.id == 12
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | La Roche aux Sabots est un secteur de petite taille, avec des blocs pour tous les niveaux.
-            p 
-              | Les blocs font en moyenne 3 ou 4 mètres de haut, avec une bonne réception au sol, ce qui permet de grimper en confiance.
-            p 
-              | Il est très facile de se repérer vu le terrain plat et les espaces entre les blocs.
-
-      - if @area.id == 13
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | La Canche aux Merciers est un secteur qui offre des voies pour tous les niveaux.
-            p 
-              | Il est très facile de s'y repérer, et le terrain est plat.
-            p 
-              | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
-            p 
-              | Les étendues de sable blanc sont également idéales pour les enfants et pour piquer-niquer !
-
-      - if @area.id == 14
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Le Rocher du Potala est un secteur de taille moyenne, avec une bonne diversité de voies jusqu'au niveau 6.
-            p 
-              | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
-
-      - if @area.id == 15
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Gorge aux Châts est un secteur de petite taille (environ 200 voies), avec une bonne densité de voies de niveau 6.
-            p 
-              | Il n'y a pas de parking officiel, mais vous pouvez vous garer le long de la route.
-
-      - if @area.id == 18
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Diplodocus est un petit secteur offrant une centaine de voies faciles dans les niveaux 2/3/4 — idéal pour débuter ou pour des sorties en famille.
-            p 
-              | Les blocs sont peu hauts, et les réceptions sont généralement assez bonnes.
-            p 
-              | Comptez une petit quart d'heure de marche depuis le parking.
-
-            p
-              | À savoir : le réception téléphonique est assez mauvaise dans le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
-
-      - if @area.id == 17
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Rocher Guichot est un petit secteur, offrant des voies pour tous les niveaux.
-
-            p 
-              | L'accès est très facile (1 minute de marche depuis le parking).
-
-      - if @area.id == 19
-        div class="px-4 sm:px-0"
-          div class="prose" 
-            p 
-              | Rocher des Potets est un tout petit secteur avec des voies majoritairement de niveau 2 et 3, idéal pour les débutants.
-            p 
-              | Les blocs sont peu hauts, et les réceptions sont généralement très bonnes.
-            p 
-              | Comptez une douzaine de minutes de marche depuis le parking.
-    
     div class="col-span-1"
-      = render "areas/show/map"
+
       div class="px-4 sm:px-0"
+        div class="mb-4 "
+          - @area.tags.each do |tag|
+            = link_to (areas_path(tag: tag))
+              span class="mr-2 mb-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
+                = t("area.tags.#{tag}").capitalize
+
+        = render "areas/show/description"
+    
+      div class="pt-4 px-4 sm:px-0 flex items-center space-x-4"
+        span class="prose"= t("views.areas.show.access")
         = render "areas/show/access"
 
 
+  div class="md:grid md:grid-cols-2 md:gap-16"
+    div class="col-span-1"
+      div class="mt-8 space-y-12"
+        - off_circuit_problems = @circuits.delete(nil)
+        - @circuits.each do |circuit, problems|
+          div
+            a id="circuit_#{circuit.id}"
+              h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
+                = t("circuit.long_name", name: circuit.name)
+            ul role="list"
+              - problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
+                - cache [problem, I18n.locale]
+                  = render problem
+        div
+          h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
+            = t("circuit.off_circuit")
+          ul role="list"
+            - off_circuit_problems.each do |problem|
+              - cache [problem, I18n.locale]
+                = render problem
 
-  
+
+
+      

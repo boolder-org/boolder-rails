@@ -41,6 +41,8 @@ class AreasController < ApplicationController
         longitude: location.longitude 
       }
     end
+
+    @circuits = @area.problems.order("grade ASC, id ASC").group_by &:circuit
   end
 
   def map 
