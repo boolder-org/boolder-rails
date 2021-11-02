@@ -84,9 +84,10 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
       - if @problem.all_variants.any?
         div class="px-4 sm:px-0 py-4"
           h2 class="text-xl font-semibold mb-3"= t("views.problems.show.variants")
-          div class=""
+          ul class=""
             - @problem.all_variants.sort_by(&:grade).reverse.each do |variant|
-              = link_to problem_friendly_path(variant) do
-                = problem_circle_view(variant)
-                span class="ml-2 font-medium"= variant.name_with_fallback
-                span class="ml-2 text-gray-400"= variant.grade
+              li class="mt-2"
+                = link_to problem_friendly_path(variant) do
+                  = problem_circle_view(variant)
+                  span class="ml-2 font-medium"= variant.name_with_fallback
+                  span class="ml-2 text-gray-400"= variant.grade

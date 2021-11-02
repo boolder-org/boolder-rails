@@ -8,7 +8,7 @@ module ProblemsHelper
 
   def problem_circle_view_with_name(problem)
     problem_circle_view(problem) + 
-      (link_to problem.name_with_fallback, edit_admin_problem_path(problem), class: "ml-2 font-semibold")
+      (link_to problem.name_with_fallback, edit_admin_problem_path(problem), class: "ml-2")
   end
 
   def circuit_circle_view(circuit, klass: "h-6 w-6 leading-6")

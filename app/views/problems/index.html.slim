@@ -18,17 +18,23 @@
 div class="max-w-7xl mx-auto mb-8 px-4 sm:px-6 lg:px-8"
     
   div class="md:grid md:grid-cols-4 md:gap-5"
-    div class="col-span-1 mb-8"
-      = render "filters"
+    div class="col-span-2"
 
-    div class="col-span-3"
-      div class="max-w-lg mx-auto grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:max-w-none"
-        / FIXME: sort circuit_number via SQL instead of ruby
-        / eg. https://stackoverflow.com/questions/8502505/order-varchar-string-as-numeric
-        - collection = params[:circuit_id].present? ? @problems.sort_by{|p| p.enumerable_circuit_number } : @problems
-        - collection.each do |problem|
-          - cache [problem, I18n.locale]
-            = render problem
-      - unless params[:circuit_id].present? 
-        div class="mt-8"
-          = paginate collection
+      div class="space-y-12"
+        - off_circuit_problems = @circuits.delete(nil)
+        - @circuits.each do |circuit, problems|
+          div
+            h3 class="text-xl font-bold mb-2 px-2"
+              | Circuit 
+              = circuit&.name
+            ul role="list"
+              - problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
+                - cache [problem, I18n.locale]
+                  = render problem
+        div
+          h3 class="text-xl font-bold mb-2 px-2"
+            | Hors circuit
+          ul role="list"
+            - off_circuit_problems.each do |problem|
+              - cache [problem, I18n.locale]
+                = render problem
