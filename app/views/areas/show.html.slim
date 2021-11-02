@@ -28,7 +28,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         = render "areas/show/description"
     
       div class="pt-4 px-4 sm:px-0 flex items-center space-x-4"
-        span class="prose" Accès :
+        span class="prose"= t("views.areas.show.access")
         = render "areas/show/access"
 
 
@@ -40,15 +40,14 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
           div
             a id="circuit_#{circuit.id}"
               h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
-                | Circuit 
-                = circuit&.name
+                = t("circuit.long_name", name: circuit.name)
             ul role="list"
               - problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
                 - cache [problem, I18n.locale]
                   = render problem
         div
           h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
-            | Hors circuit
+            = t("circuit.off_circuit")
           ul role="list"
             - off_circuit_problems.each do |problem|
               - cache [problem, I18n.locale]
