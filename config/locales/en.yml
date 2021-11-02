@@ -13,6 +13,7 @@ en:
       white: White
       black: Black
     long_name: "%{name} circuit"
+    off_circuit: Other
   problem:
     no_name: No name
     problems: Problems
@@ -78,15 +79,13 @@ en:
         map:
           see: "See"
       show:
+        access: "How to get there:"
+        map: Map
         metas:
           title: "%{area}, Fontainebleau"
-          description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, access, ..."
+          description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
       train_station: "%{name} train station"
       train_station_generic: "Train station"
-      tabs:
-        infos: Info
-        problems: Problems
-        map: Map
       map:
         banner:
           title: Get a better experience and offline mode with the Boolder app.
@@ -96,14 +95,6 @@ en:
           title: Map with topos for %{area}
           description: Interactive map for %{area} in Fontainebleau
     problems:
-      index:
-        filter: "Filter by:"
-        metas:
-          title: Problems and circuits in %{area}
-          title_level: Problems of level %{level} in %{area}
-          title_featured: Featured problems in %{area}
-          title_circuit: "%{circuit} circuit in %{area}"
-          description: All the photos and grades for boulders in %{area}.
       show:
         see_circuit: See the circuit
         variants: Variants
