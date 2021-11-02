@@ -1,7 +1,7 @@
 <% @parkings.each do |parking| %>
-  <div class="py-4 flex items-center space-x-6 inline-flex">
+  <div class="flex items-center space-x-6">
     <div class="flex items-center content-center">
-      <div class="w-6 text-gray-500">
+      <div class="w-6 text-gray-500 flex-shrink-0">
         <svg viewBox="0 0 30 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
                 <g id="noun_Car_1566237" fill="currentColor">
@@ -11,7 +11,7 @@
         </svg>
       </div>
       <%= link_to parking.google_url do %>
-        <div class="text-green-600 underline font-semi ml-3"><%= parking.description %></div>
+        <div class="text-green-600 underline font-semi ml-3 flex-shrink"><%= parking.description %></div>
       <% end %>
     </div>
 
@@ -20,7 +20,7 @@
     </div>
 
     <div class="flex items-center">
-      <div class="h-6 w-3.5 text-gray-500">
+      <div class="h-6 w-3.5 text-gray-500 flex-shrink-0">
         <svg viewBox="0 0 56 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <g id="Page-1" stroke="none" stroke-width="1">
                 <g id="noun_Walk_1757934" transform="translate(-22.000000, 0.000000)">
@@ -32,7 +32,7 @@
             </g>
         </svg>
       </div>
-      <div class="text-gray-900 ml-2"><%= parking.walk_time %> min</div>
+      <div class="text-gray-900 m-2 flex-shrink-0"><%= parking.walk_time %> min</div>
     </div>
   </div>
 <% end %>
