@@ -80,13 +80,9 @@ fr:
       show:
         metas:
           title: "%{area}, Fontainebleau"
-          description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte, accès, ..."
+          description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."
       train_station: "Gare %{name}"
       train_station_generic: "Gare"
-      tabs:
-        infos: Infos
-        problems: Voies
-        map: Carte topo
       map:
         banner:
           title: Avec l'appli Boolder, profitez d'une meilleur expérience et du mode hors-ligne.
@@ -96,14 +92,6 @@ fr:
           title: Topo %{area}
           description: Carte interactive pour le secteur %{area} à Fontainebleau
     problems:
-      index:
-        filter: "Filtrer par :"
-        metas:
-          title: Voies et circuits à %{area}, Fontainebleau
-          title_level: Voies de niveau %{level} à %{area}
-          title_featured: Voies coup de cœur à %{area}
-          title_circuit: "Circuit %{circuit} à %{area}"
-          description: Toutes les photos et cotations des blocs à %{area} pour escalader en prenant du plaisir.
       show:
         see_circuit: Voir le circuit
         variants: Variantes
