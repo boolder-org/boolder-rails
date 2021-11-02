@@ -3,7 +3,7 @@
 
 - set_meta_tags og: { type: "website", image: image_url("areas/cover-area-#{@area.id}.jpg") }
 
-div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 sticky top-0 bg-gray-100 mt-1"
+div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-1"
   = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
     div Fontainebleau  
   div class="flex justify-between sm:justify-start sm:space-x-8 items-center mb-2"
@@ -38,9 +38,10 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         - off_circuit_problems = @circuits.delete(nil)
         - @circuits.each do |circuit, problems|
           div
-            h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
-              | Circuit 
-              = circuit&.name
+            a id="circuit_#{circuit.id}"
+              h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
+                | Circuit 
+                = circuit&.name
             ul role="list"
               - problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
                 - cache [problem, I18n.locale]
