@@ -80,6 +80,7 @@ en:
           see: "See"
       show:
         access: "How to get there:"
+        map: Map
         metas:
           title: "%{area}, Fontainebleau"
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."

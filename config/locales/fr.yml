@@ -80,6 +80,7 @@ fr:
           see: "Voir"
       show:
         access: "Accès :"
+        map: Carte topo
         metas:
           title: "%{area}, Fontainebleau"
           description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."
