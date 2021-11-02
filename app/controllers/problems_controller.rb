@@ -1,22 +1,22 @@
 class ProblemsController < ApplicationController
   def index
     @area = Area.find_by(slug: params[:slug])
-    @problems = @area.problems.order("grade ASC, id ASC")
+    @circuits = @area.problems.order("grade ASC, id ASC").group_by &:circuit
 
-    @problems = @problems.featured if params[:featured] == "true"
+    # @problems = @problems.featured if params[:featured] == "true"
 
-    if params[:level].to_i.in?(1..8)
-      @problems = @problems.level(params[:level].to_i)
-    else
-      params[:level] = "all"
-    end
+    # if params[:level].to_i.in?(1..8)
+    #   @problems = @problems.level(params[:level].to_i)
+    # else
+    #   params[:level] = "all"
+    # end
 
-    if params[:circuit_id].present? && circuit = Circuit.find(params[:circuit_id].to_i)
-      @problems = @problems.where(circuit_id: circuit.id)
-    end
+    # if params[:circuit_id].present? && circuit = Circuit.find(params[:circuit_id].to_i)
+    #   @problems = @problems.where(circuit_id: circuit.id)
+    # end
 
-    @page = params[:page].presence || 1
-    @problems = @problems.page(@page).per(100)
+    # @page = params[:page].presence || 1
+    # @problems = @problems.page(@page).per(1000)
   end
 
   def show
