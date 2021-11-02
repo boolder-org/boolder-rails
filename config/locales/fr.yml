@@ -13,6 +13,7 @@ fr:
       white: Blanc
       black: Noir
     long_name: "Circuit %{name}"
+    off_circuit: Hors circuit
   problem:
     no_name: Sans nom
     problems: Voies
@@ -78,6 +79,7 @@ fr:
         map:
           see: "Voir"
       show:
+        access: "Accès :"
         metas:
           title: "%{area}, Fontainebleau"
           description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."

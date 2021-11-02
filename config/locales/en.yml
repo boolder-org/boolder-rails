@@ -13,6 +13,7 @@ en:
       white: White
       black: Black
     long_name: "%{name} circuit"
+    off_circuit: Other
   problem:
     no_name: No name
     problems: Problems
@@ -78,6 +79,7 @@ en:
         map:
           see: "See"
       show:
+        access: "How to get there:"
         metas:
           title: "%{area}, Fontainebleau"
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
