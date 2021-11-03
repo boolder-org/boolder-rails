@@ -3,6 +3,17 @@
 
 <% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
+
+ <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-8" data-controller="search">
+        <form action="#" class="form">
+          <input class="form-control" id="search-input" name="contacts" type="text" placeholder='Search by name' data-algolia-id = "<%= Rails.application.credentials.dig(:algolia, :app_id) %>" data-algolia-search-key = "765db6917d5c17449984f7c0067ae04c" data-search-target="searchBar"/>
+        </form>
+      </div>
+    </div>
+  </div>
+
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto">
     <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">

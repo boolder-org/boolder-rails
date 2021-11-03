@@ -6,6 +6,11 @@ class Problem < ApplicationRecord
   has_many :variants, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
 
+  include AlgoliaSearch
+  algoliasearch do
+    attributes :name
+  end
+
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
     1a 1a+ 1b 1b+ 1c 1c+ 

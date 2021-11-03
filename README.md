@@ -24,6 +24,10 @@ Run the app:
 - `rails s`
 
 
+# Optional: Yarn
+
+- `brew install yarn`
+
 # Optional: Vips (image processing)
 
 - `brew install vips`
