@@ -9,6 +9,19 @@ class Problem < ApplicationRecord
   include AlgoliaSearch
   algoliasearch do
     attributes :name
+    attribute :area_name do 
+      area.name
+    end
+    attribute :area_slug do 
+      area.slug
+    end
+  end
+
+  # FIXME: implement
+  # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
+  def area_name_changed?
+  end
+  def area_slug_changed?
   end
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
