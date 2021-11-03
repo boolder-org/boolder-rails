@@ -15,6 +15,7 @@ gem 'sidekiq', '~> 6.2.0'
 gem 'redis', '~> 4.2.5'
 gem 'newrelic_rpm', '~> 6.15.0'
 gem 'bugsnag', '~> 6.20.0'
+gem 'algoliasearch-rails', '~> 2.1.4'
 
 gem 'turbo-rails', '~> 0.5.9'
 gem 'sass-rails', '>= 6'
