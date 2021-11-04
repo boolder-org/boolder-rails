@@ -15,6 +15,9 @@ class Problem < ApplicationRecord
     attribute :area_slug do 
       area.slug
     end
+
+    searchableAttributes :name
+    # customRanking ['desc(likes_count)']
   end
 
   # FIXME: implement
