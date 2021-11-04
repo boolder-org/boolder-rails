@@ -32,7 +32,8 @@ export default class extends Controller {
         templates: {
           suggestion: function(suggestion) {
             // Change the return here to whatever you wish to be displayed in the dropdown
-            return `${suggestion._highlightResult.name.value} (${suggestion._highlightResult.area_name.value})`;
+            // console.log(suggestion)
+            return `${suggestion._highlightResult.name.value} — ${suggestion.area_name}`;
           }
         }
       }
