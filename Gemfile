@@ -21,7 +21,7 @@ gem 'turbo-rails', '~> 0.5.9'
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0.1'
 gem 'slim-rails', '~> 3.2.0'
-gem "webpacker", github: "rails/webpacker", ref: 'b6c2180' # upgrade webpacker when postcss8 works (https://davidteren.medium.com/tailwindcss-2-0-with-rails-6-1-postcss-8-0-9645e235892d)
+gem 'webpacker', '~> 5.4.0'
 gem 'jbuilder', '~> 2.7'
 gem 'image_processing', '~> 1.2'
 gem 'rack-cors', '~> 1.1.1'

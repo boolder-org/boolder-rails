@@ -17,8 +17,8 @@ require("channels")
 
 // note to self: not sure what I'm doing
 // I just copy-pasted stuff from 
-// https://davidteren.medium.com/tailwindcss-2-0-with-rails-6-1-postcss-8-0-9645e235892d
-require("stylesheets/application.scss")
+// https://dev.to/davidteren/getting-started-with-rails-6-1-tailwindcss-jit-webpacker-postcss-8-25g7
+import "stylesheets/application.scss"
 
 // Stimulus controllers
 import "controllers"
