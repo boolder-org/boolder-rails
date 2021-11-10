@@ -4,6 +4,14 @@ class Area < ApplicationRecord
   has_many :circuits
   has_many :pois
 
+  include AlgoliaSearch
+  algoliasearch do
+    attributes :name, :slug
+
+    searchableAttributes [:name]
+    # customRanking ['desc(likes_count)']
+  end
+
   TAGS = %i(beginner_friendly train_station_closeby dry_fast)
 
   scope :published, -> { where(published: true) }

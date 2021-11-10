@@ -53,3 +53,11 @@ We use it to edit GeoJson files.
 - Click on the chexkbox next to `Fastdraw` and `PicLayer`, and then click on OK
 - Restart Josm
 - In the menu bar (on the left), click on `Fast Drawing mode` and then type `Q` to enter the options dialog. Click on `Draw closed polygons only`, choose `3` for `Starting Epsilon` and `Simplify with initial epsilon` for `Enter key mode`
+
+
+# Sources for tailwind install
+
+- `https://davidteren.medium.com/rails-6-and-tailwindcss-getting-started-42ba59e45393`
+- `https://davidteren.medium.com/tailwindcss-2-0-with-rails-6-1-postcss-8-0-9645e235892d`
+- `https://davidteren.medium.com/rails-6-1-tailwindcss-jit-webpacker-postcss-8-16e03dbaebe1`
+- `https://dev.to/davidteren/getting-started-with-rails-6-1-tailwindcss-jit-webpacker-postcss-8-25g7`

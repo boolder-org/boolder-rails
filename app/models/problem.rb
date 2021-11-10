@@ -16,7 +16,7 @@ class Problem < ApplicationRecord
       area.slug
     end
 
-    searchableAttributes :name
+    searchableAttributes [:name]
     # customRanking ['desc(likes_count)']
   end
 
