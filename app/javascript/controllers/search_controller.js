@@ -45,6 +45,7 @@ export default class extends Controller {
       detachedMediaQuery: "(max-width: 55680px)", // FIXME
       // openOnFocus: true,
       getSources({ query }) {
+        if(query.length == 0) { return [] };
         return [
 
           {
