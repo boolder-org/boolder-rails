@@ -28,6 +28,9 @@ Run the app:
 
 - `brew install yarn`
 
+Run the dev server to get JIT compilation:
+- `bin/webpack-dev-server`
+
 # Optional: Vips (image processing)
 
 - `brew install vips`
