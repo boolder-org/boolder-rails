@@ -2,22 +2,48 @@ import { Controller } from "stimulus"
 
 import algoliasearch from 'algoliasearch/lite';
 import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
+// import { createLocalStorageRecentSearchesPlugin } from '@algolia/autocomplete-plugin-recent-searches';
+
 // import { h, Fragment } from 'preact';
 
 export default class extends Controller {
   static targets = [ ]
 
+  open() {
+    // console.log("open!")
+    // this.autokomplete.setQuery("test");
+    this.autokomplete.setIsOpen(true)
+  }
+
   connect() {
+
+    // const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
+    //   key: 'RECENT_SEARCH',
+    //   limit: 5,
+    // });
 
     const searchClient = algoliasearch(
       'XNJHVMTGMF',
       '765db6917d5c17449984f7c0067ae04c'
     );
     
-    autocomplete({
+    this.autokomplete = autocomplete({
       container: '#autocomplete',
+      plugins: [
+          // recentSearchesPlugin,
+        ],
       debug: true, // FIXME: remove
-      placeholder: 'Search for problems or areas',
+      // hint: false,
+      openOnFocus: true,
+      placeholder: 'Voie ou secteur',
+      translations: {
+        clearButtonTitle: 'Effacer', // defaults to 'Clear'
+        detachedCancelButtonText: 'Annuler', // defaults to 'Cancel'
+        submitButtonTitle: 'Chercher', // defaults to 'Submit'
+
+      },
+      detachedMediaQuery: "(max-width: 55680px)", // FIXME
+      // openOnFocus: true,
       getSources({ query }) {
         return [
 
@@ -50,11 +76,19 @@ export default class extends Controller {
                   },
                 });
               },
-              // header({ items }) {
+              // footer({ items, createElement }) {
               //   if (items.length === 0) {
               //     return null;
               //   }
-              //   return `Secteurs`
+              //   return createElement('div', {
+              //     dangerouslySetInnerHTML: {
+              //       __html: `<div class="">
+              //         <div class="flex items-center my-1" aria-hidden="true">
+              //           <div class="w-full border-t border-green-600"></div>
+              //         </div>
+              //       </div>`,
+              //     },
+              //   });
               // },
             },
 
@@ -101,12 +135,14 @@ export default class extends Controller {
               item({ item, createElement }) {
                 return createElement('div', {
                   dangerouslySetInnerHTML: {
-                    __html: `<span>
-                    ${item._highlightResult.name.value}
-                    </span>
-                    <span class="ml-2 text-gray-300">
-                      ${item.area_name}
-                    </span>`,
+                    __html: `<div class="flex justify-between">
+                      <span>
+                      ${item._highlightResult.name.value}
+                      </span>
+                      <span class="ml-2 text-gray-300">
+                        ${item.area_name}
+                      </span>
+                    </div>`,
                   },
                 });
               },
@@ -152,6 +188,8 @@ export default class extends Controller {
         ];
       },
     });
+
+    
 
   }
 }
