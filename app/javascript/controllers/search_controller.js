@@ -46,6 +46,7 @@ export default class extends Controller {
       // openOnFocus: true,
       getSources({ query }) {
         if(query.length == 0) { return [] };
+        
         return [
 
           {
