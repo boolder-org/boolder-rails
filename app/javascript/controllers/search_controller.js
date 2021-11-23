@@ -135,13 +135,40 @@ export default class extends Controller {
 
             templates: {
               item({ item, createElement }) {
+
+                const colorMapping = {
+                      "yellow":   "#FFCC02",
+                      "purple":   "#D783FF",
+                      "orange":   "#FF9500",
+                      "green":    "#77C344",
+                      "blue":     "#017AFF",
+                      "skyblue":  "#5AC7FA",
+                      "salmon":   "#FDAF8A",
+                      "red":      "#FF3B2F",
+                      "black":    "#000000",
+                      "white":    "#FFFFFF",
+                    }
+
+                function bgColor(circuit_color) {
+                  return colorMapping[circuit_color] || "rgb(80% 80% 80%)"
+                }
+
+                function textColor(circuit_color) {
+                  return (circuit_color == "white") ? "#333" : "#FFF"
+                }
+
                 return createElement('div', {
                   dangerouslySetInnerHTML: {
-                    __html: `<div class="flex justify-between">
-                      <span>
-                      ${item._highlightResult.name.value}
-                      </span>
-                      <span class="ml-2 text-gray-300">
+                    __html: `<div class="flex justify-between items-center">
+                      <div class="flex items-center">
+                        <span style="background: ${bgColor(item.circuit_color)}; color: ${textColor(item.circuit_color)}" class="rounded-full h-6 w-6 leading-6 inline-flex justify-center flex-shrink-0">
+                        ${item.circuit_number}
+                        </span>
+                        <span class="ml-2">
+                        ${item._highlightResult.name.value}
+                        </span>
+                      </div>
+                      <span class="ml-2 text-gray-300 flex-shrink-0">
                         ${item.area_name}
                       </span>
                     </div>`,

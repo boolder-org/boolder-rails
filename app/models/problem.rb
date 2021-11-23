@@ -12,7 +12,11 @@ class Problem < ApplicationRecord
     attribute :area_name do 
       area.name
     end
-    attribute :area_slug do 
+    attribute :circuit_color do 
+      circuit&.color
+    end
+    attribute :circuit_number
+    attribute :area_slug do # FIXME: remove
       area.slug
     end
 
