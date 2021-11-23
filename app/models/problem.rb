@@ -7,7 +7,7 @@ class Problem < ApplicationRecord
   belongs_to :parent, class_name: "Problem", optional: true
 
   include AlgoliaSearch
-  algoliasearch do
+  algoliasearch if: :published? do
     attributes :name
     attribute :area_name do 
       area.name
@@ -22,6 +22,10 @@ class Problem < ApplicationRecord
 
     searchableAttributes [:name]
     # customRanking ['desc(likes_count)']
+  end
+
+  def published?
+    area.published
   end
 
   # FIXME: implement
