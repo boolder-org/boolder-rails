@@ -19,9 +19,12 @@ class Problem < ApplicationRecord
     attribute :area_slug do # FIXME: remove
       area.slug
     end
+    attribute :variants_count do 
+      variants.count
+    end
 
     searchableAttributes [:name]
-    # customRanking ['desc(likes_count)']
+    customRanking ['desc(variants_count)']
   end
 
   def published?
