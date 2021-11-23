@@ -5,7 +5,7 @@ class Area < ApplicationRecord
   has_many :pois
 
   include AlgoliaSearch
-  algoliasearch do
+  algoliasearch if: :published do
     attributes :name, :slug
 
     searchableAttributes [:name]
