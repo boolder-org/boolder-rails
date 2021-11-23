@@ -72,7 +72,7 @@ export default class extends Controller {
               item({ item, createElement }) {
                 return createElement('div', {
                   dangerouslySetInnerHTML: {
-                    __html: `<span>
+                    __html: `<span class="">
                     ${item._highlightResult.name.value}
                     </span>`,
                   },
@@ -162,13 +162,13 @@ export default class extends Controller {
                     __html: `<div class="flex justify-between items-center">
                       <div class="flex items-center">
                         <span style="background: ${bgColor(item.circuit_color)}; color: ${textColor(item.circuit_color)}" class="rounded-full h-6 w-6 leading-6 inline-flex justify-center flex-shrink-0">
-                        ${item.circuit_number}
+                        ${item.circuit_number || "&nbsp;"}
                         </span>
                         <span class="ml-2">
                         ${item._highlightResult.name.value}
                         </span>
                       </div>
-                      <span class="ml-2 text-gray-300 flex-shrink-0">
+                      <span class="ml-2 text-gray-400 flex-shrink-0">
                         ${item.area_name}
                       </span>
                     </div>`,
@@ -187,9 +187,9 @@ export default class extends Controller {
               //     },
               //   });
               // },
-              noResults() {
-                return 'No results';
-              },
+              // noResults() {
+              //   return 'No results';
+              // },
             },
 
             // getItemInputValue({ item }) {
