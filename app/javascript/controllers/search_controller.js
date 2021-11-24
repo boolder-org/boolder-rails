@@ -10,6 +10,10 @@ export default class extends Controller {
   static targets = [ ]
   static values = { 
     locale: String,
+    placeholder: String,
+    clear: String,
+    cancel: String,
+    submit: String,
   }
 
   open() {
@@ -39,11 +43,11 @@ export default class extends Controller {
       debug: true, // FIXME: remove
       // hint: false,
       openOnFocus: true,
-      placeholder: 'Voie ou secteur',
+      placeholder: this.placeholderValue,
       translations: {
-        clearButtonTitle: 'Effacer', // defaults to 'Clear'
-        detachedCancelButtonText: 'Annuler', // defaults to 'Cancel'
-        submitButtonTitle: 'Chercher', // defaults to 'Submit'
+        clearButtonTitle: this.clearValue, // defaults to 'Clear'
+        detachedCancelButtonText: this.cancelValue, // defaults to 'Cancel'
+        submitButtonTitle: this.submitValue, // defaults to 'Submit'
 
       },
       detachedMediaQuery: "(max-width: 55680px)", // FIXME
