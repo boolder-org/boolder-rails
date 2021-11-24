@@ -6,7 +6,7 @@ class Area < ApplicationRecord
 
   include AlgoliaSearch
   algoliasearch if: :published do
-    attributes :name, :slug
+    attributes :name
 
     searchableAttributes [:name]
     # customRanking ['desc(likes_count)']

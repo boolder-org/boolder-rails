@@ -16,9 +16,6 @@ class Problem < ApplicationRecord
       circuit&.color
     end
     attribute :circuit_number
-    attribute :area_slug do # FIXME: remove
-      area.slug
-    end
     attribute :variants_count do 
       variants.count
     end
@@ -34,8 +31,6 @@ class Problem < ApplicationRecord
   # FIXME: implement
   # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
   def area_name_changed?
-  end
-  def area_slug_changed?
   end
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
