@@ -100,13 +100,13 @@ export default class extends Controller {
 
             getItemUrl({ item }) {
               var locale = "fr"
-              return `/${locale}/fontainebleau/${item.slug}`
+              return `/${locale}/redirects/new?area_id=${item.objectID}`
             },
 
             onSelect({ item }) {
               // FIXME: store url inside algolia attribute, and handle locale
               var locale = "fr"
-              document.location.href=`/${locale}/fontainebleau/${item.slug}`
+              document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
             },
 
             
@@ -198,13 +198,13 @@ export default class extends Controller {
 
             getItemUrl({ item }) {
               var locale = "fr"
-              return `/${locale}/fontainebleau/${item.area_slug}/${item.objectID}`
+              return `/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
             onSelect({ item }) {
               // FIXME: store url inside algolia attribute, and handle locale
               var locale = "fr"
-              document.location.href=`/${locale}/fontainebleau/${item.area_slug}/${item.objectID}`
+              document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
             
