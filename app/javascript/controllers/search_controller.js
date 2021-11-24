@@ -8,6 +8,9 @@ import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
 
 export default class extends Controller {
   static targets = [ ]
+  static values = { 
+    locale: String,
+  }
 
   open() {
     // console.log("open!")
@@ -16,6 +19,7 @@ export default class extends Controller {
   }
 
   connect() {
+    let locale = this.hasLocaleValue ? this.localeValue : 'en'
 
     // const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
     //   key: 'RECENT_SEARCH',
@@ -99,13 +103,10 @@ export default class extends Controller {
             //   },
 
             getItemUrl({ item }) {
-              var locale = "fr"
               return `/${locale}/redirects/new?area_id=${item.objectID}`
             },
 
             onSelect({ item }) {
-              // FIXME: store url inside algolia attribute, and handle locale
-              var locale = "fr"
               document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
             },
 
@@ -197,13 +198,10 @@ export default class extends Controller {
             //   },
 
             getItemUrl({ item }) {
-              var locale = "fr"
               return `/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
             onSelect({ item }) {
-              // FIXME: store url inside algolia attribute, and handle locale
-              var locale = "fr"
               document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
