@@ -100,6 +100,11 @@ en:
         variants: Variants
         metas:
           title: "%{problem} - %{grade} - %{area}"
+    search:
+      placeholder: Problem or area
+      clear: Clear
+      cancel: Cancel
+      submit: Search
     articles:
       index:
         metas:

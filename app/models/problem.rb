@@ -6,6 +6,23 @@ class Problem < ApplicationRecord
   has_many :variants, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
 
+  include AlgoliaSearch
+  algoliasearch if: :published?, enqueue: true do
+    attributes :name, :circuit_number
+    attribute :area_name do area.name end
+    attribute :circuit_color do circuit&.color end
+    attribute :variants_count do variants.count end
+    # TODO: implement custom attributes callback to trigger a reindex
+    # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
+
+    searchableAttributes [:name]
+    customRanking ['desc(variants_count)']
+  end
+
+  def published?
+    area.published
+  end
+
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
     1a 1a+ 1b 1b+ 1c 1c+ 

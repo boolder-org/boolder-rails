@@ -4,6 +4,12 @@ class Area < ApplicationRecord
   has_many :circuits
   has_many :pois
 
+  include AlgoliaSearch
+  algoliasearch if: :published, enqueue: true do
+    attributes :name
+    searchableAttributes [:name]
+  end
+
   TAGS = %i(beginner_friendly train_station_closeby dry_fast)
 
   scope :published, -> { where(published: true) }
