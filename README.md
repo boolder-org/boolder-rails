@@ -5,6 +5,7 @@ To get started on mac OS:
 # Basics
 - install homebrew: https://brew.sh/
 - install rvm: https://rvm.io
+- install yarn: `brew install yarn`
 
 
 # Postgre
@@ -22,14 +23,8 @@ To get started on mac OS:
 
 Run the app:
 - `rails s`
+- `bin/webpack-dev-server` (for JIT compilation)
 
-
-# Optional: Yarn
-
-- `brew install yarn`
-
-Run the dev server to get JIT compilation:
-- `bin/webpack-dev-server`
 
 # Optional: Vips (image processing)
 
