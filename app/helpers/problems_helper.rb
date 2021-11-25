@@ -31,13 +31,6 @@ module ProblemsHelper
     area_problem_path(problem.area, problem)
   end
 
-  def filter_section(name:, highlighted:, &block)
-    render(
-      partial: 'problems/filter_section',
-      locals: { name: name, highlighted: highlighted, block: block }
-    )
-  end
-
   private
 
   def circle_view(content, background_color:, text_color:, klass: "h-6 w-6 leading-6")
@@ -48,6 +41,8 @@ module ProblemsHelper
 
   # FIXME: you also have to manually update colors in apple_map_geojson_controller.js
   # https://github.com/nmondollot/boolder/blob/dbcf31e7408005f2aa6305187987108a92a63762/app/javascript/controllers/apple_map_geojson_controller.js#L93
+  # and in search_controller.js
+  # https://github.com/nmondollot/boolder/blob/d42b1bc91802895e19219bb662c1ffc8fd831d76/app/javascript/controllers/search_controller.js
   def color_mapping
      {
       yellow:   "#FFCC02",

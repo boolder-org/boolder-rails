@@ -100,6 +100,11 @@ fr:
         variants: Variantes
         metas:
           title: "%{problem} - %{grade} - %{area}"
+    search:
+      placeholder: Voie ou secteur
+      clear: Effacer
+      cancel: Annuler
+      submit: Chercher
     articles:
       index:
         metas:
