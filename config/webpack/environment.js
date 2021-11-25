@@ -6,6 +6,10 @@ environment.plugins.append('Provide',
   })
 )
 
+// ==================================================================================================
+// copy-pasted from 
+// https://dev.to/davidteren/getting-started-with-rails-6-1-tailwindcss-jit-webpacker-postcss-8-25g7
+
 // Get the actual sass-loader config
 const sassLoader = environment.loaders.get('sass')
 const sassLoaderConfig = sassLoader.use.find(function (element) {
@@ -28,5 +32,7 @@ environment.loaders.keys().forEach(loaderName => {
   const loader = environment.loaders.get(loaderName)
   loader.use.forEach(hotfixPostcssLoaderConfig)
 })
+
+// ==================================================================================================
 
 module.exports = environment
