@@ -7,9 +7,7 @@ class Area < ApplicationRecord
   include AlgoliaSearch
   algoliasearch if: :published do
     attributes :name
-
     searchableAttributes [:name]
-    # customRanking ['desc(likes_count)']
   end
 
   TAGS = %i(beginner_friendly train_station_closeby dry_fast)
