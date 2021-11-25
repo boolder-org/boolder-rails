@@ -17,8 +17,8 @@ export default class extends Controller {
   async open() {
     this.autocomplete.setIsOpen(true)
 
-    await new Promise(r => setTimeout(r, 500));
-    document.querySelector('#autocomplete-0-input').focus();
+    await new Promise(r => setTimeout(r, 1500));
+    document.querySelector('#autocomplete-0-input').click();
   }
 
   connect() {
