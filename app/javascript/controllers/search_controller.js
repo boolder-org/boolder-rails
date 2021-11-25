@@ -10,6 +10,7 @@ export default class extends Controller {
   static targets = [ ]
   static values = { 
     locale: String,
+    debug: Boolean,
     placeholder: String,
     clear: String,
     cancel: String,
@@ -40,7 +41,7 @@ export default class extends Controller {
       plugins: [
           // recentSearchesPlugin,
         ],
-      debug: true, // FIXME: remove
+      debug: this.debugValue, 
       // hint: false,
       openOnFocus: true,
       placeholder: this.placeholderValue,
