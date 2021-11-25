@@ -14,13 +14,8 @@ export default class extends Controller {
     submit: String,
   }
 
-  async open() {
+  open() {
     this.autocomplete.setIsOpen(true)
-
-    await new Promise(r => setTimeout(r, 500));
-    var box = document.querySelector('#autocomplete-0-input')
-    box.blur()
-    box.focus()
   }
 
   connect() {
