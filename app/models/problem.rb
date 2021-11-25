@@ -8,17 +8,12 @@ class Problem < ApplicationRecord
 
   include AlgoliaSearch
   algoliasearch if: :published? do
-    attributes :name
-    attribute :area_name do 
-      area.name
-    end
-    attribute :circuit_color do 
-      circuit&.color
-    end
-    attribute :circuit_number
-    attribute :variants_count do 
-      variants.count
-    end
+    attributes :name, :circuit_number
+    attribute :area_name do area.name end
+    attribute :circuit_color do circuit&.color end
+    attribute :variants_count do variants.count end
+    # TODO: implement custom attributes callback to trigger a reindex
+    # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
 
     searchableAttributes [:name]
     customRanking ['desc(variants_count)']
@@ -26,11 +21,6 @@ class Problem < ApplicationRecord
 
   def published?
     area.published
-  end
-
-  # FIXME: implement
-  # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
-  def area_name_changed?
   end
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
