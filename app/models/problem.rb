@@ -7,7 +7,7 @@ class Problem < ApplicationRecord
   belongs_to :parent, class_name: "Problem", optional: true
 
   include AlgoliaSearch
-  algoliasearch if: :published? do
+  algoliasearch if: :published?, enqueue: true do
     attributes :name, :circuit_number
     attribute :area_name do area.name end
     attribute :circuit_color do circuit&.color end
