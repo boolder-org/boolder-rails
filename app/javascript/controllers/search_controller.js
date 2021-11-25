@@ -2,9 +2,6 @@ import { Controller } from "stimulus"
 
 import algoliasearch from 'algoliasearch/lite';
 import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
-// import { createLocalStorageRecentSearchesPlugin } from '@algolia/autocomplete-plugin-recent-searches';
-
-// import { h, Fragment } from 'preact';
 
 export default class extends Controller {
   static targets = [ ]
@@ -18,31 +15,22 @@ export default class extends Controller {
   }
 
   open() {
-    // console.log("open!")
-    // this.autokomplete.setQuery("test");
-    this.autokomplete.setIsOpen(true)
+    this.autocomplete.setIsOpen(true)
   }
 
   connect() {
     let locale = this.hasLocaleValue ? this.localeValue : 'en'
-
-    // const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
-    //   key: 'RECENT_SEARCH',
-    //   limit: 5,
-    // });
 
     const searchClient = algoliasearch(
       'XNJHVMTGMF',
       '765db6917d5c17449984f7c0067ae04c'
     );
     
-    this.autokomplete = autocomplete({
+    this.autocomplete = autocomplete({
       container: '#autocomplete',
       plugins: [
-          // recentSearchesPlugin,
         ],
       debug: this.debugValue, 
-      // hint: false,
       openOnFocus: true,
       placeholder: this.placeholderValue,
       translations: {
@@ -51,8 +39,7 @@ export default class extends Controller {
         submitButtonTitle: this.submitValue, // defaults to 'Submit'
 
       },
-      detachedMediaQuery: "(max-width: 55680px)", // FIXME
-      // openOnFocus: true,
+      detachedMediaQuery: "(max-width: 5000px)",
       getSources({ query }) {
         if(query.length == 0) { return [] };
         
@@ -103,10 +90,6 @@ export default class extends Controller {
               // },
             },
 
-            // getItemInputValue({ item }) {
-            //     return item.name;
-            //   },
-
             getItemUrl({ item }) {
               return `/${locale}/redirects/new?area_id=${item.objectID}`
             },
@@ -114,8 +97,6 @@ export default class extends Controller {
             onSelect({ item }) {
               document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
             },
-
-            
 
           },
 
@@ -198,30 +179,16 @@ export default class extends Controller {
               // },
             },
 
-            // getItemInputValue({ item }) {
-            //     return item.name;
-            //   },
-
             getItemUrl({ item }) {
               return `/${locale}/redirects/new?problem_id=${item.objectID}`
             },
-
             onSelect({ item }) {
               document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
-            
-
           },
-
-          
-
-
         ];
       },
     });
-
-    
-
   }
 }
