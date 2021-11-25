@@ -19,6 +19,7 @@
           <div 
           data-controller="search" 
           data-search-locale-value="<%= I18n.locale %>" 
+          data-search-debug-value="<%= Rails.env.production? ? "false" : "true" %>"
           data-search-placeholder-value="<%= t('views.search.placeholder') %>"
           data-search-clear-value="<%= t('views.search.clear') %>" 
           data-search-cancel-value="<%= t('views.search.cancel') %>" 
