@@ -144,6 +144,16 @@
       p 
         | Il n'y a pas de parking officiel, mais vous pouvez vous garer le long de la route.
 
+- if @area.id == 16
+  div class=""
+    div class="prose" 
+      p 
+        | 91.1 est un secteur offrant de nombreuses voies dans les niveaux 2 à 5.
+
+      p 
+        | Le secteur <a href="#{area_path(Area.find(2))}">Cul de Chien</a> est à quelques minutes à pieds si vous voulez profiter des magnifiques étendues de sable blanc.
+
+
 - if @area.id == 18
   div class=""
     div class="prose" 
