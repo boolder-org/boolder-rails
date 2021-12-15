@@ -1,8 +1,22 @@
 class AreasController < ApplicationController
   def index
     @areas = Area.published
-    @areas = @areas.any_tags(params[:tag]) if params[:tag].present?
-    @areas = @areas.sort{|a,b| ActiveSupport::Inflector.transliterate(a.name) <=> ActiveSupport::Inflector.transliterate(b.name) }
+    # @areas = @areas.any_tags(params[:tag]) if params[:tag].present?
+
+    if params[:sort] == "all"
+      @areas_with_count = @areas.map {|area| [area, area.problems.count]}
+      @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
+    elsif params[:sort].to_i.in?(1..8)
+      @areas_with_count = @areas.map {|area| [area, area.problems.level(params[:sort].to_i).count]}
+      @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
+    else
+      @areas_with_count = @areas.map {|area| [area, area.problems.count]}
+      @areas_with_count = @areas_with_count.sort{|a,b| ActiveSupport::Inflector.transliterate(a.first.name) <=> ActiveSupport::Inflector.transliterate(b.first.name) }
+    end
+
+    @beginner_areas = Area.any_tags(:beginner_friendly).reject{|a| a.id == 7}.
+      map{|a| [a, a.problems.where("grade < '4a'").count ]}.
+      sort_by(&:second).reverse
 
     @annotations = @areas.map do |area| 
       {
