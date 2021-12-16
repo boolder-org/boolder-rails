@@ -6,21 +6,7 @@
 - set_meta_tags canonical: areas_url
 
 div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
-  h1 class="text-4xl font-bold mb-2" Fontainebleau
-
-  / div class="md:flex md:items-center"
-  /   div class="text-gray-600 mr-2 mb-2 sm:mb-0" = t("views.areas.index.filter")
-  /   div class=""
-  /     - Area::TAGS.each do |tag|
-  /       - selected = params[:tag] == tag.to_s
-  /       - klass = selected ? "border border-green-600" : ""
-  /       = link_to (selected ? areas_path : areas_path(tag: tag))
-  /         span class="mr-2 my-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap #{klass}" 
-  /           = t("area.tags.#{tag}").capitalize
-  /     - if params[:tag].present?
-  /       = link_to areas_path
-  /         span class="mr-2 my-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-gray-200 text-gray-600 rounded-full whitespace-nowrap" 
-  /           = t("views.areas.index.remove_filter")
+  h1 class="text-4xl font-bold mb-2" Secteurs à Fontainebleau
 
 div class=""
   = render "areas/index/map"
@@ -31,21 +17,12 @@ div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" id="list"
     div class="flex justify-between items-center"
       div
         - items = []
-        - items << { text: "Nombre de voies (total)", link: areas_path(sort: "all", anchor: "list") }
+        - items << { text: "Nombre de voies", link: areas_path(sort: "all", anchor: "list") }
         - 1.upto(8) do |i|
           - items << { text: "Nombre de voies de niveau #{i}", link: areas_path(sort: i, anchor: "list") }
         - items << { text: "Nom du secteur", link: areas_path(sort: "name", anchor: "list") }
         = render "areas/index/sort", items: items, align_class: "left-0"
 
-        / form
-        /   / label for="location" class="block text-sm font-medium text-gray-700" Trier par
-        /   select id="level" name="level" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md" onChange="submit()"
-        /     option value="" Trier par
-        /     - 1.upto(8) do |i|
-        /       - if i == params[:level].to_i
-        /         option selected="true" value="#{i}" Voies de niveau #{i}
-        /       - else
-        /         option value="#{i}" Voies de niveau #{i}
       div class="text-gray-400 text-xs text-right" 
         | VOIES 
         - if params[:sort].to_i.in?(1..8)
@@ -63,10 +40,42 @@ div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8" id="list"
                 span class="text-green-600"= area.name
                 span class="text-gray-400"= count
 
-div class="max-w-7xl mx-auto py-6"
-  h2 class="text-xl px-4 sm:px-6 lg:px-8" Idéal pour débuter
+div class="max-w-7xl mx-auto pt-6 " data-controller="reveal"
+  div class="px-4 sm:px-6 lg:px-8"
+    h2 class="text-xl flex items-center space-x-2" 
+      span Idéal pour débuter
+      = link_to "javascript:void(0)", "data-action": "reveal#toggle" do 
+        svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+
+  div class="py-4 px-4 sm:px-6 lg:px-8 hidden" data-reveal-target="item"
+    div class="text-gray-600 text-sm prose" 
+      p Découvrez des secteurs ayant du charme, de nombreuses voies de niveau 1/2/3, des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
+      p class="" #{link_to "Lire le guide pour bien débuter.", articles_path}
+
   div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4"
-    - @beginner_areas.each do |area, count|
+    - @beginner_areas.each do |area|
+      = link_to area_path(area), class: "min-w-max" do
+        = image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg shrink-0 h-32"
+    div &nbsp;
+
+  
+div class="max-w-7xl mx-auto pt-2 " data-controller="reveal"
+  div class="px-4 sm:px-6 lg:px-8"
+    h2 class="text-xl flex items-center space-x-2" 
+      span Sèche vite
+      = link_to "javascript:void(0)", "data-action": "reveal#toggle" do 
+        svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+
+  div class="py-4 px-4 sm:px-6 lg:px-8 hidden" data-reveal-target="item"
+    div class="text-gray-600 text-sm prose" 
+      p Découvrez des secteurs qui sèchent plus rapidement après la pluie. 
+      p class=" font-semibold" Attention: il est fortement déconseillé de grimper lorsque la roche est encore humide. 
+      p class="" #{link_to "Lire le guide pour bien débuter.", articles_path}
+
+  div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4"
+    - @dry_fast_areas.each do |area|
       = link_to area_path(area), class: "min-w-max" do
         = image_tag "areas/cover-area-#{area.id}.jpg", class: "rounded-lg shrink-0 h-32"
     div &nbsp;
