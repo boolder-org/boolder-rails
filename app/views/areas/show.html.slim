@@ -6,31 +6,38 @@
 div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-1"
   = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
     div Fontainebleau  
-  div class="flex justify-between sm:justify-start space-x-1 sm:space-x-8 items-center mb-2"
-    h1 class="text-4xl font-bold mt-2 mb-4"= @area.name
-    = link_to map_area_path do
-      div class="flex items-center space-x-2 btn"
-        svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-          path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-        span class="flex-shrink-0"= t("views.areas.show.map")
+  div class="mb-2"
+    h1 class="text-3xl font-bold mt-2 mb-4"= @area.name
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
+  div class="md:grid md:grid-cols-2 md:gap-16"
+    div class="col-span-1"
+      div class="aspect-w-4 aspect-h-2"
+        = image_tag "potala", class: "object-cover"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
   div class="md:grid md:grid-cols-2 md:gap-16"
     div class="col-span-1"
+      div class="px-4 sm:px-0 py-2"
+        = link_to map_area_path(@area) do
+          div class="flex items-center space-x-2 text-green-600 mt-2"
+            svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+            div= t('views.areas.show.see_map')
+
+        - if parking = @area.pois.first
+          = link_to parking.google_url, rel: "nofollow", target: "_blank" do
+            div class="flex items-center space-x-2 text-green-600 mt-2"
+              svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              div= t('views.areas.show.see_parking')
+
+  div class="md:grid md:grid-cols-2 md:gap-16 pt-4"
+    div class="col-span-1"
 
       div class="px-4 sm:px-0"
-        div class="mb-4 "
-          - @area.tags.each do |tag|
-            = link_to (areas_path(tag: tag))
-              span class="mr-2 mb-1 text-xs inline-flex items-center font-semibold leading-sm px-4 py-2 bg-green-100 text-green-600 rounded-full whitespace-nowrap" 
-                = t("area.tags.#{tag}").capitalize
-
         = render "areas/show/description"
-    
-      div class="pt-4 px-4 sm:px-0 sm:flex sm:items-center space-y-2 sm:space-y-0 sm:space-x-4"
-        span class="prose flex-shrink-0"= t("views.areas.show.access")
-        = render "areas/show/access"
-
 
   div class="md:grid md:grid-cols-2 md:gap-16"
     div class="col-span-1"
