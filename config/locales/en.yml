@@ -42,10 +42,10 @@ en:
   views:
     homepage:
       title1: Your guide to bouldering
-      title2: in nature
+      title2: in Fontainebleau
       subtitle: Discover thousands of problems & circuits for all levels.
       read_guide: Read the beginner's guide
-      areas_for_beginners: Top areas for beginners in Fontainebleau
+      areas_for_beginners: Top areas for beginners
       all_areas: See all areas
       metas:
         title: Bouldering in Fontainebleau
@@ -71,16 +71,29 @@ en:
         title: Privacy
     areas:
       index:
-        filter: "Filter by:"
-        remove_filter: Remove filter
+        title: Areas in Fontainebleau
+        sort_by:
+          label: Sort by
+          problems: Number of problems
+          problems_of_level: Number of problems (grade %{level})
+          area_name: Area name
+        problems: Problems
+        problems_of_level_html: "Grade %{level} <br/> problems"
+        tips:
+          read_guide: Read the beginner's guide.
+          beginner_friendly:
+            p1: Discover beautiful areas, with lots of grade 1/2/3 problems, low height (3 meters and lower), and with easy landings on the ground.
+          dry_fast:
+            p1: Discover areas that dry fast after the rain.
+            p2: "Warning: please don't climb when the rock is still wet!"
         metas: 
           title: All areas in Fontainebleau
           description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
         map:
           see: "See"
       show:
-        access: "How to get there:"
-        map: Map
+        see_map: See map
+        see_parking: See parking
         metas:
           title: "%{area}, Fontainebleau"
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
