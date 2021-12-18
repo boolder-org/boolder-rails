@@ -42,10 +42,10 @@ fr:
   views:
     homepage:
       title1: Escaladez
-      title2: en pleine nature
+      title2: à Fontainebleau
       subtitle: Découvrez des milliers de blocs et circuits pour tous les niveaux.
       read_guide: Lire le guide du débutant
-      areas_for_beginners: Secteurs pour bien débuter à Fontainebleau
+      areas_for_beginners: Secteurs pour bien débuter
       all_areas: Voir tous les secteurs
       metas:
         title: Escalade de blocs à Fontainebleau
@@ -71,16 +71,29 @@ fr:
         title: Confidentialité
     areas:
       index:
-        filter: "Filtrer par :"
-        remove_filter: Effacer filtre
+        title: Secteurs à Fontainebleau
+        sort_by:
+          label: Trier par
+          problems: Nombre de voies
+          problems_of_level: Nombre de voies de niveau %{level}
+          area_name: Nom de secteur
+        problems: Voies
+        problems_of_level_html: "Voies <br/> de niveau %{level}"
+        tips:
+          read_guide: Lire le guide pour bien débuter.
+          beginner_friendly:
+            p1: Découvrez des secteurs ayant du charme, de nombreuses voies de niveau 1/2/3, des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
+          dry_fast:
+            p1: Découvrez des secteurs qui sèchent plus rapidement après la pluie. 
+            p2: "Attention: il est fortement déconseillé de grimper lorsque la roche est encore humide."
         metas:
           title: Tous les secteurs à Fontainebleau
           description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau, le meilleur spot d'escalade de bloc en France.
         map:
           see: "Voir"
       show:
-        access: "Accès :"
-        map: Carte
+        see_map: Voir la carte
+        see_parking: Voir le parking
         metas:
           title: "%{area}, Fontainebleau"
           description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."

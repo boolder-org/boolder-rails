@@ -3,6 +3,7 @@ class Area < ApplicationRecord
   has_many :problems
   has_many :circuits
   has_many :pois
+  has_one_attached :cover
 
   include AlgoliaSearch
   algoliasearch if: :published, enqueue: true do
