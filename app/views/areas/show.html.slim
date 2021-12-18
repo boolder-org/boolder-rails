@@ -17,10 +17,10 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
       /   = image_tag "areas/notext-cover-area-1", class: "absolute inset-0 object-cover w-full h-full "
       /   h1 class="text-3xl md:text-4xl font-bold text-white absolute inset-0 z-10 flex justify-center items-center uppercase" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= @area.name
       div class="aspect-w-5 aspect-h-3 relative overflow-hidden sm:rounded-lg"
-        div style="background-image: url(#{image_path "areas/notext-cover-area-1"}); background-repeat: no-repeat;background-size: cover;background-position: center center;"
+        div style="background-image: url(#{image_path "areas/new/cover-area-#{@area.id}"}); background-repeat: no-repeat;background-size: cover;background-position: center center;"
         div style="width: 100%;height: 100%;position: absolute;bottom: 0;top: auto;left: 0;background-color: transparent;background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
         div class="absolute" class="flex items-center text-center justify-center" 
-          h1 class="text-3xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= @area.name
+          h1 class="text-4xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= @area.name
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
   div class="md:grid md:grid-cols-2 md:gap-16"
@@ -49,9 +49,9 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
       /   = render "areas/show/description"
       /   div class="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-gray-100 pt-16 pb-4 pointer-events-none absolute"
 
-  div class="md:grid md:grid-cols-2 md:gap-16"
+  div class="md:grid md:grid-cols-2 md:gap-16 mt-8"
     div class="col-span-1"
-      div class="mt-8 space-y-12"
+      div class="mt-8 space-y-8"
         - off_circuit_problems = @circuits.delete(nil)
         - @circuits.each do |circuit, problems|
           div
