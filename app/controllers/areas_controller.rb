@@ -1,7 +1,6 @@
 class AreasController < ApplicationController
   def index
     @areas = Area.published
-    # @areas = @areas.any_tags(params[:tag]) if params[:tag].present?
 
     if params[:sort] == "all"
       @areas_with_count = @areas.map {|area| [area, area.problems.count]}
