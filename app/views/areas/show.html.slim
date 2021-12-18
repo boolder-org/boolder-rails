@@ -1,23 +1,18 @@
 - set_meta_tags title: t("views.areas.show.metas.title", area: @area.name)
 - set_meta_tags description: t("views.areas.show.metas.description", area: @area.name) 
 
-- set_meta_tags og: { type: "website", image: image_url("areas/cover-area-#{@area.id}.jpg") }
+- if @area.cover.persisted?
+  - set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, url_params: { w: 800, ar:'4:3', fit: 'crop' }) }
 
 div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-1 hidden sm:block mb-4"
   = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
     div Fontainebleau  
-  / div class="mb-2"
-  /   h1 class="text-3xl font-bold mt-2 mb-4"= @area.name
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class="md:grid md:grid-cols-2 md:gap-16"
     div class="col-span-1"
-      / aspect-w-4 aspect-h-2
-      / div class="aspect-w-5 aspect-h-3 relative bg-black overflow-hidden sm:rounded-lg sm:mt-8"
-      /   = image_tag "areas/notext-cover-area-1", class: "absolute inset-0 object-cover w-full h-full "
-      /   h1 class="text-3xl md:text-4xl font-bold text-white absolute inset-0 z-10 flex justify-center items-center uppercase" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= @area.name
-      div class="aspect-w-5 aspect-h-3 relative overflow-hidden sm:rounded-lg"
-        div style="background-image: url(#{image_path "areas/new/cover-area-#{@area.id}"}); background-repeat: no-repeat;background-size: cover;background-position: center center;"
+      div class="aspect-w-16 aspect-h-9 relative overflow-hidden sm:rounded-lg"
+        div style="background-image: url(#{ix_image_url @area.cover.key, url_params: { w: 800, ar:'4:3', fit: 'crop' } if @area.cover.persisted?}); background-repeat: no-repeat;background-size: cover;background-position: center center;"
         div style="width: 100%;height: 100%;position: absolute;bottom: 0;top: auto;left: 0;background-color: transparent;background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
         div class="absolute" class="flex items-center text-center justify-center" 
           h1 class="text-4xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= @area.name
@@ -45,9 +40,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
       div class="px-4 sm:px-0"
         = render "areas/show/description"
-      / div class="px-4 sm:px-0 relative overflow-hidden max-h-32"
-      /   = render "areas/show/description"
-      /   div class="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-gray-100 pt-16 pb-4 pointer-events-none absolute"
 
   div class="md:grid md:grid-cols-2 md:gap-16 mt-8"
     div class="col-span-1"

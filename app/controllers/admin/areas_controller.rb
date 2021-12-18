@@ -17,6 +17,10 @@ class Admin::AreasController < Admin::BaseController
     
     area.assign_attributes(area_params)
     area.tags = params[:area][:joined_tags].split(',')
+
+    if cover = params[:area][:cover]
+      area.cover = params[:area][:cover]
+    end
     area.save!
 
     flash[:notice] = "Area updated"
