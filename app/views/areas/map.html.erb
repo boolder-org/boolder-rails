@@ -2,7 +2,7 @@
 <% set_meta_tags description: t("views.areas.map.metas.description", area: @area.name) %>
 
 <% if @area.cover.persisted? %>
-<% set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, url_params: { w: 800, ar:'4:3', fit: 'crop' }) } %>
+<% set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, w: 800, ar:'4:3', fit: 'crop') } %>
 <% end %>
 <% set_meta_tags canonical: map_area_url(@area) %>
 
