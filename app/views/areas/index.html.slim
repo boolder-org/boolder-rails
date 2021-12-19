@@ -10,14 +10,14 @@ div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
-    div class="col-span-1 order-2 mb-8 sm:mb-0"
+    div class="col-span-1 order-2 mb-8 md:mb-0"
       = render "areas/index/map"
 
-    div class="col-span-1 order-1 px-4 sm:px-0"
+    div class="col-span-1 order-1 "
       div class="" 
 
-        div class="flex justify-between items-center"
-          div
+        div class="flex justify-between items-center px-4 sm:px-0" 
+          div class=""
             - items = []
             - items << { text: t("views.areas.index.sort_by.problems"), link: areas_path(sort: "all", anchor: "list") }
             - 1.upto(8) do |i|
