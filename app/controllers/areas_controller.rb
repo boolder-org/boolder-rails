@@ -59,7 +59,8 @@ class AreasController < ApplicationController
       }
     end
 
-    @circuits = @area.problems.order("grade ASC, id ASC").group_by &:circuit
+    @circuits = @area.problems.order("grade ASC, id ASC").group_by(&:circuit)
+    @circuits = Hash[ @circuits.sort_by { |circuit, _| circuit&.order || 100 } ]
   end
 
   def map 
