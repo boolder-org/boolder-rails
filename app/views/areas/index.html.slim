@@ -37,7 +37,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
             ul role="list" class="-my-5 divide-y divide-gray-200"
 
               - @areas_with_count.each do |area, count|
-                li class="py-2"
+                li class="py-2 px-4 sm:-mx-2 sm:px-2 hover:bg-gray-200 hover:rounded-lg"
                   = link_to area_path(area), class: "flex justify-between items-center" do
                     span class="text-green-600"= area.name
                     span class="text-gray-400"= count
