@@ -9,7 +9,7 @@ div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-1 hidden s
     div Fontainebleau  
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
-  div class="md:grid md:grid-cols-2 md:gap-16"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16"
     div class="col-span-1"
       div class="aspect-w-16 aspect-h-9 relative overflow-hidden sm:rounded-lg"
         div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{ix_image_url(@area.cover.key, w: 800, ar:'4:3', fit: 'crop') if @area.cover.persisted?});"
@@ -18,7 +18,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
           h1 class="text-4xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= @area.name
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
-  div class="md:grid md:grid-cols-2 md:gap-16"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16"
     div class="col-span-1"
       div class="px-4 sm:px-0 py-2"
         = link_to map_area_path(@area) do
@@ -35,13 +35,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
                 path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               div= t('views.areas.show.see_parking')
 
-  div class="md:grid md:grid-cols-2 md:gap-16 pt-4"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
     div class="col-span-1"
 
       div class="px-4 sm:px-0"
         = render "areas/show/description"
 
-  div class="md:grid md:grid-cols-2 md:gap-16 mt-8"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4"
     div class="col-span-1"
       div class="mt-8 space-y-8"
         - off_circuit_problems = @circuits.delete(nil)
