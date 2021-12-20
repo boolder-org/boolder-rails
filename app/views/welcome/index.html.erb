@@ -37,7 +37,7 @@
 
     <h2 class="px-4 sm:px-6 lg:px-8 text-2xl font-bold text-gray-900"><%= t("views.homepage.areas_for_beginners") %></h2>
 
-    <div class="py-2">
+    <div class="py-2 relative">
       <div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-6 lg:px-8">
         <% @beginner_areas.each do |area, count| %>
           <%= link_to area_path(area) do %>
@@ -46,6 +46,7 @@
         <% end %>
         <div>&nbsp;</div>
 
+        <div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"></div>
       </div>
     </div>
 
