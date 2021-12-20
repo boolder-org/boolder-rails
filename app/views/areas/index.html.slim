@@ -60,7 +60,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6 " data-controller="reveal" id=
       - @beginner_areas.each do |area|
         = link_to area_path(area), class: "min-w-max" do
           = render 'shared/area_card', area: area
-      div &nbsp;
+      div class="pr-16" &nbsp;
     div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
   
@@ -83,7 +83,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-6 " data-controller="reveal" id=
       - @dry_fast_areas.each do |area|
         = link_to area_path(area), class: "min-w-max" do
           = render 'shared/area_card', area: area
-      div &nbsp;
+      div class="pr-16" &nbsp;
     div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
 
