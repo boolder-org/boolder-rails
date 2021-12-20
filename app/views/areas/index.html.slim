@@ -55,11 +55,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6 " data-controller="reveal" id=
       p= t("views.areas.index.tips.beginner_friendly.p1")
       p class="" #{link_to t("views.areas.index.tips.read_guide"), articles_path}
 
-  div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
-    - @beginner_areas.each do |area|
-      = link_to area_path(area), class: "min-w-max" do
-        = render 'shared/area_card', area: area
-    div &nbsp;
+  div class="relative"
+    div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
+      - @beginner_areas.each do |area|
+        = link_to area_path(area), class: "min-w-max" do
+          = render 'shared/area_card', area: area
+      div &nbsp;
+    div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
   
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-6 " data-controller="reveal" id="dry_fast"
@@ -76,11 +78,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-6 " data-controller="reveal" id=
       p class=" font-semibold"= t("views.areas.index.tips.dry_fast.p2")
       p class="" #{link_to t("views.areas.index.tips.read_guide"), articles_path}
 
-  div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
-    - @dry_fast_areas.each do |area|
-      = link_to area_path(area), class: "min-w-max" do
-        = render 'shared/area_card', area: area
-    div &nbsp;
+  div class="relative"
+    div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0 relative"
+      - @dry_fast_areas.each do |area|
+        = link_to area_path(area), class: "min-w-max" do
+          = render 'shared/area_card', area: area
+      div &nbsp;
+    div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
 
 
