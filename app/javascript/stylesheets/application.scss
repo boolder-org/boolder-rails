@@ -47,6 +47,10 @@
   .turbo-progress-bar {
     @apply bg-green-600
   }
+
+  .topo-line-shadow {
+    filter: drop-shadow(0px 0px 8px rgba(0.2,0.2,0.2,0.6));
+  }
 }
 
 @import "algolia_autocomplete";
