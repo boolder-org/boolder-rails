@@ -1,26 +1,52 @@
 <div class="relative" data-controller="topo-line" data-action="turbo:before-cache@window->topo-line#hidePath" data-topo-line-coordinates-value="<%= line.coordinates.to_json %>" data-topo-line-color-value="<%= uicolor(line.problem.circuit&.color) %>">
   <%= render 'shared/topo_image', topo: line.topo, klass: "sm:rounded-lg" %>
+
+  <% 
+    # README
+    # please be careful about z-index when changing this partial
+    # a few rules of thumb:
+    # - shadows must not be on top of any lines or circles
+    # - the main line should always be on top of everything
+    # - circuits should probably take precendence when possible
+
+    # example of complex overlapping: 
+    # /fr/fontainebleau/cuvier/448-le-surplomb-du-reveil-matin
+  %>
+
+
   <% if line.coordinates %>
+    <div class="absolute" style="left:<%= line.coordinates.first['x']*100 %>%; top:<%= line.coordinates.first['y']*100 %>%">
+      <div class="absolute hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
+        <%= circle_view("&nbsp;".html_safe, klass: "h-6 w-6 leading-6 bg-gray-500 topo-line-shadow") %>
+      </div>
+    </div>
     <div class="absolute top-0 left-0 w-full">
-      <svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" style="filter: drop-shadow(0px 0px 8px rgba(0.2,0.2,0.2,0.6));"></svg>
+      <svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="topo-line-shadow"></svg>
     </div>
   <% end %>
 
   <% (line.topo.lines.reject{|l| l.problem.parent_id.present?} - [line]).each do |secondary_line| %>
     <% if secondary_line.coordinates %>
       <div class="absolute" style="left:<%= secondary_line.coordinates.first['x']*100 %>%; top:<%= secondary_line.coordinates.first['y']*100 %>%">
-        <div class="relative hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
-          <%= link_to problem_friendly_path(secondary_line.problem) do %>
-            <%= problem_circle_view(secondary_line.problem) %>
-          <% end %>
+        <div class="relative">
+          <div class="absolute hidden z-0" style="top:-12px; left:-12px;" data-topo-line-target="circle">
+            <%= circle_view("&nbsp;".html_safe, klass: "h-6 w-6 leading-6 bg-gray-500 topo-line-shadow") %>
+          </div>
+          <% move_on_top = (secondary_line.id != line.id) && secondary_line.problem.circuit_number.present? %>
+          <div class="absolute hidden <%= move_on_top ? "z-10" : "z-0" %>" style="top:-12px; left:-12px;" data-topo-line-target="circle">
+            <%= link_to problem_friendly_path(secondary_line.problem) do %>
+              <%= problem_circle_view(secondary_line.problem) %>
+            <% end %>
+          </div>
+          
         </div>
       </div>
     <% end %>
   <% end %>
 
   <% if line.coordinates %>
-    <div class="absolute" style="left:<%= line.coordinates.first['x']*100 %>%; top:<%= line.coordinates.first['y']*100 %>%">
-      <div class="relative hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
+    <div class="absolute z-20" style="left:<%= line.coordinates.first['x']*100 %>%; top:<%= line.coordinates.first['y']*100 %>%">
+      <div class="absolute hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
         <%= problem_circle_view(line.problem) %>
       </div>
     </div>

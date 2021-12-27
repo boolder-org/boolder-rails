@@ -31,13 +31,13 @@ module ProblemsHelper
     area_problem_path(problem.area, problem)
   end
 
-  private
-
-  def circle_view(content, background_color:, text_color:, klass: "h-6 w-6 leading-6")
+  def circle_view(content, background_color: "", text_color: "", klass: "h-6 w-6 leading-6")
     content_tag(:span, content, 
       style: "background: #{background_color}; color: #{text_color}",
       class: "rounded-full #{klass} inline-flex justify-center")
   end
+
+  private
 
   # FIXME: you also have to manually update colors in apple_map_geojson_controller.js
   # https://github.com/nmondollot/boolder/blob/dbcf31e7408005f2aa6305187987108a92a63762/app/javascript/controllers/apple_map_geojson_controller.js#L93
