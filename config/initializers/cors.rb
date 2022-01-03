@@ -3,7 +3,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*'
-    resource '*', headers: :any, methods: [:get, :post, :patch, :put]
+    origins ['boolder.com', 'www.boolder.com']
+    resource '*', headers: :any, methods: [:get, :head, :options]
   end
 end
