@@ -72,6 +72,9 @@ fr:
     areas:
       index:
         title: Secteurs à Fontainebleau
+        tabs:
+          list: Liste
+          map: Carte
         sort_by:
           label: Trier par
           problems: Nombre de voies
