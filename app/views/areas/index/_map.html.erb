@@ -18,7 +18,7 @@
   ]
 %>
 
-<div 
+<!-- <div 
 data-controller="apple-map" 
 data-apple-map-annotations-value="<%= @annotations.to_json %>"
 data-apple-map-pois-value="<%= pois.to_json %>"
@@ -27,4 +27,99 @@ data-apple-map-language-value="<%= I18n.locale %>"
 data-apple-map-span-value="0.20"
 >
   <div data-apple-map-target="map" class="h-96 bg-gray-500"></div>
-</div>
+</div> -->
+
+
+<div id='map' style='width: 100%; height: 600px;'></div>
+<button id="zoom">Zoom</button>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
+
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/nmondollot/ckxeldi792ff714oe8ps8dj1r/draft', // mapbox://styles/mapbox/streets-v11
+center: [2.700883, 48.407834],
+zoom: 10
+});
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+
+
+// When a click event occurs on a feature in the places layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click', 'area-1-problems', (e) => {
+
+  console.log(e.features[0])
+  // var name = e.features[0].properties.name
+
+// // Copy coordinates array.
+const coordinates = e.features[0].geometry.coordinates.slice();
+const name = e.features[0].properties.name || "Sans nom";
+ 
+// // Ensure that if the map is zoomed out such that multiple
+// // copies of the feature are visible, the popup appears
+// // over the copy being pointed to.
+// while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+// coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+// }
+ 
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(name)
+.addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'area-1-problems', () => {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'area-1-problems', () => {
+map.getCanvas().style.cursor = '';
+});
+
+document.getElementById('zoom').addEventListener('click', () => {
+  // map.jumpTo({
+  // center: [2.664, 48.462],
+  // zoom: 16,
+  // duration: 3000,
+  // // pitch: 45,
+  // // bearing: 90
+  // });
+  // map.setCenter([2.664, 48.462]);
+  // map.zoomTo(16, { duration: 3000 });
+
+  map.flyTo({
+  center: [2.664, 48.462],
+  zoom: 16,
+  speed: 4,
+  curve: 1,
+  easing(t) {
+  return t;
+  }
+  });
+});
+
+// map.on('load', () => {
+// map.addSource('earthquakes', {
+// type: 'geojson',
+// // Use a URL for the value for the `data` property.
+// data: 'https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson'
+// });
+ 
+// map.addLayer({
+// 'id': 'earthquakes-layer',
+// 'type': 'circle',
+// 'source': 'earthquakes',
+// 'paint': {
+// 'circle-radius': 8,
+// 'circle-stroke-width': 2,
+// 'circle-color': 'red',
+// 'circle-stroke-color': 'white'
+// }
+// });
+
+</script>
