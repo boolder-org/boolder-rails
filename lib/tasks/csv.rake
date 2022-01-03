@@ -1,4 +1,5 @@
 require 'csv'
+include Imgix::Rails::UrlHelper
 
 namespace :csv do
   
@@ -11,6 +12,8 @@ namespace :csv do
       csv << %w(area id name grade circuit number url bleau_url)
 
       Problem.where(area_id: area_id).map do |p|  
+        photo = p.lines.first&.topo&.photo
+
         csv << [
           p.area.name,
           p.id, 
@@ -18,8 +21,9 @@ namespace :csv do
           p.grade, 
           p.circuit.present? ? p.circuit.color : "",
           p.circuit_number,
-          "https://www.boolder.com/fr/fontainebleau/apremont/#{p.id}",
+          "https://www.boolder.com/en/fontainebleau/rocher-fin/#{p.id}",
           p.bleau_info_id.present? ? "https://bleau.info/c/#{p.bleau_info_id}.html" : "",
+          photo ? ix_image_url(photo.key) : ""
         ]
       end
     end
