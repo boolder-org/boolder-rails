@@ -10,10 +10,7 @@ div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
-    div class="col-span-1 order-2 mb-8 md:mb-0"
-      = render "areas/index/map"
-
-    div class="col-span-1 order-1 "
+    div class="col-span-1"
       div class="" 
 
         div class="flex justify-between items-center px-4 sm:px-0" 
@@ -42,7 +39,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
                     span class="text-green-600"= area.name
                     span class="text-gray-400"= count
 
-div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6 " data-controller="reveal" id="beginner_friendly"
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6 sm:pt-12" data-controller="reveal" id="beginner_friendly"
   div class=""
     h2 class="text-xl flex items-center space-x-2 px-4 sm:px-0" 
       span= t("area.tags.beginner_friendly").capitalize
@@ -86,6 +83,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-6 " data-controller="reveal" id=
       div class="pr-16" &nbsp;
     div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
-
-
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 my-8"
+  = render "areas/index/map"
 
