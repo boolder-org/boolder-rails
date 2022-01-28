@@ -2,9 +2,9 @@ class WelcomeController < ApplicationController
   layout false, only: [:soon]
 
   def index
-    @beginner_areas = Rails.cache.fetch("welcome/index/beginner_friendly_list", expires_in: 12.hours) do
-      Area.any_tags(:beginner_friendly).all.shuffle
-    end
+    @beginner_areas = Area.any_tags(:beginner_friendly).reject{|a| a.id == 7}.
+      map{|a| [a, a.problems.where("grade < '4a'").count ]}.
+      sort_by(&:second).reverse
   end
 
   def root
