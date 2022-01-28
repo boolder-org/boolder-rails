@@ -6,6 +6,7 @@ To get started on mac OS:
 - install homebrew: https://brew.sh/
 - install rvm: https://rvm.io
 - install yarn: `brew install yarn`
+- install node: `brew install node`
 
 
 # Postgre
@@ -14,7 +15,7 @@ To get started on mac OS:
 - `brew install postgis`
 - `brew services start postgresql`
 - `createdb dump-prod`
-- `pg_restore -d dump-prod db/prod.dump`
+- `rake db:seed`
 
 # App
 - cd to the app directory
@@ -39,7 +40,7 @@ Then you can try this:
 `mkdir -p /opt/local/lib`
 `sudo ln -s /opt/homebrew/lib /usr/local/lib`
 
-source: https://issueexplorer.com/issue/libvips/ruby-vips/284
+source: https://github.com/libvips/ruby-vips/issues/284
 
 # Optional: JOSM
 
