@@ -8,7 +8,31 @@
 div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
   h1 class="text-3xl font-bold mb-2"= t("views.areas.index.title")
 
-div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8" data-controller="reveal" id="beginner_friendly"
+  div class=""
+    h2 class="text-xl flex items-center space-x-2 px-4 sm:px-0" 
+      span= t("area.tags.beginner_friendly").capitalize
+      = link_to "javascript:void(0)", "data-action": "reveal#toggle" do 
+        svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+
+  div class="py-4 px-4 sm:px-0 hidden" data-reveal-target="item"
+    div class="text-gray-600 text-sm prose" 
+      p= t("views.areas.index.tips.beginner_friendly.p1")
+      p class="" #{link_to t("views.areas.index.tips.read_guide"), articles_path}
+
+  div class="relative"
+    div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
+      - @beginner_areas.each do |area|
+        = link_to area_path(area), class: "min-w-max" do
+          = render 'shared/area_card', area: area
+      div class="pr-16" &nbsp;
+    div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
+
+div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
+  h2 class="text-xl" Tous les secteurs
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-4"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
     div class="col-span-1"
       div class="" 
@@ -38,27 +62,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
                   = link_to area_path(area), class: "flex justify-between items-center" do
                     span class="text-green-600"= area.name
                     span class="text-gray-400"= count
-
-div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6 sm:pt-12" data-controller="reveal" id="beginner_friendly"
-  div class=""
-    h2 class="text-xl flex items-center space-x-2 px-4 sm:px-0" 
-      span= t("area.tags.beginner_friendly").capitalize
-      = link_to "javascript:void(0)", "data-action": "reveal#toggle" do 
-        svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-          path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-
-  div class="py-4 px-4 sm:px-0 hidden" data-reveal-target="item"
-    div class="text-gray-600 text-sm prose" 
-      p= t("views.areas.index.tips.beginner_friendly.p1")
-      p class="" #{link_to t("views.areas.index.tips.read_guide"), articles_path}
-
-  div class="relative"
-    div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
-      - @beginner_areas.each do |area|
-        = link_to area_path(area), class: "min-w-max" do
-          = render 'shared/area_card', area: area
-      div class="pr-16" &nbsp;
-    div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 my-8"
   = render "areas/index/map"
