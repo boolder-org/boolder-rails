@@ -23,6 +23,8 @@ export default class extends Controller {
         self.animatePath()
       }, 500);
     }
+
+    image.src = image.src // hack to trigger image.onload even when the image is cached by the browser
   }
 
   disconnect() {
