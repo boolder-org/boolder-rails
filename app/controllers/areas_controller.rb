@@ -24,13 +24,13 @@ class AreasController < ApplicationController
     @articles = [
       OpenStruct.new(title: "Par niveau",             color: "bg-green-200"),
       OpenStruct.new(title: "Accessible en train + vélo",     color: "bg-blue-200"),
+      OpenStruct.new(title: "Sèche vite",             color: "bg-green-200"),
       OpenStruct.new(title: "Pour les groupes",       color: "bg-yellow-200"),
-      OpenStruct.new(title: "Secteurs mythiques",     color: "bg-pink-200"),
       OpenStruct.new(title: "les meilleurs circuits", color: "bg-green-200"),
-      OpenStruct.new(title: "En famille",             color: "bg-blue-200"),
+      OpenStruct.new(title: "Secteurs mythiques",     color: "bg-pink-200"),
+      OpenStruct.new(title: "Joli cadre",             color: "bg-blue-200"),
       OpenStruct.new(title: "Moins fréquentés",       color: "bg-yellow-200"),
       OpenStruct.new(title: "Les Trois Pignons",      color: "bg-pink-200"),
-      OpenStruct.new(title: "Sèche vite",             color: "bg-green-200"),
       OpenStruct.new(title: "Facile d'accès",         color: "bg-blue-200"),
     ]
 
