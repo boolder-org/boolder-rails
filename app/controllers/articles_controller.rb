@@ -42,6 +42,14 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def top_areas_dry_fast
+    @areas = Rails.cache.fetch("articles/top_areas_dry_fast", expires_in: 12.hours) do
+      Area.published.
+        any_tags(:dry_fast).
+        shuffle
+    end
+  end
+
   def redirect_en
     redirect_to request.env['PATH_INFO'].sub('/en', '/fr') if I18n.locale == :en
   end
