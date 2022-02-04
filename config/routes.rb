@@ -31,6 +31,7 @@ Rails.application.routes.draw do
         get '/', to: "articles#top_areas_per_level", as: :top_areas
         get 'level', to: "articles#top_areas_per_level", as: :top_areas_per_level
         get 'train', to: "articles#top_areas_train", as: :top_areas_train
+        get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
       end
       root to: "articles#index", as: :articles
     end
