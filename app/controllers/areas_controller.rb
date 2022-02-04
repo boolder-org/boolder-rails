@@ -23,7 +23,7 @@ class AreasController < ApplicationController
 
     @articles = [
       OpenStruct.new(title: "Par niveau",             color: "bg-green-200"),
-      OpenStruct.new(title: "Accessible en vélo",     color: "bg-blue-200"),
+      OpenStruct.new(title: "Accessible en train + vélo",     color: "bg-blue-200"),
       OpenStruct.new(title: "Pour les groupes",       color: "bg-yellow-200"),
       OpenStruct.new(title: "Secteurs mythiques",     color: "bg-pink-200"),
       OpenStruct.new(title: "les meilleurs circuits", color: "bg-green-200"),

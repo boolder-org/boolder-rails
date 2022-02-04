@@ -27,6 +27,21 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def top_areas_train
+    @annotations = Area.published.any_tags(:train_station_closeby).map do |area| 
+      {
+        latitude: area.start_location&.latitude,
+        longitude: area.start_location&.longitude,
+        color: "#059669",
+        title: area.name,
+        linkUrl: area_path(area),
+        linkText: t("views.areas.index.map.see"),
+        glyphText: "",
+        clusteringIdentifier: area.cluster,
+      } 
+    end
+  end
+
   def redirect_en
     redirect_to request.env['PATH_INFO'].sub('/en', '/fr') if I18n.locale == :en
   end
