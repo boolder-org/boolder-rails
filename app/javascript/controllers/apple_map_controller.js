@@ -77,7 +77,10 @@ export default class extends Controller {
       return annotation
     });
 
-    this.map.showItems(pois.concat(annotations));
+    this.map.showItems(
+      pois.concat(annotations),
+      { padding: new mapkit.Padding(100, 100, 100, 100) } // FIXME: pass value from html
+      );
 
     // set up visible viewport
     if (center) {

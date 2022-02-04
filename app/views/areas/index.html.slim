@@ -14,10 +14,12 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
 
   div class="relative"
     div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
-      - @articles.each do |article|
-        = link_to top_areas_path, class: "min-w-max" do
-          = render 'areas/index/use_case_card', title: article.title, color: article.color
-          / bg-red-200 bg-yellow-200 bg-blue-200 bg-indigo-200 bg-purple-200 bg-pink-200
+      = link_to top_areas_per_level_path, class: "min-w-max" do
+        = render 'areas/index/use_case_card', title: "Par niveau", color: "bg-green-200"
+      = link_to top_areas_train_path, class: "min-w-max" do
+        = render 'areas/index/use_case_card', title: "Accessible en train + vélo", color: "bg-blue-200"
+      = link_to top_areas_train_path, class: "min-w-max" do
+        = render 'areas/index/use_case_card', title: "Sèche vite", color: "bg-yellow-200"
       div class="pr-16" &nbsp;
     div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
