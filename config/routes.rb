@@ -27,6 +27,10 @@ Rails.application.routes.draw do
         get 'climb-safely', to: "articles#climb_safely", as: :climb_safely
         get 'rules', to: "articles#rules", as: :rules
       end
+      scope "top-areas" do
+        get '/', to: "articles#top_areas_per_level", as: :top_areas
+        get 'level', to: "articles#top_areas_per_level", as: :top_areas_per_level
+      end
       root to: "articles#index", as: :articles
     end
 
