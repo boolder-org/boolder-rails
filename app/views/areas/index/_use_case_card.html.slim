@@ -1,7 +1,6 @@
 div class="w-48 lg:w-64 aspect-w-16 aspect-h-9 relative overflow-hidden rounded-lg"
   div class="bg-no-repeat bg-cover bg-center #{color}"
   div class="bg-transparent" style="background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
-  div class="p-4 absolute flex items-center text-center justify-center text-white" 
-    svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-      path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-    h1 class="flex-1 text-md font-bold uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.2)"= title
+  div class="p-4 absolute flex items-center space-x-4 text-center justify-center text-white" 
+    = capture(&block)
+    h1 class="flex-initial text-md font-bold uppercase" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.2)"= title.html_safe

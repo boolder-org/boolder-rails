@@ -13,27 +13,6 @@ class AreasController < ApplicationController
       @areas_with_count = @areas_with_count.sort{|a,b| ActiveSupport::Inflector.transliterate(a.first.name) <=> ActiveSupport::Inflector.transliterate(b.first.name) }
     end
 
-    @beginner_areas = Rails.cache.fetch("areas/index/beginner_friendly_list", expires_in: 12.hours) do
-      Area.published.any_tags(:beginner_friendly).all.shuffle
-    end
-
-    # @dry_fast_areas = Rails.cache.fetch("areas/index/dry_fast_list", expires_in: 12.hours) do
-    #   Area.published.any_tags(:dry_fast).all.shuffle
-    # end
-
-    @articles = [
-      OpenStruct.new(title: "Par niveau",             color: "bg-green-200"),
-      OpenStruct.new(title: "Accessible en train + vélo",     color: "bg-blue-200"),
-      OpenStruct.new(title: "Sèche vite",             color: "bg-green-200"),
-      OpenStruct.new(title: "Pour les groupes",       color: "bg-yellow-200"),
-      OpenStruct.new(title: "les meilleurs circuits", color: "bg-green-200"),
-      OpenStruct.new(title: "Secteurs mythiques",     color: "bg-pink-200"),
-      OpenStruct.new(title: "Joli cadre",             color: "bg-blue-200"),
-      OpenStruct.new(title: "Moins fréquentés",       color: "bg-yellow-200"),
-      OpenStruct.new(title: "Les Trois Pignons",      color: "bg-pink-200"),
-      OpenStruct.new(title: "Facile d'accès",         color: "bg-blue-200"),
-    ]
-
     @annotations = @areas.map do |area| 
       {
         latitude: area.start_location&.latitude,
