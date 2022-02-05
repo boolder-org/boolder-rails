@@ -14,14 +14,22 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
 
   div class="relative"
     div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
+      - colors = %w(bg-green-200 bg-blue-200 bg-yellow-200 bg-pink-200).cycle
       = link_to top_areas_per_level_path, class: "min-w-max" do
-        = render 'areas/index/use_case_card', title: "Par niveau", color: "bg-green-200"
-      = link_to top_areas_train_path, class: "min-w-max" do
-        = render 'areas/index/use_case_card', title: "Accessible en train + vélo", color: "bg-blue-200"
+        = use_case_card(title: "Par niveau", color: colors.next) do 
+          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
       = link_to top_areas_dry_fast_path, class: "min-w-max" do
-        = render 'areas/index/use_case_card', title: "Sèche vite", color: "bg-yellow-200"
+        = use_case_card(title: "Sèche vite", color: colors.next) do 
+          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
       = link_to top_areas_groups_path, class: "min-w-max" do
-        = render 'areas/index/use_case_card', title: "En groupe", color: "bg-pink-200"
+        = use_case_card(title: "En groupe", color: colors.next) do 
+          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+      = link_to top_areas_train_path, class: "min-w-max" do
+        = use_case_card(title: "Accessible <br>en train + vélo", color: colors.next) do 
+          | 
       div class="pr-16" &nbsp;
     div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
