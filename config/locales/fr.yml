@@ -119,7 +119,7 @@ fr:
     articles:
       index:
         metas:
-          title: Découvrez l'escalade de bloc en nature
+          title: Le guide du débutant pour l'escalade de bloc à Fontainebleau
       table_of_contents: Sommaire
       beginners_guide:
         title: Le guide du débutant
@@ -131,11 +131,11 @@ fr:
         choose_area: 
           title: Choisir un secteur
           metas:
-            title: Comment choisir un secteur de bloc en extérieur
+            title: Comment choisir un secteur à Fontainebleau
         choose_problems: 
           title: Choisir ses voies
           metas:
-            title: Comment choisir les bonnes voies en bloc en extérieur
+            title: Comment choisir les bonnes voies à Fontainebleau
         climb_safely: 
           title: Grimper en sécurité
           metas:
@@ -144,6 +144,19 @@ fr:
           title: Règles à connaitre
           metas:
             title: Les règles à respecter pour faire du bloc en forêt
+      top_areas:
+        level:
+          metas:
+            title: Les meilleurs secteurs de Fontainebleau par niveau
+        dry_fast:
+          metas:
+            title: Les secteurs qui sèchent vite à Fontainebleau
+        groups:
+          metas:
+            title: Les secteurs adaptés aux groupes à Fontainebleau
+        train:
+          metas:
+            title: Les secteurs accessibles en train + vélo à Fontainebleau
     layout:
       nav:
         open_menu: Ouvrir le menu principal
