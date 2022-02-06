@@ -20,11 +20,12 @@
 
 <div 
 data-controller="apple-map" 
-data-apple-map-annotations-value="<%= @annotations.to_json %>"
+data-apple-map-annotations-value="<%= annotations.to_json %>"
 data-apple-map-pois-value="<%= pois.to_json %>"
 data-apple-map-key-value="eyJhbGciOiJFUzI1NiIsImtpZCI6IkRWUVMyNTlKODkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiI4WTQ2QkNaVUw5IiwiaWF0IjoxNjQzMzkxNjg5LCJleHAiOjE5NTg5MjQ0ODl9.-v84vbqALYM5_7muYdeD-ebwQ1pDGl0DP4cvAUbTn5scqovJbsmm2PNppnaF_kdlV62jPRGTBh7Yzng7Po1SoQ"
 data-apple-map-language-value="<%= I18n.locale %>"
 data-apple-map-span-value="0.20"
+data-apple-map-padding-value="<%= padding %>"
 >
   <div data-apple-map-target="map" class="bg-gray-500" style="height: 50vh;"></div>
 </div>
