@@ -2,14 +2,13 @@ class ArticlesController < ApplicationController
   before_action :redirect_en
 
   def choose_area
-    @beginner_areas = Rails.cache.fetch("welcome/index/beginner_friendly_list", expires_in: 12.hours) do
+    @beginner_areas = Rails.cache.fetch("shared/beginner_friendly_list", expires_in: 12.hours) do
       Area.published.any_tags(:beginner_friendly).all.shuffle
     end
   end
 
   def top_areas_level
-    # FIXME: use different key?
-    @beginner_areas = Rails.cache.fetch("welcome/index/beginner_friendly_list", expires_in: 12.hours) do
+    @beginner_areas = Rails.cache.fetch("shared/beginner_friendly_list", expires_in: 12.hours) do
       Area.published.any_tags(:beginner_friendly).all.shuffle
     end
 
