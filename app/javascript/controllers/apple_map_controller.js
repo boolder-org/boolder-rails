@@ -9,6 +9,7 @@ export default class extends Controller {
     pois: Array,
     center: Object,
     span: Number,
+    padding: Number,
   }
 
   connect() {
@@ -19,7 +20,8 @@ export default class extends Controller {
     let pois = this.hasPoisValue ? this.poisValue : []
     let center = this.hasCenterValue ? this.centerValue : null
     let span = this.hasSpanValue ? this.spanValue : 0.1
-    this.setupMap(annotations, pois, center, span)
+    let padding = this.hasPaddingValue ? this.paddingValue : 0
+    this.setupMap(annotations, pois, center, span, padding)
     
   }
 
@@ -37,7 +39,7 @@ export default class extends Controller {
     });
   }
 
-  setupMap(annotationsHash, poisHash, center, span) {
+  setupMap(annotationsHash, poisHash, center, span, padding) {
     this.map = new mapkit.Map(this.mapTarget, {
         isRotationEnabled: false,
         showsScale: mapkit.FeatureVisibility.Visible,
@@ -79,7 +81,7 @@ export default class extends Controller {
 
     this.map.showItems(
       pois.concat(annotations),
-      { padding: new mapkit.Padding(100, 100, 100, 100) } // FIXME: pass value from html
+      { padding: new mapkit.Padding(padding, padding, padding, padding) }
       );
 
     // set up visible viewport
