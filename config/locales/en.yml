@@ -79,13 +79,11 @@ en:
           area_name: Area name
         problems: Problems
         problems_of_level_html: "Grade %{level} <br/> problems"
-        tips:
-          read_guide: Read the beginner's guide.
-          beginner_friendly:
-            p1: Discover beautiful areas, with lots of grade 1/2/3 problems, low height (3 meters and lower), and with easy landings on the ground.
-          dry_fast:
-            p1: Discover areas that dry fast after the rain.
-            p2: "Warning: please don't climb when the rock is still wet!"
+        cards:
+          level: For your level
+          dry_fast: Dries fast
+          groups: For groups
+          train_html: Accessible <br>by train + bike
         metas: 
           title: All areas in Fontainebleau
           description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
