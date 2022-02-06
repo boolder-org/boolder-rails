@@ -13,14 +13,6 @@ class AreasController < ApplicationController
       @areas_with_count = @areas_with_count.sort{|a,b| ActiveSupport::Inflector.transliterate(a.first.name) <=> ActiveSupport::Inflector.transliterate(b.first.name) }
     end
 
-    @beginner_areas = Rails.cache.fetch("areas/index/beginner_friendly_list", expires_in: 12.hours) do
-      Area.any_tags(:beginner_friendly).all.shuffle
-    end
-
-    @dry_fast_areas = Rails.cache.fetch("areas/index/dry_fast_list", expires_in: 12.hours) do
-      Area.any_tags(:dry_fast).all.shuffle
-    end
-
     @annotations = @areas.map do |area| 
       {
         latitude: area.start_location&.latitude,

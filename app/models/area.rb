@@ -20,6 +20,10 @@ class Area < ApplicationRecord
     @start_location ||= pois.first&.route&.points&.last
   end
 
+  def level_density_score
+    1.upto(8).map{|level| (problems.level(level).count >= 40) ? 1 : 0 }.reduce(:+)
+  end
+
   def to_param
     slug
   end

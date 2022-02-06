@@ -20,14 +20,21 @@ Rails.application.routes.draw do
 
     scope "articles" do
       scope "beginners-guide" do
-        get '/', to: "articles#equipment", as: :beginners_guide
+        get '/', to: "articles#beginners_guide", as: :beginners_guide
         get 'equipment', to: "articles#equipment", as: :equipment
         get 'choose-area', to: "articles#choose_area", as: :choose_area
         get 'choose-problems', to: "articles#choose_problems", as: :choose_problems
         get 'climb-safely', to: "articles#climb_safely", as: :climb_safely
         get 'rules', to: "articles#rules", as: :rules
       end
-      root to: "articles#index", as: :articles
+      scope "top-areas" do
+        get '/', to: redirect("/%{locale}/fontainebleau")
+        get 'level', to: "articles#top_areas_level", as: :top_areas_level
+        get 'train', to: "articles#top_areas_train", as: :top_areas_train
+        get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
+        get 'groups', to: "articles#top_areas_groups", as: :top_areas_groups
+      end
+      root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
     end
 
     scope 'fontainebleau' do
