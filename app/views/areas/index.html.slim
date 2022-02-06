@@ -6,16 +6,14 @@
 - set_meta_tags canonical: areas_url
 
 div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"
-  h1 class="text-3xl font-bold mb-2"= t("views.areas.index.title")
+  h1 class="text-3xl font-bold"= t("views.areas.index.title")
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
-  h2 class="text-xl flex items-center space-x-2 px-4 sm:px-0" 
-    span Notre sélection
 
   div class="relative"
-    div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-0"
-      - colors = %w(bg-green-200 bg-blue-200 bg-yellow-200 bg-pink-200).cycle
-      = link_to top_areas_per_level_path, class: "min-w-max" do
+    div class="flex flex-nowrap overflow-x-auto py-2 space-x-4 px-4 sm:px-0"
+      - colors = %w(bg-blue-200 bg-yellow-200 bg-green-200 bg-pink-200).cycle
+      = link_to top_areas_level_path, class: "min-w-max" do
         = use_case_card(title: "Par niveau", color: colors.next) do 
           svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
             path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
