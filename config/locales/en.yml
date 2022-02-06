@@ -119,7 +119,7 @@ en:
     articles:
       index:
         metas:
-          title: Discover outdoor bouldering
+          title: The beginner's guide to bouldering in Fontainebleau
       table_of_contents: Go back
       beginners_guide:
         title: The beginner's guide
@@ -131,11 +131,11 @@ en:
         choose_area: 
           title: Choose an area
           metas:
-            title: How to choose an outdoor bouldering area
+            title: How to choose an area in Fontainebleau
         choose_problems: 
           title: Choose problems
           metas:
-            title: How to choose problems when bouldering outdoors
+            title: How to choose problems in Fontainebleau
         climb_safely: 
           title: Climb safely
           metas:
@@ -144,6 +144,19 @@ en:
           title: Rules
           metas:
             title: Rules to follow when bouldering outdoors
+      top_areas:
+        level:
+          metas:
+            title: The best areas for your level in Fontainebleau
+        dry_fast:
+          metas:
+            title: The areas that dry fast in Fontainebleau
+        groups:
+          metas:
+            title: The best areas for groups in Fontainebleau
+        train:
+          metas:
+            title: Bouldering in Fontainebleau by train + bike
     layout:
       nav:
         open_menu: Open main menu
