@@ -2,10 +2,9 @@ class ArticlesController < ApplicationController
   before_action :redirect_en
 
   def choose_area
-    # TODO: update
-    @beginner_areas = Area.published.reject{|a| a.id == 7}.
-      map{|a| [a, a.problems.where("grade < '4a'").count ]}.
-      sort_by(&:second).reverse
+    @beginner_areas = Rails.cache.fetch("welcome/index/beginner_friendly_list", expires_in: 12.hours) do
+      Area.published.any_tags(:beginner_friendly).all.shuffle
+    end
   end
 
   def top_areas_level
