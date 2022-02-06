@@ -1,0 +1,55 @@
+<% set_meta_tags title: t("views.articles.top_areas.groups.metas.title") %>
+<% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
+
+ <div class="bg-white">
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+
+    <div class="text-lg max-w-prose mx-auto mb-16">
+      <span class="mt-3 sm:mt-4 block text-base text-center text-green-600 font-semibold tracking-wide uppercase">
+        Découvrir Fontainebleau
+      </span>
+      <h1>
+        <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          Les secteurs adaptés aux groupes
+        </span>
+      </h1>
+      <!-- <p class="mt-8 text-xl text-gray-500 leading-8">.</p> -->
+    </div>
+    <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+
+      <p>
+        Pour un groupe de niveau hétérogène, il n'est pas facile de trouver un secteur qui comblera tout le monde.
+      </p>
+
+      <p>
+        Voici une liste de secteur ayant un grand nombre de voies dans tous les niveaux de 2 à 7 :
+      </p>
+
+    </div>
+  </div>
+
+  <div class="max-w-3xl mx-auto">
+    <div class="py-2 relative">
+      <div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-6 lg:px-8">
+        <% Area.published.select{|a| a.level_density_score >= 5}.each do |area| %>
+          <%= link_to area_path(area) do %>
+            <%= render 'shared/area_card', area: area %>
+          <% end %>
+        <% end %>
+        <div class="pr-16">&nbsp;</div>
+        <div class="inset-y-0 right-0 flex bg-gradient-to-l from-white pl-8 pr-8 pointer-events-none absolute"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+
+      <p class="pt-12">
+        Voir aussi : <%= link_to "Tous les secteurs à Fontainebleau", areas_path %>.
+      </p>
+
+    </div>
+  </div>
+
+</div>

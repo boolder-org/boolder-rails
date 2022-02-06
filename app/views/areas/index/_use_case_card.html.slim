@@ -1,0 +1,6 @@
+div class="w-48 lg:w-64 aspect-w-16 aspect-h-9 relative overflow-hidden rounded-lg"
+  div class="bg-no-repeat bg-cover bg-center #{color}"
+  div class="bg-transparent" style="background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
+  div class="p-4 absolute flex items-center space-x-4 text-center justify-center text-white" 
+    = capture(&block)
+    h1 class="flex-initial text-md font-bold uppercase" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.2)"= title.html_safe

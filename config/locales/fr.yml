@@ -79,13 +79,11 @@ fr:
           area_name: Nom de secteur
         problems: Voies
         problems_of_level_html: "Voies <br/> de niveau %{level}"
-        tips:
-          read_guide: Lire le guide pour bien débuter.
-          beginner_friendly:
-            p1: Découvrez des secteurs ayant du charme, de nombreuses voies de niveau 1/2/3, des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
-          dry_fast:
-            p1: Découvrez des secteurs qui sèchent plus rapidement après la pluie. 
-            p2: "Attention: il est fortement déconseillé de grimper lorsque la roche est encore humide."
+        cards:
+          level: Par niveau
+          dry_fast: Sèche Vite
+          groups: En groupe
+          train_html: Accessible <br>en train + vélo
         metas:
           title: Tous les secteurs à Fontainebleau
           description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau, le meilleur spot d'escalade de bloc en France.
@@ -121,7 +119,7 @@ fr:
     articles:
       index:
         metas:
-          title: Découvrez l'escalade de bloc en nature
+          title: Le guide du débutant pour l'escalade de bloc à Fontainebleau
       table_of_contents: Sommaire
       beginners_guide:
         title: Le guide du débutant
@@ -133,11 +131,11 @@ fr:
         choose_area: 
           title: Choisir un secteur
           metas:
-            title: Comment choisir un secteur de bloc en extérieur
+            title: Comment choisir un secteur à Fontainebleau
         choose_problems: 
           title: Choisir ses voies
           metas:
-            title: Comment choisir les bonnes voies en bloc en extérieur
+            title: Comment choisir les bonnes voies à Fontainebleau
         climb_safely: 
           title: Grimper en sécurité
           metas:
@@ -146,6 +144,19 @@ fr:
           title: Règles à connaitre
           metas:
             title: Les règles à respecter pour faire du bloc en forêt
+      top_areas:
+        level:
+          metas:
+            title: Les meilleurs secteurs de Fontainebleau par niveau
+        dry_fast:
+          metas:
+            title: Les secteurs qui sèchent vite à Fontainebleau
+        groups:
+          metas:
+            title: Les secteurs adaptés aux groupes à Fontainebleau
+        train:
+          metas:
+            title: Les secteurs accessibles en train + vélo à Fontainebleau
     layout:
       nav:
         open_menu: Ouvrir le menu principal
