@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
       sort_by(&:second).reverse
   end
 
-  def top_areas_per_level
+  def top_areas_level
     # FIXME: use different key?
     @beginner_areas = Rails.cache.fetch("welcome/index/beginner_friendly_list", expires_in: 12.hours) do
       Area.published.any_tags(:beginner_friendly).all.shuffle
@@ -49,6 +49,8 @@ class ArticlesController < ApplicationController
         shuffle
     end
   end
+
+  private
 
   def redirect_en
     redirect_to request.env['PATH_INFO'].sub('/en', '/fr') if I18n.locale == :en
