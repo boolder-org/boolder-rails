@@ -3,7 +3,7 @@
 - set_meta_tags canonical: area_problem_url(@problem.area, @problem)
 
 - if line = @problem.lines.published.first
-  - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, w: 200, ar:'4:3', fit: 'crop', dpr: 2, q: 50) }
+  - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, Topo::IMGIX_SMALL) }
 
 div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
 
