@@ -81,11 +81,11 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
               div= t("problem.see_on_bleau_info")
 
 
-      - if @problem.all_variants.any?
+      - if @problem.variants.any?
         div class="px-4 sm:px-0 py-4"
           h2 class="text-xl font-semibold mb-3"= t("views.problems.show.variants")
           ul class=""
-            - @problem.all_variants.sort_by(&:grade).reverse.each do |variant|
+            - @problem.variants.sort_by(&:grade).reverse.each do |variant|
               li class="mt-2"
                 = link_to problem_friendly_path(variant) do
                   = problem_circle_view(variant)

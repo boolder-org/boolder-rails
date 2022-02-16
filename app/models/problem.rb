@@ -3,7 +3,7 @@ class Problem < ApplicationRecord
   belongs_to :area
   has_many :lines, dependent: :destroy
   has_many :topos, through: :lines
-  has_many :variants, class_name: "Problem", foreign_key: "parent_id"
+  has_many :children, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
 
   include AlgoliaSearch
@@ -11,12 +11,12 @@ class Problem < ApplicationRecord
     attributes :name, :circuit_number
     attribute :area_name do area.name end
     attribute :circuit_color do circuit&.color end
-    attribute :variants_count do variants.count end
+    attribute :children_count do children.count end
     # TODO: implement custom attributes callback to trigger a reindex
     # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
 
     searchableAttributes [:name]
-    customRanking ['desc(variants_count)']
+    customRanking ['desc(children_count)']
   end
 
   def published?
@@ -96,11 +96,11 @@ class Problem < ApplicationRecord
     end
   end
 
-  def all_variants
+  def variants
     if parent
-      [parent] + parent.variants - [self]
+      [parent] + parent.children - [self]
     else
-      variants
+      children
     end
   end
 end
