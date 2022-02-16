@@ -3,7 +3,7 @@ class Topo < ApplicationRecord
   has_many :lines, dependent: :destroy
   has_many :problems, through: :lines
 
-  IMGIX_LARGE = { w: 800 }
+  IMGIX_LARGE = { w: 600 }
   IMGIX_SMALL = { w: 200, dpr: 2, q: 50 }
 
   scope :published, -> { where(published: true) }
