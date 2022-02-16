@@ -19,7 +19,7 @@ class Admin::ToposController < Admin::BaseController
       topo.update(metadata: metadata_hash)
       
       problems = Problem.find(metadata_hash["problem_ids"])
-      problems = problems + problems.flat_map(&:all_variants)
+      problems = problems + problems.flat_map(&:variants)
 
       problems.uniq.each do |problem|
         Line.create(topo_id: topo.id, problem_id: problem.id)
