@@ -58,9 +58,12 @@ Rails.application.routes.draw do
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
 
-    # Javascript redirects
+    # Internal redirects
     resources :redirects, only: :new
     get '/geojson/problem_:id', to: redirect("/%{locale}/redirects/new?problem_id=%{id}") # apple maps redirect (apple_map_geojson_controller.js)
+
+    # Permalinks (don't remove!)
+    get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
   end
 
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
