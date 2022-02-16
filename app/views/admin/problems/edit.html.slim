@@ -23,7 +23,7 @@ div class="mt-10 sm:mt-0"
         - @problem.lines.published.each do |line|
           = link_to edit_admin_line_path(line) do
             = render 'shared/topo_with_line', line: line
-          / = link_to ix_image_tag(line.topo.photo.key, url_params: { w: 800, ar:'4:3', fit: 'crop' }, tag_options: { height: "500"}), edit_admin_line_path(line)
+          / = link_to ix_image_tag(line.topo.photo.key, url_params: Topo::IMGIX_LARGE, tag_options: { height: "500"}), edit_admin_line_path(line)
         p class="my-4"
           = link_to "Add topo line", new_admin_line_path(problem_id: @problem.id)
         - if @problem.variants.any?
