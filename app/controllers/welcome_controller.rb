@@ -35,6 +35,11 @@ class WelcomeController < ApplicationController
     redirect_to helpers.problem_friendly_path(problem)
   end
 
+  def problem_permalink
+    problem = Problem.find(params[:id])
+    redirect_to helpers.problem_friendly_path(problem)
+  end
+
   private
     def extract_locale_from_accept_language_header
       request.env['HTTP_ACCEPT_LANGUAGE']&.scan(/^[a-z]{2}/)&.first
