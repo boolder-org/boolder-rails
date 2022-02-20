@@ -38,11 +38,8 @@ class Admin::ToposController < Admin::BaseController
   def update
     topo = Topo.find(params[:id])
 
-    if params[:topo][:metadata].present?
-      if xml_metadata = params[:topo][:metadata].read
-        topo.update(metadata: Hash.from_xml(xml_metadata))
-      end
-    end
+    metadata = JSON.parse(params[:topo][:metadata])
+    topo.update(metadata: metadata)
 
     if photo = params[:topo][:photo]
       topo.update(photo: params[:topo][:photo])
