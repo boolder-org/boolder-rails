@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     namespace :admin do 
       resources :areas, param: :slug do
         resources :problems, only: :index
+        resources :tasks, only: :index
       end
       resources :problems, except: :index
       resources :imports
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
       resources :problem_imports
       resources :lines
       resources :pois
+      get "tasks/dashboard", to: "tasks#dashboard"
 
       root 'areas#index'
     end
