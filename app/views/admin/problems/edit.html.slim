@@ -22,7 +22,7 @@ div class="mt-10 sm:mt-0"
       div class="px-4 sm:px-0"
         - @problem.lines.published.each do |line|
           = link_to edit_admin_line_path(line) do
-            = render 'shared/topo_with_line', line: line
+            = render 'shared/topo_with_line', line: line, scope: :admin
           / = link_to ix_image_tag(line.topo.photo.key, url_params: Topo::IMGIX_LARGE, tag_options: { height: "500"}), edit_admin_line_path(line)
         - @problem.lines.unpublished.each do |line|
           = link_to edit_admin_line_path(line) do

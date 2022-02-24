@@ -34,7 +34,8 @@
           </div>
           <% move_on_top = (secondary_line.id != line.id) && secondary_line.problem.circuit_number.present? %>
           <div class="absolute hidden <%= move_on_top ? "z-10" : "z-0" %>" style="top:-12px; left:-12px;" data-topo-line-target="circle">
-            <%= link_to problem_friendly_path(secondary_line.problem) do %>
+            <% path = (scope == :admin) ? admin_problem_path(secondary_line.problem) : problem_friendly_path(secondary_line.problem) %>
+            <%= link_to path do %>
               <%= problem_circle_view(secondary_line.problem) %>
             <% end %>
           </div>
