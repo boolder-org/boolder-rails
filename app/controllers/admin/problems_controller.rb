@@ -21,6 +21,9 @@ class Admin::ProblemsController < Admin::BaseController
 
     circuits = @area.circuits
     @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"])
+
+    @missing_location = @area.problems.where("location IS NULL")
+    @missing_grade = @area.problems.where("grade IS NULL OR grade = ''")
   end
 
   def new
