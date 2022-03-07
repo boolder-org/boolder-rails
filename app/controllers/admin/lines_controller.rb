@@ -26,8 +26,9 @@ class Admin::LinesController < Admin::BaseController
   def create
     line = Line.new(line_params)
 
-    coordinates = JSON.parse(params[:line][:coordinates])
-    line.coordinates = coordinates
+    if coordinates = params[:line][:coordinates]
+      line.coordinates = JSON.parse(coordinates)
+    end
 
     line.save!
 
