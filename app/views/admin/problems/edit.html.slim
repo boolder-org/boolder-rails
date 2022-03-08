@@ -28,8 +28,8 @@ div class="mt-10 sm:mt-0"
             div class="text-red-500 mt-2"= "unpublished ##{line.id}"
         p class="my-4"
           div= link_to "Add topo line", new_admin_line_path(problem_id: @problem.id)
-          - if variant = @problem.variants.first
-            div= link_to "Add topo line from variant", new_admin_line_path(problem_id: @problem.id, ref_line_id: variant.lines.first&.id)
+          - if parent = @problem.parent
+            div= link_to "Add topo line from parent", new_admin_line_path(problem_id: @problem.id, ref_line_id: parent.lines.first&.id)
         - if @problem.variants.any?
           p class="my-4" 
             div class="font-bold" Variants
