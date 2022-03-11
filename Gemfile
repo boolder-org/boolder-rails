@@ -41,6 +41,10 @@ gem 'meta-tags', '~> 2.14.0'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry', '~> 0.13.1'
+
+  # scraping
+  gem 'nokogiri', '~> 1.11.7'
+  gem 'httparty', '~> 0.20.0'
 end
 
 group :development do
