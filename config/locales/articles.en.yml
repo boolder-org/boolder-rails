@@ -1,0 +1,47 @@
+en:
+  views:
+    articles:
+      index:
+        metas:
+          title: The beginner's guide to bouldering in Fontainebleau
+      table_of_contents: Go back
+      beginners_guide:
+        title: The beginner's guide
+        subtitle: Discover outdoor bouldering
+        equipment: 
+          title: Equipment
+          metas:
+            title: The equipment you need for outdoor bouldering
+        choose_area: 
+          title: Choose an area
+          metas:
+            title: How to choose an area in Fontainebleau
+        choose_problems: 
+          title: Choose problems
+          metas:
+            title: How to choose problems in Fontainebleau
+        climb_safely: 
+          title: Climb safely
+          metas:
+            title: Safety tips for outdoor bouldering
+        rules: 
+          title: Rules
+          metas:
+            title: Rules to follow when bouldering outdoors
+      top_areas:
+        discover_fontainebleau: Discover Fontainebleau
+        all_areas: All areas in Fontainebleau
+        see_also: "See also:"
+        level:
+          title: The best areas by level
+          metas:
+            title: The best areas for your level in Fontainebleau
+        dry_fast:
+          metas:
+            title: The areas that dry fast in Fontainebleau
+        groups:
+          metas:
+            title: The best areas for groups in Fontainebleau
+        train:
+          metas:
+            title: Bouldering in Fontainebleau by train + bike
