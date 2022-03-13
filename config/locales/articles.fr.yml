@@ -61,6 +61,23 @@ fr:
             title: Comment choisir les bonnes voies à Fontainebleau
         climb_safely: 
           title: Grimper en sécurité
+          intro: Voici quelques conseils pour minimiser les risques de chute et de blessure, et grimper l’esprit plus tranquille.
+          avoid_risky_problems: Éviter les voies risquées
+          avoid_risky_problems_p1_html: En tant que débutant privilégiez les voies de <strong>moins de 3 ou 4 mètres</strong>, avec une <strong>bonne réception au sol</strong> (terrain plat, sans rocher ni racine).
+          height: "Hauteur :"
+          good_landing: Réception sur terrain plat (sable)
+          bad_landing: Réception difficile au sol
+          safe: Parfait pour grimper en confiance
+          unsafe: À éviter
+          multi_crashpad: Prendre plusieurs crash pads
+          multi_crashpad_p1: Il est parfois rassurant d’avoir plusieurs crash pads pour couvrir une surface au sol plus grande. 
+          multi_crashpad_p2: Si vous grimpez à plusieurs, vous pouvez aussi demander de l’aide pour déplacer votre crash pad pendant que vous grimpez, pour qu’il reste à la verticale de votre position.
+          spot: Parer
+          spot_p1_html: Pour aider vos amis à grimper en sécurité, vous pouvez les <i>parer</i>.
+          spot_p2: La parade consiste à accompagner la chute de votre ami(e) — par exemple avec les mains sur la taille — pour qu'il/elle retombe sur le crash pad.
+          spot_p3: "Attention : n'essayez pas de ralentir vous-même la chute de votre ami(e), vous risqueriez de vous blesser !"
+          descent: Anticiper la descente
+          descent_p1: Une fois en haut d’une voie, il est parfois difficile de redescendre. Pensez à repérer la descente avant de grimper — surtout si vous êtes seul !
           metas:
             title: Les règles de sécurité pour le bloc en extérieur
         rules: 
