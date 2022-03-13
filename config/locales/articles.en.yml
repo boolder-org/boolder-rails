@@ -6,10 +6,27 @@ en:
           title: The beginner's guide to bouldering in Fontainebleau
       table_of_contents: Go back
       beginners_guide:
-        title: The beginner's guide
-        subtitle: Discover outdoor bouldering
+        title: Beginner's guide
+        subtitle: Bouldering in Fontainebleau
         equipment: 
           title: Equipment
+          intro: Here is the gear you will need to climb outdoor.
+          shoes: Climbing shoes
+          shoes_tip: "Tip : use shoes 1 (or 2) sizes below what you normally wear, to better stick to the boulder. Your toes will hurt a bit but it's worth it!"
+          crashpad: A crash mat
+          crashpad_description: A crash mat is designed to soften your fall.
+          crashpad_tip: We recommend you use a thick one with a large surface, even if it's a bit more bulky.
+          guidebook: A guidebook
+          guidebook_description_html: A <i>guidebook</i> (or <i>topo</i> in French), will help you navigate climbing areas.
+          guidebook_tip_html: We recommend you use <a href="%{path}">the Boolder app</a>, available on iPhone. You will have access to a GPS map and photos of the problems.
+          guidebook_tip2: If you prefer a paper version, we recommend using Fun Bloc.
+          optional: Optional
+          optional_item1_html: a <strong>doormat</strong> (or a rag), to clean your shoes before starting a problem
+          optional_item2_html: <strong>additional crash mats</strong>, see <a href="%{path}">“Climb safely”</a>
+          optional_item3_html: some <strong>chalk</strong> for your hands to better stick to the boulder
+          optional_item4_html: a <strong>soft brush</strong> to clean the rock and remove chalk marks
+          warning_chalk_html: Don't use too much chalk, as it damages the rock (see <a href="%{path}" class="">“Rules”</a>).
+          other_tips: Also, feel free to take a sport outfit that doesn't restrict your movements too much, and some food and water.
           metas:
             title: The equipment you need for outdoor bouldering
         choose_area: 
