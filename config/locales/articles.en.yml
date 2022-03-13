@@ -47,6 +47,16 @@ en:
             title: How to choose an area in Fontainebleau
         choose_problems: 
           title: Choose problems
+          intro: Once you get to a bouldering area, here are a few tips to easily find problems adapted to you.
+          filter_by_level: Filter by level
+          filter_by_level_p1_html: Thanks to the <a href="%{path}">Boolder app</a>, you can filter problems that match with your level.
+          filter_by_level_p2: This way you can identify the zones with a good density of problems adapted to your level.
+          circuit: Follow a circuit
+          circuit_p1: Circuits are a series of boulders of (relatively) homogeneous level, with ascending numbers.
+          circuit_p2: Each problem is represented by a colored number and an arrow, painted directly on the boulder.
+          circuit_p3: There are 5 main colors (yellow, orange, blue, red, and white/black) that correspond to increasing grades.
+          circuit_p4_html: By following a <strong>yellow circuit</strong> (or an orange one) you'll be able to discover problems graded between 1 and 3, which is perfect to start.
+          circuit_p5_html: "Tip: you can also filter by circuit with the <a href='%{path}'>Boolder app</a>"
           metas:
             title: How to choose problems in Fontainebleau
         climb_safely: 
