@@ -47,6 +47,16 @@ fr:
             title: Comment choisir un secteur à Fontainebleau
         choose_problems: 
           title: Choisir ses voies
+          intro: Une fois arrivé sur un secteur, voici quelques conseils pour trouver facilement des voies qui vous correspondent.
+          filter_by_level: Filtrer par niveau
+          filter_by_level_p1_html: Grâce à l’<a href="%{path}">appli Boolder</a>, vous pouvez filtrer les voies correspondant à votre niveau.
+          filter_by_level_p2: Vous pouvez ainsi facilement identifier les zones ayant une bonne densité de voies correspondant à votre niveau.
+          circuit: Suivre un circuit
+          circuit_p1: Les circuits regroupent des voies de niveau (relativement) homogène, selon un parcours numéroté.
+          circuit_p2: Chaque voie est représentée par un numéro de couleur et une flèche, peints directement sur la roche.
+          circuit_p3: Il existe 5 couleurs principales (jaune, orange, bleu, rouge et noir/blanc) qui correspondent à des niveaux croissants. 
+          circuit_p4_html: En suivant un <strong>circuit jaune</strong> (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
+          circuit_p5_html: "Bon à savoir : vous pouvez également filtrer par circuit dans l’<a href='%{path}'>appli Boolder</a>."
           metas:
             title: Comment choisir les bonnes voies à Fontainebleau
         climb_safely: 
