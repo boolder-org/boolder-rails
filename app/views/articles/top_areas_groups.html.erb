@@ -6,24 +6,18 @@
 
     <div class="text-lg max-w-prose mx-auto mb-16">
       <span class="mt-3 sm:mt-4 block text-base text-center text-green-600 font-semibold tracking-wide uppercase">
-        Découvrir Fontainebleau
+        <%= t("views.articles.top_areas.discover_fontainebleau") %>
       </span>
       <h1>
         <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-          Les secteurs adaptés aux groupes
+          <%= t("views.articles.top_areas.groups.title") %>
         </span>
       </h1>
       <!-- <p class="mt-8 text-xl text-gray-500 leading-8">.</p> -->
     </div>
     <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
 
-      <p>
-        Pour un groupe de niveau hétérogène, il n'est pas facile de trouver un secteur qui comblera tout le monde.
-      </p>
-
-      <p>
-        Voici une liste de secteur ayant un grand nombre de voies dans tous les niveaux de 2 à 7 :
-      </p>
+      <%= render "articles/top_areas_groups/p1" %>
 
     </div>
   </div>
@@ -45,8 +39,9 @@
   <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
     <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
 
-      <p class="pt-12">
-        Voir aussi : <%= link_to "Tous les secteurs à Fontainebleau", areas_path %>.
+      <p>
+        <%= t("views.articles.top_areas.see_also") %>
+        <%= link_to t("views.articles.top_areas.all_areas"), areas_path %>.
       </p>
 
     </div>
