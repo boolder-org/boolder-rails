@@ -37,11 +37,16 @@ en:
           metas:
             title: The best areas for your level in Fontainebleau
         dry_fast:
+          title: Areas that dry fast
           metas:
             title: The areas that dry fast in Fontainebleau
         groups:
+          title: The best areas for groups
           metas:
             title: The best areas for groups in Fontainebleau
         train:
+          title: Areas accessible by train + bike
+          from_train_station: From Bois-le-Roi train station
+          bike_time: "Bike time :"
           metas:
             title: Bouldering in Fontainebleau by train + bike

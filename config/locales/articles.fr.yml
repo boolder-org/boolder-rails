@@ -34,15 +34,19 @@ fr:
         see_also: "Voir aussi :"
         level:
           title: Les meilleurs secteurs par niveau
-
           metas:
             title: Les meilleurs secteurs de Fontainebleau par niveau
         dry_fast:
+          title: Les secteurs qui sèchent vite
           metas:
             title: Les secteurs qui sèchent vite à Fontainebleau
         groups:
+          title: Les secteurs adaptés aux groupes
           metas:
             title: Les secteurs adaptés aux groupes à Fontainebleau
         train:
+          title: Les secteurs accessibles en train + vélo
+          from_train_station: Depuis la gare de Bois-le-Roi
+          bike_time: "Temps de trajet en vélo :"
           metas:
             title: Les secteurs accessibles en train + vélo à Fontainebleau
