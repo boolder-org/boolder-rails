@@ -3,7 +3,7 @@
 - set_meta_tags canonical: area_problem_url(@problem.area, @problem)
 
 - if line = @problem.lines.published.first
-  - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, w: 200, ar:'4:3', fit: 'crop', dpr: 2, q: 50) }
+  - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, Topo::IMGIX_SMALL) }
 
 div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
 
@@ -33,7 +33,7 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
 
       div class="mt-4"
         - if @line
-          = render 'shared/topo_with_line', line: @line
+          = render 'shared/topo_with_line', line: @line, scope: :front
         - else
           div class="w-full aspect-w-4 aspect-h-3 bg-gray-300 sm:rounded-lg"
             div class="flex flex-wrap justify-center content-center"
@@ -61,13 +61,13 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
       div class="px-4 sm:px-0 py-2"
 
         - if @problem.circuit_id.present?
-          = link_to area_path(anchor: "circuit_#{@problem.circuit_id}") do
+          = link_to area_path(anchor: "circuit_#{@problem.circuit_id}", rel: "nofollow") do
             div class="flex items-center space-x-2 text-green-600 mt-2"
               svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                 path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
               div= t('views.problems.show.see_circuit')
 
-        = link_to map_area_path(@problem.area, problem: @problem.id) do
+        = link_to map_area_path(@problem.area, problem: @problem.id, rel: "nofollow") do
           div class="flex items-center space-x-2 text-green-600 mt-2"
             svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
               path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
@@ -81,11 +81,11 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
               div= t("problem.see_on_bleau_info")
 
 
-      - if @problem.all_variants.any?
+      - if @problem.variants.any?
         div class="px-4 sm:px-0 py-4"
           h2 class="text-xl font-semibold mb-3"= t("views.problems.show.variants")
           ul class=""
-            - @problem.all_variants.sort_by(&:grade).reverse.each do |variant|
+            - @problem.variants.sort_by(&:grade).reverse.each do |variant|
               li class="mt-2"
                 = link_to problem_friendly_path(variant) do
                   = problem_circle_view(variant)

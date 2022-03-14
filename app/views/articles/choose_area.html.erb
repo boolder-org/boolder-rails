@@ -13,66 +13,72 @@
               <%= t('views.articles.beginners_guide.choose_area.title') %>
             </span>
           </h1>
-          <p class="mt-8 text-xl text-gray-500 leading-8">
-            Voici quelques conseils pour vous aider à choisir votre secteur d'escalade de bloc.
-          </p>
         </div>
 
         <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
-          <h2>Un niveau adapté</h2>
+          <h2>
+            <%= t('views.articles.beginners_guide.choose_area.level') %>
+          </h2>
           
           <p>
-            Pour vos premières sorties en extérieur nous vous conseillons de choisir un secteur avec de <strong>nombreuses voies en niveau débutant (1, 2, 3)</strong>.
+            <%= t('views.articles.beginners_guide.choose_area.level_p1_html') %>
           </p>
 
           <p>
-            Vous pourrez ainsi prendre confiance et trouver les styles de voies que vous préférez.
+            <%= t('views.articles.beginners_guide.choose_area.level_p2') %>
           </p>
 
           <p>
-            <%= link_to areas_path(anchor: "beginner_friendly") do %>
-              Voir la liste de secteurs pour bien débuter à Fontainebleau.
+            <%= t('views.articles.beginners_guide.choose_area.level_p3') %>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="py-2 relative">
+          <div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-6 lg:px-8">
+            <% @beginner_areas.each do |area| %>
+              <%= link_to area_path(area) do %>
+                <%= render 'shared/area_card', area: area %>
+              <% end %>
             <% end %>
+            <div class="pr-16">&nbsp;</div>
+            <div class="inset-y-0 right-0 flex bg-gradient-to-l from-white pl-8 pr-8 pointer-events-none absolute"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
+
+          <p>
+            <%= t('views.articles.beginners_guide.choose_area.see_also') %>
+            <%= link_to top_areas_level_path(anchor: "intermediate") do %>
+              <%= t('views.articles.beginners_guide.choose_area.other_levels') %>
+            <% end %>
+            
           </p>
         
 
           <h2>
-            Temps d’approche
+            <%= t('views.articles.beginners_guide.choose_area.easy_access') %>
           </h2>
           <p>
-            Prévoyez entre 1 et 20 min de marche entre le parking et les premières voies, selon les secteurs.
+            <%= t('views.articles.beginners_guide.choose_area.easy_access_p1') %>
           </p>
           <p>
-            Pour éviter les surprises, consultez la carte du secteur.
+            <%= t('views.articles.beginners_guide.choose_area.easy_access_p2') %>
           </p>
 
           <h2>
-            Humidité
+            <%= t('views.articles.beginners_guide.choose_area.quiet') %>
           </h2>
           <p>
-            Après la pluie, <strike>le beau temps</strike> pas de grimpe !
-            Vous adhérerez mal à la paroi si la roche n’est pas 100% sèche, et vous risquez de l'abîmer. 
-          </p>
-
-          <p>
-            Certains secteurs sèchent plus vite que d’autres, en fonction de l’exposition au soleil et du vent.
-          </p>
-
-          <p>
-            <%= link_to areas_path(anchor: "dry_fast") do %>
-              Voir la liste de secteurs qui sèchent plus vite.
-            <% end %>
-          </p>
-
-
-          <h2>
-            Fréquentation
-          </h2>
-          <p>
-            Les secteurs faciles d'accès sont généralement très fréquentés, notamment le week-end. 
+            <%= t('views.articles.beginners_guide.choose_area.quiet_p1') %>
           </p>
           <p>
-            Si vous voulez être au calme, penchez plutôt vers des secteurs moins faciles d'accès.
+            <%= t('views.articles.beginners_guide.choose_area.quiet_p2') %>
           </p>
         </div>
 

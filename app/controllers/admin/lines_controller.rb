@@ -4,7 +4,13 @@ class Admin::LinesController < Admin::BaseController
   end
 
   def new 
-    @line = Line.new
+    @ref_line = Line.find_by_id(params[:ref_line_id])
+
+    @line = Line.new(
+      problem_id: params[:problem_id], 
+      topo_id: @ref_line&.topo_id || session[:last_topo_visited],
+      coordinates: @ref_line&.coordinates
+    )
   end
 
   def update
@@ -18,7 +24,15 @@ class Admin::LinesController < Admin::BaseController
   end
 
   def create
-    line = Line.create!(line_params)
+    line = Line.new(line_params)
+
+    if coordinates = params[:line][:coordinates]
+      line.coordinates = JSON.parse(coordinates)
+    end
+
+    line.save!
+
+    flash[:notice] = "Line created"
     redirect_to edit_admin_line_path(line)
   end
 

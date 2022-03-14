@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
 
-gem 'rails', '~> 6.1.3.1'
+gem 'rails', '~> 6.1.5'
 gem 'bootsnap', '~> 1.7.0', require: false
 
 gem 'puma', '~> 4.3.4'
@@ -17,7 +17,7 @@ gem 'newrelic_rpm', '~> 6.15.0'
 gem 'bugsnag', '~> 6.20.0'
 gem 'algoliasearch-rails', '~> 2.1.4'
 
-gem 'turbo-rails', '~> 0.5.9'
+gem 'turbo-rails', '~> 1.0.1'
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0.1'
 gem 'slim-rails', '~> 3.2.0'
@@ -41,6 +41,10 @@ gem 'meta-tags', '~> 2.14.0'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry', '~> 0.13.1'
+
+  # scraping
+  gem 'nokogiri', '~> 1.11.7'
+  gem 'httparty', '~> 0.20.0'
 end
 
 group :development do

@@ -1,0 +1,120 @@
+fr:
+  views:
+    articles:
+      index:
+        metas:
+          title: Le guide du débutant pour l'escalade de bloc à Fontainebleau
+      table_of_contents: Sommaire
+      beginners_guide:
+        title: Le guide du débutant
+        subtitle: Pour découvrir l'escalade de bloc en nature
+        equipment: 
+          title: Le matériel nécessaire
+          intro: Voici le matériel dont vous aurez besoin pour vos sorties d'escalade en pleine nature.
+          shoes: Des chaussons d'escalade
+          shoes_tip: "À savoir : vos appuis seront meilleurs avec des chaussons 1 ou 2 pointures en dessous de votre taille habituelle. C'est donc normal d'avoir un peu mal (mais pas trop non plus !)."
+          crashpad: Un crash pad
+          crashpad_description: Un crash pad est un matelas conçu pour amortir vos chutes. 
+          crashpad_tip: Nous vous recommandons de prendre un crash pad épais et avec une grande surface au sol, même s'il est plus encombrant.
+          guidebook: Un topo
+          guidebook_description_html: Un <i>topo</i>, ou <i>topoguide</i>, vous permet de vous repérer dans un secteur d'escalade.
+          guidebook_tip_html: Nous vous recommandons <a href="%{path}">l’appli Boolder</a>, disponible sur iPhone. Vous aurez accès à une carte géolocalisée (GPS et boussole) et aux photos des voies.
+          guidebook_tip2: Si vous préférez un topo en version papier, nous vous recommandons Fun Bloc, qui liste une vingtaine de secteurs les plus populaires de Fontainebleau avec des voies et circuits pour tous les niveaux.
+          optional: En option
+          optional_item1_html: un <strong>paillasson</strong> (ou chiffon) pour essuyer vos chaussons avant de commencer une voie
+          optional_item2_html: des <strong>crash pads supplémentaires</strong>, cf. <a href="%{path}">“Grimper en sécurité”</a>
+          optional_item3_html: de la <strong>magnésie</strong> pour mieux adhérer à la roche
+          optional_item4_html: une <strong>brosse souple</strong> pour nettoyer la roche et enlever les traces de magnésie
+          warning_chalk_html: N’abusez pas de la magnésie car cela abîme la roche, cf. <a href="%{path}" class="">“Règles à connaitre”</a>.
+          other_tips: Pensez également à prendre une tenue sportive qui ne vous gêne pas dans vos mouvements, ainsi que de la nourriture et de l’eau.
+          metas:
+            title: Le matériel nécessaire pour faire du bloc en extérieur
+        choose_area: 
+          title: Choisir un secteur
+          level: Adapté à votre niveau
+          level_p1_html: Pour vos premières sorties en extérieur nous vous conseillons de choisir un secteur avec de nombreuses voies en <strong>niveau débutant (1, 2, 3)</strong>, des blocs <strong>peu hauts</strong> (3 mètres et moins) et avec une <strong>bonne réception au sol</strong>.
+          level_p2: Vous pourrez ainsi prendre confiance et trouver les styles de voies que vous préférez.
+          level_p3: "Voici une sélection de secteurs parfaits pour débuter :"
+          see_also: "Voir aussi :"
+          other_levels: niveaux intermédaires/avancés.
+          easy_access: Facile d'accès
+          easy_access_p1: Prévoyez entre 1 et 20 min de marche entre le parking et les premières voies, selon les secteurs.
+          easy_access_p2: Pour éviter les surprises, consultez la carte du secteur.
+          quiet: Au calme
+          quiet_p1: Les secteurs faciles d'accès sont généralement assez fréquentés, notamment le week-end. 
+          quiet_p2: Si vous voulez être au calme, penchez plutôt vers des secteurs moins faciles d'accès.
+          metas:
+            title: Comment choisir un secteur à Fontainebleau
+        choose_problems: 
+          title: Choisir ses voies
+          intro: Une fois arrivé sur un secteur, voici quelques conseils pour trouver facilement des voies qui vous correspondent.
+          filter_by_level: Filtrer par niveau
+          filter_by_level_p1_html: Grâce à l’<a href="%{path}">appli Boolder</a>, vous pouvez filtrer les voies correspondant à votre niveau.
+          filter_by_level_p2: Vous pouvez ainsi facilement identifier les zones ayant une bonne densité de voies correspondant à votre niveau.
+          circuit: Suivre un circuit
+          circuit_p1: Les circuits regroupent des voies de niveau (relativement) homogène, selon un parcours numéroté.
+          circuit_p2: Chaque voie est représentée par un numéro de couleur et une flèche, peints directement sur la roche.
+          circuit_p3: Il existe 5 couleurs principales (jaune, orange, bleu, rouge et noir/blanc) qui correspondent à des niveaux croissants. 
+          circuit_p4_html: En suivant un <strong>circuit jaune</strong> (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
+          circuit_p5_html: "Bon à savoir : vous pouvez également filtrer par circuit dans l’<a href='%{path}'>appli Boolder</a>."
+          metas:
+            title: Comment choisir les bonnes voies à Fontainebleau
+        climb_safely: 
+          title: Grimper en sécurité
+          intro: Voici quelques conseils pour minimiser les risques de chute et de blessure, et grimper l’esprit plus tranquille.
+          avoid_risky_problems: Éviter les voies risquées
+          avoid_risky_problems_p1_html: En tant que débutant privilégiez les voies de <strong>moins de 3 ou 4 mètres</strong>, avec une <strong>bonne réception au sol</strong> (terrain plat, sans rocher ni racine).
+          height: "Hauteur :"
+          good_landing: Réception sur terrain plat (sable)
+          bad_landing: Réception difficile au sol
+          safe: Parfait pour grimper en confiance
+          unsafe: À éviter
+          multi_crashpad: Prendre plusieurs crash pads
+          multi_crashpad_p1: Il est parfois rassurant d’avoir plusieurs crash pads pour couvrir une surface au sol plus grande. 
+          multi_crashpad_p2: Si vous grimpez à plusieurs, vous pouvez aussi demander de l’aide pour déplacer votre crash pad pendant que vous grimpez, pour qu’il reste à la verticale de votre position.
+          spot: Parer
+          spot_p1_html: Pour aider vos amis à grimper en sécurité, vous pouvez les <i>parer</i>.
+          spot_p2: La parade consiste à accompagner la chute de votre ami(e) — par exemple avec les mains sur la taille — pour qu'il/elle retombe sur le crash pad.
+          spot_p3: "Attention : n'essayez pas de ralentir vous-même la chute de votre ami(e), vous risqueriez de vous blesser !"
+          descent: Anticiper la descente
+          descent_p1: Une fois en haut d’une voie, il est parfois difficile de redescendre. Pensez à repérer la descente avant de grimper — surtout si vous êtes seul !
+          metas:
+            title: Les règles de sécurité pour le bloc en extérieur
+        rules: 
+          title: Règles à connaitre
+          intro: La forêt de Fontainebleau est un environnement unique et fragile. Il est important de respecter certaines règles de bonne conduite pour le protéger.
+          chalk: Halte à la magnésie
+          chalk_p1: La magnésie abîme la roche, utilisez-la avec parcimonie. Un rocher propre a une meilleure adhérence, il est donc préférable de nettoyer les prises (avec une brosse souple) plutôt que d’utiliser de la magnésie.
+          chalk_p2: Quand vous avez terminé, pensez à brosser les prises (toujours avec une brosse souple) pour faire disparaître vos traces.
+          clean_shoes: Nettoyez vos chaussons
+          clean_shoes_p1: Le sable et la terre qui se glissent sous vos chaussons contribuent à polir la roche, ce qui finit par la rendre impraticable à la longue.
+          clean_shoes_p2: Pensez à nettoyer vos chaussons avec un paillasson ou un chiffon avant de débuter une voie.
+          other_rules: Autres règles
+          other_rules_item1: Ne grimpez pas sur des blocs humides (cela abîme la roche)
+          other_rules_item2: Ne campez pas, ne faites pas de feu
+          other_rules_item3: Remportez vos déchets (et pourquoi pas ceux que vous auriez trouvé sur place ?)
+          happy_climbing: Bonne grimpe !
+          metas:
+            title: Les règles à respecter pour faire du bloc en forêt
+      top_areas:
+        discover_fontainebleau: Découvrir Fontainebleau
+        all_areas: Tous les secteurs à Fontainebleau
+        see_also: "Voir aussi :"
+        level:
+          title: Les meilleurs secteurs par niveau
+          metas:
+            title: Les meilleurs secteurs de Fontainebleau par niveau
+        dry_fast:
+          title: Les secteurs qui sèchent vite
+          metas:
+            title: Les secteurs qui sèchent vite à Fontainebleau
+        groups:
+          title: Les secteurs adaptés aux groupes
+          metas:
+            title: Les secteurs adaptés aux groupes à Fontainebleau
+        train:
+          title: Les secteurs accessibles en train + vélo
+          from_train_station: Depuis la gare de Bois-le-Roi
+          bike_time: "Temps de trajet en vélo :"
+          metas:
+            title: Les secteurs accessibles en train + vélo à Fontainebleau

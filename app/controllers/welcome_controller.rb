@@ -2,9 +2,9 @@ class WelcomeController < ApplicationController
   layout false, only: [:soon]
 
   def index
-    @beginner_areas = Area.any_tags(:beginner_friendly).reject{|a| a.id == 7}.
-      map{|a| [a, a.problems.where("grade < '4a'").count ]}.
-      sort_by(&:second).reverse
+    @beginner_areas = Rails.cache.fetch("shared/beginner_friendly_list", expires_in: 12.hours) do
+      Area.published.any_tags(:beginner_friendly).all.shuffle
+    end
   end
 
   def root
@@ -31,6 +31,11 @@ class WelcomeController < ApplicationController
   end
 
   def redirect_problem
+    problem = Problem.find(params[:id])
+    redirect_to helpers.problem_friendly_path(problem)
+  end
+
+  def problem_permalink
     problem = Problem.find(params[:id])
     redirect_to helpers.problem_friendly_path(problem)
   end
