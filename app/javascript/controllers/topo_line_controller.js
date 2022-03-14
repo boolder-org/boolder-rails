@@ -67,7 +67,7 @@ export default class extends Controller {
   // by placing a data-action="turbo:before-cache@window->topo-line#hidePath" in the html
   // so that there isn't a flickering when the page animates for a 2nd time
   hidePath() {
-    this.svgTarget.classList.add("hidden")
+    this.svgTarget.innerHTML = ''
   }
 
   pathString() {
