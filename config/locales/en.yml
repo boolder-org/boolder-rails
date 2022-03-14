@@ -41,7 +41,7 @@ en:
       train_station_closeby: access by train+bicycle
   views:
     homepage:
-      title1: Your guide to bouldering
+      title1: Bouldering
       title2: in Fontainebleau
       subtitle: Discover thousands of problems & circuits for all levels.
       read_guide: Read the beginner's guide
@@ -71,7 +71,7 @@ en:
         title: Privacy
     areas:
       index:
-        title: Areas in Fontainebleau
+        title: Fontainebleau
         sort_by:
           label: Sort by
           problems: Number of problems
@@ -79,13 +79,11 @@ en:
           area_name: Area name
         problems: Problems
         problems_of_level_html: "Grade %{level} <br/> problems"
-        tips:
-          read_guide: Read the beginner's guide.
-          beginner_friendly:
-            p1: Discover beautiful areas, with lots of grade 1/2/3 problems, low height (3 meters and lower), and with easy landings on the ground.
-          dry_fast:
-            p1: Discover areas that dry fast after the rain.
-            p2: "Warning: please don't climb when the rock is still wet!"
+        cards:
+          level: For your level
+          dry_fast: Dries fast
+          groups: For groups
+          train_html: Accessible <br>by train + bike
         metas: 
           title: All areas in Fontainebleau
           description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
@@ -118,34 +116,6 @@ en:
       clear: Clear
       cancel: Cancel
       submit: Search
-    articles:
-      index:
-        metas:
-          title: Discover outdoor bouldering
-      table_of_contents: Go back
-      beginners_guide:
-        title: The beginner's guide
-        subtitle: Discover outdoor bouldering
-        equipment: 
-          title: Equipment
-          metas:
-            title: The equipment you need for outdoor bouldering
-        choose_area: 
-          title: Choose an area
-          metas:
-            title: How to choose an outdoor bouldering area
-        choose_problems: 
-          title: Choose problems
-          metas:
-            title: How to choose problems when bouldering outdoors
-        climb_safely: 
-          title: Climb safely
-          metas:
-            title: Safety tips for outdoor bouldering
-        rules: 
-          title: Rules
-          metas:
-            title: Rules to follow when bouldering outdoors
     layout:
       nav:
         open_menu: Open main menu

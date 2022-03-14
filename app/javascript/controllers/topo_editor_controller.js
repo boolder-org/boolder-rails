@@ -13,6 +13,8 @@ export default class extends Controller {
       self.resize(image.naturalWidth, image.naturalHeight)
       self.drawOriginalPoints()
     }
+
+    image.src = image.src // hack to trigger image.onload even when the image is cached by the browser
   }
 
   resize(width, height) {

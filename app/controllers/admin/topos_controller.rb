@@ -19,7 +19,7 @@ class Admin::ToposController < Admin::BaseController
       topo.update(metadata: metadata_hash)
       
       problems = Problem.find(metadata_hash["problem_ids"])
-      problems = problems + problems.flat_map(&:all_variants)
+      problems = problems + problems.flat_map(&:variants)
 
       problems.uniq.each do |problem|
         Line.create(topo_id: topo.id, problem_id: problem.id)
@@ -38,11 +38,8 @@ class Admin::ToposController < Admin::BaseController
   def update
     topo = Topo.find(params[:id])
 
-    if params[:topo][:metadata].present?
-      if xml_metadata = params[:topo][:metadata].read
-        topo.update(metadata: Hash.from_xml(xml_metadata))
-      end
-    end
+    metadata = JSON.parse(params[:topo][:metadata])
+    topo.update(metadata: metadata)
 
     if photo = params[:topo][:photo]
       topo.update(photo: params[:topo][:photo])

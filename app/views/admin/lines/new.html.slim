@@ -10,13 +10,20 @@ div class="mt-10 sm:mt-0"
 
                 div class="col-span-6 sm:col-span-2"
                   = form.label :problem_id, "Problem id"
-                  = form.text_field :problem_id, value: params[:problem_id], autocomplete: "off"
+                  = form.text_field :problem_id, autocomplete: "off"
 
                 div class="col-span-6 sm:col-span-4"
 
                 div class="col-span-6 sm:col-span-2"
                   = form.label :topo_id, "Topo id"
-                  = form.text_field :topo_id, value: session[:last_topo_visited], autocomplete: "off", autofocus: "true", onFocus:"this.select()"
+                  = form.text_field :topo_id, autocomplete: "off"
+
+                div class="col-span-6 sm:col-span-4"
+
+                - if @ref_line
+                  div class="col-span-6 sm:col-span-6"
+                    = form.label :coordinates
+                    = form.text_area :coordinates, rows: "4", value: @line.coordinates.to_json
 
                 div class="col-span-6 sm:col-span-4"
 

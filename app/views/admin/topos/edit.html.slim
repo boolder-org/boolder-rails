@@ -18,14 +18,15 @@ div
       = form.label :published
 
     div class="form-group"
+      = form.label :metadata
+      = form.text_area :metadata, rows: "4", value: @topo.metadata.to_json
+
+    div class="form-group"
       p
         div Metadata
         code
           pre
             = JSON.pretty_generate(@topo.metadata)
-      p
-        = form.label :metadata, "Change metadata"
-        = form.file_field :metadata, class: "form-control"
 
       p
         = form.submit("Update", class: "btn btn-primary")

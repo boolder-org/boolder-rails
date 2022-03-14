@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     namespace :admin do 
       resources :areas, param: :slug do
         resources :problems, only: :index
+        resources :tasks, only: :index
       end
       resources :problems, except: :index
       resources :imports
@@ -14,20 +15,28 @@ Rails.application.routes.draw do
       resources :problem_imports
       resources :lines
       resources :pois
+      get "tasks/dashboard", to: "tasks#dashboard"
 
       root 'areas#index'
     end
 
     scope "articles" do
       scope "beginners-guide" do
-        get '/', to: "articles#equipment", as: :beginners_guide
+        get '/', to: "articles#beginners_guide", as: :beginners_guide
         get 'equipment', to: "articles#equipment", as: :equipment
         get 'choose-area', to: "articles#choose_area", as: :choose_area
         get 'choose-problems', to: "articles#choose_problems", as: :choose_problems
         get 'climb-safely', to: "articles#climb_safely", as: :climb_safely
         get 'rules', to: "articles#rules", as: :rules
       end
-      root to: "articles#index", as: :articles
+      scope "top-areas" do
+        get '/', to: redirect("/%{locale}/fontainebleau")
+        get 'level', to: "articles#top_areas_level", as: :top_areas_level
+        get 'train', to: "articles#top_areas_train", as: :top_areas_train
+        get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
+        get 'groups', to: "articles#top_areas_groups", as: :top_areas_groups
+      end
+      root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
     end
 
     scope 'fontainebleau' do
@@ -51,9 +60,12 @@ Rails.application.routes.draw do
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
 
-    # Javascript redirects
+    # Internal redirects
     resources :redirects, only: :new
     get '/geojson/problem_:id', to: redirect("/%{locale}/redirects/new?problem_id=%{id}") # apple maps redirect (apple_map_geojson_controller.js)
+
+    # Permalinks (don't remove!)
+    get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
   end
 
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
