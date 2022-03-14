@@ -10,14 +10,14 @@ en:
         subtitle: Bouldering in Fontainebleau
         equipment: 
           title: Equipment
-          intro: Here is the gear you will need to climb outdoor.
+          intro: Here is the equipment you will need to climb outdoors.
           shoes: Climbing shoes
-          shoes_tip: "Tip : use shoes 1 (or 2) sizes below what you normally wear, to better stick to the boulder. Your toes will hurt a bit but it's worth it!"
+          shoes_tip: "Tip: use shoes 1 (or 2) sizes below what you normally wear, to better stick to the boulder. Your toes will hurt a bit but it's worth it!"
           crashpad: A crash mat
           crashpad_description: A crash mat is designed to soften your fall.
           crashpad_tip: We recommend you use a thick one with a large surface, even if it's a bit more bulky.
           guidebook: A guidebook
-          guidebook_description_html: A <i>guidebook</i> (or <i>topo</i> in French), will help you navigate climbing areas.
+          guidebook_description_html: A guidebook (or <i>topo</i> in French), will help you navigate climbing areas.
           guidebook_tip_html: We recommend you use <a href="%{path}">the Boolder app</a>, available on iPhone. You will have access to a GPS map and photos of the problems.
           guidebook_tip2: If you prefer a paper version, we recommend using Fun Bloc.
           optional: Optional
@@ -26,13 +26,13 @@ en:
           optional_item3_html: some <strong>chalk</strong> for your hands to better stick to the boulder
           optional_item4_html: a <strong>soft brush</strong> to clean the rock and remove chalk marks
           warning_chalk_html: Don't use too much chalk, as it damages the rock (see <a href="%{path}" class="">“Rules”</a>).
-          other_tips: Also, feel free to take a sport outfit that doesn't restrict your movements too much, and some food and water.
+          other_tips: Also, feel free to take a sports outfit that doesn't restrict your movements too much, and some food and water.
           metas:
             title: The equipment you need for outdoor bouldering
         choose_area: 
           title: Choose an area
           level: Adapted to your level
-          level_p1_html: For your first bouldering sessions in Fontainebleau we recommend you choose an area with lots of problems <strong>graded between 2 and 3</strong>, with <strong>low boulders</strong> (below 3m), and with <strong>good landings</strong>.
+          level_p1_html: For your first bouldering session in Fontainebleau we recommend you choose an area with lots of problems <strong>graded between 2 and 3</strong>, with <strong>low boulders</strong> (below 3m), and with <strong>good landings</strong>.
           level_p2: This way you will be able to start bouldering with confidence, and find the type of problems you like.
           level_p3: "Here are a few areas that are perfect for beginners:"
           see_also: "See also:"
@@ -75,7 +75,7 @@ en:
           spot: Spot
           spot_p1_html: To help your friends climb safely, you can offer to be the <i>spotter</i>.
           spot_p2: The spotter redirects the climber's fall to land safely on the crash mat.
-          spot_p3: "Careful : don't try to catch the climber yourself, you migh injure yourself!"
+          spot_p3: "Careful: don't try to catch the climber yourself, you migh injure yourself!"
           descent: Anticipate the descent
           descent_p1: It can sometimes be tricky to go down from a boulder once you're on top. Check the descent beforehand — especially if you're alone!
           metas:
@@ -115,6 +115,6 @@ en:
         train:
           title: Areas accessible by train + bike
           from_train_station: From Bois-le-Roi train station
-          bike_time: "Bike time :"
+          bike_time: "By bike:"
           metas:
             title: Bouldering in Fontainebleau by train + bike
