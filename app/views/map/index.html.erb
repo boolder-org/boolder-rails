@@ -36,6 +36,80 @@ document.getElementById('zoom').addEventListener('click', () => {
 });
 
 map.on('load', () => {
+  const layers = map.getStyle().layers;
+  // Find the index of the first symbol layer in the map style.
+  let firstSymbolId;
+  for (const layer of layers) {
+  if (layer.type === 'symbol') {
+  firstSymbolId = layer.id;
+  break;
+  }
+  }
+
+  map.addSource('areas', {
+    type: 'vector',
+    url: 'mapbox://nmondollot.4tvxpzi4'
+  });
+
+  map.addLayer({
+    'id': 'areas',
+    'type': 'fill',
+    'source': 'areas',
+    'source-layer': 'fontainebleau-1mrg4b',
+    'layout': {
+      // Make the layer visible by default.
+      'visibility': 'visible'
+    },
+    'paint': {
+      "fill-color": "hsla(128, 69%, 76%, 0.6)",
+      "fill-opacity": 
+        [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          9,
+          1,
+          14,
+          0
+        ]
+    }
+  },
+  firstSymbolId
+  );
+
+
+
+  map.addSource('clusters', {
+    type: 'vector',
+    url: 'mapbox://nmondollot.0xexji1x'
+  });
+
+  map.addLayer({
+    'id': 'clusters',
+    'type': 'fill',
+    'source': 'clusters',
+    'source-layer': 'fontainebleau-1mrg4b',
+    'layout': {
+      // Make the layer visible by default.
+      'visibility': 'visible'
+    },
+    'paint': {
+      "fill-color": "hsla(128, 69%, 76%, 0.6)",
+      "fill-opacity": 
+        [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          9,
+          1,
+          14,
+          0
+        ]
+    }
+  },
+  firstSymbolId
+  );
+
   map.addSource('problems', {
     type: 'vector',
     url: 'mapbox://nmondollot.4rvy53fu'
@@ -120,6 +194,17 @@ map.on('load', () => {
           "hsl(203, 74%, 69%)",
           "hsl(223, 0%, 58%)"
         ]
+      ,
+      'circle-opacity': 
+      [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        15,
+        0,
+        17,
+        1
+      ]
     },
     filter: [
       "match",
