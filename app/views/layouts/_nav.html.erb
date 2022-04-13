@@ -16,6 +16,9 @@
           <%= link_to app_path, class: "inline-flex items-center px-1 pt-1 font-medium text-green-600 hover:text-green-800" do %>
             <%= t("views.layout.nav.app") %>
           <% end %>
+          <%= link_to map_path, class: "inline-flex items-center px-1 pt-1 font-medium text-green-600 hover:text-green-800" do %>
+            Map
+          <% end %>
           <div 
           data-controller="search" 
           data-search-locale-value="<%= I18n.locale %>" 
