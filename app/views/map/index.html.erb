@@ -1,0 +1,178 @@
+<% set_meta_tags title: t("Map") %>
+<% set_meta_tags description: t("map") %>
+
+<% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
+
+
+<div id='map' style='width: 100%;' class="h-screen relative">
+  
+<button id="zoom" class="absolute z-20">Zoom</button>
+</div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
+
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/nmondollot/cl0r0kt6800bg14n2twihf3uu/draft', // mapbox://styles/mapbox/streets-v11
+center: [2.700883, 48.407834],
+zoom: 10
+});
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+
+
+document.getElementById('zoom').addEventListener('click', () => {
+  map.flyTo({
+  center: [2.664, 48.462],
+  zoom: 16,
+  speed: 4,
+  curve: 1,
+  easing(t) {
+  return t;
+  }
+  });
+});
+
+map.on('load', () => {
+  map.addSource('problems', {
+    type: 'vector',
+    url: 'mapbox://nmondollot.4rvy53fu'
+  });
+
+  map.addLayer({
+    'id': 'problems',
+    'type': 'circle',
+    'source': 'problems',
+    'source-layer': 'all-areas-dhfqfd',
+    'layout': {
+      // Make the layer visible by default.
+      'visibility': 'visible'
+    },
+    'paint': {
+      'circle-radius': 
+        [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          18,
+          2,
+          22,
+          [
+            "case",
+            ["has", "circuitId"],
+            20,
+            12
+          ]
+        ]
+      ,
+      'circle-color': 
+        [
+          "case",
+          [
+            "match",
+            ["get", "circuitColor"],
+            ["", "yellow"],
+            true,
+            false
+          ],
+          "hsl(59, 77%, 60%)",
+          [
+            "match",
+            ["get", "circuitColor"],
+            ["", "orange"],
+            true,
+            false
+          ],
+          "hsl(23, 80%, 59%)",
+          [
+            "match",
+            ["get", "circuitColor"],
+            ["", "red"],
+            true,
+            false
+          ],
+          "hsl(0, 91%, 56%)",
+          [
+            "match",
+            ["get", "circuitColor"],
+            ["", "white"],
+            true,
+            false
+          ],
+          "hsl(223, 0%, 100%)",
+          [
+            "match",
+            ["get", "circuitColor"],
+            ["blue"],
+            true,
+            false
+          ],
+          "hsl(223, 98%, 58%)",
+          [
+            "match",
+            ["get", "circuitColor"],
+            ["skyblue"],
+            true,
+            false
+          ],
+          "hsl(203, 74%, 69%)",
+          "hsl(223, 0%, 58%)"
+        ]
+    },
+    filter: [
+      "match",
+        ["geometry-type"],
+        ["Point"],
+        true,
+        false
+    ],
+  });
+
+});
+
+// When a click event occurs on a feature in the places layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click', 'problems', (e) => {
+
+  console.log(e.features[0])
+  console.log(e.features[0].geometry)
+  // var name = e.features[0].properties.name
+
+// // Copy coordinates array.
+const coordinates = e.features[0].geometry.coordinates.slice();
+const name = e.features[0].properties.name || "Sans nom";
+ 
+new mapboxgl.Popup()
+.setLngLat(coordinates)
+.setHTML(name)
+.addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'problems', () => {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'problems', () => {
+map.getCanvas().style.cursor = '';
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
