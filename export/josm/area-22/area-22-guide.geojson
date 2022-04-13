@@ -1,0 +1,59 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "souris mecanique"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52357400000,
+                    48.38533700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "bianca"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52417400000,
+                    48.38517200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "ratatouille"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52306600000,
+                    48.38544400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yoga"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52303000000,
+                    48.38672200000
+                ]
+            }
+        }
+    ]
+}

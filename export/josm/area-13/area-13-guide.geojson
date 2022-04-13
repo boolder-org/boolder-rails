@@ -1,0 +1,111 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54809600000,
+                    48.39254400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54737500000,
+                    48.39196600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54883300000,
+                    48.39222000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54966400000,
+                    48.39207500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54760900000,
+                    48.39279400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54836300000,
+                    48.39211500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54904600000,
+                    48.39157100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54773600000,
+                    48.39218400000
+                ]
+            }
+        }
+    ]
+}

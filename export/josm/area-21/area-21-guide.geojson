@@ -1,0 +1,59 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Pygmee"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56159200000,
+                    48.39099300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Geyser"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56118300000,
+                    48.39018600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Calorie"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56304600000,
+                    48.39085200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Obelisque"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56245300000,
+                    48.38997700000
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "sanglier"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67151600000,
+                    48.37979000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "estasi dell'oro"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67555100000,
+                    48.37962800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "fausse conque"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67078400000,
+                    48.37986800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "tri selectif"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.66964600000,
+                    48.38002800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "papy mamy"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.66984700000,
+                    48.37910300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "sphincterissphinx"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.66846800000,
+                    48.38020300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "jet d'eau"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67250100000,
+                    48.37989400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.66825800000,
+                    48.37918000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67037700000,
+                    48.37972500000
+                ]
+            }
+        }
+    ]
+}

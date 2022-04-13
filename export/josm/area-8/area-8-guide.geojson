@@ -1,0 +1,98 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53372000000,
+                    48.37698300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "martinet"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53547500000,
+                    48.37746700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "defenestration"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53456100000,
+                    48.37744600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 53"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53101100000,
+                    48.37595700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "parfum des couleurs"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53503800000,
+                    48.37684800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 41"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53191400000,
+                    48.37642100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "choux"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53628600000,
+                    48.37695400000
+                ]
+            }
+        }
+    ]
+}

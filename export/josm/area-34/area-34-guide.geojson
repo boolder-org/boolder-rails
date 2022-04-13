@@ -1,0 +1,98 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "sale affaire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59559100000,
+                    48.40838000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59594200000,
+                    48.40819300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59607000000,
+                    48.40924100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59566200000,
+                    48.40745800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59523400000,
+                    48.40774800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59532500000,
+                    48.40908700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59567200000,
+                    48.40870600000
+                ]
+            }
+        }
+    ]
+}

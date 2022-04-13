@@ -1,0 +1,33 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "merveille"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65234300000,
+                    48.44434800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "bleau's art"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65186100000,
+                    48.44441200000
+                ]
+            }
+        }
+    ]
+}

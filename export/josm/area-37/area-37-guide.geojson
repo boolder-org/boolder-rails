@@ -1,0 +1,85 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.61654300000,
+                    48.40766900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.61537600000,
+                    48.40733300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "hale bopp"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.61294000000,
+                    48.40776800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.61486500000,
+                    48.40755500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "trois huit"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.61713900000,
+                    48.40787700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "l'ombre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.61736900000,
+                    48.40767500000
+                ]
+            }
+        }
+    ]
+}

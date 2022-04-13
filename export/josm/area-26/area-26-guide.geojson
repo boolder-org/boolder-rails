@@ -1,0 +1,85 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange D"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55666100000,
+                    48.39286400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "secours d'os (boulder 66)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55906900000,
+                    48.39235900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "cabriolet"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55783100000,
+                    48.39243500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "cocktail"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55832100000,
+                    48.39292400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "nostalgie"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55732600000,
+                    48.39361000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "ordalie (boulder 81)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55937500000,
+                    48.39333500000
+                ]
+            }
+        }
+    ]
+}

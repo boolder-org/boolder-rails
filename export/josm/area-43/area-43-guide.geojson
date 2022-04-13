@@ -1,0 +1,59 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 32"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63614200000,
+                    48.44832700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63396600000,
+                    48.44935400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "dark vador"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63485600000,
+                    48.44816600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "demoniaque"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63422000000,
+                    48.44900900000
+                ]
+            }
+        }
+    ]
+}

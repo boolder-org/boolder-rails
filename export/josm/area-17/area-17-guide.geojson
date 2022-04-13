@@ -1,0 +1,85 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "etroiture"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52450500000,
+                    48.36405300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52525400000,
+                    48.36456900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "serpentine"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52523400000,
+                    48.36410400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "frein"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52599800000,
+                    48.36383700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52486100000,
+                    48.36452700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52585100000,
+                    48.36406600000
+                ]
+            }
+        }
+    ]
+}

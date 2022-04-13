@@ -1,0 +1,98 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59345100000,
+                    48.29392600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 53"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59245000000,
+                    48.29448300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "elephant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59486300000,
+                    48.29384500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "black 22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59338100000,
+                    48.29354000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "black 38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59119800000,
+                    48.29411200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59384600000,
+                    48.29387300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 51"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59256100000,
+                    48.29409000000
+                ]
+            }
+        }
+    ]
+}

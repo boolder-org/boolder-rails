@@ -1,0 +1,59 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Beatle juice"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60918400000,
+                    48.41005600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Miss marbre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60858100000,
+                    48.40794500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Reta gluant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60928700000,
+                    48.41054300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Duel"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.61137200000,
+                    48.40821100000
+                ]
+            }
+        }
+    ]
+}
