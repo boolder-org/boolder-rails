@@ -1,0 +1,163 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62224600000,
+                    48.43430600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "buffalo soldier"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62391900000,
+                    48.43494800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 7"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62168300000,
+                    48.43415800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62273100000,
+                    48.43581200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62189400000,
+                    48.43599600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 7"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62204100000,
+                    48.43573500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62217100000,
+                    48.43505700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rondes heures"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62369600000,
+                    48.43373200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 42"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62090300000,
+                    48.43548300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62156500000,
+                    48.43489000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62170400000,
+                    48.43594400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62078300000,
+                    48.43651600000
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "dalle vache"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62246700000,
+                    48.44031600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 42"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62219700000,
+                    48.43883700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "jeu enfant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62140800000,
+                    48.43980400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "emmerdeuse"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62320700000,
+                    48.43977900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "black 16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62103500000,
+                    48.43816200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62128900000,
+                    48.43887900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "black 9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62195000000,
+                    48.43802100000
+                ]
+            }
+        }
+    ]
+}
