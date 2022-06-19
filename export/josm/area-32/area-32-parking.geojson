@@ -1,0 +1,24 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.67089009151,
+                        48.26420455343
+                    ],
+                    [
+                        2.67102151975,
+                        48.26406260299
+                    ]
+                ]
+            }
+        }
+    ]
+}
