@@ -1,0 +1,33 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "racine"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.68896100000,
+                    48.38594900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "presse purée"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.69149000000,
+                    48.38558200000
+                ]
+            }
+        }
+    ]
+}
