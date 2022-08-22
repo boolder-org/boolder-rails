@@ -1,0 +1,33 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "lost in space"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53767900000,
+                    48.37014200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "coulissant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53532900000,
+                    48.36951100000
+                ]
+            }
+        }
+    ]
+}

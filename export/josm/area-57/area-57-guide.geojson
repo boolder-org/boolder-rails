@@ -1,0 +1,137 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "turbo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53445900000,
+                    48.39749000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "ame de la foret"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53533800000,
+                    48.39747400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "patinette"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53444100000,
+                    48.39761100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "abri bouse"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53521900000,
+                    48.39728600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 15"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54628200000,
+                    48.39488900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "cadeau"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53523500000,
+                    48.39741000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54793300000,
+                    48.39459900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pure line"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53480800000,
+                    48.39723300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54649700000,
+                    48.39477700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 33"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54510800000,
+                    48.39522000000
+                ]
+            }
+        }
+    ]
+}
