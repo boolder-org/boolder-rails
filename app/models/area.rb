@@ -27,4 +27,8 @@ class Area < ApplicationRecord
   def to_param
     slug
   end
+
+  def name_debug
+    [id, name].join(" - ")
+  end
 end

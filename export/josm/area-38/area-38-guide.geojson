@@ -1,0 +1,46 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "hauts les coeurs"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.58731500000,
+                    48.40914700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "voltane"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.58637200000,
+                    48.40972600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rainbow rocket"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59045300000,
+                    48.40852200000
+                ]
+            }
+        }
+    ]
+}

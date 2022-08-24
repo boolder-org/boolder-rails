@@ -1,0 +1,46 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "zouk machine"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64410100000,
+                    48.44616900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "duroxmanie"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64425300000,
+                    48.44597100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "psyssure"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64362000000,
+                    48.44600500000
+                ]
+            }
+        }
+    ]
+}

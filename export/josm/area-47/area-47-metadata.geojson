@@ -1,0 +1,2397 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65478334390,
+                        48.46215579198
+                    ],
+                    [
+                        2.65479092454,
+                        48.46213864296
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65475805935,
+                        48.46214592019
+                    ],
+                    [
+                        2.65475891421,
+                        48.46212805860
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65954401344,
+                        48.46104548317
+                    ],
+                    [
+                        2.65956256789,
+                        48.46105844401
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65478334390,
+                        48.46215579198
+                    ],
+                    [
+                        2.65479092454,
+                        48.46213864296
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "333.5",
+                "horizontalAccuracy": "4.2",
+                "topoId": "4001",
+                "name": "Rab de Gratin | Rab de Tartiflette | Gratin Dauphinois | Tartiflette | Pomme Vapeur | La Frite"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65226466581,
+                    48.46154311676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ultima Thulé",
+                "topoId": "3965",
+                "horizontalAccuracy": "4.7",
+                "heading": "21.5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65728298403,
+                    48.46180596358
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65916179866,
+                        48.46157312398
+                    ],
+                    [
+                        2.65916564747,
+                        48.46155543638
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65478334390,
+                        48.46215579198
+                    ],
+                    [
+                        2.65479092454,
+                        48.46213864296
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65503371135,
+                        48.46190630463
+                    ],
+                    [
+                        2.65502687647,
+                        48.46188901825
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65504988842,
+                        48.46210327935
+                    ],
+                    [
+                        2.65503054163,
+                        48.46209083865
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ultima Thulé",
+                "topoId": "3964",
+                "heading": "316.4",
+                "horizontalAccuracy": "3.5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65732247383,
+                    48.46182642509
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65512188897,
+                        48.46173242205
+                    ],
+                    [
+                        2.65513964320,
+                        48.46174586656
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65945265070,
+                        48.46156369434
+                    ],
+                    [
+                        2.65943704238,
+                        48.46154912595
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65529472381,
+                        48.46188166183
+                    ],
+                    [
+                        2.65527406232,
+                        48.46187018823
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65948626213,
+                        48.46155807846
+                    ],
+                    [
+                        2.65945939441,
+                        48.46155668766
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3977",
+                "horizontalAccuracy": "3.5",
+                "heading": "257.5",
+                "name": "Les Eaux de Mortelune (sans convention) | Les Eaux de Mortelune"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65476037748,
+                    48.46196288247
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65462576412,
+                        48.46198375341
+                    ],
+                    [
+                        2.65465230779,
+                        48.46198684291
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65487814322,
+                        48.46251600426
+                    ],
+                    [
+                        2.65490162259,
+                        48.46250723233
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65466483033,
+                        48.46210428595
+                    ],
+                    [
+                        2.65469163465,
+                        48.46210613813
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65270396136,
+                        48.46187990163
+                    ],
+                    [
+                        2.65271148246,
+                        48.46189706226
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "173.6",
+                "horizontalAccuracy": "4.7",
+                "name": "Ogotaï",
+                "topoId": "3993"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65497322921,
+                    48.46246327167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gandalf-le-Fou",
+                "horizontalAccuracy": "4.7",
+                "topoId": "3979",
+                "heading": "100.9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65464859090,
+                    48.46207187426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "horizontalAccuracy": "4.6",
+                "topoId": "3992",
+                "heading": "110.9",
+                "name": "Galathorn"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65484580990,
+                    48.46241395775
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65954401344,
+                        48.46104548317
+                    ],
+                    [
+                        2.65956256789,
+                        48.46105844401
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3954",
+                "horizontalAccuracy": "4.8",
+                "name": "Chute de Pierre - Rêve de Pierre combi | Rêve de Pierre",
+                "heading": "31.0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65927396583,
+                    48.46144762133
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65953828347,
+                        48.46105168276
+                    ],
+                    [
+                        2.65952820031,
+                        48.46106825572
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65478334390,
+                        48.46215579198
+                    ],
+                    [
+                        2.65479092454,
+                        48.46213864296
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65916179866,
+                        48.46157312398
+                    ],
+                    [
+                        2.65916564747,
+                        48.46155543638
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65458167531,
+                        48.46212913752
+                    ],
+                    [
+                        2.65457045522,
+                        48.46211288941
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "41.2",
+                "topoId": "3967",
+                "name": "L'Enfant des Étoiles | Arachnéa | D-Trave",
+                "horizontalAccuracy": "4.6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65512188897,
+                    48.46173242205
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65728298403,
+                        48.46180596358
+                    ],
+                    [
+                        2.65729285900,
+                        48.46182259133
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65504829586,
+                        48.46210223162
+                    ],
+                    [
+                        2.65502194311,
+                        48.46210597138
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65514455490,
+                        48.46189781024
+                    ],
+                    [
+                        2.65512571994,
+                        48.46188502877
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65484580990,
+                        48.46241395775
+                    ],
+                    [
+                        2.65487099247,
+                        48.46240759356
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3976",
+                "name": "La Sorcière",
+                "horizontalAccuracy": "4.8",
+                "heading": "147.6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65463280696,
+                    48.46201708226
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65529472381,
+                        48.46188166183
+                    ],
+                    [
+                        2.65527406232,
+                        48.46187018823
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65487814322,
+                        48.46251600426
+                    ],
+                    [
+                        2.65490162259,
+                        48.46250723233
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "163.7",
+                "horizontalAccuracy": "3.5",
+                "name": "Thorgal | Le Maître des Brumes | Qâ | Le Maître des Brumes (aller-retour) | Le Maître des Brumes (retour) | La Brume",
+                "topoId": "3982"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65478334390,
+                    48.46215579198
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65462576412,
+                        48.46198375341
+                    ],
+                    [
+                        2.65465230779,
+                        48.46198684291
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65487814322,
+                        48.46251600426
+                    ],
+                    [
+                        2.65490162259,
+                        48.46250723233
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "194.7",
+                "name": "Entre Terre et Lumière",
+                "topoId": "3970",
+                "horizontalAccuracy": "3.6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65503371135,
+                    48.46190630463
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65476037748,
+                        48.46196288247
+                    ],
+                    [
+                        2.65473406835,
+                        48.46195901002
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65270396136,
+                        48.46187990163
+                    ],
+                    [
+                        2.65271148246,
+                        48.46189706226
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Qâ | Le Maître des Brumes | Thorgal | Le Maître des Brumes (aller-retour) | Le Maître des Brumes (retour) | La Brume",
+                "heading": "178.2",
+                "horizontalAccuracy": "4.7",
+                "topoId": "3981"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65475805935,
+                    48.46214592019
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65226466581,
+                        48.46154311676
+                    ],
+                    [
+                        2.65225265877,
+                        48.46155911581
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "165.5",
+                "horizontalAccuracy": "4.7",
+                "name": "Alinoë | Jolan | Jolan (en traversée)",
+                "topoId": "3995"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65494329930,
+                    48.46250643624
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65475805935,
+                        48.46214592019
+                    ],
+                    [
+                        2.65475891421,
+                        48.46212805860
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3953",
+                "horizontalAccuracy": "4.6",
+                "name": "Chute de Pierre (assis) | Chute de Pierre | La Traversée de Chute de Pierre",
+                "heading": "101.9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65924627506,
+                    48.46141904228
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65924627506,
+                        48.46141904228
+                    ],
+                    [
+                        2.65927264990,
+                        48.46141537157
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65916179866,
+                        48.46157312398
+                    ],
+                    [
+                        2.65916564747,
+                        48.46155543638
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65475805935,
+                        48.46214592019
+                    ],
+                    [
+                        2.65475891421,
+                        48.46212805860
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "horizontalAccuracy": "4.6",
+                "heading": "265.5",
+                "topoId": "3957",
+                "name": "Monsieur Moins | Hybride"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65948626213,
+                    48.46155807846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3966",
+                "name": "Le Pied-Main | Le Main-Pied",
+                "heading": "35.1",
+                "horizontalAccuracy": "3.5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65741316602,
+                    48.46183413644
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65916179866,
+                        48.46157312398
+                    ],
+                    [
+                        2.65916564747,
+                        48.46155543638
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65454614398,
+                        48.46206963385
+                    ],
+                    [
+                        2.65456729208,
+                        48.46205855702
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65741316602,
+                        48.46183413644
+                    ],
+                    [
+                        2.65742865334,
+                        48.46184876142
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65477186069,
+                        48.46234530681
+                    ],
+                    [
+                        2.65478684630,
+                        48.46233045391
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "J'en Pince Pour Elles | Free Mousse | La Doyenne",
+                "heading": "43.5",
+                "topoId": "3958",
+                "horizontalAccuracy": "3.5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65954401344,
+                    48.46104548317
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65513581015,
+                        48.46176339867
+                    ],
+                    [
+                        2.65516112376,
+                        48.46175726725
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65497322921,
+                        48.46246327167
+                    ],
+                    [
+                        2.65497624702,
+                        48.46244551359
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65529472381,
+                        48.46188166183
+                    ],
+                    [
+                        2.65527406232,
+                        48.46187018823
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65494329930,
+                        48.46250643624
+                    ],
+                    [
+                        2.65495005252,
+                        48.46248913596
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3978",
+                "heading": "180.8",
+                "name": "Les Eaux de Mortelune | Les Eaux de Mortelune (sans convention)",
+                "horizontalAccuracy": "3.5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65472408384,
+                    48.46197344367
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65463280696,
+                        48.46201708226
+                    ],
+                    [
+                        2.65464725169,
+                        48.46200199548
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65270396136,
+                        48.46187990163
+                    ],
+                    [
+                        2.65271148246,
+                        48.46189706226
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3986",
+                "horizontalAccuracy": "4.7",
+                "heading": "128.3",
+                "name": "Au-delà des Ombres"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65454614398,
+                    48.46206963385
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65472408384,
+                        48.46197344367
+                    ],
+                    [
+                        2.65472368820,
+                        48.46195557495
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65226466581,
+                        48.46154311676
+                    ],
+                    [
+                        2.65225265877,
+                        48.46155911581
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "horizontalAccuracy": "4.7",
+                "heading": "224.3",
+                "name": "La Marque des Bannis",
+                "topoId": "3971"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65514455490,
+                    48.46189781024
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65466483033,
+                        48.46210428595
+                    ],
+                    [
+                        2.65469163465,
+                        48.46210613813
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65226466581,
+                        48.46154311676
+                    ],
+                    [
+                        2.65225265877,
+                        48.46155911581
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "horizontalAccuracy": "4.6",
+                "name": "Vlana | Ariel",
+                "heading": "248.5",
+                "topoId": "3994"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65496227166,
+                    48.46246898346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "horizontalAccuracy": "4.7",
+                "topoId": "3980",
+                "name": "Le Maître des Brumes | Qâ | Le Maître des Brumes (aller-retour) | Le Maître des Brumes (retour) | La Brume",
+                "heading": "84.1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65466483033,
+                    48.46210428595
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3988",
+                "horizontalAccuracy": "4.6",
+                "name": "La Mer Gelée",
+                "heading": "282.1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65504829586,
+                    48.46210223162
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65945265070,
+                        48.46156369434
+                    ],
+                    [
+                        2.65943704238,
+                        48.46154912595
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65924627506,
+                        48.46141904228
+                    ],
+                    [
+                        2.65927264990,
+                        48.46141537157
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3955",
+                "name": "Douce-Amère",
+                "heading": "163.0",
+                "horizontalAccuracy": "3.5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65927218832,
+                    48.46133763441
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65927396583,
+                        48.46144762133
+                    ],
+                    [
+                        2.65928783277,
+                        48.46146294481
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65475805935,
+                        48.46214592019
+                    ],
+                    [
+                        2.65475891421,
+                        48.46212805860
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65732247383,
+                        48.46182642509
+                    ],
+                    [
+                        2.65730389166,
+                        48.46183936826
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65475805935,
+                        48.46214592019
+                    ],
+                    [
+                        2.65475891421,
+                        48.46212805860
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3998",
+                "heading": "16.2",
+                "horizontalAccuracy": "4.2",
+                "name": "En Attendant Buoux | En Attendant Buoux (retour) | En Attendant Buoux (version basse)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65270396136,
+                    48.46187990163
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Le Maquis de Bouvier | Le Maquis de Bouvier (direct) | Le Maquis de Bouvier (assis)",
+                "heading": "110.1",
+                "horizontalAccuracy": "4.7",
+                "topoId": "3969"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65513581015,
+                    48.46176339867
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65741316602,
+                        48.46183413644
+                    ],
+                    [
+                        2.65742865334,
+                        48.46184876142
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65479720542,
+                        48.46225465915
+                    ],
+                    [
+                        2.65477649632,
+                        48.46224322343
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65513581015,
+                        48.46176339867
+                    ],
+                    [
+                        2.65516112376,
+                        48.46175726725
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65496227166,
+                        48.46246898346
+                    ],
+                    [
+                        2.65493720486,
+                        48.46246242138
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "171.8",
+                "horizontalAccuracy": "5.8",
+                "name": "L'Académicienne (aller-retour) | L'Académicienne | L'Académicienne (retour) | L'Académicienne (retour-aller)",
+                "topoId": "3960"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65916179866,
+                    48.46157312398
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65513009772,
+                        48.46170871065
+                    ],
+                    [
+                        2.65515530312,
+                        48.46171503507
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65494329930,
+                        48.46250643624
+                    ],
+                    [
+                        2.65495005252,
+                        48.46248913596
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "L'Armurier",
+                "heading": "204.6",
+                "horizontalAccuracy": "3.5",
+                "topoId": "3984"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65458167531,
+                    48.46212913752
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65476037748,
+                        48.46196288247
+                    ],
+                    [
+                        2.65473406835,
+                        48.46195901002
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65945265070,
+                        48.46156369434
+                    ],
+                    [
+                        2.65943704238,
+                        48.46154912595
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "69.3",
+                "topoId": "3968",
+                "horizontalAccuracy": "4.8",
+                "name": "Psychose"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65513009772,
+                    48.46170871065
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65472408384,
+                        48.46197344367
+                    ],
+                    [
+                        2.65472368820,
+                        48.46195557495
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65226466581,
+                        48.46154311676
+                    ],
+                    [
+                        2.65225265877,
+                        48.46155911581
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65466483033,
+                        48.46210428595
+                    ],
+                    [
+                        2.65469163465,
+                        48.46210613813
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65226466581,
+                        48.46154311676
+                    ],
+                    [
+                        2.65225265877,
+                        48.46155911581
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65466483033,
+                        48.46210428595
+                    ],
+                    [
+                        2.65469163465,
+                        48.46210613813
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3956",
+                "heading": "215.4",
+                "horizontalAccuracy": "3.5",
+                "name": "Monsieur Plus | Monsieur Plus (assis) | Les Crackers / Monsieur Plus (gauche) | Les Crackers (debout)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65945265070,
+                    48.46156369434
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65945265070,
+                        48.46156369434
+                    ],
+                    [
+                        2.65943704238,
+                        48.46154912595
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "230.2",
+                "horizontalAccuracy": "4.7",
+                "topoId": "3991",
+                "name": "Saxegaard"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65479720542,
+                    48.46225465915
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65924627506,
+                        48.46141904228
+                    ],
+                    [
+                        2.65927264990,
+                        48.46141537157
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65927218832,
+                        48.46133763441
+                    ],
+                    [
+                        2.65928008103,
+                        48.46132054714
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65475805935,
+                        48.46214592019
+                    ],
+                    [
+                        2.65475891421,
+                        48.46212805860
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Louve | Aaricia | Jolan (en traversée) | Jolan",
+                "horizontalAccuracy": "3.5",
+                "topoId": "3996",
+                "heading": "119.4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65487814322,
+                    48.46251600426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65954401344,
+                        48.46104548317
+                    ],
+                    [
+                        2.65956256789,
+                        48.46105844401
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65478334390,
+                        48.46215579198
+                    ],
+                    [
+                        2.65479092454,
+                        48.46213864296
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65512188897,
+                        48.46173242205
+                    ],
+                    [
+                        2.65513964320,
+                        48.46174586656
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65478334390,
+                        48.46215579198
+                    ],
+                    [
+                        2.65479092454,
+                        48.46213864296
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rallye",
+                "horizontalAccuracy": "4.7",
+                "topoId": "3959",
+                "heading": "338.0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65953828347,
+                    48.46105168276
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65513581015,
+                        48.46176339867
+                    ],
+                    [
+                        2.65516112376,
+                        48.46175726725
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65496227166,
+                        48.46246898346
+                    ],
+                    [
+                        2.65493720486,
+                        48.46246242138
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65512188897,
+                        48.46173242205
+                    ],
+                    [
+                        2.65513964320,
+                        48.46174586656
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65494329930,
+                        48.46250643624
+                    ],
+                    [
+                        2.65495005252,
+                        48.46248913596
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "horizontalAccuracy": "4.6",
+                "name": "L'Ancienne | La Fissure de Gandalf",
+                "heading": "80.0",
+                "topoId": "3974"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65462576412,
+                    48.46198375341
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65529472381,
+                        48.46188166183
+                    ],
+                    [
+                        2.65527406232,
+                        48.46187018823
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65948626213,
+                        48.46155807846
+                    ],
+                    [
+                        2.65945939441,
+                        48.46155668766
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3987",
+                "name": "Le Pays d'Aran",
+                "horizontalAccuracy": "3.5",
+                "heading": "225.9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65504988842,
+                    48.46210327935
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65464859090,
+                        48.46207187426
+                    ],
+                    [
+                        2.65467505849,
+                        48.46206850998
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65487814322,
+                        48.46251600426
+                    ],
+                    [
+                        2.65490162259,
+                        48.46250723233
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "heading": "230.1",
+                "horizontalAccuracy": "3.5",
+                "name": "Les Yeux de Tanatloc | La Cité Perdue | La Chute de Brek | La Traversée Perdue",
+                "topoId": "3972"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65529472381,
+                    48.46188166183
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65466483033,
+                        48.46210428595
+                    ],
+                    [
+                        2.65469163465,
+                        48.46210613813
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65226466581,
+                        48.46154311676
+                    ],
+                    [
+                        2.65225265877,
+                        48.46155911581
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65945851736,
+                        48.46155041109
+                    ],
+                    [
+                        2.65944577686,
+                        48.46155396836
+                    ],
+                    [
+                        2.65943102472,
+                        48.46155396836
+                    ],
+                    [
+                        2.65942029588,
+                        48.46154818780
+                    ],
+                    [
+                        2.65941962533,
+                        48.46153884997
+                    ],
+                    [
+                        2.65942633085,
+                        48.46153084612
+                    ],
+                    [
+                        2.65945315294,
+                        48.46153084612
+                    ],
+                    [
+                        2.65946321122,
+                        48.46153662668
+                    ],
+                    [
+                        2.65946555849,
+                        48.46154418565
+                    ],
+                    [
+                        2.65945851736,
+                        48.46155041109
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "topoId": "3989",
+                "name": "La Gardienne des Clés",
+                "heading": "146.2",
+                "horizontalAccuracy": "3.5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65477186069,
+                    48.46234530681
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65223356511,
+                        48.46294297572
+                    ],
+                    [
+                        2.65221248872,
+                        48.46293183913
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.65927396583,
+                        48.46144762133
+                    ],
+                    [
+                        2.65928783277,
+                        48.46146294481
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Illogique Verticale | Illogique Facile | Logique Verticale | Logique Verticale (assis) | Logique Verticale (en traversée) | Logique Facile | Logique Facile (assis) | Logique Facile (en traversée) | Trois Graines d'Éternité | Trois Graines d'Éternité (retour) | Trois Graines d'Éternité (retour-aller) | Pour une Poignée de Graines | Et Pour Quelques Graines de Plus",
+                "horizontalAccuracy": "4.7",
+                "heading": "231.5",
+                "topoId": "4005"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65223356511,
+                    48.46294297572
+                ]
+            }
+        }
+    ]
+}

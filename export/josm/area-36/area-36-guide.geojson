@@ -1,0 +1,85 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60080400000,
+                    48.40838100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59952500000,
+                    48.40844900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pulp friction"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60048200000,
+                    48.40746300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59757000000,
+                    48.40774700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59737700000,
+                    48.40910100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59884500000,
+                    48.40840700000
+                ]
+            }
+        }
+    ]
+}

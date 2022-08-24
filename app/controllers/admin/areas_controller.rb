@@ -1,6 +1,7 @@
 class Admin::AreasController < Admin::BaseController
   def index
-    @areas = Area.order(:name)
+    sort = params[:sort] == "id" ? :id : :name
+    @areas = Area.order(sort)
   end
 
   def edit

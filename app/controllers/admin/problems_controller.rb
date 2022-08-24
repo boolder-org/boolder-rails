@@ -40,19 +40,19 @@ class Admin::ProblemsController < Admin::BaseController
       @problem.circuit_number = extracted_params[:circuit_number].strip
 
       if extracted_params[:circuit].include?("jaune")
-        @problem.circuit_id = area.circuits.yellow.first.id
+        @problem.circuit_id = area.circuits.yellow.first&.id
       elsif extracted_params[:circuit].include?("orange")
-        @problem.circuit_id = area.circuits.orange.first.id
+        @problem.circuit_id = area.circuits.orange.first&.id
       elsif extracted_params[:circuit].include?("bleu ciel")
-        @problem.circuit_id = area.circuits.skyblue.first.id
+        @problem.circuit_id = area.circuits.skyblue.first&.id
       elsif extracted_params[:circuit].include?("bleu")
-        @problem.circuit_id = area.circuits.blue.first.id
+        @problem.circuit_id = area.circuits.blue.first&.id
       elsif extracted_params[:circuit].include?("rouge")
-        @problem.circuit_id = area.circuits.red.first.id
+        @problem.circuit_id = area.circuits.red.first&.id
       elsif extracted_params[:circuit].include?("noir")
-        @problem.circuit_id = area.circuits.black.first.id
+        @problem.circuit_id = area.circuits.black.first&.id
       elsif extracted_params[:circuit].include?("blanc")
-        @problem.circuit_id = area.circuits.white.first.id
+        @problem.circuit_id = area.circuits.white.first&.id
       end
 
       if extracted_params[:tags].include?("travers")

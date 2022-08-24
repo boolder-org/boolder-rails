@@ -1,0 +1,150 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "topaz"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53067500000,
+                    48.38566500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "stupidite et courage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53079600000,
+                    48.38593100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "victor hugo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53067100000,
+                    48.38665500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "chef"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53108900000,
+                    48.38473100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53234500000,
+                    48.38588500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "tentation"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52748500000,
+                    48.38567300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "loire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53121600000,
+                    48.38540900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "arthur"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53015300000,
+                    48.38509000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "troyes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52932200000,
+                    48.38535100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "absinthe"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52915800000,
+                    48.38593800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "fay"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53111500000,
+                    48.38520600000
+                ]
+            }
+        }
+    ]
+}

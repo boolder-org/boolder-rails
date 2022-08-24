@@ -1,0 +1,4967 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 27 ",
+                "problemId": "511"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63934932582,
+                    48.44691904523
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "857"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63784477470,
+                    48.44729766795
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 40 ",
+                "problemId": "426"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63952970437,
+                    48.44762447164
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Crevette (assis)",
+                "problemId": "811"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63807343311,
+                    48.44669987585
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Aérodynamite (assis)",
+                "problemId": "839"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63769985168,
+                    48.44696241151
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "847"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63798642887,
+                    48.44732546689
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 47 ",
+                "problemId": "433"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63985123418,
+                    48.44714566342
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 3 Le Trou du Tondu",
+                "problemId": "487"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63767227514,
+                    48.44674735704
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 38 ",
+                "problemId": "522"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63890877299,
+                    48.44681830101
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63777822189,
+                        48.44722995001
+                    ],
+                    [
+                        2.63779364459,
+                        48.44724551744
+                    ],
+                    [
+                        2.63781577282,
+                        48.44725708181
+                    ],
+                    [
+                        2.63782784276,
+                        48.44726064008
+                    ],
+                    [
+                        2.63785466485,
+                        48.44725174441
+                    ],
+                    [
+                        2.63787545197,
+                        48.44723973525
+                    ],
+                    [
+                        2.63788551025,
+                        48.44722327825
+                    ],
+                    [
+                        2.63787142865,
+                        48.44720771082
+                    ],
+                    [
+                        2.63785198264,
+                        48.44719525687
+                    ],
+                    [
+                        2.63783790104,
+                        48.44719258816
+                    ],
+                    [
+                        2.63782381944,
+                        48.44719392252
+                    ],
+                    [
+                        2.63778492741,
+                        48.44721082431
+                    ],
+                    [
+                        2.63777553968,
+                        48.44721749606
+                    ],
+                    [
+                        2.63777419858,
+                        48.44722639174
+                    ],
+                    [
+                        2.63777822189,
+                        48.44722995001
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 35 ",
+                "problemId": "471"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63955049150,
+                    48.44753507073
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Aérodynamite",
+                "problemId": "838"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63769105060,
+                    48.44696207797
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 28 ",
+                "problemId": "414"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63792909614,
+                    48.44755308435
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  L'Arbre Perdu",
+                "problemId": "790"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63771829187,
+                    48.44664822478
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 33 ",
+                "problemId": "517"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63917028837,
+                    48.44680606935
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63784427162,
+                        48.44732424385
+                    ],
+                    [
+                        2.63785064187,
+                        48.44732602298
+                    ],
+                    [
+                        2.63787209954,
+                        48.44732624537
+                    ],
+                    [
+                        2.63790562715,
+                        48.44732113037
+                    ],
+                    [
+                        2.63791132685,
+                        48.44731912885
+                    ],
+                    [
+                        2.63791132685,
+                        48.44730578536
+                    ],
+                    [
+                        2.63790730353,
+                        48.44729733448
+                    ],
+                    [
+                        2.63790227439,
+                        48.44729399860
+                    ],
+                    [
+                        2.63788148727,
+                        48.44729333143
+                    ],
+                    [
+                        2.63784628328,
+                        48.44729688969
+                    ],
+                    [
+                        2.63784024831,
+                        48.44729911361
+                    ],
+                    [
+                        2.63783656027,
+                        48.44730378383
+                    ],
+                    [
+                        2.63783689555,
+                        48.44731401384
+                    ],
+                    [
+                        2.63783857193,
+                        48.44731846167
+                    ],
+                    [
+                        2.63784427162,
+                        48.44732424385
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 43 ",
+                "problemId": "429"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63956993751,
+                    48.44751060776
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Cône d'Amour",
+                "problemId": "836"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63770244999,
+                    48.44694217379
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "856"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63806320693,
+                    48.44726619965
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 20 ",
+                "problemId": "456"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63900432669,
+                    48.44665751013
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "630"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63807829436,
+                        48.44651428774
+                    ],
+                    [
+                        2.63811483946,
+                        48.44649783050
+                    ],
+                    [
+                        2.63811986860,
+                        48.44649449458
+                    ],
+                    [
+                        2.63812255081,
+                        48.44649049147
+                    ],
+                    [
+                        2.63811752167,
+                        48.44647737015
+                    ],
+                    [
+                        2.63811081614,
+                        48.44646936393
+                    ],
+                    [
+                        2.63810142841,
+                        48.44646224728
+                    ],
+                    [
+                        2.63809505817,
+                        48.44646002333
+                    ],
+                    [
+                        2.63808030602,
+                        48.44646002333
+                    ],
+                    [
+                        2.63807292994,
+                        48.44646091291
+                    ],
+                    [
+                        2.63806790080,
+                        48.44646424884
+                    ],
+                    [
+                        2.63806421276,
+                        48.44646825195
+                    ],
+                    [
+                        2.63805951890,
+                        48.44647737015
+                    ],
+                    [
+                        2.63805951890,
+                        48.44650739349
+                    ],
+                    [
+                        2.63806220111,
+                        48.44651161900
+                    ],
+                    [
+                        2.63806790080,
+                        48.44651406534
+                    ],
+                    [
+                        2.63807829436,
+                        48.44651428774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 26 ",
+                "problemId": "462"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63885512881,
+                    48.44712920640
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Kudzu",
+                "problemId": "817"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63826973720,
+                    48.44679239180
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 29 ",
+                "problemId": "513"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63940229945,
+                    48.44682808633
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 34 ",
+                "problemId": "420"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63892084293,
+                    48.44713521099
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 24 ",
+                "problemId": "410"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63808550246,
+                    48.44730678634
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "black 3 La Poigne",
+                "problemId": "830"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63762818633,
+                    48.44697797907
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 50 ",
+                "problemId": "436"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63939760558,
+                    48.44687834726
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 4 Le Trou du Simon",
+                "problemId": "488"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63772826575,
+                    48.44693016489
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "white 1 La Lili",
+                "problemId": "787"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63773966564,
+                    48.44665261712
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 4 ",
+                "problemId": "440"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63787746363,
+                    48.44723662177
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "852"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63803554682,
+                    48.44728621479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 9 ",
+                "problemId": "445"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63796128265,
+                    48.44751416601
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Faux K",
+                "problemId": "819"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63832388429,
+                    48.44679528292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 45 ",
+                "problemId": "431"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63973656975,
+                    48.44717724311
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Talon",
+                "problemId": "806"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63811198978,
+                    48.44647125417
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 47 ",
+                "problemId": "483"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63954847984,
+                    48.44675447398
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "858"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63809774037,
+                    48.44712297919
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 10 ",
+                "problemId": "494"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63808969341,
+                    48.44727342760
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Continentale",
+                "problemId": "822"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63814501448,
+                    48.44695084712
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 39 ",
+                "problemId": "523"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63888295673,
+                    48.44678649870
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "632"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63788349859,
+                        48.44690881515
+                    ],
+                    [
+                        2.63785265319,
+                        48.44691014951
+                    ],
+                    [
+                        2.63784728877,
+                        48.44690169856
+                    ],
+                    [
+                        2.63785533540,
+                        48.44689413719
+                    ],
+                    [
+                        2.63789556853,
+                        48.44688390710
+                    ],
+                    [
+                        2.63790830903,
+                        48.44688657582
+                    ],
+                    [
+                        2.63790830903,
+                        48.44689547155
+                    ],
+                    [
+                        2.63790093295,
+                        48.44690347771
+                    ],
+                    [
+                        2.63788349859,
+                        48.44690881515
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "845"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63785298897,
+                    48.44725241125
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 19 ",
+                "problemId": "455"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63882126592,
+                    48.44672400600
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "849"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63792683362,
+                    48.44732557803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Black Earth",
+                "problemId": "831"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63762366010,
+                    48.44699732726
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 32 ",
+                "problemId": "516"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63935368441,
+                    48.44686233493
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 40 ",
+                "problemId": "524"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63892352514,
+                    48.44674580062
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Bossa-Nova",
+                "problemId": "807"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63811483946,
+                    48.44642666403
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 5 ",
+                "problemId": "489"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63797234676,
+                    48.44726486552
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 16 ",
+                "problemId": "500"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63894565386,
+                    48.44711352741
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 30 ",
+                "problemId": "466"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63900533252,
+                    48.44720415255
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 6 ",
+                "problemId": "392"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63791602038,
+                    48.44655120551
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 8 La Dalle du Tondu",
+                "problemId": "394"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63765752307,
+                    48.44677026356
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 20 ",
+                "problemId": "504"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63904154284,
+                    48.44707994615
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 10 L'Oreille Cassée",
+                "problemId": "396"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63783119552,
+                    48.44694751157
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Platinium",
+                "problemId": "829"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63762785105,
+                    48.44695429422
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 12 ",
+                "problemId": "398"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63788182221,
+                    48.44729344285
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  L'Emporte-Pièce (assis)",
+                "problemId": "835"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63777076258,
+                    48.44693394519
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 37 ",
+                "problemId": "521"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63886351071,
+                    48.44689146847
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 11 ",
+                "problemId": "447"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63808902286,
+                    48.44776190856
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "black 1 Les Doigts",
+                "problemId": "786"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63774771227,
+                    48.44667441177
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "843"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63761896607,
+                    48.44728176707
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 35 ",
+                "problemId": "421"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63897549294,
+                    48.44722327825
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "634"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63830326464,
+                        48.44680428998
+                    ],
+                    [
+                        2.63832204010,
+                        48.44679650620
+                    ],
+                    [
+                        2.63834148612,
+                        48.44678249539
+                    ],
+                    [
+                        2.63834249195,
+                        48.44677782512
+                    ],
+                    [
+                        2.63833578642,
+                        48.44676003361
+                    ],
+                    [
+                        2.63832975145,
+                        48.44675113785
+                    ],
+                    [
+                        2.63832136955,
+                        48.44674379885
+                    ],
+                    [
+                        2.63830963489,
+                        48.44673868379
+                    ],
+                    [
+                        2.63830326464,
+                        48.44673690464
+                    ],
+                    [
+                        2.63828851249,
+                        48.44673534788
+                    ],
+                    [
+                        2.63825934347,
+                        48.44673512549
+                    ],
+                    [
+                        2.63824526187,
+                        48.44673757182
+                    ],
+                    [
+                        2.63823922690,
+                        48.44674046294
+                    ],
+                    [
+                        2.63823620941,
+                        48.44674491082
+                    ],
+                    [
+                        2.63823486831,
+                        48.44675491855
+                    ],
+                    [
+                        2.63823922690,
+                        48.44676492628
+                    ],
+                    [
+                        2.63824660297,
+                        48.44677382203
+                    ],
+                    [
+                        2.63827912476,
+                        48.44679939732
+                    ],
+                    [
+                        2.63829052415,
+                        48.44680495716
+                    ],
+                    [
+                        2.63829722967,
+                        48.44680629153
+                    ],
+                    [
+                        2.63830326464,
+                        48.44680428998
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 15 ",
+                "problemId": "499"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63893928362,
+                    48.44711964320
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Bélial",
+                "problemId": "833"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63774989156,
+                    48.44692805183
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 19 ",
+                "problemId": "405"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63878505610,
+                    48.44693483516
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "844"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63786556182,
+                    48.44724551710
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 44 ",
+                "problemId": "430"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63963296943,
+                    48.44757332188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Crevette",
+                "problemId": "810"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63807494160,
+                    48.44670376792
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 1 Le Petit Rétab",
+                "problemId": "387"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63903131642,
+                    48.44676125700
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 38 ",
+                "problemId": "474"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63900315322,
+                    48.44710107376
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 18 ",
+                "problemId": "502"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63900868578,
+                    48.44709351209
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 48 ",
+                "problemId": "484"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63937681846,
+                    48.44685944382
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 34 ",
+                "problemId": "518"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63911195032,
+                    48.44685721989
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Hier Encore",
+                "problemId": "813"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63802800311,
+                    48.44676692771
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 28 ",
+                "problemId": "464"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63886183433,
+                    48.44723884568
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 27 ",
+                "problemId": "463"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63887491010,
+                    48.44713965884
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Pain against Gravity",
+                "problemId": "840"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63790730370,
+                    48.44689647199
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 42 ",
+                "problemId": "428"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63959944181,
+                    48.44761424169
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "635"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63782943564,
+                        48.44694780250
+                    ],
+                    [
+                        2.63781733058,
+                        48.44694976091
+                    ],
+                    [
+                        2.63780758748,
+                        48.44695504859
+                    ],
+                    [
+                        2.63780404454,
+                        48.44695837787
+                    ],
+                    [
+                        2.63780374929,
+                        48.44697032412
+                    ],
+                    [
+                        2.63780699699,
+                        48.44697404508
+                    ],
+                    [
+                        2.63781260665,
+                        48.44697561180
+                    ],
+                    [
+                        2.63783150236,
+                        48.44697482844
+                    ],
+                    [
+                        2.63784360742,
+                        48.44697267420
+                    ],
+                    [
+                        2.63784951233,
+                        48.44697091164
+                    ],
+                    [
+                        2.63785423625,
+                        48.44696797404
+                    ],
+                    [
+                        2.63785571248,
+                        48.44696346972
+                    ],
+                    [
+                        2.63785453150,
+                        48.44695563611
+                    ],
+                    [
+                        2.63784892183,
+                        48.44695054427
+                    ],
+                    [
+                        2.63784419791,
+                        48.44694839003
+                    ],
+                    [
+                        2.63783666915,
+                        48.44694750874
+                    ],
+                    [
+                        2.63782943564,
+                        48.44694780250
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 39 ",
+                "problemId": "425"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63946935467,
+                    48.44753017814
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 43 ",
+                "problemId": "479"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63917357394,
+                    48.44702497858
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Goulotte",
+                "problemId": "792"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63765450550,
+                    48.44668764423
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 17 Le K",
+                "problemId": "453"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63825548796,
+                    48.44678082733
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 38 ",
+                "problemId": "424"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63950690561,
+                    48.44746790874
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "white 2 L'Emporte-Pièce",
+                "problemId": "834"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63777570782,
+                    48.44693172132
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "855"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63812255098,
+                    48.44726619954
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 9 ",
+                "problemId": "493"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63840418242,
+                    48.44738095386
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 14 ",
+                "problemId": "498"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63891447269,
+                    48.44714610821
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Coup de Bambou (assis)",
+                "problemId": "795"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63779548911,
+                    48.44675525203
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 42 ",
+                "problemId": "478"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63914206778,
+                    48.44707007741
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Poinçonneur des Lilas",
+                "problemId": "826"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63821022568,
+                    48.44701244997
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 2 L'Envers du Un",
+                "problemId": "438"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63774041950,
+                    48.44666351478
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 21 ",
+                "problemId": "407"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63819161736,
+                    48.44710029539
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 39 ",
+                "problemId": "475"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63905696504,
+                    48.44706893804
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 41 ",
+                "problemId": "427"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63949550621,
+                    48.44766672575
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  L'Appui-Main",
+                "problemId": "802"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63793077303,
+                    48.44656999754
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 15 La Proue",
+                "problemId": "401"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63812255047,
+                    48.44702067884
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "625"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63799548116,
+                        48.44676648303
+                    ],
+                    [
+                        2.63802465018,
+                        48.44676715022
+                    ],
+                    [
+                        2.63805884834,
+                        48.44676425910
+                    ],
+                    [
+                        2.63806052472,
+                        48.44675981122
+                    ],
+                    [
+                        2.63805549558,
+                        48.44673201197
+                    ],
+                    [
+                        2.63805415448,
+                        48.44672756409
+                    ],
+                    [
+                        2.63804912534,
+                        48.44672422818
+                    ],
+                    [
+                        2.63804309037,
+                        48.44672222663
+                    ],
+                    [
+                        2.63802800294,
+                        48.44672133705
+                    ],
+                    [
+                        2.63800688054,
+                        48.44672467297
+                    ],
+                    [
+                        2.63799447533,
+                        48.44672912085
+                    ],
+                    [
+                        2.63799145784,
+                        48.44673334633
+                    ],
+                    [
+                        2.63799045201,
+                        48.44675692010
+                    ],
+                    [
+                        2.63799179312,
+                        48.44676159037
+                    ],
+                    [
+                        2.63799548116,
+                        48.44676648303
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 23 ",
+                "problemId": "409"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63817116551,
+                    48.44727687468
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  L'Éperon de la Sans les Mains",
+                "problemId": "796"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63780588267,
+                    48.44659368258
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63802632656,
+                        48.44732335428
+                    ],
+                    [
+                        2.63803403791,
+                        48.44732424385
+                    ],
+                    [
+                        2.63805381920,
+                        48.44732935885
+                    ],
+                    [
+                        2.63808064129,
+                        48.44733380668
+                    ],
+                    [
+                        2.63808600571,
+                        48.44733113798
+                    ],
+                    [
+                        2.63808801737,
+                        48.44732669016
+                    ],
+                    [
+                        2.63808600571,
+                        48.44731779450
+                    ],
+                    [
+                        2.63808533516,
+                        48.44729933600
+                    ],
+                    [
+                        2.63807628270,
+                        48.44728710446
+                    ],
+                    [
+                        2.63807058301,
+                        48.44728376859
+                    ],
+                    [
+                        2.63805784252,
+                        48.44727976554
+                    ],
+                    [
+                        2.63805046644,
+                        48.44727954315
+                    ],
+                    [
+                        2.63804309037,
+                        48.44727976554
+                    ],
+                    [
+                        2.63803772595,
+                        48.44728265663
+                    ],
+                    [
+                        2.63802029159,
+                        48.44731445863
+                    ],
+                    [
+                        2.63802096214,
+                        48.44731890645
+                    ],
+                    [
+                        2.63802632656,
+                        48.44732335428
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 23 ",
+                "problemId": "507"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63920582764,
+                    48.44701889970
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "637"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63816177811,
+                        48.44645335147
+                    ],
+                    [
+                        2.63815440204,
+                        48.44645246189
+                    ],
+                    [
+                        2.63814065572,
+                        48.44644801398
+                    ],
+                    [
+                        2.63811551001,
+                        48.44643088954
+                    ],
+                    [
+                        2.63811416890,
+                        48.44642065936
+                    ],
+                    [
+                        2.63812188026,
+                        48.44640709323
+                    ],
+                    [
+                        2.63813428564,
+                        48.44640175563
+                    ],
+                    [
+                        2.63814367320,
+                        48.44640175574
+                    ],
+                    [
+                        2.63815909591,
+                        48.44640587006
+                    ],
+                    [
+                        2.63817016002,
+                        48.44641231953
+                    ],
+                    [
+                        2.63818390634,
+                        48.44643578224
+                    ],
+                    [
+                        2.63818424162,
+                        48.44644045254
+                    ],
+                    [
+                        2.63817921247,
+                        48.44644979315
+                    ],
+                    [
+                        2.63817284223,
+                        48.44645335147
+                    ],
+                    [
+                        2.63816177811,
+                        48.44645335147
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 24 ",
+                "problemId": "508"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63917144749,
+                    48.44706988891
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 30 ",
+                "problemId": "514"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63956725530,
+                    48.44674980371
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "850"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63788199035,
+                    48.44721938606
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 16 La Tenaille",
+                "problemId": "402"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63819664650,
+                    48.44695829763
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 9 L'Envers du J",
+                "problemId": "395"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63779230382,
+                    48.44672689691
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 12 ",
+                "problemId": "448"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63809103452,
+                    48.44772321277
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "black 4 Le Porc Épique",
+                "problemId": "823"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63812456263,
+                    48.44694239619
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 25 ",
+                "problemId": "461"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63887390427,
+                    48.44702112362
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 24 ",
+                "problemId": "460"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63888060979,
+                    48.44692905293
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "848"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63794099895,
+                    48.44732702363
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Pogne",
+                "problemId": "828"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63762701269,
+                    48.44693705886
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 34 ",
+                "problemId": "470"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63949014180,
+                    48.44749815389
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Jérôme",
+                "problemId": "793"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63768082468,
+                    48.44671555470
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 12 ",
+                "problemId": "496"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63882931255,
+                    48.44722839327
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 10 ",
+                "problemId": "446"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63794854216,
+                    48.44757910403
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63808281692,
+                        48.44713748019
+                    ],
+                    [
+                        2.63808892695,
+                        48.44712958780
+                    ],
+                    [
+                        2.63810790021,
+                        48.44711593609
+                    ],
+                    [
+                        2.63812430082,
+                        48.44710249769
+                    ],
+                    [
+                        2.63814648989,
+                        48.44709204559
+                    ],
+                    [
+                        2.63815967469,
+                        48.44709033913
+                    ],
+                    [
+                        2.63816546314,
+                        48.44709225890
+                    ],
+                    [
+                        2.63817028685,
+                        48.44709545852
+                    ],
+                    [
+                        2.63817832637,
+                        48.44710335092
+                    ],
+                    [
+                        2.63818347166,
+                        48.44711657602
+                    ],
+                    [
+                        2.63818122060,
+                        48.44712553495
+                    ],
+                    [
+                        2.63816932211,
+                        48.44713748019
+                    ],
+                    [
+                        2.63815903153,
+                        48.44714494597
+                    ],
+                    [
+                        2.63814713305,
+                        48.44715070528
+                    ],
+                    [
+                        2.63813491298,
+                        48.44715433152
+                    ],
+                    [
+                        2.63812783821,
+                        48.44715497144
+                    ],
+                    [
+                        2.63811304550,
+                        48.44715497144
+                    ],
+                    [
+                        2.63810532756,
+                        48.44715390490
+                    ],
+                    [
+                        2.63809278592,
+                        48.44714985205
+                    ],
+                    [
+                        2.63808892695,
+                        48.44714622582
+                    ],
+                    [
+                        2.63808474640,
+                        48.44714174635
+                    ],
+                    [
+                        2.63808281692,
+                        48.44713748019
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 6 ",
+                "problemId": "442"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63800335981,
+                    48.44732357690
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 1 L'Envers du Un",
+                "problemId": "485"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63774754412,
+                    48.44666293099
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 20 ",
+                "problemId": "406"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63835087351,
+                    48.44708317117
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "627"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63772960719,
+                        48.44675024828
+                    ],
+                    [
+                        2.63774033602,
+                        48.44675647531
+                    ],
+                    [
+                        2.63775307652,
+                        48.44676159037
+                    ],
+                    [
+                        2.63777285781,
+                        48.44676692782
+                    ],
+                    [
+                        2.63777889278,
+                        48.44676870697
+                    ],
+                    [
+                        2.63778593358,
+                        48.44676826219
+                    ],
+                    [
+                        2.63779196855,
+                        48.44676626064
+                    ],
+                    [
+                        2.63779967990,
+                        48.44675869925
+                    ],
+                    [
+                        2.63780085353,
+                        48.44675558562
+                    ],
+                    [
+                        2.63780102100,
+                        48.44675091546
+                    ],
+                    [
+                        2.63780102100,
+                        48.44674624519
+                    ],
+                    [
+                        2.63779967990,
+                        48.44674157491
+                    ],
+                    [
+                        2.63779364493,
+                        48.44673334633
+                    ],
+                    [
+                        2.63779230382,
+                        48.44672689691
+                    ],
+                    [
+                        2.63779062744,
+                        48.44672267142
+                    ],
+                    [
+                        2.63778693940,
+                        48.44671866833
+                    ],
+                    [
+                        2.63778056916,
+                        48.44671688917
+                    ],
+                    [
+                        2.63776615229,
+                        48.44671711157
+                    ],
+                    [
+                        2.63775140014,
+                        48.44672022508
+                    ],
+                    [
+                        2.63773765381,
+                        48.44672467297
+                    ],
+                    [
+                        2.63772826608,
+                        48.44673201197
+                    ],
+                    [
+                        2.63772591915,
+                        48.44674602279
+                    ],
+                    [
+                        2.63772960719,
+                        48.44675024828
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 11 ",
+                "problemId": "397"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63778023355,
+                    48.44697664504
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Coup de Bambou",
+                "problemId": "794"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63780085353,
+                    48.44675558562
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 13 ",
+                "problemId": "449"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63804912500,
+                    48.44754040810
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "639"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63812188026,
+                        48.44694106194
+                    ],
+                    [
+                        2.63813998517,
+                        48.44694929048
+                    ],
+                    [
+                        2.63816580143,
+                        48.44695751903
+                    ],
+                    [
+                        2.63817988303,
+                        48.44695929817
+                    ],
+                    [
+                        2.63819463518,
+                        48.44695929817
+                    ],
+                    [
+                        2.63819907758,
+                        48.44695763022
+                    ],
+                    [
+                        2.63820100567,
+                        48.44695473895
+                    ],
+                    [
+                        2.63820100542,
+                        48.44694395305
+                    ],
+                    [
+                        2.63820636984,
+                        48.44692037937
+                    ],
+                    [
+                        2.63820603456,
+                        48.44691081646
+                    ],
+                    [
+                        2.63820134070,
+                        48.44690703578
+                    ],
+                    [
+                        2.63817921247,
+                        48.44690347749
+                    ],
+                    [
+                        2.63814199682,
+                        48.44690392227
+                    ],
+                    [
+                        2.63813596185,
+                        48.44690614621
+                    ],
+                    [
+                        2.63813160326,
+                        48.44690992689
+                    ],
+                    [
+                        2.63812590357,
+                        48.44691882262
+                    ],
+                    [
+                        2.63812020388,
+                        48.44693283339
+                    ],
+                    [
+                        2.63812188026,
+                        48.44694106194
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 29 ",
+                "problemId": "415"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63802599095,
+                    48.44783507466
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 33 ",
+                "problemId": "419"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63881690734,
+                    48.44717012657
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Nonne",
+                "problemId": "825"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63816060482,
+                    48.44702523756
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Vive la Mariée",
+                "problemId": "805"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63811936585,
+                    48.44648226274
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 32 ",
+                "problemId": "418"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63883937083,
+                    48.44728888382
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 36 ",
+                "problemId": "422"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63902477853,
+                    48.44722995001
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63807594743,
+                        48.44727598488
+                    ],
+                    [
+                        2.63810008748,
+                        48.44727098096
+                    ],
+                    [
+                        2.63813914714,
+                        48.44726286366
+                    ],
+                    [
+                        2.63817787137,
+                        48.44725641441
+                    ],
+                    [
+                        2.63818323579,
+                        48.44725352332
+                    ],
+                    [
+                        2.63817686554,
+                        48.44723550958
+                    ],
+                    [
+                        2.63816378977,
+                        48.44721393757
+                    ],
+                    [
+                        2.63815339621,
+                        48.44720170601
+                    ],
+                    [
+                        2.63814669069,
+                        48.44720014927
+                    ],
+                    [
+                        2.63812590357,
+                        48.44719925970
+                    ],
+                    [
+                        2.63810411062,
+                        48.44719970449
+                    ],
+                    [
+                        2.63808298822,
+                        48.44720170601
+                    ],
+                    [
+                        2.63807527687,
+                        48.44720281797
+                    ],
+                    [
+                        2.63805516031,
+                        48.44720882256
+                    ],
+                    [
+                        2.63804946061,
+                        48.44721126887
+                    ],
+                    [
+                        2.63804510202,
+                        48.44721504953
+                    ],
+                    [
+                        2.63804342564,
+                        48.44721949737
+                    ],
+                    [
+                        2.63804342564,
+                        48.44723439763
+                    ],
+                    [
+                        2.63804476675,
+                        48.44723929025
+                    ],
+                    [
+                        2.63805247810,
+                        48.44725307854
+                    ],
+                    [
+                        2.63806220111,
+                        48.44726619965
+                    ],
+                    [
+                        2.63807091828,
+                        48.44727353857
+                    ],
+                    [
+                        2.63807594743,
+                        48.44727598488
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Rentrée de Classe",
+                "problemId": "832"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63780755905,
+                    48.44695507259
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 23 ",
+                "problemId": "459"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63881422512,
+                    48.44691570934
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 46 ",
+                "problemId": "482"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63942710988,
+                    48.44680784850
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Croix de Fer",
+                "problemId": "789"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63774385659,
+                    48.44669476084
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 22 ",
+                "problemId": "408"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63822514496,
+                    48.44723150675
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 3 Le Surplomb Nord-Ouest",
+                "problemId": "439"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63766624017,
+                    48.44670921646
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 2 La Goulotte sans la Goulotte",
+                "problemId": "486"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63765333203,
+                    48.44669442726
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "854"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63805767504,
+                    48.44727987663
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 6 ",
+                "problemId": "490"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63797938757,
+                    48.44737183582
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Langouste Royale",
+                "problemId": "812"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63810696064,
+                    48.44667318860
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 27 ",
+                "problemId": "413"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63775475257,
+                    48.44746657440
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "629"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63819396462,
+                        48.44689502654
+                    ],
+                    [
+                        2.63816110756,
+                        48.44688635320
+                    ],
+                    [
+                        2.63814937290,
+                        48.44688123815
+                    ],
+                    [
+                        2.63814769652,
+                        48.44687679028
+                    ],
+                    [
+                        2.63814836707,
+                        48.44686767215
+                    ],
+                    [
+                        2.63815339621,
+                        48.44685922120
+                    ],
+                    [
+                        2.63816714253,
+                        48.44685744205
+                    ],
+                    [
+                        2.63817384806,
+                        48.44685833163
+                    ],
+                    [
+                        2.63817954775,
+                        48.44686055556
+                    ],
+                    [
+                        2.63818457689,
+                        48.44686455865
+                    ],
+                    [
+                        2.63819932904,
+                        48.44688079337
+                    ],
+                    [
+                        2.63820033487,
+                        48.44688546363
+                    ],
+                    [
+                        2.63819865849,
+                        48.44689013389
+                    ],
+                    [
+                        2.63819698211,
+                        48.44689458175
+                    ],
+                    [
+                        2.63819396462,
+                        48.44689502654
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 18 ",
+                "problemId": "404"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63877181202,
+                    48.44679239258
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Cuisse de Jupiter",
+                "problemId": "824"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63815205536,
+                    48.44688246115
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 36 ",
+                "problemId": "472"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63956725530,
+                    48.44756042324
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63756532189,
+                        48.44732446624
+                    ],
+                    [
+                        2.63765852865,
+                        48.44732424385
+                    ],
+                    [
+                        2.63767998632,
+                        48.44732046320
+                    ],
+                    [
+                        2.63768468019,
+                        48.44731712732
+                    ],
+                    [
+                        2.63768300381,
+                        48.44731267949
+                    ],
+                    [
+                        2.63766657528,
+                        48.44729622252
+                    ],
+                    [
+                        2.63765148785,
+                        48.44728599251
+                    ],
+                    [
+                        2.63764478233,
+                        48.44728376859
+                    ],
+                    [
+                        2.63763036545,
+                        48.44728198946
+                    ],
+                    [
+                        2.63759180870,
+                        48.44728176707
+                    ],
+                    [
+                        2.63756968047,
+                        48.44728532533
+                    ],
+                    [
+                        2.63756364550,
+                        48.44728821642
+                    ],
+                    [
+                        2.63755962219,
+                        48.44729266425
+                    ],
+                    [
+                        2.63755593415,
+                        48.44730244948
+                    ],
+                    [
+                        2.63755559888,
+                        48.44731757211
+                    ],
+                    [
+                        2.63755794581,
+                        48.44732224233
+                    ],
+                    [
+                        2.63756532189,
+                        48.44732446624
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 15 ",
+                "problemId": "451"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63816093959,
+                    48.44725919454
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  La Fissure de la Sans les Mains",
+                "problemId": "800"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63784360124,
+                    48.44657066472
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 37 ",
+                "problemId": "473"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63895034723,
+                    48.44710852391
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 26 ",
+                "problemId": "412"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63768400930,
+                    48.44731490362
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 48 ",
+                "problemId": "434"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63948980652,
+                    48.44708072485
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 17 La Deux Temps",
+                "problemId": "403"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63800134849,
+                    48.44676648303
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  K Trois",
+                "problemId": "821"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63833176328,
+                    48.44675369527
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 14 ",
+                "problemId": "400"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63801224463,
+                    48.44731034460
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 45 ",
+                "problemId": "481"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63943180374,
+                    48.44686455887
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Stéphanie",
+                "problemId": "797"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63787176427,
+                    48.44660913911
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 16 ",
+                "problemId": "452"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63826236062,
+                    48.44715878456
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "851"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63777285781,
+                    48.44735604582
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  À Deux Mains",
+                "problemId": "801"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63787436291,
+                    48.44655943373
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 32 ",
+                "problemId": "468"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63941839270,
+                    48.44750882864
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 13 ",
+                "problemId": "497"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63886619292,
+                    48.44726397595
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Pied de Biche",
+                "problemId": "804"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63811836002,
+                    48.44649527285
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 21 ",
+                "problemId": "457"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63895068251,
+                    48.44673245698
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "631"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63766104339,
+                        48.44677548987
+                    ],
+                    [
+                        2.63767227514,
+                        48.44678205049
+                    ],
+                    [
+                        2.63767898066,
+                        48.44678382964
+                    ],
+                    [
+                        2.63768669201,
+                        48.44678483042
+                    ],
+                    [
+                        2.63769390045,
+                        48.44678505281
+                    ],
+                    [
+                        2.63769708557,
+                        48.44678460802
+                    ],
+                    [
+                        2.63770379109,
+                        48.44678227289
+                    ],
+                    [
+                        2.63770697622,
+                        48.44678060493
+                    ],
+                    [
+                        2.63770932315,
+                        48.44677893698
+                    ],
+                    [
+                        2.63771284355,
+                        48.44677482269
+                    ],
+                    [
+                        2.63771468757,
+                        48.44676770609
+                    ],
+                    [
+                        2.63771351410,
+                        48.44676303582
+                    ],
+                    [
+                        2.63770999370,
+                        48.44675836555
+                    ],
+                    [
+                        2.63770345582,
+                        48.44675258330
+                    ],
+                    [
+                        2.63769842668,
+                        48.44674958098
+                    ],
+                    [
+                        2.63769222407,
+                        48.44674724585
+                    ],
+                    [
+                        2.63768820075,
+                        48.44674657867
+                    ],
+                    [
+                        2.63768115995,
+                        48.44674657867
+                    ],
+                    [
+                        2.63767076639,
+                        48.44674746824
+                    ],
+                    [
+                        2.63766137866,
+                        48.44675169373
+                    ],
+                    [
+                        2.63765668480,
+                        48.44676092308
+                    ],
+                    [
+                        2.63765735535,
+                        48.44677193157
+                    ],
+                    [
+                        2.63766104339,
+                        48.44677548987
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 33 ",
+                "problemId": "469"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63951294057,
+                    48.44748169698
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Pine d'Huître",
+                "problemId": "808"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63813814132,
+                    48.44644645711
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 49 ",
+                "problemId": "435"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63949382983,
+                    48.44684165234
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 19 ",
+                "problemId": "503"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63901907934,
+                    48.44708706271
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Ventru",
+                "problemId": "788"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63774771227,
+                    48.44668719944
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 2 ",
+                "problemId": "388"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63895906441,
+                    48.44667241056
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 31 ",
+                "problemId": "515"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63952568107,
+                    48.44675914426
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 35 ",
+                "problemId": "519"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63892419569,
+                    48.44686522605
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 31 ",
+                "problemId": "417"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63836026125,
+                    48.44744366814
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 22 ",
+                "problemId": "458"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63892151348,
+                    48.44678783307
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Spécial K",
+                "problemId": "815"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63824844716,
+                    48.44677526748
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 8 ",
+                "problemId": "492"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63792473756,
+                    48.44741764840
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "624"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63810981048,
+                        48.44698843154
+                    ],
+                    [
+                        2.63811014576,
+                        48.44699354658
+                    ],
+                    [
+                        2.63811919821,
+                        48.44701556347
+                    ],
+                    [
+                        2.63812439499,
+                        48.44702445918
+                    ],
+                    [
+                        2.63812892122,
+                        48.44702812866
+                    ],
+                    [
+                        2.63813596202,
+                        48.44702901823
+                    ],
+                    [
+                        2.63814736141,
+                        48.44702779507
+                    ],
+                    [
+                        2.63816948963,
+                        48.44702356961
+                    ],
+                    [
+                        2.63819295896,
+                        48.44702001133
+                    ],
+                    [
+                        2.63820352016,
+                        48.44701756501
+                    ],
+                    [
+                        2.63820938749,
+                        48.44701511868
+                    ],
+                    [
+                        2.63821022568,
+                        48.44701033724
+                    ],
+                    [
+                        2.63820989041,
+                        48.44700822451
+                    ],
+                    [
+                        2.63820787875,
+                        48.44700366545
+                    ],
+                    [
+                        2.63820268197,
+                        48.44699666008
+                    ],
+                    [
+                        2.63819580881,
+                        48.44699032188
+                    ],
+                    [
+                        2.63819061203,
+                        48.44698698599
+                    ],
+                    [
+                        2.63818424178,
+                        48.44698309411
+                    ],
+                    [
+                        2.63817703335,
+                        48.44698042540
+                    ],
+                    [
+                        2.63816563396,
+                        48.44697909104
+                    ],
+                    [
+                        2.63812204806,
+                        48.44697931343
+                    ],
+                    [
+                        2.63811483962,
+                        48.44698042540
+                    ],
+                    [
+                        2.63810897229,
+                        48.44698287172
+                    ],
+                    [
+                        2.63810746355,
+                        48.44698498445
+                    ],
+                    [
+                        2.63810981048,
+                        48.44698843154
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 25 ",
+                "problemId": "411"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63800879822,
+                    48.44738012847
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Aérosol",
+                "problemId": "837"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63769607974,
+                    48.44694929037
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "842"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63764511760,
+                    48.44728399098
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 21 ",
+                "problemId": "505"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63904321922,
+                    48.44704358495
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "636"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63765886392,
+                        48.44670576947
+                    ],
+                    [
+                        2.63768836822,
+                        48.44671889072
+                    ],
+                    [
+                        2.63770177927,
+                        48.44671800114
+                    ],
+                    [
+                        2.63771485504,
+                        48.44671533241
+                    ],
+                    [
+                        2.63772692498,
+                        48.44670932777
+                    ],
+                    [
+                        2.63774100658,
+                        48.44669887525
+                    ],
+                    [
+                        2.63774737682,
+                        48.44669064666
+                    ],
+                    [
+                        2.63774871793,
+                        48.44666774005
+                    ],
+                    [
+                        2.63774570044,
+                        48.44665550836
+                    ],
+                    [
+                        2.63773966547,
+                        48.44665261723
+                    ],
+                    [
+                        2.63772625443,
+                        48.44664928132
+                    ],
+                    [
+                        2.63771963272,
+                        48.44664833614
+                    ],
+                    [
+                        2.63771250810,
+                        48.44664750216
+                    ],
+                    [
+                        2.63769708540,
+                        48.44664883653
+                    ],
+                    [
+                        2.63767998632,
+                        48.44665195005
+                    ],
+                    [
+                        2.63767462190,
+                        48.44665484118
+                    ],
+                    [
+                        2.63766925748,
+                        48.44665817709
+                    ],
+                    [
+                        2.63766691055,
+                        48.44666262498
+                    ],
+                    [
+                        2.63765282895,
+                        48.44669131384
+                    ],
+                    [
+                        2.63765349951,
+                        48.44670043201
+                    ],
+                    [
+                        2.63765886392,
+                        48.44670576947
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 36 ",
+                "problemId": "520"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63882361286,
+                    48.44698643034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 7 ",
+                "problemId": "443"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63796128266,
+                    48.44732669038
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 5 ",
+                "problemId": "391"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63890416295,
+                    48.44648865693
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Plats Toniques",
+                "problemId": "820"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63834165392,
+                    48.44678071613
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 31 ",
+                "problemId": "467"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63937950068,
+                    48.44739763320
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "633"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63776984032,
+                        48.44692794074
+                    ],
+                    [
+                        2.63773899492,
+                        48.44692816314
+                    ],
+                    [
+                        2.63771217283,
+                        48.44693327818
+                    ],
+                    [
+                        2.63769943234,
+                        48.44694484262
+                    ],
+                    [
+                        2.63769607957,
+                        48.44694884570
+                    ],
+                    [
+                        2.63769205626,
+                        48.44695774142
+                    ],
+                    [
+                        2.63769037988,
+                        48.44696685953
+                    ],
+                    [
+                        2.63769239154,
+                        48.44697108500
+                    ],
+                    [
+                        2.63769607957,
+                        48.44697508808
+                    ],
+                    [
+                        2.63770144399,
+                        48.44697886876
+                    ],
+                    [
+                        2.63773430105,
+                        48.44699777215
+                    ],
+                    [
+                        2.63774000075,
+                        48.44700044087
+                    ],
+                    [
+                        2.63774704155,
+                        48.44700177523
+                    ],
+                    [
+                        2.63775374707,
+                        48.44700133044
+                    ],
+                    [
+                        2.63775844093,
+                        48.44699777215
+                    ],
+                    [
+                        2.63778023355,
+                        48.44697664504
+                    ],
+                    [
+                        2.63778459247,
+                        48.44697308654
+                    ],
+                    [
+                        2.63778660413,
+                        48.44696307885
+                    ],
+                    [
+                        2.63778492775,
+                        48.44694929048
+                    ],
+                    [
+                        2.63777889278,
+                        48.44693572450
+                    ],
+                    [
+                        2.63777554002,
+                        48.44693172143
+                    ],
+                    [
+                        2.63776984032,
+                        48.44692794074
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 4 ",
+                "problemId": "390"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63890441440,
+                    48.44658256318
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Samba",
+                "problemId": "809"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63813344745,
+                    48.44640220042
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 26 ",
+                "problemId": "510"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63924572550,
+                    48.44706004235
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "841"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63765785810,
+                    48.44728977316
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 29 ",
+                "problemId": "465"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63894833557,
+                    48.44719481208
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Rez de Chaussée",
+                "problemId": "814"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63805448992,
+                    48.44676470377
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 25 ",
+                "problemId": "509"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63916996919,
+                    48.44708340424
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63793063310,
+                        48.44732740485
+                    ],
+                    [
+                        2.63798801593,
+                        48.44732574351
+                    ],
+                    [
+                        2.63800546869,
+                        48.44732342820
+                    ],
+                    [
+                        2.63800983188,
+                        48.44732091995
+                    ],
+                    [
+                        2.63801244979,
+                        48.44731744698
+                    ],
+                    [
+                        2.63801070452,
+                        48.44728985616
+                    ],
+                    [
+                        2.63800546869,
+                        48.44727808664
+                    ],
+                    [
+                        2.63800372341,
+                        48.44727056187
+                    ],
+                    [
+                        2.63800023286,
+                        48.44726689595
+                    ],
+                    [
+                        2.63798859769,
+                        48.44726361592
+                    ],
+                    [
+                        2.63795805535,
+                        48.44726651007
+                    ],
+                    [
+                        2.63792452463,
+                        48.44727395969
+                    ],
+                    [
+                        2.63791928880,
+                        48.44727646795
+                    ],
+                    [
+                        2.63791608913,
+                        48.44727994092
+                    ],
+                    [
+                        2.63791318033,
+                        48.44728379978
+                    ],
+                    [
+                        2.63791201682,
+                        48.44728785158
+                    ],
+                    [
+                        2.63791696177,
+                        48.44731196943
+                    ],
+                    [
+                        2.63792045232,
+                        48.44732045891
+                    ],
+                    [
+                        2.63792365199,
+                        48.44732373894
+                    ],
+                    [
+                        2.63793063310,
+                        48.44732740485
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 40 ",
+                "problemId": "476"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63910567597,
+                    48.44704346457
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 7 ",
+                "problemId": "491"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63791333817,
+                    48.44740163624
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 18 ",
+                "problemId": "454"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63882059537,
+                    48.44680673653
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "846"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63783002255,
+                    48.44725997257
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 13 ",
+                "problemId": "399"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63794150137,
+                    48.44727020292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63779867373,
+                        48.44738962712
+                    ],
+                    [
+                        2.63781141423,
+                        48.44739274059
+                    ],
+                    [
+                        2.63784091853,
+                        48.44739274059
+                    ],
+                    [
+                        2.63785298847,
+                        48.44738873755
+                    ],
+                    [
+                        2.63785231791,
+                        48.44737050147
+                    ],
+                    [
+                        2.63784628294,
+                        48.44736160582
+                    ],
+                    [
+                        2.63782549582,
+                        48.44735004147
+                    ],
+                    [
+                        2.63781677864,
+                        48.44734537126
+                    ],
+                    [
+                        2.63779297404,
+                        48.44734603843
+                    ],
+                    [
+                        2.63778023355,
+                        48.44734959669
+                    ],
+                    [
+                        2.63777252220,
+                        48.44735671321
+                    ],
+                    [
+                        2.63777989827,
+                        48.44737450451
+                    ],
+                    [
+                        2.63779867373,
+                        48.44738962712
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Cascade",
+                "problemId": "791"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63766607253,
+                    48.44666362564
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 28 ",
+                "problemId": "512"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63944487952,
+                    48.44687612333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "626"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63755056974,
+                        48.44693483493
+                    ],
+                    [
+                        2.63755090501,
+                        48.44694017237
+                    ],
+                    [
+                        2.63754889335,
+                        48.44695729663
+                    ],
+                    [
+                        2.63755056974,
+                        48.44696752671
+                    ],
+                    [
+                        2.63755727526,
+                        48.44698731969
+                    ],
+                    [
+                        2.63756263968,
+                        48.44699577062
+                    ],
+                    [
+                        2.63756733354,
+                        48.44699999608
+                    ],
+                    [
+                        2.63757202741,
+                        48.44700333198
+                    ],
+                    [
+                        2.63757806238,
+                        48.44700555590
+                    ],
+                    [
+                        2.63759281453,
+                        48.44700622308
+                    ],
+                    [
+                        2.63760589030,
+                        48.44700333198
+                    ],
+                    [
+                        2.63762466576,
+                        48.44699710498
+                    ],
+                    [
+                        2.63762701269,
+                        48.44699287951
+                    ],
+                    [
+                        2.63762801852,
+                        48.44698331662
+                    ],
+                    [
+                        2.63762768324,
+                        48.44694550980
+                    ],
+                    [
+                        2.63762634214,
+                        48.44693594690
+                    ],
+                    [
+                        2.63762365993,
+                        48.44693172143
+                    ],
+                    [
+                        2.63761728968,
+                        48.44692860792
+                    ],
+                    [
+                        2.63760387864,
+                        48.44692549442
+                    ],
+                    [
+                        2.63757437434,
+                        48.44692571681
+                    ],
+                    [
+                        2.63755358722,
+                        48.44692949749
+                    ],
+                    [
+                        2.63755056974,
+                        48.44693483493
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 17 ",
+                "problemId": "501"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63897633163,
+                    48.44711363860
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Bombé de la Sans les Mains",
+                "problemId": "799"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63782834617,
+                    48.44657678058
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 41 ",
+                "problemId": "525"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63883199475,
+                    48.44677115352
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "638"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63780135628,
+                        48.44658945719
+                    ],
+                    [
+                        2.63780537959,
+                        48.44659346029
+                    ],
+                    [
+                        2.63781677898,
+                        48.44659968734
+                    ],
+                    [
+                        2.63784494217,
+                        48.44660524721
+                    ],
+                    [
+                        2.63786338236,
+                        48.44660813834
+                    ],
+                    [
+                        2.63789422793,
+                        48.44661158534
+                    ],
+                    [
+                        2.63790763881,
+                        48.44660702636
+                    ],
+                    [
+                        2.63791400906,
+                        48.44660435763
+                    ],
+                    [
+                        2.63792138513,
+                        48.44659612903
+                    ],
+                    [
+                        2.63793211397,
+                        48.44656744011
+                    ],
+                    [
+                        2.63793278452,
+                        48.44656276982
+                    ],
+                    [
+                        2.63793144342,
+                        48.44655854432
+                    ],
+                    [
+                        2.63792004403,
+                        48.44655253966
+                    ],
+                    [
+                        2.63791367378,
+                        48.44655076050
+                    ],
+                    [
+                        2.63790663298,
+                        48.44655031571
+                    ],
+                    [
+                        2.63789322194,
+                        48.44655253966
+                    ],
+                    [
+                        2.63783186641,
+                        48.44657500153
+                    ],
+                    [
+                        2.63780705597,
+                        48.44658545408
+                    ],
+                    [
+                        2.63780135628,
+                        48.44658945719
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 22 ",
+                "problemId": "506"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63913269265,
+                    48.44702088451
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 11 ",
+                "problemId": "495"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63829186492,
+                    48.44714855453
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Houx Ouille",
+                "problemId": "816"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63823704777,
+                    48.44674313156
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 7 La Voie de l'Arbre",
+                "problemId": "393"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63769524155,
+                    48.44664961479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "problemId": "853"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63804392872,
+                    48.44727976543
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 44 ",
+                "problemId": "480"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63939157061,
+                    48.44692149156
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Pilier Jaune",
+                "problemId": "798"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63781242056,
+                    48.44658323003
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 5 ",
+                "problemId": "441"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63799246333,
+                    48.44726442074
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 41 ",
+                "problemId": "477"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63915507984,
+                    48.44710144543
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Mine de Rien",
+                "problemId": "818"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63828968612,
+                    48.44680440107
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 46 ",
+                "problemId": "432"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63981066578,
+                    48.44716723547
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 1 La Sans les Mains",
+                "problemId": "437"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63783890687,
+                    48.44660413546
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 30 La Fissure des Enfants",
+                "problemId": "416"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63811215691,
+                    48.44777947732
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 37 ",
+                "problemId": "423"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63942442767,
+                    48.44740652885
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 8 ",
+                "problemId": "444"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63794418357,
+                    48.44737228060
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  Le Garde-Manger",
+                "problemId": "803"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63810746355,
+                    48.44650116632
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 3 ",
+                "problemId": "389"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63894598864,
+                    48.44661636716
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "boulderId": "628"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        2.63806588881,
+                        48.44670510251
+                    ],
+                    [
+                        2.63809539311,
+                        48.44670109941
+                    ],
+                    [
+                        2.63812221520,
+                        48.44669442758
+                    ],
+                    [
+                        2.63812221520,
+                        48.44668553182
+                    ],
+                    [
+                        2.63811349802,
+                        48.44667752562
+                    ],
+                    [
+                        2.63810343973,
+                        48.44667085379
+                    ],
+                    [
+                        2.63805985384,
+                        48.44666373718
+                    ],
+                    [
+                        2.63802967899,
+                        48.44666195802
+                    ],
+                    [
+                        2.63801492684,
+                        48.44666507154
+                    ],
+                    [
+                        2.63800688021,
+                        48.44667307774
+                    ],
+                    [
+                        2.63801157407,
+                        48.44668197351
+                    ],
+                    [
+                        2.63803236119,
+                        48.44669531716
+                    ],
+                    [
+                        2.63806588881,
+                        48.44670510251
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 42 ",
+                "problemId": "526"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63880953126,
+                    48.44670843842
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "  L'Épée",
+                "problemId": "827"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63761427220,
+                    48.44692749596
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 14 La Fissure Morin",
+                "problemId": "450"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63817954741,
+                    48.44754174245
+                ]
+            }
+        }
+    ]
+}

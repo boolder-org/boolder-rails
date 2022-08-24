@@ -1,0 +1,2827 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526144599544374,
+          48.38318443395978
+        ]
+      },
+      "properties": {
+        "name": "Orange 1 ",
+        "topoId": 2842,
+        "horizontalAccuracy": 3.5,
+        "heading": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526144599544374,
+            48.38318443395978
+          ],
+          [
+            2.526146715911941,
+            48.38320227704637
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5261617030998407,
+          48.38324885922891
+        ]
+      },
+      "properties": {
+        "name": "Orange 2 ",
+        "topoId": 2843,
+        "horizontalAccuracy": 4.7,
+        "heading": 20.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5261617030998407,
+            48.38324885922891
+          ],
+          [
+            2.5261710953812306,
+            48.383265635402694
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526193725359498,
+          48.383206645157294
+        ]
+      },
+      "properties": {
+        "name": "Orange 3 ",
+        "topoId": 2844,
+        "horizontalAccuracy": 4.7,
+        "heading": 205.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526193725359498,
+            48.383206645157294
+          ],
+          [
+            2.526182240450062,
+            48.383190453484595
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526164677413649,
+          48.38309941058724
+        ]
+      },
+      "properties": {
+        "name": "Orange 4 ",
+        "topoId": 2845,
+        "horizontalAccuracy": 4.7,
+        "heading": 263.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526164677413649,
+            48.38309941058724
+          ],
+          [
+            2.5261379164948585,
+            48.383097297124415
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526954638169624,
+          48.38324670272824
+        ]
+      },
+      "properties": {
+        "name": "Orange 5 ",
+        "topoId": 2846,
+        "horizontalAccuracy": 4.7,
+        "heading": 274.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526954638169624,
+            48.38324670272824
+          ],
+          [
+            2.5269277780955663,
+            48.38324815927166
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526876172053187,
+          48.38319348641549
+        ]
+      },
+      "properties": {
+        "name": "Orange 6  | Yellow 41 ",
+        "topoId": 2847,
+        "horizontalAccuracy": 4.6,
+        "heading": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526876172053187,
+            48.38319348641549
+          ],
+          [
+            2.5268802572175444,
+            48.38321117794241
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526876172053187,
+          48.38319348641549
+        ]
+      },
+      "properties": {
+        "name": "Orange 6  | Yellow 41 ",
+        "topoId": 2847,
+        "horizontalAccuracy": 4.6,
+        "heading": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526876172053187,
+            48.38319348641549
+          ],
+          [
+            2.5268802572175444,
+            48.38321117794241
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526783635842173,
+          48.383189253554384
+        ]
+      },
+      "properties": {
+        "name": "Orange 7 ",
+        "topoId": 2848,
+        "horizontalAccuracy": 4.2,
+        "heading": 176.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526783635842173,
+            48.383189253554384
+          ],
+          [
+            2.526785281289331,
+            48.38317138858029
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5267550891939576,
+          48.38301155956392
+        ]
+      },
+      "properties": {
+        "name": "Orange 8 La Casquette",
+        "topoId": 2849,
+        "horizontalAccuracy": 4.6,
+        "heading": 143.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5267550891939576,
+            48.38301155956392
+          ],
+          [
+            2.526771021589471,
+            48.38299712397305
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526819613909924,
+          48.38297964635772
+        ]
+      },
+      "properties": {
+        "name": "Yellow 39 ",
+        "topoId": 2850,
+        "horizontalAccuracy": 4.7,
+        "heading": 228.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526819613909924,
+            48.38297964635772
+          ],
+          [
+            2.5267994817517776,
+            48.38296774772576
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526657238580209,
+          48.382974959755416
+        ]
+      },
+      "properties": {
+        "name": "Orange 9 ",
+        "topoId": 2851,
+        "horizontalAccuracy": 4.7,
+        "heading": 147.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526657238580209,
+            48.382974959755416
+          ],
+          [
+            2.5266717369587455,
+            48.38295987217378
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5266480460689142,
+          48.38307054251891
+        ]
+      },
+      "properties": {
+        "name": "Yellow 40 La Pyramide",
+        "topoId": 2852,
+        "horizontalAccuracy": 4.7,
+        "heading": 69.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5266480460689142,
+            48.38307054251891
+          ],
+          [
+            2.5266733467136056,
+            48.383076706959436
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5269687920832324,
+          48.38295401544159
+        ]
+      },
+      "properties": {
+        "name": "Yellow 37 La Réflexion",
+        "topoId": 2853,
+        "horizontalAccuracy": 3.5,
+        "heading": 293.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5269687920832324,
+            48.38295401544159
+          ],
+          [
+            2.5269441217155104,
+            48.382961219120595
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527000640234857,
+          48.3830394384498
+        ]
+      },
+      "properties": {
+        "name": "Yellow 38 ",
+        "topoId": 2854,
+        "horizontalAccuracy": 4.7,
+        "heading": 299.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527000640234857,
+            48.3830394384498
+          ],
+          [
+            2.5269772744660037,
+            48.38304835669586
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526919171216457,
+          48.382849367380494
+        ]
+      },
+      "properties": {
+        "name": "Orange 10 ",
+        "topoId": 2855,
+        "horizontalAccuracy": 4.9,
+        "heading": 63.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526919171216457,
+            48.382849367380494
+          ],
+          [
+            2.5269432973734616,
+            48.38285734276435
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526993939937436,
+          48.38283280391855
+        ]
+      },
+      "properties": {
+        "name": "Yellow 36 ",
+        "topoId": 2856,
+        "horizontalAccuracy": 4.7,
+        "heading": 333.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526993939937436,
+            48.38283280391855
+          ],
+          [
+            2.5269817069554574,
+            48.38284875220139
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527016791043383,
+          48.38272770139603
+        ]
+      },
+      "properties": {
+        "name": "Orange 11 ",
+        "topoId": 2857,
+        "horizontalAccuracy": 4.7,
+        "heading": 214.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527016791043383,
+            48.38272770139603
+          ],
+          [
+            2.5270016056009967,
+            48.38271291487218
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5269037442219258,
+          48.382749516642015
+        ]
+      },
+      "properties": {
+        "name": "Orange 12 ",
+        "topoId": 2858,
+        "horizontalAccuracy": 4.7,
+        "heading": 341.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5269037442219258,
+            48.382749516642015
+          ],
+          [
+            2.5268952085665526,
+            48.38276649367617
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.526822385282887,
+          48.38264495396572
+        ]
+      },
+      "properties": {
+        "name": "Yellow 18 ",
+        "topoId": 2859,
+        "horizontalAccuracy": 4.7,
+        "heading": 321.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.526822385282887,
+            48.38264495396572
+          ],
+          [
+            2.5268057436915203,
+            48.382659032289475
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5268566616927712,
+          48.38267136184647
+        ]
+      },
+      "properties": {
+        "name": "Yellow 19 ",
+        "topoId": 2860,
+        "horizontalAccuracy": 4.7,
+        "heading": 9.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5268566616927712,
+            48.38267136184647
+          ],
+          [
+            2.52686122985707,
+            48.38268900137455
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5269705522828985,
+          48.382699205585176
+        ]
+      },
+      "properties": {
+        "name": "Orange 13 ",
+        "topoId": 2861,
+        "horizontalAccuracy": 4.0,
+        "heading": 238.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5269705522828985,
+            48.382699205585176
+          ],
+          [
+            2.5269475075185195,
+            48.38268992616298
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5268871523463416,
+          48.38260641791736
+        ]
+      },
+      "properties": {
+        "name": "Yellow 21 ",
+        "topoId": 2862,
+        "horizontalAccuracy": 4.6,
+        "heading": 85.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5268871523463416,
+            48.38260641791736
+          ],
+          [
+            2.5269139979488324,
+            48.382607987757154
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5269216857874084,
+          48.38262883950805
+        ]
+      },
+      "properties": {
+        "name": "Orange 14  | Yellow 20 Le Dièdre Caché",
+        "topoId": 2863,
+        "horizontalAccuracy": 3.5,
+        "heading": 130.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5269216857874084,
+            48.38262883950805
+          ],
+          [
+            2.526942084160889,
+            48.3826171424999
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5269216857874084,
+          48.38262883950805
+        ]
+      },
+      "properties": {
+        "name": "Orange 14  | Yellow 20 Le Dièdre Caché",
+        "topoId": 2863,
+        "horizontalAccuracy": 3.5,
+        "heading": 130.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5269216857874084,
+            48.38262883950805
+          ],
+          [
+            2.526942084160889,
+            48.3826171424999
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527088220605473,
+          48.38267278104709
+        ]
+      },
+      "properties": {
+        "name": "Orange 17  | Yellow 23 La GB",
+        "topoId": 2864,
+        "horizontalAccuracy": 4.6,
+        "heading": 243.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527088220605473,
+            48.38267278104709
+          ],
+          [
+            2.5270640762219814,
+            48.38266483000131
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527088220605473,
+          48.38267278104709
+        ]
+      },
+      "properties": {
+        "name": "Orange 17  | Yellow 23 La GB",
+        "topoId": 2864,
+        "horizontalAccuracy": 4.6,
+        "heading": 243.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527088220605473,
+            48.38267278104709
+          ],
+          [
+            2.5270640762219814,
+            48.38266483000131
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527092925837424,
+          48.38268667117535
+        ]
+      },
+      "properties": {
+        "name": "Yellow 22 La JCB",
+        "topoId": 2865,
+        "horizontalAccuracy": 4.7,
+        "heading": 100.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527092925837424,
+            48.38268667117535
+          ],
+          [
+            2.52711946389539,
+            48.38268355568615
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5272231848270965,
+          48.382625549288015
+        ]
+      },
+      "properties": {
+        "name": "Snoopy",
+        "topoId": 2866,
+        "horizontalAccuracy": 4.7,
+        "heading": 305.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5272231848270965,
+            48.382625549288015
+          ],
+          [
+            2.5272013352909917,
+            48.38263602673038
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5270336329153116,
+          48.382586792158094
+        ]
+      },
+      "properties": {
+        "name": "Orange 15  | Le Grand Vide",
+        "topoId": 2867,
+        "horizontalAccuracy": 4.7,
+        "heading": 189.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5270336329153116,
+            48.382586792158094
+          ],
+          [
+            2.5270290897572854,
+            48.38256914974611
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5270336329153116,
+          48.382586792158094
+        ]
+      },
+      "properties": {
+        "name": "Orange 15  | Le Grand Vide",
+        "topoId": 2867,
+        "horizontalAccuracy": 4.7,
+        "heading": 189.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5270336329153116,
+            48.382586792158094
+          ],
+          [
+            2.5270290897572854,
+            48.38256914974611
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527080521763202,
+          48.382578472841296
+        ]
+      },
+      "properties": {
+        "name": "Yellow 24 La Vallot",
+        "topoId": 2868,
+        "horizontalAccuracy": 4.7,
+        "heading": 186.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527080521763202,
+            48.382578472841296
+          ],
+          [
+            2.527077442682638,
+            48.38256069146672
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5271607381950907,
+          48.38260544444409
+        ]
+      },
+      "properties": {
+        "name": "Orange 16 ",
+        "topoId": 2869,
+        "horizontalAccuracy": 4.7,
+        "heading": 154.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5271607381950907,
+            48.38260544444409
+          ],
+          [
+            2.5271723872181506,
+            48.38258930437649
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5271989988468504,
+          48.382539005213985
+        ]
+      },
+      "properties": {
+        "name": "Yellow 25 L'Adhérence",
+        "topoId": 2870,
+        "horizontalAccuracy": 4.7,
+        "heading": 263.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5271989988468504,
+            48.382539005213985
+          ],
+          [
+            2.5271722083097323,
+            48.3825370642885
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527289066755341,
+          48.382480454075925
+        ]
+      },
+      "properties": {
+        "name": "Yellow 16 ",
+        "topoId": 2872,
+        "horizontalAccuracy": 4.7,
+        "heading": 248.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527289066755341,
+            48.382480454075925
+          ],
+          [
+            2.527264064257298,
+            48.38247377449998
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527471991245909,
+          48.38251187363445
+        ]
+      },
+      "properties": {
+        "name": "Orange 21 ",
+        "topoId": 2873,
+        "horizontalAccuracy": 4.7,
+        "heading": 98.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527471991245909,
+            48.38251187363445
+          ],
+          [
+            2.5274986612992314,
+            48.38250930295602
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5274547024608403,
+          48.382495975043575
+        ]
+      },
+      "properties": {
+        "name": "Yellow 15 ",
+        "topoId": 2874,
+        "horizontalAccuracy": 4.7,
+        "heading": 254.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5274547024608403,
+            48.382495975043575
+          ],
+          [
+            2.5274287564203517,
+            48.38249113644559
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.52770051011102,
+          48.38249550616665
+        ]
+      },
+      "properties": {
+        "name": "Orange 22 ",
+        "topoId": 2875,
+        "horizontalAccuracy": 4.7,
+        "heading": 65.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.52770051011102,
+            48.38249550616665
+          ],
+          [
+            2.527724933759716,
+            48.382503071662924
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5277613973642876,
+          48.382521736366336
+        ]
+      },
+      "properties": {
+        "name": "Orange 23 ",
+        "topoId": 2876,
+        "horizontalAccuracy": 4.7,
+        "heading": 50.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5277613973642876,
+            48.382521736366336
+          ],
+          [
+            2.527782037654262,
+            48.38253324468049
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5277749512447847,
+          48.382398341660405
+        ]
+      },
+      "properties": {
+        "name": "Yellow 14 ",
+        "topoId": 2877,
+        "horizontalAccuracy": 4.7,
+        "heading": 202.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5277749512447847,
+            48.382398341660405
+          ],
+          [
+            2.527764671415813,
+            48.382381796329845
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5279438651443202,
+          48.38231047748193
+        ]
+      },
+      "properties": {
+        "name": "Yellow 13 L'Oublié",
+        "topoId": 2878,
+        "horizontalAccuracy": 4.7,
+        "heading": 190.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5279438651443202,
+            48.38231047748193
+          ],
+          [
+            2.527939024017032,
+            48.382292869965056
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527987324344533,
+          48.38233554787818
+        ]
+      },
+      "properties": {
+        "name": "Yellow 12 Le TCF",
+        "topoId": 2879,
+        "horizontalAccuracy": 4.7,
+        "heading": 286.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527987324344533,
+            48.38233554787818
+          ],
+          [
+            2.5279615054930145,
+            48.38234067782641
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5279611982907078,
+          48.382385269655686
+        ]
+      },
+      "properties": {
+        "name": "Yellow 8 ",
+        "topoId": 2880,
+        "horizontalAccuracy": 4.7,
+        "heading": 87.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5279611982907078,
+            48.382385269655686
+          ],
+          [
+            2.5279881152308823,
+            48.382386148664786
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5280537891000434,
+          48.382388604219216
+        ]
+      },
+      "properties": {
+        "name": "Yellow 11 ",
+        "topoId": 2881,
+        "horizontalAccuracy": 4.7,
+        "heading": 264.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5280537891000434,
+            48.382388604219216
+          ],
+          [
+            2.5280269505786874,
+            48.382386981844064
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528089235951007,
+          48.3823584487246
+        ]
+      },
+      "properties": {
+        "name": "Yellow 10 ",
+        "topoId": 2882,
+        "horizontalAccuracy": 4.7,
+        "heading": 246.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528089235951007,
+            48.3823584487246
+          ],
+          [
+            2.5280644420404967,
+            48.38235143454936
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5271065700303095,
+          48.38247026172494
+        ]
+      },
+      "properties": {
+        "name": "Yellow 17 ",
+        "topoId": 2871,
+        "horizontalAccuracy": 4.7,
+        "heading": 354.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5271065700303095,
+            48.38247026172494
+          ],
+          [
+            2.5271040284061836,
+            48.38248808056107
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528069474597586,
+          48.382309712720414
+        ]
+      },
+      "properties": {
+        "name": "Yellow 9 ",
+        "topoId": 2883,
+        "horizontalAccuracy": 4.7,
+        "heading": 239.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528069474597586,
+            48.382309712720414
+          ],
+          [
+            2.5280462150044656,
+            48.38230067274795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5280514267418983,
+          48.382615068242245
+        ]
+      },
+      "properties": {
+        "name": "Yellow 7 ",
+        "topoId": 2884,
+        "horizontalAccuracy": 4.7,
+        "heading": 179.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5280514267418983,
+            48.382615068242245
+          ],
+          [
+            2.5280517787243535,
+            48.382597171199826
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5279845681218487,
+          48.38259115844115
+        ]
+      },
+      "properties": {
+        "name": "Orange 24 ",
+        "topoId": 2885,
+        "horizontalAccuracy": 4.7,
+        "heading": 70.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5279845681218487,
+            48.38259115844115
+          ],
+          [
+            2.528009942859214,
+            48.38259718711077
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528048971843677,
+          48.38283254410017
+        ]
+      },
+      "properties": {
+        "name": "Orange 25 ",
+        "topoId": 2886,
+        "horizontalAccuracy": 4.7,
+        "heading": 270.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528048971843677,
+            48.38283254410017
+          ],
+          [
+            2.5280220225291754,
+            48.382832602615544
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5278945150931817,
+          48.38279373736381
+        ]
+      },
+      "properties": {
+        "name": "Yellow 6 ",
+        "topoId": 2887,
+        "horizontalAccuracy": 4.7,
+        "heading": 180.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5278945150931817,
+            48.38279373736381
+          ],
+          [
+            2.5278943178115085,
+            48.382775839337135
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5280316235857176,
+          48.38285824254948
+        ]
+      },
+      "properties": {
+        "name": "Orange 26 ",
+        "topoId": 2888,
+        "horizontalAccuracy": 4.7,
+        "heading": 69.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5280316235857176,
+            48.38285824254948
+          ],
+          [
+            2.5280568562099024,
+            48.38286452878996
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5280552526475564,
+          48.38293860935748
+        ]
+      },
+      "properties": {
+        "name": "Orange 27 ",
+        "topoId": 2889,
+        "horizontalAccuracy": 4.7,
+        "heading": 355.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5280552526475564,
+            48.38293860935748
+          ],
+          [
+            2.5280531165815283,
+            48.382956451494856
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5280157311366236,
+          48.38300204703185
+        ]
+      },
+      "properties": {
+        "name": "Yellow 5 Le Cube",
+        "topoId": 2890,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5280157311366236,
+            48.38300204703185
+          ],
+          [
+            2.528035546375813,
+            48.382989916014154
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5279806287859485,
+          48.38301993728053
+        ]
+      },
+      "properties": {
+        "name": "Orange 28 ",
+        "topoId": 2891,
+        "horizontalAccuracy": 4.7,
+        "heading": 342.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5279806287859485,
+            48.38301993728053
+          ],
+          [
+            2.5279727240946372,
+            48.38303704845213
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5279504385839524,
+          48.383103119495395
+        ]
+      },
+      "properties": {
+        "name": "Yellow 1 Le Colimaçon",
+        "topoId": 2892,
+        "horizontalAccuracy": 4.7,
+        "heading": 156.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5279504385839524,
+            48.383103119495395
+          ],
+          [
+            2.527961138056927,
+            48.383086692167886
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527924122465055,
+          48.38304106324117
+        ]
+      },
+      "properties": {
+        "name": "Le Gueulard | Le Modeste | La Traversée du Gueulard | La Traversée du Gueulard (raccourci)",
+        "topoId": 2893,
+        "horizontalAccuracy": 4.7,
+        "heading": 158.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527924122465055,
+            48.38304106324117
+          ],
+          [
+            2.5279341077474218,
+            48.38302443874303
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527924122465055,
+          48.38304106324117
+        ]
+      },
+      "properties": {
+        "name": "Le Gueulard | Le Modeste | La Traversée du Gueulard | La Traversée du Gueulard (raccourci)",
+        "topoId": 2893,
+        "horizontalAccuracy": 4.7,
+        "heading": 158.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527924122465055,
+            48.38304106324117
+          ],
+          [
+            2.5279341077474218,
+            48.38302443874303
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527924122465055,
+          48.38304106324117
+        ]
+      },
+      "properties": {
+        "name": "Le Gueulard | Le Modeste | La Traversée du Gueulard | La Traversée du Gueulard (raccourci)",
+        "topoId": 2893,
+        "horizontalAccuracy": 4.7,
+        "heading": 158.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527924122465055,
+            48.38304106324117
+          ],
+          [
+            2.5279341077474218,
+            48.38302443874303
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527924122465055,
+          48.38304106324117
+        ]
+      },
+      "properties": {
+        "name": "Le Gueulard | Le Modeste | La Traversée du Gueulard | La Traversée du Gueulard (raccourci)",
+        "topoId": 2893,
+        "horizontalAccuracy": 4.7,
+        "heading": 158.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527924122465055,
+            48.38304106324117
+          ],
+          [
+            2.5279341077474218,
+            48.38302443874303
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5279700104170737,
+          48.382974928290004
+        ]
+      },
+      "properties": {
+        "name": "Close Encounters of Some Kind",
+        "topoId": 2894,
+        "horizontalAccuracy": 3.5,
+        "heading": 18.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5279700104170737,
+            48.382974928290004
+          ],
+          [
+            2.5279786409883123,
+            48.38299188406906
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5279480498307643,
+          48.38297337763792
+        ]
+      },
+      "properties": {
+        "name": "Yellow 2 L'Escargot",
+        "topoId": 2895,
+        "horizontalAccuracy": 3.6,
+        "heading": 287.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5279480498307643,
+            48.38297337763792
+          ],
+          [
+            2.527922394664468,
+            48.38297885779803
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527773212326529,
+          48.38297784215046
+        ]
+      },
+      "properties": {
+        "name": "Yellow 3 ",
+        "topoId": 2896,
+        "horizontalAccuracy": 4.7,
+        "heading": 187.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527773212326529,
+            48.38297784215046
+          ],
+          [
+            2.5277696392928344,
+            48.382960101717515
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5277420832383224,
+          48.38290097899922
+        ]
+      },
+      "properties": {
+        "name": "Orange 32 ",
+        "topoId": 2897,
+        "horizontalAccuracy": 4.7,
+        "heading": 354.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5277420832383224,
+            48.38290097899922
+          ],
+          [
+            2.527739248937225,
+            48.38291877819937
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5278053185519775,
+          48.382921741044335
+        ]
+      },
+      "properties": {
+        "name": "Yellow 4 ",
+        "topoId": 2898,
+        "horizontalAccuracy": 4.7,
+        "heading": 355.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5278053185519775,
+            48.382921741044335
+          ],
+          [
+            2.527803207456055,
+            48.38293958449846
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5277961562558358,
+          48.383026005584
+        ]
+      },
+      "properties": {
+        "name": "Orange 30 ",
+        "topoId": 2899,
+        "horizontalAccuracy": 4.7,
+        "heading": 194.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5277961562558358,
+            48.383026005584
+          ],
+          [
+            2.5277895403673973,
+            48.38300865487807
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5277078898559586,
+          48.38299500495953
+        ]
+      },
+      "properties": {
+        "name": "Orange 31 ",
+        "topoId": 2902,
+        "horizontalAccuracy": 4.7,
+        "heading": 112.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5277078898559586,
+            48.38299500495953
+          ],
+          [
+            2.527732708093747,
+            48.382988028925084
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5277744606160817,
+          48.38291537486797
+        ]
+      },
+      "properties": {
+        "name": "Orange 33 ",
+        "topoId": 2904,
+        "horizontalAccuracy": 3.5,
+        "heading": 262.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5277744606160817,
+            48.38291537486797
+          ],
+          [
+            2.5277477674036035,
+            48.38291291252003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5276644414809697,
+          48.38284769636212
+        ]
+      },
+      "properties": {
+        "name": "Orange 34 ",
+        "topoId": 2905,
+        "horizontalAccuracy": 4.7,
+        "heading": 203.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5276644414809697,
+            48.38284769636212
+          ],
+          [
+            2.5276536455084138,
+            48.38283129682457
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5278105475309345,
+          48.38280088333068
+        ]
+      },
+      "properties": {
+        "name": "Orange 36 Le Grand K",
+        "topoId": 2906,
+        "horizontalAccuracy": 4.7,
+        "heading": 337.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5278105475309345,
+            48.38280088333068
+          ],
+          [
+            2.5278000912345147,
+            48.38281737967499
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527659621589332,
+          48.38275247393381
+        ]
+      },
+      "properties": {
+        "name": "Orange 35 ",
+        "topoId": 2907,
+        "horizontalAccuracy": 4.7,
+        "heading": 71.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527659621589332,
+            48.38275247393381
+          ],
+          [
+            2.5276851751536045,
+            48.382758159653065
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527429988964412,
+          48.3826888302524
+        ]
+      },
+      "properties": {
+        "name": "Yellow 28 La Droite",
+        "topoId": 2908,
+        "horizontalAccuracy": 4.7,
+        "heading": 298.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527429988964412,
+            48.3826888302524
+          ],
+          [
+            2.527406350111753,
+            48.38269742526181
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527423441562867,
+          48.38271908218425
+        ]
+      },
+      "properties": {
+        "name": "Yellow 27 ",
+        "topoId": 2909,
+        "horizontalAccuracy": 4.7,
+        "heading": 85.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527423441562867,
+            48.38271908218425
+          ],
+          [
+            2.527450288986909,
+            48.38272063821915
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5273781152026307,
+          48.38267093883463
+        ]
+      },
+      "properties": {
+        "name": "Orange 19 ",
+        "topoId": 2910,
+        "horizontalAccuracy": 4.7,
+        "heading": 280.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5273781152026307,
+            48.38267093883463
+          ],
+          [
+            2.5273516469189734,
+            48.38267430598049
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527301971409855,
+          48.38269972655374
+        ]
+      },
+      "properties": {
+        "name": "Yellow 30 ",
+        "topoId": 2911,
+        "horizontalAccuracy": 4.7,
+        "heading": 129.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527301971409855,
+            48.38269972655374
+          ],
+          [
+            2.527322656741644,
+            48.38268825400491
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5273368188415652,
+          48.382665974626775
+        ]
+      },
+      "properties": {
+        "name": "Yellow 31 La Piscine",
+        "topoId": 2912,
+        "horizontalAccuracy": 4.7,
+        "heading": 139.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5273368188415652,
+            48.382665974626775
+          ],
+          [
+            2.5273542193363663,
+            48.38265230701856
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527301466160436,
+          48.3826289171574
+        ]
+      },
+      "properties": {
+        "name": "Orange 20 ",
+        "topoId": 2913,
+        "horizontalAccuracy": 4.7,
+        "heading": 41.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527301466160436,
+            48.3826289171574
+          ],
+          [
+            2.5273191665504133,
+            48.38264241383926
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5273730117111244,
+          48.38272671551424
+        ]
+      },
+      "properties": {
+        "name": "Yellow 29  | Orange 18 ",
+        "topoId": 2914,
+        "horizontalAccuracy": 4.7,
+        "heading": 69.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5273730117111244,
+            48.38272671551424
+          ],
+          [
+            2.527398189998046,
+            48.38273309714985
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5273730117111244,
+          48.38272671551424
+        ]
+      },
+      "properties": {
+        "name": "Yellow 29  | Orange 18 ",
+        "topoId": 2914,
+        "horizontalAccuracy": 4.7,
+        "heading": 69.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5273730117111244,
+            48.38272671551424
+          ],
+          [
+            2.527398189998046,
+            48.38273309714985
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527173355143187,
+          48.38284382615253
+        ]
+      },
+      "properties": {
+        "name": "Yellow 35 ",
+        "topoId": 2919,
+        "horizontalAccuracy": 4.7,
+        "heading": 251.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527173355143187,
+            48.38284382615253
+          ],
+          [
+            2.5271478258913276,
+            48.382838092470344
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527209101247161,
+          48.38277116422419
+        ]
+      },
+      "properties": {
+        "name": "Yellow 32 L'Interminable",
+        "topoId": 2916,
+        "horizontalAccuracy": 4.6,
+        "heading": 220.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527209101247161,
+            48.38277116422419
+          ],
+          [
+            2.527191576570479,
+            48.382757566809964
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527245897802084,
+          48.38274300102925
+        ]
+      },
+      "properties": {
+        "name": "Yellow 32 L'Interminable",
+        "topoId": 2915,
+        "horizontalAccuracy": 3.5,
+        "heading": 278.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527245897802084,
+            48.38274300102925
+          ],
+          [
+            2.5272192214343914,
+            48.38274554263187
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.527226207577542,
+          48.38275815964691
+        ]
+      },
+      "properties": {
+        "name": "Yellow 33 ",
+        "topoId": 2917,
+        "horizontalAccuracy": 4.7,
+        "heading": 338.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.527226207577542,
+            48.38275815964691
+          ],
+          [
+            2.527216178939587,
+            48.382774772716566
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5271881287068547,
+          48.382820246524794
+        ]
+      },
+      "properties": {
+        "name": "Yellow 34 La Yosemite",
+        "topoId": 2918,
+        "horizontalAccuracy": 4.7,
+        "heading": 27.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5271881287068547,
+            48.382820246524794
+          ],
+          [
+            2.5272003634618327,
+            48.38283619421163
+          ]
+        ]
+      },
+      "properties": {
+      }
+    }
+  ]
+}

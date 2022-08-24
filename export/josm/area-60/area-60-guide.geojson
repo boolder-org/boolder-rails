@@ -1,0 +1,33 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.58398700000,
+                    48.39834200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "orange 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.58390100000,
+                    48.39761100000
+                ]
+            }
+        }
+    ]
+}

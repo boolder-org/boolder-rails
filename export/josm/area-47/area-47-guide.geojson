@@ -1,0 +1,137 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "les eaux de mortelune"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65469600000,
+                    48.46201100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "en attendant buoux"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65288100000,
+                    48.46222900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "maitre des brumes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65475900000,
+                    48.46209700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "tartiflette"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65280100000,
+                    48.46204000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pere dodu"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65879300000,
+                    48.46180300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "academicienne"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65888600000,
+                    48.46154100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "trois grains d'eternité"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65263100000,
+                    48.46241000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "monsieur plus"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65943500000,
+                    48.46175500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "chute de pierre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65937800000,
+                    48.46151200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pied main / ultima thule"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65751600000,
+                    48.46189900000
+                ]
+            }
+        }
+    ]
+}

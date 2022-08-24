@@ -1,0 +1,85 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67015700000,
+                    48.26388000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "convulsions"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67234600000,
+                    48.26275400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67011100000,
+                    48.26347600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "triangle"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67075400000,
+                    48.26353100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pro pulse"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67115700000,
+                    48.26300400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "bombyx"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67089800000,
+                    48.26358800000
+                ]
+            }
+        }
+    ]
+}
