@@ -4,8 +4,6 @@ class Admin::LinesController < Admin::BaseController
   end
 
   def new 
-    @ref_line = Line.find_by_id(params[:ref_line_id])
-
     @line = Line.new(
       problem_id: params[:problem_id], 
       topo_id: @ref_line&.topo_id || session[:last_topo_visited],

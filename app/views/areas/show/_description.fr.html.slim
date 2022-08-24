@@ -172,8 +172,115 @@
   p 
     | L'accès est possible en vélo depuis la gare de Bois-le-Roi (~20min).
 
+- if @area.id == 25
+  p 
+    | La Roche aux Oiseaux est un petit secteur calme offrant un bon nombre de voies dans les niveaux 3 à 7.
+  p
+    | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
+  p 
+    | Février 2022 : le circuit orange est complètement effacé.
+
+- if @area.id == 26
+  p 
+    | Drei Zinnen offre plus de 200 voies dans les niveaux 2 à 7.
+  p 
+    | À savoir : on entend souvent les voitures à cause de la proximité de l'autoroute.
+
 - if @area.id == 27
   p 
     | Jean des Vignes est un tout petit secteur proposant quelques dizaines de voies dans les niveaux 4 à 7.
   p 
     | 17/03/2022 : le circuit bleu est en cours de rénovation, les numéros ne sont plus à jour.
+
+- if @area.id == 28
+  p 
+    | La Ségognole est un petit secteur assez dense proposant des voies dans les niveaux 2 à 6.
+  p
+    | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
+  p
+    | L'accès est très facile depuis le parking, et il est facile de se repérer.
+
+- if @area.id == 29
+  p 
+    | Beauvais Nainville offre plus de 300 voies (dont beaucoup de traversées), pour tous les niveaux.
+  p
+    | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
+
+- if @area.id == 30
+  p 
+    | J.A. Martin est un grand secteur offrant plus de 400 voies pour tous les niveaux.
+  p
+    | Les blocs sont en moyenne peu hauts et la réception au sol est généralement bonne, ce qui permet de grimper en confiance.
+  p 
+    | L'accès est facile depuis le parking, et il est facile de se repérer. Nous vous recommandons en revanche d'utilser le <a href="#{app_path}">topo</a> car certaines peintures sont effacées.
+
+- if @area.id == 31
+  p 
+    | Franchard Cuicinière Crêtes Sud est un petit secteur accollé à <a href="#{area_path(Area.find(11))}">Franchard Cuisinière</a> proposant un magnifique circuit noir (niveau 6 et 7).
+
+- if @area.id == 32
+  p 
+    | Petit Bois est petit secteur avec une bonne densité de voies dans les niveaux 4, 5 et 6.
+  p 
+    | L'accès est facile depuis le parking, et il est facile de se repérer.
+  p 
+    | Avril 2022 : beaucoup de voies sont recouvertes de mousse.
+
+- if @area.id == 33
+  p 
+    | Rocher des Demoiselles est secteur offrant des voies essentiellement dans les niveaux 6 et 7.
+  p 
+    | L'accès n'est pas facile, comptez une quinzaine de minutes en suivant le sentier bleu depuis le parking.
+  p 
+    | Mai 2022 : le circuit orange est presque complètement effacé.
+
+- if @area.id == 34
+  p 
+    | Franchards Sablons est un petit secteur avec une bonne densité de voies dans les niveaux 3 à 7.
+  p 
+    | Il est situé tout proche du secteur <a href="#{area_path(Area.find(5))}">Isatis</a>.
+
+- if @area.id == 35
+  p 
+    | Rocher de la Cathédrale est un tout petit secteur offrant un circuit orange (niveau 2 et 3) et quelques voies de niveau 6 et 7.
+
+- if @area.id == 36
+  p 
+    | Franchard Hautes Plaines est un secteur offrant de nombreuses voies dans les niveaux 2 et 3, ainsi qu'un bon nombre de voies dans le niveau 7.
+  p 
+    | Il est situé juste à côté du secteur <a href="#{area_path(Area.find(5))}">Isatis</a>.
+
+- if @area.id == 37
+  p 
+    | Franchard Meyer est un secteur offrant une centaine de voies, essentiellement dans les niveaux 6 et 7.
+  p 
+    | Le secteur est calme, mais certaines voies sont impraticables et il n'est pas facile de se repérer.
+
+- if @area.id == 38
+  p 
+    | Franchard Sablons Carriers est un tout petit secteur offrant quelques dizaines de voies dans le niveau 7.
+  p 
+    | Ne passez pas à côté du bloc Rainbow Rocket (8a) qui vaut vraiment le détour !
+
+- if @area.id == 39
+  p 
+    | Franchard Raymond est un petit secteur excentré offrant des voies dans les niveaux 5, 6 et 7.
+  p 
+    | Le secteur est calme, mais certaines voies sont impraticables et il n'est pas facile de se repérer.
+
+- if @area.id == 41
+  p 
+    | Maunoury est un secteur offrant une bonne densité de voies dans le niveau 7, et un nombre correct de voies dans les niveaux 2 à 6.
+  p 
+    | Le secteur est moins connu (et donc plus calme) que la <a href="#{area_path(Area.find(42))}">Dame Jouanne</a> situé juste à côté.
+  p
+    | L'accès est facile depuis le parking de la Dame Jouanne, et il est facile de se repérer.
+
+- if @area.id == 42
+  p 
+    | Dame Jouanne est un des tous premiers secteurs historiques de Fontainebleau. Il est notamment connu pour son bloc éponyme faisant 15 mètres de haut.
+  p
+    | Il offre plus de 500 voies, pour tous les niveaux. Attention en revanche : les blocs sont en moyenne (très) hauts et ne conviennent pas aux débutants.
+  p
+    | À savoir : Il est difficile de se repérer dans le chaos rocheux, notamment avec les peintures qui sont pour la plupart effacées. Plusieurs zones sont également fermées à cause de l'érosion du sol.
+

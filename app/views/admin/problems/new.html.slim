@@ -10,7 +10,7 @@ div class="mt-10 sm:mt-0"
 
                 div class="col-span-6 sm:col-span-3"
                   = form.label :area_id, "Area"
-                  = form.collection_select :area_id, Area.order(:name), :id, :name
+                  = form.collection_select :area_id, Area.order(:id), :id, :name_debug
 
                 div class="hidden sm:block col-span-6 sm:col-span-3"
 
