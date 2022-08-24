@@ -1,0 +1,124 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56192400000,
+                    48.39186200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "hotline"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56382300000,
+                    48.39298900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 7"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56151600000,
+                    48.39233700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 51"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56440000000,
+                    48.39211000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "la grande evasion"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56090700000,
+                    48.39209700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow D"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56150700000,
+                    48.39177500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 41"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56315100000,
+                    48.39236000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56299500000,
+                    48.39190500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 33"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56295000000,
+                    48.39236500000
+                ]
+            }
+        }
+    ]
+}
