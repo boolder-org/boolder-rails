@@ -1,0 +1,124 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62908400000,
+                    48.43962000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63096700000,
+                    48.43888400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 21"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63072600000,
+                    48.43848900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63341800000,
+                    48.43837600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 35"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63257900000,
+                    48.43888400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63033000000,
+                    48.43924600000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 32"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63185900000,
+                    48.43875000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "scout toujours"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63337700000,
+                    48.43934900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "red 48"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63476800000,
+                    48.43836000000
+                ]
+            }
+        }
+    ]
+}
