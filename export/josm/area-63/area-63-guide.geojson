@@ -1,0 +1,137 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "squille"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64438100000,
+                    48.43717800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yellow 26"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64445400000,
+                    48.43670000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "feu du soleil"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64663900000,
+                    48.43665500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "des vertes et"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64473100000,
+                    48.43745800000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64763900000,
+                    48.43623400000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "theorie"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64313700000,
+                    48.43620000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "blue 3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64715300000,
+                    48.43640900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "encelade"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64530700000,
+                    48.43636300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "anicroche"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64794200000,
+                    48.43662100000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "rhino"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64819300000,
+                    48.43538200000
+                ]
+            }
+        }
+    ]
+}
