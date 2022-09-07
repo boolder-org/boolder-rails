@@ -1,0 +1,111 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "les yeux"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65053100000,
+                    48.44606000000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pigalle"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65100800000,
+                    48.44614300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "mr seauxenseaux"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65229000000,
+                    48.44542200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "yes man"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65152800000,
+                    48.44570900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "noeud pap"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65164400000,
+                    48.44520700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "pas chassé"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65163000000,
+                    48.44601200000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "juanita"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65260600000,
+                    48.44577900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "front luisant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65102400000,
+                    48.44495900000
+                ]
+            }
+        }
+    ]
+}
