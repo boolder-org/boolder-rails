@@ -21918,6 +21918,61 @@
         "color": "salmon"
       },
       "id": "circuit_76"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.62431620479,
+          48.44097413315
+        ]
+      },
+      "properties": {
+        "title": "Parking",
+        "subtitle": "Allée des Vaches (Barbizon)",
+        "description": "Parking Allée des Vaches (Barbizon)"
+      },
+      "id": "poi_67"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.62431620479,
+            48.44097413315
+          ],
+          [
+            2.62441276431,
+            48.44022679895
+          ],
+          [
+            2.62439130664,
+            48.43960757086
+          ],
+          [
+            2.62421964526,
+            48.43876768622
+          ],
+          [
+            2.62413381457,
+            48.43810573345
+          ],
+          [
+            2.62507795215,
+            48.43715193688
+          ],
+          [
+            2.62639759898,
+            48.43660385165
+          ]
+        ]
+      },
+      "properties": {
+      },
+      "id": "poiroute_67"
     }
   ]
 }
