@@ -1,7 +1,7 @@
 require 'rgeo/geo_json'
 
 namespace :josm do
-  task export: :environment do
+  task geojson: :environment do
     area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
 
