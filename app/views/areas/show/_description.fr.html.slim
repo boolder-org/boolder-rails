@@ -288,9 +288,54 @@
   p
     | À savoir : Il est difficile de se repérer dans le chaos rocheux, notamment avec les peintures qui sont pour la plupart effacées. Plusieurs zones sont également fermées à cause de l'érosion du sol.
 
+- if @area.id == 46
+  p 
+    | Apremont Bizons est un secteur offrant un bon nombre de voies dans tous les niveaux de 3 à 7.
+  p 
+    | Le secteur est dense et dégagé, avec de bonnes réceptions.
+
+- if @area.id == 47
+  p 
+    | Rocher Canon Ouest est un tout petit secteur proche de <a href="#{area_path(Area.find(1))}">Rocher Canon</a>.
+  p 
+    | Il offre essentiellement des voies dans les niveaux 6 et 7.
+
+- if @area.id == 48
+  p 
+    | Apremont Butte aux Dames est un secteur offrant un bon nombre de voies dans tous les niveaux de 2 à 7.
+  p
+    | Le secteur est dense, et il est facile de se repérer.
+
+- if @area.id == 49
+  p 
+    | Apremont Solitude est un petit secteur situé à l'Est d'Apremont.
+  p
+    | Il offre des voies essentiellement dans les niveaux 4 à 7.
+
 - if @area.id == 50
   p 
     | Rocher d'Avon est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
   p
     | Il offre un bon nombre de voies dans les niveaux 5 à 7, ainsi qu'un circuit orange qui convient aux débutants.
 
+- if @area.id == 51
+  p 
+    | Restant du Long Rocher est un secteur offrant 2 beaux circuits orange et jaune adaptés pour les débutants, ainsi qu'une cinquantaine de voies dans les niveaux 6 et 7.
+
+- if @area.id == 52
+  p 
+    | Rocher de Bouligny est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
+  p
+    | Il offre un bon nombre de voies dans les niveaux 6 et 7.
+
+- if @area.id == 53
+  p 
+    | Mont Ussy est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
+  p
+    | Il offre un bon nombre de voies dans les niveaux 6 à 7, ainsi que 2 circuits jaune et orange qui conviennent aux débutants.
+  
+- if @area.id == 68
+  p 
+    | Restant du Long Rocher Nord est un petit secteur proche de <a href="#{area_path(Area.find(51))}">Restant du Long Rocher</a>.
+  p 
+    | À savoir : le circuit orange n'est pas vraiment adapté pour les débutants.
