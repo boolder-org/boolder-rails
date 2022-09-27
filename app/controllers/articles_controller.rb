@@ -25,6 +25,12 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def top_areas_groups
+    @areas = Area.published.
+      reject{|a| a.id.in?([7, 42]) }. # FIXME: use a tag to avoid tricky areas (like Apremont (id=7), Dame Jouanne (id=42))
+      select{|a| a.level_density_score >= 5}
+  end
+
   def top_areas_train
     @annotations = Area.published.any_tags(:train_station_closeby).map do |area| 
       {
