@@ -333,7 +333,25 @@
     | Mont Ussy est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
   p
     | Il offre un bon nombre de voies dans les niveaux 6 à 7, ainsi que 2 circuits jaune et orange qui conviennent aux débutants.
-  
+
+- if @area.id == 54
+  p 
+    | Rocher du Général est un petit secteur calme avec du charme.
+  p
+    | Il offre un circuit jaune qui convient aux débutants, et il y est facile de se repérer.
+
+- if @area.id == 56
+  p 
+    | Grande Montagne est un petit secteur longeant le sentier des 25 bosses.
+  p 
+    | Il propose un circuit orange de 70 numéros (de niveau 3 et 4) qui s'étend sur une grande distance. Prévoyez donc de marcher entre chaque bloc.
+
+- if @area.id == 62
+  p 
+    | Apremont Envers est un secteur proposant de nombreuses voies dans les niveaux 5 à 7.
+  p 
+    | Le circuit jaune convient aux débutants, et il est facile de s'y repérer.
+
 - if @area.id == 68
   p 
     | Restant du Long Rocher Nord est un petit secteur proche de <a href="#{area_path(Area.find(51))}">Restant du Long Rocher</a>.
