@@ -36,9 +36,9 @@
 
 - if @area.id == 6
   p 
-    | Cuvier Bellevue est un petit secteur à 5 min de marche de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+    | Cuvier Est est un petit secteur situé proche de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
   p
-    | La majorité des voies sont de niveau 5, 6 et 7.
+    | Il offre de nombreuses voies de niveau 5, 6 et 7.
   p
     | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
 
@@ -287,6 +287,14 @@
     | Il offre plus de 500 voies, pour tous les niveaux. Attention en revanche : les blocs sont en moyenne (très) hauts et ne conviennent pas aux débutants.
   p
     | À savoir : Il est difficile de se repérer dans le chaos rocheux, notamment avec les peintures qui sont pour la plupart effacées. Plusieurs zones sont également fermées à cause de l'érosion du sol.
+
+- if @area.id == 44
+  p 
+    | Cuvier Nord est un petit secteur situé à côté de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+  p
+    | Il offre de nombreuses voies de niveau 7, ainsi qu'un circuit bleu (voies de niveau 3 à 5).
+  p
+    | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
 
 - if @area.id == 46
   p 
