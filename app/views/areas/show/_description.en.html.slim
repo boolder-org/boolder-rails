@@ -42,9 +42,9 @@
 
 - if @area.id == 7
   p 
-    | Apremont offers a great deal of problems for all levels.
+    | Apremont offers a blue circuit (with problems graded around 4), and lots of problems graded 7.
   p 
-    | Careful: it can be quite tricky to find your way, so we highly recommend using the <a href="#{app_path}">Boolder app</a> with GPS and compass.
+    | You can check out <a href="#{area_path(Area.find(69))}">Apremont Est</a> to have way more problems.
 
 - if @area.id == 8
   p 
@@ -213,3 +213,9 @@
 - if @area.id == 35
   p 
     | Rocher de la Cathédrale is a very small area with an orange circuit (levels 2 and 3) and a few problems graded between 6 and 7.
+
+- if @area.id == 69
+  p 
+    | Apremont Est offers a great deal of problems for all levels.
+  p 
+    | Careful: it can be quite tricky to find your way, so we highly recommend using the <a href="#{app_path}">Boolder app</a> with GPS and compass.

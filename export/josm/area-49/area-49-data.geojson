@@ -692,6 +692,244 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.63417733513,
+          48.43614933271
+        ]
+      },
+      "properties": {
+        "name": "",
+        "problemId": 11415
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63421397176,
+          48.43642860663
+        ]
+      },
+      "properties": {
+        "name": "Red 2 ",
+        "problemId": 11377
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6340478004,
+          48.43611669286
+        ]
+      },
+      "properties": {
+        "name": "Quiproquo",
+        "problemId": 11416
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63350446274,
+          48.43623968152
+        ]
+      },
+      "properties": {
+        "name": "La Verlen",
+        "problemId": 11334
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63345758954,
+          48.43624927752
+        ]
+      },
+      "properties": {
+        "name": "Hécatombe",
+        "problemId": 11331
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63431762849,
+          48.4363566368
+        ]
+      },
+      "properties": {
+        "name": "Red 4 ",
+        "problemId": 11379
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63408814444,
+          48.43596446634
+        ]
+      },
+      "properties": {
+        "name": "Red 28 ",
+        "problemId": 11413
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63358079908,
+          48.43644563981
+        ]
+      },
+      "properties": {
+        "name": "Crépuscule",
+        "problemId": 11364
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63377954143,
+          48.43623097403
+        ]
+      },
+      "properties": {
+        "name": "Blue 31 L'Écart-Type",
+        "problemId": 11338
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63365258203,
+          48.43629903455
+        ]
+      },
+      "properties": {
+        "name": "Blue 33 La Traversée de l'Ankylose",
+        "problemId": 11340
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63366570652,
+          48.43649770679
+        ]
+      },
+      "properties": {
+        "name": "Blue 38 Coconuts",
+        "problemId": 11348
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63391573289,
+          48.4359518929
+        ]
+      },
+      "properties": {
+        "name": "Red 26 ",
+        "problemId": 11411
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63400255265,
+          48.43615007107
+        ]
+      },
+      "properties": {
+        "name": "Gonetitsup",
+        "problemId": 11354
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334950881,
+          48.43623506122
+        ]
+      },
+      "properties": {
+        "name": "Blue 29 La Traversée des Mirages",
+        "problemId": 11336
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63478880207,
+          48.43603467809
+        ]
+      },
+      "properties": {
+        "name": "Red 14 ",
+        "problemId": 11391
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63381677214,
+          48.43627735471
+        ]
+      },
+      "properties": {
+        "name": "Red 31 L'Ante Phallus",
+        "problemId": 11373
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63448021151,
+          48.43617164723
+        ]
+      },
+      "properties": {
+        "name": "Red 10 ",
+        "problemId": 11387
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.63357651353,
           48.43642200529
         ]
@@ -727,20 +965,6 @@
       "properties": {
         "name": "Demain l'Aube (assis)",
         "problemId": 11363
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63417733513,
-          48.43614933271
-        ]
-      },
-      "properties": {
-        "name": "",
-        "problemId": 11415
       }
     },
     {
@@ -1196,62 +1420,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.63421397176,
-          48.43642860663
-        ]
-      },
-      "properties": {
-        "name": "Red 2 ",
-        "problemId": 11377
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.6340478004,
-          48.43611669286
-        ]
-      },
-      "properties": {
-        "name": "Quiproquo",
-        "problemId": 11416
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63350446274,
-          48.43623968152
-        ]
-      },
-      "properties": {
-        "name": "La Verlen",
-        "problemId": 11334
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63345758954,
-          48.43624927752
-        ]
-      },
-      "properties": {
-        "name": "Hécatombe",
-        "problemId": 11331
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.63477525714,
           48.43580161518
         ]
@@ -1329,174 +1497,6 @@
       "properties": {
         "name": "La Fessue",
         "problemId": 11358
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63431762849,
-          48.4363566368
-        ]
-      },
-      "properties": {
-        "name": "Red 4 ",
-        "problemId": 11379
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63408814444,
-          48.43596446634
-        ]
-      },
-      "properties": {
-        "name": "Red 28 ",
-        "problemId": 11413
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63358079908,
-          48.43644563981
-        ]
-      },
-      "properties": {
-        "name": "Crépuscule",
-        "problemId": 11364
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63377954143,
-          48.43623097403
-        ]
-      },
-      "properties": {
-        "name": "Blue 31 L'Écart-Type",
-        "problemId": 11338
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63365258203,
-          48.43629903455
-        ]
-      },
-      "properties": {
-        "name": "Blue 33 La Traversée de l'Ankylose",
-        "problemId": 11340
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63366570652,
-          48.43649770679
-        ]
-      },
-      "properties": {
-        "name": "Blue 38 Coconuts",
-        "problemId": 11348
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63391573289,
-          48.4359518929
-        ]
-      },
-      "properties": {
-        "name": "Red 26 ",
-        "problemId": 11411
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63400255265,
-          48.43615007107
-        ]
-      },
-      "properties": {
-        "name": "Gonetitsup",
-        "problemId": 11354
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.6334950881,
-          48.43623506122
-        ]
-      },
-      "properties": {
-        "name": "Blue 29 La Traversée des Mirages",
-        "problemId": 11336
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63478880207,
-          48.43603467809
-        ]
-      },
-      "properties": {
-        "name": "Red 14 ",
-        "problemId": 11391
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63381677214,
-          48.43627735471
-        ]
-      },
-      "properties": {
-        "name": "Red 31 L'Ante Phallus",
-        "problemId": 11373
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.63448021151,
-          48.43617164723
-        ]
-      },
-      "properties": {
-        "name": "Red 10 ",
-        "problemId": 11387
       }
     },
     {
