@@ -114,7 +114,7 @@ fr:
             title: Les secteurs adaptés aux groupes à Fontainebleau
         train:
           title: Les secteurs accessibles en train + vélo
-          from_train_station: Depuis la gare de Bois-le-Roi
+          from_train_station: "Depuis la gare de %{train_station}"
           bike_time: "Temps de trajet en vélo :"
           metas:
             title: Les secteurs accessibles en train + vélo à Fontainebleau
