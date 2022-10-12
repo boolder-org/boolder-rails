@@ -34,9 +34,9 @@
 
 - if @area.id == 6
   p 
-    | Cuvier Bellevue is a small area, 5 min away from <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+    | Cuvier Est is a small area, 5 min away from <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
   p
-    | Most problems are graded 5, 6, and 7.
+    | It offers dozens of problems graded 5, 6, and 7.
   p
     | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
 
@@ -48,9 +48,7 @@
 
 - if @area.id == 8
   p 
-    | Rocher Fin offers more than 200 problems, for all levels.
-  p 
-    | The area is beautiful, and it's easy to find your way.
+    | Rocher Fin is a beautiful area offering more than 200 problems, for all levels.
   p 
     | The walk is about 20 min from the parking.
 
@@ -84,7 +82,7 @@
   p 
     | Problems are 3-4 meters high on average, with good landings.
   p 
-    | It is very easy to find your way, thanks to the flat terrain and the scattered boulders.
+    | It is very easy to find your way around, thanks to the flat terrain and the scattered boulders.
 
 - if @area.id == 13
   p 
@@ -178,19 +176,17 @@
   p
     | Boulders are mostly low, with good landings. 
   p 
-    | February 2022 : the orange circuit's paint is not visible anymore.
+    | February 2022: the orange circuit's paint is not visible anymore.
 
 - if @area.id == 26
   p 
     | Drei Zinnen offers more than 200 problems ranging from grade 2 to 7.
   p 
-    | Watch out : the cars from the nearby highway make quite some noise.
+    | Watch out: the cars from the nearby highway make quite some noise.
 
 - if @area.id == 27
   p 
     | Jean des Vignes is a small area with problems ranging from grade 4 to 7.
-  p 
-    | March 17th 2022 : the blue circuit is being reworked, the numbers are not up-to-date.
 
 - if @area.id == 28
   p 
@@ -206,16 +202,206 @@
   p
     | Boulders are mostly low, with good landings. 
 
+- if @area.id == 30
+  p 
+    | J.A. Martin offers more than 400 problems, for all levels.
+  p
+    | Boulders are usually low with good landings.
+  p 
+    | The walk form the parking is really easy. Some circuit paint isn't visible anymore, so we recommend using the <a href="#{app_path}">app</a> to find your away around more easily.
+
 - if @area.id == 31
   p 
     | Franchard Cuisinière Crêtes Sud is a small area right next to <a href="#{area_path(Area.find(11))}">Franchard Cuisinière</a> offering a beautiful black circuit (problems graded between 6 and 7).
+
+- if @area.id == 32
+  p 
+    | Petit Bois is a small area with a high density of problems graded between 4 and 6.
+  p 
+    | The walk is very easy from the parking.
+
+- if @area.id == 33
+  p 
+    | Rocher des Demoiselles offers lots of problems graded between 6 and 7.
+  p 
+    | The walk from the parking takes more than 15 minutes and isn't straightforward. Follow the blue trail from the parking.
+  p 
+    | May 2022: the orange circuit's paint is barely visible.
+
+- if @area.id == 34
+  p 
+    | Franchards Sablons is a small area with a good density of problems graded between 3 and 7.
+  p 
+    | It is right next to <a href="#{area_path(Area.find(5))}">Franchard Isatis</a>.
 
 - if @area.id == 35
   p 
     | Rocher de la Cathédrale is a very small area with an orange circuit (levels 2 and 3) and a few problems graded between 6 and 7.
 
+- if @area.id == 36
+  p 
+    | Franchard Hautes Plaines offers lots of problems graded between 2 and 3, and lots of problems graded 7.
+  p 
+    | It is right next to <a href="#{area_path(Area.find(5))}">Franchard Isatis</a>.
+
+- if @area.id == 37
+  p 
+    | Franchard Meyer offers ~100 problems, mainly graded 6 and 7.
+  p 
+    | The area is very quiet, but many problems aren't maintained enough, and it may be tricky to find your way around.
+
+- if @area.id == 38
+  p 
+    | Franchard Sablons Carriers is a very small area with dozens of problems graded 7.
+
+- if @area.id == 39
+  p 
+    | Franchard Raymond is a small area at the far end of the Franchard zone, offering problems graded between 5 and 7.
+  p 
+    | The area is very quiet, but many problems aren't maintained enough, and it may be tricky to find your way around.
+
+- if @area.id == 40
+  p 
+    | Cuvier Merveille is a tiny area, mainly consisting of the impressive 'Merveille' boulder.
+
+- if @area.id == 41
+  p 
+    | Maunoury offers a high density of problems graded 7, and a decent number of problems graded between 2 and 6.
+  p 
+    | The area is less known (and thus quieter) than <a href="#{area_path(Area.find(42))}">Dame Jouanne</a> located right next to it.
+  p
+    | The walk is easy from the parking.
+
+- if @area.id == 42
+  p 
+    | Dame Jouanne is a historic area in Font, offering more than 500 problems for all levels. It is famous for its 15-meter-high 'Dame Jouanne' boulder.
+  p
+    | Watch out: boulders are usually (very) high and are not suited for beginners.
+  p
+    | Good to know: the boulder chaos and the wiped out paint make it hard to find your way around. Some parts of the area are also closed because of soil erosion.
+
+- if @area.id == 44
+  p 
+    | Cuvier Nord is a small area located right next to <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+  p
+    | It offers lots of problems graded 7, and a blue circuit (graded between 3 and 5).
+  p
+    | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
+
+- if @area.id == 46
+  p 
+    | Apremont Bizons offers lots of problems for all levels between 3 and 7.
+  p 
+    | The area is dense, with good landings.
+
+- if @area.id == 47
+  p 
+    | Rocher Canon Ouest is a tiny area located right next to <a href="#{area_path(Area.find(1))}">Rocher Canon</a>.
+  p 
+    | It offers problems mainly graded between 6 and 7.
+
+- if @area.id == 48
+  p 
+    | Apremont Butte aux Dames offers lots of problems for all levels between 2 and 7.
+  p
+    | The area is pretty dense, and it is easy to find your way around.
+
+- if @area.id == 49
+  p 
+    | Apremont Solitude is a small area located East of <a href="#{area_path(Area.find(69))}">Apremont Est</a>.
+  p
+    | If offers problems mainly graded between 4 and 7.
+  p
+    | October 2022: the red circuit's paint is mostly washed out, which makes it hard to find your way around.
+
+- if @area.id == 50
+  p 
+    | Rocher d'Avon is a small area, accessible from Fontainebleau city and the Avon train station.
+  p
+    | It offers a good number of problems graded between 5 and 7, and an orange circuit suited for beginners.
+
+- if @area.id == 51
+  p 
+    | Restant du Long Rocher offers 2 nice circuits (yellow and orange) suited for beginners, and ~50 problems graded between 6 and 7.
+
+- if @area.id == 52
+  p 
+    | Rocher de Bouligny is a small area, accessible from Fontainebleau city and the Avon train station.
+  p
+    | If offers a good number of problems graded between 6 and 7.
+
+- if @area.id == 53
+  p 
+    | Mont Ussy is a small area, accessible from Fontainebleau city and the Avon train station.
+  p
+    | It offers a good number of problems graded between 6 and 7, and two circuits (yellow and orange) that are suited for beginners.
+
+- if @area.id == 54
+  p 
+    | Rocher du Général is a lovely and quiet area.
+  p
+    | It offers a yellow circuit suited for beginners, and it is very easy to find your way around.
+
+- if @area.id == 55
+  p 
+    | Justice de Chambergeot is a small area offering a yellow and an orange circuit (levels 2 and 3) and a few problems graded between 6 and 7.
+
+- if @area.id == 56
+  p 
+    | Grande Montagne is a small area alongside the "25 bossses" trail.
+  p 
+    | It offers an orange circuit with 70 problems (graded between 3 and 4) spread along a large distance.
+
+- if @area.id == 57
+  p 
+    | Rocher du Télégraphe is a small area with a good number of problems graded between 6 and 7, and a blue circuit (graded between 3 and 5) alongside a nice rampart.
+  p 
+    | It also offers several circuits for kids, located at the entrance of the area.
+
+- if @area.id == 58
+  p 
+    | Pignon Poteau is a small area alongside the "25 bosses" trail. It offers a yellow and an orange circuit (levels 2 and 3).
+  p
+    | It can be tricky to find your way around the boulder chaos, which makes the area not very suited for beginners.
+  p 
+    | The end of the orange circuit (mostly jumps and traverses) isn't referenced here.
+
+- if @area.id == 59
+  p 
+    | Gros Sablons is a large area offering a large number of problems for all levels between 2 and 7.
+
+- if @area.id == 60
+  p 
+    | Corne-Biche offers lots of problems graded between 2 and 3, and a few dozens problems graded 7.
+  p 
+    | The walk from the parking takes ~20 minutes.
+
+- if @area.id == 61
+  p 
+    | Rocher de la Reine is a nice area with lots of problems graded between 6 and 7, a yellow circuit (level 2) and a blue circuit (level 4).
+
+- if @area.id == 62
+  p 
+    | Apremont Envers offers many problems graded between 5 and 7.
+  p 
+    | The yellow circuit is suited for beginners, and it is easy to find your way around.
+
+- if @area.id == 66
+  p 
+    | Petit Rempart is a small area offering dozens of problems graded between 5 and 7.
+
+- if @area.id == 67
+  p 
+    | La Reconnaissance is a small area offering dozens of problems graded between 5 and 7.
+
+- if @area.id == 68
+  p 
+    | Restant du Long Rocher Nord is a small area located right next to <a href="#{area_path(Area.find(51))}">Restant du Long Rocher</a>.
+  p 
+    | The orange circuit isn't suited for beginners.
+
 - if @area.id == 69
   p 
     | Apremont Est offers a great deal of problems for all levels.
   p 
-    | Careful: it can be quite tricky to find your way, so we highly recommend using the <a href="#{app_path}">Boolder app</a> with GPS and compass.
+    | Careful: it can be quite tricky to find your way around, so we highly recommend using the <a href="#{app_path}">Boolder app</a> with GPS and compass.
