@@ -27,7 +27,7 @@
   <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
     <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
 
-      <h2><%= t("views.articles.top_areas.train.from_train_station") %></h2>
+      <h2><%= t("views.articles.top_areas.train.from_train_station", train_station: "Bois-le-Roi") %></h2>
 
       <p>
         <%= t("views.articles.top_areas.train.bike_time") %>
@@ -38,6 +38,16 @@
         <li><%= link_to "Rocher Saint-Germain", area_path(Area.find(24)) %> : 20 min.</li>
         <li><%= link_to "Cuvier", area_path(Area.find(4)) %> : 30 min.</li>
         <li><%= link_to "Apremont", area_path(Area.find(7)) %> : 35 min.</li>
+      </ul>
+
+      <h2><%= t("views.articles.top_areas.train.from_train_station", train_station: "Fontainebleau Avon") %></h2>
+
+      <p>
+        <%= t("views.articles.top_areas.train.bike_time") %>
+      </p>
+
+      <ul>
+        <li><%= link_to "Rocher d'Avon", area_path(Area.find(50)) %> : 20 min.</li>
       </ul>
 
       <p class="pt-12">

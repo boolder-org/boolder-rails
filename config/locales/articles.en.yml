@@ -114,7 +114,7 @@ en:
             title: The best areas for groups in Fontainebleau
         train:
           title: Areas accessible by train + bike
-          from_train_station: From Bois-le-Roi train station
+          from_train_station: "From %{train_station} train station"
           bike_time: "By bike:"
           metas:
             title: Bouldering in Fontainebleau by train + bike

@@ -32,27 +32,25 @@
   p 
     | Franchard Isatis offre plus de 500 voies, pour tous les niveaux. 
   p 
-    | L'accès est très facile depuis le parking, ce qui rend le secteur assez fréquenté. N'hésitez pas à "monter" un peu sur les hauteurs pour être plus tranquille.
+    | L'accès est très facile depuis le parking, ce qui rend le secteur assez fréquenté.
 
 - if @area.id == 6
   p 
-    | Cuvier Bellevue est un petit secteur à 5 min de marche de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+    | Cuvier Est est un petit secteur situé proche de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
   p
-    | La majorité des voies sont de niveau 5, 6 et 7.
+    | Il offre de nombreuses voies de niveau 5, 6 et 7.
   p
     | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
 
 - if @area.id == 7
   p 
-    | Apremont est un secteur offrant de nombreuses voies pour tous les niveaux.
+    | Apremont offre un circuit bleu (niveau moyen 4) ainsi que de nombreuses voies dans le niveau 7.
   p 
-    | Le terrain a beaucoup de relief et les blocs sont très nombreux : il n'est pas facile de se déplacer ni de se repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>), ou alors de rester plutôt vers le circuit bleu qui a moins de relief.
+    | N'hésitez pas à aller à <a href="#{area_path(Area.find(69))}">Apremont Est</a> qui est situé juste à côté et qui offre un très grand nombre de voies pour tous les niveaux.
 
 - if @area.id == 8
   p 
-    | Rocher Fin est un secteur avec un peu plus de 200 voies, pour tous les niveaux.
-  p 
-    | Le cadre est magnifique, et il est facile de s'y répérer.
+    | Rocher Fin est un secteur charmant avec un peu plus de 200 voies, pour tous les niveaux.
   p 
     | Comptez une vingtaine de minutes de marche depuis le parking.
 
@@ -146,6 +144,10 @@
   p 
     | Comptez une douzaine de minutes de marche depuis le parking.
 
+- if @area.id == 20
+  p 
+    | Apremont Ouest est un secteur offrant des voies dans les niveaus 5, 6, 7.
+
 - if @area.id == 21
   p 
     | Bois Rond propose une bonne variété de voies dans les niveaux 3 à 7.
@@ -189,8 +191,6 @@
 - if @area.id == 27
   p 
     | Jean des Vignes est un tout petit secteur proposant quelques dizaines de voies dans les niveaux 4 à 7.
-  p 
-    | 17/03/2022 : le circuit bleu est en cours de rénovation, les numéros ne sont plus à jour.
 
 - if @area.id == 28
   p 
@@ -216,15 +216,13 @@
 
 - if @area.id == 31
   p 
-    | Franchard Cuicinière Crêtes Sud est un petit secteur accollé à <a href="#{area_path(Area.find(11))}">Franchard Cuisinière</a> proposant un magnifique circuit noir (niveau 6 et 7).
+    | Franchard Cuisinière Crêtes Sud est un petit secteur accollé à <a href="#{area_path(Area.find(11))}">Franchard Cuisinière</a> proposant un magnifique circuit noir (niveau 6 et 7).
 
 - if @area.id == 32
   p 
     | Petit Bois est petit secteur avec une bonne densité de voies dans les niveaux 4, 5 et 6.
   p 
     | L'accès est facile depuis le parking, et il est facile de se repérer.
-  p 
-    | Avril 2022 : beaucoup de voies sont recouvertes de mousse.
 
 - if @area.id == 33
   p 
@@ -268,6 +266,10 @@
   p 
     | Le secteur est calme, mais certaines voies sont impraticables et il n'est pas facile de se repérer.
 
+- if @area.id == 40
+  p 
+    | Cuvier Merveille est un micro-secteur, essentiellement constitué de l'imposant bloc de la Merveille.
+
 - if @area.id == 41
   p 
     | Maunoury est un secteur offrant une bonne densité de voies dans le niveau 7, et un nombre correct de voies dans les niveaux 2 à 6.
@@ -284,3 +286,128 @@
   p
     | À savoir : Il est difficile de se repérer dans le chaos rocheux, notamment avec les peintures qui sont pour la plupart effacées. Plusieurs zones sont également fermées à cause de l'érosion du sol.
 
+- if @area.id == 44
+  p 
+    | Cuvier Nord est un petit secteur situé à côté de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+  p
+    | Il offre de nombreuses voies de niveau 7, ainsi qu'un circuit bleu (voies de niveau 3 à 5).
+  p
+    | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
+
+- if @area.id == 46
+  p 
+    | Apremont Bizons est un secteur offrant un bon nombre de voies dans tous les niveaux de 3 à 7.
+  p 
+    | Le secteur est dense et dégagé, avec de bonnes réceptions.
+
+- if @area.id == 47
+  p 
+    | Rocher Canon Ouest est un tout petit secteur proche de <a href="#{area_path(Area.find(1))}">Rocher Canon</a>.
+  p 
+    | Il offre essentiellement des voies dans les niveaux 6 et 7.
+
+- if @area.id == 48
+  p 
+    | Apremont Butte aux Dames est un secteur offrant un bon nombre de voies dans tous les niveaux de 2 à 7.
+  p
+    | Le secteur est dense, et il est facile de se repérer.
+
+- if @area.id == 49
+  p 
+    | Apremont Solitude est un petit secteur situé à l'Est d'<a href="#{area_path(Area.find(69))}">Apremont Est</a>.
+  p
+    | Il offre des voies essentiellement dans les niveaux 4 à 7.
+  p
+    | Octobre 2022 : La peinture du circuit rouge est très effacée, il est difficile de se repérer.
+
+- if @area.id == 50
+  p 
+    | Rocher d'Avon est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
+  p
+    | Il offre un bon nombre de voies dans les niveaux 5 à 7, ainsi qu'un circuit orange qui convient aux débutants.
+
+- if @area.id == 51
+  p 
+    | Restant du Long Rocher est un secteur offrant 2 beaux circuits orange et jaune adaptés pour les débutants, ainsi qu'une cinquantaine de voies dans les niveaux 6 et 7.
+
+- if @area.id == 52
+  p 
+    | Rocher de Bouligny est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
+  p
+    | Il offre un bon nombre de voies dans les niveaux 6 et 7.
+
+- if @area.id == 53
+  p 
+    | Mont Ussy est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
+  p
+    | Il offre un bon nombre de voies dans les niveaux 6 à 7, ainsi que 2 circuits jaune et orange qui conviennent aux débutants.
+
+- if @area.id == 54
+  p 
+    | Rocher du Général est un petit secteur calme avec du charme.
+  p
+    | Il offre un circuit jaune qui convient aux débutants, et il y est facile de se repérer.
+
+- if @area.id == 55
+  p 
+    | Justice de Chambergeot est un petit secteur offrant un circuit jaune et un orange (de niveau 2 et 3) ainsi que quelques voies de niveau de niveau 6 et 7.
+
+- if @area.id == 56
+  p 
+    | Grande Montagne est un petit secteur longeant le sentier des 25 bosses.
+  p 
+    | Il propose un circuit orange de 70 numéros (de niveau 3 et 4) qui s'étend sur une grande distance. Prévoyez donc de marcher entre chaque bloc.
+
+- if @area.id == 57
+  p 
+    | Rocher du Télégraphe est un petit secteur offrant un bon nombre de voies de niveau 6 et 7, ainsi qu'un circuit bleu (niveau entre 3 et 5) longeant un rempart.
+  p 
+    | Il offre également plusieurs circuits enfants accessibles dès l'entrée du secteur.
+
+- if @area.id == 58
+  p 
+    | Pignon Poteau est un petit secteur longeant le sentier des 25 bosses, offrant un circuit jaune et orange de niveau 2 et 3.
+  p
+    | Il n'est pas facile de se repérer dans le chaos de blocs, ce qui rebutera sans doute les débutants.
+  p 
+    | À savoir : la fin du circuit orange (série de sauts et traversées) n'est pas référencée ici.
+
+- if @area.id == 59
+  p 
+    | Gros Sablons est un secteur très étendu proposant un grand nombre de voies dans tous les niveaux de 2 à 7.
+
+- if @area.id == 60
+  p 
+    | Corne-Biche est un secteur assez sauvage proposant un grand nombre de voies dans les niveaux 2 et 3, ainsi que quelques dizaines de voies de niveau 7.
+  p 
+    | Comptez une vingtaine de minutes de marche depuis le parking.
+
+- if @area.id == 61
+  p 
+    | Rocher de la Reine est un joli secteur proposant un grand nombre de voies dans les niveaux 6 et 7, ainsi qu'un circuit jaune (niveau 2) et un bleu (niveau 4).
+
+- if @area.id == 62
+  p 
+    | Apremont Envers est un secteur proposant de nombreuses voies dans les niveaux 5 à 7.
+  p 
+    | Le circuit jaune convient aux débutants, et il est facile de s'y repérer.
+
+- if @area.id == 66
+  p 
+    | Petit Rempart est un petit secteur offrant plusieurs dizaines de voies dans les niveaux 5 à 7.
+
+- if @area.id == 67
+  p 
+    | La Reconnaissance est un petit secteur offrant plusieurs dizaines de voies dans les niveaux 5 à 7.
+
+- if @area.id == 68
+  p 
+    | Restant du Long Rocher Nord est un petit secteur proche de <a href="#{area_path(Area.find(51))}">Restant du Long Rocher</a>.
+  p 
+    | À savoir : le circuit orange n'est pas vraiment adapté pour les débutants.
+
+- if @area.id == 69
+  p 
+    | Apremont Est offre de nombreuses voies pour tous les niveaux.
+  p 
+    | Le terrain a beaucoup de relief et les blocs sont très nombreux : il n'est pas facile de se déplacer ni de se repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>), ou alors de rester plutôt vers le secteur d'<a href="#{area_path(Area.find(7))}">Apremont</a>.
