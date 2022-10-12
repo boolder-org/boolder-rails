@@ -6,6 +6,10 @@ class Problem < ApplicationRecord
   has_many :children, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
 
+  # reindex problems on algolia when area is updated
+  # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
+  after_touch :index!
+
   include AlgoliaSearch
   algoliasearch if: :published?, enqueue: true do
     attributes :name, :circuit_number

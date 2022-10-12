@@ -25,7 +25,7 @@
   <div class="max-w-3xl mx-auto">
     <div class="py-2 relative">
       <div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-6 lg:px-8">
-        <% Area.published.select{|a| a.level_density_score >= 5}.each do |area| %>
+        <% @areas.each do |area| %>
           <%= link_to area_path(area) do %>
             <%= render 'shared/area_card', area: area %>
           <% end %>

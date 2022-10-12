@@ -1,0 +1,1433 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652449346331937,
+          48.44417719495222
+        ]
+      },
+      "properties": {
+        "name": "Second Souffle | 1900",
+        "topoId": 7022,
+        "horizontalAccuracy": 4.7,
+        "heading": 154.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652449346331937,
+            48.44417719495222
+          ],
+          [
+            2.6524609400221593,
+            48.44416105687448
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.653235290201989,
+          48.44440564517718
+        ]
+      },
+      "properties": {
+        "name": "La Tirelire Sud-Ouest | Le Merveilleux",
+        "topoId": 7031,
+        "horizontalAccuracy": 3.5,
+        "heading": 59.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.653235290201989,
+            48.44440564517718
+          ],
+          [
+            2.65325842534245,
+            48.44441481373279
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6522988826244274,
+          48.44429403927987
+        ]
+      },
+      "properties": {
+        "name": "Voyage Merveilleux | Le Surplomb | Garcymore | Courte Récréation / Le Surplomb (assis) | La Voie Normale de la Merveille",
+        "topoId": 7020,
+        "horizontalAccuracy": 4.7,
+        "heading": 76.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6522988826244274,
+            48.44429403927987
+          ],
+          [
+            2.652325090322888,
+            48.444298204653315
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6523751710521197,
+          48.444259908485485
+        ]
+      },
+      "properties": {
+        "name": "LSD | Le Sourire de Denise | Les Colonnes (gauche) | La Colonne L | Les Colonnes | Voyage Merveilleux",
+        "topoId": 7012,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6523751710521197,
+            48.444259908485485
+          ],
+          [
+            2.6523678308077607,
+            48.44427710947925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.653235290201989,
+          48.44440564517718
+        ]
+      },
+      "properties": {
+        "name": "La Tirelire Sud-Ouest | Le Merveilleux",
+        "topoId": 7031,
+        "horizontalAccuracy": 3.5,
+        "heading": 59.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.653235290201989,
+            48.44440564517718
+          ],
+          [
+            2.65325842534245,
+            48.44441481373279
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652449346331937,
+          48.44417719495222
+        ]
+      },
+      "properties": {
+        "name": "Second Souffle | 1900",
+        "topoId": 7022,
+        "horizontalAccuracy": 4.7,
+        "heading": 154.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652449346331937,
+            48.44417719495222
+          ],
+          [
+            2.6524609400221593,
+            48.44416105687448
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6523751710521197,
+          48.444259908485485
+        ]
+      },
+      "properties": {
+        "name": "LSD | Le Sourire de Denise | Les Colonnes (gauche) | La Colonne L | Les Colonnes | Voyage Merveilleux",
+        "topoId": 7012,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6523751710521197,
+            48.444259908485485
+          ],
+          [
+            2.6523678308077607,
+            48.44427710947925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6523751710521197,
+          48.444259908485485
+        ]
+      },
+      "properties": {
+        "name": "LSD | Le Sourire de Denise | Les Colonnes (gauche) | La Colonne L | Les Colonnes | Voyage Merveilleux",
+        "topoId": 7012,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6523751710521197,
+            48.444259908485485
+          ],
+          [
+            2.6523678308077607,
+            48.44427710947925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652391079867943,
+          48.44430884054517
+        ]
+      },
+      "properties": {
+        "name": "Tout en Dalle | La Fissure de la Merveille | L'Épaule | Épaulé-Jeté | À Fleur de Peau | La Dalle de Fer | L'Arête de la Merveille",
+        "topoId": 7017,
+        "horizontalAccuracy": 4.7,
+        "heading": 244.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652391079867943,
+            48.44430884054517
+          ],
+          [
+            2.6523667605302017,
+            48.44430113762003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652391079867943,
+          48.44430884054517
+        ]
+      },
+      "properties": {
+        "name": "Tout en Dalle | La Fissure de la Merveille | L'Épaule | Épaulé-Jeté | À Fleur de Peau | La Dalle de Fer | L'Arête de la Merveille",
+        "topoId": 7017,
+        "horizontalAccuracy": 4.7,
+        "heading": 244.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652391079867943,
+            48.44430884054517
+          ],
+          [
+            2.6523667605302017,
+            48.44430113762003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652391079867943,
+          48.44430884054517
+        ]
+      },
+      "properties": {
+        "name": "Tout en Dalle | La Fissure de la Merveille | L'Épaule | Épaulé-Jeté | À Fleur de Peau | La Dalle de Fer | L'Arête de la Merveille",
+        "topoId": 7017,
+        "horizontalAccuracy": 4.7,
+        "heading": 244.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652391079867943,
+            48.44430884054517
+          ],
+          [
+            2.6523667605302017,
+            48.44430113762003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652878285659881,
+          48.44416020767394
+        ]
+      },
+      "properties": {
+        "name": "Le Pilier Allayaud | Plan B | La Goulotte de Régis | Le Pilier Allayaud (assis) | Plan B (assis)",
+        "topoId": 7024,
+        "horizontalAccuracy": 4.7,
+        "heading": 220.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652878285659881,
+            48.44416020767394
+          ],
+          [
+            2.6528609002576404,
+            48.44414654812674
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652350655071101,
+          48.44434213881058
+        ]
+      },
+      "properties": {
+        "name": "L'Arête de la Merveille (droite)",
+        "topoId": 7018,
+        "horizontalAccuracy": 4.7,
+        "heading": 168.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652350655071101,
+            48.44434213881058
+          ],
+          [
+            2.6523558799064406,
+            48.44432460114976
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652878285659881,
+          48.44416020767394
+        ]
+      },
+      "properties": {
+        "name": "Le Pilier Allayaud | Plan B | La Goulotte de Régis | Le Pilier Allayaud (assis) | Plan B (assis)",
+        "topoId": 7024,
+        "horizontalAccuracy": 4.7,
+        "heading": 220.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652878285659881,
+            48.44416020767394
+          ],
+          [
+            2.6528609002576404,
+            48.44414654812674
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6515796056990673,
+          48.444417900390654
+        ]
+      },
+      "properties": {
+        "name": "Bleau's Art | Bleau's Art (droite)",
+        "topoId": 7033,
+        "horizontalAccuracy": 4.7,
+        "heading": 80.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6515796056990673,
+            48.444417900390654
+          ],
+          [
+            2.6516061625504164,
+            48.444420940728925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6522988826244274,
+          48.44429403927987
+        ]
+      },
+      "properties": {
+        "name": "Voyage Merveilleux | Le Surplomb | Garcymore | Courte Récréation / Le Surplomb (assis) | La Voie Normale de la Merveille",
+        "topoId": 7020,
+        "horizontalAccuracy": 4.7,
+        "heading": 76.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6522988826244274,
+            48.44429403927987
+          ],
+          [
+            2.652325090322888,
+            48.444298204653315
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6532332906117437,
+          48.44414033590242
+        ]
+      },
+      "properties": {
+        "name": "L'Évidente | Vététiste",
+        "topoId": 7025,
+        "horizontalAccuracy": 4.7,
+        "heading": 124.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6532332906117437,
+            48.44414033590242
+          ],
+          [
+            2.6532555633077717,
+            48.444130271321654
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6532332906117437,
+          48.44414033590242
+        ]
+      },
+      "properties": {
+        "name": "L'Évidente | Vététiste",
+        "topoId": 7025,
+        "horizontalAccuracy": 4.7,
+        "heading": 124.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6532332906117437,
+            48.44414033590242
+          ],
+          [
+            2.6532555633077717,
+            48.444130271321654
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6522988826244274,
+          48.44429403927987
+        ]
+      },
+      "properties": {
+        "name": "Voyage Merveilleux | Le Surplomb | Garcymore | Courte Récréation / Le Surplomb (assis) | La Voie Normale de la Merveille",
+        "topoId": 7020,
+        "horizontalAccuracy": 4.7,
+        "heading": 76.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6522988826244274,
+            48.44429403927987
+          ],
+          [
+            2.652325090322888,
+            48.444298204653315
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6524361022900678,
+          48.444282619519136
+        ]
+      },
+      "properties": {
+        "name": "La Merveille | La Merveille (droite) | Le Sourire de David",
+        "topoId": 7016,
+        "horizontalAccuracy": 4.7,
+        "heading": 259.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6524361022900678,
+            48.444282619519136
+          ],
+          [
+            2.6524095832479935,
+            48.44427943726463
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6524361022900678,
+          48.444282619519136
+        ]
+      },
+      "properties": {
+        "name": "La Merveille | La Merveille (droite) | Le Sourire de David",
+        "topoId": 7016,
+        "horizontalAccuracy": 4.7,
+        "heading": 259.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6524361022900678,
+            48.444282619519136
+          ],
+          [
+            2.6524095832479935,
+            48.44427943726463
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6524361022900678,
+          48.444282619519136
+        ]
+      },
+      "properties": {
+        "name": "La Merveille | La Merveille (droite) | Le Sourire de David",
+        "topoId": 7016,
+        "horizontalAccuracy": 4.7,
+        "heading": 259.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6524361022900678,
+            48.444282619519136
+          ],
+          [
+            2.6524095832479935,
+            48.44427943726463
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.653082496197662,
+          48.44431956700603
+        ]
+      },
+      "properties": {
+        "name": "Les Poings Coincés | La Grande Illusion | La Grande Illusion (assis)",
+        "topoId": 7027,
+        "horizontalAccuracy": 4.7,
+        "heading": 129.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.653082496197662,
+            48.44431956700603
+          ],
+          [
+            2.653103414118473,
+            48.4443082956792
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.653082496197662,
+          48.44431956700603
+        ]
+      },
+      "properties": {
+        "name": "Les Poings Coincés | La Grande Illusion | La Grande Illusion (assis)",
+        "topoId": 7027,
+        "horizontalAccuracy": 4.7,
+        "heading": 129.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.653082496197662,
+            48.44431956700603
+          ],
+          [
+            2.653103414118473,
+            48.4443082956792
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6529712340893616,
+          48.44435797452164
+        ]
+      },
+      "properties": {
+        "name": "La Boîte aux Lettres | Fanatik",
+        "topoId": 7028,
+        "horizontalAccuracy": 4.7,
+        "heading": 40.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6529712340893616,
+            48.44435797452164
+          ],
+          [
+            2.6529888072443963,
+            48.44437152787973
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6529712340893616,
+          48.44435797452164
+        ]
+      },
+      "properties": {
+        "name": "La Boîte aux Lettres | Fanatik",
+        "topoId": 7028,
+        "horizontalAccuracy": 4.7,
+        "heading": 40.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6529712340893616,
+            48.44435797452164
+          ],
+          [
+            2.6529888072443963,
+            48.44437152787973
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6523751710521197,
+          48.444259908485485
+        ]
+      },
+      "properties": {
+        "name": "LSD | Le Sourire de Denise | Les Colonnes (gauche) | La Colonne L | Les Colonnes | Voyage Merveilleux",
+        "topoId": 7012,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6523751710521197,
+            48.444259908485485
+          ],
+          [
+            2.6523678308077607,
+            48.44427710947925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6517739845445134,
+          48.44447075988489
+        ]
+      },
+      "properties": {
+        "name": "Sauvons la Planète | Sauvons la Planète (direct)",
+        "topoId": 7032,
+        "horizontalAccuracy": 4.7,
+        "heading": 269.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6517739845445134,
+            48.44447075988489
+          ],
+          [
+            2.6517470374289487,
+            48.444470524161474
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6517739845445134,
+          48.44447075988489
+        ]
+      },
+      "properties": {
+        "name": "Sauvons la Planète | Sauvons la Planète (direct)",
+        "topoId": 7032,
+        "horizontalAccuracy": 4.7,
+        "heading": 269.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6517739845445134,
+            48.44447075988489
+          ],
+          [
+            2.6517470374289487,
+            48.444470524161474
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6515796056990673,
+          48.444417900390654
+        ]
+      },
+      "properties": {
+        "name": "Bleau's Art | Bleau's Art (droite)",
+        "topoId": 7033,
+        "horizontalAccuracy": 4.7,
+        "heading": 80.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6515796056990673,
+            48.444417900390654
+          ],
+          [
+            2.6516061625504164,
+            48.444420940728925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652391079867943,
+          48.44430884054517
+        ]
+      },
+      "properties": {
+        "name": "Tout en Dalle | La Fissure de la Merveille | L'Épaule | Épaulé-Jeté | À Fleur de Peau | La Dalle de Fer | L'Arête de la Merveille",
+        "topoId": 7017,
+        "horizontalAccuracy": 4.7,
+        "heading": 244.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652391079867943,
+            48.44430884054517
+          ],
+          [
+            2.6523667605302017,
+            48.44430113762003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652391079867943,
+          48.44430884054517
+        ]
+      },
+      "properties": {
+        "name": "Tout en Dalle | La Fissure de la Merveille | L'Épaule | Épaulé-Jeté | À Fleur de Peau | La Dalle de Fer | L'Arête de la Merveille",
+        "topoId": 7017,
+        "horizontalAccuracy": 4.7,
+        "heading": 244.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652391079867943,
+            48.44430884054517
+          ],
+          [
+            2.6523667605302017,
+            48.44430113762003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652391079867943,
+          48.44430884054517
+        ]
+      },
+      "properties": {
+        "name": "Tout en Dalle | La Fissure de la Merveille | L'Épaule | Épaulé-Jeté | À Fleur de Peau | La Dalle de Fer | L'Arête de la Merveille",
+        "topoId": 7017,
+        "horizontalAccuracy": 4.7,
+        "heading": 244.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652391079867943,
+            48.44430884054517
+          ],
+          [
+            2.6523667605302017,
+            48.44430113762003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652391079867943,
+          48.44430884054517
+        ]
+      },
+      "properties": {
+        "name": "Tout en Dalle | La Fissure de la Merveille | L'Épaule | Épaulé-Jeté | À Fleur de Peau | La Dalle de Fer | L'Arête de la Merveille",
+        "topoId": 7017,
+        "horizontalAccuracy": 4.7,
+        "heading": 244.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652391079867943,
+            48.44430884054517
+          ],
+          [
+            2.6523667605302017,
+            48.44430113762003
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6522988826244274,
+          48.44429403927987
+        ]
+      },
+      "properties": {
+        "name": "Voyage Merveilleux | Le Surplomb | Garcymore | Courte Récréation / Le Surplomb (assis) | La Voie Normale de la Merveille",
+        "topoId": 7020,
+        "horizontalAccuracy": 4.7,
+        "heading": 76.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6522988826244274,
+            48.44429403927987
+          ],
+          [
+            2.652325090322888,
+            48.444298204653315
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652878285659881,
+          48.44416020767394
+        ]
+      },
+      "properties": {
+        "name": "Le Pilier Allayaud | Plan B | La Goulotte de Régis | Le Pilier Allayaud (assis) | Plan B (assis)",
+        "topoId": 7024,
+        "horizontalAccuracy": 4.7,
+        "heading": 220.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652878285659881,
+            48.44416020767394
+          ],
+          [
+            2.6528609002576404,
+            48.44414654812674
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.653082496197662,
+          48.44431956700603
+        ]
+      },
+      "properties": {
+        "name": "Les Poings Coincés | La Grande Illusion | La Grande Illusion (assis)",
+        "topoId": 7027,
+        "horizontalAccuracy": 4.7,
+        "heading": 129.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.653082496197662,
+            48.44431956700603
+          ],
+          [
+            2.653103414118473,
+            48.4443082956792
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6523751710521197,
+          48.444259908485485
+        ]
+      },
+      "properties": {
+        "name": "LSD | Le Sourire de Denise | Les Colonnes (gauche) | La Colonne L | Les Colonnes | Voyage Merveilleux",
+        "topoId": 7012,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6523751710521197,
+            48.444259908485485
+          ],
+          [
+            2.6523678308077607,
+            48.44427710947925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6522988826244274,
+          48.44429403927987
+        ]
+      },
+      "properties": {
+        "name": "Voyage Merveilleux | Le Surplomb | Garcymore | Courte Récréation / Le Surplomb (assis) | La Voie Normale de la Merveille",
+        "topoId": 7020,
+        "horizontalAccuracy": 4.7,
+        "heading": 76.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6522988826244274,
+            48.44429403927987
+          ],
+          [
+            2.652325090322888,
+            48.444298204653315
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652878285659881,
+          48.44416020767394
+        ]
+      },
+      "properties": {
+        "name": "Le Pilier Allayaud | Plan B | La Goulotte de Régis | Le Pilier Allayaud (assis) | Plan B (assis)",
+        "topoId": 7024,
+        "horizontalAccuracy": 4.7,
+        "heading": 220.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652878285659881,
+            48.44416020767394
+          ],
+          [
+            2.6528609002576404,
+            48.44414654812674
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6523751710521197,
+          48.444259908485485
+        ]
+      },
+      "properties": {
+        "name": "LSD | Le Sourire de Denise | Les Colonnes (gauche) | La Colonne L | Les Colonnes | Voyage Merveilleux",
+        "topoId": 7012,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6523751710521197,
+            48.444259908485485
+          ],
+          [
+            2.6523678308077607,
+            48.44427710947925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.652878285659881,
+          48.44416020767394
+        ]
+      },
+      "properties": {
+        "name": "Le Pilier Allayaud | Plan B | La Goulotte de Régis | Le Pilier Allayaud (assis) | Plan B (assis)",
+        "topoId": 7024,
+        "horizontalAccuracy": 4.7,
+        "heading": 220.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.652878285659881,
+            48.44416020767394
+          ],
+          [
+            2.6528609002576404,
+            48.44414654812674
+          ]
+        ]
+      },
+      "properties": {
+      }
+    }
+  ]
+}

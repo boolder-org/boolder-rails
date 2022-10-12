@@ -1,0 +1,1331 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5906163547212167,
+          48.40837804605135
+        ]
+      },
+      "properties": {
+        "name": "Sylphide | Mortel Transfert | Voltex | Rainbow Rocket | Voltex (en traversée) | Red Rocket",
+        "topoId": 6099,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5906163547212167,
+            48.40837804605135
+          ],
+          [
+            2.590636250210646,
+            48.408365979129854
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5904865319754307,
+          48.40831687047417
+        ]
+      },
+      "properties": {
+        "name": "Théorème de Thalès | Théorème des Milieux | Théorème de Pythagore",
+        "topoId": 6103,
+        "horizontalAccuracy": 4.7,
+        "heading": 264.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5904865319754307,
+            48.40831687047417
+          ],
+          [
+            2.5904597285238915,
+            48.40831501080103
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.587227791344922,
+          48.40861162549754
+        ]
+      },
+      "properties": {
+        "name": "Le Toit de l'Abri-Bivouac | Le Petit Toit de l'Abri-Bivouac",
+        "topoId": 6104,
+        "horizontalAccuracy": 4.7,
+        "heading": 249.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.587227791344922,
+            48.40861162549754
+          ],
+          [
+            2.587202497131937,
+            48.40860545252469
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.587230987849261,
+          48.40859492779561
+        ]
+      },
+      "properties": {
+        "name": "L'Arête de l'Abri-Bivouac | L'Arête de l'Abri-Bivouac (assis)",
+        "topoId": 6105,
+        "horizontalAccuracy": 3.5,
+        "heading": 348.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.587230987849261,
+            48.40859492779561
+          ],
+          [
+            2.5872257924974056,
+            48.40861248164679
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586501719793113,
+          48.40924420747805
+        ]
+      },
+      "properties": {
+        "name": "Fin de Carrière | Profil de Carrière | Profil de Carrière (assis)",
+        "topoId": 6109,
+        "horizontalAccuracy": 4.7,
+        "heading": 84.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586501719793113,
+            48.40924420747805
+          ],
+          [
+            2.5865285231375705,
+            48.40924606779715
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5863362974894875,
+          48.40930145165941
+        ]
+      },
+      "properties": {
+        "name": "http.bloc | http.bloc (assis)",
+        "topoId": 6112,
+        "horizontalAccuracy": 4.7,
+        "heading": 142.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5863362974894875,
+            48.40930145165941
+          ],
+          [
+            2.586352555137328,
+            48.40928718429762
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5863414917679886,
+          48.40930178897585
+        ]
+      },
+      "properties": {
+        "name": "Joyeux Grill | Joyeux Grill (accroupi)",
+        "topoId": 6111,
+        "horizontalAccuracy": 4.7,
+        "heading": 130.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5863414917679886,
+            48.40930178897585
+          ],
+          [
+            2.5863620223253254,
+            48.40929020050289
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586445785268001,
+          48.40955102970331
+        ]
+      },
+      "properties": {
+        "name": "Voltane (direct) | Watt | Ampère | Voltane | Voltane (raccourci) | Watt (assis) | Ampère (assis)",
+        "topoId": 6114,
+        "horizontalAccuracy": 4.5,
+        "heading": 269.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586445785268001,
+            48.40955102970331
+          ],
+          [
+            2.5864188363377023,
+            48.409550917698795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5865576566339836,
+          48.40951314955382
+        ]
+      },
+      "properties": {
+        "name": "Bataille | Histoire de Taille | Détail de l'Histoire",
+        "topoId": 6118,
+        "horizontalAccuracy": 4.7,
+        "heading": 177.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5865576566339836,
+            48.40951314955382
+          ],
+          [
+            2.586558939689679,
+            48.40949528073108
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5904865319754307,
+          48.40831687047417
+        ]
+      },
+      "properties": {
+        "name": "Théorème de Thalès | Théorème des Milieux | Théorème de Pythagore",
+        "topoId": 6103,
+        "horizontalAccuracy": 4.7,
+        "heading": 264.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5904865319754307,
+            48.40831687047417
+          ],
+          [
+            2.5904597285238915,
+            48.40831501080103
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5906163547212167,
+          48.40837804605135
+        ]
+      },
+      "properties": {
+        "name": "Sylphide | Mortel Transfert | Voltex | Rainbow Rocket | Voltex (en traversée) | Red Rocket",
+        "topoId": 6099,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5906163547212167,
+            48.40837804605135
+          ],
+          [
+            2.590636250210646,
+            48.408365979129854
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5906163547212167,
+          48.40837804605135
+        ]
+      },
+      "properties": {
+        "name": "Sylphide | Mortel Transfert | Voltex | Rainbow Rocket | Voltex (en traversée) | Red Rocket",
+        "topoId": 6099,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5906163547212167,
+            48.40837804605135
+          ],
+          [
+            2.590636250210646,
+            48.408365979129854
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5906163547212167,
+          48.40837804605135
+        ]
+      },
+      "properties": {
+        "name": "Sylphide | Mortel Transfert | Voltex | Rainbow Rocket | Voltex (en traversée) | Red Rocket",
+        "topoId": 6099,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5906163547212167,
+            48.40837804605135
+          ],
+          [
+            2.590636250210646,
+            48.408365979129854
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.587227791344922,
+          48.40861162549754
+        ]
+      },
+      "properties": {
+        "name": "Le Toit de l'Abri-Bivouac | Le Petit Toit de l'Abri-Bivouac",
+        "topoId": 6104,
+        "horizontalAccuracy": 4.7,
+        "heading": 249.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.587227791344922,
+            48.40861162549754
+          ],
+          [
+            2.587202497131937,
+            48.40860545252469
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.587230987849261,
+          48.40859492779561
+        ]
+      },
+      "properties": {
+        "name": "L'Arête de l'Abri-Bivouac | L'Arête de l'Abri-Bivouac (assis)",
+        "topoId": 6105,
+        "horizontalAccuracy": 3.5,
+        "heading": 348.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.587230987849261,
+            48.40859492779561
+          ],
+          [
+            2.5872257924974056,
+            48.40861248164679
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5868124794239056,
+          48.408882427074396
+        ]
+      },
+      "properties": {
+        "name": "Histoire de Fesses | Sans Idée",
+        "topoId": 6107,
+        "horizontalAccuracy": 3.5,
+        "heading": 123.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5868124794239056,
+            48.408882427074396
+          ],
+          [
+            2.5868348787725934,
+            48.40887248004772
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586501719793113,
+          48.40924420747805
+        ]
+      },
+      "properties": {
+        "name": "Fin de Carrière | Profil de Carrière | Profil de Carrière (assis)",
+        "topoId": 6109,
+        "horizontalAccuracy": 4.7,
+        "heading": 84.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586501719793113,
+            48.40924420747805
+          ],
+          [
+            2.5865285231375705,
+            48.40924606779715
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586353170248809,
+          48.40920539101652
+        ]
+      },
+      "properties": {
+        "name": "Mercedes | Forte Tête",
+        "topoId": 6110,
+        "horizontalAccuracy": 4.7,
+        "heading": 97.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586353170248809,
+            48.40920539101652
+          ],
+          [
+            2.586379887070386,
+            48.409203045538796
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586501719793113,
+          48.40924420747805
+        ]
+      },
+      "properties": {
+        "name": "Fin de Carrière | Profil de Carrière | Profil de Carrière (assis)",
+        "topoId": 6109,
+        "horizontalAccuracy": 4.7,
+        "heading": 84.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586501719793113,
+            48.40924420747805
+          ],
+          [
+            2.5865285231375705,
+            48.40924606779715
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586353170248809,
+          48.40920539101652
+        ]
+      },
+      "properties": {
+        "name": "Mercedes | Forte Tête",
+        "topoId": 6110,
+        "horizontalAccuracy": 4.7,
+        "heading": 97.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586353170248809,
+            48.40920539101652
+          ],
+          [
+            2.586379887070386,
+            48.409203045538796
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5863414917679886,
+          48.40930178897585
+        ]
+      },
+      "properties": {
+        "name": "Joyeux Grill | Joyeux Grill (accroupi)",
+        "topoId": 6111,
+        "horizontalAccuracy": 4.7,
+        "heading": 130.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5863414917679886,
+            48.40930178897585
+          ],
+          [
+            2.5863620223253254,
+            48.40929020050289
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586451498223844,
+          48.40950212211488
+        ]
+      },
+      "properties": {
+        "name": "Mine",
+        "topoId": 6117,
+        "horizontalAccuracy": 4.6,
+        "heading": 312.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586451498223844,
+            48.40950212211488
+          ],
+          [
+            2.586431493238942,
+            48.40951410873225
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586445785268001,
+          48.40955102970331
+        ]
+      },
+      "properties": {
+        "name": "Voltane (direct) | Watt | Ampère | Voltane | Voltane (raccourci) | Watt (assis) | Ampère (assis)",
+        "topoId": 6114,
+        "horizontalAccuracy": 4.5,
+        "heading": 269.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586445785268001,
+            48.40955102970331
+          ],
+          [
+            2.5864188363377023,
+            48.409550917698795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5865576566339836,
+          48.40951314955382
+        ]
+      },
+      "properties": {
+        "name": "Bataille | Histoire de Taille | Détail de l'Histoire",
+        "topoId": 6118,
+        "horizontalAccuracy": 4.7,
+        "heading": 177.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5865576566339836,
+            48.40951314955382
+          ],
+          [
+            2.586558939689679,
+            48.40949528073108
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586515434643036,
+          48.409500862083604
+        ]
+      },
+      "properties": {
+        "name": "Crayon",
+        "topoId": 6116,
+        "horizontalAccuracy": 4.6,
+        "heading": 281.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586515434643036,
+            48.409500862083604
+          ],
+          [
+            2.586489021875889,
+            48.409504414451604
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586445785268001,
+          48.40955102970331
+        ]
+      },
+      "properties": {
+        "name": "Voltane (direct) | Watt | Ampère | Voltane | Voltane (raccourci) | Watt (assis) | Ampère (assis)",
+        "topoId": 6114,
+        "horizontalAccuracy": 4.5,
+        "heading": 269.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586445785268001,
+            48.40955102970331
+          ],
+          [
+            2.5864188363377023,
+            48.409550917698795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586445785268001,
+          48.40955102970331
+        ]
+      },
+      "properties": {
+        "name": "Voltane (direct) | Watt | Ampère | Voltane | Voltane (raccourci) | Watt (assis) | Ampère (assis)",
+        "topoId": 6114,
+        "horizontalAccuracy": 4.5,
+        "heading": 269.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586445785268001,
+            48.40955102970331
+          ],
+          [
+            2.5864188363377023,
+            48.409550917698795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5865576566339836,
+          48.40951314955382
+        ]
+      },
+      "properties": {
+        "name": "Bataille | Histoire de Taille | Détail de l'Histoire",
+        "topoId": 6118,
+        "horizontalAccuracy": 4.7,
+        "heading": 177.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5865576566339836,
+            48.40951314955382
+          ],
+          [
+            2.586558939689679,
+            48.40949528073108
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586515038697801,
+          48.4094975468238
+        ]
+      },
+      "properties": {
+        "name": "Taille-Toi",
+        "topoId": 6119,
+        "horizontalAccuracy": 4.7,
+        "heading": 143.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586515038697801,
+            48.4094975468238
+          ],
+          [
+            2.5865310826756645,
+            48.40948317333271
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586539888216389,
+          48.40900819178058
+        ]
+      },
+      "properties": {
+        "name": "Etcetera",
+        "topoId": 6108,
+        "horizontalAccuracy": 4.7,
+        "heading": 79.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586539888216389,
+            48.40900819178058
+          ],
+          [
+            2.5865663925691655,
+            48.409011429683474
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5863362974894875,
+          48.40930145165941
+        ]
+      },
+      "properties": {
+        "name": "http.bloc | http.bloc (assis)",
+        "topoId": 6112,
+        "horizontalAccuracy": 4.7,
+        "heading": 142.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5863362974894875,
+            48.40930145165941
+          ],
+          [
+            2.586352555137328,
+            48.40928718429762
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5906163547212167,
+          48.40837804605135
+        ]
+      },
+      "properties": {
+        "name": "Sylphide | Mortel Transfert | Voltex | Rainbow Rocket | Voltex (en traversée) | Red Rocket",
+        "topoId": 6099,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5906163547212167,
+            48.40837804605135
+          ],
+          [
+            2.590636250210646,
+            48.408365979129854
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5904865319754307,
+          48.40831687047417
+        ]
+      },
+      "properties": {
+        "name": "Théorème de Thalès | Théorème des Milieux | Théorème de Pythagore",
+        "topoId": 6103,
+        "horizontalAccuracy": 4.7,
+        "heading": 264.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5904865319754307,
+            48.40831687047417
+          ],
+          [
+            2.5904597285238915,
+            48.40831501080103
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.590513617434632,
+          48.40831884574568
+        ]
+      },
+      "properties": {
+        "name": "Les Pantins Sociaux",
+        "topoId": 6102,
+        "horizontalAccuracy": 4.7,
+        "heading": 288.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.590513617434632,
+            48.40831884574568
+          ],
+          [
+            2.590488124513903,
+            48.408324647386415
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5868124794239056,
+          48.408882427074396
+        ]
+      },
+      "properties": {
+        "name": "Histoire de Fesses | Sans Idée",
+        "topoId": 6107,
+        "horizontalAccuracy": 3.5,
+        "heading": 123.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5868124794239056,
+            48.408882427074396
+          ],
+          [
+            2.5868348787725934,
+            48.40887248004772
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5906163547212167,
+          48.40837804605135
+        ]
+      },
+      "properties": {
+        "name": "Sylphide | Mortel Transfert | Voltex | Rainbow Rocket | Voltex (en traversée) | Red Rocket",
+        "topoId": 6099,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5906163547212167,
+            48.40837804605135
+          ],
+          [
+            2.590636250210646,
+            48.408365979129854
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586445785268001,
+          48.40955102970331
+        ]
+      },
+      "properties": {
+        "name": "Voltane (direct) | Watt | Ampère | Voltane | Voltane (raccourci) | Watt (assis) | Ampère (assis)",
+        "topoId": 6114,
+        "horizontalAccuracy": 4.5,
+        "heading": 269.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586445785268001,
+            48.40955102970331
+          ],
+          [
+            2.5864188363377023,
+            48.409550917698795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586445785268001,
+          48.40955102970331
+        ]
+      },
+      "properties": {
+        "name": "Voltane (direct) | Watt | Ampère | Voltane | Voltane (raccourci) | Watt (assis) | Ampère (assis)",
+        "topoId": 6114,
+        "horizontalAccuracy": 4.5,
+        "heading": 269.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586445785268001,
+            48.40955102970331
+          ],
+          [
+            2.5864188363377023,
+            48.409550917698795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.586445785268001,
+          48.40955102970331
+        ]
+      },
+      "properties": {
+        "name": "Voltane (direct) | Watt | Ampère | Voltane | Voltane (raccourci) | Watt (assis) | Ampère (assis)",
+        "topoId": 6114,
+        "horizontalAccuracy": 4.5,
+        "heading": 269.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.586445785268001,
+            48.40955102970331
+          ],
+          [
+            2.5864188363377023,
+            48.409550917698795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    }
+  ]
+}

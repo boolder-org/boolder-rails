@@ -1,7 +1,7 @@
 require 'rgeo/geo_json'
 
 namespace :josm do
-  task export: :environment do
+  task geojson: :environment do
     area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
 
@@ -40,7 +40,7 @@ namespace :josm do
       f.write(geo_json)
     end
 
-    puts "exported area-#{area_id}-data.geojson"
+    puts "exported area-#{area_id}-data.geojson".green
   end
 
   task metadata: :environment do
@@ -86,7 +86,7 @@ namespace :josm do
       f.write(geo_json)
     end
 
-    puts "exported area-#{area_id}-metadata.geojson"
+    puts "exported area-#{area_id}-metadata.geojson".green
   end
 end
 

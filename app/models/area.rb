@@ -5,6 +5,10 @@ class Area < ApplicationRecord
   has_many :pois
   has_one_attached :cover
 
+  # reindex problems on algolia when area is updated
+  # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
+  after_save { problems.each(&:touch) } 
+
   include AlgoliaSearch
   algoliasearch if: :published, enqueue: true do
     attributes :name

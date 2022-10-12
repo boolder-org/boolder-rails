@@ -1,0 +1,2419 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.610541956988362,
+          48.4084076149819
+        ]
+      },
+      "properties": {
+        "name": "Black 30 De Fil en Aiguille",
+        "topoId": 5955,
+        "horizontalAccuracy": 4.7,
+        "heading": 122.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.610541956988362,
+            48.4084076149819
+          ],
+          [
+            2.6105647726031127,
+            48.40839809387546
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.610245095568346,
+          48.408071100756906
+        ]
+      },
+      "properties": {
+        "name": "Solaris | Les Visiteurs",
+        "topoId": 5956,
+        "horizontalAccuracy": 3.5,
+        "heading": 194.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.610245095568346,
+            48.408071100756906
+          ],
+          [
+            2.6102385360505664,
+            48.40805374915661
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.610245095568346,
+          48.408071100756906
+        ]
+      },
+      "properties": {
+        "name": "Solaris | Les Visiteurs",
+        "topoId": 5956,
+        "horizontalAccuracy": 3.5,
+        "heading": 194.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.610245095568346,
+            48.408071100756906
+          ],
+          [
+            2.6102385360505664,
+            48.40805374915661
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.610272037789299,
+          48.407980241134844
+        ]
+      },
+      "properties": {
+        "name": "Black 26 Trois Hommes et un Coup Fin",
+        "topoId": 5957,
+        "horizontalAccuracy": 4.7,
+        "heading": 338.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.610272037789299,
+            48.407980241134844
+          ],
+          [
+            2.610262338960255,
+            48.40799693207965
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6104443334067335,
+          48.40805010408946
+        ]
+      },
+      "properties": {
+        "name": "Black 27 Le Gazomètre",
+        "topoId": 5958,
+        "horizontalAccuracy": 3.5,
+        "heading": 202.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6104443334067335,
+            48.40805010408946
+          ],
+          [
+            2.6104341670128557,
+            48.40803353622618
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.611003737847932,
+          48.408224333879204
+        ]
+      },
+      "properties": {
+        "name": "Black 32 La Châtaigne | Black 33 La Teigne",
+        "topoId": 5960,
+        "horizontalAccuracy": 4.7,
+        "heading": 287.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.611003737847932,
+            48.408224333879204
+          ],
+          [
+            2.6109780021955857,
+            48.40822964233478
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.611003737847932,
+          48.408224333879204
+        ]
+      },
+      "properties": {
+        "name": "Black 32 La Châtaigne | Black 33 La Teigne",
+        "topoId": 5960,
+        "horizontalAccuracy": 4.7,
+        "heading": 287.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.611003737847932,
+            48.408224333879204
+          ],
+          [
+            2.6109780021955857,
+            48.40822964233478
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6109429010742278,
+          48.40829692429472
+        ]
+      },
+      "properties": {
+        "name": "Aplatcadabras",
+        "topoId": 5961,
+        "horizontalAccuracy": 4.7,
+        "heading": 214.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6109429010742278,
+            48.40829692429472
+          ],
+          [
+            2.610927602451041,
+            48.40828219672582
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6110465475606803,
+          48.40818248891029
+        ]
+      },
+      "properties": {
+        "name": "La Chose | Black 31 La Jolie Bouse | La Chose (assis)",
+        "topoId": 5962,
+        "horizontalAccuracy": 4.7,
+        "heading": 183.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6110465475606803,
+            48.40818248891029
+          ],
+          [
+            2.6110449076009385,
+            48.40816463248768
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6110465475606803,
+          48.40818248891029
+        ]
+      },
+      "properties": {
+        "name": "La Chose | Black 31 La Jolie Bouse | La Chose (assis)",
+        "topoId": 5962,
+        "horizontalAccuracy": 4.7,
+        "heading": 183.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6110465475606803,
+            48.40818248891029
+          ],
+          [
+            2.6110449076009385,
+            48.40816463248768
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6110465475606803,
+          48.40818248891029
+        ]
+      },
+      "properties": {
+        "name": "La Chose | Black 31 La Jolie Bouse | La Chose (assis)",
+        "topoId": 5962,
+        "horizontalAccuracy": 4.7,
+        "heading": 183.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6110465475606803,
+            48.40818248891029
+          ],
+          [
+            2.6110449076009385,
+            48.40816463248768
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.611559322524716,
+          48.40825713887517
+        ]
+      },
+      "properties": {
+        "name": "Peau de Chagrin | Black 34 Duel | Duel (direct)",
+        "topoId": 5963,
+        "horizontalAccuracy": 4.7,
+        "heading": 192.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.611559322524716,
+            48.40825713887517
+          ],
+          [
+            2.6115533136066342,
+            48.40823969968819
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.611559322524716,
+          48.40825713887517
+        ]
+      },
+      "properties": {
+        "name": "Peau de Chagrin | Black 34 Duel | Duel (direct)",
+        "topoId": 5963,
+        "horizontalAccuracy": 4.7,
+        "heading": 192.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.611559322524716,
+            48.40825713887517
+          ],
+          [
+            2.6115533136066342,
+            48.40823969968819
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.611559322524716,
+          48.40825713887517
+        ]
+      },
+      "properties": {
+        "name": "Peau de Chagrin | Black 34 Duel | Duel (direct)",
+        "topoId": 5963,
+        "horizontalAccuracy": 4.7,
+        "heading": 192.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.611559322524716,
+            48.40825713887517
+          ],
+          [
+            2.6115533136066342,
+            48.40823969968819
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6105256378674975,
+          48.408176042184614
+        ]
+      },
+      "properties": {
+        "name": "Black 28 Barbatruc",
+        "topoId": 5964,
+        "horizontalAccuracy": 3.5,
+        "heading": 264.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6105256378674975,
+            48.408176042184614
+          ],
+          [
+            2.610498835928418,
+            48.408174172925435
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6105595845753427,
+          48.4082526527796
+        ]
+      },
+      "properties": {
+        "name": "Black 29 Le Thermomètre",
+        "topoId": 5965,
+        "horizontalAccuracy": 3.5,
+        "heading": 222.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6105595845753427,
+            48.4082526527796
+          ],
+          [
+            2.610541318606679,
+            48.40823949932363
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609795322644161,
+          48.40789541606673
+        ]
+      },
+      "properties": {
+        "name": "Fou Rire | Fou Rire (droite-gauche) | Fou Rire (aller-retour)",
+        "topoId": 5966,
+        "horizontalAccuracy": 4.2,
+        "heading": 30.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609795322644161,
+            48.40789541606673
+          ],
+          [
+            2.60980917061485,
+            48.40791076326279
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609795322644161,
+          48.40789541606673
+        ]
+      },
+      "properties": {
+        "name": "Fou Rire | Fou Rire (droite-gauche) | Fou Rire (aller-retour)",
+        "topoId": 5966,
+        "horizontalAccuracy": 4.2,
+        "heading": 30.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609795322644161,
+            48.40789541606673
+          ],
+          [
+            2.60980917061485,
+            48.40791076326279
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609795322644161,
+          48.40789541606673
+        ]
+      },
+      "properties": {
+        "name": "Fou Rire | Fou Rire (droite-gauche) | Fou Rire (aller-retour)",
+        "topoId": 5966,
+        "horizontalAccuracy": 4.2,
+        "heading": 30.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609795322644161,
+            48.40789541606673
+          ],
+          [
+            2.60980917061485,
+            48.40791076326279
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6097244955623617,
+          48.40779365976222
+        ]
+      },
+      "properties": {
+        "name": "Black 24 Chimpanzodrome | Chimpanzodrome (retour)",
+        "topoId": 5967,
+        "horizontalAccuracy": 4.2,
+        "heading": 32.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6097244955623617,
+            48.40779365976222
+          ],
+          [
+            2.609739079776508,
+            48.4078087034643
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6097244955623617,
+          48.40779365976222
+        ]
+      },
+      "properties": {
+        "name": "Black 24 Chimpanzodrome | Chimpanzodrome (retour)",
+        "topoId": 5967,
+        "horizontalAccuracy": 4.2,
+        "heading": 32.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6097244955623617,
+            48.40779365976222
+          ],
+          [
+            2.609739079776508,
+            48.4078087034643
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6095776804864452,
+          48.408132352201534
+        ]
+      },
+      "properties": {
+        "name": "Black 25 Le Bloc à Bacchus",
+        "topoId": 5969,
+        "horizontalAccuracy": 4.7,
+        "heading": 125.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6095776804864452,
+            48.408132352201534
+          ],
+          [
+            2.609599759865988,
+            48.40812209463783
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6093790773326617,
+          48.4081337135736
+        ]
+      },
+      "properties": {
+        "name": "Tirer en l'Air",
+        "topoId": 5970,
+        "horizontalAccuracy": 3.5,
+        "heading": 37.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6093790773326617,
+            48.4081337135736
+          ],
+          [
+            2.609395360588201,
+            48.40814796838503
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608532588931367,
+          48.407947593413965
+        ]
+      },
+      "properties": {
+        "name": "Black 20 La Cochonnaille | Black 21 Jambon Volant | Jambon Fumé",
+        "topoId": 5971,
+        "horizontalAccuracy": 4.2,
+        "heading": 59.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608532588931367,
+            48.407947593413965
+          ],
+          [
+            2.6085558997107023,
+            48.40795657051408
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608532588931367,
+          48.407947593413965
+        ]
+      },
+      "properties": {
+        "name": "Black 20 La Cochonnaille | Black 21 Jambon Volant | Jambon Fumé",
+        "topoId": 5971,
+        "horizontalAccuracy": 4.2,
+        "heading": 59.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608532588931367,
+            48.407947593413965
+          ],
+          [
+            2.6085558997107023,
+            48.40795657051408
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608532588931367,
+          48.407947593413965
+        ]
+      },
+      "properties": {
+        "name": "Black 20 La Cochonnaille | Black 21 Jambon Volant | Jambon Fumé",
+        "topoId": 5971,
+        "horizontalAccuracy": 4.2,
+        "heading": 59.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608532588931367,
+            48.407947593413965
+          ],
+          [
+            2.6085558997107023,
+            48.40795657051408
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6084754955259153,
+          48.407860618743904
+        ]
+      },
+      "properties": {
+        "name": "Paris-Chamonix | Misère",
+        "topoId": 5972,
+        "horizontalAccuracy": 4.7,
+        "heading": 38.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6084754955259153,
+            48.407860618743904
+          ],
+          [
+            2.608492379008407,
+            48.4078745625357
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6084754955259153,
+          48.407860618743904
+        ]
+      },
+      "properties": {
+        "name": "Paris-Chamonix | Misère",
+        "topoId": 5972,
+        "horizontalAccuracy": 4.7,
+        "heading": 38.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6084754955259153,
+            48.407860618743904
+          ],
+          [
+            2.608492379008407,
+            48.4078745625357
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6083636627851896,
+          48.408094624239105
+        ]
+      },
+      "properties": {
+        "name": "Miss Marbre",
+        "topoId": 5973,
+        "horizontalAccuracy": 4.7,
+        "heading": 138.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6083636627851896,
+            48.408094624239105
+          ],
+          [
+            2.608381494651125,
+            48.40808121082557
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6087962106228337,
+          48.407883952762745
+        ]
+      },
+      "properties": {
+        "name": "Black 23 La Mouche | Gégé Doigts d'Acier",
+        "topoId": 5974,
+        "horizontalAccuracy": 4.7,
+        "heading": 233.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6087962106228337,
+            48.407883952762745
+          ],
+          [
+            2.608774494654248,
+            48.40787335879835
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6087962106228337,
+          48.407883952762745
+        ]
+      },
+      "properties": {
+        "name": "Black 23 La Mouche | Gégé Doigts d'Acier",
+        "topoId": 5974,
+        "horizontalAccuracy": 4.7,
+        "heading": 233.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6087962106228337,
+            48.407883952762745
+          ],
+          [
+            2.608774494654248,
+            48.40787335879835
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608561422678277,
+          48.40747456070819
+        ]
+      },
+      "properties": {
+        "name": "Black 22 Mosquito Coast",
+        "topoId": 5975,
+        "horizontalAccuracy": 3.5,
+        "heading": 205.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608561422678277,
+            48.40747456070819
+          ],
+          [
+            2.608549953944705,
+            48.40745837170264
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6081018429273812,
+          48.408810091250324
+        ]
+      },
+      "properties": {
+        "name": "Poetic Champion Traverse | Poetic Champion Traverse (par le bas)",
+        "topoId": 5978,
+        "horizontalAccuracy": 4.2,
+        "heading": 29.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6081018429273812,
+            48.408810091250324
+          ],
+          [
+            2.6081150033305183,
+            48.40882570248893
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6081018429273812,
+          48.408810091250324
+        ]
+      },
+      "properties": {
+        "name": "Poetic Champion Traverse | Poetic Champion Traverse (par le bas)",
+        "topoId": 5978,
+        "horizontalAccuracy": 4.2,
+        "heading": 29.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6081018429273812,
+            48.408810091250324
+          ],
+          [
+            2.6081150033305183,
+            48.40882570248893
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608334105464265,
+          48.40893267658391
+        ]
+      },
+      "properties": {
+        "name": "Preuve à l'Appui | Black 19 No Teacher, No Guru, No Method",
+        "topoId": 5979,
+        "horizontalAccuracy": 3.7,
+        "heading": 141.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608334105464265,
+            48.40893267658391
+          ],
+          [
+            2.608351006508937,
+            48.408918742460635
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608334105464265,
+          48.40893267658391
+        ]
+      },
+      "properties": {
+        "name": "Preuve à l'Appui | Black 19 No Teacher, No Guru, No Method",
+        "topoId": 5979,
+        "horizontalAccuracy": 3.7,
+        "heading": 141.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608334105464265,
+            48.40893267658391
+          ],
+          [
+            2.608351006508937,
+            48.408918742460635
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6084478536241824,
+          48.40946479452835
+        ]
+      },
+      "properties": {
+        "name": "Black 15 Erik le Rouge | Black 16 Le Kétil",
+        "topoId": 5980,
+        "horizontalAccuracy": 4.7,
+        "heading": 99.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6084478536241824,
+            48.40946479452835
+          ],
+          [
+            2.608474410240529,
+            48.40946175119437
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6084478536241824,
+          48.40946479452835
+        ]
+      },
+      "properties": {
+        "name": "Black 15 Erik le Rouge | Black 16 Le Kétil",
+        "topoId": 5980,
+        "horizontalAccuracy": 4.7,
+        "heading": 99.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6084478536241824,
+            48.40946479452835
+          ],
+          [
+            2.608474410240529,
+            48.40946175119437
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608801312747047,
+          48.40940499682792
+        ]
+      },
+      "properties": {
+        "name": "Black 17 La Débonnaire | Black 18 La Récréation",
+        "topoId": 5981,
+        "horizontalAccuracy": 4.6,
+        "heading": 112.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608801312747047,
+            48.40940499682792
+          ],
+          [
+            2.608826261265509,
+            48.40939823238883
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608801312747047,
+          48.40940499682792
+        ]
+      },
+      "properties": {
+        "name": "Black 17 La Débonnaire | Black 18 La Récréation",
+        "topoId": 5981,
+        "horizontalAccuracy": 4.6,
+        "heading": 112.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608801312747047,
+            48.40940499682792
+          ],
+          [
+            2.608826261265509,
+            48.40939823238883
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6089475513261804,
+          48.409548317689534
+        ]
+      },
+      "properties": {
+        "name": "Black 14 Vautour City",
+        "topoId": 5982,
+        "horizontalAccuracy": 4.7,
+        "heading": 62.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6089475513261804,
+            48.409548317689534
+          ],
+          [
+            2.6089714197353135,
+            48.409556623763585
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608944199472991,
+          48.409491238401806
+        ]
+      },
+      "properties": {
+        "name": "Chute Fatale | Embarras (droite) | Embarras",
+        "topoId": 5983,
+        "horizontalAccuracy": 4.7,
+        "heading": 351.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608944199472991,
+            48.409491238401806
+          ],
+          [
+            2.6089402609985006,
+            48.40950893544515
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608944199472991,
+          48.409491238401806
+        ]
+      },
+      "properties": {
+        "name": "Chute Fatale | Embarras (droite) | Embarras",
+        "topoId": 5983,
+        "horizontalAccuracy": 4.7,
+        "heading": 351.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608944199472991,
+            48.409491238401806
+          ],
+          [
+            2.6089402609985006,
+            48.40950893544515
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608944199472991,
+          48.409491238401806
+        ]
+      },
+      "properties": {
+        "name": "Chute Fatale | Embarras (droite) | Embarras",
+        "topoId": 5983,
+        "horizontalAccuracy": 4.7,
+        "heading": 351.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608944199472991,
+            48.409491238401806
+          ],
+          [
+            2.6089402609985006,
+            48.40950893544515
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6093649957353335,
+          48.40951756578722
+        ]
+      },
+      "properties": {
+        "name": "Black 12 Rastatouille | Black 13 La Charognerie",
+        "topoId": 5984,
+        "horizontalAccuracy": 3.5,
+        "heading": 269.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6093649957353335,
+            48.40951756578722
+          ],
+          [
+            2.6093380507228527,
+            48.409517240851514
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6093649957353335,
+          48.40951756578722
+        ]
+      },
+      "properties": {
+        "name": "Black 12 Rastatouille | Black 13 La Charognerie",
+        "topoId": 5984,
+        "horizontalAccuracy": 3.5,
+        "heading": 269.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6093649957353335,
+            48.40951756578722
+          ],
+          [
+            2.6093380507228527,
+            48.409517240851514
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6095028349406664,
+          48.40945025613211
+        ]
+      },
+      "properties": {
+        "name": "Black 7 Le Merluchet | Black 8 Moondance | Moon-Nigaud | Black 9 Blocage Mental | Black 10 Le Pommeau Rédempteur | Le Merluchet (en traversée)",
+        "topoId": 5985,
+        "horizontalAccuracy": 4.7,
+        "heading": 242.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6095028349406664,
+            48.40945025613211
+          ],
+          [
+            2.6094788594169507,
+            48.40944208710529
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6095028349406664,
+          48.40945025613211
+        ]
+      },
+      "properties": {
+        "name": "Black 7 Le Merluchet | Black 8 Moondance | Moon-Nigaud | Black 9 Blocage Mental | Black 10 Le Pommeau Rédempteur | Le Merluchet (en traversée)",
+        "topoId": 5985,
+        "horizontalAccuracy": 4.7,
+        "heading": 242.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6095028349406664,
+            48.40945025613211
+          ],
+          [
+            2.6094788594169507,
+            48.40944208710529
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6095028349406664,
+          48.40945025613211
+        ]
+      },
+      "properties": {
+        "name": "Black 7 Le Merluchet | Black 8 Moondance | Moon-Nigaud | Black 9 Blocage Mental | Black 10 Le Pommeau Rédempteur | Le Merluchet (en traversée)",
+        "topoId": 5985,
+        "horizontalAccuracy": 4.7,
+        "heading": 242.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6095028349406664,
+            48.40945025613211
+          ],
+          [
+            2.6094788594169507,
+            48.40944208710529
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6095028349406664,
+          48.40945025613211
+        ]
+      },
+      "properties": {
+        "name": "Black 7 Le Merluchet | Black 8 Moondance | Moon-Nigaud | Black 9 Blocage Mental | Black 10 Le Pommeau Rédempteur | Le Merluchet (en traversée)",
+        "topoId": 5985,
+        "horizontalAccuracy": 4.7,
+        "heading": 242.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6095028349406664,
+            48.40945025613211
+          ],
+          [
+            2.6094788594169507,
+            48.40944208710529
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6095028349406664,
+          48.40945025613211
+        ]
+      },
+      "properties": {
+        "name": "Black 7 Le Merluchet | Black 8 Moondance | Moon-Nigaud | Black 9 Blocage Mental | Black 10 Le Pommeau Rédempteur | Le Merluchet (en traversée)",
+        "topoId": 5985,
+        "horizontalAccuracy": 4.7,
+        "heading": 242.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6095028349406664,
+            48.40945025613211
+          ],
+          [
+            2.6094788594169507,
+            48.40944208710529
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6095028349406664,
+          48.40945025613211
+        ]
+      },
+      "properties": {
+        "name": "Black 7 Le Merluchet | Black 8 Moondance | Moon-Nigaud | Black 9 Blocage Mental | Black 10 Le Pommeau Rédempteur | Le Merluchet (en traversée)",
+        "topoId": 5985,
+        "horizontalAccuracy": 4.7,
+        "heading": 242.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6095028349406664,
+            48.40945025613211
+          ],
+          [
+            2.6094788594169507,
+            48.40944208710529
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6094502194331106,
+          48.40948494998751
+        ]
+      },
+      "properties": {
+        "name": "Black 11 Little Big Gueule | Little Big Gueule (gauche)",
+        "topoId": 5986,
+        "horizontalAccuracy": 4.7,
+        "heading": 208.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6094502194331106,
+            48.40948494998751
+          ],
+          [
+            2.609437530005493,
+            48.409469168067154
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6094502194331106,
+          48.40948494998751
+        ]
+      },
+      "properties": {
+        "name": "Black 11 Little Big Gueule | Little Big Gueule (gauche)",
+        "topoId": 5986,
+        "horizontalAccuracy": 4.7,
+        "heading": 208.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6094502194331106,
+            48.40948494998751
+          ],
+          [
+            2.609437530005493,
+            48.409469168067154
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609271537514971,
+          48.410143065311395
+        ]
+      },
+      "properties": {
+        "name": "Lady of the Lake",
+        "topoId": 5987,
+        "horizontalAccuracy": 5.1,
+        "heading": 145.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609271537514971,
+            48.410143065311395
+          ],
+          [
+            2.609286932503043,
+            48.41012838259125
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609354518356369,
+          48.410272565715395
+        ]
+      },
+      "properties": {
+        "name": "Le Moaï | Santig Du",
+        "topoId": 5988,
+        "horizontalAccuracy": 3.5,
+        "heading": 198.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609354518356369,
+            48.410272565715395
+          ],
+          [
+            2.6093458135511587,
+            48.41025563576385
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609354518356369,
+          48.410272565715395
+        ]
+      },
+      "properties": {
+        "name": "Le Moaï | Santig Du",
+        "topoId": 5988,
+        "horizontalAccuracy": 3.5,
+        "heading": 198.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609354518356369,
+            48.410272565715395
+          ],
+          [
+            2.6093458135511587,
+            48.41025563576385
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609348064290927,
+          48.41040168893375
+        ]
+      },
+      "properties": {
+        "name": "Black 1 Le Réta Gluant",
+        "topoId": 5989,
+        "horizontalAccuracy": 3.5,
+        "heading": 79.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609348064290927,
+            48.41040168893375
+          ],
+          [
+            2.6093745439412603,
+            48.41040501461207
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608942128720329,
+          48.41042561926731
+        ]
+      },
+      "properties": {
+        "name": "Black 2 La Mangouste",
+        "topoId": 5990,
+        "horizontalAccuracy": 3.5,
+        "heading": 30.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608942128720329,
+            48.41042561926731
+          ],
+          [
+            2.608955849317893,
+            48.4104410160272
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6085734087998125,
+          48.410440413326405
+        ]
+      },
+      "properties": {
+        "name": "Le Kilo de Margarine",
+        "topoId": 5991,
+        "horizontalAccuracy": 4.3,
+        "heading": 231.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6085734087998125,
+            48.410440413326405
+          ],
+          [
+            2.6085524207828015,
+            48.41042919200671
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.608588160949395,
+          48.41041908138313
+        ]
+      },
+      "properties": {
+        "name": "Le Kilo de Margarine",
+        "topoId": 5992,
+        "horizontalAccuracy": 4.2,
+        "heading": 317.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.608588160949395,
+            48.41041908138313
+          ],
+          [
+            2.6085698028054933,
+            48.410432177608605
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.60918696411197,
+          48.40996901509204
+        ]
+      },
+      "properties": {
+        "name": "Célébrité et Reconnaissance",
+        "topoId": 5993,
+        "horizontalAccuracy": 3.5,
+        "heading": 268.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.60918696411197,
+            48.40996901509204
+          ],
+          [
+            2.6091600300691384,
+            48.40996841010771
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6092386414541795,
+          48.41007565500654
+        ]
+      },
+      "properties": {
+        "name": "Black 3 Excalibur | Excalibur (droite) | La Traversée d'Excalibur",
+        "topoId": 2497,
+        "horizontalAccuracy": 4.7,
+        "heading": 28.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6092386414541795,
+            48.41007565500654
+          ],
+          [
+            2.6092515452598173,
+            48.41009135995907
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6092386414541795,
+          48.41007565500654
+        ]
+      },
+      "properties": {
+        "name": "Black 3 Excalibur | Excalibur (droite) | La Traversée d'Excalibur",
+        "topoId": 2497,
+        "horizontalAccuracy": 4.7,
+        "heading": 28.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6092386414541795,
+            48.41007565500654
+          ],
+          [
+            2.6092515452598173,
+            48.41009135995907
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6092386414541795,
+          48.41007565500654
+        ]
+      },
+      "properties": {
+        "name": "Black 3 Excalibur | Excalibur (droite) | La Traversée d'Excalibur",
+        "topoId": 2497,
+        "horizontalAccuracy": 4.7,
+        "heading": 28.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6092386414541795,
+            48.41007565500654
+          ],
+          [
+            2.6092515452598173,
+            48.41009135995907
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609244192550954,
+          48.40990520388587
+        ]
+      },
+      "properties": {
+        "name": "Black 6 Santa Barbara",
+        "topoId": 2500,
+        "horizontalAccuracy": 4.7,
+        "heading": 66.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609244192550954,
+            48.40990520388587
+          ],
+          [
+            2.6092689015861334,
+            48.409912345084614
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609244684063396,
+          48.40998655689529
+        ]
+      },
+      "properties": {
+        "name": "Black 5 Beatle Juice | Plus Fort que le Crabe | Plus Fort que le Crabe (raccourci)",
+        "topoId": 2499,
+        "horizontalAccuracy": 4.7,
+        "heading": 93.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609244684063396,
+            48.40998655689529
+          ],
+          [
+            2.6092715927567327,
+            48.40998557332593
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6092672697306356,
+          48.40995244437022
+        ]
+      },
+      "properties": {
+        "name": "Black 4 Descente aux Enfers | L'Homme à la Dent Creuse",
+        "topoId": 2498,
+        "horizontalAccuracy": 4.7,
+        "heading": 161.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6092672697306356,
+            48.40995244437022
+          ],
+          [
+            2.6092756368235466,
+            48.409935439451914
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6092672697306356,
+          48.40995244437022
+        ]
+      },
+      "properties": {
+        "name": "Black 4 Descente aux Enfers | L'Homme à la Dent Creuse",
+        "topoId": 2498,
+        "horizontalAccuracy": 4.7,
+        "heading": 161.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6092672697306356,
+            48.40995244437022
+          ],
+          [
+            2.6092756368235466,
+            48.409935439451914
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609244684063396,
+          48.40998655689529
+        ]
+      },
+      "properties": {
+        "name": "Black 5 Beatle Juice | Plus Fort que le Crabe | Plus Fort que le Crabe (raccourci)",
+        "topoId": 2499,
+        "horizontalAccuracy": 4.7,
+        "heading": 93.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609244684063396,
+            48.40998655689529
+          ],
+          [
+            2.6092715927567327,
+            48.40998557332593
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.609244684063396,
+          48.40998655689529
+        ]
+      },
+      "properties": {
+        "name": "Black 5 Beatle Juice | Plus Fort que le Crabe | Plus Fort que le Crabe (raccourci)",
+        "topoId": 2499,
+        "horizontalAccuracy": 4.7,
+        "heading": 93.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.609244684063396,
+            48.40998655689529
+          ],
+          [
+            2.6092715927567327,
+            48.40998557332593
+          ]
+        ]
+      },
+      "properties": {
+      }
+    }
+  ]
+}
