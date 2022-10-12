@@ -40,7 +40,7 @@ namespace :josm do
       f.write(geo_json)
     end
 
-    puts "exported area-#{area_id}-data.geojson"
+    puts "exported area-#{area_id}-data.geojson".green
   end
 
   task metadata: :environment do
@@ -86,7 +86,7 @@ namespace :josm do
       f.write(geo_json)
     end
 
-    puts "exported area-#{area_id}-metadata.geojson"
+    puts "exported area-#{area_id}-metadata.geojson".green
   end
 end
 
