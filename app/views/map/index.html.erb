@@ -112,14 +112,14 @@ map.on('load', () => {
 
   map.addSource('problems', {
     type: 'vector',
-    url: 'mapbox://nmondollot.4rvy53fu'
+    url: 'mapbox://nmondollot.4xsv235p' 
   });
 
   map.addLayer({
     'id': 'boulders',
     'type': 'fill',
     'source': 'problems',
-    'source-layer': 'all-areas-dhfqfd',
+    'source-layer': 'problems-ayes3a',
     'layout': {
       // Make the layer visible by default.
       'visibility': 'visible'
@@ -144,7 +144,7 @@ map.on('load', () => {
     'id': 'problems',
     'type': 'circle',
     'source': 'problems',
-    'source-layer': 'all-areas-dhfqfd',
+    'source-layer': 'problems-ayes3a',
     'layout': {
       // Make the layer visible by default.
       'visibility': 'visible'
@@ -204,6 +204,14 @@ map.on('load', () => {
           [
             "match",
             ["get", "circuitColor"],
+            ["", "black"],
+            true,
+            false
+          ],
+          "#333",
+          [
+            "match",
+            ["get", "circuitColor"],
             ["blue"],
             true,
             false
@@ -244,11 +252,12 @@ map.on('load', () => {
     'id': 'problem-symbols',
     'type': 'symbol',
     'source': 'problems',
-    'source-layer': 'all-areas-dhfqfd',
+    'source-layer': 'problems-ayes3a',
     'minzoom': 17,
     'layout': {
       // Make the layer visible by default.
       'visibility': 'visible',
+      'text-allow-overlap': true,
       'text-field': [
         "to-string",
         ["get", "circuitNumber"]
