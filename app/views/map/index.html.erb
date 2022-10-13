@@ -46,36 +46,36 @@ map.on('load', () => {
   }
   }
 
-  map.addSource('areas', {
-    type: 'vector',
-    url: 'mapbox://nmondollot.0lp3oefg' 
-  });
+  // map.addSource('areas', {
+  //   type: 'vector',
+  //   url: 'mapbox://nmondollot.0lp3oefg' 
+  // });
 
-  map.addLayer({
-    'id': 'areas',
-    'type': 'point',
-    'source': 'areas',
-    'source-layer': 'areas-5vn8jf',
-    'layout': {
-      // Make the layer visible by default.
-      'visibility': 'visible'
-    },
-    'paint': {
-      "fill-color": "hsla(128, 69%, 76%, 0.6)",
-      "fill-opacity": 
-        [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          9,
-          1,
-          14,
-          0
-        ]
-    }
-  },
-  firstSymbolId
-  );
+  // map.addLayer({
+  //   'id': 'areas',
+  //   'type': 'point',
+  //   'source': 'areas',
+  //   'source-layer': 'areas-5vn8jf',
+  //   'layout': {
+  //     // Make the layer visible by default.
+  //     'visibility': 'visible'
+  //   },
+  //   'paint': {
+  //     "fill-color": "hsla(128, 69%, 76%, 0.6)",
+  //     "fill-opacity": 
+  //       [
+  //         "interpolate",
+  //         ["linear"],
+  //         ["zoom"],
+  //         9,
+  //         1,
+  //         14,
+  //         0
+  //       ]
+  //   }
+  // },
+  // firstSymbolId
+  // );
 
 
 
@@ -251,7 +251,20 @@ map.on('load', () => {
       'text-field': [
         "to-string",
         ["get", "circuitNumber"]
-      ]
+      ],
+      'text-size': [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        18,
+        2,
+        22,
+        24
+      ],
+      'text-font': [
+        'Open Sans Bold',
+        'Arial Unicode MS Regular'
+      ],
     },
     'paint': {
       'text-opacity': [
@@ -264,12 +277,6 @@ map.on('load', () => {
         1
       ],
       'text-color': '#f5f5f5',
-      // 'text-font': [
-      //   'Open Sans Bold',
-      //   'Arial Unicode MS Regular'
-      // ],
-      
-      
     },
     filter: [
       "match",
