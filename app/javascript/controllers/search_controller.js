@@ -1,4 +1,4 @@
-import { Controller } from "stimulus"
+import { Controller } from '@hotwired/stimulus'
 
 import algoliasearch from 'algoliasearch/lite';
 import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
