@@ -307,14 +307,16 @@ map.on('click', 'problems', (e) => {
   console.log(e.features[0].geometry)
   // var name = e.features[0].properties.name
 
-// // Copy coordinates array.
-const coordinates = e.features[0].geometry.coordinates.slice();
-const name = e.features[0].properties.name || "Sans nom";
- 
-new mapboxgl.Popup()
-.setLngLat(coordinates)
-.setHTML(name)
-.addTo(map);
+  // // Copy coordinates array.
+  const coordinates = e.features[0].geometry.coordinates.slice();
+  const name = e.features[0].properties.id;
+   
+  // new mapboxgl.Popup()
+  // .setLngLat(coordinates)
+  // .setHTML(name)
+  // .addTo(map);
+
+  window.location.href = '/fr/geojson/problem_' + e.features[0].properties.id;
 });
 
 // Change the cursor to a pointer when the mouse is over the places layer.
