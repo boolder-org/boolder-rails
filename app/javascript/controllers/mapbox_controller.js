@@ -3,21 +3,6 @@ import { Controller } from '@hotwired/stimulus'
 export default class extends Controller {
   static targets = [ "map" ]
 
-  gotoproblem({ detail: { content } }) {
-    // console.log("spatch")
-    console.log(content)
-
-    this.map.flyTo({
-      center: [2.664, 48.462],
-      zoom: 20,
-      speed: 4,
-      curve: 1,
-      easing(t) {
-      return t;
-      }
-    });
-  }
-
   connect() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
@@ -237,13 +222,13 @@ export default class extends Controller {
     // location of the feature, with description HTML from its properties.
     this.map.on('click', 'problems', (e) => {
 
-      console.log(e.features[0])
-      console.log(e.features[0].geometry)
+      // console.log(e.features[0])
+      // console.log(e.features[0].geometry)
       // var name = e.features[0].properties.name
 
       // // Copy coordinates array.
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      const name = e.features[0].properties.id;
+      // const coordinates = e.features[0].geometry.coordinates.slice();
+      // const name = e.features[0].properties.id;
        
       // new mapboxgl.Popup()
       // .setLngLat(coordinates)
@@ -263,5 +248,29 @@ export default class extends Controller {
     this.map.getCanvas().style.cursor = '';
     });
 
+  }
+
+  gotoproblem(event) {
+    // console.log("spatch")
+    // console.log(event.detail)
+
+    this.map.flyTo({
+      center: [event.detail.lon, event.detail.lat],
+      zoom: 20,
+      speed: 4,
+      curve: 1,
+      easing(t) {
+      return t;
+      }
+    });
+
+    // // Copy coordinates array.
+      const coordinates = [event.detail.lon, event.detail.lat];
+      const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}">${event.detail.name}</a>`;
+       
+      new mapboxgl.Popup({closeButton:false})
+      .setLngLat(coordinates)
+      .setHTML(html)
+      .addTo(this.map);
   }
 }
