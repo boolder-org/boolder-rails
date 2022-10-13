@@ -240,6 +240,46 @@ map.on('load', () => {
     ],
   });
 
+  map.addLayer({
+    'id': 'problem-symbols',
+    'type': 'symbol',
+    'source': 'problems',
+    'source-layer': 'all-areas-dhfqfd',
+    'layout': {
+      // Make the layer visible by default.
+      'visibility': 'visible',
+      'text-field': [
+        "to-string",
+        ["get", "circuitNumber"]
+      ]
+    },
+    'paint': {
+      'text-opacity': [
+        "step",
+        ["zoom"],
+        0,
+        18,
+        0,
+        19,
+        1
+      ],
+      'text-color': '#f5f5f5',
+      // 'text-font': [
+      //   'Open Sans Bold',
+      //   'Arial Unicode MS Regular'
+      // ],
+      
+      
+    },
+    filter: [
+      "match",
+        ["geometry-type"],
+        ["Point"],
+        true,
+        false
+    ],
+  });
+
 });
 
 // When a click event occurs on a feature in the places layer, open a popup at the
