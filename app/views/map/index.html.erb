@@ -14,7 +14,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrO
 
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/nmondollot/cl0r0kt6800bg14n2twihf3uu/draft', // mapbox://styles/mapbox/streets-v11
+style: 'mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2/draft', //  mapbox://styles/mapbox/outdoors-v11 
 center: [2.700883, 48.407834],
 zoom: 10
 });
@@ -48,14 +48,14 @@ map.on('load', () => {
 
   map.addSource('areas', {
     type: 'vector',
-    url: 'mapbox://nmondollot.4tvxpzi4'
+    url: 'mapbox://nmondollot.0lp3oefg' 
   });
 
   map.addLayer({
     'id': 'areas',
-    'type': 'fill',
+    'type': 'point',
     'source': 'areas',
-    'source-layer': 'fontainebleau-1mrg4b',
+    'source-layer': 'areas-5vn8jf',
     'layout': {
       // Make the layer visible by default.
       'visibility': 'visible'
@@ -79,41 +79,66 @@ map.on('load', () => {
 
 
 
-  map.addSource('clusters', {
-    type: 'vector',
-    url: 'mapbox://nmondollot.0xexji1x'
-  });
+  // map.addSource('clusters', {
+  //   type: 'vector',
+  //   url: 'mapbox://nmondollot.0xexji1x'
+  // });
 
-  map.addLayer({
-    'id': 'clusters',
-    'type': 'fill',
-    'source': 'clusters',
-    'source-layer': 'fontainebleau-1mrg4b',
-    'layout': {
-      // Make the layer visible by default.
-      'visibility': 'visible'
-    },
-    'paint': {
-      "fill-color": "hsla(128, 69%, 76%, 0.6)",
-      "fill-opacity": 
-        [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          9,
-          1,
-          14,
-          0
-        ]
-    }
-  },
-  firstSymbolId
-  );
+  // map.addLayer({
+  //   'id': 'clusters',
+  //   'type': 'fill',
+  //   'source': 'clusters',
+  //   'source-layer': 'fontainebleau-1mrg4b',
+  //   'layout': {
+  //     // Make the layer visible by default.
+  //     'visibility': 'visible'
+  //   },
+  //   'paint': {
+  //     "fill-color": "hsla(128, 69%, 76%, 0.6)",
+  //     "fill-opacity": 
+  //       [
+  //         "interpolate",
+  //         ["linear"],
+  //         ["zoom"],
+  //         9,
+  //         1,
+  //         14,
+  //         0
+  //       ]
+  //   }
+  // },
+  // firstSymbolId
+  // );
 
   map.addSource('problems', {
     type: 'vector',
     url: 'mapbox://nmondollot.4rvy53fu'
   });
+
+  map.addLayer({
+    'id': 'boulders',
+    'type': 'fill',
+    'source': 'problems',
+    'source-layer': 'all-areas-dhfqfd',
+    'layout': {
+      // Make the layer visible by default.
+      'visibility': 'visible'
+    },
+    'paint': {
+      'fill-color': '#b5b5b5',
+      'fill-outline-color': "hsl(0, 0%, 44%)",
+    },
+    filter: [
+      "match",
+        ["geometry-type"],
+        ["Polygon"],
+        true,
+        false
+    ],
+  }
+  ,
+  firstSymbolId
+  );
 
   map.addLayer({
     'id': 'problems',
