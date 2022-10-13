@@ -25,6 +25,8 @@ export default class extends Controller {
       'XNJHVMTGMF',
       '765db6917d5c17449984f7c0067ae04c'
     );
+
+    let that = this
     
     this.autocomplete = autocomplete({
       container: '#autocomplete',
@@ -183,7 +185,14 @@ export default class extends Controller {
               return `/${locale}/redirects/new?problem_id=${item.objectID}`
             },
             onSelect({ item }) {
-              document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
+              console.log(item.objectID)
+              console.log(item)
+              const event = new CustomEvent("gotoproblem", { detail: { id: item.objectID} });
+              window.dispatchEvent(event);
+
+              that.autocomplete.setIsOpen(false)
+
+              // document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
           },
