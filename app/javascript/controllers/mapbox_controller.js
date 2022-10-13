@@ -3,6 +3,21 @@ import { Controller } from '@hotwired/stimulus'
 export default class extends Controller {
   static targets = [ "map" ]
 
+  gotoproblem({ detail: { content } }) {
+    // console.log("spatch")
+    console.log(content)
+
+    this.map.flyTo({
+      center: [2.664, 48.462],
+      zoom: 20,
+      speed: 4,
+      curve: 1,
+      easing(t) {
+      return t;
+      }
+    });
+  }
+
   connect() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
@@ -15,19 +30,6 @@ export default class extends Controller {
 
     // Add zoom and rotation controls to the map.
     this.map.addControl(new mapboxgl.NavigationControl());
-
-
-    // document.getElementById('zoom').addEventListener('click', () => {
-    //   this.map.flyTo({
-    //   center: [2.664, 48.462],
-    //   zoom: 16,
-    //   speed: 4,
-    //   curve: 1,
-    //   easing(t) {
-    //   return t;
-    //   }
-    //   });
-    // });
 
     let that = this
 

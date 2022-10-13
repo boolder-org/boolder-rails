@@ -16,6 +16,7 @@ class Problem < ApplicationRecord
     attribute :area_name do area.name end
     attribute :circuit_color do circuit&.color end
     attribute :children_count do children.count end
+    attribute :_geoloc do { lat: location&.lat || 0.0, lng: location&.lon || 0.0 } end
     # TODO: implement custom attributes callback to trigger a reindex
     # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
 
