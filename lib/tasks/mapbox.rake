@@ -36,26 +36,23 @@ namespace :mapbox do
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    problem_features = Problem.all.map do |problem|
+    problem_features = Problem.all.joins(:area).where(area: {published: true}).map do |problem|
       hash = {}.with_indifferent_access
-      hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :height))
+      hash.merge!(problem.slice(:grade, :circuit_number, :steepness))
+      hash[:id] = problem.id
       hash[:name] = problem.name.presence
       hash[:bleau_info_id] = problem.bleau_info_id
       hash[:parent_id] = problem.parent_id
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit&.id
-      
-      tags = problem.tags.present? ? problem.tags : []
-      tags << "risky" if problem.risky # FIXME: decide whether to keep this hack when I revamp the risk level info
-      hash[:tags] = tags 
 
-      hash[:lines] = problem.lines.published.map{|line| {id: line.id} } if problem.lines.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
+
 
       factory.feature(problem.location, "problem_#{problem.id}", hash)
     end
 
-    boulder_features = Boulder.all.map do |boulder|
+    boulder_features = Boulder.all.joins(:area).where(area: {published: true}).map do |boulder|
       factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
     end
 
