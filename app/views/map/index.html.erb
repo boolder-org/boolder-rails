@@ -245,6 +245,7 @@ map.on('load', () => {
     'type': 'symbol',
     'source': 'problems',
     'source-layer': 'all-areas-dhfqfd',
+    'minzoom': 17,
     'layout': {
       // Make the layer visible by default.
       'visibility': 'visible',
@@ -267,15 +268,15 @@ map.on('load', () => {
       ],
     },
     'paint': {
-      'text-opacity': [
-        "step",
-        ["zoom"],
-        0,
-        18,
-        0,
-        19,
-        1
-      ],
+      // 'text-opacity': [
+      //   "step",
+      //   ["zoom"],
+      //   0,
+      //   18,
+      //   0,
+      //   19,
+      //   1
+      // ],
       'text-color': '#f5f5f5',
     },
     filter: [
