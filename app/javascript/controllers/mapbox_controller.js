@@ -9,7 +9,7 @@ export default class extends Controller {
     this.map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2/draft', //  mapbox://styles/mapbox/outdoors-v11 
-    center: [2.700883, 48.407834],
+    center: [2.60269269238, 48.36702248583],
     zoom: 10
     });
 
