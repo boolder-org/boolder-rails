@@ -14,8 +14,8 @@ class Area < ApplicationRecord
     attributes :name
     attribute :bounds do 
       { 
-        south_west: { lat: boulder_bounds[:south_west]&.lat || 0.0, lng: boulder_bounds[:south_west]&.lon || 0.0 },
-        north_east:  { lat: boulder_bounds[:north_east]&.lat || 0.0, lng: boulder_bounds[:north_east]&.lon || 0.0 },
+        south_west: { lat: bounds[:south_west]&.lat || 0.0, lng: bounds[:south_west]&.lon || 0.0 },
+        north_east:  { lat: bounds[:north_east]&.lat || 0.0, lng: bounds[:north_east]&.lon || 0.0 },
       }
     end
     searchableAttributes [:name]
@@ -42,15 +42,8 @@ class Area < ApplicationRecord
     [id, name].join(" - ")
   end
 
-  def problem_bounds
-    @problem_bounds ||= {
-      south_west: FACTORY.point(problems.minimum("st_x(location::geometry)"), problems.minimum("st_y(location::geometry)")),
-      north_east: FACTORY.point(problems.maximum("st_x(location::geometry)"), problems.maximum("st_y(location::geometry)"))
-    }
-  end
-
-  def boulder_bounds
-    @boulder_bounds ||= {
+  def bounds
+    @bounds ||= {
       south_west: FACTORY.point(boulders.minimum("st_xmax(polygon::geometry)"), boulders.minimum("st_ymax(polygon::geometry)")),
       north_east: FACTORY.point(boulders.maximum("st_xmax(polygon::geometry)"), boulders.maximum("st_ymax(polygon::geometry)"))
     }
