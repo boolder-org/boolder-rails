@@ -33,6 +33,7 @@ namespace :mapbox do
   end
 
   task problems: :environment do
+    puts "exporting problems"
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
@@ -48,26 +49,12 @@ namespace :mapbox do
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-
       factory.feature(problem.location, "problem_#{problem.id}", hash)
     end
 
     boulder_features = Boulder.all.joins(:area).where(area: {published: true}).map do |boulder|
       factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
     end
-
-    # circuit_features = Circuit.where(area_id: area_id).map do |circuit|
-    #   line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
-    #   factory.feature(line_string, "circuit_#{circuit.id}", { color: circuit.color })
-    # end
-
-    # poi_features = Poi.where(area_id: area_id).map do |poi|
-    #   factory.feature(poi.location, "poi_#{poi.id}", { title: poi.title, subtitle: poi.subtitle, description: poi.description })
-    # end
-
-    # poiroute_features = Poi.where(area_id: area_id).map do |poi|
-    #   factory.feature(poi.route, "poiroute_#{poi.id}", { }) if poi.route
-    # end.compact
 
     feature_collection = factory.feature_collection(
       problem_features + boulder_features
