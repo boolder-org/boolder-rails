@@ -9,7 +9,7 @@ const context = require.context("controllers", true, /_controller\.js$/)
 application.load(definitionsFromContext(context))
 
 // enable Stimulus debug mode in development
-application.debug = process.env.NODE_ENV === 'development'
+// application.debug = process.env.NODE_ENV === 'development'
 
 import Chart from "stimulus-chartjs"
 application.register("chart", Chart)
