@@ -264,16 +264,16 @@ export default class extends Controller {
       // console.log(e.features[0].geometry)
       // var name = e.features[0].properties.name
 
-      // // Copy coordinates array.
-      // const coordinates = e.features[0].geometry.coordinates.slice();
-      // const name = e.features[0].properties.id;
+      // Copy coordinates array.
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const html = `<a href="#" onclick="window.location.href = '/fr/redirects/new?problem_id=${e.features[0].properties.id})'">${e.features[0].properties.name}</a>`;
        
-      // new mapboxgl.Popup()
-      // .setLngLat(coordinates)
-      // .setHTML(name)
-      // .addTo(map);
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false}) // , offset: xxx
+      .setLngLat(coordinates)
+      .setHTML(html)
+      .addTo(this.map);
 
-      window.location.href = "/fr/redirects/new?problem_id=" + e.features[0].properties.id;
+      // window.location.href = "/fr/redirects/new?problem_id=" + e.features[0].properties.id;
     });
 
     // Change the cursor to a pointer when the mouse is over the places layer.
@@ -306,7 +306,7 @@ export default class extends Controller {
       const coordinates = [event.detail.lon, event.detail.lat];
       const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}">${event.detail.name}</a>`;
        
-      new mapboxgl.Popup({closeButton:false})
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false}) // , offset: xxx
       .setLngLat(coordinates)
       .setHTML(html)
       .addTo(this.map);
