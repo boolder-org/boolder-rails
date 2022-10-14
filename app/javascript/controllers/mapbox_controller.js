@@ -189,7 +189,10 @@ export default class extends Controller {
             true,
             false
         ],
-      });
+      }
+      ,
+      firstSymbolId
+      );
 
       that.map.addLayer({
         'id': 'problem-symbols',
