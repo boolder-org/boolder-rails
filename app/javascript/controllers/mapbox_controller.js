@@ -266,9 +266,9 @@ export default class extends Controller {
 
       // FIXME: make it DRY
       const coordinates = e.features[0].geometry.coordinates.slice();
-      const html = `<a href="/fr/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name}</a><span class="pl-2 text-gray-700">${e.features[0].properties.grade}</span>`;
+      const html = `<a href="/fr/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name}</a><span class="ml-1 text-gray-400">${e.features[0].properties.grade}</span>`;
        
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false}) // , offset: xxx
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)
       .setHTML(html)
       .addTo(this.map);
@@ -304,9 +304,9 @@ export default class extends Controller {
 
     // FIXME: make it DRY
       const coordinates = [event.detail.lon, event.detail.lat];
-      const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name}</a>`;
+      const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name}</a><span class="ml-1 text-gray-400">${event.detail.grade}</span>`;
        
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false}) // , offset: xxx
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
       .setLngLat(coordinates)
       .setHTML(html)
       .addTo(this.map);
