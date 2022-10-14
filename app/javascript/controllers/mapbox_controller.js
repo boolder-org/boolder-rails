@@ -290,7 +290,6 @@ export default class extends Controller {
   }
 
   gotoproblem(event) {
-    // console.log("spatch")
     // console.log(event.detail)
 
     this.map.flyTo({
@@ -314,15 +313,14 @@ export default class extends Controller {
   }
 
   gotoarea(event) {
-    // console.log("spatch")
-    console.log(event.detail)
+    // console.log(event.detail)
 
     this.map.fitBounds([
         [event.detail.south_west_lon, event.detail.south_west_lat], // southwestern corner of the bounds
         [event.detail.north_east_lon, event.detail.north_east_lat] // northeastern corner of the bounds
       ], 
       {
-        padding: 200
+        padding: 20 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
       }
     );
   }
