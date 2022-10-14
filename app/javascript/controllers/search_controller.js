@@ -1,4 +1,4 @@
-import { Controller } from "stimulus"
+import { Controller } from '@hotwired/stimulus'
 
 import algoliasearch from 'algoliasearch/lite';
 import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
@@ -153,6 +153,9 @@ export default class extends Controller {
                         </span>
                         <span class="ml-2">
                         ${item._highlightResult.name.value}
+                        </span>
+                        <span class="ml-2 text-gray-400">
+                        ${item.grade}
                         </span>
                       </div>
                       <span class="ml-2 text-gray-400 flex-shrink-0">
