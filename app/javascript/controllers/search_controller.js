@@ -156,6 +156,9 @@ export default class extends Controller {
                         <span class="ml-2">
                         ${item._highlightResult.name.value}
                         </span>
+                        <span class="ml-2 text-gray-400">
+                        ${item.grade}
+                        </span>
                       </div>
                       <span class="ml-2 text-gray-400 flex-shrink-0">
                         ${item.area_name}
@@ -187,7 +190,7 @@ export default class extends Controller {
             onSelect({ item }) {
               // console.log(item.objectID)
               // console.log(item)
-              const event = new CustomEvent("gotoproblem", { detail: { id: item.objectID, name: item.name, lat: item._geoloc.lat, lon: item._geoloc.lng } });
+              const event = new CustomEvent("gotoproblem", { detail: { id: item.objectID, name: item.name, grade: item.grade, lat: item._geoloc.lat, lon: item._geoloc.lng } });
               window.dispatchEvent(event);
 
               that.autocomplete.setIsOpen(false)

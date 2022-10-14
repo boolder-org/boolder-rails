@@ -12,7 +12,7 @@ class Problem < ApplicationRecord
 
   include AlgoliaSearch
   algoliasearch if: :published?, enqueue: true do
-    attributes :name, :circuit_number
+    attributes :name, :circuit_number, :grade
     attribute :area_name do area.name end
     attribute :circuit_color do circuit&.color end
     attribute :children_count do children.count end
