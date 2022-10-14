@@ -264,9 +264,9 @@ export default class extends Controller {
       // console.log(e.features[0].geometry)
       // var name = e.features[0].properties.name
 
-      // Copy coordinates array.
+      // FIXME: make it DRY
       const coordinates = e.features[0].geometry.coordinates.slice();
-      const html = `<a href="/fr/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name}</a>`;
+      const html = `<a href="/fr/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name}</a><span class="pl-2 text-gray-700">${e.features[0].properties.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false}) // , offset: xxx
       .setLngLat(coordinates)
@@ -302,7 +302,7 @@ export default class extends Controller {
       }
     });
 
-    // // Copy coordinates array.
+    // FIXME: make it DRY
       const coordinates = [event.detail.lon, event.detail.lat];
       const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name}</a>`;
        
