@@ -312,4 +312,18 @@ export default class extends Controller {
       .setHTML(html)
       .addTo(this.map);
   }
+
+  gotoarea(event) {
+    // console.log("spatch")
+    // console.log(event.detail)
+
+    this.map.fitBounds([
+        [2.62553928137, 48.43509481431], // southwestern corner of the bounds
+        [2.63513086081, 48.43849721906] // northeastern corner of the bounds
+      ], 
+      {
+        padding: 200
+      }
+    );
+  }
 }

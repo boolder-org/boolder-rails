@@ -97,7 +97,12 @@ export default class extends Controller {
             },
 
             onSelect({ item }) {
-              document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
+              const event = new CustomEvent("gotoarea", { detail: { id: item.objectID, name: item.name } });
+              window.dispatchEvent(event);
+
+              that.autocomplete.setIsOpen(false)
+
+              // document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
             },
 
           },
