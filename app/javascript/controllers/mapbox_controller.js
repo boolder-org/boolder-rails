@@ -266,7 +266,7 @@ export default class extends Controller {
 
       // Copy coordinates array.
       const coordinates = e.features[0].geometry.coordinates.slice();
-      const html = `<a href="#" onclick="window.location.href = '/fr/redirects/new?problem_id=${e.features[0].properties.id})'">${e.features[0].properties.name}</a>`;
+      const html = `<a href="/fr/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name}</a>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false}) // , offset: xxx
       .setLngLat(coordinates)
@@ -304,7 +304,7 @@ export default class extends Controller {
 
     // // Copy coordinates array.
       const coordinates = [event.detail.lon, event.detail.lat];
-      const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}">${event.detail.name}</a>`;
+      const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name}</a>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false}) // , offset: xxx
       .setLngLat(coordinates)
