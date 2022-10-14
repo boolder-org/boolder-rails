@@ -3,10 +3,11 @@
 
 <% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
-
 <div 
 data-controller="mapbox" 
 data-action="gotoproblem@window->mapbox#gotoproblem gotoarea@window->mapbox#gotoarea"
+class="flex-auto"
+id='map'
+data-mapbox-target="map"
 >
-  <div id='map' data-mapbox-target="map" style='width: 100%;' class="h-screen relative">
 </div>
