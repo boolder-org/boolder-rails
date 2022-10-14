@@ -44,8 +44,8 @@ export default class extends Controller {
           'visibility': 'visible'
         },
         'paint': {
-          'fill-color': '#b5b5b5',
-          'fill-outline-color': "hsl(0, 0%, 44%)",
+          'fill-color': '#ccc',
+          'fill-outline-color': "#b3b3b3",
         },
         filter: [
           "match",
