@@ -315,11 +315,11 @@ export default class extends Controller {
 
   gotoarea(event) {
     // console.log("spatch")
-    // console.log(event.detail)
+    console.log(event.detail)
 
     this.map.fitBounds([
-        [2.62553928137, 48.43509481431], // southwestern corner of the bounds
-        [2.63513086081, 48.43849721906] // northeastern corner of the bounds
+        [event.detail.south_west_lon, event.detail.south_west_lat], // southwestern corner of the bounds
+        [event.detail.north_east_lon, event.detail.north_east_lat] // northeastern corner of the bounds
       ], 
       {
         padding: 200

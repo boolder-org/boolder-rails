@@ -97,7 +97,19 @@ export default class extends Controller {
             },
 
             onSelect({ item }) {
-              const event = new CustomEvent("gotoarea", { detail: { id: item.objectID, name: item.name } });
+              // console.log(item)
+              const event = new CustomEvent("gotoarea", 
+                { detail: 
+                  { 
+                    id: item.objectID, 
+                    name: item.name, 
+                    south_west_lat: item.bounds.south_west.lat,
+                    south_west_lon: item.bounds.south_west.lng,
+                    north_east_lat:  item.bounds.north_east.lat,
+                    north_east_lon:  item.bounds.north_east.lng,
+                  } 
+                }
+              );
               window.dispatchEvent(event);
 
               that.autocomplete.setIsOpen(false)
