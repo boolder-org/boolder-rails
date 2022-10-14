@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="<%= I18n.locale %>">
+<!-- Trick to make the page full height even on mobile: https://stackoverflow.com/a/24979148 -->
+<html lang="<%= I18n.locale %>" class="h-full m-0">
   <head>
     <link rel="icon" href="<%= image_path('logo.svg') %>">
     <link rel="mask-icon" href="<%= image_path('logo.svg') %>" color="#059669">
@@ -37,9 +38,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body class="bg-white">
-    <div class="bg-gray-100 h-screen flex flex-col">
-      <%= render "layouts/map_nav" %>
+  <body class="bg-white h-full m-0">
+    <div class="bg-gray-100 flex flex-col h-full">
+      <div class="flex-initial">
+        <%= render "layouts/map_nav" %>
+      </div>
       <%= yield %>
     </body>
   </div>
