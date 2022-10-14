@@ -215,12 +215,12 @@ export default class extends Controller {
             18,
             2,
             22,
-            28
+            26
           ],
-          'text-font': [
-            'Open Sans Bold',
-            'Arial Unicode MS Regular'
-          ],
+          // 'text-font': [
+          //   'Open Sans Bold',
+          //   'Arial Unicode MS Regular'
+          // ],
         },
         'paint': {
           // 'text-opacity': [
