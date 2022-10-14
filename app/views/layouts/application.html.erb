@@ -12,7 +12,7 @@
     <%= stylesheet_pack_tag 'application', 'data-turbo-track': 'reload' %>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
-    <!-- <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js" data-turbo-track="reload"></script> -->
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js" data-turbo-track="reload"></script>
     <% if !Rails.env.development? %>
       <script async defer data-domain="boolder.com" src="https://plausible.io/js/plausible.js" data-turbo-track="reload"></script>
     <% end %>
@@ -20,6 +20,16 @@
     <!-- FIXME: load async -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js' data-turbo-track="reload"></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' data-turbo-track="reload" />
+    <style>
+      /* FIXME: put in css stylesheet */
+      .mapboxgl-popup-content a {
+        font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: rgba(5, 150, 105, 1);
+        text-decoration: underline;
+      }
+    </style>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
