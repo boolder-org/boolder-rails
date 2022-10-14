@@ -85,7 +85,7 @@ export default class extends Controller {
               ]
             ]
           ,
-          'circle-color': 
+          'circle-color':  // FIXME: make it DRY
             [
               "case",
               [
@@ -95,7 +95,15 @@ export default class extends Controller {
                 true,
                 false
               ],
-              "hsl(59, 77%, 60%)",
+              "#FFCC02",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "purple"],
+                true,
+                false
+              ],
+              "#D783FF",
               [
                 "match",
                 ["get", "circuitColor"],
@@ -103,7 +111,39 @@ export default class extends Controller {
                 true,
                 false
               ],
-              "hsl(23, 80%, 59%)",
+              "#FF9500",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "green"],
+                true,
+                false
+              ],
+              "#77C344",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "blue"],
+                true,
+                false
+              ],
+              "#017AFF",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "skyblue"],
+                true,
+                false
+              ],
+              "#5AC7FA",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "salmon"],
+                true,
+                false
+              ],
+              "#FDAF8A",
               [
                 "match",
                 ["get", "circuitColor"],
@@ -111,15 +151,7 @@ export default class extends Controller {
                 true,
                 false
               ],
-              "hsl(0, 91%, 56%)",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "white"],
-                true,
-                false
-              ],
-              "hsl(223, 0%, 100%)",
+              "#FF3B2F",
               [
                 "match",
                 ["get", "circuitColor"],
@@ -127,24 +159,16 @@ export default class extends Controller {
                 true,
                 false
               ],
-              "#333",
+              "#000",
               [
                 "match",
                 ["get", "circuitColor"],
-                ["blue"],
+                ["", "white"],
                 true,
                 false
               ],
-              "hsl(223, 98%, 58%)",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["skyblue"],
-                true,
-                false
-              ],
-              "hsl(203, 74%, 69%)",
-              "hsl(223, 0%, 58%)"
+              "#FFFFFF",
+              "#a9a9a9"
             ]
           ,
           'circle-opacity': 
@@ -205,7 +229,21 @@ export default class extends Controller {
           //   19,
           //   1
           // ],
-          'text-color': '#f5f5f5',
+          'text-color': 
+          // '#f5f5f5'
+            [
+              "case",
+                [
+                  "match",
+                  ["get", "circuitColor"],
+                  ["", "white"],
+                  true,
+                  false
+                ],
+                "#333",
+                "#fff",
+            ]
+          ,
         },
         filter: [
           "match",
