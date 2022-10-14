@@ -44,8 +44,8 @@ class Area < ApplicationRecord
 
   def bounds
     @bounds ||= {
-      south_west: FACTORY.point(boulders.minimum("st_xmin(polygon::geometry)"), boulders.minimum("st_ymax(polygon::geometry)")),
-      north_east: FACTORY.point(boulders.maximum("st_xmin(polygon::geometry)"), boulders.maximum("st_ymax(polygon::geometry)"))
+      south_west: FACTORY.point(boulders.minimum("st_xmin(polygon::geometry)"), boulders.minimum("st_ymin(polygon::geometry)")),
+      north_east: FACTORY.point(boulders.maximum("st_xmax(polygon::geometry)"), boulders.maximum("st_ymax(polygon::geometry)"))
     }
   end
 end
