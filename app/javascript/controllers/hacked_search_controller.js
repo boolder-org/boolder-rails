@@ -25,6 +25,8 @@ export default class extends Controller {
       'XNJHVMTGMF',
       '765db6917d5c17449984f7c0067ae04c'
     );
+
+    let that = this
     
     this.autocomplete = autocomplete({
       container: '#autocomplete',
@@ -95,7 +97,24 @@ export default class extends Controller {
             },
 
             onSelect({ item }) {
-              document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
+              // console.log(item)
+              const event = new CustomEvent("gotoarea", 
+                { detail: 
+                  { 
+                    id: item.objectID, 
+                    name: item.name, 
+                    south_west_lat: item.bounds.south_west.lat,
+                    south_west_lon: item.bounds.south_west.lng,
+                    north_east_lat:  item.bounds.north_east.lat,
+                    north_east_lon:  item.bounds.north_east.lng,
+                  } 
+                }
+              );
+              window.dispatchEvent(event);
+
+              that.autocomplete.setIsOpen(false)
+
+              // document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
             },
 
           },
@@ -186,7 +205,14 @@ export default class extends Controller {
               return `/${locale}/redirects/new?problem_id=${item.objectID}`
             },
             onSelect({ item }) {
-              document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
+              // console.log(item.objectID)
+              // console.log(item)
+              const event = new CustomEvent("gotoproblem", { detail: { id: item.objectID, name: item.name, grade: item.grade, lat: item._geoloc.lat, lon: item._geoloc.lng } });
+              window.dispatchEvent(event);
+
+              that.autocomplete.setIsOpen(false)
+
+              // document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
           },
