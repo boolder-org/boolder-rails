@@ -34,15 +34,6 @@ export default class extends Controller {
     let that = this
 
     this.map.on('load', () => {
-      const layers = that.map.getStyle().layers;
-      // Find the index of the first symbol layer in the map style.
-      let firstSymbolId;
-      for (const layer of layers) {
-      if (layer.type === 'symbol') {
-      firstSymbolId = layer.id;
-      break;
-      }
-      }
 
       that.map.addSource('problems', {
         type: 'vector',
@@ -71,7 +62,7 @@ export default class extends Controller {
         ],
       }
       ,
-      firstSymbolId
+      "trails-names" // bottom layer. FIXME: use a layer name that won't break.
       );
 
       that.map.addLayer({
@@ -207,7 +198,7 @@ export default class extends Controller {
         ],
       }
       ,
-      firstSymbolId
+      "trails-names" // bottom layer. FIXME: use a layer name that won't break.
       );
 
       that.map.addLayer({
