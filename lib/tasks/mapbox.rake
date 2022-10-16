@@ -68,4 +68,37 @@ namespace :mapbox do
 
     puts "exported problems.geojson".green
   end
+
+  task pois: :environment do
+    puts "exporting pois"
+
+    factory = RGeo::GeoJSON::EntityFactory.instance
+
+    poi_features = Poi.all.reject{|poi| poi.id.in?([10,26]) }.uniq(&:description).map do |poi|
+      hash = {}.with_indifferent_access
+      hash[:type] = "parking"
+      hash[:name] = poi.description
+      hash[:short_name] = poi.subtitle
+      hash[:google_url] = poi.google_url
+      hash.deep_transform_keys! { |key| key.camelize(:lower) }
+
+      factory.feature(poi.location, nil, hash)
+    end
+
+    feature_collection = factory.feature_collection(
+      poi_features
+    )
+
+    geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+
+    file_name = Rails.root.join('export', "mapbox", "pois.geojson")
+
+    raise "file already exists" if File.exist?(file_name)
+
+    File.open(file_name,"w") do |f|
+      f.write(geo_json)
+    end
+
+    puts "exported pois.geojson".green
+  end
 end

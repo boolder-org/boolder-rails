@@ -1,0 +1,375 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Allée des Vaches",
+                "name": "Parking Allée des Vaches",
+                "type": "parking",
+                "googleUrl": "https://goo.gl/maps/xvbiKTsL1qdwe2cc6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62431620479,
+                    48.44097413315
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parking Gorges de Franchard",
+                "shortName": "Gorges de Franchard",
+                "googleUrl": "https://goo.gl/maps/nhcV5UuM4ze1CyAS7",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63639151514,
+                    48.40852614797
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Rocher Canon",
+                "googleUrl": "https://goo.gl/maps/cHBDr9iCQwRj6kr78",
+                "name": "Parking Rocher Canon",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.66560882062,
+                    48.46294973277
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Cailleau",
+                "name": "Parking Cailleau",
+                "type": "parking",
+                "googleUrl": "https://goo.gl/maps/dFYKJn7TjsSw4yje9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53489136159,
+                    48.35934304657
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "googleUrl": "https://goo.gl/maps/SSwTeWy6JXNDFQaS8",
+                "shortName": "Cabaret-Masson",
+                "type": "parking",
+                "name": "Parking Cabaret-Masson"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.68927395076,
+                    48.44077306040
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Gorge aux Châts",
+                "name": "Parking Gorge aux Châts",
+                "googleUrl": "https://goo.gl/maps/uX92GwgkzmUb4rGv8",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.51685618818,
+                    48.39957305436
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "googleUrl": "https://goo.gl/maps/eo2LF9tR9XBKPw4DA",
+                "shortName": "Vert Galant",
+                "type": "parking",
+                "name": "Parking Vert Galant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67992913455,
+                    48.37735980025
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parking Restant du Long Rocher",
+                "googleUrl": "https://goo.gl/maps/EuPzcVjQ7HXVyrQx9",
+                "type": "parking",
+                "shortName": "Restant du Long Rocher"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.72758125991,
+                    48.35421001651
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parking Bois Rond Auberge",
+                "type": "parking",
+                "googleUrl": "https://goo.gl/maps/k5UWi4nZJy3HwzyZ8",
+                "shortName": "Bois Rond Auberge"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56317793787,
+                    48.38727689904
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Noisy / Roche aux Sabots",
+                "name": "Parking Noisy / Roche aux Sabots",
+                "type": "parking",
+                "googleUrl": "https://goo.gl/maps/S1AD8zrVEW8ENJiF6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.51110000000,
+                    48.37309300000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "googleUrl": "https://goo.gl/maps/xbpjJdayrUHCvdxX6",
+                "name": "Parking Croix Saint Jérôme",
+                "type": "parking",
+                "shortName": "Croix Saint Jérôme"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.51915300537,
+                    48.38753182722
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parking Beauvais Nainville",
+                "shortName": "Beauvais Nainville",
+                "googleUrl": "https://goo.gl/maps/XQo55sm66cC4qhVF6",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.48018502921,
+                    48.50344615490
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parking Raymond",
+                "shortName": "Raymond",
+                "googleUrl": "https://goo.gl/maps/o9QM5jeJTaDVgNYb7",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63825296283,
+                    48.40409965981
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "googleUrl": "https://goo.gl/maps/E8aRzMxw4P6KcTJ36",
+                "shortName": "Canche aux Merciers",
+                "type": "parking",
+                "name": "Parking Canche aux Merciers"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55308210313,
+                    48.39043314821
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Karma",
+                "googleUrl": "https://goo.gl/maps/GV2VDkPxnWk3n8m48",
+                "name": "Parking Karma",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.72198616922,
+                    48.39809140400
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Plaine de Chanfroy",
+                "googleUrl": "https://goo.gl/maps/bWD8Ytdq7Et7tRHE9",
+                "name": "Parking Plaine de Chanfroy",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56573140085,
+                    48.39946620602
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Éléphant",
+                "googleUrl": "https://goo.gl/maps/UYrz7DAxqSLdc5yeA",
+                "type": "parking",
+                "name": "Parking Éléphant"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59709178865,
+                    48.29303374742
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "googleUrl": "https://goo.gl/maps/F6thFWF4uh4xEGWK9",
+                "name": "Parking Petit Bois",
+                "shortName": "Petit Bois",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67089009151,
+                    48.26420455343
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Robert Paragot",
+                "googleUrl": "https://goo.gl/maps/T62eDcWEEmFsj5ho9",
+                "type": "parking",
+                "name": "Parking Robert Paragot"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59894787997,
+                    48.30344006591
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "googleUrl": "https://goo.gl/maps/G2Wgib3dKdsmrgeK9",
+                "name": "Parking Mée / Guichot / Diplodocus",
+                "shortName": "Mée / Guichot / Diplodocus",
+                "type": "parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52686618686,
+                    48.36389817957
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parking Buthiers Piscine",
+                "type": "parking",
+                "shortName": "Buthiers Piscine",
+                "googleUrl": "https://goo.gl/maps/pM6Es7xbK45hTN5g8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.43560671538,
+                    48.29415263389
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "shortName": "Isatis",
+                "name": "Parking Isatis",
+                "type": "parking",
+                "googleUrl": "https://goo.gl/maps/GT36dbYpM65bnNqY8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59876012266,
+                    48.41110067188
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "googleUrl": "https://goo.gl/maps/uwWA32xkAwaH6E766",
+                "shortName": "Carrefour de l'Épine",
+                "type": "parking",
+                "name": "Parking du Carrefour de l'Épine"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63764344089,
+                    48.44596363496
+                ]
+            }
+        }
+    ]
+}
