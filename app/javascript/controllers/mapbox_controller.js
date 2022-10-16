@@ -14,8 +14,22 @@ export default class extends Controller {
     zoom: 10
     });
 
+    const scale = new mapboxgl.ScaleControl({
+      maxWidth: 100,
+      unit: 'metric'
+    });
+    this.map.addControl(scale);
+
     // Add zoom and rotation controls to the map.
     this.map.addControl(new mapboxgl.NavigationControl());
+
+    this.map.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true,
+      showUserHeading: true
+    }));
 
     let that = this
 
