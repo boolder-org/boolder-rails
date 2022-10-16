@@ -8,6 +8,7 @@ export default class extends Controller {
 
     this.map = new mapboxgl.Map({
     container: 'map',
+    // FIXME: use prod source (not draft)
     style: 'mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2/draft', //  mapbox://styles/mapbox/outdoors-v11 
     center: [2.60269269238, 48.36702248583],
     zoom: 10
@@ -64,6 +65,7 @@ export default class extends Controller {
         'type': 'circle',
         'source': 'problems',
         'source-layer': 'problems-ayes3a',
+        // 'minzoom': 15,
         'layout': {
           // Make the layer visible by default.
           'visibility': 'visible'
@@ -259,6 +261,14 @@ export default class extends Controller {
 
     });
 
+
+    this.map.on('mouseenter', 'problems', () => {
+      this.map.getCanvas().style.cursor = 'pointer';
+    });
+    this.map.on('mouseleave', 'problems', () => {
+      this.map.getCanvas().style.cursor = '';
+    });
+
     this.map.on('click', 'problems', (e) => {
 
       // console.log(e.features[0])
@@ -277,14 +287,28 @@ export default class extends Controller {
       // window.location.href = "/fr/redirects/new?problem_id=" + e.features[0].properties.id;
     });
 
-    // Change the cursor to a pointer when the mouse is over the places layer.
-    this.map.on('mouseenter', 'problems', () => {
-    this.map.getCanvas().style.cursor = 'pointer';
+    // FIXME: make DRY
+    this.map.on('mouseenter', 'pois-0bzt66', () => {
+      this.map.getCanvas().style.cursor = 'pointer';
     });
-     
-    // Change it back to a pointer when it leaves.
-    this.map.on('mouseleave', 'problems', () => {
-    this.map.getCanvas().style.cursor = '';
+    this.map.on('mouseleave', 'pois-0bzt66', () => {
+      this.map.getCanvas().style.cursor = '';
+    });
+
+    this.map.on('click', 'pois-0bzt66', (e) => {
+
+      // console.log(e.features[0])
+      // console.log(e.features[0].geometry)
+      // var name = e.features[0].properties.name
+
+      // FIXME: make it DRY
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const html = `<a href="${e.features[0].properties.googleUrl}" target="_blank">Voir sur Google</a>`;
+       
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
+      .setLngLat(coordinates)
+      .setHTML(html)
+      .addTo(this.map);
     });
 
   }
