@@ -12,19 +12,6 @@ class AreasController < ApplicationController
       @areas_with_count = @areas.map {|area| [area, area.problems.count]}
       @areas_with_count = @areas_with_count.sort{|a,b| ActiveSupport::Inflector.transliterate(a.first.name) <=> ActiveSupport::Inflector.transliterate(b.first.name) }
     end
-
-    @annotations = @areas.map do |area| 
-      {
-        latitude: area.start_location&.latitude,
-        longitude: area.start_location&.longitude,
-        color: "#059669",
-        title: area.name,
-        linkUrl: area_path(area),
-        linkText: t("views.areas.index.map.see"),
-        glyphText: "",
-        clusteringIdentifier: area.cluster,
-      } 
-    end
   end
 
   def show
