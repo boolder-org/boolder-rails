@@ -62,7 +62,7 @@ export default class extends Controller {
         ],
       }
       ,
-      "trails-names" // bottom layer. FIXME: use a layer name that won't break.
+      "pois-0bzt66" // bottom layer. FIXME: use a layer name that won't break.
       );
 
       that.map.addLayer({
@@ -198,7 +198,7 @@ export default class extends Controller {
         ],
       }
       ,
-      "trails-names" // bottom layer. FIXME: use a layer name that won't break.
+      "pois-0bzt66" // bottom layer. FIXME: use a layer name that won't break.
       );
 
       that.map.addLayer({
