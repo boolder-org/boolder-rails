@@ -70,7 +70,7 @@ export default class extends Controller {
         'type': 'circle',
         'source': 'problems',
         'source-layer': 'problems-ayes3a',
-        // 'minzoom': 15,
+        'minzoom': 16,
         'layout': {
           // Make the layer visible by default.
           'visibility': 'visible'
@@ -183,7 +183,7 @@ export default class extends Controller {
             "interpolate",
             ["linear"],
             ["zoom"],
-            15,
+            16,
             0,
             17,
             1
@@ -206,7 +206,7 @@ export default class extends Controller {
         'type': 'symbol',
         'source': 'problems',
         'source-layer': 'problems-ayes3a',
-        'minzoom': 17,
+        'minzoom': 18,
         'layout': {
           // Make the layer visible by default.
           'visibility': 'visible',
@@ -314,6 +314,25 @@ export default class extends Controller {
       .setLngLat(coordinates)
       .setHTML(html)
       .addTo(this.map);
+    });
+
+    // FIXME: make DRY
+    this.map.on('mouseenter', 'areas-5vn8jf', () => {
+      if(this.map.getZoom() >= 12 && this.map.getZoom() < 16) {
+        this.map.getCanvas().style.cursor = 'pointer';
+      }
+    });
+    this.map.on('mouseleave', 'areas-5vn8jf', () => {
+      if(this.map.getZoom() >= 12 && this.map.getZoom() < 16) {
+        this.map.getCanvas().style.cursor = '';
+      }
+    });
+
+    this.map.on('click', 'areas-5vn8jf', (e) => {
+      if(this.map.getZoom() >= 12 && this.map.getZoom() < 16) {
+        console.log("click")
+      }
+      
     });
 
   }
