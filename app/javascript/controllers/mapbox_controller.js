@@ -4,6 +4,7 @@ export default class extends Controller {
   static targets = [ "map" ]
   static values = { 
     bounds: Object,
+    problem: Object,
   }
 
   connect() {
@@ -278,15 +279,37 @@ export default class extends Controller {
             [bounds.north_east_lon, bounds.north_east_lat] // northeastern corner of the bounds
           ], 
           {
-            padding: 20 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+            animate: true,
+            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
           }
         );
       }
 
 
+      if(this.hasProblemValue) { 
+        let problem = this.problemValue
+
+        this.map.flyTo({
+          center: [problem.lon, problem.lat],
+          zoom: 20,
+          speed: 4,
+          curve: 1,
+          easing(t) {
+          return t;
+          }
+        });
+
+      // FIXME: make it DRY
+        const coordinates = [problem.lon, problem.lat];
+        const html = `<a href="/fr/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""} ${problem.grade}</a>`;
+         
+        new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
+        .setLngLat(coordinates)
+        .setHTML(html)
+        .addTo(this.map);
+      }
 
 
-      
 
     });
 
@@ -394,7 +417,7 @@ export default class extends Controller {
         [event.detail.north_east_lon, event.detail.north_east_lat] // northeastern corner of the bounds
       ], 
       {
-        padding: 20 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+        padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
       }
     );
   }
