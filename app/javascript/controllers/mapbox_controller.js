@@ -2,6 +2,9 @@ import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
   static targets = [ "map" ]
+  static values = { 
+    bounds: Object,
+  }
 
   connect() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
@@ -264,6 +267,27 @@ export default class extends Controller {
         ],
       });
 
+      
+      if(this.hasBoundsValue) { 
+        // console.log(this.boundsValue)
+        let bounds = this.boundsValue
+
+        this.map.fitBounds(
+          [
+            [bounds.south_west_lon, bounds.south_west_lat], // southwestern corner of the bounds
+            [bounds.north_east_lon, bounds.north_east_lat] // northeastern corner of the bounds
+          ], 
+          {
+            padding: 20 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+          }
+        );
+      }
+
+
+
+
+      
+
     });
 
 
@@ -330,7 +354,9 @@ export default class extends Controller {
 
     this.map.on('click', 'areas-5vn8jf', (e) => {
       if(this.map.getZoom() >= 12 && this.map.getZoom() < 16) {
-        console.log("click")
+        // fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //   .then(response => response.json())
+        //   .then(json => console.log(json))
       }
       
     });
