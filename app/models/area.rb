@@ -7,7 +7,7 @@ class Area < ApplicationRecord
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
-  after_save { problems.each(&:touch) } 
+  after_save { problems.each(&:touch) if saved_change_to_attribute?(:published) || saved_change_to_attribute?(:name) } 
 
   include AlgoliaSearch
   algoliasearch if: :published, enqueue: true do
