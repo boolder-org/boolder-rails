@@ -6,17 +6,26 @@ namespace :mapbox do
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    area_features = Area.published.map do |area|
-      hash = {}.with_indifferent_access
-      hash[:name] = area.name
-      hash[:area_id] = area.id
-      hash.deep_transform_keys! { |key| key.camelize(:lower) }
+    area_features = []
+    hull_features = []
 
-      factory.feature(area.start_location, nil, hash)
+    Area.published.each do |area|
+      hull = area.boulders.select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.00007) as hull").to_a.first.hull
+      hull_features << factory.feature(hull, nil, { })
+
+      hash = {}.with_indifferent_access
+      hash[:name] = area.short_name.presence || area.name
+      hash[:area_id] = area.id
+      hash[:south_west_lat] = area.bounds[:south_west].lat
+      hash[:south_west_lon] = area.bounds[:south_west].lon
+      hash[:north_east_lat] = area.bounds[:north_east].lat
+      hash[:north_east_lon] = area.bounds[:north_east].lon
+      hash.deep_transform_keys! { |key| key.camelize(:lower) }
+      area_features << factory.feature(hull.centroid, nil, hash)
     end
 
     feature_collection = factory.feature_collection(
-      area_features
+      area_features + hull_features
     )
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
@@ -67,29 +76,6 @@ namespace :mapbox do
     end
 
     puts "exported problems.geojson".green
-  end
-
-  task areas_hulls: :environment do
-    puts "exporting areas-hulls"
-
-    factory = RGeo::GeoJSON::EntityFactory.instance
-
-    hull_features = Area.published.map do |area|
-      result = area.boulders.select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.0002) as hull").to_a.first
-      factory.feature(result.hull, nil, { })
-    end
-
-    feature_collection = factory.feature_collection(
-      hull_features
-    )
-
-    geo_json = RGeo::GeoJSON.encode(feature_collection)
-
-    File.open(Rails.root.join('export', 'mapbox', "areas-hulls.geojson"),"w") do |f|
-      f.write(JSON.pretty_generate(geo_json))
-    end
-
-    puts "exported areas-hulls.geojson".green
   end
 
   task pois: :environment do
