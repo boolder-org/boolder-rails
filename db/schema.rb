@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_18_163152) do
+ActiveRecord::Schema.define(version: 2022_10_19_184904) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,8 @@ ActiveRecord::Schema.define(version: 2021_06_18_163152) do
     t.string "cluster"
     t.string "slug"
     t.string "tags", default: [], null: false, array: true
+    t.string "short_name"
+    t.integer "priority", limit: 2, default: 3, null: false
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
   end
