@@ -32,8 +32,6 @@ namespace :mapbox do
 
     file_name = Rails.root.join('export', "mapbox", "areas.geojson")
 
-    raise "file already exists" if File.exist?(file_name)
-
     File.open(file_name,"w") do |f|
       f.write(geo_json)
     end
