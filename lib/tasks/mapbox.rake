@@ -49,11 +49,11 @@ namespace :mapbox do
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-      factory.feature(problem.location, "problem_#{problem.id}", hash)
+      factory.feature(problem.location, nil, hash)
     end
 
     boulder_features = Boulder.all.joins(:area).where(area: {published: true}).map do |boulder|
-      factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
+      factory.feature(boulder.polygon, nil, { })
     end
 
     feature_collection = factory.feature_collection(
@@ -69,26 +69,27 @@ namespace :mapbox do
     puts "exported problems.geojson".green
   end
 
-  task boulders: :environment do
-    puts "exporting boulders"
+  task areas_hulls: :environment do
+    puts "exporting areas-hulls"
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    boulder_features = Boulder.all.joins(:area).where(area: {published: true}).map do |boulder|
-      factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
+    hull_features = Area.published.map do |area|
+      result = area.boulders.select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.0002) as hull").to_a.first
+      factory.feature(result.hull, nil, { })
     end
 
     feature_collection = factory.feature_collection(
-      boulder_features
+      hull_features
     )
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join('export', 'mapbox', "boulders.geojson"),"w") do |f|
+    File.open(Rails.root.join('export', 'mapbox', "areas-hulls.geojson"),"w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 
-    puts "exported boulders.geojson".green
+    puts "exported areas-hulls.geojson".green
   end
 
   task pois: :environment do

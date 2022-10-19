@@ -6,336 +6,14 @@
         {
             "type": "Feature",
             "properties": {
-                "areaId": "18",
-                "name": "Diplodocus"
+                "areaId": "19",
+                "name": "Rocher des Potets"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.53248810232,
-                    48.37136442798
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "2",
-                "name": "Cul de Chien"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.52399885187,
-                    48.37626751781
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "38",
-                "name": "Sablons Carriers"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.58632003725,
-                    48.40933448418
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "La Ségognole",
-                "areaId": "28"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.50460453265,
-                    48.38006862121
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "41",
-                "name": "Maunoury"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.60858773649,
-                    48.30271212252
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "91.1",
-                "areaId": "16"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.51872300565,
-                    48.37702664524
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Cuvier Est",
-                "areaId": "6"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.64377027482,
-                    48.44603080027
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "40",
-                "name": "Cuvier Merveille"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.65261887967,
-                    48.44427650333
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Gorge aux Châts",
-                "areaId": "15"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.51960813731,
-                    48.39899428804
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "35",
-                "name": "Rocher de la Cathédrale"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.53390430331,
-                    48.36443992060
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "51",
-                "name": "Restant du Long Rocher"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.73270427913,
-                    48.35351844400
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Canche aux Merciers",
-                "areaId": "13"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.54836141527,
-                    48.39214299829
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "34",
-                "name": "Sablons"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.59578823507,
-                    48.40889292766
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "26",
-                "name": "Drei Zinnen"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.55801200330,
-                    48.39320093925
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "31",
-                "name": "Cuisinière Crêtes Sud"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.60861455858,
-                    48.40915999858
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "42",
-                "name": "Dame Jouanne"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.60287463128,
-                    48.30292265675
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Cuvier Nord",
-                "areaId": "44"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.64134690031,
-                    48.44747636004
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Isatis",
-                "areaId": "5"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.60074495732,
-                    48.40959443097
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Roche aux Oiseaux",
-                "areaId": "25"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.50732897639,
-                    48.37848040790
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "11",
-                "name": "Cuisinière"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.61232137143,
-                    48.41014636840
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "50",
-                "name": "Rocher d'Avon"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.72470592916,
-                    48.39316531869
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "21",
-                "name": "Bois Rond"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.56229549512,
-                    48.39066647222
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "8",
-                "name": "Rocher Fin"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.53502010226,
-                    48.37717630240
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Apremont Ouest",
-                "areaId": "20"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.62670873523,
-                    48.43738682875
+                    2.52723633707,
+                    48.38280580475
                 ]
             }
         },
@@ -356,112 +34,42 @@
         {
             "type": "Feature",
             "properties": {
-                "areaId": "68",
-                "name": "Restant du Long Rocher Nord"
+                "areaId": "29",
+                "name": "Beauvais Nainville"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.73232340276,
-                    48.35755723915
+                    2.47881442040,
+                    48.50229631633
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "areaId": "19",
-                "name": "Rocher des Potets"
+                "name": "91.1",
+                "areaId": "16"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.52736508310,
-                    48.38280580475
+                    2.51872300565,
+                    48.37702664524
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "areaId": "32",
-                "name": "Petit Bois"
+                "name": "Cuisinière",
+                "areaId": "11"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.67127901182,
-                    48.26337337890
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Jean des Vignes",
-                "areaId": "27"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.52364754141,
-                    48.38319414644
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Cuvier",
-                "areaId": "4"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.63800620765,
-                    48.44711252831
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Hautes Plaines",
-                "areaId": "36"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.59827196062,
-                    48.40867570894
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Rocher des Souris",
-                "areaId": "22"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.52296626032,
-                    48.38628296064
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Rocher du Potala",
-                "areaId": "14"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.53389894426,
-                    48.36718061063
+                    2.61232137143,
+                    48.41014636840
                 ]
             }
         },
@@ -482,140 +90,28 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Rocher Guichot",
-                "areaId": "17"
+                "name": "Cuvier Nord",
+                "areaId": "44"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.52551167935,
-                    48.36408707142
+                    2.64071389898,
+                    48.44768985474
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "areaId": "30",
-                "name": "J.A. Martin"
+                "name": "Hautes Plaines",
+                "areaId": "36"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.53693520486,
-                    48.36103968386
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Rocher Canon",
-                "areaId": "1"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.66351669758,
-                    48.46213513470
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Roche aux Sabots",
-                "areaId": "12"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.51410424173,
-                    48.37463925470
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "29",
-                "name": "Beauvais Nainville"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.47905045479,
-                    48.50224655457
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "69",
-                "name": "Apremont Est"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.63107537150,
-                    48.43570697214
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "23",
-                "name": "Buthiers Piscine"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.43790000409,
-                    48.29383856247
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "areaId": "7",
-                "name": "Apremont"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.62914418101,
-                    48.43671062196
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "95.2",
-                "areaId": "10"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.52911924780,
-                    48.38576995257
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Rocher Saint-Germain",
-                "areaId": "24"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.68486439914,
-                    48.43944030147
+                    2.59827196062,
+                    48.40867570894
                 ]
             }
         },
@@ -636,14 +132,518 @@
         {
             "type": "Feature",
             "properties": {
+                "name": "Canche aux Merciers",
+                "areaId": "13"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.54836141527,
+                    48.39214299829
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "68",
+                "name": "Restant du Long Rocher Nord"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.73232340276,
+                    48.35755723915
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Apremont Ouest",
+                "areaId": "20"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62670873523,
+                    48.43738682875
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Roche aux Sabots",
+                "areaId": "12"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.51410424173,
+                    48.37463925470
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "41",
+                "name": "Maunoury"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60858773649,
+                    48.30271212252
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Roche aux Oiseaux",
+                "areaId": "25"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.50715731501,
+                    48.37852316489
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "42",
+                "name": "Dame Jouanne"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60287463128,
+                    48.30292265675
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cuvier",
+                "areaId": "4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63862848014,
+                    48.44712676142
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rocher Saint-Germain",
+                "areaId": "24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.68476783962,
+                    48.43950436011
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "51",
+                "name": "Restant du Long Rocher"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.73270427913,
+                    48.35351844400
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gorge aux Châts",
+                "areaId": "15"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.51976906985,
+                    48.39907976752
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "8",
+                "name": "Rocher Fin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53502010226,
+                    48.37717630240
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rocher Canon",
+                "areaId": "1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.66351669758,
+                    48.46213513470
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "La Ségognole",
+                "areaId": "28"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.50460453265,
+                    48.38006862121
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Isatis",
+                "areaId": "5"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60074495732,
+                    48.40959443097
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "18",
+                "name": "Diplodocus"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53248810232,
+                    48.37136442798
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "31",
+                "name": "Cuisinière Crêtes Sud"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60861455858,
+                    48.40915999858
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Jean des Vignes",
+                "areaId": "27"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52364754141,
+                    48.38319414644
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "95.2",
+                "areaId": "10"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52976297796,
+                    48.38569870104
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "35",
+                "name": "Rocher de la Cathédrale"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53390430331,
+                    48.36443992060
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Buthiers Piscine",
+                "areaId": "23"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.43790000409,
+                    48.29383856247
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "40",
+                "name": "Cuvier Merveille"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.65261887967,
+                    48.44427650333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "21",
+                "name": "Bois Rond"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.56214529142,
+                    48.39058810307
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "30",
+                "name": "J.A. Martin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53693520486,
+                    48.36103968386
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sablons Carriers",
+                "areaId": "38"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.58632003725,
+                    48.40933448418
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rocher du Potala",
+                "areaId": "14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.53389894426,
+                    48.36718061063
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "26",
+                "name": "Drei Zinnen"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.55808710515,
+                    48.39302283625
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Petit Bois",
+                "areaId": "32"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.67115026579,
+                    48.26332338301
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "7",
+                "name": "Apremont"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62891887545,
+                    48.43685298203
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Apremont Est",
+                "areaId": "69"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.63107537150,
+                    48.43570697214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cuvier Est",
+                "areaId": "6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.64377027482,
+                    48.44603080027
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "50",
+                "name": "Rocher d'Avon"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.72470592916,
+                    48.39316531869
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rocher Guichot",
+                "areaId": "17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52525418728,
+                    48.36420112222
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cul de Chien",
+                "areaId": "2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52438508997,
+                    48.37696590787
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rocher des Souris",
+                "areaId": "22"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52318083704,
+                    48.38572720167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "name": "Éléphant",
                 "areaId": "9"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.59355127275,
-                    48.29398310873
+                    2.59334742486,
+                    48.29412586830
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "areaId": "34",
+                "name": "Sablons"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.59578823507,
+                    48.40889292766
                 ]
             }
         }
