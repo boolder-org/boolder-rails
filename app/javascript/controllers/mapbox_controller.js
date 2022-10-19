@@ -45,31 +45,6 @@ export default class extends Controller {
       });
 
       that.map.addLayer({
-        'id': 'boulders',
-        'type': 'fill',
-        'source': 'problems',
-        'source-layer': 'problems-ayes3a',
-        'layout': {
-          // Make the layer visible by default.
-          'visibility': 'visible'
-        },
-        'paint': {
-          'fill-color': '#ccc',
-          'fill-outline-color': "#b3b3b3",
-        },
-        filter: [
-          "match",
-            ["geometry-type"],
-            ["Polygon"],
-            true,
-            false
-        ],
-      }
-      ,
-      "pois-0bzt66" // bottom layer. FIXME: use a layer name that won't break.
-      );
-
-      that.map.addLayer({
         'id': 'problems',
         'type': 'circle',
         'source': 'problems',
@@ -202,7 +177,7 @@ export default class extends Controller {
         ],
       }
       ,
-      "pois-0bzt66" // bottom layer. FIXME: use a layer name that won't break.
+      "areas-5vn8jf" // bottom layer. FIXME: use a layer name that won't break.
       );
 
       that.map.addLayer({
