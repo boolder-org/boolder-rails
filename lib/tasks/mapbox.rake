@@ -69,6 +69,28 @@ namespace :mapbox do
     puts "exported problems.geojson".green
   end
 
+  task boulders: :environment do
+    puts "exporting boulders"
+
+    factory = RGeo::GeoJSON::EntityFactory.instance
+
+    boulder_features = Boulder.all.joins(:area).where(area: {published: true}).map do |boulder|
+      factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
+    end
+
+    feature_collection = factory.feature_collection(
+      boulder_features
+    )
+
+    geo_json = RGeo::GeoJSON.encode(feature_collection)
+
+    File.open(Rails.root.join('export', 'mapbox', "boulders.geojson"),"w") do |f|
+      f.write(JSON.pretty_generate(geo_json))
+    end
+
+    puts "exported boulders.geojson".green
+  end
+
   task pois: :environment do
     puts "exporting pois"
 
