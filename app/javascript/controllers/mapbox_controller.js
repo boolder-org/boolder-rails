@@ -386,6 +386,34 @@ export default class extends Controller {
     this.map.on('click', 'areas-hulls', (e) => {
       if(this.map.getZoom() < 16) {
         let props = e.features[0].properties
+        console.log(props)
+        this.map.fitBounds([
+            [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
+            [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
+          ], 
+          {
+            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+          }
+        );
+      }
+      
+    });
+
+     // FIXME: make DRY
+    this.map.on('mouseenter', 'clusters', () => {
+      if(this.map.getZoom() <= 12) {
+        this.map.getCanvas().style.cursor = 'pointer';
+      }
+    });
+    this.map.on('mouseleave', 'clusters', () => {
+      if(this.map.getZoom() <= 12) {
+        this.map.getCanvas().style.cursor = '';
+      }
+    });
+
+    this.map.on('click', 'clusters', (e) => {
+      if(this.map.getZoom() <= 12) {
+        let props = e.features[0].properties
         this.map.fitBounds([
             [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
             [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
