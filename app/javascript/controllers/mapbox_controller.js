@@ -61,12 +61,12 @@ export default class extends Controller {
               ["linear"],
               ["zoom"],
               18,
-              2,
+              4,
               22,
               [
                 "case",
                 ["has", "circuitId"],
-                20,
+                16,
                 10
               ]
             ]
@@ -164,7 +164,7 @@ export default class extends Controller {
             ["zoom"],
             16,
             0,
-            17,
+            16.3,
             1
           ]
         },
@@ -185,7 +185,7 @@ export default class extends Controller {
         'type': 'symbol',
         'source': 'problems',
         'source-layer': 'problems-ayes3a',
-        'minzoom': 18,
+        'minzoom': 19,
         'layout': {
           // Make the layer visible by default.
           'visibility': 'visible',
@@ -198,10 +198,10 @@ export default class extends Controller {
             "interpolate",
             ["linear"],
             ["zoom"],
-            18,
-            2,
+            19,
+            10,
             22,
-            26
+            20
           ],
           // 'text-font': [
           //   'Open Sans Bold',
