@@ -1117,6 +1117,11 @@
         ]
       },
       "properties": {
+        "area_id": 22,
+        "south_west_lat": 48.38500121532,
+        "south_west_lon": 2.52194972439,
+        "north_east_lat": 48.38659811936,
+        "north_east_lon": 2.5242662333
       }
     },
     {
@@ -1401,6 +1406,11 @@
         ]
       },
       "properties": {
+        "area_id": 28,
+        "south_west_lat": 48.3796416665,
+        "south_west_lon": 2.50402660323,
+        "north_east_lat": 48.38037638684,
+        "north_east_lon": 2.50505888625
       }
     },
     {
@@ -1713,6 +1723,11 @@
         ]
       },
       "properties": {
+        "area_id": 25,
+        "south_west_lat": 48.37767785047,
+        "south_west_lon": 2.50590003993,
+        "north_east_lat": 48.3792426803,
+        "north_east_lon": 2.50803708996
       }
     },
     {
@@ -1961,6 +1976,11 @@
         ]
       },
       "properties": {
+        "area_id": 35,
+        "south_west_lat": 48.36367302305,
+        "south_west_lon": 2.5331554178,
+        "north_east_lat": 48.36693256396,
+        "north_east_lon": 2.5364430953
       }
     },
     {
@@ -2193,6 +2213,11 @@
         ]
       },
       "properties": {
+        "area_id": 68,
+        "south_west_lat": 48.35682669656,
+        "south_west_lon": 2.73094573205,
+        "north_east_lat": 48.35837863479,
+        "north_east_lon": 2.73390959914
       }
     },
     {
@@ -2437,6 +2462,11 @@
         ]
       },
       "properties": {
+        "area_id": 47,
+        "south_west_lat": 48.46104972317,
+        "south_west_lon": 2.65208631343,
+        "north_east_lat": 48.46293565468,
+        "north_east_lon": 2.65958927539
       }
     },
     {
@@ -2705,6 +2735,11 @@
         ]
       },
       "properties": {
+        "area_id": 40,
+        "south_west_lat": 48.44408990203,
+        "south_west_lon": 2.65163334069,
+        "north_east_lat": 48.44450857875,
+        "north_east_lon": 2.65335313942
       }
     },
     {
@@ -2985,6 +3020,11 @@
         ]
       },
       "properties": {
+        "area_id": 10,
+        "south_west_lat": 48.38464527675,
+        "south_west_lon": 2.52719897271,
+        "north_east_lat": 48.38652699056,
+        "north_east_lon": 2.53246329691
       }
     },
     {
@@ -3305,6 +3345,11 @@
         ]
       },
       "properties": {
+        "area_id": 7,
+        "south_west_lat": 48.43569628801,
+        "south_west_lon": 2.62783426757,
+        "north_east_lat": 48.43786638936,
+        "north_east_lon": 2.62980267388
       }
     },
     {
@@ -3581,6 +3626,11 @@
         ]
       },
       "properties": {
+        "area_id": 16,
+        "south_west_lat": 48.37592648825,
+        "south_west_lon": 2.5163634071,
+        "north_east_lat": 48.37800882633,
+        "north_east_lon": 2.52118100144
       }
     },
     {
@@ -3881,6 +3931,11 @@
         ]
       },
       "properties": {
+        "area_id": 69,
+        "south_west_lat": 48.43495955356,
+        "south_west_lon": 2.62918844786,
+        "north_east_lat": 48.43642493182,
+        "north_east_lon": 2.63259797493
       }
     },
     {
@@ -4129,6 +4184,11 @@
         ]
       },
       "properties": {
+        "area_id": 20,
+        "south_west_lat": 48.43630005117,
+        "south_west_lon": 2.62532177303,
+        "north_east_lat": 48.43856003864,
+        "north_east_lon": 2.6275262502
       }
     },
     {
@@ -4385,6 +4445,11 @@
         ]
       },
       "properties": {
+        "area_id": 29,
+        "south_west_lat": 48.50127018051,
+        "south_west_lon": 2.4755936859,
+        "north_east_lat": 48.50388392101,
+        "north_east_lon": 2.48156877419
       }
     },
     {
@@ -4649,6 +4714,11 @@
         ]
       },
       "properties": {
+        "area_id": 23,
+        "south_west_lat": 48.29182877466,
+        "south_west_lon": 2.4343453283,
+        "north_east_lat": 48.29609189156,
+        "north_east_lon": 2.44187906351
       }
     },
     {
@@ -4901,6 +4971,11 @@
         ]
       },
       "properties": {
+        "area_id": 13,
+        "south_west_lat": 48.39156003518,
+        "south_west_lon": 2.54651873169,
+        "north_east_lat": 48.39290849812,
+        "north_east_lon": 2.5499136297
       }
     },
     {
@@ -5137,6 +5212,11 @@
         ]
       },
       "properties": {
+        "area_id": 2,
+        "south_west_lat": 48.37489670364,
+        "south_west_lon": 2.5220932053,
+        "north_east_lat": 48.37912442506,
+        "north_east_lon": 2.52759039335
       }
     },
     {
@@ -5425,6 +5505,11 @@
         ]
       },
       "properties": {
+        "area_id": 4,
+        "south_west_lat": 48.44640220042,
+        "south_west_lon": 2.63747714393,
+        "north_east_lat": 48.4479009016,
+        "north_east_lon": 2.64015968855
       }
     },
     {
@@ -5737,6 +5822,11 @@
         ]
       },
       "properties": {
+        "area_id": 6,
+        "south_west_lat": 48.44573879035,
+        "south_west_lon": 2.63984395022,
+        "north_east_lat": 48.44702490408,
+        "north_east_lon": 2.64426112158
       }
     },
     {
@@ -5981,6 +6071,11 @@
         ]
       },
       "properties": {
+        "area_id": 44,
+        "south_west_lat": 48.44691192865,
+        "south_west_lon": 2.6396121823,
+        "north_east_lat": 48.44907132101,
+        "north_east_lon": 2.64209624346
       }
     },
     {
@@ -6253,6 +6348,11 @@
         ]
       },
       "properties": {
+        "area_id": 42,
+        "south_west_lat": 48.30225398493,
+        "south_west_lon": 2.60061412344,
+        "north_east_lat": 48.30521805156,
+        "north_east_lon": 2.60617878254
       }
     },
     {
@@ -6489,6 +6589,11 @@
         ]
       },
       "properties": {
+        "area_id": 18,
+        "south_west_lat": 48.37097732928,
+        "south_west_lon": 2.53173890558,
+        "north_east_lat": 48.3716737044,
+        "north_east_lon": 2.53301395929
       }
     },
     {
@@ -6769,6 +6874,11 @@
         ]
       },
       "properties": {
+        "area_id": 26,
+        "south_west_lat": 48.39229139419,
+        "south_west_lon": 2.55664810504,
+        "north_east_lat": 48.39393983407,
+        "north_east_lon": 2.55953233013
       }
     },
     {
@@ -7049,6 +7159,11 @@
         ]
       },
       "properties": {
+        "area_id": 31,
+        "south_west_lat": 48.40742000317,
+        "south_west_lon": 2.60795675151,
+        "north_east_lat": 48.41064488426,
+        "north_east_lon": 2.61160522666
       }
     },
     {
@@ -7301,6 +7416,11 @@
         ]
       },
       "properties": {
+        "area_id": 15,
+        "south_west_lat": 48.39873830592,
+        "south_west_lon": 2.51898043169,
+        "north_east_lat": 48.39965740358,
+        "north_east_lon": 2.52059343872
       }
     },
     {
@@ -7569,6 +7689,11 @@
         ]
       },
       "properties": {
+        "area_id": 30,
+        "south_west_lat": 48.36008856218,
+        "south_west_lon": 2.53266956019,
+        "north_east_lat": 48.36309173121,
+        "north_east_lon": 2.54037156044
       }
     },
     {
@@ -7853,6 +7978,11 @@
         ]
       },
       "properties": {
+        "area_id": 27,
+        "south_west_lat": 48.38239735341,
+        "south_west_lon": 2.52282476111,
+        "north_east_lat": 48.38427947773,
+        "north_east_lon": 2.52438649986
       }
     },
     {
@@ -8129,6 +8259,11 @@
         ]
       },
       "properties": {
+        "area_id": 41,
+        "south_west_lat": 48.30188261188,
+        "south_west_lon": 2.60695389345,
+        "north_east_lat": 48.30425697195,
+        "north_east_lon": 2.61054627984
       }
     },
     {
@@ -8397,6 +8532,11 @@
         ]
       },
       "properties": {
+        "area_id": 32,
+        "south_west_lat": 48.26249527024,
+        "south_west_lon": 2.66989535537,
+        "north_east_lat": 48.26401956507,
+        "north_east_lon": 2.67253121479
       }
     },
     {
@@ -8685,6 +8825,11 @@
         ]
       },
       "properties": {
+        "area_id": 51,
+        "south_west_lat": 48.35211064898,
+        "south_west_lon": 2.72987329048,
+        "north_east_lat": 48.35425581247,
+        "north_east_lon": 2.73562331618
       }
     },
     {
@@ -8945,6 +9090,11 @@
         ]
       },
       "properties": {
+        "area_id": 12,
+        "south_west_lat": 48.37406800326,
+        "south_west_lon": 2.51345446806,
+        "north_east_lat": 48.37523633339,
+        "north_east_lon": 2.51445172485
       }
     },
     {
@@ -9229,6 +9379,11 @@
         ]
       },
       "properties": {
+        "area_id": 1,
+        "south_west_lat": 48.46070097269,
+        "south_west_lon": 2.66184519556,
+        "north_east_lat": 48.46338661727,
+        "north_east_lon": 2.66517021093
       }
     },
     {
@@ -9505,6 +9660,11 @@
         ]
       },
       "properties": {
+        "area_id": 8,
+        "south_west_lat": 48.37574170256,
+        "south_west_lon": 2.5309932872,
+        "north_east_lat": 48.37777537945,
+        "north_east_lon": 2.53651771628
       }
     },
     {
@@ -9733,6 +9893,11 @@
         ]
       },
       "properties": {
+        "area_id": 17,
+        "south_west_lat": 48.36375285975,
+        "south_west_lon": 2.52413844156,
+        "north_east_lat": 48.36579743345,
+        "north_east_lon": 2.52616913834
       }
     },
     {
@@ -10025,6 +10190,11 @@
         ]
       },
       "properties": {
+        "area_id": 24,
+        "south_west_lat": 48.43881883818,
+        "south_west_lon": 2.68363277554,
+        "north_east_lat": 48.44033889289,
+        "north_east_lon": 2.68603317372
       }
     },
     {
@@ -10313,6 +10483,11 @@
         ]
       },
       "properties": {
+        "area_id": 50,
+        "south_west_lat": 48.39227635193,
+        "south_west_lon": 2.72209563777,
+        "north_east_lat": 48.3940429094,
+        "north_east_lon": 2.7314258736
       }
     },
     {
@@ -10597,6 +10772,11 @@
         ]
       },
       "properties": {
+        "area_id": 33,
+        "south_west_lat": 48.37820214553,
+        "south_west_lon": 2.66808167179,
+        "north_east_lat": 48.38021242247,
+        "north_east_lon": 2.67909144966
       }
     },
     {
@@ -10869,6 +11049,11 @@
         ]
       },
       "properties": {
+        "area_id": 19,
+        "south_west_lat": 48.38220817991,
+        "south_west_lon": 2.52608026979,
+        "north_east_lat": 48.38336848988,
+        "north_east_lon": 2.5282243285
       }
     },
     {
@@ -11105,6 +11290,11 @@
         ]
       },
       "properties": {
+        "area_id": 9,
+        "south_west_lat": 48.292882059,
+        "south_west_lon": 2.59102262489,
+        "north_east_lat": 48.29517290522,
+        "north_east_lon": 2.5962640493
       }
     },
     {
@@ -11365,6 +11555,11 @@
         ]
       },
       "properties": {
+        "area_id": 11,
+        "south_west_lat": 48.40962637245,
+        "south_west_lon": 2.60987969845,
+        "north_east_lat": 48.41068281244,
+        "north_east_lon": 2.61434651744
       }
     },
     {
@@ -11629,6 +11824,11 @@
         ]
       },
       "properties": {
+        "area_id": 5,
+        "south_west_lat": 48.40821900911,
+        "south_west_lon": 2.59923856672,
+        "north_east_lat": 48.41021135151,
+        "north_east_lon": 2.60668437894
       }
     },
     {
@@ -11905,6 +12105,11 @@
         ]
       },
       "properties": {
+        "area_id": 34,
+        "south_west_lat": 48.4072503827,
+        "south_west_lon": 2.59515930138,
+        "north_east_lat": 48.40935827556,
+        "north_east_lon": 2.59619409181
       }
     },
     {
@@ -12161,6 +12366,11 @@
         ]
       },
       "properties": {
+        "area_id": 38,
+        "south_west_lat": 48.40821044033,
+        "south_west_lon": 2.58611435054,
+        "north_east_lat": 48.40960744708,
+        "north_east_lon": 2.59065784481
       }
     },
     {
@@ -12417,6 +12627,11 @@
         ]
       },
       "properties": {
+        "area_id": 49,
+        "south_west_lat": 48.43540604155,
+        "south_west_lon": 2.63289404142,
+        "north_east_lat": 48.43660539481,
+        "north_east_lon": 2.63512586864
       }
     },
     {
@@ -12701,6 +12916,11 @@
         ]
       },
       "properties": {
+        "area_id": 21,
+        "south_west_lat": 48.38990503781,
+        "south_west_lon": 2.56098785522,
+        "north_east_lat": 48.39124180285,
+        "north_east_lon": 2.56325137311
       }
     },
     {
@@ -13005,6 +13225,11 @@
         ]
       },
       "properties": {
+        "area_id": 14,
+        "south_west_lat": 48.3668622941,
+        "south_west_lon": 2.53267684735,
+        "north_east_lat": 48.36845187103,
+        "north_east_lon": 2.53583927231
       }
     },
     {
@@ -13277,6 +13502,11 @@
         ]
       },
       "properties": {
+        "area_id": 36,
+        "south_west_lat": 48.40723840371,
+        "south_west_lon": 2.59719103541,
+        "north_east_lat": 48.40900315211,
+        "north_east_lon": 2.60093102702
       }
     }
   ]
