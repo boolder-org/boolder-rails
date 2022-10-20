@@ -17,6 +17,7 @@ namespace :mapbox do
       hash[:south_west_lon] = area.bounds[:south_west].lon
       hash[:north_east_lat] = area.bounds[:north_east].lat
       hash[:north_east_lon] = area.bounds[:north_east].lon
+      hash.deep_transform_keys! { |key| key.camelize(:lower) }
       hull_features << factory.feature(hull, nil, hash)
 
       hash = {}.with_indifferent_access
