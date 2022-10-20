@@ -13,6 +13,7 @@
       "properties": {
         "name": "Rocher des Souris",
         "areaId": 22,
+        "priority": 3,
         "southWestLat": 48.38500121532,
         "southWestLon": 2.52194972439,
         "northEastLat": 48.38659811936,
@@ -31,6 +32,7 @@
       "properties": {
         "name": "La Ségognole",
         "areaId": 28,
+        "priority": 3,
         "southWestLat": 48.3796416665,
         "southWestLon": 2.50402660323,
         "northEastLat": 48.38037638684,
@@ -49,6 +51,7 @@
       "properties": {
         "name": "Roche aux Oiseaux",
         "areaId": 25,
+        "priority": 3,
         "southWestLat": 48.37767785047,
         "southWestLon": 2.50590003993,
         "northEastLat": 48.3792426803,
@@ -67,6 +70,7 @@
       "properties": {
         "name": "Rocher de la Cathédrale",
         "areaId": 35,
+        "priority": 3,
         "southWestLat": 48.36367302305,
         "southWestLon": 2.5331554178,
         "northEastLat": 48.36693256396,
@@ -85,6 +89,7 @@
       "properties": {
         "name": "Restant du Long Rocher Nord",
         "areaId": 68,
+        "priority": 3,
         "southWestLat": 48.35682669656,
         "southWestLon": 2.73094573205,
         "northEastLat": 48.35837863479,
@@ -103,6 +108,7 @@
       "properties": {
         "name": "Rocher Canon Ouest",
         "areaId": 47,
+        "priority": 3,
         "southWestLat": 48.46104972317,
         "southWestLon": 2.65208631343,
         "northEastLat": 48.46293565468,
@@ -121,6 +127,7 @@
       "properties": {
         "name": "Cuvier Merveille",
         "areaId": 40,
+        "priority": 3,
         "southWestLat": 48.44408990203,
         "southWestLon": 2.65163334069,
         "northEastLat": 48.44450857875,
@@ -139,6 +146,7 @@
       "properties": {
         "name": "95.2",
         "areaId": 10,
+        "priority": 1,
         "southWestLat": 48.38464527675,
         "southWestLon": 2.52719897271,
         "northEastLat": 48.38652699056,
@@ -157,6 +165,7 @@
       "properties": {
         "name": "Apremont",
         "areaId": 7,
+        "priority": 1,
         "southWestLat": 48.43569628801,
         "southWestLon": 2.62783426757,
         "northEastLat": 48.43786638936,
@@ -175,6 +184,7 @@
       "properties": {
         "name": "91.1",
         "areaId": 16,
+        "priority": 1,
         "southWestLat": 48.37592648825,
         "southWestLon": 2.5163634071,
         "northEastLat": 48.37800882633,
@@ -193,6 +203,7 @@
       "properties": {
         "name": "Apremont Est",
         "areaId": 69,
+        "priority": 2,
         "southWestLat": 48.43495955356,
         "southWestLon": 2.62918844786,
         "northEastLat": 48.43642493182,
@@ -211,6 +222,7 @@
       "properties": {
         "name": "Apremont Ouest",
         "areaId": 20,
+        "priority": 2,
         "southWestLat": 48.43630005117,
         "southWestLon": 2.62532177303,
         "northEastLat": 48.43856003864,
@@ -229,6 +241,7 @@
       "properties": {
         "name": "Beauvais Nainville",
         "areaId": 29,
+        "priority": 1,
         "southWestLat": 48.50127018051,
         "southWestLon": 2.4755936859,
         "northEastLat": 48.50388392101,
@@ -247,6 +260,7 @@
       "properties": {
         "name": "Buthiers Piscine",
         "areaId": 23,
+        "priority": 1,
         "southWestLat": 48.29182877466,
         "southWestLon": 2.4343453283,
         "northEastLat": 48.29609189156,
@@ -265,6 +279,7 @@
       "properties": {
         "name": "Canche aux Merciers",
         "areaId": 13,
+        "priority": 1,
         "southWestLat": 48.39156003518,
         "southWestLon": 2.54651873169,
         "northEastLat": 48.39290849812,
@@ -283,6 +298,7 @@
       "properties": {
         "name": "Cul de Chien",
         "areaId": 2,
+        "priority": 1,
         "southWestLat": 48.37489670364,
         "southWestLon": 2.5220932053,
         "northEastLat": 48.37912442506,
@@ -301,6 +317,7 @@
       "properties": {
         "name": "Cuvier",
         "areaId": 4,
+        "priority": 1,
         "southWestLat": 48.44640220042,
         "southWestLon": 2.63747714393,
         "northEastLat": 48.4479009016,
@@ -319,6 +336,7 @@
       "properties": {
         "name": "Cuvier Est",
         "areaId": 6,
+        "priority": 2,
         "southWestLat": 48.44573879035,
         "southWestLon": 2.63984395022,
         "northEastLat": 48.44702490408,
@@ -337,6 +355,7 @@
       "properties": {
         "name": "Cuvier Nord",
         "areaId": 44,
+        "priority": 2,
         "southWestLat": 48.44691192865,
         "southWestLon": 2.6396121823,
         "northEastLat": 48.44907132101,
@@ -355,6 +374,7 @@
       "properties": {
         "name": "Dame Jouanne",
         "areaId": 42,
+        "priority": 2,
         "southWestLat": 48.30225398493,
         "southWestLon": 2.60061412344,
         "northEastLat": 48.30521805156,
@@ -373,6 +393,7 @@
       "properties": {
         "name": "Diplodocus",
         "areaId": 18,
+        "priority": 1,
         "southWestLat": 48.37097732928,
         "southWestLon": 2.53173890558,
         "northEastLat": 48.3716737044,
@@ -391,6 +412,7 @@
       "properties": {
         "name": "Drei Zinnen",
         "areaId": 26,
+        "priority": 1,
         "southWestLat": 48.39229139419,
         "southWestLon": 2.55664810504,
         "northEastLat": 48.39393983407,
@@ -409,6 +431,7 @@
       "properties": {
         "name": "Cuisinière Crêtes Sud",
         "areaId": 31,
+        "priority": 3,
         "southWestLat": 48.40742000317,
         "southWestLon": 2.60795675151,
         "northEastLat": 48.41064488426,
@@ -427,6 +450,7 @@
       "properties": {
         "name": "Gorge aux Châts",
         "areaId": 15,
+        "priority": 1,
         "southWestLat": 48.39873830592,
         "southWestLon": 2.51898043169,
         "northEastLat": 48.39965740358,
@@ -445,6 +469,7 @@
       "properties": {
         "name": "J.A. Martin",
         "areaId": 30,
+        "priority": 1,
         "southWestLat": 48.36008856218,
         "southWestLon": 2.53266956019,
         "northEastLat": 48.36309173121,
@@ -463,6 +488,7 @@
       "properties": {
         "name": "Jean des Vignes",
         "areaId": 27,
+        "priority": 2,
         "southWestLat": 48.38239735341,
         "southWestLon": 2.52282476111,
         "northEastLat": 48.38427947773,
@@ -481,6 +507,7 @@
       "properties": {
         "name": "Maunoury",
         "areaId": 41,
+        "priority": 2,
         "southWestLat": 48.30188261188,
         "southWestLon": 2.60695389345,
         "northEastLat": 48.30425697195,
@@ -499,6 +526,7 @@
       "properties": {
         "name": "Petit Bois",
         "areaId": 32,
+        "priority": 1,
         "southWestLat": 48.26249527024,
         "southWestLon": 2.66989535537,
         "northEastLat": 48.26401956507,
@@ -517,6 +545,7 @@
       "properties": {
         "name": "Restant du Long Rocher",
         "areaId": 51,
+        "priority": 1,
         "southWestLat": 48.35211064898,
         "southWestLon": 2.72987329048,
         "northEastLat": 48.35425581247,
@@ -535,6 +564,7 @@
       "properties": {
         "name": "Roche aux Sabots",
         "areaId": 12,
+        "priority": 1,
         "southWestLat": 48.37406800326,
         "southWestLon": 2.51345446806,
         "northEastLat": 48.37523633339,
@@ -553,6 +583,7 @@
       "properties": {
         "name": "Rocher Canon",
         "areaId": 1,
+        "priority": 1,
         "southWestLat": 48.46070097269,
         "southWestLon": 2.66184519556,
         "northEastLat": 48.46338661727,
@@ -571,6 +602,7 @@
       "properties": {
         "name": "Rocher Fin",
         "areaId": 8,
+        "priority": 1,
         "southWestLat": 48.37574170256,
         "southWestLon": 2.5309932872,
         "northEastLat": 48.37777537945,
@@ -589,6 +621,7 @@
       "properties": {
         "name": "Rocher Guichot",
         "areaId": 17,
+        "priority": 1,
         "southWestLat": 48.36375285975,
         "southWestLon": 2.52413844156,
         "northEastLat": 48.36579743345,
@@ -607,6 +640,7 @@
       "properties": {
         "name": "Rocher Saint-Germain",
         "areaId": 24,
+        "priority": 1,
         "southWestLat": 48.43881883818,
         "southWestLon": 2.68363277554,
         "northEastLat": 48.44033889289,
@@ -625,6 +659,7 @@
       "properties": {
         "name": "Rocher d'Avon",
         "areaId": 50,
+        "priority": 2,
         "southWestLat": 48.39227635193,
         "southWestLon": 2.72209563777,
         "northEastLat": 48.3940429094,
@@ -643,6 +678,7 @@
       "properties": {
         "name": "Rocher des Demoiselles",
         "areaId": 33,
+        "priority": 2,
         "southWestLat": 48.37820214553,
         "southWestLon": 2.66808167179,
         "northEastLat": 48.38021242247,
@@ -661,6 +697,7 @@
       "properties": {
         "name": "Rocher des Potets",
         "areaId": 19,
+        "priority": 2,
         "southWestLat": 48.38220817991,
         "southWestLon": 2.52608026979,
         "northEastLat": 48.38336848988,
@@ -679,6 +716,7 @@
       "properties": {
         "name": "Éléphant",
         "areaId": 9,
+        "priority": 1,
         "southWestLat": 48.292882059,
         "southWestLon": 2.59102262489,
         "northEastLat": 48.29517290522,
@@ -697,6 +735,7 @@
       "properties": {
         "name": "Cuisinière",
         "areaId": 11,
+        "priority": 1,
         "southWestLat": 48.40962637245,
         "southWestLon": 2.60987969845,
         "northEastLat": 48.41068281244,
@@ -715,6 +754,7 @@
       "properties": {
         "name": "Isatis",
         "areaId": 5,
+        "priority": 3,
         "southWestLat": 48.40821900911,
         "southWestLon": 2.59923856672,
         "northEastLat": 48.41021135151,
@@ -733,6 +773,7 @@
       "properties": {
         "name": "Sablons",
         "areaId": 34,
+        "priority": 3,
         "southWestLat": 48.4072503827,
         "southWestLon": 2.59515930138,
         "northEastLat": 48.40935827556,
@@ -751,6 +792,7 @@
       "properties": {
         "name": "Sablons Carriers",
         "areaId": 38,
+        "priority": 3,
         "southWestLat": 48.40821044033,
         "southWestLon": 2.58611435054,
         "northEastLat": 48.40960744708,
@@ -769,6 +811,7 @@
       "properties": {
         "name": "Solitude",
         "areaId": 49,
+        "priority": 3,
         "southWestLat": 48.43540604155,
         "southWestLon": 2.63289404142,
         "northEastLat": 48.43660539481,
@@ -787,6 +830,7 @@
       "properties": {
         "name": "Bois Rond",
         "areaId": 21,
+        "priority": 1,
         "southWestLat": 48.38990503781,
         "southWestLon": 2.56098785522,
         "northEastLat": 48.39124180285,
@@ -805,6 +849,7 @@
       "properties": {
         "name": "Rocher du Potala",
         "areaId": 14,
+        "priority": 1,
         "southWestLat": 48.3668622941,
         "southWestLon": 2.53267684735,
         "northEastLat": 48.36845187103,
@@ -823,6 +868,7 @@
       "properties": {
         "name": "Hautes Plaines",
         "areaId": 36,
+        "priority": 1,
         "southWestLat": 48.40723840371,
         "southWestLon": 2.59719103541,
         "northEastLat": 48.40900315211,
