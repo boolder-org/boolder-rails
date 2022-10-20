@@ -154,7 +154,7 @@ export default class extends Controller {
                 false
               ],
               "#FFFFFF",
-              "#a9a9a9"
+              "#878A8D"
             ]
           ,
           'circle-opacity': 
