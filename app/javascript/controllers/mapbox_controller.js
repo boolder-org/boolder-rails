@@ -243,6 +243,13 @@ export default class extends Controller {
         ],
       });
 
+      that.map.setFilter('problems', [
+        'match',
+        ['get', 'grade'],
+        ['4a', '4a+', '4b', '4b+', '4c', '4c+'],
+        true,
+        false
+      ]);
       
       if(this.hasBoundsValue) { 
         // console.log(this.boundsValue)
