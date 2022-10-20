@@ -11,7 +11,13 @@ namespace :mapbox do
 
     Area.published.each do |area|
       hull = area.boulders.select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.00007) as hull").to_a.first.hull
-      hull_features << factory.feature(hull, nil, { })
+      hash = {}.with_indifferent_access
+      hash[:area_id] = area.id
+      hash[:south_west_lat] = area.bounds[:south_west].lat
+      hash[:south_west_lon] = area.bounds[:south_west].lon
+      hash[:north_east_lat] = area.bounds[:north_east].lat
+      hash[:north_east_lon] = area.bounds[:north_east].lon
+      hull_features << factory.feature(hull, nil, hash)
 
       hash = {}.with_indifferent_access
       hash[:name] = area.short_name.presence || area.name

@@ -316,45 +316,84 @@ export default class extends Controller {
 
     // FIXME: make DRY
     this.map.on('mouseenter', 'pois-0bzt66', () => {
-      this.map.getCanvas().style.cursor = 'pointer';
+      if(this.map.getZoom() >= 12) {
+        this.map.getCanvas().style.cursor = 'pointer';
+      }
     });
     this.map.on('mouseleave', 'pois-0bzt66', () => {
-      this.map.getCanvas().style.cursor = '';
+      if(this.map.getZoom() >= 12) {
+        this.map.getCanvas().style.cursor = '';
+      }
     });
 
     this.map.on('click', 'pois-0bzt66', (e) => {
+      if(this.map.getZoom() >= 12) {
 
-      // console.log(e.features[0])
-      // console.log(e.features[0].geometry)
-      // var name = e.features[0].properties.name
+        // console.log(e.features[0])
+        // console.log(e.features[0].geometry)
+        // var name = e.features[0].properties.name
 
-      // FIXME: make it DRY
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      const html = `<a href="${e.features[0].properties.googleUrl}" target="_blank">Voir sur Google</a>`;
-       
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
-      .setLngLat(coordinates)
-      .setHTML(html)
-      .addTo(this.map);
+        // FIXME: make it DRY
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        const html = `<a href="${e.features[0].properties.googleUrl}" target="_blank">Voir sur Google</a>`;
+         
+        new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
+        .setLngLat(coordinates)
+        .setHTML(html)
+        .addTo(this.map);
+      }
     });
 
     // FIXME: make DRY
     this.map.on('mouseenter', 'areas-5vn8jf', () => {
-      if(this.map.getZoom() >= 12 && this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 16) {
         this.map.getCanvas().style.cursor = 'pointer';
       }
     });
     this.map.on('mouseleave', 'areas-5vn8jf', () => {
-      if(this.map.getZoom() >= 12 && this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 16) {
         this.map.getCanvas().style.cursor = '';
       }
     });
 
     this.map.on('click', 'areas-5vn8jf', (e) => {
-      if(this.map.getZoom() >= 12 && this.map.getZoom() < 16) {
-        // fetch('https://jsonplaceholder.typicode.com/todos/1')
-        //   .then(response => response.json())
-        //   .then(json => console.log(json))
+      if(this.map.getZoom() < 16) {
+        let props = e.features[0].properties
+        this.map.fitBounds([
+            [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
+            [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
+          ], 
+          {
+            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+          }
+        );
+      }
+      
+    });
+
+     // FIXME: make DRY
+    this.map.on('mouseenter', 'areas-hulls', () => {
+      if(this.map.getZoom() < 16) {
+        this.map.getCanvas().style.cursor = 'pointer';
+      }
+    });
+    this.map.on('mouseleave', 'areas-hulls', () => {
+      if(this.map.getZoom() < 16) {
+        this.map.getCanvas().style.cursor = '';
+      }
+    });
+
+    this.map.on('click', 'areas-hulls', (e) => {
+      if(this.map.getZoom() < 16) {
+        let props = e.features[0].properties
+        this.map.fitBounds([
+            [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
+            [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
+          ], 
+          {
+            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+          }
+        );
       }
       
     });
