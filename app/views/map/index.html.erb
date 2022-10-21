@@ -19,7 +19,7 @@ data-action="gotoproblem@window->mapbox#gotoproblem gotoarea@window->mapbox#goto
 class="flex-auto"
 id='map'
 data-mapbox-target="map"
-data-mapbox-language-value="<%= I18n.locale %>"
+data-mapbox-locale-value="<%= I18n.locale %>"
 
 <% if @problem %> 
 data-mapbox-problem-value="<%= @problem.to_json %>" 
