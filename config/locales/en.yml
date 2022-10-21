@@ -44,6 +44,7 @@ en:
       title1: Bouldering
       title2: in Fontainebleau
       subtitle: Discover thousands of problems & circuits for all levels.
+      see_map: See the map
       read_guide: Read the beginner's guide
       areas_for_beginners: Top areas for beginners
       all_areas: See all areas
@@ -121,8 +122,7 @@ en:
       nav:
         open_menu: Open main menu
         discover: Discover
-        areas: Areas
-        articles: Discover
+        map: Map
         app: App
       footer:
         contact: Contact

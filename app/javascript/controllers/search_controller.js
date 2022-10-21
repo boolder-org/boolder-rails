@@ -97,7 +97,7 @@ export default class extends Controller {
             },
 
             onSelect({ item }) {
-              // console.log(item)
+
               const event = new CustomEvent("gotoarea", 
                 { detail: 
                   { 
@@ -113,8 +113,6 @@ export default class extends Controller {
               window.dispatchEvent(event);
 
               that.autocomplete.setIsOpen(false)
-
-              // document.location.href=`/${locale}/redirects/new?area_id=${item.objectID}`
             },
 
           },
@@ -205,14 +203,10 @@ export default class extends Controller {
               return `/${locale}/redirects/new?problem_id=${item.objectID}`
             },
             onSelect({ item }) {
-              // console.log(item.objectID)
-              // console.log(item)
               const event = new CustomEvent("gotoproblem", { detail: { id: item.objectID, name: item.name, grade: item.grade, lat: item._geoloc.lat, lon: item._geoloc.lng } });
               window.dispatchEvent(event);
 
               that.autocomplete.setIsOpen(false)
-
-              // document.location.href=`/${locale}/redirects/new?problem_id=${item.objectID}`
             },
 
           },

@@ -44,6 +44,7 @@ fr:
       title1: Escaladez
       title2: à Fontainebleau
       subtitle: Découvrez des milliers de blocs et circuits pour tous les niveaux.
+      see_map: Voir la carte
       read_guide: Lire le guide du débutant
       areas_for_beginners: Secteurs pour bien débuter
       all_areas: Voir tous les secteurs
@@ -121,8 +122,7 @@ fr:
       nav:
         open_menu: Ouvrir le menu principal
         discover: Découvrir
-        areas: Secteurs
-        articles: Découvrir
+        map: Carte
         app: Appli
       footer:
         contact: Contact
