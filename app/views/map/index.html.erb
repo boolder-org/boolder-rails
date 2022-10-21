@@ -1,7 +1,17 @@
-<% set_meta_tags title: t("Map") %>
-<% set_meta_tags description: t("map") %>
+<% if @area %> 
+  <% set_meta_tags title: t("views.map.area.metas.title", area: @area.name) %>
+  <% set_meta_tags description: t("views.map.area.metas.description", area: @area.name) %>
 
-<% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
+  <% if @area.cover.persisted? %>
+  <% set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, w: 800, ar:'4:3', fit: 'crop') } %>
+  <% end %>
+  <% set_meta_tags canonical: map_url(@area) %>
+<% else %>
+  <% set_meta_tags title: t("views.map.fontainebleau.metas.title") %>
+  <% set_meta_tags description: t("views.map.fontainebleau.metas.description") %>
+  <% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
+  <% set_meta_tags canonical: map_url %>
+<% end %>
 
 <div 
 data-controller="mapbox" 
@@ -9,7 +19,12 @@ data-action="gotoproblem@window->mapbox#gotoproblem gotoarea@window->mapbox#goto
 class="flex-auto"
 id='map'
 data-mapbox-target="map"
-<% if @bounds %> data-mapbox-bounds-value="<%= @bounds.to_json %>" <% end %>
-<% if @problem %> data-mapbox-problem-value="<%= @problem.to_json %>" <% end %>
+data-mapbox-language-value="<%= I18n.locale %>"
+
+<% if @problem %> 
+data-mapbox-problem-value="<%= @problem.to_json %>" 
+<% elsif @bounds %> 
+data-mapbox-bounds-value="<%= @bounds.to_json %>"
+<% end %>
 >
 </div>
