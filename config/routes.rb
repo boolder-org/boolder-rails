@@ -57,7 +57,7 @@ Rails.application.routes.draw do
     
     get "problems/:id", to: "welcome#redirect_problem" # Legacy route: keep until end of 2021 for SEO purposes
 
-    get 'map', to: 'map#index', as: :map
+    get 'map(/:slug)', to: 'map#index', as: :map
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
 

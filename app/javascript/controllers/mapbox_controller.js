@@ -12,6 +12,7 @@ export default class extends Controller {
 
     this.map = new mapboxgl.Map({
       container: 'map',
+      hash: true,
       // FIXME: use prod source (not draft)
       style: 'mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2/draft',
       bounds: [[2.4806787, 48.2868427],[2.7698927,48.473906]], 
@@ -292,7 +293,11 @@ export default class extends Controller {
         .addTo(this.map);
       }
 
-
+      that.map.on('movestart', () => {
+        // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
+        // TODO: replace url only when user does something (eg. moves, closes a modal)
+        history.replaceState({} , '', '/fr/map') // FIXME: use locale
+      });
 
     });
 
@@ -433,6 +438,7 @@ export default class extends Controller {
       }
       
     });
+
 
   }
 

@@ -2,7 +2,8 @@ class MapController < ApplicationController
   layout "map"
 
   def index
-    if params[:area_id] && (area = Area.find(params[:area_id]))
+    if params[:slug] && (area = Area.find_by(slug: params[:slug]))
+      @area = area
       @bounds = { 
         south_west_lat: area.bounds[:south_west].lat,
         south_west_lon: area.bounds[:south_west].lon,
@@ -11,7 +12,7 @@ class MapController < ApplicationController
       }
     end
 
-    if params[:problem_id] && (problem = Problem.find(params[:problem_id]))
+    if params[:pid] && (problem = Problem.find(params[:pid]))
       @problem = { 
         id: problem.id,
         lat: problem.location.lat,
