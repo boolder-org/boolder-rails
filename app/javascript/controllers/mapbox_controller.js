@@ -5,18 +5,39 @@ export default class extends Controller {
   static values = { 
     bounds: Object,
     problem: Object,
-    draft: { type: Boolean, default: false }
+    locale: { type: String, default: 'fr' },
+    draft: { type: Boolean, default: false },
   }
 
   connect() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
+    // https://github.com/mapbox/mapbox-gl-js/blob/20e8fd2b60fb751f5846d3be2d46dfa76d940324/src/ui/default_locale.js
+    const frLocale = {
+      'AttributionControl.ToggleAttribution': 'Changer valeur attribution',
+      'AttributionControl.MapFeedback': 'Feedback sur la carte',
+      'FullscreenControl.Enter': 'Mode plein écran',
+      'FullscreenControl.Exit': 'Sortir du mode plein écran',
+      'GeolocateControl.FindMyLocation': 'Trouver ma position',
+      'GeolocateControl.LocationNotAvailable': 'Localisation non disponible',
+      'LogoControl.Title': 'Logo Mapbox',
+      'Map.Title': 'Carte',
+      'NavigationControl.ResetBearing': 'Remettre au Nord',
+      'NavigationControl.ZoomIn': 'Zoomer',
+      'NavigationControl.ZoomOut': 'Dézoomer',
+      'ScrollZoomBlocker.CtrlMessage': 'Utilisez ctrl + défilement pour zoomer',
+      'ScrollZoomBlocker.CmdMessage': 'Utilisez ⌘ + défilement pour zoomer',
+      'TouchPanBlocker.Message': 'Utilisez deux doigts pour bouger la carte'
+    };
+
     this.map = new mapboxgl.Map({
       container: 'map',
+      language: this.localeValue, // doesn't seem to work?
+      locale: this.localeValue == 'fr' ? frLocale : null,
       hash: true,
       style: `mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2${this.draftValue ? "/draft" : ""}`,
       bounds: [[2.4806787, 48.2868427],[2.7698927,48.473906]], 
-      padding: 5
+      padding: 5,
     });
 
     this.map.addControl(
@@ -286,7 +307,7 @@ export default class extends Controller {
 
       // FIXME: make it DRY
         const coordinates = [problem.lon, problem.lat];
-        const html = `<a href="/fr/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""} ${problem.grade}</a>`;
+        const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""} ${problem.grade}</a>`;
          
         new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
         .setLngLat(coordinates)
@@ -297,7 +318,7 @@ export default class extends Controller {
       that.map.on('movestart', () => {
         // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
         // TODO: replace url only when user does something (eg. moves, closes a modal)
-        history.replaceState({} , '', '/fr/map') // FIXME: use locale
+        history.replaceState({} , '', `/${this.localeValue}/map`)
       });
 
     });
@@ -314,7 +335,7 @@ export default class extends Controller {
 
       // FIXME: make it DRY
       const coordinates = e.features[0].geometry.coordinates.slice();
-      const html = `<a href="/fr/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name || ""} ${e.features[0].properties.grade}</a>`;
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name || ""} ${e.features[0].properties.grade}</a>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)
@@ -339,7 +360,7 @@ export default class extends Controller {
 
         // FIXME: make it DRY
         const coordinates = e.features[0].geometry.coordinates.slice();
-        const html = `<a href="${e.features[0].properties.googleUrl}" target="_blank">Voir sur Google</a>`;
+        const html = `<a href="${e.features[0].properties.googleUrl}" target="_blank">${this.localeValue == 'fr' ? 'Voir sur Google' : 'See on Google'}</a>`;
          
         new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
         .setLngLat(coordinates)
@@ -446,7 +467,7 @@ export default class extends Controller {
 
     // FIXME: make it DRY
       const coordinates = [event.detail.lon, event.detail.lat];
-      const html = `<a href="/fr/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name || ""} ${event.detail.grade}</a>`;
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name || ""} ${event.detail.grade}</a>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
       .setLngLat(coordinates)
