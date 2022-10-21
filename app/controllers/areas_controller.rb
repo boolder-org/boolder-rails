@@ -41,29 +41,4 @@ class AreasController < ApplicationController
     @circuits = @area.problems.order("grade ASC, id ASC").group_by(&:circuit)
     @circuits = Hash[ @circuits.sort_by { |circuit, _| circuit&.order || 100 } ]
   end
-
-  def map 
-    @area = Area.find_by(slug: params[:slug])
-
-    @parkings = @area.pois
-
-    @annotation = {
-      latitude: @parkings.first&.location&.latitude,
-      longitude: @parkings.first&.location&.longitude,
-      color: "#059669",
-      title: @area.name,
-      glyphText: "",
-    } 
-
-    if problem = Area.find(@area.id).problems.where(id: params[:problem]).first
-      if problem.location.present?
-        @center = { 
-          latitude: problem.location.latitude, 
-          longitude: problem.location.longitude 
-        }
-      end
-    end
-
-    @hide_nav = true
-  end
 end
