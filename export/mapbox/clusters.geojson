@@ -6,45 +6,11 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Apremont",
-                "northEastLat": "48.438597",
-                "northEastLon": "2.6440142",
-                "southWestLat": "48.431137",
-                "southWestLon": "2.6162909"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.62933726787,
-                    48.43657540087
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Franchard",
-                "northEastLat": "48.4113999",
-                "northEastLon": "2.6422117",
-                "southWestLat": "48.4055314",
-                "southWestLon": "2.5838469"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.60217185497,
-                    48.40903539059
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "name": "Trois Pignons",
-                "northEastLat": "48.3998332",
-                "northEastLon": "2.5688265",
-                "southWestLat": "48.356791",
-                "southWestLon": "2.4987887"
+                "northEastLon": "2.548881",
+                "southWestLat": "48.3586603",
+                "southWestLon": "2.5083128",
+                "northEastLat": "48.3953245"
             },
             "geometry": {
                 "type": "Point",
@@ -58,16 +24,50 @@
             "type": "Feature",
             "properties": {
                 "name": "Cuvier",
-                "northEastLat": "48.4487886",
-                "northEastLon": "2.6581763",
-                "southWestLat": "48.4434368",
-                "southWestLon": "2.6308821"
+                "southWestLat": "48.4457802",
+                "northEastLat": "48.4493743",
+                "northEastLon": "2.6458018",
+                "southWestLon": "2.6328433"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     2.64028068065,
                     48.44682433366
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "northEastLat": "48.4388072",
+                "northEastLon": "2.6355547",
+                "name": "Apremont",
+                "southWestLat": "48.4351528",
+                "southWestLon": "2.6245383"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.62933726787,
+                    48.43657540087
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "northEastLat": "48.4109511",
+                "name": "Franchard",
+                "southWestLon": "2.5947046",
+                "southWestLat": "48.4071053",
+                "northEastLon": "2.6145744"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.60217185497,
+                    48.40903539059
                 ]
             }
         }

@@ -38,10 +38,6 @@ export default class extends Controller {
     let that = this
 
     this.map.on('load', () => {
-
-      setInterval(function () {
-        document.getElementById('info').innerHTML = `${that.map.getZoom()}`
-      }, 50);
       that.map.addSource('problems', {
         type: 'vector',
         url: 'mapbox://nmondollot.4xsv235p' 
@@ -52,7 +48,7 @@ export default class extends Controller {
         'type': 'circle',
         'source': 'problems',
         'source-layer': 'problems-ayes3a',
-        'minzoom': 16,
+        'minzoom': 15,
         'layout': {
           // Make the layer visible by default.
           'visibility': 'visible'
@@ -63,6 +59,8 @@ export default class extends Controller {
               "interpolate",
               ["linear"],
               ["zoom"],
+              15,
+              2,
               18,
               4,
               22,
@@ -165,9 +163,9 @@ export default class extends Controller {
             "interpolate",
             ["linear"],
             ["zoom"],
-            16,
+            14.5,
             0,
-            16.3,
+            15,
             1
           ]
         },
@@ -246,13 +244,13 @@ export default class extends Controller {
         ],
       });
 
-      that.map.setFilter('problems', [
-        'match',
-        ['get', 'grade'],
-        ['4a', '4a+', '4b', '4b+', '4c', '4c+'],
-        true,
-        false
-      ]);
+      // that.map.setFilter('problems', [
+      //   'match',
+      //   ['get', 'grade'],
+      //   ['4a', '4a+', '4b', '4b+', '4c', '4c+'],
+      //   true,
+      //   false
+      // ]);
       
       if(this.hasBoundsValue) { 
         // console.log(this.boundsValue)
@@ -356,25 +354,26 @@ export default class extends Controller {
 
     // FIXME: make DRY
     this.map.on('mouseenter', 'areas-5vn8jf', () => {
-      if(this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 15) {
         this.map.getCanvas().style.cursor = 'pointer';
       }
     });
     this.map.on('mouseleave', 'areas-5vn8jf', () => {
-      if(this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 15) {
         this.map.getCanvas().style.cursor = '';
       }
     });
 
     this.map.on('click', 'areas-5vn8jf', (e) => {
-      if(this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 15) {
         let props = e.features[0].properties
         this.map.fitBounds([
             [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
             [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
           ], 
           {
-            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+            // document.getElementById('map').clientWidth
+            padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
           }
         );
       }
@@ -383,18 +382,18 @@ export default class extends Controller {
 
      // FIXME: make DRY
     this.map.on('mouseenter', 'areas-hulls', () => {
-      if(this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 15) {
         this.map.getCanvas().style.cursor = 'pointer';
       }
     });
     this.map.on('mouseleave', 'areas-hulls', () => {
-      if(this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 15) {
         this.map.getCanvas().style.cursor = '';
       }
     });
 
     this.map.on('click', 'areas-hulls', (e) => {
-      if(this.map.getZoom() < 16) {
+      if(this.map.getZoom() < 15) {
         let props = e.features[0].properties
         console.log(props)
         this.map.fitBounds([
@@ -402,11 +401,10 @@ export default class extends Controller {
             [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
           ], 
           {
-            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+            padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
           }
         );
       }
-      
     });
 
      // FIXME: make DRY
@@ -429,7 +427,7 @@ export default class extends Controller {
             [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
           ], 
           {
-            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+            padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
           }
         );
       }
@@ -469,7 +467,7 @@ export default class extends Controller {
         [event.detail.north_east_lon, event.detail.north_east_lat] // northeastern corner of the bounds
       ], 
       {
-        padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+        padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
       }
     );
   }
