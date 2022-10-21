@@ -11,11 +11,11 @@ export default class extends Controller {
     mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
     this.map = new mapboxgl.Map({
-    container: 'map',
-    // FIXME: use prod source (not draft)
-    style: 'mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2/draft', //  mapbox://styles/mapbox/outdoors-v11 
-    center: [2.60269269238, 48.36702248583],
-    zoom: 10
+      container: 'map',
+      // FIXME: use prod source (not draft)
+      style: 'mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2/draft',
+      bounds: [[2.4806787, 48.2868427],[2.7698927,48.473906]], 
+      padding: 5
     });
 
     const scale = new mapboxgl.ScaleControl({
