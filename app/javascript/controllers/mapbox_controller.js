@@ -39,6 +39,9 @@ export default class extends Controller {
 
     this.map.on('load', () => {
 
+      setInterval(function () {
+        document.getElementById('info').innerHTML = `${that.map.getZoom()}`
+      }, 50);
       that.map.addSource('problems', {
         type: 'vector',
         url: 'mapbox://nmondollot.4xsv235p' 
