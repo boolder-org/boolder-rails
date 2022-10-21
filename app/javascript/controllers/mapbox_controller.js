@@ -5,6 +5,7 @@ export default class extends Controller {
   static values = { 
     bounds: Object,
     problem: Object,
+    draft: { type: Boolean, default: false }
   }
 
   connect() {
@@ -13,28 +14,31 @@ export default class extends Controller {
     this.map = new mapboxgl.Map({
       container: 'map',
       hash: true,
-      // FIXME: use prod source (not draft)
-      style: 'mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2/draft',
+      style: `mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2${this.draftValue ? "/draft" : ""}`,
       bounds: [[2.4806787, 48.2868427],[2.7698927,48.473906]], 
       padding: 5
     });
 
-    const scale = new mapboxgl.ScaleControl({
-      maxWidth: 100,
-      unit: 'metric'
-    });
-    this.map.addControl(scale);
+    this.map.addControl(
+      new mapboxgl.ScaleControl({
+        maxWidth: 100,
+        unit: 'metric'
+       })
+    );
 
-    // Add zoom and rotation controls to the map.
-    this.map.addControl(new mapboxgl.NavigationControl());
+    this.map.addControl(
+      new mapboxgl.NavigationControl()
+    );
 
-    this.map.addControl(new mapboxgl.GeolocateControl({
-      positionOptions: {
-        enableHighAccuracy: true
-      },
-      trackUserLocation: true,
-      showUserHeading: true
-    }));
+    this.map.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true
+        },
+        trackUserLocation: true,
+        showUserHeading: true
+      })
+    );
 
     let that = this
 
@@ -51,7 +55,6 @@ export default class extends Controller {
         'source-layer': 'problems-ayes3a',
         'minzoom': 15,
         'layout': {
-          // Make the layer visible by default.
           'visibility': 'visible'
         },
         'paint': {
@@ -189,7 +192,6 @@ export default class extends Controller {
         'source-layer': 'problems-ayes3a',
         'minzoom': 19,
         'layout': {
-          // Make the layer visible by default.
           'visibility': 'visible',
           'text-allow-overlap': true,
           'text-field': [
@@ -254,7 +256,6 @@ export default class extends Controller {
       // ]);
       
       if(this.hasBoundsValue) { 
-        // console.log(this.boundsValue)
         let bounds = this.boundsValue
 
         this.map.fitBounds(
@@ -311,10 +312,6 @@ export default class extends Controller {
 
     this.map.on('click', 'problems', (e) => {
 
-      // console.log(e.features[0])
-      // console.log(e.features[0].geometry)
-      // var name = e.features[0].properties.name
-
       // FIXME: make it DRY
       const coordinates = e.features[0].geometry.coordinates.slice();
       const html = `<a href="/fr/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name || ""} ${e.features[0].properties.grade}</a>`;
@@ -323,8 +320,6 @@ export default class extends Controller {
       .setLngLat(coordinates)
       .setHTML(html)
       .addTo(this.map);
-
-      // window.location.href = "/fr/redirects/new?problem_id=" + e.features[0].properties.id;
     });
 
     // FIXME: make DRY
@@ -341,10 +336,6 @@ export default class extends Controller {
 
     this.map.on('click', 'pois-0bzt66', (e) => {
       if(this.map.getZoom() >= 12) {
-
-        // console.log(e.features[0])
-        // console.log(e.features[0].geometry)
-        // var name = e.features[0].properties.name
 
         // FIXME: make it DRY
         const coordinates = e.features[0].geometry.coordinates.slice();
@@ -443,8 +434,6 @@ export default class extends Controller {
   }
 
   gotoproblem(event) {
-    // console.log(event.detail)
-
     this.map.flyTo({
       center: [event.detail.lon, event.detail.lat],
       zoom: 20,
@@ -466,8 +455,6 @@ export default class extends Controller {
   }
 
   gotoarea(event) {
-    // console.log(event.detail)
-
     this.map.fitBounds([
         [event.detail.south_west_lon, event.detail.south_west_lat], // southwestern corner of the bounds
         [event.detail.north_east_lon, event.detail.north_east_lat] // northeastern corner of the bounds
