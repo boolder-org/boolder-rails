@@ -61,9 +61,7 @@ Rails.application.routes.draw do
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
 
-    # Internal redirects
-    resources :redirects, only: :new
-    get '/geojson/problem_:id', to: redirect("/%{locale}/redirects/new?problem_id=%{id}") # apple maps redirect (apple_map_geojson_controller.js)
+    resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
 
     # Permalinks (don't remove!)
     get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
