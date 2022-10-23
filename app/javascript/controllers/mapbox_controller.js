@@ -12,34 +12,28 @@ export default class extends Controller {
   connect() {
     mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
-    // https://github.com/mapbox/mapbox-gl-js/blob/20e8fd2b60fb751f5846d3be2d46dfa76d940324/src/ui/default_locale.js
-    const frLocale = {
-      'AttributionControl.ToggleAttribution': 'Changer valeur attribution',
-      'AttributionControl.MapFeedback': 'Feedback sur la carte',
-      'FullscreenControl.Enter': 'Mode plein écran',
-      'FullscreenControl.Exit': 'Sortir du mode plein écran',
-      'GeolocateControl.FindMyLocation': 'Trouver ma position',
-      'GeolocateControl.LocationNotAvailable': 'Localisation non disponible',
-      'LogoControl.Title': 'Logo Mapbox',
-      'Map.Title': 'Carte',
-      'NavigationControl.ResetBearing': 'Remettre au Nord',
-      'NavigationControl.ZoomIn': 'Zoomer',
-      'NavigationControl.ZoomOut': 'Dézoomer',
-      'ScrollZoomBlocker.CtrlMessage': 'Utilisez ctrl + défilement pour zoomer',
-      'ScrollZoomBlocker.CmdMessage': 'Utilisez ⌘ + défilement pour zoomer',
-      'TouchPanBlocker.Message': 'Utilisez deux doigts pour bouger la carte'
-    };
-
     this.map = new mapboxgl.Map({
       container: 'map',
       language: this.localeValue, // doesn't seem to work?
-      locale: this.localeValue == 'fr' ? frLocale : null,
+      locale: this.localeValue == 'fr' ? this.getFrLocale() : null,
       hash: true,
       style: `mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2${this.draftValue ? "/draft" : ""}`,
       bounds: [[2.4806787, 48.2868427],[2.7698927,48.473906]], 
       padding: 5,
     });
 
+    this.addControls()
+
+    this.map.on('load', () => {
+      this.addLayers()
+      this.centerMap()
+      this.cleanHistory()
+    });
+
+    this.setupClickEvents()
+  }
+
+  addControls() {
     this.map.addControl(
       new mapboxgl.ScaleControl({
         maxWidth: 100,
@@ -60,223 +54,226 @@ export default class extends Controller {
         showUserHeading: true
       })
     );
+  }
 
-    this.map.on('load', () => {
-      this.map.addSource('problems', {
-        type: 'vector',
-        url: 'mapbox://nmondollot.4xsv235p' 
-      });
+  addLayers() {
+    this.map.addSource('problems', {
+      type: 'vector',
+      url: 'mapbox://nmondollot.4xsv235p' 
+    });
 
-      this.map.addLayer({
-        'id': 'problems',
-        'type': 'circle',
-        'source': 'problems',
-        'source-layer': 'problems-ayes3a',
-        'minzoom': 15,
-        'layout': {
-          'visibility': 'visible'
-        },
-        'paint': {
-          'circle-radius': 
-            [
-              "interpolate",
-              ["linear"],
-              ["zoom"],
-              15,
-              2,
-              18,
-              4,
-              22,
-              [
-                "case",
-                ["has", "circuitId"],
-                16,
-                10
-              ]
-            ]
-          ,
-          'circle-color':  // FIXME: make it DRY  
-            [
-              "case",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "yellow"],
-                true,
-                false
-              ],
-              "#FFCC02",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "purple"],
-                true,
-                false
-              ],
-              "#D783FF",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "orange"],
-                true,
-                false
-              ],
-              "#FF9500",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "green"],
-                true,
-                false
-              ],
-              "#77C344",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "blue"],
-                true,
-                false
-              ],
-              "#017AFF",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "skyblue"],
-                true,
-                false
-              ],
-              "#5AC7FA",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "salmon"],
-                true,
-                false
-              ],
-              "#FDAF8A",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "red"],
-                true,
-                false
-              ],
-              "#FF3B2F",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "black"],
-                true,
-                false
-              ],
-              "#000",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "white"],
-                true,
-                false
-              ],
-              "#FFFFFF",
-              "#878A8D"
-            ]
-          ,
-          'circle-opacity': 
+    this.map.addLayer({
+      'id': 'problems',
+      'type': 'circle',
+      'source': 'problems',
+      'source-layer': 'problems-ayes3a',
+      'minzoom': 15,
+      'layout': {
+        'visibility': 'visible'
+      },
+      'paint': {
+        'circle-radius': 
           [
             "interpolate",
             ["linear"],
             ["zoom"],
-            14.5,
-            0,
             15,
-            1
-          ]
-        },
-        filter: [
-          "match",
-            ["geometry-type"],
-            ["Point"],
-            true,
-            false
-        ],
-      }
-      ,
-      "areas" // insert layer just before this layer
-      );
-
-      this.map.addLayer({
-        'id': 'problem-symbols',
-        'type': 'symbol',
-        'source': 'problems',
-        'source-layer': 'problems-ayes3a',
-        'minzoom': 19,
-        'layout': {
-          'visibility': 'visible',
-          'text-allow-overlap': true,
-          'text-field': [
-            "to-string",
-            ["get", "circuitNumber"]
-          ],
-          'text-size': [
-            "interpolate",
-            ["linear"],
-            ["zoom"],
-            19,
-            10,
+            2,
+            18,
+            4,
             22,
-            20
-          ],
-        },
-        'paint': {
-          'text-color': 
             [
               "case",
-              [
-                "match",
-                ["get", "circuitColor"],
-                ["", "white"],
-                true,
-                false
-              ],
-              "#333",
-              "#fff",
+              ["has", "circuitId"],
+              16,
+              10
             ]
-          ,
-        },
-        filter: [
-          "match",
-            ["geometry-type"],
-            ["Point"],
-            true,
-            false
-        ],
-      });
-      
-      if(this.hasBoundsValue) { 
-        let bounds = this.boundsValue
-
-        this.map.fitBounds(
+          ]
+        ,
+        'circle-color':  // FIXME: make it DRY  
           [
-            [bounds.south_west_lon, bounds.south_west_lat], // southwestern corner of the bounds
-            [bounds.north_east_lon, bounds.north_east_lat] // northeastern corner of the bounds
-          ], 
-          {
-            animate: true,
-            padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
-          }
-        );
-      }
+            "case",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "yellow"],
+              true,
+              false
+            ],
+            "#FFCC02",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "purple"],
+              true,
+              false
+            ],
+            "#D783FF",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "orange"],
+              true,
+              false
+            ],
+            "#FF9500",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "green"],
+              true,
+              false
+            ],
+            "#77C344",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "blue"],
+              true,
+              false
+            ],
+            "#017AFF",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "skyblue"],
+              true,
+              false
+            ],
+            "#5AC7FA",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "salmon"],
+              true,
+              false
+            ],
+            "#FDAF8A",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "red"],
+              true,
+              false
+            ],
+            "#FF3B2F",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "black"],
+              true,
+              false
+            ],
+            "#000",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "white"],
+              true,
+              false
+            ],
+            "#FFFFFF",
+            "#878A8D"
+          ]
+        ,
+        'circle-opacity': 
+        [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14.5,
+          0,
+          15,
+          1
+        ]
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+    }
+    ,
+    "areas" // insert layer just before this layer
+    );
 
-      if(this.hasProblemValue) { 
-        let problem = this.problemValue
+    this.map.addLayer({
+      'id': 'problem-symbols',
+      'type': 'symbol',
+      'source': 'problems',
+      'source-layer': 'problems-ayes3a',
+      'minzoom': 19,
+      'layout': {
+        'visibility': 'visible',
+        'text-allow-overlap': true,
+        'text-field': [
+          "to-string",
+          ["get", "circuitNumber"]
+        ],
+        'text-size': [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          19,
+          10,
+          22,
+          20
+        ],
+      },
+      'paint': {
+        'text-color': 
+          [
+            "case",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "white"],
+              true,
+              false
+            ],
+            "#333",
+            "#fff",
+          ]
+        ,
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+    });
+  }
 
-        this.map.flyTo({
-          center: [problem.lon, problem.lat],
-          zoom: 20,
-          speed: 4,
-          curve: 1,
-          easing(t) {
-            return t;
+  centerMap() {
+    if(this.hasBoundsValue) { 
+      let bounds = this.boundsValue
+
+      this.map.fitBounds(
+        [
+          [bounds.south_west_lon, bounds.south_west_lat], // southwestern corner of the bounds
+          [bounds.north_east_lon, bounds.north_east_lat] // northeastern corner of the bounds
+        ], 
+        {
+          animate: true,
+          padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
+        }
+      );
+    }
+
+    if(this.hasProblemValue) { 
+      let problem = this.problemValue
+
+      this.map.flyTo({
+        center: [problem.lon, problem.lat],
+        zoom: 20,
+        speed: 4,
+        curve: 1,
+        easing(t) {
+          return t;
         }
       });
 
@@ -288,17 +285,18 @@ export default class extends Controller {
         .setLngLat(coordinates)
         .setHTML(html)
         .addTo(this.map);
-      }
+    }
+  }
 
-      this.map.on('movestart', () => {
-        // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
-        // TODO: replace url only when user does something (eg. moves, closes a modal)
-        history.replaceState({} , '', `/${this.localeValue}/map`)
-      });
-
+  cleanHistory() {
+    this.map.on('movestart', () => {
+      // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
+      // TODO: replace url only when user does something (eg. moves, closes a modal)
+      history.replaceState({} , '', `/${this.localeValue}/map`)
     });
+  }
 
-
+  setupClickEvents() {
     this.map.on('mouseenter', 'problems', () => {
       this.map.getCanvas().style.cursor = 'pointer';
     });
@@ -369,7 +367,6 @@ export default class extends Controller {
           }
         );
       }
-      
     });
 
      // FIXME: make DRY
@@ -399,7 +396,7 @@ export default class extends Controller {
       }
     });
 
-     // FIXME: make DRY
+    // FIXME: make DRY
     this.map.on('mouseenter', 'clusters', () => {
       if(this.map.getZoom() <= 12) {
         this.map.getCanvas().style.cursor = 'pointer';
@@ -423,10 +420,27 @@ export default class extends Controller {
           }
         );
       }
-      
     });
+  }
 
-
+  // https://github.com/mapbox/mapbox-gl-js/blob/20e8fd2b60fb751f5846d3be2d46dfa76d940324/src/ui/default_locale.js
+  getFrLocale() {
+    return {
+      'AttributionControl.ToggleAttribution': 'Changer valeur attribution',
+      'AttributionControl.MapFeedback': 'Feedback sur la carte',
+      'FullscreenControl.Enter': 'Mode plein écran',
+      'FullscreenControl.Exit': 'Sortir du mode plein écran',
+      'GeolocateControl.FindMyLocation': 'Trouver ma position',
+      'GeolocateControl.LocationNotAvailable': 'Localisation non disponible',
+      'LogoControl.Title': 'Logo Mapbox',
+      'Map.Title': 'Carte',
+      'NavigationControl.ResetBearing': 'Remettre au Nord',
+      'NavigationControl.ZoomIn': 'Zoomer',
+      'NavigationControl.ZoomOut': 'Dézoomer',
+      'ScrollZoomBlocker.CtrlMessage': 'Utilisez ctrl + défilement pour zoomer',
+      'ScrollZoomBlocker.CmdMessage': 'Utilisez ⌘ + défilement pour zoomer',
+      'TouchPanBlocker.Message': 'Utilisez deux doigts pour bouger la carte'
+    }
   }
 
   gotoproblem(event) {
