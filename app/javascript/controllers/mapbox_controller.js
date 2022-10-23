@@ -5,7 +5,7 @@ export default class extends Controller {
   static values = { 
     bounds: Object,
     problem: Object,
-    locale: { type: String, default: 'fr' },
+    locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
   }
 
@@ -61,15 +61,13 @@ export default class extends Controller {
       })
     );
 
-    let that = this
-
     this.map.on('load', () => {
-      that.map.addSource('problems', {
+      this.map.addSource('problems', {
         type: 'vector',
         url: 'mapbox://nmondollot.4xsv235p' 
       });
 
-      that.map.addLayer({
+      this.map.addLayer({
         'id': 'problems',
         'type': 'circle',
         'source': 'problems',
@@ -97,7 +95,7 @@ export default class extends Controller {
               ]
             ]
           ,
-          'circle-color':  // FIXME: make it DRY
+          'circle-color':  // FIXME: make it DRY  
             [
               "case",
               [
@@ -203,10 +201,10 @@ export default class extends Controller {
         ],
       }
       ,
-      "areas-5vn8jf" // bottom layer. FIXME: use a layer name that won't break.
+      "areas" // insert layer just before this layer
       );
 
-      that.map.addLayer({
+      this.map.addLayer({
         'id': 'problem-symbols',
         'type': 'symbol',
         'source': 'problems',
@@ -228,34 +226,20 @@ export default class extends Controller {
             22,
             20
           ],
-          // 'text-font': [
-          //   'Open Sans Bold',
-          //   'Arial Unicode MS Regular'
-          // ],
         },
         'paint': {
-          // 'text-opacity': [
-          //   "step",
-          //   ["zoom"],
-          //   0,
-          //   18,
-          //   0,
-          //   19,
-          //   1
-          // ],
           'text-color': 
-          // '#f5f5f5'
             [
               "case",
-                [
-                  "match",
-                  ["get", "circuitColor"],
-                  ["", "white"],
-                  true,
-                  false
-                ],
-                "#333",
-                "#fff",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "white"],
+                true,
+                false
+              ],
+              "#333",
+              "#fff",
             ]
           ,
         },
@@ -267,14 +251,6 @@ export default class extends Controller {
             false
         ],
       });
-
-      // that.map.setFilter('problems', [
-      //   'match',
-      //   ['get', 'grade'],
-      //   ['4a', '4a+', '4b', '4b+', '4c', '4c+'],
-      //   true,
-      //   false
-      // ]);
       
       if(this.hasBoundsValue) { 
         let bounds = this.boundsValue
@@ -291,7 +267,6 @@ export default class extends Controller {
         );
       }
 
-
       if(this.hasProblemValue) { 
         let problem = this.problemValue
 
@@ -301,21 +276,21 @@ export default class extends Controller {
           speed: 4,
           curve: 1,
           easing(t) {
-          return t;
-          }
-        });
+            return t;
+        }
+      });
 
       // FIXME: make it DRY
-        const coordinates = [problem.lon, problem.lat];
-        const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""} ${problem.grade}</a>`;
+      const coordinates = [problem.lon, problem.lat];
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""} ${problem.grade}</a>`;
          
-        new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
         .setLngLat(coordinates)
         .setHTML(html)
         .addTo(this.map);
       }
 
-      that.map.on('movestart', () => {
+      this.map.on('movestart', () => {
         // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
         // TODO: replace url only when user does something (eg. moves, closes a modal)
         history.replaceState({} , '', `/${this.localeValue}/map`)
@@ -344,18 +319,18 @@ export default class extends Controller {
     });
 
     // FIXME: make DRY
-    this.map.on('mouseenter', 'pois-0bzt66', () => {
+    this.map.on('mouseenter', 'pois', () => {
       if(this.map.getZoom() >= 12) {
         this.map.getCanvas().style.cursor = 'pointer';
       }
     });
-    this.map.on('mouseleave', 'pois-0bzt66', () => {
+    this.map.on('mouseleave', 'pois', () => {
       if(this.map.getZoom() >= 12) {
         this.map.getCanvas().style.cursor = '';
       }
     });
 
-    this.map.on('click', 'pois-0bzt66', (e) => {
+    this.map.on('click', 'pois', (e) => {
       if(this.map.getZoom() >= 12) {
 
         // FIXME: make it DRY
@@ -370,18 +345,18 @@ export default class extends Controller {
     });
 
     // FIXME: make DRY
-    this.map.on('mouseenter', 'areas-5vn8jf', () => {
+    this.map.on('mouseenter', 'areas', () => {
       if(this.map.getZoom() < 15) {
         this.map.getCanvas().style.cursor = 'pointer';
       }
     });
-    this.map.on('mouseleave', 'areas-5vn8jf', () => {
+    this.map.on('mouseleave', 'areas', () => {
       if(this.map.getZoom() < 15) {
         this.map.getCanvas().style.cursor = '';
       }
     });
 
-    this.map.on('click', 'areas-5vn8jf', (e) => {
+    this.map.on('click', 'areas', (e) => {
       if(this.map.getZoom() < 15) {
         let props = e.features[0].properties
         this.map.fitBounds([
@@ -461,18 +436,18 @@ export default class extends Controller {
       speed: 4,
       curve: 1,
       easing(t) {
-      return t;
+        return t;
       }
     });
 
     // FIXME: make it DRY
-      const coordinates = [event.detail.lon, event.detail.lat];
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name || ""} ${event.detail.grade}</a>`;
-       
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
-      .setLngLat(coordinates)
-      .setHTML(html)
-      .addTo(this.map);
+    const coordinates = [event.detail.lon, event.detail.lat];
+    const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name || ""} ${event.detail.grade}</a>`;
+     
+    new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
+    .setLngLat(coordinates)
+    .setHTML(html)
+    .addTo(this.map);
   }
 
   gotoarea(event) {
