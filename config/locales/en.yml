@@ -44,12 +44,22 @@ en:
       title1: Bouldering
       title2: in Fontainebleau
       subtitle: Discover thousands of problems & circuits for all levels.
+      see_map: See the map
       read_guide: Read the beginner's guide
       areas_for_beginners: Top areas for beginners
       all_areas: See all areas
       metas:
         title: Bouldering in Fontainebleau
         description: Discover thousands of problems & circuits for all levels.
+    map:
+      fontainebleau:
+        metas:
+          title: Map with topos for Fontainebleau
+          description: Interactive map for climbing in Fontainebleau
+      area:
+        metas:
+          title: Map with topos for %{area}
+          description: Interactive map for climbing in %{area} in Fontainebleau
     app_landing:
       title: The bouldering guide that fits in your pocket
       subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
@@ -97,14 +107,6 @@ en:
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
       train_station: "%{name} train station"
       train_station_generic: "Train station"
-      map:
-        banner:
-          title: Get a better experience and offline mode with the Boolder app.
-          title_short: Get offline mode and GPS + compass.
-          cta: See the app
-        metas:
-          title: Map with topos for %{area}
-          description: Interactive map for %{area} in Fontainebleau
     problems:
       show:
         see_circuit: See the circuit
@@ -120,8 +122,7 @@ en:
       nav:
         open_menu: Open main menu
         discover: Discover
-        areas: Areas
-        articles: Discover
+        map: Map
         app: App
       footer:
         contact: Contact

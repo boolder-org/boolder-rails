@@ -22,7 +22,7 @@ class WelcomeController < ApplicationController
 
   def redirect_area_map
     area = Area.find(params[:id])
-    redirect_to map_area_path(area)
+    redirect_to map_path(area)
   end
 
   def redirect_problems
