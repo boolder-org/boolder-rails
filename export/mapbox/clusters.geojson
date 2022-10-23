@@ -6,28 +6,17 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Éléphant",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.59929652691,
-                    48.29932563865
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "name": "Trois Pignons",
-                "priority": "1"
+                "northEastLon": "2.548881",
+                "southWestLat": "48.3586603",
+                "southWestLon": "2.5083128",
+                "northEastLat": "48.3953245"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.53526670456,
-                    48.38396024328
+                    2.52925855637,
+                    48.37632124000
                 ]
             }
         },
@@ -35,153 +24,50 @@
             "type": "Feature",
             "properties": {
                 "name": "Cuvier",
-                "priority": "1"
+                "southWestLat": "48.4457802",
+                "northEastLat": "48.4493743",
+                "northEastLon": "2.6458018",
+                "southWestLon": "2.6328433"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.64135356426,
-                    48.44656813554
+                    2.64028068065,
+                    48.44682433366
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "name": "Nemours",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.67094907999,
-                    48.26446257636
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Rocher des Demoiselles",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.67323968649,
-                    48.37929991779
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
+                "northEastLat": "48.4388072",
+                "northEastLon": "2.6355547",
                 "name": "Apremont",
-                "priority": "1"
+                "southWestLat": "48.4351528",
+                "southWestLon": "2.6245383"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.63071055889,
-                    48.43748650086
+                    2.62933726787,
+                    48.43657540087
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "name": "Rocher Saint Germain",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.68490194201,
-                    48.43948657139
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Rocher Canon",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.66349790335,
-                    48.46205155229
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Buthiers",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.43548861504,
-                    48.29521445045
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Beauvais",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.47967002630,
-                    48.50321335824
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
+                "northEastLat": "48.4109511",
                 "name": "Franchard",
-                "priority": "1"
+                "southWestLon": "2.5947046",
+                "southWestLat": "48.4071053",
+                "northEastLon": "2.6145744"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.60397429943,
-                    48.40991849731
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Rocher d'Avon",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.72441624522,
-                    48.39304421220
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Restant du Long Rocher",
-                "priority": "2"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.73261306524,
-                    48.35539352304
+                    2.60217185497,
+                    48.40903539059
                 ]
             }
         }

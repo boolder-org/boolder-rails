@@ -25,12 +25,12 @@ class Admin::AreasController < Admin::BaseController
     area.save!
 
     flash[:notice] = "Area updated"
-    redirect_to admin_areas_path
+    redirect_to edit_admin_area_path(area)
   end
 
   private 
   def area_params
     params.require(:area).
-      permit(:name, :slug, :published, :cluster, :tags)
+      permit(:name, :slug, :published, :cluster, :tags, :priority, :short_name)
   end
 end

@@ -50,20 +50,18 @@ Rails.application.routes.draw do
       get ":slug/problems", to: redirect('/%{locale}/fontainebleau/%{slug}'), as: :area_problems_legacy_redirect # keep until end of 2022
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
-      get ":slug/map", to: "areas#map", as: :map_area
+      get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023
       get ":slug", to: "areas#show", as: :area
       get "/", to: "areas#index", as: :areas
     end
     
     get "problems/:id", to: "welcome#redirect_problem" # Legacy route: keep until end of 2021 for SEO purposes
 
-    get 'betamap', to: 'map#index', as: :map
+    get 'map(/:slug)', to: 'map#index', as: :map
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
 
-    # Internal redirects
-    resources :redirects, only: :new
-    get '/geojson/problem_:id', to: redirect("/%{locale}/redirects/new?problem_id=%{id}") # apple maps redirect (apple_map_geojson_controller.js)
+    resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
 
     # Permalinks (don't remove!)
     get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
