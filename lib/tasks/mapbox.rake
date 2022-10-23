@@ -67,6 +67,7 @@ namespace :mapbox do
       factory.feature(problem.location, nil, hash)
     end
 
+    # Extract boulders alongside problems to ensure we always upload both at the same time to mapbox
     boulder_features = Boulder.all.joins(:area).where(area: {published: true}).map do |boulder|
       factory.feature(boulder.polygon, nil, { })
     end
@@ -84,36 +85,38 @@ namespace :mapbox do
     puts "exported problems.geojson".green
   end
 
-  task pois: :environment do
-    puts "exporting pois"
+  # TODO: Revamp the pois task once we migrate to the new POI data model (split pois and poi routes)
 
-    factory = RGeo::GeoJSON::EntityFactory.instance
+  # task pois: :environment do
+  #   puts "exporting pois"
 
-    poi_features = Poi.all.reject{|poi| poi.id.in?([10,26]) }.uniq(&:description).map do |poi|
-      hash = {}.with_indifferent_access
-      hash[:type] = "parking"
-      hash[:name] = poi.description
-      hash[:short_name] = poi.subtitle
-      hash[:google_url] = poi.google_url
-      hash.deep_transform_keys! { |key| key.camelize(:lower) }
+  #   factory = RGeo::GeoJSON::EntityFactory.instance
 
-      factory.feature(poi.location, nil, hash)
-    end
+  #   poi_features = Poi.all.reject{|poi| poi.id.in?([10,26]) }.uniq(&:description).map do |poi|
+  #     hash = {}.with_indifferent_access
+  #     hash[:type] = "parking"
+  #     hash[:name] = poi.description
+  #     hash[:short_name] = poi.subtitle
+  #     hash[:google_url] = poi.google_url
+  #     hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-    feature_collection = factory.feature_collection(
-      poi_features
-    )
+  #     factory.feature(poi.location, nil, hash)
+  #   end
 
-    geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+  #   feature_collection = factory.feature_collection(
+  #     poi_features
+  #   )
 
-    file_name = Rails.root.join('export', "mapbox", "pois.geojson")
+  #   geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    raise "file already exists" if File.exist?(file_name)
+  #   file_name = Rails.root.join('export', "mapbox", "pois.geojson")
 
-    File.open(file_name,"w") do |f|
-      f.write(geo_json)
-    end
+  #   raise "file already exists" if File.exist?(file_name)
 
-    puts "exported pois.geojson".green
-  end
+  #   File.open(file_name,"w") do |f|
+  #     f.write(geo_json)
+  #   end
+
+  #   puts "exported pois.geojson".green
+  # end
 end
