@@ -26,7 +26,7 @@ export default class extends Controller {
       '765db6917d5c17449984f7c0067ae04c'
     );
 
-    let that = this
+    let that = this // FIXME: please help me I don't know what I'm doing
     
     this.autocomplete = autocomplete({
       container: '#autocomplete',
@@ -99,8 +99,8 @@ export default class extends Controller {
             onSelect({ item }) {
 
               const event = new CustomEvent("gotoarea", 
-                { detail: 
-                  { 
+                { 
+                  detail: { 
                     id: item.objectID, 
                     name: item.name, 
                     south_west_lat: item.bounds.south_west.lat,
@@ -203,7 +203,17 @@ export default class extends Controller {
               return `/${locale}/redirects/new?problem_id=${item.objectID}`
             },
             onSelect({ item }) {
-              const event = new CustomEvent("gotoproblem", { detail: { id: item.objectID, name: item.name, grade: item.grade, lat: item._geoloc.lat, lon: item._geoloc.lng } });
+              const event = new CustomEvent("gotoproblem", 
+                { 
+                  detail: { 
+                    id: item.objectID, 
+                    name: item.name, 
+                    grade: item.grade, 
+                    lat: item._geoloc.lat, 
+                    lon: item._geoloc.lng 
+                  } 
+                }
+              );
               window.dispatchEvent(event);
 
               that.autocomplete.setIsOpen(false)
