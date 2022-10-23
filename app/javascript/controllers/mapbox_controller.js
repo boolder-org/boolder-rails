@@ -196,7 +196,7 @@ export default class extends Controller {
       ],
     }
     ,
-    "areas" // insert layer just before this layer
+    "areas" // layer will be inserted just before this layer
     );
 
     this.map.addLayer({
