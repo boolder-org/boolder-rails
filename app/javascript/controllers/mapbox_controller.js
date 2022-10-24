@@ -287,7 +287,7 @@ export default class extends Controller {
 
       // FIXME: make it DRY
       const coordinates = [problem.lon, problem.lat];
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""} ${problem.grade}</a>`;
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
          
       // will be displayed thanks to the 'moveend' event code above
       this.popup = new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
@@ -316,7 +316,7 @@ export default class extends Controller {
 
       // FIXME: make it DRY
       const coordinates = e.features[0].geometry.coordinates.slice();
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name || ""} ${e.features[0].properties.grade}</a>`;
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name || ""}</a><span class="text-gray-400 ml-1">${e.features[0].properties.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)
@@ -464,7 +464,7 @@ export default class extends Controller {
 
     // FIXME: make it DRY
     const coordinates = [event.detail.lon, event.detail.lat];
-    const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name || ""} ${event.detail.grade}</a>`;
+    const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${event.detail.id}" target="_blank">${event.detail.name || ""}</a><span class="text-gray-400 ml-1">${event.detail.grade}</span>`;
      
     new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
     .setLngLat(coordinates)
