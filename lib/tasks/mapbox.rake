@@ -56,11 +56,13 @@ namespace :mapbox do
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :circuit_number, :steepness))
       hash[:id] = problem.id
-      hash[:name] = problem.name.presence
-      hash[:bleau_info_id] = problem.bleau_info_id # remove?
-      hash[:parent_id] = problem.parent_id
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit&.id
+
+      name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
+      name_en = I18n.with_locale(:en) { problem.name_with_fallback }
+      hash[:name] = name_fr
+      hash[:name_en] = (name_en != name_fr) ? name_en : ""
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
