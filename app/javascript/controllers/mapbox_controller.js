@@ -30,6 +30,14 @@ export default class extends Controller {
       this.cleanHistory()
     });
 
+    this.popup = null
+    this.map.on('moveend', () => {
+      if(this.popup != null) {
+        this.popup.addTo(this.map)
+        this.popup = null
+      }
+    });
+
     this.setupClickEvents()
   }
 
@@ -281,10 +289,10 @@ export default class extends Controller {
       const coordinates = [problem.lon, problem.lat];
       const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""} ${problem.grade}</a>`;
          
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
+      // will be displayed thanks to the 'moveend' event code above
+      this.popup = new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
         .setLngLat(coordinates)
         .setHTML(html)
-        .addTo(this.map);
     }
   }
 
