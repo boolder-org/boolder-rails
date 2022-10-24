@@ -59,8 +59,8 @@
         },
         "mapbox:uiParadigm": "layers"
     },
-    "center": [2.5400708270566383, 48.38814396113543],
-    "zoom": 13.078216777917358,
+    "center": [2.6388833611385962, 48.30715297876043],
+    "zoom": 12.128944671929393,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -9456,7 +9456,7 @@
             "paint": {
                 "text-halo-color": "hsl(0, 0%, 100%)",
                 "text-halo-width": 1,
-                "text-color": "hsl(230, 29%, 35%)",
+                "text-color": "#5965a1",
                 "text-halo-blur": 0.5
             }
         },
@@ -9501,7 +9501,7 @@
             "paint": {
                 "text-halo-color": "hsl(0, 0%, 100%)",
                 "text-halo-width": 1.25,
-                "text-color": "hsl(0, 0%, 0%)"
+                "text-color": "#787878"
             }
         },
         {
@@ -9546,7 +9546,7 @@
             "paint": {
                 "text-halo-color": "hsl(0, 0%, 100%)",
                 "text-halo-width": 1.25,
-                "text-color": "hsl(0, 0%, 0%)",
+                "text-color": "#787878",
                 "text-opacity": ["step", ["zoom"], 0, 11, 0, 12, 1]
             }
         },
@@ -9610,7 +9610,6 @@
                 ]
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 0%)",
                 "text-halo-color": "hsl(0, 0%, 100%)",
                 "text-halo-width": 1.25,
                 "icon-opacity": [
@@ -9621,7 +9620,8 @@
                     1,
                     8,
                     0
-                ]
+                ],
+                "text-color": "#787878"
             }
         },
         {
@@ -9945,7 +9945,7 @@
                 ]
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 0%)",
+                "text-color": "#5c5c5c",
                 "text-halo-color": "hsl(0, 0%, 100%)",
                 "text-halo-width": 1,
                 "icon-opacity": [
@@ -10113,7 +10113,7 @@
                 ]
             },
             "paint": {
-                "text-color": "hsl(0, 0%, 0%)",
+                "text-color": "#5c5c5c",
                 "text-halo-color": "hsl(0, 0%, 100%)",
                 "text-halo-width": 1,
                 "icon-opacity": [
@@ -10957,7 +10957,7 @@
                 "text-max-width": 5
             },
             "paint": {
-                "text-color": "#8a8a8a",
+                "text-color": "#333",
                 "text-halo-color": "hsl(0, 4%, 100%)",
                 "text-halo-width": [
                     "interpolate",
@@ -11012,14 +11012,14 @@
                 "text-max-width": 6
             },
             "paint": {
-                "text-color": "#8a8a8a",
+                "text-color": "#333",
                 "text-halo-color": "hsl(0, 0%, 100%)",
                 "text-halo-width": 2
             }
         }
     ],
     "created": "2022-10-12T12:58:21.236Z",
-    "modified": "2022-10-23T11:20:30.431Z",
+    "modified": "2022-10-24T08:28:07.554Z",
     "id": "cl95n147u003k15qry7pvfmq2",
     "owner": "nmondollot",
     "visibility": "private",
