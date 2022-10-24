@@ -17,9 +17,10 @@ class MapController < ApplicationController
         id: problem.id,
         lat: problem.location.lat,
         lon: problem.location.lon,
-        name: problem.name,
+        name: I18n.with_locale(:fr) { problem.name_with_fallback },
+        name_en: I18n.with_locale(:en) { problem.name_with_fallback },
         grade: problem.grade,
-      }
+      }.with_indifferent_access.deep_transform_keys { |key| key.camelize(:lower) }
     end
   end
 end

@@ -287,7 +287,11 @@ export default class extends Controller {
 
       // FIXME: make it DRY
       const coordinates = [problem.lon, problem.lat];
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${problem.name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+      var name = problem.name
+      if(this.localeValue == 'en' && problem.nameEn) {
+        name = problem.nameEn
+      }  
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
          
       // will be displayed thanks to the 'moveend' event code above
       this.popup = new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
@@ -314,9 +318,15 @@ export default class extends Controller {
 
     this.map.on('click', 'problems', (e) => {
 
+      let problem = e.features[0].properties
+
       // FIXME: make it DRY
       const coordinates = e.features[0].geometry.coordinates.slice();
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${e.features[0].properties.id})" target="_blank">${e.features[0].properties.name || ""}</a><span class="text-gray-400 ml-1">${e.features[0].properties.grade}</span>`;
+      var name = problem.name
+      if(this.localeValue == 'en' && problem.nameEn) {
+        name = problem.nameEn
+      }        
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)
