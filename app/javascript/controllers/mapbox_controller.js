@@ -1,7 +1,7 @@
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
-  static targets = [ "map", "grade" ]
+  static targets = [ "map", "grade", "gradeMin", "gradeMax" ]
   static values = { 
     bounds: Object,
     problem: Object,
@@ -10,9 +10,13 @@ export default class extends Controller {
     // gradeFilter: { type: String, default: "" },
   }
 
+  sanitizeFilters() {
+    // this.gradeMinTarget.value = Math.min(this.gradeMinTarget.value, this.gradeMaxTarget.value)
+    // this.gradeMaxTarget.value = Math.max(this.gradeMinTarget.value, this.gradeMaxTarget.value)
+  }
+
   updateFilters() {
-    // console.log("coucou")
-    // console.log(this.gradeTarget.value)
+    let allGrades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+","4a","4a+","4b","4b+","4c","4c+","5a","5a+","5b","5b+","5c","5c+","6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
 
     var grades = []
     if(this.gradeFilter == "beginner") {
@@ -24,27 +28,30 @@ export default class extends Controller {
     else if(this.gradeFilter == "advanced") {
       grades = ["6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
     } 
+    else if(this.gradeFilter == "custom") {
+      let gradeMin = this.gradeMinTarget.value
+      let gradeMax = this.gradeMaxTarget.value
+      grades = allGrades.slice(allGrades.indexOf(gradeMin), allGrades.indexOf(gradeMax) + 2)
+    } 
     else {
-      grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+","4a","4a+","4b","4b+","4c","4c+","5a","5a+","5b","5b+","5c","5c+","6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
+      grades = allGrades
     }
 
-    // if(grades != []) {
-      this.map.setFilter('problems', [
-        'match',
-        ['get', 'grade'],
-        grades,
-        true,
-        false
-      ]);
+    this.map.setFilter('problems', [
+      'match',
+      ['get', 'grade'],
+      grades,
+      true,
+      false
+    ]);
 
-      this.map.setFilter('problems-texts', [
-        'match',
-        ['get', 'grade'],
-        grades,
-        true,
-        false
-      ]);
-    // }
+    this.map.setFilter('problems-texts', [
+      'match',
+      ['get', 'grade'],
+      grades,
+      true,
+      false
+    ]);
   }
 
   didSelectFilter(event) {
