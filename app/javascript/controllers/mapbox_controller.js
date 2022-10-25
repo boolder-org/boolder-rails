@@ -483,7 +483,7 @@ export default class extends Controller {
     }
   }
 
-  updateFilters() {
+  applyFilters() {
     this.filterCounterTarget.classList.remove("hidden")
     this.filterIconTarget.classList.add("hidden")
 
