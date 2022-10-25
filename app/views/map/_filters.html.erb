@@ -1,7 +1,15 @@
 <div data-controller="reveal">
-  <button data-action="reveal#show" class="absolute z-20">Filters</button>
+  <div class="absolute inset-x-0 bottom-0 z-10 pb-8 text-center">
+    <button data-action="reveal#show" type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+      </svg>
+      Filters
+  </button>
+  </div>
   
-  <div data-reveal-target="item" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  
+  <div data-reveal-target="item" class="relative z-20 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
   <!--
     Background backdrop, show/hide based on modal state.
 
@@ -14,7 +22,7 @@
   -->
   <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
-  <div class="fixed inset-0 z-10 overflow-y-auto">
+  <div class="fixed inset-0 z-20 overflow-y-auto">
     <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
       <!--
         Modal panel, show/hide based on modal state.
@@ -44,7 +52,7 @@
             <fieldset class="">
               <legend class="sr-only">Pricing plans</legend>
               <div class="relative -space-y-px rounded-md bg-white">
-                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
                 <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="beginner" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
@@ -56,7 +64,7 @@
                   <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">1a → 3c</span>
                 </label>
 
-                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
                 <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="intermediate" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
@@ -68,7 +76,7 @@
                   <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">4a → 5c</span>
                 </label>
 
-                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
                 <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="advanced" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
@@ -80,7 +88,7 @@
                   <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">6a → 8c</span>
                 </label>
 
-                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
                 <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="custom" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
