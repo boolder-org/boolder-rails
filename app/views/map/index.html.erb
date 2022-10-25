@@ -14,9 +14,9 @@
 <% end %>
 
 <div 
-data-controller="mapbox" 
+data-controller="mapbox"
 data-action="gotoproblem@window->mapbox#gotoproblem gotoarea@window->mapbox#gotoarea"
-class="flex-auto"
+class="flex-auto relative"
 id='map'
 data-mapbox-target="map"
 data-mapbox-locale-value="<%= I18n.locale %>"
@@ -31,4 +31,6 @@ data-mapbox-bounds-value="<%= @bounds.to_json %>"
   data-mapbox-draft-value="true"
 <% end %>
 >
+  <%= render "filters" %>
+
 </div>
