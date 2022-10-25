@@ -43,7 +43,7 @@
               <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
               <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                 <span class="flex items-center text-sm">
-                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="beginner" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="gradeRadioButton" type="radio" name="gradeRadioButton" value="beginner" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                   <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
                   <span class="ml-3 font-medium"><%= t('views.map.filters.beginner') %></span>
                 </span>
@@ -55,7 +55,7 @@
               <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
               <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                 <span class="flex items-center text-sm">
-                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="intermediate" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="gradeRadioButton" type="radio" name="gradeRadioButton" value="intermediate" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                   <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
                   <span class="ml-3 font-medium"><%= t('views.map.filters.intermediate') %></span>
                 </span>
@@ -67,7 +67,7 @@
               <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
               <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                 <span class="flex items-center text-sm">
-                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="advanced" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="gradeRadioButton" type="radio" name="gradeRadioButton" value="advanced" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                   <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
                   <span class="ml-3 font-medium"><%= t('views.map.filters.advanced') %></span>
                 </span>
@@ -79,7 +79,7 @@
               <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
               <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                 <span class="flex items-center text-sm">
-                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="custom" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="gradeRadioButton" type="radio" name="gradeRadioButton" value="custom" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                   <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
                   <span class="ml-3 font-medium"><%= t('views.map.filters.custom') %></span>
                 </span>
@@ -90,7 +90,7 @@
             </div>
           </fieldset>
 
-          <div data-mapbox-target="customGradeFilter" class="hidden grid grid-cols-2 gap-8 my-4">
+          <div data-mapbox-target="customGradePicker" class="hidden grid grid-cols-2 gap-8 my-4">
             <div class="">
               <label for="gradeMin" class="block text-sm font-medium text-gray-700"><%= t('views.map.filters.grade_min') %></label>
               <select data-mapbox-target="gradeMin" data-action="mapbox#didSelectGradeMin" id="gradeMin" name="gradeMin" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
