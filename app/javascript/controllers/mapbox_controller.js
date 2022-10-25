@@ -13,80 +13,6 @@ export default class extends Controller {
     draft: { type: Boolean, default: false },
   }
 
-  didSelectGradeMin() {
-    let indexMin = this.allGrades.indexOf(this.gradeMinTarget.value)
-    let indexMax = this.allGrades.indexOf(this.gradeMaxTarget.value)
-    this.gradeMaxTarget.value = this.allGrades[Math.max(indexMin, indexMax)]
-  }
-
-  didSelectGradeMax() {
-    let indexMin = this.allGrades.indexOf(this.gradeMinTarget.value)
-    let indexMax = this.allGrades.indexOf(this.gradeMaxTarget.value)
-    this.gradeMinTarget.value = this.allGrades[Math.min(indexMin, indexMax)]
-  }
-
-  clearFilters() {
-    this.gradeRadioButton == null
-
-    this.filterCounterTarget.classList.add("hidden")
-    this.filterIconTarget.classList.remove("hidden")
-
-    this.gradeRadioButtonTargets.forEach(item => {
-      item.checked = false
-    })
-
-    this.applyLayerFilter('problems', this.allGrades)
-    this.applyLayerFilter('problems-texts', this.allGrades)
-  }
-
-  updateFilters() {
-    this.filterCounterTarget.classList.remove("hidden")
-    this.filterIconTarget.classList.add("hidden")
-
-    var grades = []
-    if(this.gradeRadioButton == "beginner") {
-      grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+",]
-    } 
-    else if(this.gradeRadioButton == "intermediate") {
-      grades = ["4a","4a+","4b","4b+","4c","4c+", "5a","5a+","5b","5b+","5c","5c+",]
-    } 
-    else if(this.gradeRadioButton == "advanced") {
-      grades = ["6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
-    } 
-    else if(this.gradeRadioButton == "custom") {
-      let gradeMin = this.gradeMinTarget.value
-      let gradeMax = this.gradeMaxTarget.value
-      grades = this.allGrades.slice(this.allGrades.indexOf(gradeMin), this.allGrades.indexOf(gradeMax) + 2)
-    } 
-    else {
-      grades = this.allGrades
-    }
-
-    this.applyLayerFilter('problems', grades)
-    this.applyLayerFilter('problems-texts', grades)
-  }
-
-  applyLayerFilter(layer, grades) {
-    this.map.setFilter(layer, [
-      'match',
-      ['get', 'grade'],
-      grades,
-      true,
-      false
-    ]);
-  }
-
-  didSelectFilter(event) {
-    this.gradeRadioButton = event.target.value
-
-    if(this.gradeRadioButton == "custom") {
-      this.customGradePickerTarget.classList.remove("hidden")
-    }
-    else {
-      this.customGradePickerTarget.classList.add("hidden")
-    }
-  }
-
   connect() {
     // mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
@@ -519,6 +445,80 @@ export default class extends Controller {
         );
       }
     });
+  }
+
+  didSelectFilter(event) {
+    this.gradeRadioButton = event.target.value
+
+    if(this.gradeRadioButton == "custom") {
+      this.customGradePickerTarget.classList.remove("hidden")
+    }
+    else {
+      this.customGradePickerTarget.classList.add("hidden")
+    }
+  }
+
+  updateFilters() {
+    this.filterCounterTarget.classList.remove("hidden")
+    this.filterIconTarget.classList.add("hidden")
+
+    var grades = []
+    if(this.gradeRadioButton == "beginner") {
+      grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+",]
+    } 
+    else if(this.gradeRadioButton == "intermediate") {
+      grades = ["4a","4a+","4b","4b+","4c","4c+", "5a","5a+","5b","5b+","5c","5c+",]
+    } 
+    else if(this.gradeRadioButton == "advanced") {
+      grades = ["6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
+    } 
+    else if(this.gradeRadioButton == "custom") {
+      let gradeMin = this.gradeMinTarget.value
+      let gradeMax = this.gradeMaxTarget.value
+      grades = this.allGrades.slice(this.allGrades.indexOf(gradeMin), this.allGrades.indexOf(gradeMax) + 2)
+    } 
+    else {
+      grades = this.allGrades
+    }
+
+    this.applyLayerFilter('problems', grades)
+    this.applyLayerFilter('problems-texts', grades)
+  }
+
+  clearFilters() {
+    this.gradeRadioButton == null
+
+    this.filterCounterTarget.classList.add("hidden")
+    this.filterIconTarget.classList.remove("hidden")
+
+    this.gradeRadioButtonTargets.forEach(item => {
+      item.checked = false
+    })
+
+    this.applyLayerFilter('problems', this.allGrades)
+    this.applyLayerFilter('problems-texts', this.allGrades)
+  }
+
+  applyLayerFilter(layer, grades) {
+    this.map.setFilter(layer, [
+      'match',
+      ['get', 'grade'],
+      grades,
+      true,
+      false
+    ]);
+  }
+
+  didSelectGradeMin() {
+    let indexMin = this.allGrades.indexOf(this.gradeMinTarget.value)
+    let indexMax = this.allGrades.indexOf(this.gradeMaxTarget.value)
+    this.gradeMaxTarget.value = this.allGrades[Math.max(indexMin, indexMax)]
+  }
+
+  didSelectGradeMax() {
+    let indexMin = this.allGrades.indexOf(this.gradeMinTarget.value)
+    let indexMax = this.allGrades.indexOf(this.gradeMaxTarget.value)
+    this.gradeMinTarget.value = this.allGrades[Math.min(indexMin, indexMax)]
   }
 
   // https://github.com/mapbox/mapbox-gl-js/blob/20e8fd2b60fb751f5846d3be2d46dfa76d940324/src/ui/default_locale.js
