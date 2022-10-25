@@ -262,8 +262,8 @@ export default class extends Controller {
 
       this.map.fitBounds(
         [
-          [bounds.south_west_lon, bounds.south_west_lat], // southwestern corner of the bounds
-          [bounds.north_east_lon, bounds.north_east_lat] // northeastern corner of the bounds
+          [bounds.southWestLon, bounds.southWestLat], // southwestern corner of the bounds
+          [bounds.northEastLon, bounds.northEastLat] // northeastern corner of the bounds
         ], 
         {
           animate: true,
