@@ -1,13 +1,13 @@
 <div data-controller="reveal">
   <div class="absolute inset-x-0 bottom-0 z-10 pb-8 text-center">
     <button data-action="reveal#show" type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-      <span data-mapbox-target="filterCounter" class="hidden inline-flex justify-center items-center mr-2 w-4 h-4 text-xs font-semibold text-green-800 bg-green-200 rounded-full">
+      <span data-mapbox-target="filterCounter" class="hidden inline-flex justify-center items-center mr-2 w-4 h-4 text-xs font-semibold text-green-800 bg-green-300 rounded-full">
           1
       </span>
       <svg data-mapbox-target="filterIcon" xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
       </svg>
-      <span>Filters</span>
+      <span>Filtres</span>
   </button>
   </div>
   
@@ -38,7 +38,7 @@
           To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       -->
       <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 w-full sm:max-w-lg sm:p-6">
-        <div class="absolute top-0 right-0 hidden pt-4 pr-4 sm:block">
+        <div class="absolute top-0 right-0 pt-4 pr-4">
           <button data-action="reveal#hide" type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
             <span class="sr-only">Close</span>
             <!-- Heroicon name: outline/x-mark -->
@@ -109,7 +109,7 @@
               <div class="">
                 <label for="gradeMin" class="block text-sm font-medium text-gray-700">Cotation min</label>
                 <select data-mapbox-target="gradeMin" data-action="mapbox#didSelectGradeMin" id="gradeMin" name="gradeMin" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
-                  <option selected>1a</option>
+                  <option>1a</option>
                   <option>1b</option>
                   <option>1c</option>
                   <option>2a</option>
@@ -118,7 +118,7 @@
                   <option>3a</option>
                   <option>3b</option>
                   <option>3c</option>
-                  <option>4a</option>
+                  <option selected>4a</option>
                   <option>4b</option>
                   <option>4c</option>
                   <option>5a</option>
@@ -152,7 +152,7 @@
                   <option>4a</option>
                   <option>4b</option>
                   <option>4c</option>
-                  <option>5a</option>
+                  <option selected>5a</option>
                   <option>5b</option>
                   <option>5c</option>
                   <option>6a</option>
@@ -164,7 +164,7 @@
                   <option>8a</option>
                   <option>8b</option>
                   <option>8c</option>
-                  <option selected>9a</option>
+                  <option>9a</option>
                 </select>
               </div>
             </div>
