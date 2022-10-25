@@ -148,7 +148,7 @@ data-mapbox-bounds-value="<%= @bounds.to_json %>"
               <div data-mapbox-target="customGradeFilter" class="hidden">
               <div>
                 <label for="gradeMin" class="block text-sm font-medium text-gray-700">Min</label>
-                <select data-mapbox-target="gradeMin" data-action="mapbox#sanitizeFilters" id="gradeMin" name="gradeMin" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
+                <select data-mapbox-target="gradeMin" data-action="mapbox#didSelectGradeMin" id="gradeMin" name="gradeMin" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
                   <option selected>1a</option>
                   <option>1b</option>
                   <option>1c</option>
@@ -179,7 +179,7 @@ data-mapbox-bounds-value="<%= @bounds.to_json %>"
 
               <div>
                 <label for="gradeMax" class="block text-sm font-medium text-gray-700">Max</label>
-                <select data-mapbox-target="gradeMax" data-action="mapbox#sanitizeFilters" id="gradeMax" name="gradeMax" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
+                <select data-mapbox-target="gradeMax" data-action="mapbox#didSelectGradeMax" id="gradeMax" name="gradeMax" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
                   <option>1a</option>
                   <option>1b</option>
                   <option>1c</option>
