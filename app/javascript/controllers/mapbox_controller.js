@@ -1,12 +1,55 @@
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
-  static targets = [ "map" ]
+  static targets = [ "map", "grade" ]
   static values = { 
     bounds: Object,
     problem: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
+    // gradeFilter: { type: String, default: "" },
+  }
+
+  updateFilters() {
+    // console.log("coucou")
+    // console.log(this.gradeTarget.value)
+
+    var grades = []
+    if(this.gradeFilter == "beginner") {
+      grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+",]
+    } 
+    else if(this.gradeFilter == "intermediate") {
+      grades = ["4a","4a+","4b","4b+","4c","4c+", "5a","5a+","5b","5b+","5c","5c+",]
+    } 
+    else if(this.gradeFilter == "advanced") {
+      grades = ["6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
+    } 
+    else {
+      grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+","4a","4a+","4b","4b+","4c","4c+","5a","5a+","5b","5b+","5c","5c+","6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
+    }
+
+    // if(grades != []) {
+      this.map.setFilter('problems', [
+        'match',
+        ['get', 'grade'],
+        grades,
+        true,
+        false
+      ]);
+
+      this.map.setFilter('problems-texts', [
+        'match',
+        ['get', 'grade'],
+        grades,
+        true,
+        false
+      ]);
+    // }
+  }
+
+  didSelectFilter(event) {
+    this.gradeFilter = event.target.value
+    console.log(this.gradeFilter)
   }
 
   connect() {
