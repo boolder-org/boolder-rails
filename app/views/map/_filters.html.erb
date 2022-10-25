@@ -7,12 +7,12 @@
       <svg data-mapbox-target="filterIcon" xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
       </svg>
-      <span>Filtres</span>
+      <span><%= t('views.map.filters.label') %></span>
   </button>
   </div>
   
   
-  <div data-reveal-target="item" class="relative z-20 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div data-reveal-target="item" class="relative z-20 hidden" role="dialog">
   <!--
     Background backdrop, show/hide based on modal state.
 
@@ -42,25 +42,25 @@
           <button data-action="reveal#hide" type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
             <span class="sr-only">Close</span>
             <!-- Heroicon name: outline/x-mark -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
         <div class="">
           <div class="mt-3 text-center sm:mt-0">
-            <h3 class="text-lg font-medium leading-6 text-gray-900 mb-4" id="modal-title">Niveau</h3>
+            <h3 class="text-lg font-medium leading-6 text-gray-900 mb-4"><%= t('views.map.filters.level') %></h3>
           </div>
 
             <fieldset class="">
-              <legend class="sr-only">Pricing plans</legend>
+              <legend class="sr-only">Levels</legend>
               <div class="relative -space-y-px rounded-md bg-white">
                 <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
                 <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="beginner" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                     <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
-                    <span class="ml-3 font-medium">Débutant</span>
+                    <span class="ml-3 font-medium"><%= t('views.map.filters.beginner') %></span>
                   </span>
                   
                   <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
@@ -72,7 +72,7 @@
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="intermediate" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                     <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
-                    <span class="ml-3 font-medium">Intermédiaire</span>
+                    <span class="ml-3 font-medium"><%= t('views.map.filters.intermediate') %></span>
                   </span>
                   
                   <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
@@ -84,7 +84,7 @@
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="advanced" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                     <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
-                    <span class="ml-3 font-medium">Expérimenté</span>
+                    <span class="ml-3 font-medium"><%= t('views.map.filters.advanced') %></span>
                   </span>
                   
                   <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
@@ -96,7 +96,7 @@
                   <span class="flex items-center text-sm">
                     <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="custom" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
                     <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
-                    <span class="ml-3 font-medium">Personnalisé</span>
+                    <span class="ml-3 font-medium"><%= t('views.map.filters.custom') %></span>
                   </span>
                   
                   <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
@@ -107,7 +107,7 @@
 
             <div data-mapbox-target="customGradeFilter" class="hidden grid grid-cols-2 gap-8 my-4">
               <div class="">
-                <label for="gradeMin" class="block text-sm font-medium text-gray-700">Cotation min</label>
+                <label for="gradeMin" class="block text-sm font-medium text-gray-700"><%= t('views.map.filters.grade_min') %></label>
                 <select data-mapbox-target="gradeMin" data-action="mapbox#didSelectGradeMin" id="gradeMin" name="gradeMin" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
                   <option>1a</option>
                   <option>1b</option>
@@ -138,7 +138,7 @@
               </div>
 
               <div>
-                <label for="gradeMax" class="block text-sm font-medium text-gray-700">Cotation max</label>
+                <label for="gradeMax" class="block text-sm font-medium text-gray-700"><%= t('views.map.filters.grade_max') %></label>
                 <select data-mapbox-target="gradeMax" data-action="mapbox#didSelectGradeMax" id="gradeMax" name="gradeMax" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
                   <option>1a</option>
                   <option>1b</option>
@@ -172,8 +172,8 @@
 
         </div>
         <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
-          <button data-action="reveal#hide mapbox#updateFilters" type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm">Appliquer</button>
-          <button data-action="reveal#hide mapbox#clearFilters" type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm">Effacer</button>
+          <button data-action="reveal#hide mapbox#updateFilters" type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"><%= t('views.map.filters.apply') %></button>
+          <button data-action="reveal#hide mapbox#clearFilters" type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm"><%= t('views.map.filters.clear') %></button>
         </div>
       </div>
     </div>
