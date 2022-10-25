@@ -1,13 +1,12 @@
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
-  static targets = [ "map", "grade", "gradeMin", "gradeMax" ]
+  static targets = [ "map", "grade", "gradeMin", "gradeMax", "customGradeFilter" ]
   static values = { 
     bounds: Object,
     problem: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
-    // gradeFilter: { type: String, default: "" },
   }
 
   sanitizeFilters() {
@@ -56,11 +55,18 @@ export default class extends Controller {
 
   didSelectFilter(event) {
     this.gradeFilter = event.target.value
-    console.log(this.gradeFilter)
+
+    if(this.gradeFilter == "custom") {
+      this.customGradeFilterTarget.classList.remove("hidden")
+    }
+     else {
+      this.customGradeFilterTarget.classList.add("hidden")
+     }
+    // console.log(this.gradeFilter)
   }
 
   connect() {
-    mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
+    // mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
     this.map = new mapboxgl.Map({
       container: 'map',

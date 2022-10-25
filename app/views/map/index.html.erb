@@ -145,6 +145,7 @@ data-mapbox-bounds-value="<%= @bounds.to_json %>"
                 </div>
               </fieldset>
 
+              <div data-mapbox-target="customGradeFilter" class="hidden">
               <div>
                 <label for="gradeMin" class="block text-sm font-medium text-gray-700">Min</label>
                 <select data-mapbox-target="gradeMin" data-action="mapbox#sanitizeFilters" id="gradeMin" name="gradeMin" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
@@ -173,8 +174,6 @@ data-mapbox-bounds-value="<%= @bounds.to_json %>"
                   <option>8b</option>
                   <option>8c</option>
                   <option>9a</option>
-                  <option>9b</option>
-                  <option>9c</option>
                 </select>
               </div>
 
@@ -205,12 +204,10 @@ data-mapbox-bounds-value="<%= @bounds.to_json %>"
                   <option>8a</option>
                   <option>8b</option>
                   <option>8c</option>
-                  <option>9a</option>
-                  <option>9b</option>
-                  <option selected>9c</option>
+                  <option selected>9a</option>
                 </select>
               </div>
-
+              </div>
 
 
 
