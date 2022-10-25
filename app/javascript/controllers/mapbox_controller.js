@@ -208,7 +208,7 @@ export default class extends Controller {
     );
 
     this.map.addLayer({
-      'id': 'problem-symbols',
+      'id': 'problems-texts',
       'type': 'symbol',
       'source': 'problems',
       'source-layer': 'problems-ayes3a',
