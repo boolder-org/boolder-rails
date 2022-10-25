@@ -35,21 +35,8 @@ export default class extends Controller {
       item.checked = false
     })
 
-    this.map.setFilter('problems', [
-      'match',
-      ['get', 'grade'],
-      this.allGrades,
-      true,
-      false
-    ]);
-
-    this.map.setFilter('problems-texts', [
-      'match',
-      ['get', 'grade'],
-      this.allGrades,
-      true,
-      false
-    ]);
+    this.applyLayerFilter('problems', this.allGrades)
+    this.applyLayerFilter('problems-texts', this.allGrades)
   }
 
   updateFilters() {
@@ -75,15 +62,12 @@ export default class extends Controller {
       grades = this.allGrades
     }
 
-    this.map.setFilter('problems', [
-      'match',
-      ['get', 'grade'],
-      grades,
-      true,
-      false
-    ]);
+    this.applyLayerFilter('problems', grades)
+    this.applyLayerFilter('problems-texts', grades)
+  }
 
-    this.map.setFilter('problems-texts', [
+  applyLayerFilter(layer, grades) {
+    this.map.setFilter(layer, [
       'match',
       ['get', 'grade'],
       grades,
@@ -104,7 +88,7 @@ export default class extends Controller {
   }
 
   connect() {
-    mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
+    // mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
     this.map = new mapboxgl.Map({
       container: 'map',
