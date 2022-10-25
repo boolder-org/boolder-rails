@@ -1,7 +1,7 @@
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
-  static targets = [ "map", "grade", "gradeMin", "gradeMax", "customGradeFilter" ]
+  static targets = [ "map", "grade", "gradeMin", "gradeMax", "customGradeFilter", "filterCounter", "filterIcon" ]
   static values = { 
     bounds: Object,
     problem: Object,
@@ -22,6 +22,11 @@ export default class extends Controller {
   }
 
   clearFilters() {
+    this.gradeFilter == null
+
+    this.filterCounterTarget.classList.add("hidden")
+    this.filterIconTarget.classList.remove("hidden")
+
     this.gradeTargets.forEach(item => {
       item.checked = false
     })
@@ -44,6 +49,9 @@ export default class extends Controller {
   }
 
   updateFilters() {
+    this.filterCounterTarget.classList.remove("hidden")
+    this.filterIconTarget.classList.add("hidden")
+
     var grades = []
     if(this.gradeFilter == "beginner") {
       grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+",]
