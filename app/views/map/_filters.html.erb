@@ -1,0 +1,172 @@
+<div data-controller="reveal">
+  <button data-action="reveal#show" class="absolute z-20">Filters</button>
+  
+  <div data-reveal-target="item" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <!--
+    Background backdrop, show/hide based on modal state.
+
+    Entering: "ease-out duration-300"
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "ease-in duration-200"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <!--
+        Modal panel, show/hide based on modal state.
+
+        Entering: "ease-out duration-300"
+          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          To: "opacity-100 translate-y-0 sm:scale-100"
+        Leaving: "ease-in duration-200"
+          From: "opacity-100 translate-y-0 sm:scale-100"
+          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      -->
+      <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 w-full sm:max-w-lg sm:p-6">
+        <div class="absolute top-0 right-0 hidden pt-4 pr-4 sm:block">
+          <button data-action="reveal#hide" type="button" class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+            <span class="sr-only">Close</span>
+            <!-- Heroicon name: outline/x-mark -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="">
+          <div class="mt-3 text-center sm:mt-0">
+            <h3 class="text-lg font-medium leading-6 text-gray-900 mb-4" id="modal-title">Niveau</h3>
+          </div>
+
+            <fieldset class="">
+              <legend class="sr-only">Pricing plans</legend>
+              <div class="relative -space-y-px rounded-md bg-white">
+                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <label class="rounded-tl-md rounded-tr-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
+                  <span class="flex items-center text-sm">
+                    <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="beginner" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                    <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
+                    <span class="ml-3 font-medium">Débutant</span>
+                  </span>
+                  
+                  <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
+                  <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">1a → 3c</span>
+                </label>
+
+                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
+                  <span class="flex items-center text-sm">
+                    <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="intermediate" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                    <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
+                    <span class="ml-3 font-medium">Intermédiaire</span>
+                  </span>
+                  
+                  <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
+                  <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">4a → 5c</span>
+                </label>
+
+                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
+                  <span class="flex items-center text-sm">
+                    <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="advanced" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                    <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
+                    <span class="ml-3 font-medium">Expérimenté</span>
+                  </span>
+                  
+                  <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
+                  <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">6a → 8c</span>
+                </label>
+
+                <!-- Checked: "bg-green-50 border-green-200 z-10", Not Checked: "border-gray-200" -->
+                <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
+                  <span class="flex items-center text-sm">
+                    <input data-action="mapbox#didSelectFilter" data-mapbox-target="grade" type="radio" name="grade" value="custom" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                    <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
+                    <span class="ml-3 font-medium">Personnalisé</span>
+                  </span>
+                  
+                  <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
+                  <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400"></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div data-mapbox-target="customGradeFilter" class="hidden grid grid-cols-2 gap-8 my-4">
+              <div class="">
+                <label for="gradeMin" class="block text-sm font-medium text-gray-700">Cotation min</label>
+                <select data-mapbox-target="gradeMin" data-action="mapbox#didSelectGradeMin" id="gradeMin" name="gradeMin" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
+                  <option selected>1a</option>
+                  <option>1b</option>
+                  <option>1c</option>
+                  <option>2a</option>
+                  <option>2b</option>
+                  <option>2c</option>
+                  <option>3a</option>
+                  <option>3b</option>
+                  <option>3c</option>
+                  <option>4a</option>
+                  <option>4b</option>
+                  <option>4c</option>
+                  <option>5a</option>
+                  <option>5b</option>
+                  <option>5c</option>
+                  <option>6a</option>
+                  <option>6b</option>
+                  <option>6c</option>
+                  <option>7a</option>
+                  <option>7b</option>
+                  <option>7c</option>
+                  <option>8a</option>
+                  <option>8b</option>
+                  <option>8c</option>
+                  <option>9a</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="gradeMax" class="block text-sm font-medium text-gray-700">Cotation max</label>
+                <select data-mapbox-target="gradeMax" data-action="mapbox#didSelectGradeMax" id="gradeMax" name="gradeMax" class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm">
+                  <option>1a</option>
+                  <option>1b</option>
+                  <option>1c</option>
+                  <option>2a</option>
+                  <option>2b</option>
+                  <option>2c</option>
+                  <option>3a</option>
+                  <option>3b</option>
+                  <option>3c</option>
+                  <option>4a</option>
+                  <option>4b</option>
+                  <option>4c</option>
+                  <option>5a</option>
+                  <option>5b</option>
+                  <option>5c</option>
+                  <option>6a</option>
+                  <option>6b</option>
+                  <option>6c</option>
+                  <option>7a</option>
+                  <option>7b</option>
+                  <option>7c</option>
+                  <option>8a</option>
+                  <option>8b</option>
+                  <option>8c</option>
+                  <option selected>9a</option>
+                </select>
+              </div>
+            </div>
+
+
+        </div>
+        <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+          <button data-action="reveal#hide mapbox#updateFilters" type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:text-sm">Appliquer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+</div>
