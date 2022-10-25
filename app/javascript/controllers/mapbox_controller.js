@@ -447,6 +447,30 @@ export default class extends Controller {
     });
   }
 
+  // https://github.com/mapbox/mapbox-gl-js/blob/20e8fd2b60fb751f5846d3be2d46dfa76d940324/src/ui/default_locale.js
+  getFrLocale() {
+    return {
+      'AttributionControl.ToggleAttribution': 'Changer valeur attribution',
+      'AttributionControl.MapFeedback': 'Feedback sur la carte',
+      'FullscreenControl.Enter': 'Mode plein écran',
+      'FullscreenControl.Exit': 'Sortir du mode plein écran',
+      'GeolocateControl.FindMyLocation': 'Trouver ma position',
+      'GeolocateControl.LocationNotAvailable': 'Localisation non disponible',
+      'LogoControl.Title': 'Logo Mapbox',
+      'Map.Title': 'Carte',
+      'NavigationControl.ResetBearing': 'Remettre au Nord',
+      'NavigationControl.ZoomIn': 'Zoomer',
+      'NavigationControl.ZoomOut': 'Dézoomer',
+      'ScrollZoomBlocker.CtrlMessage': 'Utilisez ctrl + défilement pour zoomer',
+      'ScrollZoomBlocker.CmdMessage': 'Utilisez ⌘ + défilement pour zoomer',
+      'TouchPanBlocker.Message': 'Utilisez deux doigts pour bouger la carte'
+    }
+  }
+
+  // =========================================================
+  // TODO: move the filters logic into its own controller
+  // =========================================================
+
   didSelectFilter(event) {
     this.gradeRadioButton = event.target.value
 
@@ -521,25 +545,12 @@ export default class extends Controller {
     this.gradeMinTarget.value = this.allGrades[Math.min(indexMin, indexMax)]
   }
 
-  // https://github.com/mapbox/mapbox-gl-js/blob/20e8fd2b60fb751f5846d3be2d46dfa76d940324/src/ui/default_locale.js
-  getFrLocale() {
-    return {
-      'AttributionControl.ToggleAttribution': 'Changer valeur attribution',
-      'AttributionControl.MapFeedback': 'Feedback sur la carte',
-      'FullscreenControl.Enter': 'Mode plein écran',
-      'FullscreenControl.Exit': 'Sortir du mode plein écran',
-      'GeolocateControl.FindMyLocation': 'Trouver ma position',
-      'GeolocateControl.LocationNotAvailable': 'Localisation non disponible',
-      'LogoControl.Title': 'Logo Mapbox',
-      'Map.Title': 'Carte',
-      'NavigationControl.ResetBearing': 'Remettre au Nord',
-      'NavigationControl.ZoomIn': 'Zoomer',
-      'NavigationControl.ZoomOut': 'Dézoomer',
-      'ScrollZoomBlocker.CtrlMessage': 'Utilisez ctrl + défilement pour zoomer',
-      'ScrollZoomBlocker.CmdMessage': 'Utilisez ⌘ + défilement pour zoomer',
-      'TouchPanBlocker.Message': 'Utilisez deux doigts pour bouger la carte'
-    }
-  }
+  // =========================================================
+
+
+  // =========================================================
+  // Hooks coming from search_controller
+  // =========================================================
 
   gotoproblem(event) {
     this.map.flyTo({
