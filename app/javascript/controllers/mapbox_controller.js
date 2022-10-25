@@ -9,14 +9,19 @@ export default class extends Controller {
     draft: { type: Boolean, default: false },
   }
 
-  sanitizeFilters() {
-    // this.gradeMinTarget.value = Math.min(this.gradeMinTarget.value, this.gradeMaxTarget.value)
-    // this.gradeMaxTarget.value = Math.max(this.gradeMinTarget.value, this.gradeMaxTarget.value)
+  didSelectGradeMin() {
+    let indexMin = this.allGrades.indexOf(this.gradeMinTarget.value)
+    let indexMax = this.allGrades.indexOf(this.gradeMaxTarget.value)
+    this.gradeMaxTarget.value = this.allGrades[Math.max(indexMin, indexMax)]
+  }
+
+  didSelectGradeMax() {
+    let indexMin = this.allGrades.indexOf(this.gradeMinTarget.value)
+    let indexMax = this.allGrades.indexOf(this.gradeMaxTarget.value)
+    this.gradeMinTarget.value = this.allGrades[Math.min(indexMin, indexMax)]
   }
 
   updateFilters() {
-    let allGrades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+","4a","4a+","4b","4b+","4c","4c+","5a","5a+","5b","5b+","5c","5c+","6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
-
     var grades = []
     if(this.gradeFilter == "beginner") {
       grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+",]
@@ -30,10 +35,10 @@ export default class extends Controller {
     else if(this.gradeFilter == "custom") {
       let gradeMin = this.gradeMinTarget.value
       let gradeMax = this.gradeMaxTarget.value
-      grades = allGrades.slice(allGrades.indexOf(gradeMin), allGrades.indexOf(gradeMax) + 2)
+      grades = this.allGrades.slice(this.allGrades.indexOf(gradeMin), this.allGrades.indexOf(gradeMax) + 2)
     } 
     else {
-      grades = allGrades
+      grades = this.allGrades
     }
 
     this.map.setFilter('problems', [
@@ -66,7 +71,7 @@ export default class extends Controller {
   }
 
   connect() {
-    // mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
+    mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJja2hwMXMzZWgwcndhMnJrOHY1a3c0eHE5In0.F4P_5ZCsauDFiSqrxqjZ8w';
 
     this.map = new mapboxgl.Map({
       container: 'map',
@@ -95,6 +100,8 @@ export default class extends Controller {
     });
 
     this.setupClickEvents()
+
+    this.allGrades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+","4a","4a+","4b","4b+","4c","4c+","5a","5a+","5b","5b+","5c","5c+","6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
   }
 
   addControls() {
