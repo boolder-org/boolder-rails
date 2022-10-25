@@ -60,6 +60,17 @@ fr:
         metas:
           title: Carte topo %{area}
           description: Carte interactive pour le secteur d'escalade %{area} à Fontainebleau
+      filters:
+        label: Filtres
+        level: Niveau
+        beginner: Débutant
+        intermediate: Intermédiaire
+        advanced: Expérimenté
+        custom: Personnalisé
+        grade_min: Cotation min
+        grade_max: Cotation max
+        apply: Appliquer
+        clear: Effacer
     app_landing:
       title: Le topo qui tient dans votre poche.
       subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"

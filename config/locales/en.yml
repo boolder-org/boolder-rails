@@ -60,6 +60,17 @@ en:
         metas:
           title: Map with topos for %{area}
           description: Interactive map for climbing in %{area} in Fontainebleau
+      filters:
+        label: Filters
+        level: Level
+        beginner: Beginner
+        intermediate: Intermediate
+        advanced: Experienced
+        custom: Custom
+        grade_min: Grade min
+        grade_max: Grade max
+        apply: Apply
+        clear: Clear
     app_landing:
       title: The bouldering guide that fits in your pocket
       subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
