@@ -33,7 +33,7 @@ namespace :app do
       factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
     end
 
-    circuit_features = Circuit.where(area_id: area_id).map do |circuit|
+    circuit_features = Circuit.area(area_id).map do |circuit|
       line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
       factory.feature(line_string, "circuit_#{circuit.id}", { color: circuit.color })
     end
