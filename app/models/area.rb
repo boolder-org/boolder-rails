@@ -1,7 +1,6 @@
 class Area < ApplicationRecord
   has_many :boulders
   has_many :problems
-  has_many :circuits
   has_many :pois
   has_one_attached :cover
 
@@ -26,6 +25,11 @@ class Area < ApplicationRecord
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 
+  def circuits
+    Circuit.area(id)
+  end
+
+  # TODO: remove when app 2.0 is live
   def start_location
     @start_location ||= pois.first&.route&.points&.last
   end

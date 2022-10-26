@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_24_154350) do
+ActiveRecord::Schema.define(version: 2022_10_26_082130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -69,9 +69,7 @@ ActiveRecord::Schema.define(version: 2022_10_24_154350) do
     t.string "color"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "area_id"
     t.integer "order"
-    t.index ["area_id"], name: "index_circuits_on_area_id"
   end
 
   create_table "lines", force: :cascade do |t|
@@ -133,6 +131,5 @@ ActiveRecord::Schema.define(version: 2022_10_24_154350) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "boulders", "areas"
-  add_foreign_key "circuits", "areas"
   add_foreign_key "problems", "areas"
 end
