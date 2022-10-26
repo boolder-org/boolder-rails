@@ -33,8 +33,8 @@ namespace :app do
       factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
     end
 
-    circuit_features = Circuit.area(area_id).map do |circuit|
-      line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
+    circuit_features = Area.find(area_id).circuits.map do |circuit|
+      line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location)) # FIXME: how to deal with circuits belonging to several areas?
       factory.feature(line_string, "circuit_#{circuit.id}", { color: circuit.color })
     end
 
