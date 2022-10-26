@@ -280,6 +280,16 @@
   p
     | Good to know: the boulder chaos and the wiped out paint make it hard to find your way around. Some parts of the area are also closed because of soil erosion.
 
+- if @area.id == 43
+  p 
+    | Cuvier Ouest is a small area located right next to <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+  p
+    | It offers a few dozen problems graded 7, and a blue circuit (graded between 4 and 6).
+  p
+    | The area is pretty wild, it's not super easy to find your way around.
+  p
+    | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
+
 - if @area.id == 44
   p 
     | Cuvier Nord is a small area located right next to <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
