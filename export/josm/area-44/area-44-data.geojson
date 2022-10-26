@@ -6,272 +6,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.64099075982,
-          48.4480951697
-        ]
-      },
-      "properties": {
-        "name": "Le Dos Fin",
-        "problemId": 10183
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64060694691,
-          48.44734003364
-        ]
-      },
-      "properties": {
-        "name": "La Foire aux Grattons",
-        "problemId": 10108
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64050795663,
-          48.44731929565
-        ]
-      },
-      "properties": {
-        "name": "Abominaffreux",
-        "problemId": 10238
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64049529996,
-          48.44728999556
-        ]
-      },
-      "properties": {
-        "name": "L'Art de la Diagonale",
-        "problemId": 10188
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64050845954,
-          48.44732229793
-        ]
-      },
-      "properties": {
-        "name": "Affrominable",
-        "problemId": 10240
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64047250118,
-          48.44742654381
-        ]
-      },
-      "properties": {
-        "name": "La Belle Arête (en traversée)",
-        "problemId": 10113
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64049529996,
-          48.44741853773
-        ]
-      },
-      "properties": {
-        "name": "Blue 9 La Tangente",
-        "problemId": 10114
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64043461498,
-          48.44743788575
-        ]
-      },
-      "properties": {
-        "name": "La Belle Arête",
-        "problemId": 10112
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64120135192,
-          48.44805713216
-        ]
-      },
-      "properties": {
-        "name": "Ludus (sans convention)",
-        "problemId": 10168
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64090578458,
-          48.44764560051
-        ]
-      },
-      "properties": {
-        "name": "Vibranium",
-        "problemId": 10233
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.6412446421,
-          48.44881024177
-        ]
-      },
-      "properties": {
-        "name": "Vision",
-        "problemId": 10229
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64204159312,
-          48.44816042904
-        ]
-      },
-      "properties": {
-        "name": "Blue 25 La Fausse Oppo",
-        "problemId": 10154
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.6419745379,
-          48.44811417235
-        ]
-      },
-      "properties": {
-        "name": "Grosses Baffes",
-        "problemId": 10153
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64047920637,
-          48.44752661989
-        ]
-      },
-      "properties": {
-        "name": "Blue 12 La Sécante",
-        "problemId": 10122
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64130666818,
-          48.44885249489
-        ]
-      },
-      "properties": {
-        "name": "Vipère Poussette (droite)",
-        "problemId": 10225
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64121211998,
-          48.44902506539
-        ]
-      },
-      "properties": {
-        "name": "Elastiband",
-        "problemId": 10223
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64125486355,
-          48.44804510807
-        ]
-      },
-      "properties": {
-        "name": "Phoenix (intégral)",
-        "problemId": 10175
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64088690214,
-          48.44718947468
-        ]
-      },
-      "properties": {
-        "name": "Voyage en Oppos",
-        "problemId": 10111
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64048557695,
-          48.4472859925
-        ]
-      },
-      "properties": {
-        "name": "Le Théorème (assis)",
-        "problemId": 10106
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.64049060609,
           48.44729088512
         ]
@@ -391,34 +125,6 @@
       "properties": {
         "name": "Fantasme",
         "problemId": 10235
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64042858001,
-          48.44755241696
-        ]
-      },
-      "properties": {
-        "name": "L'Huître (assis)",
-        "problemId": 10117
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64084700461,
-          48.44891253874
-        ]
-      },
-      "properties": {
-        "name": "Beat Cheese (debout)",
-        "problemId": 10220
       }
     },
     {
@@ -678,20 +384,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.64050988447,
-          48.44731796129
-        ]
-      },
-      "properties": {
-        "name": "Affrominable (assis)",
-        "problemId": 10241
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.64116200934,
           48.44746520139
         ]
@@ -783,20 +475,6 @@
       "properties": {
         "name": "La Pause",
         "problemId": 10109
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64049027082,
-          48.44728421337
-        ]
-      },
-      "properties": {
-        "name": "Blue 8 Le Théorème",
-        "problemId": 10105
       }
     },
     {
@@ -902,20 +580,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.64124900069,
-          48.44880690599
-        ]
-      },
-      "properties": {
-        "name": "La Vision d'Ultron (debout)",
-        "problemId": 10231
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.64115433791,
           48.4474719653
         ]
@@ -937,6 +601,20 @@
       "properties": {
         "name": "Pilier et Rondeurs",
         "problemId": 10146
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63971028692,
+          48.44716415412
+        ]
+      },
+      "properties": {
+        "name": "Orange 48 L'Envers du Pascal",
+        "problemId": 434
       }
     },
     {
@@ -1210,20 +888,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.64008257504,
-          48.44832388357
-        ]
-      },
-      "properties": {
-        "name": "Love Compresse",
-        "problemId": 10211
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.64142350987,
           48.44740302479
         ]
@@ -1364,6 +1028,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.64016974684,
+          48.4473071197
+        ]
+      },
+      "properties": {
+        "name": "Tom Pouce",
+        "problemId": 10103
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.64004636522,
           48.44834879092
         ]
@@ -1392,13 +1070,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.64004066553,
-          48.44830498067
+          2.64099075982,
+          48.4480951697
         ]
       },
       "properties": {
-        "name": "Dynamic Love",
-        "problemId": 10207
+        "name": "Le Dos Fin",
+        "problemId": 10183
       }
     },
     {
@@ -1406,13 +1084,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.64016974684,
-          48.4473071197
+          2.64004066553,
+          48.44830498067
         ]
       },
       "properties": {
-        "name": "Tom Pouce",
-        "problemId": 10103
+        "name": "Dynamic Love",
+        "problemId": 10207
       }
     },
     {
@@ -1469,6 +1147,20 @@
       "properties": {
         "name": "La Trompe à Vide",
         "problemId": 10213
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64060694691,
+          48.44734003364
+        ]
+      },
+      "properties": {
+        "name": "La Foire aux Grattons",
+        "problemId": 10108
       }
     },
     {
@@ -1651,20 +1343,6 @@
       "properties": {
         "name": "Le 49-3 (gauche)",
         "problemId": 10200
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64118425679,
-          48.44806408763
-        ]
-      },
-      "properties": {
-        "name": "Makhno (prolongé)",
-        "problemId": 10165
       }
     },
     {
@@ -1896,6 +1574,412 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.64002880816,
+          48.44734475061
+        ]
+      },
+      "properties": {
+        "name": "Orange 45 La Verte",
+        "problemId": 431
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64011859971,
+          48.44732984192
+        ]
+      },
+      "properties": {
+        "name": "Orange 46 La Déviation",
+        "problemId": 432
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64016178275,
+          48.44729125909
+        ]
+      },
+      "properties": {
+        "name": "Orange 47 Le Petit Mur",
+        "problemId": 433
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64050795663,
+          48.44731929565
+        ]
+      },
+      "properties": {
+        "name": "Abominaffreux",
+        "problemId": 10238
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64049529996,
+          48.44728999556
+        ]
+      },
+      "properties": {
+        "name": "L'Art de la Diagonale",
+        "problemId": 10188
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64050845954,
+          48.44732229793
+        ]
+      },
+      "properties": {
+        "name": "Affrominable",
+        "problemId": 10240
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64047250118,
+          48.44742654381
+        ]
+      },
+      "properties": {
+        "name": "La Belle Arête (en traversée)",
+        "problemId": 10113
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64049529996,
+          48.44741853773
+        ]
+      },
+      "properties": {
+        "name": "Blue 9 La Tangente",
+        "problemId": 10114
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64043461498,
+          48.44743788575
+        ]
+      },
+      "properties": {
+        "name": "La Belle Arête",
+        "problemId": 10112
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64120135192,
+          48.44805713216
+        ]
+      },
+      "properties": {
+        "name": "Ludus (sans convention)",
+        "problemId": 10168
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64090578458,
+          48.44764560051
+        ]
+      },
+      "properties": {
+        "name": "Vibranium",
+        "problemId": 10233
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6412446421,
+          48.44881024177
+        ]
+      },
+      "properties": {
+        "name": "Vision",
+        "problemId": 10229
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64204159312,
+          48.44816042904
+        ]
+      },
+      "properties": {
+        "name": "Blue 25 La Fausse Oppo",
+        "problemId": 10154
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6419745379,
+          48.44811417235
+        ]
+      },
+      "properties": {
+        "name": "Grosses Baffes",
+        "problemId": 10153
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64047920637,
+          48.44752661989
+        ]
+      },
+      "properties": {
+        "name": "Blue 12 La Sécante",
+        "problemId": 10122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64042858001,
+          48.44755241696
+        ]
+      },
+      "properties": {
+        "name": "L'Huître (assis)",
+        "problemId": 10117
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64084700461,
+          48.44891253874
+        ]
+      },
+      "properties": {
+        "name": "Beat Cheese (debout)",
+        "problemId": 10220
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64050988447,
+          48.44731796129
+        ]
+      },
+      "properties": {
+        "name": "Affrominable (assis)",
+        "problemId": 10241
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64049027082,
+          48.44728421337
+        ]
+      },
+      "properties": {
+        "name": "Blue 8 Le Théorème",
+        "problemId": 10105
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64124900069,
+          48.44880690599
+        ]
+      },
+      "properties": {
+        "name": "La Vision d'Ultron (debout)",
+        "problemId": 10231
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64008257504,
+          48.44832388357
+        ]
+      },
+      "properties": {
+        "name": "Love Compresse",
+        "problemId": 10211
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64118425679,
+          48.44806408763
+        ]
+      },
+      "properties": {
+        "name": "Makhno (prolongé)",
+        "problemId": 10165
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64181226425,
+          48.44794560198
+        ]
+      },
+      "properties": {
+        "name": "Faux Penchant",
+        "problemId": 10150
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64032095638,
+          48.44783707594
+        ]
+      },
+      "properties": {
+        "name": "La Nageoire",
+        "problemId": 10198
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64130666818,
+          48.44885249489
+        ]
+      },
+      "properties": {
+        "name": "Vipère Poussette (droite)",
+        "problemId": 10225
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64121211998,
+          48.44902506539
+        ]
+      },
+      "properties": {
+        "name": "Elastiband",
+        "problemId": 10223
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64125486355,
+          48.44804510807
+        ]
+      },
+      "properties": {
+        "name": "Phoenix (intégral)",
+        "problemId": 10175
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64088690214,
+          48.44718947468
+        ]
+      },
+      "properties": {
+        "name": "Voyage en Oppos",
+        "problemId": 10111
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.64048557695,
+          48.4472859925
+        ]
+      },
+      "properties": {
+        "name": "Le Théorème (assis)",
+        "problemId": 10106
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           2.63995382902,
           48.44732335429
         ]
@@ -2036,20 +2120,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          2.64181226425,
-          48.44794560198
-        ]
-      },
-      "properties": {
-        "name": "Faux Penchant",
-        "problemId": 10150
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           2.64151829061,
           48.44733763212
         ]
@@ -2057,20 +2127,6 @@
       "properties": {
         "name": "Blue 20 Le Culot",
         "problemId": 10138
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          2.64032095638,
-          48.44783707594
-        ]
-      },
-      "properties": {
-        "name": "La Nageoire",
-        "problemId": 10198
       }
     },
     {
@@ -2127,6 +2183,128 @@
       "properties": {
         "name": "Asphyxié",
         "problemId": 10216
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.6407011595,
+              48.44888318398
+            ],
+            [
+              2.64069981839,
+              48.44887895867
+            ],
+            [
+              2.64070048895,
+              48.44887451098
+            ],
+            [
+              2.64070451226,
+              48.44887095282
+            ],
+            [
+              2.64071155306,
+              48.44887095282
+            ],
+            [
+              2.64071725275,
+              48.44887339905
+            ],
+            [
+              2.64072228189,
+              48.44888184967
+            ],
+            [
+              2.64072161134,
+              48.44888629736
+            ],
+            [
+              2.64071591165,
+              48.44888896597
+            ],
+            [
+              2.64070920612,
+              48.4488885212
+            ],
+            [
+              2.6407011595,
+              48.44888318398
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "boulderId": 7727
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.64057006653,
+              48.4474997104
+            ],
+            [
+              2.64054994997,
+              48.447504603
+            ],
+            [
+              2.64054324444,
+              48.44750482539
+            ],
+            [
+              2.64053653892,
+              48.44750260147
+            ],
+            [
+              2.6405284923,
+              48.44749526259
+            ],
+            [
+              2.64053285088,
+              48.44749148194
+            ],
+            [
+              2.64056503739,
+              48.44748080718
+            ],
+            [
+              2.64058448341,
+              48.44747613698
+            ],
+            [
+              2.64059755918,
+              48.44747591459
+            ],
+            [
+              2.64060258832,
+              48.44747880567
+            ],
+            [
+              2.64060191777,
+              48.44748703413
+            ],
+            [
+              2.64059353586,
+              48.44749326107
+            ],
+            [
+              2.64057006653,
+              48.4474997104
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "boulderId": 7899
       }
     },
     {
@@ -3308,128 +3486,6 @@
       },
       "properties": {
         "boulderId": 7812
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.6407011595,
-              48.44888318398
-            ],
-            [
-              2.64069981839,
-              48.44887895867
-            ],
-            [
-              2.64070048895,
-              48.44887451098
-            ],
-            [
-              2.64070451226,
-              48.44887095282
-            ],
-            [
-              2.64071155306,
-              48.44887095282
-            ],
-            [
-              2.64071725275,
-              48.44887339905
-            ],
-            [
-              2.64072228189,
-              48.44888184967
-            ],
-            [
-              2.64072161134,
-              48.44888629736
-            ],
-            [
-              2.64071591165,
-              48.44888896597
-            ],
-            [
-              2.64070920612,
-              48.4488885212
-            ],
-            [
-              2.6407011595,
-              48.44888318398
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "boulderId": 7727
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.64057006653,
-              48.4474997104
-            ],
-            [
-              2.64054994997,
-              48.447504603
-            ],
-            [
-              2.64054324444,
-              48.44750482539
-            ],
-            [
-              2.64053653892,
-              48.44750260147
-            ],
-            [
-              2.6405284923,
-              48.44749526259
-            ],
-            [
-              2.64053285088,
-              48.44749148194
-            ],
-            [
-              2.64056503739,
-              48.44748080718
-            ],
-            [
-              2.64058448341,
-              48.44747613698
-            ],
-            [
-              2.64059755918,
-              48.44747591459
-            ],
-            [
-              2.64060258832,
-              48.44747880567
-            ],
-            [
-              2.64060191777,
-              48.44748703413
-            ],
-            [
-              2.64059353586,
-              48.44749326107
-            ],
-            [
-              2.64057006653,
-              48.4474997104
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "boulderId": 7899
       }
     },
     {
