@@ -1,5 +1,6 @@
 class Circuit < ApplicationRecord
   has_many :problems
+  has_many :circuits, -> { distinct }, through: :problems
 
   default_scope { order(order: :asc, id: :asc) }
 
@@ -8,8 +9,6 @@ class Circuit < ApplicationRecord
   COLOR_VALUES.each do |color|
     scope color, -> { where(color: color) } 
   end
-
-  scope :area, ->(area_id) { where(id: Area.find(area_id).problems.pluck(:circuit_id).uniq.compact) }
 
   validates :color, inclusion: { in: COLOR_VALUES }
 

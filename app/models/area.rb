@@ -1,6 +1,7 @@
 class Area < ApplicationRecord
   has_many :boulders
   has_many :problems
+  has_many :circuits, -> { distinct }, through: :problems
   has_many :pois
   has_one_attached :cover
 
@@ -24,10 +25,6 @@ class Area < ApplicationRecord
 
   scope :published, -> { where(published: true) }
   include HasTagsConcern
-
-  def circuits
-    Circuit.area(id)
-  end
 
   # TODO: remove when app 2.0 is live
   def start_location
