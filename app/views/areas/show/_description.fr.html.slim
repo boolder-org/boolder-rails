@@ -286,6 +286,16 @@
   p
     | À savoir : Il est difficile de se repérer dans le chaos rocheux, notamment avec les peintures qui sont pour la plupart effacées. Plusieurs zones sont également fermées à cause de l'érosion du sol.
 
+- if @area.id == 43
+  p 
+    | Cuvier Ouest est un petit secteur situé à côté de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
+  p
+    | Il offre quelques dizaines de voies de niveau 7, ainsi qu'un circuit bleu (voies de niveau 4 à 6).
+  p
+    | Le secteur est assez sauvage, il est assez difficile de se déplacer et de se repérer.
+  p
+    | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
+
 - if @area.id == 44
   p 
     | Cuvier Nord est un petit secteur situé à côté de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
