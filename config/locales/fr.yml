@@ -125,7 +125,7 @@ fr:
         metas:
           title: "%{problem} - %{grade} - %{area}"
     search:
-      placeholder: Voie ou secteur
+      placeholder: Nom de voie ou secteur
       clear: Effacer
       cancel: Annuler
       submit: Chercher

@@ -125,7 +125,7 @@ en:
         metas:
           title: "%{problem} - %{grade} - %{area}"
     search:
-      placeholder: Problem or area
+      placeholder: Name of problem or area
       clear: Clear
       cancel: Cancel
       submit: Search
