@@ -11,7 +11,7 @@ class Area < ApplicationRecord
 
   include AlgoliaSearch
   algoliasearch if: :published, enqueue: true do
-    attributes :name
+    attributes :name, :priority
     attribute :bounds do 
       { 
         south_west: { lat: bounds[:south_west]&.lat || 0.0, lng: bounds[:south_west]&.lon || 0.0 },
@@ -19,6 +19,7 @@ class Area < ApplicationRecord
       }
     end
     searchableAttributes [:name]
+    customRanking ['asc(priority)']
   end
 
   TAGS = %i(beginner_friendly train_station_closeby dry_fast)
