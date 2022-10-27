@@ -57,7 +57,7 @@ export default class extends Controller {
                     indexName: 'Area',
                     query,
                     params: {
-                      hitsPerPage: 3,
+                      hitsPerPage: 5,
                       highlightPreTag: '<strong>',
                       highlightPostTag: '</strong>',
                     },
