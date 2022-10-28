@@ -72,7 +72,7 @@ namespace :appp do
         db.execute(
           "INSERT INTO lines (id, problem_id, topo_id, coordinates)
           VALUES (?, ?, ?, ?)", 
-          [l.id, l.problem_id, l.topo_id, l.coordinates.to_s]
+          [l.id, l.problem_id, l.topo_id, l.coordinates.to_json]
         )
       end
 
