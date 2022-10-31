@@ -43,7 +43,7 @@ namespace :appp do
         db.execute(
           "INSERT INTO problems (id, name, grade, latitude, longitude, circuit_id, circuit_number, circuit_color, steepness, area_id, bleau_info_id, featured, parent_id)
           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
-          [p.id, p.name, p.grade, p.location&.lat, p.location&.lon, p.circuit_id, p.circuit_number, p.circuit&.color, p.steepness, p.area_id, p.bleau_info_id, p.featured ? 1 : 0, p.parent_id]
+          [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, p.circuit_id, p.circuit_number, p.circuit&.color, p.steepness, p.area_id, p.bleau_info_id, p.featured ? 1 : 0, p.parent_id]
         )
       end
 
