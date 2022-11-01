@@ -2,7 +2,7 @@
   "name": "boolder",
   "private": true,
   "dependencies": {
-    "@algolia/autocomplete-js": "^1.5.0",
+    "@algolia/autocomplete-js": "^1.7.0",
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@hotwired/stimulus": "^3.1.0",
     "@hotwired/stimulus-webpack-helpers": "^1.0.1",
