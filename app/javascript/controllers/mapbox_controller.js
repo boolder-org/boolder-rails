@@ -7,6 +7,7 @@ export default class extends Controller {
     "filterCounter", "filterIcon" 
   ]
   static values = { 
+    token: String,
     bounds: Object,
     problem: Object,
     locale: { type: String, default: 'en' },
@@ -14,7 +15,7 @@ export default class extends Controller {
   }
 
   connect() {
-    mapboxgl.accessToken = 'pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbDl5bDZkdDIwNmhhM3BsbnJqbWprcnl5In0.qTno2zICtJfl6UJnNAdmZQ';
+    mapboxgl.accessToken = this.tokenValue;
 
     this.map = new mapboxgl.Map({
       container: 'map',
