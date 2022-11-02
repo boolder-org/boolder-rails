@@ -25,13 +25,17 @@ namespace :imgix do
       paths.each do |path|
 
         response = head(path)
+        puts Time.now
         puts "Topo ##{topo.id}"
         puts path
         puts response["x-cache"]
         # response.each { |key, value| puts key.ljust(40) + " : " + value }
 
-        sleep 1.0
+        sleep 0.5
       end
+
+    rescue Exception => e
+      puts e.to_s.red
     end
   end
 end
