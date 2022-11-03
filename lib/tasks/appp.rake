@@ -8,7 +8,8 @@ namespace :appp do
 
       db = SQLite3::Database.new file_name
 
-      # FIXME: which size is best?
+      # FIXME: put a size on columns?
+      # TODO: set not null columns?
       db.execute <<-SQL
         create table problems (
           id int,
@@ -20,6 +21,7 @@ namespace :appp do
           circuit_number text,
           circuit_color text,
           steepness text,
+          sit_start bool,
           area_id int,
           bleau_info_id text,
           featured bool,
@@ -41,9 +43,13 @@ namespace :appp do
 
       Problem.joins(:area).where(area: { published: true }).find_each do |p|
         db.execute(
-          "INSERT INTO problems (id, name, grade, latitude, longitude, circuit_id, circuit_number, circuit_color, steepness, area_id, bleau_info_id, featured, parent_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
-          [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, p.circuit_id, p.circuit_number, p.circuit&.color, p.steepness, p.area_id, p.bleau_info_id, p.featured ? 1 : 0, p.parent_id]
+          "INSERT INTO problems (id, name, grade, latitude, longitude, circuit_id, circuit_number, 
+          circuit_color, steepness, sit_start, area_id, bleau_info_id, 
+          featured, parent_id)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, p.circuit_id, p.circuit_number, 
+            p.circuit&.color, p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id, 
+            p.featured ? 1 : 0, p.parent_id]
         )
       end
 
