@@ -13,10 +13,11 @@ namespace :mapbox do
       hull = area.boulders.select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.00007) as hull").to_a.first.hull
       hash = {}.with_indifferent_access
       hash[:area_id] = area.id
-      hash[:south_west_lat] = area.bounds[:south_west].lat
-      hash[:south_west_lon] = area.bounds[:south_west].lon
-      hash[:north_east_lat] = area.bounds[:north_east].lat
-      hash[:north_east_lon] = area.bounds[:north_east].lon
+      # we store lat/lon as strings to make it easier to edit the geojson in tools like JOSM
+      hash[:south_west_lat] = area.bounds[:south_west].lat.to_s
+      hash[:south_west_lon] = area.bounds[:south_west].lon.to_s
+      hash[:north_east_lat] = area.bounds[:north_east].lat.to_s
+      hash[:north_east_lon] = area.bounds[:north_east].lon.to_s
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
       hull_features << factory.feature(hull, nil, hash)
 
@@ -24,10 +25,11 @@ namespace :mapbox do
       hash[:name] = area.short_name.presence || area.name
       hash[:area_id] = area.id
       hash[:priority] = area.priority
-      hash[:south_west_lat] = area.bounds[:south_west].lat
-      hash[:south_west_lon] = area.bounds[:south_west].lon
-      hash[:north_east_lat] = area.bounds[:north_east].lat
-      hash[:north_east_lon] = area.bounds[:north_east].lon
+      # we store lat/lon as strings to make it easier to edit the geojson in tools like JOSM
+      hash[:south_west_lat] = area.bounds[:south_west].lat.to_s
+      hash[:south_west_lon] = area.bounds[:south_west].lon.to_s
+      hash[:north_east_lat] = area.bounds[:north_east].lat.to_s
+      hash[:north_east_lon] = area.bounds[:north_east].lon.to_s
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
       area_features << factory.feature(hull.centroid, nil, hash)
     end
