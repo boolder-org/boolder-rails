@@ -54,6 +54,30 @@ namespace :appp do
       end
 
       db.execute <<-SQL
+        create table areas (
+          id int,
+          name text,
+          south_west_lat real,
+          south_west_lon real,
+          north_east_lat real,
+          north_east_lon real
+        );
+      SQL
+
+      db.execute <<-SQL
+        CREATE INDEX area_idx ON areas(id);
+      SQL
+
+      Area.published.each do |a|
+        db.execute(
+          "INSERT INTO areas (id, name, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
+          VALUES (?, ?, ?, ?, ?, ?)", 
+          [a.id, a.name.presence, a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon]
+        )
+      end
+
+
+      db.execute <<-SQL
         create table lines (
           id int,
           problem_id int,
@@ -82,8 +106,10 @@ namespace :appp do
         )
       end
 
+      puts "exported boolder.db".green
+
     rescue SQLite3::Exception => e 
-      puts "Exception occurred"
+      puts "Exception occurred".red
       puts e
     ensure
       db.close if db
