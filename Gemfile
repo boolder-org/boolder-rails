@@ -56,6 +56,7 @@ group :development do
   gem 'jwt', '~> 2.2.2'
   gem 'ruby-vips'
   gem 'colorize', '~> 0.8.1'
+  gem 'sqlite3'
 end
 
 group :test do

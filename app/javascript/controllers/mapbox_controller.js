@@ -75,7 +75,8 @@ export default class extends Controller {
   addLayers() {
     this.map.addSource('problems', {
       type: 'vector',
-      url: 'mapbox://nmondollot.4xsv235p' 
+      url: 'mapbox://nmondollot.4xsv235p',
+      promoteId: "id"
     });
 
     this.map.addLayer({
