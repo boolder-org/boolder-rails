@@ -57,12 +57,12 @@ namespace :app do
 
       db.execute <<-SQL
         create table areas (
-          id int,
-          name text,
-          south_west_lat real,
-          south_west_lon real,
-          north_east_lat real,
-          north_east_lon real
+          id int NOT NULL,
+          name text NOT NULL,
+          south_west_lat real NOT NULL,
+          south_west_lon real NOT NULL,
+          north_east_lat real NOT NULL,
+          north_east_lon real NOT NULL
         );
       SQL
 
@@ -81,9 +81,9 @@ namespace :app do
 
       db.execute <<-SQL
         create table lines (
-          id int,
-          problem_id int,
-          topo_id int,
+          id int NOT NULL,
+          problem_id int NOT NULL,
+          topo_id int NOT NULL,
           coordinates text
         );
       SQL
