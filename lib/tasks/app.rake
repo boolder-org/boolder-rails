@@ -1,4 +1,4 @@
-require 'vips'
+# require 'vips'
 
 namespace :app do
   task db: :environment do
