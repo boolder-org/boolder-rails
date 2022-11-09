@@ -14,19 +14,19 @@ namespace :app do
       # TODO: set not null columns?
       db.execute <<-SQL
         create table problems (
-          id int,
+          id int NOT NULL,
           name text, 
           grade text,
-          latitude real,
-          longitude real,
+          latitude real NOT NULL,
+          longitude real NOT NULL,
           circuit_id int,
           circuit_number text,
           circuit_color text,
-          steepness text,
-          sit_start bool,
-          area_id int,
+          steepness text NOT NULL,
+          sit_start bool NOT NULL,
+          area_id int NOT NULL,
           bleau_info_id text,
-          featured bool,
+          featured bool NOT NULL,
           parent_id int
         );
       SQL
