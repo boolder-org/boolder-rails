@@ -2,7 +2,7 @@
 
 namespace :app do
   task db: :environment do
-    file_name = Rails.root.join('export', "appp", "boolder.db")
+    file_name = Rails.root.join('export', "app", "boolder.db")
 
     File.delete(file_name) if File.exist?(file_name)
 

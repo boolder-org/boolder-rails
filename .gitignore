@@ -24,7 +24,6 @@
 
 # Ignore exports (json & photos for client apps)
 /export/app/*
-/export/appp/*
 /export/topogether/*
 
 /public/assets
