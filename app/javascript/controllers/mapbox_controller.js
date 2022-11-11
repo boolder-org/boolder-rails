@@ -86,7 +86,14 @@ export default class extends Controller {
       'source-layer': 'problems-ayes3a',
       'minzoom': 15,
       'layout': {
-        'visibility': 'visible'
+        'visibility': 'visible',
+        'circle-sort-key': 
+          [
+            "case",
+            ["has", "circuitId"],
+            2,
+            1
+          ]
       },
       'paint': {
         'circle-radius': 
