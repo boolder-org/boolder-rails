@@ -62,6 +62,20 @@ class Circuit < ApplicationRecord
     avg(landing_scores).round(3)
   end
 
+  def avg_risk_score
+    problems_with_landing_and_height = problems.select{|p| p.landing.present? && p.height.present? }
+    risk_scores =problems_with_landing_and_height.map{|p| p.risk_score }
+    return 0 if risk_scores.count == 0
+    avg(risk_scores).round(1)
+  end
+
+  def median_risk_score
+    problems_with_landing_and_height = problems.select{|p| p.landing.present? && p.height.present? }
+    risk_scores =problems_with_landing_and_height.map{|p| p.risk_score }
+    return 0 if risk_scores.count == 0
+    median(risk_scores).round(1)
+  end
+
   def avg(array)
     array.reduce(:+) / array.size.to_f
   end
