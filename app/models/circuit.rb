@@ -1,6 +1,6 @@
 class Circuit < ApplicationRecord
   has_many :problems
-  has_many :circuits, -> { distinct }, through: :problems
+  has_many :areas, -> { distinct }, through: :problems
 
   default_scope { order(order: :asc, id: :asc) }
 
