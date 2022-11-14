@@ -19,6 +19,7 @@ class Area < ApplicationRecord
       }
     end
     searchableAttributes [:name]
+    synonyms [['bas cuvier', 'cuvier']]
     customRanking ['asc(priority)']
   end
 
