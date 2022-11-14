@@ -35,7 +35,7 @@ namespace :imgix do
       end
 
     rescue Exception => e
-      puts e.to_s.red
+      puts e.to_s
     end
   end
 end
