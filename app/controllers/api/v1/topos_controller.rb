@@ -3,6 +3,11 @@ class Api::V1::ToposController < ActionController::Base
 
   def show
     topo = Topo.find(params[:id])
-    redirect_to ix_image_url(topo.photo.key, w: 800, ar:'4:3', fit: 'crop')
+
+    result = {
+      url: ix_image_url(topo.photo.key, w: 800, ar:'4:3', fit: 'crop')
+    }
+
+    render json: result
   end
 end
