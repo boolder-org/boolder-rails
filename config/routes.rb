@@ -67,6 +67,12 @@ Rails.application.routes.draw do
     get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
   end
 
+  namespace :api do
+      namespace :v1 do
+        resources :topos, only: :show
+      end
+    end
+
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: 'welcome#root'
 end
