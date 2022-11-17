@@ -1,0 +1,8063 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6291885552353436,
+          48.439570330403534
+        ]
+      },
+      "properties": {
+        "name": "Yellow 1 La Balance",
+        "topoId": 7446,
+        "horizontalAccuracy": 4.7,
+        "heading": 239.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6291885552353436,
+            48.439570330403534
+          ],
+          [
+            2.6291653731052063,
+            48.439561213355056
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6291420886192873,
+          48.43961539574373
+        ]
+      },
+      "properties": {
+        "name": "Red 1 La Balance",
+        "topoId": 7448,
+        "horizontalAccuracy": 4.7,
+        "heading": 191.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6291420886192873,
+            48.43961539574373
+          ],
+          [
+            2.629136839382424,
+            48.4395978596578
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6291857659841225,
+          48.43954200395268
+        ]
+      },
+      "properties": {
+        "name": "Yellow 2 La Bombé",
+        "topoId": 7449,
+        "horizontalAccuracy": 4.6,
+        "heading": 158.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6291857659841225,
+            48.43954200395268
+          ],
+          [
+            2.6291954945842457,
+            48.43952533099554
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629301112445653,
+          48.439466706425264
+        ]
+      },
+      "properties": {
+        "name": "Yellow 3 La Page",
+        "topoId": 7450,
+        "horizontalAccuracy": 4.7,
+        "heading": 81.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629301112445653,
+            48.439466706425264
+          ],
+          [
+            2.629327791173189,
+            48.43946923425701
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629340299326579,
+          48.43956890706676
+        ]
+      },
+      "properties": {
+        "name": "Yellow 4 La Poupe",
+        "topoId": 7451,
+        "horizontalAccuracy": 4.6,
+        "heading": 99.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629340299326579,
+            48.43956890706676
+          ],
+          [
+            2.6293669199522434,
+            48.43956612267369
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6294089254693302,
+          48.439558242898784
+        ]
+      },
+      "properties": {
+        "name": "La Passe-Crassane",
+        "topoId": 7453,
+        "horizontalAccuracy": 4.7,
+        "heading": 212.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6294089254693302,
+            48.439558242898784
+          ],
+          [
+            2.6293944868417114,
+            48.43954314687159
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6295457038551517,
+          48.43952087174128
+        ]
+      },
+      "properties": {
+        "name": "Yellow 5 Figures de Proue",
+        "topoId": 7458,
+        "horizontalAccuracy": 4.7,
+        "heading": 50.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6295457038551517,
+            48.43952087174128
+          ],
+          [
+            2.6295665128055425,
+            48.43953223254892
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6296107284749204,
+          48.43950516548824
+        ]
+      },
+      "properties": {
+        "name": "Yellow 5 Figures de Proue",
+        "topoId": 7455,
+        "horizontalAccuracy": 4.6,
+        "heading": 332.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6296107284749204,
+            48.43950516548824
+          ],
+          [
+            2.6295980878278216,
+            48.439520955314535
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6296733543467283,
+          48.439559380876325
+        ]
+      },
+      "properties": {
+        "name": "Yellow 5 Figures de Proue",
+        "topoId": 7456,
+        "horizontalAccuracy": 4.7,
+        "heading": 264.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6296733543467283,
+            48.439559380876325
+          ],
+          [
+            2.629646537430877,
+            48.439557609890485
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629949458707281,
+          48.43965521497928
+        ]
+      },
+      "properties": {
+        "name": "Douce Combustion | Combustion | Post Combustion",
+        "topoId": 7459,
+        "horizontalAccuracy": 4.7,
+        "heading": 115.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629949458707281,
+            48.43965521497928
+          ],
+          [
+            2.629973813620815,
+            48.43964756097239
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629949458707281,
+          48.43965521497928
+        ]
+      },
+      "properties": {
+        "name": "Douce Combustion | Combustion | Post Combustion",
+        "topoId": 7459,
+        "horizontalAccuracy": 4.7,
+        "heading": 115.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629949458707281,
+            48.43965521497928
+          ],
+          [
+            2.629973813620815,
+            48.43964756097239
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629949458707281,
+          48.43965521497928
+        ]
+      },
+      "properties": {
+        "name": "Douce Combustion | Combustion | Post Combustion",
+        "topoId": 7459,
+        "horizontalAccuracy": 4.7,
+        "heading": 115.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629949458707281,
+            48.43965521497928
+          ],
+          [
+            2.629973813620815,
+            48.43964756097239
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629988249393766,
+          48.43969354876201
+        ]
+      },
+      "properties": {
+        "name": "Une Vie à Grimper | Une Vie à Grimper (direct) | Une Vie Âgée | À la Recherche du Point G",
+        "topoId": 7460,
+        "horizontalAccuracy": 4.2,
+        "heading": 144.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629988249393766,
+            48.43969354876201
+          ],
+          [
+            2.6300038957692804,
+            48.439678992067
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629988249393766,
+          48.43969354876201
+        ]
+      },
+      "properties": {
+        "name": "Une Vie à Grimper | Une Vie à Grimper (direct) | Une Vie Âgée | À la Recherche du Point G",
+        "topoId": 7460,
+        "horizontalAccuracy": 4.2,
+        "heading": 144.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629988249393766,
+            48.43969354876201
+          ],
+          [
+            2.6300038957692804,
+            48.439678992067
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629988249393766,
+          48.43969354876201
+        ]
+      },
+      "properties": {
+        "name": "Une Vie à Grimper | Une Vie à Grimper (direct) | Une Vie Âgée | À la Recherche du Point G",
+        "topoId": 7460,
+        "horizontalAccuracy": 4.2,
+        "heading": 144.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629988249393766,
+            48.43969354876201
+          ],
+          [
+            2.6300038957692804,
+            48.439678992067
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629988249393766,
+          48.43969354876201
+        ]
+      },
+      "properties": {
+        "name": "Une Vie à Grimper | Une Vie à Grimper (direct) | Une Vie Âgée | À la Recherche du Point G",
+        "topoId": 7460,
+        "horizontalAccuracy": 4.2,
+        "heading": 144.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629988249393766,
+            48.43969354876201
+          ],
+          [
+            2.6300038957692804,
+            48.439678992067
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630500886591738,
+          48.439431404740326
+        ]
+      },
+      "properties": {
+        "name": "Yellow 15 La Tarte aux Bosses",
+        "topoId": 7462,
+        "horizontalAccuracy": 4.6,
+        "heading": 190.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630500886591738,
+            48.439431404740326
+          ],
+          [
+            2.630496125027739,
+            48.43941380743437
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630452028866425,
+          48.4399046258251
+        ]
+      },
+      "properties": {
+        "name": "Plus si Affinité | Le Chimú | Le Totora",
+        "topoId": 7465,
+        "horizontalAccuracy": 4.7,
+        "heading": 311.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630452028866425,
+            48.4399046258251
+          ],
+          [
+            2.6304318652445877,
+            48.43991648764416
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630452028866425,
+          48.4399046258251
+        ]
+      },
+      "properties": {
+        "name": "Plus si Affinité | Le Chimú | Le Totora",
+        "topoId": 7465,
+        "horizontalAccuracy": 4.7,
+        "heading": 311.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630452028866425,
+            48.4399046258251
+          ],
+          [
+            2.6304318652445877,
+            48.43991648764416
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630452028866425,
+          48.4399046258251
+        ]
+      },
+      "properties": {
+        "name": "Plus si Affinité | Le Chimú | Le Totora",
+        "topoId": 7465,
+        "horizontalAccuracy": 4.7,
+        "heading": 311.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630452028866425,
+            48.4399046258251
+          ],
+          [
+            2.6304318652445877,
+            48.43991648764416
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304271258438288,
+          48.439776445784084
+        ]
+      },
+      "properties": {
+        "name": "Le Colosse (gauche) | Le Colosse",
+        "topoId": 7466,
+        "horizontalAccuracy": 3.5,
+        "heading": 278.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304271258438288,
+            48.439776445784084
+          ],
+          [
+            2.6304004757955353,
+            48.439779103409
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302159857029377,
+          48.438883060634545
+        ]
+      },
+      "properties": {
+        "name": "Le Poirier",
+        "topoId": 7505,
+        "horizontalAccuracy": 3.5,
+        "heading": 99.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302159857029377,
+            48.438883060634545
+          ],
+          [
+            2.6302425665199913,
+            48.43888011357119
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304271258438288,
+          48.439776445784084
+        ]
+      },
+      "properties": {
+        "name": "Le Colosse (gauche) | Le Colosse",
+        "topoId": 7466,
+        "horizontalAccuracy": 3.5,
+        "heading": 278.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304271258438288,
+            48.439776445784084
+          ],
+          [
+            2.6304004757955353,
+            48.439779103409
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304096681269034,
+          48.43977552601906
+        ]
+      },
+      "properties": {
+        "name": "Le Colosse (gauche)",
+        "topoId": 7467,
+        "horizontalAccuracy": 4.6,
+        "heading": 345.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304096681269034,
+            48.43977552601906
+          ],
+          [
+            2.630402899650332,
+            48.43979283141565
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6303756797863103,
+          48.43936474088105
+        ]
+      },
+      "properties": {
+        "name": "Yellow 16 La Voie de Fax Man | Red 7 La Dalle du Thalweg",
+        "topoId": 7468,
+        "horizontalAccuracy": 4.7,
+        "heading": 221.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6303756797863103,
+            48.43936474088105
+          ],
+          [
+            2.630357702756405,
+            48.43935142132314
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6303756797863103,
+          48.43936474088105
+        ]
+      },
+      "properties": {
+        "name": "Yellow 16 La Voie de Fax Man | Red 7 La Dalle du Thalweg",
+        "topoId": 7468,
+        "horizontalAccuracy": 4.7,
+        "heading": 221.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6303756797863103,
+            48.43936474088105
+          ],
+          [
+            2.630357702756405,
+            48.43935142132314
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630384964870876,
+          48.43928560153436
+        ]
+      },
+      "properties": {
+        "name": "Yellow 17 Les Trois Pierres",
+        "topoId": 7469,
+        "horizontalAccuracy": 3.5,
+        "heading": 180.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630384964870876,
+            48.43928560153436
+          ],
+          [
+            2.630384972385273,
+            48.43926772290219
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630364216228341,
+          48.43921248640329
+        ]
+      },
+      "properties": {
+        "name": "Red 9 La Petite Teigne",
+        "topoId": 7470,
+        "horizontalAccuracy": 4.7,
+        "heading": 278.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630364216228341,
+            48.43921248640329
+          ],
+          [
+            2.6303375756308385,
+            48.43921518543793
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630250602963036,
+          48.43921921686154
+        ]
+      },
+      "properties": {
+        "name": "Red 10 La Fesse | Le Vrai B.B. | La Fesse (assis)",
+        "topoId": 7487,
+        "horizontalAccuracy": 4.6,
+        "heading": 175.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630250602963036,
+            48.43921921686154
+          ],
+          [
+            2.6302527411396337,
+            48.43920139456609
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630383623766368,
+          48.43921745666187
+        ]
+      },
+      "properties": {
+        "name": "Xenius | Le Soupir du Menuisier | Le Soupir du Menuisier (assis) | Le Soupir du Menuisier (direct)",
+        "topoId": 7471,
+        "horizontalAccuracy": 4.6,
+        "heading": 231.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630383623766368,
+            48.43921745666187
+          ],
+          [
+            2.630362412093423,
+            48.439206428444585
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630383623766368,
+          48.43921745666187
+        ]
+      },
+      "properties": {
+        "name": "Xenius | Le Soupir du Menuisier | Le Soupir du Menuisier (assis) | Le Soupir du Menuisier (direct)",
+        "topoId": 7471,
+        "horizontalAccuracy": 4.6,
+        "heading": 231.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630383623766368,
+            48.43921745666187
+          ],
+          [
+            2.630362412093423,
+            48.439206428444585
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6299831412747463,
+          48.43916821332438
+        ]
+      },
+      "properties": {
+        "name": "Yellow 13 La Vierge",
+        "topoId": 7488,
+        "horizontalAccuracy": 4.7,
+        "heading": 62.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6299831412747463,
+            48.43916821332438
+          ],
+          [
+            2.6300069494370515,
+            48.43917659035745
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630383623766368,
+          48.43921745666187
+        ]
+      },
+      "properties": {
+        "name": "Xenius | Le Soupir du Menuisier | Le Soupir du Menuisier (assis) | Le Soupir du Menuisier (direct)",
+        "topoId": 7471,
+        "horizontalAccuracy": 4.6,
+        "heading": 231.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630383623766368,
+            48.43921745666187
+          ],
+          [
+            2.630362412093423,
+            48.439206428444585
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630383623766368,
+          48.43921745666187
+        ]
+      },
+      "properties": {
+        "name": "Xenius | Le Soupir du Menuisier | Le Soupir du Menuisier (assis) | Le Soupir du Menuisier (direct)",
+        "topoId": 7471,
+        "horizontalAccuracy": 4.6,
+        "heading": 231.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630383623766368,
+            48.43921745666187
+          ],
+          [
+            2.630362412093423,
+            48.439206428444585
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304479422218354,
+          48.43920916205452
+        ]
+      },
+      "properties": {
+        "name": "Red 8 Le Sillon",
+        "topoId": 7472,
+        "horizontalAccuracy": 4.8,
+        "heading": 203.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304479422218354,
+            48.43920916205452
+          ],
+          [
+            2.6304373023939567,
+            48.4391927357824
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630407931285566,
+          48.43918564733904
+        ]
+      },
+      "properties": {
+        "name": "Yellow 18 ",
+        "topoId": 7473,
+        "horizontalAccuracy": 3.5,
+        "heading": 35.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630407931285566,
+            48.43918564733904
+          ],
+          [
+            2.6304234586072957,
+            48.43920026017307
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304234446946513,
+          48.439146145499876
+        ]
+      },
+      "properties": {
+        "name": "Yellow 19 ",
+        "topoId": 7474,
+        "horizontalAccuracy": 4.7,
+        "heading": 195.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304234446946513,
+            48.439146145499876
+          ],
+          [
+            2.6304162910653885,
+            48.439128908203294
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301476101505985,
+          48.4390416895545
+        ]
+      },
+      "properties": {
+        "name": "Red 14 La Fissure Oblique",
+        "topoId": 7475,
+        "horizontalAccuracy": 4.7,
+        "heading": 153.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301476101505985,
+            48.4390416895545
+          ],
+          [
+            2.630159735650287,
+            48.43902572276126
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301560939893984,
+          48.43907641639796
+        ]
+      },
+      "properties": {
+        "name": "Yellow 12 Le Dinosaure",
+        "topoId": 7477,
+        "horizontalAccuracy": 4.7,
+        "heading": 311.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301560939893984,
+            48.43907641639796
+          ],
+          [
+            2.630135817792689,
+            48.43908819365089
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6303116403929354,
+          48.43904020512238
+        ]
+      },
+      "properties": {
+        "name": "Yellow 20 ",
+        "topoId": 7478,
+        "horizontalAccuracy": 4.7,
+        "heading": 230.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6303116403929354,
+            48.43904020512238
+          ],
+          [
+            2.630290829290093,
+            48.43902884594008
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630201568829482,
+          48.43905468010228
+        ]
+      },
+      "properties": {
+        "name": "Patate de Corail",
+        "topoId": 7479,
+        "horizontalAccuracy": 4.6,
+        "heading": 140.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630201568829482,
+            48.43905468010228
+          ],
+          [
+            2.630218722647185,
+            48.43904089093401
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301103737229767,
+          48.43903443780613
+        ]
+      },
+      "properties": {
+        "name": "Red 13 La Volte Face",
+        "topoId": 7480,
+        "horizontalAccuracy": 4.6,
+        "heading": 31.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301103737229767,
+            48.43903443780613
+          ],
+          [
+            2.6301245407751033,
+            48.439049646807696
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301694661403356,
+          48.439125297636494
+        ]
+      },
+      "properties": {
+        "name": "Red 12 Le Dinosaure Agile | Le Dinosaure Agile (assis) | Le Dinosaure à Gilles",
+        "topoId": 7481,
+        "horizontalAccuracy": 4.6,
+        "heading": 203.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301694661403356,
+            48.439125297636494
+          ],
+          [
+            2.6301587093349252,
+            48.43910890490277
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301694661403356,
+          48.439125297636494
+        ]
+      },
+      "properties": {
+        "name": "Red 12 Le Dinosaure Agile | Le Dinosaure Agile (assis) | Le Dinosaure à Gilles",
+        "topoId": 7481,
+        "horizontalAccuracy": 4.6,
+        "heading": 203.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301694661403356,
+            48.439125297636494
+          ],
+          [
+            2.6301587093349252,
+            48.43910890490277
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301694661403356,
+          48.439125297636494
+        ]
+      },
+      "properties": {
+        "name": "Red 12 Le Dinosaure Agile | Le Dinosaure Agile (assis) | Le Dinosaure à Gilles",
+        "topoId": 7481,
+        "horizontalAccuracy": 4.6,
+        "heading": 203.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301694661403356,
+            48.439125297636494
+          ],
+          [
+            2.6301587093349252,
+            48.43910890490277
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630170595001746,
+          48.4391395903565
+        ]
+      },
+      "properties": {
+        "name": "Compresse Nez (droite) | Étrave",
+        "topoId": 7482,
+        "horizontalAccuracy": 4.8,
+        "heading": 53.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630170595001746,
+            48.4391395903565
+          ],
+          [
+            2.630192338885947,
+            48.43915015255949
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630170595001746,
+          48.4391395903565
+        ]
+      },
+      "properties": {
+        "name": "Compresse Nez (droite) | Étrave",
+        "topoId": 7482,
+        "horizontalAccuracy": 4.8,
+        "heading": 53.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630170595001746,
+            48.4391395903565
+          ],
+          [
+            2.630192338885947,
+            48.43915015255949
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301641729024103,
+          48.439172781128576
+        ]
+      },
+      "properties": {
+        "name": "Compresse Nez",
+        "topoId": 7484,
+        "horizontalAccuracy": 4.7,
+        "heading": 104.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301641729024103,
+            48.439172781128576
+          ],
+          [
+            2.630190303312522,
+            48.43916840686575
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630197643991561,
+          48.43918945832613
+        ]
+      },
+      "properties": {
+        "name": "Inespéré",
+        "topoId": 7485,
+        "horizontalAccuracy": 4.7,
+        "heading": 47.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630197643991561,
+            48.43918945832613
+          ],
+          [
+            2.630217446211006,
+            48.439201585307565
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6301171066424884,
+          48.439273707695136
+        ]
+      },
+      "properties": {
+        "name": "Red 11 La Gidouille",
+        "topoId": 7486,
+        "horizontalAccuracy": 4.7,
+        "heading": 120.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6301171066424884,
+            48.439273707695136
+          ],
+          [
+            2.630140280526349,
+            48.439264581371404
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630250602963036,
+          48.43921921686154
+        ]
+      },
+      "properties": {
+        "name": "Red 10 La Fesse | Le Vrai B.B. | La Fesse (assis)",
+        "topoId": 7487,
+        "horizontalAccuracy": 4.6,
+        "heading": 175.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630250602963036,
+            48.43921921686154
+          ],
+          [
+            2.6302527411396337,
+            48.43920139456609
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630250602963036,
+          48.43921921686154
+        ]
+      },
+      "properties": {
+        "name": "Red 10 La Fesse | Le Vrai B.B. | La Fesse (assis)",
+        "topoId": 7487,
+        "horizontalAccuracy": 4.6,
+        "heading": 175.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630250602963036,
+            48.43921921686154
+          ],
+          [
+            2.6302527411396337,
+            48.43920139456609
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6300348527754003,
+          48.439344819680265
+        ]
+      },
+      "properties": {
+        "name": "Red 6 La Rallonge | Yellow 14 L'Inversée",
+        "topoId": 7489,
+        "horizontalAccuracy": 3.5,
+        "heading": 47.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6300348527754003,
+            48.439344819680265
+          ],
+          [
+            2.6300546357095627,
+            48.439356960469745
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6300348527754003,
+          48.439344819680265
+        ]
+      },
+      "properties": {
+        "name": "Red 6 La Rallonge | Yellow 14 L'Inversée",
+        "topoId": 7489,
+        "horizontalAccuracy": 3.5,
+        "heading": 47.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6300348527754003,
+            48.439344819680265
+          ],
+          [
+            2.6300546357095627,
+            48.439356960469745
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630036779718246,
+          48.4394180577596
+        ]
+      },
+      "properties": {
+        "name": "Red 6 La Rallonge",
+        "topoId": 7491,
+        "horizontalAccuracy": 4.8,
+        "heading": 138.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630036779718246,
+            48.4394180577596
+          ],
+          [
+            2.630054656355629,
+            48.43940467888006
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6298198352682234,
+          48.439312099461596
+        ]
+      },
+      "properties": {
+        "name": "Red 5 L'Esquisse | La Pochade",
+        "topoId": 7493,
+        "horizontalAccuracy": 4.7,
+        "heading": 103.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6298198352682234,
+            48.439312099461596
+          ],
+          [
+            2.629846079063809,
+            48.439308034926206
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6298198352682234,
+          48.439312099461596
+        ]
+      },
+      "properties": {
+        "name": "Red 5 L'Esquisse | La Pochade",
+        "topoId": 7493,
+        "horizontalAccuracy": 4.7,
+        "heading": 103.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6298198352682234,
+            48.439312099461596
+          ],
+          [
+            2.629846079063809,
+            48.439308034926206
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6296893724463715,
+          48.43934586823034
+        ]
+      },
+      "properties": {
+        "name": "Le Vieux Jeté",
+        "topoId": 7495,
+        "horizontalAccuracy": 4.7,
+        "heading": 189.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6296893724463715,
+            48.43934586823034
+          ],
+          [
+            2.6296848745000343,
+            48.43932824039638
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629714496436184,
+          48.43938626819145
+        ]
+      },
+      "properties": {
+        "name": "Red 4 Le Cocagne",
+        "topoId": 7496,
+        "horizontalAccuracy": 3.5,
+        "heading": 227.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629714496436184,
+            48.43938626819145
+          ],
+          [
+            2.629694490008644,
+            48.439374289677346
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6296167841683338,
+          48.43939773479025
+        ]
+      },
+      "properties": {
+        "name": "Yellow 6 Les Élégantes",
+        "topoId": 7497,
+        "horizontalAccuracy": 4.7,
+        "heading": 107.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6296167841683338,
+            48.43939773479025
+          ],
+          [
+            2.6296424617752048,
+            48.43939230721245
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.62956772931165,
+          48.43934800480347
+        ]
+      },
+      "properties": {
+        "name": "Yellow 7 Le Miroir",
+        "topoId": 7498,
+        "horizontalAccuracy": 3.5,
+        "heading": 115.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.62956772931165,
+            48.43934800480347
+          ],
+          [
+            2.629591985896223,
+            48.43934021453709
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6295655500168253,
+          48.439358691730014
+        ]
+      },
+      "properties": {
+        "name": "Red 2 L'Oubliette",
+        "topoId": 7499,
+        "horizontalAccuracy": 3.5,
+        "heading": 101.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6295655500168253,
+            48.439358691730014
+          ],
+          [
+            2.6295919762881113,
+            48.43935518595485
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629614416512316,
+          48.43922965233099
+        ]
+      },
+      "properties": {
+        "name": "Yellow 8 L'Arête du Dard",
+        "topoId": 7500,
+        "horizontalAccuracy": 4.6,
+        "heading": 156.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629614416512316,
+            48.43922965233099
+          ],
+          [
+            2.629625359738918,
+            48.43921331402681
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6296109118184647,
+          48.43916711017944
+        ]
+      },
+      "properties": {
+        "name": "Red 3 La Dalle du Dard | L'Arête droite du Dard",
+        "topoId": 7501,
+        "horizontalAccuracy": 4.7,
+        "heading": 112.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6296109118184647,
+            48.43916711017944
+          ],
+          [
+            2.6296358999267024,
+            48.43916041436193
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6296109118184647,
+          48.43916711017944
+        ]
+      },
+      "properties": {
+        "name": "Red 3 La Dalle du Dard | L'Arête droite du Dard",
+        "topoId": 7501,
+        "horizontalAccuracy": 4.7,
+        "heading": 112.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6296109118184647,
+            48.43916711017944
+          ],
+          [
+            2.6296358999267024,
+            48.43916041436193
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6297749961563706,
+          48.43905324444405
+        ]
+      },
+      "properties": {
+        "name": "Yellow 9 La Dülf Fit",
+        "topoId": 7502,
+        "horizontalAccuracy": 4.7,
+        "heading": 228.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6297749961563706,
+            48.43905324444405
+          ],
+          [
+            2.629754912370375,
+            48.43904132296237
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6299076675922928,
+          48.438989170073256
+        ]
+      },
+      "properties": {
+        "name": "Yellow 10 La Bidouille",
+        "topoId": 7503,
+        "horizontalAccuracy": 4.7,
+        "heading": 32.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6299076675922928,
+            48.438989170073256
+          ],
+          [
+            2.62992204058243,
+            48.43900429380732
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.629950765423692,
+          48.439054640940455
+        ]
+      },
+      "properties": {
+        "name": "Yellow 11 L'Interrogation",
+        "topoId": 7504,
+        "horizontalAccuracy": 4.7,
+        "heading": 333.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.629950765423692,
+            48.439054640940455
+          ],
+          [
+            2.629938883576126,
+            48.439070688141406
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302386187506417,
+          48.438846370157435
+        ]
+      },
+      "properties": {
+        "name": "Red 15 L'Airelle | Yellow 21 La Déch",
+        "topoId": 7506,
+        "horizontalAccuracy": 4.7,
+        "heading": 38.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302386187506417,
+            48.438846370157435
+          ],
+          [
+            2.6302554827376277,
+            48.43886031583726
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302321708307836,
+          48.43875030195633
+        ]
+      },
+      "properties": {
+        "name": "Red 16 La Malaisée | La Grattouille | Yellow 22 La Bordure",
+        "topoId": 7509,
+        "horizontalAccuracy": 4.7,
+        "heading": 46.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302321708307836,
+            48.43875030195633
+          ],
+          [
+            2.630251681955335,
+            48.43876263496042
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302321708307836,
+          48.43875030195633
+        ]
+      },
+      "properties": {
+        "name": "Red 16 La Malaisée | La Grattouille | Yellow 22 La Bordure",
+        "topoId": 7509,
+        "horizontalAccuracy": 4.7,
+        "heading": 46.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302321708307836,
+            48.43875030195633
+          ],
+          [
+            2.630251681955335,
+            48.43876263496042
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302670314932524,
+          48.43875389550667
+        ]
+      },
+      "properties": {
+        "name": "Red 16 La Malaisée | La Grattouille",
+        "topoId": 7510,
+        "horizontalAccuracy": 3.5,
+        "heading": 48.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302670314932524,
+            48.43875389550667
+          ],
+          [
+            2.6302871215878976,
+            48.43876581237653
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302670314932524,
+          48.43875389550667
+        ]
+      },
+      "properties": {
+        "name": "Red 16 La Malaisée | La Grattouille",
+        "topoId": 7510,
+        "horizontalAccuracy": 3.5,
+        "heading": 48.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302670314932524,
+            48.43875389550667
+          ],
+          [
+            2.6302871215878976,
+            48.43876581237653
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302321708307836,
+          48.43875030195633
+        ]
+      },
+      "properties": {
+        "name": "Red 16 La Malaisée | La Grattouille | Yellow 22 La Bordure",
+        "topoId": 7509,
+        "horizontalAccuracy": 4.7,
+        "heading": 46.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302321708307836,
+            48.43875030195633
+          ],
+          [
+            2.630251681955335,
+            48.43876263496042
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6302386187506417,
+          48.438846370157435
+        ]
+      },
+      "properties": {
+        "name": "Red 15 L'Airelle | Yellow 21 La Déch",
+        "topoId": 7506,
+        "horizontalAccuracy": 4.7,
+        "heading": 38.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6302386187506417,
+            48.438846370157435
+          ],
+          [
+            2.6302554827376277,
+            48.43886031583726
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63031673617906,
+          48.43865385749261
+        ]
+      },
+      "properties": {
+        "name": "Yellow 23 Le Pif | Red 18 Le Pif",
+        "topoId": 7511,
+        "horizontalAccuracy": 4.6,
+        "heading": 64.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63031673617906,
+            48.43865385749261
+          ],
+          [
+            2.630341052267162,
+            48.43866156578761
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63031673617906,
+          48.43865385749261
+        ]
+      },
+      "properties": {
+        "name": "Yellow 23 Le Pif | Red 18 Le Pif",
+        "topoId": 7511,
+        "horizontalAccuracy": 4.6,
+        "heading": 64.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63031673617906,
+            48.43865385749261
+          ],
+          [
+            2.630341052267162,
+            48.43866156578761
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630341378974384,
+          48.43857385222685
+        ]
+      },
+      "properties": {
+        "name": "Red 19 Le Redan",
+        "topoId": 7512,
+        "horizontalAccuracy": 4.6,
+        "heading": 135.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630341378974384,
+            48.43857385222685
+          ],
+          [
+            2.6303604279012984,
+            48.438561205161065
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630126383158034,
+          48.43864107509029
+        ]
+      },
+      "properties": {
+        "name": "La Bécane",
+        "topoId": 7514,
+        "horizontalAccuracy": 4.6,
+        "heading": 146.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630126383158034,
+            48.43864107509029
+          ],
+          [
+            2.630141141154529,
+            48.4386261153346
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6300974043673833,
+          48.438684482794926
+        ]
+      },
+      "properties": {
+        "name": "Red 17 L'Escalier Inverse",
+        "topoId": 7515,
+        "horizontalAccuracy": 4.7,
+        "heading": 133.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6300974043673833,
+            48.438684482794926
+          ],
+          [
+            2.630117077733446,
+            48.43867226373562
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630345821383065,
+          48.43856878117513
+        ]
+      },
+      "properties": {
+        "name": "Le Poinçonneur des Lilas",
+        "topoId": 7513,
+        "horizontalAccuracy": 3.5,
+        "heading": 251.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630345821383065,
+            48.43856878117513
+          ],
+          [
+            2.6303203318042354,
+            48.438562976522576
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304536964768825,
+          48.438509730667285
+        ]
+      },
+      "properties": {
+        "name": "L'Aspirant Ticket | La Pisseuse de Gauche | Red 20 La Pisseuse de Droite",
+        "topoId": 7516,
+        "horizontalAccuracy": 3.5,
+        "heading": 192.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304536964768825,
+            48.438509730667285
+          ],
+          [
+            2.6304477693756394,
+            48.43849228953066
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304536964768825,
+          48.438509730667285
+        ]
+      },
+      "properties": {
+        "name": "L'Aspirant Ticket | La Pisseuse de Gauche | Red 20 La Pisseuse de Droite",
+        "topoId": 7516,
+        "horizontalAccuracy": 3.5,
+        "heading": 192.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304536964768825,
+            48.438509730667285
+          ],
+          [
+            2.6304477693756394,
+            48.43849228953066
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6304536964768825,
+          48.438509730667285
+        ]
+      },
+      "properties": {
+        "name": "L'Aspirant Ticket | La Pisseuse de Gauche | Red 20 La Pisseuse de Droite",
+        "topoId": 7516,
+        "horizontalAccuracy": 3.5,
+        "heading": 192.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6304536964768825,
+            48.438509730667285
+          ],
+          [
+            2.6304477693756394,
+            48.43849228953066
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630526619034475,
+          48.438476328783146
+        ]
+      },
+      "properties": {
+        "name": "Yellow 24 L'Hésitation Fatale",
+        "topoId": 7517,
+        "horizontalAccuracy": 3.5,
+        "heading": 176.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630526619034475,
+            48.438476328783146
+          ],
+          [
+            2.6305281296553176,
+            48.43845847797564
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6307196803299906,
+          48.438500980335114
+        ]
+      },
+      "properties": {
+        "name": "Red 21 Le Presque Angle",
+        "topoId": 7518,
+        "horizontalAccuracy": 4.7,
+        "heading": 87.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6307196803299906,
+            48.438500980335114
+          ],
+          [
+            2.630746605580375,
+            48.43850173797715
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6307233334758084,
+          48.43845617239186
+        ]
+      },
+      "properties": {
+        "name": "Yellow 25 Le Trou de Dalle",
+        "topoId": 7519,
+        "horizontalAccuracy": 4.7,
+        "heading": 64.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6307233334758084,
+            48.43845617239186
+          ],
+          [
+            2.6307476733467894,
+            48.43846384760934
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6309135303483613,
+          48.43858824325027
+        ]
+      },
+      "properties": {
+        "name": "Yellow 26 Le Petit qui Vexe",
+        "topoId": 7520,
+        "horizontalAccuracy": 4.7,
+        "heading": 24.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6309135303483613,
+            48.43858824325027
+          ],
+          [
+            2.6309246139012945,
+            48.438604540070266
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6309692673409644,
+          48.43871584166627
+        ]
+      },
+      "properties": {
+        "name": "Yellow 27 Le Balcon de l'Alisier",
+        "topoId": 7522,
+        "horizontalAccuracy": 3.5,
+        "heading": 17.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6309692673409644,
+            48.43871584166627
+          ],
+          [
+            2.630977441359281,
+            48.438732878261234
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6310051418865386,
+          48.43877958603989
+        ]
+      },
+      "properties": {
+        "name": "Red 22 Uppercut",
+        "topoId": 7524,
+        "horizontalAccuracy": 3.5,
+        "heading": 162.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6310051418865386,
+            48.43877958603989
+          ],
+          [
+            2.6310131074094696,
+            48.43876250604961
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631015087049625,
+          48.43883065158485
+        ]
+      },
+      "properties": {
+        "name": "Red 23 La Pointe",
+        "topoId": 7525,
+        "horizontalAccuracy": 4.7,
+        "heading": 0.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631015087049625,
+            48.43883065158485
+          ],
+          [
+            2.631015126927233,
+            48.43884853035201
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631000327508754,
+          48.43884527367918
+        ]
+      },
+      "properties": {
+        "name": "Jetman / Le Plomb des Cakes Sucrés | Jetman (assis)",
+        "topoId": 7526,
+        "horizontalAccuracy": 4.7,
+        "heading": 89.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631000327508754,
+            48.43884527367918
+          ],
+          [
+            2.6310272765699505,
+            48.4388453707638
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631000327508754,
+          48.43884527367918
+        ]
+      },
+      "properties": {
+        "name": "Jetman / Le Plomb des Cakes Sucrés | Jetman (assis)",
+        "topoId": 7526,
+        "horizontalAccuracy": 4.7,
+        "heading": 89.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631000327508754,
+            48.43884527367918
+          ],
+          [
+            2.6310272765699505,
+            48.4388453707638
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6310052708492866,
+          48.438844267806964
+        ]
+      },
+      "properties": {
+        "name": "Le Pendule",
+        "topoId": 7528,
+        "horizontalAccuracy": 4.5,
+        "heading": 197.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6310052708492866,
+            48.438844267806964
+          ],
+          [
+            2.6309972314472354,
+            48.438827203079974
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630997276457844,
+          48.43884642314551
+        ]
+      },
+      "properties": {
+        "name": "Religion Verticale | Lève Toi et Grimpe | Religion Verticale (assis)",
+        "topoId": 7529,
+        "horizontalAccuracy": 4.6,
+        "heading": 353.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630997276457844,
+            48.43884642314551
+          ],
+          [
+            2.6309942799366786,
+            48.438864191062514
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630997276457844,
+          48.43884642314551
+        ]
+      },
+      "properties": {
+        "name": "Religion Verticale | Lève Toi et Grimpe | Religion Verticale (assis)",
+        "topoId": 7529,
+        "horizontalAccuracy": 4.6,
+        "heading": 353.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630997276457844,
+            48.43884642314551
+          ],
+          [
+            2.6309942799366786,
+            48.438864191062514
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630997276457844,
+          48.43884642314551
+        ]
+      },
+      "properties": {
+        "name": "Religion Verticale | Lève Toi et Grimpe | Religion Verticale (assis)",
+        "topoId": 7529,
+        "horizontalAccuracy": 4.6,
+        "heading": 353.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630997276457844,
+            48.43884642314551
+          ],
+          [
+            2.6309942799366786,
+            48.438864191062514
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6310356179570005,
+          48.43888626211174
+        ]
+      },
+      "properties": {
+        "name": "Red 24 Le Saint du Pin | Le Saint du Pin (assis)",
+        "topoId": 7530,
+        "horizontalAccuracy": 4.7,
+        "heading": 141.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6310356179570005,
+            48.43888626211174
+          ],
+          [
+            2.631052304435583,
+            48.43887222277618
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6310356179570005,
+          48.43888626211174
+        ]
+      },
+      "properties": {
+        "name": "Red 24 Le Saint du Pin | Le Saint du Pin (assis)",
+        "topoId": 7530,
+        "horizontalAccuracy": 4.7,
+        "heading": 141.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6310356179570005,
+            48.43888626211174
+          ],
+          [
+            2.631052304435583,
+            48.43887222277618
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631092365416986,
+          48.43888510539022
+        ]
+      },
+      "properties": {
+        "name": "Yellow 28 Le Saint du Pin",
+        "topoId": 7531,
+        "horizontalAccuracy": 4.7,
+        "heading": 157.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631092365416986,
+            48.43888510539022
+          ],
+          [
+            2.631102584909044,
+            48.43886856196754
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631171422466569,
+          48.438960860750065
+        ]
+      },
+      "properties": {
+        "name": "Red 26 L'Encaissée",
+        "topoId": 7532,
+        "horizontalAccuracy": 4.7,
+        "heading": 129.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631171422466569,
+            48.438960860750065
+          ],
+          [
+            2.631192271729767,
+            48.43894953239054
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631014110522932,
+          48.4389907680903
+        ]
+      },
+      "properties": {
+        "name": "Red 25 Le Bivouac | Le Bivouac (direct)",
+        "topoId": 7533,
+        "horizontalAccuracy": 3.5,
+        "heading": 130.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631014110522932,
+            48.4389907680903
+          ],
+          [
+            2.631034621433492,
+            48.43897917107369
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631014110522932,
+          48.4389907680903
+        ]
+      },
+      "properties": {
+        "name": "Red 25 Le Bivouac | Le Bivouac (direct)",
+        "topoId": 7533,
+        "horizontalAccuracy": 3.5,
+        "heading": 130.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631014110522932,
+            48.4389907680903
+          ],
+          [
+            2.631034621433492,
+            48.43897917107369
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630972342807825,
+          48.43953729193392
+        ]
+      },
+      "properties": {
+        "name": "Narcose | Narcose (gauche) | Apnéiste",
+        "topoId": 7536,
+        "horizontalAccuracy": 4.7,
+        "heading": 88.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630972342807825,
+            48.43953729193392
+          ],
+          [
+            2.630999277411487,
+            48.439537885469164
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630972342807825,
+          48.43953729193392
+        ]
+      },
+      "properties": {
+        "name": "Narcose | Narcose (gauche) | Apnéiste",
+        "topoId": 7536,
+        "horizontalAccuracy": 4.7,
+        "heading": 88.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630972342807825,
+            48.43953729193392
+          ],
+          [
+            2.630999277411487,
+            48.439537885469164
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.630972342807825,
+          48.43953729193392
+        ]
+      },
+      "properties": {
+        "name": "Narcose | Narcose (gauche) | Apnéiste",
+        "topoId": 7536,
+        "horizontalAccuracy": 4.7,
+        "heading": 88.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.630972342807825,
+            48.43953729193392
+          ],
+          [
+            2.630999277411487,
+            48.439537885469164
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6313420746068137,
+          48.43906251651892
+        ]
+      },
+      "properties": {
+        "name": "Red 27 La Grande Échelle | Bang Supersonique",
+        "topoId": 7538,
+        "horizontalAccuracy": 4.7,
+        "heading": 181.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6313420746068137,
+            48.43906251651892
+          ],
+          [
+            2.631341242994814,
+            48.43904464632187
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6313420746068137,
+          48.43906251651892
+        ]
+      },
+      "properties": {
+        "name": "Red 27 La Grande Échelle | Bang Supersonique",
+        "topoId": 7538,
+        "horizontalAccuracy": 4.7,
+        "heading": 181.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6313420746068137,
+            48.43906251651892
+          ],
+          [
+            2.631341242994814,
+            48.43904464632187
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6314363952553568,
+          48.43898116537888
+        ]
+      },
+      "properties": {
+        "name": "Yellow 29 L'Escabeau",
+        "topoId": 7539,
+        "horizontalAccuracy": 4.7,
+        "heading": 210.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6314363952553568,
+            48.43898116537888
+          ],
+          [
+            2.631422828064447,
+            48.43896571751364
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6316605228955217,
+          48.438562955752715
+        ]
+      },
+      "properties": {
+        "name": "Hadès",
+        "topoId": 7540,
+        "horizontalAccuracy": 4.6,
+        "heading": 127.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6316605228955217,
+            48.438562955752715
+          ],
+          [
+            2.631681887940995,
+            48.43855205847698
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631668361730958,
+          48.43852094313303
+        ]
+      },
+      "properties": {
+        "name": "Poséidon | Poséidon (gauche assis) | Poséidon (assis)",
+        "topoId": 7541,
+        "horizontalAccuracy": 4.7,
+        "heading": 178.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631668361730958,
+            48.43852094313303
+          ],
+          [
+            2.6316690446283046,
+            48.43850306997207
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631668361730958,
+          48.43852094313303
+        ]
+      },
+      "properties": {
+        "name": "Poséidon | Poséidon (gauche assis) | Poséidon (assis)",
+        "topoId": 7541,
+        "horizontalAccuracy": 4.7,
+        "heading": 178.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631668361730958,
+            48.43852094313303
+          ],
+          [
+            2.6316690446283046,
+            48.43850306997207
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631668361730958,
+          48.43852094313303
+        ]
+      },
+      "properties": {
+        "name": "Poséidon | Poséidon (gauche assis) | Poséidon (assis)",
+        "topoId": 7541,
+        "horizontalAccuracy": 4.7,
+        "heading": 178.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631668361730958,
+            48.43852094313303
+          ],
+          [
+            2.6316690446283046,
+            48.43850306997207
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631790190937586,
+          48.43853215225827
+        ]
+      },
+      "properties": {
+        "name": "Poiskaï",
+        "topoId": 7543,
+        "horizontalAccuracy": 3.5,
+        "heading": 158.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631790190937586,
+            48.43853215225827
+          ],
+          [
+            2.631800039640916,
+            48.43851551003262
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6314322237788907,
+          48.43850966517846
+        ]
+      },
+      "properties": {
+        "name": "Zeus | Zeus (droite)",
+        "topoId": 7544,
+        "horizontalAccuracy": 4.7,
+        "heading": 142.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6314322237788907,
+            48.43850966517846
+          ],
+          [
+            2.6314485682868867,
+            48.438495449784746
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6314322237788907,
+          48.43850966517846
+        ]
+      },
+      "properties": {
+        "name": "Zeus | Zeus (droite)",
+        "topoId": 7544,
+        "horizontalAccuracy": 4.7,
+        "heading": 142.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6314322237788907,
+            48.43850966517846
+          ],
+          [
+            2.6314485682868867,
+            48.438495449784746
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6315613593185074,
+          48.43893532491924
+        ]
+      },
+      "properties": {
+        "name": "Red 30 L'Arête du Sphinx | L'Arête du Sphinx (assis) | L'Arête du Sphinx (rallongé)",
+        "topoId": 7545,
+        "horizontalAccuracy": 4.7,
+        "heading": 48.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6315613593185074,
+            48.43893532491924
+          ],
+          [
+            2.631581418627618,
+            48.43894726454963
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6315613593185074,
+          48.43893532491924
+        ]
+      },
+      "properties": {
+        "name": "Red 30 L'Arête du Sphinx | L'Arête du Sphinx (assis) | L'Arête du Sphinx (rallongé)",
+        "topoId": 7545,
+        "horizontalAccuracy": 4.7,
+        "heading": 48.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6315613593185074,
+            48.43893532491924
+          ],
+          [
+            2.631581418627618,
+            48.43894726454963
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6315613593185074,
+          48.43893532491924
+        ]
+      },
+      "properties": {
+        "name": "Red 30 L'Arête du Sphinx | L'Arête du Sphinx (assis) | L'Arête du Sphinx (rallongé)",
+        "topoId": 7545,
+        "horizontalAccuracy": 4.7,
+        "heading": 48.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6315613593185074,
+            48.43893532491924
+          ],
+          [
+            2.631581418627618,
+            48.43894726454963
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63155241131765,
+          48.43895669376394
+        ]
+      },
+      "properties": {
+        "name": "La Traversée du Sphinx",
+        "topoId": 7546,
+        "horizontalAccuracy": 4.7,
+        "heading": 74.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63155241131765,
+            48.43895669376394
+          ],
+          [
+            2.6315783133093094,
+            48.43896162988245
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6315628105159448,
+          48.43901328961174
+        ]
+      },
+      "properties": {
+        "name": "Yellow 30 Le Sphinx",
+        "topoId": 7547,
+        "horizontalAccuracy": 4.7,
+        "heading": 127.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6315628105159448,
+            48.43901328961174
+          ],
+          [
+            2.631584240376737,
+            48.43900244859158
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6317158741199265,
+          48.439019527877235
+        ]
+      },
+      "properties": {
+        "name": "Yellow 31 La Rampe",
+        "topoId": 7548,
+        "horizontalAccuracy": 4.7,
+        "heading": 78.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6317158741199265,
+            48.439019527877235
+          ],
+          [
+            2.6317422796099605,
+            48.43902310192761
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631615009161301,
+          48.43916381248158
+        ]
+      },
+      "properties": {
+        "name": "Gaz à tous les Étages | Red 28 L'Espadon",
+        "topoId": 7550,
+        "horizontalAccuracy": 4.2,
+        "heading": 116.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631615009161301,
+            48.43916381248158
+          ],
+          [
+            2.6316391855827517,
+            48.439155913274526
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631615009161301,
+          48.43916381248158
+        ]
+      },
+      "properties": {
+        "name": "Gaz à tous les Étages | Red 28 L'Espadon",
+        "topoId": 7550,
+        "horizontalAccuracy": 4.2,
+        "heading": 116.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631615009161301,
+            48.43916381248158
+          ],
+          [
+            2.6316391855827517,
+            48.439155913274526
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631547239752745,
+          48.43906175354046
+        ]
+      },
+      "properties": {
+        "name": "Red 29 La Grâce du TCF",
+        "topoId": 7551,
+        "horizontalAccuracy": 4.7,
+        "heading": 44.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631547239752745,
+            48.43906175354046
+          ],
+          [
+            2.6315660737694664,
+            48.43907454136024
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631875962756557,
+          48.43898316413196
+        ]
+      },
+      "properties": {
+        "name": "Yellow 32 Le Bras Cassé",
+        "topoId": 7552,
+        "horizontalAccuracy": 4.7,
+        "heading": 206.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631875962756557,
+            48.43898316413196
+          ],
+          [
+            2.6318641393389335,
+            48.438967097920276
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.631928743797011,
+          48.43879044060479
+        ]
+      },
+      "properties": {
+        "name": "Red 32 Ah l'Envers",
+        "topoId": 7553,
+        "horizontalAccuracy": 4.2,
+        "heading": 280.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.631928743797011,
+            48.43879044060479
+          ],
+          [
+            2.631902221880031,
+            48.4387936126418
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6318051549379047,
+          48.4388371958822
+        ]
+      },
+      "properties": {
+        "name": "Red 31 Les Mouv'",
+        "topoId": 7556,
+        "horizontalAccuracy": 4.7,
+        "heading": 217.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6318051549379047,
+            48.4388371958822
+          ],
+          [
+            2.631788631974258,
+            48.43882307167221
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6321892494127797,
+          48.43878769470031
+        ]
+      },
+      "properties": {
+        "name": "Red 33 La Petite Meije",
+        "topoId": 7557,
+        "horizontalAccuracy": 4.7,
+        "heading": 168.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6321892494127797,
+            48.43878769470031
+          ],
+          [
+            2.632194573417361,
+            48.438770168251885
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6322708092654423,
+          48.438847437546066
+        ]
+      },
+      "properties": {
+        "name": "Yellow 34 Le Couilleux",
+        "topoId": 7558,
+        "horizontalAccuracy": 5.1,
+        "heading": 128.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6322708092654423,
+            48.438847437546066
+          ],
+          [
+            2.63229192514575,
+            48.43883632863483
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6321593528942326,
+          48.43894395173744
+        ]
+      },
+      "properties": {
+        "name": "Yellow 33 La Petite Balafre",
+        "topoId": 7559,
+        "horizontalAccuracy": 4.7,
+        "heading": 145.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6321593528942326,
+            48.43894395173744
+          ],
+          [
+            2.632174828882501,
+            48.438929314882145
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6323349513089025,
+          48.4388461576112
+        ]
+      },
+      "properties": {
+        "name": "Le Bilboquet | Red 34 La Diagonale du Bilboquet",
+        "topoId": 7561,
+        "horizontalAccuracy": 4.7,
+        "heading": 153.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6323349513089025,
+            48.4388461576112
+          ],
+          [
+            2.632346942905716,
+            48.43883014631001
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6323349513089025,
+          48.4388461576112
+        ]
+      },
+      "properties": {
+        "name": "Le Bilboquet | Red 34 La Diagonale du Bilboquet",
+        "topoId": 7561,
+        "horizontalAccuracy": 4.7,
+        "heading": 153.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6323349513089025,
+            48.4388461576112
+          ],
+          [
+            2.632346942905716,
+            48.43883014631001
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6326386909956416,
+          48.43880925797712
+        ]
+      },
+      "properties": {
+        "name": "Yellow 35 L'Intermezzo",
+        "topoId": 7562,
+        "horizontalAccuracy": 3.5,
+        "heading": 134.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6326386909956416,
+            48.43880925797712
+          ],
+          [
+            2.6326578385179404,
+            48.43879667667037
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6325626911409583,
+          48.438801072204456
+        ]
+      },
+      "properties": {
+        "name": "Red 35 Intermezzo",
+        "topoId": 7563,
+        "horizontalAccuracy": 4.7,
+        "heading": 74.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6325626911409583,
+            48.438801072204456
+          ],
+          [
+            2.6325886649735613,
+            48.43880583929492
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633284422065191,
+          48.43873136288924
+        ]
+      },
+      "properties": {
+        "name": "Yellow 36 L'Air Gag",
+        "topoId": 7564,
+        "horizontalAccuracy": 4.7,
+        "heading": 132.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633284422065191,
+            48.43873136288924
+          ],
+          [
+            2.6333042787611487,
+            48.43871927506413
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6333495886446388,
+          48.43862708603051
+        ]
+      },
+      "properties": {
+        "name": "Red 36 Le Pied-Main",
+        "topoId": 7565,
+        "horizontalAccuracy": 4.7,
+        "heading": 119.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6333495886446388,
+            48.43862708603051
+          ],
+          [
+            2.6333729799902903,
+            48.43861820711774
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633317879363698,
+          48.43859683262455
+        ]
+      },
+      "properties": {
+        "name": "Yellow 37 Le Mur aux Bacs",
+        "topoId": 7566,
+        "horizontalAccuracy": 4.7,
+        "heading": 159.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633317879363698,
+            48.43859683262455
+          ],
+          [
+            2.633327129094055,
+            48.43858003983426
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334185287841634,
+          48.43853395886601
+        ]
+      },
+      "properties": {
+        "name": "L'Apparemment (assis) | L'Apparemment | L'Apparemment (bas)",
+        "topoId": 7569,
+        "horizontalAccuracy": 4.7,
+        "heading": 152.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334185287841634,
+            48.43853395886601
+          ],
+          [
+            2.633431103074321,
+            48.438518145431125
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334185287841634,
+          48.43853395886601
+        ]
+      },
+      "properties": {
+        "name": "L'Apparemment (assis) | L'Apparemment | L'Apparemment (bas)",
+        "topoId": 7569,
+        "horizontalAccuracy": 4.7,
+        "heading": 152.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334185287841634,
+            48.43853395886601
+          ],
+          [
+            2.633431103074321,
+            48.438518145431125
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334185287841634,
+          48.43853395886601
+        ]
+      },
+      "properties": {
+        "name": "L'Apparemment (assis) | L'Apparemment | L'Apparemment (bas)",
+        "topoId": 7569,
+        "horizontalAccuracy": 4.7,
+        "heading": 152.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334185287841634,
+            48.43853395886601
+          ],
+          [
+            2.633431103074321,
+            48.438518145431125
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633403540870248,
+          48.438548280330565
+        ]
+      },
+      "properties": {
+        "name": "Paul's Boutique",
+        "topoId": 7571,
+        "horizontalAccuracy": 4.7,
+        "heading": 113.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633403540870248,
+            48.438548280330565
+          ],
+          [
+            2.6334283093737896,
+            48.438541234461454
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633375325876448,
+          48.43852613983809
+        ]
+      },
+      "properties": {
+        "name": "Yellow 38 La Douce Amère",
+        "topoId": 7574,
+        "horizontalAccuracy": 4.6,
+        "heading": 213.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633375325876448,
+            48.43852613983809
+          ],
+          [
+            2.6333603246474104,
+            48.43851128691057
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6333754042853355,
+          48.43847919080201
+        ]
+      },
+      "properties": {
+        "name": "Yellow 38 La Douce Amère",
+        "topoId": 7575,
+        "horizontalAccuracy": 4.7,
+        "heading": 271.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6333754042853355,
+            48.43847919080201
+          ],
+          [
+            2.633348459311002,
+            48.438479516942735
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332993941008285,
+          48.43847464169564
+        ]
+      },
+      "properties": {
+        "name": "Exit (retour) | La Fin d'Exit | La Fin d'Exit (assis) | Tactic | Tactic (assis) | Exit | Red 37 La Douce-Amère",
+        "topoId": 7576,
+        "horizontalAccuracy": 4.6,
+        "heading": 133.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332993941008285,
+            48.43847464169564
+          ],
+          [
+            2.633318879573942,
+            48.43846229078533
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332993941008285,
+          48.43847464169564
+        ]
+      },
+      "properties": {
+        "name": "Exit (retour) | La Fin d'Exit | La Fin d'Exit (assis) | Tactic | Tactic (assis) | Exit | Red 37 La Douce-Amère",
+        "topoId": 7576,
+        "horizontalAccuracy": 4.6,
+        "heading": 133.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332993941008285,
+            48.43847464169564
+          ],
+          [
+            2.633318879573942,
+            48.43846229078533
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332993941008285,
+          48.43847464169564
+        ]
+      },
+      "properties": {
+        "name": "Exit (retour) | La Fin d'Exit | La Fin d'Exit (assis) | Tactic | Tactic (assis) | Exit | Red 37 La Douce-Amère",
+        "topoId": 7576,
+        "horizontalAccuracy": 4.6,
+        "heading": 133.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332993941008285,
+            48.43847464169564
+          ],
+          [
+            2.633318879573942,
+            48.43846229078533
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332993941008285,
+          48.43847464169564
+        ]
+      },
+      "properties": {
+        "name": "Exit (retour) | La Fin d'Exit | La Fin d'Exit (assis) | Tactic | Tactic (assis) | Exit | Red 37 La Douce-Amère",
+        "topoId": 7576,
+        "horizontalAccuracy": 4.6,
+        "heading": 133.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332993941008285,
+            48.43847464169564
+          ],
+          [
+            2.633318879573942,
+            48.43846229078533
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332993941008285,
+          48.43847464169564
+        ]
+      },
+      "properties": {
+        "name": "Exit (retour) | La Fin d'Exit | La Fin d'Exit (assis) | Tactic | Tactic (assis) | Exit | Red 37 La Douce-Amère",
+        "topoId": 7576,
+        "horizontalAccuracy": 4.6,
+        "heading": 133.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332993941008285,
+            48.43847464169564
+          ],
+          [
+            2.633318879573942,
+            48.43846229078533
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332993941008285,
+          48.43847464169564
+        ]
+      },
+      "properties": {
+        "name": "Exit (retour) | La Fin d'Exit | La Fin d'Exit (assis) | Tactic | Tactic (assis) | Exit | Red 37 La Douce-Amère",
+        "topoId": 7576,
+        "horizontalAccuracy": 4.6,
+        "heading": 133.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332993941008285,
+            48.43847464169564
+          ],
+          [
+            2.633318879573942,
+            48.43846229078533
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332993941008285,
+          48.43847464169564
+        ]
+      },
+      "properties": {
+        "name": "Exit (retour) | La Fin d'Exit | La Fin d'Exit (assis) | Tactic | Tactic (assis) | Exit | Red 37 La Douce-Amère",
+        "topoId": 7576,
+        "horizontalAccuracy": 4.6,
+        "heading": 133.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332993941008285,
+            48.43847464169564
+          ],
+          [
+            2.633318879573942,
+            48.43846229078533
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334063056880916,
+          48.43834414617013
+        ]
+      },
+      "properties": {
+        "name": "La Langue de Bœuf",
+        "topoId": 7579,
+        "horizontalAccuracy": 3.5,
+        "heading": 188.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334063056880916,
+            48.43834414617013
+          ],
+          [
+            2.633402500522487,
+            48.4383264463244
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633402822777214,
+          48.43834161034998
+        ]
+      },
+      "properties": {
+        "name": "Red 38 La Torsade",
+        "topoId": 7580,
+        "horizontalAccuracy": 4.7,
+        "heading": 107.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633402822777214,
+            48.43834161034998
+          ],
+          [
+            2.6334285211378714,
+            48.43833622606408
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334571276741015,
+          48.438299095479316
+        ]
+      },
+      "properties": {
+        "name": "L'Illusionniste",
+        "topoId": 7582,
+        "horizontalAccuracy": 4.7,
+        "heading": 309.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334571276741015,
+            48.438299095479316
+          ],
+          [
+            2.63343630538108,
+            48.4383104457955
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633384425495662,
+          48.4382898499154
+        ]
+      },
+      "properties": {
+        "name": "La Fissure de l'Envers | La Fissure de l'Envers (assis)",
+        "topoId": 7583,
+        "horizontalAccuracy": 4.7,
+        "heading": 22.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633384425495662,
+            48.4382898499154
+          ],
+          [
+            2.6333948337464275,
+            48.438306341650716
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633384425495662,
+          48.4382898499154
+        ]
+      },
+      "properties": {
+        "name": "La Fissure de l'Envers | La Fissure de l'Envers (assis)",
+        "topoId": 7583,
+        "horizontalAccuracy": 4.7,
+        "heading": 22.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633384425495662,
+            48.4382898499154
+          ],
+          [
+            2.6333948337464275,
+            48.438306341650716
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334739616812533,
+          48.43829188580824
+        ]
+      },
+      "properties": {
+        "name": "Red 39 La Dent de Lait | La Dent du Géant",
+        "topoId": 7584,
+        "horizontalAccuracy": 4.7,
+        "heading": 226.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334739616812533,
+            48.43829188580824
+          ],
+          [
+            2.6334543972302646,
+            48.43827958992791
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334739616812533,
+          48.43829188580824
+        ]
+      },
+      "properties": {
+        "name": "Red 39 La Dent de Lait | La Dent du Géant",
+        "topoId": 7584,
+        "horizontalAccuracy": 4.7,
+        "heading": 226.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334739616812533,
+            48.43829188580824
+          ],
+          [
+            2.6334543972302646,
+            48.43827958992791
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6333430223191465,
+          48.43818484810065
+        ]
+      },
+      "properties": {
+        "name": "Aromathérapie | Aromathérapie (assis)",
+        "topoId": 7586,
+        "horizontalAccuracy": 4.6,
+        "heading": 293.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6333430223191465,
+            48.43818484810065
+          ],
+          [
+            2.6333183525176223,
+            48.43819204481403
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633632837573319,
+          48.43832688938718
+        ]
+      },
+      "properties": {
+        "name": "Fax Man | La Pierre Philosophale | La Fête de la Musique | Les Vérins",
+        "topoId": 7590,
+        "horizontalAccuracy": 4.7,
+        "heading": 328.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633632837573319,
+            48.43832688938718
+          ],
+          [
+            2.6336188977642356,
+            48.4383421907383
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633632837573319,
+          48.43832688938718
+        ]
+      },
+      "properties": {
+        "name": "Fax Man | La Pierre Philosophale | La Fête de la Musique | Les Vérins",
+        "topoId": 7590,
+        "horizontalAccuracy": 4.7,
+        "heading": 328.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633632837573319,
+            48.43832688938718
+          ],
+          [
+            2.6336188977642356,
+            48.4383421907383
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633632837573319,
+          48.43832688938718
+        ]
+      },
+      "properties": {
+        "name": "Fax Man | La Pierre Philosophale | La Fête de la Musique | Les Vérins",
+        "topoId": 7590,
+        "horizontalAccuracy": 4.7,
+        "heading": 328.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633632837573319,
+            48.43832688938718
+          ],
+          [
+            2.6336188977642356,
+            48.4383421907383
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6333430223191465,
+          48.43818484810065
+        ]
+      },
+      "properties": {
+        "name": "Aromathérapie | Aromathérapie (assis)",
+        "topoId": 7586,
+        "horizontalAccuracy": 4.6,
+        "heading": 293.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6333430223191465,
+            48.43818484810065
+          ],
+          [
+            2.6333183525176223,
+            48.43819204481403
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332685907836444,
+          48.43808909010338
+        ]
+      },
+      "properties": {
+        "name": "Les Seychelles | Les Seychelles (assis)",
+        "topoId": 7587,
+        "horizontalAccuracy": 4.7,
+        "heading": 228.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332685907836444,
+            48.43808909010338
+          ],
+          [
+            2.633248355592714,
+            48.4380772816191
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6332685907836444,
+          48.43808909010338
+        ]
+      },
+      "properties": {
+        "name": "Les Seychelles | Les Seychelles (assis)",
+        "topoId": 7587,
+        "horizontalAccuracy": 4.7,
+        "heading": 228.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6332685907836444,
+            48.43808909010338
+          ],
+          [
+            2.633248355592714,
+            48.4380772816191
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633005399259397,
+          48.43808736656647
+        ]
+      },
+      "properties": {
+        "name": "L'École des Sorciers | L'École des Sorciers (retour) | Petite Sorcellerie",
+        "topoId": 7588,
+        "horizontalAccuracy": 3.5,
+        "heading": 250.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633005399259397,
+            48.43808736656647
+          ],
+          [
+            2.63297997666614,
+            48.438081433972755
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633005399259397,
+          48.43808736656647
+        ]
+      },
+      "properties": {
+        "name": "L'École des Sorciers | L'École des Sorciers (retour) | Petite Sorcellerie",
+        "topoId": 7588,
+        "horizontalAccuracy": 3.5,
+        "heading": 250.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633005399259397,
+            48.43808736656647
+          ],
+          [
+            2.63297997666614,
+            48.438081433972755
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633005399259397,
+          48.43808736656647
+        ]
+      },
+      "properties": {
+        "name": "L'École des Sorciers | L'École des Sorciers (retour) | Petite Sorcellerie",
+        "topoId": 7588,
+        "horizontalAccuracy": 3.5,
+        "heading": 250.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633005399259397,
+            48.43808736656647
+          ],
+          [
+            2.63297997666614,
+            48.438081433972755
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6335716063360293,
+          48.4383265426637
+        ]
+      },
+      "properties": {
+        "name": "Red 40 Le Bénin",
+        "topoId": 7589,
+        "horizontalAccuracy": 4.7,
+        "heading": 38.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6335716063360293,
+            48.4383265426637
+          ],
+          [
+            2.6335882519817675,
+            48.438340603468056
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633632837573319,
+          48.43832688938718
+        ]
+      },
+      "properties": {
+        "name": "Fax Man | La Pierre Philosophale | La Fête de la Musique | Les Vérins",
+        "topoId": 7590,
+        "horizontalAccuracy": 4.7,
+        "heading": 328.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633632837573319,
+            48.43832688938718
+          ],
+          [
+            2.6336188977642356,
+            48.4383421907383
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633552988993594,
+          48.4384526918162
+        ]
+      },
+      "properties": {
+        "name": "Yellow 39 Le Grande Dalle",
+        "topoId": 7591,
+        "horizontalAccuracy": 3.5,
+        "heading": 288.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633552988993594,
+            48.4384526918162
+          ],
+          [
+            2.6335273821958496,
+            48.43845826478545
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6335486719886236,
+          48.4385095774815
+        ]
+      },
+      "properties": {
+        "name": "Yellow 40 Le Paravent",
+        "topoId": 7592,
+        "horizontalAccuracy": 4.8,
+        "heading": 343.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6335486719886236,
+            48.4385095774815
+          ],
+          [
+            2.633541186591341,
+            48.43852675287171
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6335363090062827,
+          48.438469329894
+        ]
+      },
+      "properties": {
+        "name": "Red 41 La Concrète",
+        "topoId": 7595,
+        "horizontalAccuracy": 3.5,
+        "heading": 172.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6335363090062827,
+            48.438469329894
+          ],
+          [
+            2.63354003100171,
+            48.43845162230995
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6334991771752327,
+          48.43853311617713
+        ]
+      },
+      "properties": {
+        "name": "C'est Beau Là!",
+        "topoId": 7596,
+        "horizontalAccuracy": 3.8,
+        "heading": 7.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6334991771752327,
+            48.43853311617713
+          ],
+          [
+            2.6335025916582784,
+            48.438550850985195
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63352985494084,
+          48.43861668375205
+        ]
+      },
+      "properties": {
+        "name": "Red 42 La Slab",
+        "topoId": 7597,
+        "horizontalAccuracy": 4.2,
+        "heading": 291.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63352985494084,
+            48.43861668375205
+          ],
+          [
+            2.6335047406490135,
+            48.438623168533766
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633606632190244,
+          48.43875051799598
+        ]
+      },
+      "properties": {
+        "name": "Red 43 Franckement | Franckement (du bas) | Franckement (assis)",
+        "topoId": 7600,
+        "horizontalAccuracy": 4.7,
+        "heading": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633606632190244,
+            48.43875051799598
+          ],
+          [
+            2.6336106938754154,
+            48.438768192586
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633606632190244,
+          48.43875051799598
+        ]
+      },
+      "properties": {
+        "name": "Red 43 Franckement | Franckement (du bas) | Franckement (assis)",
+        "topoId": 7600,
+        "horizontalAccuracy": 4.7,
+        "heading": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633606632190244,
+            48.43875051799598
+          ],
+          [
+            2.6336106938754154,
+            48.438768192586
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633606632190244,
+          48.43875051799598
+        ]
+      },
+      "properties": {
+        "name": "Red 43 Franckement | Franckement (du bas) | Franckement (assis)",
+        "topoId": 7600,
+        "horizontalAccuracy": 4.7,
+        "heading": 8.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633606632190244,
+            48.43875051799598
+          ],
+          [
+            2.6336106938754154,
+            48.438768192586
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633720236255204,
+          48.438665594016214
+        ]
+      },
+      "properties": {
+        "name": "Yellow 41 Le Bouleau Bonsaï",
+        "topoId": 7601,
+        "horizontalAccuracy": 4.7,
+        "heading": 350.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633720236255204,
+            48.438665594016214
+          ],
+          [
+            2.6337157294282303,
+            48.4386832210818
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633736468854019,
+          48.438770365946404
+        ]
+      },
+      "properties": {
+        "name": "The Eggman | The Eggman (assis) | The Wallrus",
+        "topoId": 7602,
+        "horizontalAccuracy": 4.2,
+        "heading": 208.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633736468854019,
+            48.438770365946404
+          ],
+          [
+            2.6337238276237738,
+            48.438754576092265
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633736468854019,
+          48.438770365946404
+        ]
+      },
+      "properties": {
+        "name": "The Eggman | The Eggman (assis) | The Wallrus",
+        "topoId": 7602,
+        "horizontalAccuracy": 4.2,
+        "heading": 208.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633736468854019,
+            48.438770365946404
+          ],
+          [
+            2.6337238276237738,
+            48.438754576092265
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633736468854019,
+          48.438770365946404
+        ]
+      },
+      "properties": {
+        "name": "The Eggman | The Eggman (assis) | The Wallrus",
+        "topoId": 7602,
+        "horizontalAccuracy": 4.2,
+        "heading": 208.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633736468854019,
+            48.438770365946404
+          ],
+          [
+            2.6337238276237738,
+            48.438754576092265
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6337214652473415,
+          48.43872900125456
+        ]
+      },
+      "properties": {
+        "name": "Bali Balan | Bali Balan (sans convention)",
+        "topoId": 7603,
+        "horizontalAccuracy": 4.6,
+        "heading": 280.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6337214652473415,
+            48.43872900125456
+          ],
+          [
+            2.633695004086158,
+            48.4387323892664
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6337214652473415,
+          48.43872900125456
+        ]
+      },
+      "properties": {
+        "name": "Bali Balan | Bali Balan (sans convention)",
+        "topoId": 7603,
+        "horizontalAccuracy": 4.6,
+        "heading": 280.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6337214652473415,
+            48.43872900125456
+          ],
+          [
+            2.633695004086158,
+            48.4387323892664
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6336078731074464,
+          48.43881251499236
+        ]
+      },
+      "properties": {
+        "name": "La Répète Jacquot | Le Faux Dolmen",
+        "topoId": 7604,
+        "horizontalAccuracy": 4.7,
+        "heading": 188.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6336078731074464,
+            48.43881251499236
+          ],
+          [
+            2.6336037969670665,
+            48.43879484188245
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6336078731074464,
+          48.43881251499236
+        ]
+      },
+      "properties": {
+        "name": "La Répète Jacquot | Le Faux Dolmen",
+        "topoId": 7604,
+        "horizontalAccuracy": 4.7,
+        "heading": 188.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6336078731074464,
+            48.43881251499236
+          ],
+          [
+            2.6336037969670665,
+            48.43879484188245
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6337346248353213,
+          48.439036742829195
+        ]
+      },
+      "properties": {
+        "name": "La Traversée de Véga-Missyl",
+        "topoId": 7605,
+        "horizontalAccuracy": 6.1,
+        "heading": 229.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6337346248353213,
+            48.439036742829195
+          ],
+          [
+            2.633714091056402,
+            48.43902516364781
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.633610153573224,
+          48.43881034762484
+        ]
+      },
+      "properties": {
+        "name": "Véga-Missyl",
+        "topoId": 7606,
+        "horizontalAccuracy": 4.6,
+        "heading": 266.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.633610153573224,
+            48.43881034762484
+          ],
+          [
+            2.633583257284468,
+            48.438809225099035
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6336256545657077,
+          48.438883746606386
+        ]
+      },
+      "properties": {
+        "name": "Masta Boulda | Masta Boulda (en traversée)",
+        "topoId": 7607,
+        "horizontalAccuracy": 4.7,
+        "heading": 235.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6336256545657077,
+            48.438883746606386
+          ],
+          [
+            2.6336035058549228,
+            48.4388735612845
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6336256545657077,
+          48.438883746606386
+        ]
+      },
+      "properties": {
+        "name": "Masta Boulda | Masta Boulda (en traversée)",
+        "topoId": 7607,
+        "horizontalAccuracy": 4.7,
+        "heading": 235.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6336256545657077,
+            48.438883746606386
+          ],
+          [
+            2.6336035058549228,
+            48.4388735612845
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6333880816745694,
+          48.43935865792908
+        ]
+      },
+      "properties": {
+        "name": "Scout Toujours",
+        "topoId": 7608,
+        "horizontalAccuracy": 4.7,
+        "heading": 195.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6333880816745694,
+            48.43935865792908
+          ],
+          [
+            2.6333808121858815,
+            48.43934144205128
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344314962650044,
+          48.43921422962916
+        ]
+      },
+      "properties": {
+        "name": "Tous les Délices du Mariage | Los Pasos | El Paso (droite) | Los Pasos (droite) | El Paso",
+        "topoId": 7610,
+        "horizontalAccuracy": 4.6,
+        "heading": 354.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344314962650044,
+            48.43921422962916
+          ],
+          [
+            2.634428699822813,
+            48.43923201176691
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344314962650044,
+          48.43921422962916
+        ]
+      },
+      "properties": {
+        "name": "Tous les Délices du Mariage | Los Pasos | El Paso (droite) | Los Pasos (droite) | El Paso",
+        "topoId": 7610,
+        "horizontalAccuracy": 4.6,
+        "heading": 354.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344314962650044,
+            48.43921422962916
+          ],
+          [
+            2.634428699822813,
+            48.43923201176691
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344314962650044,
+          48.43921422962916
+        ]
+      },
+      "properties": {
+        "name": "Tous les Délices du Mariage | Los Pasos | El Paso (droite) | Los Pasos (droite) | El Paso",
+        "topoId": 7610,
+        "horizontalAccuracy": 4.6,
+        "heading": 354.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344314962650044,
+            48.43921422962916
+          ],
+          [
+            2.634428699822813,
+            48.43923201176691
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344314962650044,
+          48.43921422962916
+        ]
+      },
+      "properties": {
+        "name": "Tous les Délices du Mariage | Los Pasos | El Paso (droite) | Los Pasos (droite) | El Paso",
+        "topoId": 7610,
+        "horizontalAccuracy": 4.6,
+        "heading": 354.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344314962650044,
+            48.43921422962916
+          ],
+          [
+            2.634428699822813,
+            48.43923201176691
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6343017369361843,
+          48.4392979488768
+        ]
+      },
+      "properties": {
+        "name": "Welcome to Tijuana | Clandestino (gauche) | Clandestino",
+        "topoId": 7613,
+        "horizontalAccuracy": 4.7,
+        "heading": 40.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6343017369361843,
+            48.4392979488768
+          ],
+          [
+            2.6343192539592137,
+            48.439311535524915
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6343017369361843,
+          48.4392979488768
+        ]
+      },
+      "properties": {
+        "name": "Welcome to Tijuana | Clandestino (gauche) | Clandestino",
+        "topoId": 7613,
+        "horizontalAccuracy": 4.7,
+        "heading": 40.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6343017369361843,
+            48.4392979488768
+          ],
+          [
+            2.6343192539592137,
+            48.439311535524915
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6343017369361843,
+          48.4392979488768
+        ]
+      },
+      "properties": {
+        "name": "Welcome to Tijuana | Clandestino (gauche) | Clandestino",
+        "topoId": 7613,
+        "horizontalAccuracy": 4.7,
+        "heading": 40.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6343017369361843,
+            48.4392979488768
+          ],
+          [
+            2.6343192539592137,
+            48.439311535524915
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344314962650044,
+          48.43921422962916
+        ]
+      },
+      "properties": {
+        "name": "Tous les Délices du Mariage | Los Pasos | El Paso (droite) | Los Pasos (droite) | El Paso",
+        "topoId": 7610,
+        "horizontalAccuracy": 4.6,
+        "heading": 354.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344314962650044,
+            48.43921422962916
+          ],
+          [
+            2.634428699822813,
+            48.43923201176691
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.634066949912026,
+          48.438476960204035
+        ]
+      },
+      "properties": {
+        "name": "Yellow 42 La Dallette",
+        "topoId": 7617,
+        "horizontalAccuracy": 4.7,
+        "heading": 114.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.634066949912026,
+            48.438476960204035
+          ],
+          [
+            2.6340914576231405,
+            48.438469523774856
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6341814207436167,
+          48.438544334289354
+        ]
+      },
+      "properties": {
+        "name": "Yellow 43 Le Muret",
+        "topoId": 7618,
+        "horizontalAccuracy": 4.7,
+        "heading": 120.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6341814207436167,
+            48.438544334289354
+          ],
+          [
+            2.6342046373882346,
+            48.438535255793155
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.634468283835801,
+          48.43857530482532
+        ]
+      },
+      "properties": {
+        "name": "Le Casse-Cou",
+        "topoId": 7619,
+        "horizontalAccuracy": 4.7,
+        "heading": 108.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.634468283835801,
+            48.43857530482532
+          ],
+          [
+            2.6344937963343478,
+            48.438569544661114
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63446292503309,
+          48.43858986452276
+        ]
+      },
+      "properties": {
+        "name": "Red 44 La Dalle Dévers",
+        "topoId": 7620,
+        "horizontalAccuracy": 4.7,
+        "heading": 34.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63446292503309,
+            48.43858986452276
+          ],
+          [
+            2.6344780943959702,
+            48.43860464207778
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6345513097760405,
+          48.43862418243458
+        ]
+      },
+      "properties": {
+        "name": "Yellow 44 La Dalle en Pente",
+        "topoId": 7621,
+        "horizontalAccuracy": 4.7,
+        "heading": 206.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6345513097760405,
+            48.43862418243458
+          ],
+          [
+            2.6345392081387184,
+            48.4386082075442
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6345630083257654,
+          48.438619994603506
+        ]
+      },
+      "properties": {
+        "name": "Oberyn",
+        "topoId": 7622,
+        "horizontalAccuracy": 3.5,
+        "heading": 111.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6345630083257654,
+            48.438619994603506
+          ],
+          [
+            2.6345880239948,
+            48.43861334416164
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6349256244620047,
+          48.438581400828205
+        ]
+      },
+      "properties": {
+        "name": "Le Bio-Contrôle",
+        "topoId": 7623,
+        "horizontalAccuracy": 4.7,
+        "heading": 279.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6349256244620047,
+            48.438581400828205
+          ],
+          [
+            2.634899070661955,
+            48.43858445322191
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6348692832622285,
+          48.43857621568125
+        ]
+      },
+      "properties": {
+        "name": "Electro Street | Electro Side",
+        "topoId": 7624,
+        "horizontalAccuracy": 4.7,
+        "heading": 349.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6348692832622285,
+            48.43857621568125
+          ],
+          [
+            2.6348643989604335,
+            48.43859379846583
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6348692832622285,
+          48.43857621568125
+        ]
+      },
+      "properties": {
+        "name": "Electro Street | Electro Side",
+        "topoId": 7624,
+        "horizontalAccuracy": 4.7,
+        "heading": 349.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6348692832622285,
+            48.43857621568125
+          ],
+          [
+            2.6348643989604335,
+            48.43859379846583
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6350306168682,
+          48.438563793645315
+        ]
+      },
+      "properties": {
+        "name": "Strigidé | Striés Guidés (gauche) | Striés Guidés | C'est Chouette!",
+        "topoId": 7625,
+        "horizontalAccuracy": 4.7,
+        "heading": 36.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6350306168682,
+            48.438563793645315
+          ],
+          [
+            2.6350466910921373,
+            48.43857814402535
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6350306168682,
+          48.438563793645315
+        ]
+      },
+      "properties": {
+        "name": "Strigidé | Striés Guidés (gauche) | Striés Guidés | C'est Chouette!",
+        "topoId": 7625,
+        "horizontalAccuracy": 4.7,
+        "heading": 36.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6350306168682,
+            48.438563793645315
+          ],
+          [
+            2.6350466910921373,
+            48.43857814402535
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6350306168682,
+          48.438563793645315
+        ]
+      },
+      "properties": {
+        "name": "Strigidé | Striés Guidés (gauche) | Striés Guidés | C'est Chouette!",
+        "topoId": 7625,
+        "horizontalAccuracy": 4.7,
+        "heading": 36.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6350306168682,
+            48.438563793645315
+          ],
+          [
+            2.6350466910921373,
+            48.43857814402535
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6345968712145784,
+          48.4383673221324
+        ]
+      },
+      "properties": {
+        "name": "Espèce Invasive",
+        "topoId": 7627,
+        "horizontalAccuracy": 3.5,
+        "heading": 326.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6345968712145784,
+            48.4383673221324
+          ],
+          [
+            2.634581878995893,
+            48.43838217910561
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6350306168682,
+          48.438563793645315
+        ]
+      },
+      "properties": {
+        "name": "Strigidé | Striés Guidés (gauche) | Striés Guidés | C'est Chouette!",
+        "topoId": 7625,
+        "horizontalAccuracy": 4.7,
+        "heading": 36.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6350306168682,
+            48.438563793645315
+          ],
+          [
+            2.6350466910921373,
+            48.43857814402535
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6346320441012696,
+          48.43851728297239
+        ]
+      },
+      "properties": {
+        "name": "Yellow 46 L'Escalier de Service",
+        "topoId": 7626,
+        "horizontalAccuracy": 4.7,
+        "heading": 127.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6346320441012696,
+            48.43851728297239
+          ],
+          [
+            2.6346533538445938,
+            48.43850633813142
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.634559503709344,
+          48.43838464843906
+        ]
+      },
+      "properties": {
+        "name": "Yellow 48 La Bombée",
+        "topoId": 7629,
+        "horizontalAccuracy": 4.7,
+        "heading": 247.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.634559503709344,
+            48.43838464843906
+          ],
+          [
+            2.634534630319555,
+            48.438377767092625
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6345154368353643,
+          48.438368643572495
+        ]
+      },
+      "properties": {
+        "name": "Red 47 La Dalle Infernale",
+        "topoId": 7630,
+        "horizontalAccuracy": 4.7,
+        "heading": 12.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6345154368353643,
+            48.438368643572495
+          ],
+          [
+            2.63452122581444,
+            48.438386105158116
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344818656340796,
+          48.43842704661615
+        ]
+      },
+      "properties": {
+        "name": "Ergodynamic",
+        "topoId": 7631,
+        "horizontalAccuracy": 4.6,
+        "heading": 156.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344818656340796,
+            48.43842704661615
+          ],
+          [
+            2.6344925129061476,
+            48.43841062221419
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63446508312681,
+          48.438407597238154
+        ]
+      },
+      "properties": {
+        "name": "Tout Craque! | Tout Craque! (assis)",
+        "topoId": 7632,
+        "horizontalAccuracy": 4.7,
+        "heading": 97.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63446508312681,
+            48.438407597238154
+          ],
+          [
+            2.6344918273844944,
+            48.43840539510791
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63446508312681,
+          48.438407597238154
+        ]
+      },
+      "properties": {
+        "name": "Tout Craque! | Tout Craque! (assis)",
+        "topoId": 7632,
+        "horizontalAccuracy": 4.7,
+        "heading": 97.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63446508312681,
+            48.438407597238154
+          ],
+          [
+            2.6344918273844944,
+            48.43840539510791
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6345014013374546,
+          48.438518112570456
+        ]
+      },
+      "properties": {
+        "name": "Yellow 45 Le Pas de la Mort",
+        "topoId": 7633,
+        "horizontalAccuracy": 3.5,
+        "heading": 67.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6345014013374546,
+            48.438518112570456
+          ],
+          [
+            2.6345263763668827,
+            48.438524829914634
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344935223484733,
+          48.43850256414007
+        ]
+      },
+      "properties": {
+        "name": "Red 45 L'Abîme",
+        "topoId": 7634,
+        "horizontalAccuracy": 3.8,
+        "heading": 185.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344935223484733,
+            48.43850256414007
+          ],
+          [
+            2.6344910777138364,
+            48.43848475894309
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344587025057766,
+          48.43833325859545
+        ]
+      },
+      "properties": {
+        "name": "Red 46 La Fuite de Pan | Pan Outdoor",
+        "topoId": 7637,
+        "horizontalAccuracy": 4.7,
+        "heading": 26.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344587025057766,
+            48.43833325859545
+          ],
+          [
+            2.6344707678098427,
+            48.43834924566365
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344587025057766,
+          48.43833325859545
+        ]
+      },
+      "properties": {
+        "name": "Red 46 La Fuite de Pan | Pan Outdoor",
+        "topoId": 7637,
+        "horizontalAccuracy": 4.7,
+        "heading": 26.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344587025057766,
+            48.43833325859545
+          ],
+          [
+            2.6344707678098427,
+            48.43834924566365
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344566419745186,
+          48.43832788527798
+        ]
+      },
+      "properties": {
+        "name": "Yellow 49 La Cassure",
+        "topoId": 7638,
+        "horizontalAccuracy": 3.5,
+        "heading": 289.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344566419745186,
+            48.43832788527798
+          ],
+          [
+            2.6344312665953944,
+            48.43833390615297
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6344130411963436,
+          48.438130920630854
+        ]
+      },
+      "properties": {
+        "name": "Yellow 50 Le Rocher aux Sapins",
+        "topoId": 7641,
+        "horizontalAccuracy": 4.7,
+        "heading": 15.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6344130411963436,
+            48.438130920630854
+          ],
+          [
+            2.634420114490017,
+            48.43814817285136
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.634623898728837,
+          48.43833723724814
+        ]
+      },
+      "properties": {
+        "name": "Yellow 47 L'Évidente",
+        "topoId": 7642,
+        "horizontalAccuracy": 4.7,
+        "heading": 325.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.634623898728837,
+            48.43833723724814
+          ],
+          [
+            2.634608443541467,
+            48.43835188394424
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.634711451787348,
+          48.43829900430165
+        ]
+      },
+      "properties": {
+        "name": "Red 48 Les Pustules | Biactol",
+        "topoId": 7643,
+        "horizontalAccuracy": 4.7,
+        "heading": 358.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.634711451787348,
+            48.43829900430165
+          ],
+          [
+            2.6347108525366303,
+            48.438316878854835
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.634711451787348,
+          48.43829900430165
+        ]
+      },
+      "properties": {
+        "name": "Red 48 Les Pustules | Biactol",
+        "topoId": 7643,
+        "horizontalAccuracy": 4.7,
+        "heading": 358.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.634711451787348,
+            48.43829900430165
+          ],
+          [
+            2.6347108525366303,
+            48.438316878854835
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63466790432815,
+          48.43831000271024
+        ]
+      },
+      "properties": {
+        "name": "L'Arme à Gauche | Red 49 La Fissure Fuyante / La Raie au Porc",
+        "topoId": 7644,
+        "horizontalAccuracy": 4.7,
+        "heading": 101.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63466790432815,
+            48.43831000271024
+          ],
+          [
+            2.6346943493882558,
+            48.43830655978384
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63466790432815,
+          48.43831000271024
+        ]
+      },
+      "properties": {
+        "name": "L'Arme à Gauche | Red 49 La Fissure Fuyante / La Raie au Porc",
+        "topoId": 7644,
+        "horizontalAccuracy": 4.7,
+        "heading": 101.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63466790432815,
+            48.43831000271024
+          ],
+          [
+            2.6346943493882558,
+            48.43830655978384
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.63476308435447,
+          48.43828023415845
+        ]
+      },
+      "properties": {
+        "name": "Le Masque",
+        "topoId": 7645,
+        "horizontalAccuracy": 3.5,
+        "heading": 188.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.63476308435447,
+            48.43828023415845
+          ],
+          [
+            2.634758999757645,
+            48.43826256172269
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6348096039170725,
+          48.43830341012102
+        ]
+      },
+      "properties": {
+        "name": "Hugor Hill",
+        "topoId": 7646,
+        "horizontalAccuracy": 4.6,
+        "heading": 222.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6348096039170725,
+            48.43830341012102
+          ],
+          [
+            2.634791409808921,
+            48.43829022065118
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.635169941934417,
+          48.43826707457077
+        ]
+      },
+      "properties": {
+        "name": "Tyrion (sans convention) | Tyrion",
+        "topoId": 7647,
+        "horizontalAccuracy": 4.2,
+        "heading": 150.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.635169941934417,
+            48.43826707457077
+          ],
+          [
+            2.6351832764172776,
+            48.43825153756335
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.635169941934417,
+          48.43826707457077
+        ]
+      },
+      "properties": {
+        "name": "Tyrion (sans convention) | Tyrion",
+        "topoId": 7647,
+        "horizontalAccuracy": 4.2,
+        "heading": 150.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.635169941934417,
+            48.43826707457077
+          ],
+          [
+            2.6351832764172776,
+            48.43825153756335
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6346377360817033,
+          48.43794604084515
+        ]
+      },
+      "properties": {
+        "name": "Red 50 Lune de Pierre | Cafecito",
+        "topoId": 7648,
+        "horizontalAccuracy": 4.7,
+        "heading": 202.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6346377360817033,
+            48.43794604084515
+          ],
+          [
+            2.634627274916971,
+            48.43792956373522
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6346377360817033,
+          48.43794604084515
+        ]
+      },
+      "properties": {
+        "name": "Red 50 Lune de Pierre | Cafecito",
+        "topoId": 7648,
+        "horizontalAccuracy": 4.7,
+        "heading": 202.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6346377360817033,
+            48.43794604084515
+          ],
+          [
+            2.634627274916971,
+            48.43792956373522
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6346063882042903,
+          48.4379585531929
+        ]
+      },
+      "properties": {
+        "name": "Deux Temps Trois Mouvements",
+        "topoId": 7649,
+        "horizontalAccuracy": 4.7,
+        "heading": 178.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.6346063882042903,
+            48.4379585531929
+          ],
+          [
+            2.6346071366769497,
+            48.437940680989875
+          ]
+        ]
+      },
+      "properties": {
+      }
+    }
+  ]
+}
