@@ -1,0 +1,4051 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5290835604944357,
+          48.37187767294089
+        ]
+      },
+      "properties": {
+        "name": "Blue 11 La Déviation Salutaire | Blue 12 Pas de Danse",
+        "topoId": 7939,
+        "horizontalAccuracy": 4.7,
+        "heading": 338.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5290835604944357,
+            48.37187767294089
+          ],
+          [
+            2.5290735257680494,
+            48.371894287939384
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5290835604944357,
+          48.37187767294089
+        ]
+      },
+      "properties": {
+        "name": "Blue 11 La Déviation Salutaire | Blue 12 Pas de Danse",
+        "topoId": 7939,
+        "horizontalAccuracy": 4.7,
+        "heading": 338.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5290835604944357,
+            48.37187767294089
+          ],
+          [
+            2.5290735257680494,
+            48.371894287939384
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529063003528076,
+          48.37186634288393
+        ]
+      },
+      "properties": {
+        "name": "Yellow 3 ",
+        "topoId": 7940,
+        "horizontalAccuracy": 4.7,
+        "heading": 10.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529063003528076,
+            48.37186634288393
+          ],
+          [
+            2.5290677522925855,
+            48.371883965100906
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529038052327276,
+          48.37192965523361
+        ]
+      },
+      "properties": {
+        "name": "Yellow 4 ",
+        "topoId": 7941,
+        "horizontalAccuracy": 4.7,
+        "heading": 104.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529038052327276,
+            48.37192965523361
+          ],
+          [
+            2.529064168112296,
+            48.37192523685992
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529051024469109,
+          48.371793218002374
+        ]
+      },
+      "properties": {
+        "name": "Yellow 1 ",
+        "topoId": 7942,
+        "horizontalAccuracy": 4.6,
+        "heading": 1.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529051024469109,
+            48.371793218002374
+          ],
+          [
+            2.5290517830333865,
+            48.371811113276856
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5291395543848187,
+          48.3718649097561
+        ]
+      },
+      "properties": {
+        "name": "Yellow 2 ",
+        "topoId": 7943,
+        "horizontalAccuracy": 4.7,
+        "heading": 229.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5291395543848187,
+            48.3718649097561
+          ],
+          [
+            2.529119072025184,
+            48.37185327520626
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5290141589313335,
+          48.371727148901556
+        ]
+      },
+      "properties": {
+        "name": "",
+        "topoId": 7944,
+        "horizontalAccuracy": 4.7,
+        "heading": 2.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5290141589313335,
+            48.371727148901556
+          ],
+          [
+            2.529015376764714,
+            48.3717450330041
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5289001502120203,
+          48.371965969026434
+        ]
+      },
+      "properties": {
+        "name": "Blue 10 La Fissure à Vapeur",
+        "topoId": 7945,
+        "horizontalAccuracy": 3.5,
+        "heading": 55.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5289001502120203,
+            48.371965969026434
+          ],
+          [
+            2.528922251695336,
+            48.37197621286823
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5289354999627776,
+          48.371920719674634
+        ]
+      },
+      "properties": {
+        "name": "Yellow 40 La Kilimandjaro",
+        "topoId": 7946,
+        "horizontalAccuracy": 4.7,
+        "heading": 251.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5289354999627776,
+            48.371920719674634
+          ],
+          [
+            2.5289099096975525,
+            48.3719151060425
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5290082785270434,
+          48.37197327697756
+        ]
+      },
+      "properties": {
+        "name": "Yellow 5 L'Isatope",
+        "topoId": 7947,
+        "horizontalAccuracy": 4.7,
+        "heading": 341.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5290082785270434,
+            48.37197327697756
+          ],
+          [
+            2.528999790525859,
+            48.371990268143556
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5290365237766212,
+          48.37201173421804
+        ]
+      },
+      "properties": {
+        "name": "Yellow 6  | Blue 13 L'Abimée",
+        "topoId": 7948,
+        "horizontalAccuracy": 4.6,
+        "heading": 67.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5290365237766212,
+            48.37201173421804
+          ],
+          [
+            2.52906141184541,
+            48.37201860111942
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5290365237766212,
+          48.37201173421804
+        ]
+      },
+      "properties": {
+        "name": "Yellow 6  | Blue 13 L'Abimée",
+        "topoId": 7948,
+        "horizontalAccuracy": 4.6,
+        "heading": 67.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5290365237766212,
+            48.37201173421804
+          ],
+          [
+            2.52906141184541,
+            48.37201860111942
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5289914144556573,
+          48.3721437845854
+        ]
+      },
+      "properties": {
+        "name": "Blue 15 Sang d'Encre | Yellow 15 L'Amie Lounette",
+        "topoId": 7949,
+        "horizontalAccuracy": 4.7,
+        "heading": 169.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5289914144556573,
+            48.3721437845854
+          ],
+          [
+            2.528996244999134,
+            48.37212617226958
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5289914144556573,
+          48.3721437845854
+        ]
+      },
+      "properties": {
+        "name": "Blue 15 Sang d'Encre | Yellow 15 L'Amie Lounette",
+        "topoId": 7949,
+        "horizontalAccuracy": 4.7,
+        "heading": 169.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5289914144556573,
+            48.3721437845854
+          ],
+          [
+            2.528996244999134,
+            48.37212617226958
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529074209649309,
+          48.372034321075645
+        ]
+      },
+      "properties": {
+        "name": "Yellow 13 ",
+        "topoId": 7950,
+        "horizontalAccuracy": 4.7,
+        "heading": 289.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529074209649309,
+            48.372034321075645
+          ],
+          [
+            2.5290487242886734,
+            48.37204014148287
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5292116353236347,
+          48.372093757777115
+        ]
+      },
+      "properties": {
+        "name": "Yellow 12 ",
+        "topoId": 7952,
+        "horizontalAccuracy": 4.7,
+        "heading": 202.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5292116353236347,
+            48.372093757777115
+          ],
+          [
+            2.5292014608211946,
+            48.37207718039815
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529436424645171,
+          48.37206963188334
+        ]
+      },
+      "properties": {
+        "name": "Yellow 7 ",
+        "topoId": 7953,
+        "horizontalAccuracy": 4.7,
+        "heading": 63.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529436424645171,
+            48.37206963188334
+          ],
+          [
+            2.5294604446963556,
+            48.37207774902693
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5294417887949656,
+          48.37214194708381
+        ]
+      },
+      "properties": {
+        "name": "Yellow 8 ",
+        "topoId": 7954,
+        "horizontalAccuracy": 4.6,
+        "heading": 232.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5294417887949656,
+            48.37214194708381
+          ],
+          [
+            2.5294204816858494,
+            48.37213098568992
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5293725542747687,
+          48.37213599593227
+        ]
+      },
+      "properties": {
+        "name": "Yellow 9 ",
+        "topoId": 7955,
+        "horizontalAccuracy": 3.5,
+        "heading": 348.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5293725542747687,
+            48.37213599593227
+          ],
+          [
+            2.529367344937343,
+            48.37215356053697
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5292607674911647,
+          48.3721300391917
+        ]
+      },
+      "properties": {
+        "name": "Yellow 11 ",
+        "topoId": 7957,
+        "horizontalAccuracy": 4.7,
+        "heading": 218.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5292607674911647,
+            48.3721300391917
+          ],
+          [
+            2.5292440942543637,
+            48.3721159744851
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529278509321184,
+          48.37214546748285
+        ]
+      },
+      "properties": {
+        "name": "Yellow 10 ",
+        "topoId": 7958,
+        "horizontalAccuracy": 3.5,
+        "heading": 221.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529278509321184,
+            48.37214546748285
+          ],
+          [
+            2.529260780413985,
+            48.37213198454149
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5291241645749296,
+          48.37220687721323
+        ]
+      },
+      "properties": {
+        "name": "Blue 24 Rock Academy",
+        "topoId": 7959,
+        "horizontalAccuracy": 4.6,
+        "heading": 278.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5291241645749296,
+            48.37220687721323
+          ],
+          [
+            2.5290975041641905,
+            48.37220949216791
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528989289717765,
+          48.372063968029224
+        ]
+      },
+      "properties": {
+        "name": "Blue 14 Agression",
+        "topoId": 7960,
+        "horizontalAccuracy": 4.7,
+        "heading": 130.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528989289717765,
+            48.372063968029224
+          ],
+          [
+            2.5290097716529414,
+            48.37205233319513
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5289686898162738,
+          48.372095263350744
+        ]
+      },
+      "properties": {
+        "name": "Yellow 14 ",
+        "topoId": 7961,
+        "horizontalAccuracy": 4.7,
+        "heading": 36.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5289686898162738,
+            48.372095263350744
+          ],
+          [
+            2.5289847941570587,
+            48.37210961760877
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528909118848414,
+          48.37207891517196
+        ]
+      },
+      "properties": {
+        "name": "Yellow 16 ",
+        "topoId": 7962,
+        "horizontalAccuracy": 4.6,
+        "heading": 223.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528909118848414,
+            48.37207891517196
+          ],
+          [
+            2.528890448829826,
+            48.37206600494851
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528682136910528,
+          48.372068563521545
+        ]
+      },
+      "properties": {
+        "name": "Yellow 18 ",
+        "topoId": 7963,
+        "horizontalAccuracy": 4.2,
+        "heading": 216.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528682136910528,
+            48.372068563521545
+          ],
+          [
+            2.5286661491129583,
+            48.372054151876775
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528745544641167,
+          48.37204636291436
+        ]
+      },
+      "properties": {
+        "name": "Yellow 19 ",
+        "topoId": 7964,
+        "horizontalAccuracy": 4.7,
+        "heading": 287.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528745544641167,
+            48.37204636291436
+          ],
+          [
+            2.528719904495176,
+            48.37205187517749
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5288777267830063,
+          48.372017908197925
+        ]
+      },
+      "properties": {
+        "name": "Yellow 17 ",
+        "topoId": 7965,
+        "horizontalAccuracy": 4.7,
+        "heading": 255.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5288777267830063,
+            48.372017908197925
+          ],
+          [
+            2.528851589102452,
+            48.37201354734037
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528868615200362,
+          48.37197042242602
+        ]
+      },
+      "properties": {
+        "name": "Blue 16 Cordes Sensibles",
+        "topoId": 7966,
+        "horizontalAccuracy": 4.7,
+        "heading": 306.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528868615200362,
+            48.37197042242602
+          ],
+          [
+            2.528846891448102,
+            48.371981016828
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5288665356297364,
+          48.371988636046936
+        ]
+      },
+      "properties": {
+        "name": "Blue 8 Amiante",
+        "topoId": 7967,
+        "horizontalAccuracy": 4.7,
+        "heading": 256.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5288665356297364,
+            48.371988636046936
+          ],
+          [
+            2.5288403309376957,
+            48.37198445642006
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287743730429555,
+          48.37197013925526
+        ]
+      },
+      "properties": {
+        "name": "Blue 7 La Traversée de la Petite Victoire | Petite Victoire",
+        "topoId": 7969,
+        "horizontalAccuracy": 4.7,
+        "heading": 148.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287743730429555,
+            48.37197013925526
+          ],
+          [
+            2.5287883406176523,
+            48.371954829085965
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287897605472507,
+          48.371928334281485
+        ]
+      },
+      "properties": {
+        "name": "Yellow 38 ",
+        "topoId": 7970,
+        "horizontalAccuracy": 4.6,
+        "heading": 30.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287897605472507,
+            48.371928334281485
+          ],
+          [
+            2.52880357212484,
+            48.37194370678349
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5286866200989735,
+          48.37196050181841
+        ]
+      },
+      "properties": {
+        "name": "Blue 6 En Bref",
+        "topoId": 7971,
+        "horizontalAccuracy": 4.7,
+        "heading": 5.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5286866200989735,
+            48.37196050181841
+          ],
+          [
+            2.52868927568157,
+            48.37197831699965
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5283549232073947,
+          48.37206716521885
+        ]
+      },
+      "properties": {
+        "name": "Blue 19 Conflit d'Intérêts",
+        "topoId": 7972,
+        "horizontalAccuracy": 4.7,
+        "heading": 80.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5283549232073947,
+            48.37206716521885
+          ],
+          [
+            2.528381526372302,
+            48.372070025908734
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5283613811871497,
+          48.372090739686676
+        ]
+      },
+      "properties": {
+        "name": "Maille à Partir",
+        "topoId": 7973,
+        "horizontalAccuracy": 4.7,
+        "heading": 104.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5283613811871497,
+            48.372090739686676
+          ],
+          [
+            2.5283874544707285,
+            48.37208621191522
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528389472565635,
+          48.37212041034644
+        ]
+      },
+      "properties": {
+        "name": "Blue 18 Le Contre-Jour | Yellow 24 ",
+        "topoId": 7974,
+        "horizontalAccuracy": 4.7,
+        "heading": 334.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528389472565635,
+            48.37212041034644
+          ],
+          [
+            2.528377960945603,
+            48.37213659716974
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528389472565635,
+          48.37212041034644
+        ]
+      },
+      "properties": {
+        "name": "Blue 18 Le Contre-Jour | Yellow 24 ",
+        "topoId": 7974,
+        "horizontalAccuracy": 4.7,
+        "heading": 334.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528389472565635,
+            48.37212041034644
+          ],
+          [
+            2.528377960945603,
+            48.37213659716974
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528378672436096,
+          48.37213647888518
+        ]
+      },
+      "properties": {
+        "name": "Blue 17 Marchandage",
+        "topoId": 7976,
+        "horizontalAccuracy": 4.7,
+        "heading": 335.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528378672436096,
+            48.37213647888518
+          ],
+          [
+            2.5283674253559414,
+            48.37215274756213
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528431518005699,
+          48.37212212388282
+        ]
+      },
+      "properties": {
+        "name": "Yellow 23 La Blanzaï",
+        "topoId": 7977,
+        "horizontalAccuracy": 4.6,
+        "heading": 316.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528431518005699,
+            48.37212212388282
+          ],
+          [
+            2.528412921927724,
+            48.37213508109866
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5285685542993717,
+          48.37216196687375
+        ]
+      },
+      "properties": {
+        "name": "Boule et Bill | Boule et Bill (assis)",
+        "topoId": 7978,
+        "horizontalAccuracy": 4.8,
+        "heading": 159.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5285685542993717,
+            48.37216196687375
+          ],
+          [
+            2.5285780275232197,
+            48.37214520713162
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5285685542993717,
+          48.37216196687375
+        ]
+      },
+      "properties": {
+        "name": "Boule et Bill | Boule et Bill (assis)",
+        "topoId": 7978,
+        "horizontalAccuracy": 4.8,
+        "heading": 159.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5285685542993717,
+            48.37216196687375
+          ],
+          [
+            2.5285780275232197,
+            48.37214520713162
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.52856711844605,
+          48.372083261228084
+        ]
+      },
+      "properties": {
+        "name": "Yellow 20 ",
+        "topoId": 7979,
+        "horizontalAccuracy": 4.7,
+        "heading": 20.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.52856711844605,
+            48.372083261228084
+          ],
+          [
+            2.528576407743712,
+            48.37210006636027
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5284399242615714,
+          48.372196746021714
+        ]
+      },
+      "properties": {
+        "name": "Yellow 22 ",
+        "topoId": 7980,
+        "horizontalAccuracy": 4.7,
+        "heading": 234.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5284399242615714,
+            48.372196746021714
+          ],
+          [
+            2.5284179547540266,
+            48.37218637770439
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5284423491391252,
+          48.372193877654425
+        ]
+      },
+      "properties": {
+        "name": "Yellow 21 ",
+        "topoId": 7981,
+        "horizontalAccuracy": 4.7,
+        "heading": 111.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5284423491391252,
+            48.372193877654425
+          ],
+          [
+            2.528467357179014,
+            48.372187205888004
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528643945080547,
+          48.37225976766507
+        ]
+      },
+      "properties": {
+        "name": "Blue 23 Le Chauve | Différentiel",
+        "topoId": 7982,
+        "horizontalAccuracy": 4.7,
+        "heading": 112.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528643945080547,
+            48.37225976766507
+          ],
+          [
+            2.528668911770611,
+            48.372253027915015
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528643945080547,
+          48.37225976766507
+        ]
+      },
+      "properties": {
+        "name": "Blue 23 Le Chauve | Différentiel",
+        "topoId": 7982,
+        "horizontalAccuracy": 4.7,
+        "heading": 112.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528643945080547,
+            48.37225976766507
+          ],
+          [
+            2.528668911770611,
+            48.372253027915015
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528698046139502,
+          48.372276921678555
+        ]
+      },
+      "properties": {
+        "name": "Moment de Bravoure",
+        "topoId": 7984,
+        "horizontalAccuracy": 4.7,
+        "heading": 199.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528698046139502,
+            48.372276921678555
+          ],
+          [
+            2.5286891485803373,
+            48.37226002332382
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5284780418713604,
+          48.372284926475
+        ]
+      },
+      "properties": {
+        "name": "Yellow 25 ",
+        "topoId": 7986,
+        "horizontalAccuracy": 4.7,
+        "heading": 303.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5284780418713604,
+            48.372284926475
+          ],
+          [
+            2.5284556351007654,
+            48.372294873282414
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528372973932925,
+          48.37221192593313
+        ]
+      },
+      "properties": {
+        "name": "Blue 22 Rebelle",
+        "topoId": 7987,
+        "horizontalAccuracy": 4.7,
+        "heading": 245.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528372973932925,
+            48.37221192593313
+          ],
+          [
+            2.5283484149152966,
+            48.372204554781845
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5283825021057504,
+          48.37219387850365
+        ]
+      },
+      "properties": {
+        "name": "Haut les Mains n°4 | Haut les Mains n°3 | Haut les Mains n°2 | Haut les Mains n°1",
+        "topoId": 7988,
+        "horizontalAccuracy": 4.7,
+        "heading": 154.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5283825021057504,
+            48.37219387850365
+          ],
+          [
+            2.5283942768124583,
+            48.37217777542213
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5283825021057504,
+          48.37219387850365
+        ]
+      },
+      "properties": {
+        "name": "Haut les Mains n°4 | Haut les Mains n°3 | Haut les Mains n°2 | Haut les Mains n°1",
+        "topoId": 7988,
+        "horizontalAccuracy": 4.7,
+        "heading": 154.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5283825021057504,
+            48.37219387850365
+          ],
+          [
+            2.5283942768124583,
+            48.37217777542213
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5283825021057504,
+          48.37219387850365
+        ]
+      },
+      "properties": {
+        "name": "Haut les Mains n°4 | Haut les Mains n°3 | Haut les Mains n°2 | Haut les Mains n°1",
+        "topoId": 7988,
+        "horizontalAccuracy": 4.7,
+        "heading": 154.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5283825021057504,
+            48.37219387850365
+          ],
+          [
+            2.5283942768124583,
+            48.37217777542213
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5283825021057504,
+          48.37219387850365
+        ]
+      },
+      "properties": {
+        "name": "Haut les Mains n°4 | Haut les Mains n°3 | Haut les Mains n°2 | Haut les Mains n°1",
+        "topoId": 7988,
+        "horizontalAccuracy": 4.7,
+        "heading": 154.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5283825021057504,
+            48.37219387850365
+          ],
+          [
+            2.5283942768124583,
+            48.37217777542213
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528300208217388,
+          48.372166160534775
+        ]
+      },
+      "properties": {
+        "name": "Mal de l'Air | Blue 21 L'Épouvantail | Le Grand Bluff",
+        "topoId": 7990,
+        "horizontalAccuracy": 4.7,
+        "heading": 96.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528300208217388,
+            48.372166160534775
+          ],
+          [
+            2.528327011363995,
+            48.37216429760303
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528300208217388,
+          48.372166160534775
+        ]
+      },
+      "properties": {
+        "name": "Mal de l'Air | Blue 21 L'Épouvantail | Le Grand Bluff",
+        "topoId": 7990,
+        "horizontalAccuracy": 4.7,
+        "heading": 96.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528300208217388,
+            48.372166160534775
+          ],
+          [
+            2.528327011363995,
+            48.37216429760303
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528300208217388,
+          48.372166160534775
+        ]
+      },
+      "properties": {
+        "name": "Mal de l'Air | Blue 21 L'Épouvantail | Le Grand Bluff",
+        "topoId": 7990,
+        "horizontalAccuracy": 4.7,
+        "heading": 96.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528300208217388,
+            48.372166160534775
+          ],
+          [
+            2.528327011363995,
+            48.37216429760303
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5282000152146207,
+          48.3721338517664
+        ]
+      },
+      "properties": {
+        "name": "Yellow 26 ",
+        "topoId": 7991,
+        "horizontalAccuracy": 4.7,
+        "heading": 252.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5282000152146207,
+            48.3721338517664
+          ],
+          [
+            2.5281742789277084,
+            48.37212854090082
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528130859138936,
+          48.372107287914204
+        ]
+      },
+      "properties": {
+        "name": "Ictus",
+        "topoId": 7992,
+        "horizontalAccuracy": 4.6,
+        "heading": 100.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528130859138936,
+            48.372107287914204
+          ],
+          [
+            2.5281573861095765,
+            48.37210413039375
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528182490945387,
+          48.37203638213324
+        ]
+      },
+      "properties": {
+        "name": "Yellow 27 ",
+        "topoId": 7994,
+        "horizontalAccuracy": 4.7,
+        "heading": 212.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528182490945387,
+            48.37203638213324
+          ],
+          [
+            2.52816822925618,
+            48.37202119210814
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5282133383684933,
+          48.37201189367781
+        ]
+      },
+      "properties": {
+        "name": "Blue 20 La Fissure Perchée | Défenestration",
+        "topoId": 7996,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5282133383684933,
+            48.37201189367781
+          ],
+          [
+            2.52820606650244,
+            48.372029131919255
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5282133383684933,
+          48.37201189367781
+        ]
+      },
+      "properties": {
+        "name": "Blue 20 La Fissure Perchée | Défenestration",
+        "topoId": 7996,
+        "horizontalAccuracy": 4.7,
+        "heading": 344.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5282133383684933,
+            48.37201189367781
+          ],
+          [
+            2.52820606650244,
+            48.372029131919255
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5282947253459396,
+          48.372022211596715
+        ]
+      },
+      "properties": {
+        "name": "Jeu de Paume",
+        "topoId": 7997,
+        "horizontalAccuracy": 3.5,
+        "heading": 289.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5282947253459396,
+            48.372022211596715
+          ],
+          [
+            2.528269265498654,
+            48.37202808107099
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5283542187021872,
+          48.37163878455116
+        ]
+      },
+      "properties": {
+        "name": "Yellow 28 ",
+        "topoId": 7998,
+        "horizontalAccuracy": 4.7,
+        "heading": 7.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5283542187021872,
+            48.37163878455116
+          ],
+          [
+            2.5283576796455245,
+            48.371656538730875
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528441463489045,
+          48.37166415858989
+        ]
+      },
+      "properties": {
+        "name": "Yellow 29 ",
+        "topoId": 8000,
+        "horizontalAccuracy": 4.6,
+        "heading": 278.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528441463489045,
+            48.37166415858989
+          ],
+          [
+            2.5284148099346173,
+            48.37166680423563
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5284867130709516,
+          48.37166927766847
+        ]
+      },
+      "properties": {
+        "name": "Yellow 30 ",
+        "topoId": 8002,
+        "horizontalAccuracy": 4.7,
+        "heading": 177.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5284867130709516,
+            48.37166927766847
+          ],
+          [
+            2.5284878829253037,
+            48.37165139212601
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5285213201529655,
+          48.37161952902478
+        ]
+      },
+      "properties": {
+        "name": "Yellow 31 ",
+        "topoId": 8003,
+        "horizontalAccuracy": 4.7,
+        "heading": 245.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5285213201529655,
+            48.37161952902478
+          ],
+          [
+            2.5284968764080884,
+            48.37161199060032
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5284555215979583,
+          48.371584047565314
+        ]
+      },
+      "properties": {
+        "name": "Yellow 32 ",
+        "topoId": 8004,
+        "horizontalAccuracy": 4.7,
+        "heading": 289.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5284555215979583,
+            48.371584047565314
+          ],
+          [
+            2.5284301611947,
+            48.37159010409087
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528453599255002,
+          48.371556494071484
+        ]
+      },
+      "properties": {
+        "name": "Yellow 33 ",
+        "topoId": 8005,
+        "horizontalAccuracy": 4.7,
+        "heading": 316.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528453599255002,
+            48.371556494071484
+          ],
+          [
+            2.5284350147642454,
+            48.37156945876541
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528658654160988,
+          48.371682074170515
+        ]
+      },
+      "properties": {
+        "name": "Blue 1 L'Œuf Cabossé",
+        "topoId": 8006,
+        "horizontalAccuracy": 4.7,
+        "heading": 45.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528658654160988,
+            48.371682074170515
+          ],
+          [
+            2.528677735174662,
+            48.37169471654266
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528692865746588,
+          48.37167784110491
+        ]
+      },
+      "properties": {
+        "name": "Trois T | Trois T (assis)",
+        "topoId": 8007,
+        "horizontalAccuracy": 3.5,
+        "heading": 308.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528692865746588,
+            48.37167784110491
+          ],
+          [
+            2.528671617755926,
+            48.37168885312041
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528692865746588,
+          48.37167784110491
+        ]
+      },
+      "properties": {
+        "name": "Trois T | Trois T (assis)",
+        "topoId": 8007,
+        "horizontalAccuracy": 3.5,
+        "heading": 308.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528692865746588,
+            48.37167784110491
+          ],
+          [
+            2.528671617755926,
+            48.37168885312041
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528673503550262,
+          48.3716757037196
+        ]
+      },
+      "properties": {
+        "name": "La Traversée du Général",
+        "topoId": 8008,
+        "horizontalAccuracy": 3.5,
+        "heading": 326.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528673503550262,
+            48.3716757037196
+          ],
+          [
+            2.5286588040645537,
+            48.371690708547135
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5285949678420785,
+          48.371664475956415
+        ]
+      },
+      "properties": {
+        "name": "La Traversée du Général | Blue 2 La Surprise",
+        "topoId": 8009,
+        "horizontalAccuracy": 4.6,
+        "heading": 2.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5285949678420785,
+            48.371664475956415
+          ],
+          [
+            2.5285960133690466,
+            48.37168236489184
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5285949678420785,
+          48.371664475956415
+        ]
+      },
+      "properties": {
+        "name": "La Traversée du Général | Blue 2 La Surprise",
+        "topoId": 8009,
+        "horizontalAccuracy": 4.6,
+        "heading": 2.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5285949678420785,
+            48.371664475956415
+          ],
+          [
+            2.5285960133690466,
+            48.37168236489184
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528604604306192,
+          48.371678511657166
+        ]
+      },
+      "properties": {
+        "name": "Yellow 34 ",
+        "topoId": 8010,
+        "horizontalAccuracy": 3.5,
+        "heading": 54.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528604604306192,
+            48.371678511657166
+          ],
+          [
+            2.5286264061716026,
+            48.37168903507356
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287397309349786,
+          48.37168647544489
+        ]
+      },
+      "properties": {
+        "name": "Blue 3 Exil | Exil (assis)",
+        "topoId": 8011,
+        "horizontalAccuracy": 4.7,
+        "heading": 48.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287397309349786,
+            48.37168647544489
+          ],
+          [
+            2.528760007184875,
+            48.37169826827278
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287397309349786,
+          48.37168647544489
+        ]
+      },
+      "properties": {
+        "name": "Blue 3 Exil | Exil (assis)",
+        "topoId": 8011,
+        "horizontalAccuracy": 4.7,
+        "heading": 48.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287397309349786,
+            48.37168647544489
+          ],
+          [
+            2.528760007184875,
+            48.37169826827278
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287101324671215,
+          48.37172473785316
+        ]
+      },
+      "properties": {
+        "name": "Blue 4 La Chatte |  | Rétrograde | Plantigrade",
+        "topoId": 8012,
+        "horizontalAccuracy": 3.5,
+        "heading": 345.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287101324671215,
+            48.37172473785316
+          ],
+          [
+            2.528703572545592,
+            48.37174210177802
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287101324671215,
+          48.37172473785316
+        ]
+      },
+      "properties": {
+        "name": "Blue 4 La Chatte |  | Rétrograde | Plantigrade",
+        "topoId": 8012,
+        "horizontalAccuracy": 3.5,
+        "heading": 345.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287101324671215,
+            48.37172473785316
+          ],
+          [
+            2.528703572545592,
+            48.37174210177802
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287101324671215,
+          48.37172473785316
+        ]
+      },
+      "properties": {
+        "name": "Blue 4 La Chatte |  | Rétrograde | Plantigrade",
+        "topoId": 8012,
+        "horizontalAccuracy": 3.5,
+        "heading": 345.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287101324671215,
+            48.37172473785316
+          ],
+          [
+            2.528703572545592,
+            48.37174210177802
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287101324671215,
+          48.37172473785316
+        ]
+      },
+      "properties": {
+        "name": "Blue 4 La Chatte |  | Rétrograde | Plantigrade",
+        "topoId": 8012,
+        "horizontalAccuracy": 3.5,
+        "heading": 345.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287101324671215,
+            48.37172473785316
+          ],
+          [
+            2.528703572545592,
+            48.37174210177802
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287534723573155,
+          48.37175421873055
+        ]
+      },
+      "properties": {
+        "name": "Blue 5 Les Flûtes",
+        "topoId": 8013,
+        "horizontalAccuracy": 4.7,
+        "heading": 230.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287534723573155,
+            48.37175421873055
+          ],
+          [
+            2.5287326300490496,
+            48.37174286975302
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287211517716193,
+          48.37175076206255
+        ]
+      },
+      "properties": {
+        "name": "Yellow 35 ",
+        "topoId": 8014,
+        "horizontalAccuracy": 4.7,
+        "heading": 216.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287211517716193,
+            48.37175076206255
+          ],
+          [
+            2.5287053025400197,
+            48.37173628294478
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5286715874709027,
+          48.371860880909736
+        ]
+      },
+      "properties": {
+        "name": "Yellow 36 ",
+        "topoId": 8015,
+        "horizontalAccuracy": 4.7,
+        "heading": 339.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5286715874709027,
+            48.371860880909736
+          ],
+          [
+            2.528661980886366,
+            48.371877607213726
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287322530743386,
+          48.371864224113686
+        ]
+      },
+      "properties": {
+        "name": "Yellow 36 ",
+        "topoId": 8016,
+        "horizontalAccuracy": 4.7,
+        "heading": 304.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287322530743386,
+            48.371864224113686
+          ],
+          [
+            2.528710072164912,
+            48.37187439193713
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528795940810454,
+          48.37185627002334
+        ]
+      },
+      "properties": {
+        "name": "Yellow 37 ",
+        "topoId": 8017,
+        "horizontalAccuracy": 4.6,
+        "heading": 24.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528795940810454,
+            48.37185627002334
+          ],
+          [
+            2.528807044262133,
+            48.37187258226925
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528837715323629,
+          48.37190535819262
+        ]
+      },
+      "properties": {
+        "name": "Yellow 37 ",
+        "topoId": 8018,
+        "horizontalAccuracy": 4.7,
+        "heading": 319.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528837715323629,
+            48.37190535819262
+          ],
+          [
+            2.52882037362891,
+            48.37191906161826
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528921873250188,
+          48.37190144547008
+        ]
+      },
+      "properties": {
+        "name": "Briseur de Prise | Briseur de Prise (assis)",
+        "topoId": 8019,
+        "horizontalAccuracy": 4.7,
+        "heading": 334.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528921873250188,
+            48.37190144547008
+          ],
+          [
+            2.528910373636857,
+            48.371917636128615
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.528921873250188,
+          48.37190144547008
+        ]
+      },
+      "properties": {
+        "name": "Briseur de Prise | Briseur de Prise (assis)",
+        "topoId": 8019,
+        "horizontalAccuracy": 4.7,
+        "heading": 334.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.528921873250188,
+            48.37190144547008
+          ],
+          [
+            2.528910373636857,
+            48.371917636128615
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5288516956022753,
+          48.37191737292978
+        ]
+      },
+      "properties": {
+        "name": "Coup Double",
+        "topoId": 8020,
+        "horizontalAccuracy": 4.7,
+        "heading": 24.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5288516956022753,
+            48.37191737292978
+          ],
+          [
+            2.528862965210135,
+            48.371933634795795
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5288584581848985,
+          48.371966844110794
+        ]
+      },
+      "properties": {
+        "name": "Yellow 39  | Blue 9 Mensonge",
+        "topoId": 8021,
+        "horizontalAccuracy": 4.7,
+        "heading": 102.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5288584581848985,
+            48.371966844110794
+          ],
+          [
+            2.528884771198869,
+            48.37196297643562
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5288584581848985,
+          48.371966844110794
+        ]
+      },
+      "properties": {
+        "name": "Yellow 39  | Blue 9 Mensonge",
+        "topoId": 8021,
+        "horizontalAccuracy": 4.7,
+        "heading": 102.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5288584581848985,
+            48.371966844110794
+          ],
+          [
+            2.528884771198869,
+            48.37196297643562
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529469991621227,
+          48.37263157231816
+        ]
+      },
+      "properties": {
+        "name": "Blue 26 Jeu Alpin | Blue 25 Prise Clé",
+        "topoId": 8023,
+        "horizontalAccuracy": 4.7,
+        "heading": 42.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529469991621227,
+            48.37263157231816
+          ],
+          [
+            2.5294880093175887,
+            48.3726448851235
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529469991621227,
+          48.37263157231816
+        ]
+      },
+      "properties": {
+        "name": "Blue 26 Jeu Alpin | Blue 25 Prise Clé",
+        "topoId": 8023,
+        "horizontalAccuracy": 4.7,
+        "heading": 42.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529469991621227,
+            48.37263157231816
+          ],
+          [
+            2.5294880093175887,
+            48.3726448851235
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529463140955252,
+          48.372642642764795
+        ]
+      },
+      "properties": {
+        "name": "Leak End",
+        "topoId": 8025,
+        "horizontalAccuracy": 4.7,
+        "heading": 54.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529463140955252,
+            48.372642642764795
+          ],
+          [
+            2.529485043090426,
+            48.3726530736977
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529417316280527,
+          48.37266651024836
+        ]
+      },
+      "properties": {
+        "name": "Blue 27 Fil d'Angle",
+        "topoId": 8026,
+        "horizontalAccuracy": 4.7,
+        "heading": 92.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529417316280527,
+            48.37266651024836
+          ],
+          [
+            2.5294442472687915,
+            48.372665847566395
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529546471806585,
+          48.37266649219737
+        ]
+      },
+      "properties": {
+        "name": "Blue 28 Ascendance Tardive",
+        "topoId": 8027,
+        "horizontalAccuracy": 4.7,
+        "heading": 151.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529546471806585,
+            48.37266649219737
+          ],
+          [
+            2.5295592675863072,
+            48.37265073676421
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5295859575295165,
+          48.372665480755614
+        ]
+      },
+      "properties": {
+        "name": "Blue 29 Bosses",
+        "topoId": 8028,
+        "horizontalAccuracy": 3.5,
+        "heading": 235.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5295859575295165,
+            48.372665480755614
+          ],
+          [
+            2.5295636778980346,
+            48.37265540878584
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5294848622393333,
+          48.37280596446512
+        ]
+      },
+      "properties": {
+        "name": "Blue 30 Dhal Bhat",
+        "topoId": 8029,
+        "horizontalAccuracy": 4.6,
+        "heading": 296.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5294848622393333,
+            48.37280596446512
+          ],
+          [
+            2.52946075227986,
+            48.37281396300346
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5294648390286874,
+          48.37274716240202
+        ]
+      },
+      "properties": {
+        "name": "",
+        "topoId": 8030,
+        "horizontalAccuracy": 3.5,
+        "heading": 344.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5294648390286874,
+            48.37274716240202
+          ],
+          [
+            2.5294575049582555,
+            48.37276438876172
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529507670553895,
+          48.37283974052285
+        ]
+      },
+      "properties": {
+        "name": "Pitre Borgne",
+        "topoId": 8031,
+        "horizontalAccuracy": 4.6,
+        "heading": 270.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529507670553895,
+            48.37283974052285
+          ],
+          [
+            2.529480721182642,
+            48.3728397860819
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5297406874620627,
+          48.3730822289816
+        ]
+      },
+      "properties": {
+        "name": "Blue 31 Entracte",
+        "topoId": 8033,
+        "horizontalAccuracy": 4.2,
+        "heading": 258.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5297406874620627,
+            48.3730822289816
+          ],
+          [
+            2.5297142720160015,
+            48.37307868286433
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5294519046285537,
+          48.3734847080758
+        ]
+      },
+      "properties": {
+        "name": "Blue 32 La Rancune",
+        "topoId": 8034,
+        "horizontalAccuracy": 4.7,
+        "heading": 326.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5294519046285537,
+            48.3734847080758
+          ],
+          [
+            2.529437060690279,
+            48.373499649485794
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5295058265351966,
+          48.373552369930195
+        ]
+      },
+      "properties": {
+        "name": "Blue 33 Pur Jus",
+        "topoId": 8036,
+        "horizontalAccuracy": 4.4,
+        "heading": 320.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5295058265351966,
+            48.373552369930195
+          ],
+          [
+            2.5294887761361404,
+            48.37356623327572
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529518650847049,
+          48.37354151536559
+        ]
+      },
+      "properties": {
+        "name": "Blue 34 La Douceur",
+        "topoId": 8037,
+        "horizontalAccuracy": 3.5,
+        "heading": 228.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529518650847049,
+            48.37354151536559
+          ],
+          [
+            2.5294984316340123,
+            48.3735296798298
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529380353318083,
+          48.37352958290769
+        ]
+      },
+      "properties": {
+        "name": "Un Ouvreur Peut en Cacher un Autre",
+        "topoId": 8038,
+        "horizontalAccuracy": 4.7,
+        "heading": 104.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529380353318083,
+            48.37352958290769
+          ],
+          [
+            2.529406392057717,
+            48.373524968377765
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5298692608291358,
+          48.37377904242631
+        ]
+      },
+      "properties": {
+        "name": "Queen Mary",
+        "topoId": 8040,
+        "horizontalAccuracy": 4.7,
+        "heading": 3.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5298692608291358,
+            48.37377904242631
+          ],
+          [
+            2.5298706664921657,
+            48.37379691972788
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5297900056700087,
+          48.3737915575682
+        ]
+      },
+      "properties": {
+        "name": "Blue 35 La Belle Impasse | Queen Mary",
+        "topoId": 8041,
+        "horizontalAccuracy": 4.7,
+        "heading": 86.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5297900056700087,
+            48.3737915575682
+          ],
+          [
+            2.5298169110877913,
+            48.37379258058621
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5297900056700087,
+          48.3737915575682
+        ]
+      },
+      "properties": {
+        "name": "Blue 35 La Belle Impasse | Queen Mary",
+        "topoId": 8041,
+        "horizontalAccuracy": 4.7,
+        "heading": 86.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5297900056700087,
+            48.3737915575682
+          ],
+          [
+            2.5298169110877913,
+            48.37379258058621
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5298306563031625,
+          48.37382127651347
+        ]
+      },
+      "properties": {
+        "name": "Blue 38 Bel Envol | Blue 37 Gaz de Ville",
+        "topoId": 8042,
+        "horizontalAccuracy": 4.7,
+        "heading": 107.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5298306563031625,
+            48.37382127651347
+          ],
+          [
+            2.5298563197903268,
+            48.373815812582656
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5298306563031625,
+          48.37382127651347
+        ]
+      },
+      "properties": {
+        "name": "Blue 38 Bel Envol | Blue 37 Gaz de Ville",
+        "topoId": 8042,
+        "horizontalAccuracy": 4.7,
+        "heading": 107.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5298306563031625,
+            48.37382127651347
+          ],
+          [
+            2.5298563197903268,
+            48.373815812582656
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5299725164120086,
+          48.37380720800177
+        ]
+      },
+      "properties": {
+        "name": "Blue 36 L'Angle Infâme",
+        "topoId": 8043,
+        "horizontalAccuracy": 4.7,
+        "heading": 213.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5299725164120086,
+            48.37380720800177
+          ],
+          [
+            2.5299576151238097,
+            48.37379229189271
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529991326922187,
+          48.37405389113097
+        ]
+      },
+      "properties": {
+        "name": "Blue 41 La Vire des Larmes | Quart entre Deux",
+        "topoId": 8044,
+        "horizontalAccuracy": 4.7,
+        "heading": 260.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529991326922187,
+            48.37405389113097
+          ],
+          [
+            2.5299647157363876,
+            48.374051063663465
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.529991326922187,
+          48.37405389113097
+        ]
+      },
+      "properties": {
+        "name": "Blue 41 La Vire des Larmes | Quart entre Deux",
+        "topoId": 8044,
+        "horizontalAccuracy": 4.7,
+        "heading": 260.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.529991326922187,
+            48.37405389113097
+          ],
+          [
+            2.5299647157363876,
+            48.374051063663465
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.530048596570301,
+          48.37405519348245
+        ]
+      },
+      "properties": {
+        "name": "Blue 40 La Chevillette",
+        "topoId": 8045,
+        "horizontalAccuracy": 4.7,
+        "heading": 281.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.530048596570301,
+            48.37405519348245
+          ],
+          [
+            2.5300221616444505,
+            48.37405867488944
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5300778914266546,
+          48.3740666835088
+        ]
+      },
+      "properties": {
+        "name": "Blue 39 L'Abat-Jour | Deux Larmes, Même Aorte (direct) | Deux Larmes, Même Aorte",
+        "topoId": 8046,
+        "horizontalAccuracy": 3.5,
+        "heading": 237.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5300778914266546,
+            48.3740666835088
+          ],
+          [
+            2.53005511874269,
+            48.37405711076155
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5300778914266546,
+          48.3740666835088
+        ]
+      },
+      "properties": {
+        "name": "Blue 39 L'Abat-Jour | Deux Larmes, Même Aorte (direct) | Deux Larmes, Même Aorte",
+        "topoId": 8046,
+        "horizontalAccuracy": 3.5,
+        "heading": 237.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5300778914266546,
+            48.3740666835088
+          ],
+          [
+            2.53005511874269,
+            48.37405711076155
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5300778914266546,
+          48.3740666835088
+        ]
+      },
+      "properties": {
+        "name": "Blue 39 L'Abat-Jour | Deux Larmes, Même Aorte (direct) | Deux Larmes, Même Aorte",
+        "topoId": 8046,
+        "horizontalAccuracy": 3.5,
+        "heading": 237.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5300778914266546,
+            48.3740666835088
+          ],
+          [
+            2.53005511874269,
+            48.37405711076155
+          ]
+        ]
+      },
+      "properties": {
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5287743730429555,
+          48.37197013925526
+        ]
+      },
+      "properties": {
+        "name": "Blue 7 La Traversée de la Petite Victoire | Petite Victoire",
+        "topoId": 7969,
+        "horizontalAccuracy": 4.7,
+        "heading": 148.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.5287743730429555,
+            48.37197013925526
+          ],
+          [
+            2.5287883406176523,
+            48.371954829085965
+          ]
+        ]
+      },
+      "properties": {
+      }
+    }
+  ]
+}
