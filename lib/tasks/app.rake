@@ -14,20 +14,20 @@ namespace :app do
       # TODO: set not null columns?
       db.execute <<-SQL
         create table problems (
-          id int NOT NULL,
-          name text, 
-          grade text,
-          latitude real NOT NULL,
-          longitude real NOT NULL,
-          circuit_id int,
-          circuit_number text,
-          circuit_color text,
-          steepness text NOT NULL,
-          sit_start bool NOT NULL,
-          area_id int NOT NULL,
-          bleau_info_id text,
-          featured bool NOT NULL,
-          parent_id int
+          id INTEGER NOT NULL PRIMARY KEY,
+          name TEXT, 
+          grade TEXT,
+          latitude REAL NOT NULL,
+          longitude REAL NOT NULL,
+          circuit_id INTEGER,
+          circuit_number TEXT,
+          circuit_color TEXT,
+          steepness TEXT NOT NULL,
+          sit_start INTEGER NOT NULL,
+          area_id INTEGER NOT NULL,
+          bleau_info_id TEXT,
+          featured INTEGER NOT NULL,
+          parent_id INTEGER
         );
       SQL
 
@@ -57,12 +57,12 @@ namespace :app do
 
       db.execute <<-SQL
         create table areas (
-          id int NOT NULL,
-          name text NOT NULL,
-          south_west_lat real NOT NULL,
-          south_west_lon real NOT NULL,
-          north_east_lat real NOT NULL,
-          north_east_lon real NOT NULL
+          id INTEGER NOT NULL PRIMARY KEY,
+          name TEXT NOT NULL,
+          south_west_lat REAL NOT NULL,
+          south_west_lon REAL NOT NULL,
+          north_east_lat REAL NOT NULL,
+          north_east_lon REAL NOT NULL
         );
       SQL
 
@@ -81,10 +81,10 @@ namespace :app do
 
       db.execute <<-SQL
         create table lines (
-          id int NOT NULL,
-          problem_id int NOT NULL,
-          topo_id int NOT NULL,
-          coordinates text
+          id INTEGER NOT NULL PRIMARY KEY,
+          problem_id INTEGER NOT NULL,
+          topo_id INTEGER NOT NULL,
+          coordinates TEXT
         );
       SQL
 
