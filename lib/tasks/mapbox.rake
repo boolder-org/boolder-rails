@@ -10,7 +10,9 @@ namespace :mapbox do
     hull_features = []
 
     Area.published.each do |area|
-      hull = area.boulders.select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.00007) as hull").to_a.first.hull
+      hull = area.boulders.where(ignore_for_area_hull: false).
+        select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.00007) as hull").to_a.first.hull
+
       hash = {}.with_indifferent_access
       hash[:area_id] = area.id
       # we store lat/lon as strings to make it easier to edit the geojson in tools like JOSM
