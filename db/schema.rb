@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_26_082130) do
+ActiveRecord::Schema.define(version: 2022_11_29_095701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 2022_10_26_082130) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "area_id"
+    t.boolean "ignore_for_area_hull", default: false, null: false
     t.index ["area_id"], name: "index_boulders_on_area_id"
   end
 
