@@ -46,9 +46,10 @@ class Area < ApplicationRecord
   end
 
   def bounds
+    relevant_boulders = boulders.where(ignore_for_area_hull: false)
     @bounds ||= {
-      south_west: FACTORY.point(boulders.minimum("st_xmin(polygon::geometry)"), boulders.minimum("st_ymin(polygon::geometry)")),
-      north_east: FACTORY.point(boulders.maximum("st_xmax(polygon::geometry)"), boulders.maximum("st_ymax(polygon::geometry)"))
+      south_west: FACTORY.point(relevant_boulders.minimum("st_xmin(polygon::geometry)"), relevant_boulders.minimum("st_ymin(polygon::geometry)")),
+      north_east: FACTORY.point(relevant_boulders.maximum("st_xmax(polygon::geometry)"), relevant_boulders.maximum("st_ymax(polygon::geometry)"))
     }
   end
 end
