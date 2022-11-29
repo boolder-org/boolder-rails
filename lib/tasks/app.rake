@@ -137,22 +137,23 @@ namespace :app do
           im.thumbnail_image(800).write_to_file output_file
         end
 
-        puts "created topo-#{line.topo.id}.jpg".green
+        puts "created topo-#{line.topo.id}.jpg"
       end
     end
+    puts "exported topos for area ##{area_id}".green
   end
 
-# task covers: :environment do
-#   Area.order(:id).all.each do |area|
-#     puts "processing area ##{area.id}"
+  # task covers: :environment do
+  #   Area.order(:id).all.each do |area|
+  #     puts "processing area ##{area.id}"
 
-#     output_file = Rails.root.join('export', 'app', "area-covers", "area-cover-#{area.id}.jpg").to_s
-#     area.cover.open do |file| 
-#       im = Vips::Image.new_from_file file.path.to_s
-#       im.thumbnail_image(400).write_to_file output_file
-#     end
-#   end
+  #     output_file = Rails.root.join('export', 'app', "area-covers", "area-cover-#{area.id}.jpg").to_s
+  #     area.cover.open do |file| 
+  #       im = Vips::Image.new_from_file file.path.to_s
+  #       im.thumbnail_image(400).write_to_file output_file
+  #     end
+  #   end
 
-#   puts "exported covers".green
-# end
+  #   puts "exported covers".green
+  # end
 end
