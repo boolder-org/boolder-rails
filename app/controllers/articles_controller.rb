@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
 
     @intermediate_areas = Rails.cache.fetch("articles/top_areas_per_level/intermediate", expires_in: 12.hours) do
       Area.published.
-        reject{|a| a.id.in?([69, 42]) }. # FIXME: use a tag to avoid tricky areas (like Apremont Est (id=69), Dame Jouanne (id=42))
+        reject{|a| a.id.in?([64, 69, 42]) }. # FIXME: use a tag to avoid tricky areas
         select{|a| a.problems.where("grade < '6a' AND grade >= '4a'").count >= 100 }.
         shuffle
     end
@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
 
   def top_areas_groups
     @areas = Area.published.
-      reject{|a| a.id.in?([69, 42]) }. # FIXME: use a tag to avoid tricky areas (like Apremont Est (id=69), Dame Jouanne (id=42))
+      reject{|a| a.id.in?([64, 69, 42]) }. # FIXME: use a tag to avoid tricky areas
       select{|a| a.level_density_score >= 5}
   end
 
