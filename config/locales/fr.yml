@@ -72,21 +72,27 @@ fr:
         apply: Appliquer
         clear: Effacer
     app_landing:
-      title: Le topo qui tient dans votre poche.
-      subtitle: "L'appli Boolder est votre compagnon idéal pour vos sorties grimpe à Fontainebleau :"
+      title: Boolder, le topo 2.0 dans votre poche
+      subtitle: "La meilleure façon de découvrir l'escalade de bloc à Fontainebleau"
       selling_points:
         map:
           title: Carte et géolocalisation
-          subtitle: Repérez-vous facilement dans la forêt grâce au GPS et à la boussole.
+          subtitle: Repérez-vous facilement dans la forêt grâce au GPS
         photos:
-          title: Des milliers de voies avec photos
-          subtitle: Trouvez facilement les voies qui vous conviennent.
+          title: Des milliers de voies et circuits
+          subtitle: Avec des photos et tracés de haute qualité
+        levels:
+          title: Pour tous les niveaux
+          subtitle: Filtrez les voies et circuits adaptés à votre niveau
+        search:
+          title: Recherche avancée
+          subtitle: Trouvez une voie ou un secteur en quelques secondes
         offline:
-          title: Mode hors-ligne
-          subtitle: L'appli fonctionne même en mode avion.
+          title: Mode hors-ligne (iPhone seulement)
+          subtitle: L'appli fonctionne sans connectivité
       metas:
-        title: Appli iPhone
-        description: Le topo d'escalade qui tient dans votre poche
+        title: Appli Boolder, disponible sur iOS et Android
+        description: Le topo d'escalade pour Fontainebleau qui tient dans votre poche
     privacy:
       metas:
         title: Confidentialité
