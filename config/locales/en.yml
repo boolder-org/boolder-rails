@@ -72,21 +72,27 @@ en:
         apply: Apply
         clear: Clear
     app_landing:
-      title: The bouldering guide that fits in your pocket
-      subtitle: "Boolder is the perfect guide to enjoy bouldering in Fontainebleau:"
+      title: Boolder on your phone
+      subtitle: "The perfect guide to enjoy bouldering in Fontainebleau"
       selling_points:
         map:
           title: Interactive map and geolocation
-          subtitle: Find your way in the forest thanks to the GPS and the compass.
+          subtitle: Find your way in the forest thanks to the GPS
         photos:
-          title: Thousands of problems with photos
-          subtitle: Find problems that match your taste.
+          title: Thousands of problems
+          subtitle: With high-quality topo photos and lines
+        levels:
+          title: For all levels
+          subtitle: Filter problems and circuits for your level
+        search:
+          title: Advanced search
+          subtitle: Find any problem or area in a few seconds
         offline:
-          title: Offline mode
-          subtitle: The app woks even in airplane mode.
+          title: Offline mode (iPhone only)
+          subtitle: The app woks even in airplane mode
       metas:
-        title: iPhone app
-        description: The bouldering guide that fits in your pocket
+        title: The Boolder app, available on iOS and Android
+        description: The bouldering guide for Fontainebleau that fits in your pocket
     privacy:
       metas:
         title: Privacy

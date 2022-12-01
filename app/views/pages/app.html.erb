@@ -6,9 +6,22 @@
 <div class="overflow-hidden">
   <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
 
-    <div class="relative my-12 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+    <div class="relative my-4 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
       <div class="relative">
-        <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mt-8">
+
+        <div class="flex justify-center my-8 lg:mb-12">
+          <%= link_to "https://apps.apple.com/#{I18n.locale == :en ? "us" : "fr"}/app/boolder/id1506614493#?platform=iphone" do %>
+            <div class="object-contain h-24">
+              <%= image_tag "app-store-badge-#{I18n.locale}.png", class:"object-contain h-24 p-4" %>  
+            </div>
+          <% end %>
+          <%= link_to "https://play.google.com/store/apps/details?id=com.boolder.boolder" do %>
+            <%= image_tag "play-store-badge-#{I18n.locale}.png", class:"object-contain h-24 p-4" %>
+          <% end %>
+        </div>
+
+
+        <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
             <%= t("views.app_landing.title") %>
           </h1>
         <p class="mt-3 text-lg text-gray-500">
@@ -58,6 +71,42 @@
           <div class="flex">
             <div class="flex-shrink-0">
               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <dt class="text-lg leading-6 font-medium text-gray-900">
+                <%= t("views.app_landing.selling_points.levels.title") %>
+              </dt>
+              <dd class="mt-2 text-base text-gray-500">
+                <%= t("views.app_landing.selling_points.levels.subtitle") %>
+              </dd>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <dt class="text-lg leading-6 font-medium text-gray-900">
+                <%= t("views.app_landing.selling_points.search.title") %>
+              </dt>
+              <dd class="mt-2 text-base text-gray-500">
+                <%= t("views.app_landing.selling_points.search.subtitle") %>
+              </dd>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
                 </svg>
@@ -72,24 +121,14 @@
               </dd>
             </div>
           </div>
-
-
-          <div class="flex justify-center py-8">
-          <%= link_to "https://apps.apple.com/#{I18n.locale == :en ? "us" : "fr"}/app/boolder/id1506614493#?platform=iphone" do %>
-            <%= render 'svg/app_store_badge', height: 40*2, width: 126.5*2 %>
-          <% end %>
-        </div>
         </dl>
       </div>
 
-      <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+      <div class="my-12 -mx-4 relative lg:mt-0" aria-hidden="true">
         <div class="flex justify-center">
           <div class="relative">
-            
-
-            <video autoplay loop muted playsinline width="301" class="absolute bg-gray-900 h-full" style="top:15px; left:18px; height: 648px">
-              <source src="/videos/app-demo.<%= I18n.locale %>.mov" type="video/mp4">
-            </video>
+                        
+            <%= image_tag "app-screenshot-#{I18n.locale}.jpg", class: "absolute bg-gray-900 h-full", style: "top:14px; left:18px; height: 652px" %>
 
             <%= image_tag 'iphone-frame.png', class: "relative mx-auto absolute top-0 left-0", width: "336" %>
           
