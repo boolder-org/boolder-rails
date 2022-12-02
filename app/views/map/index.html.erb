@@ -37,3 +37,8 @@ data-mapbox-bounds-value="<%= @bounds.to_json %>"
   <%= render "filters" %>
 
 </div>
+
+<% if !session[:android_launch].present? && request.user_agent =~ /Android/ %>  
+  <%= render "android_banner" %>
+  <% session[:android_launch] = "displayed" %>
+<% end %>
