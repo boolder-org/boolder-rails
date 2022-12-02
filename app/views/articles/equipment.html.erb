@@ -2,9 +2,13 @@
 <% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
 <div class="bg-white">
-  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="text-lg max-w-prose mx-auto mb-16">
+          <div class="pt-4 pb-16">
+            <%= render 'pagination', prev_path: beginners_guide_path, prev_text: t('views.articles.table_of_contents'), next_path: choose_area_path, next_text: "2. #{t('views.articles.beginners_guide.choose_area.title')}" %>
+          </div>
+
           <span class="mt-3 sm:mt-4 block text-base text-center text-green-600 font-semibold tracking-wide uppercase">
             <%= t('views.articles.beginners_guide.title') %>
           </span>
@@ -83,7 +87,9 @@
           
         </div>
 
-        <%= render 'pagination', prev_path: beginners_guide_path, prev_text: t('views.articles.table_of_contents'), next_path: choose_area_path, next_text: "2. #{t('views.articles.beginners_guide.choose_area.title')}" %>
+        <div class="pt-16 pb-4">
+          <%= render 'pagination', prev_path: beginners_guide_path, prev_text: t('views.articles.table_of_contents'), next_path: choose_area_path, next_text: "2. #{t('views.articles.beginners_guide.choose_area.title')}" %>
+        </div>
 
     </div>
 </div>
