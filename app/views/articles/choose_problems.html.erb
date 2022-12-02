@@ -34,11 +34,7 @@
           <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
             <div class="flex justify-center">
               <div class="relative">
-                
-
-                <video autoplay loop muted playsinline width="301" class="absolute bg-gray-900 h-full" style="top:15px; left:18px; height: 648px">
-                  <source src="/videos/level-filter.<%= I18n.locale %>.mov" type="video/mp4">
-                </video>
+                <%= image_tag "articles/level-filter-#{I18n.locale}.jpg", class: "absolute bg-gray-900 h-full", style: "top:14px; left:18px; height: 652px" %>
 
                 <%= image_tag 'iphone-frame.png', class: "relative mx-auto absolute top-0 left-0", width: "336" %>
               
@@ -83,15 +79,15 @@
             <%= t('views.articles.beginners_guide.choose_problems.circuit_p4_html') %>
           </p>
 
-          <p>
+          <!-- <p>
             <%= t('views.articles.beginners_guide.choose_problems.circuit_p5_html', path: app_path) %>
-          </p>
+          </p> -->
 
           
 
         </div>
 
-        <div class="pt-16 pb-4">
+        <div class="pt-16 pb-8">
           <%= render 'pagination', prev_path: choose_area_path, prev_text: "2. #{t('views.articles.beginners_guide.choose_area.title')}", next_path: climb_safely_path, next_text: "4. #{t('views.articles.beginners_guide.climb_safely.title')}" %>
         </div>
 
