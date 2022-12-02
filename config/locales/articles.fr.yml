@@ -12,13 +12,12 @@ fr:
           title: Le matériel nécessaire
           intro: Voici le matériel dont vous aurez besoin pour vos sorties d'escalade à Fontainebleau.
           shoes: Des chaussons d'escalade
-          shoes_tip: "À savoir : vos appuis seront meilleurs avec des chaussons 1 ou 2 pointures en dessous de votre taille habituelle. C'est donc normal d'avoir un peu mal (mais pas trop non plus !)."
           crashpad: Un crash pad
           crashpad_description: Un crash pad est un matelas conçu pour amortir vos chutes. 
           crashpad_tip: Nous vous recommandons de prendre un crash pad épais et avec une grande surface au sol, même s'il est plus encombrant.
           guidebook: Un topo
           guidebook_description_html: Un <i>topo</i>, ou <i>topoguide</i>, vous permet de vous repérer dans un secteur d'escalade.
-          guidebook_tip_html: Nous vous recommandons <a href="%{path}">l’appli Boolder</a>, disponible sur iPhone. Vous aurez accès à une carte géolocalisée (GPS et boussole) et aux photos des voies.
+          guidebook_tip_html: Nous vous recommandons <a href="%{path}">l’appli Boolder</a>. Vous aurez accès à une carte géolocalisée (GPS et boussole) et aux photos des voies.
           guidebook_tip2: Si vous préférez un topo en version papier, nous vous recommandons Fun Bloc, qui liste une vingtaine de secteurs les plus populaires de Fontainebleau avec des voies et circuits pour tous les niveaux.
           optional: En option
           optional_item1_html: un <strong>paillasson</strong> (ou chiffon) pour essuyer vos chaussons avant de commencer une voie

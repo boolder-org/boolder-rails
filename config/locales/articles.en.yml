@@ -12,13 +12,12 @@ en:
           title: Equipment
           intro: Here is the equipment you will need to climb outdoors.
           shoes: Climbing shoes
-          shoes_tip: "Tip: use shoes 1 (or 2) sizes below what you normally wear, to better stick to the boulder. Your toes will hurt a bit but it's worth it!"
           crashpad: A crash mat
           crashpad_description: A crash mat is designed to soften your fall.
           crashpad_tip: We recommend you use a thick one with a large surface, even if it's a bit more bulky.
           guidebook: A guidebook
           guidebook_description_html: A guidebook (or <i>topo</i> in French), will help you navigate climbing areas.
-          guidebook_tip_html: We recommend you use <a href="%{path}">the Boolder app</a>, available on iPhone. You will have access to a GPS map and photos of the problems.
+          guidebook_tip_html: We recommend you use <a href="%{path}">the Boolder app</a>. You will have access to a GPS map and photos of the problems.
           guidebook_tip2: If you prefer a paper version, we recommend using Fun Bloc.
           optional: Optional
           optional_item1_html: a <strong>doormat</strong> (or a rag), to clean your shoes before starting a problem
@@ -72,7 +71,7 @@ en:
           multi_crashpad: Take several crash mats
           multi_crashpad_p1: It can be reassuring to have several crash mats to cover a larger surface on the ground.
           multi_crashpad_p2: If you climb with a group, you can also ask your friends to move the crash mat while you're climbing, so that it always stays right below you.
-          spot: Spot
+          spot: Have a spotter
           spot_p1_html: To help your friends climb safely, you can offer to be the <i>spotter</i>.
           spot_p2: The spotter redirects the climber's fall to land safely on the crash mat.
           spot_p3: "Careful: don't try to catch the climber yourself, you migh injure yourself!"

@@ -30,10 +30,6 @@
             <%= image_tag("articles/chaussons.jpg", class: "w-1/2 rounded-lg") %>
           </div>
 
-          <p>
-            <%= t('views.articles.beginners_guide.equipment.shoes_tip') %>
-          </p>
-
           <h2>
             <%= t('views.articles.beginners_guide.equipment.crashpad') %>
           </h2>
@@ -87,7 +83,7 @@
           
         </div>
 
-        <div class="pt-16 pb-4">
+        <div class="pt-16 pb-8">
           <%= render 'pagination', prev_path: beginners_guide_path, prev_text: t('views.articles.table_of_contents'), next_path: choose_area_path, next_text: "2. #{t('views.articles.beginners_guide.choose_area.title')}" %>
         </div>
 
