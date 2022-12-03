@@ -56,6 +56,17 @@ class Problem < ApplicationRecord
   scope :number, -> (circuit_number){ where(circuit_number: circuit_number) } 
   include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
+
+  # quick hack
+  scope :level1, -> { where("grade >= '1a' AND grade < '2b'") }
+  scope :level2, -> { where("grade >= '1c' AND grade < '3b'") }
+  scope :level3, -> { where("grade >= '2c' AND grade < '4b'") }
+  scope :level4, -> { where("grade >= '3c' AND grade < '5b'") }
+  scope :level5, -> { where("grade >= '4c' AND grade < '6b'") }
+  scope :level6, -> { where("grade >= '5c' AND grade < '7b'") }
+  scope :level7, -> { where("grade >= '6c' AND grade < '8b'") }
+
+
   scope :featured, -> { where(featured: true) }
 
   def to_param
