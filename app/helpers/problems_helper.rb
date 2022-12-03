@@ -19,6 +19,14 @@ module ProblemsHelper
     )
   end
 
+  def circuit_color_circle_view(color, level: "", klass: "h-6 w-6 leading-6")
+    circle_view(level.to_s.html_safe, 
+      background_color: uicolor(color), 
+      text_color: text_color(color),
+      klass: klass
+    )
+  end
+
   def uicolor(circuit_color)
     color_mapping[circuit_color] || "rgb(80% 80% 80%)"
   end
@@ -33,7 +41,7 @@ module ProblemsHelper
 
   def circle_view(content, background_color: "", text_color: "", klass: "h-6 w-6 leading-6")
     content_tag(:span, content, 
-      style: "background: #{background_color}; color: #{text_color}",
+      style: "background-color: #{background_color}; color: #{text_color}",
       class: "rounded-full #{klass} inline-flex justify-center")
   end
 
@@ -54,6 +62,8 @@ module ProblemsHelper
       red:      "#FF3B2F",
       black:    "#000000",
       white:    "#FFFFFF",
+      disabled:  "rgba(204, 204, 204, .2)",
+      green2:  "rgba(5, 150, 105, 0.8)",
     }.with_indifferent_access
   end
 
