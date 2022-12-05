@@ -2,20 +2,16 @@ class AreasController < ApplicationController
   def index
     @areas = Area.published
 
-    # @areas_with_count = @areas.map {|area| [area, area.problems.count]}
-    @areas = @areas.sort{|a,b| ActiveSupport::Inflector.transliterate(a.name) <=> ActiveSupport::Inflector.transliterate(b.name) }
-
-    @beginner_areas = Area.published.any_tags(:beginner_friendly).all
-
-    @intermediate_areas = 
-      Area.published.
-        reject{|a| a.id.in?([64, 69, 42]) }. # FIXME: use a tag to avoid tricky areas
-        select{|a| a.problems.where("grade < '6a' AND grade >= '4a'").count >= 100 }
-
-    @advanced_areas = 
-      Area.published.
-        reject{|a| a.id.in?([42]) }. # FIXME: use a tag to avoid *very* tricky areas (like Dame Jouanne (id=42))
-        select{|a| a.problems.where("grade >= '6a'").count >= 100 }
+    if params[:sort] == "all"
+      @areas_with_count = @areas.map {|area| [area, area.problems.count]}
+      @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
+    elsif params[:sort].to_i.in?(1..8)
+      @areas_with_count = @areas.map {|area| [area, area.problems.level(params[:sort].to_i).count]}
+      @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
+    else
+      @areas_with_count = @areas.map {|area| [area, area.problems.count]}
+      @areas_with_count = @areas_with_count.sort{|a,b| ActiveSupport::Inflector.transliterate(a.first.name) <=> ActiveSupport::Inflector.transliterate(b.first.name) }
+    end
   end
 
   def show

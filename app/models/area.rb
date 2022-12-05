@@ -28,11 +28,6 @@ class Area < ApplicationRecord
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 
-  # TODO: remove when app 2.0 is live
-  def start_location
-    @start_location ||= pois.first&.route&.points&.last
-  end
-
   def level_density_score
     1.upto(8).map{|level| (problems.level(level).count >= 40) ? 1 : 0 }.reduce(:+)
   end
@@ -51,5 +46,9 @@ class Area < ApplicationRecord
       south_west: FACTORY.point(relevant_boulders.minimum("st_xmin(polygon::geometry)"), relevant_boulders.minimum("st_ymin(polygon::geometry)")),
       north_east: FACTORY.point(relevant_boulders.maximum("st_xmax(polygon::geometry)"), relevant_boulders.maximum("st_ymax(polygon::geometry)"))
     }
+  end
+
+  def beginner_friendly?
+    problems.level2.count >= 30 && problems.level3.count >= 30 && circuits.none?{|c| c.risky? && c.avg_grade >= "2a" && c.avg_grade < "4a" }
   end
 end

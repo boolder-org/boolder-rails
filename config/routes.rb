@@ -40,19 +40,15 @@ Rails.application.routes.draw do
     end
 
     scope 'fontainebleau' do
-      # ========================================================
-      # Legacy routes: keep until end of 2021 for SEO purposes
-      get "areas", to: redirect('/%{locale}/fontainebleau'), as: :area_legacy_redirect
-      get "areas/:id", to: "welcome#redirect_area"
-      get "areas/:id/map", to: "welcome#redirect_area_map"
-      get "areas/:id/problems", to: "welcome#redirect_problems"
-      # ========================================================
       get ":slug/problems", to: redirect('/%{locale}/fontainebleau/%{slug}'), as: :area_problems_legacy_redirect # keep until end of 2022
+
+      resources :circuits, only: [:show, :index]
+      resources :areas, only: [:index]
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023
       get ":slug", to: "areas#show", as: :area
-      get "/", to: "areas#index", as: :areas
+      get "/", to: "discover#index", as: :discover
     end
     
     get "problems/:id", to: "welcome#redirect_problem" # Legacy route: keep until end of 2021 for SEO purposes
