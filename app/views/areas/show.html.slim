@@ -18,16 +18,26 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
           h1 class="text-4xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= @area.name
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
-  div class="lg:grid lg:grid-cols-2 lg:gap-16"
-    div class="col-span-1"
-      div class="px-4 sm:px-0 py-2"
-        = link_to map_path(@area) do
-          div class="flex items-center space-x-2 text-green-600 mt-2"
-            svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-            div= t('views.areas.show.see_map')
+  / div class="lg:grid lg:grid-cols-2 lg:gap-16"
+  /   div class="col-span-1"
+  /     div class="px-4 sm:px-0 py-2"
+  /       = link_to map_path(@area) do
+  /         div class="flex items-center space-x-2 text-green-600 mt-2"
+  /           svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+  /             path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+  /             path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+  /           div= t('views.areas.show.see_map')
 
+  div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
+    div class="col-span-1"
+      div class="px-4 sm:px-0"
+        span Niveaux :
+        - (1..7).each_with_index do |level|
+          span class="ml-1"
+            - if @area.problems.send("level#{level}").count >= 30
+              = circuit_color_circle_view("green2", level: level, klass: "h-4 w-4 leading-4")
+            - else
+              = circuit_color_circle_view("disabled", level: level, klass: "h-4 w-4 leading-4")
 
   div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
     div class="col-span-1"
@@ -38,24 +48,18 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
   div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4"
     div class="col-span-1"
       div class="mt-8 space-y-8"
-        - off_circuit_problems = @circuits.delete(nil)
-        - @circuits.each do |circuit, problems|
-          div
-            a id="circuit_#{circuit.id}"
-              h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
-                = t("circuit.long_name", name: circuit.name)
-            ul role="list"
-              - problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
-                - cache [problem, I18n.locale]
-                  = render problem
-        div
-          h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
-            = t("circuit.off_circuit")
-          ul role="list"
-            - off_circuit_problems.each do |problem|
-              - cache [problem, I18n.locale]
-                = render problem
+        h2 class="text-2xl font-bold mt-12" Circuits
+        div class="mt-8"
+          div class="flow-root mt-6"
+            ul role="list" class="-my-5 divide-y divide-gray-200"
 
-
-
-      
+              - @area.circuits.each do |circuit|
+                li class="py-2 px-4 sm:-mx-2 sm:px-2 hover:bg-gray-200 hover:rounded-lg"
+                  = link_to circuit_path(circuit), class: "flex justify-between items-center" do
+                    span class="text-green-600"
+                      = circuit_circle_view(circuit)
+                      span class="ml-2"= "Circuit #{circuit.name}"
+                      span class="ml-2 text-gray"= circuit.problems.count
+                    span class="text-gray-400"
+                      = "!!" if circuit.risky?
+                      = circuit.avg_grade

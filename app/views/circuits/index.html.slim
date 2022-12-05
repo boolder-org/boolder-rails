@@ -1,0 +1,19 @@
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4"
+    div class="col-span-1"
+      div class="mt-8 space-y-8"
+        h2 class="text-2xl font-bold mt-12" Circuits
+        div class="mt-8"
+          div class="flow-root mt-6"
+            ul role="list" class="-my-5 divide-y divide-gray-200"
+
+              - @circuits.each do |circuit|
+                li class="py-2 px-4 sm:-mx-2 sm:px-2 hover:bg-gray-200 hover:rounded-lg"
+                  = link_to circuit_path(circuit), class: "flex justify-between items-center" do
+                    span class=""
+                      = circuit_circle_view(circuit)
+                      span class="ml-2"= "Circuit #{circuit.name}"
+                      span class="ml-2 text-gray-400"= circuit.main_area&.name
+                    span class="text-gray-400"
+                      = "!!" if circuit.risky?
+                      = circuit.avg_grade
