@@ -15,31 +15,40 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
         div class="flex justify-between items-center px-4 sm:px-0" 
           div class=""
             - items = []
-            - items << { text: t("views.areas.index.sort_by.problems"), link: areas_path(sort: "all", anchor: "list") }
+            - items << { text: t("views.areas.index.sort_by.problems"), link: areas_path(sort: "all") }
             - 1.upto(8) do |i|
-              - items << { text: t("views.areas.index.sort_by.problems_of_level", level: i), link: areas_path(sort: i, anchor: "list") }
-            - items << { text: t("views.areas.index.sort_by.area_name"), link: areas_path(sort: "name", anchor: "list") }
+              - items << { text: t("views.areas.index.sort_by.problems_of_level", level: i), link: areas_path(sort: i) }
+            - items << { text: t("views.areas.index.sort_by.area_name"), link: areas_path(sort: "name") }
             = render "areas/index/sort", items: items, align_class: "left-0"
 
-          div class="text-gray-400 text-xs text-right uppercase" 
-            - if params[:sort].to_i.in?(1..8)
-              = t("views.areas.index.problems_of_level_html", level: params[:sort])
-            - else
-              = t("views.areas.index.problems")
-
+          
 
         div class="mt-8"
-          div class="flow-root mt-6"
-            ul role="list" class="-my-5 divide-y divide-gray-200"
-
-              - @areas_with_count.each do |area, count|
-                li class="py-2 px-4 sm:-mx-2 sm:px-2 hover:bg-gray-200 hover:rounded-lg"
-                  = link_to area_path(area), class: "flex justify-between items-center" do
-                    span class="text-green-600"= area.name
-                    span class="text-gray-400"
-                      - (1..7).each_with_index do |level|
-                        span class="ml-1"
-                          - if area.problems.send("level#{level}").count >= 30
-                            = circuit_color_circle_view("green2", level: level, klass: "h-4 w-4 leading-4")
-                          - else
-                            = circuit_color_circle_view("disabled", level: level, klass: "h-4 w-4 leading-4")
+          div class="px-4 sm:px-6 lg:px-8"
+            div class="mt-8 flex flex-col"
+              div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8"
+                div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8"
+                  div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
+                    table class="min-w-full divide-y divide-gray-300"
+                      thead class="bg-gray-50"
+                        tr
+                          th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6" Secteur
+                          th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                            - if params[:sort].to_i.in?(1..8)
+                              = t("views.areas.index.problems_of_level_html", level: params[:sort])
+                            - else
+                              = t("views.areas.index.problems") 
+                          th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900" Niveaux
+                      tbody class="divide-y divide-gray-200 bg-white"
+                        - @areas_with_count.each do |area, count|
+                          tr
+                            td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6"
+                              = link_to area.name, area_path(area)
+                            td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"= count
+                            td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                              - (1..7).each_with_index do |level|
+                                span class="ml-1"
+                                  - if area.problems.send("level#{level}").count >= 30
+                                    = circuit_color_circle_view("green2", level: level, klass: "h-4 w-4 leading-4")
+                                  - else
+                                    = circuit_color_circle_view("disabled", level: level, klass: "h-4 w-4 leading-4")
