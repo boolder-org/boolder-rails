@@ -2,15 +2,15 @@ class AreasController < ApplicationController
   def index
     @areas = Area.published
 
-    if params[:sort] == "all"
+    if params[:sort] == "name"
       @areas_with_count = @areas.map {|area| [area, area.problems.count]}
-      @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
+      @areas_with_count = @areas_with_count.sort{|a,b| ActiveSupport::Inflector.transliterate(a.first.name) <=> ActiveSupport::Inflector.transliterate(b.first.name) }
     elsif params[:sort].to_i.in?(1..8)
       @areas_with_count = @areas.map {|area| [area, area.problems.level(params[:sort].to_i).count]}
       @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
     else
       @areas_with_count = @areas.map {|area| [area, area.problems.count]}
-      @areas_with_count = @areas_with_count.sort{|a,b| ActiveSupport::Inflector.transliterate(a.first.name) <=> ActiveSupport::Inflector.transliterate(b.first.name) }
+      @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
     end
   end
 

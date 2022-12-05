@@ -41,7 +41,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
     div class="col-span-1"
 
       h2 class="text-2xl font-bold mt-12" Secteurs pour bien débuter
-      div class="mt-8"
+      div class="my-8"
         div class="flow-root mt-6"
           ul role="list" class="-my-5 divide-y divide-gray-200"
 
@@ -57,21 +57,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                         - else
                           = circuit_color_circle_view("disabled", level: level, klass: "h-4 w-4 leading-4")
 
-      / h2 class="text-2xl font-bold mt-12" Niveau intermédiaire
-      / div class="mt-8"
-      /   div class="flow-root mt-6"
-      /     ul role="list" class="-my-5 divide-y divide-gray-200"
-
-      /       - @intermediate_areas.each do |area|
-      /         li class="py-2 px-4 sm:-mx-2 sm:px-2 hover:bg-gray-200 hover:rounded-lg"
-      /           = link_to area_path(area), class: "flex justify-between items-center" do
-      /             span class="text-green-600"= area.name
-      /             span class="text-gray-400"
-      /               - area.circuits.each do |circuit|
-      /                 span class="ml-1"= circuit_circle_view(circuit, klass: "h-4 w-4 leading-4")
-
-
-
+      div= link_to "Tous les secteurs", areas_path
 
 
 
