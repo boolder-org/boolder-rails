@@ -8,9 +8,9 @@ namespace :bleau do
 
     driver.get('https://bleau.info/advanced-search')
 
-    min_grade = '6a'
-    max_grade = '6a+'
-    min_ascents = "200"
+    min_grade = '8a'
+    max_grade = 'P'
+    min_ascents = "50"
 
     element = driver.find_element(id: 'search_min_ascents')
     element.send_keys(min_ascents)
@@ -29,7 +29,7 @@ namespace :bleau do
 
     CSV.open("export/ratings-#{min_grade}-#{max_grade}.csv", "w") do |csv|
 
-      csv << %w(id name bleau_info_id rating)
+      # csv << %w(id name bleau_info_id rating)
 
       results.find_elements(:class, "vsr").each do |result|
         rating = result.attribute("data-rating")
@@ -45,5 +45,18 @@ namespace :bleau do
     end
 
     driver.quit
+
+    # cat *.csv > ratings.csv
+  end
+
+  task load_ratings: :environment do 
+    CSV.foreach("export/ratings.csv", headers: true) do |row|
+      problem = Problem.find(row["id"])
+      puts row.to_hash
+      raise "incorrect bleau_info_id" if problem.bleau_info_id.to_s != row["bleau_info_id"].to_s
+      # binding.pry
+      problem.update!(rating: row["rating"].to_i)
+    end
+    puts "loaded ratings".green
   end
 end
