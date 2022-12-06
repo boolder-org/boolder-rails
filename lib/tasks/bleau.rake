@@ -1,64 +1,49 @@
-# require "HTTParty"
+require 'selenium-webdriver'
 require 'csv'
-include Imgix::Rails::UrlHelper
 
 namespace :bleau do
-  task photo_urls: :environment do
-    # area_id = ENV["area_id"]
-    # raise "please specify an area_id" unless area_id.present?
+  task ratings: :environment do 
+    options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
+    driver = Selenium::WebDriver.for(:chrome, options: options)
 
-    CSV.open("output.csv", "w") do |csv|
+    driver.get('https://bleau.info/advanced-search')
 
-      csv << %w(area id name grade circuit number url bleau_id bleau_url photo)
+    min_grade = '6a'
+    max_grade = '6a+'
+    min_ascents = "200"
 
-      Problem.joins(:area).where(area: { published: true }).map do |p|  
-        photo = p.lines.first&.topo&.photo
+    element = driver.find_element(id: 'search_min_ascents')
+    element.send_keys(min_ascents)
 
-        csv << [
-          p.area.name,
-          p.id, 
-          p.name, 
-          p.grade, 
-          p.circuit.present? ? p.circuit.color : "",
-          p.circuit_number,
-          "https://www.boolder.com/en/fontainebleau/rocher-fin/#{p.id}",
-          p.bleau_info_id,
-          p.bleau_info_id.present? ? "https://bleau.info/c/#{p.bleau_info_id}.html" : "",
-          photo ? ix_image_url(photo.key) : ""
-        ]
+    element = driver.find_element(id: 'search_min_grade')
+    element.send_keys(min_grade)
+
+    element = driver.find_element(id: 'search_max_grade')
+    element.send_keys(max_grade)
+
+    element.submit
+
+    results = driver.find_element(id: 'the_search_results')
+
+    # binding.pry
+
+    CSV.open("export/ratings-#{min_grade}-#{max_grade}.csv", "w") do |csv|
+
+      csv << %w(id name bleau_info_id rating)
+
+      results.find_elements(:class, "vsr").each do |result|
+        rating = result.attribute("data-rating")
+        bleau_info_id = result.find_elements(tag_name: "a").first&.attribute("id")
+
+        if problem = Problem.find_by(bleau_info_id: bleau_info_id)
+          puts [problem.id, problem.name, bleau_info_id, rating].join(", ")  
+          csv << [problem.id, problem.name, bleau_info_id, rating]
+        else
+          puts "problem with bleau_info_id=#{bleau_info_id} doesn't exist".red
+        end
       end
     end
+
+    driver.quit
   end
-
-#   task sync: :environment do
-#     area_id = ENV["area_id"]
-#     raise "please specify an area_id" unless area_id.present?
-
-#     area = Area.find area_id
-
-#     html = HTTParty.get("https://bleau.info/cuvier").body
-#     doc = Nokogiri::HTML(html)
-
-#     problems = doc.css(".vsr a").map do |row|
-#       link = row.attributes["href"].value
-#       id = link[/([\w-]+).html/,1]
-#       OpenStruct.new(id: id, name: row.text)
-#     end
-
-#     missing = problems.select do |bleau_problem|
-#       area.problems.where(bleau_info_id: bleau_problem.id).none?
-#     end
-
-#     missing_variants = missing.select do |p|
-#       regex = /(.+)([\(].+[\)])/
-#       if canonical_name = p.name[regex,1]
-#         area.problems.where(name: canonical_name.strip).any?
-#       else
-#         false
-#       end
-#     end
-
-
-#     binding.pry
-#   end
 end
