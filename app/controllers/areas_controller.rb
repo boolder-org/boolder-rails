@@ -17,28 +17,6 @@ class AreasController < ApplicationController
   def show
     @area = Area.find_by(slug: params[:slug])
 
-    @parkings = @area.pois
-
-    @annotations = [
-      {
-        latitude: @area.pois.first&.location&.latitude,
-        longitude: @area.pois.first&.location&.longitude,
-        color: "#059669",
-        title: @area.name,
-        glyphText: "",
-      } 
-    ]
-
-    @center = {}
-
-    if location = @area.pois.first&.location
-      @center = { 
-        latitude: location.latitude, 
-        longitude: location.longitude 
-      }
-    end
-
-    @circuits = @area.problems.order("grade ASC, id ASC").group_by(&:circuit)
-    @circuits = Hash[ @circuits.sort_by { |circuit, _| circuit&.order || 100 } ]
+    @problems = @area.problems.where("rating > 50").order(grade: :desc)
   end
 end
