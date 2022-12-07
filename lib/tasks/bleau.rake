@@ -2,61 +2,30 @@ require 'selenium-webdriver'
 require 'csv'
 
 namespace :bleau do
-  task ratings: :environment do 
+  task stats: :environment do 
     options = Selenium::WebDriver::Chrome::Options.new(args: ['headless'])
     driver = Selenium::WebDriver.for(:chrome, options: options)
 
-    driver.get('https://bleau.info/advanced-search')
+    Problem.where("bleau_info_id IS NOT NULL").where("id > 718").where(ratings_avg: nil, ratings: nil, ascents: nil).find_each do |problem|
 
-    min_grade = '8a'
-    max_grade = 'P'
-    min_ascents = "50"
+      driver.get("https://bleau.info/c/#{problem.bleau_info_id}.html")
 
-    element = driver.find_element(id: 'search_min_ascents')
-    element.send_keys(min_ascents)
+      ratings_text = driver.find_elements(class: "bopins").first&.text || ""
+      ascents_text = driver.find_elements(class: "bopins").third&.text || ""
 
-    element = driver.find_element(id: 'search_min_grade')
-    element.send_keys(min_grade)
+      ratings_avg = ratings_text.match(/([0-9]\.[0-9]) Stars/)&.[](1)
+      ratings_number = ratings_text.match(/([0-9]+) total/)&.[](1)
+      ascents_number = ascents_text.match(/([0-9]+) total/)&.[](1)
 
-    element = driver.find_element(id: 'search_max_grade')
-    element.send_keys(max_grade)
+      attributes = { ratings_avg: ratings_avg, ratings: ratings_number, ascents: ascents_number }
+      problem.update(attributes)
+      puts "Updated problem ##{problem.id}: #{attributes}"
 
-    element.submit
-
-    results = driver.find_element(id: 'the_search_results')
-
-    # binding.pry
-
-    CSV.open("export/ratings-#{min_grade}-#{max_grade}.csv", "w") do |csv|
-
-      # csv << %w(id name bleau_info_id rating)
-
-      results.find_elements(:class, "vsr").each do |result|
-        rating = result.attribute("data-rating")
-        bleau_info_id = result.find_elements(tag_name: "a").first&.attribute("id")
-
-        if problem = Problem.find_by(bleau_info_id: bleau_info_id)
-          puts [problem.id, problem.name, bleau_info_id, rating].join(", ")  
-          csv << [problem.id, problem.name, bleau_info_id, rating]
-        else
-          puts "problem with bleau_info_id=#{bleau_info_id} doesn't exist".red
-        end
-      end
+      sleep 1.second
+    rescue Exception => e
+      puts "Exception for problem ##{problem.id}: #{e}".red
     end
 
     driver.quit
-
-    # cat *.csv > ratings.csv
-  end
-
-  task load_ratings: :environment do 
-    CSV.foreach("export/ratings.csv", headers: true) do |row|
-      problem = Problem.find(row["id"])
-      puts row.to_hash
-      raise "incorrect bleau_info_id" if problem.bleau_info_id.to_s != row["bleau_info_id"].to_s
-      # binding.pry
-      problem.update!(rating: row["rating"].to_i)
-    end
-    puts "loaded ratings".green
   end
 end
