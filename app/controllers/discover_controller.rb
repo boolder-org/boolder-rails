@@ -1,15 +1,9 @@
 class DiscoverController < ApplicationController
   def index
-    @beginner_areas = Area.published.any_tags(:beginner_friendly).all
+    @popular_areas = Area.published.any_tags(:popular).all.sort_by{|a| -a.problems.count }
 
-    @intermediate_areas = 
-      Area.published.
-        reject{|a| a.id.in?([64, 69, 42]) }. # FIXME: use a tag to avoid tricky areas
-        select{|a| a.problems.where("grade < '6a' AND grade >= '4a'").count >= 100 }
+    @problems = Problem.joins(:area).where(area: { published: true }).where("rating > 50").where(grade: ["6a", "6a+"]).order(grade: :desc)
 
-    @advanced_areas = 
-      Area.published.
-        reject{|a| a.id.in?([42]) }. # FIXME: use a tag to avoid *very* tricky areas (like Dame Jouanne (id=42))
-        select{|a| a.problems.where("grade >= '6a'").count >= 100 }
+    @grouped = @problems.group_by{|p| p.area }.sort_by{|k,v| -v.count }
   end
 end
