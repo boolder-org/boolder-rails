@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_06_125502) do
+ActiveRecord::Schema.define(version: 2022_12_07_164950) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -116,7 +116,10 @@ ActiveRecord::Schema.define(version: 2022_12_06_125502) do
     t.boolean "risky", default: false, null: false
     t.boolean "featured", default: false, null: false
     t.bigint "parent_id"
-    t.integer "rating"
+    t.decimal "ratings_avg"
+    t.integer "ratings"
+    t.integer "ascents"
+    t.integer "popularity"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["location"], name: "index_problems_on_location", using: :gist
