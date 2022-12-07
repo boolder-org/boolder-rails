@@ -4,13 +4,19 @@
     <div class="flex justify-between">
 
       <nav class="flex flex-wrap justify-center" aria-label="Footer">
-        <div class="pr-5 py-2">
+        <div class="pr-4 py-2">
           <a href="mailto:hello@boolder.com" class="text-base text-gray-400 hover:text-gray-900">
             <%= t('views.layout.footer.contact') %>
           </a>
         </div>
 
-        <div class="px-5 py-2">
+        <div class="px-4 py-2">
+          <a href="<%= app_path %>" class="text-base text-gray-400 hover:text-gray-900">
+            <%= t('views.layout.nav.app') %>
+          </a>
+        </div>
+
+        <div class="px-4 py-2">
           <a href="<%= privacy_path %>" class="text-base text-gray-400 hover:text-gray-900">
             <%= t('views.layout.footer.privacy') %>
           </a>
