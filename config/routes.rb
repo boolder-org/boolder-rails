@@ -44,6 +44,7 @@ Rails.application.routes.draw do
 
       resources :circuits, only: [:show, :index]
       resources :areas, only: [:index]
+      resources :problems, only: [:index]
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023

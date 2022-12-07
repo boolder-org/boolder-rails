@@ -1,0 +1,36 @@
+/ - set_meta_tags title: t("views.problems.show.metas.title", problem: @problem.name_with_fallback, grade: @problem.grade, area: @problem.area.name)
+
+/ - set_meta_tags canonical: area_problem_url(@problem.area, @problem)
+
+/ - if line = @problem.lines.published.first
+/   - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, Topo::IMGIX_SMALL) }
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
+  h1 class="text-3xl font-bold mt-12 mb-4" Voies
+  div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4"
+    div class="col-span-1"
+
+      = form_with url: problems_path, method: :get do |form|
+        = form.select :grade, @grades, { selected: params[:grade] }, { onchange: 'this.form.submit()' }
+        / - @grades.each do |grade|
+        /   = link_to problems_path(grade: grade) do 
+        /     span class="mr-2"= grade
+      
+      div
+        h2 class="text-xl font-bold mb-4 pt-4 px-4 sm:px-0"
+          | 
+        ul role="list"
+          - @problems.each do |problem|
+            / - cache [problem, I18n.locale]
+            li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+              = link_to problem_friendly_path(problem) do
+                div class="flex justify-between py-2"
+                  div
+                    = problem_circle_view(problem)
+                    span class="ml-2"= problem.name_with_fallback
+                  div
+                    div class="flex space-x-2"
+                      span class="mr-4 text-gray-500"= problem.area.name
+                      div class="text-gray-500"
+                        = problem.grade
+
