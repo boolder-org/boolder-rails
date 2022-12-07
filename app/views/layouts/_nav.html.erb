@@ -10,11 +10,98 @@
         </div>
         <div class="ml-6 flex space-x-8">
           <!-- Current: "border-green-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-          <%= link_to areas_path, class: "inline-flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" do %>
-            <%= t("views.layout.nav.discover") %>
-          <% end %>
+          <!-- <%= link_to areas_path, class: "flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" do %>
+            <%= t("views.layout.nav.discover") %> 
+          <% end %> -->
+
+          <div class="flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" data-controller="dropdown">
+            <div class="relative ">
+              <button type="button" class="text-gray-500 group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" aria-expanded="false" data-action="click->dropdown#toggle click@window->dropdown#hide" data-dropdown-target="button">
+                <span><%= t("views.layout.nav.discover") %></span>
+                <!--
+                  Heroicon name: mini/chevron-down
+
+                  Item active: "text-gray-600", Item inactive: "text-gray-400"
+                -->
+                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <!-- <div class="cursor-pointer flex"  data-action="click->dropdown#toggle click@window->dropdown#hide" data-dropdown-target="button">
+                <span><%= t("views.layout.nav.discover") %></span>
+                <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </div> -->
+
+              <div class="hidden absolute z-20 mt-3 w-screen max-w-md px-2 sm:px-0" data-dropdown-target="menu">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                  <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <a href="<%= areas_path %>" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <!-- Heroicon name: outline/lifebuoy -->
+                      <svg class="h-6 w-6 flex-shrink-0 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Secteurs</p>
+                        <p class="mt-1 text-sm text-gray-500">Découvrez les secteurs adaptés à votre niveau.</p>
+                      </div>
+                    </a>
+
+                    <a href="<%= problems_path %>" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <!-- Heroicon name: outline/bookmark-square -->
+                      <svg class="h-6 w-6 flex-shrink-0 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Voies populaires</p>
+                        <p class="mt-1 text-sm text-gray-500">Découvrez les voies les plus populaires.</p>
+                      </div>
+                    </a>
+
+                    <!-- <a href="<%= app_path %>" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg class="h-6 w-6 flex-shrink-0 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Appli Boolder</p>
+                        <p class="mt-1 text-sm text-gray-500">Disponible sur iPhone et Android.</p>
+                      </div>
+                    </a> -->
+
+                    
+                  </div>
+                  <!-- <div class="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
+                    <div>
+                      <h3 class="text-base font-medium text-gray-500">Recent Posts</h3>
+                      <ul role="list" class="mt-4 space-y-4">
+                        <li class="truncate text-base">
+                          <a href="#" class="font-medium text-gray-900 hover:text-gray-700">Boost your conversion rate</a>
+                        </li>
+
+                        <li class="truncate text-base">
+                          <a href="#" class="font-medium text-gray-900 hover:text-gray-700">How to use search engine optimization to drive traffic to your site</a>
+                        </li>
+
+                        <li class="truncate text-base">
+                          <a href="#" class="font-medium text-gray-900 hover:text-gray-700">Improve your customer experience</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="mt-5 text-sm">
+                      <a href="#" class="font-medium text-green-600 hover:text-green-500">
+                        View all posts
+                        <span aria-hidden="true"> &rarr;</span>
+                      </a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <%= link_to map_path, class: "inline-flex items-center px-1 pt-1 font-medium text-green-600 hover:text-green-800" do %>
+          <%= link_to map_path, class: "flex items-center px-1 pt-1 font-medium text-green-600 hover:text-green-800" do %>
             <%= t("views.layout.nav.map") %>
           <% end %>
         </div>
