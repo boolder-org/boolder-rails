@@ -6,12 +6,12 @@
 /   - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, Topo::IMGIX_SMALL) }
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
-  h1 class="text-3xl font-bold mt-12 mb-4" Voies
+  h1 class="text-3xl font-bold mt-12 mb-4"= "Voies populaires de niveau #{@grade}"
   div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4"
     div class="col-span-1"
 
       = form_with url: problems_path, method: :get do |form|
-        = form.select :grade, @grades, { selected: params[:grade] }, { onchange: 'this.form.submit()' }
+        = form.select :grade, @grades, { selected: @grade }, { onchange: 'this.form.submit()' }
         / - @grades.each do |grade|
         /   = link_to problems_path(grade: grade) do 
         /     span class="mr-2"= grade
