@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
 
   def index
     @beginner_areas = Rails.cache.fetch("shared/beginner_friendly_list", expires_in: 12.hours) do
-      Area.published.any_tags(:beginner_friendly).all.shuffle
+      Area.published.any_tags(:popular).all.shuffle
     end
   end
 
