@@ -21,10 +21,10 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
             h1 class="text-4xl font-bold"= @problem.name_with_fallback
             div class="text-gray-400 text-4xl font-bold"= @problem.grade
 
-        - if @problem.featured
-          div class="text-red-400 flex space-x-2 items-center mt-2"
-            = render 'svg/heart', width: 24, height: 24
-            div= t("problem.featured")
+        / - if @problem.featured
+        /   div class="text-red-400 flex space-x-2 items-center mt-2"
+        /     = render 'svg/heart', width: 24, height: 24
+        /     div= t("problem.featured")
         div class="text-gray-500 flex space-x-2 mt-2"
           - if @problem.tags.include?("sit_start")
             div= t("problem.sit_start")
@@ -65,12 +65,12 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
               path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             div= t("problem.see_on_map")
 
-        - if @problem.circuit_id.present?
-          = link_to area_path(anchor: "circuit_#{@problem.circuit_id}"), rel: "nofollow" do
-            div class="flex items-center space-x-2 text-green-600 mt-2"
-              svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-              div= t('views.problems.show.see_circuit')
+        / - if @problem.circuit_id.present?
+        /   = link_to area_path(anchor: "circuit_#{@problem.circuit_id}"), rel: "nofollow" do
+        /     div class="flex items-center space-x-2 text-green-600 mt-2"
+        /       svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        /         path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+        /       div= t('views.problems.show.see_circuit')
 
         - if @problem.bleau_info_id.present?
           = link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do
