@@ -17,6 +17,9 @@ class AreasController < ApplicationController
   def show
     @area = Area.find_by(slug: params[:slug])
 
-    @problems = @area.problems.where("rating > 50").order(grade: :desc)
+    @problems = @area.problems.
+      order(popularity: :desc).
+      limit(20).
+      all.sort_by{|p| p.grade}.reverse
   end
 end
