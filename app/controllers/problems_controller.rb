@@ -14,9 +14,10 @@ class ProblemsController < ApplicationController
     end
 
     @problems = Problem.joins(:area).where(area: { published: true }).
-      where("rating > 0").
+      # where("ascents >= 10").
+      # where("ratings_avg >= 3.0").
       where(grade: [@grade, "#{@grade}+"]).
-      order(rating: :desc).limit(2000)
-      # where("rating > 50").where(grade: ["6a", "6a+"]).order(grade: :desc)
+      order(popularity: :desc).
+      limit(50)
   end
 end
