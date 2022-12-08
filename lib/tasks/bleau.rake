@@ -7,8 +7,8 @@ namespace :bleau do
       html = HTTParty.get("https://bleau.info/c/#{problem.bleau_info_id}.html?locale=en").body
       doc = Nokogiri::HTML(html)
 
-      ratings_text = doc.css(".bopins")[0]&.text || ""
-      ascents_text = doc.css(".bopins")[2]&.text || ""
+      ratings_text = doc.css(".bdetails .bopins")[0]&.text || ""
+      ascents_text = doc.css(".bdetails .bopins")[2]&.text || ""
 
       ratings_avg = ratings_text.match(/([0-9]\.[0-9]) Stars/)&.[](1)
       ratings_number = ratings_text.match(/([0-9]+) total/)&.[](1)
