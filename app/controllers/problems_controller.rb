@@ -14,10 +14,13 @@ class ProblemsController < ApplicationController
     end
 
     @problems = Problem.joins(:area).where(area: { published: true }).
-      # where("ascents >= 10").
-      # where("ratings_avg >= 3.0").
+      where("ascents >= ?", 20). # data should be significant
       where(grade: [@grade, "#{@grade}+"]).
       order(popularity: :desc).
-      limit(50)
+      limit(100)
+
+    @areas_with_count = @problems.group_by{|p| p.area }.
+      map{|area, problems| OpenStruct.new(area: area, count: problems.count) }.
+      sort_by{|s| -s.count }
   end
 end

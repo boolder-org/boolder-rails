@@ -80,6 +80,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
                       span class="ml-2"= problem.name_with_fallback
                     div
                       div class="flex space-x-2"
-                        span class="mr-4 text-gray-500"= problem.popularity_score
                         div class="text-gray-500"
                           = problem.grade
+
+          div class="mt-4"
+            = link_to "Toutes les voies", area_problems_path(@area)

@@ -46,7 +46,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
             - 1.upto(8) do |i|
               - items << { text: t("views.areas.index.sort_by.problems_of_level", level: i), link: areas_path(sort: i) }
             - items << { text: t("views.areas.index.sort_by.area_name"), link: areas_path(sort: "name") }
-            = render "areas/index/sort", items: items, align_class: "left-0"
+            / = render "areas/index/sort", items: items, align_class: "left-0"
 
           
 

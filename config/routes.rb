@@ -40,8 +40,6 @@ Rails.application.routes.draw do
     end
 
     scope 'fontainebleau' do
-      get ":slug/problems", to: redirect('/%{locale}/fontainebleau/%{slug}'), as: :area_problems_legacy_redirect # keep until end of 2022
-
       resources :circuits, only: [:show, :index]
       resources :areas, only: [:index]
       resources :problems, only: [:index]
@@ -49,6 +47,8 @@ Rails.application.routes.draw do
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023
       get ":slug", to: "areas#show", as: :area
+      get ":slug/problems", to: "areas#problems", as: :area_problems
+
       get "/", to: "discover#index", as: :discover
     end
     
