@@ -19,8 +19,6 @@ class ProblemsController < ApplicationController
       order(popularity: :desc).
       limit(100)
 
-    @areas_with_count = @problems.group_by{|p| p.area }.
-      map{|area, problems| OpenStruct.new(area: area, count: problems.count) }.
-      sort_by{|s| -s.count }
+    @grouped = @problems.group_by(&:area).sort_by{|area, problems| -problems.count }
   end
 end
