@@ -16,9 +16,9 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         /   = link_to problems_path(grade: grade) do 
         /     span class="mr-2"= grade
       
-      div
-        h2 class="text-xl font-bold mb-4 pt-4 px-4 sm:px-0"
-          | 
+      - @grouped.each do |area, problems|
+        h2 class="text-xl font-bold mb-2 pt-8 px-4 sm:px-0"
+          = link_to area.name, area_path(area)
 
         / ul role="list"
         /   - @problems.each do |problem|
@@ -34,7 +34,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
 
         ul role="list"
-          - @problems.each do |problem|
+          - problems.each do |problem|
             / - cache [problem, I18n.locale]
             li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
               = link_to problem_friendly_path(problem) do
@@ -42,10 +42,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
                   div
                     = problem_circle_view(problem)
                     span class="ml-2"= problem.name_with_fallback
-                    span class="ml-2 text-gray-500"= problem.grade
+                    / span class="ml-2 text-gray-500"= problem.grade
                   div
                     div class="flex space-x-2"
-                      span class="mr-4 text-gray-500"= problem.area.name
+                      - if problem.featured
+                        span class="mr-4 text-red-500" TOP100
+                      span class="mr-4 text-gray-500"= problem.grade
+                      / span class="mr-4 text-gray-500"= problem.area.name
                       / span class="mr-4 text-gray-500"= problem.ascents
                       / span class="mr-4 text-gray-500"= problem.ratings_avg
 
