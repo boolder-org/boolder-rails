@@ -104,6 +104,25 @@
           <%= link_to map_path, class: "flex items-center px-1 pt-1 font-medium text-green-600 hover:text-green-800" do %>
             <%= t("views.layout.nav.map") %>
           <% end %>
+
+          <div 
+            data-controller="search" 
+            data-search-locale-value="<%= I18n.locale %>" 
+            data-search-debug-value="<%= Rails.env.production? ? "false" : "true" %>"
+            data-search-placeholder-value="<%= t('views.search.placeholder') %>"
+            data-search-clear-value="<%= t('views.search.clear') %>" 
+            data-search-cancel-value="<%= t('views.search.cancel') %>" 
+            data-search-submit-value="<%= t('views.search.submit') %>" 
+            class="inline-flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900">
+              <%= link_to "javascript:void(0)", "data-action":"search#open" do %>
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-label="Search">
+                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                </svg>
+                <div id="autocomplete" class="hidden"></div>
+              <% end %>
+          </div>
+          
+
         </div>
       </div>
 
