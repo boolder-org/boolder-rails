@@ -18,13 +18,5 @@ class ProblemsController < ApplicationController
       where(grade: [@grade, "#{@grade}+"]).
       order(popularity: :desc).
       limit(100)
-
-      if params[:sort] == "popular"
-        @sort = "popular"
-      else
-        @sort = "areas"
-      end
-
-    @grouped = @problems.group_by(&:area).sort_by{|area, problems| [-problems.count, -problems.map(&:popularity).inject(:+)] }
   end
 end

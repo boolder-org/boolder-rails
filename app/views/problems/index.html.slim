@@ -11,28 +11,22 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
     div class="col-span-1"
 
       = form_with url: problems_path, method: :get do |form|
-        = form.hidden_field :sort, value: @sort
         = form.select :grade, @grades, { selected: @grade }, { onchange: 'this.form.submit()' }
-        div class="mt-2"
-          = link_to "areas", problems_path(grade: @grade, sort: "areas")
-          = " | "
-          = link_to "popular", problems_path(grade: @grade, sort: "popular")
-        / - @grades.each do |grade|
-        /   = link_to problems_path(grade: grade) do 
-        /     span class="mr-2"= grade
 
-      - if params[:sort] == "popular"
-        h2 class="text-xl font-bold mb-2 pt-8 px-4 sm:px-0"
-          | 
-        ul role="list"
-          - @problems.each do |problem|
-            - cache [problem, I18n.locale]
-              = render problem
-      - else 
-        - @grouped.each do |area, problems|
-          h2 class="text-xl font-bold mb-2 pt-8 px-4 sm:px-0"
-            = link_to area.name, area_path(area)
-          ul role="list"
-            - problems.each do |problem|
-              - cache [problem, I18n.locale]
-                = render problem
+      h2 class="text-xl font-bold mb-2 pt-8 px-4 sm:px-0"
+        | 
+      ul role="list"
+        - @problems.each do |problem|
+          / - cache [problem, I18n.locale]
+          /   = render problem
+          li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+            = link_to problem_friendly_path(problem) do
+              div class="flex justify-between py-2"
+                  div
+                    = problem_circle_view(problem)
+                    span class="ml-2"= problem.name_with_fallback
+                    span class="ml-2 text-gray-500"= problem.grade
+                  div
+                    div class="flex space-x-2"
+                      div class="text-gray-500"
+                        = problem.area.name
