@@ -24,8 +24,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
       div class="space-y-8"
         
         div
-          h2 class="text-xl font-bold mb-4 pt-4 px-4 sm:px-0"
-            | Toutes les voies
+          h2 class="text-2xl font-bold mt-4 mb-8"= "Voies #{@area.name}"
+            
           ul role="list"
             - @problems.each do |problem|
               / - cache [problem, I18n.locale]
