@@ -22,21 +22,20 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
     div class="col-span-1"
 
       div class="space-y-8"
-        
+        h2 class="px-4 sm:px-0 text-2xl font-bold mt-4 mb-8"= "Toutes les voies à #{@area.name}"
         div
-          h2 class="text-2xl font-bold mt-4 mb-8"= "Voies #{@area.name}"
-            
-          ul role="list"
-            - @problems.each do |problem|
-              / - cache [problem, I18n.locale]
-                = render problem
-              li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
-                = link_to problem_friendly_path(problem) do
-                  div class="flex justify-between py-2"
-                    div
-                      = problem_circle_view(problem)
-                      span class="ml-2"= problem.name_with_fallback
-                    div
-                      div class="flex space-x-2"
-                        div class="text-gray-500"
-                          = problem.grade
+          - @grades.each do |grade, problems|
+            h2 class="px-4 sm:px-0 text-xl font-semibold mt-4 mb-4"= grade
+            ul role="list"
+              - problems.each do |problem|
+                / - cache [problem, I18n.locale]
+                  = render problem
+                li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+                  = link_to problem_friendly_path(problem) do
+                    div class="flex justify-between py-2"
+                      div
+                        = problem_circle_view(problem)
+                        span class="ml-2"= problem.name_with_fallback
+                      div
+                        div class="flex space-x-2"
+                          div class="text-gray-500"= problem.grade
