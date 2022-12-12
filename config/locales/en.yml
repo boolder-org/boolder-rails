@@ -34,11 +34,6 @@ en:
       level: Level
       circuit: Circuit
       selection: Selection
-  area:
-    tags:
-      beginner_friendly: beginner friendly
-      dry_fast: dries fast
-      train_station_closeby: access by train+bicycle
   views:
     homepage:
       title1: Bouldering
@@ -116,10 +111,11 @@ en:
           area_name: Area name
         problems: Problems
         problems_of_level_html: "Grade %{level} <br/> problems"
+        area_column: Area
+        levels_column: Levels
         cards:
-          level: For your level
+          beginner: For beginners
           dry_fast: Dries fast
-          groups: For groups
           train_html: Accessible <br>by train + bike
         metas: 
           title: All areas in Fontainebleau

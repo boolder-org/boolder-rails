@@ -34,11 +34,6 @@ fr:
       level: Niveau
       circuit: Circuit
       selection: Sélection
-  area:
-    tags:
-      beginner_friendly: idéal pour débuter
-      dry_fast: sèche vite
-      train_station_closeby: accessible en train+vélo
   views:
     homepage:
       title1: Escaladez
@@ -116,10 +111,11 @@ fr:
           area_name: Nom de secteur
         problems: Voies
         problems_of_level_html: "Voies <br/> de niveau %{level}"
+        area_column: Secteur
+        levels_column: Niveaux
         cards:
-          level: Par niveau
+          beginner: Pour bien débuter
           dry_fast: Sèche Vite
-          groups: En groupe
           train_html: Accessible <br>en train + vélo
         metas:
           title: Tous les secteurs à Fontainebleau
