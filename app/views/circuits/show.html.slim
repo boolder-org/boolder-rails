@@ -1,14 +1,10 @@
 div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
-
-  div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8"
-    div class="col-span-2"
-
-      div class="px-4 sm:px-0"
-        div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
-          div= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700"
-          svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
-          div= link_to @circuit.main_area.name, area_path(@circuit.main_area), class: "hover:text-gray-700"
+  div class="px-4 sm:px-0"
+    div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
+      div= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700"
+      svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
+      div= link_to @circuit.main_area.name, area_path(@circuit.main_area), class: "hover:text-gray-700"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
