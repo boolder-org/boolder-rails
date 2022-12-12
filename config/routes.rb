@@ -41,7 +41,6 @@ Rails.application.routes.draw do
 
     scope 'fontainebleau' do
       resources :circuits, only: [:show, :index]
-      resources :areas, only: [:index]
       resources :problems, only: [:index]
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
@@ -49,7 +48,7 @@ Rails.application.routes.draw do
       get ":slug", to: "areas#show", as: :area
       get ":slug/problems", to: "areas#problems", as: :area_problems
 
-      get "/", to: "discover#index", as: :discover
+      get "/", to: "areas#index", as: :areas
     end
     
     get "problems/:id", to: "welcome#redirect_problem" # Legacy route: keep until end of 2021 for SEO purposes
