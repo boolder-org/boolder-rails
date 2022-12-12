@@ -15,27 +15,17 @@ namespace :popularity do
 
     Problem.where(featured: true).update_all(featured: false)
 
-    split = {
-      '4a': 3,
-      '4b': 3,
-      '4c': 3,
-      '5a': 5,
-      '5b': 5,
-      '5c': 5,
-      '6a': 10,
-      '6b': 10,
-      '6c': 10,
-      '7a': 15,
-      '7b': 10,
-      '7c': 10,
-      '8a': 3,
-      '8b': 2,
-      '8c': 1,
-      '9a': 1,
-    }
+    Area.all.each do |area|
+      total = [[area.problems.count * 10/100, 20].min, 2].max
+      max_per_grade = (total.to_f * 0.2).round
 
-    split.each do |grade, count|
-      Problem.where(grade: [grade, "#{grade}+"]).order(popularity: :desc).limit(count).each do |problem|
+      top_problems = []
+
+      Problem::GRADE_VALUES.each do |grade|
+        top_problems.concat area.problems.where(grade: grade).where("ascents > ?", 20).order(popularity: :desc).limit(max_per_grade)
+      end
+
+      top_problems.sort_by(&:popularity).reverse.take(total).each do |problem|
         problem.update(featured: true)
       end
     end
