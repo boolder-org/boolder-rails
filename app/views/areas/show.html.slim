@@ -31,8 +31,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
   div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
     div class="col-span-1"
       div class="px-4 sm:px-0"
-        span Niveaux :
-        = render "shared/area_levels", area: @area
+        span class="text-gray-700"= t("views.areas.show.levels")
+        span class="ml-2"= render "shared/area_levels", area: @area
 
   div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
     div class="col-span-1"
@@ -42,11 +42,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
   div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4"
     div class="col-span-1"
-      div class="mt-8 space-y-8"
-        h2 class="text-2xl font-bold mt-12 px-4 sm:px-0" Circuits
-        div class="mt-8"
-          div class="flow-root mt-6"
-            ul role="list" class="-my-5 divide-y divide-gray-200"
+      div class=""
+        h2 class="text-2xl font-bold mt-8 mb-4 px-4 sm:px-0" Circuits
+        div class=""
+          div class=""
+            ul role="list" class="divide-y divide-gray-200"
 
               - @area.circuits.each do |circuit|
                 li class="py-2 px-4 sm:-mx-2 sm:px-2 hover:bg-gray-200 hover:rounded-lg"
@@ -61,8 +61,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
 
         div
-          h2 class="text-2xl font-bold mb-4 pt-4 px-4 sm:px-0"
-            | Voies 
+          h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"= t('views.areas.show.problems')
           div
             - @grades.each do |grade, problems|
               h3 class="px-4 sm:px-0 text-xl font-semibold mt-4 mb-4"= grade

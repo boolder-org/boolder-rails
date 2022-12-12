@@ -125,6 +125,8 @@ en:
       show:
         see_map: See map
         see_parking: See parking
+        levels: "Levels:"
+        problems: Problems
         metas:
           title: "%{area}, Fontainebleau"
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
