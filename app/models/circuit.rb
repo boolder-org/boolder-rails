@@ -31,7 +31,7 @@ class Circuit < ApplicationRecord
     problems_with_grade = problems.select{|p| p.grade.in?(Problem::GRADE_VALUES)}
     grades_int = problems_with_grade.map{|p| Problem::GRADE_VALUES.index(p.grade) }
     avg_int = avg(grades_int).round
-    Problem::GRADE_VALUES[avg_int]
+    Problem::GRADE_VALUES[avg_int].gsub("+", "")
   end
 
   def risky?
