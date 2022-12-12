@@ -1,9 +1,6 @@
 class AreasController < ApplicationController
   def index
-    @areas = Area.published
-
-    @areas_with_count = @areas.map {|area| [area, area.problems.count]}
-    @areas_with_count = @areas_with_count.sort{|a,b| b.second <=> a.second }
+    @areas_with_count = Area.published.map {|area| [area, area.problems.count]}.sort{|a,b| b.second <=> a.second }
   end
 
   def show
