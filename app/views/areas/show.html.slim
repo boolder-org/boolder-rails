@@ -64,7 +64,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         div
           h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"= t('views.areas.show.problems')
           div
-            - @grades.each do |grade, problems|
+            - @problems.each do |grade, problems|
               h3 class="px-4 sm:px-0 text-xl font-semibold mt-4 mb-4"= grade
               ul role="list"
                 - problems.each do |problem|
