@@ -7,14 +7,14 @@
 
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 my-8"
-  h1 class="text-3xl font-bold mt-12 mb-4" Secteurs
+  h1 class="text-3xl font-bold mt-8 mb-4" Fontainebleau
 
   div class="relative"
     div class="flex flex-nowrap overflow-x-auto py-2 space-x-4 px-4 sm:px-0"
       - colors = %w(bg-blue-300 bg-yellow-300 bg-pink-300 bg-green-300).cycle
 
-      = link_to top_areas_train_path, class: "min-w-max" do
-        = use_case_card(title: "Pour bien débuter", color: colors.next) do 
+      = link_to top_areas_level_path, class: "min-w-max" do
+        = use_case_card(title: "Secteurs pour bien débuter ", color: colors.next) do 
           | 
 
       = link_to top_areas_dry_fast_path, class: "min-w-max" do
