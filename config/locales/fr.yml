@@ -125,6 +125,8 @@ fr:
       show:
         see_map: Voir la carte
         see_parking: Voir le parking
+        levels: "Niveaux :"
+        problems: Voies
         metas:
           title: "%{area}, Fontainebleau"
           description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."
