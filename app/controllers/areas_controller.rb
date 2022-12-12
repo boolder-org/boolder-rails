@@ -17,7 +17,7 @@ class AreasController < ApplicationController
   def show
     @area = Area.find_by(slug: params[:slug])
 
-    max_problems = [5, @area.problems.count / 20].max # quick hack to show more problems in large areas
+    max_problems = [[5, @area.problems.count / 20].max, 10].min # quick hack to show more problems in large areas
 
     @problems = @area.problems.
       where("ascents >= ?", 20).
