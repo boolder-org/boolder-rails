@@ -67,17 +67,24 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
         div
           h2 class="text-2xl font-bold mb-4 pt-4 px-4 sm:px-0"
-            | Voies populaires 
-          ul role="list"
-            - @problems.each do |problem|
-              - cache [problem, I18n.locale]
-                = render problem
-
-          div class="mt-6"
-            = link_to area_problems_path(@area), class: "place-self-center" do 
-                div class="px-4 sm:px-0 text-green-500 flex space-x-2"
-
-                  svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 "
-                    path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                  div Toutes les voies
+            | Voies 
+          div
+            - @grades.each do |grade, problems|
+              h3 class="px-4 sm:px-0 text-xl font-semibold mt-4 mb-4"= grade
+              ul role="list"
+                - problems.each do |problem|
+                  / - cache [problem, I18n.locale]
+                    = render problem
+                  li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+                    = link_to problem_friendly_path(problem) do
+                      div class="flex justify-between py-2"
+                        div
+                          = problem_circle_view(problem)
+                          span class="ml-2"= problem.name_with_fallback
+                        div
+                          div class="flex space-x-2"
+                            - if problem.featured
+                              div class="text-red-400"
+                                = render 'svg/heart', width: 24, height: 24
+                            div class="text-gray-500"= problem.grade
                 
