@@ -50,8 +50,5 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                         = area.name
                         span class="text-gray-400  ml-2"= "(#{count})"
                       div class="ml-2 flex flex-shrink-0"
-                        - (1..7).each do |level|
-                          span class="ml-1"
-                            - disabled = area.problems.send("level#{level}").count < 30
-                            = level_bar(level: level, disabled: disabled,  klass: "h-4 w-4 leading-4")
+                        = render "shared/area_levels", area: area 
                         
