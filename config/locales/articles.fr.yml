@@ -99,8 +99,10 @@ fr:
         discover_fontainebleau: Découvrir Fontainebleau
         all_areas: Tous les secteurs à Fontainebleau
         see_also: "Voir aussi :"
-        level:
+        beginner:
           title: Les meilleurs secteurs pour débuter
+          more_areas: Voir plus de secteurs
+          to_read: À lire
           metas:
             title: Les meilleurs secteurs de Fontainebleau pour débuter
         dry_fast:
