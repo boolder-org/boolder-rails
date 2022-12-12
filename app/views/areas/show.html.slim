@@ -46,17 +46,18 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         h2 class="text-2xl font-bold mt-8 mb-4 px-4 sm:px-0" Circuits
         div class=""
           div class=""
-            ul role="list" class="divide-y divide-gray-200"
+            ul role="list" class=""
 
               - @area.circuits.each do |circuit|
-                li class="py-2 px-4 sm:-mx-2 sm:px-2 hover:bg-gray-200 hover:rounded-lg"
+                li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
                   = link_to circuit_path(circuit), class: "flex justify-between items-center" do
-                    span class="text-green-600"
-                      = circuit_circle_view(circuit)
-                      span class="ml-2"= "Circuit #{circuit.name}"
-                      / span class="ml-2 text-gray"= circuit.problems.count
-                    span class="text-gray-400"
-                      = "!!" if circuit.risky?
+                    div class="flex justify-between py-2"
+                      div
+                        = circuit_circle_view(circuit)
+                        span class="ml-2"= "Circuit #{circuit.name}"
+                        / span class="ml-2 text-gray"= circuit.problems.count
+                    span class="text-gray-500"
+                      / = "!!" if circuit.risky?
                       = circuit.avg_grade
 
 
