@@ -31,7 +31,8 @@ Rails.application.routes.draw do
       end
       scope "top-areas" do
         get '/', to: redirect("/%{locale}/fontainebleau")
-        get 'level', to: "articles#top_areas_level", as: :top_areas_level
+        get 'level', to: redirect("/%{locale}/fontainebleau"), as: :top_areas_level
+        get 'beginner', to: "articles#top_areas_beginner", as: :top_areas_beginner
         get 'train', to: "articles#top_areas_train", as: :top_areas_train
         get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
         get 'groups', to: "articles#top_areas_groups", as: :top_areas_groups
