@@ -26,26 +26,26 @@ class Circuit < ApplicationRecord
     areas.first
   end
 
-  def avg_grade
+  def average_grade
     problems_with_grade = problems.select{|p| p.grade.in?(Problem::GRADE_VALUES)}
     grades_int = problems_with_grade.map{|p| Problem::GRADE_VALUES.index(p.grade) }
-    avg_int = avg(grades_int).round
-    Problem::GRADE_VALUES[avg_int].gsub("+", "")
+    average_int = average(grades_int).round
+    Problem::GRADE_VALUES[average_int].gsub("+", "")
   end
 
   # def risky?
-  #   avg_risk_score >= 4
+  #   average_risk_score >= 4
   # end
 
-  # def avg_risk_score
+  # def average_risk_score
   #   problems_with_landing_and_height = problems.select{|p| p.landing.present? && p.height.present? }
   #   risk_scores =problems_with_landing_and_height.map{|p| p.risk_score }
   #   return 0 if risk_scores.count == 0
-  #   avg(risk_scores).round(1)
+  #   average(risk_scores).round(1)
   # end
 
   private
-  def avg(array)
+  def average(array)
     array.reduce(:+) / array.size.to_f
   end
 end
