@@ -11,12 +11,6 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def top_areas_groups
-    @areas = Area.published.
-      reject{|a| a.id.in?([64, 69, 42]) }. # FIXME: use a tag to avoid tricky areas
-      select{|a| a.level_density_score >= 5}
-  end
-
   def top_areas_train
   end
 
