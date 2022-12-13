@@ -52,6 +52,7 @@ class Problem < ApplicationRecord
   scope :area, -> (area_id){ where(area_id: area_id) } 
   scope :number, -> (circuit_number){ where(circuit_number: circuit_number) } 
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
+  scope :around_level, ->(i) { where("grade >= '#{i-1}c' AND grade < '#{i+1}b'") }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
   scope :featured, -> { where(featured: true) }
 
