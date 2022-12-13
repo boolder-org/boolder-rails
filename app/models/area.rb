@@ -47,8 +47,4 @@ class Area < ApplicationRecord
       north_east: FACTORY.point(relevant_boulders.maximum("st_xmax(polygon::geometry)"), relevant_boulders.maximum("st_ymax(polygon::geometry)"))
     }
   end
-
-  def beginner_friendly?
-    problems.level2.count >= 30 && problems.level3.count >= 30 && circuits.none?{|c| c.risky? && c.avg_grade >= "2a" && c.avg_grade < "4a" }
-  end
 end
