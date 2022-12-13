@@ -22,7 +22,7 @@ namespace :popularity do
       top_problems = []
 
       Problem::GRADE_VALUES.each do |grade|
-        top_problems.concat area.problems.where(grade: grade).where("ascents > ?", 20).order(popularity: :desc).limit(max_per_grade)
+        top_problems.concat area.problems.significant_ascents.where(grade: grade).order(popularity: :desc).limit(max_per_grade)
       end
 
       top_problems.sort_by(&:popularity).reverse.take(total).each do |problem|

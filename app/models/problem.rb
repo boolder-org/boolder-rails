@@ -56,6 +56,7 @@ class Problem < ApplicationRecord
   scope :number, -> (circuit_number){ where(circuit_number: circuit_number) } 
   include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
+  scope :significant_ascents, -> { where("ascents >= ?", 20) }
 
   # quick hack
   scope :level1, -> { where("grade >= '1a' AND grade < '2b'") }
