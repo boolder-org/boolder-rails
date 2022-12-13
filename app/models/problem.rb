@@ -24,10 +24,6 @@ class Problem < ApplicationRecord
     customRanking ['desc(children_count)']
   end
 
-  def published?
-    area.published
-  end
-
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
     1a 1a+ 1b 1b+ 1c 1c+ 
@@ -52,23 +48,16 @@ class Problem < ApplicationRecord
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
   end
 
+  include HasTagsConcern
   scope :area, -> (area_id){ where(area_id: area_id) } 
   scope :number, -> (circuit_number){ where(circuit_number: circuit_number) } 
-  include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
-
-  # quick hack
-  scope :level1, -> { where("grade >= '1a' AND grade < '2b'") }
-  scope :level2, -> { where("grade >= '1c' AND grade < '3b'") }
-  scope :level3, -> { where("grade >= '2c' AND grade < '4b'") }
-  scope :level4, -> { where("grade >= '3c' AND grade < '5b'") }
-  scope :level5, -> { where("grade >= '4c' AND grade < '6b'") }
-  scope :level6, -> { where("grade >= '5c' AND grade < '7b'") }
-  scope :level7, -> { where("grade >= '6c' AND grade < '8b'") }
-
-
   scope :featured, -> { where(featured: true) }
+
+  def published?
+    area.published
+  end
 
   def to_param
     [id, name.parameterize.presence].compact.join("-")
