@@ -28,8 +28,8 @@ class Area < ApplicationRecord
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 
-  def level_density_score
-    1.upto(8).map{|level| (problems.level(level).count >= 40) ? 1 : 0 }.reduce(:+)
+  def levels
+    1.upto(7).map{|level| [level, problems.around_level(level).count >= 30] }.to_h
   end
 
   def to_param
