@@ -1,4 +1,4 @@
 - (1..7).each do |level|
   span class="ml-1"
-    - disabled = area.problems.send("level#{level}").count < 30
-    = level_bar(level: level, disabled: disabled,  klass: "h-4 w-4 leading-4")
+    - enabled = area.problems.where("grade >= '#{level-1}c' AND grade < '#{level+1}b'").count >= 30
+    = level_bar(level: level, enabled: enabled,  klass: "h-4 w-4 leading-4")
