@@ -22,7 +22,6 @@ class Circuit < ApplicationRecord
       I18n.t("circuit.name.#{color}")
   end
 
-  # TODO: implement with sensible logic
   def main_area
     areas.first
   end
@@ -34,28 +33,19 @@ class Circuit < ApplicationRecord
     Problem::GRADE_VALUES[avg_int].gsub("+", "")
   end
 
-  def risky?
-    avg_risk_score >= 4
-  end
+  # def risky?
+  #   avg_risk_score >= 4
+  # end
 
-  def avg_risk_score
-    problems_with_landing_and_height = problems.select{|p| p.landing.present? && p.height.present? }
-    risk_scores =problems_with_landing_and_height.map{|p| p.risk_score }
-    return 0 if risk_scores.count == 0
-    avg(risk_scores).round(1)
-  end
-
+  # def avg_risk_score
+  #   problems_with_landing_and_height = problems.select{|p| p.landing.present? && p.height.present? }
+  #   risk_scores =problems_with_landing_and_height.map{|p| p.risk_score }
+  #   return 0 if risk_scores.count == 0
+  #   avg(risk_scores).round(1)
+  # end
 
   private
   def avg(array)
     array.reduce(:+) / array.size.to_f
   end
-
-  def median(array)
-    return nil if array.empty?
-    sorted = array.sort
-    len = sorted.length
-    (sorted[(len - 1) / 2] + sorted[len / 2]) / 2.0
-  end
-
 end

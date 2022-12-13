@@ -55,7 +55,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
                       div
                         = circuit_circle_view(circuit)
                         span class="ml-2"= "Circuit #{circuit.name}"
-                        / span class="ml-2 text-gray"= circuit.problems.count
+                        / span class="ml-2 text-gray-400"= circuit.problems.count
                     span class="text-gray-500"
                       / = "!!" if circuit.risky?
                       = circuit.avg_grade
