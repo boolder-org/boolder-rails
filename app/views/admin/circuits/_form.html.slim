@@ -1,0 +1,15 @@
+div class="col-span-6 sm:col-span-2"
+  = form.label :color
+  = form.select :color, Circuit::COLOR_VALUES, { include_blank: true }
+
+div class="col-span-6 sm:col-span-4"
+
+div class="col-span-6 sm:col-span-2"
+  = form.label :order
+  = form.select :order, 0..10, { include_blank: true }
+
+div class="col-span-6 sm:col-span-4"
+
+div class="col-span-6 sm:col-span-2"
+  = form.label :risk
+  = form.select :risk, 0..3, { include_blank: true }
