@@ -4,7 +4,7 @@
 - if @area.cover.persisted?
   - set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, w: 800, ar:'4:3', fit: 'crop') }
 
-div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-1 hidden sm:block mb-4"
+div class="max-w-7xl mx-auto pt-5 mt-1 px-4 sm:px-6 lg:px-8 bg-gray-100 hidden sm:block mb-4"
   = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
     div Fontainebleau  
 
@@ -28,6 +28,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
               path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             div= t('views.areas.show.see_map')
 
+  div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
+    div class="col-span-1"
+      div class="px-4 sm:px-0"
+        span class="text-gray-700"= t("views.areas.show.levels")
+        span class="ml-2"= render "shared/area_levels", area: @area
 
   div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
     div class="col-span-1"
@@ -37,25 +42,29 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
   div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4"
     div class="col-span-1"
-      div class="mt-8 space-y-8"
-        - off_circuit_problems = @circuits.delete(nil)
-        - @circuits.each do |circuit, problems|
-          div
-            a id="circuit_#{circuit.id}"
-              h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
-                = t("circuit.long_name", name: circuit.name)
-            ul role="list"
-              - problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
-                - cache [problem, I18n.locale]
-                  = render problem
+      div
+        h2 class="text-2xl font-bold mt-8 mb-4 px-4 sm:px-0" Circuits
+        ul role="list" class=""
+
+          - @area.circuits.each do |circuit|
+            li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+              = link_to circuit_path(circuit), class: "flex justify-between items-center" do
+                div class="flex justify-between py-2"
+                  div
+                    = circuit_circle_view(circuit)
+                    span class="ml-2"= "Circuit #{circuit.name}"
+                span class="text-gray-500"
+                  / = "!!" if circuit.risky?
+                  = circuit.average_grade
+
+
         div
-          h2 class="text-xl font-bold mb-4 px-4 sm:px-0"
-            = t("circuit.off_circuit")
-          ul role="list"
-            - off_circuit_problems.each do |problem|
-              - cache [problem, I18n.locale]
-                = render problem
-
-
-
-      
+          h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"= t('views.areas.show.problems')
+          div
+            - @problems.each do |grade, problems|
+              h3 class="px-4 sm:px-0 text-xl font-semibold mt-4 mb-4"= grade
+              ul role="list"
+                - problems.each do |problem|
+                  - cache [problem, I18n.locale, "v2"]
+                    = render problem
+                

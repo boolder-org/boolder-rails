@@ -20,6 +20,18 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // This code uses custom events coming from search_controller.js
+      // FIXME: make code more robust
+      let locale = "<%= I18n.locale %>";
+      window.addEventListener('gotoproblem', function(event) {
+        window.location = `/${locale}/redirects/new?problem_id=${event.detail.id}`
+      });
+      window.addEventListener('gotoarea', function(event) {
+        window.location = `/${locale}/redirects/new?area_id=${event.detail.id}`
+      });
+    </script>
   </head>
 
   <body class="bg-white">

@@ -24,10 +24,6 @@ class Problem < ApplicationRecord
     customRanking ['desc(children_count)']
   end
 
-  def published?
-    area.published
-  end
-
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
     1a 1a+ 1b 1b+ 1c 1c+ 
@@ -52,11 +48,14 @@ class Problem < ApplicationRecord
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
   end
 
-  scope :area, -> (area_id){ where(area_id: area_id) } 
-  scope :number, -> (circuit_number){ where(circuit_number: circuit_number) } 
   include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
-  scope :featured, -> { where(featured: true) }
+  scope :around_level, -> (i){ where("grade >= '#{i-1}c' AND grade < '#{i+1}b'").tap{raise unless i.in?(1..8)} }
+  scope :significant_ascents, -> { where("ascents >= ?", 20) }
+
+  def published?
+    area.published
+  end
 
   def to_param
     [id, name.parameterize.presence].compact.join("-")
@@ -108,4 +107,14 @@ class Problem < ApplicationRecord
       children
     end
   end
+
+  # # FIXME: document & test
+  # def risk_score
+  #   return nil unless height && landing
+
+  #   # FIXME: use default value
+  #   mapping = { "easy" => 0, "medium" => 3, "hard" => 10 }
+
+  #   (mapping[landing] * [(height - 2), 0].max).round(1)
+  # end
 end

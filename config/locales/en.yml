@@ -29,16 +29,11 @@ en:
       other: Other
     sit_start: Sit start
     risky: Risky
-    featured: Featured
+    featured: Popular
     filters:
       level: Level
       circuit: Circuit
       selection: Selection
-  area:
-    tags:
-      beginner_friendly: beginner friendly
-      dry_fast: dries fast
-      train_station_closeby: access by train+bicycle
   views:
     homepage:
       title1: Bouldering
@@ -46,7 +41,7 @@ en:
       subtitle: Discover thousands of problems & circuits for all levels.
       see_map: See the map
       read_guide: Read the beginner's guide
-      areas_for_beginners: Top areas for beginners
+      popular_areas: Popular areas
       all_areas: See all areas
       promoted:
         app:
@@ -116,10 +111,12 @@ en:
           area_name: Area name
         problems: Problems
         problems_of_level_html: "Grade %{level} <br/> problems"
+        area_column: Area
+        problems_column: Problems
+        levels_column: Levels
         cards:
-          level: For your level
+          beginner: For beginners
           dry_fast: Dries fast
-          groups: For groups
           train_html: Accessible <br>by train + bike
         metas: 
           title: All areas in Fontainebleau
@@ -129,17 +126,29 @@ en:
       show:
         see_map: See map
         see_parking: See parking
+        levels: "Levels:"
+        problems: Problems
         metas:
           title: "%{area}, Fontainebleau"
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
       train_station: "%{name} train station"
       train_station_generic: "Train station"
+    circuits:
+      show:
+        metas:
+          title: "%{circuit} circuit at %{area}"
+      index:
+        metas:
+          title: All Fontainebleau circuits
     problems:
       show:
         see_circuit: See the circuit
         variants: Variants
         metas:
           title: "%{problem} - %{grade} - %{area}"
+      index:
+        metas:
+          title: Popular problems in Fontainebleau
     search:
       placeholder: Name of problem or area
       clear: Clear

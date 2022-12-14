@@ -1,0 +1,27 @@
+- set_meta_tags title: t("views.circuits.index.metas.title")
+- set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") }
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
+
+  div class="px-4 sm:px-0 pt-6"
+    div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
+      div= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700"
+
+  div class="lg:grid lg:grid-cols-2 lg:gap-16"
+
+    div class="col-span-1"
+      div
+        h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0" Circuits
+        ul role="list"
+          - @circuits.each do |circuit|
+            li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+              = link_to circuit_path(circuit) do 
+                div class="flex justify-between py-2"
+                    div
+                      = circuit_circle_view(circuit)
+                      span class="ml-2"= t("circuit.long_name", name: circuit.name)
+                      span class="ml-2 text-gray-400"= circuit.main_area&.name
+                    div
+                      div class="flex space-x-2"
+                        div class="text-gray-500"
+                          = circuit.average_grade

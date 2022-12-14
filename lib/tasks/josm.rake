@@ -52,7 +52,7 @@ namespace :josm do
     geojson_factory = RGeo::GeoJSON::EntityFactory.instance
     features = []
 
-    Topo.published.joins(:problems).merge(Problem.area(area_id)).each do |topo|
+    Topo.published.joins(:problems).merge(Problem.where(area_id: area_id)).each do |topo|
       hash = {}.with_indifferent_access
 
       hash[:name] = topo.problems.map(&:name_debug).join(" | ")

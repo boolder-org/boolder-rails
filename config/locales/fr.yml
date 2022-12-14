@@ -29,16 +29,11 @@ fr:
       other: Autre
     sit_start: Départ assis
     risky: Dangereux en cas de chute
-    featured: Coup de cœur
+    featured: Populaire
     filters:
       level: Niveau
       circuit: Circuit
       selection: Sélection
-  area:
-    tags:
-      beginner_friendly: idéal pour débuter
-      dry_fast: sèche vite
-      train_station_closeby: accessible en train+vélo
   views:
     homepage:
       title1: Escaladez
@@ -46,7 +41,7 @@ fr:
       subtitle: Découvrez des milliers de blocs et circuits pour tous les niveaux.
       see_map: Voir la carte
       read_guide: Lire le guide du débutant
-      areas_for_beginners: Secteurs pour bien débuter
+      popular_areas: Secteurs populaires
       all_areas: Voir tous les secteurs
       promoted:
         app:
@@ -116,10 +111,12 @@ fr:
           area_name: Nom de secteur
         problems: Voies
         problems_of_level_html: "Voies <br/> de niveau %{level}"
+        area_column: Secteur
+        problems_column: Voies
+        levels_column: Niveaux
         cards:
-          level: Par niveau
+          beginner: Pour bien débuter
           dry_fast: Sèche Vite
-          groups: En groupe
           train_html: Accessible <br>en train + vélo
         metas:
           title: Tous les secteurs à Fontainebleau
@@ -129,17 +126,29 @@ fr:
       show:
         see_map: Voir la carte
         see_parking: Voir le parking
+        levels: "Niveaux :"
+        problems: Voies
         metas:
           title: "%{area}, Fontainebleau"
           description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."
       train_station: "Gare %{name}"
       train_station_generic: "Gare"
+    circuits:
+      show:
+        metas:
+          title: Circuit %{circuit} à %{area}
+      index:
+        metas:
+          title: Tous les circuits à Fontainebleau
     problems:
       show:
         see_circuit: Voir le circuit
         variants: Variantes
         metas:
           title: "%{problem} - %{grade} - %{area}"
+      index:
+        metas:
+          title: Voies populaires à Fontainebleau
     search:
       placeholder: Nom de voie ou secteur
       clear: Effacer

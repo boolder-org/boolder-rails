@@ -31,31 +31,25 @@ Rails.application.routes.draw do
       end
       scope "top-areas" do
         get '/', to: redirect("/%{locale}/fontainebleau")
-        get 'level', to: "articles#top_areas_level", as: :top_areas_level
+        get 'level', to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_level # keep until end of 2023
+        get 'groups', to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_groups # keep until end of 2023
+        get 'beginner', to: "articles#top_areas_beginner", as: :top_areas_beginner
         get 'train', to: "articles#top_areas_train", as: :top_areas_train
         get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
-        get 'groups', to: "articles#top_areas_groups", as: :top_areas_groups
       end
       root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
     end
 
     scope 'fontainebleau' do
-      # ========================================================
-      # Legacy routes: keep until end of 2021 for SEO purposes
-      get "areas", to: redirect('/%{locale}/fontainebleau'), as: :area_legacy_redirect
-      get "areas/:id", to: "welcome#redirect_area"
-      get "areas/:id/map", to: "welcome#redirect_area_map"
-      get "areas/:id/problems", to: "welcome#redirect_problems"
-      # ========================================================
-      get ":slug/problems", to: redirect('/%{locale}/fontainebleau/%{slug}'), as: :area_problems_legacy_redirect # keep until end of 2022
+      resources :circuits, only: [:show, :index]
+      resources :problems, only: [:index]
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023
       get ":slug", to: "areas#show", as: :area
+
       get "/", to: "areas#index", as: :areas
     end
-    
-    get "problems/:id", to: "welcome#redirect_problem" # Legacy route: keep until end of 2021 for SEO purposes
 
     get 'map(/:slug)', to: 'map#index', as: :map
     get 'app', to: 'pages#app', as: :app
