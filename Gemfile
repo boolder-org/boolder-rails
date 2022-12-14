@@ -13,7 +13,7 @@ gem 'activerecord-postgis-adapter', '~> 7.0.1'
 gem 'aws-sdk-s3', '~> 1.88.0'
 gem 'sidekiq', '~> 6.2.0'
 gem 'redis', '~> 4.2.5'
-gem 'newrelic_rpm', '~> 6.15.0'
+gem 'newrelic_rpm'
 gem 'bugsnag', '~> 6.20.0'
 gem 'algoliasearch-rails', '~> 2.1.4'
 
