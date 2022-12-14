@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_07_164950) do
+ActiveRecord::Schema.define(version: 2022_12_14_073647) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -116,7 +116,7 @@ ActiveRecord::Schema.define(version: 2022_12_07_164950) do
     t.boolean "risky", default: false, null: false
     t.boolean "featured", default: false, null: false
     t.bigint "parent_id"
-    t.decimal "ratings_avg"
+    t.decimal "ratings_average"
     t.integer "ratings"
     t.integer "ascents"
     t.integer "popularity"
