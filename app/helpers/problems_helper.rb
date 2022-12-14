@@ -33,7 +33,7 @@ module ProblemsHelper
 
   def circle_view(content, background_color: "", text_color: "", klass: "h-6 w-6 leading-6")
     content_tag(:span, content, 
-      style: "background: #{background_color}; color: #{text_color}",
+      style: "background-color: #{background_color}; color: #{text_color}",
       class: "rounded-full #{klass} inline-flex justify-center")
   end
 

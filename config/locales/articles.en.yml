@@ -99,10 +99,12 @@ en:
         discover_fontainebleau: Discover Fontainebleau
         all_areas: All areas in Fontainebleau
         see_also: "See also:"
-        level:
-          title: The best areas by level
+        beginner:
+          title: The best areas for beginners
+          more_areas: More areas
+          to_read: Reading list
           metas:
-            title: The best areas for your level in Fontainebleau
+            title: The best areas for beginners in Fontainebleau
         dry_fast:
           title: Fast drying areas
           metas:
