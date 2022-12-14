@@ -146,6 +146,9 @@ fr:
         variants: Variantes
         metas:
           title: "%{problem} - %{grade} - %{area}"
+      index:
+        metas:
+          title: Voies populaires à Fontainebleau
     search:
       placeholder: Nom de voie ou secteur
       clear: Effacer

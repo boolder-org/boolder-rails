@@ -1,9 +1,5 @@
-/ - set_meta_tags title: t("views.problems.show.metas.title", problem: @problem.name_with_fallback, grade: @problem.grade, area: @problem.area.name)
-
-/ - set_meta_tags canonical: area_problem_url(@problem.area, @problem)
-
-/ - if line = @problem.lines.published.first
-/   - set_meta_tags og: { type: "website", image: ix_image_url(line.topo.photo.key, Topo::IMGIX_SMALL) }
+- set_meta_tags title: t("views.problems.index.metas.title")
+- set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") }
 
 
 div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
