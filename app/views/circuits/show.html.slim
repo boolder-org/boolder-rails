@@ -1,10 +1,16 @@
+- set_meta_tags title: t("views.circuits.show.metas.title", circuit: @circuit.name, area: @area.name)
+/ - set_meta_tags description: t("views.circuits.show.metas.description", circuit: @circuit.name, area: @area.name) 
+
+- if @area.cover.persisted?
+  - set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, w: 800, ar:'4:3', fit: 'crop') }
+
 div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
   div class="px-4 sm:px-0"
     div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
       div= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700"
       svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
-      div= link_to @circuit.main_area.name, area_path(@circuit.main_area), class: "hover:text-gray-700"
+      div= link_to @area.name, area_path(@area), class: "hover:text-gray-700"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
@@ -12,7 +18,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       div
         h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"
           = t("circuit.long_name", name: @circuit.name)
-        ul role="list"
+        ul role="list" class="pt-2"
           - @circuit.problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
             - cache [problem, I18n.locale]
               = render problem
