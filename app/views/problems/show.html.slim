@@ -21,10 +21,6 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
             h1 class="text-4xl font-bold"= @problem.name_with_fallback
             div class="text-gray-400 text-4xl font-bold"= @problem.grade
 
-        / - if @problem.featured
-        /   div class="text-red-400 flex space-x-2 items-center mt-2"
-        /     = render 'svg/heart', width: 24, height: 24
-        /     div= t("problem.featured")
         div class="text-gray-500 flex space-x-2 mt-2"
           - if @problem.tags.include?("sit_start")
             div= t("problem.sit_start")
