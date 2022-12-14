@@ -137,6 +137,9 @@ en:
       show:
         metas:
           title: "%{circuit} circuit at %{area}"
+      index:
+        metas:
+          title: All Fontainebleau circuits
     problems:
       show:
         see_circuit: See the circuit

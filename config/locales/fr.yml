@@ -137,6 +137,9 @@ fr:
       show:
         metas:
           title: Circuit %{circuit} à %{area}
+      index:
+        metas:
+          title: Tous les circuits à Fontainebleau
     problems:
       show:
         see_circuit: Voir le circuit
