@@ -5,5 +5,6 @@ class CircuitsController < ApplicationController
 
   def show
     @circuit = Circuit.find(params[:id])
+    @area = @circuit.main_area
   end
 end

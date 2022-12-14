@@ -133,6 +133,10 @@ en:
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
       train_station: "%{name} train station"
       train_station_generic: "Train station"
+    circuits:
+      show:
+        metas:
+          title: "%{circuit} circuit at %{area}"
     problems:
       show:
         see_circuit: See the circuit

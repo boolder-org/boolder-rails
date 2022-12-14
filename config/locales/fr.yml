@@ -133,6 +133,10 @@ fr:
           description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."
       train_station: "Gare %{name}"
       train_station_generic: "Gare"
+    circuits:
+      show:
+        metas:
+          title: Circuit %{circuit} à %{area}
     problems:
       show:
         see_circuit: Voir le circuit
