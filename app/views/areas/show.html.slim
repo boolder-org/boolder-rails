@@ -4,7 +4,7 @@
 - if @area.cover.persisted?
   - set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, w: 800, ar:'4:3', fit: 'crop') }
 
-div class="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-1 hidden sm:block mb-4"
+div class="max-w-7xl mx-auto pt-5 mt-1 px-4 sm:px-6 lg:px-8 bg-gray-100 hidden sm:block mb-4"
   = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
     div Fontainebleau  
 
