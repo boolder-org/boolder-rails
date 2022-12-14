@@ -28,7 +28,7 @@ namespace :popularity do
 
   task compute: :environment do 
     raise "not ready for prod" if Rails.env.production?
-    
+
     Problem.find_each do |problem|
       ascents = problem.ascents || 0
       ratings_average = problem.ratings_average || 0
@@ -60,5 +60,22 @@ namespace :popularity do
     end
 
     puts "done".green
+  end
+
+  # task save: :environment do 
+  #   CSV.open("popularity.csv", "w") do |csv|
+  #     csv << %w(problem_id ascents ratings ratings_average popularity featured)
+
+  #     Problem.find_each do |p|
+  #       csv << [p.id, p.ascents, p.ratings, p.ratings_average, p.popularity, p.featured]
+  #     end 
+  #   end
+  # end
+
+  task load: :environment do
+    CSV.foreach(Rails.root.join("lib", "tasks", "popularity.csv"), headers: true) do |row|
+      problem = Problem.find(row["problem_id"])
+      problem.update!(ascents: row["ascents"], ratings: row["ratings"], ratings_average: row["ratings_average"], popularity: row["popularity"], featured: row["featured"],)
+    end
   end
 end
