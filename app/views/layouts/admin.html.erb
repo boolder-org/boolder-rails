@@ -14,12 +14,14 @@
     <script>
       // This code uses custom events coming from search_controller.js
       // FIXME: make code more robust
+      let locale = "<%= I18n.locale %>";
       window.addEventListener('gotoproblem', function(event) {
-        window.location = `/fr/admin/problems/${event.detail.id}/edit`
+        window.location = `/${locale}/admin/problems/${event.detail.id}/edit`
       });
-      window.addEventListener('gotoarea', function(event) {
-        window.location = `/fr/admin/areas/${event.detail.id}/problems`
-      });
+      // FIXME: redirect to correct url (area slug)
+      // window.addEventListener('gotoarea', function(event) {
+      //   window.location = `/${locale}/admin/...`
+      // });
     </script>
   </head>
 
