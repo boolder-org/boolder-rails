@@ -10,6 +10,7 @@ Rails.application.routes.draw do
         resources :tasks, only: :index
       end
       resources :problems, except: :index
+      resources :circuits
       resources :imports
       resources :topos
       resources :problem_imports
