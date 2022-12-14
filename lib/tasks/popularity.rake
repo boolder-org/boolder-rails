@@ -61,21 +61,4 @@ namespace :popularity do
 
   #   puts "done".green
   # end
-
-  # task save: :environment do 
-  #   CSV.open("popularity.csv", "w") do |csv|
-  #     csv << %w(problem_id ascents ratings ratings_average popularity featured)
-
-  #     Problem.find_each do |p|
-  #       csv << [p.id, p.ascents, p.ratings, p.ratings_average, p.popularity, p.featured]
-  #     end 
-  #   end
-  # end
-
-  task load: :environment do
-    CSV.foreach(Rails.root.join("lib", "tasks", "popularity.csv"), headers: true) do |row|
-      problem = Problem.find(row["problem_id"])
-      problem.update!(ascents: row["ascents"], ratings: row["ratings"], ratings_average: row["ratings_average"], popularity: row["popularity"], featured: row["featured"],)
-    end
-  end
 end
