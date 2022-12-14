@@ -10,7 +10,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
     div class="col-span-1"
       div
-        h1 class="text-3xl font-bold mb-4 px-4 sm:px-0 mt-4"
+        h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"
           = t("circuit.long_name", name: @circuit.name)
         ul role="list"
           - @circuit.problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
