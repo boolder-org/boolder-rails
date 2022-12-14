@@ -15,26 +15,6 @@ class WelcomeController < ApplicationController
     redirect_to root_localized_path(locale: preferred_locale || I18n.default_locale)
   end
 
-  def redirect_area
-    area = Area.find(params[:id])
-    redirect_to area_path(area)
-  end
-
-  def redirect_area_map
-    area = Area.find(params[:id])
-    redirect_to map_path(area)
-  end
-
-  def redirect_problems
-    area = Area.find(params[:id])
-    redirect_to area_path(area)
-  end
-
-  def redirect_problem
-    problem = Problem.find(params[:id])
-    redirect_to helpers.problem_friendly_path(problem)
-  end
-
   def problem_permalink
     problem = Problem.find(params[:id])
     redirect_to helpers.problem_friendly_path(problem)

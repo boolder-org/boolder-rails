@@ -50,8 +50,6 @@ Rails.application.routes.draw do
 
       get "/", to: "areas#index", as: :areas
     end
-    
-    get "problems/:id", to: "welcome#redirect_problem" # Legacy route: keep until end of 2021 for SEO purposes
 
     get 'map(/:slug)', to: 'map#index', as: :map
     get 'app', to: 'pages#app', as: :app
