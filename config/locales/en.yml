@@ -146,6 +146,9 @@ en:
         variants: Variants
         metas:
           title: "%{problem} - %{grade} - %{area}"
+      index:
+        metas:
+          title: Popular problems in Fontainebleau
     search:
       placeholder: Name of problem or area
       clear: Clear
