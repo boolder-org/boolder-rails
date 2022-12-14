@@ -2,7 +2,7 @@ require "HTTParty"
 
 namespace :bleau do
   task stats: :environment do 
-    Problem.where("bleau_info_id IS NOT NULL").where(ratings_avg: nil, ratings: nil, ascents: nil).find_each do |problem|
+    Problem.where("bleau_info_id IS NOT NULL").where(ratings_average: nil, ratings: nil, ascents: nil).find_each do |problem|
 
       html = HTTParty.get("https://bleau.info/c/#{problem.bleau_info_id}.html?locale=en").body
       doc = Nokogiri::HTML(html)
@@ -10,11 +10,11 @@ namespace :bleau do
       ratings_text = doc.css(".bdetails .bopins")[0]&.text || ""
       ascents_text = doc.css(".bdetails .bopins")[2]&.text || ""
 
-      ratings_avg = ratings_text.match(/([0-9]\.[0-9]) Stars/)&.[](1)
+      ratings_average = ratings_text.match(/([0-9]\.[0-9]) Stars/)&.[](1)
       ratings_number = ratings_text.match(/([0-9]+) total/)&.[](1)
       ascents_number = ascents_text.match(/([0-9]+) total/)&.[](1)
 
-      attributes = { ratings_avg: ratings_avg, ratings: ratings_number, ascents: ascents_number }
+      attributes = { ratings_average: ratings_average, ratings: ratings_number, ascents: ascents_number }
       problem.update(attributes)
       puts "Updated problem ##{problem.id}: #{attributes}"
 

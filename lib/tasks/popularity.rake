@@ -2,8 +2,8 @@ namespace :popularity do
   task compute: :environment do 
     Problem.find_each do |problem|
       ascents = problem.ascents || 0
-      ratings_avg = problem.ratings_avg || 0
-      popularity = ascents * (ratings_avg*ratings_avg)
+      ratings_average = problem.ratings_average || 0
+      popularity = ascents * (ratings_average*ratings_average)
       problem.update(popularity: popularity)
       puts "Computed popularity for problem ##{problem.id}"
     end
