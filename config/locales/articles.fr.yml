@@ -30,32 +30,27 @@ fr:
             title: Le matériel nécessaire pour faire du bloc en extérieur
         choose_area: 
           title: Choisir un secteur
-          level: Adapté à votre niveau
-          level_p1_html: Pour vos premières sorties en extérieur nous vous conseillons de choisir un secteur avec de nombreuses voies en <strong>niveau débutant (1, 2, 3)</strong>, des blocs <strong>peu hauts</strong> (3 mètres et moins) et avec une <strong>bonne réception au sol</strong>.
-          level_p2: Vous pourrez ainsi prendre confiance et trouver les styles de voies que vous préférez.
-          level_p3: "Voici une sélection de secteurs parfaits pour débuter :"
-          see_also: "Voir aussi :"
-          other_levels: niveaux intermédaires/avancés.
-          easy_access: Facile d'accès
-          easy_access_p1: Prévoyez entre 1 et 20 min de marche entre le parking et les premières voies, selon les secteurs.
-          easy_access_p2: Pour éviter les surprises, consultez la carte du secteur.
-          quiet: Au calme
-          quiet_p1: Les secteurs faciles d'accès sont généralement assez fréquentés, notamment le week-end. 
-          quiet_p2: Si vous voulez être au calme, penchez plutôt vers des secteurs moins faciles d'accès.
+          beginner_friendly_areas: Secteurs pour bien débuter
+          p1_html: Pour découvrir Fontainebleau en douceur, nous vous conseillons de choisir un secteur avec de nombreuses voies en <strong>niveau débutant (1, 2, 3)</strong>, des blocs <strong>peu hauts</strong> (3 mètres et moins) et avec une <strong>bonne réception au sol</strong>.
+          p2: "Voici une sélection de secteurs :"
+          p3: Ces secteurs ont tous au moins un circuit (jaune ou orange) qui convient aux débutants.
+          more_areas: Voir plus secteurs
           metas:
-            title: Comment choisir un secteur à Fontainebleau
+            title: Comment choisir un secteur pour débutant à Fontainebleau
         choose_problems: 
           title: Choisir ses voies
           intro: Une fois arrivé sur un secteur, voici quelques conseils pour trouver facilement des voies qui vous correspondent.
           filter_by_level: Filtrer par niveau
           filter_by_level_p1_html: Grâce à l’<a href="%{path}">appli Boolder</a>, vous pouvez filtrer les voies correspondant à votre niveau.
           filter_by_level_p2: Vous pouvez ainsi facilement identifier les zones ayant une bonne densité de voies correspondant à votre niveau.
+          filter_by_level_warning: "Attention : une cotation 4a à Fontainebleau équivaut environ à 5a en falaise ou en salle."
+          filter_by_level_warning2: Ne vous surestimez pas ;)
           circuit: Suivre un circuit
           circuit_p1: Les circuits regroupent des voies de niveau (relativement) homogène, selon un parcours numéroté.
           circuit_p2: Chaque voie est représentée par un numéro de couleur et une flèche, peints directement sur la roche.
           circuit_p3: Il existe 5 couleurs principales (jaune, orange, bleu, rouge et noir/blanc) qui correspondent à des niveaux croissants. 
           circuit_p4_html: En suivant un <strong>circuit jaune</strong> (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
-          circuit_p5_html: "Bon à savoir : vous pouvez également filtrer par circuit dans l’<a href='%{path}'>appli Boolder</a>."
+          circuit_p5: "Conseil : privilégiez les circuits adaptés aux débutants, marqués d'un "
           metas:
             title: Comment choisir les bonnes voies à Fontainebleau
         climb_safely: 
@@ -99,12 +94,6 @@ fr:
         discover_fontainebleau: Découvrir Fontainebleau
         all_areas: Tous les secteurs à Fontainebleau
         see_also: "Voir aussi :"
-        beginner:
-          title: Les meilleurs secteurs pour débuter
-          more_areas: Voir plus de secteurs
-          to_read: À lire
-          metas:
-            title: Les meilleurs secteurs de Fontainebleau pour débuter
         dry_fast:
           title: Les secteurs qui sèchent vite
           metas:

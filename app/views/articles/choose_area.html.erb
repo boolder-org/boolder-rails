@@ -21,19 +21,15 @@
 
         <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
           <h2>
-            <%= t('views.articles.beginners_guide.choose_area.level') %>
+            <%= t('views.articles.beginners_guide.choose_area.beginner_friendly_areas') %>
           </h2>
           
           <p>
-            <%= t('views.articles.beginners_guide.choose_area.level_p1_html') %>
+            <%= t('views.articles.beginners_guide.choose_area.p1_html') %>
           </p>
 
           <p>
-            <%= t('views.articles.beginners_guide.choose_area.level_p2') %>
-          </p>
-
-          <p>
-            <%= t('views.articles.beginners_guide.choose_area.level_p3') %>
+            <%= t('views.articles.beginners_guide.choose_area.p2') %>
           </p>
 
         </div>
@@ -53,31 +49,20 @@
         </div>
       </div>
 
-      <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
-
-          <h2>
-            <%= t('views.articles.beginners_guide.choose_area.easy_access') %>
-          </h2>
-          <p>
-            <%= t('views.articles.beginners_guide.choose_area.easy_access_p1') %>
-          </p>
-          <p>
-            <%= t('views.articles.beginners_guide.choose_area.easy_access_p2') %>
+      <div class="max-w-7xl mx-auto pb-8 px-4 sm:px-6 lg:px-8">
+        
+        <div class="mt-2 prose prose-green prose-lg text-gray-500 mx-auto">
+          <p class=" flex justify-end">
+            <%= link_to t("views.articles.beginners_guide.choose_area.more_areas"), areas_path %>
           </p>
 
-          <h2>
-            <%= t('views.articles.beginners_guide.choose_area.quiet') %>
-          </h2>
           <p>
-            <%= t('views.articles.beginners_guide.choose_area.quiet_p1') %>
+            <%= t('views.articles.beginners_guide.choose_area.p3') %>
           </p>
-          <p>
-            <%= t('views.articles.beginners_guide.choose_area.quiet_p2') %>
-          </p>
+
         </div>
 
-        <div class="pt-16 pb-8">
+        <div class="pt-8 pb-8">
           <%= render 'pagination', prev_path: equipment_path, prev_text: "1. #{t('views.articles.beginners_guide.equipment.title')}", next_path: choose_problems_path, next_text: "3. #{t('views.articles.beginners_guide.choose_problems.title')}" %>
         </div>
 

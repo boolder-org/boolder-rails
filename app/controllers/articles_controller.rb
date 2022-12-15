@@ -1,12 +1,6 @@
 class ArticlesController < ApplicationController
   def choose_area
-    @beginner_areas = Rails.cache.fetch("shared/beginner_friendly_list", expires_in: 12.hours) do
-      Area.published.any_tags(:beginner_friendly).all.shuffle
-    end
-  end
-
-  def top_areas_beginner
-    @beginner_areas = Rails.cache.fetch("shared/beginner_friendly_list", expires_in: 12.hours) do
+    @beginner_areas = Rails.cache.fetch("articles/choose_area/beginner_friendly_areas", expires_in: 12.hours) do
       Area.published.any_tags(:beginner_friendly).all.shuffle
     end
   end

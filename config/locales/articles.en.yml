@@ -30,32 +30,27 @@ en:
             title: The equipment you need for outdoor bouldering
         choose_area: 
           title: Choose an area
-          level: Adapted to your level
-          level_p1_html: For your first bouldering session in Fontainebleau we recommend you choose an area with lots of problems <strong>graded between 2 and 3</strong>, with <strong>low boulders</strong> (below 3m), and with <strong>good landings</strong>.
-          level_p2: This way you will be able to start bouldering with confidence, and find the type of problems you like.
-          level_p3: "Here are a few areas that are perfect for beginners:"
-          see_also: "See also:"
-          other_levels: intermediate/advanced levels.
-          easy_access: Easy access
-          easy_access_p1: Anticipate to walk between 1 and 20 minutes to get to the first boulders from the parking spot, depending on the area.
-          easy_access_p2: To avoid surprises, have a look at the map of the area.
-          quiet: Quiet
-          quiet_p1: Areas that are easy to access are generally pretty crowded, especially during the week-end.
-          quiet_p2: If you prefer a more peaceful setting, try an area that is less accessible.
+          beginner_friendly_areas: Areas suited for beginners
+          p1_html: The smoothest way to discover Fontainebleau is to choose an area with lots of <strong>easy problems </strong> (graded 1, 2 or 3), with <strong>low boulders</strong> (less than 3 meters high) and with <strong>good landings</strong>.
+          p2: "Here are some recommended areas:"
+          p3: All these areas have at least one circuit that is suited for beginners.
+          more_areas: See more areas
           metas:
-            title: How to choose an area in Fontainebleau
+            title: How to choose an area suited for beginners in Fontainebleau
         choose_problems: 
           title: Choose problems
           intro: Once you get to a bouldering area, here are a few tips to easily find problems adapted to you.
           filter_by_level: Filter by level
           filter_by_level_p1_html: Thanks to the <a href="%{path}">Boolder app</a>, you can filter problems that match with your level.
           filter_by_level_p2: This way you can identify the zones with a good density of problems adapted to your level.
+          filter_by_level_warning: "Careful: the grade 4a in Fontainebleau is roughly equivalent to 5a elsewhere."
+          filter_by_level_warning2: Don't overestimate yourself ;)
           circuit: Follow a circuit
           circuit_p1: Circuits are a series of boulders of (relatively) homogeneous level, with ascending numbers.
           circuit_p2: Each problem is represented by a colored number and an arrow, painted directly on the boulder.
           circuit_p3: There are 5 main colors (yellow, orange, blue, red, and white/black) that correspond to increasing grades.
           circuit_p4_html: By following a <strong>yellow circuit</strong> (or an orange one) you'll be able to discover problems graded between 1 and 3, which is perfect to start.
-          circuit_p5_html: "Tip: you can also filter by circuit with the <a href='%{path}'>Boolder app</a>"
+          circuit_p5: "Tip: pick a circuit suited for beginners, marked with a "
           metas:
             title: How to choose problems in Fontainebleau
         climb_safely: 
@@ -99,12 +94,6 @@ en:
         discover_fontainebleau: Discover Fontainebleau
         all_areas: All areas in Fontainebleau
         see_also: "See also:"
-        beginner:
-          title: The best areas for beginners
-          more_areas: More areas
-          to_read: Reading list
-          metas:
-            title: The best areas for beginners in Fontainebleau
         dry_fast:
           title: Fast drying areas
           metas:
