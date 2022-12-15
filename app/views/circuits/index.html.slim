@@ -14,14 +14,4 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0" Circuits
         ul role="list"
           - @circuits.each do |circuit|
-            li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
-              = link_to circuit_path(circuit) do 
-                div class="flex justify-between py-2"
-                    div
-                      = circuit_circle_view(circuit)
-                      span class="ml-2"= t("circuit.long_name", name: circuit.name)
-                      span class="ml-2 text-gray-400"= circuit.main_area&.name
-                    div
-                      div class="flex space-x-2"
-                        div class="text-gray-500"
-                          = circuit.average_grade
+            = render circuit, show_area: true
