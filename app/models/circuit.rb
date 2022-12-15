@@ -23,7 +23,7 @@ class Circuit < ApplicationRecord
   end
 
   def main_area
-    areas.first
+    problems.order(:circuit_number).first.area
   end
 
   def average_grade

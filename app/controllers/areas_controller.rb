@@ -6,6 +6,7 @@ class AreasController < ApplicationController
   def show
     @area = Area.find_by(slug: params[:slug])
 
+    @circuits = @area.main_circuits
     @problems = @area.problems.order(popularity: :desc).group_by{|p| p.grade }.sort_by{|grade, _| grade }.reverse
   end
 end
