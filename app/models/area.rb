@@ -47,4 +47,8 @@ class Area < ApplicationRecord
       north_east: FACTORY.point(relevant_boulders.maximum("st_xmax(polygon::geometry)"), relevant_boulders.maximum("st_ymax(polygon::geometry)"))
     }
   end
+
+  def main_circuits
+    circuits.select{|c| c.problems.where(area_id: id).count >= 10 }
+  end
 end
