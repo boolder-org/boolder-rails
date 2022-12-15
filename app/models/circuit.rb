@@ -34,7 +34,7 @@ class Circuit < ApplicationRecord
   end
 
   def dangerous?
-    risk >= 3
+    risk.present? && risk >= 3
   end
 
   def beginner_friendly?
