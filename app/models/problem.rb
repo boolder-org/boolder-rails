@@ -106,14 +106,4 @@ class Problem < ApplicationRecord
       children
     end
   end
-
-  # # FIXME: document & test
-  # def risk_score
-  #   return nil unless height && landing
-
-  #   # FIXME: use default value
-  #   mapping = { "easy" => 0, "medium" => 3, "hard" => 10 }
-
-  #   (mapping[landing] * [(height - 2), 0].max).round(1)
-  # end
 end
