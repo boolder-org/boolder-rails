@@ -14,6 +14,8 @@ fr:
       black: Noir
     long_name: "Circuit %{name}"
     off_circuit: Hors circuit
+    dangerous: "Ce circuit est dangereux : certains blocs sont très hauts et/ou avec une réception difficile"
+    beginner_friendly: Ce circuit convient aux débutants
   problem:
     no_name: Sans nom
     problems: Voies

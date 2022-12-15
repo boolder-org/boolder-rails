@@ -14,6 +14,8 @@ en:
       black: Black
     long_name: "%{name} circuit"
     off_circuit: Other
+    dangerous: "This circuit is dangerous : some boulders are very high and/or with difficult landings"
+    beginner_friendly: This circuit is suited for beginners
   problem:
     no_name: No name
     problems: Problems
