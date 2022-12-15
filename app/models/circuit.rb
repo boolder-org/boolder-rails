@@ -33,16 +33,15 @@ class Circuit < ApplicationRecord
     Problem::GRADE_VALUES[average_int].gsub("+", "")
   end
 
-  # def risky?
-  #   average_risk_score >= 4
-  # end
+  def dangerous?
+    risk >= 3
+  end
 
-  # def average_risk_score
-  #   problems_with_landing_and_height = problems.select{|p| p.landing.present? && p.height.present? }
-  #   risk_scores =problems_with_landing_and_height.map{|p| p.risk_score }
-  #   return 0 if risk_scores.count == 0
-  #   average(risk_scores).round(1)
-  # end
+  def beginner_friendly?
+    risk.present? && risk <= 1 && 
+    average_grade < '4a' &&
+    !id.in?([89, 155, 156]) # other reasons (eg. paint is not visible enough)
+  end
 
   private
   def average(array)
