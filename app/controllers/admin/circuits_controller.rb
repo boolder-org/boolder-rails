@@ -1,6 +1,6 @@
 class Admin::CircuitsController < Admin::BaseController
   def index
-    @circuits = Circuit.all.sort_by{|c| c.average_grade }
+    @circuits = Circuit.all.sort_by(&:average_grade)
   end
 
   def edit
