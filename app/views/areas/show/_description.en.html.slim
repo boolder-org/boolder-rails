@@ -1,80 +1,52 @@
 - if @area.id == 1
   p 
-    | Rocher Canon is a vast area, with lots of problems for all levels.
-  p 
-    | You can access it pretty easily from the Bois-le-Roi train station by bike (~15 min) or even by walk (~40 min). The area is thus pretty crowded on weekends.
-  p 
-    | Finding you way is not super easy, so we recommend using the <a href="#{app_path}">Boolder app</a>.
+    | Easy access from Bois-le-Roi train station: 15 min by bike, or 40 min walk.
 
 - if @area.id == 2
   p 
-    | Cul de Chien is the perfect area for beginners, with lots of low problems and good landings.
+    | Cul de Chien" is a beautiful area, perfect for enjoying a day with family or friends. 
   p
-    | The landscape is beautiful with a vast sea of white sand, and perfect to have a picnic.
-
-  p 
-    | The walk is about 15 min from the parking.
-  
+    | The area is ideal for beginners, with many low boulders and good landings.
 
 - if @area.id == 4
   p 
-    | Bas Cuvier is one of the most famous areas in Font, with lots of problems graded 5, 6, and 7.
+    | Bas Cuvier is one of the most famous areas in Fontainebleau.
   p
-    | The landings are mostly good. The descents are sometimes a bit tricky though, spotters are recommended.
-  p
-    | The area is right next to the parking.
-  p
-    | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
+    | Phone reception is very poor throughout the area, be sure to download the <a href="#{app_path}">app</a> and turn on offline mode. 
 
 - if @area.id == 5
   p 
-    | Franchard Isatis offers more than 500 problems, for all levels.
-  p 
-    | The walk is very short from the parking, which makes the area pretty crowded on week-ends.
+    | Franchard Isatis is a very popular area, and very crowded on week-ends.
 
 - if @area.id == 6
   p 
     | Cuvier Est is a small area, 5 min away from <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
   p
-    | It offers dozens of problems graded 5, 6, and 7.
-  p
-    | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
+    | Phone reception is very poor throughout the area, be sure to download the <a href="#{app_path}">app</a> and turn on offline mode. 
 
 - if @area.id == 7
   p 
-    | Apremont offers a blue circuit (with problems graded around 4), and lots of problems graded 7.
-  p 
-    | You can check out <a href="#{area_path(Area.find(69))}">Apremont Est</a> to have way more problems.
+    | Nearby areas : <a href="#{area_path(Area.find(20))}">Apremont Ouest</a> and <a href="#{area_path(Area.find(69))}">Apremont Est</a>.
+  p
+    | If you are looking for an area suited for beginners, we recommend looking at <a href="#{area_path(Area.find(48))}">Apremont Butte aux Dames</a>.
 
 - if @area.id == 8
   p 
-    | Rocher Fin is a beautiful area offering more than 200 problems, for all levels.
-  p 
-    | The walk is about 20 min from the parking.
+    | It will take about twenty minutes to walk from the parking lot. But the area is worth it!
 
 - if @area.id == 9
   p 
-    | Éléphant is a lovely area, offering around 250 problems.
+    | Be careful, most problems are (very) high!
   p 
-    | Be careful, problems are very high on average! Crash mats and spotters are recommended. And don't underestimate the descent, which can sometimes be very tricky.
-  p 
-    | Beginners will prefer the yellow circuit (with problems less than 3 meters high), which is located in the northern part.
-  p 
-    | Be careful: Since 2018, the famous Éléphant problem is forbidden because there is a chance it might collapse.
+    | 2018: the famous Éléphant problem is forbidden because there is a chance it might collapse.
 
 - if @area.id == 10
-  p 
-    | 95.2 offers many problems for all levels.
   p
-    | Good to know: the rock dries faster in the center of the area thanks to the altitude (95.2 meters) and the exposure to the sun.
+    | Good to know: the rock dries faster in the center of the area.
 
 - if @area.id == 11
   p 
-    | Franchard Cuisinière offers a wide variety of problems for all levels.
-  p
-    | The walk is about 15 min from the Franchard Isatis parking.
-  p 
-    | It can be a bit tricky to find you way within the area, so we recommend using the <a href="#{app_path}">Boolder app</a> with GPS and compass.
+    | Franchard Cuisinière is a popular area, offering a wide variety of problems for all levels.
 
 - if @area.id == 12
   p 
