@@ -18,8 +18,6 @@ div class="col-span-6 sm:col-span-2"
   = form.label :steepness
   = form.select :steepness, Problem::STEEPNESS_VALUES, { include_blank: false, default: :other }
 
-div class="hidden sm:block col-span-6 sm:col-span-4"
-
 div class="col-span-6 sm:col-span-2"
   = form.label :height
   = form.text_field :height, autocomplete: "off"
@@ -28,27 +26,19 @@ div class="col-span-6 sm:col-span-2"
   = form.label :landing
   = form.select :landing, Problem::LANDING_VALUES, { include_blank: true }
 
-div class="col-span-6 sm:col-span-2"
-  = form.label :descent
-  = form.select :descent, Problem::DESCENT_VALUES, { include_blank: true }
-
 div class="col-span-6 sm:col-span-4"
   = form.label :joined_tags, 'Tags'
   = form.text_field :joined_tags, value: @problem.tags.join(","), autocomplete: "off"
 
 div class="col-span-6 sm:col-span-2"
-  = form.label :risky
-  = form.select :risky, [["true", true], ["false", false]]
-
-div class="col-span-6 sm:col-span-2"
-  = form.label :bleau_info_id, "Bleau.info id"
-  = form.text_field :bleau_info_id, autocomplete: "off"
-
-div class="col-span-6 sm:col-span-2"
-  = form.label :featured
-  = form.select :featured, [["true", true], ["false", false]]
 
 div class="col-span-6 sm:col-span-2"
   = form.label :parent_id, "Parent"
   = form.text_field :parent_id, autocomplete: "off"
+
+div class="col-span-6 sm:col-span-4"
+
+div class="col-span-6 sm:col-span-2"
+  = form.label :bleau_info_id, "Bleau.info id"
+  = form.text_field :bleau_info_id, autocomplete: "off"
   
