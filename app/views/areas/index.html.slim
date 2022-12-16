@@ -50,5 +50,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                         = area.name
                       span class="col-span-1 text-gray-400"= "#{count}"
                       div class="col-span-3 sm:col-span-2 flex justify-end "
-                        = render "shared/area_levels", area: area, cached: true
+                        - cache area
+                          = render "shared/area_levels", area: area
                         
