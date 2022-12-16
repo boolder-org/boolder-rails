@@ -7,7 +7,6 @@ class Admin::ProblemImportsController < Admin::BaseController
       problem.height = hash["height"]
       problem.steepness = hash["steepness"]
       problem.landing = hash["landingDifficulty"]
-      problem.descent = hash["descentDifficulty"]
 
       problem.save!
     end

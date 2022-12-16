@@ -36,12 +36,10 @@ class Problem < ApplicationRecord
     9a 9a+ 9b 9b+ 9c 9c+
   )
   LANDING_VALUES = %w(easy medium hard)
-  DESCENT_VALUES = %w(easy medium hard)
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
-  validates :descent, inclusion: { in: DESCENT_VALUES }, allow_blank: true
 
   Circuit::COLOR_VALUES.each do |color|
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
