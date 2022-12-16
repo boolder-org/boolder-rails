@@ -23,8 +23,6 @@ class Area < ApplicationRecord
     customRanking ['asc(priority)']
   end
 
-  TAGS = %i(beginner_friendly train_station_closeby dry_fast)
-
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 
