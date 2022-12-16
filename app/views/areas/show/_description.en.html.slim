@@ -70,27 +70,21 @@
 
 - if @area.id == 16
   p 
-    | 91.1 offers many problems graded between 2 and 5.
-
+    | 91.1 is a popular area right next to <a href="#{area_path(Area.find(2))}">Cul de Chien</a> and <a href="#{area_path(Area.find(12))}">La Roche aux Sabots</a>.
   p 
-    | <a href="#{area_path(Area.find(2))}">Cul de Chien</a> and its lovely landscape is only a few minutes away.
-
+    | The area dries pretty fast after the rain.
 
 - if @area.id == 17
   p
-    | Rocher Guichot is a small area offering problems for all levels.
-
+    | Rocher Guichot is a small area, although quite nice for an afternoon out with family or friends.
   p 
-    | It is located right next to the parking.
+    | It is located right next to the parking (1 min walk).
 
 - if @area.id == 18
   p 
-    | Diplodocus is a small area offering a hundred easy problems graded between 2 and 4 — perfect for beginners and for family outings.
-  p 
-    | Problems are mostly low, and landings pretty good.
+    | Diplodocus is a small area that is quite suited for beginners and for a day out with family or friends.
   p 
     | The walk is about 15 min from the parking.
-
   p
     | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
 
