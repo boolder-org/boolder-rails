@@ -94,7 +94,7 @@ class Admin::ProblemsController < Admin::BaseController
 
   def edit
     @problem = Problem.find(params[:id])
-    @circuits = @problem.area.sorted_circuits.all
+    @circuits = @problem.area.sorted_circuits
     session[:area_id] = @problem.area_id
   end
 
