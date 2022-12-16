@@ -174,25 +174,19 @@
 
 - if @area.id == 41
   p 
-    | Maunoury est un secteur offrant une bonne densité de voies dans le niveau 7, et un nombre correct de voies dans les niveaux 2 à 6.
-  p 
     | Le secteur est moins connu (et donc plus calme) que la <a href="#{area_path(Area.find(42))}">Dame Jouanne</a> situé juste à côté.
-  p
-    | L'accès est facile depuis le parking de la Dame Jouanne, et il est facile de se repérer.
 
 - if @area.id == 42
   p 
-    | Dame Jouanne est un des tous premiers secteurs historiques de Fontainebleau. Il est notamment connu pour son bloc éponyme faisant 15 mètres de haut.
+    | Dame Jouanne est un des tous premiers secteurs historiques de Fontainebleau. Il est notamment connu pour son bloc éponyme faisant 15 mètres de haut. 
   p
-    | Il offre plus de 500 voies, pour tous les niveaux. Attention en revanche : les blocs sont en moyenne (très) hauts et ne conviennent pas aux débutants.
+    | Attention : les blocs sont en moyenne (très) hauts et ne conviennent pas aux débutants.
   p
     | À savoir : Il est difficile de se repérer dans le chaos rocheux, notamment avec les peintures qui sont pour la plupart effacées. Plusieurs zones sont également fermées à cause de l'érosion du sol.
 
 - if @area.id == 43
   p 
     | Cuvier Ouest est un petit secteur situé à côté de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
-  p
-    | Il offre quelques dizaines de voies de niveau 7, ainsi qu'un circuit bleu (voies de niveau 4 à 6).
   p
     | Le secteur est assez sauvage, il est assez difficile de se déplacer et de se repérer.
   p
@@ -202,33 +196,23 @@
   p 
     | Cuvier Nord est un petit secteur situé à côté de <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
   p
-    | Il offre de nombreuses voies de niveau 7, ainsi qu'un circuit bleu (voies de niveau 3 à 5).
-  p
     | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
 
 - if @area.id == 46
   p 
-    | Apremont Bizons est un secteur offrant un bon nombre de voies dans tous les niveaux de 3 à 7.
-  p 
-    | Le secteur est dense et dégagé, avec de bonnes réceptions.
+    | Le secteur est dense et dégagé, il est beaucoup plus facile de se déplacer que dans le secteur historique d'<a href="#{area_path(Area.find(7))}">Apremont</a>.
 
 - if @area.id == 47
   p 
     | Rocher Canon Ouest est un tout petit secteur proche de <a href="#{area_path(Area.find(1))}">Rocher Canon</a>.
-  p 
-    | Il offre essentiellement des voies dans les niveaux 6 et 7.
 
 - if @area.id == 48
   p 
-    | Apremont Butte aux Dames est un secteur offrant un bon nombre de voies dans tous les niveaux de 2 à 7.
-  p
-    | Le secteur est dense, et il est facile de se repérer.
+    | Le secteur est dense et dégagé, il est beaucoup plus facile de se déplacer que dans le secteur historique d'<a href="#{area_path(Area.find(7))}">Apremont</a>.
 
 - if @area.id == 49
   p 
     | Apremont Solitude est un petit secteur situé à l'Est d'<a href="#{area_path(Area.find(69))}">Apremont Est</a>.
-  p
-    | Il offre des voies essentiellement dans les niveaux 4 à 7.
   p
     | Octobre 2022 : La peinture du circuit rouge est très effacée, il est difficile de se repérer.
 
