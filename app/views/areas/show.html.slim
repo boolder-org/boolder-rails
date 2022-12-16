@@ -54,11 +54,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
       div
         h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"= t('views.areas.show.problems')
-        div
-          - @problems.each do |grade, problems|
-            h3 class="px-4 sm:px-0 text-xl font-semibold mt-4 mb-4"= grade
-            ul role="list"
-              - problems.each do |problem|
-                - cache [problem, I18n.locale, "v2"]
-                  = render problem
+        = turbo_frame_tag "problems", src: area_problems_path(@area), loading: "lazy"
+          = t("views.areas.show.loading")
                 

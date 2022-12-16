@@ -47,6 +47,7 @@ Rails.application.routes.draw do
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023
+      get ":slug/problems", to: "areas#problems", as: :area_problems
       get ":slug", to: "areas#show", as: :area
 
       get "/", to: "areas#index", as: :areas
