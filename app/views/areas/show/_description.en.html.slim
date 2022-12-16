@@ -171,15 +171,11 @@
 
 - if @area.id == 41
   p 
-    | Maunoury offers a high density of problems graded 7, and a decent number of problems graded between 2 and 6.
-  p 
     | The area is less known (and thus quieter) than <a href="#{area_path(Area.find(42))}">Dame Jouanne</a> located right next to it.
-  p
-    | The walk is easy from the parking.
 
 - if @area.id == 42
   p 
-    | Dame Jouanne is a historic area in Font, offering more than 500 problems for all levels. It is famous for its 15-meter-high 'Dame Jouanne' boulder.
+    | Dame Jouanne is a historic area in Font. It is famous for its 15-meter-high 'Dame Jouanne' boulder.
   p
     | Watch out: boulders are usually (very) high and are not suited for beginners.
   p
@@ -189,8 +185,6 @@
   p 
     | Cuvier Ouest is a small area located right next to <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
   p
-    | It offers a few dozen problems graded 7, and a blue circuit (graded between 4 and 6).
-  p
     | The area is pretty wild, it's not super easy to find your way around.
   p
     | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
@@ -199,33 +193,23 @@
   p 
     | Cuvier Nord is a small area located right next to <a href="#{area_path(Area.find(4))}">Bas Cuvier</a>.
   p
-    | It offers lots of problems graded 7, and a blue circuit (graded between 3 and 5).
-  p
     | Good to know: the cellular reception is very poor. Download the <a href="#{app_path}">offline map</a> to avoid surprises.
 
 - if @area.id == 46
   p 
-    | Apremont Bizons offers lots of problems for all levels between 3 and 7.
-  p 
-    | The area is dense, with good landings.
+    | The area is dense and it's way easier to get around than the historic <a href="#{area_path(Area.find(7))}">Apremont</a> area.
 
 - if @area.id == 47
   p 
     | Rocher Canon Ouest is a tiny area located right next to <a href="#{area_path(Area.find(1))}">Rocher Canon</a>.
-  p 
-    | It offers problems mainly graded between 6 and 7.
 
 - if @area.id == 48
   p 
-    | Apremont Butte aux Dames offers lots of problems for all levels between 2 and 7.
-  p
-    | The area is pretty dense, and it is easy to find your way around.
+    | The area is dense and it's way easier to get around than the historic <a href="#{area_path(Area.find(7))}">Apremont</a> area.
 
 - if @area.id == 49
   p 
     | Apremont Solitude is a small area located East of <a href="#{area_path(Area.find(69))}">Apremont Est</a>.
-  p
-    | If offers problems mainly graded between 4 and 7.
   p
     | October 2022: the red circuit's paint is mostly washed out, which makes it hard to find your way around.
 
