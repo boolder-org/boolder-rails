@@ -19,6 +19,6 @@ class Admin::CircuitsController < Admin::BaseController
   private 
   def circuit_params
     params.require(:circuit).
-      permit(:color, :order, :risk)
+      permit(:color, :risk)
   end
 end

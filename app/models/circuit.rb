@@ -2,8 +2,6 @@ class Circuit < ApplicationRecord
   has_many :problems
   has_many :areas, -> { distinct }, through: :problems
 
-  default_scope { order(order: :asc, id: :asc) }
-
   COLOR_VALUES = %w(yellow purple orange green blue skyblue salmon red black white)
 
   COLOR_VALUES.each do |color|
