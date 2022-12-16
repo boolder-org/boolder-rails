@@ -17,7 +17,7 @@ gem 'newrelic_rpm'
 gem 'bugsnag', '~> 6.20.0'
 gem 'algoliasearch-rails', '~> 2.1.4'
 
-gem 'turbo-rails', '~> 1.3.1'
+gem 'turbo-rails', '~> 1.3.2'
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 4.0.1'
 gem 'slim-rails', '~> 3.2.0'
