@@ -1,5 +1,5 @@
 - add_breadcrumb "Fontainebleau", admin_areas_path
-- add_breadcrumb @circuit.main_area.name, admin_area_problems_path(area_slug: @circuit.main_area.slug)
+- add_breadcrumb @circuit.main_area.name, admin_area_problems_path(area_slug: @circuit.main_area.slug, circuit_id: "first")
 - add_breadcrumb "Circuit ##{@circuit.id}", nil, class: "active"
 
 div class="mt-10 sm:mt-0"
