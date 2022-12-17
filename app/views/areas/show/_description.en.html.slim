@@ -215,49 +215,37 @@
 
 - if @area.id == 50
   p 
-    | Rocher d'Avon is a small area, accessible from Fontainebleau city and the Avon train station.
+    | Rocher d'Avon is a small area, accessible by bike from Fontainebleau city and the Avon train station.
 
 - if @area.id == 51
-  p 
-    | Restant du Long Rocher offers 2 nice circuits (yellow and orange) suited for beginners.
 
 - if @area.id == 52
   p 
-    | Rocher de Bouligny is a small area, accessible from Fontainebleau city and the Avon train station.
-  p
-    | If offers a good number of problems graded between 6 and 7.
+    | Rocher de Bouligny is a small area, accessible by bike from Fontainebleau city and the Avon train station.
 
 - if @area.id == 53
   p 
     | Mont Ussy is a small area, accessible from Fontainebleau city and the Avon train station.
-  p
-    | It offers a good number of problems graded between 6 and 7, and two circuits (yellow and orange) that are suited for beginners.
 
 - if @area.id == 54
   p 
-    | Rocher du Général is a lovely and quiet area.
-  p
-    | It offers a yellow circuit suited for beginners, and it is very easy to find your way around.
+    | Rocher du Général is a lovely and quiet area, quite suited for a day out with family or friends.
 
 - if @area.id == 55
-  p 
-    | Justice de Chambergeot is a small area offering a yellow and an orange circuit (levels 2 and 3) and a few problems graded between 6 and 7.
 
 - if @area.id == 56
   p 
     | Grande Montagne is a small area alongside the "25 bossses" trail.
   p 
-    | It offers an orange circuit with 70 problems (graded between 3 and 4) spread along a large distance.
+    | It offers an orange circuit with 70 problems that stretches over a long distance, which means you'll have to walk a lot between boulders.
 
 - if @area.id == 57
   p 
-    | Rocher du Télégraphe is a small area with a good number of problems graded between 6 and 7, and a blue circuit (graded between 3 and 5) alongside a nice rampart.
-  p 
-    | It also offers several circuits for kids, located at the entrance of the area.
+    | Note: there are several circuits for kids right at the entrance of the area.
 
 - if @area.id == 58
   p 
-    | Pignon Poteau is a small area alongside the "25 bosses" trail. It offers a yellow and an orange circuit (levels 2 and 3).
+    | Pignon Poteau is a small area alongside the "25 bosses" trail.
   p
     | It can be tricky to find your way around the boulder chaos, which makes the area not very suited for beginners.
   p 
@@ -265,7 +253,11 @@
 
 - if @area.id == 59
   p 
-    | Gros Sablons is a large area offering a large number of problems for all levels between 2 and 7.
+    | Gros Sablons stretches over a long distance, which means you'll have to walk between boulders.
+  p 
+    | <a href="#{area_path(Area.find(71))}">Gros Sablons Nord</a> is located right next to the area.
+  p 
+    | The walk is about 20 min from the parking.
 
 - if @area.id == 60
   p 
@@ -308,3 +300,7 @@
     | Apremont Est offers a great deal of problems for all levels.
   p 
     | Careful: it can be quite tricky to find your way around, so we highly recommend using the <a href="#{app_path}">Boolder app</a> with GPS and compass.
+
+- if @area.id == 71
+  p 
+    | Gros Sablons Nord is located right next to <a href="#{area_path(Area.find(59))}">Gros Sablons</a>.
