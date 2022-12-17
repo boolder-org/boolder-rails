@@ -128,6 +128,8 @@
     | La Ségognole is a small but dense area, and is suited for a day out with family or friends.
 
 - if @area.id == 29
+p 
+  | Good to know: Beauvais Nainville is one of the areas offering the most traverses.
 
 - if @area.id == 30
   p 
@@ -261,45 +263,37 @@
 
 - if @area.id == 60
   p 
-    | Corne-Biche offers lots of problems graded between 2 and 3, and a few dozens problems graded 7.
+    | Corne-Biche is a lesser-known area, and it can be sometimes tricky to find your way around.
   p 
     | The walk from the parking takes ~20 minutes.
+  p
+    | Phone reception is very poor throughout the area, be sure to download the <a href="#{app_path}">app</a> and turn on offline mode. 
 
 - if @area.id == 61
   p 
-    | Rocher de la Reine is a nice area with lots of problems graded between 6 and 7, a yellow circuit (level 2) and a blue circuit (level 4).
+    | Rocher de la Reine is a lovely area, quite suited for a day out with family or friends.
 
 - if @area.id == 62
   p 
-    | Apremont Envers offers many problems graded between 5 and 7.
-  p 
-    | The yellow circuit is suited for beginners, and it is easy to find your way around.
+    | Apremont Envers is a quiet area located next to <a href="#{area_path(Area.find(7))}">Apremont</a>.
 
 - if @area.id == 64
   p 
-    | Cuvier Rempart is a historical area offering more than 500 problems, many of them graded between 5 and 7.
+    | Cuvier Rempart is a historical area offering more than 500 problems, mostly graded between 5 and 7.
   p
     | Watch out: the yellow circuit isn't suited for beginners.
 
 - if @area.id == 66
-  p 
-    | Petit Rempart is a small area offering dozens of problems graded between 5 and 7.
 
 - if @area.id == 67
-  p 
-    | La Reconnaissance is a small area offering dozens of problems graded between 5 and 7.
 
 - if @area.id == 68
   p 
     | Restant du Long Rocher Nord is a small area located right next to <a href="#{area_path(Area.find(51))}">Restant du Long Rocher</a>.
-  p 
-    | The orange circuit isn't suited for beginners.
 
 - if @area.id == 69
   p 
-    | Apremont Est offers a great deal of problems for all levels.
-  p 
-    | Careful: it can be quite tricky to find your way around, so we highly recommend using the <a href="#{app_path}">Boolder app</a> with GPS and compass.
+    | Careful: it can be quite tricky to find your way around because of the boulder "chaos".
 
 - if @area.id == 71
   p 

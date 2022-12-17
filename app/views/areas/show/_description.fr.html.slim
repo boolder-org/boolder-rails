@@ -131,6 +131,8 @@
     | La Ségognole est un petit secteur assez dense, et convient très bien aux journées en famille ou entre amis.
 
 - if @area.id == 29
+  p 
+    | Bon à savoir : Beauvais Nainville est un des secteurs proposant le plus de traversées.
 
 - if @area.id == 30
   p 
@@ -264,45 +266,37 @@
 
 - if @area.id == 60
   p 
-    | Corne-Biche est un secteur assez sauvage proposant un grand nombre de voies dans les niveaux 2 et 3, ainsi que quelques dizaines de voies de niveau 7.
+    | Corne-Biche est un secteur assez peu fréquenté, où il n'est pas facile de se déplacer et se repérer.
   p 
     | Comptez une vingtaine de minutes de marche depuis le parking.
+  p
+    | À savoir : le réception téléphonique est très mauvaise dans tout le secteur, pensez à télécharger le <a href="#{app_path}">topo</a> en mode hors-ligne.
 
 - if @area.id == 61
-  p 
-    | Rocher de la Reine est un joli secteur proposant un grand nombre de voies dans les niveaux 6 et 7, ainsi qu'un circuit jaune (niveau 2) et un bleu (niveau 4).
+  p
+    | Rocher de la Reine est un joli secteur, idéal pour profiter d'une journée en famille ou entre amis.
 
 - if @area.id == 62
   p 
-    | Apremont Envers est un secteur proposant de nombreuses voies dans les niveaux 5 à 7.
-  p 
-    | Le circuit jaune convient aux débutants, et il est facile de s'y repérer.
+    | Apremont Envers est un secteur calme situé à côté d'<a href="#{area_path(Area.find(7))}">Apremont</a>.
 
 - if @area.id == 64
   p 
-    | Cuvier Rempart est un secteur historique proposant plus de 500 voies, dont de très nombreuses dans les niveaux 5 à 7.
+    | Cuvier Rempart est un secteur historique proposant plus de 500 voies, essentiellement dans les niveaux 5 à 7.
   p
-    | Attention, le circuit jaune ne convient pas du tout aux débutants.
+    | Attention : le circuit jaune ne convient pas du tout aux débutants.
 
 - if @area.id == 66
-  p 
-    | Petit Rempart est un petit secteur offrant plusieurs dizaines de voies dans les niveaux 5 à 7.
 
 - if @area.id == 67
-  p 
-    | La Reconnaissance est un petit secteur offrant plusieurs dizaines de voies dans les niveaux 5 à 7.
 
 - if @area.id == 68
   p 
     | Restant du Long Rocher Nord est un petit secteur proche de <a href="#{area_path(Area.find(51))}">Restant du Long Rocher</a>.
-  p 
-    | À savoir : le circuit orange n'est pas vraiment adapté pour les débutants.
 
 - if @area.id == 69
   p 
-    | Apremont Est offre de nombreuses voies pour tous les niveaux.
-  p 
-    | Le terrain a beaucoup de relief et les blocs sont très nombreux : il n'est pas facile de se déplacer ni de se repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>), ou alors de rester plutôt vers le secteur d'<a href="#{area_path(Area.find(7))}">Apremont</a>.
+    | À savoir : à cause du "chaos" rocheux il est assez difficile de se déplacer et se repérer.
 
 - if @area.id == 71
   p 
