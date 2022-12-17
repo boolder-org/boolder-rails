@@ -218,49 +218,37 @@
 
 - if @area.id == 50
   p 
-    | Rocher d'Avon est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
+    | Rocher d'Avon est un petit secteur accessible en vélo depuis la ville de Fontainebleau ou la gare d'Avon.
 
 - if @area.id == 51
-  p 
-    | Restant du Long Rocher est un secteur offrant 2 beaux circuits orange et jaune adaptés pour les débutants.
 
 - if @area.id == 52
   p 
-    | Rocher de Bouligny est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
-  p
-    | Il offre un bon nombre de voies dans les niveaux 6 et 7.
+    | Rocher de Bouligny est un petit secteur accessible en vélo depuis la ville de Fontainebleau ou la gare d'Avon.
 
 - if @area.id == 53
   p 
-    | Mont Ussy est un petit secteur accessible depuis la ville de Fontainebleau ou la gare d'Avon.
-  p
-    | Il offre un bon nombre de voies dans les niveaux 6 à 7, ainsi que 2 circuits jaune et orange qui conviennent aux débutants.
+    | Mont Ussy est un petit secteur accessible en vélo depuis la ville de Fontainebleau ou la gare d'Avon.
 
 - if @area.id == 54
   p 
-    | Rocher du Général est un petit secteur calme avec du charme.
-  p
-    | Il offre un circuit jaune qui convient aux débutants, et il y est facile de se repérer.
+    | Rocher du Général est un petit secteur calme avec du charme, parfait pour profiter d'une journée en famille ou entre amis.
 
 - if @area.id == 55
-  p 
-    | Justice de Chambergeot est un petit secteur offrant un circuit jaune et un orange (de niveau 2 et 3) ainsi que quelques voies de niveau de niveau 6 et 7.
 
 - if @area.id == 56
   p 
     | Grande Montagne est un petit secteur longeant le sentier des 25 bosses.
   p 
-    | Il propose un circuit orange de 70 numéros (de niveau 3 et 4) qui s'étend sur une grande distance. Prévoyez donc de marcher entre chaque bloc.
+    | Il propose un circuit orange de 70 numéros qui s'étend sur une grande distance. Prévoyez donc de marcher entre chaque bloc.
 
 - if @area.id == 57
   p 
-    | Rocher du Télégraphe est un petit secteur offrant un bon nombre de voies de niveau 6 et 7, ainsi qu'un circuit bleu (niveau entre 3 et 5) longeant un rempart.
-  p 
-    | Il offre également plusieurs circuits enfants accessibles dès l'entrée du secteur.
+    | Bon à savoir : plusieurs circuits enfants sont présents à l'entrée du secteur.
 
 - if @area.id == 58
   p 
-    | Pignon Poteau est un petit secteur longeant le sentier des 25 bosses, offrant un circuit jaune et orange de niveau 2 et 3.
+    | Pignon Poteau est un petit secteur longeant le sentier des 25 bosses.
   p
     | Il n'est pas facile de se repérer dans le chaos de blocs, ce qui rebutera sans doute les débutants.
   p 
@@ -268,7 +256,11 @@
 
 - if @area.id == 59
   p 
-    | Gros Sablons est un secteur très étendu proposant un grand nombre de voies dans tous les niveaux de 2 à 7.
+    | Gros Sablons s'étend sur une grande distance, prévoyez donc de marcher entre les blocs.
+  p 
+    | Le secteur <a href="#{area_path(Area.find(71))}">Gros Sablons Nord</a> est situé juste à côté.
+  p 
+    | Comptez une vingtaine de minutes de marche depuis le parking.
 
 - if @area.id == 60
   p 
@@ -311,3 +303,8 @@
     | Apremont Est offre de nombreuses voies pour tous les niveaux.
   p 
     | Le terrain a beaucoup de relief et les blocs sont très nombreux : il n'est pas facile de se déplacer ni de se repérer. Nous vous conseillons d'utiliser le GPS ou la boussole de votre téléphone (avec l'<a href="#{app_path}">appli Boolder</a>), ou alors de rester plutôt vers le secteur d'<a href="#{area_path(Area.find(7))}">Apremont</a>.
+
+- if @area.id == 71
+  p 
+    | Gros Sablons Nord est situé juste à côté de <a href="#{area_path(Area.find(59))}">Gros Sablons</a>.
+
