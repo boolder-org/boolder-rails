@@ -10,6 +10,7 @@ export default class extends Controller {
     token: String,
     bounds: Object,
     problem: Object,
+    circuit: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
   }
@@ -77,6 +78,12 @@ export default class extends Controller {
       type: 'vector',
       url: 'mapbox://nmondollot.4xsv235p',
       promoteId: "id"
+    });
+
+    this.map.addSource('circuits', {
+      type: 'vector',
+      url: 'mapbox://nmondollot.11sumdgh',
+      // promoteId: "id"
     });
 
     this.map.addLayer({
@@ -270,6 +277,309 @@ export default class extends Controller {
           false
       ],
     });
+
+    if(this.hasCircuitValue) { 
+
+      this.map.addLayer({
+        'id': 'circuits',
+        'type': 'line',
+        'source': 'circuits',
+        'source-layer': 'circuits-9weff8',
+        'minzoom': 15,
+        'layout': {
+          'visibility': 'visible',
+        },
+        'paint': {
+          'line-color': 
+            [
+              "case",
+              [
+                "match",
+                ["get", "color"],
+                ["", "yellow"],
+                true,
+                false
+              ],
+              "#FFCC02",
+              [
+                "match",
+                ["get", "color"],
+                ["", "purple"],
+                true,
+                false
+              ],
+              "#D783FF",
+              [
+                "match",
+                ["get", "color"],
+                ["", "orange"],
+                true,
+                false
+              ],
+              "#FF9500",
+              [
+                "match",
+                ["get", "color"],
+                ["", "green"],
+                true,
+                false
+              ],
+              "#77C344",
+              [
+                "match",
+                ["get", "color"],
+                ["", "blue"],
+                true,
+                false
+              ],
+              "#017AFF",
+              [
+                "match",
+                ["get", "color"],
+                ["", "skyblue"],
+                true,
+                false
+              ],
+              "#5AC7FA",
+              [
+                "match",
+                ["get", "color"],
+                ["", "salmon"],
+                true,
+                false
+              ],
+              "#FDAF8A",
+              [
+                "match",
+                ["get", "color"],
+                ["", "red"],
+                true,
+                false
+              ],
+              "#FF3B2F",
+              [
+                "match",
+                ["get", "color"],
+                ["", "black"],
+                true,
+                false
+              ],
+              "#000",
+              [
+                "match",
+                ["get", "color"],
+                ["", "white"],
+                true,
+                false
+              ],
+              "#FFFFFF",
+              "#878A8D"
+            ]
+          ,
+          'line-width': 2,
+          'line-dasharray': [4, 1],
+        },
+        filter: [
+          "match",
+          ["get", "id"],
+          [this.circuitValue.id],
+          true,
+          false
+        ],
+      }
+      ,
+      // "areas" // layer will be inserted just before this layer
+      );
+
+      this.map.addLayer({
+        'id': 'circuit-problems',
+        'type': 'circle',
+        'source': 'problems',
+        'source-layer': 'problems-ayes3a',
+        'minzoom': 15,
+        'layout': {
+          'visibility': 'visible',
+          // 'circle-sort-key': 
+          //   [
+          //     "case",
+          //     ["has", "circuitId"],
+          //     2,
+          //     1
+          //   ]
+        },
+        'paint': {
+          'circle-radius': 
+            [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              15,
+              2,
+              18,
+              10,
+              22,
+              16
+            ]
+          ,
+          'circle-color':  // FIXME: make it DRY  
+            [
+              "case",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "yellow"],
+                true,
+                false
+              ],
+              "#FFCC02",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "purple"],
+                true,
+                false
+              ],
+              "#D783FF",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "orange"],
+                true,
+                false
+              ],
+              "#FF9500",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "green"],
+                true,
+                false
+              ],
+              "#77C344",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "blue"],
+                true,
+                false
+              ],
+              "#017AFF",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "skyblue"],
+                true,
+                false
+              ],
+              "#5AC7FA",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "salmon"],
+                true,
+                false
+              ],
+              "#FDAF8A",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "red"],
+                true,
+                false
+              ],
+              "#FF3B2F",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "black"],
+                true,
+                false
+              ],
+              "#000",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "white"],
+                true,
+                false
+              ],
+              "#FFFFFF",
+              "#878A8D"
+            ]
+          ,
+          'circle-opacity': 
+          [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            14.5,
+            0,
+            15,
+            1
+          ]
+        },
+        filter: [
+          "match",
+            ["get", "circuitId"],
+            [this.circuitValue.id],
+            true,
+            false
+        ],
+      }
+      ,
+      // "areas" // layer will be inserted just before this layer
+      );
+
+      this.map.addLayer({
+        'id': 'circuit-problems-texts',
+        'type': 'symbol',
+        'source': 'problems',
+        'source-layer': 'problems-ayes3a',
+        'minzoom': 17,
+        'layout': {
+          'visibility': 'visible',
+          'text-allow-overlap': true,
+          'text-field': [
+            "to-string",
+            ["get", "circuitNumber"]
+          ],
+          'text-size': [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            17,
+            10,
+            19,
+            16,
+            22,
+            20
+          ],
+        },
+        'paint': {
+          'text-color': 
+            [
+              "case",
+              [
+                "match",
+                ["get", "circuitColor"],
+                ["", "white"],
+                true,
+                false
+              ],
+              "#333",
+              "#fff",
+            ]
+          ,
+        },
+        filter: [
+          "match",
+            ["get", "circuitId"],
+            [this.circuitValue.id],
+            true,
+            false
+        ],
+      });
+    }
   }
 
   centerMap() {

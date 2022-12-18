@@ -23,7 +23,11 @@ data-mapbox-locale-value="<%= I18n.locale %>"
 
 <% if @problem %> 
 data-mapbox-problem-value="<%= @problem.to_json %>" 
-<% elsif @bounds %> 
+<% elsif @circuit %> 
+data-mapbox-circuit-value="<%= @circuit.to_json %>"
+<% end %>
+
+<% if @bounds %> 
 data-mapbox-bounds-value="<%= @bounds.to_json %>"
 <% end %>
 
