@@ -278,6 +278,10 @@ export default class extends Controller {
       ],
     });
 
+    this.addCircuitLayers()
+  }
+
+  addCircuitLayers() {
     if(this.hasCircuitValue) { 
 
       this.map.addLayer({
@@ -538,7 +542,7 @@ export default class extends Controller {
         'minzoom': 17,
         'layout': {
           'visibility': 'visible',
-          'text-allow-overlap': true,
+          'text-allow-overlap': false,
           'text-field': [
             "to-string",
             ["get", "circuitNumber"]
@@ -658,6 +662,35 @@ export default class extends Controller {
       .setLngLat(coordinates)
       .setHTML(html)
       .addTo(this.map);
+
+      if(problem.circuitId) { // && problem.circuitNumber == "1"
+        this.circuitValue = { 'id': problem.circuitId }
+        this.addCircuitLayers()
+
+        this.map.setFilter("circuits", [
+          "match",
+          ["get", "id"],
+          [this.circuitValue.id],
+          true,
+          false
+        ]);
+
+        this.map.setFilter("circuit-problems", [
+          "match",
+          ["get", "circuitId"],
+          [this.circuitValue.id],
+          true,
+          false
+        ]);
+
+        this.map.setFilter("circuit-problems-texts", [
+          "match",
+          ["get", "circuitId"],
+          [this.circuitValue.id],
+          true,
+          false
+        ]);
+      }
     });
 
     // FIXME: make DRY
