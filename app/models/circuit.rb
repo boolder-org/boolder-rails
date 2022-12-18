@@ -24,6 +24,13 @@ class Circuit < ApplicationRecord
     problems.order(:circuit_number).first.area
   end
 
+  def bounds
+    @bounds ||= {
+      south_west: FACTORY.point(problems.minimum("st_xmin(location::geometry)"), problems.minimum("st_ymin(location::geometry)")),
+      north_east: FACTORY.point(problems.maximum("st_xmax(location::geometry)"), problems.maximum("st_ymax(location::geometry)"))
+    }
+  end
+
   def average_grade
     problems_with_grade = problems.select{|p| p.grade.in?(Problem::GRADE_VALUES)}
     grades_int = problems_with_grade.map{|p| Problem::GRADE_VALUES.index(p.grade) }
