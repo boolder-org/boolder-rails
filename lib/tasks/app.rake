@@ -10,8 +10,6 @@ namespace :app do
 
       db = SQLite3::Database.new file_name
 
-      # FIXME: put a size on columns?
-      # TODO: set not null columns?
       db.execute <<-SQL
         create table problems (
           id INTEGER NOT NULL PRIMARY KEY,
@@ -27,6 +25,7 @@ namespace :app do
           area_id INTEGER NOT NULL,
           bleau_info_id TEXT,
           featured INTEGER NOT NULL,
+          popularity INTEGER,
           parent_id INTEGER
         );
       SQL
@@ -47,11 +46,11 @@ namespace :app do
         db.execute(
           "INSERT INTO problems (id, name, grade, latitude, longitude, circuit_id, circuit_number, 
           circuit_color, steepness, sit_start, area_id, bleau_info_id, 
-          featured, parent_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          featured, popularity, parent_id)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, p.circuit_id, p.circuit_number, 
             p.circuit&.color, p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id, 
-            p.featured ? 1 : 0, p.parent_id]
+            p.featured ? 1 : 0, p.popularity, p.parent_id]
         )
       end
 
@@ -75,6 +74,34 @@ namespace :app do
           "INSERT INTO areas (id, name, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
           VALUES (?, ?, ?, ?, ?, ?)", 
           [a.id, a.name.presence, a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon]
+        )
+      end
+
+      db.execute <<-SQL
+        create table circuits (
+          id INTEGER NOT NULL PRIMARY KEY,
+          color TEXT NOT NULL,
+          average_grade TEXT NOT NULL,
+          beginner_friendly INTEGER NOT NULL,
+          dangerous INTEGER NOT NULL,
+          south_west_lat REAL NOT NULL,
+          south_west_lon REAL NOT NULL,
+          north_east_lat REAL NOT NULL,
+          north_east_lon REAL NOT NULL
+        );
+      SQL
+
+      db.execute <<-SQL
+        CREATE INDEX circuit_idx ON circuits(id);
+      SQL
+
+      Circuit.all.each do |c|
+        db.execute(
+          "INSERT INTO circuits (id, color, average_grade, beginner_friendly, dangerous, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          [c.id, c.color, c.average_grade, c.beginner_friendly? ? 1 : 0, c.dangerous? ? 1 : 0, 
+            c.bounds[:south_west]&.lat, c.bounds[:south_west]&.lon, c.bounds[:north_east]&.lat, c.bounds[:north_east]&.lon
+          ]
         )
       end
 
