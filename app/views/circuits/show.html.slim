@@ -37,6 +37,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
             span class="text-red-500" 
               = t("circuit.dangerous")
 
+        div class="mt-2"= link_to "voir sur la carte", map_path(cid: @circuit.id)
+
         ul role="list" class="pt-2"
           - @circuit.problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
             - cache [problem, I18n.locale]
