@@ -46,6 +46,7 @@ class Area < ApplicationRecord
     }
   end
 
+  # TODO: rewrite in SQL
   def main_circuits
     circuits.select{|c| c.problems.where(area_id: id).count >= 10 }.sort_by(&:average_grade)
   end
