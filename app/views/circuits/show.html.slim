@@ -19,8 +19,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
         h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"
           = t("circuit.long_name", name: @circuit.name)
 
-        = link_to "voir sur la carte", map_path(cid: @circuit.id)
-
         - if @circuit.beginner_friendly?
           span class="flex mb-2 px-4 sm:px-0"
             span class="text-green-500 mr-2"
