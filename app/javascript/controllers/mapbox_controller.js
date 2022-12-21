@@ -646,6 +646,13 @@ export default class extends Controller {
       this.map.getCanvas().style.cursor = '';
     });
 
+    // this.map.on('moveend', () => {
+
+    //   console.log(this.map.getCenter())
+    //   console.log(this.map.getZoom())
+    //   console.log(this.map.getBounds())
+    // })
+
     this.map.on('click', 'problems', (e) => {
 
       let problem = e.features[0].properties
