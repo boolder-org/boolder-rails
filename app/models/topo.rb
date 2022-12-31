@@ -13,6 +13,7 @@ class Topo < ApplicationRecord
   def metadata_latitude
     metadata["latitude"] 
   end
+  
 
   def metadata_longitude
     metadata["longitude"] 
