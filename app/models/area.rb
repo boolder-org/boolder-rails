@@ -2,7 +2,7 @@ class Area < ApplicationRecord
   has_many :boulders
   has_many :problems
   has_many :circuits, -> { distinct }, through: :problems
-  belongs_to :pois, optional: true
+  belongs_to :poi, optional: true
   has_one_attached :cover
 
   # reindex problems on algolia when area is updated
