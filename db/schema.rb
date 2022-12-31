@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_31_132049) do
+ActiveRecord::Schema.define(version: 2022_12_31_191918) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 2022_12_31_132049) do
     t.integer "priority", limit: 2, default: 3, null: false
     t.bigint "poi_id"
     t.integer "poi_distance"
+    t.text "description_fr"
+    t.text "description_en"
     t.index ["poi_id"], name: "index_areas_on_poi_id"
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
