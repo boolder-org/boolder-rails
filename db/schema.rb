@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_16_073817) do
+ActiveRecord::Schema.define(version: 2022_12_31_123215) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,18 +85,11 @@ ActiveRecord::Schema.define(version: 2022_12_16_073817) do
   end
 
   create_table "pois", force: :cascade do |t|
-    t.string "title"
-    t.string "subtitle"
-    t.string "description"
-    t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
-    t.geography "route", limit: {:srid=>4326, :type=>"line_string", :geographic=>true}
-    t.bigint "area_id"
+    t.string "name"
+    t.string "short_name"
+    t.string "google_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "walk_time"
-    t.string "google_url"
-    t.index ["area_id"], name: "index_pois_on_area_id"
-    t.index ["location"], name: "index_pois_on_location", using: :gist
   end
 
   create_table "problems", force: :cascade do |t|

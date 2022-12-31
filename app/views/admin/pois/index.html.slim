@@ -12,7 +12,7 @@ div class="flex flex-col my-6"
             tr
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Area
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
           tbody class="bg-white divide-y divide-gray-200"
             - @pois.each do |poi|
@@ -21,12 +21,8 @@ div class="flex flex-col my-6"
                   div class="text-sm text-gray-500"= link_to poi.id, edit_admin_poi_path(poi)
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   span class="text-sm text-gray-900 font-bold"
-                    = link_to poi.description, edit_admin_poi_path(poi)
+                    = link_to poi.name, edit_admin_poi_path(poi)
                 td class="px-6 py-2 whitespace-nowrap w-2/12"
-                  span class="text-sm text-gray-900"
-                    = link_to poi.area.name, [:admin, poi.area]
                 td class="px-6 py-2 whitespace-nowrap w-6/12"
-                  div class="flex justify-end"
-                    / = render "more", area: area
 
 p= "#{@pois.count} results"

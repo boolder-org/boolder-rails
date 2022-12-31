@@ -1,31 +1,12 @@
-div class="col-span-6 sm:col-span-3"
-  = form.label :area_id, "Area"
-  = form.collection_select :area_id, Area.order(:id), :id, :name_debug, { include_blank: true }
+div class="col-span-6 sm:col-span-4"
+  = form.label :name
+  = form.text_field :name, autocomplete: "off"
+div class="col-span-6 sm:col-span-2"
 
 div class="col-span-6 sm:col-span-4"
-  = form.label :title
-  = form.text_field :title, autocomplete: "off"
-
-div class="col-span-6 sm:col-span-4"
-  = form.label :subtitle
-  = form.text_field :subtitle, autocomplete: "off"
-
-div class="col-span-6 sm:col-span-4"
-  = form.label :description
-  = form.text_field :description, autocomplete: "off"
-
-div class="col-span-6 sm:col-span-4"
-  = form.label :location
-  = form.text_field :location, autocomplete: "off"
-
-div class="col-span-6 sm:col-span-6"
-  = form.label :route
-  = form.text_area :route, autocomplete: "off"
-
-div class="col-span-6 sm:col-span-1"
-  = form.label :walk_time
-  = form.text_field :walk_time, autocomplete: "off"
-
+  = form.label :short_name
+  = form.text_field :short_name, autocomplete: "off"
+div class="col-span-6 sm:col-span-2"
 
 div class="col-span-6 sm:col-span-6"
   = form.label :google_url
