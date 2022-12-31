@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_31_123215) do
+ActiveRecord::Schema.define(version: 2022_12_31_132049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,9 @@ ActiveRecord::Schema.define(version: 2022_12_31_123215) do
     t.string "tags", default: [], null: false, array: true
     t.string "short_name"
     t.integer "priority", limit: 2, default: 3, null: false
+    t.bigint "poi_id"
+    t.integer "poi_distance"
+    t.index ["poi_id"], name: "index_areas_on_poi_id"
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
   end
@@ -130,6 +133,7 @@ ActiveRecord::Schema.define(version: 2022_12_31_123215) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "areas", "pois"
   add_foreign_key "boulders", "areas"
   add_foreign_key "problems", "areas"
 end
