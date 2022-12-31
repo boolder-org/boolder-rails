@@ -36,11 +36,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
           - cache @area
             = render "shared/area_levels", area: @area
 
+  - if I18n.locale == :fr && @area.description_fr.present? || I18n.locale == :en && @area.description_en.present?
   div class="lg:grid lg:grid-cols-2 lg:gap-16 pt-4"
     div class="col-span-1"
       div class="px-4 sm:px-0"
         div class="prose" 
-          = render "areas/show/description"
+          - desc = I18n.locale == :en ? @area.description_en : @area.description_fr
+          = simple_format(desc)
 
   - if parking = @area.poi
         div class="px-4 sm:px-0 pt-4"

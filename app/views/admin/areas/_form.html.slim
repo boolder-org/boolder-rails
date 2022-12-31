@@ -35,6 +35,14 @@ div class="col-span-6 sm:col-span-4"
   = form.label :joined_tags, 'Tags'
   = form.text_field :joined_tags, value: @area.tags.join(","), autocomplete: "off"
 
+div class="col-span-6 sm:col-span-6"
+  = form.label :description_fr
+  = form.text_area :description_fr, rows: 5
+
+div class="col-span-6 sm:col-span-6"
+  = form.label :description_en
+  = form.text_area :description_en, rows: 5
+
 div class="col-span-6 sm:col-span-4"
   = image_tag(@area.cover) if @area.cover&.persisted?
   = form.label :cover
