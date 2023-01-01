@@ -58,6 +58,8 @@ namespace :app do
         create table areas (
           id INTEGER NOT NULL PRIMARY KEY,
           name TEXT NOT NULL,
+          description_fr TEXT,
+          description_en TEXT,
           parking_short_name TEXT,
           parking_url TEXT,
           parking_distance INTEGER,
@@ -81,10 +83,10 @@ namespace :app do
 
       Area.published.each do |a|
         db.execute(
-          "INSERT INTO areas (id, name, parking_short_name, parking_url, parking_distance, level1, level2, level3, level4, level5, level6, level7, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          "INSERT INTO areas (id, name, description_fr, description_en, parking_short_name, parking_url, parking_distance, level1, level2, level3, level4, level5, level6, level7, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
-            a.id, a.name.presence, a.poi&.short_name, a.poi&.google_url, a.poi_distance,
+            a.id, a.name.presence, a.description_fr.presence, a.description_en.presence, a.poi&.short_name, a.poi&.google_url, a.poi_distance,
             a.levels[1] ? 1 : 0, a.levels[2] ? 1 : 0, a.levels[3] ? 1 : 0, a.levels[4] ? 1 : 0, a.levels[5] ? 1 : 0, a.levels[6] ? 1 : 0, a.levels[7] ? 1 : 0,
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon
           ]
