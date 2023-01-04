@@ -27,7 +27,7 @@ class Area < ApplicationRecord
   include HasTagsConcern
 
   def levels
-    @levels ||= 1.upto(7).map{|level| [level, problems.around_level(level).count >= 30] }.to_h
+    @levels ||= 1.upto(8).map{|level| [level, problems.level(level).count >= 20] }.to_h
   end
 
   def to_param
