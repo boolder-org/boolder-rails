@@ -47,7 +47,6 @@ class Problem < ApplicationRecord
 
   include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
-  scope :around_level, -> (i){ where("grade >= '#{i-1}c' AND grade < '#{i+1}b'").tap{raise unless i.in?(1..8)} }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
 
   def published?
