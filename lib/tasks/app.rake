@@ -63,13 +63,6 @@ namespace :app do
           parking_short_name TEXT,
           parking_url TEXT,
           parking_distance INTEGER,
-          level1 INTEGER NOT NULL,
-          level2 INTEGER NOT NULL,
-          level3 INTEGER NOT NULL,
-          level4 INTEGER NOT NULL,
-          level5 INTEGER NOT NULL,
-          level6 INTEGER NOT NULL,
-          level7 INTEGER NOT NULL,
           south_west_lat REAL NOT NULL,
           south_west_lon REAL NOT NULL,
           north_east_lat REAL NOT NULL,
@@ -83,11 +76,10 @@ namespace :app do
 
       Area.published.each do |a|
         db.execute(
-          "INSERT INTO areas (id, name, description_fr, description_en, parking_short_name, parking_url, parking_distance, level1, level2, level3, level4, level5, level6, level7, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          "INSERT INTO areas (id, name, description_fr, description_en, parking_short_name, parking_url, parking_distance, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
             a.id, a.name.presence, a.description_fr.presence, a.description_en.presence, a.poi&.short_name, a.poi&.google_url, a.poi_distance,
-            a.levels[1] ? 1 : 0, a.levels[2] ? 1 : 0, a.levels[3] ? 1 : 0, a.levels[4] ? 1 : 0, a.levels[5] ? 1 : 0, a.levels[6] ? 1 : 0, a.levels[7] ? 1 : 0,
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon
           ]
         )
