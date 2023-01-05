@@ -43,6 +43,14 @@ div class="col-span-6 sm:col-span-6"
   = form.label :description_en
   = form.text_area :description_en, rows: 5
 
+div class="col-span-6 sm:col-span-6"
+  = form.label :warning_fr
+  = form.text_area :warning_fr, rows: 3
+
+div class="col-span-6 sm:col-span-6"
+  = form.label :warning_en
+  = form.text_area :warning_en, rows: 3
+
 div class="col-span-6 sm:col-span-4"
   = image_tag(@area.cover) if @area.cover&.persisted?
   = form.label :cover
