@@ -60,6 +60,9 @@ namespace :app do
           name TEXT NOT NULL,
           description_fr TEXT,
           description_en TEXT,
+          warning_fr TEXT,
+          warning_en TEXT,
+          tags TEXT,
           parking_short_name TEXT,
           parking_url TEXT,
           parking_distance INTEGER,
@@ -76,10 +79,14 @@ namespace :app do
 
       Area.published.each do |a|
         db.execute(
-          "INSERT INTO areas (id, name, description_fr, description_en, parking_short_name, parking_url, parking_distance, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          "INSERT INTO areas (id, name, description_fr, description_en, warning_fr, warning_en, tags, parking_short_name, parking_url, parking_distance, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
-            a.id, a.name.presence, a.description_fr.presence, a.description_en.presence, a.poi&.short_name, a.poi&.google_url, a.poi_distance,
+            a.id, a.name.presence, 
+            a.description_fr.presence, a.description_en.presence, 
+            a.warning_fr.presence, a.warning_en.presence, 
+            a.tags.join(","),
+            a.poi&.short_name, a.poi&.google_url, a.poi_distance,
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon
           ]
         )
