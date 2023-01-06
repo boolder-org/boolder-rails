@@ -26,6 +26,8 @@ class Area < ApplicationRecord
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 
+  validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
+
   def levels
     @levels ||= 1.upto(8).map{|level| [level, problems.level(level).count >= 20] }.to_h
   end
