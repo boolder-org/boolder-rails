@@ -85,7 +85,7 @@ namespace :app do
             a.id, a.name.presence, 
             a.description_fr.presence, a.description_en.presence, 
             a.warning_fr.presence, a.warning_en.presence, 
-            a.tags.join(","),
+            a.tags.join(",").presence,
             a.poi&.short_name, a.poi&.google_url, a.poi_distance,
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon
           ]
