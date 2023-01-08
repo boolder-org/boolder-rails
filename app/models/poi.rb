@@ -1,3 +1,3 @@
 class Poi < ApplicationRecord
-	has_many :areas
+  # has_many :areas
 end

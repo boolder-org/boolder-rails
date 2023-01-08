@@ -16,6 +16,7 @@ Rails.application.routes.draw do
       resources :problem_imports
       resources :lines
       resources :pois
+      resources :poi_routes
       get "tasks/dashboard", to: "tasks#dashboard"
 
       root 'areas#index'
