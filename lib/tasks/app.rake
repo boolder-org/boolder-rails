@@ -63,9 +63,6 @@ namespace :app do
           warning_fr TEXT,
           warning_en TEXT,
           tags TEXT,
-          parking_short_name TEXT,
-          parking_url TEXT,
-          parking_distance INTEGER,
           south_west_lat REAL NOT NULL,
           south_west_lon REAL NOT NULL,
           north_east_lat REAL NOT NULL,
@@ -79,14 +76,13 @@ namespace :app do
 
       Area.published.each do |a|
         db.execute(
-          "INSERT INTO areas (id, name, description_fr, description_en, warning_fr, warning_en, tags, parking_short_name, parking_url, parking_distance, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          "INSERT INTO areas (id, name, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
             a.id, a.name.presence, 
             a.description_fr.presence, a.description_en.presence, 
             a.warning_fr.presence, a.warning_en.presence, 
             a.tags.join(",").presence,
-            a.poi&.short_name, a.poi&.google_url, a.poi_distance,
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon
           ]
         )
@@ -117,6 +113,53 @@ namespace :app do
           [c.id, c.color, c.average_grade, c.beginner_friendly? ? 1 : 0, c.dangerous? ? 1 : 0, 
             c.bounds[:south_west]&.lat, c.bounds[:south_west]&.lon, c.bounds[:north_east]&.lat, c.bounds[:north_east]&.lon
           ]
+        )
+      end
+
+      db.execute <<-SQL
+        create table pois (
+          id INTEGER NOT NULL PRIMARY KEY,
+          poi_type TEXT NOT NULL,
+          name TEXT NOT NULL,
+          short_name TEXT NOT NULL,
+          google_url TEXT NOT NULL
+        );
+      SQL
+
+      db.execute <<-SQL
+        CREATE INDEX poi_idx ON pois(id);
+      SQL
+
+      Poi.all.each do |p|
+        db.execute(
+          "INSERT INTO pois (id, poi_type, name, short_name, google_url)
+          VALUES (?, ?, ?, ?, ?)", 
+          [p.id, p.poi_type, p.name, p.short_name, p.google_url]
+        )
+      end
+
+
+      db.execute <<-SQL
+        create table poi_routes (
+          id INTEGER NOT NULL PRIMARY KEY,
+          area_id INTEGER NOT NULL,
+          poi_id INTEGER NOT NULL,
+          distance_in_minutes INTEGER NOT NULL,
+          transport TEXT NOT NULL
+        );
+      SQL
+
+      db.execute <<-SQL
+        CREATE INDEX poi_route_idx ON poi_routes(id);
+        CREATE INDEX poi_route_area_idx ON poi_routes(area_id);
+        CREATE INDEX poi_route_poi_idx ON poi_routes(poi_id);
+      SQL
+
+      PoiRoute.all.each do |pr|
+        db.execute(
+          "INSERT INTO poi_routes (id, area_id, poi_id, distance_in_minutes, transport)
+          VALUES (?, ?, ?, ?, ?)", 
+          [pr.id, pr.area_id, pr.poi_id, pr.distance_in_minutes, pr.transport]
         )
       end
 
