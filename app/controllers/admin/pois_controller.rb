@@ -29,6 +29,6 @@ class Admin::PoisController < Admin::BaseController
   private 
   def poi_params
     params.require(:poi).
-      permit(:name, :short_name, :google_url)
+      permit(:name, :short_name, :poi_type, :google_url)
   end
 end
