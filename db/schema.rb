@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_05_082925) do
+ActiveRecord::Schema.define(version: 2023_01_08_101400) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -91,12 +91,24 @@ ActiveRecord::Schema.define(version: 2023_01_05_082925) do
     t.index ["topo_id"], name: "index_lines_on_topo_id"
   end
 
+  create_table "poi_routes", force: :cascade do |t|
+    t.integer "distance", null: false
+    t.string "transport", null: false
+    t.bigint "area_id"
+    t.bigint "poi_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["area_id"], name: "index_poi_routes_on_area_id"
+    t.index ["poi_id"], name: "index_poi_routes_on_poi_id"
+  end
+
   create_table "pois", force: :cascade do |t|
     t.string "name"
     t.string "short_name"
     t.string "google_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "poi_type", default: "parking", null: false
   end
 
   create_table "problems", force: :cascade do |t|

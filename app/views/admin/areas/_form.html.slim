@@ -1,4 +1,9 @@
 div class="col-span-6 sm:col-span-4"
+  = form.label :published
+  = form.check_box :published
+div class="col-span-6 sm:col-span-2"
+
+div class="col-span-6 sm:col-span-4"
   = form.label :name
   = form.text_field :name, autocomplete: "off"
 
@@ -17,11 +22,6 @@ div class="col-span-6 sm:col-span-2"
   = form.select :priority, [["1", 1], ["2", 2], ["3", 3]]
 
 div class="col-span-6 sm:col-span-4"
-
-div class="col-span-6 sm:col-span-4"
-  = form.label :published
-  = form.check_box :published
-div class="col-span-6 sm:col-span-2"
 
 div class="col-span-6 sm:col-span-4"
   = form.label :poi_id, "Parking"
