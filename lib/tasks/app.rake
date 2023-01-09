@@ -28,18 +28,10 @@ namespace :app do
           popularity INTEGER,
           parent_id INTEGER
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX problem_idx ON problems(id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX problem_area_idx ON problems(area_id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX problem_circuit_idx ON problems(circuit_id);
+        CREATE INDEX problem_grade_idx ON problems(grade);
       SQL
 
       Problem.joins(:area).where(area: { published: true }).find_each do |p|
@@ -68,9 +60,6 @@ namespace :app do
           north_east_lat REAL NOT NULL,
           north_east_lon REAL NOT NULL
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX area_idx ON areas(id);
       SQL
 
@@ -100,9 +89,6 @@ namespace :app do
           north_east_lat REAL NOT NULL,
           north_east_lon REAL NOT NULL
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX circuit_idx ON circuits(id);
       SQL
 
@@ -124,9 +110,6 @@ namespace :app do
           short_name TEXT NOT NULL,
           google_url TEXT NOT NULL
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX poi_idx ON pois(id);
       SQL
 
@@ -147,9 +130,6 @@ namespace :app do
           distance_in_minutes INTEGER NOT NULL,
           transport TEXT NOT NULL
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX poi_route_idx ON poi_routes(id);
         CREATE INDEX poi_route_area_idx ON poi_routes(area_id);
         CREATE INDEX poi_route_poi_idx ON poi_routes(poi_id);
@@ -171,17 +151,8 @@ namespace :app do
           topo_id INTEGER NOT NULL,
           coordinates TEXT
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX line_idx ON lines(id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX line_problem_idx ON lines(problem_id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX line_topo_idx ON lines(topo_id);
       SQL
 
