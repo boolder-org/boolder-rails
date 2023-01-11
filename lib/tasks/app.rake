@@ -58,21 +58,34 @@ namespace :app do
           south_west_lat REAL NOT NULL,
           south_west_lon REAL NOT NULL,
           north_east_lat REAL NOT NULL,
-          north_east_lon REAL NOT NULL
+          north_east_lon REAL NOT NULL,
+          level1_count INTEGER NOT NULL,
+          level2_count INTEGER NOT NULL,
+          level3_count INTEGER NOT NULL,
+          level4_count INTEGER NOT NULL,
+          level5_count INTEGER NOT NULL,
+          level6_count INTEGER NOT NULL,
+          level7_count INTEGER NOT NULL,
+          level8_count INTEGER NOT NULL,
+          problems_count INTEGER NOT NULL
         );
         CREATE INDEX area_idx ON areas(id);
       SQL
 
       Area.published.each do |a|
         db.execute(
-          "INSERT INTO areas (id, name, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          "INSERT INTO areas (id, name, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon, 
+                              level1_count, level2_count, level3_count, level4_count, level5_count, level6_count, level7_count, level8_count, problems_count)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
             a.id, a.name.presence, 
             a.description_fr.presence, a.description_en.presence, 
             a.warning_fr.presence, a.warning_en.presence, 
             a.tags.join(",").presence,
-            a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon
+            a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon,
+            a.problems.level(1).count, a.problems.level(2).count, a.problems.level(3).count, a.problems.level(4).count, 
+            a.problems.level(5).count, a.problems.level(6).count, a.problems.level(7).count, a.problems.level(8).count, 
+            a.problems.count
           ]
         )
       end
