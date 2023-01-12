@@ -48,8 +48,8 @@
     <h2 class="px-4 sm:px-6 lg:px-8 text-2xl font-bold text-gray-900"><%= t("views.homepage.popular_areas") %></h2>
 
     <div class="py-2 relative">
-      <div class="flex flex-nowrap overflow-x-auto py-4 space-x-4 px-4 sm:px-6 lg:px-8">
-        <% @beginner_areas.each do |area, count| %>
+      <div class="flex flex-nowrap overflow-x-auto py-4 space-x-2 px-4 sm:px-6 lg:px-8">
+        <% @popular_areas.each do |area| %>
           <%= link_to area_path(area) do %>
             <%= render 'shared/area_card', area: area %>
           <% end %>
