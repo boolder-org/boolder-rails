@@ -10,8 +10,6 @@ namespace :app do
 
       db = SQLite3::Database.new file_name
 
-      # FIXME: put a size on columns?
-      # TODO: set not null columns?
       db.execute <<-SQL
         create table problems (
           id INTEGER NOT NULL PRIMARY KEY,
@@ -27,31 +25,24 @@ namespace :app do
           area_id INTEGER NOT NULL,
           bleau_info_id TEXT,
           featured INTEGER NOT NULL,
+          popularity INTEGER,
           parent_id INTEGER
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX problem_idx ON problems(id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX problem_area_idx ON problems(area_id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX problem_circuit_idx ON problems(circuit_id);
+        CREATE INDEX problem_grade_idx ON problems(grade);
       SQL
 
       Problem.joins(:area).where(area: { published: true }).find_each do |p|
         db.execute(
           "INSERT INTO problems (id, name, grade, latitude, longitude, circuit_id, circuit_number, 
           circuit_color, steepness, sit_start, area_id, bleau_info_id, 
-          featured, parent_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          featured, popularity, parent_id)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, p.circuit_id, p.circuit_number, 
             p.circuit&.color, p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id, 
-            p.featured ? 1 : 0, p.parent_id]
+            p.featured ? 1 : 0, p.popularity, p.parent_id]
         )
       end
 
@@ -59,22 +50,109 @@ namespace :app do
         create table areas (
           id INTEGER NOT NULL PRIMARY KEY,
           name TEXT NOT NULL,
+          description_fr TEXT,
+          description_en TEXT,
+          warning_fr TEXT,
+          warning_en TEXT,
+          tags TEXT,
           south_west_lat REAL NOT NULL,
           south_west_lon REAL NOT NULL,
           north_east_lat REAL NOT NULL,
-          north_east_lon REAL NOT NULL
+          north_east_lon REAL NOT NULL,
+          level1_count INTEGER NOT NULL,
+          level2_count INTEGER NOT NULL,
+          level3_count INTEGER NOT NULL,
+          level4_count INTEGER NOT NULL,
+          level5_count INTEGER NOT NULL,
+          level6_count INTEGER NOT NULL,
+          level7_count INTEGER NOT NULL,
+          level8_count INTEGER NOT NULL,
+          problems_count INTEGER NOT NULL
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX area_idx ON areas(id);
       SQL
 
       Area.published.each do |a|
         db.execute(
-          "INSERT INTO areas (id, name, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
-          VALUES (?, ?, ?, ?, ?, ?)", 
-          [a.id, a.name.presence, a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon]
+          "INSERT INTO areas (id, name, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon, 
+                              level1_count, level2_count, level3_count, level4_count, level5_count, level6_count, level7_count, level8_count, problems_count)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          [
+            a.id, a.name.presence, 
+            a.description_fr.presence, a.description_en.presence, 
+            a.warning_fr.presence, a.warning_en.presence, 
+            a.tags.join(",").presence,
+            a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon,
+            a.problems.level(1).count, a.problems.level(2).count, a.problems.level(3).count, a.problems.level(4).count, 
+            a.problems.level(5).count, a.problems.level(6).count, a.problems.level(7).count, a.problems.level(8).count, 
+            a.problems.count
+          ]
+        )
+      end
+
+      db.execute <<-SQL
+        create table circuits (
+          id INTEGER NOT NULL PRIMARY KEY,
+          color TEXT NOT NULL,
+          average_grade TEXT NOT NULL,
+          beginner_friendly INTEGER NOT NULL,
+          dangerous INTEGER NOT NULL,
+          south_west_lat REAL NOT NULL,
+          south_west_lon REAL NOT NULL,
+          north_east_lat REAL NOT NULL,
+          north_east_lon REAL NOT NULL
+        );
+        CREATE INDEX circuit_idx ON circuits(id);
+      SQL
+
+      Circuit.all.each do |c|
+        db.execute(
+          "INSERT INTO circuits (id, color, average_grade, beginner_friendly, dangerous, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          [c.id, c.color, c.average_grade, c.beginner_friendly? ? 1 : 0, c.dangerous? ? 1 : 0, 
+            c.bounds[:south_west]&.lat, c.bounds[:south_west]&.lon, c.bounds[:north_east]&.lat, c.bounds[:north_east]&.lon
+          ]
+        )
+      end
+
+      db.execute <<-SQL
+        create table pois (
+          id INTEGER NOT NULL PRIMARY KEY,
+          poi_type TEXT NOT NULL,
+          name TEXT NOT NULL,
+          short_name TEXT NOT NULL,
+          google_url TEXT NOT NULL
+        );
+        CREATE INDEX poi_idx ON pois(id);
+      SQL
+
+      Poi.all.each do |p|
+        db.execute(
+          "INSERT INTO pois (id, poi_type, name, short_name, google_url)
+          VALUES (?, ?, ?, ?, ?)", 
+          [p.id, p.poi_type, p.name, p.short_name, p.google_url]
+        )
+      end
+
+
+      db.execute <<-SQL
+        create table poi_routes (
+          id INTEGER NOT NULL PRIMARY KEY,
+          area_id INTEGER NOT NULL,
+          poi_id INTEGER NOT NULL,
+          distance_in_minutes INTEGER NOT NULL,
+          transport TEXT NOT NULL
+        );
+        CREATE INDEX poi_route_idx ON poi_routes(id);
+        CREATE INDEX poi_route_area_idx ON poi_routes(area_id);
+        CREATE INDEX poi_route_poi_idx ON poi_routes(poi_id);
+      SQL
+
+      PoiRoute.all.each do |pr|
+        db.execute(
+          "INSERT INTO poi_routes (id, area_id, poi_id, distance_in_minutes, transport)
+          VALUES (?, ?, ?, ?, ?)", 
+          [pr.id, pr.area_id, pr.poi_id, pr.distance_in_minutes, pr.transport]
         )
       end
 
@@ -86,17 +164,8 @@ namespace :app do
           topo_id INTEGER NOT NULL,
           coordinates TEXT
         );
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX line_idx ON lines(id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX line_problem_idx ON lines(problem_id);
-      SQL
-
-      db.execute <<-SQL
         CREATE INDEX line_topo_idx ON lines(topo_id);
       SQL
 

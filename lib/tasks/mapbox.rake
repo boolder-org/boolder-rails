@@ -91,6 +91,27 @@ namespace :mapbox do
     puts "exported problems.geojson".green
   end
 
+  task circuits: :environment do 
+    factory = RGeo::GeoJSON::EntityFactory.instance
+
+    circuit_features = Circuit.all.map do |circuit|
+      line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
+      factory.feature(line_string, nil, { id: circuit.id, color: circuit.color })
+    end
+
+    feature_collection = factory.feature_collection(
+      circuit_features
+    )
+
+    geo_json = RGeo::GeoJSON.encode(feature_collection)
+
+    File.open(Rails.root.join('export', 'mapbox', "circuits.geojson"),"w") do |f|
+      f.write(JSON.pretty_generate(geo_json))
+    end
+
+    puts "exported circuits.geojson".green
+  end
+
   # TODO: Revamp the pois task once we migrate to the new POI data model (split pois and poi routes)
 
   # task pois: :environment do
