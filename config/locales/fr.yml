@@ -36,6 +36,12 @@ fr:
       level: Niveau
       circuit: Circuit
       selection: Sélection
+  area:
+    tags:
+      popular: populaire
+      beginner_friendly: convient aux débutants
+      family_friendly: idéal en famille
+      dry_fast: sèche vite
   views:
     homepage:
       title1: Escaladez
