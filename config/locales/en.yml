@@ -36,6 +36,12 @@ en:
       level: Level
       circuit: Circuit
       selection: Selection
+  area:
+    tags:
+      popular: popular
+      beginner_friendly: beginner friendly
+      family_friendly: family friendly
+      dry_fast: dries fast
   views:
     homepage:
       title1: Bouldering
