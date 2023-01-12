@@ -24,14 +24,6 @@ div class="col-span-6 sm:col-span-2"
 div class="col-span-6 sm:col-span-4"
 
 div class="col-span-6 sm:col-span-4"
-  = form.label :poi_id, "Parking"
-  = form.collection_select :poi_id, Poi.all, :id, :name, include_blank: true
-
-div class="col-span-6 sm:col-span-2"
-  = form.label :poi_distance, "Distance (meters)"
-  = form.text_field :poi_distance, autocomplete: "off"
-
-div class="col-span-6 sm:col-span-4"
   = form.label :joined_tags, 'Tags'
   = form.text_field :joined_tags, value: @area.tags.join(","), autocomplete: "off"
 
