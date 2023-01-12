@@ -24,19 +24,5 @@ class MapController < ApplicationController
       }.
       with_indifferent_access.deep_transform_keys { |key| key.camelize(:lower) }
     end
-
-    if params[:cid] && (circuit = Circuit.find(params[:cid]))
-      @bounds = { 
-        south_west_lat: circuit.bounds[:south_west].lat,
-        south_west_lon: circuit.bounds[:south_west].lon,
-        north_east_lat: circuit.bounds[:north_east].lat,
-        north_east_lon: circuit.bounds[:north_east].lon,
-      }.
-      with_indifferent_access.deep_transform_keys { |key| key.camelize(:lower) }
-
-      @circuit = { 
-        id: circuit.id,
-      }
-    end
   end
 end
