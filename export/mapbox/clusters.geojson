@@ -6,28 +6,11 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Trois Pignons",
-                "northEastLon": "2.548881",
-                "southWestLat": "48.3586603",
-                "southWestLon": "2.5083128",
-                "northEastLat": "48.3953245"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.52925855637,
-                    48.37632124000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "name": "Cuvier",
-                "southWestLat": "48.4457802",
-                "northEastLat": "48.4493743",
-                "northEastLon": "2.6458018",
-                "southWestLon": "2.6328433"
+                "northEastLat": "48.4493008",
+                "northEastLon": "2.6508808",
+                "southWestLon": "2.6327276",
+                "southWestLat": "48.4446751"
             },
             "geometry": {
                 "type": "Point",
@@ -40,17 +23,17 @@
         {
             "type": "Feature",
             "properties": {
-                "northEastLat": "48.4388072",
-                "northEastLon": "2.6355547",
+                "northEastLat": "48.4406325",
+                "southWestLat": "48.4336142",
+                "northEastLon": "2.6357746",
                 "name": "Apremont",
-                "southWestLat": "48.4351528",
-                "southWestLon": "2.6245383"
+                "southWestLon": "2.6195097"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    2.62933726787,
-                    48.43657540087
+                    2.62768502712,
+                    48.43710213254
                 ]
             }
         },
@@ -58,8 +41,8 @@
             "type": "Feature",
             "properties": {
                 "northEastLat": "48.4109511",
-                "name": "Franchard",
                 "southWestLon": "2.5947046",
+                "name": "Franchard",
                 "southWestLat": "48.4071053",
                 "northEastLon": "2.6145744"
             },
@@ -68,6 +51,23 @@
                 "coordinates": [
                     2.60217185497,
                     48.40903539059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trois Pignons",
+                "northEastLat": "48.3953245",
+                "southWestLon": "2.5083128",
+                "northEastLon": "2.548881",
+                "southWestLat": "48.3586603"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.52925855637,
+                    48.37632124000
                 ]
             }
         }

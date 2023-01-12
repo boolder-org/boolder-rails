@@ -2,7 +2,6 @@ class Area < ApplicationRecord
   has_many :boulders
   has_many :problems
   has_many :circuits, -> { distinct }, through: :problems
-  # has_many :pois, through: :poi_routes
   has_many :poi_routes
   has_one_attached :cover
 
@@ -27,8 +26,10 @@ class Area < ApplicationRecord
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 
+  validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
+
   def levels
-    1.upto(7).map{|level| [level, problems.around_level(level).count >= 30] }.to_h
+    @levels ||= 1.upto(8).map{|level| [level, problems.level(level).count >= 20] }.to_h
   end
 
   def to_param
@@ -47,6 +48,7 @@ class Area < ApplicationRecord
     }
   end
 
+  # TODO: rewrite in SQL
   def main_circuits
     circuits.select{|c| c.problems.where(area_id: id).count >= 10 }.sort_by(&:average_grade)
   end
