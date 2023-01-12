@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto pb-8 px-4 sm:px-6 lg:px-8">
     <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
 
       <p>
@@ -28,13 +28,15 @@
       </p>
 
       <% @train_stations.each do |train_station| %>
-        <h2><%= train_station.name %></h2>
+        <h2>
+          <%= train_station.name %>
+        </h2>
 
         <ul>
           <% train_station.poi_routes.select(&:bike?).sort_by(&:distance).each do |poi_route| %>
             <li><%= link_to poi_route.area.name, area_path(poi_route.area) %> : <%= poi_route.distance_in_minutes %> min.</li>
           <% end %>
-      </ul>
+        </ul>
       <% end %>
 
       <p class="pt-12">
