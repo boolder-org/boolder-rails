@@ -23,32 +23,19 @@
   <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
     <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
 
-      <h2><%= t("views.articles.top_areas.train.from_train_station", train_station: "Bois-le-Roi") %></h2>
-
       <p>
         <%= t("views.articles.top_areas.train.bike_time") %>
       </p>
 
-      <ul>
-        <li><%= link_to "Rocher Canon", area_path(Area.find(1)) %> : 15 min.</li>
-        <li><%= link_to "Rocher Saint-Germain", area_path(Area.find(24)) %> : 20 min.</li>
-        <li><%= link_to "Cuvier", area_path(Area.find(4)) %> : 30 min.</li>
-        <li><%= link_to "Apremont", area_path(Area.find(7)) %> : 35 min.</li>
+      <% @train_stations.each do |train_station| %>
+        <h2><%= train_station.name %></h2>
+
+        <ul>
+          <% train_station.poi_routes.select(&:bike?).sort_by(&:distance).each do |poi_route| %>
+            <li><%= link_to poi_route.area.name, area_path(poi_route.area) %> : <%= poi_route.distance_in_minutes %> min.</li>
+          <% end %>
       </ul>
-
-      <h2><%= t("views.articles.top_areas.train.from_train_station", train_station: "Fontainebleau Avon") %></h2>
-
-      <p>
-        <%= t("views.articles.top_areas.train.bike_time") %>
-      </p>
-
-      <ul>
-        <li><%= link_to "Mont Ussy", area_path(Area.find(53)) %> : 10 min.</li>
-        <li><%= link_to "Rocher d'Avon", area_path(Area.find(50)) %> : 20 min.</li>
-        <li><%= link_to "Rocher de Bouligny", area_path(Area.find(52)) %> : 20 min.</li>
-        <li><%= link_to "Rocher des Demoiselles", area_path(Area.find(33)) %> : 20 min.</li>
-
-      </ul>
+      <% end %>
 
       <p class="pt-12">
         <%= t("views.articles.top_areas.see_also") %>

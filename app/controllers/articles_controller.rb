@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
   end
 
   def top_areas_train
+    @train_stations = Poi.train_station.all
   end
 
   def top_areas_dry_fast
