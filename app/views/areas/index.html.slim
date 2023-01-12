@@ -16,7 +16,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8"
           |
 
     div
-      = link_to choose_area_path, class: "min-w-max" do 
+      = link_to areas_levels_path, class: "min-w-max" do 
         = use_case_card(title: "Par niveau", color: "bg-gradient-to-b from-blue-300 to-blue-400") do 
           svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
             path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
@@ -31,7 +31,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8"
         = use_case_card(title: t("views.areas.index.cards.train_html"), color: "bg-gradient-to-b from-pink-300 to-pink-400") do 
           | 
 
-  h2 class="pt-4 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
+  h2 class="pt-6 pb-1 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
     | Populaires
 
   div class="relative"
@@ -50,23 +50,22 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       h2 class="py-4 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
         | Tous les secteurs 
       
-      div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg text-sm sm:text-base"
+      div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
         ul role="list" class="divide-y divide-gray-200"
-          li class="bg-gray-50 font-semibold"
-            div class="px-4 py-4 sm:px-6"
-              div class="grid grid-cols-6 gap-4"
-                p class="col-span-2 sm:col-span-3"= t("views.areas.index.area_column")
-                p class="col-span-1"= t("views.areas.index.problems_column")
-                div class="col-span-3 sm:col-span-2 flex justify-end"= t("views.areas.index.levels_column")
+          / li class="bg-gray-50 font-semibold"
+          /   div class="px-4 py-4 sm:px-6"
+          /     div class="grid grid-cols-6 gap-4"
+          /       p class="col-span-2 sm:col-span-3"= t("views.areas.index.area_column")
+          /       div class="col-span-4 sm:col-span-3 flex justify-end"= t("views.areas.index.problems_column")
           - @areas_with_count.each do |area, count|
             li
               = link_to area_path(area), class:"block hover:bg-gray-50" do
                 div class="px-4 py-4 sm:px-6"
-                  div class="grid grid-cols-6 gap-4"
-                    p class="col-span-2 sm:col-span-3"
+                  div class="flex justify-between"
+                    p class=""
                       = area.name
-                    span class="col-span-1 text-gray-400"= "#{count}"
-                    div class="col-span-3 sm:col-span-2 flex justify-end "
-                      - cache area
-                        = render "shared/area_levels", area: area
+                    div class="flex items-center space-x-1 text-gray-300"
+                      span class=""= area.problems.count
+                      svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"
+                        path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"
                       
