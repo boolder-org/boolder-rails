@@ -4,12 +4,14 @@ class AreasController < ApplicationController
       Area.published.any_tags(:popular).all.shuffle
     end
 
-    @areas_with_count = Area.published.order(:name)
+    @areas_with_count = Area.published.sort_by{|a| I18n.transliterate(a.name) }
   end
 
   def levels
     @beginner_areas = Rails.cache.fetch("areas/levels/beginner_areas", expires_in: 12.hours) do
-      Area.published.any_tags(:beginner_friendly).all.sort_by{|a| a.circuits.select(&:beginner_friendly?).length }.reverse
+      Area.published.any_tags(:beginner_friendly).
+        map {|area| [area, area.problems.count]}.sort{|a,b| b.second <=> a.second }.map(&:first).
+        sort_by{|a| -a.circuits.select(&:beginner_friendly?).length }
     end
 
     @areas_with_count = Area.published.map {|area| [area, area.problems.count]}.sort{|a,b| b.second <=> a.second }
