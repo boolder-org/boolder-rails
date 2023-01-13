@@ -1,10 +1,7 @@
-/ - set_meta_tags title: t("views.areas.index.metas.title")
-/ - set_meta_tags description: t("views.areas.index.metas.description")
+- set_meta_tags title: t("views.areas.levels.metas.title")
+- set_meta_tags description: t("views.areas.levels.metas.description")
 
-/ - set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") }
-
-/ - set_meta_tags canonical: areas_url
-
+- set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") }
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6"
   div class="px-4 sm:px-0"
@@ -14,7 +11,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6"
     / h1 class="text-3xl font-bold mt-4" Secteurs par niveau  
 
   h2 class="pt-2 pb-1 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
-    | Idéal pour débuter
+    = t("views.areas.levels.beginner_friendly")
 
   div class="relative"
     div class="flex flex-nowrap overflow-x-auto py-2 space-x-2 px-4 sm:px-0"
@@ -30,8 +27,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
     div class="col-span-1"
 
       h2 class="py-4 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
-        / | Niveaux
-        | Tous les secteurs
+        = t("views.areas.levels.areas")
       
       div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg text-sm sm:text-base"
         ul role="list" class="divide-y divide-gray-200"
