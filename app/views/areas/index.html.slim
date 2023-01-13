@@ -17,7 +17,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8"
 
     div
       = link_to areas_levels_path, class: "min-w-max" do 
-        = use_case_card(title: "Par niveau", color: "bg-gradient-to-b from-blue-300 to-blue-400") do 
+        = use_case_card(title: t("views.areas.index.cards.level"), color: "bg-gradient-to-b from-blue-300 to-blue-400") do 
           svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
             path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
 
@@ -32,7 +32,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8"
           | 
 
   h2 class="pt-6 pb-1 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
-    | Populaires
+    = t("views.areas.index.popular")
 
   div class="relative"
     div class="flex flex-nowrap overflow-x-auto py-2 space-x-2 px-4 sm:px-0"
@@ -48,7 +48,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
     div class="col-span-1"
 
       h2 class="py-4 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
-        | Tous les secteurs 
+        = t("views.areas.index.areas")
       
       div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
         ul role="list" class="divide-y divide-gray-200"

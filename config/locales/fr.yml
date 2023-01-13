@@ -122,6 +122,8 @@ fr:
         area_column: Secteur
         problems_column: Voies
         levels_column: Niveaux
+        popular: Populaires
+        areas: Tous les secteurs
         cards:
           beginner: Le guide pour bien débuter
           level: Par niveau
@@ -132,6 +134,12 @@ fr:
           description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau, le meilleur spot d'escalade de bloc en France.
         map:
           see: "Voir"
+      levels:
+        beginner_friendly: Idéal pour débuter
+        areas: Tous les secteurs
+        metas:
+          title: Secteurs par niveau à Fontainebleau
+          description: Découvrez les secteurs débutants ainsi que les secteurs ayant des voies dans les niveaux 4, 5, 6, 7, 8.
       show:
         see_map: Voir la carte
         see_parking: Voir le parking
