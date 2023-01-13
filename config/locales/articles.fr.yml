@@ -31,10 +31,10 @@ fr:
         choose_area: 
           title: Choisir un secteur
           beginner_friendly_areas: Secteurs pour bien débuter
-          p1_html: Pour découvrir Fontainebleau en douceur, nous vous conseillons de choisir un secteur avec de nombreuses voies en <strong>niveau débutant (1, 2, 3)</strong>, des blocs <strong>peu hauts</strong> (3 mètres et moins) et avec une <strong>bonne réception au sol</strong>.
-          p2: "Voici une sélection de secteurs :"
-          p3: Ces secteurs ont tous au moins un circuit (jaune ou orange) qui convient aux débutants.
-          more_areas: Voir plus secteurs
+          p1_html: "Voici une sélection de secteurs pour découvrir Fontainebleau en douceur :"
+          p3_html: Ces secteurs ont tous au moins un <strong>circuit</strong> (jaune ou orange) <strong>qui convient aux débutants</strong>
+          p4_html: Ils proposent de nombreuses voies en niveau débutant (1, 2, 3), des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
+          all_areas: Voir tous les secteurs
           metas:
             title: Comment choisir un secteur pour débutant à Fontainebleau
         choose_problems: 
@@ -49,8 +49,9 @@ fr:
           circuit_p1: Les circuits regroupent des voies de niveau (relativement) homogène, selon un parcours numéroté.
           circuit_p2: Chaque voie est représentée par un numéro de couleur et une flèche, peints directement sur la roche.
           circuit_p3: Il existe 5 couleurs principales (jaune, orange, bleu, rouge et noir/blanc) qui correspondent à des niveaux croissants. 
-          circuit_p4_html: En suivant un <strong>circuit jaune</strong> (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
-          circuit_p5: "Conseil : privilégiez les circuits adaptés aux débutants, marqués d'un "
+          circuit_p4_html: En suivant un circuit jaune (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
+          circuit_p5_html: "Conseil : privilégiez les <strong>circuits adaptés aux débutants</strong>, marqués d'un "
+          circuit_p6_html: Ils proposent de nombreuses voies en niveau débutant (1, 2, 3), des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
           metas:
             title: Comment choisir les bonnes voies à Fontainebleau
         climb_safely: 

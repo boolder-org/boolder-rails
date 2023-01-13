@@ -31,10 +31,10 @@ en:
         choose_area: 
           title: Choose an area
           beginner_friendly_areas: Areas suited for beginners
-          p1_html: The smoothest way to discover Fontainebleau is to choose an area with lots of <strong>easy problems </strong> (graded 1, 2 or 3), with <strong>low boulders</strong> (less than 3 meters high) and with <strong>good landings</strong>.
-          p2: "Here are some recommended areas:"
-          p3: All these areas have at least one circuit that is suited for beginners.
-          more_areas: See more areas
+          p1_html: "Here is a selection of areas to discover Fontainebleau gently:"
+          p3_html: All these areas have a yellow/orange <strong>circuit</strong> that is <strong>suited for beginners</strong>
+          p4_html: They offer lots of easy problems (graded 1, 2 or 3), with low boulders (less than 3 meters high) and with good landings.
+          all_areas: See all areas
           metas:
             title: How to choose an area suited for beginners in Fontainebleau
         choose_problems: 
@@ -49,8 +49,9 @@ en:
           circuit_p1: Circuits are a series of boulders of (relatively) homogeneous level, with ascending numbers.
           circuit_p2: Each problem is represented by a colored number and an arrow, painted directly on the boulder.
           circuit_p3: There are 5 main colors (yellow, orange, blue, red, and white/black) that correspond to increasing grades.
-          circuit_p4_html: By following a <strong>yellow circuit</strong> (or an orange one) you'll be able to discover problems graded between 1 and 3, which is perfect to start.
-          circuit_p5: "Tip: pick a circuit suited for beginners, marked with a "
+          circuit_p4_html: By following a yellow circuit (or an orange one) you'll be able to discover problems graded between 1 and 3, which is perfect to start.
+          circuit_p5_html: "Tip: pick a <strong>circuit suited for beginners</strong>, marked with a "
+          circuit_p6_html: They offer lots of easy problems (graded 1, 2 or 3), with low boulders (less than 3 meters high) and with good landings.
           metas:
             title: How to choose problems in Fontainebleau
         climb_safely: 

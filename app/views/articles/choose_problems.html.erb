@@ -23,36 +23,7 @@
         </div>
 
         <div class="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
-          <h2>
-            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level') %>
-          </h2>
           
-          <p>
-            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_p1_html', path: app_path) %>
-          </p>
-
-          <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
-            <div class="flex justify-center">
-              <div class="relative">
-                <%= image_tag "articles/level-filter-#{I18n.locale}.jpg", class: "absolute bg-gray-900 h-full", style: "top:14px; left:18px; height: 652px" %>
-
-                <%= image_tag 'iphone-frame.png', class: "relative mx-auto absolute top-0 left-0", width: "336" %>
-              
-              </div>
-            </div>
-          </div>
-
-          <p>
-            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_p2') %>
-          </p>
-
-          <div class="py-8">
-            <%= warning_box do %>
-            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_warning') %>
-              <br>
-              <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_warning2') %>
-            <% end %>
-          </div>
 
           <h2>
             <%= t('views.articles.beginners_guide.choose_problems.circuit') %>
@@ -87,16 +58,47 @@
           </p>
 
           <p>
-            <%= t('views.articles.beginners_guide.choose_problems.circuit_p5') %>
+            <%= t('views.articles.beginners_guide.choose_problems.circuit_p5_html') %>
             <span class="inline-flex text-green-500 align-middle" title="<%= t("circuit.beginner_friendly") %>">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </span>
             .
+            <br>
+            <%= t('views.articles.beginners_guide.choose_problems.circuit_p6_html') %>
           </p>
 
+          <h2>
+            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level') %>
+          </h2>
           
+          <p>
+            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_p1_html', path: app_path) %>
+          </p>
+
+          <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
+            <div class="flex justify-center">
+              <div class="relative">
+                <%= image_tag "articles/level-filter-#{I18n.locale}.jpg", class: "absolute bg-gray-900 h-full", style: "top:14px; left:18px; height: 652px" %>
+
+                <%= image_tag 'iphone-frame.png', class: "relative mx-auto absolute top-0 left-0", width: "336" %>
+              
+              </div>
+            </div>
+          </div>
+
+          <p>
+            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_p2') %>
+          </p>
+
+          <div class="py-8">
+            <%= warning_box do %>
+            <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_warning') %>
+              <br>
+              <%= t('views.articles.beginners_guide.choose_problems.filter_by_level_warning2') %>
+            <% end %>
+          </div>
 
         </div>
 
