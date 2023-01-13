@@ -31,12 +31,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       
       div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg text-sm sm:text-base"
         ul role="list" class="divide-y divide-gray-200"
-          / li class="bg-gray-50 font-semibold"
-          /   div class="px-4 py-4 sm:px-6"
-          /     div class="grid grid-cols-6 gap-4"
-          /       p class="col-span-2 sm:col-span-3"= t("views.areas.index.area_column")
-          /       p class="col-span-1"= t("views.areas.index.problems_column")
-          /       div class="col-span-3 sm:col-span-2 flex justify-end"= t("views.areas.index.levels_column")
           - @areas_with_count.each do |area, count|
             li
               = link_to area_path(area), class:"block hover:bg-gray-50" do
