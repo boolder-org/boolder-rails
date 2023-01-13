@@ -6,14 +6,14 @@
 / - set_meta_tags canonical: areas_url
 
 
-div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8"
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6"
   div class="px-4 sm:px-0"
     div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
       div= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700"
 
     / h1 class="text-3xl font-bold mt-4" Secteurs par niveau  
 
-  h2 class="pt-6 pb-1 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
+  h2 class="pt-2 pb-1 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
     | Idéal pour débuter
 
   div class="relative"
@@ -49,9 +49,9 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                     p class=""
                       = area.name
                       / span class="ml-1 text-gray-400"= "(#{count})"
-                    div class="flex items-center space-x-1 text-gray-400"
+                    div class="flex items-center space-x-2 text-gray-400"
                       - cache area
-                        = render "shared/area_levels", area: area
+                        span= render "shared/area_levels", area: area
                       svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"
                         path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"
                       

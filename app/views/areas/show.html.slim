@@ -58,7 +58,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         - if @area.poi_routes.any?
           ul class="pt-6"
             - @area.poi_routes.order(:distance).each do |poi_route|
-              li class="flex justify-between text-gray-700 mb-2"
+              li class="flex justify-between text-gray-700 mb-4"
                 = link_to poi_route.poi.google_url, target: "_blank", class:"flex space-x-1 items-center" do
                   span= render "svg/#{poi_route.poi.poi_type}", width: "20"
                   span= poi_route.poi.short_name
