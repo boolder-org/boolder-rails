@@ -105,6 +105,6 @@ en:
         train:
           title: Areas accessible by train + bike
           from_train_station: "From %{train_station} train station"
-          bike_time: "By bike:"
+          bike_time: "Travel time by bike:"
           metas:
             title: Bouldering in Fontainebleau by train + bike

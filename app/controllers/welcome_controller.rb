@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   layout false, only: [:soon]
 
   def index
-    @beginner_areas = Rails.cache.fetch("welcome/popular_areas", expires_in: 12.hours) do
+    @popular_areas = Rails.cache.fetch("welcome/popular_areas", expires_in: 12.hours) do
       Area.published.any_tags(:popular).all.shuffle
     end
   end
