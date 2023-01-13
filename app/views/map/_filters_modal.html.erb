@@ -49,32 +49,24 @@
                 </span>
                 
                 <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
-                <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">1a → 3c</span>
+                <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400"><%= t('views.map.filters.beginner_label') %></span>
               </label>
 
-              <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
-              <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
-                <span class="flex items-center text-sm">
-                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="gradeRadioButton" type="radio" name="gradeRadioButton" value="intermediate" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
-                  <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
-                  <span class="ml-3 font-medium"><%= t('views.map.filters.intermediate') %></span>
-                </span>
-                
-                <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
-                <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">4a → 5c</span>
-              </label>
+              <% (4..7).each do |level| %>
 
-              <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
-              <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
-                <span class="flex items-center text-sm">
-                  <input data-action="mapbox#didSelectFilter" data-mapbox-target="gradeRadioButton" type="radio" name="gradeRadioButton" value="advanced" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
-                  <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
-                  <span class="ml-3 font-medium"><%= t('views.map.filters.advanced') %></span>
-                </span>
-                
-                <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
-                <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400">6a → 8c</span>
-              </label>
+                <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
+                <label class="relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">
+                  <span class="flex items-center text-sm">
+                    <input data-action="mapbox#didSelectFilter" data-mapbox-target="gradeRadioButton" type="radio" name="gradeRadioButton" value="<%= "level#{level}" %>" class="h-4 w-4 text-green-600 border-gray-300 focus:ring-green-500">
+                    <!-- Checked: "text-green-900", Not Checked: "text-gray-900" -->
+                    <span class="ml-3 font-medium"><%= t("views.map.filters.level#{level}") %></span>
+                  </span>
+                  
+                  <!-- Checked: "text-green-700", Not Checked: "text-gray-500" -->
+                  <span class="ml-6 pl-1 text-sm md:ml-0 md:pl-0 text-right text-gray-400"></span>
+                </label>
+
+              <% end %>
 
               <!-- Checked: "bg-green-50 border-green-200 z-20", Not Checked: "border-gray-200" -->
               <label class="rounded-bl-md rounded-br-md relative border p-4 flex cursor-pointer md:pl-4 md:pr-6 grid grid-cols-2 focus:outline-none">

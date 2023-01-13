@@ -500,11 +500,20 @@ export default class extends Controller {
     if(this.gradeRadioButton == "beginner") {
       grades = ["1a","1a+","1b","1b+","1c","1c+","2a","2a+","2b","2b+","2c","2c+","3a","3a+","3b","3b+","3c","3c+",]
     } 
-    else if(this.gradeRadioButton == "intermediate") {
-      grades = ["4a","4a+","4b","4b+","4c","4c+", "5a","5a+","5b","5b+","5c","5c+",]
+    else if(this.gradeRadioButton == "level4") {
+      grades = ["4a","4a+","4b","4b+","4c","4c+"]
+    }
+    else if(this.gradeRadioButton == "level5") {
+      grades = ["5a","5a+","5b","5b+","5c","5c+"]
     } 
-    else if(this.gradeRadioButton == "advanced") {
-      grades = ["6a","6a+","6b","6b+","6c","6c+","7a","7a+","7b","7b+","7c","7c+","8a","8a+","8b","8b+","8c","8c+","9a","9a+","9b","9b+","9c","9c+",]
+    else if(this.gradeRadioButton == "level6") {
+      grades = ["6a","6a+","6b","6b+","6c","6c+"]
+    } 
+    else if(this.gradeRadioButton == "level7") {
+      grades = ["7a","7a+","7b","7b+","7c","7c+"]
+    } 
+    else if(this.gradeRadioButton == "level8") {
+      grades = ["8a","8a+","8b","8b+","8c","8c+"]
     } 
     else if(this.gradeRadioButton == "custom") {
       let gradeMin = this.gradeMinTarget.value

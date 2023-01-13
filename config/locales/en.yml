@@ -75,9 +75,13 @@ en:
       filters:
         label: Filters
         level: Level
-        beginner: Beginner
-        intermediate: Intermediate
-        advanced: Experienced
+        beginner: Level 1 → 3
+        level4: Level 4
+        level5: Level 5
+        level6: Level 6
+        level7: Level 7
+        level8: Level 8
+        beginner_label: Beginner
         custom: Custom
         grade_min: Grade min
         grade_max: Grade max
