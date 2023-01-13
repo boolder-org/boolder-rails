@@ -75,9 +75,13 @@ fr:
       filters:
         label: Filtres
         level: Niveau
-        beginner: Débutant
-        intermediate: Intermédiaire
-        advanced: Expérimenté
+        beginner: Niveau 1 → 3
+        level4: Niveau 4
+        level5: Niveau 5
+        level6: Niveau 6
+        level7: Niveau 7
+        level8: Niveau 8
+        beginner_label: Débutant
         custom: Personnalisé
         grade_min: Cotation min
         grade_max: Cotation max
