@@ -32,6 +32,12 @@ class Area < ApplicationRecord
     @levels ||= 1.upto(8).map{|level| [level, problems.level(level).count >= 20] }.to_h
   end
 
+  def self.beginner_friendly
+    published.any_tags(:beginner_friendly).
+      map {|area| [area, area.problems.count]}.sort{|a,b| b.second <=> a.second }.map(&:first).
+      sort_by{|a| -a.circuits.select(&:beginner_friendly?).length }
+  end
+
   def to_param
     slug
   end

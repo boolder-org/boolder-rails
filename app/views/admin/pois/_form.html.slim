@@ -10,7 +10,7 @@ div class="col-span-6 sm:col-span-2"
 
 div class="col-span-6 sm:col-span-3"
   = form.label :poi_type
-  = form.select :poi_type, [:parking, :train_station]
+  = form.select :poi_type, Poi::TYPE_VALUES
 div class="col-span-6 sm:col-span-3"
 
 div class="col-span-6 sm:col-span-6"

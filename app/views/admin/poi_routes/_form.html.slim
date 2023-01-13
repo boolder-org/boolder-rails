@@ -13,5 +13,5 @@ div class="col-span-6 sm:col-span-4"
 
 div class="col-span-6 sm:col-span-2"
   = form.label :transport
-  = form.select :transport, [:walking, :bike]
+  = form.select :transport, PoiRoute::TRANSPORT_VALUES
 div class="col-span-6 sm:col-span-4"

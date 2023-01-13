@@ -1,5 +1,17 @@
 class AreasController < ApplicationController
   def index
+    @popular_areas = Rails.cache.fetch("areas/index/popular_areas", expires_in: 12.hours) do
+      Area.published.any_tags(:popular).all.shuffle
+    end
+
+    @areas_with_count = Area.published.sort_by{|a| I18n.transliterate(a.name) }
+  end
+
+  def levels
+    @beginner_areas = Rails.cache.fetch("areas/levels/beginner_areas", expires_in: 12.hours) do
+      Area.beginner_friendly
+    end
+
     @areas_with_count = Area.published.map {|area| [area, area.problems.count]}.sort{|a,b| b.second <=> a.second }
   end
 

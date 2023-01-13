@@ -2,7 +2,17 @@ class PoiRoute < ApplicationRecord
   belongs_to :area
   belongs_to :poi
 
-  # TRANSPORT_VALUES = %w(walking bike)
+  TRANSPORT_VALUES = %w(walking bike)
+
+  validates :transport, inclusion: { in: TRANSPORT_VALUES }
+
+  def bike?
+    transport.to_s == "bike"
+  end
+
+  def walking?
+    transport.to_s == "walking"
+  end
 
   def distance_in_minutes
     if transport.to_s == "bike"
