@@ -77,8 +77,10 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
       div
         h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"
-          = t('views.areas.show.problems')
-          span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.count})"
-        = turbo_frame_tag "problems", src: area_problems_path(@area)
-          div class="px-4 sm:px-0 h-screen"= t("views.areas.show.loading")
+          | Voies populaires
+          / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.count})"
+        ul role="list"
+          - @popular_problems.each do |problem|
+            - cache [problem, I18n.locale, "v2", "show_featured=false"]
+              = render problem, show_featured: false
                 

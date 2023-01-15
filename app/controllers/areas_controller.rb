@@ -19,6 +19,8 @@ class AreasController < ApplicationController
     @area = Area.find_by(slug: params[:slug])
 
     @circuits = @area.main_circuits
+
+    @popular_problems = @area.problems.where(featured: true).order(grade: :desc, popularity: :desc)
   end
 
   def problems
