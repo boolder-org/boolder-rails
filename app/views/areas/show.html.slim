@@ -73,8 +73,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
                 = render circuit, show_area: false
 
       div
-        h2 class="flex items-center space-x-2 text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"
-          span = t("views.areas.show.popular_problems")
+        div class="flex items-center space-x-2 text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"
+          h2 = t("views.areas.show.popular_problems")
           span class="text-red-400"
              = render 'svg/heart', width: 24, height: 24
           / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.count})"
