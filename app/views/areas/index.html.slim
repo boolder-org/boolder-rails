@@ -34,14 +34,16 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8"
   h2 class="pt-6 pb-1 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
     = t("views.areas.index.popular")
 
-  div class="relative"
-    div class="flex flex-nowrap overflow-x-auto py-2 space-x-2 px-4 sm:px-0"
-      - @popular_areas.each do |area|
-        = link_to area_path(area) do
-          = render 'shared/area_card', area: area
-          
-      div class="pr-16" &nbsp;
-    div class="inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16"
+    div class="col-span-1"
+      div class="relative"
+        div class="flex flex-nowrap overflow-x-auto py-2 space-x-2 px-4 sm:px-0"
+          - @popular_areas.each do |area|
+            = link_to area_path(area) do
+              = render 'shared/area_card', area: area
+              
+          div class="pr-16" &nbsp;
+        div class="hidden lg:block inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
   div class="lg:grid lg:grid-cols-2 lg:gap-16 mb-4"
