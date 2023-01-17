@@ -148,6 +148,10 @@ en:
         see_map: See map
         see_parking: See parking
         levels: "Levels:"
+        problems_count: "%{count} problems"
+        popular_problems: Popular problems
+        all_problems: See all problems (%{count})
+        access: Access
         problems: Problems
         loading: Loading...
         metas:

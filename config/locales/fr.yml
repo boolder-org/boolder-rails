@@ -148,6 +148,10 @@ fr:
         see_map: Voir la carte
         see_parking: Voir le parking
         levels: "Niveaux :"
+        problems_count: "%{count} voies"
+        popular_problems: Voies populaires
+        all_problems: Voir toutes les voies (%{count})
+        access: Accès
         problems: Voies
         loading: Chargement...
         metas:
