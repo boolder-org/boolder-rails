@@ -153,6 +153,7 @@ fr:
         all_problems: Voir toutes les voies (%{count})
         access: Accès
         problems: Voies
+        problems_in: Voies à %{area}
         loading: Chargement...
         metas:
           title: "%{area}, Fontainebleau"

@@ -153,6 +153,7 @@ en:
         all_problems: See all problems (%{count})
         access: Access
         problems: Problems
+        problems_in: Problems in %{area}
         loading: Loading...
         metas:
           title: "%{area}, Fontainebleau"
