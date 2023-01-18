@@ -48,7 +48,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         - if @area.tags.any? 
           div class="pt-4 pb-2 flex flex-wrap"
             - @area.tags.each do |tag|
-              span class="mt-2 mr-2 px-2.5 py-0.5 rounded-full border border-gray-700 text-gray-700 bg-white font-light text-sm"
+              span class="mt-2 mr-2 px-2.5 py-0.5 rounded-full border border-gray-700 text-gray-700 bg-gray-50 font-light text-sm"
                 = t("area.tags.#{tag}")
 
         - if I18n.locale == :fr && @area.description_fr.present? || I18n.locale == :en && @area.description_en.present?
