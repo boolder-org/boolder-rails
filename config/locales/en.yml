@@ -51,7 +51,6 @@ en:
       read_guide: Read the beginner's guide
       popular_areas: Popular areas
       all_areas: See all areas
-      announcement_text: We are looking for an Android developer
       promoted:
         app:
           title: Discover the Boolder app
@@ -95,6 +94,7 @@ en:
     app_landing:
       title: Boolder on your phone
       subtitle: "The perfect guide to enjoy bouldering in Fontainebleau"
+      android_announcement: We are looking for an Android developer
       selling_points:
         map:
           title: Interactive map and geolocation

@@ -51,7 +51,6 @@ fr:
       read_guide: Lire le guide du débutant
       popular_areas: Secteurs populaires
       all_areas: Voir tous les secteurs
-      announcement_text: Nous recherchons un·e développeur·se Android
       promoted:
         app:
           title: Découvrez l'appli Boolder
@@ -95,6 +94,7 @@ fr:
     app_landing:
       title: Boolder, le topo 2.0 dans votre poche
       subtitle: "La meilleure façon de découvrir l'escalade de bloc à Fontainebleau"
+      android_announcement: Nous recherchons un·e développeur·se Android
       selling_points:
         map:
           title: Carte et géolocalisation
