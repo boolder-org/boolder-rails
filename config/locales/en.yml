@@ -183,6 +183,8 @@ en:
         problems: Problems
         problems_in: Problems in %{area}
         loading: Loading...
+        levels_chart:
+          title: Number of problems by level
         metas:
           title: "%{area}, Fontainebleau"
           description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."

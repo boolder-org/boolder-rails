@@ -183,6 +183,8 @@ fr:
         problems: Voies
         problems_in: Voies à %{area}
         loading: Chargement...
+        levels_chart:
+          title: Nombre de voies par niveau
         metas:
           title: "%{area}, Fontainebleau"
           description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."
