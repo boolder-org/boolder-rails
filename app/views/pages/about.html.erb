@@ -3,20 +3,20 @@
 <div class="bg-warm-gray-50">
   <div class="py-8 lg:py-16">
     <div class="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">À propos de Boolder</h1>
+      <h1 class="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl"><%= t("views.about.title") %></h1>
     </div>
   </div>
 
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        Le projet
+        <%= t("views.about.project.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Boolder est un projet à but non lucratif, géré par des bénévoles.
+        <%= t("views.about.project.p1") %>
       </p>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Notre but est de faciliter la découverte de l’escalade de bloc à Fontainebleau de façon ludique et dans le respect de la forêt.
+        <%= t("views.about.project.p2") %>
       </p>
 
       <!-- <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -71,10 +71,10 @@
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        Contact
+        <%= t("views.about.contact.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Pour toute question, vous pouvez nous contacter à l'adresse <%= link_to "hello@boolder.com", "mailto:hello@boolder.com", class: "font-medium underline text-green-600" %>.
+        <%= t("views.about.contact.p1") %> <%= link_to "hello@boolder.com", "mailto:hello@boolder.com", class: "font-medium underline text-green-600" %>.
       </p>
     </div>
   </section>
@@ -82,10 +82,10 @@
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        Coup de pouce
+        <%= t("views.about.help.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Le meilleur moyen de nous aider est de nous laisser un avis 5 étoiles sur l'<%= link_to "appli", app_path, class: "font-medium underline text-green-600" %> et d'en parler autour de vous. Merci pour votre aide !
+        <%= t("views.about.help.p1_html", link: link_to(t("views.about.help.app"), app_path, class: "font-medium underline text-green-600")) %>
       </p>
     </div>
   </section>
@@ -93,13 +93,13 @@
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        Open data + open source
+        <%= t("views.about.open_source.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Le code des applis ainsi que les données sont disponibles sur <%= link_to "Github", "https://github.com/boolder-org", class: "font-medium underline text-green-600" %>.
+        <%= t("views.about.open_source.p1_html", link: link_to("Github", "https://github.com/boolder-org", class: "font-medium underline text-green-600")) %>
       </p>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Nous recherchons des gens passionnés par la grimpe et par le code pour nous aider à améliorer Boolder de façon communautaire.
+        <%= t("views.about.open_source.p2") %>
       </p>
     </div>
   </section>
@@ -109,8 +109,10 @@
   <div class="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8">
     <div class="rounded-3xl bg-gradient-to-l from-green-800 to-green-700 py-10 px-6 sm:px-12 lg:flex lg:items-center max-w-3xl">
       <div class="lg:w-0 lg:flex-1">
-        <h2 class="text-3xl font-bold tracking-tight text-white">Vous êtes développeur·se Android ?</h2>
-        <p class="mt-4 text-lg text-green-100">Nous manquons actuellement d'expertise pour notre <%= link_to "appli Android", "https://github.com/boolder-org/boolder-android", class: "font-medium underline text-green-200" %>. Contactez-nous si vous souhaitez contribuer, nous serons ravis de discuter ! </p>
+        <h2 class="text-3xl font-bold tracking-tight text-white"><%= t("views.about.android.title") %></h2>
+        <p class="mt-4 text-lg text-green-100">
+          <%= t("views.about.android.p1_html", link: link_to(t("views.about.help.android.android_app"), "https://github.com/boolder-org/boolder-android", class: "font-medium underline text-green-200")) %>
+        </p>
       </div>
     </div>
   </div>
@@ -120,10 +122,10 @@
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        Confidentialité
+        <%= t("views.about.privacy.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-         Vous pouvez consulter notre <%= link_to "politique de confidentialité", privacy_path, class: "font-medium underline text-green-600" %>.
+        <%= t("views.about.privacy.p1_html", link: link_to(t("views.about.privacy.policy"), privacy_path, class: "font-medium underline text-green-600")) %>
       </p>
     </div>
   </section>
