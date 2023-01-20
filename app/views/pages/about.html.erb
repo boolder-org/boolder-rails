@@ -2,8 +2,8 @@
 
 <div class="bg-warm-gray-50">
   <div class="py-8 lg:py-16">
-    <div class="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl"><%= t("views.about.title") %></h1>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h1 class="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl"><%= t("views.about.title") %></h1>
     </div>
   </div>
 
@@ -105,13 +105,13 @@
   </section>
 </div>
 
-<div class="pt-4 pb-8">
+<div class="pt-4 pb-8" id="android">
   <div class="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8">
     <div class="rounded-3xl bg-gradient-to-l from-green-800 to-green-700 py-10 px-6 sm:px-12 lg:flex lg:items-center max-w-3xl">
       <div class="lg:w-0 lg:flex-1">
         <h2 class="text-3xl font-bold tracking-tight text-white"><%= t("views.about.android.title") %></h2>
         <p class="mt-4 text-lg text-green-100">
-          <%= t("views.about.android.p1_html", link: link_to(t("views.about.help.android.android_app"), "https://github.com/boolder-org/boolder-android", class: "font-medium underline text-green-200")) %>
+          <%= t("views.about.android.p1_html", link: link_to(t("views.about.android.android_app"), "https://github.com/boolder-org/boolder-android", class: "font-medium underline text-green-200")) %>
         </p>
       </div>
     </div>
