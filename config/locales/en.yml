@@ -210,6 +210,10 @@ en:
       cancel: Cancel
       submit: Search
     layout:
+      open_source_announcement:
+        text_short: Boolder is now open source!
+        text_long: Boolder is now open source! We are looking for an Android developer to join the team.
+        learn_more: Learn more
       nav:
         open_menu: Open main menu
         discover: Discover
