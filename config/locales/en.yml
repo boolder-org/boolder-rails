@@ -115,7 +115,7 @@ en:
       metas:
         title: Privacy
     about:
-      title: About Boolder
+      title_prefix: About
       project:
         title: The Project
         p1: Boolder is a non-profit project, managed by volunteers.
@@ -124,7 +124,7 @@ en:
         title: Contact
         p1: For any questions, you can contact us at 
       help:
-        title: Give a hand
+        title: How to help us?
         p1_html: The best way to help us is to leave a 5-star review on the %{link} and tell your friends about it. Thank you for your help!
         app: app
       open_source:
@@ -140,7 +140,7 @@ en:
         p1_html: You can consult our %{link}.
         policy: Privacy policy
       metas:
-        title: About
+        title: About Boolder
     areas:
       index:
         title: Fontainebleau

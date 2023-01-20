@@ -1,12 +1,32 @@
 <% set_meta_tags title: t("views.about.metas.title") %>
 
-<div class="bg-warm-gray-50">
-  <div class="py-8 lg:py-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <h1 class="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl"><%= t("views.about.title") %></h1>
+<% set_meta_tags og: { type: "website", image: image_url("hero-about.jpg") } %>
+
+<main class="lg:relative bg-white">
+  <div class="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <div class="px-6 sm:px-8 lg:w-1/2 xl:pr-16">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+        <span class="block xl:inline"><%= t("views.about.title_prefix") %></span>
+        <span class="block text-green-600 xl:inline">Boolder</span>
+      </h1>
+      <!-- <p class="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+      <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+        <div class="rounded-md shadow">
+          <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 md:py-4 md:px-10 md:text-lg">Get started</a>
+        </div>
+        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+          <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-green-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg">Live demo</a>
+        </div>
+      </div> -->
     </div>
   </div>
+  <div class="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+    <img class="absolute inset-0 h-full w-full object-cover" src="<%= image_path "hero-about" %>" alt="">
+  </div>
+</main>
 
+<div class="bg-warm-gray-50 mt-4 sm:mt-16">
+  
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
@@ -71,17 +91,6 @@
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        <%= t("views.about.help.title") %>
-      </h2>
-      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.help.p1_html", link: link_to(t("views.about.help.app"), app_path, class: "font-medium underline text-green-600")) %>
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
-      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
         <%= t("views.about.open_source.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
@@ -116,6 +125,17 @@
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
         <%= t("views.about.contact.p1") %> <%= link_to "hello@boolder.com", "mailto:hello@boolder.com", class: "font-medium underline text-green-600" %>.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+        <%= t("views.about.help.title") %>
+      </h2>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        <%= t("views.about.help.p1_html", link: link_to(t("views.about.help.app"), app_path, class: "font-medium underline text-green-600")) %>
       </p>
     </div>
   </section>
