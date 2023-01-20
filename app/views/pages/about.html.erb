@@ -1,0 +1,120 @@
+<% set_meta_tags title: t("views.about.metas.title") %>
+
+<div class="bg-warm-gray-50">
+  <div class="py-8 lg:py-16">
+    <div class="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">À propos de Boolder</h1>
+    </div>
+  </div>
+
+  <section>
+    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+        Le projet
+      </h2>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        Boolder est un projet à but non lucratif, géré par des bénévoles.
+      </p>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        Notre but est de faciliter la découverte de l’escalade de bloc à Fontainebleau de façon ludique et dans le respect de la forêt.
+      </p>
+
+      <!-- <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        
+          <div>
+            <h3 class="text-lg font-medium text-warm-gray-900">Los Angeles</h3>
+            <p class="mt-2 text-base text-warm-gray-500">
+              
+                <span class="block">4556 Brendan Ferry</span>
+              
+                <span class="block">Los Angeles, CA 90210</span>
+              
+            </p>
+          </div>
+        
+          <div>
+            <h3 class="text-lg font-medium text-warm-gray-900">New York</h3>
+            <p class="mt-2 text-base text-warm-gray-500">
+              
+                <span class="block">886 Walter Streets</span>
+              
+                <span class="block">New York, NY 12345</span>
+              
+            </p>
+          </div>
+        
+          <div>
+            <h3 class="text-lg font-medium text-warm-gray-900">Toronto</h3>
+            <p class="mt-2 text-base text-warm-gray-500">
+              
+                <span class="block">7363 Cynthia Pass</span>
+              
+                <span class="block">Toronto, ON N3Y 4H8</span>
+              
+            </p>
+          </div>
+        
+          <div>
+            <h3 class="text-lg font-medium text-warm-gray-900">London</h3>
+            <p class="mt-2 text-base text-warm-gray-500">
+              
+                <span class="block">114 Cobble Lane</span>
+              
+                <span class="block">London N1 2EF</span>
+              
+            </p>
+          </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section>
+    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+        Contact
+      </h2>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        Pour toute question, vous pouvez nous contacter à l'adresse <%= link_to "hello@boolder.com", "mailto:hello@boolder.com", class: "font-medium underline text-green-600" %>.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+        Open data + open source
+      </h2>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        Le code des applis ainsi que les données sont disponibles sur <%= link_to "Github", "https://github.com/boolder-org", class: "font-medium underline text-green-600" %>.
+      </p>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        Nous recherchons des gens passionnés par la grimpe et par le code pour nous aider à améliorer Boolder de façon communautaire.
+      </p>
+    </div>
+  </section>
+</div>
+
+<div class="relative pt-4 pb-8">
+  <div class="absolute left-0 right-0 h-1/2 bg-warm-gray-50" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8">
+    <div class="rounded-3xl bg-gradient-to-l from-green-800 to-green-700 py-10 px-6 sm:px-12 lg:flex lg:items-center">
+      <div class="lg:w-0 lg:flex-1">
+        <h2 class="text-3xl font-bold tracking-tight text-white">Vous êtes développeur·se Android ?</h2>
+        <p class="mt-4 text-lg text-green-100">Nous manquons actuellement d'expertise pour notre <%= link_to "appli Android", "https://github.com/boolder-org/boolder-android", class: "font-medium underline text-green-200" %>. Contactez-nous si vous souhaitez contribuer, nous serons ravis de discuter ! </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-warm-gray-50">
+  <section>
+    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+        Politique de confidentialité
+      </h2>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+         Vous pouvez consulter notre <%= link_to "Confidentialité", privacy_path, class: "font-medium underline text-green-600" %>.
+      </p>
+    </div>
+  </section>
+</div>

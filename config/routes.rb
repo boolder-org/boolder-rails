@@ -59,6 +59,7 @@ Rails.application.routes.draw do
     get 'map(/:slug)', to: 'map#index', as: :map
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
+    get 'about', to: 'pages#about', as: :about
 
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
 

@@ -113,6 +113,9 @@ en:
     privacy:
       metas:
         title: Privacy
+    about:
+      metas:
+        title: About
     areas:
       index:
         title: Fontainebleau
@@ -190,6 +193,7 @@ en:
       footer:
         contact: Contact
         privacy: Privacy Policy
+        about: About
     pagination:
       first: "First"
       last: "Last"

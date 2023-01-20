@@ -113,6 +113,9 @@ fr:
     privacy:
       metas:
         title: Confidentialité
+    about:
+      metas:
+        title: À propos
     areas:
       index:
         title: Fontainebleau
@@ -190,6 +193,7 @@ fr:
       footer:
         contact: Contact
         privacy: Confidentialité
+        about: À propos
     pagination:
       first: "Début"
       last: "Fin"
