@@ -33,9 +33,12 @@
           </div>
 
           <a class="lg:max-w-lg mt-4 lg:mt-8 text-sm leading-5 font-medium text-green-600 dark:text-green-400 bg-green-400/10 rounded-full py-1 px-3 inline-flex items-center hover:bg-green-400/20" href="<%= about_path(anchor: "android") %>">
-            <span class="ml-2">
-              <strong class="font-semibold"><%= t("views.homepage.announcement_help") %></strong>
-              <%= t("views.homepage.announcement_text") %>
+            <span class="ml-2 flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+
+              <span><%= t("views.homepage.announcement_text") %></span>
             </span>
             <svg width="3" height="6" class="ml-3 overflow-visible text-green-300 dark:text-green-400" aria-hidden="true">
               <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
