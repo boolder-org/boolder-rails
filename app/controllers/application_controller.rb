@@ -21,6 +21,7 @@ class ApplicationController < ActionController::Base
     }
   end
 
+  # TODO: remove after february 2023
   def dismiss_banner
     if params[:dismiss_banner].present?
       cookies[:open_source_launch] = { value: 'dismissed', expires: 1.month.from_now }
