@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
+ActiveRecord::Schema[6.1].define(version: 2023_01_12_124744) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
@@ -20,7 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
     t.string "record_type", null: false
     t.bigint "record_id", null: false
     t.bigint "blob_id", null: false
-    t.datetime "created_at", precision: nil, null: false
+    t.datetime "created_at", null: false
     t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
   end
@@ -31,8 +32,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
     t.string "content_type"
     t.text "metadata"
     t.bigint "byte_size", null: false
-    t.string "checksum"
-    t.datetime "created_at", precision: nil, null: false
+    t.string "checksum", null: false
+    t.datetime "created_at", null: false
     t.string "service_name", null: false
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
@@ -45,8 +46,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
 
   create_table "areas", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.boolean "published", default: false, null: false
     t.string "slug"
     t.string "tags", default: [], null: false, array: true
@@ -62,8 +63,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
 
   create_table "boulders", force: :cascade do |t|
     t.geography "polygon", limit: {:srid=>4326, :type=>"st_polygon", :geographic=>true}
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.bigint "area_id"
     t.boolean "ignore_for_area_hull", default: false, null: false
     t.index ["area_id"], name: "index_boulders_on_area_id"
@@ -71,8 +72,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
 
   create_table "circuits", force: :cascade do |t|
     t.string "color"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.integer "risk", limit: 2
   end
 
@@ -80,8 +81,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
     t.json "coordinates"
     t.bigint "problem_id"
     t.bigint "topo_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["problem_id"], name: "index_lines_on_problem_id"
     t.index ["topo_id"], name: "index_lines_on_topo_id"
   end
@@ -91,8 +92,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
     t.string "transport", null: false
     t.bigint "area_id"
     t.bigint "poi_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["area_id"], name: "index_poi_routes_on_area_id"
     t.index ["poi_id"], name: "index_poi_routes_on_poi_id"
   end
@@ -101,16 +102,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
     t.string "name"
     t.string "short_name"
     t.string "google_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "poi_type", default: "parking", null: false
   end
 
   create_table "problems", force: :cascade do |t|
     t.string "name"
     t.string "grade"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.bigint "circuit_id"
     t.string "circuit_number"
@@ -135,8 +136,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_22_213614) do
   end
 
   create_table "topos", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.boolean "published", default: true, null: false
     t.json "metadata"
   end
