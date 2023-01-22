@@ -35,6 +35,6 @@
     "postcss-custom-properties": "^9.1.1"
   },
   "scripts": {
-    "heroku-prebuild": "npm install --dev",
+    "heroku-prebuild": "npm install --dev"
   }
 }
