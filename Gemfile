@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.2.0'
 
 gem 'rails', '~> 6.1.5'
-gem 'bootsnap', '~> 1.7.0', require: false
+gem 'bootsnap', '~> 1.15.0', require: false
 
 gem 'puma', '~> 4.3.4'
-gem 'pg', '~> 1.2.3'
+gem 'pg','~> 1.4.5'
 gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', '~> 7.0.1'
 gem 'aws-sdk-s3', '~> 1.88.0'
@@ -40,10 +40,10 @@ gem 'meta-tags', '~> 2.14.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'pry', '~> 0.13.1'
+  gem 'pry', "~> 0.14.2"
 
   # scraping
-  gem 'nokogiri', '~> 1.11.7'
+  gem 'nokogiri' #, '~> 1.11.7'
   gem 'httparty', '~> 0.20.0'
 end
 
