@@ -276,16 +276,7 @@ export default class extends Controller {
     if(this.hasBoundsValue) { 
       let bounds = this.boundsValue
 
-      this.map.fitBounds(
-        [
-          [bounds.southWestLon, bounds.southWestLat], // southwestern corner of the bounds
-          [bounds.northEastLon, bounds.northEastLat] // northeastern corner of the bounds
-        ], 
-        {
-          animate: true,
-          padding: 50 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
-        }
-      );
+      this.flyToBounds([[bounds.southWestLon, bounds.southWestLat], [bounds.northEastLon, bounds.northEastLat]])
     }
 
     if(this.hasProblemValue) { 
@@ -294,11 +285,7 @@ export default class extends Controller {
       this.map.flyTo({
         center: [problem.lon, problem.lat],
         zoom: 20,
-        speed: 4,
-        curve: 1,
-        easing(t) {
-          return t;
-        }
+        speed: 2
       });
 
       // FIXME: make it DRY
@@ -391,15 +378,7 @@ export default class extends Controller {
     this.map.on('click', 'areas', (e) => {
       if(this.map.getZoom() < 15) {
         let props = e.features[0].properties
-        this.map.fitBounds([
-            [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
-            [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
-          ], 
-          {
-            // document.getElementById('map').clientWidth
-            padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
-          }
-        );
+        this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
       }
     });
 
@@ -418,15 +397,8 @@ export default class extends Controller {
     this.map.on('click', 'areas-hulls', (e) => {
       if(this.map.getZoom() < 15) {
         let props = e.features[0].properties
-        console.log(props)
-        this.map.fitBounds([
-            [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
-            [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
-          ], 
-          {
-            padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
-          }
-        );
+        // console.log(props)
+        this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
       }
     });
 
@@ -445,16 +417,25 @@ export default class extends Controller {
     this.map.on('click', 'clusters', (e) => {
       if(this.map.getZoom() <= 12) {
         let props = e.features[0].properties
-        this.map.fitBounds([
-            [props.southWestLon, props.southWestLat], // southwestern corner of the bounds
-            [props.northEastLon, props.northEastLat] // northeastern corner of the bounds
-          ], 
-          {
-            padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
-          }
-        );
+        this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
       }
     });
+  }
+
+  flyToBounds(bounds) {
+
+    var cameraOptions = this.map.cameraForBounds(
+      bounds
+      , 
+      {
+        padding: {top: 20, bottom:100, left: 20, right: 20}
+      }
+    );
+
+    cameraOptions.zoom = Math.max(15, cameraOptions.zoom)
+    cameraOptions.speed = 2
+
+    this.map.flyTo(cameraOptions)
   }
 
   // https://github.com/mapbox/mapbox-gl-js/blob/20e8fd2b60fb751f5846d3be2d46dfa76d940324/src/ui/default_locale.js
@@ -575,11 +556,7 @@ export default class extends Controller {
     this.map.flyTo({
       center: [event.detail.lon, event.detail.lat],
       zoom: 20,
-      speed: 4,
-      curve: 1,
-      easing(t) {
-        return t;
-      }
+      speed: 2
     });
 
     // FIXME: make it DRY
@@ -593,13 +570,6 @@ export default class extends Controller {
   }
 
   gotoarea(event) {
-    this.map.fitBounds([
-        [event.detail.south_west_lon, event.detail.south_west_lat], // southwestern corner of the bounds
-        [event.detail.north_east_lon, event.detail.north_east_lat] // northeastern corner of the bounds
-      ], 
-      {
-        padding: 5 // careful: may trigger an error on mobile devices "Map cannot fit within canvas with the given bounds, padding, and/or offset."
-      }
-    );
+    this.flyToBounds([[event.detail.south_west_lon, event.detail.south_west_lat], [event.detail.north_east_lon, event.detail.north_east_lat]])
   }
 }
