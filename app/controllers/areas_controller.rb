@@ -16,7 +16,7 @@ class AreasController < ApplicationController
   end
 
   def show
-    @area = Area.find_by(slug: params[:slug])
+    @area = Area.find_by!(slug: params[:slug])
 
     @circuits = @area.main_circuits
 
