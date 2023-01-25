@@ -48,6 +48,8 @@ Rails.application.routes.draw do
 
       get "/levels", to: "areas#levels", as: :areas_levels
 
+      get "/areas", to: redirect("/%{locale}/fontainebleau"), as: :areas_legacy # keep until ??
+
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023
       get ":slug/problems", to: "areas#problems", as: :area_problems
