@@ -54,6 +54,9 @@ namespace :mapbox do
   task problems: :environment do
     puts "exporting problems"
 
+    raise "please specify a value for include_boulders (true or false). Reminder: don't include boulders when exporting to boolder-data" unless ENV["include_boulders"].present?
+    include_boulders = ENV["include_boulders"] == "true"
+
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     problem_features = Problem.all.joins(:area).where(area: {published: true}).map do |problem|
@@ -78,8 +81,14 @@ namespace :mapbox do
       factory.feature(boulder.polygon, nil, { })
     end
 
+    if include_boulders
+      features = problem_features + boulder_features
+    else
+      features = problem_features
+    end
+
     feature_collection = factory.feature_collection(
-      problem_features + boulder_features
+      features
     )
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
