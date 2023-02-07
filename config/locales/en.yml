@@ -123,7 +123,7 @@ en:
       project:
         title: The Project
         p1: Boolder is a non-profit project, managed by volunteers.
-        p2: Our goal is to make discovering bouldering in Fontainebleau fun and respectful of the forest.
+        p2_html: Our goal is to make discovering bouldering in Fontainebleau <strong>fun</strong> and <strong>respectful of the forest</strong>.
       contact:
         title: Contact
         p1: For any questions, you can contact us at 

@@ -26,75 +26,34 @@
 </main>
 
 <div class="bg-warm-gray-50 mt-4 sm:mt-16">
-  
-  <section>
+
+<section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        <%= t("views.about.project.title") %>
+        <%= t("views.about.history.title") %>
       </h2>
+      
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.project.p1") %>
+        <%= t("views.about.history.p1") %>
       </p>
+      
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.project.p2") %>
+        <%= t("views.about.history.p2") %>
       </p>
 
-      <!-- <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-        
-          <div>
-            <h3 class="text-lg font-medium text-warm-gray-900">Los Angeles</h3>
-            <p class="mt-2 text-base text-warm-gray-500">
-              
-                <span class="block">4556 Brendan Ferry</span>
-              
-                <span class="block">Los Angeles, CA 90210</span>
-              
-            </p>
-          </div>
-        
-          <div>
-            <h3 class="text-lg font-medium text-warm-gray-900">New York</h3>
-            <p class="mt-2 text-base text-warm-gray-500">
-              
-                <span class="block">886 Walter Streets</span>
-              
-                <span class="block">New York, NY 12345</span>
-              
-            </p>
-          </div>
-        
-          <div>
-            <h3 class="text-lg font-medium text-warm-gray-900">Toronto</h3>
-            <p class="mt-2 text-base text-warm-gray-500">
-              
-                <span class="block">7363 Cynthia Pass</span>
-              
-                <span class="block">Toronto, ON N3Y 4H8</span>
-              
-            </p>
-          </div>
-        
-          <div>
-            <h3 class="text-lg font-medium text-warm-gray-900">London</h3>
-            <p class="mt-2 text-base text-warm-gray-500">
-              
-                <span class="block">114 Cobble Lane</span>
-              
-                <span class="block">London N1 2EF</span>
-              
-            </p>
-          </div>
-      </div> -->
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        <%= t("views.about.history.p3") %>
+      </p>
+
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        <%= t("views.about.history.p4") %>
+      </p>
+
     </div>
   </section>
 
-
   <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
-    <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        L'équipe
-      </h2>
-    <div class="mt-12 space-y-12 text-center">
-      
+    <div class="mt-4 space-y-12 text-center">
       <ul role="list" class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3">
         <li>
           <div class="space-y-6">
@@ -151,6 +110,26 @@
     </div>
   </div>
 
+ <section>
+    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+        <%= t("views.about.project.title") %>
+      </h2>
+      
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        <%= t("views.about.project.p1") %>
+      </p>
+      
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        <%= t("views.about.project.p2_html") %>
+      </p>
+
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        <%= t("views.about.project.p3_html", link: link_to(t("views.about.project.contact"), "#contact", class: "font-medium underline text-green-600")) %>
+      </p>
+
+    </div>
+  </section>
 
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
@@ -182,7 +161,7 @@
 
 <div class="bg-warm-gray-50">
 
-  <section>
+  <section id="contact">
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
         <%= t("views.about.contact.title") %>
