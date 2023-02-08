@@ -136,7 +136,10 @@ en:
         title: Contact
         p1: For any questions, you can contact us at 
       support:
-        p1_html: The best way to help us is to leave a review on the %{link} and tell your friends about it. Thank you for your help!
+        title: Support
+        p1_html: We support %{link_bleau}, without whom the Boolder project would not be possible. You can support them on their page %{link_bleau_sponsoring}.
+        p2_html: We also support the association %{link_cosiroc} and the website %{link_topo_bleau}.
+        p3_html: The best way to help us is to leave a review on the %{link} and tell your friends about it. Thank you for your help!
         app: app
       open_source:
         title: Open data + open source

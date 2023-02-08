@@ -175,17 +175,17 @@
   <section id="support">
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        Soutien
+        <%= t("views.about.support.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Nous soutenons <%= link_to "Bleau.info", "https://bleau.info", class: "font-medium underline text-green-600" %>, sans qui le projet Boolder ne serait pas possible. Vous pouvez les soutenir sur leur page <%= link_to "sponsoring", "https://bleau.info/sponsoring", class: "font-medium underline text-green-600" %>.
+        <%= t("views.about.support.p1_html", link_bleau: link_to("Bleau.info", "https://bleau.info", class: "font-medium underline text-green-600"), link_bleau_sponsoring: link_to("sponsoring", "https://bleau.info/sponsoring", class: "font-medium underline text-green-600")) %>
       </p>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        Nous soutenons également l'association <%= link_to "Cosiroc", "http://cosiroc.fr", class: "font-medium underline text-green-600" %> et le site <%= link_to "Topo Bleau", "https://www.topo-bleau.fr", class: "font-medium underline text-green-600" %>.
+        <%= t("views.about.support.p2_html", link_cosiroc: link_to("Cosiroc", "http://cosiroc.fr", class: "font-medium underline text-green-600"), link_topo_bleau: link_to("Topo Bleau", "https://www.topo-bleau.fr", class: "font-medium underline text-green-600")) %>
       </p>
 
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.support.p1_html", link: link_to(t("views.about.support.app"), app_path, class: "font-medium underline text-green-600")) %>
+        <%= t("views.about.support.p3_html", link: link_to(t("views.about.support.app"), app_path, class: "font-medium underline text-green-600")) %>
       </p>
     </div>
   </section>
