@@ -137,7 +137,7 @@
         <%= t("views.about.open_source.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.open_source.p1_html", link: link_to("Github", "https://github.com/boolder-org", class: "font-medium underline text-green-600")) %>
+        <%= t("views.about.open_source.p1_html", link: link_to("GitHub", "https://github.com/boolder-org", class: "font-medium underline text-green-600")) %>
       </p>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
         <%= t("views.about.open_source.p2") %>
@@ -172,25 +172,57 @@
     </div>
   </section>
 
-  <section>
+  <section id="support">
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        <%= t("views.about.help.title") %>
+        Soutien
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.help.p1_html", link: link_to(t("views.about.help.app"), app_path, class: "font-medium underline text-green-600")) %>
+        Nous soutenons <%= link_to "Bleau.info", "https://bleau.info", class: "font-medium underline text-green-600" %>, sans qui le projet Boolder ne serait pas possible. Vous pouvez les soutenir sur leur page <%= link_to "sponsoring", "https://bleau.info/sponsoring", class: "font-medium underline text-green-600" %>.
+      </p>
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        Nous soutenons également l'association <%= link_to "Cosiroc", "http://cosiroc.fr", class: "font-medium underline text-green-600" %> et le site <%= link_to "Topo Bleau", "https://www.topo-bleau.fr", class: "font-medium underline text-green-600" %>.
+      </p>
+
+      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
+        <%= t("views.about.support.p1_html", link: link_to(t("views.about.support.app"), app_path, class: "font-medium underline text-green-600")) %>
       </p>
     </div>
   </section>
-  
-  <section>
-    <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
-      <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        <%= t("views.about.privacy.title") %>
+
+  <!-- This example requires Tailwind CSS v3.0+ -->
+  <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
+    <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+        <%= t("views.about.faq.title") %>
       </h2>
-      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.privacy.p1_html", link: link_to(t("views.about.privacy.policy"), privacy_path, class: "font-medium underline text-green-600")) %>
-      </p>
-    </div>
-  </section>
+    <dl class="space-y-10 my-8">
+          <div>
+            <dt class="text-base font-semibold leading-7 text-gray-900">D'où viennent les données ?</dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Les photos et données géographiques (GPS) ont été récoltées par l'équipe Boolder. 
+              <br>
+              Les noms de voies et cotations viennent essentiellement de <%= link_to "bleau.info", "https://bleau.info", class: "font-medium underline text-green-600" %> et <%= link_to "Cosiroc", "http://cosiroc.fr", class: "font-medium underline text-green-600" %>.
+              <br>
+              Certains dessins de blocs (en vue de dessus) s'inspirent de topos existants. Nous travaillons à les remplacer par des dessins originaux.
+            </dd>
+          </div>
+
+          <div>
+            <dt class="text-base font-semibold leading-7 text-gray-900">Pourquoi l'appli est-elle gratuite ?</dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Car nous voulons que le plus grand nombre puisse en profiter ! 
+              <br>
+              Nicolas a profité d'une année sabbatique pour cartographier de nombreux secteurs et coder la première version de l'application. Grâce à cela, très peu de frais ont été engagés.
+            </dd>
+          </div>
+
+          <div>
+            <dt class="text-base font-semibold leading-7 text-gray-900">Quelles données personnelles récoltez-vous ?</dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              <%= t("views.about.faq.privacy_html", link: link_to(t("views.about.faq.policy"), privacy_path, class: "font-medium underline text-green-600")) %>
+            </dd>
+          </div>
+        </dl>
+  </div>
+
 </div>

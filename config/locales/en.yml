@@ -135,9 +135,8 @@ en:
       contact:
         title: Contact
         p1: For any questions, you can contact us at 
-      help:
-        title: How to help us?
-        p1_html: The best way to help us is to leave a 5-star review on the %{link} and tell your friends about it. Thank you for your help!
+      support:
+        p1_html: The best way to help us is to leave a review on the %{link} and tell your friends about it. Thank you for your help!
         app: app
       open_source:
         title: Open data + open source
@@ -147,9 +146,9 @@ en:
         title: Are you an Android developer?
         p1_html: We currently lack expertise for our %{link}. Contact us if you want to contribute, we will be happy to talk!
         android_app: Android app
-      privacy:
-        title: Privacy
-        p1_html: You can consult our %{link}.
+      faq:
+        title: Frequently asked questions
+        privacy_html: You can consult our %{link}.
         policy: Privacy policy
       metas:
         title: About Boolder
