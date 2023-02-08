@@ -151,8 +151,19 @@ en:
         android_app: Android app
       faq:
         title: Frequently asked questions
-        privacy_html: You can consult our %{link}.
-        policy: Privacy policy
+        data:
+          question: Where does the data come from?
+          p1: Photos and geographical data (GPS) were collected by the Boolder team.
+          p2_html: The problem names and grades come mainly from %{link_bleau} and %{link_cosiroc}.
+          p3: Some of the boulder drawings (in top view) are inspired by existing guidebooks. We are working to replace them with original drawings.
+        why_free:
+          question: Why is the app free?
+          p1: Because we want as many people as possible to enjoy it!
+          p2: Nicolas took advantage of a sabbatical year to map many areas and code the first version of the application. Thanks to this, costs remained very low.
+        privacy:
+          question: Do you collect personal data?
+          p1_html: You can consult our %{link}.
+          policy: Privacy policy
       metas:
         title: About Boolder
     areas:

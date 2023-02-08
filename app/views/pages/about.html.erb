@@ -197,29 +197,35 @@
       </h2>
     <dl class="space-y-10 my-8">
           <div>
-            <dt class="text-base font-semibold leading-7 text-gray-900">D'où viennent les données ?</dt>
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <%= t("views.about.faq.data.question") %>
+            </dt>
             <dd class="mt-2 text-base leading-7 text-gray-600">
-              Les photos et données géographiques (GPS) ont été récoltées par l'équipe Boolder. 
+              <%= t("views.about.faq.data.p1") %>
               <br>
-              Les noms de voies et cotations viennent essentiellement de <%= link_to "bleau.info", "https://bleau.info", class: "font-medium underline text-green-600" %> et <%= link_to "Cosiroc", "http://cosiroc.fr", class: "font-medium underline text-green-600" %>.
+              <%= t("views.about.faq.data.p2_html", link_bleau: link_to("bleau.info", "https://bleau.info", class: "font-medium underline text-green-600"), link_cosiroc: link_to("Cosiroc", "http://cosiroc.fr", class: "font-medium underline text-green-600")) %>
               <br>
-              Certains dessins de blocs (en vue de dessus) s'inspirent de topos existants. Nous travaillons à les remplacer par des dessins originaux.
+              <%= t("views.about.faq.data.p3") %>
             </dd>
           </div>
 
           <div>
-            <dt class="text-base font-semibold leading-7 text-gray-900">Pourquoi l'appli est-elle gratuite ?</dt>
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <%= t("views.about.faq.why_free.question") %>
+              </dt>
             <dd class="mt-2 text-base leading-7 text-gray-600">
-              Car nous voulons que le plus grand nombre puisse en profiter ! 
+              <%= t("views.about.faq.why_free.p1") %>
               <br>
-              Nicolas a profité d'une année sabbatique pour cartographier de nombreux secteurs et coder la première version de l'application. Grâce à cela, très peu de frais ont été engagés.
+              <%= t("views.about.faq.why_free.p2") %>
             </dd>
           </div>
 
           <div>
-            <dt class="text-base font-semibold leading-7 text-gray-900">Quelles données personnelles récoltez-vous ?</dt>
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <%= t("views.about.faq.privacy.question") %>
+            </dt>
             <dd class="mt-2 text-base leading-7 text-gray-600">
-              <%= t("views.about.faq.privacy_html", link: link_to(t("views.about.faq.policy"), privacy_path, class: "font-medium underline text-green-600")) %>
+              <%= t("views.about.faq.privacy.p1_html", link: link_to(t("views.about.faq.privacy.policy"), privacy_path, class: "font-medium underline text-green-600")) %>
             </dd>
           </div>
         </dl>

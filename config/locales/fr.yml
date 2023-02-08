@@ -151,8 +151,19 @@ fr:
         android_app: appli Android
       faq:
         title: Questions fréquentes
-        privacy_html: Vous pouvez consulter notre %{link}.
-        policy: politique de confidentialité
+        data:
+          question: D'où viennent les données ?
+          p1: Les photos et données géographiques (GPS) ont été récoltées par l'équipe Boolder.  
+          p2_html: Les noms de voies et cotations viennent essentiellement de %{link_bleau} et %{link_cosiroc}.
+          p3: Certains dessins de blocs (en vue de dessus) s'inspirent de topos existants. Nous travaillons à les remplacer par des dessins originaux.
+        why_free:
+          question: Pourquoi l'appli est-elle gratuite ?
+          p1: Car nous voulons que le plus grand nombre puisse en profiter ! 
+          p2: Nicolas a profité d'une année sabbatique pour cartographier de nombreux secteurs et coder la première version de l'application. Grâce à cela, très peu de frais ont été engagés.
+        privacy:
+          question: Quelles données personnelles récoltez-vous ?
+          p1_html: Vous pouvez consulter notre %{link}.
+          policy: politique de confidentialité
       metas:
         title: À propos de Boolder
     areas:
