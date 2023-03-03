@@ -28,6 +28,7 @@ gem 'rack-cors', '~> 1.1.1'
 gem 'imgix-rails', '~> 4.2.0'
 
 gem 'kaminari', '~> 1.2.1'
+gem 'httparty', '~> 0.20.0'
 
 gem 'rgeo-geojson', '~> 2.1.1'
 
@@ -44,7 +45,6 @@ group :development, :test do
 
   # scraping
   gem 'nokogiri' #, '~> 1.11.7'
-  gem 'httparty', '~> 0.20.0'
 end
 
 group :development do
