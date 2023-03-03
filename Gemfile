@@ -29,6 +29,7 @@ gem 'imgix-rails', '~> 4.2.0'
 
 gem 'kaminari', '~> 1.2.1'
 gem 'httparty', '~> 0.20.0'
+gem 'colorize', '~> 0.8.1'
 
 gem 'rgeo-geojson', '~> 2.1.1'
 
@@ -55,7 +56,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'jwt', '~> 2.2.2'
   gem 'ruby-vips'
-  gem 'colorize', '~> 0.8.1'
   gem 'sqlite3'
 end
 
