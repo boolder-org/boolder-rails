@@ -1,5 +1,3 @@
-require "HTTParty"
-
 namespace :popularity do
   task scrap: :environment do 
     area_id = ENV["area_id"]
