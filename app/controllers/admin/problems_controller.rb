@@ -106,7 +106,7 @@ class Admin::ProblemsController < Admin::BaseController
     problem.save!
 
     flash[:notice] = "Problem updated"
-    redirect_to admin_area_problems_path(anchor: problem.id, area_slug: problem.area.slug, circuit_id: problem.circuit_id || "off_circuit")
+    redirect_to edit_admin_problem_path(problem)
   end
 
   private 
