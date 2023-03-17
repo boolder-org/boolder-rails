@@ -53,7 +53,13 @@
   </section>
 
   <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
-    <div class="mt-4 space-y-12 text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
+      <%= t("views.about.team.title") %>
+    </h2>
+
+    <div class="mt-12 space-y-12 text-center">
+      
+
       <ul role="list" class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3">
         <li>
           <div class="space-y-6">
@@ -61,6 +67,7 @@
             <div class="space-y-2">
               <div class="space-y-1 text-lg font-medium leading-6">
                 <h3>Nicolas</h3>
+                <span class="text-gray-500"><%= t("views.about.team.nico_desc") %></span>
               </div>
               <%# <ul role="list" class="flex justify-center space-x-5">
                 <li>
@@ -90,6 +97,7 @@
             <div class="space-y-2">
               <div class="space-y-1 text-lg font-medium leading-6">
                 <h3>Romain</h3>
+                <span class="text-gray-500"><%= t("views.about.team.romain_desc") %></span>
               </div>
             </div>
           </div>
@@ -101,6 +109,19 @@
             <div class="space-y-2">
               <div class="space-y-1 text-lg font-medium leading-6">
                 <h3>Cyril</h3>
+                <span class="text-gray-500"><%= t("views.about.team.cyril_desc") %></span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="space-y-6">
+          <%= image_tag "team-emile.jpg", class: "mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" %>
+            <div class="space-y-2">
+              <div class="space-y-1 text-lg font-medium leading-6">
+                <h3>Emile</h3>
+                <span class="text-gray-500"><%= t("views.about.team.emile_desc") %></span>
               </div>
             </div>
           </div>

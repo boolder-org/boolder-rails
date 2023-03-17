@@ -132,6 +132,12 @@ fr:
         p1: Boolder est un projet à but non lucratif, géré par des bénévoles.
         p2_html: Notre but est de faciliter la découverte de l’escalade de bloc à Fontainebleau de façon <strong>ludique</strong> et dans le <strong>respect de la forêt</strong>.
         p3_html: Le projet étant tout jeune, nous sommes à l’écoute de suggestions et d'idées pour favoriser l'entraide avec la communauté. N'hésitez pas à nous %{link} !
+      team:
+        title: L'équipe
+        nico_desc: Dev, cartographie
+        romain_desc: Grimpe
+        cyril_desc: Grimpe
+        emile_desc: Cartographie
       contact:
         title: Contact
         p1: Pour toute question, vous pouvez nous contacter à l'adresse 
