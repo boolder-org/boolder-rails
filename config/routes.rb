@@ -58,6 +58,7 @@ Rails.application.routes.draw do
       get "/", to: "areas#index", as: :areas
     end
 
+    get 'map/top7a', to: 'map#top7a', as: :map_top7a
     get 'map(/:slug)', to: 'map#index', as: :map
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy

@@ -1,0 +1,51 @@
+<% if @area %> 
+  <% set_meta_tags title: t("views.map.area.metas.title", area: @area.name) %>
+  <% set_meta_tags description: t("views.map.area.metas.description", area: @area.name) %>
+
+  <% if @area.cover.persisted? %>
+  <% set_meta_tags og: { type: "website", image: ix_image_url(@area.cover.key, w: 800, ar:'4:3', fit: 'crop') } %>
+  <% end %>
+  <% set_meta_tags canonical: map_url(@area) %>
+<% else %>
+  <% set_meta_tags title: t("views.map.fontainebleau.metas.title") %>
+  <% set_meta_tags description: t("views.map.fontainebleau.metas.description") %>
+  <% set_meta_tags og: { type: "website", image: image_url("map-og.png") } %>
+  <% set_meta_tags canonical: map_url %>
+<% end %>
+
+<div 
+data-controller="mapbox-top7a"
+data-action="gotoproblem@window->mapbox-top7a#gotoproblem gotoarea@window->mapbox-top7a#gotoarea"
+class="flex-auto relative"
+id='map'
+data-mapbox-top7a-target="map"
+data-mapbox-top7a-locale-value="<%= I18n.locale %>"
+
+<% if params[:source] == "top100" %> 
+data-mapbox-top7a-problems-value="https://gist.githubusercontent.com/nmondollot/fb09f1980c468ddbe48c1d5c449f707f/raw/b70a0d890c1337b96847bf98cf36075bfd04ab7e/top7a.geojson"
+<% else %>
+data-mapbox-top7a-problems-value="https://gist.githubusercontent.com/nmondollot/07f0520fffe573292d6f58c8fe89e981/raw/bf617ba0b2d3961ec3f1177cc0e9f62b6f172e73/top7a-cyril.geojson"
+<% end %>
+
+<% if @problem %> 
+data-mapbox-top7a-problem-value="<%= @problem.to_json %>" 
+<% end %>
+
+<% if @bounds %> 
+data-mapbox-top7a-bounds-value="<%= @bounds.to_json %>"
+<% end %>
+
+<% if Rails.env.production? %> 
+  data-mapbox-top7a-token-value="pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbDl5bDZkdDIwNmhhM3BsbnJqbWprcnl5In0.qTno2zICtJfl6UJnNAdmZQ"
+<% else %> 
+  data-mapbox-top7a-draft-value="true"
+  data-mapbox-top7a-token-value="pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbGE5dTBoYjQwMWpqM3JxbWJxeDBtcTd0In0.ZL6a2hHTBJmk4-_MHuUfHg"
+<% end %>
+>
+  <%= render "filters" %>
+
+</div>
+<% if !cookies[:android_launch].present? && request.user_agent =~ /Android/ %>  
+  <%= render "android_banner" %>
+  <% cookies[:android_launch] = { value: 'displayed', expires: 1.month.from_now } %>
+<% end %>

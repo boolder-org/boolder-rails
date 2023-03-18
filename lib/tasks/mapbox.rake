@@ -51,6 +51,49 @@ namespace :mapbox do
     puts "exported areas.geojson".green
   end
 
+  task top7a: :environment do
+    puts "exporting problems"
+
+    factory = RGeo::GeoJSON::EntityFactory.instance
+
+    # problems = Problem.joins(:area).where(area: { published: true }).
+    #   significant_ascents. 
+    #   where(grade: %w(7a 7a+)).
+    #   order(popularity: :desc).
+    #   limit(100)
+
+    problems = Problem.where(id: [6064,245,10869,230,237,881,1088,7726,915,914,1032,10045,10042,1739,1703,9896,9981,9071,9074,14558,14199,14343,14303,14304,14136,1780,1856,1913,1861,1816,1840,11310,2021,2003,1913,2087,5397,532513672,13612,13711,11321,11776,11773,11737,2668,2857,7813,7807,2542,2543,2720,2527,8680,8801,1455,1579,1526,1435,12222,6008,5978,8325,5091,7878,11643,12998,13011,13074,13042,2893,2911,2902,3161,186,4534,4551,7480,9237,9176,9302,9345,2315,2214,7756,2352,690,3331,3288])
+
+    problem_features = problems.map do |problem|
+      hash = {}.with_indifferent_access
+      hash.merge!(problem.slice(:grade, :circuit_number, :steepness))
+      hash[:id] = problem.id
+      hash[:circuit_color] = problem.circuit&.color
+      hash[:circuit_id] = problem.circuit&.id
+
+      name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
+      name_en = I18n.with_locale(:en) { problem.name_with_fallback }
+      hash[:name] = name_fr
+      hash[:name_en] = (name_en != name_fr) ? name_en : ""
+
+      hash.deep_transform_keys! { |key| key.camelize(:lower) }
+
+      factory.feature(problem.location, nil, hash)
+    end
+
+    feature_collection = factory.feature_collection(
+      problem_features
+    )
+
+    geo_json = RGeo::GeoJSON.encode(feature_collection)
+
+    File.open(Rails.root.join('export', 'mapbox', "top7a.geojson"),"w") do |f|
+      f.write(JSON.pretty_generate(geo_json))
+    end
+
+    puts "exported top7a.geojson".green
+  end
+
   task problems: :environment do
     puts "exporting problems"
 
