@@ -13,10 +13,12 @@ namespace :todos do
     html = HTTParty.get("https://bleau.info/#{slug}").body
     doc = Nokogiri::HTML(html)
 
-    bleau_problems = doc.css(".vsr a").map do |row|
-      link = row.attributes["href"].value
+    bleau_problems = doc.css(".vsr").map do |row|
+      a = row.css("a").first
+      link = a.attributes["href"].value
       id = link[/([\w-]+).html/,1]
-      OpenStruct.new(bleau_info_id: id, name: row.text)
+      grade = row.children.map { |e| e.text if e.text? }.join.strip
+      OpenStruct.new(bleau_info_id: id, name: a.text, grade: grade)
     end
 
     missing = bleau_problems.select do |bleau_problem|
@@ -24,7 +26,7 @@ namespace :todos do
     end
 
     missing = missing.map do |bleau_problem|
-      OpenStruct.new(bleau_info_id: bleau_problem.bleau_info_id, name: bleau_problem.name, ascents: ascents(bleau_problem.bleau_info_id))
+      OpenStruct.new(bleau_info_id: bleau_problem.bleau_info_id, name: bleau_problem.name, grade: bleau_problem.grade, ascents: ascents(bleau_problem.bleau_info_id))
     end
 
     # missing_variants = missing.select do |p|
@@ -37,7 +39,12 @@ namespace :todos do
     # end
 
     missing.sort_by(&:ascents).reverse.each do |p|
-      puts "https://bleau.info/#{slug}/#{p.bleau_info_id}.html,#{p.ascents}"
+      puts [
+        p.name,
+        p.grade,
+        "https://bleau.info/#{slug}/#{p.bleau_info_id}.html",
+        p.ascents,
+      ].join(",")
     end
 
     # binding.pry
@@ -58,6 +65,8 @@ namespace :todos do
 
     problems.sort_by{|p| p.ascents.to_i }.reverse.each do |p|
       puts [
+        p.name_debug,
+        p.grade,
         "https://www.boolder.com/fr/fontainebleau/#{area.slug}/#{p.id}",
         "https://bleau.info/#{slug}/#{p.bleau_info_id}.html",
         p.ascents.to_i
@@ -81,6 +90,8 @@ namespace :todos do
     problems.sort_by{|p| p.ascents.to_i }.reverse.each do |p|
 
       puts [
+        p.name_debug,
+        p.grade,
         "https://www.boolder.com/fr/fontainebleau/#{area.slug}/#{p.id}",
         "https://bleau.info/#{slug}/#{p.bleau_info_id}.html",
         p.ascents.to_i
