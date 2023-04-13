@@ -136,7 +136,7 @@ namespace :mapbox do
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join('export', 'mapbox', "problems.geojson"),"w") do |f|
+    File.open(Rails.root.join('export', 'mapbox', "problems#{"-without-boulders" if !include_boulders}.geojson"),"w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 
