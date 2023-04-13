@@ -57,6 +57,7 @@ group :development do
   gem 'jwt', '~> 2.2.2'
   gem 'ruby-vips'
   gem 'sqlite3'
+  gem 'parallel'
 end
 
 group :test do
