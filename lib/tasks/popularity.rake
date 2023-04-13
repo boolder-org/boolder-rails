@@ -64,4 +64,17 @@ namespace :popularity do
 
     puts "Done".green
   end
+
+  task top7a: :environment do
+    problems = Problem.joins(:area).where(area: { published: true }).
+      significant_ascents. 
+      where(grade: %w(7a 7a+)).
+      order(popularity: :desc).
+      limit(100)
+
+    problems.each do |problem|
+      # puts [problem.name, problem.popularity].join(" - ")
+      puts problem.id
+    end
+  end
 end
