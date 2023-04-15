@@ -104,7 +104,7 @@ namespace :mapbox do
 
     problem_features = Problem.all.joins(:area).where(area: {published: true}).map do |problem|
       hash = {}.with_indifferent_access
-      hash.merge!(problem.slice(:grade, :circuit_number, :steepness))
+      hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :featured))
       hash[:id] = problem.id
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit&.id
