@@ -56,6 +56,16 @@ namespace :bleau do
       end
     end
   end
+
+  task concat: :environment do
+    CSV.open("export/problems.csv", "wb", write_headers: true, headers: ["slug", "bleau_info_id", "name", "grade", "ascents", "id"]) do |csv|
+      Dir["export/bleau/*.csv"].each do |path|  
+        CSV.foreach(path, headers: true, return_headers: false) do |row| # don't output the headers in the rows
+          csv << row
+        end
+      end
+    end
+  end
 end
 
 def ascents(bleau_info_id)
