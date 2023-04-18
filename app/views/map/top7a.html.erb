@@ -21,10 +21,10 @@ id='map'
 data-mapbox-top7a-target="map"
 data-mapbox-top7a-locale-value="<%= I18n.locale %>"
 
-<% if params[:source] == "top100" %> 
-data-mapbox-top7a-problems-value="https://gist.githubusercontent.com/nmondollot/fb09f1980c468ddbe48c1d5c449f707f/raw/d767072b4af98bf79123be80bf574ed4ef68bc85/top7a.geojson"
-<% else %>
+<% if params[:source] == "cyril" %> 
 data-mapbox-top7a-problems-value="https://gist.githubusercontent.com/nmondollot/07f0520fffe573292d6f58c8fe89e981/raw/bf617ba0b2d3961ec3f1177cc0e9f62b6f172e73/top7a-cyril.geojson"
+<% else %>
+data-mapbox-top7a-problems-value="https://gist.githubusercontent.com/nmondollot/fb09f1980c468ddbe48c1d5c449f707f/raw/d767072b4af98bf79123be80bf574ed4ef68bc85/top7a.geojson"
 <% end %>
 
 <% if @problem %> 
