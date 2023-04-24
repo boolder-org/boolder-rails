@@ -36,10 +36,6 @@
 
   <body class="bg-white">
 
-    <% if !cookies[:open_source_launch].present?  %>  
-      <%= render "layouts/open_source_launch" %> 
-    <% end %>
-
     <div class="bg-gray-100">
       <%= render "layouts/nav" unless @hide_nav %>
       <%= yield %>
