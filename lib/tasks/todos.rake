@@ -59,8 +59,7 @@ namespace :todos do
     area = Area.find area_id
 
     problems = area.problems.where("bleau_info_id IS NOT NULL AND bleau_info_id <>''").
-      joins("LEFT JOIN lines ON lines.problem_id = problems.id").
-      where("lines.problem_id IS NULL").
+      select{|p| p.lines.published.none?}.
       uniq
 
     problems.sort_by{|p| p.ascents.to_i }.reverse.each do |p|
