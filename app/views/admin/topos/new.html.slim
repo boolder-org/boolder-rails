@@ -8,6 +8,9 @@ div class="my-4"
   div class="my-4"
     = form.label :metadata
     = form.file_field :metadata
+  div class="my-4"
+    = form.label :ignore_metadata
+    = form.check_box :ignore_metadata
       
   div class="my-4"
     = form.submit("Create", class: "btn")

@@ -7,22 +7,27 @@ class Admin::ToposController < Admin::BaseController
     ActiveRecord::Base.transaction do
       topo = Topo.new(topo_params)
 
-      photo = params[:topo][:photo]
-      metadata = params[:topo][:metadata]
-      metadata_hash = JSON.parse(metadata.read)
+      if params[:topo][:ignore_metadata]
+        topo.photo = params[:topo][:photo]
+        topo.save!
+      else
+        photo = params[:topo][:photo]
+        metadata = params[:topo][:metadata]
+        metadata_hash = JSON.parse(metadata.read)
 
-      if Pathname(photo.original_filename).sub_ext('').to_s != Pathname(metadata.original_filename).sub_ext('').to_s
-        raise "filenames don't match"
-      end
+        if Pathname(photo.original_filename).sub_ext('').to_s != Pathname(metadata.original_filename).sub_ext('').to_s
+          raise "filenames don't match"
+        end
 
-      topo.update(photo: photo)
-      topo.update(metadata: metadata_hash)
-      
-      problems = Problem.find(metadata_hash["problem_ids"])
-      problems = problems + problems.flat_map(&:variants)
+        topo.update(photo: photo)
+        topo.update(metadata: metadata_hash)
+        
+        problems = Problem.find(metadata_hash["problem_ids"])
+        problems = problems + problems.flat_map(&:variants)
 
-      problems.uniq.each do |problem|
-        Line.create(topo_id: topo.id, problem_id: problem.id)
+        problems.uniq.each do |problem|
+          Line.create(topo_id: topo.id, problem_id: problem.id)
+        end
       end
 
       flash[:notice] = "Topo created"
