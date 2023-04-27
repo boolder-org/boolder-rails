@@ -58,11 +58,15 @@ class Admin::ToposController < Admin::BaseController
 
   def destroy
     topo = Topo.find(params[:id])
-    area = topo.problems.first.area
+    area = topo.problems.first&.area
     topo.destroy!
 
     flash[:notice] = "Topo destroyed"
-    redirect_to admin_area_problems_path(area_slug: area.slug, circuit_id: "first")
+    if area
+      redirect_to admin_area_problems_path(area_slug: area.slug, circuit_id: "first")
+    else
+      redirect_to admin_areas_path
+    end
   end
 
   private
