@@ -7,7 +7,7 @@ class Admin::ToposController < Admin::BaseController
     ActiveRecord::Base.transaction do
       topo = Topo.new(topo_params)
 
-      if params[:topo][:ignore_metadata]
+      if params[:topo][:ignore_metadata] == "1"
         topo.photo = params[:topo][:photo]
         topo.save!
       else
