@@ -9,5 +9,4 @@
 
 raise "are you crazy?" unless Rails.env.development?
 
-`dropdb dump-prod && createdb dump-prod`
-`pg_restore -d dump-prod db/prod.dump`
+`dropdb dump-prod && heroku pg:pull DATABASE_URL dump-prod`
