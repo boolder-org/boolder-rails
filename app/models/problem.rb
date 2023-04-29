@@ -12,8 +12,9 @@ class Problem < ApplicationRecord
 
   include AlgoliaSearch
   algoliasearch if: :published?, enqueue: true do
-    attributes :name, :circuit_number, :grade, :popularity
+    attributes :name, :grade, :popularity
     attribute :area_name do area.name end
+    attribute :circuit_number do circuit_number_simplified end
     attribute :circuit_color do circuit&.color end
     attribute :_geoloc do { lat: location&.lat || 0.0, lng: location&.lon || 0.0 } end
     # TODO: implement custom attributes callback to trigger a reindex
@@ -36,10 +37,20 @@ class Problem < ApplicationRecord
     9a 9a+ 9b 9b+ 9c 9c+
   )
   LANDING_VALUES = %w(easy medium hard)
+  LETTER_BIS = 'b'
+  LETTER_TER = 't'
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
+  validates :bleau_info_id, uniqueness: true
+  validates :circuit_letter, inclusion: { in: [LETTER_BIS, LETTER_TER] }, allow_blank: true
+
+  # TODO:
+  # check if number is an int
+  # check if circuit_id is present
+  # check that no other problem with same numbe and letter 
+  # validates :circuit_number
 
   Circuit::COLOR_VALUES.each do |color|
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
@@ -48,6 +59,8 @@ class Problem < ApplicationRecord
   include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
+  scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
+  scope :with_location, -> { where.not(location: nil) }
 
   def published?
     area.published
@@ -57,6 +70,7 @@ class Problem < ApplicationRecord
     [id, name.parameterize.presence].compact.join("-")
   end
 
+  # TODO: display letter
   def name_with_fallback
     if name.present?
       name
@@ -76,12 +90,24 @@ class Problem < ApplicationRecord
     [circuit_debug, name].compact.join(" ")
   end
 
+  def circuit_number_simplified
+    circuit_letter.present? ? nil : circuit_number
+  end
+
+  def circuit_id_simplified
+    circuit_letter.present? ? nil : circuit&.id
+  end
+
+  def bis
+    [
+      Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: LETTER_BIS).first,
+      Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: LETTER_TER).first,
+    ].compact
+  end
+
   def enumerable_circuit_number
-    if circuit_number.present?
-      circuit_number.to_i + (circuit_number.include?('b') ? 0.5 : 0)
-    else
-      1_000
-    end
+    boost = { LETTER_BIS => 0.1, LETTER_TER => 0.2 }
+    circuit_number.to_i + boost.fetch(circuit_letter, 0)
   end
 
   def next

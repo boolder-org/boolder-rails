@@ -40,8 +40,9 @@ namespace :app do
           circuit_color, steepness, sit_start, area_id, bleau_info_id, 
           featured, popularity, parent_id)
           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
-          [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, p.circuit_id, p.circuit_number, 
-            p.circuit&.color, p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id, 
+          [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, 
+            p.circuit_id_simplified, p.circuit_number_simplified.presence, p.circuit&.color, 
+            p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id, 
             p.featured ? 1 : 0, p.popularity, p.parent_id]
         )
       end

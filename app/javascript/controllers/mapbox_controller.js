@@ -108,7 +108,7 @@ export default class extends Controller {
             22,
             [
               "case",
-              ["has", "circuitId"],
+              ["has", "circuitNumber"],
               16,
               10
             ]

@@ -104,10 +104,11 @@ namespace :mapbox do
 
     problem_features = Problem.all.joins(:area).where(area: {published: true}).map do |problem|
       hash = {}.with_indifferent_access
-      hash.merge!(problem.slice(:grade, :circuit_number, :steepness, :featured, :popularity))
+      hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
       hash[:id] = problem.id
       hash[:circuit_color] = problem.circuit&.color
-      hash[:circuit_id] = problem.circuit&.id
+      hash[:circuit_id] = problem.circuit_id_simplified
+      hash[:circuit_number] = problem.circuit_number_simplified.presence
 
       name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
       name_en = I18n.with_locale(:en) { problem.name_with_fallback }
@@ -147,7 +148,8 @@ namespace :mapbox do
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     circuit_features = Circuit.all.map do |circuit|
-      line_string = FACTORY.line_string(circuit.sorted_problems.map(&:location))
+      problems = circuit.problems.exclude_bis.with_location.sort_by(&:enumerable_circuit_number)
+      line_string = FACTORY.line_string(problems.map(&:location))
       factory.feature(line_string, nil, { id: circuit.id, color: circuit.color })
     end
 

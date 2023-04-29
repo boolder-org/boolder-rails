@@ -10,12 +10,6 @@ class Circuit < ApplicationRecord
 
   validates :color, inclusion: { in: COLOR_VALUES }
 
-  def sorted_problems
-    problems.
-      select{|p| p.location.present? }.
-      sort_by{|p| p.circuit_number.to_i + (p.circuit_number.include?('b') ? 0.5 : 0) }
-  end
-
   def name
       I18n.t("circuit.name.#{color}")
   end

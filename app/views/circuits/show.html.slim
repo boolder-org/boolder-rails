@@ -36,6 +36,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
               = t("circuit.dangerous")
 
         ul role="list" class="pt-2"
-          - @circuit.problems.sort_by{|p| p.enumerable_circuit_number }.each do |problem|
+          - @circuit.problems.exclude_bis.sort_by(&:enumerable_circuit_number).each do |problem|
             - cache [problem, I18n.locale, "show_featured=true"]
               = render problem, show_featured: true

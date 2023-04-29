@@ -17,7 +17,7 @@ class Admin::ProblemsController < Admin::BaseController
       arel = arel.where(circuit_id: params[:circuit_id]) if params[:circuit_id].present?
     end
 
-    @problems = arel.sort_by{|p| p.enumerable_circuit_number }
+    @problems = arel.sort_by(&:enumerable_circuit_number)
 
     circuits = @area.sorted_circuits
     @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"])
