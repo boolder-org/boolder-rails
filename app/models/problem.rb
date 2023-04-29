@@ -44,13 +44,11 @@ class Problem < ApplicationRecord
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
   validates :bleau_info_id, uniqueness: true
+  validates :circuit_number, numericality: { only_integer: true }, allow_blank: true
+  validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }
+  validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }
   validates :circuit_letter, inclusion: { in: [LETTER_BIS, LETTER_TER] }, allow_blank: true
-
-  # TODO:
-  # check if number is an int
-  # check if circuit_id is present
-  # check that no other problem with same numbe and letter 
-  # validates :circuit_number
+  validate :validate_circuit_fields
 
   Circuit::COLOR_VALUES.each do |color|
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
@@ -70,12 +68,12 @@ class Problem < ApplicationRecord
     [id, name.parameterize.presence].compact.join("-")
   end
 
-  # TODO: display letter
   def name_with_fallback
+    letters = { LETTER_BIS => "bis", LETTER_TER => "ter" }
     if name.present?
       name
     elsif circuit_number.present? && circuit.id
-      circuit.name + " " + circuit_number
+      [circuit.name, circuit_number, letters.fetch(circuit_letter, nil)].join(" ")
     else
       I18n.t("problem.no_name")
     end 
@@ -139,4 +137,12 @@ class Problem < ApplicationRecord
 
   #   (mapping[landing] * [(height - 2), 0].max).round(1)
   # end
+
+  private
+
+  def validate_circuit_fields
+    if circuit_number.present? != circuit_id.present?
+      errors.add(:base, "Both circuit number and circuit_id must be present or absent")
+    end
+  end
 end

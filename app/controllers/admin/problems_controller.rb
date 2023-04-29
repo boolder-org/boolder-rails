@@ -103,10 +103,14 @@ class Admin::ProblemsController < Admin::BaseController
 
     problem.assign_attributes(problem_params)
     problem.tags = params[:problem][:joined_tags].split(',')
-    problem.save!
-
-    flash[:notice] = "Problem updated"
-    redirect_to edit_admin_problem_path(problem)
+    
+    if problem.save
+      flash[:notice] = "Problem updated"
+      redirect_to edit_admin_problem_path(problem)
+    else
+      flash[:error] = problem.errors.full_messages.join('; ')
+      redirect_to edit_admin_problem_path(problem)
+    end
   end
 
   private 
