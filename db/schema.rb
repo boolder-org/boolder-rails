@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_12_124744) do
+ActiveRecord::Schema.define(version: 2023_04_28_202917) do
 
   # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
   enable_extension "postgis"
 
@@ -128,6 +129,7 @@ ActiveRecord::Schema.define(version: 2023_01_12_124744) do
     t.integer "ratings"
     t.integer "ascents"
     t.integer "popularity"
+    t.string "circuit_letter"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"
