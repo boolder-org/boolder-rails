@@ -93,7 +93,7 @@ class Problem < ApplicationRecord
   end
 
   def circuit_number_simplified
-    circuit_letter.present? ? nil : circuit_number
+    circuit_letter.present? ? circuit_letter : circuit_number
   end
 
   def circuit_id_simplified
