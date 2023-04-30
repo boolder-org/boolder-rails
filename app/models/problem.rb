@@ -39,6 +39,7 @@ class Problem < ApplicationRecord
   LANDING_VALUES = %w(easy medium hard)
   LETTER_BIS = 'b'
   LETTER_TER = 't'
+  LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter" }
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
@@ -69,11 +70,12 @@ class Problem < ApplicationRecord
   end
 
   def name_with_fallback
-    letters = { LETTER_BIS => "bis", LETTER_TER => "ter" }
     if name.present?
       name
+    elsif circuit_number == "D" && circuit.id
+      [circuit.name, I18n.t("problem.start")].join(" ")
     elsif circuit_number.present? && circuit.id
-      [circuit.name, circuit_number, letters.fetch(circuit_letter, nil)].join(" ")
+      [circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil)].join(" ")
     else
       I18n.t("problem.no_name")
     end 
@@ -82,7 +84,7 @@ class Problem < ApplicationRecord
   def name_debug
     circuit_debug = nil
     if circuit_number.present? && circuit.id
-      circuit_debug = [circuit.name, circuit_number.to_s].join(" ")
+      circuit_debug = [circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil)].join(" ")
     end
 
     [circuit_debug, name].compact.join(" ")
@@ -116,7 +118,11 @@ class Problem < ApplicationRecord
 
   def previous
     if circuit_number.present?
-      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1)).first
+      if circuit_number == "1"
+        Problem.where(circuit_id: circuit_id).where(circuit_number: "D").first
+      else
+        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1)).first
+      end
     end
   end
 
