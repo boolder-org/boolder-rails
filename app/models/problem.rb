@@ -45,9 +45,9 @@ class Problem < ApplicationRecord
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
   validates :bleau_info_id, uniqueness: true
-  validates :circuit_number, numericality: { only_integer: true }, allow_blank: true
-  validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }
-  validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }
+  validate :validate_circuit_letter_is_numeric
+  validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_blank: true
+  validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_blank: true
   validates :circuit_letter, inclusion: { in: [LETTER_BIS, LETTER_TER] }, allow_blank: true
   validate :validate_circuit_fields
 
@@ -149,6 +149,13 @@ class Problem < ApplicationRecord
   def validate_circuit_fields
     if circuit_number.present? != circuit_id.present?
       errors.add(:base, "Both circuit number and circuit_id must be present or absent")
+    end
+  end
+
+  def validate_circuit_letter_is_numeric
+    return if circuit_number.blank? || circuit_number == "D"
+    if circuit_number.to_i.to_s != circuit_number
+      errors.add(:circuit_number, "Circuit number must be a number or D (for Départ)")
     end
   end
 end
