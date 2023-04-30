@@ -34,7 +34,7 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
               span class="text-gray-400"
                 = render 'svg/nophoto', width: 98, height: 98
 
-      - if @problem.previous || @problem.next
+      - if @problem.circuit_letter.blank? && (@problem.previous || @problem.next)
         div class="px-4 sm:px-0 py-2 flex justify-between items-center"
           div
             - if previous = @problem.previous
@@ -61,7 +61,7 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
               path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
             div= t("problem.see_on_map")
 
-        - if @problem.circuit.present?
+        - if @problem.circuit_letter.blank? && @problem.circuit.present?
           = link_to circuit_path(@problem.circuit), rel: "nofollow" do
             div class="flex items-center space-x-2 text-green-600 mt-2"
               svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -95,3 +95,25 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
                   = problem_circle_view(variant)
                   span class="ml-2 font-medium"= variant.name_with_fallback
                   span class="ml-2 text-gray-400"= variant.grade
+
+      - if @problem.circuit_id.present? && @problem.circuit_letter.blank? && @problem.bis.any?
+        div class="px-4 sm:px-0 py-4"
+          h2 class="text-xl font-semibold mb-3"= t("views.problems.show.see_also")
+          ul class=""
+            - @problem.bis.each do |bis|
+              li class="mt-2"
+                = link_to problem_friendly_path(bis) do
+                  = problem_circle_view(bis)
+                  span class="ml-2 font-medium"= bis.name_with_fallback
+                  span class="ml-2 text-gray-400"= bis.grade
+
+      - if @problem.circuit_letter.present? && @problem.main.present?
+        div class="px-4 sm:px-0 py-4"
+          h2 class="text-xl font-semibold mb-3"= t("views.problems.show.see_also")
+          ul class=""
+            - [@problem.main].each do |bis|
+              li class="mt-2"
+                = link_to problem_friendly_path(bis) do
+                  = problem_circle_view(bis)
+                  span class="ml-2 font-medium"= bis.name_with_fallback
+                  span class="ml-2 text-gray-400"= bis.grade

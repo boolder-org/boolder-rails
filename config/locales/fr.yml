@@ -234,6 +234,7 @@ fr:
       show:
         see_circuit: Voir le circuit
         variants: Variantes
+        see_also: Voir aussi
         metas:
           title: "%{problem} - %{grade} - %{area}"
       index:

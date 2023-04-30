@@ -234,6 +234,7 @@ en:
       show:
         see_circuit: See the circuit
         variants: Variants
+        see_also: See also
         metas:
           title: "%{problem} - %{grade} - %{area}"
       index:

@@ -105,6 +105,10 @@ class Problem < ApplicationRecord
     ].compact
   end
 
+  def main
+    Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: [nil, '']).first
+  end
+
   def enumerable_circuit_number
     boost = { LETTER_BIS => 0.1, LETTER_TER => 0.2 }
     circuit_number.to_i + boost.fetch(circuit_letter, 0)
