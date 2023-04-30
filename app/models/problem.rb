@@ -154,8 +154,8 @@ class Problem < ApplicationRecord
 
   def validate_circuit_letter_is_numeric
     return if circuit_number.blank? || circuit_number == "D"
-    if circuit_number.to_i >= 1
-      errors.add(:circuit_number, "Circuit number must be a number or D (for Départ)")
+    if circuit_number.to_i < 1
+      errors.add(:circuit_number, "must be a number or D (for Départ)")
     end
   end
 end
