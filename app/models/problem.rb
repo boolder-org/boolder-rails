@@ -39,7 +39,8 @@ class Problem < ApplicationRecord
   LANDING_VALUES = %w(easy medium hard)
   LETTER_BIS = 'b'
   LETTER_TER = 't'
-  LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter" }
+  LETTER_QUATER = 'q'
+  LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter", LETTER_QUATER => "quater" }
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
@@ -48,7 +49,7 @@ class Problem < ApplicationRecord
   validate :validate_circuit_letter_is_numeric
   validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_blank: true
   validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_blank: true
-  validates :circuit_letter, inclusion: { in: [LETTER_BIS, LETTER_TER] }, allow_blank: true
+  validates :circuit_letter, inclusion: { in: LETTERS.keys }, allow_blank: true
   validate :validate_circuit_fields
 
   Circuit::COLOR_VALUES.each do |color|
@@ -99,10 +100,7 @@ class Problem < ApplicationRecord
   end
 
   def bis
-    [
-      Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: LETTER_BIS).first,
-      Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: LETTER_TER).first,
-    ].compact
+    LETTERS.keys.map{|letter| Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: letter).first }.compact
   end
 
   def main
@@ -110,7 +108,7 @@ class Problem < ApplicationRecord
   end
 
   def enumerable_circuit_number
-    boost = { LETTER_BIS => 0.1, LETTER_TER => 0.2 }
+    boost = { LETTER_BIS => 0.1, LETTER_TER => 0.2, LETTER_QUATER => 0.3 }
     circuit_number.to_i + boost.fetch(circuit_letter, 0)
   end
 
