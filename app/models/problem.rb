@@ -41,6 +41,7 @@ class Problem < ApplicationRecord
   LETTER_TER = 't'
   LETTER_QUATER = 'q'
   LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter", LETTER_QUATER => "quater" }
+  LETTER_START = 'D'
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
@@ -73,7 +74,7 @@ class Problem < ApplicationRecord
   def name_with_fallback
     if name.present?
       name
-    elsif circuit_number == "D" && circuit.id
+    elsif circuit_number == LETTER_START && circuit.id
       [circuit.name, I18n.t("problem.start")].join(" ")
     elsif circuit_number.present? && circuit.id
       [circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil)].join(" ")
@@ -121,7 +122,7 @@ class Problem < ApplicationRecord
   def previous
     if circuit_number.present?
       if circuit_number == "1"
-        Problem.where(circuit_id: circuit_id).where(circuit_number: "D").first
+        Problem.where(circuit_id: circuit_id).where(circuit_number: LETTER_START).first
       else
         Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1)).first
       end
@@ -155,7 +156,7 @@ class Problem < ApplicationRecord
   end
 
   def validate_circuit_letter_is_numeric
-    return if circuit_number.blank? || circuit_number == "D"
+    return if circuit_number.blank? || circuit_number == LETTER_START
     if circuit_number.to_i < 1
       errors.add(:circuit_number, "must be a number or D (for Départ)")
     end
