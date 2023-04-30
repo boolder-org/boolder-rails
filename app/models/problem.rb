@@ -44,7 +44,7 @@ class Problem < ApplicationRecord
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
-  validates :bleau_info_id, uniqueness: true
+  validates :bleau_info_id, uniqueness: true, allow_blank: true
   validate :validate_circuit_letter_is_numeric
   validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_blank: true
   validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_blank: true
