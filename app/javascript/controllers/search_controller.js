@@ -3,6 +3,24 @@ import { Controller } from '@hotwired/stimulus'
 import algoliasearch from 'algoliasearch/lite';
 import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
 
+// we use debouncing to avoid triggering a search request at each keystroke (costs too much)
+// https://www.algolia.com/doc/ui-libraries/autocomplete/guides/debouncing-sources/
+function debouncePromise(fn, time) {
+  let timerId = undefined;
+
+  return function debounced(...args) {
+    if (timerId) {
+      clearTimeout(timerId);
+    }
+
+    return new Promise((resolve) => {
+      timerId = setTimeout(() => resolve(fn(...args)), time);
+    });
+  };
+}
+const debounced = debouncePromise((items) => Promise.resolve(items), 300);
+
+
 export default class extends Controller {
   static targets = [ ]
   static values = { 
@@ -45,7 +63,7 @@ export default class extends Controller {
       getSources({ query }) {
         if(query.length == 0) { return [] };
         
-        return [
+        return debounced([
 
           {
             sourceId: 'areas',
@@ -220,7 +238,7 @@ export default class extends Controller {
             },
 
           },
-        ];
+        ]);
       },
     });
   }
