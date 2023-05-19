@@ -14,6 +14,7 @@ namespace :app do
         create table problems (
           id INTEGER NOT NULL PRIMARY KEY,
           name TEXT, 
+          name_en TEXT, 
           grade TEXT,
           latitude REAL NOT NULL,
           longitude REAL NOT NULL,
@@ -36,11 +37,14 @@ namespace :app do
 
       Problem.joins(:area).where(area: { published: true }).find_each do |p|
         db.execute(
-          "INSERT INTO problems (id, name, grade, latitude, longitude, circuit_id, circuit_number, 
+          "INSERT INTO problems (id, name, name_en, grade, latitude, longitude, circuit_id, circuit_number, 
           circuit_color, steepness, sit_start, area_id, bleau_info_id, 
           featured, popularity, parent_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
-          [p.id, p.name.presence, p.grade, p.location&.lat, p.location&.lon, 
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          [p.id, 
+            I18n.with_locale(:fr) { p.name_with_fallback.presence }, 
+            I18n.with_locale(:en) { p.name_with_fallback.presence }, 
+            p.grade, p.location&.lat, p.location&.lon, 
             p.circuit_id_simplified, p.circuit_number_simplified.presence, p.circuit&.color, 
             p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id, 
             p.featured ? 1 : 0, p.popularity, p.parent_id]
