@@ -15,12 +15,15 @@ To get started on mac OS:
 - `brew install postgis`
 - `brew services start postgresql`
 - `createdb dump-prod`
-- `rake db:seed`
 
 # App
 - cd to the app directory
 - install rails: `sudo gem install rails`
 - `bundle install`
+
+Import prod data:
+- `dropdb dump-prod && createdb dump-prod`
+- `pg_restore -d dump-prod db/prod.dump`
 
 Run the app:
 - `rails s`
