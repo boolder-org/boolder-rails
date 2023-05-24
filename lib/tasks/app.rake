@@ -15,6 +15,7 @@ namespace :app do
           id INTEGER NOT NULL PRIMARY KEY,
           name TEXT, 
           name_en TEXT, 
+          name_searchable TEXT, 
           grade TEXT,
           latitude REAL NOT NULL,
           longitude REAL NOT NULL,
@@ -37,13 +38,14 @@ namespace :app do
 
       Problem.joins(:area).where(area: { published: true }).find_each do |p|
         db.execute(
-          "INSERT INTO problems (id, name, name_en, grade, latitude, longitude, circuit_id, circuit_number, 
+          "INSERT INTO problems (id, name, name_en, name_searchable, grade, latitude, longitude, circuit_id, circuit_number, 
           circuit_color, steepness, sit_start, area_id, bleau_info_id, 
           featured, popularity, parent_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [p.id, 
             I18n.with_locale(:fr) { p.name_with_fallback.presence }, 
             I18n.with_locale(:en) { p.name_with_fallback.presence }, 
+            normalize(p.name),
             p.grade, p.location&.lat, p.location&.lon, 
             p.circuit_id_simplified, p.circuit_number_simplified.presence, p.circuit&.color, 
             p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id, 
@@ -55,6 +57,8 @@ namespace :app do
         create table areas (
           id INTEGER NOT NULL PRIMARY KEY,
           name TEXT NOT NULL,
+          name_searchable TEXT NOT NULL,
+          priority INTEGER NOT NULL,
           description_fr TEXT,
           description_en TEXT,
           warning_fr TEXT,
@@ -79,11 +83,14 @@ namespace :app do
 
       Area.published.each do |a|
         db.execute(
-          "INSERT INTO areas (id, name, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon, 
+          "INSERT INTO areas (id, name, name_searchable, priority, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon, 
                               level1_count, level2_count, level3_count, level4_count, level5_count, level6_count, level7_count, level8_count, problems_count)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
-            a.id, a.name.presence, 
+            a.id, 
+            a.name.presence, 
+            normalize(a.name),
+            a.priority, 
             a.description_fr.presence, a.description_en.presence, 
             a.warning_fr.presence, a.warning_en.presence, 
             a.tags.join(",").presence,
@@ -230,4 +237,8 @@ namespace :app do
 
   #   puts "exported covers".green
   # end
+end
+
+def normalize(string)
+  I18n.with_locale(:fr) { I18n.transliterate(string) }.gsub(/[^0-9a-zA-Z]/, '').downcase
 end
