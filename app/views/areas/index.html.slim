@@ -5,6 +5,9 @@
 
 - set_meta_tags canonical: areas_url
 
+- if !cookies[:climbing_bus_launch].present?
+  - content_for :banner
+    = render "welcome/climbing_bus_banner"
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8"
   h1 class="text-3xl font-bold mt-8 mb-4 px-4 sm:px-0" Fontainebleau

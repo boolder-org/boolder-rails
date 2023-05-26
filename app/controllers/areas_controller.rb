@@ -1,5 +1,9 @@
 class AreasController < ApplicationController
   def index
+    if params[:dismiss_banner].present?
+      cookies[:climbing_bus_launch] = { value: 'dismissed', expires: 1.month.from_now }
+    end
+    
     @popular_areas = Rails.cache.fetch("areas/index/popular_areas", expires_in: 12.hours) do
       Area.published.any_tags(:popular).all.shuffle
     end

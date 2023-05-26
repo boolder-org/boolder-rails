@@ -52,6 +52,10 @@ en:
       read_guide: Read the beginner's guide
       popular_areas: Popular areas
       all_areas: See all areas
+      climbing_bus_announcement:
+        text_short:  In June, go climbing by train + bus!
+        text_long: In June, go climbing by train + bus with the Climbing Bus!
+        learn_more: Discover the Climbing Bus
       promoted:
         app:
           title: Discover the Boolder app
@@ -242,10 +246,6 @@ en:
       cancel: Cancel
       submit: Search
     layout:
-      open_source_announcement:
-        text_short: Boolder is now open source!
-        text_long: Boolder is now open source! We are looking for an Android developer to join the team.
-        learn_more: Learn more
       nav:
         open_menu: Open main menu
         discover: Discover
