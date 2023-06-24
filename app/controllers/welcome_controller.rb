@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
     @popular_areas = Rails.cache.fetch("welcome/popular_areas", expires_in: 12.hours) do
       Area.published.any_tags(:popular).all.shuffle
     end
-  end
+  end 
 
   def root
     http_lang = extract_locale_from_accept_language_header
