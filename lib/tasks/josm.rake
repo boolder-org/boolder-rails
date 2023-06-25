@@ -32,7 +32,7 @@ namespace :josm do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    file_name = Rails.root.join('export', "josm", "area-#{area_id}", "area-#{area_id}-data.geojson")
+    file_name = Rails.root.join('..', "boolder-maps", "josm", "area-#{area_id}", "area-#{area_id}-data.geojson")
 
     raise "file already exists" if File.exist?(file_name)
 
@@ -82,7 +82,7 @@ namespace :josm do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    File.open(Rails.root.join('export', "josm", "area-#{area_id}", "area-#{area_id}-metadata.geojson"),"w") do |f|
+    File.open(Rails.root.join('..', "boolder-maps", "josm", "area-#{area_id}", "area-#{area_id}-metadata.geojson"),"w") do |f|
       f.write(geo_json)
     end
 
