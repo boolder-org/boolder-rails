@@ -42,7 +42,7 @@ namespace :mapbox do
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    file_name = Rails.root.join('export', "mapbox", "areas.geojson")
+    file_name = Rails.root.join("..", "boolder-maps", "mapbox", "areas.geojson")
 
     File.open(file_name,"w") do |f|
       f.write(geo_json)
@@ -94,7 +94,7 @@ namespace :mapbox do
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join('export', 'mapbox', "problems#{"-without-boulders" if !include_boulders}.geojson"),"w") do |f|
+    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "problems#{"-without-boulders" if !include_boulders}.geojson"),"w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 
@@ -116,7 +116,7 @@ namespace :mapbox do
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join('export', 'mapbox', "circuits.geojson"),"w") do |f|
+    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "circuits.geojson"),"w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 
@@ -147,7 +147,7 @@ namespace :mapbox do
 
   #   geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-  #   file_name = Rails.root.join('export', "mapbox", "pois.geojson")
+  #   file_name = Rails.root.join("..", "boolder-maps", "mapbox", "pois.geojson")
 
   #   raise "file already exists" if File.exist?(file_name)
 
