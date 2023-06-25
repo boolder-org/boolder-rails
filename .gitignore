@@ -23,7 +23,7 @@
 !/storage/.keep
 
 # Ignore exports
-/export/app/*
+/export/*
 
 /public/assets
 .byebug_history
