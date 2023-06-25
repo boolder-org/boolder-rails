@@ -22,7 +22,7 @@
 /storage/*
 !/storage/.keep
 
-# Ignore exports
+# Ignore exported files
 /export/*
 
 /public/assets
