@@ -115,7 +115,7 @@ class Problem < ApplicationRecord
 
   def next
     if circuit_number.present?
-      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1)).first
+      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1), circuit_letter: [nil, '']).first
     end
   end
 
@@ -124,7 +124,7 @@ class Problem < ApplicationRecord
       if circuit_number == "1"
         Problem.where(circuit_id: circuit_id).where(circuit_number: LETTER_START).first
       else
-        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1)).first
+        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1), circuit_letter: [nil, '']).first
       end
     end
   end
