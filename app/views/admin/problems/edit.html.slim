@@ -33,7 +33,6 @@ div class="mt-10 sm:mt-0"
         - @problem.lines.published.each do |line|
           = link_to edit_admin_line_path(line) do
             = render 'shared/topo_with_line', line: line, scope: :admin
-            = image_tag(line.topo.photo.variant(resize_to_limit: [1200, 1200], quality: 50), class: "w-full object-cover", loading: "lazy")
         - @problem.lines.unpublished.each do |line|
           = link_to edit_admin_line_path(line) do
             div class="text-red-500 mt-2"= "unpublished ##{line.id}"

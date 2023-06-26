@@ -5,7 +5,7 @@ class Api::V1::ToposController < ActionController::Base
     topo = Topo.find(params[:id])
 
     result = {
-      url: ix_image_url(topo.photo.key, w: 800, ar:'4:3', fit: 'crop')
+      url: url_for(topo.photo.variant(resize_to_limit: [1200, 1200], quality: 50))
     }
 
     render json: result

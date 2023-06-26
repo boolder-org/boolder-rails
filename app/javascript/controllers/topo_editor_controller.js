@@ -10,7 +10,7 @@ export default class extends Controller {
     var self = this
 
     image.onload = function() {
-      self.resize(image.naturalWidth, image.naturalHeight)
+      self.resize(image.naturalWidth/2, image.naturalHeight/2)
       self.drawOriginalPoints()
     }
 
