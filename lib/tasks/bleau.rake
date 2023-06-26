@@ -23,7 +23,7 @@ namespace :bleau do
           "https://www.boolder.com/en/fontainebleau/rocher-fin/#{p.id}",
           p.bleau_info_id,
           p.bleau_info_id.present? ? "https://bleau.info/c/#{p.bleau_info_id}.html" : "",
-          photo ? url_for(photo.variant(resize_to_limit: [1200, 1200], quality: 50) : ""
+          photo ? url_for(photo.variant(resize_to_limit: [1200, 1200], quality: 50)) : ""
         ]
       end
     end
