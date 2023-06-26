@@ -1,5 +1,4 @@
 require 'csv'
-include Imgix::Rails::UrlHelper
 
 namespace :todos do
   task bleau_info: :environment do

@@ -30,6 +30,8 @@ class Admin::ToposController < Admin::BaseController
         end
       end
 
+      PrecomputeTopoVariantsJob.perform_later(topo)
+
       flash[:notice] = "Topo created"
       redirect_to edit_admin_topo_path(topo)
     end

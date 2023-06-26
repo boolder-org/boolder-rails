@@ -1,6 +1,5 @@
 # require "HTTParty"
 require 'csv'
-include Imgix::Rails::UrlHelper
 
 namespace :bleau do
   task photo_urls: :environment do
@@ -24,7 +23,7 @@ namespace :bleau do
           "https://www.boolder.com/en/fontainebleau/rocher-fin/#{p.id}",
           p.bleau_info_id,
           p.bleau_info_id.present? ? "https://bleau.info/c/#{p.bleau_info_id}.html" : "",
-          photo ? ix_image_url(photo.key) : ""
+          photo ? url_for(photo.variant(resize_to_limit: [1200, 1200], quality: 50) : ""
         ]
       end
     end

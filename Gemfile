@@ -23,9 +23,8 @@ gem 'slim', '~> 4.0.1'
 gem 'slim-rails', '~> 3.2.0'
 gem 'webpacker', '~> 5.4.0'
 gem 'jbuilder', '~> 2.7'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2' # TODO: remove after Rails 7 migration
 gem 'rack-cors', '~> 1.1.1'
-gem 'imgix-rails', '~> 4.2.0'
 
 gem 'kaminari', '~> 1.2.1'
 gem 'httparty', '~> 0.20.0'
