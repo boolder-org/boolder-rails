@@ -12,7 +12,7 @@ gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', '~> 7.1.1'
 gem 'aws-sdk-s3', '~> 1.126.0'
 gem 'sidekiq', '~> 7.1.2'
-gem 'redis', '~> 5.0.6'
+gem 'redis', '~> 4.2.5'
 gem 'newrelic_rpm'
 gem 'bugsnag', '~> 6.25.2'
 gem 'algoliasearch-rails', '~> 2.2.2'
