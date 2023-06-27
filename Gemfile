@@ -3,13 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
-gem 'rails', '~> 6.1.5'
+gem 'rails', '~> 7.0'
 gem 'bootsnap', '~> 1.15.0', require: false
 
 gem 'puma', '~> 6.3.0'
 gem 'pg','~> 1.5.3'
 gem 'rails_12factor', '~> 0.0.3', group: :production
-gem 'activerecord-postgis-adapter', '~> 7.1.1'
+gem 'activerecord-postgis-adapter', '~> 8.0.2'
 gem 'aws-sdk-s3', '~> 1.126.0'
 gem 'sidekiq', '~> 7.1.2'
 gem 'redis', '~> 4.2.5'
@@ -23,7 +23,7 @@ gem 'slim', '~> 5.1.1'
 gem 'slim-rails', '~> 3.6.2'
 gem 'webpacker', '~> 5.4.0'
 gem 'jbuilder', '~> 2.11.5'
-gem 'image_processing', '~> 1.2' # TODO: remove after Rails 7 migration
+gem 'image_processing', '~> 1.2'
 gem 'rack-cors', '~> 2.0.1'
 
 gem 'kaminari', '~> 1.2.2'
