@@ -17,18 +17,18 @@ gem 'newrelic_rpm'
 gem 'bugsnag', '~> 6.20.0'
 gem 'algoliasearch-rails', '~> 2.1.4'
 
-gem 'turbo-rails', '~> 1.3.2'
+gem 'turbo-rails', '~> 1.4.0'
 gem 'sass-rails', '>= 6'
-gem 'slim', '~> 4.0.1'
-gem 'slim-rails', '~> 3.2.0'
+gem 'slim', '~> 5.1.1'
+gem 'slim-rails', '~> 3.6.2'
 gem 'webpacker', '~> 5.4.0'
-gem 'jbuilder', '~> 2.7'
+gem 'jbuilder', '~> 2.11.5'
 gem 'image_processing', '~> 1.2' # TODO: remove after Rails 7 migration
-gem 'rack-cors', '~> 1.1.1'
+gem 'rack-cors', '~> 2.0.1'
 
-gem 'kaminari', '~> 1.2.1'
-gem 'httparty', '~> 0.20.0'
-gem 'colorize', '~> 0.8.1'
+gem 'kaminari', '~> 1.2.2'
+gem 'httparty', '~> 0.21.0'
+gem 'colorize', '~> 1.1.0'
 
 gem 'rgeo-geojson', '~> 2.1.1'
 
