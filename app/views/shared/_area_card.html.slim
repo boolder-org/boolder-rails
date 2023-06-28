@@ -1,5 +1,5 @@
 div class="w-40 lg:w-52 aspect-w-16 aspect-h-9 relative overflow-hidden rounded-lg"
-  div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{url_for(area.cover.variant(resize_to_limit: [400, 400], quality: 80)) if area.cover.persisted?});"
+  div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{url_for(area.cover.variant(:thumb)) if area.cover.persisted?});"
   div class="bg-transparent" style="background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
   div class="absolute" class="flex items-center text-center justify-center" 
     h1 class="text-base font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= area.name
