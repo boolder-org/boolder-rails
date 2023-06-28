@@ -3,7 +3,11 @@ class Area < ApplicationRecord
   has_many :problems
   has_many :circuits, -> { distinct }, through: :problems
   has_many :poi_routes
-  has_one_attached :cover
+
+  has_one_attached :cover do |attachable|
+    attachable.variant :thumb, resize_to_limit: [400, 400], saver: { quality: 80, strip: true, interlace: true }
+    attachable.variant :medium, resize_to_limit: [800, 800], saver: { quality: 80, strip: true, interlace: true }
+  end
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child

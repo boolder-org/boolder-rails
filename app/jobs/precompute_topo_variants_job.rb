@@ -3,7 +3,7 @@ class PrecomputeTopoVariantsJob < ApplicationJob
 
    def perform(topo)
      # the `.processed` will force the resizing to be done in sync
-     topo.photo.variant(resize_to_limit: [1200, 1200], quality: 50).processed 
-     Rails.logger.debug "Topo ##{topo.id}: variant resize_to_limit: [1200, 1200], quality: 50 processed"
+     topo.photo.variant(:medium).processed 
+     Rails.logger.debug "Topo ##{topo.id}: variant :medium processed"
    end
  end
