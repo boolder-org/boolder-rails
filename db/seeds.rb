@@ -9,4 +9,4 @@
 
 raise "are you crazy?" unless Rails.env.development?
 
-`dropdb dump-prod && heroku pg:pull DATABASE_URL dump-prod`
+`dropdb dump-prod && heroku pg:pull DATABASE_URL dump-prod -a boolder`
