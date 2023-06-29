@@ -122,8 +122,8 @@ fr:
         p1: "Boolder est né de la rencontre entre Romain, Cyril et Nicolas — deux passionnés de grimpe et un passionné de technologie — vivant à deux pas de l’un des plus beaux spots de bloc du monde : Fontainebleau."
         p2: "Pour Nicolas c’est le coup de cœur. Ses deux amis lui font découvrir la magie de « Bleau » : les secteurs emblématiques, l’histoire de la forêt, le plaisir de grimper en pleine nature, ainsi que les bonnes pratiques à respecter (nettoie tes chaussons !)."
         p3: "La richesse de la forêt reste cependant intimidante : plus de 200 secteurs, plusieurs dizaines de milliers de blocs, et des centaines de circuits pour tous les niveaux. Comment s’y retrouver ?"
-        p4: Nicolas décide alors de cartographier la forêt avec minutie pendant près de 2 ans, et de créer un topo simple et moderne. En 2023, Boolder est lancé gratuitement sur iPhone et Android.
-        podcast: Interview de Nicolas sur le podcast "Allez"
+        p4: Nicolas décide alors de cartographier la forêt avec minutie pendant près de 2 ans, et de créer un topo nouvelle génération. En 2023, Boolder est lancé gratuitement sur iPhone et Android.
+        podcast: "En savoir plus : interview de Nicolas sur le podcast \"Allez\""
       project:
         title: Le projet
         contact: contacter
@@ -140,10 +140,10 @@ fr:
         title: Contact
         p1: Pour toute question, vous pouvez nous contacter à l'adresse 
       support:
-        title: Soutien
-        p1_html: Nous remercions particulièrement %{link_bleau}, sans qui le projet Boolder ne serait pas possible. Vous pouvez les soutenir sur leur page %{link_bleau_sponsoring}.
-        p2_html: Nous remercions également l'association %{link_cosiroc} et le site %{link_topo_bleau}.
-        p3_html: Pour soutenir Boolder directement, vous pouvez nous laisser un avis sur l'%{link} et en parler autour de vous. Merci pour votre aide !
+        title: Remerciements
+        p1: "Nous remercions toutes les personnes qui ont contribué à l'écosystème de Bleau : les ouvreurs, les créateurs de circuits (ou \"peintres en piste\"), toutes les personnes ayant contribué à la maintenance et au nettoyage de blocs, aux opérations anti-érosion, ..."
+        p2_html: Nous remercions %{link_bleau} qui centralise et référence des dizaines de milliers de blocs avec minutie et passion depuis plus de 20 ans, de façon gratuite. Vous pouvez les soutenir sur leur page %{link_bleau_sponsoring}.
+        p3_html: Nous remercions également l'association %{link_cosiroc} et le site %{link_topo_bleau}, à l'origine de nombreuses données de première main et d'opérations sur le terrain.
         app: appli
       open_source:
         title: Open data + open source
@@ -158,7 +158,7 @@ fr:
         data:
           question: D'où viennent les données ?
           p1: Les photos et données géographiques (GPS) ont été récoltées par l'équipe Boolder.  
-          p2_html: Les noms de voies et cotations viennent essentiellement de %{link_bleau} et %{link_cosiroc}.
+          p2_html: Les noms de voies et cotations viennent essentiellement de %{link_bleau}, %{link_cosiroc}, et %{link_topo_bleau}.
           p3: Certains dessins de blocs (en vue de dessus) s'inspirent de topos existants. Nous travaillons à les remplacer par des dessins originaux.
         why_free:
           question: Pourquoi l'appli est-elle gratuite ?

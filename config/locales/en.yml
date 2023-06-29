@@ -122,8 +122,8 @@ en:
         p1: "Boolder was born from the meeting between Romain, Cyril and Nicolas - two climbing enthusiasts and one technology enthusiast - living just a stone's throw from one of the most beautiful bouldering spots in the world: Fontainebleau."
         p2: 'For Nicolas, it was love at first sight. His two friends made him discover the magic of "Font": the emblematic sectors, the history of the forest, the joy of climbing in the middle of nature, as well as the rules to respect (clean your shoes!).'
         p3: "The richness of the forest remained however intimidating: more than 200 sectors, several tens of thousands of boulders, and hundreds of circuits for all levels. How to find your way around?"
-        p4: Nicolas then decided to map the forest in detail for nearly 2 years and create a simple and modern guidebook. In 2023, Boolder launched as a free app on iPhone and Android.
-        podcast: Nicolas's interview on the podcast "Allez" (in French)
+        p4: Nicolas then decided to map the forest in detail for nearly 2 years and create a modern guidebook. In 2023, Boolder launched as a free app on iPhone and Android.
+        podcast: "Learn more: Nicolas's interview on the podcast \"Allez\" (in French)"
       project:
         title: The Project
         contact: contact
@@ -140,10 +140,11 @@ en:
         title: Contact
         p1: For any questions, you can contact us at 
       support:
-        title: Partners
-        p1_html: Special thanks to %{link_bleau}, without whom the Boolder project would not be possible. You can support them on their %{link_bleau_sponsoring} page.
-        p2_html: We also want to thank %{link_cosiroc} and %{link_topo_bleau}.
-        p3_html: The best way to help Boolder directly for now is to leave a review on the %{link} and tell your friends about it. Thank you for your help!
+        title: Thanks
+        p1: "We thank all the people who have contributed to the Font ecosystem: "
+        # p1: "Nous remercions toutes les personnes qui ont contribué à l'écosystème de Bleau : les ouvreurs, les créateurs de circuits (ou \"peintres en piste\"), toutes les personnes ayant contribué à la maintenance et au nettoyage de blocs, aux opérations anti-érosion, ..."
+        p2_html: Special thanks to %{link_bleau}, whose team has referenced almost 50.000 problems with great care and passion for the past 20 years, all free for everyone. You can support them on their %{link_bleau_sponsoring} page.
+        p3_html: We also want to thank %{link_cosiroc} and %{link_topo_bleau} who are responsible for a lot of the original ground work and graciously offer first-hand information on their website.
         app: app
       open_source:
         title: Open data + open source
@@ -158,7 +159,7 @@ en:
         data:
           question: Where does the data come from?
           p1: Photos and geographical data (GPS) were collected by the Boolder team.
-          p2_html: The problem names and grades come mainly from %{link_bleau} and %{link_cosiroc}.
+          p2_html: The problem names and grades come mainly from %{link_bleau}, %{link_cosiroc} and %{link_topo_bleau}.
           p3: Some of the boulder drawings (in top view) are inspired by existing guidebooks. We are working to replace them with original drawings.
         why_free:
           question: Why is the app free?
