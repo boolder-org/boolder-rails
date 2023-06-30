@@ -141,10 +141,9 @@ en:
         p1: For any questions, you can contact us at 
       support:
         title: Thanks
-        p1: "We thank all the people who have contributed to the Font ecosystem: "
-        # p1: "Nous remercions toutes les personnes qui ont contribué à l'écosystème de Bleau : les ouvreurs, les créateurs de circuits (ou \"peintres en piste\"), toutes les personnes ayant contribué à la maintenance et au nettoyage de blocs, aux opérations anti-érosion, ..."
-        p2_html: Special thanks to %{link_bleau}, whose team has referenced almost 50.000 problems with great care and passion for the past 20 years, all free for everyone. You can support them on their %{link_bleau_sponsoring} page.
-        p3_html: We also want to thank %{link_cosiroc} and %{link_topo_bleau} who are responsible for a lot of the original ground work and graciously offer first-hand information on their website.
+        p1: "We extend our thanks to everyone who has contributed to the Font ecosystem: the route setters, the circuit creators (aka \"track painters\"), and all those who have contributed to the maintenance and cleaning of boulders, anti-erosion operations, ..."
+        p2_html: Special thanks to %{link_bleau}, whose team has referenced almost 50.000 problems with great care and passion for the past 20 years, and made it free for everyone. You can support them on their %{link_bleau_sponsoring} page.
+        p3_html: We also extend our thanks to the %{link_cosiroc} association and the %{link_topo_bleau} website, which have provided a wealth of firsthand data and carried out numerous on-the-ground operations.
         app: app
       open_source:
         title: Open data + open source
