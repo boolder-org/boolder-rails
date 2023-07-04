@@ -73,6 +73,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_092226) do
     t.string "grade"
     t.string "steepness"
     t.boolean "sit_start"
+    t.string "tags", default: [], null: false, array: true
     t.bigint "bleau_circuit_id"
     t.string "circuit_number"
     t.string "circuit_letter"

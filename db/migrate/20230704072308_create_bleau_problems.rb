@@ -5,6 +5,7 @@ class CreateBleauProblems < ActiveRecord::Migration[7.0]
       t.string :grade
       t.string :steepness
       t.boolean :sit_start
+      t.string :tags, array: true, default: [], null: false
       t.references :bleau_circuit, index: true
       t.string :circuit_number
       t.string :circuit_letter
