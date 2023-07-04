@@ -45,7 +45,7 @@ namespace :bleau do
 
       puts "Created import job for bleau_problem_id=#{id}"
       
-      BleauImportProblemJob.perform_now(id)
+      BleauImportProblemJob.perform_later(id)
     end
   end
 end
