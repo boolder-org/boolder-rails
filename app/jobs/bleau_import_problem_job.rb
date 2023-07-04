@@ -38,8 +38,8 @@ class BleauImportProblemJob < ApplicationJob
       grade: grade,
       sit_start: sit_start,
       bleau_circuit_id: bleau_circuit_id,
-      bleau_circuit_number: circuit_number,
-      bleau_circuit_letter: circuit_letter,
+      circuit_number: circuit_number,
+      circuit_letter: circuit_letter,
       ratings_average: ratings_average, 
       ratings: ratings_number, 
       ascents: ascents_number 

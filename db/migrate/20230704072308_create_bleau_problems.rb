@@ -5,8 +5,8 @@ class CreateBleauProblems < ActiveRecord::Migration[7.0]
       t.string :grade
       t.boolean :sit_start
       t.references :bleau_circuit, index: true
-      t.string :bleau_circuit_number
-      t.string :bleau_circuit_letter
+      t.string :circuit_number
+      t.string :circuit_letter
       t.integer :ascents
       t.integer :ratings
       t.decimal :ratings_average
