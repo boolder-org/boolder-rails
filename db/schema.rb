@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_04_092226) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_04_151659) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -145,7 +145,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_092226) do
     t.integer "height"
     t.bigint "area_id"
     t.string "tags", default: [], null: false, array: true
-    t.string "bleau_info_id"
+    t.integer "bleau_info_id"
     t.string "landing"
     t.boolean "risky", default: false, null: false
     t.boolean "featured", default: false, null: false
