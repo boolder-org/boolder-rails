@@ -5,6 +5,7 @@ class Problem < ApplicationRecord
   has_many :topos, through: :lines
   has_many :children, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
+  belongs_to :bleau_problem, foreign_key: "bleau_info_id", optional: true
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child

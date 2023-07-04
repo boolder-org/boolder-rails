@@ -1,5 +1,6 @@
 class BleauProblem < ApplicationRecord
   belongs_to :bleau_area
+  has_one :problem, foreign_key: "bleau_info_id"
 
   # TODO: make DRY with problem.rb
   validates :steepness, inclusion: { in: Problem::STEEPNESS_VALUES }
