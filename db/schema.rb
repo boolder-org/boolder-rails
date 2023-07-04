@@ -71,10 +71,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_092226) do
   create_table "bleau_problems", force: :cascade do |t|
     t.string "name"
     t.string "grade"
+    t.string "steepness"
     t.boolean "sit_start"
     t.bigint "bleau_circuit_id"
-    t.string "bleau_circuit_number"
-    t.string "bleau_circuit_letter"
+    t.string "circuit_number"
+    t.string "circuit_letter"
     t.integer "ascents"
     t.integer "ratings"
     t.decimal "ratings_average"

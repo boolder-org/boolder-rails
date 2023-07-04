@@ -3,6 +3,7 @@ class CreateBleauProblems < ActiveRecord::Migration[7.0]
     create_table :bleau_problems do |t|
       t.string :name
       t.string :grade
+      t.string :steepness
       t.boolean :sit_start
       t.references :bleau_circuit, index: true
       t.string :circuit_number
