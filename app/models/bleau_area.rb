@@ -1,0 +1,2 @@
+class BleauArea < ApplicationRecord
+end

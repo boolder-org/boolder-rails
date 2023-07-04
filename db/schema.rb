@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_27_091503) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_04_092226) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -59,6 +59,30 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_27_091503) do
     t.text "warning_en"
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
+  end
+
+  create_table "bleau_areas", force: :cascade do |t|
+    t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["slug"], name: "index_bleau_areas_on_slug", unique: true
+  end
+
+  create_table "bleau_problems", force: :cascade do |t|
+    t.string "name"
+    t.string "grade"
+    t.boolean "sit_start"
+    t.bigint "bleau_circuit_id"
+    t.string "bleau_circuit_number"
+    t.string "bleau_circuit_letter"
+    t.integer "ascents"
+    t.integer "ratings"
+    t.decimal "ratings_average"
+    t.bigint "bleau_area_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bleau_area_id"], name: "index_bleau_problems_on_bleau_area_id"
+    t.index ["bleau_circuit_id"], name: "index_bleau_problems_on_bleau_circuit_id"
   end
 
   create_table "boulders", force: :cascade do |t|
