@@ -16,6 +16,12 @@ class Admin::TasksController < Admin::BaseController
     elsif params[:tab] == "empty_bleau_info_id"
       @problems = @area.problems.where("bleau_info_id IS NULL OR bleau_info_id = ''")
     end
+
+    @bleau_problems = BleauProblem.
+      left_outer_joins(:problem).where(problems: { id: nil }).
+      where(bleau_area_id: BleauArea.find_by(slug: "cuvier").id).
+      where.not(ascents: nil).
+      order(ascents: :desc)
   end
 
   def dashboard
