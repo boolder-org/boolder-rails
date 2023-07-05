@@ -9,7 +9,7 @@ class BleauProblem < ApplicationRecord
   validate :validate_circuit_letter_is_numeric
 
   def validate_circuit_letter_is_numeric
-    return if circuit_number.blank? || circuit_number == LETTER_START
+    return if circuit_number.blank? || circuit_number == Problem::LETTER_START || circuit_number == "A"
     if circuit_number.to_i < 1
       errors.add(:circuit_number, "must be a number or D (for Départ)")
     end
