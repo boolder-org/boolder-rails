@@ -1,27 +1,25 @@
 class Admin::TasksController < Admin::BaseController
   def index
     @area = Area.find_by(slug: params[:area_slug])
-    @tabs = %w(missing_line missing_line_coordinates empty_bleau_info_id)
+    
+    @add_location = @area.problems.joins(:bleau_problem). #order("ascents DESC NULLS LAST").
+      where(location: nil)
 
-    if !params[:tab].present?
-      redirect_to admin_area_tasks_path(tab: @tabs.first) 
-    end
+    @add_photo = @area.problems.joins(:bleau_problem). #order("ascents DESC NULLS LAST").
+      joins("LEFT JOIN lines ON lines.problem_id = problems.id").where("lines.problem_id IS NULL").uniq
 
-    if params[:tab] == "missing_line"
-      @problems = @area.problems.joins("LEFT JOIN lines ON lines.problem_id = problems.id").
-        where("lines.problem_id IS NULL").uniq
-    elsif params[:tab] == "missing_line_coordinates"
-      @problems = @area.problems.joins("LEFT JOIN lines ON lines.problem_id = problems.id").
-        where("lines.coordinates IS NULL AND lines.problem_id IS NOT NULL").uniq
-    elsif params[:tab] == "empty_bleau_info_id"
-      @problems = @area.problems.where("bleau_info_id IS NULL OR bleau_info_id = ''")
-    end
+    @add_line = @area.problems.joins(:bleau_problem). #order("ascents DESC NULLS LAST").
+      joins("LEFT JOIN lines ON lines.problem_id = problems.id").where("lines.coordinates IS NULL AND lines.problem_id IS NOT NULL").uniq
+
+    @action_needed = @area.problems.joins(:bleau_problem).where(action_needed: true)
+
+    @problems = (@add_location + @add_photo + @add_line + @action_needed).uniq.sort_by{|p| p.bleau_problem.ascents.to_i }.reverse
 
     @bleau_problems = BleauProblem.
       left_outer_joins(:problem).where(problems: { id: nil }).
-      where(bleau_area_id: BleauArea.find_by(slug: "cuvier").id).
-      where.not(ascents: nil).
-      order(ascents: :desc)
+      where(bleau_area_id: BleauArea.find_by(slug: "isatis").id).
+      # where.not(ascents: nil).
+      order("ascents DESC NULLS LAST")
   end
 
   def dashboard

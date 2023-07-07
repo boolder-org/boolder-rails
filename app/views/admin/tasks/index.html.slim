@@ -2,6 +2,50 @@
 - add_breadcrumb @area.name, admin_area_path(@area)
 - add_breadcrumb "Tasks", nil, class: "active"
 
+
+
+div class="flex flex-col my-6"
+  div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
+    div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
+      div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+        table class="min-w-full divide-y divide-gray-200"
+          thead class="bg-gray-50"
+            tr
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Ascents
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" What
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Comment
+          tbody class="bg-white divide-y divide-gray-200"
+            - @problems.each do |problem|
+              tr class="place-content-start align-top h-16"
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  div class="text-sm text-gray-500"= link_to(problem.id, edit_admin_problem_path(problem), id: problem.id)
+                td class="px-6 py-2 whitespace-nowrap w-2/12"
+                  div class="text-sm text-gray-900"
+                    = problem_circle_view_with_name(problem)
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  span class="ml-1 text-gray-500"= problem.grade
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  div class="text-sm text-gray-500"
+                    = problem.bleau_problem&.ascents
+                td class="px-6 py-0 whitespace-nowrap w-2/12"
+                  div class="my-2"
+                    - if @add_photo.include?(problem)
+                      span class="mt-2 mr-2 px-2.5 rounded-full border border-gray-700 text-gray-700 bg-green-300 font-light text-sm" photo
+                    - if @add_line.include?(problem)
+                      span class="mt-2 mr-2 px-2.5 rounded-full border border-gray-700 text-gray-700 bg-blue-300 font-light text-sm" line
+                    - if @add_location.include?(problem)
+                      span class="mt-2 mr-2 px-2.5 rounded-full border border-gray-700 text-gray-700 bg-red-300 font-light text-sm" location
+                    - if @action_needed.include?(problem)
+                      span class="mt-2 mr-2 px-2.5 rounded-full border border-gray-700 text-gray-700 bg-gray-300 font-light text-sm" other
+                td class="px-6 py-0 whitespace-nowrap w-2/12"
+                  - if problem.comment.present?
+                    = problem.comment
+
+p= "#{@problems.count} results"
+
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
     div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
@@ -34,53 +78,6 @@ div class="flex flex-col my-6"
                   div class="text-sm text-gray-900"
                     = link_to "import", new_admin_problem_path(bleau_problem_id: bleau_problem.id)
 
-                  
-
 p= "#{@bleau_problems.count} results"
-
-div class="border-b border-gray-200"
-  nav class="-mb-px flex space-x-8" aria-label="Tabs"
-    - @tabs.each do |name|
-      - label = name.humanize
-      - if params[:tab] == name.to_s
-        = link_to label, admin_area_tasks_path(tab: name), class: "border-green-500 text-green-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm"
-      - else  
-        = link_to label, admin_area_tasks_path(tab: name), class: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" 
-
-
-div class="flex flex-col my-6"
-  div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
-    div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
-      div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
-        table class="min-w-full divide-y divide-gray-200"
-          thead class="bg-gray-50"
-            tr
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Info
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
-          tbody class="bg-white divide-y divide-gray-200"
-            - @problems.each do |problem|
-              tr class="place-content-start align-top h-16"
-                td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  div class="text-sm text-gray-500"= link_to(problem.id, edit_admin_problem_path(problem), id: problem.id)
-                td class="px-6 py-2 whitespace-nowrap w-3/12"
-                  div class="text-sm text-gray-900"
-                    = problem_circle_view_with_name(problem)
-                td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  - if problem.featured
-                    span class="text-red-400"
-                      = render 'svg/heart', width: 24, height: 24
-                td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  span class="ml-1 text-gray-500"= problem.grade
-                td class="px-6 py-2 whitespace-nowrap w-4/12"
-                  div class="text-sm text-gray-500"
-                    
-                td class="px-6 py-0 whitespace-nowrap"
-                  
-
-p= "#{@problems.count} results"
 
 div style="margin-bottom: 400px"
