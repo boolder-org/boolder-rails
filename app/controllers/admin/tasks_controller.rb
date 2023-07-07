@@ -8,12 +8,11 @@ class Admin::TasksController < Admin::BaseController
     @add_photo = @area.problems.joins(:bleau_problem). #order("ascents DESC NULLS LAST").
       joins("LEFT JOIN lines ON lines.problem_id = problems.id").where("lines.problem_id IS NULL").uniq
 
-    @add_line = @area.problems.joins(:bleau_problem). #order("ascents DESC NULLS LAST").
-      joins("LEFT JOIN lines ON lines.problem_id = problems.id").where("lines.coordinates IS NULL AND lines.problem_id IS NOT NULL").uniq
+    @add_line = @area.problems.all.select{|p| p.lines.published.any?{|l| l.coordinates.nil? } }
 
     @action_needed = @area.problems.joins(:bleau_problem).where(action_needed: true)
 
-    @problems = (@add_location + @add_photo + @add_line + @action_needed).uniq.sort_by{|p| p.bleau_problem.ascents.to_i }.reverse
+    @problems = (@add_location + @add_photo + @add_line + @action_needed).uniq.sort_by{|p| p.ascents.to_i }.reverse
 
     @bleau_problems = BleauProblem.
       left_outer_joins(:problem).where(problems: { id: nil }).
