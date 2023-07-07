@@ -48,3 +48,13 @@ div class="col-span-6 sm:col-span-2"
   = form.label :bleau_info_id, "Bleau.info id"
   = form.text_field :bleau_info_id, autocomplete: "off"
   
+div class="col-span-6 sm:col-span-4"
+
+div class="col-span-6 sm:col-span-6"
+  = form.label :comment
+  = form.text_area :comment, autocomplete: "off"
+
+div class="col-span-6 sm:col-span-2"
+  = form.check_box :action_needed, class: "form-check-input"
+  = form.label :action_needed
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_04_151659) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_05_143149) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -155,11 +155,24 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_04_151659) do
     t.integer "ascents"
     t.integer "popularity"
     t.string "circuit_letter"
+    t.text "comment"
+    t.boolean "action_needed"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"
     t.index ["location"], name: "index_problems_on_location", using: :gist
     t.index ["tags"], name: "index_problems_on_tags", using: :gin
+  end
+
+  create_table "todos", force: :cascade do |t|
+    t.string "reason", null: false
+    t.bigint "problem_id"
+    t.string "state", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["problem_id"], name: "index_todos_on_problem_id"
+    t.index ["reason"], name: "index_todos_on_reason"
+    t.index ["state"], name: "index_todos_on_state"
   end
 
   create_table "topos", force: :cascade do |t|
