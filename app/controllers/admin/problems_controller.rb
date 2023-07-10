@@ -56,6 +56,14 @@ class Admin::ProblemsController < Admin::BaseController
     problem = Problem.new
     problem.assign_attributes(problem_params)
     problem.tags = params[:problem][:joined_tags].split(',')
+
+    if bleau_problem = BleauProblem.find(params[:problem][:bleau_info_id]) 
+      problem.ratings = bleau_problem.ratings
+      problem.ratings_average = bleau_problem.ratings_average
+      problem.ascents = bleau_problem.ascents
+      # TODO : compute popularity
+    end
+
     problem.save!
 
     flash[:notice] = "Problem created"
