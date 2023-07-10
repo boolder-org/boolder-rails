@@ -23,12 +23,12 @@ namespace :todos do
     # FIXME : improve perfs
 
     Problem.all.find_each do |problem|
-      if problem.todos.where(reason: "other").any?
+      if problem.todos.where(reason: "line").any?
         puts "already a todo for problem ##{problem.id}"
       else
         if problem.lines.published.any?{|l| l.coordinates.nil? }
 
-          todo = problem.todos.create!(state: "new", reason: "other")
+          todo = problem.todos.create!(state: "new", reason: "line")
 
           puts "created a todo for problem ##{problem.id}"
         end
