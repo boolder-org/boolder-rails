@@ -14,7 +14,7 @@ class Admin::TasksController < Admin::BaseController
 
     # @problems = (@add_location + @add_photo + @add_line + @action_needed).uniq.sort_by{|p| p.ascents.to_i }.reverse
 
-    @problems = @area.problems.joins(:todos).order("ascents DESC NULLS LAST")
+    @todos = Todo.joins(:problem).where(problems: { area_id: @area.id }).order("ascents DESC NULLS LAST")
 
     @bleau_problems = BleauProblem.
       left_outer_joins(:problem).where(problems: { id: nil }).
