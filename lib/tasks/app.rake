@@ -36,7 +36,7 @@ namespace :app do
         CREATE INDEX problem_grade_idx ON problems(grade);
       SQL
 
-      Problem.joins(:area).where(area: { published: true }).find_each do |p|
+      Problem.with_location.joins(:area).where(area: { published: true }).find_each do |p|
         db.execute(
           "INSERT INTO problems (id, name, name_en, name_searchable, grade, latitude, longitude, circuit_id, circuit_number, 
           circuit_color, steepness, sit_start, area_id, bleau_info_id, 
