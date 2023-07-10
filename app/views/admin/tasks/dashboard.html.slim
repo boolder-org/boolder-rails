@@ -7,8 +7,8 @@ div class="flex flex-col my-6"
             tr
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Missing lines
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Missing line coordinates
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Todos
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Ascents
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
           tbody class="bg-white divide-y divide-gray-200"
@@ -21,8 +21,10 @@ div class="flex flex-col my-6"
                     = area.name
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   = link_to admin_area_tasks_path(area_slug: area.slug) do
-                    = area.problems.joins("LEFT JOIN lines ON lines.problem_id = problems.id").where("lines.problem_id IS NULL").count
+                    = Todo.joins(:problem).where(problems: { area_id: area.id }).count
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  = link_to admin_area_tasks_path(area_slug: area.slug) do
+                    = Todo.joins(:problem).where(problems: { area_id: area.id }).sum(:ascents)
                 td class="px-6 py-2 whitespace-nowrap w-4/12"
                   div class="text-sm text-gray-500"
                     

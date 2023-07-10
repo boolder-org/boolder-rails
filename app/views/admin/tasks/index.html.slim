@@ -1,8 +1,5 @@
-- add_breadcrumb "Fontainebleau", admin_areas_path
-- add_breadcrumb @area.name, admin_area_path(@area)
-- add_breadcrumb "Tasks", nil, class: "active"
-
-
+- add_breadcrumb "Todos", admin_tasks_dashboard_path
+- add_breadcrumb @area.name, nil, class: "active"
 
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
@@ -29,7 +26,7 @@ div class="flex flex-col my-6"
                   span class="ml-1 text-gray-500"= problem.grade
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   div class="text-sm text-gray-500"
-                    = problem.bleau_problem&.ascents
+                    = problem.ascents
                 td class="px-6 py-0 whitespace-nowrap w-2/12"
                   div class="my-2"
                     - if @add_photo.include?(problem)
