@@ -12,7 +12,8 @@ div class="flex flex-col my-6"
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
           tbody class="bg-white divide-y divide-gray-200"
-            - @areas.each do |area|
+            - @areas_with_ascents.each do |area_id, ascents|
+              - area = Area.find area_id
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   div class="text-sm text-gray-500"= link_to(area.id, admin_area_problems_path(area))
@@ -24,7 +25,7 @@ div class="flex flex-col my-6"
                     = Todo.joins(:problem).where(problems: { area_id: area.id }).count
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   = link_to admin_area_tasks_path(area_slug: area.slug) do
-                    = Todo.joins(:problem).where(problems: { area_id: area.id }).sum(:ascents)
+                    = ascents
                 td class="px-6 py-2 whitespace-nowrap w-4/12"
                   div class="text-sm text-gray-500"
                     

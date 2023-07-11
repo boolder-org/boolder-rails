@@ -24,6 +24,8 @@ class Admin::TasksController < Admin::BaseController
   end
 
   def dashboard
-    @areas = Area.published.order(:name)
+    @areas_with_ascents = Todo.all.joins(:problem).group(:area_id).sum(:ascents).
+      sort_by(&:second).reverse.
+      select{|area_id, _| Area.find(area_id).published }
   end
 end
