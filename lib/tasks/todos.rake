@@ -20,6 +20,20 @@ namespace :todos do
 
     # ====================================================================================
 
+    add_location = Problem.where(location: nil)
+
+    add_location.find_each do |problem|
+      if problem.todos.where(reason: "location").any?
+        puts "already a todo for problem ##{problem.id}"
+      else
+        todo = problem.todos.create!(state: "new", reason: "location")
+
+        puts "created a todo for problem ##{problem.id}"
+      end
+    end
+
+    # ====================================================================================
+
     # FIXME : improve perfs
 
     Problem.all.find_each do |problem|
@@ -37,6 +51,8 @@ namespace :todos do
 
     # ====================================================================================
 
+    # TODO: remove (replace with CRUD)
+    
     action_needed = Problem.all.where(action_needed: true)
 
     action_needed.find_each do |problem|
