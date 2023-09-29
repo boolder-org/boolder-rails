@@ -20,17 +20,17 @@ namespace :todos do
 
     # ====================================================================================
 
-    add_location = Problem.where(location: nil)
+    # add_location = Problem.where(location: nil)
 
-    add_location.find_each do |problem|
-      if problem.todos.where(reason: "location").any?
-        puts "already a todo for problem ##{problem.id}"
-      else
-        todo = problem.todos.create!(state: "new", reason: "location")
+    # add_location.find_each do |problem|
+    #   if problem.todos.where(reason: "location").any?
+    #     puts "already a todo for problem ##{problem.id}"
+    #   else
+    #     todo = problem.todos.create!(state: "new", reason: "location")
 
-        puts "created a todo for problem ##{problem.id}"
-      end
-    end
+    #     puts "created a todo for problem ##{problem.id}"
+    #   end
+    # end
 
     # ====================================================================================
 

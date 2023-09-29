@@ -4,7 +4,7 @@ class Admin::TasksController < Admin::BaseController
     
     @todos = Todo.joins(:problem).
       where(problems: { area_id: @area.id }).
-      where.not(todos: { reason: "line" }).
+      # where.not(todos: { reason: "line" }).
       order("ascents DESC NULLS LAST")
 
     @bleau_problems = BleauProblem.
