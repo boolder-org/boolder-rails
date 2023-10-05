@@ -27,7 +27,6 @@ div class="grid grid-cols-12 gap-4"
   div class="col-span-3 flex justify-end"
     - items = []
     - items << { text: "Edit area", link: edit_admin_area_path(@area) }
-    - items << { text: "Tasks", link: admin_area_tasks_path(area_slug: @area.slug) }
     - if params[:circuit_id]
       - items << { text: "Edit circuit", link: edit_admin_circuit_path(id: params[:circuit_id]) }
     = render "shared/dropdown_menu", items: items
