@@ -6,7 +6,7 @@ class Admin::ProblemsController < Admin::BaseController
       redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
     end
 
-    arel = Problem.where(area_id: @area.id) 
+    arel = Problem.with_location.where(area_id: @area.id) 
     session[:area_id] = @area.id
 
     if params[:circuit_id] == "off_circuit"
@@ -22,7 +22,7 @@ class Admin::ProblemsController < Admin::BaseController
     circuits = @area.sorted_circuits
     @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"])
 
-    @missing_location = @area.problems.where("location IS NULL")
+    @missing_location = @area.problems.without_location
     @missing_grade = @area.problems.where("grade IS NULL OR grade = ''")
   end
 

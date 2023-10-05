@@ -6,9 +6,8 @@
   div class="mb-4"
     - if @missing_location.any?
       = warning_box do 
-        span class="font-bold" Location missing:
-        - @missing_location.each do |problem|
-          span class="ml-1"= link_to "##{problem.id}", admin_problem_path(problem)
+        span class="font-bold" Moderation: 
+        = "#{@missing_location.count} problem(s)"
 
     - if @missing_grade.any?
       = warning_box do 

@@ -64,9 +64,11 @@ class Problem < ApplicationRecord
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
   scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
   scope :with_location, -> { where.not(location: nil) }
+  scope :without_location, -> { where(location: nil) }
 
   def published?
-    area.published && location.present?
+    # area.published && location.present?
+    false
   end
 
   def to_param
