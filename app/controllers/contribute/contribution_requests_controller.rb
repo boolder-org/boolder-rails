@@ -1,6 +1,6 @@
 class Contribute::ContributionRequestsController < ApplicationController
   def index
-    @area = Area.find_by(slug: "cuvier")
+    @area = Area.find(params[:area_id])
     
     @requests = ContributionRequest.joins(:problem).
       where(problems: { area_id: @area.id }).

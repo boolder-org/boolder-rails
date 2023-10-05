@@ -16,7 +16,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
         ul role="list" class="divide-y divide-gray-200"
           - @areas.each do |area, percentage|
             li
-              = link_to area_path(area), class:"block hover:bg-gray-50" do
+              = link_to contribute_contribution_requests_path(area_id: area.id), class:"block hover:bg-gray-50" do
                 div class="px-4 py-4 sm:px-6"
                   div class="flex justify-between"
                     p class=""
