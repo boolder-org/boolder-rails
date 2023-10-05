@@ -103,6 +103,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_10_092750) do
     t.integer "risk", limit: 2
   end
 
+  create_table "contribution_requests", force: :cascade do |t|
+    t.string "what", null: false
+    t.string "state", null: false
+    t.bigint "problem_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["problem_id"], name: "index_contribution_requests_on_problem_id"
+    t.index ["state"], name: "index_contribution_requests_on_state"
+    t.index ["what"], name: "index_contribution_requests_on_what"
+  end
+
   create_table "lines", force: :cascade do |t|
     t.json "coordinates"
     t.bigint "problem_id"
@@ -155,24 +166,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_10_092750) do
     t.integer "ascents"
     t.integer "popularity"
     t.string "circuit_letter"
-    t.text "comment"
-    t.boolean "action_needed"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"
     t.index ["location"], name: "index_problems_on_location", using: :gist
     t.index ["tags"], name: "index_problems_on_tags", using: :gin
-  end
-
-  create_table "todos", force: :cascade do |t|
-    t.string "reason", null: false
-    t.string "state", null: false
-    t.bigint "problem_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["problem_id"], name: "index_todos_on_problem_id"
-    t.index ["reason"], name: "index_todos_on_reason"
-    t.index ["state"], name: "index_todos_on_state"
   end
 
   create_table "topos", force: :cascade do |t|
