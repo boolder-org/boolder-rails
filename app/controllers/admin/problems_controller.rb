@@ -2,7 +2,7 @@ class Admin::ProblemsController < Admin::BaseController
   def index
     @area = Area.find_by(slug: params[:area_slug])
 
-    if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id)
+    if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id || "off_circuit")
       redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
     end
 
