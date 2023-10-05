@@ -32,10 +32,13 @@ namespace :bleau do
   end
 
   task import: :environment do
-    slug = ENV["slug"]
-    raise "please specify an slug" unless slug.present?
+    area_id = ENV["area_id"]
+    raise "please specify an area_id" unless area_id.present?
 
-    html = HTTParty.get("https://bleau.info/#{slug}").body
+    area = Area.find(area_id)
+    bleau_area = area.bleau_area
+
+    html = HTTParty.get("https://bleau.info/#{bleau_area.slug}").body
     doc = Nokogiri::HTML(html)
 
     bleau_problems = doc.css(".vsr").map do |row|

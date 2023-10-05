@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_10_092750) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_05_145400) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -57,6 +57,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_10_092750) do
     t.text "description_en"
     t.text "warning_fr"
     t.text "warning_en"
+    t.integer "bleau_area_id", null: false
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
   end
