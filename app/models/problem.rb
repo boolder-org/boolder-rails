@@ -66,7 +66,7 @@ class Problem < ApplicationRecord
   scope :with_location, -> { where.not(location: nil) }
 
   def published?
-    area.published
+    area.published && location.present?
   end
 
   def to_param
