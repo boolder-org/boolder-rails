@@ -42,6 +42,12 @@ Rails.application.routes.draw do
       root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
     end
 
+    namespace :contribute do 
+      resources :contribution_requests, only: [:index]
+      get "/", to: "contribution_requests#dashboard"
+      # get '/', to: "contribution_requests#index", as: :contribute_root
+    end
+
     scope 'fontainebleau' do
       resources :circuits, only: [:show, :index]
       resources :problems, only: [:index]
