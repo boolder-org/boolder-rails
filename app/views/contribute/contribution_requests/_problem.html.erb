@@ -1,5 +1,6 @@
 <li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg">
-  <%= link_to problem_friendly_path(problem) do %>
+  <% if problem.bleau_info_id.present? %>
+  <%= link_to bleau_info_url(problem), rel: "nofollow", target: "_blank" do %>
     <div class="flex justify-between py-2">
         <div>
           <%= problem_circle_view(problem) %>
@@ -17,10 +18,14 @@
             <% end %>
             <div class="text-gray-500">
               <%= problem.ascents %>
+              <!-- <% if problem.ascents.to_i >= 5 %>
+              <span class="text-green-500">prio</span>
+              <% end %> -->
             </div>
             
           </div>
         </div>
     </div>
+  <% end %>
   <% end %>
 </li>
