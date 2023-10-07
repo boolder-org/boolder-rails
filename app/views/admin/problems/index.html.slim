@@ -6,9 +6,8 @@
   div class="mb-4"
     - if @missing_location.any?
       = warning_box do 
-        span class="font-bold" Location missing:
-        - @missing_location.each do |problem|
-          span class="ml-1"= link_to "##{problem.id}", admin_problem_path(problem)
+        span class="font-bold" Moderation: 
+        = "#{@missing_location.count} problem(s)"
 
     - if @missing_grade.any?
       = warning_box do 
@@ -27,7 +26,6 @@ div class="grid grid-cols-12 gap-4"
   div class="col-span-3 flex justify-end"
     - items = []
     - items << { text: "Edit area", link: edit_admin_area_path(@area) }
-    - items << { text: "Tasks", link: admin_area_tasks_path(area_slug: @area.slug) }
     - if params[:circuit_id]
       - items << { text: "Edit circuit", link: edit_admin_circuit_path(id: params[:circuit_id]) }
     = render "shared/dropdown_menu", items: items

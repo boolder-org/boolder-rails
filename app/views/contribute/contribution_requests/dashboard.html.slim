@@ -1,0 +1,29 @@
+/ - set_meta_tags title: t("views.areas.index.metas.title")
+/ - set_meta_tags description: t("views.areas.index.metas.description")
+
+/ - set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") }
+
+/ - set_meta_tags canonical: areas_url
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16 mb-4"
+    div class="col-span-1"
+
+      h2 class="py-4 px-4 sm:px-0 text-2xl font-bold text-gray-900" 
+        | Contribute
+      
+      div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
+        ul role="list" class="divide-y divide-gray-200"
+          - @areas.each do |area, percentage|
+            li
+              = link_to contribute_contribution_requests_path(area_id: area.id), class:"block hover:bg-gray-50" do
+                div class="px-4 py-4 sm:px-6"
+                  div class="flex justify-between"
+                    p class=""
+                      = area.name
+                    div class="flex items-center space-x-2 text-gray-400"
+                      span class=""= number_to_percentage(percentage*100, precision: 0)
+                      svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"
+                        path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"
+
+                      

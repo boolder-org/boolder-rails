@@ -5,6 +5,8 @@ class Problem < ApplicationRecord
   has_many :topos, through: :lines
   has_many :children, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
+  belongs_to :bleau_problem, foreign_key: "bleau_info_id", optional: true
+  has_many :contribution_requests
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
@@ -62,9 +64,10 @@ class Problem < ApplicationRecord
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
   scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
   scope :with_location, -> { where.not(location: nil) }
+  scope :without_location, -> { where(location: nil) }
 
   def published?
-    area.published
+    area.published && location.present?
   end
 
   def to_param

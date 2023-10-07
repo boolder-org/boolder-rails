@@ -7,17 +7,16 @@ Rails.application.routes.draw do
     namespace :admin do 
       resources :areas, param: :slug do
         resources :problems, only: :index
-        resources :tasks, only: :index
       end
       resources :problems, except: :index
       resources :circuits
       resources :imports
       resources :topos
       resources :problem_imports
+      resources :bleau_problems
       resources :lines
       resources :pois
       resources :poi_routes
-      get "tasks/dashboard", to: "tasks#dashboard"
 
       root 'areas#index'
     end
@@ -40,6 +39,11 @@ Rails.application.routes.draw do
         get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
       end
       root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
+    end
+
+    namespace :contribute do 
+      resources :contribution_requests, only: [:index]
+      get "/", to: "contribution_requests#dashboard"
     end
 
     scope 'fontainebleau' do

@@ -14,6 +14,8 @@ class MapController < ApplicationController
     end
 
     if params[:pid] && (problem = Problem.find(params[:pid]))
+      return unless problem.location.present?
+      
       @problem = { 
         id: problem.id,
         lat: problem.location.lat,

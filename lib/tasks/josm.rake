@@ -9,7 +9,7 @@ namespace :josm do
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    problem_features = Problem.where(area_id: area_id).map do |problem|
+    problem_features = Problem.with_location.where(area_id: area_id).map do |problem|
       hash = {}.with_indifferent_access
       hash[:name] = problem.name_debug
       hash[:problem_id] = problem.id

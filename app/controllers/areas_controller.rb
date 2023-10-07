@@ -20,12 +20,12 @@ class AreasController < ApplicationController
 
     @circuits = @area.main_circuits
 
-    @popular_problems = @area.problems.where(featured: true).order(grade: :desc, popularity: :desc)
+    @popular_problems = @area.problems.with_location.where(featured: true).order(grade: :desc, popularity: :desc)
   end
 
   def problems
     @area = Area.find_by(slug: params[:slug])
     
-    @problems = @area.problems.order(popularity: :desc).group_by{|p| p.grade }.sort_by{|grade, _| grade }.reverse
+    @problems = @area.problems.with_location.order(popularity: :desc).group_by{|p| p.grade }.sort_by{|grade, _| grade }.reverse
   end
 end

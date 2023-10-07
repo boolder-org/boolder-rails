@@ -59,7 +59,7 @@ namespace :mapbox do
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    problem_features = Problem.all.joins(:area).where(area: {published: true}).map do |problem|
+    problem_features = Problem.with_location.joins(:area).where(area: {published: true}).map do |problem|
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
       hash[:id] = problem.id

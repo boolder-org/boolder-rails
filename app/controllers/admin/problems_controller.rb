@@ -2,11 +2,11 @@ class Admin::ProblemsController < Admin::BaseController
   def index
     @area = Area.find_by(slug: params[:area_slug])
 
-    if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id)
+    if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id || "off_circuit")
       redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
     end
 
-    arel = Problem.where(area_id: @area.id) 
+    arel = Problem.with_location.where(area_id: @area.id) 
     session[:area_id] = @area.id
 
     if params[:circuit_id] == "off_circuit"
@@ -22,65 +22,24 @@ class Admin::ProblemsController < Admin::BaseController
     circuits = @area.sorted_circuits
     @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"])
 
-    @missing_location = @area.problems.where("location IS NULL")
+    @missing_location = @area.problems.without_location
     @missing_grade = @area.problems.where("grade IS NULL OR grade = ''")
   end
 
   def new
     area = Area.find(params[:area_id] || session[:area_id])
-    @problem = Problem.new(area_id: area.id, steepness: :other)
+
+    @problem = Problem.new(steepness: :other)
+
+    @problem.area = area
     @circuits = area.sorted_circuits
-    extracted_params = params[:extracted]
-
-    if extracted_params.present?
-      @problem.name = extracted_params[:name].strip
-      @problem.grade = extracted_params[:grade].strip
-      @problem.bleau_info_id = extracted_params[:id].strip
-
-      @problem.circuit_number = extracted_params[:circuit_number].strip
-
-      if extracted_params[:circuit].include?("jaune")
-        @problem.circuit_id = area.circuits.yellow.first&.id
-      elsif extracted_params[:circuit].include?("orange")
-        @problem.circuit_id = area.circuits.orange.first&.id
-      elsif extracted_params[:circuit].include?("bleu ciel")
-        @problem.circuit_id = area.circuits.skyblue.first&.id
-      elsif extracted_params[:circuit].include?("bleu")
-        @problem.circuit_id = area.circuits.blue.first&.id
-      elsif extracted_params[:circuit].include?("rouge")
-        @problem.circuit_id = area.circuits.red.first&.id
-      elsif extracted_params[:circuit].include?("noir")
-        @problem.circuit_id = area.circuits.black.first&.id
-      elsif extracted_params[:circuit].include?("blanc")
-        @problem.circuit_id = area.circuits.white.first&.id
-      end
-
-      if extracted_params[:tags].include?("travers")
-        @problem.steepness = :traverse
-      elsif extracted_params[:tags].include?("toit")
-        @problem.steepness = :roof
-      elsif extracted_params[:tags].include?("dévers") || extracted_params[:tags].include?("surplomb")
-        @problem.steepness = :overhang
-      elsif extracted_params[:tags].include?("dalle")
-        @problem.steepness = :slab
-      elsif extracted_params[:tags].include?("mur")
-        @problem.steepness = :wall
-      else
-        @problem.steepness = :other
-      end
-
-      if extracted_params[:tags].include?("assis")
-        @problem.tags << "sit_start"
-      end
-
-      @problem.risky = extracted_params[:tags].include?("expo") || extracted_params[:tags].include?("haut")
-    end
   end
 
   def create
     problem = Problem.new
     problem.assign_attributes(problem_params)
     problem.tags = params[:problem][:joined_tags].split(',')
+
     problem.save!
 
     flash[:notice] = "Problem created"
@@ -117,7 +76,7 @@ class Admin::ProblemsController < Admin::BaseController
   def problem_params
     params.require(:problem).
       permit(:area_id, :name, :grade, :steepness, :height, 
-        :bleau_info_id, :circuit_number, :circuit_letter, :circuit_id, :risky, :landing, :featured, :parent_id
+        :bleau_info_id, :circuit_number, :circuit_letter, :circuit_id, :risky, :landing, :featured, :parent_id,
       )
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_27_091503) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_05_145400) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -57,8 +57,35 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_27_091503) do
     t.text "description_en"
     t.text "warning_fr"
     t.text "warning_en"
+    t.integer "bleau_area_id", null: false
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
+  end
+
+  create_table "bleau_areas", force: :cascade do |t|
+    t.string "slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["slug"], name: "index_bleau_areas_on_slug", unique: true
+  end
+
+  create_table "bleau_problems", force: :cascade do |t|
+    t.string "name"
+    t.string "grade"
+    t.string "steepness"
+    t.boolean "sit_start"
+    t.string "tags", default: [], null: false, array: true
+    t.bigint "bleau_circuit_id"
+    t.string "circuit_number"
+    t.string "circuit_letter"
+    t.integer "ascents"
+    t.integer "ratings"
+    t.decimal "ratings_average"
+    t.bigint "bleau_area_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bleau_area_id"], name: "index_bleau_problems_on_bleau_area_id"
+    t.index ["bleau_circuit_id"], name: "index_bleau_problems_on_bleau_circuit_id"
   end
 
   create_table "boulders", force: :cascade do |t|
@@ -75,6 +102,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_27_091503) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "risk", limit: 2
+  end
+
+  create_table "contribution_requests", force: :cascade do |t|
+    t.string "what", null: false
+    t.string "state", null: false
+    t.bigint "problem_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["problem_id"], name: "index_contribution_requests_on_problem_id"
+    t.index ["state"], name: "index_contribution_requests_on_state"
+    t.index ["what"], name: "index_contribution_requests_on_what"
   end
 
   create_table "lines", force: :cascade do |t|
@@ -119,7 +157,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_27_091503) do
     t.integer "height"
     t.bigint "area_id"
     t.string "tags", default: [], null: false, array: true
-    t.string "bleau_info_id"
+    t.integer "bleau_info_id"
     t.string "landing"
     t.boolean "risky", default: false, null: false
     t.boolean "featured", default: false, null: false
