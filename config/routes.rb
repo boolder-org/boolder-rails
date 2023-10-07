@@ -44,7 +44,6 @@ Rails.application.routes.draw do
     namespace :contribute do 
       resources :contribution_requests, only: [:index]
       get "/", to: "contribution_requests#dashboard"
-      # get '/', to: "contribution_requests#index", as: :contribute_root
     end
 
     scope 'fontainebleau' do

@@ -31,23 +31,6 @@ class Admin::ProblemsController < Admin::BaseController
 
     @problem = Problem.new(steepness: :other)
 
-    if bleau_problem_id = params[:bleau_problem_id].presence
-      bleau_problem = BleauProblem.find bleau_problem_id
-
-      # TODO: set area
-      
-      @problem.name = bleau_problem.name
-      @problem.grade = bleau_problem.grade
-      @problem.bleau_info_id = bleau_problem_id
-      @problem.steepness = bleau_problem.steepness
-
-      if bleau_problem.sit_start
-        @problem.tags << "sit_start"
-      end
-
-      # TODO: set circuit
-    end
-
     @problem.area = area
     @circuits = area.sorted_circuits
   end
@@ -56,13 +39,6 @@ class Admin::ProblemsController < Admin::BaseController
     problem = Problem.new
     problem.assign_attributes(problem_params)
     problem.tags = params[:problem][:joined_tags].split(',')
-
-    if bleau_problem = BleauProblem.find(params[:problem][:bleau_info_id]) 
-      problem.ratings = bleau_problem.ratings
-      problem.ratings_average = bleau_problem.ratings_average
-      problem.ascents = bleau_problem.ascents
-      # TODO : compute popularity
-    end
 
     problem.save!
 

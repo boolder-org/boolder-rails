@@ -62,6 +62,7 @@ namespace :bleau do
       problem.ratings = bleau_problem.ratings
       problem.ratings_average = bleau_problem.ratings_average
       problem.ascents = bleau_problem.ascents
+      
       # TODO : compute popularity
 
       problem.save!
