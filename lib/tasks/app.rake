@@ -95,9 +95,9 @@ namespace :app do
             a.warning_fr.presence, a.warning_en.presence, 
             a.tags.join(",").presence,
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon,
-            a.problems.level(1).count, a.problems.level(2).count, a.problems.level(3).count, a.problems.level(4).count, 
-            a.problems.level(5).count, a.problems.level(6).count, a.problems.level(7).count, a.problems.level(8).count, 
-            a.problems.count
+            a.problems.with_location.level(1).count, a.problems.with_location.level(2).count, a.problems.with_location.level(3).count, a.problems.with_location.level(4).count, 
+            a.problems.with_location.level(5).count, a.problems.with_location.level(6).count, a.problems.with_location.level(7).count, a.problems.with_location.level(8).count, 
+            a.problems.with_location.count
           ]
         )
       end

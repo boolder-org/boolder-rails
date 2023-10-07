@@ -48,7 +48,7 @@ namespace :popularity do
     Problem.where(area_id: area_id).where(featured: true).update_all(featured: false)
 
     Area.where(id: area_id).each do |area|
-      total = [[area.problems.count * 10/100, 20].min, 2].max
+      total = [[area.problems.with_location.count * 10/100, 20].min, 2].max
       max_per_grade = (total.to_f * 0.2).round
 
       top_problems = []

@@ -10,7 +10,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
         h2= @area.name
         / span class="text-red-400"
            = render 'svg/heart', width: 24, height: 24
-        / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.count})"
+        / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.with_location.count})"
       ul role="list"
         - @requests.each do |request|
           / - cache [request.problem, I18n.locale, "v2", "show_featured=false"]

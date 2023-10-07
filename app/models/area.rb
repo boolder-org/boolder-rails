@@ -39,7 +39,7 @@ class Area < ApplicationRecord
 
   def self.beginner_friendly
     published.any_tags(:beginner_friendly).
-      map {|area| [area, area.problems.count]}.sort{|a,b| b.second <=> a.second }.map(&:first).
+      map {|area| [area, area.problems.with_location.count]}.sort{|a,b| b.second <=> a.second }.map(&:first).
       sort_by{|a| -a.circuits.select(&:beginner_friendly?).length }
   end
 

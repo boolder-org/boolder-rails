@@ -3,7 +3,7 @@ chart_data = {
   labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
   datasets: [{
       label: 'problems',
-      data: 1.upto(8).map{|i| area.problems.level(i).count },
+      data: 1.upto(8).map{|i| area.problems.with_location.level(i).count },
       backgroundColor: 'rgba(5, 150, 105, 0.8)',
       borderColor: 'rgba(5, 150, 105, 1)',
       borderWidth: 1

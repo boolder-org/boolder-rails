@@ -12,7 +12,7 @@ class AreasController < ApplicationController
       Area.beginner_friendly
     end
 
-    @areas_with_count = Area.published.map {|area| [area, area.problems.count]}.sort{|a,b| b.second <=> a.second }
+    @areas_with_count = Area.published.map {|area| [area, area.problems.with_location.count]}.sort{|a,b| b.second <=> a.second }
   end
 
   def show

@@ -30,7 +30,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
                   div class="flex min-w-0 flex-1 items-center"
                     div class="flex justify-between w-full pr-2"
                       div class="text-gray-700"
-                        = t("views.areas.show.problems_count", count: @area.problems.count)
+                        = t("views.areas.show.problems_count", count: @area.problems.with_location.count)
                       div
                         = render "shared/area_levels", area: @area
                   div
@@ -86,7 +86,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
           h2 = t("views.areas.show.popular_problems")
           span class="text-red-400"
              = render 'svg/heart', width: 24, height: 24
-          / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.count})"
+          / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.with_location.count})"
         ul role="list"
           - @popular_problems.each do |problem|
             - cache [problem, I18n.locale, "v2", "show_featured=false"]
@@ -94,7 +94,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
         div class="mt-6 px-4 sm:px-0"
           = link_to area_problems_path(@area) do 
             div class="flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
-              = t("views.areas.show.all_problems", count: @area.problems.count)
+              = t("views.areas.show.all_problems", count: @area.problems.with_location.count)
         
       div
         h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"
