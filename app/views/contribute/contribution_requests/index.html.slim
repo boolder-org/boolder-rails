@@ -7,13 +7,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
     div class="col-span-1"
 
       div class="flex items-center space-x-2 text-2xl font-bold mt-2 mb-4 px-4 sm:px-0"
-        h2= @area.name
+        h2= "Photos à prendre à #{@area.name}"
         / span class="text-red-400"
            = render 'svg/heart', width: 24, height: 24
         / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.with_location.count})"
 
       div class="text-right"
-        span class="text-gray-600" # de répétitions
+        span class="text-gray-600" popularité
       ul role="list"
         - @requests.each do |request|
           = render "problem", problem: request.problem, show_featured: false
