@@ -27,9 +27,4 @@ class Contribute::ContributionRequestsController < ApplicationController
       }.
       sort_by(&:second).reverse
   end
-
-  private
-  def nav_color_scheme
-    :contribute
-  end
 end

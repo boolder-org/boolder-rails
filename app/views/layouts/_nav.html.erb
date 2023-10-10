@@ -1,7 +1,4 @@
-<% nav_bg_color = nav_color_scheme == :contribute ? "bg-green-700" : "bg-white" %>
-<% nav_link_color = nav_color_scheme == :contribute ? "text-white hover:text-gray-300" : "text-gray-500 hover:text-gray-900" %>
-
-<nav class="<%= nav_bg_color %> shadow">
+<nav class="bg-white shadow">
   <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
     <div class="flex justify-between h-16">
       <div class="flex px-2 lg:px-0">
@@ -13,11 +10,11 @@
         </div>
         <div class="ml-6 flex space-x-8">
           <!-- Current: "border-green-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-          <%= link_to areas_path, class: "flex items-center px-1 pt-1 font-medium #{nav_link_color}" do %>
+          <%= link_to areas_path, class: "flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" do %>
             <%= t("views.layout.nav.discover") %> 
           <% end %>
           
-          <%= link_to map_path, class: "flex items-center px-1 pt-1 font-medium #{nav_link_color}" do %>
+          <%= link_to map_path, class: "flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900" do %>
             <%= t("views.layout.nav.map") %>
           <% end %>
 
@@ -29,7 +26,7 @@
             data-search-clear-value="<%= t('views.search.clear') %>" 
             data-search-cancel-value="<%= t('views.search.cancel') %>" 
             data-search-submit-value="<%= t('views.search.submit') %>" 
-            class="inline-flex items-center px-1 pt-1 font-medium <%= nav_link_color %>">
+            class="inline-flex items-center px-1 pt-1 font-medium text-gray-500 hover:text-gray-900">
               <%= link_to "javascript:void(0)", "data-action":"search#open" do %>
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-label="Search">
                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
