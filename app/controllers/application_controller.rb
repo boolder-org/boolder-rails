@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   default_form_builder DefaultFormBuilder
   around_action :switch_locale
   before_action :set_alternate_tags
+  helper_method :nav_style
 
   def default_url_options
     { locale: I18n.locale }
@@ -18,5 +19,10 @@ class ApplicationController < ActionController::Base
       "en" => request.original_url.sub("/#{I18n.locale}", '/en'),
       # "x-default" => root_url(locale: nil),
     }
+  end
+
+  protected
+  def nav_style
+    :default
   end
 end

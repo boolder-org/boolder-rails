@@ -37,7 +37,7 @@
   <body class="bg-white">
 
     <div class="bg-gray-100">
-      <%= render "layouts/nav" unless @hide_nav %>
+      <%= render nav_style == :contribute ? "layouts/nav_contribute" : "layouts/nav" unless @hide_nav %>
       <%= yield %>
       <%= render "layouts/footer" unless @hide_nav %>
     </body>
