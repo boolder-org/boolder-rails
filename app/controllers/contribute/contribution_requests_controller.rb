@@ -1,4 +1,4 @@
-class Contribute::ContributionRequestsController < ApplicationController
+class Contribute::ContributionRequestsController < Contribute::BaseController
   MIN_ASCENTS = 5
 
   def index

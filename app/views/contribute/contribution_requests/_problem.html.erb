@@ -1,6 +1,6 @@
 <li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg">
   <% if problem.bleau_info_id.present? %>
-  <%= link_to new_contribute_contribution_path(problem_id: problem.id) do %>
+  <%= link_to [:contribute, problem] do %>
     <div class="flex justify-between py-2">
         <div>
           <%= problem_circle_view(problem) %>

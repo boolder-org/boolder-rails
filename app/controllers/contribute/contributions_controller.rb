@@ -1,4 +1,4 @@
-class Contribute::ContributionsController < ApplicationController
+class Contribute::ContributionsController < Contribute::BaseController
   def show
     @contribution = Contribution.find(params[:id])
   end
@@ -17,6 +17,6 @@ class Contribute::ContributionsController < ApplicationController
 
   private
    def contribution_params
-     params.require(:contribution).permit(:location, :comment, photos: [])
+     params.require(:contribution).permit(:location, :comment, :problem_id, photos: [])
    end
 end

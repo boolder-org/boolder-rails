@@ -44,6 +44,7 @@ Rails.application.routes.draw do
     namespace :contribute do 
       resources :contribution_requests, only: [:index]
       resources :contributions, only: [:show, :new, :create]
+      resources :problems, only: [:show]
       get "/", to: "contribution_requests#dashboard"
     end
 
