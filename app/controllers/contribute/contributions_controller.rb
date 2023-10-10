@@ -12,7 +12,7 @@ class Contribute::ContributionsController < Contribute::BaseController
   def create
     contribution = Contribution.create!(contribution_params)
     # flash[:notice] = "Contribution created!"
-    redirect_to [:contribute, contribution]
+    redirect_to [:contribute, contribution.problem]
   end
 
   private
