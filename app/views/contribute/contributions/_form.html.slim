@@ -1,0 +1,8 @@
+div class="col-span-6 sm:col-span-6"
+  = render "problem", problem: @problem, show_featured: false
+
+
+div class="col-span-6 sm:col-span-6"
+  = form.label :comment
+  = form.text_area :comment, rows: 8
+
