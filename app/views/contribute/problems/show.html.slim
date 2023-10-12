@@ -26,4 +26,4 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
 
       ul class="mt-4"
       - @problem.contributions.each do |contribution|
-        li= link_to truncate(contribution.comment, length: 20), [:contribute, contribution]
+        li= link_to truncate(contribution.comment, length: 100), [:contribute, contribution]
