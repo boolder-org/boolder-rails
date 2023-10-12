@@ -1,6 +1,6 @@
 module Contribute::ProblemsHelper
   def popularity_color(popularity)
-    gradient_color(popularity)
+    gradient_color(popularity.to_i)
   end
 
   def gradient_color(value)
