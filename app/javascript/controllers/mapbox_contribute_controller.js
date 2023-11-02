@@ -12,7 +12,6 @@ export default class extends Controller {
     problem: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
-    problems: String,
   }
 
   connect() {
@@ -22,7 +21,7 @@ export default class extends Controller {
       container: 'map',
       language: this.localeValue, // doesn't seem to work?
       locale: this.localeValue == 'fr' ? this.getFrLocale() : null,
-      // hash: true,
+      hash: true,
       style: `mapbox://styles/nmondollot/cl95n147u003k15qry7pvfmq2${this.draftValue ? "/draft" : ""}`,
       bounds: [[2.4806787, 48.2868427],[2.7698927,48.473906]], 
       padding: 5,
@@ -33,27 +32,8 @@ export default class extends Controller {
     this.map.on('load', () => {
       this.addLayers()
       this.centerMap()
-      // this.cleanHistory()
-
-      // let grades = ["7a","7a+"]
-      // this.applyLayerFilter('problems', grades)
-      // this.applyLayerFilter('problems-texts', grades)
-
-      // this.map.setFilter('problems', [
-      //   'match',
-      //   ['get', 'id'],
-      //   [690,3409,2902,8663,3355,3331,245,3283,7813,1455,881,6352,1913,1088,1462,4254,914,1703,1435,8131,4101,6008,5088,5442,3711,6344,1856,1606,11425,1588,14558,230,1739,2555,224,2911,1011,9185,1595,1914,3257,5978,2352,1022,1605,15366,1547,10042,2893,1438,6342,915,3647,2607,8800,1582,10873,2214,3066,7807,2087,2668,243,8680,910,4534,3405,8664,5325,8161,3186,8953,2556,2857,3161,1388,5449,1635,14343,7680,4535,9237,2021,234,555,893,5450,1410,4247,2003,8506,2608,6006,6361,3051,11760,241,3343,1390,1835],
-      //   true,
-      //   false
-      // ]);
-
-
-
-    }); // end onload
-
-    // this.map.on('moveend', () => {
-    //   console.log(this.map.getCenter())
-    // });
+      this.cleanHistory()
+    });
 
     this.popup = null
     this.map.on('moveend', () => {
@@ -99,20 +79,12 @@ export default class extends Controller {
       promoteId: "id"
     });
 
-    this.map.addSource('contribute', {
-      type: 'geojson',
-      data: this.problemsValue,
-      // cluster: true,
-      // clusterMaxZoom: 14, // Max zoom to cluster points on
-      // clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
-    });
-
     this.map.addLayer({
       'id': 'problems',
       'type': 'circle',
-      'source': 'contribute',
-      // 'source-layer': 'problems-ayes3a',
-      // 'minzoom': 12,
+      'source': 'problems',
+      'source-layer': 'problems-ayes3a',
+      'minzoom': 15,
       'layout': {
         'visibility': 'visible',
         'circle-sort-key': 
@@ -129,37 +101,115 @@ export default class extends Controller {
             "interpolate",
             ["linear"],
             ["zoom"],
-            12,
-            6,
-            17,
-            20,
+            15,
+            2,
             18,
-            50,
-            19,
-            100,
-            20,
-            200,
-            21,
-            400,
+            4,
             22,
-            800,
+            [
+              "case",
+              ["has", "circuitNumber"],
+              16,
+              10
+            ]
           ]
         ,
-        'circle-color': "#FFCC02",
-        'circle-opacity': 0.3,
-        'circle-stroke-width': 2,
-        'circle-stroke-color': 'white'
-        // ,
-        // 'circle-opacity': 
-        // [
-        //   "interpolate",
-        //   ["linear"],
-        //   ["zoom"],
-        //   14.5,
-        //   0,
-        //   15,
-        //   1
-        // ]
+        'circle-color':  // FIXME: make it DRY  
+          [
+            "case",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "yellow"],
+              true,
+              false
+            ],
+            "#FFCC02",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "purple"],
+              true,
+              false
+            ],
+            "#D783FF",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "orange"],
+              true,
+              false
+            ],
+            "#FF9500",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "green"],
+              true,
+              false
+            ],
+            "#77C344",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "blue"],
+              true,
+              false
+            ],
+            "#017AFF",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "skyblue"],
+              true,
+              false
+            ],
+            "#5AC7FA",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "salmon"],
+              true,
+              false
+            ],
+            "#FDAF8A",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "red"],
+              true,
+              false
+            ],
+            "#FF3B2F",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "black"],
+              true,
+              false
+            ],
+            "#000",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "white"],
+              true,
+              false
+            ],
+            "#FFFFFF",
+            "#878A8D"
+          ]
+        ,
+        'circle-opacity': 
+        [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14.5,
+          0,
+          15,
+          1
+        ]
       },
       filter: [
         "match",
@@ -176,15 +226,15 @@ export default class extends Controller {
     this.map.addLayer({
       'id': 'problems-texts',
       'type': 'symbol',
-      'source': 'contribute',
-      // 'source-layer': 'problems-ayes3a',
-      'minzoom': 16,
+      'source': 'problems',
+      'source-layer': 'problems-ayes3a',
+      'minzoom': 19,
       'layout': {
         'visibility': 'visible',
         'text-allow-overlap': true,
         'text-field': [
           "to-string",
-          ["get", "name"]
+          ["get", "circuitNumber"]
         ],
         'text-size': [
           "interpolate",
@@ -195,13 +245,22 @@ export default class extends Controller {
           22,
           20
         ],
-        // 'text-variable-anchor': ["top", "bottom"],
-        // 'text-offset': [0, 1.5],
       },
       'paint': {
-        'text-color': "#333",
-        'text-halo-color': "hsl(0, 0%, 100%)",
-        'text-halo-width': 1,
+        'text-color': 
+          [
+            "case",
+            [
+              "match",
+              ["get", "circuitColor"],
+              ["", "white"],
+              true,
+              false
+            ],
+            "#333",
+            "#fff",
+          ]
+        ,
       },
       filter: [
         "match",
@@ -244,13 +303,13 @@ export default class extends Controller {
     }
   }
 
-  // cleanHistory() {
-  //   this.map.on('movestart', () => {
-  //     // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
-  //     // TODO: replace url only when user does something (eg. moves, closes a modal)
-  //     history.replaceState({} , '', `/${this.localeValue}/contribute/map`)
-  //   });
-  // }
+  cleanHistory() {
+    this.map.on('movestart', () => {
+      // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
+      // TODO: replace url only when user does something (eg. moves, closes a modal)
+      history.replaceState({} , '', `/${this.localeValue}/map`)
+    });
+  }
 
   setupClickEvents() {
     this.map.on('mouseenter', 'problems', () => {
@@ -260,32 +319,7 @@ export default class extends Controller {
       this.map.getCanvas().style.cursor = '';
     });
 
-    this.map.on('mouseenter', 'problems-texts', () => {
-      this.map.getCanvas().style.cursor = 'pointer';
-    });
-    this.map.on('mouseleave', 'problems-texts', () => {
-      this.map.getCanvas().style.cursor = '';
-    });
-
     this.map.on('click', 'problems', (e) => {
-
-      let problem = e.features[0].properties
-
-      // FIXME: make it DRY
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      var name = problem.name
-      if(this.localeValue == 'en' && problem.nameEn) {
-        name = problem.nameEn
-      }        
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
-       
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
-      .setLngLat(coordinates)
-      .setHTML(html)
-      .addTo(this.map);
-    });
-
-    this.map.on('click', 'problems-texts', (e) => {
 
       let problem = e.features[0].properties
 
@@ -329,63 +363,63 @@ export default class extends Controller {
       }
     });
 
-    // // FIXME: make DRY
-    // this.map.on('mouseenter', 'areas', () => {
-    //   if(this.map.getZoom() < 15) {
-    //     this.map.getCanvas().style.cursor = 'pointer';
-    //   }
-    // });
-    // this.map.on('mouseleave', 'areas', () => {
-    //   if(this.map.getZoom() < 15) {
-    //     this.map.getCanvas().style.cursor = '';
-    //   }
-    // });
+    // FIXME: make DRY
+    this.map.on('mouseenter', 'areas', () => {
+      if(this.map.getZoom() < 15) {
+        this.map.getCanvas().style.cursor = 'pointer';
+      }
+    });
+    this.map.on('mouseleave', 'areas', () => {
+      if(this.map.getZoom() < 15) {
+        this.map.getCanvas().style.cursor = '';
+      }
+    });
 
-    // this.map.on('click', 'areas', (e) => {
-    //   if(this.map.getZoom() < 15) {
-    //     let props = e.features[0].properties
-    //     this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
-    //   }
-    // });
+    this.map.on('click', 'areas', (e) => {
+      if(this.map.getZoom() < 15) {
+        let props = e.features[0].properties
+        this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
+      }
+    });
 
-    //  // FIXME: make DRY
-    // this.map.on('mouseenter', 'areas-hulls', () => {
-    //   if(this.map.getZoom() < 15) {
-    //     this.map.getCanvas().style.cursor = 'pointer';
-    //   }
-    // });
-    // this.map.on('mouseleave', 'areas-hulls', () => {
-    //   if(this.map.getZoom() < 15) {
-    //     this.map.getCanvas().style.cursor = '';
-    //   }
-    // });
+     // FIXME: make DRY
+    this.map.on('mouseenter', 'areas-hulls', () => {
+      if(this.map.getZoom() < 15) {
+        this.map.getCanvas().style.cursor = 'pointer';
+      }
+    });
+    this.map.on('mouseleave', 'areas-hulls', () => {
+      if(this.map.getZoom() < 15) {
+        this.map.getCanvas().style.cursor = '';
+      }
+    });
 
-    // this.map.on('click', 'areas-hulls', (e) => {
-    //   if(this.map.getZoom() < 15) {
-    //     let props = e.features[0].properties
-    //     // console.log(props)
-    //     this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
-    //   }
-    // });
+    this.map.on('click', 'areas-hulls', (e) => {
+      if(this.map.getZoom() < 15) {
+        let props = e.features[0].properties
+        // console.log(props)
+        this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
+      }
+    });
 
-    // // FIXME: make DRY
-    // this.map.on('mouseenter', 'clusters', () => {
-    //   if(this.map.getZoom() <= 12) {
-    //     this.map.getCanvas().style.cursor = 'pointer';
-    //   }
-    // });
-    // this.map.on('mouseleave', 'clusters', () => {
-    //   if(this.map.getZoom() <= 12) {
-    //     this.map.getCanvas().style.cursor = '';
-    //   }
-    // });
+    // FIXME: make DRY
+    this.map.on('mouseenter', 'clusters', () => {
+      if(this.map.getZoom() <= 12) {
+        this.map.getCanvas().style.cursor = 'pointer';
+      }
+    });
+    this.map.on('mouseleave', 'clusters', () => {
+      if(this.map.getZoom() <= 12) {
+        this.map.getCanvas().style.cursor = '';
+      }
+    });
 
-    // this.map.on('click', 'clusters', (e) => {
-    //   if(this.map.getZoom() <= 12) {
-    //     let props = e.features[0].properties
-    //     this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
-    //   }
-    // });
+    this.map.on('click', 'clusters', (e) => {
+      if(this.map.getZoom() <= 12) {
+        let props = e.features[0].properties
+        this.flyToBounds([[props.southWestLon, props.southWestLat], [props.northEastLon, props.northEastLat]])
+      }
+    });
   }
 
   flyToBounds(bounds) {
