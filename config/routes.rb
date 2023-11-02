@@ -42,7 +42,7 @@ Rails.application.routes.draw do
     end
 
     namespace :contribute do 
-      resources :contribution_requests, only: [:index]
+      resources :contribution_requests, only: [:index, :edit, :update]
       resources :contributions, only: [:show, :new, :create]
       resources :problems, only: [:show]
       get 'map', to: 'map#index', as: :map
