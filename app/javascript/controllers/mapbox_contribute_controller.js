@@ -12,6 +12,7 @@ export default class extends Controller {
     problem: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
+    problems: String,
   }
 
   connect() {
@@ -78,6 +79,121 @@ export default class extends Controller {
       url: 'mapbox://nmondollot.4xsv235p',
       promoteId: "id"
     });
+
+    this.map.addSource('contribute', {
+      type: 'geojson',
+      data: this.problemsValue,
+      // cluster: true,
+      // clusterMaxZoom: 14, // Max zoom to cluster points on
+      // clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+    });
+
+    this.map.addLayer({
+      'id': 'contribute-problems',
+      'type': 'circle',
+      'source': 'contribute',
+      // 'source-layer': 'problems-ayes3a',
+      // 'minzoom': 12,
+      'layout': {
+        'visibility': 'visible',
+        'circle-sort-key': 
+          [
+            "case",
+            ["has", "circuitId"],
+            2,
+            1
+          ]
+      },
+      'paint': {
+        'circle-radius': 
+          [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            12,
+            6,
+            17,
+            20,
+            18,
+            50,
+            19,
+            100,
+            20,
+            200,
+            21,
+            400,
+            22,
+            800,
+          ]
+        ,
+        'circle-color': "#FFCC02",
+        'circle-opacity': 0.5,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': 'white'
+        // ,
+        // 'circle-opacity': 
+        // [
+        //   "interpolate",
+        //   ["linear"],
+        //   ["zoom"],
+        //   14.5,
+        //   0,
+        //   15,
+        //   1
+        // ]
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+    }
+    ,
+    "areas" // layer will be inserted just before this layer
+    );
+
+    this.map.addLayer({
+      'id': 'contribute-problems-texts',
+      'type': 'symbol',
+      'source': 'contribute',
+      // 'source-layer': 'problems-ayes3a',
+      'minzoom': 16,
+      'layout': {
+        'visibility': 'visible',
+        'text-allow-overlap': true,
+        'text-field': [
+          "to-string",
+          ["get", "name"]
+        ],
+        'text-size': [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          19,
+          10,
+          22,
+          20
+        ],
+        // 'text-variable-anchor': ["top", "bottom"],
+        // 'text-offset': [0, 1.5],
+      },
+      'paint': {
+        'text-color': "#333",
+        'text-halo-color': "hsl(0, 0%, 100%)",
+        'text-halo-width': 1,
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+    });
+
+    
 
     this.map.addLayer({
       'id': 'problems',
@@ -307,7 +423,7 @@ export default class extends Controller {
     this.map.on('movestart', () => {
       // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
       // TODO: replace url only when user does something (eg. moves, closes a modal)
-      history.replaceState({} , '', `/${this.localeValue}/map`)
+      history.replaceState({} , '', `/${this.localeValue}/contribute/map`)
     });
   }
 
