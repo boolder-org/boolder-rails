@@ -99,7 +99,7 @@ export default class extends Controller {
       promoteId: "id"
     });
 
-    this.map.addSource('top7a', {
+    this.map.addSource('contribute', {
       type: 'geojson',
       data: this.problemsValue,
       // cluster: true,
@@ -110,7 +110,7 @@ export default class extends Controller {
     this.map.addLayer({
       'id': 'problems',
       'type': 'circle',
-      'source': 'top7a',
+      'source': 'contribute',
       // 'source-layer': 'problems-ayes3a',
       // 'minzoom': 12,
       'layout': {
@@ -176,7 +176,7 @@ export default class extends Controller {
     this.map.addLayer({
       'id': 'problems-texts',
       'type': 'symbol',
-      'source': 'top7a',
+      'source': 'contribute',
       // 'source-layer': 'problems-ayes3a',
       'minzoom': 16,
       'layout': {
@@ -248,7 +248,7 @@ export default class extends Controller {
   //   this.map.on('movestart', () => {
   //     // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
   //     // TODO: replace url only when user does something (eg. moves, closes a modal)
-  //     history.replaceState({} , '', `/${this.localeValue}/map/top7a`)
+  //     history.replaceState({} , '', `/${this.localeValue}/contribute/map`)
   //   });
   // }
 

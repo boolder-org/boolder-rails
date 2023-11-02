@@ -1,0 +1,33 @@
+<!-- TODO: meta tags  -->
+
+<div 
+data-controller="mapbox-contribute"
+data-action="gotoproblem@window->mapbox-contribute#gotoproblem gotoarea@window->mapbox-contribute#gotoarea"
+class="flex-auto relative"
+id='map'
+data-mapbox-contribute-target="map"
+data-mapbox-contribute-locale-value="<%= I18n.locale %>"
+
+<% if params[:source] == "cyril" %> 
+data-mapbox-contribute-problems-value="https://gist.githubusercontent.com/nmondollot/07f0520fffe573292d6f58c8fe89e981/raw/bf617ba0b2d3961ec3f1177cc0e9f62b6f172e73/top7a-cyril.geojson"
+<% else %>
+data-mapbox-contribute-problems-value="https://gist.githubusercontent.com/nmondollot/fb09f1980c468ddbe48c1d5c449f707f/raw/64ec9a19844e2dbc21f2b62793d69cad559987bf/top7a.geojson"
+<% end %>
+
+<% if @problem %> 
+data-mapbox-contribute-problem-value="<%= @problem.to_json %>" 
+<% end %>
+
+<% if @bounds %> 
+data-mapbox-contribute-bounds-value="<%= @bounds.to_json %>"
+<% end %>
+
+<% if Rails.env.production? %> 
+  data-mapbox-contribute-token-value="pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbDl5bDZkdDIwNmhhM3BsbnJqbWprcnl5In0.qTno2zICtJfl6UJnNAdmZQ"
+<% else %> 
+  data-mapbox-contribute-draft-value="true"
+  data-mapbox-contribute-token-value="pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbGE5dTBoYjQwMWpqM3JxbWJxeDBtcTd0In0.ZL6a2hHTBJmk4-_MHuUfHg"
+<% end %>
+>
+
+</div>
