@@ -428,14 +428,14 @@ export default class extends Controller {
   }
 
   setupClickEvents() {
-    this.map.on('mouseenter', 'problems', () => {
+    this.map.on('mouseenter', ['problems','contribute-problems','contribute-problems-texts'], () => {
       this.map.getCanvas().style.cursor = 'pointer';
     });
-    this.map.on('mouseleave', 'problems', () => {
+    this.map.on('mouseleave', ['problems','contribute-problems','contribute-problems-texts'], () => {
       this.map.getCanvas().style.cursor = '';
     });
 
-    this.map.on('click', 'problems', (e) => {
+    this.map.on('click', ['problems','contribute-problems','contribute-problems-texts'], (e) => {
 
       let problem = e.features[0].properties
 
@@ -445,7 +445,7 @@ export default class extends Controller {
       if(this.localeValue == 'en' && problem.nameEn) {
         name = problem.nameEn
       }        
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+      const html = `<a href="/${this.localeValue}/contribute/problems/${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)

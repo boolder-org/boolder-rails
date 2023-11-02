@@ -23,6 +23,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
 
       div
         div= link_to "edit", edit_contribute_contribution_request_path(request)
+        = link_to contribute_map_path(pid: request.problem.id), rel: "nofollow" do
+          span see on map
 
 
     h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Contributions
