@@ -12,7 +12,7 @@ export default class extends Controller {
     problem: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
-    problems: String,
+    geojson: String,
   }
 
   connect() {
@@ -82,7 +82,7 @@ export default class extends Controller {
 
     this.map.addSource('contribute', {
       type: 'geojson',
-      data: this.problemsValue,
+      data: this.geojsonValue,
       // cluster: true,
       // clusterMaxZoom: 14, // Max zoom to cluster points on
       // clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
