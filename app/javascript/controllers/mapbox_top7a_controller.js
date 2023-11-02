@@ -51,6 +51,10 @@ export default class extends Controller {
 
     }); // end onload
 
+    // this.map.on('moveend', () => {
+    //   console.log(this.map.getCenter())
+    // });
+
     this.popup = null
     this.map.on('moveend', () => {
       if(this.popup != null) {
@@ -127,11 +131,24 @@ export default class extends Controller {
             ["zoom"],
             12,
             6,
+            17,
+            20,
             18,
-            10,
+            50,
+            19,
+            100,
+            20,
+            200,
+            21,
+            400,
+            22,
+            800,
           ]
         ,
-        'circle-color': "#FFCC02"
+        'circle-color': "#FFCC02",
+        'circle-opacity': 0.3,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': 'white'
         // ,
         // 'circle-opacity': 
         // [
@@ -161,7 +178,7 @@ export default class extends Controller {
       'type': 'symbol',
       'source': 'top7a',
       // 'source-layer': 'problems-ayes3a',
-      'minzoom': 14,
+      'minzoom': 16,
       'layout': {
         'visibility': 'visible',
         'text-allow-overlap': true,
@@ -178,8 +195,8 @@ export default class extends Controller {
           22,
           20
         ],
-        'text-variable-anchor': ["top", "bottom"],
-        'text-offset': [0, 1.5],
+        // 'text-variable-anchor': ["top", "bottom"],
+        // 'text-offset': [0, 1.5],
       },
       'paint': {
         'text-color': "#333",
