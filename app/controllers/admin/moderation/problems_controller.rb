@@ -3,7 +3,7 @@ class Admin::Moderation::ProblemsController < Admin::BaseController
     @areas = Area.published.
       map{|a| [
           a, 
-          a.problems.without_photo.count,
+          a.problems.sum(:ascents),
           a.problems.without_photo.sum(:ascents),
           1 - a.problems.without_photo.sum(:ascents).to_f / a.problems.sum(:ascents).to_f
         ]
@@ -17,6 +17,6 @@ class Admin::Moderation::ProblemsController < Admin::BaseController
     @problems = Problem.all.
       without_photo.
       where(problems: { area_id: @area.id }).
-      order("ascents DESC NULLS LAST").take(10)
+      order("ascents DESC NULLS LAST")
   end
 end
