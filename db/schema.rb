@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_27_150035) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_03_111627) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -107,11 +107,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_27_150035) do
   create_table "contribution_requests", force: :cascade do |t|
     t.string "what", null: false
     t.string "state", null: false
+    t.text "comment"
+    t.geography "location_estimated", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.bigint "problem_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "comment"
-    t.geography "location_estimated", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.index ["problem_id"], name: "index_contribution_requests_on_problem_id"
     t.index ["state"], name: "index_contribution_requests_on_state"
     t.index ["what"], name: "index_contribution_requests_on_what"
