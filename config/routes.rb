@@ -18,6 +18,11 @@ Rails.application.routes.draw do
       resources :pois
       resources :poi_routes
 
+      namespace :moderation do
+        resources :problems, only: [:index]
+        get "/", to: "problems#dashboard"
+      end
+
       root 'areas#index'
     end
 
@@ -42,7 +47,7 @@ Rails.application.routes.draw do
     end
 
     namespace :contribute do 
-      resources :contribution_requests, only: [:index, :edit, :update]
+      resources :contribution_requests, only: [:index]
       resources :contributions, only: [:show, :new, :create]
       resources :problems, only: [:show]
       get 'map', to: 'map#index', as: :map
