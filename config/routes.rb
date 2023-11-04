@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       resources :lines
       resources :pois
       resources :poi_routes
+      resources :contribution_requests
 
       namespace :moderation do
         resources :problems, only: [:index]
