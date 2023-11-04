@@ -11,12 +11,12 @@ class Contribute::ContributionRequestsController < Contribute::BaseController
 
   def dashboard
     @areas = Area.published.
-      map{|a| [
-          a, 
-          a.problems.joins(:contribution_requests).where(contribution_requests: { what: "photo" }).count,
-          1 - a.problems.joins(:contribution_requests).where(contribution_requests: { what: "photo" }).sum(:ascents).to_f / a.problems.sum(:ascents).to_f
-        ]
+      map{|a| OpenStruct.new(
+          area: a, 
+          count: a.problems.joins(:contribution_requests).where(contribution_requests: { what: "photo" }).count,
+        )
       }.
-      sort_by(&:second).reverse
+      filter{|area_with_count| area_with_count.count > 0 }.
+      sort_by(&:count).reverse
   end
 end
