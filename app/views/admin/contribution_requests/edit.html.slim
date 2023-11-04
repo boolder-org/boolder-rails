@@ -1,7 +1,14 @@
+- problem = @contribution_request.problem
+
+- add_breadcrumb "Fontainebleau", admin_areas_path
+- add_breadcrumb problem.area.name, admin_area_problems_path(area_slug: problem.area.slug, circuit_id: problem.circuit&.id || "off_circuit", anchor: problem.id)
+- add_breadcrumb "Problem ##{problem.id}", admin_problem_path(problem)
+- add_breadcrumb "Contribution Request ##{@contribution_request.id}", nil, class: "active"
+
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"
     div class="mt-5 md:mt-0 md:col-span-2"
-      = form_with model: [:contribute, @contribution_request] do |form|
+      = form_with model: [:admin, @contribution_request] do |form|
         div class="shadow overflow-hidden sm:rounded-md"
           div class="px-4 py-5 bg-white sm:p-6"
             div class="grid grid-cols-6 gap-6"

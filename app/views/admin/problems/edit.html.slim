@@ -43,4 +43,7 @@ div class="mt-10 sm:mt-0"
             div class="font-bold" Variants
             - @problem.variants.sort_by(&:grade).reverse.each do |variant|
               div= link_to [variant.name_with_fallback, variant.grade].compact.join(" - "), edit_admin_problem_path(variant)
-        = link_to "Request contribution", new_admin_contribution_request_path(problem_id: @problem.id)
+        ul class="mt-4"
+          li= link_to "Request contribution", new_admin_contribution_request_path(problem_id: @problem.id)
+          - @problem.contribution_requests.each do |request|
+            li= link_to "Request #{request.id}", admin_contribution_request_path(request)
