@@ -1,5 +1,6 @@
 class Admin::Moderation::ProblemsController < Admin::BaseController
   def dashboard
+    # TODO: refactor
     @areas = Area.published.
       map{|a| [
           a, 

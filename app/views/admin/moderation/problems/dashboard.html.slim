@@ -11,7 +11,7 @@ div class="flex flex-col my-6"
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Area
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Ascents
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Completion
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Upcoming
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"  With upcoming contributions
           tbody class="bg-white divide-y divide-gray-200"
             - @areas.each do |area, count, ascents, percentage|
               tr class="place-content-start align-top h-16"
@@ -23,5 +23,10 @@ div class="flex flex-col my-6"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   span class="" style="color:#{percentage_color(percentage)}"= "#{(percentage*100).floor} %"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
+                  - upcoming_percentage = area.problems.joins(:contribution_requests).sum(:ascents).to_f / area.problems.sum(:ascents).to_f
+                  - if upcoming_percentage > 0
+                    - new_percentage = percentage + upcoming_percentage
+                    span class="" style="color:#{percentage_color(new_percentage)}"= "#{(new_percentage*100).floor} %"
+                  
 
 p= "#{@areas.count} results"
