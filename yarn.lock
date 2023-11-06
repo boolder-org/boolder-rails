@@ -7957,6 +7957,11 @@ xtend@^4.0.0, xtend@^4.0.2, xtend@~4.0.1:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
+xxhash-addon@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/xxhash-addon/-/xxhash-addon-2.0.1.tgz#94675e4d701231a6db91a134f8fb1883fd3a330e"
+  integrity sha512-Ev/Pu+WS45RKwIHmy5FkRjLmiVwdS2kbuajd4ezZJVM4YJ4tIMp6hr2d2FNMHva0RBEBI+o7Bf//9tzy6QUe+A==
+
 y18n@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.3.tgz#b5f259c82cd6e336921efd7bfd8bf560de9eeedf"
