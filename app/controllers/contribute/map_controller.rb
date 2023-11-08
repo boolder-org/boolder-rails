@@ -1,7 +1,19 @@
 class Contribute::MapController < Contribute::BaseController
   layout "map"
 
+  # TODO: make DRY
   def index
+    if params[:slug] && (area = Area.find_by(slug: params[:slug]))
+      @area = area
+      @bounds = { 
+        south_west_lat: area.bounds[:south_west].lat,
+        south_west_lon: area.bounds[:south_west].lon,
+        north_east_lat: area.bounds[:north_east].lat,
+        north_east_lon: area.bounds[:north_east].lon,
+      }.
+      with_indifferent_access.deep_transform_keys { |key| key.camelize(:lower) }
+    end
+
     if params[:pid] && (problem = Problem.find(params[:pid]))
       # return unless problem.location.present?
       location = problem.contribution_requests.first&.location_estimated
