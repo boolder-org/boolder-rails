@@ -20,7 +20,9 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
           div Voir sur la carte
 
       div class="text-right"
-        span class="text-gray-600" popularité
-      ul role="list"
-        - @requests.each do |request|
-          = render "problem", problem: request.problem, show_featured: false
+        span class="text-gray-600" 
+      
+      div class="mt-4"
+        ul role="list"
+          - @requests.each do |request|
+            = render "problem", problem: request.problem, show_featured: false

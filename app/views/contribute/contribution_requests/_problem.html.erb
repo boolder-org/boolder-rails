@@ -5,9 +5,7 @@
         <div>
           <%= problem_circle_view(problem) %>
           <span class="ml-2"><%= problem.name_with_fallback %></span>
-          <span class="text-gray-500">
-            <%= problem.grade %>
-          </span>
+          
         </div>
         <div>
           <div class="flex space-x-2">
@@ -17,7 +15,10 @@
               </div>
             <% end %>
             <div class="">
-              <%= problem.ascents.to_i %>
+              <span class="text-gray-500">
+                <%= problem.grade %>
+              </span>
+              <!-- <%= problem.ascents.to_i %> -->
               <!-- <% if problem.ascents.to_i >= 5 %>
               <span class="text-green-500">prio</span>
               <% end %> -->

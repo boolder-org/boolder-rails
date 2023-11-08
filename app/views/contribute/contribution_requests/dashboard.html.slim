@@ -15,7 +15,14 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       div class="py-4 px-4 sm:px-0 "
         h2 class="text-2xl font-bold text-gray-900" Voies à cartographier
 
-        div class="py-2 text-gray-600 text-base" Rendez-vous sur des secteurs de grimpe et prenez en photo les blocs manquants avec votre téléphone.
+        div class="py-2 text-gray-600 text-base" Rendez-vous sur un secteur de grimpe et prenez en photo les blocs manquants avec votre téléphone.
+
+        = link_to contribute_map_path do
+          div class="flex items-center space-x-2 text-green-600 my-2"
+            svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            div Voir sur la carte
       
       div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg"
         ul role="list" class="divide-y divide-gray-200"
