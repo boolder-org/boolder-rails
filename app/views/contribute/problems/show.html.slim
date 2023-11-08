@@ -9,23 +9,26 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
   div class="mt-10 sm:mt-0"
     h1 class="text-3xl font-bold mb-4 px-4 sm:px-0" = @problem.name
 
-    div= link_to "boolder.com", problem_friendly_path(@problem)
+    = link_to contribute_map_path(pid: @problem.id), rel: "nofollow" do
+        div class="flex items-center space-x-2 text-green-600 mt-6"
+          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+          div Voir sur la carte
 
-    div= link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do
-      span bleau.info
+    - if @problem.bleau_info_id.present?
+      = link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do
+        div class="flex items-center space-x-2 text-green-600 mt-2"
+          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+          div= t("problem.see_on_bleau_info")
 
-    h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Request
+    / h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Request
 
     - @problem.contribution_requests.each do |request|
       / div= "#{request.what} needed"
 
-      div= simple_format request.comment
-
-      div
-        / div= link_to "edit", edit_contribute_contribution_request_path(request)
-        = link_to contribute_map_path(pid: request.problem.id), rel: "nofollow" do
-          span see on map
-
+      / div= simple_format request.comment
 
     h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Contributions
     div class="mt-2"
