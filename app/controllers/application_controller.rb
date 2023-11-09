@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-  default_form_builder DefaultFormBuilder
   around_action :switch_locale
   before_action :set_alternate_tags
   helper_method :nav_style
