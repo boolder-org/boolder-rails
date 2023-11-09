@@ -4,5 +4,5 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
 
   div class="mt-8"
     = form_with model: [:contribute, @contribution] do |form|
-      = form.hidden_field :problem_id, value: params[:problem_id]
+      = form.hidden_field :problem_id
       = render "form", form: form  
