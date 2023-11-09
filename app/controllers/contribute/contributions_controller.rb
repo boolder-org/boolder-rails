@@ -11,12 +11,15 @@ class Contribute::ContributionsController < Contribute::BaseController
 
   def create
     contribution = Contribution.create!(contribution_params)
-    # flash[:notice] = "Contribution created!"
+    flash[:notice] = "Contribution created!"
     redirect_to [:contribute, contribution.problem]
   end
 
   private
-   def contribution_params
-     params.require(:contribution).permit(:location, :comment, :problem_id, photos: [])
-   end
+  def contribution_params
+    params.require(:contribution).permit(
+      :location, :comment, :problem_id, 
+      photos: [], line_drawings: [], location_drawings: []
+    )
+  end
 end

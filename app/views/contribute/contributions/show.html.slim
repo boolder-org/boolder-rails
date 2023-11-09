@@ -6,3 +6,9 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
 
     - @contribution.photos.each do |photo|
       = image_tag(photo, class: "w-full object-cover")
+
+    - @contribution.line_drawings.each do |line_drawing|
+      = image_tag(line_drawing, class: "w-full object-cover")
+
+    - @contribution.location_drawings.each do |location_drawing|
+      = image_tag(location_drawing, class: "w-full object-cover")
