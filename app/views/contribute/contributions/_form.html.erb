@@ -128,17 +128,17 @@
 
           <div class="sm:col-span-3">
             <!-- <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Latitude</label> -->
-            <%= form.label :latitude, class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <%= form.label :location_lat, value: "Latitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :latitude, placeholder: "48.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :location_lat, placeholder: "48.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
               <!-- <input type="text" name="first-name" id="first-name" placeholder="48.123456" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"> -->
             </div>
           </div>
 
           <div class="sm:col-span-3">
-            <%= form.label :longitude, class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <%= form.label :location_lon, value: "Longitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :longitude, placeholder: "2.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :location_lon, placeholder: "2.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
             </div>
           </div>
 

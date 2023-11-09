@@ -10,7 +10,14 @@ class Contribute::ContributionsController < Contribute::BaseController
 
   def create
     @contribution = Contribution.new(contribution_params)
-    # @contribution.location = 
+    
+    # TODO: make DRY
+    lat = params[:contribution][:location_lat]
+    lon = params[:contribution][:location_lon]
+
+    if lat.present? && lon.present?
+      @contribution.location = "POINT(#{lon} #{lat})"      
+    end
 
     if @contribution.save
       flash[:notice] = "Contribution created!"

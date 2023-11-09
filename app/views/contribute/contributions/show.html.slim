@@ -4,6 +4,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
 
     = simple_format @contribution.comment
 
+    = @contribution.location
+
     - @contribution.photos.each do |photo|
       = image_tag(photo, class: "w-full object-cover")
 
