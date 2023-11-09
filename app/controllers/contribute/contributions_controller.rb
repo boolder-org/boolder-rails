@@ -4,12 +4,18 @@ class Contribute::ContributionsController < Contribute::BaseController
   end
 
   def new
-    @contribution = Contribution.new
-    @contribution.problem_id = params[:problem_id] 
+    @contribution = Contribution.new(
+      problem_id: params[:problem_id],
+      name: session[:contribution_name],
+      email: session[:contribution_email],
+    )
   end
 
   def create
     @contribution = Contribution.new(contribution_params)
+
+    session[:contribution_name] = @contribution.name
+    session[:contribution_email] = @contribution.email
     
     # TODO: make DRY
     lat = params[:contribution][:location_lat]
