@@ -128,7 +128,7 @@
 
           <div class="sm:col-span-3">
             <!-- <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Latitude</label> -->
-            <%= form.label :location_lat, value: "Latitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <%= form.label :location_lat, "Latitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
               <%= form.text_field :location_lat, placeholder: "48.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
               <!-- <input type="text" name="first-name" id="first-name" placeholder="48.123456" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"> -->
@@ -136,7 +136,7 @@
           </div>
 
           <div class="sm:col-span-3">
-            <%= form.label :location_lon, value: "Longitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <%= form.label :location_lon, "Longitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
               <%= form.text_field :location_lon, placeholder: "2.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
             </div>
@@ -172,32 +172,38 @@
 
   <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
+        <div class="text-base font-semibold leading-7 text-gray-400 flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+          </svg>
+          <span>Privé</span>
+        </div>
+
         <h2 class="text-base font-semibold leading-7 text-gray-900">Informations personnelles</h2>
-        <!-- <p class="mt-1 text-sm leading-6 text-gray-600">Si vous souhaitez que .</p> -->
+        
+        <p class="mt-1 text-sm leading-6 text-gray-600">
+          Pour nous permettre de vous contacter en cas de question.
+        </p>
       </div>
 
       <div class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
         <div class="px-4 py-6 sm:p-8">
           <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div class="sm:col-span-3">
-              <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+
+            <div class="sm:col-span-2">
+              <%= form.label :name, class: "block text-sm font-medium leading-6 text-gray-900" %>
               <div class="mt-2">
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">
+                <%= form.text_field :name, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
               </div>
             </div>
 
-            <div class="sm:col-span-3">
-              <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
-              <div class="mt-2">
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">
-              </div>
+            <div class="sm:col-span-2">
             </div>
 
             <div class="sm:col-span-4">
-              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+              <%= form.label :email, "Email", class: "block text-sm font-medium leading-6 text-gray-900" %>
               <div class="mt-2">
-                <%=  %>
-                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6">
+                <%= form.text_field :email, type: "email", autocomplete: "email", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
               </div>
             </div>
 
@@ -207,6 +213,6 @@
     </div>
 </div>
 
-<div class="px-4 py-4 text-right sm:px-6">
-  <button type="submit" class="btn">Create</button>
+<div class="py-4 text-right">
+  <%= form.submit "Envoyer", class: "btn" %>
 </div>

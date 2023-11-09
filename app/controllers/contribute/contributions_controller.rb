@@ -31,7 +31,7 @@ class Contribute::ContributionsController < Contribute::BaseController
   private
   def contribution_params
     params.require(:contribution).permit(
-      :location, :comment, :problem_id, 
+      :location, :comment, :problem_id, :name, :email,
       photos: [], line_drawings: [], location_drawings: []
     )
   end
