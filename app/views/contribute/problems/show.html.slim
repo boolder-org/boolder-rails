@@ -12,9 +12,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
     div class="col-span-1"
       h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= @problem.name_with_fallback
 
-      div class="px-4 sm:px-0"
-        = warning_box do
-          span Nous avons besoin de votre aide pour cartographier cette voie.
+      div class="px-4 sm:px-0 pt-4 pb-2"
+        span Aidez nous à cartographier cette voie :
 
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
@@ -25,8 +24,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       div class="px-4 sm:px-0"
         div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow"
           div class="px-4 py-5 sm:px-6 flex space-x-2" 
-            span class="font-bold" 1.
-            span Rendez vous devant la voie
+            span class="font-bold" ①
+            span class="font-bold" Rendez vous devant la voie
           div class="bg-gray-50 px-4 py-5 sm:p-6" 
 
             = link_to contribute_map_path(pid: @problem.id), rel: "nofollow" do
@@ -46,8 +45,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       div class="px-4 sm:px-0"
         div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow mt-4"
           div class="px-4 py-5 sm:px-6 flex space-x-2" 
-            span class="font-bold" 2.
-            span Ajoutez une contribution
+            span class="font-bold" ②
+            span class="font-bold" Ajoutez une contribution
           div class="bg-gray-50 px-4 py-5 sm:p-6"
             ul class="list-disc px-6"
               li Photo du bloc
@@ -55,6 +54,8 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
               li Localisation sur la carte
             div class="rounded-md shadow mt-4"
               a href="#{new_contribute_contribution_path(problem_id: @problem.id)}" class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 md:py-4 md:px-10 md:text-lg"
+                svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                  path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 span class="ml-2" Ajouter une contribution
 
 
