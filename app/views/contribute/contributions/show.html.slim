@@ -2,9 +2,12 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
   div class="mt-10 sm:mt-0"
     h1 class="text-3xl font-bold mt-8 mb-4 px-4 sm:px-0" Contribution
 
-    = simple_format @contribution.comment
+    div class="px-4 sm:px-0"
+      = simple_format @contribution.comment
 
-    = @contribution.location
+      - if location = @contribution.location
+        span GPS : 
+        = [location.lat, location.lon].join(",")
 
     - @contribution.photos.each do |photo|
       = image_tag(photo, class: "w-full object-cover")
