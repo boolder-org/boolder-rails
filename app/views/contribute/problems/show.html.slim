@@ -10,7 +10,11 @@ div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
     div class="col-span-1"
-      h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= @problem.name_with_fallback
+
+      div class="flex justify-between items-center px-4 sm:px-0"
+        div class="flex justify-between items-center w-full mt-2"
+          h1 class="text-3xl font-bold"= @problem.name_with_fallback
+          div class="text-gray-400 text-4xl font-bold"= @problem.grade
 
       div class="px-4 sm:px-0 pt-4 pb-2"
         span Vous pouvez nous aider à cartographier cette voie :
