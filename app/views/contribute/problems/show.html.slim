@@ -1,49 +1,52 @@
-div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
-  div class="px-4 sm:px-0 py-6"
+div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
+  div class="px-4 sm:px-0"
     div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
       div= link_to "Contribute", contribute_path, class: "hover:text-gray-700"
       svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
       div= link_to @problem.area.name, contribute_contribution_requests_path(area_id: @problem.area.id), class: "hover:text-gray-700"
 
-  div class=""
-    h1 class="text-3xl font-bold mb-4 px-4 sm:px-0" = @problem.name_with_fallback
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
+  div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
+    div class="col-span-1"
+      div
+        h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= @problem.name_with_fallback
 
-    = link_to contribute_map_path(pid: @problem.id), rel: "nofollow" do
-        div class="flex items-center space-x-2 text-green-600 mt-6"
-          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-          div Voir position approximative
+      = link_to contribute_map_path(pid: @problem.id), rel: "nofollow" do
+          div class="flex items-center space-x-2 text-green-600 mt-6"
+            svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            div Voir position approximative
 
-    - if @problem.bleau_info_id.present?
-      = link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do
-        div class="flex items-center space-x-2 text-green-600 mt-2"
-          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-          div= t("problem.see_on_bleau_info")
+      - if @problem.bleau_info_id.present?
+        = link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do
+          div class="flex items-center space-x-2 text-green-600 mt-2"
+            svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            div= t("problem.see_on_bleau_info")
 
-    - if @problem.contribution_requests.select{|r| r.comment.present? }.any?
-      h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Commentaire
+      - if @problem.contribution_requests.select{|r| r.comment.present? }.any?
+        h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Commentaire
 
-      - @problem.contribution_requests.each do |request|
-        / div= "#{request.what} needed"
+        - @problem.contribution_requests.each do |request|
+          / div= "#{request.what} needed"
 
-        div= simple_format request.comment
+          div= simple_format request.comment
 
-    h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Contributions
-    div class="mt-2"
-      = link_to new_contribute_contribution_path(problem_id: @problem.id) do 
-        div class="flex items-center space-x-2 text-green-600 mt-2"
-          svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-            path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-          div New contribution
+      h2 class="text-xl font-bold mt-4 px-4 sm:px-0" Contributions
+      div class="mt-2"
+        = link_to new_contribute_contribution_path(problem_id: @problem.id) do 
+          div class="flex items-center space-x-2 text-green-600 mt-2"
+            svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+              path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            div New contribution
 
 
-      div class="mt-4"
-      - @problem.contributions.each do |contribution|
+        div class="mt-4"
+        - @problem.contributions.each do |contribution|
 
-        div= link_to truncate(contribution.comment.presence || "---", length: 100), [:contribute, contribution]
+          div= link_to truncate(contribution.comment.presence || "---", length: 100), [:contribute, contribution]
 
 
 
