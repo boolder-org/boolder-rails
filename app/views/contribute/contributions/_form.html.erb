@@ -34,6 +34,7 @@
         <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
           <div class="col-span-full">
+            <div class="mb-2 font-semibold"><%= @contribution.problem.area.name%></div>
             <div class="flex space-x-2">
               <span><%= problem_circle_view(@contribution.problem) %></span>
               <span><%= @contribution.problem.name_with_fallback %></span>
