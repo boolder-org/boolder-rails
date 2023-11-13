@@ -1,6 +1,16 @@
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
+  div class="px-4 sm:px-0 py-6"
+    div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
+      div= link_to "Contribute", contribute_path, class: "hover:text-gray-700"
+      svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
+      div= link_to @contribution.problem.area.name, contribute_contribution_requests_path(area_id: @contribution.problem.area.id), class: "hover:text-gray-700"
+      svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
+      div= link_to @contribution.problem.name_with_fallback, [:contribute, @contribution.problem], class: "hover:text-gray-700"
+
   div class="mt-10 sm:mt-0"
-    h1 class="text-3xl font-bold mt-8 mb-4 px-4 sm:px-0" New contribution
+    h1 class="text-3xl font-bold mb-4 px-4 sm:px-0" Ajouter une contribution
 
   div class="mt-8"
     = form_with model: [:contribute, @contribution] do |form|
