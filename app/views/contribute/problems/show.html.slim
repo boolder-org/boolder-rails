@@ -6,7 +6,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
         path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
       div= link_to @problem.area.name, contribute_contribution_requests_path(area_id: @problem.area.id), class: "hover:text-gray-700"
 
-  div class="mt-10 sm:mt-0"
+  div class=""
     h1 class="text-3xl font-bold mb-4 px-4 sm:px-0" = @problem.name_with_fallback
 
     = link_to contribute_map_path(pid: @problem.id), rel: "nofollow" do
