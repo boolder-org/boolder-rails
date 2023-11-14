@@ -6,7 +6,12 @@ class Admin::ContributionRequestsController < Admin::BaseController
 
   def new 
     @problem = Problem.find(params[:problem_id])
-    @contribution_request = @problem.contribution_requests.build
+
+    location = if session[:last_location_estimated_lat].present? && session[:last_location_estimated_lon].present?
+      "POINT(#{session[:last_location_estimated_lon]} #{session[:last_location_estimated_lat]})"
+    end
+
+    @contribution_request = @problem.contribution_requests.build(location_estimated: location)
   end
 
   def create
@@ -29,6 +34,9 @@ class Admin::ContributionRequestsController < Admin::BaseController
 
   def edit
     @contribution_request = ContributionRequest.find(params[:id])
+
+    session[:last_location_estimated_lat] = @contribution_request.location_estimated.lat
+    session[:last_location_estimated_lon] = @contribution_request.location_estimated.lon
   end
 
   def update
