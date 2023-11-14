@@ -46,7 +46,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                     path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   div Voir infos sur bleau.info
 
-      div class="px-4 sm:px-0"
+      div class="px-4 sm:px-0 mb-4"
         div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow mt-4"
           div class="px-4 py-5 sm:px-6 flex space-x-2" 
             span class="font-bold" ②
@@ -72,6 +72,16 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
 
       /     div= simple_format request.comment
 
+      - if @related_problems.any?
+        div class="px-4 sm:px-0 py-4"
+          h2 class="text-xl font-semibold mb-3" Voies proches
+          ul class=""
+            - @related_problems.each do |related_problem|
+              li class="mt-2"
+                = link_to [:contribute, related_problem] do
+                  = problem_circle_view(related_problem)
+                  span class="ml-2 font-medium"= related_problem.name_with_fallback
+                  span class="ml-2 text-gray-400"= related_problem.grade
 
       - if @problem.contributions.any?
         h2 class="text-xl font-bold mt-8 px-4 sm:px-0"= "#{@problem.contributions.count} contributions en attente"

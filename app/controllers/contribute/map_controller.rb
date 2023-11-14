@@ -33,25 +33,32 @@ class Contribute::MapController < Contribute::BaseController
   def geojson
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    problem_features = ContributionRequest.where.not(location_estimated: nil).map do |request|
-      problem = request.problem
+    problem_features = ContributionRequest.where.not(location_estimated: nil).group_by(&:location_estimated).map do |location, requests|
+      problems = requests.map(&:problem)
+      problem = problems.sort_by{|p| p.ascents.to_i }.reverse.first
 
       hash = {}.with_indifferent_access
 
       hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
       hash[:id] = problem.id
-      hash[:circuit_color] = problem.circuit&.color
-      hash[:circuit_id] = problem.circuit_id_simplified
-      hash[:circuit_number] = problem.circuit_number_simplified.presence
+      # hash[:circuit_color] = problem.circuit&.color
+      # hash[:circuit_id] = problem.circuit_id_simplified
+      # hash[:circuit_number] = problem.circuit_number_simplified.presence
 
-      name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
-      name_en = I18n.with_locale(:en) { problem.name_with_fallback }
+      group_name = if problems.count > 1 
+        "#{problem.name_with_fallback} + #{problems.count - 1}"
+      else
+        problem.name_with_fallback
+      end
+
+      name_fr = I18n.with_locale(:fr) { group_name }
+      name_en = I18n.with_locale(:en) { group_name }
       hash[:name] = name_fr
       hash[:name_en] = (name_en != name_fr) ? name_en : ""
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-      factory.feature(request.location_estimated, nil, hash)
+      factory.feature(location, nil, hash)
     end
 
     feature_collection = factory.feature_collection(
