@@ -23,7 +23,11 @@ class Admin::ContributionRequestsController < Admin::BaseController
     lon = params[:contribution_request][:location_estimated_lon]
 
     if lat.present? && lon.present?
-      contribution_request.location_estimated = "POINT(#{lon} #{lat})"      
+      contribution_request.location_estimated = "POINT(#{lon} #{lat})"     
+
+      # TODO: make DRY 
+      session[:last_location_estimated_lat] = lat
+      session[:last_location_estimated_lon] = lon
     end
 
     contribution_request.save!
