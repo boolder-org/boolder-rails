@@ -24,6 +24,7 @@ class Api::V1::ToposController < ActionController::Base
 
   private
   def url_for_topo(topo) 
-    topo.photo.variant(:medium).blob.url(expires_in: 1.week.to_i)
+    # topo.photo.variant(:medium).blob.url(expires_in: 1.week.to_i)
+    url_for(topo.photo.variant(:medium))
   end
 end
