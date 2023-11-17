@@ -46,9 +46,9 @@ class Contribute::MapController < Contribute::BaseController
       # hash[:circuit_number] = problem.circuit_number_simplified.presence
 
       group_name = if problems.count > 1 
-        "#{problem.name_with_fallback} + #{problems.count - 1}"
+        "#{problem.name_debug} + #{problems.count - 1}"
       else
-        problem.name_with_fallback
+        problem.name_debug
       end
 
       name_fr = I18n.with_locale(:fr) { group_name }
