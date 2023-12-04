@@ -24,9 +24,8 @@ div class="flex flex-col my-6"
                   span class="" style="color:#{percentage_color(percentage)}"= "#{(percentage*100).floor} %"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   - upcoming_percentage = area.problems.joins(:contribution_requests).sum(:ascents).to_f / area.problems.sum(:ascents).to_f
-                  - if upcoming_percentage > 0
-                    - new_percentage = percentage + upcoming_percentage
-                    span class="" style="color:#{percentage_color(new_percentage)}"= "#{(new_percentage*100).floor} %"
+                  - new_percentage = percentage + upcoming_percentage
+                  span class="" style="color:#{percentage_color(new_percentage)}"= "#{(new_percentage*100).floor} %"
                   
 
 p= "#{@areas.count} results"
