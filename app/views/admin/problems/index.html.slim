@@ -4,10 +4,6 @@
 
 - if @area.published
   div class="mb-4"
-    - if @missing_location.any?
-      = warning_box do 
-        span class="font-bold" Moderation: 
-        = "#{@missing_location.count} problem(s)"
 
     - if @missing_grade.any?
       = warning_box do 
