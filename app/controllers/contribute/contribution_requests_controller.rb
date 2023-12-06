@@ -2,10 +2,12 @@ class Contribute::ContributionRequestsController < Contribute::BaseController
   def index
     @area = Area.find(params[:area_id])
     
-    @requests = ContributionRequest.joins(:problem).
+    @locations = ContributionRequest.joins(:problem).
       where(problems: { area_id: @area.id }).
       where(what: "photo").
-      order("ascents DESC NULLS LAST")
+      order("ascents DESC NULLS LAST").
+      group_by(&:location_estimated).
+      sort_by{|location, requests| requests.inject(0) {|sum, req| sum + req.problem.ascents.to_i } }.reverse
   end
 
   def dashboard
