@@ -16,6 +16,6 @@ class Contribute::ContributionRequestsController < Contribute::BaseController
         )
       }.
       filter{|area_with_count| area_with_count.count > 0 }.
-      sort_by(&:count).reverse
+      sort_by{|area_with_count| I18n.transliterate(area_with_count.area.name) }
   end
 end
