@@ -27,4 +27,18 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       div class="mt-4"
         ul role="list"
           - @requests.each do |request|
-            = render "problem", problem: request.problem, show_featured: false
+            - problem = request.problem
+            li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+              - if problem.bleau_info_id.present?
+              = link_to [:contribute, problem] do
+                div class="flex justify-between py-2"
+                    div
+                      = problem_circle_view(problem)
+                      span class="ml-2"= problem.name_with_fallback
+                      span class="ml-2 text-gray-500"= problem.grade
+                    div
+                      div class="flex space-x-2"
+                        div
+                          span class="text-gray-500"
+                            - if problem.contributions.count > 0
+                              = "#{problem.contributions.count} contrib."

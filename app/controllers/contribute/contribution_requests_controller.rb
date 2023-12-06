@@ -5,7 +5,6 @@ class Contribute::ContributionRequestsController < Contribute::BaseController
     @requests = ContributionRequest.joins(:problem).
       where(problems: { area_id: @area.id }).
       where(what: "photo").
-      # where("ascents >= ?", MIN_ASCENTS).
       order("ascents DESC NULLS LAST")
   end
 
