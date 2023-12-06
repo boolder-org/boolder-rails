@@ -9,9 +9,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
     div class="col-span-1"
       div
         h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= "Voies à cartographier à #{@area.name}"
-        / span class="text-red-400"
-           = render 'svg/heart', width: 24, height: 24
-        / span class="font-semibold text-gray-400 ml-2"= "(#{@area.problems.with_location.count})"
 
       div class=" px-4 sm:px-0"
         = link_to contribute_map_path(@area) do
