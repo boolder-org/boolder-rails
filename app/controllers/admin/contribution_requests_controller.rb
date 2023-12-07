@@ -18,17 +18,9 @@ class Admin::ContributionRequestsController < Admin::BaseController
     contribution_request = ContributionRequest.new(what: "photo", state: "open")
     contribution_request.assign_attributes(contribution_request_params)
 
-    # TODO: make DRY
-    lat = params[:contribution_request][:location_estimated_lat]
-    lon = params[:contribution_request][:location_estimated_lon]
-
-    if lat.present? && lon.present?
-      contribution_request.location_estimated = "POINT(#{lon} #{lat})"     
-
-      # TODO: make DRY 
-      session[:last_location_estimated_lat] = lat
-      session[:last_location_estimated_lon] = lon
-    end
+    # TODO: make DRY 
+    session[:last_location_estimated_lat] = params[:contribution_request][:location_estimated_lat]
+    session[:last_location_estimated_lon] = params[:contribution_request][:location_estimated_lon]
 
     contribution_request.save!
 
@@ -65,6 +57,6 @@ class Admin::ContributionRequestsController < Admin::BaseController
   private 
   def contribution_request_params
     params.require(:contribution_request).
-      permit(:problem_id)
+      permit(:problem_id, :location_estimated_lat, :location_estimated_lon)
   end
 end
