@@ -51,8 +51,7 @@ Rails.application.routes.draw do
       resources :contribution_requests, only: [:index]
       resources :contributions, only: [:show, :new, :create]
       resources :problems, only: [:show]
-      get 'map(/:slug)', to: 'map#index', as: :map
-      get 'requests', to: 'map#geojson', as: :map_geojson
+      get 'requests', to: 'contribution_requests#geojson', as: :contribution_requests_geojson
       get "/", to: "contribution_requests#dashboard"
     end
 

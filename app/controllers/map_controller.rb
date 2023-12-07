@@ -15,6 +15,8 @@ class MapController < ApplicationController
 
     if params[:pid] && (problem = Problem.find(params[:pid]))
       return unless problem.location.present?
+
+      # location = problem.contribution_requests.first&.location_estimated
       
       @problem = { 
         id: problem.id,
