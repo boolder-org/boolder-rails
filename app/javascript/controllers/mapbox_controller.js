@@ -12,6 +12,7 @@ export default class extends Controller {
     problem: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
+    contribute: { type: Boolean, default: false },
     contributeSource: String,
   }
 
@@ -274,7 +275,7 @@ export default class extends Controller {
 
     // CONTRIBUTE LAYERS
 
-    if(this.hasContributeSourceValue) {
+    if(this.contributeValue) {
 
       this.map.addSource('contribute', {
         type: 'geojson',

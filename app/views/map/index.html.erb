@@ -22,6 +22,7 @@ data-mapbox-target="map"
 data-mapbox-locale-value="<%= I18n.locale %>"
 
 data-mapbox-contribute-source-value="/fr/contribute/requests.geojson"
+data-mapbox-contribute-value="<%= params[:contribute] ? "true" : "false" %>"
 
 <% if @problem %> 
 data-mapbox-problem-value="<%= @problem.to_json %>" 

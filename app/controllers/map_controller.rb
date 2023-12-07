@@ -14,14 +14,18 @@ class MapController < ApplicationController
     end
 
     if params[:pid] && (problem = Problem.find(params[:pid]))
-      return unless problem.location.present?
-
-      # location = problem.contribution_requests.first&.location_estimated
+      location = if params[:contribute]
+        problem.contribution_requests.first&.location_estimated
+      else
+        problem.location
+      end
+      
+      return unless location.present?
       
       @problem = { 
         id: problem.id,
-        lat: problem.location.lat,
-        lon: problem.location.lon,
+        lat: location.lat,
+        lon: location.lon,
         name: I18n.with_locale(:fr) { problem.name_with_fallback },
         name_en: I18n.with_locale(:en) { problem.name_with_fallback },
         grade: problem.grade,
