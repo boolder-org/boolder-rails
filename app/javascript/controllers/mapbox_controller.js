@@ -12,6 +12,7 @@ export default class extends Controller {
     problem: Object,
     locale: { type: String, default: 'en' },
     draft: { type: Boolean, default: false },
+    contributeSource: String,
   }
 
   connect() {
@@ -270,6 +271,108 @@ export default class extends Controller {
           false
       ],
     });
+
+    // CONTRIBUTE LAYERS
+
+    if(this.hasContributeSourceValue) {
+
+      this.map.addSource('contribute', {
+        type: 'geojson',
+        data: this.contributeSourceValue,
+      });
+  
+      this.map.addLayer({
+      'id': 'contribute-problems',
+      'type': 'circle',
+      'source': 'contribute',
+      // 'source-layer': 'problems-ayes3a',
+      // 'minzoom': 12,
+      'layout': {
+        'visibility': 'visible',
+        'circle-sort-key': 
+          [
+            "case",
+            ["has", "circuitId"],
+            2,
+            1
+          ]
+      },
+      'paint': {
+        'circle-radius': 
+          [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            12,
+            6,
+            17,
+            20,
+            18,
+            25,
+            19,
+            50,
+            20,
+            50,
+            21,
+            50,
+            22,
+            20,
+          ]
+        ,
+        'circle-color': "#FFCC02",
+        'circle-opacity': 0.25,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': 'white'
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+      }
+      ,
+      "areas" // layer will be inserted just before this layer
+      );
+  
+      this.map.addLayer({
+      'id': 'contribute-problems-texts',
+      'type': 'symbol',
+      'source': 'contribute',
+      // 'source-layer': 'problems-ayes3a',
+      'minzoom': 16,
+      'layout': {
+        'visibility': 'visible',
+        'text-allow-overlap': true,
+        'text-field': [
+          "to-string",
+          ["get", "name"]
+        ],
+        'text-size': [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          19,
+          10,
+          22,
+          20
+        ],
+      },
+      'paint': {
+        'text-color': "#333",
+        'text-halo-color': "hsl(0, 0%, 100%)",
+        'text-halo-width': 1,
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+      });
+    }
   }
 
   centerMap() {
@@ -330,6 +433,32 @@ export default class extends Controller {
         name = problem.nameEn
       }        
       const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+       
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
+      .setLngLat(coordinates)
+      .setHTML(html)
+      .addTo(this.map);
+    });
+
+    this.map.on('mouseenter', ['contribute-problems','contribute-problems-texts'], () => {
+      this.map.getCanvas().style.cursor = 'pointer';
+    });
+    this.map.on('mouseleave', ['contribute-problems','contribute-problems-texts'], () => {
+      this.map.getCanvas().style.cursor = '';
+    });
+
+    // FIXME: make DRY
+    this.map.on('click', ['contribute-problems','contribute-problems-texts'], (e) => {
+
+      let problem = e.features[0].properties
+
+      // FIXME: make it DRY
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      var name = problem.name
+      if(this.localeValue == 'en' && problem.nameEn) {
+        name = problem.nameEn
+      }        
+      const html = `<a href="/${this.localeValue}/contribute/problems/${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)

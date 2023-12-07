@@ -83,9 +83,6 @@ export default class extends Controller {
     this.map.addSource('contribute', {
       type: 'geojson',
       data: this.geojsonValue,
-      // cluster: true,
-      // clusterMaxZoom: 14, // Max zoom to cluster points on
-      // clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
     });
 
     this.map.addLayer({
@@ -130,17 +127,6 @@ export default class extends Controller {
         'circle-opacity': 0.25,
         'circle-stroke-width': 2,
         'circle-stroke-color': 'white'
-        // ,
-        // 'circle-opacity': 
-        // [
-        //   "interpolate",
-        //   ["linear"],
-        //   ["zoom"],
-        //   14.5,
-        //   0,
-        //   15,
-        //   1
-        // ]
       },
       filter: [
         "match",
@@ -176,8 +162,6 @@ export default class extends Controller {
           22,
           20
         ],
-        // 'text-variable-anchor': ["top", "bottom"],
-        // 'text-offset': [0, 1.5],
       },
       'paint': {
         'text-color': "#333",
@@ -192,8 +176,6 @@ export default class extends Controller {
           false
       ],
     });
-
-    
 
     this.map.addLayer({
       'id': 'problems',
@@ -404,18 +386,18 @@ export default class extends Controller {
         speed: 2
       });
 
-      // // FIXME: make it DRY
-      // const coordinates = [problem.lon, problem.lat];
-      // var name = problem.name
-      // if(this.localeValue == 'en' && problem.nameEn) {
-      //   name = problem.nameEn
-      // }  
-      // const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+      // FIXME: make it DRY
+      const coordinates = [problem.lon, problem.lat];
+      var name = problem.name
+      if(this.localeValue == 'en' && problem.nameEn) {
+        name = problem.nameEn
+      }  
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
          
-      // // will be displayed thanks to the 'moveend' event code above
-      // this.popup = new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
-      //   .setLngLat(coordinates)
-      //   .setHTML(html)
+      // will be displayed thanks to the 'moveend' event code above
+      this.popup = new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]}) 
+        .setLngLat(coordinates)
+        .setHTML(html)
     }
   }
 
