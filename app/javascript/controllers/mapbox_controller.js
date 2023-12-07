@@ -414,7 +414,8 @@ export default class extends Controller {
     this.map.on('movestart', () => {
       // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
       // TODO: replace url only when user does something (eg. moves, closes a modal)
-      history.replaceState({} , '', `/${this.localeValue}/map`)
+      let url = this.contributeValue ? `/${this.localeValue}/contribute/map` : `/${this.localeValue}/map`
+      history.replaceState({} , '', url)
     });
   }
 
