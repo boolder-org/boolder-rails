@@ -1,4 +1,7 @@
-<% if @area %> 
+<% if params[:contribute] %> 
+  <% set_meta_tags title: t("views.contribute.map.metas.title") %>
+  <% set_meta_tags description: t("views.contribute.map.metas.description") %>
+<% elsif @area %> 
   <% set_meta_tags title: t("views.map.area.metas.title", area: @area.name) %>
   <% set_meta_tags description: t("views.map.area.metas.description", area: @area.name) %>
 
