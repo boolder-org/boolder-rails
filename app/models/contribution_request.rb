@@ -1,5 +1,5 @@
 class ContributionRequest < ApplicationRecord
   belongs_to :problem
-
-  # TODO: add validations
+  
+  validates :location_estimated, presence: true
 end
