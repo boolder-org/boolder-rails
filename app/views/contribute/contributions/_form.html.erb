@@ -181,17 +181,21 @@
               <li>Prenez une capture d'écran de la carte</li>
               <li>Éditez l'image en mode dessin, comme pour l'étape précédente</li>
               <li>Dessinez un trait pour marquer la position précise du départ sur un bloc existant</li>
-              <li>Si le bloc n'existe pas déjà sur la carte, dessinez-le et indiquez également sa position GPS précise</li>
             </ul>
 
             <p class="mb-1 text-sm font-medium leading-6 text-gray-600">Exemple :</p>
             <%= image_tag "contribute/example-map.jpg", class:"rounded-lg" %>
+
+            <p class="mt-4 mb-1 text-sm font-medium leading-6 text-gray-600">Autres précisions :</p>
+            <ul class="list-disc mb-4 px-6 text-sm leading-6 text-gray-600">
+              <li>Si le bloc n'existe pas déjà sur la carte, dessinez-le et indiquez sa position GPS précise dans le champ dédié</li>
+            </ul>
           </div>
         </div>
       </p>
     </div>
 
-    <div class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
+    <div class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2" data-controller="reveal">
       <div class="px-4 py-6 sm:p-8">
         <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
@@ -208,34 +212,35 @@
             </div>
           </div>
 
-          <div class="col-span-full" data-controller="reveal">
-
-
-              <a href="javascript:void(0)" class="text-green-600" data-action="reveal#toggle">
-                Ajouter position GPS (si le bloc n'existe pas sur la carte)
-              </a>
-  
-            <div class="hidden mt-4" data-reveal-target="item">
-              <p class="my-2 text-sm leading-6 text-gray-600">Veuillez indiquer la position GPS précise du bloc :</p>
-
-              <div class="sm:col-span-3">
-                <!-- <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Latitude</label> -->
-                <%= form.label :location_lat, "Latitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
-                <div class="mt-2">
-                  <%= form.text_field :location_lat, placeholder: "48.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
-                  <!-- <input type="text" name="first-name" id="first-name" placeholder="48.123456" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"> -->
+          <div class="col-span-full" >
+            <div class="space-y-5">
+              <div class="relative flex items-start">
+                <div class="flex h-6 items-center">
+                  <input id="location" data-action="reveal#toggle" name="location" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-green-600 focus:ring-green-600">
                 </div>
-              </div>
-  
-              <div class="sm:col-span-3">
-                <%= form.label :location_lon, "Longitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
-                <div class="mt-2">
-                  <%= form.text_field :location_lon, placeholder: "2.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300   placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+                <div class="ml-3 text-sm leading-6">
+                  <label for="location" data-action="reveal#toggle" class="text-gray-900">Renseigner la position GPS du bloc <span class="text-gray-500">(facultatif)</span></label>
+
                 </div>
               </div>
             </div>
           </div>
-          
+
+          <div class="hidden sm:col-span-3" data-reveal-target="item">
+            <!-- <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Latitude</label> -->
+            <%= form.label :location_lat, "Latitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <div class="mt-2">
+              <%= form.text_field :location_lat, placeholder: "48.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+              <!-- <input type="text" name="first-name" id="first-name" placeholder="48.123456" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"> -->
+            </div>
+          </div>
+
+          <div class="hidden sm:col-span-3" data-reveal-target="item">
+            <%= form.label :location_lon, "Longitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <div class="mt-2">
+              <%= form.text_field :location_lon, placeholder: "2.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300   placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -286,7 +291,7 @@
           <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
             <div class="sm:col-span-2">
-              <%= form.label :name, class: "block text-sm font-medium leading-6 text-gray-900" %>
+              <%= form.label :name, "Nom", class: "block text-sm font-medium leading-6 text-gray-900" %>
               <div class="mt-2">
                 <%= form.text_field :name, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
               </div>
