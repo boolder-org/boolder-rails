@@ -65,6 +65,6 @@ class Admin::ContributionRequestsController < Admin::BaseController
   private 
   def contribution_request_params
     params.require(:contribution_request).
-      permit(:comment, :problem_id)
+      permit(:problem_id)
   end
 end
