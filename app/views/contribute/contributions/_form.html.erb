@@ -57,28 +57,30 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <div>Conseils</div>
+              <div>Comment s'y prendre ?</div>
             </div>
           </a>
           <div class="hidden mt-4" data-reveal-target="item">
             <p class="mb-1 text-sm font-medium leading-6 text-gray-600">Comment prendre la photo :</p>
             <ul class="list-disc mb-4 px-6 text-sm leading-6 text-gray-600">
-              <li>Photo en format 4:3 en mode paysage</li>
-              <li>Cadrez la face entière du bloc</li>
+              <li>Utilisez l'application "Appareil Photo" de votre téléphone</li>
+              <li>Prenez la photo en format 4:3 en mode paysage</li>
+              <li>Cadrez si possible la face entière du bloc</li>
               <li>Gardez un peu de marge en haut, en bas, à gauche et à droite du bloc</li>
               <li>Utilisez le mode grand angle (zoom x0.5) si disponible</li>
-              <li>Sauvegardez la photo avec la meilleure qualité et taille possible</li>
-            </ul>
-
-            <p class="mb-1 text-sm font-medium leading-6 text-gray-600">À éviter :</p>
-            <ul class="list-disc mb-4 px-6 text-sm leading-6 text-gray-600">
-              <li>Évitez les objets sur la photo (crash pads, sacs) ou les personnes</li>
-              <li>Évitez les journées pluvieuses, l'humidité rend le bloc difficile à reconnaitre</li>
-              <li>Évitez les ombres des branches et feuilles d'arbres</li>
+              <li>Sauvegardez la photo avec la meilleure qualité et taille possibles</li>
             </ul>
 
             <p class="mb-1 text-sm font-medium leading-6 text-gray-600">Exemple :</p>
             <%= image_tag "contribute/example-topo.jpg", class:"rounded-lg" %>
+
+            <p class="mt-4 mb-1 text-sm font-medium leading-6 text-gray-600">Autres précisions :</p>
+            <ul class="list-disc mb-4 px-6 text-sm leading-6 text-gray-600">
+              <li>Si la voie se prolonge sur plusieurs faces (exemple : une traversée), prenez alors une photo de chaque face</li>
+              <li>Évitez les objets sur la photo (crash pads, sacs) ou les personnes</li>
+              <li>Évitez les journées pluvieuses, l'humidité rend le bloc difficile à reconnaitre</li>
+              <li>Évitez les ombres des branches et feuilles d'arbres</li>
+            </ul>
           </div>
         </div>
       </p>
@@ -108,9 +110,9 @@
 
   <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
     <div class="px-4 sm:px-0">
-      <h2 class="text-base font-semibold leading-7 text-gray-900">Tracé de la ligne</h2>
+      <h2 class="text-base font-semibold leading-7 text-gray-900">Ligne de la voie</h2>
       <p class="mt-1 text-sm leading-6 text-gray-600">
-        Indiquez le tracé de la voie sur la photo.
+        Indiquez par où la voie doit être grimpée.
 
         <div data-controller="reveal">
           <a href="javascript:void(0)" class="block" data-action="reveal#toggle">
@@ -118,15 +120,15 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <div>Conseils</div>
+              <div>Comment s'y prendre ?</div>
             </div>
           </a>
 
           <div class="hidden mt-4" data-reveal-target="item">
             <ul class="list-disc mb-4 px-6 text-sm leading-6 text-gray-600">
-              <li>Utilisez une appli pour dessiner le tracé de la voie directement sur la photo</li>
-              <li>iPhone : ouvrez l'appli Photos, appuyez sur le bouton "Modifier" puis sur le bouton en forme de feutre</li>
-              <li>Android :</li>
+              <li>Ré-utilisez la photo de l'étape précédente</li>
+              <li>Utilisez une appli pour dessiner le tracé de la voie directement sur la photo (par exemple avec l'appli Photos)</li>
+              <li>Sauvegardez le résultat dans une image séparée</li>
             </ul>
 
             <p class="mb-1 text-sm font-medium leading-6 text-gray-600">Exemple :</p>
@@ -162,7 +164,7 @@
     <div class="px-4 sm:px-0">
       <h2 class="text-base font-semibold leading-7 text-gray-900">Localisation du départ</h2>
       <p class="mt-1 text-sm leading-6 text-gray-600">
-        Indiquez où se situe précisément le départ de la voie.
+        Indiquez où se situe précisément le départ de la voie sur la carte.
 
         <div data-controller="reveal">
           <a href="javascript:void(0)" class="block" data-action="reveal#toggle">
@@ -170,15 +172,16 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <div>Conseils</div>
+              <div>Comment s'y prendre ?</div>
             </div>
           </a>
 
           <div class="hidden mt-4" data-reveal-target="item">
             <ul class="list-disc mb-4 px-6 text-sm leading-6 text-gray-600">
               <li>Prenez une capture d'écran de la carte</li>
-              <li>Éditez l'image en mode dessin — comme pour l'étape précédente</li>
-              <li>Dessinez un trait pour marquer la position précise du départ</li>
+              <li>Éditez l'image en mode dessin, comme pour l'étape précédente</li>
+              <li>Dessinez un trait pour marquer la position précise du départ sur un bloc existant</li>
+              <li>Si le bloc n'existe pas déjà sur la carte, dessinez-le et indiquez également sa position GPS précise</li>
             </ul>
 
             <p class="mb-1 text-sm font-medium leading-6 text-gray-600">Exemple :</p>
@@ -205,25 +208,34 @@
             </div>
           </div>
 
-          <div class="col-span-full">
-            <p class="mt-1 text-sm leading-6 text-gray-600">Si le bloc n'apparait pas déjà sur la carte, veuillez  indiquer sa position GPS :</p>
-          </div>
+          <div class="col-span-full" data-controller="reveal">
 
-          <div class="sm:col-span-3">
-            <!-- <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Latitude</label> -->
-            <%= form.label :location_lat, "Latitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
-            <div class="mt-2">
-              <%= form.text_field :location_lat, placeholder: "48.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
-              <!-- <input type="text" name="first-name" id="first-name" placeholder="48.123456" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"> -->
+
+              <a href="javascript:void(0)" class="text-green-600" data-action="reveal#toggle">
+                Ajouter position GPS (si le bloc n'existe pas sur la carte)
+              </a>
+  
+            <div class="hidden mt-4" data-reveal-target="item">
+              <p class="my-2 text-sm leading-6 text-gray-600">Veuillez indiquer la position GPS précise du bloc :</p>
+
+              <div class="sm:col-span-3">
+                <!-- <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Latitude</label> -->
+                <%= form.label :location_lat, "Latitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
+                <div class="mt-2">
+                  <%= form.text_field :location_lat, placeholder: "48.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300  placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+                  <!-- <input type="text" name="first-name" id="first-name" placeholder="48.123456" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"> -->
+                </div>
+              </div>
+  
+              <div class="sm:col-span-3">
+                <%= form.label :location_lon, "Longitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
+                <div class="mt-2">
+                  <%= form.text_field :location_lon, placeholder: "2.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300   placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="sm:col-span-3">
-            <%= form.label :location_lon, "Longitude", class: "block text-sm font-medium leading-6 text-gray-900" %>
-            <div class="mt-2">
-              <%= form.text_field :location_lon, placeholder: "2.123456", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
-            </div>
-          </div>
+          
 
         </div>
       </div>
