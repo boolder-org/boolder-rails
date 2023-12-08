@@ -11,21 +11,20 @@ div class="flex flex-col my-6"
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Area
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Ascents
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Completion
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"  With upcoming contributions
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" With upcoming contributions
           tbody class="bg-white divide-y divide-gray-200"
-            - @areas.each do |area, count, ascents, percentage|
+            - @areas_with_stats.each do |area_with_stats|
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   span class="text-sm text-gray-900 font-bold"
-                    = link_to(area.name, admin_moderation_problems_path(area_id: area.id))
+                    = link_to(area_with_stats.area.name, admin_moderation_problems_path(area_id: area_with_stats.area.id))
                 td class="px-6 py-2 whitespace-nowrap w-2/12"
-                  = "#{(count/1000.0).ceil}K"
+                  = "#{(area_with_stats.ascents/1000.0).ceil}K"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
-                  span class="" style="color:#{percentage_color(percentage)}"= "#{(percentage*100).floor} %"
+                  span class="" style="color:#{percentage_color(area_with_stats.completion)}"= "#{(area_with_stats.completion*100).floor} %"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
-                  - upcoming_percentage = area.problems.joins(:contribution_requests).sum(:ascents).to_f / area.problems.sum(:ascents).to_f
-                  - new_percentage = percentage + upcoming_percentage
-                  span class="" style="color:#{percentage_color(new_percentage)}"= "#{(new_percentage*100).floor} %"
+                  - new_completion = area_with_stats.completion + area_with_stats.upcoming_completion
+                  span class="" style="color:#{percentage_color(new_completion)}"= "#{(new_completion*100).floor} %"
                   
 
-p= "#{@areas.count} results"
+p= "#{@areas_with_stats.count} results"

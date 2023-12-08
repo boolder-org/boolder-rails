@@ -1,15 +1,14 @@
 class Admin::Moderation::ProblemsController < Admin::BaseController
   def dashboard
-    # TODO: refactor
-    @areas = Area.published.
-      map{|a| [
-          a, 
-          a.problems.sum(:ascents),
-          a.problems.without_photo.sum(:ascents),
-          1 - a.problems.without_photo.sum(:ascents).to_f / a.problems.sum(:ascents).to_f
-        ]
+    @areas_with_stats = Area.published.
+      map{|a| OpenStruct.new(
+          area: a, 
+          ascents: a.problems.sum(:ascents),
+          completion: 1 - a.problems.without_photo.sum(:ascents).to_f / a.problems.sum(:ascents).to_f,
+          upcoming_completion: a.problems.joins(:contribution_requests).sum(:ascents).to_f / a.problems.sum(:ascents).to_f
+        )
       }.
-      sort_by(&:second).reverse
+      sort_by(&:ascents).reverse
   end
 
   def index
