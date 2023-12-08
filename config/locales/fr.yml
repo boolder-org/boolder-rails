@@ -101,6 +101,20 @@ fr:
       contributions:
         new:
           title: Ajouter une contribution
+          how_to: Comment s'y prendre ?
+          problem: Photo du bloc
+          problem_description: Prenez une photo du bloc avec votre téléphone.
+          line: Ligne de la voie
+          line_description: Indiquez comment grimper le bloc.
+          location: Localisation du départ
+          location_description: Indiquez où se situe précisément le départ de la voie sur la carte.
+          location_gps: Renseigner la position GPS du bloc
+          location_optional: (facultatif)
+          comments: Commentaires
+          private: Privé
+          private_info: Informations personnelles
+          private_info_description: Pour nous permettre de vous contacter en cas de question.
+          submit: Envoyer
           metas:
             title: Nouvelle contribution
       map:
