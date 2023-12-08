@@ -1,7 +1,9 @@
+- set_meta_tags title: t("views.contribute.contributions.new.metas.title")
+
 div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
   div class="px-4 sm:px-0"
     div class="flex items-center space-x-1 text-sm font-medium text-gray-500"
-      div= link_to "Contribute", contribute_path, class: "hover:text-gray-700"
+      div= link_to t("views.contribute.breadcrumbs.contribute"), contribute_path, class: "hover:text-gray-700"
       svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
       div= link_to @contribution.problem.area.name, contribute_contribution_requests_path(area_id: @contribution.problem.area.id), class: "hover:text-gray-700"
@@ -13,9 +15,9 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
   div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
     div class="col-span-1"
       div
-        h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"Ajouter une contribution
+        h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= t("views.contribute.contributions.new.title")
 
   div class="mt-8"
     = form_with model: [:contribute, @contribution] do |form|
       = form.hidden_field :problem_id
-      = render "form", form: form  
+      = render "form", form: form

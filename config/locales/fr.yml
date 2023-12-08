@@ -98,6 +98,11 @@ fr:
           pending_contributions: Contributions en attente
           metas:
             title: Contribuer à une voie
+      contributions:
+        new:
+          title: Ajouter une contribution
+          metas:
+            title: Nouvelle contribution
       map:
         metas:
           title: Contribuez à Boolder
