@@ -42,7 +42,7 @@
   <body class="bg-white h-full m-0">
     <div class="bg-gray-100 flex flex-col h-full">
       <div class="flex-initial">
-        <%= render nav_style == :contribute ? "layouts/nav_contribute" : "layouts/map_nav" %>
+        <%= render "layouts/map_nav" %>
       </div>
       <%= yield %>
     </body>
