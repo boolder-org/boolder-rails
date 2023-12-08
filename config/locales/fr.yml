@@ -68,6 +68,59 @@ fr:
       metas:
         title: Escalade de blocs à Fontainebleau
         description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
+    contribute:
+      see_on_map: Voir sur la carte
+      breadcrumbs:
+        contribute: Contribuer
+      dashboard:
+        title: Contribuez à Boolder
+        photos_title: Voies à cartographier
+        photos_subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
+        metas: 
+          title: Contribuez à Boolder
+          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau de façon bénévole
+      problems:
+        index:
+          title: Voies à cartographier à %{area}
+          group_header: 
+            one: "1 voie"
+            other: "%{count} voies"
+          metas:
+            title: Cartographie du secteur %{area}
+        show:
+          step1: Rendez vous devant la voie
+          step2: Ajoutez une contribution
+          see_on_bleau_info: Voir infos sur bleau.info
+          photo: Photo du bloc
+          line: Tracé de la ligne
+          location: Localisation sur la carte
+          add_contribution: Ajouter une contribution
+          pending_contributions: Contributions en attente
+          metas:
+            title: Contribuer à une voie
+      contributions:
+        new:
+          title: Ajouter une contribution
+          how_to: Comment s'y prendre ?
+          problem: Photo du bloc
+          problem_description: Prenez une photo du bloc avec votre téléphone.
+          line: Ligne de la voie
+          line_description: Indiquez comment grimper le bloc.
+          location: Localisation du départ
+          location_description: Indiquez où se situe précisément le départ de la voie sur la carte.
+          location_gps: Renseigner la position GPS du bloc
+          location_optional: (facultatif)
+          comments: Commentaires
+          private: Privé
+          private_info: Informations personnelles
+          private_info_description: Pour nous permettre de vous contacter en cas de question.
+          submit: Envoyer
+          metas:
+            title: Nouvelle contribution
+      map:
+        metas:
+          title: Contribuez à Boolder
+          description: Aidez nous à cartographier les voies manquantes sur Boolder
     map:
       fontainebleau:
         metas:

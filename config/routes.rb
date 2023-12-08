@@ -17,6 +17,12 @@ Rails.application.routes.draw do
       resources :lines
       resources :pois
       resources :poi_routes
+      resources :contribution_requests
+
+      namespace :moderation do
+        resources :problems, only: [:index]
+        get "/", to: "problems#dashboard"
+      end
 
       root 'areas#index'
     end
@@ -43,6 +49,10 @@ Rails.application.routes.draw do
 
     namespace :contribute do 
       resources :contribution_requests, only: [:index]
+      resources :contributions, only: [:show, :new, :create]
+      resources :problems, only: [:show]
+      get 'requests', to: 'contribution_requests#geojson', as: :contribution_requests_geojson
+      get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
       get "/", to: "contribution_requests#dashboard"
     end
 
@@ -62,7 +72,6 @@ Rails.application.routes.draw do
       get "/", to: "areas#index", as: :areas
     end
 
-    get 'map/top7a', to: 'map#top7a', as: :map_top7a
     get 'map(/:slug)', to: 'map#index', as: :map
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
@@ -77,6 +86,9 @@ Rails.application.routes.draw do
   namespace :api do
       namespace :v1 do
         resources :topos, only: :show
+        resources :areas do
+          resources :topos, only: :index
+        end
       end
     end
 

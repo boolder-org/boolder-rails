@@ -68,6 +68,55 @@ en:
       metas:
         title: Bouldering in Fontainebleau
         description: Discover thousands of problems & circuits for all levels.
+    contribute:
+      see_on_map: See on the map
+      breadcrumbs:
+        contribute: Contribute
+      dashboard:
+        title: Contribute to Boolder
+        photos_title: Problems to map
+        photos_subtitle: To help Boolder, go to an area and take pictures of the missing problems with your phone.
+        metas: 
+          title: Contribute to Boolder
+          description: Help Boolder map all the bouldering routes in Fontainebleau
+      problems:
+        index:
+          title: Problems to map in %{area}
+          group_header: 
+            one: "1 problem"
+            other: "%{count} problems"
+          metas:
+            title: Mapping the %{area} area
+        show:
+          step1: Go to the problem
+          step2: Add a contribution
+          see_on_bleau_info: See info on bleau.info
+          photo: Boulder photo
+          line: Route line
+          location: Location on the map
+          add_contribution: Add a contribution
+          pending_contributions: Pending contributions
+          metas:
+            title: Contribute to a problem
+      contributions:
+        new:
+          title: Add a contribution
+          how_to: How?
+          problem: Boulde photo
+          problem_description: Take a picture of the boulder with your phone.
+          line: Route line
+          line_description: Indicate how to climb the boulder.
+          location: Start location
+          location_description: Indicate exactly where the start of the problem is on the map.
+          location_gps: Enter the GPS location of the boulder
+          location_optional: (optional)
+          comments: Comments
+          private: Private
+          private_info: Personal information
+          private_info_description: To allow us to contact you in case of questions.
+          submit: Submit
+          metas:
+            title: New contribution
     map:
       fontainebleau:
         metas:

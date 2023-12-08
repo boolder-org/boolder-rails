@@ -1,0 +1,40 @@
+- add_breadcrumb "Moderation", admin_moderation_path
+- add_breadcrumb @area.name, nil, class: "active"
+
+div class="flex flex-col my-6"
+  div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
+    div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
+      div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+        table class="min-w-full divide-y divide-gray-200"
+          thead class="bg-gray-50"
+            tr
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Ascents
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Contribution status
+          tbody class="bg-white divide-y divide-gray-200"
+            - @problems.each do |problem|
+              tr class="place-content-start align-top h-16"
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  div class="text-sm text-gray-500"= link_to(problem.id, edit_admin_problem_path(problem), id: problem.id)
+                td class="px-6 py-2 whitespace-nowrap w-3/12"
+                  div class="text-sm text-gray-900"
+                    = problem_circle_view_with_name(problem)
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  - if problem.featured
+                    span class="text-red-400"
+                      = render 'svg/heart', width: 24, height: 24
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  span class="ml-1 text-gray-500"= problem.grade
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  span class="ml-1 text-gray-500"= problem.ascents.to_i
+                td class="px-6 py-2 whitespace-nowrap"
+                  - problem.contribution_requests.each do |request|
+                    = link_to "requested", contribute_problem_path(problem)
+                  
+
+p= "#{@problems.count} results"
+
+div style="margin-bottom: 400px"

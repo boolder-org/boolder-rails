@@ -1,0 +1,7 @@
+div class="col-span-6 sm:col-span-2"
+  = form.label :location_estimated_lat, "Latitude"
+  = form.text_field :location_estimated_lat, value: @contribution_request.location_estimated&.lat
+div class="col-span-6 sm:col-span-2"
+  = form.label :location_estimated_lon, "Longitude"
+  = form.text_field :location_estimated_lon, value: @contribution_request.location_estimated&.lon
+div class="col-span-6 sm:col-span-4"

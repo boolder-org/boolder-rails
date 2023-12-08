@@ -14,6 +14,6 @@ application.debug = process.env.NODE_ENV === 'development'
 import Chart from "stimulus-chartjs"
 application.register("chart", Chart)
 
-import { Dropdown, Tabs } from "tailwindcss-stimulus-components"
-application.register('dropdown', Dropdown)
-application.register('tabs', Tabs)
+// import { Dropdown, Tabs } from "tailwindcss-stimulus-components"
+// application.register('dropdown', Dropdown)
+// application.register('tabs', Tabs)

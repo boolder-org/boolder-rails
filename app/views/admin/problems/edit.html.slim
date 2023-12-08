@@ -2,6 +2,11 @@
 - add_breadcrumb @problem.area.name, admin_area_problems_path(area_slug: @problem.area.slug, circuit_id: @problem.circuit&.id || "off_circuit", anchor: @problem.id)
 - add_breadcrumb "Problem ##{@problem.id}", nil, class: "active"
 
+- if @problem.location.nil? && @problem.topos.published.any?
+  div class="mb-4"
+    = warning_box do 
+      span Location is empty although problem has a topo
+
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"
     div class="mt-5 md:mt-0 md:col-span-2"
@@ -43,3 +48,7 @@ div class="mt-10 sm:mt-0"
             div class="font-bold" Variants
             - @problem.variants.sort_by(&:grade).reverse.each do |variant|
               div= link_to [variant.name_with_fallback, variant.grade].compact.join(" - "), edit_admin_problem_path(variant)
+        ul class="mt-4"
+          li= link_to "Request contribution", new_admin_contribution_request_path(problem_id: @problem.id)
+          - @problem.contribution_requests.each do |request|
+            li= link_to "Request ##{request.id}", admin_contribution_request_path(request)

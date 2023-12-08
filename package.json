@@ -23,7 +23,7 @@
     "stimulus": "^3.1.0",
     "stimulus-chartjs": "^2.1.0",
     "tailwindcss": "^2.2.19",
-    "tailwindcss-stimulus-components": "2.1.2"
+    "xxhash-addon": "^2.0.1"
   },
   "version": "0.1.0",
   "devDependencies": {

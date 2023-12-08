@@ -1,5 +1,8 @@
 class ContributionRequest < ApplicationRecord
   belongs_to :problem
+  
+  validates :location_estimated, presence: true
 
-  # TODO: add validations
+  include Geolocatable
+  geolocatable :location_estimated
 end

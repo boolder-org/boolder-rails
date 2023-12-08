@@ -7,6 +7,7 @@ class Problem < ApplicationRecord
   belongs_to :parent, class_name: "Problem", optional: true
   belongs_to :bleau_problem, foreign_key: "bleau_info_id", optional: true
   has_many :contribution_requests
+  has_many :contributions
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
@@ -65,6 +66,7 @@ class Problem < ApplicationRecord
   scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
   scope :with_location, -> { where.not(location: nil) }
   scope :without_location, -> { where(location: nil) }
+  scope :without_photo, -> { left_joins(:lines).where(lines: { id: nil }) }
 
   def published?
     area.published && location.present?
