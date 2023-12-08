@@ -78,14 +78,26 @@ fr:
         photos_subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
         metas: 
           title: Contribuez à Boolder
-          description: Aidez Boolder en contribuant au projet de façon bénévole
+          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau de façon bénévole
       problems:
         index:
           title: Voies à cartographier à %{area}
-          group_header: "%{count} voies"
+          group_header: 
+            one: "1 voie"
+            other: "%{count} voies"
           metas:
-            title: Cartographier des voies 
-            description: Aidez-nous à cartographier toutes les voies manquantes à Fontainebleau
+            title: Cartographie du secteur %{area}
+        show:
+          step1: Rendez vous devant la voie
+          step2: Ajoutez une contribution
+          see_on_bleau_info: Voir infos sur bleau.info
+          photo: Photo du bloc
+          line: Tracé de la ligne
+          location: Localisation sur la carte
+          add_contribution: Ajouter une contribution
+          pending_contributions: Contributions en attente
+          metas:
+            title: Contribuer à une voie
       map:
         metas:
           title: Contribuez à Boolder
