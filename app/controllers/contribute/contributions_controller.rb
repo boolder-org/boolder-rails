@@ -16,14 +16,6 @@ class Contribute::ContributionsController < Contribute::BaseController
 
     session[:contribution_name] = @contribution.name
     session[:contribution_email] = @contribution.email
-    
-    # TODO: make DRY
-    lat = params[:contribution][:location_lat]
-    lon = params[:contribution][:location_lon]
-
-    if lat.present? && lon.present?
-      @contribution.location = "POINT(#{lon} #{lat})"      
-    end
 
     if @contribution.save
       flash[:notice] = "Contribution created!"
@@ -37,7 +29,7 @@ class Contribute::ContributionsController < Contribute::BaseController
   private
   def contribution_params
     params.require(:contribution).permit(
-      :location, :comment, :problem_id, :name, :email,
+      :location_lat, :location_lon, :comment, :problem_id, :name, :email,
       photos: [], line_drawings: [], location_drawings: []
     )
   end
