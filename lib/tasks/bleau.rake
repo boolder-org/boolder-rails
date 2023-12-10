@@ -1,36 +1,25 @@
-# require "HTTParty"
-require 'csv'
-
 namespace :bleau do
-  task photo_urls: :environment do
-    # area_id = ENV["area_id"]
-    # raise "please specify an area_id" unless area_id.present?
+    task import: :environment do
+    area_id = ENV["area_id"]
+    raise "please specify an area_id" unless area_id.present?
 
-    CSV.open("export/bleau_photos.csv", "w") do |csv|
+    area = Area.find(area_id)
+    bleau_area = area.bleau_area
 
-      csv << %w(area id name grade circuit number url bleau_id bleau_url photo)
+    html = HTTParty.get("https://bleau.info/#{bleau_area.slug}").body
+    doc = Nokogiri::HTML(html)
 
-      Problem.joins(:area).where(area: { published: true }).map do |p|  
-        photo = p.lines.first&.topo&.photo
+    bleau_problems = doc.css(".vsr").map do |row|
+      a = row.css("a").first
+      link = a.attributes["href"].value
+      id = link[/([\w-]+).html/,1]
 
-        csv << [
-          p.area.name,
-          p.id, 
-          p.name, 
-          p.grade, 
-          p.circuit.present? ? p.circuit.color : "",
-          [p.circuit_number, p.circuit_letter].join(""),
-          "https://www.boolder.com/en/fontainebleau/rocher-fin/#{p.id}",
-          p.bleau_info_id,
-          p.bleau_info_id.present? ? "https://bleau.info/c/#{p.bleau_info_id}.html" : "",
-          photo ? url_for(photo.variant(:medium)) : ""
-        ]
-      end
+      puts "Created import job for bleau_problem_id=#{id}"
+      
+      BleauImportProblemJob.perform_later(id)
     end
-
-    puts "exported bleau_photos.csv".green
   end
-
+  
   task promote: :environment do
     area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
@@ -69,26 +58,5 @@ namespace :bleau do
     end
 
     puts "done".green
-  end
-
-  task import: :environment do
-    area_id = ENV["area_id"]
-    raise "please specify an area_id" unless area_id.present?
-
-    area = Area.find(area_id)
-    bleau_area = area.bleau_area
-
-    html = HTTParty.get("https://bleau.info/#{bleau_area.slug}").body
-    doc = Nokogiri::HTML(html)
-
-    bleau_problems = doc.css(".vsr").map do |row|
-      a = row.css("a").first
-      link = a.attributes["href"].value
-      id = link[/([\w-]+).html/,1]
-
-      puts "Created import job for bleau_problem_id=#{id}"
-      
-      BleauImportProblemJob.perform_later(id)
-    end
   end
 end
