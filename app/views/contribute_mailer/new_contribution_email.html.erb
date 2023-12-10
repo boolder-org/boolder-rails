@@ -1,0 +1,12 @@
+<p>
+  <%= @contribution&.problem&.name %>
+</p>
+
+<p>
+<%= contribute_contribution_url(@contribution, locale: :fr) %>
+</p>
+
+<ul>
+  <li>Name: <%= @contribution.name %></li>
+  <li>Email: <%= @contribution.email %></li>
+</ul>

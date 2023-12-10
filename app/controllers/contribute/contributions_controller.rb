@@ -19,6 +19,9 @@ class Contribute::ContributionsController < Contribute::BaseController
 
     if @contribution.save
       flash[:notice] = "Contribution created!"
+
+      ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
+
       redirect_to [:contribute, @contribution.problem]
     else
       # flash[:error] = "Error"

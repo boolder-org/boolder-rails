@@ -62,6 +62,17 @@ Rails.application.configure do
   config.active_job.queue_adapter     = :sidekiq
   # config.active_job.queue_name_prefix = "boolder_production"
 
+  # email
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "www.boolder.com", protocol: "https" }
+  ActionMailer::Base.smtp_settings = {
+    :address => 'email-smtp.eu-north-1.amazonaws.com',
+    :port => '587',
+    :authentication => :plain,
+    :user_name => Rails.application.credentials.dig(:amazon_smtp, :username),
+    :password => Rails.application.credentials.dig(:amazon_smtp, :password),
+  }
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
