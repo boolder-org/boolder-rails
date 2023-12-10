@@ -3,13 +3,13 @@ namespace :popularity do
     area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
 
-    areas = if area_id == "all"
-      Area.all
+    problems = if area_id == "all"
+      Problem.all
     else
-      Area.where(id: area_id)  
+      Problem.where(area_id: area_id)  
     end
 
-    areas.problems.find_each do |problem|
+    problems.find_each do |problem|
       ascents = problem.bleau_problem&.ascents || 0
       ratings_average = problem.bleau_problem&.ratings_average || 0
       popularity = ascents * (ratings_average*ratings_average)
