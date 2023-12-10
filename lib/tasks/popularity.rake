@@ -1,41 +1,19 @@
 namespace :popularity do
-  task scrap: :environment do 
-    area_id = ENV["area_id"]
-    raise "please specify an area_id" unless area_id.present?
-
-    Problem.where(area_id: area_id).where("bleau_info_id IS NOT NULL").find_each do |problem|
-
-      html = HTTParty.get("https://bleau.info/c/#{problem.bleau_info_id}.html?locale=en").body
-      doc = Nokogiri::HTML(html)
-
-      ratings_text = doc.css(".bdetails .bopins")[0]&.text || ""
-      ascents_text = doc.css(".bdetails .bopins")[2]&.text || ""
-
-      ratings_average = ratings_text.match(/([0-9]\.[0-9]) Stars/)&.[](1)
-      ratings_number = ratings_text.match(/([0-9]+) total/)&.[](1)
-      ascents_number = ascents_text.match(/([0-9]+) total/)&.[](1)
-
-      attributes = { ratings_average: ratings_average, ratings: ratings_number, ascents: ascents_number }
-      problem.update(attributes)
-      puts "Updated problem ##{problem.id}: #{attributes}"
-
-      sleep 0.3.second
-    rescue Exception => e
-      puts "Exception for problem ##{problem.id}: #{e}".red
-    end
-
-    puts "Done".green
-  end
-
   task compute: :environment do 
     area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
 
-    Problem.where(area_id: area_id).find_each do |problem|
-      ascents = problem.ascents || 0
-      ratings_average = problem.ratings_average || 0
+    areas = if area_id == "all"
+      Area.all
+    else
+      Area.where(id: area_id)  
+    end
+
+    areas.problems.find_each do |problem|
+      ascents = problem.bleau_problem&.ascents || 0
+      ratings_average = problem.bleau_problem&.ratings_average || 0
       popularity = ascents * (ratings_average*ratings_average)
-      problem.update(popularity: popularity)
+      problem.update(ascents: ascents, ratings_average: ratings_average, popularity: popularity)
       puts "Computed popularity for problem ##{problem.id}"
     end
     puts "Done".green
@@ -45,9 +23,15 @@ namespace :popularity do
     area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
 
-    Problem.where(area_id: area_id).where(featured: true).update_all(featured: false)
+    areas = if area_id == "all"
+      Area.all
+    else
+      Area.where(id: area_id)  
+    end
 
-    Area.where(id: area_id).each do |area|
+    areas.each do |area|
+      area.problems.where(featured: true).update_all(featured: false)
+
       total = [[area.problems.with_location.count * 10/100, 20].min, 2].max
       max_per_grade = (total.to_f * 0.2).round
 
@@ -60,6 +44,8 @@ namespace :popularity do
       top_problems.sort_by(&:popularity).reverse.take(total).each do |problem|
         problem.update(featured: true)
       end
+
+      puts "Computed featured problems for area ##{area.id}"
     end
 
     puts "Done".green

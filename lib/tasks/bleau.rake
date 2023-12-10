@@ -46,7 +46,8 @@ namespace :bleau do
         problem.tags << "sit_start"
       end
 
-      # TODO: set circuit
+      # TODO: circuit
+      # TODO: created_at
 
       problem.ratings = bleau_problem.ratings
       problem.ratings_average = bleau_problem.ratings_average
