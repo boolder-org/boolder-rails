@@ -2,7 +2,7 @@ class Contribute::ContributionRequestsController < Contribute::BaseController
   def index
     @area = Area.find(params[:area_id])
     
-    @locations = ContributionRequest.joins(:problem).
+    @locations = ContributionRequest.open.joins(:problem).
       where(problems: { area_id: @area.id }).
       where(what: "photo").
       order("ascents DESC NULLS LAST").
@@ -24,7 +24,7 @@ class Contribute::ContributionRequestsController < Contribute::BaseController
   def geojson
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    problem_features = ContributionRequest.where.not(location_estimated: nil).group_by(&:location_estimated).map do |location, requests|
+    problem_features = ContributionRequest.open.where.not(location_estimated: nil).group_by(&:location_estimated).map do |location, requests|
       problems = requests.map(&:problem)
       problem = problems.sort_by{|p| p.ascents.to_i }.reverse.first
 

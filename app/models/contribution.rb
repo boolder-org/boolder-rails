@@ -9,6 +9,8 @@ class Contribution < ApplicationRecord
 
   STATES = %w(pending accepted closed)
   scope :pending, -> { where(state: "pending") }
+  scope :accepted, -> { where(state: "accepted") }
+  scope :closed, -> { where(state: "closed") }
 
   validates :state, inclusion: { in: STATES }
 end
