@@ -62,11 +62,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                   path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
                 span class="ml-2"= t("views.contribute.problems.show.add_contribution")
 
-      - if @problem.contributions.any?
+      - if @contributions.any?
         h2 class="text-xl font-bold mt-8 px-4 sm:px-0"= t("views.contribute.problems.show.pending_contributions")
         div class="mt-4 px-4 sm:px-0"
           ul role="list" class="list-disc px-4"
-            - @problem.contributions.each do |contribution|
+            - @contributions.each do |contribution|
               li
                 = link_to I18n.l(contribution.created_at, format: :long), [:contribute, contribution]
 

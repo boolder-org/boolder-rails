@@ -42,6 +42,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                           div class="flex space-x-2"
                             div
                               span class="text-gray-500"
-                                - if problem.contributions.count > 0
-                                  = "#{problem.contributions.count} contrib."
+                                - if problem.contributions.pending.count > 0
+                                  = "#{problem.contributions.pending.count} contrib."
             div class="mb-4"
