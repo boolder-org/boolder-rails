@@ -1,3 +1,6 @@
+- if Contribution.pending.count > 0
+  = warning_box do
+    = link_to "#{Contribution.pending.count} contributions pending", admin_contributions_path
 
 h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0" Mapping Progress
 

@@ -1,0 +1,17 @@
+/ - problem = @contribution.problem
+
+- add_breadcrumb "Contributions", admin_contributions_path
+/ - add_breadcrumb problem.area.name, admin_area_problems_path(area_slug: problem.area.slug, circuit_id: problem.circuit&.id || "off_circuit", anchor: problem.id) if problem
+/ - add_breadcrumb "Problem ##{problem.id}", admin_problem_path(problem) if problem
+- add_breadcrumb "Contribution ##{@contribution.id}", nil, class: "active"
+
+div class="mt-10 sm:mt-0"
+  div class="md:grid md:grid-cols-4 md:gap-6"
+    div class="mt-5 md:mt-0 md:col-span-2"
+      = form_with model: [:admin, @contribution] do |form|
+        div class="shadow overflow-hidden sm:rounded-md"
+          div class="px-4 py-5 bg-white sm:p-6"
+            div class="grid grid-cols-6 gap-6"
+                = render "form", form: form
+          div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
+            button type="submit" class="btn" Update

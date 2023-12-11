@@ -6,4 +6,7 @@ class Contribution < ApplicationRecord
 
   include Geolocatable
   geolocatable :location
+
+  STATES = %w(pending accepted closed)
+  scope :pending, -> { where(state: "pending") }
 end
