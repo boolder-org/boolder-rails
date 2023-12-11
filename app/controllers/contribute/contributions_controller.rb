@@ -18,7 +18,7 @@ class Contribute::ContributionsController < Contribute::BaseController
     session[:contribution_email] = @contribution.email
 
     if @contribution.save
-      flash[:notice] = "Contribution created!"
+      flash[:notice] = t("views.contribute.contributions.new.flash_success")
 
       ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
 

@@ -38,6 +38,7 @@
 
     <div class="bg-gray-100">
       <%= render "layouts/nav" unless @hide_nav %>
+      <%= render "layouts/flash" %>
       <%= yield %>
       <%= render "layouts/footer" unless @hide_nav %>
     </body>
