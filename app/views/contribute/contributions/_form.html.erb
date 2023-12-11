@@ -23,12 +23,48 @@
 
 <div class="space-y-10 divide-y divide-gray-900/10">
 
-  <div class="py-2 px-4 sm:px-0">
-    <div class="col-span-full">
-      <div class="mb-2 font-semibold"><%= @contribution.problem.area.name%></div>
-      <div class="flex space-x-2">
-        <span><%= problem_circle_view(@contribution.problem) %></span>
-        <span><%= @contribution.problem.name_with_fallback %></span>
+
+  <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
+    <div class="px-4 sm:px-0">
+
+      <h2 class="text-base font-semibold leading-7 text-gray-900"><%= t("views.contribute.contributions.new.problem") %></h2>
+
+      <p class="mt-1 text-sm leading-6 text-gray-600">
+        <%# De quelle voie s'agit-il ? %>
+      </p>
+    </div>
+
+    <div class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
+      <div class="px-4 py-6 sm:p-8">
+        <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+
+          <% if problem = @contribution.problem %>
+            <div class="sm:col-span-full flex justify-between">
+                <div class="flex space-x-2">
+                  <span><%= problem_circle_view(problem) %></span>
+                  <span><%= problem.name_with_fallback %></span>
+                </div>
+                <div class="text-gray-500"><%= problem.area.name%></div>
+            </div>
+          <% else %>
+
+          <div class="sm:col-span-4 sm:col-start-1">
+            <%= form.label :problem_name, class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <div class="mt-2">
+              <%= form.text_field :problem_name, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+            </div>
+          </div>
+
+          <div class="sm:col-span-4 sm:col-start-1">
+            <%= form.label :problem_url, t("views.contribute.contributions.new.problem_url_label"), class: "block text-sm font-medium leading-6 text-gray-900" %>
+            <div class="mt-2">
+              <%= form.text_field :problem_url, placeholder: "https://...", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
+            </div>
+          </div>
+
+          <% end %>
+
+        </div>
       </div>
     </div>
   </div>
@@ -36,9 +72,9 @@
 
   <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
     <div class="px-4 sm:px-0">
-      <h2 class="text-base font-semibold leading-7 text-gray-900"><%= t("views.contribute.contributions.new.problem") %></h2>
+      <h2 class="text-base font-semibold leading-7 text-gray-900"><%= t("views.contribute.contributions.new.boulder") %></h2>
       <p class="mt-1 text-sm leading-6 text-gray-600">
-        <%= t("views.contribute.contributions.new.problem_description") %>
+        <%= t("views.contribute.contributions.new.boulder_description") %>
         <div data-controller="reveal">
           <a href="javascript:void(0)" class="block" data-action="reveal#toggle">
             <div class="flex items-center space-x-2 text-green-600 mt-6">
@@ -49,7 +85,7 @@
             </div>
           </a>
           <div class="hidden mt-4" data-reveal-target="item">
-            <%= render "how_to_problem" %>
+            <%= render "how_to_boulder" %>
           </div>
         </div>
       </p>
@@ -240,17 +276,14 @@
         <div class="px-4 py-6 sm:p-8">
           <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
-            <div class="sm:col-span-2">
+            <div class="sm:col-span-2 sm:col-start-1">
               <%= form.label :name, class: "block text-sm font-medium leading-6 text-gray-900" %>
               <div class="mt-2">
                 <%= form.text_field :name, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>
               </div>
             </div>
 
-            <div class="sm:col-span-2">
-            </div>
-
-            <div class="sm:col-span-4">
+            <div class="sm:col-span-4 sm:col-start-1">
               <%= form.label :email, class: "block text-sm font-medium leading-6 text-gray-900" %>
               <div class="mt-2">
                 <%= form.text_field :email, type: "email", autocomplete: "email", class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" %>

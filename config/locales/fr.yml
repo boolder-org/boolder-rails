@@ -102,8 +102,10 @@ fr:
         new:
           title: Ajouter une contribution
           how_to: Comment s'y prendre ?
-          problem: Photo du bloc
-          problem_description: Prenez une photo du bloc avec votre téléphone.
+          problem: Voie
+          problem_url_label: Lien (bleau.info ou Boolder)
+          boulder: Photo du bloc
+          boulder_description: Prenez une photo du bloc avec votre téléphone.
           line: Ligne de la voie
           line_description: Indiquez comment grimper le bloc.
           location: Localisation du départ

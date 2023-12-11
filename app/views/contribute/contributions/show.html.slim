@@ -3,6 +3,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
     h1 class="text-3xl font-bold mt-8 mb-4 px-4 sm:px-0" Contribution
 
     div class="px-4 sm:px-0"
+      p class="my-4"
+        = @contribution.problem_name
+      p class="my-4"
+        = @contribution.problem_url
+        
       = simple_format @contribution.comment
 
       - if location = @contribution.location

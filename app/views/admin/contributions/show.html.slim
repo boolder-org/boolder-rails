@@ -6,6 +6,11 @@
 - if problem = @contribution.problem
   p class="my-4"
     = link_to problem.name_debug, [:admin, problem], class: "text-green-600"
+- else
+  p class="my-4"
+    = @contribution.problem_name
+  p class="my-4"
+    = @contribution.problem_url
 
 div class="px-4 sm:px-0"
   = simple_format @contribution.comment

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_11_140316) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_11_171435) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -125,6 +125,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_11_140316) do
     t.string "name"
     t.string "email"
     t.string "state", default: "pending", null: false
+    t.string "problem_name"
+    t.string "problem_url"
     t.index ["problem_id"], name: "index_contributions_on_problem_id"
   end
 

@@ -102,8 +102,10 @@ en:
         new:
           title: Add a contribution
           how_to: How?
-          problem: Boulde photo
-          problem_description: Take a picture of the boulder with your phone.
+          problem: Problem
+          problem_url_label: Link (bleau.info or Boolder)
+          boulder: Boulder photo
+          boulder_description: Take a picture of the boulder with your phone.
           line: Route line
           line_description: Indicate how to climb the boulder.
           location: Start location
