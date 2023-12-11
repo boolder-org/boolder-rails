@@ -3,6 +3,6 @@ fr:
     models:
     attributes:
       contribution:
-        name: Nom
-        email: Email
+        contributor_name: Nom
+        contributor_email: Email
         problem_name: Nom de la voie

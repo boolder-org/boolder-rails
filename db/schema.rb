@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_11_171435) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_11_183004) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "plpgsql"
@@ -122,8 +122,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_11_171435) do
     t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
-    t.string "email"
+    t.string "contributor_name"
+    t.string "contributor_email"
     t.string "state", default: "pending", null: false
     t.string "problem_name"
     t.string "problem_url"

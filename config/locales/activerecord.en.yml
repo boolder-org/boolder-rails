@@ -3,6 +3,6 @@ en:
     models:
     attributes:
       contribution:
-        name: Name
-        email: Email
+        contributor_name: Name
+        contributor_email: Email
         problem_name: Problem name
