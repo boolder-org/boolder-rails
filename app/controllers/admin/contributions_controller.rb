@@ -19,7 +19,7 @@ class Admin::ContributionsController < Admin::BaseController
     @contribution.save!
 
     flash[:notice] = "Contribution updated"
-    redirect_to admin_moderation_path
+    redirect_to admin_contributions_path
   end
 
   private 
