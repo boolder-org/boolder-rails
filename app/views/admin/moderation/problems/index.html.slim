@@ -1,6 +1,14 @@
 - add_breadcrumb "Moderation", admin_moderation_path
 - add_breadcrumb @area.name, nil, class: "active"
 
+- if @problems_with_topo_but_no_location.any?
+  div class="mb-4"
+    = warning_box do 
+      span Location is empty although problem has a topo: 
+      ul
+        - @problems_with_topo_but_no_location.each do |problem|
+          li= link_to "Problem ##{problem.id}", [:admin, problem]
+
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
     div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
