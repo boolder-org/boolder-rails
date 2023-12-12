@@ -50,10 +50,10 @@ Rails.application.routes.draw do
 
     namespace :contribute do 
       resources :contributions, only: [:show, :new, :create]
-      resources :problems, only: [:show]
     end
 
     namespace :mapping do
+      resources :problems, only: [:show]
       resources :requests, only: [:index], controller: 'contribution_requests'
       get 'geojson', to: 'contribution_requests#geojson'
       get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
@@ -80,7 +80,7 @@ Rails.application.routes.draw do
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
     get 'about', to: 'pages#about', as: :about
-    # get 'contribute', to: 'pages#contribute', as: :contribute
+    get 'contribute', to: 'pages#contribute', as: :contribute
 
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
 

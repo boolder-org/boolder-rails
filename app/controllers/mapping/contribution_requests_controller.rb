@@ -1,4 +1,4 @@
-class Mapping::ContributionRequestsController < Contribute::BaseController
+class Mapping::ContributionRequestsController < ApplicationController
   def welcome
     @areas = Area.published.
       map{|a| OpenStruct.new(

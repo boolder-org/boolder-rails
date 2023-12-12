@@ -33,7 +33,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                 - problem = request.problem
                 li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
                   - if problem.bleau_info_id.present?
-                  = link_to [:contribute, problem] do
+                  = link_to [:mapping, problem] do
                     div class="flex justify-between py-2"
                         div
                           = problem_circle_view(problem)

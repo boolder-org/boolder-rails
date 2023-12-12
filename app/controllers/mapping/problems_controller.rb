@@ -1,4 +1,4 @@
-class Contribute::ProblemsController < Contribute::BaseController
+class Mapping::ProblemsController < ApplicationController
   def show
     @problem = Problem.find(params[:id])
     @contributions = @problem.contributions.pending

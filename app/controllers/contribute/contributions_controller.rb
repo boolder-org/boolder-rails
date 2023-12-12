@@ -1,4 +1,4 @@
-class Contribute::ContributionsController < Contribute::BaseController
+class Contribute::ContributionsController < ApplicationController
   def show
     @contribution = Contribution.find(params[:id])
   end
@@ -22,7 +22,7 @@ class Contribute::ContributionsController < Contribute::BaseController
 
       ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
 
-      redirect_to [:contribute, @contribution.problem]
+      redirect_to [:mapping, @contribution.problem]
     else
       # flash[:error] = "Error"
       render "new", status: :unprocessable_entity
