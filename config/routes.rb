@@ -51,13 +51,12 @@ Rails.application.routes.draw do
     namespace :contribute do 
       resources :contributions, only: [:show, :new, :create]
       resources :problems, only: [:show]
-      get 'requests', to: 'contribution_requests#geojson', as: :contribution_requests_geojson
-      get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
-      get "/", to: "contribution_requests#dashboard"
     end
 
     namespace :mapping do
       resources :requests, only: [:index], controller: 'contribution_requests'
+      get 'geojson', to: 'contribution_requests#geojson'
+      get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
       get "/", to: "contribution_requests#welcome"
     end
 
