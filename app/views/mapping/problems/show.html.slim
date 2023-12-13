@@ -32,12 +32,15 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
             span class="font-bold"= t("views.mapping.problems.show.step1")
           div class="bg-gray-50 px-4 py-5 sm:p-6" 
 
-            = link_to mapping_map_path(pid: @problem.id), rel: "nofollow" do
+            - if @problem.contribution_requests.where.not(location_estimated: nil).any?
+              = link_to mapping_map_path(pid: @problem.id), rel: "nofollow" do
                 div class="flex items-center space-x-2 text-green-600"
                   svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                     path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                     path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   div= t("views.mapping.see_on_map")
+            - else
+              div class="flex items-center space-x-2 text-gray-500"= t("views.mapping.problems.show.no_location")
 
             - if @problem.bleau_info_id.present?
               = link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do
