@@ -75,7 +75,7 @@ fr:
         subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
         metas: 
           title: Cartographier
-          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau de façon bénévole
+          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau
       requests:
         index:
           title: Voies à cartographier à %{area}
@@ -181,6 +181,10 @@ fr:
     privacy:
       metas:
         title: Confidentialité
+    contribute:
+      metas:
+        title: Contribuer
+        description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open-source
     about:
       title_prefix: À propos de
       history:
