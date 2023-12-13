@@ -26,13 +26,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
             a href="#{mapping_requests_path(area_id: @area.id, tab: "requests")}" class="#{@tab == :requests ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
               | En priorité
               <!-- Current: "bg-green-100 text-green-600", Default: "bg-gray-100 text-gray-900" -->
-              span class="#{@tab == :requests ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block"= @locations.count
+              span class="#{@tab == :requests ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block"= @locations.map{|location, requests| requests.count }.inject(0, :+)
             - klass = @tab == :rest ? "border-green-500 text-green-600" : "border-transparent text-gray-500 "
             a href="#{mapping_requests_path(area_id: @area.id, tab: "rest")}" class="#{@tab == :rest ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
               | Autres
               span class="#{@tab == :rest ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block" = @problems.count
-          
-
 
       - if @tab == :rest
         div class="mt-4"
@@ -72,8 +70,9 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                     = link_to [:mapping, problem] do
                       = render "mapping/problems/problem", problem: problem
               div class="mb-2"
-    
-            div class="relative flex py-2 items-center"
+            
+            - if @locations.any?
+              div class="relative flex py-2 items-center"
                 div class="flex-grow border-t border-gray-300"
 
       
