@@ -23,10 +23,10 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
             - tab_inactive = "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-800"
             - badge_active = "bg-green-100 text-green-600"
             - badge_inactive = "bg-gray-200 text-gray-900"
-            a href="#{mapping_problems_path(area_id: @area.id, tab: "requests")}" class="#{@tab == :requests ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
+            a href="#{mapping_problems_path(area_id: @area.id, tab: "prio")}" class="#{@tab == :prio ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
               | En priorité
               <!-- Current: "bg-green-100 text-green-600", Default: "bg-gray-100 text-gray-900" -->
-              span class="#{@tab == :requests ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block"= @locations.map{|location, requests| requests.count }.inject(0, :+)
+              span class="#{@tab == :prio ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block"= @locations.map{|location, requests| requests.count }.inject(0, :+)
             - klass = @tab == :rest ? "border-green-500 text-green-600" : "border-transparent text-gray-500 "
             a href="#{mapping_problems_path(area_id: @area.id, tab: "rest")}" class="#{@tab == :rest ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
               | Autres

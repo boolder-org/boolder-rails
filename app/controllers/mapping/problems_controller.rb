@@ -18,6 +18,6 @@ class Mapping::ProblemsController < ApplicationController
       left_joins(:contribution_requests).where(contribution_requests: { id: nil }).
       order(grade: :desc)
 
-    @tab = params[:tab] == "rest" ? :rest : :requests
+    @tab = params[:tab] == "rest" ? :rest : :prio
   end
 end
