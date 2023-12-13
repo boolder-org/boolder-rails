@@ -18,6 +18,12 @@ class Mapping::ContributionRequestsController < ApplicationController
       order("ascents DESC NULLS LAST").
       group_by(&:location_estimated).
       sort_by{|location, requests| requests.inject(0) {|sum, req| sum + req.problem.ascents.to_i } }.reverse
+
+    @problems = @area.problems.where(location: nil).
+      left_joins(:contribution_requests).where(contribution_requests: { id: nil }).
+      order(grade: :desc)
+
+    @tab = params[:tab] == "rest" ? :rest : :requests
   end
 
   def geojson
