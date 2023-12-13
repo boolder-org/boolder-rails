@@ -68,28 +68,24 @@ fr:
       metas:
         title: Escalade de blocs à Fontainebleau
         description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
-    contribute:
+    mapping:
       see_on_map: Voir sur la carte
-      breadcrumbs:
-        contribute: Contribuer
-      dashboard:
-        title: Contribuez à Boolder
-        photos_title: Voies à cartographier
-        photos_subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
-        other_contributions: Vous pouvez également apporter une correction sur une voie existante, ou proposer une voie qui n'est pas encore listée. 
-        add_contribution: Ajouter une contribution
-        devs: Pour les développeurs
+      welcome:
+        title: Cartographier
+        subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
         metas: 
-          title: Contribuez à Boolder
-          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau de façon bénévole
-      problems:
+          title: Cartographier
+          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau
+      requests:
         index:
           title: Voies à cartographier à %{area}
           group_header: 
             one: "1 voie"
             other: "%{count} voies"
+          see_other_problems: Autres voies
           metas:
             title: Cartographie du secteur %{area}
+      problems:
         show:
           step1: Rendez vous devant la voie
           step2: Ajoutez une contribution
@@ -101,6 +97,9 @@ fr:
           pending_contributions: Contributions en attente
           metas:
             title: Contribuer à une voie
+        index:
+          subtitle: Ces voies ne sont pas encore placées sur la carte, mais vous pouvez quand même ajouter des contributions.
+          add_problem: Ajouter une voie
       contributions:
         new:
           title: Ajouter une contribution
@@ -127,6 +126,14 @@ fr:
         metas:
           title: Contribuez à Boolder
           description: Aidez nous à cartographier les voies manquantes sur Boolder
+    reports:
+      new:
+        title: Signaler une erreur
+        mistake: Description de l'erreur
+        mistake_description: Donnez le maximum de détails et n'hésitez pas à ajouter un lien vers les voies/circuits concernés.
+        flash_success: Merci pour votre signalement !
+        metas:
+          title: Signaler une erreur
     map:
       fontainebleau:
         metas:
@@ -174,6 +181,17 @@ fr:
     privacy:
       metas:
         title: Confidentialité
+    contribute:
+      title: Contribuer à Boolder
+      mapping_title: Cartographier
+      mapping_description: Rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
+      report_title: Signaler une erreur
+      report_description: Signalez une erreur sur une voie ou un circuit existant.
+      dev_title: Pour les développeurs
+      dev_description: Accédez au code et aux données open-source.
+      metas:
+        title: Contribuer
+        description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open-source
     about:
       title_prefix: À propos de
       history:
@@ -314,10 +332,12 @@ fr:
         contact: Contact
         privacy: Confidentialité
         about: À propos
+        contribute: Contribuer
     pagination:
       first: "Début"
       last: "Fin"
       previous: "Précédent"
       next: "Suivant"
       truncate: "&hellip;"
-    
+    breadcrumbs:
+      back: retour

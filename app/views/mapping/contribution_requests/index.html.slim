@@ -1,0 +1,48 @@
+- set_meta_tags nofollow: true
+- set_meta_tags title: t("views.mapping.requests.index.metas.title", area: @area.name)
+
+div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
+  div class="px-4 sm:px-0"
+    = link_to mapping_path, class: "hover:text-gray-700" do
+      div class="flex items-center space-x-2 text-sm font-medium text-gray-500"
+        svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+          path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"
+        span= t("views.breadcrumbs.back")
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
+  div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
+    div class="col-span-1"
+      div
+        h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= t("views.mapping.requests.index.title", area: @area.name)
+
+      - if @locations.any? 
+        div class=" px-4 sm:px-0"
+          = link_to mapping_map_path(@area) do
+            div class="flex items-center space-x-2 text-green-600 mt-6"
+              svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              div= t("views.mapping.see_on_map")
+
+        div class="mt-4"
+          div
+            - @locations.each do |location, requests|
+              div class="relative flex py-2 items-center"
+                div class="flex-grow border-t border-gray-300"
+                span class="flex-shrink mx-4 text-gray-300"= t("views.mapping.requests.index.group_header", count: requests.count)
+                div class="flex-grow border-t border-gray-300"
+              ul role="list"
+                - requests.each do |request|
+                  - problem = request.problem
+                  li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+                    - if problem.bleau_info_id.present?
+                    = link_to [:mapping, problem] do
+                      = render "mapping/problems/problem", problem: problem
+              div class="mb-2"
+  
+            div class="relative flex py-2 items-center"
+                div class="flex-grow border-t border-gray-300"
+
+
+      div class="mt-8 px-4 sm:px-0"
+        = link_to t("views.mapping.requests.index.see_other_problems"), mapping_problems_path(area_id: @area.id), class: "text-green-600"

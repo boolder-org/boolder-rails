@@ -414,7 +414,7 @@ export default class extends Controller {
     this.map.on('movestart', () => {
       // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
       // TODO: replace url only when user does something (eg. moves, closes a modal)
-      let url = this.contributeValue ? `/${this.localeValue}/contribute/map` : `/${this.localeValue}/map`
+      let url = this.contributeValue ? `/${this.localeValue}/mapping/map` : `/${this.localeValue}/map`
       history.replaceState({} , '', url)
     });
   }
@@ -463,7 +463,7 @@ export default class extends Controller {
       if(this.localeValue == 'en' && problem.nameEn) {
         name = problem.nameEn
       }        
-      const html = `<a href="/${this.localeValue}/contribute/problems/${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+      const html = `<a href="/${this.localeValue}/mapping/problems/${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)

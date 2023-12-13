@@ -48,14 +48,17 @@ Rails.application.routes.draw do
       root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
     end
 
-    namespace :contribute do 
-      resources :contribution_requests, only: [:index]
+    resources :reports
+
+    namespace :mapping do
+      resources :problems, only: [:show, :index]
       resources :contributions, only: [:show, :new, :create]
-      resources :problems, only: [:show]
-      get 'requests', to: 'contribution_requests#geojson', as: :contribution_requests_geojson
+      get 'geojson', to: 'contribution_requests#geojson'
       get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
-      get "/", to: "contribution_requests#dashboard"
+      resources :requests, only: [:index], controller: 'contribution_requests'
+      get "/", to: "contribution_requests#welcome"
     end
+    get "contribute/map", to: redirect('/%{locale}/mapping/map'), as: :map_contribute_legacy_redirect # can be removed as soon as 2024-01-01
 
     scope 'fontainebleau' do
       resources :circuits, only: [:show, :index]
@@ -77,6 +80,7 @@ Rails.application.routes.draw do
     get 'app', to: 'pages#app', as: :app
     get 'privacy', to: 'pages#privacy', as: :privacy
     get 'about', to: 'pages#about', as: :about
+    get 'contribute', to: 'pages#contribute', as: :contribute
 
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
 
