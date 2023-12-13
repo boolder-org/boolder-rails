@@ -3,7 +3,7 @@ class MapController < ApplicationController
 
   def index
     if params[:slug] && (area = Area.find_by(slug: params[:slug]))
-      @area = area
+      @area = area # FIXME: don't forget to refactor _map_nav when changing this
       @bounds = { 
         south_west_lat: area.bounds[:south_west].lat,
         south_west_lon: area.bounds[:south_west].lon,
@@ -23,7 +23,7 @@ class MapController < ApplicationController
       return unless location.present?
       
       @problem = { 
-        id: problem.id,
+        id: problem.id, # FIXME: don't forget to refactor _map_nav when changing this
         lat: location.lat,
         lon: location.lon,
         name: I18n.with_locale(:fr) { problem.name_with_fallback },
