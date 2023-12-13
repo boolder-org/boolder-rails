@@ -30,7 +30,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
         ul role="list" class="divide-y divide-gray-200"
           - @areas.each do |area_with_count|
             li
-              = link_to mapping_requests_path(area_id: area_with_count.area.id), class:"block hover:bg-gray-50" do
+              = link_to mapping_problems_path(area_id: area_with_count.area.id), class:"block hover:bg-gray-50" do
                 div class="px-4 py-4 sm:px-6"
                   div class="flex justify-between"
                     p class=""
