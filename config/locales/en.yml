@@ -182,6 +182,13 @@ en:
       metas:
         title: Privacy
     contribute:
+      title: Contribute to Boolder
+      mapping_title: Mapping
+      mapping_description: Go to an area and take pictures of the missing boulders with your phone.
+      report_title: Report a mistake
+      report_description: Report a mistake on an existing problem or circuit.
+      dev_title: For Developers
+      dev_description: Access open-source code and data.
       metas:
         title: Contribute
         description: Map areas, take photos of boudlers, report mistakes, or contribute to the open-source project

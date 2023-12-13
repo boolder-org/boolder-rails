@@ -6,8 +6,8 @@
   <div class="my-4 px-4 sm:px-0">
     
     <h1 class="mb-4 py-4 text-4xl font-bold text-gray-900 inline-flex items-center space-x-4">
-      <span>Contribuer à Boolder</span>
-      <%# <span class="inline-flex items-base rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">BETA</span> %>
+      <span><%= t("views.contribute.title") %></span>
+      <span class="inline-flex items-base rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">BETA</span>
     </h1>
 
 <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0">
@@ -25,10 +25,10 @@
         <a href="<%= mapping_path %>" class="focus:outline-none">
           <!-- Extend touch target to entire panel -->
           <span class="absolute inset-0" aria-hidden="true"></span>
-          Cartographier
+          <%= t("views.contribute.mapping_title") %>
         </a>
       </h3>
-      <p class="mt-2 text-sm text-gray-500">Rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.</p>
+      <p class="mt-2 text-sm text-gray-500"><%= t("views.contribute.mapping_description") %></p>
     </div>
     
   </div>
@@ -45,10 +45,10 @@
         <a href="<%= new_report_path %>" class="focus:outline-none">
           <!-- Extend touch target to entire panel -->
           <span class="absolute inset-0" aria-hidden="true"></span>
-          Signaler une erreur
+          <%= t("views.contribute.report_title") %>
         </a>
       </h3>
-      <p class="mt-2 text-sm text-gray-500">Signalez une erreur sur une voie ou un circuit existant.</p>
+      <p class="mt-2 text-sm text-gray-500"><%= t("views.contribute.report_description") %></p>
     </div>
   </div>
   <div class="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
@@ -62,10 +62,10 @@
         <a href="https://github.com/boolder-org" target="_blank" class="focus:outline-none">
           <!-- Extend touch target to entire panel -->
           <span class="absolute inset-0" aria-hidden="true"></span>
-          Pour les développeurs
+          <%= t("views.contribute.dev_title") %>
         </a>
       </h3>
-      <p class="mt-2 text-sm text-gray-500">Accédez au code et aux données open-source.</p>
+      <p class="mt-2 text-sm text-gray-500"><%= t("views.contribute.dev_description") %></p>
     </div>
     
   </div>

@@ -182,6 +182,13 @@ fr:
       metas:
         title: Confidentialité
     contribute:
+      title: Contribuer à Boolder
+      mapping_title: Cartographier
+      mapping_description: Rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
+      report_title: Signaler une erreur
+      report_description: Signalez une erreur sur une voie ou un circuit existant.
+      dev_title: Pour les développeurs
+      dev_description: Accédez au code et aux données open-source.
       metas:
         title: Contribuer
         description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open-source
