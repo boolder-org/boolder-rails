@@ -72,24 +72,24 @@ en:
       see_on_map: See on the map
       welcome:
         title: Mapping
-        photos_title: Problems to map
         subtitle: To help Boolder, go to an area and take pictures of the missing problems with your phone.
         metas: 
           title: Contribute to Boolder
           description: Help Boolder map all the bouldering routes in Fontainebleau
+        requests:
+          index:
+            title: Problems to map in %{area}
+            group_header: 
+              one: "1 problem"
+              other: "%{count} problems"
+            metas:
+              title: Mapping the %{area} area
     contribute:
       breadcrumbs:
         contribute: Contribute
         mapping: Mapping
         back: back
       problems:
-        index:
-          title: Problems to map in %{area}
-          group_header: 
-            one: "1 problem"
-            other: "%{count} problems"
-          metas:
-            title: Mapping the %{area} area
         show:
           step1: Go to the problem
           step2: Add a contribution
