@@ -122,11 +122,6 @@ fr:
         metas:
           title: Contribuez à Boolder
           description: Aidez nous à cartographier les voies manquantes sur Boolder
-    contribute:
-      breadcrumbs:
-        contribute: Contribuer
-        mapping: Cartographie
-        back: retour
     map:
       fontainebleau:
         metas:
@@ -320,4 +315,5 @@ fr:
       previous: "Précédent"
       next: "Suivant"
       truncate: "&hellip;"
-    
+    breadcrumbs:
+      back: retour

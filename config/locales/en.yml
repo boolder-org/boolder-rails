@@ -122,11 +122,6 @@ en:
         metas:
           title: Contribute to Boolder
           description: Help us map all problems in Fontainebleau
-    contribute:
-      breadcrumbs:
-        contribute: Contribute
-        mapping: Mapping
-        back: back
     map:
       fontainebleau:
         metas:
@@ -320,4 +315,5 @@ en:
       previous: "Previous"
       next: "Next"
       truncate: "&hellip;"
-    
+    breadcrumbs:
+      back: back
