@@ -1,4 +1,4 @@
-class Contribute::ContributionsController < ApplicationController
+class Mapping::ContributionsController < ApplicationController
   def show
     @contribution = Contribution.find(params[:id])
   end

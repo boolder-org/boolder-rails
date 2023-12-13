@@ -19,6 +19,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= t("views.contribute.contributions.new.title")
 
   div class="mt-8"
-    = form_with model: [:contribute, @contribution] do |form|
+    = form_with model: [:mapping, @contribution] do |form|
       = form.hidden_field :problem_id
       = render "form", form: form

@@ -40,7 +40,7 @@ div class="flex flex-col my-6"
                   span class="ml-1 text-gray-500"= problem.ascents.to_i
                 td class="px-6 py-2 whitespace-nowrap"
                   - problem.contribution_requests.each do |request|
-                    = link_to "requested", contribute_problem_path(problem)
+                    = link_to "requested", mapping_problem_path(problem)
                   
 
 p= "#{@problems.count} results"
