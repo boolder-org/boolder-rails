@@ -1,5 +1,5 @@
 class Mapping::ContributionRequestsController < ApplicationController
-  def geojson
+  def index
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     problem_features = ContributionRequest.open.where.not(location_estimated: nil).group_by(&:location_estimated).map do |location, requests|

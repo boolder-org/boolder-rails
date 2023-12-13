@@ -53,7 +53,7 @@ Rails.application.routes.draw do
     namespace :mapping do
       resources :problems, only: [:show, :index]
       resources :contributions, only: [:show, :new, :create]
-      get 'geojson', to: 'contribution_requests#geojson'
+      resources :requests, controller: "contribution_requests", only: [:index]
       get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
       get "/", to: "areas#index"
     end
