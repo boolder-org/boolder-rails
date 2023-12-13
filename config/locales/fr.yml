@@ -96,12 +96,6 @@ fr:
           pending_contributions: Contributions en attente
           metas:
             title: Contribuer à une voie
-    contribute:
-      breadcrumbs:
-        contribute: Contribuer
-        mapping: Cartographie
-        back: retour
-      
       contributions:
         new:
           title: Ajouter une contribution
@@ -124,6 +118,11 @@ fr:
           flash_success: Merci pour votre contribution !
           metas:
             title: Nouvelle contribution
+    contribute:
+      breadcrumbs:
+        contribute: Contribuer
+        mapping: Cartographie
+        back: retour
       map:
         metas:
           title: Contribuez à Boolder

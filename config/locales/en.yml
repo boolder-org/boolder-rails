@@ -96,11 +96,6 @@ en:
           pending_contributions: Pending contributions
           metas:
             title: Contribute to a problem
-    contribute:
-      breadcrumbs:
-        contribute: Contribute
-        mapping: Mapping
-        back: back
       contributions:
         new:
           title: Add a contribution
@@ -123,6 +118,11 @@ en:
           flash_success: Thank you for your contribution!
           metas:
             title: New contribution
+    contribute:
+      breadcrumbs:
+        contribute: Contribute
+        mapping: Mapping
+        back: back
     map:
       fontainebleau:
         metas:

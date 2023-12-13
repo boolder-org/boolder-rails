@@ -18,7 +18,7 @@ class Mapping::ContributionsController < ApplicationController
     session[:contribution_email] = @contribution.contributor_email
 
     if @contribution.save
-      flash[:notice] = t("views.contribute.contributions.new.flash_success")
+      flash[:notice] = t("views.mapping.contributions.new.flash_success")
 
       ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
 
