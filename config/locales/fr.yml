@@ -118,15 +118,15 @@ fr:
           flash_success: Merci pour votre contribution !
           metas:
             title: Nouvelle contribution
+      map:
+        metas:
+          title: Contribuez à Boolder
+          description: Aidez nous à cartographier les voies manquantes sur Boolder
     contribute:
       breadcrumbs:
         contribute: Contribuer
         mapping: Cartographie
         back: retour
-      map:
-        metas:
-          title: Contribuez à Boolder
-          description: Aidez nous à cartographier les voies manquantes sur Boolder
     map:
       fontainebleau:
         metas:

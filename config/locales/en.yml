@@ -118,6 +118,10 @@ en:
           flash_success: Thank you for your contribution!
           metas:
             title: New contribution
+      map:
+        metas:
+          title: Contribute to Boolder
+          description: Help us map all problems in Fontainebleau
     contribute:
       breadcrumbs:
         contribute: Contribute
