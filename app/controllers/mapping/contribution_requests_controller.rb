@@ -6,7 +6,6 @@ class Mapping::ContributionRequestsController < ApplicationController
           count: a.problems.joins(:contribution_requests).where(contribution_requests: { what: "photo" }).count,
         )
       }.
-      filter{|area_with_count| area_with_count.count > 0 }.
       sort_by{|area_with_count| I18n.transliterate(area_with_count.area.name) }
   end
 
