@@ -34,6 +34,10 @@ class Mapping::ContributionRequestsController < ApplicationController
       problem_features
     )
 
-    render json: JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+    respond_to do |format|
+      format.json do
+        render json: JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+      end
+    end
   end
 end
