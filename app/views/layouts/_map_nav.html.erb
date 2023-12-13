@@ -8,7 +8,7 @@
             <% url = if @problem && @problem[:id]
                   mapping_problem_path(id: @problem[:id])
                 elsif @area
-                  mapping_requests_path(area_id: @area.id)
+                  mapping_problems_path(area_id: @area.id)
                 else
                   mapping_path
                 end
