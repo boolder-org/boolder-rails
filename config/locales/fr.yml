@@ -68,22 +68,20 @@ fr:
       metas:
         title: Escalade de blocs à Fontainebleau
         description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
-    contribute:
+    mapping:
       see_on_map: Voir sur la carte
+      welcome:
+        title: Cartographier
+        photos_title: Voies à cartographier
+        subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
+        metas: 
+          title: Contribuez à Boolder
+          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau de façon bénévole
+    contribute:
       breadcrumbs:
         contribute: Contribuer
         mapping: Cartographie
         back: retour
-      dashboard:
-        title: Cartographier
-        photos_title: Voies à cartographier
-        photos_subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
-        other_contributions: Vous pouvez également apporter une correction sur une voie existante, ou proposer une voie qui n'est pas encore listée. 
-        add_contribution: Ajouter une contribution
-        devs: Pour les développeurs
-        metas: 
-          title: Contribuez à Boolder
-          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau de façon bénévole
       problems:
         index:
           title: Voies à cartographier à %{area}

@@ -1,7 +1,7 @@
 class ReportsController < ApplicationController
   def new
-    # TODO: make DRY
     @contribution = Contribution.new(
+      # TODO: make DRY
       contributor_name: session[:contribution_name],
       contributor_email: session[:contribution_email],
     )
