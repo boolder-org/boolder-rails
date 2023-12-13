@@ -126,6 +126,11 @@ fr:
         metas:
           title: Contribuez à Boolder
           description: Aidez nous à cartographier les voies manquantes sur Boolder
+    reports:
+      new:
+        title: Signaler une erreur
+        metas:
+          title: Signaler une erreur
     map:
       fontainebleau:
         metas:
