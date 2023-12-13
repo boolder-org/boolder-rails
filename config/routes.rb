@@ -56,7 +56,7 @@ Rails.application.routes.draw do
       get 'geojson', to: 'contribution_requests#geojson'
       get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
       resources :requests, only: [:index], controller: 'contribution_requests'
-      get "/", to: "contribution_requests#welcome"
+      get "/", to: "areas#index"
     end
     get "contribute/map", to: redirect('/%{locale}/mapping/map'), as: :map_contribute_legacy_redirect # can be removed as soon as 2024-01-01
 

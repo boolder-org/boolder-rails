@@ -70,12 +70,13 @@ en:
         description: Discover thousands of problems & circuits for all levels.
     mapping:
       see_on_map: See on the map
-      welcome:
-        title: Mapping
-        subtitle: To help Boolder, go to an area and take pictures of the missing problems with your phone.
-        metas: 
+      areas:
+        index:
           title: Mapping
-          description: Help Boolder map all the bouldering routes in Fontainebleau
+          subtitle: To help Boolder, go to an area and take pictures of the missing problems with your phone.
+          metas: 
+            title: Mapping
+            description: Help Boolder map all the bouldering routes in Fontainebleau
       requests:
         index:
           title: Problems to map in %{area}

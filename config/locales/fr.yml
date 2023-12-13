@@ -70,12 +70,13 @@ fr:
         description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
     mapping:
       see_on_map: Voir sur la carte
-      welcome:
-        title: Cartographier
-        subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
-        metas: 
+      areas:
+        index:
           title: Cartographier
-          description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau
+          subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
+          metas: 
+            title: Cartographier
+            description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau
       requests:
         index:
           title: Voies à cartographier à %{area}
