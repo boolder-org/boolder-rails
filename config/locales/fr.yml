@@ -82,6 +82,7 @@ fr:
           group_header: 
             one: "1 voie"
             other: "%{count} voies"
+          see_other_problems: Autres voies
           metas:
             title: Cartographie du secteur %{area}
       problems:
@@ -96,6 +97,9 @@ fr:
           pending_contributions: Contributions en attente
           metas:
             title: Contribuer à une voie
+        index:
+          subtitle: Ces voies ne sont pas encore placées sur la carte, mais vous pouvez quand même ajouter des contributions.
+          add_problem: Ajouter une voie
       contributions:
         new:
           title: Ajouter une contribution

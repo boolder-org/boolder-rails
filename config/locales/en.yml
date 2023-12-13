@@ -82,6 +82,7 @@ en:
           group_header: 
             one: "1 problem"
             other: "%{count} problems"
+          see_other_problems: Other problems
           metas:
             title: Mapping the %{area} area
       problems:
@@ -96,6 +97,9 @@ en:
           pending_contributions: Pending contributions
           metas:
             title: Contribute to a problem
+        index:
+          subtitle: These problems aren't placed on the map yet but you can submit contributions.
+          add_problem: Add a problem
       contributions:
         new:
           title: Add a contribution

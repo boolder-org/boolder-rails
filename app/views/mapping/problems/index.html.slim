@@ -16,7 +16,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
         h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= t("views.mapping.requests.index.title", area: @area.name)
 
         div class="px-4 sm:px-0"
-          p class="py-2 text-gray-600 text-base" Ces voies ne sont pas encore placées sur la carte, mais vous pouvez quand même ajouter des contributions.
+          p class="py-2 text-gray-600 text-base"= t("views.mapping.problems.index.subtitle")
       
       div class="mt-4"
         div
@@ -27,4 +27,4 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                   = render "problem", problem: problem
 
       div class="mt-8 px-4 sm:px-0"
-        = link_to "Ajouter une nouvelle voie", new_mapping_contribution_path, class: "text-green-600"
+        = link_to t("views.mapping.problems.index.add_problem"), new_mapping_contribution_path, class: "text-green-600"
