@@ -25,3 +25,6 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
               li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
                 = link_to [:mapping, problem] do
                   = render "problem", problem: problem
+
+      div class="mt-8 px-4 sm:px-0"
+        = link_to "Ajouter une nouvelle voie", new_mapping_contribution_path, class: "text-green-600"
