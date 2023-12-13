@@ -77,16 +77,15 @@ fr:
           metas: 
             title: Cartographier
             description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau
-      requests:
+      problems:
         index:
           title: Voies à cartographier à %{area}
           group_header: 
             one: "1 voie"
             other: "%{count} voies"
-          see_other_problems: Autres voies
+          rest_warning: Ces voies ne sont pas encore placées sur la carte, mais vous pouvez quand même ajouter des contributions.
           metas:
             title: Cartographie du secteur %{area}
-      problems:
         show:
           step1: Rendez vous devant la voie
           step2: Ajoutez une contribution
@@ -98,9 +97,6 @@ fr:
           pending_contributions: Contributions en attente
           metas:
             title: Contribuer à une voie
-        index:
-          subtitle: Ces voies ne sont pas encore placées sur la carte, mais vous pouvez quand même ajouter des contributions.
-          add_problem: Ajouter une voie
       contributions:
         new:
           title: Ajouter une contribution
