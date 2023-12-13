@@ -58,6 +58,7 @@ Rails.application.routes.draw do
       resources :requests, only: [:index], controller: 'contribution_requests'
       get "/", to: "contribution_requests#welcome"
     end
+    get "contribute/map", to: redirect('/%{locale}/mapping/map'), as: :map_contribute_legacy_redirect # can be removed as soon as 2024-01-01
 
     scope 'fontainebleau' do
       resources :circuits, only: [:show, :index]
