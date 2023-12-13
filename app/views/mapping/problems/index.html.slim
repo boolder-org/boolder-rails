@@ -24,12 +24,12 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
             - badge_active = "bg-green-100 text-green-600"
             - badge_inactive = "bg-gray-200 text-gray-900"
             a href="#{mapping_problems_path(area_id: @area.id, tab: "prio")}" class="#{@tab == :prio ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
-              | En priorité
+              = t("views.mapping.problems.index.tab_prio")
               <!-- Current: "bg-green-100 text-green-600", Default: "bg-gray-100 text-gray-900" -->
               span class="#{@tab == :prio ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block"= @locations.map{|location, requests| requests.count }.inject(0, :+)
             - klass = @tab == :rest ? "border-green-500 text-green-600" : "border-transparent text-gray-500 "
             a href="#{mapping_problems_path(area_id: @area.id, tab: "rest")}" class="#{@tab == :rest ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
-              | Autres
+              = t("views.mapping.problems.index.tab_rest")
               span class="#{@tab == :rest ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block" = @problems.count
 
       - if @tab == :rest
@@ -43,7 +43,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                     = render "mapping/problems/problem", problem: problem
   
         div class="mt-8 px-4 sm:px-0"
-          = link_to "Cartographier une voie qui n'apparait pas ici", new_mapping_contribution_path, class: "text-green-600"
+          = link_to t("views.mapping.problems.index.other_problem"), new_mapping_contribution_path, class: "text-green-600"
   
       - else
 

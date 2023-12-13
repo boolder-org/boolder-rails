@@ -84,6 +84,9 @@ fr:
             one: "1 voie"
             other: "%{count} voies"
           rest_warning: Ces voies ne sont pas encore placées sur la carte, mais vous pouvez quand même ajouter des contributions.
+          tab_prio: En priorité
+          tab_rest: Autres
+          other_problem: Cartographier une voie qui n'apparait pas ici
           metas:
             title: Cartographie du secteur %{area}
         show:

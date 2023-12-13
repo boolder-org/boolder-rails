@@ -84,6 +84,9 @@ en:
             one: "1 problem"
             other: "%{count} problems"
           rest_warning: These problems aren't placed on the map yet but you can submit contributions.
+          tab_prio: In priority
+          tab_rest: Others
+          other_problem: Map a problem that isn't listed
           metas:
             title: Mapping the %{area} area
         show:
