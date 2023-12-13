@@ -1,0 +1,27 @@
+- set_meta_tags nofollow: true
+- set_meta_tags title: t("views.contribute.problems.index.metas.title", area: @area.name)
+
+div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
+  div class="px-4 sm:px-0"
+    = link_to mapping_requests_path(area_id: @area.id), class: "hover:text-gray-700" do
+      div class="flex items-center space-x-2 text-sm font-medium text-gray-500"
+        svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+          path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"
+        span= t("views.contribute.breadcrumbs.back")
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
+  div class="md:grid md:grid-cols-2 md:gap-16 mb-4"
+    div class="col-span-1"
+      div
+        h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"= t("views.contribute.problems.index.title", area: @area.name)
+
+        div class="px-4 sm:px-0"
+          p class="py-2 text-gray-600 text-base" Ces voies ne sont pas encore placées sur la carte, mais vous pouvez quand même ajouter des contributions.
+      
+      div class="mt-4"
+        div
+          ul role="list"
+            - @problems.each do |problem|
+              li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
+                = link_to [:mapping, problem] do
+                  = render "problem", problem: problem

@@ -36,18 +36,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                 li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
                   - if problem.bleau_info_id.present?
                   = link_to [:mapping, problem] do
-                    div class="flex justify-between py-2"
-                        div
-                          = problem_circle_view(problem)
-                          span class="ml-2"= problem.name_with_fallback
-                          span class="ml-2 text-gray-500"= problem.grade
-                        div
-                          div class="flex space-x-2"
-                            div
-                              span class="text-gray-500"
-                                - if problem.contributions.pending.count > 0
-                                  = "#{problem.contributions.pending.count} contrib."
+                    = render "mapping/problems/problem", problem: problem
             div class="mb-2"
 
           div class="relative flex py-2 items-center"
               div class="flex-grow border-t border-gray-300"
+
+      div class="mt-8 px-4 sm:px-0"
+        = link_to "Autres voies", mapping_problems_path(area_id: @area.id), class: "text-green-600"
