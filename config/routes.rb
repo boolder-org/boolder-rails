@@ -48,8 +48,7 @@ Rails.application.routes.draw do
       root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
     end
 
-    namespace :contribute do 
-    end
+    resources :reports
 
     namespace :mapping do
       resources :problems, only: [:show, :index]
