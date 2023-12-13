@@ -15,7 +15,7 @@ class ReportsController < ApplicationController
     session[:contribution_email] = @contribution.contributor_email
 
     if @contribution.save
-      flash[:notice] = "Merci pour votre signalement !"
+      flash[:notice] = t("views.reports.new.flash_success")
 
       ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
 

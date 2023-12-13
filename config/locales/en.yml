@@ -129,6 +129,9 @@ en:
     reports:
       new:
         title: Report a mistake
+        mistake: Mistake description
+        mistake_description: Give as much details as possible and feel free to add links to the relevant problems/circuits.
+        flash_success: Thank you for your report!
         metas:
           title: Report a mistake
     map:

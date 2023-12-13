@@ -129,6 +129,9 @@ fr:
     reports:
       new:
         title: Signaler une erreur
+        mistake: Description de l'erreur
+        mistake_description: Donnez le maximum de détails et n'hésitez pas à ajouter un lien vers les voies/circuits concernés.
+        flash_success: Merci pour votre signalement !
         metas:
           title: Signaler une erreur
     map:
