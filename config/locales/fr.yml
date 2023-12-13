@@ -84,11 +84,6 @@ fr:
             other: "%{count} voies"
           metas:
             title: Cartographie du secteur %{area}
-    contribute:
-      breadcrumbs:
-        contribute: Contribuer
-        mapping: Cartographie
-        back: retour
       problems:
         show:
           step1: Rendez vous devant la voie
@@ -101,6 +96,12 @@ fr:
           pending_contributions: Contributions en attente
           metas:
             title: Contribuer à une voie
+    contribute:
+      breadcrumbs:
+        contribute: Contribuer
+        mapping: Cartographie
+        back: retour
+      
       contributions:
         new:
           title: Ajouter une contribution

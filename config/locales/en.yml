@@ -76,19 +76,14 @@ en:
         metas: 
           title: Contribute to Boolder
           description: Help Boolder map all the bouldering routes in Fontainebleau
-        requests:
-          index:
-            title: Problems to map in %{area}
-            group_header: 
-              one: "1 problem"
-              other: "%{count} problems"
-            metas:
-              title: Mapping the %{area} area
-    contribute:
-      breadcrumbs:
-        contribute: Contribute
-        mapping: Mapping
-        back: back
+      requests:
+        index:
+          title: Problems to map in %{area}
+          group_header: 
+            one: "1 problem"
+            other: "%{count} problems"
+          metas:
+            title: Mapping the %{area} area
       problems:
         show:
           step1: Go to the problem
@@ -101,6 +96,11 @@ en:
           pending_contributions: Pending contributions
           metas:
             title: Contribute to a problem
+    contribute:
+      breadcrumbs:
+        contribute: Contribute
+        mapping: Mapping
+        back: back
       contributions:
         new:
           title: Add a contribution
