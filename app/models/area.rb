@@ -34,7 +34,7 @@ class Area < ApplicationRecord
   validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
 
   def levels
-    @levels ||= 1.upto(8).map{|level| [level, problems.level(level).count >= 20] }.to_h
+    @levels ||= 1.upto(8).map{|level| [level, problems.with_location.level(level).count >= 20] }.to_h
   end
 
   def self.beginner_friendly
