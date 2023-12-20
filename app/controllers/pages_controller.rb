@@ -16,6 +16,7 @@ class PagesController < ApplicationController
       224, 230, 10873, 10869, 245, 237, 9074, 9071, 14136, 14179,
     ]
 
-    @problems = problem_ids.map{|id| Problem.find(id) }
+    @areas = problem_ids.map.with_index(1) {|id, index| [Problem.find(id), index] }.
+      group_by{|problem, index| problem.area }
   end
 end
