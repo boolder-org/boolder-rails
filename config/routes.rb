@@ -80,6 +80,7 @@ Rails.application.routes.draw do
     get 'privacy', to: 'pages#privacy', as: :privacy
     get 'about', to: 'pages#about', as: :about
     get 'contribute', to: 'pages#contribute', as: :contribute
+    get 'megacircuit7a', to: 'pages#megacircuit7a', as: :megacircuit7a
 
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
 
