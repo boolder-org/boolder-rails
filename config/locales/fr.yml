@@ -74,6 +74,8 @@ fr:
         index:
           title: Cartographier
           subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
+          core_mapping_team: Vous souhaitez nous aider à cartographier de nouveaux secteurs ? 
+          core_mapping_team_email_html: Envoyez-nous un email à %{link}, nous serons ravis de discuter !
           metas: 
             title: Cartographier
             description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau
