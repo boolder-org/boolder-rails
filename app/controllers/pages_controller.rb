@@ -19,9 +19,9 @@ class PagesController < ApplicationController
       "Cuvier Est" => [1739,  1703,  10045, 10042],
       "Bas Cuvier" => [881,   915,   914, 1032,  1088],
       "Apremont" => [5397,  5325,  1856,  1840,  1816,  1913,  2021,  2003, 2087,  2094,  11310, 11321],
-      "Franchard Ermitage" => [11321], # TODO: changer 11321 en Linea
+      "Franchard Ermitage" => [25748],
       "Franchard Cuisinière" => [2857,  2668,  2543,  2545,  2527, 7807,  7813],
-      "Franchard Isatis" => [1581,  15842, 15842, 1526,  1462,  1455,  1435,  1266], # TODO: changer 15842 en Grain de Poussière
+      "Franchard Isatis" => [1581,  15842, 25749, 1526,  1462,  1455,  1435,  1266],
       "Franchard Hautes Plaines" => [8801,  8680],
       "Rocher de la Reine" => [13484, 13477, 13468, 13466, 13478],
       "Gros Sablons" => [13074, 12998, 13042, 13011],
