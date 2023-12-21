@@ -36,7 +36,7 @@ class PagesController < ApplicationController
       "Éléphant" => [2214,  2315,  7756,  2352,  2357,  2295,  2287, 2320],
     }
 
-
+    @cover = Area.find_by(slug: "franchard-isatis").cover
 
     @areas = data.map{|area, problem_ids| [area, problem_ids.map{|id| Problem.find(id) }] }
   end

@@ -4,13 +4,28 @@
 / - if @area.cover.persisted?
 /   - set_meta_tags og: { type: "website", image: url_for(@area.cover.variant(:medium)) }
 
+
+div class="max-w-7xl mx-auto pt-5 mt-1 px-4 sm:px-6 lg:px-8 bg-gray-100 hidden sm:block mb-4"
+  = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
+    div Fontainebleau  
+
+div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16"
+    div class="col-span-1"
+      div class="aspect-w-16 aspect-h-9 relative overflow-hidden sm:rounded-lg"
+        div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{url_for(@cover.variant(:medium)) if @cover.persisted?});"
+        div class="bg-transparent" style="background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
+        div class="absolute" class="flex items-center text-center justify-center" 
+          div class="block"
+            h1 class="text-4xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)" Mega circuit 7a
+            p class="mt-2 text-gray-500 text-white sm:text-xl" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)" par Seb Berthe & Hugo Parmentier
+
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
   div class="lg:grid lg:grid-cols-1 lg:gap-16"
     div class="col-span-1"
 
       div class=""
         div class="flex items-center space-x-2 text-2xl font-bold mt-4 mb-4 pt-4"
-          h1 class="px-4 sm:px-0 text-4xl font-bold" Méga circuit 100 7a
         - i = 0
         - @areas.each do |area, problems|
           h2 class="px-4 sm:px-0 text-2xl font-bold my-4"= area
