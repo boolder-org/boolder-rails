@@ -21,14 +21,14 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
             p class="mt-2 text-gray-500 text-white sm:text-xl" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)" par Seb Berthe & Hugo Parmentier
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
-  div class="lg:grid lg:grid-cols-1 lg:gap-16"
+  div class="lg:grid lg:grid-cols-2 lg:gap-16"
     div class="col-span-1"
 
       div class=""
         div class="flex items-center space-x-2 text-2xl font-bold mt-4 mb-4 pt-4"
         - i = 0
         - @areas.each do |area, problems|
-          h2 class="px-4 sm:px-0 text-2xl font-bold my-4"= area
+          h2 class="px-4 sm:px-0 text-2xl font-bold mt-8 mb-2"= area
           - if params[:tab] == "photo"
             ul role="list" class="px-4 sm:px-0 mb-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
               - problems.each do |problem|
