@@ -30,11 +30,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
           - else
             ul role="list"
               - problems.each do |problem|
+                - i = i + 1
                 li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg"
                   = link_to problem_friendly_path(problem) do
                     div class="flex justify-between py-2"
                         div
-                          = problem_circle_view(problem)
+                          span class="w-6 inline-block text-gray-400 font-medium"= "#{i}"
+                          / = circle_view(i.to_s, background_color: "rgb(80% 80% 80%)", text_color: "#333")
                           span class="ml-2"= problem.name_with_fallback
                         div
                           div class="flex space-x-2"
