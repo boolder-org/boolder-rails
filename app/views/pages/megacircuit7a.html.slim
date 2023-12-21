@@ -1,8 +1,8 @@
-/ - set_meta_tags title: t("views.areas.show.metas.title", area: @area.name)
+- set_meta_tags title: "Méga circuit 7a par Seb Berthe & Hugo Parmentier"
 / - set_meta_tags description: t("views.areas.show.metas.description", area: @area.name) 
 
-/ - if @area.cover.persisted?
-/   - set_meta_tags og: { type: "website", image: url_for(@area.cover.variant(:medium)) }
+- if @cover.persisted?
+  - set_meta_tags og: { type: "website", image: url_for(@cover.variant(:medium)) }
 
 
 div class="max-w-7xl mx-auto pt-5 mt-1 px-4 sm:px-6 lg:px-8 bg-gray-100 hidden sm:block mb-4"
