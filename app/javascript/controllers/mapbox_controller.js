@@ -279,15 +279,15 @@ export default class extends Controller {
 
     if(this.circuit7aValue) {
 
-      this.map.addSource('contribute', {
+      this.map.addSource('circuit7a', {
         type: 'geojson',
         data: this.circuit7aSourceValue,
       });
   
       this.map.addLayer({
-      'id': 'contribute-problems',
+      'id': 'circuit7a-problems',
       'type': 'circle',
-      'source': 'contribute',
+      'source': 'circuit7a',
       // 'source-layer': 'problems-ayes3a',
       // 'minzoom': 12,
       'layout': {
@@ -330,9 +330,9 @@ export default class extends Controller {
       );
   
       this.map.addLayer({
-      'id': 'contribute-problems-texts',
+      'id': 'circuit7a-problems-texts',
       'type': 'symbol',
-      'source': 'contribute',
+      'source': 'circuit7a',
       // 'source-layer': 'problems-ayes3a',
       'minzoom': 13,
       'layout': {
@@ -367,18 +367,17 @@ export default class extends Controller {
       });
     }
 
-    // CIRCUIT 7A
 
-    this.map.addSource('circuit7a', {
+    this.map.addSource('circuit7a-bike', {
       type: 'vector',
       url: 'mapbox://nmondollot.c2qwxo24',
       promoteId: "id"
     });
 
     this.map.addLayer({
-    'id': 'circuit7a',
+    'id': 'circuit7a-bike',
     'type': 'line',
-    'source': 'circuit7a',
+    'source': 'circuit7a-bike',
     'source-layer': 'top7a-bike-2kosot',
     // 'minzoom': 8,
     'layout': {
@@ -419,7 +418,7 @@ export default class extends Controller {
         speed: 2
       });
 
-      if(!this.contributeValue) {
+      if(!this.contributeValue && !this.circuit7aValue) {
 
         // FIXME: make it DRY
         const coordinates = [problem.lon, problem.lat];
@@ -442,8 +441,17 @@ export default class extends Controller {
       // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
       // TODO: replace url only when user does something (eg. moves, closes a modal)
 
-      // FIXME
-      let url = this.contributeValue ? `/${this.localeValue}/mapping/map` : `/${this.localeValue}/map`
+      var url = ""
+      if(this.contributeValue) {
+        url = `/${this.localeValue}/mapping/map`
+      }
+      else if(this.circuit7aValue) {
+        url = `/${this.localeValue}/circuit7a/map`
+      }
+      else {
+        url = `/${this.localeValue}/map`
+      }
+
       history.replaceState({} , '', url)
     });
   }
@@ -474,15 +482,17 @@ export default class extends Controller {
     //   .addTo(this.map);
     // });
 
-    this.map.on('mouseenter', ['contribute-problems','contribute-problems-texts'], () => {
+    let layers = ['contribute-problems','contribute-problems-texts','circuit7a-problems','circuit7a-problems-texts']
+
+    this.map.on('mouseenter', layers, () => {
       this.map.getCanvas().style.cursor = 'pointer';
     });
-    this.map.on('mouseleave', ['contribute-problems','contribute-problems-texts'], () => {
+    this.map.on('mouseleave', layers, () => {
       this.map.getCanvas().style.cursor = '';
     });
 
     // FIXME: make DRY
-    this.map.on('click', ['contribute-problems','contribute-problems-texts'], (e) => {
+    this.map.on('click', layers, (e) => {
 
       let problem = e.features[0].properties
 
