@@ -8,7 +8,7 @@ class Circuit7aController < ApplicationController
     "Apremont" => [5397,  5325,  1856,  1840,  1816,  1913,  2021,  2003, 2087,  2094,  11310, 11321],
     "Franchard Ermitage" => [25748],
     "Franchard Cuisinière" => [2857,  2668,  2543,  2545,  2527, 7807,  7813],
-    "Franchard Isatis" => [1581,  15842, 25749, 1526,  1462,  1455,  1435,  1267],
+    "Franchard Isatis" => [1582,  1579, 25749, 1526,  1462,  1455,  1435,  1267],
     "Franchard Hautes Plaines" => [8801,  8680],
     "Rocher de la Reine" => [13484, 13477, 13468, 13467, 13478],
     "Gros Sablons" => [13074, 12998, 13042, 13011],
