@@ -14,6 +14,8 @@ export default class extends Controller {
     draft: { type: Boolean, default: false },
     contribute: { type: Boolean, default: false },
     contributeSource: String,
+    circuit7a: { type: Boolean, default: false },
+    circuit7aSource: String,
   }
 
   connect() {
@@ -273,13 +275,13 @@ export default class extends Controller {
       ],
     });
 
-    // CONTRIBUTE LAYERS
+    // CIRCUIT 7A LAYERS
 
-    if(this.contributeValue) {
+    if(this.circuit7aValue) {
 
       this.map.addSource('contribute', {
         type: 'geojson',
-        data: this.contributeSourceValue,
+        data: this.circuit7aSourceValue,
       });
   
       this.map.addLayer({
