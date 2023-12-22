@@ -27,7 +27,11 @@ class Mapping::ContributionRequestsController < ApplicationController
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
+    i = 0
+
     problem_features = data.values.flatten.map{|id| Problem.find(id) }.map do |problem|
+      i = i +1
+
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
       hash[:id] = problem.id
@@ -39,6 +43,8 @@ class Mapping::ContributionRequestsController < ApplicationController
       name_en = I18n.with_locale(:en) { problem.name_with_fallback }
       hash[:name] = name_fr
       hash[:name_en] = (name_en != name_fr) ? name_en : ""
+
+      hash[:index] = i.to_s
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 

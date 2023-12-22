@@ -306,24 +306,14 @@ export default class extends Controller {
             ["zoom"],
             12,
             6,
-            17,
-            20,
-            18,
-            25,
-            19,
-            50,
-            20,
-            50,
-            21,
-            50,
             22,
-            20,
+            15
           ]
         ,
-        'circle-color': "#FFCC02",
-        'circle-opacity': 0.25,
+        'circle-color': "#FFDC36",
+        // 'circle-opacity': 0.25,
         'circle-stroke-width': 2,
-        'circle-stroke-color': 'white'
+        'circle-stroke-color': '#fff'
       },
       filter: [
         "match",
@@ -334,7 +324,7 @@ export default class extends Controller {
       ],
       }
       ,
-      "areas" // layer will be inserted just before this layer
+      // "areas" // layer will be inserted just before this layer
       );
   
       this.map.addLayer({
@@ -342,28 +332,28 @@ export default class extends Controller {
       'type': 'symbol',
       'source': 'contribute',
       // 'source-layer': 'problems-ayes3a',
-      'minzoom': 16,
+      'minzoom': 13,
       'layout': {
         'visibility': 'visible',
-        'text-allow-overlap': true,
+        // 'text-allow-overlap': true,
         'text-field': [
           "to-string",
-          ["get", "name"]
+          ["get", "index"]
         ],
         'text-size': [
           "interpolate",
           ["linear"],
           ["zoom"],
-          19,
+          12,
           10,
           22,
           20
         ],
       },
       'paint': {
-        'text-color': "#333",
-        'text-halo-color': "hsl(0, 0%, 100%)",
-        'text-halo-width': 1,
+        'text-color': "#fff",
+        // 'text-halo-color': "hsl(0, 0%, 100%)",
+        // 'text-halo-width': 1,
       },
       filter: [
         "match",
@@ -374,6 +364,41 @@ export default class extends Controller {
       ],
       });
     }
+
+    // CIRCUIT 7A
+
+    this.map.addSource('circuit7a', {
+      type: 'vector',
+      url: 'mapbox://nmondollot.c2qwxo24',
+      promoteId: "id"
+    });
+
+    this.map.addLayer({
+    'id': 'circuit7a',
+    'type': 'line',
+    'source': 'circuit7a',
+    'source-layer': 'top7a-bike-2kosot',
+    // 'minzoom': 8,
+    'layout': {
+      'visibility': 'visible',
+    },
+    'paint': {
+      'line-color': "#FFDC36",
+      'line-width': 4,
+      // 'line-stroke-width': 1,
+      // 'line-stroke-color': '#E3B733',
+    },
+    // filter: [
+    //   "match",
+    //     ["geometry-type"],
+    //     ["Point"],
+    //     true,
+    //     false
+    // ],
+    }
+    ,
+    "areas" // layer will be inserted just before this layer
+    );
   }
 
   centerMap() {
@@ -422,30 +447,30 @@ export default class extends Controller {
   }
 
   setupClickEvents() {
-    this.map.on('mouseenter', 'problems', () => {
-      this.map.getCanvas().style.cursor = 'pointer';
-    });
-    this.map.on('mouseleave', 'problems', () => {
-      this.map.getCanvas().style.cursor = '';
-    });
+    // this.map.on('mouseenter', 'problems', () => {
+    //   this.map.getCanvas().style.cursor = 'pointer';
+    // });
+    // this.map.on('mouseleave', 'problems', () => {
+    //   this.map.getCanvas().style.cursor = '';
+    // });
 
-    this.map.on('click', 'problems', (e) => {
+    // this.map.on('click', 'problems', (e) => {
 
-      let problem = e.features[0].properties
+    //   let problem = e.features[0].properties
 
-      // FIXME: make it DRY
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      var name = problem.name
-      if(this.localeValue == 'en' && problem.nameEn) {
-        name = problem.nameEn
-      }        
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+    //   // FIXME: make it DRY
+    //   const coordinates = e.features[0].geometry.coordinates.slice();
+    //   var name = problem.name
+    //   if(this.localeValue == 'en' && problem.nameEn) {
+    //     name = problem.nameEn
+    //   }        
+    //   const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
        
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
-      .setLngLat(coordinates)
-      .setHTML(html)
-      .addTo(this.map);
-    });
+    //   new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
+    //   .setLngLat(coordinates)
+    //   .setHTML(html)
+    //   .addTo(this.map);
+    // });
 
     this.map.on('mouseenter', ['contribute-problems','contribute-problems-texts'], () => {
       this.map.getCanvas().style.cursor = 'pointer';
@@ -465,7 +490,7 @@ export default class extends Controller {
       if(this.localeValue == 'en' && problem.nameEn) {
         name = problem.nameEn
       }        
-      const html = `<a href="/${this.localeValue}/mapping/problems/${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)
