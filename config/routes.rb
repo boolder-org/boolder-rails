@@ -80,8 +80,8 @@ Rails.application.routes.draw do
     get 'privacy', to: 'pages#privacy', as: :privacy
     get 'about', to: 'pages#about', as: :about
     get 'contribute', to: 'pages#contribute', as: :contribute
-    get 'circuit7a', to: 'pages#circuit7a', as: :circuit7a
-    get 'circuit7a/problems', to: 'pages#circuit7a_problems', as: :circuit7a_problems
+    get 'circuit7a', to: 'circuit7a#index', as: :circuit7a
+    get 'circuit7a/problems', to: 'circuit7a#problems', as: :circuit7a_problems
     get 'circuit7a/map', to: 'map#index', as: :circuit7a_map, defaults: { circuit7a: true }
 
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
