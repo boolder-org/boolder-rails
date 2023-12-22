@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   def contribute
   end
 
-  def megacircuit7a
+  def circuit7a
     data = {
       "Rocher Canon" => [224,   230,   10873, 10869, 245,   237],
       "Cuvier Merveille" => [9074,  9071],
