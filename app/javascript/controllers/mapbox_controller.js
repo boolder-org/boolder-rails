@@ -1,3 +1,7 @@
+// This file is getting too complex and will eventually need some refactoring
+// Note: we could buy some time by removing/refactoring the "circuit 7a" code introduced here: https://github.com/nmondollot/boolder/pull/26
+// (lots of complexity for such a small feature)
+
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
