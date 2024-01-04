@@ -8,9 +8,7 @@ class AreasController < ApplicationController
   end
 
   def levels
-    @beginner_areas = Rails.cache.fetch("areas/levels/beginner_areas", expires_in: 12.hours) do
-      Area.beginner_friendly
-    end
+    @beginner_areas = Area.beginner_friendly
 
     @areas_with_count = Area.published.map {|area| [area, area.problems.with_location.count]}.sort{|a,b| b.second <=> a.second }
   end
