@@ -1,3 +1,7 @@
+// This file is getting too complex and will eventually need some refactoring
+// Note: we could buy some time by removing/refactoring the "circuit 7a" code introduced here: https://github.com/nmondollot/boolder/pull/26
+// (lots of complexity for such a small feature)
+
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
@@ -14,6 +18,8 @@ export default class extends Controller {
     draft: { type: Boolean, default: false },
     contribute: { type: Boolean, default: false },
     contributeSource: String,
+    circuit7a: { type: Boolean, default: false },
+    circuit7aSource: String,
   }
 
   connect() {
@@ -374,6 +380,120 @@ export default class extends Controller {
       ],
       });
     }
+
+    // CIRCUIT 7A LAYERS
+
+    if(this.circuit7aValue) {
+
+      this.map.addSource('circuit7a', {
+        type: 'geojson',
+        data: this.circuit7aSourceValue,
+      });
+  
+      this.map.addLayer({
+      'id': 'circuit7a-problems',
+      'type': 'circle',
+      'source': 'circuit7a',
+      // 'source-layer': '',
+      // 'minzoom': 12,
+      'layout': {
+        'visibility': 'visible',
+        'circle-sort-key': 
+          [
+            "case",
+            ["has", "circuitId"],
+            2,
+            1
+          ]
+      },
+      'paint': {
+        'circle-radius': 
+          [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            12,
+            6,
+            22,
+            15
+          ]
+        ,
+        'circle-color': "#FFDC36",
+        // 'circle-opacity': 0.25,
+        'circle-stroke-width': 2,
+        'circle-stroke-color': '#fff'
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+      }
+      ,
+      // "areas" // layer will be inserted just before this layer
+      );
+  
+      this.map.addLayer({
+      'id': 'circuit7a-problems-texts',
+      'type': 'symbol',
+      'source': 'circuit7a',
+      // 'source-layer': '',
+      'minzoom': 13,
+      'layout': {
+        'visibility': 'visible',
+        // 'text-allow-overlap': true,
+        'text-field': [
+          "to-string",
+          ["get", "index"]
+        ],
+        'text-size': [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          10,
+          22,
+          20
+        ],
+      },
+      'paint': {
+        'text-color': "#fff",
+      },
+      filter: [
+        "match",
+          ["geometry-type"],
+          ["Point"],
+          true,
+          false
+      ],
+      });
+
+      this.map.addSource('circuit7a-bike', {
+        type: 'vector',
+        url: 'mapbox://nmondollot.c2qwxo24',
+        promoteId: "id"
+      });
+
+      this.map.addLayer({
+      'id': 'circuit7a-bike',
+      'type': 'line',
+      'source': 'circuit7a-bike',
+      'source-layer': 'top7a-bike-2kosot',
+      // 'minzoom': 8,
+      'layout': {
+        'visibility': 'visible',
+      },
+      'paint': {
+        'line-color': "#FFDC36",
+        'line-width': 4,
+      },
+      }
+      ,
+      "areas" // layer will be inserted just before this layer
+      );
+    }
   }
 
   centerMap() {
@@ -392,7 +512,7 @@ export default class extends Controller {
         speed: 2
       });
 
-      if(!this.contributeValue) {
+      if(!this.contributeValue && !this.circuit7aValue) {
 
         // FIXME: make it DRY
         const coordinates = [problem.lon, problem.lat];
@@ -414,36 +534,50 @@ export default class extends Controller {
     this.map.on('movestart', () => {
       // we remove the arguments (like area_id or problem_id) because mapbox provides a hash (url fragment) to allow for friendly url sharing
       // TODO: replace url only when user does something (eg. moves, closes a modal)
-      let url = this.contributeValue ? `/${this.localeValue}/mapping/map` : `/${this.localeValue}/map`
+
+      var url = ""
+      if(this.contributeValue) {
+        url = `/${this.localeValue}/mapping/map`
+      }
+      else if(this.circuit7aValue) {
+        url = `/${this.localeValue}/circuit7a/map`
+      }
+      else {
+        url = `/${this.localeValue}/map`
+      }
+
       history.replaceState({} , '', url)
     });
   }
 
   setupClickEvents() {
-    this.map.on('mouseenter', 'problems', () => {
-      this.map.getCanvas().style.cursor = 'pointer';
-    });
-    this.map.on('mouseleave', 'problems', () => {
-      this.map.getCanvas().style.cursor = '';
-    });
 
-    this.map.on('click', 'problems', (e) => {
-
-      let problem = e.features[0].properties
-
-      // FIXME: make it DRY
-      const coordinates = e.features[0].geometry.coordinates.slice();
-      var name = problem.name
-      if(this.localeValue == 'en' && problem.nameEn) {
-        name = problem.nameEn
-      }        
-      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
-       
-      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
-      .setLngLat(coordinates)
-      .setHTML(html)
-      .addTo(this.map);
-    });
+    if(!this.circuit7aValue) {
+      this.map.on('mouseenter', 'problems', () => {
+        this.map.getCanvas().style.cursor = 'pointer';
+      });
+      this.map.on('mouseleave', 'problems', () => {
+        this.map.getCanvas().style.cursor = '';
+      });
+  
+      this.map.on('click', 'problems', (e) => {
+  
+        let problem = e.features[0].properties
+  
+        // FIXME: make it DRY
+        const coordinates = e.features[0].geometry.coordinates.slice();
+        var name = problem.name
+        if(this.localeValue == 'en' && problem.nameEn) {
+          name = problem.nameEn
+        }        
+        const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+         
+        new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
+        .setLngLat(coordinates)
+        .setHTML(html)
+        .addTo(this.map);
+      });
+    }
 
     this.map.on('mouseenter', ['contribute-problems','contribute-problems-texts'], () => {
       this.map.getCanvas().style.cursor = 'pointer';
@@ -464,6 +598,32 @@ export default class extends Controller {
         name = problem.nameEn
       }        
       const html = `<a href="/${this.localeValue}/mapping/problems/${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+       
+      new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
+      .setLngLat(coordinates)
+      .setHTML(html)
+      .addTo(this.map);
+    });
+
+    this.map.on('mouseenter', ['circuit7a-problems','circuit7a-problems-texts'], () => {
+      this.map.getCanvas().style.cursor = 'pointer';
+    });
+    this.map.on('mouseleave', ['circuit7a-problems','circuit7a-problems-texts'], () => {
+      this.map.getCanvas().style.cursor = '';
+    });
+
+    // FIXME: make DRY
+    this.map.on('click', ['circuit7a-problems','circuit7a-problems-texts'], (e) => {
+
+      let problem = e.features[0].properties
+
+      // FIXME: make it DRY
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      var name = problem.name
+      if(this.localeValue == 'en' && problem.nameEn) {
+        name = problem.nameEn
+      }        
+      const html = `<a href="/${this.localeValue}/redirects/new?problem_id=${problem.id})" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)
