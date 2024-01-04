@@ -162,8 +162,8 @@ fr:
         apply: Appliquer
         clear: Effacer
     app_landing:
-      title: Boolder, le topo 2.0 dans votre poche
-      subtitle: "La meilleure façon de découvrir l'escalade de bloc à Fontainebleau"
+      title: Tout Bleau dans votre poche
+      subtitle: "Le meilleur guide topo pour l'escalade de bloc à Fontainebleau"
       android_announcement: Nous recherchons un·e développeur·se Android
       selling_points:
         map:
@@ -176,7 +176,7 @@ fr:
           title: Recherche avancée
           subtitle: Trouvez une voie ou un secteur en quelques secondes
         offline:
-          title: Mode hors-ligne (iPhone seulement)
+          title: Mode hors-ligne
           subtitle: L'appli fonctionne sans connectivité
       metas:
         title: Appli Boolder, disponible sur iOS et Android

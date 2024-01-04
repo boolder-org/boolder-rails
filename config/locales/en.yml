@@ -162,8 +162,8 @@ en:
         apply: Apply
         clear: Clear
     app_landing:
-      title: Boolder on your phone
-      subtitle: "The perfect guide to enjoy bouldering in Fontainebleau"
+      title: All Fontainebleau in your pocket
+      subtitle: "The best guide to enjoy bouldering in Font"
       android_announcement: We are looking for an Android developer
       selling_points:
         map:
@@ -176,7 +176,7 @@ en:
           title: Advanced search
           subtitle: Find any problem or area in a few seconds
         offline:
-          title: Offline mode (iPhone only)
+          title: Offline mode
           subtitle: The app woks even in airplane mode
       metas:
         title: The Boolder app, available on iOS and Android
