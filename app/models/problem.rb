@@ -50,9 +50,11 @@ class Problem < ApplicationRecord
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
   validates :bleau_info_id, uniqueness: true, allow_blank: true
-  validate :validate_circuit_letter_is_numeric
-  validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_blank: true
-  validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_blank: true
+  normalizes :circuit_number, with: -> circuit_number { circuit_number.strip.presence }
+  normalizes :circuit_letter, with: -> circuit_letter { circuit_letter.strip.presence }
+  validate :validate_circuit_letter
+  validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_nil: true
+  validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_nil: true
   validates :circuit_letter, inclusion: { in: LETTERS.keys }, allow_blank: true
   validate :validate_circuit_fields
 
@@ -160,7 +162,7 @@ class Problem < ApplicationRecord
     end
   end
 
-  def validate_circuit_letter_is_numeric
+  def validate_circuit_letter
     return if circuit_number.blank? || circuit_number == LETTER_START
     if circuit_number.to_i < 1
       errors.add(:circuit_number, "must be a number or D (for Départ)")
