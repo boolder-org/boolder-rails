@@ -1,8 +1,25 @@
 class Admin::BaseController < ApplicationController
   default_form_builder DefaultFormBuilder
-  http_basic_authenticate_with name: "nico", password: Rails.application.credentials.dig(:admin, :http_password)
   layout "admin"
+  before_action :authenticate
   before_action :set_cookie
+
+  private 
+  def authenticate
+    authenticate_or_request_with_http_basic("admin") do |id, password|
+      if accounts.has_key?(id.to_s)
+        session[:admin_user_name] = id
+        password == accounts[id.to_s]
+      end
+    end
+  end
+
+  def accounts
+    {
+      "nico"  => Rails.application.credentials.dig(:admin, :nico_password), 
+      "emile" => Rails.application.credentials.dig(:admin, :emile_password),
+    }
+  end
 
   def set_cookie
     session[:admin] = true
