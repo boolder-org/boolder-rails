@@ -17,7 +17,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6"
 
       div class="relative"
         div class="flex flex-nowrap overflow-x-auto py-2 space-x-2 px-4 sm:px-0"
-          - Area.where(id: @beginner_areas_ids).sort_by{|a| @beginner_areas_ids.index(a.id)}.each do |area|
+          - Area.with_ids_keep_order(@beginner_areas_ids).each do |area|
             = link_to area_path(area) do
               = render 'shared/area_card', area: area
               

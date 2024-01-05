@@ -43,6 +43,10 @@ class Area < ApplicationRecord
       sort_by{|a| -a.circuits.select(&:beginner_friendly?).length }
   end
 
+  def self.with_ids_keep_order(ids)
+    where(id: ids).sort_by{|a| ids.index(a.id)}
+  end
+
   def to_param
     slug
   end
