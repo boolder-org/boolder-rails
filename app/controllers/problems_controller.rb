@@ -2,6 +2,9 @@ class ProblemsController < ApplicationController
   def show
     @problem = Problem.find(params[:id])
     @line = @problem.lines.published.first
+
+    rescue ActiveRecord::RecordNotFound
+      render file: "#{Rails.root}/public/404.html", status: :not_found, layout: false
   end
 
   def index
