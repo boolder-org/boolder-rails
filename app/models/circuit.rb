@@ -2,6 +2,8 @@ class Circuit < ApplicationRecord
   has_many :problems
   has_many :areas, -> { distinct }, through: :problems
 
+  audited
+
   COLOR_VALUES = %w(yellow purple orange green blue skyblue salmon red black white)
 
   COLOR_VALUES.each do |color|

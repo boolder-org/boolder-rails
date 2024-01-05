@@ -10,6 +10,8 @@ class Area < ApplicationRecord
     attachable.variant :medium, resize_to_limit: [800, 800], saver: { quality: 80, strip: true, interlace: true }, preprocessed: true
   end
 
+  audited
+
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 

@@ -29,6 +29,7 @@ gem 'rack-cors', '~> 2.0.1'
 gem 'kaminari', '~> 1.2.2'
 gem 'httparty', '~> 0.21.0'
 gem 'colorize', '~> 1.1.0'
+gem "audited", '~> 5.4.2'
 
 gem 'rgeo-geojson', '~> 2.1.1'
 

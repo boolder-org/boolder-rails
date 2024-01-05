@@ -2,6 +2,8 @@ class PoiRoute < ApplicationRecord
   belongs_to :area
   belongs_to :poi
 
+  audited
+
   TRANSPORT_VALUES = %w(walking bike)
 
   validates :transport, inclusion: { in: TRANSPORT_VALUES }

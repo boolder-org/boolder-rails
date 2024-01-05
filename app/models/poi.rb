@@ -2,6 +2,8 @@ class Poi < ApplicationRecord
   has_many :poi_routes
   has_many :areas
 
+  audited
+
   TYPE_VALUES = %w(parking train_station)
 
   validates :poi_type, inclusion: { in: TYPE_VALUES }

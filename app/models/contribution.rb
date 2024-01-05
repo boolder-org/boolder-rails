@@ -7,6 +7,8 @@ class Contribution < ApplicationRecord
   has_many_attached :location_drawings
   belongs_to :problem, optional: true
 
+  audited
+
   STATES = %w(pending accepted closed)
   scope :pending, -> { where(state: "pending") }
   scope :accepted, -> { where(state: "accepted") }

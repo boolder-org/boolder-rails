@@ -9,6 +9,8 @@ class Problem < ApplicationRecord
   has_many :contribution_requests
   has_many :contributions
 
+  audited
+
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
     1a 1a+ 1b 1b+ 1c 1c+ 

@@ -21,6 +21,10 @@ class Admin::BaseController < ApplicationController
     }
   end
 
+  def authenticated_user
+    session[:admin_user_name]
+  end
+
   def set_cookie
     session[:admin] = true
   end
