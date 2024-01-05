@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
   def choose_area
-    @beginner_areas = Rails.cache.fetch("articles/choose_area/beginner_friendly_areas", expires_in: 12.hours) do
-      Area.beginner_friendly
+    # see https://guides.rubyonrails.org/caching_with_rails.html#avoid-caching-instances-of-active-record-objects
+    @beginner_areas_ids = Rails.cache.fetch("articles/choose_area/beginner_friendly_areas", expires_in: 12.hours) do
+      Area.beginner_friendly.pluck(:id)
     end
   end
 
