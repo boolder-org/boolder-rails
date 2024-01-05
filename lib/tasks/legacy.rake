@@ -12,12 +12,12 @@ namespace :legacy do
     problem_features = Problem.where(area_id: area_id).map do |problem|
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :steepness, :height))
-      hash[:name] = problem.name.presence
+      hash[:name] = problem.name
       hash[:bleau_info_id] = problem.bleau_info_id
       hash[:parent_id] = problem.parent_id
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit_id_simplified
-      hash[:circuit_number] = problem.circuit_number_simplified.presence
+      hash[:circuit_number] = problem.circuit_number_simplified
       
       tags = problem.tags.present? ? problem.tags : []
       tags << "risky" if problem.risky # FIXME: decide whether to keep this hack when I revamp the risk level info

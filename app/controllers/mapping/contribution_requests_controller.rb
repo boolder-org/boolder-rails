@@ -12,7 +12,7 @@ class Mapping::ContributionRequestsController < ApplicationController
       hash[:id] = problem.id
       # hash[:circuit_color] = problem.circuit&.color
       # hash[:circuit_id] = problem.circuit_id_simplified
-      # hash[:circuit_number] = problem.circuit_number_simplified.presence
+      # hash[:circuit_number] = problem.circuit_number_simplified
 
       group_name = if problems.count > 1 
         "#{problem.name_debug} + #{problems.count - 1}"

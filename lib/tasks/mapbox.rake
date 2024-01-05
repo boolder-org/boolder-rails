@@ -24,7 +24,7 @@ namespace :mapbox do
       hull_features << factory.feature(hull, nil, hash)
 
       hash = {}.with_indifferent_access
-      hash[:name] = area.short_name.presence || area.name
+      hash[:name] = area.short_name || area.name
       hash[:area_id] = area.id
       hash[:priority] = area.priority
       # we store lat/lon as strings to make it easier to edit the geojson in tools like JOSM
@@ -65,7 +65,7 @@ namespace :mapbox do
       hash[:id] = problem.id
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit_id_simplified
-      hash[:circuit_number] = problem.circuit_number_simplified.presence
+      hash[:circuit_number] = problem.circuit_number_simplified
 
       name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
       name_en = I18n.with_locale(:en) { problem.name_with_fallback }

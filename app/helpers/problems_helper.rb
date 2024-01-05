@@ -1,6 +1,6 @@
 module ProblemsHelper
   def problem_circle_view(problem)
-    circle_view(problem.circuit_number_simplified.presence || "&nbsp;".html_safe, 
+    circle_view(problem.circuit_number_simplified || "&nbsp;".html_safe, 
       background_color: uicolor(problem.circuit&.color), 
       text_color: text_color(problem.circuit&.color)
     )

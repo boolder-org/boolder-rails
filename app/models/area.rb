@@ -10,6 +10,13 @@ class Area < ApplicationRecord
     attachable.variant :medium, resize_to_limit: [800, 800], saver: { quality: 80, strip: true, interlace: true }
   end
 
+  scope :published, -> { where(published: true) }
+  include HasTagsConcern
+
+  normalizes :name, :short_name, :description_fr, :description_en, :warning_fr, :warning_en, with: -> s { s.strip.presence }
+
+  validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
+
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
   after_save { problems.each(&:touch) if saved_change_to_attribute?(:published) || saved_change_to_attribute?(:name) } 
@@ -27,11 +34,6 @@ class Area < ApplicationRecord
     synonyms [['bas cuvier', 'cuvier']]
     customRanking ['asc(priority)']
   end
-
-  scope :published, -> { where(published: true) }
-  include HasTagsConcern
-
-  validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
 
   def levels
     @levels ||= 1.upto(8).map{|level| [level, problems.with_location.level(level).count >= 20] }.to_h

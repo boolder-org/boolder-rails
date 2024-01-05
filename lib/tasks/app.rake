@@ -43,11 +43,11 @@ namespace :app do
           featured, popularity, parent_id)
           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [p.id, 
-            I18n.with_locale(:fr) { p.name_with_fallback.presence }, 
-            I18n.with_locale(:en) { p.name_with_fallback.presence }, 
+            I18n.with_locale(:fr) { p.name_with_fallback }, 
+            I18n.with_locale(:en) { p.name_with_fallback }, 
             normalize(p.name),
             p.grade, p.location&.lat, p.location&.lon, 
-            p.circuit_id_simplified, p.circuit_number_simplified.presence, p.circuit&.color, 
+            p.circuit_id_simplified, p.circuit_number_simplified, p.circuit&.color, 
             p.steepness, p.tags.include?("sit_start") ? 1 : 0, p.area_id, p.bleau_info_id.to_s, 
             p.featured ? 1 : 0, p.popularity, p.parent_id]
         )
@@ -88,11 +88,11 @@ namespace :app do
           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
             a.id, 
-            a.name.presence, 
+            a.name, 
             normalize(a.name),
             a.priority, 
-            a.description_fr.presence, a.description_en.presence, 
-            a.warning_fr.presence, a.warning_en.presence, 
+            a.description_fr, a.description_en, 
+            a.warning_fr, a.warning_en, 
             a.tags.join(",").presence,
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon,
             a.problems.with_location.level(1).count, a.problems.with_location.level(2).count, a.problems.with_location.level(3).count, a.problems.with_location.level(4).count, 

@@ -42,7 +42,7 @@ class Circuit7aController < ApplicationController
       hash[:id] = problem.id
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit_id_simplified
-      hash[:circuit_number] = problem.circuit_number_simplified.presence
+      hash[:circuit_number] = problem.circuit_number_simplified
 
       name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
       name_en = I18n.with_locale(:en) { problem.name_with_fallback }

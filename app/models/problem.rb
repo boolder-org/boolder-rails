@@ -9,24 +9,6 @@ class Problem < ApplicationRecord
   has_many :contribution_requests
   has_many :contributions
 
-  # reindex problems on algolia when area is updated
-  # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
-  after_touch :index!
-
-  include AlgoliaSearch
-  algoliasearch if: :published?, enqueue: true do
-    attributes :name, :grade, :popularity
-    attribute :area_name do area.name end
-    attribute :circuit_number do circuit_number_simplified end
-    attribute :circuit_color do circuit&.color end
-    attribute :_geoloc do { lat: location&.lat || 0.0, lng: location&.lon || 0.0 } end
-    # TODO: implement custom attributes callback to trigger a reindex
-    # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
-
-    searchableAttributes [:name]
-    customRanking ['desc(popularity)']
-  end
-
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
     1a 1a+ 1b 1b+ 1c 1c+ 
@@ -46,12 +28,12 @@ class Problem < ApplicationRecord
   LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter", LETTER_QUATER => "quater" }
   LETTER_START = 'D'
 
+  normalizes :name, :circuit_number, :circuit_letter, with: -> s { s.strip.presence }
+
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
   validates :bleau_info_id, uniqueness: true, allow_blank: true
-  normalizes :circuit_number, with: -> circuit_number { circuit_number.strip.presence }
-  normalizes :circuit_letter, with: -> circuit_letter { circuit_letter.strip.presence }
   validate :validate_circuit_letter
   validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_nil: true
   validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_nil: true
@@ -70,12 +52,30 @@ class Problem < ApplicationRecord
   scope :without_location, -> { where(location: nil) }
   scope :without_photo, -> { left_joins(:lines).where(lines: { id: nil }) }
 
+  # reindex problems on algolia when area is updated
+  # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
+  after_touch :index!
+
+  include AlgoliaSearch
+  algoliasearch if: :published?, enqueue: true do
+    attributes :name, :grade, :popularity
+    attribute :area_name do area.name end
+    attribute :circuit_number do circuit_number_simplified end
+    attribute :circuit_color do circuit&.color end
+    attribute :_geoloc do { lat: location&.lat || 0.0, lng: location&.lon || 0.0 } end
+    # TODO: implement custom attributes callback to trigger a reindex
+    # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
+
+    searchableAttributes [:name]
+    customRanking ['desc(popularity)']
+  end
+
   def published?
     area.published && location.present?
   end
 
   def to_param
-    [id, name.parameterize.presence].compact.join("-")
+    [id, name&.parameterize].compact.join("-")
   end
 
   def name_with_fallback
