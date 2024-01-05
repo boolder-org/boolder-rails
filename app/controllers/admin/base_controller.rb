@@ -21,6 +21,7 @@ class Admin::BaseController < ApplicationController
     }
   end
 
+  # used by audited gem (see config/initializers/audited.rb)
   def authenticated_user
     session[:admin_user_name]
   end
