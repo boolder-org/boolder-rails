@@ -1,7 +1,8 @@
 class AreasController < ApplicationController
   def index
-    @popular_areas = Rails.cache.fetch("areas/index/popular_areas", expires_in: 12.hours) do
-      Area.published.any_tags(:popular).all.shuffle
+    # see https://guides.rubyonrails.org/caching_with_rails.html#avoid-caching-instances-of-active-record-objects
+    @popular_areas_ids = Rails.cache.fetch("areas/index/popular_areas_ids", expires_in: 12.hours) do
+      Area.published.any_tags(:popular).pluck(:id).shuffle
     end
 
     @areas_with_count = Area.published.sort_by{|a| I18n.transliterate(a.name) }
