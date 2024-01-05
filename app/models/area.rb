@@ -6,8 +6,8 @@ class Area < ApplicationRecord
   belongs_to :bleau_area
 
   has_one_attached :cover do |attachable|
-    attachable.variant :thumb, resize_to_limit: [400, 400], saver: { quality: 80, strip: true, interlace: true }
-    attachable.variant :medium, resize_to_limit: [800, 800], saver: { quality: 80, strip: true, interlace: true }
+    attachable.variant :thumb, resize_to_limit: [400, 400], saver: { quality: 80, strip: true, interlace: true }, preprocessed: true
+    attachable.variant :medium, resize_to_limit: [800, 800], saver: { quality: 80, strip: true, interlace: true }, preprocessed: true
   end
 
   scope :published, -> { where(published: true) }
