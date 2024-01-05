@@ -5,8 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-
-raise "are you crazy?" unless Rails.env.development?
-
-`dropdb dump-prod && heroku pg:pull DATABASE_URL dump-prod -a boolder`
