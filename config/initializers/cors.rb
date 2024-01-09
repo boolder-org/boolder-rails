@@ -15,6 +15,6 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
   allow do
     origins '*'
-    resource '/fr/circuit7a/problems.json', headers: :any, methods: [:get, :head, :options]
+    resource '/api/*', headers: :any, methods: [:get, :head, :options]
   end
 end
