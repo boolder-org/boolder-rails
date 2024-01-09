@@ -1,4 +1,6 @@
 class Api::V1::MapsController < ActionController::Base
+  include ProblemsHelper
+
   def show
     area = Area.find(params[:area_id])
 
@@ -9,6 +11,10 @@ class Api::V1::MapsController < ActionController::Base
       hash[:name] = problem.name_debug
       hash[:problem_id] = problem.id
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
+
+      # simple-style attributes to make the map look nicer on geojson.io
+      # https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
+      hash[:"marker-color"] = uicolor(problem.circuit&.color, fallback: "#ccc")
 
       factory.feature(problem.location, nil, hash)
     end
