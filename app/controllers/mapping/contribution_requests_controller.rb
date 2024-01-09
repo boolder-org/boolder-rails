@@ -35,6 +35,7 @@ class Mapping::ContributionRequestsController < ApplicationController
     )
 
     respond_to do |format|
+      # TODO: use .geojson
       format.json do
         render json: JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
       end
