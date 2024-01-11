@@ -73,7 +73,7 @@ fr:
       areas:
         index:
           title: Cartographier
-          subtitle: Pour aider Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
+          subtitle: Pour nous aider à améliorer Boolder, rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
           core_mapping_team: Vous souhaitez nous aider à cartographier de nouveaux secteurs ? 
           core_mapping_team_email_html: Envoyez-nous un email à %{link}, nous serons ravis de discuter !
           metas: 
@@ -324,8 +324,8 @@ fr:
       submit: Chercher
     layout:
       contribute_banner:
-        text_short: En 2024, contribuez à Boolder !
-        text_long: En 2024, contribuez à Boolder !
+        text_short: Vous pouvez maintenant contribuer à Boolder !
+        text_long: Vous pouvez maintenant contribuer à Boolder !
         learn_more: En savoir plus
       nav:
         open_menu: Ouvrir le menu principal
