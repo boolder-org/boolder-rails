@@ -41,10 +41,6 @@
         <%= t("views.about.project.p2_html") %>
       </p>
 
-      <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.project.p3_html", link: link_to(t("views.about.project.contact"), "#contact", class: "font-medium underline text-green-600")) %>
-      </p>
-
     </div>
   </section>
 
@@ -143,13 +139,13 @@
   <section>
     <div class="mx-auto max-w-7xl py-8 px-6 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-warm-gray-900">
-        <%= t("views.about.open_source.title") %>
+        <%= t("views.about.open.title") %>
       </h2>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.open_source.p1_html", link: link_to("GitHub", "https://github.com/boolder-org", class: "font-medium underline text-green-600")) %>
+        <%= t("views.about.open.p1_html", link: link_to("GitHub", "https://github.com/boolder-org", class: "font-medium underline text-green-600")) %>
       </p>
       <p class="mt-6 max-w-3xl text-lg text-warm-gray-500">
-        <%= t("views.about.open_source.p2") %>
+        <%= t("views.about.open.p2_html", link: link_to(t("views.about.open.contribute_link"), contribute_path, class: "font-medium underline text-green-600")) %>
       </p>
     </div>
   </section>

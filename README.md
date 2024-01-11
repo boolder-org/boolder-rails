@@ -47,7 +47,7 @@ source: https://github.com/libvips/ruby-vips/issues/284
 
 # Optional: JOSM
 
-Josm is an open-source tool used by the OpenStreetMap community.
+Josm is an open source tool used by the OpenStreetMap community.
 We use it to edit GeoJson files.
 
 - Follow the instructions here: `https://josm.openstreetmap.de/wiki/Download#macOS`

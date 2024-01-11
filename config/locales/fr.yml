@@ -191,10 +191,10 @@ fr:
       report_title: Signaler une erreur
       report_description: Signalez une erreur sur une voie ou un circuit existant.
       dev_title: Pour les développeurs
-      dev_description: Accédez au code et aux données open-source.
+      dev_description: Accédez au code et aux données open source.
       metas:
         title: Contribuer
-        description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open-source
+        description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open source
     about:
       title_prefix: À propos de
       history:
@@ -225,10 +225,11 @@ fr:
         p2_html: Nous remercions %{link_bleau} qui centralise et référence des dizaines de milliers de blocs avec minutie et passion depuis plus de 20 ans, de façon gratuite. Vous pouvez les soutenir sur leur page %{link_bleau_sponsoring}.
         p3_html: Nous remercions également l'association %{link_cosiroc} et le site %{link_topo_bleau}, à l'origine de nombreuses données de première main et d'opérations sur le terrain.
         app: appli
-      open_source:
-        title: Open data + open source
-        p1_html: Le code des applis ainsi que les données sont disponibles sur %{link}.
-        p2: Nous recherchons des gens passionnés par la grimpe et par le code pour nous aider à améliorer Boolder de façon communautaire.
+      open:
+        title: Une plateforme collaborative
+        p1_html: Le code des applis ainsi que les données sont disponibles en open source sur %{link}.
+        p2_html: Il est également possible de %{link} en cartographiant les voies manquantes ou en signalant des erreurs.
+        contribute_link: contribuer
       android:
         title: Vous êtes développeur·se Android ?
         p1_html: Nous manquons actuellement d'expertise pour notre %{link}. Contactez-nous si vous souhaitez contribuer, nous serons ravis de discuter !
@@ -243,7 +244,7 @@ fr:
         why_free:
           question: Pourquoi l'appli est-elle gratuite ?
           p1: Car nous voulons que le plus grand nombre puisse en profiter ! 
-          p2: Nicolas a profité d'une année sabbatique pour cartographier de nombreux secteurs et coder la première version de l'application. Grâce à cela, très peu de frais ont été engagés. Nous comptons rester dans cette dynamique dans le futur en reposant sur un modèle de bénévolat open-source.
+          p2: Nicolas a profité d'une année sabbatique pour cartographier de nombreux secteurs et coder la première version de l'application. Grâce à cela, très peu de frais ont été engagés. Nous comptons rester dans cette dynamique dans le futur en reposant sur un modèle de bénévolat open source.
         privacy:
           question: Quelles données personnelles récoltez-vous ?
           p1_html: Vous pouvez consulter notre %{link}.
