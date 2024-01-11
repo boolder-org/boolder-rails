@@ -63,7 +63,7 @@ en:
           cta: Read the guide
         about:
           title: About Boolder
-          subtitle: Discover more about the Boolder project, the team, and the open source data.
+          subtitle: Discover more about the team and how to contribute to the project.
           cta: More info
       metas:
         title: Bouldering in Fontainebleau
@@ -179,7 +179,7 @@ en:
           title: Offline mode
           subtitle: The app woks even in airplane mode
       metas:
-        title: The Boolder app, available on iOS and Android
+        title: All Fontainebleau in your pocket
         description: The bouldering guide for Fontainebleau that fits in your pocket
     privacy:
       metas:
@@ -191,10 +191,10 @@ en:
       report_title: Report a mistake
       report_description: Report a mistake on an existing problem or circuit.
       dev_title: For Developers
-      dev_description: Access open-source code and data.
+      dev_description: Contribute to the source code of our apps.
       metas:
         title: Contribute
-        description: Map areas, take photos of boudlers, report mistakes, or contribute to the open-source project
+        description: Map areas, take photos of boudlers, report mistakes, or contribute to the open source project
     about:
       title_prefix: About
       history:
@@ -225,10 +225,11 @@ en:
         p2_html: Special thanks to %{link_bleau}, whose team has referenced almost 50.000 problems with great care and passion for the past 20 years, and made it free for everyone. You can support them on their %{link_bleau_sponsoring} page.
         p3_html: We also extend our thanks to the %{link_cosiroc} association and the %{link_topo_bleau} website, which have provided a wealth of firsthand data and carried out numerous on-the-ground operations.
         app: app
-      open_source:
-        title: Open data + open source
-        p1_html: The code and data of the apps are available on %{link}.
-        p2: We are looking for passionate climbers and coders to help us improve Boolder in a collaborative way.
+      open:
+        title: A collaborative platform
+        p1_html: The code and data of the apps are available in open source on %{link}.
+        p2_html: You can also %{link} by mapping missing problems or by reporting mistakes.
+        contribute_link: contribute
       android:
         title: Are you an Android developer?
         p1_html: We currently lack expertise for our %{link}. Contact us if you want to contribute, we will be happy to talk!
@@ -243,7 +244,7 @@ en:
         why_free:
           question: Why is the app free?
           p1: Because we want as many people as possible to enjoy it!
-          p2: Nicolas took advantage of a sabbatical year to map many areas and code the first version of the application. Thanks to this, costs remained very low. We plan to keep this momentum going in the future thanks to volunteering and open-source.
+          p2: Nicolas took advantage of a sabbatical year to map many areas and code the first version of the application. Thanks to this, costs remained very low. We plan to keep this momentum going in the future thanks to volunteering and open source.
         privacy:
           question: Do you collect personal data?
           p1_html: You can consult our %{link}.
@@ -322,9 +323,9 @@ en:
       cancel: Cancel
       submit: Search
     layout:
-      open_source_announcement:
-        text_short: Boolder is now open source!
-        text_long: Boolder is now open source! We are looking for an Android developer to join the team.
+      contribute_banner:
+        text_short: In 2024, contribute to Boolder!
+        text_long: In 2024, contribute to Boolder!
         learn_more: Learn more
       nav:
         open_menu: Open main menu
