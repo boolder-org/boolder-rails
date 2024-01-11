@@ -191,7 +191,7 @@ fr:
       report_title: Signaler une erreur
       report_description: Signalez une erreur sur une voie ou un circuit existant.
       dev_title: Pour les développeurs
-      dev_description: Accédez au code et aux données open source.
+      dev_description: Contribuez au code source des applis.
       metas:
         title: Contribuer
         description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open source
@@ -323,9 +323,9 @@ fr:
       cancel: Annuler
       submit: Chercher
     layout:
-      open_source_announcement:
-        text_short: Boolder est open source !
-        text_long: Boolder est maintenant open source ! Nous recherchons un·e développeur·se Android pour rejoindre l'équipe.
+      contribute_banner:
+        text_short: En 2024, contribuez à Boolder !
+        text_long: En 2024, contribuez à Boolder !
         learn_more: En savoir plus
       nav:
         open_menu: Ouvrir le menu principal

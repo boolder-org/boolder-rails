@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   around_action :switch_locale
   before_action :set_alternate_tags
+  before_action :dismiss_banner
 
   rescue_from ActiveRecord::RecordNotFound, with: :render_404
 
@@ -22,6 +23,12 @@ class ApplicationController < ActionController::Base
   end
 
   private
+
+  def dismiss_banner
+     if params[:dismiss_banner].present?
+       cookies[:contribute_launch] = { value: 'dismissed', expires: 1.month.from_now }
+     end
+   end
 
   def render_404
     render file: "#{Rails.root}/public/404.html", status: :not_found, layout: false

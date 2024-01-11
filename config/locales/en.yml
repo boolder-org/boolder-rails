@@ -191,7 +191,7 @@ en:
       report_title: Report a mistake
       report_description: Report a mistake on an existing problem or circuit.
       dev_title: For Developers
-      dev_description: Access open source code and data.
+      dev_description: Contribute to the source code of our apps.
       metas:
         title: Contribute
         description: Map areas, take photos of boudlers, report mistakes, or contribute to the open source project
@@ -323,9 +323,9 @@ en:
       cancel: Cancel
       submit: Search
     layout:
-      open_source_announcement:
-        text_short: Boolder is now open source!
-        text_long: Boolder is now open source! We are looking for an Android developer to join the team.
+      contribute_banner:
+        text_short: In 2024, contribute to Boolder!
+        text_long: In 2024, contribute to Boolder!
         learn_more: Learn more
       nav:
         open_menu: Open main menu
