@@ -10,7 +10,9 @@ Rails.application.routes.draw do
       end
       resources :problems, except: :index
       resources :circuits
-      resources :imports
+      resources :imports do
+        get 'run', on: :member
+      end
       resources :topos
       resources :problem_imports
       resources :bleau_problems
