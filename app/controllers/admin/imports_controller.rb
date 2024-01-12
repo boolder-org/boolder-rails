@@ -24,7 +24,6 @@ class Admin::ImportsController < Admin::BaseController
     @updates = if @import.processed
       @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes] }
     else
-      # TODO: rename to updated_objects
       @import.objects_to_update.map{|object| [object, object.changes] }
     end
   end
