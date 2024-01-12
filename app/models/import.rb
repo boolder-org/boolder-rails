@@ -2,7 +2,7 @@ class Import < ApplicationRecord
   has_one_attached :file
   has_associated_audits
 
-  def objects
+  def objects_to_update
     problem_features = file_features.select{|f| f.geometry.geometry_type == ::RGeo::Feature::Point }
     boulder_features = file_features.select{|f| f.geometry.geometry_type == ::RGeo::Feature::LineString || f.geometry.geometry_type == ::RGeo::Feature::Polygon }
 
@@ -29,7 +29,7 @@ class Import < ApplicationRecord
 
       problem.conflicting_updated_at = true if problem.updated_at.to_s != feature["updatedAt"]
 
-      objects << problem
+      objects << problem if problem.changes.any?
     end
 
     boulder_features.each do |feature|
@@ -60,7 +60,7 @@ class Import < ApplicationRecord
 
       boulder.conflicting_updated_at = true if boulder.updated_at.to_s != feature["updatedAt"]
 
-      objects << boulder
+      objects << boulder if boulder.changes.any?
     end
 
     objects

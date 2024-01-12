@@ -24,15 +24,22 @@ class Admin::ImportsController < Admin::BaseController
     @updates = if @import.processed
       @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes] }
     else
-      @import.objects.select{|o| o.changes.any?}.map{|object| [object, object.changes] }
+      # TODO: rename to updated_objects
+      @import.objects_to_update.map{|object| [object, object.changes] }
     end
   end
 
   def run
     @import = Import.find(params[:id])
 
+    if @import.objects_to_update.any?{|object| object.conflicting_updated_at }
+      flash[:error] = "Cannot run import when there is a conflict"
+      redirect_to admin_import_path(@import)
+      return
+    end
+
     ActiveRecord::Base.transaction do
-      @import.objects.each do |object|
+      @import.objects_to_update.each do |object|
         object.import = @import
         object.save!
       end
