@@ -61,7 +61,7 @@ class Import < ApplicationRecord
         polygon: polygon
       )
 
-      boulder.conflicting_updated_at = true if boulder.updated_at.to_s != feature["updatedAt"]
+      boulder.conflicting_updated_at = true if boulder.persisted? && boulder.updated_at.to_s != feature["updatedAt"]
 
       objects << boulder if boulder.changes.any?
     end
