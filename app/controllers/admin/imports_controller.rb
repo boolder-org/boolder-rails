@@ -22,7 +22,7 @@ class Admin::ImportsController < Admin::BaseController
     @import = Import.find(params[:id])
 
     @updates = if @import.processed
-      @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes] }
+      @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes, audit] }
     else
       @import.objects_to_update.map{|object| [object, object.changes] }
     end
