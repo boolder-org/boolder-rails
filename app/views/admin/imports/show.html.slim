@@ -26,3 +26,6 @@ div class="flex flex-col my-6"
                           strong= field
                         td= Differ.diff_by_word(diff.second.to_s, diff.first.to_s).format_as(:html).html_safe
 
+
+- if !@import.processed
+  = link_to "Save", run_admin_import_path(@import), class: "btn"

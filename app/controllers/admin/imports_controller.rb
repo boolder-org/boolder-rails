@@ -41,7 +41,7 @@ class Admin::ImportsController < Admin::BaseController
     end
 
     flash[:success] = "Import successful"
-    redirect_to admin_imports_path
+    redirect_to admin_import_path(@import)
   end
 
   private
