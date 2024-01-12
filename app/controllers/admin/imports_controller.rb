@@ -1,14 +1,30 @@
 class Admin::ImportsController < Admin::BaseController
   def new
+    @import = Import.new
   end
 
   def create
-    area_id = params[:import][:area_id]
-    raise "please choose an area_id" unless area_id
+    @import = Import.new(import_params)
 
-    save = (params[:commit] == "Import")
+    if @import.save
+      redirect_to [:admin, @import]
+    else
+      flash[:error] = "Error"
+      render :new
+    end
+  end
 
-    data = RGeo::GeoJSON.decode(params[:import][:geojson].read)
+  def show
+    # area_id = params[:import][:area_id]
+    # raise "please choose an area_id" unless area_id
+
+    # save = (params[:commit] == "Import")
+
+    area_id = 1
+
+    @import = Import.find(params[:id])
+
+    data = RGeo::GeoJSON.decode(@import.file.download)
     problem_features = data.select{|f| f.geometry.is_a?(RGeo::Geos::CAPIPointImpl) }
     boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Geos::CAPILineStringImpl) }
 
@@ -19,7 +35,7 @@ class Admin::ImportsController < Admin::BaseController
 
         if feature["problemId"].present?
           problem = Problem.find_by(id: feature["problemId"])
-          raise "wrong area for problem #{problem.id}: #{problem.area_id} instead of #{area_id}" if (problem.area_id != area_id.to_i)
+          # raise "wrong area for problem #{problem.id}: #{problem.area_id} instead of #{area_id}" if (problem.area_id != area_id.to_i)
         else
           problem = Problem.new
         end
@@ -32,7 +48,7 @@ class Admin::ImportsController < Admin::BaseController
           location: FACTORY.point(feature.geometry.x, feature.geometry.y),
         )
 
-        problem.save! if save
+        # problem.save! if save
         @objects << problem
       end
 
@@ -41,7 +57,7 @@ class Admin::ImportsController < Admin::BaseController
 
         if feature["boulderId"].present?
           boulder = Boulder.find_by(id: feature["boulderId"])
-          raise "wrong area for boulder #{boulder.id}: #{boulder.area_id} instead of #{area_id}" if (boulder.area_id != area_id.to_i)
+          # raise "wrong area for boulder #{boulder.id}: #{boulder.area_id} instead of #{area_id}" if (boulder.area_id != area_id.to_i)
         else
           if existing_boulder = Boulder.where(polygon: polygon).first
             raise "boulder already exists (boulder_id=#{existing_boulder.id})" 
@@ -54,9 +70,14 @@ class Admin::ImportsController < Admin::BaseController
           polygon: polygon
         )
 
-        boulder.save! if save
+        # boulder.save! if save
         @objects << boulder
       end
     end
+  end
+
+  private
+  def import_params
+    params.require(:import).permit(:processed, :file)
   end
 end
