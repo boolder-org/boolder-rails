@@ -21,7 +21,7 @@ class Import < ApplicationRecord
       if feature["problemId"].present?
         problem = Problem.find(feature["problemId"])
       else
-        problem = Problem.new(area_id: area_id)
+        raise "All problems must have a `problemId` property" 
       end
 
       # TODO: raise if problemId is not present but other attribute is present
@@ -52,11 +52,13 @@ class Import < ApplicationRecord
         boulder = Boulder.find(feature["boulderId"])
       else
         if existing_boulder = Boulder.where(polygon: polygon).first
-          raise "boulder already exists (boulder_id=#{existing_boulder.id})" 
+          # raise "boulder already exists (boulder_id=#{existing_boulder.id})" 
+          boulder = existing_boulder
         else
           boulder = Boulder.new(area_id: area_id)
         end
       end
+
       boulder.assign_attributes(
         polygon: polygon
       )
