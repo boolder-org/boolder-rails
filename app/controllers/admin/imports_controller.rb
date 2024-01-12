@@ -20,6 +20,12 @@ class Admin::ImportsController < Admin::BaseController
 
   def show
     @import = Import.find(params[:id])
+
+    @updates = if @import.processed
+      @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes] }
+    else
+      @import.changeset.select{|o| o.changes.any?}.map{|object| [object, object.changes] }
+    end
   end
 
   def run

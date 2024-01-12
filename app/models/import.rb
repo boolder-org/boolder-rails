@@ -2,7 +2,7 @@ class Import < ApplicationRecord
   has_one_attached :file
   has_associated_audits
 
-  def changes
+  def changeset
     data = RGeo::GeoJSON.decode(file.download)
     problem_features = data.select{|f| f.geometry.is_a?(RGeo::Geos::CAPIPointImpl) }
     boulder_features = data.select{|f| f.geometry.is_a?(RGeo::Geos::CAPILineStringImpl) }
