@@ -3,4 +3,5 @@ class Boulder < ApplicationRecord
 
   attr_accessor :import # used by audited associated_with: :import
   audited associated_with: :import
+  attr_accessor :conflicting_updated_at
 end

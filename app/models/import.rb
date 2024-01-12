@@ -27,6 +27,8 @@ class Import < ApplicationRecord
         location: FACTORY.point(feature.geometry.x, feature.geometry.y)
       )
 
+      problem.conflicting_updated_at = true if problem.updated_at.to_s != feature["updatedAt"]
+
       objects << problem
     end
 
@@ -56,13 +58,15 @@ class Import < ApplicationRecord
         polygon: polygon
       )
 
+      boulder.conflicting_updated_at = true if boulder.updated_at.to_s != feature["updatedAt"]
+
       objects << boulder
     end
 
     objects
   end
 
-  # private 
+  private 
 
   def file_features
     @file_features ||= RGeo::GeoJSON.decode(file.download)

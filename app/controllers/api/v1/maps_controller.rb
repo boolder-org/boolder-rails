@@ -12,6 +12,7 @@ class Api::V1::MapsController < ActionController::Base
       hash = {}.with_indifferent_access
       hash[:name] = problem.name_debug
       hash[:problem_id] = problem.id
+      hash[:updated_at] = problem.updated_at
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
       # simple-style attributes to make the map look nicer on geojson.io
@@ -24,6 +25,7 @@ class Api::V1::MapsController < ActionController::Base
     boulder_features = Boulder.where(area_id: area.id).map do |boulder|
       hash = {}.with_indifferent_access
       hash[:boulder_id] = boulder.id
+      hash[:updated_at] = boulder.updated_at
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
       factory.feature(boulder.polygon, nil, hash)

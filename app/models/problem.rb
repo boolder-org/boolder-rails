@@ -11,6 +11,7 @@ class Problem < ApplicationRecord
 
   attr_accessor :import # used by audited associated_with: :import
   audited associated_with: :import
+  attr_accessor :conflicting_updated_at
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
