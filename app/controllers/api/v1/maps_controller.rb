@@ -1,6 +1,8 @@
 class Api::V1::MapsController < ActionController::Base
   include ProblemsHelper
 
+  # "http://geojson.io/#data=data:text/x-url," + URI.encode_www_form_component(str)
+
   def show
     area = Area.find(params[:area_id])
 
