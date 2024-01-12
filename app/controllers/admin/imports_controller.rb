@@ -24,7 +24,7 @@ class Admin::ImportsController < Admin::BaseController
     @updates = if @import.processed
       @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes] }
     else
-      @import.changeset.select{|o| o.changes.any?}.map{|object| [object, object.changes] }
+      @import.objects.select{|o| o.changes.any?}.map{|object| [object, object.changes] }
     end
   end
 
@@ -32,7 +32,7 @@ class Admin::ImportsController < Admin::BaseController
     @import = Import.find(params[:id])
 
     ActiveRecord::Base.transaction do
-      @import.changeset.each do |object|
+      @import.objects.each do |object|
         object.import = @import
         object.save!
       end
