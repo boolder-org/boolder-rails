@@ -9,7 +9,8 @@ class Problem < ApplicationRecord
   has_many :contribution_requests
   has_many :contributions
 
-  audited
+  attr_accessor :import # used by audited associated_with: :import
+  audited associated_with: :import
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(

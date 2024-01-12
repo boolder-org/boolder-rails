@@ -27,6 +27,7 @@ class Admin::ImportsController < Admin::BaseController
 
     ActiveRecord::Base.transaction do
       @import.changes.each do |object|
+        object.import = @import
         object.save!
       end
 

@@ -1,5 +1,6 @@
 class Import < ApplicationRecord
   has_one_attached :file
+  has_associated_audits
 
   def changes
     data = RGeo::GeoJSON.decode(file.download)
