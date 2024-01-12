@@ -2,20 +2,24 @@ class Import < ApplicationRecord
   has_one_attached :file
   has_associated_audits
 
+  def infer_area_id
+    problems = problem_features.map{|feature| Problem.find_by(id: feature["problemId"]) }
+    boulders = boulder_features.map{|feature| Boulder.find_by(id: feature["boulderId"]) }
+
+    ids = (problems + boulders).compact.map(&:area_id).uniq
+
+    raise "All features must have the same area_id" if ids.count > 1
+    raise "Couldn't infer area_id" if ids.count == 0
+    ids.first
+  end
+
   def objects_to_update
-    problem_features = file_features.select{|f| f.geometry.geometry_type == ::RGeo::Feature::Point }
-    boulder_features = file_features.select{|f| f.geometry.geometry_type == ::RGeo::Feature::LineString || f.geometry.geometry_type == ::RGeo::Feature::Polygon }
-
     objects = []
-
-    area_id = 1 # FIXME
-
-    # factory = RGeo::GeoJSON::EntityFactory.instance
+    area_id = infer_area_id
 
     problem_features.each do |feature|
       if feature["problemId"].present?
         problem = Problem.find(feature["problemId"])
-        # raise "wrong area for problem #{problem.id}: #{problem.area_id} instead of #{area_id}" if (problem.area_id != area_id.to_i)
       else
         problem = Problem.new(area_id: area_id)
       end
@@ -46,7 +50,6 @@ class Import < ApplicationRecord
 
       if feature["boulderId"].present?
         boulder = Boulder.find(feature["boulderId"])
-        # raise "wrong area for boulder #{boulder.id}: #{boulder.area_id} instead of #{area_id}" if (boulder.area_id != area_id.to_i)
       else
         if existing_boulder = Boulder.where(polygon: polygon).first
           raise "boulder already exists (boulder_id=#{existing_boulder.id})" 
@@ -68,7 +71,15 @@ class Import < ApplicationRecord
 
   private 
 
-  def file_features
-    @file_features ||= RGeo::GeoJSON.decode(file.download)
+  def problem_features
+    @problem_features ||= features.select{|f| f.geometry.geometry_type == ::RGeo::Feature::Point }
+  end
+
+  def boulder_features
+    @boulder_features ||= features.select{|f| f.geometry.geometry_type == ::RGeo::Feature::LineString || f.geometry.geometry_type == ::RGeo::Feature::Polygon }
+  end
+
+  def features
+    @features ||= RGeo::GeoJSON.decode(file.download).to_a
   end
 end
