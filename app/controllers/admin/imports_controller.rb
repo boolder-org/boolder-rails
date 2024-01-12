@@ -32,7 +32,7 @@ class Admin::ImportsController < Admin::BaseController
     @import = Import.find(params[:id])
 
     ActiveRecord::Base.transaction do
-      @import.changes.each do |object|
+      @import.changeset.each do |object|
         object.import = @import
         object.save!
       end
