@@ -28,7 +28,11 @@ div class="flex flex-col my-6"
                       tr style="background-color: transparent;"
                         td
                           strong= field
-                        td= Differ.diff_by_word(diff.second.to_s, diff.first.to_s).format_as(:html).html_safe
+                        td
+                          - if diff.respond_to?(:first) && diff.respond_to?(:second)
+                            = Differ.diff_by_word(diff.second.to_s, diff.first.to_s).format_as(:html).html_safe
+                          - else
+                            = diff.to_s
 
 p= "#{@updates.count} changes"
 
