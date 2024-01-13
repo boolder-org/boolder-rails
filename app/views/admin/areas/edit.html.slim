@@ -19,3 +19,9 @@ div class="mt-10 sm:mt-0"
             li= link_to poi_route.description, edit_admin_poi_route_path(poi_route)
         
         = link_to "New poi route", new_admin_poi_route_path(area_id: @area.id)
+
+      div class="mt-8 px-4 sm:px-0"
+        ul
+          li= link_to "Edit map", geojson_io_url(@area), target: "_blank"
+          li= link_to "Download map", "#", target: "_blank"
+          li= link_to "Import", new_admin_import_path
