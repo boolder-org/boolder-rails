@@ -97,7 +97,7 @@ Rails.application.routes.draw do
         resources :topos, only: :show
         resources :areas do
           resources :topos, only: :index
-          get "map.geojson", to: "maps#show", as: :area_map # TODO: use .geojson format
+          get "map", to: "maps#show", as: :area_map
         end
       end
     end

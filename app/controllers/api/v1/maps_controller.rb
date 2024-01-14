@@ -1,8 +1,6 @@
 class Api::V1::MapsController < ActionController::Base
   include ProblemsHelper
 
-  # "http://geojson.io/#data=data:text/x-url," + URI.encode_www_form_component(str)
-
   def show
     area = Area.find(params[:area_id])
 
@@ -17,6 +15,7 @@ class Api::V1::MapsController < ActionController::Base
 
       # simple-style attributes to make the map look nicer on geojson.io
       # https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
+      # Important: keep the key exactly as it it (don't camelize it)
       hash[:"marker-color"] = uicolor(problem.circuit&.color, fallback: "#ccc")
 
       factory.feature(problem.location, nil, hash)
@@ -35,6 +34,13 @@ class Api::V1::MapsController < ActionController::Base
       problem_features + boulder_features
     )
 
-    render json: JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+    json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+
+    if params[:download] == "true"
+      # -#{Time.now.utc.to_fs(:db)}
+      send_data json, filename: "area-#{area.id}_#{area.slug}.geojson", type: 'application/geo+json'
+    else
+      render json: json
+    end
   end
 end
