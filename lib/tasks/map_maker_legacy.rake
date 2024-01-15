@@ -1,6 +1,6 @@
 require 'rgeo/geo_json'
 
-namespace :legacy do
+namespace :map_maker_legacy do
   task export: :environment do
     area_id = ENV["area_id"]
     raise "please specify an area_id" unless area_id.present?
