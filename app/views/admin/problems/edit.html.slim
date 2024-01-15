@@ -2,14 +2,14 @@
 - add_breadcrumb @problem.area.name, admin_area_problems_path(area_slug: @problem.area.slug, circuit_id: @problem.circuit&.id || "off_circuit", anchor: @problem.id)
 - add_breadcrumb "Problem ##{@problem.id}", nil, class: "active"
 
-- if @problem.location.nil? && @problem.topos.published.any?
-  div class="mb-4"
-    = warning_box do 
-      span Location is empty although problem has a topo
-
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"
     div class="mt-5 md:mt-0 md:col-span-2"
+      - if @problem.location.nil?
+          div class="my-4"
+            = warning_box do 
+              span Location is empty.
+
       = form_with model: [:admin, @problem] do |form|
         div class="shadow overflow-hidden sm:rounded-md"
           div class="px-4 py-5 bg-white sm:p-6"
@@ -18,16 +18,6 @@ div class="mt-10 sm:mt-0"
 
           div class="px-4 py-3 bg-gray-50 flex justify-end sm:px-6"
             button type="submit" class="btn" Update
-      
-        div class="mt-8 shadow overflow-hidden sm:rounded-md"
-          div class="px-4 py-5 bg-white sm:p-6"
-            - if @problem.location.nil?
-              = warning_box do 
-                span Location is empty
-            - else
-              ul
-                li= link_to "See location", map_path(@problem.area, pid: @problem.id), class: "text-green-500", target: "_blank"
-                li= link_to "Edit location", edit_admin_area_path(@problem.area), class: "text-green-500"
 
         div class="mt-8 shadow overflow-hidden sm:rounded-md"
           div class="px-4 py-5 bg-white sm:p-6"
