@@ -26,11 +26,9 @@ div class="col-span-6 sm:col-span-4"
   = form.label :sit_start
   = form.check_box :sit_start
 
-div class="col-span-6 sm:col-span-2"
-  = form.label :parent_id, "Parent"
-  = form.text_field :parent_id, autocomplete: "off"
-
 div class="col-span-6 sm:col-span-2 sm:col-start-1"
   = form.label :bleau_info_id, "Bleau.info id"
   = form.text_field :bleau_info_id, autocomplete: "off"
-  
+
+div class="col-span-6 sm:col-span-4"
+  = link_to "See on bleau.info", bleau_info_url(@problem), class: "text-green-500", target: "_blank"
