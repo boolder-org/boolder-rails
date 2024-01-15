@@ -21,7 +21,6 @@ namespace :map_maker_legacy do
       
       tags = []
       tags << "sit_start" if problem.sit_start
-      tags << "risky" if problem.risky # FIXME: decide whether to keep this hack when I revamp the risk level info
       hash[:tags] = tags 
 
       hash[:lines] = problem.lines.published.map{|line| {id: line.id} } if problem.lines.any?

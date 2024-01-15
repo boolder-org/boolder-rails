@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_15_113733) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_15_143426) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -203,7 +203,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_15_113733) do
     t.bigint "area_id"
     t.integer "bleau_info_id"
     t.string "landing"
-    t.boolean "risky", default: false, null: false
     t.boolean "featured", default: false, null: false
     t.bigint "parent_id"
     t.decimal "ratings_average"
