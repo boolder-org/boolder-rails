@@ -25,10 +25,10 @@ id='map'
 data-mapbox-target="map"
 data-mapbox-locale-value="<%= I18n.locale %>"
 
-data-mapbox-contribute-source-value="/<%= I18n.locale %>/mapping/requests.json"
+data-mapbox-contribute-source-value="<%= mapping_requests_path(format: :geojson) %>"
 data-mapbox-contribute-value="<%= params[:contribute] ? "true" : "false" %>"
 
-data-mapbox-circuit7a-source-value="/<%= I18n.locale %>/circuit7a/problems.json"
+data-mapbox-circuit7a-source-value="<%= circuit7a_problems_path(format: :geojson) %>"
 data-mapbox-circuit7a-value="<%= params[:circuit7a] ? "true" : "false" %>"
 
 <% if @problem %> 

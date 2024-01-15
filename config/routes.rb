@@ -10,7 +10,9 @@ Rails.application.routes.draw do
       end
       resources :problems, except: :index
       resources :circuits
-      resources :imports
+      resources :imports do
+        get 'apply', on: :member
+      end
       resources :topos
       resources :problem_imports
       resources :bleau_problems
@@ -95,6 +97,7 @@ Rails.application.routes.draw do
         resources :topos, only: :show
         resources :areas do
           resources :topos, only: :index
+          get "map", to: "maps#show", as: :area_map
         end
       end
     end

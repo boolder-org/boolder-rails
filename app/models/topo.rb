@@ -1,6 +1,6 @@
 class Topo < ApplicationRecord
   has_one_attached :photo do |attachable|
-    attachable.variant :medium, resize_to_limit: [1200, 1200], saver: { quality: 50, strip: true, interlace: true }, preprocessed: true
+    attachable.variant :medium, resize_to_fill: [1200, 900], saver: { quality: 50, strip: true, interlace: true }, preprocessed: true
   end
 
   has_many :lines, dependent: :destroy

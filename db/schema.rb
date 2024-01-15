@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_05_155516) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_12_081452) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -152,6 +152,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_05_155516) do
     t.string "problem_name"
     t.string "problem_url"
     t.index ["problem_id"], name: "index_contributions_on_problem_id"
+  end
+
+  create_table "imports", force: :cascade do |t|
+    t.datetime "applied_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "lines", force: :cascade do |t|

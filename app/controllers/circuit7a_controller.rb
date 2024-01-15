@@ -61,7 +61,7 @@ class Circuit7aController < ApplicationController
     )
 
     respond_to do |format|
-      format.json do
+      format.geojson do
         render json: JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
       end
     end

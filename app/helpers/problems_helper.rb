@@ -19,8 +19,8 @@ module ProblemsHelper
     )
   end
 
-  def uicolor(circuit_color)
-    color_mapping[circuit_color] || "rgb(80% 80% 80%)"
+  def uicolor(circuit_color, fallback: "rgb(80% 80% 80%)")
+    color_mapping[circuit_color] || fallback
   end
 
   def bleau_info_url(problem)
