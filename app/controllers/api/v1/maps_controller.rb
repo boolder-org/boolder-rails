@@ -36,11 +36,14 @@ class Api::V1::MapsController < ActionController::Base
 
     json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    if params[:download].present?
-      # -#{Time.now.utc.to_fs(:db)}
-      send_data json, filename: "area-#{area.id}-#{area.slug}.geojson", type: 'application/geo+json'
-    else
-      render json: json
+    respond_to do |format|
+      format.geojson do
+        if params[:download].present?
+          send_data json, filename: "area-#{area.id}-#{area.slug}.geojson", type: 'application/geo+json'
+        else
+          render json: json
+        end 
+      end
     end
   end
 end

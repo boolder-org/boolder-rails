@@ -7,6 +7,6 @@ module Admin::AreasHelper
     args = { download: download.presence }
     args.merge!(host: "www.boolder.com", port: nil, protocol: "https") if prod_url
 
-    api_v1_area_area_map_url(area_id: area.id, **args)
+    api_v1_area_area_map_url(area_id: area.id, format: :geojson, **args)
   end
 end
