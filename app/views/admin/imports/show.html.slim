@@ -36,8 +36,10 @@ div class="flex flex-col my-6"
   
 p= "#{@updates.count} changes"
 
-- if !@import.applied?
-  p class="mt-8"
-    = link_to "Save", apply_admin_import_path(@import), class: "btn"
+p class="mt-4"
+  - if @import.applied?
+    span class="text-green-500"= "Applied at #{@import.applied_at}"
+  - else
+    = link_to "Apply changes", apply_admin_import_path(@import), class: "btn"
 
 
