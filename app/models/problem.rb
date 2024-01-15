@@ -9,10 +9,9 @@ class Problem < ApplicationRecord
   has_many :contribution_requests
   has_many :contributions
 
-  attr_accessor :import # used by audited associated_with: :import
   audited associated_with: :import
-  attr_accessor :conflicting_updated_at
-  validates :conflicting_updated_at, absence: true
+  attr_accessor :import # used by audited associated_with: :import
+  include CheckConflicts
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
