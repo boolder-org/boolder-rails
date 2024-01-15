@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_15_105248) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_15_113733) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -201,7 +201,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_15_105248) do
     t.string "steepness", null: false
     t.integer "height"
     t.bigint "area_id"
-    t.string "tags", default: [], null: false, array: true
     t.integer "bleau_info_id"
     t.string "landing"
     t.boolean "risky", default: false, null: false
@@ -217,7 +216,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_15_105248) do
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"
     t.index ["location"], name: "index_problems_on_location", using: :gist
-    t.index ["tags"], name: "index_problems_on_tags", using: :gin
   end
 
   create_table "topos", force: :cascade do |t|

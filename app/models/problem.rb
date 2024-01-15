@@ -48,7 +48,6 @@ class Problem < ApplicationRecord
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
   end
 
-  include HasTagsConcern
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
   scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
