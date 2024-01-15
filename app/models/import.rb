@@ -13,6 +13,10 @@ class Import < ApplicationRecord
     ids.first
   end
 
+  def applied?
+    applied_at.present?
+  end
+
   def objects_to_update
     objects = []
     area_id = infer_area_id

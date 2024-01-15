@@ -1,7 +1,7 @@
 class CreateImports < ActiveRecord::Migration[7.1]
   def change
     create_table :imports do |t|
-      t.boolean :processed, null: false, default: false
+      t.datetime :applied_at
       t.timestamps
     end
   end

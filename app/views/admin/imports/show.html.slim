@@ -1,4 +1,4 @@
-h1 class="my-3"= @import.processed ? "Changes" : "Preview changes"
+h1 class="my-3"= @import.applied? ? "Changes" : "Preview changes"
 
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
@@ -36,8 +36,8 @@ div class="flex flex-col my-6"
   
 p= "#{@updates.count} changes"
 
-- if !@import.processed
+- if !@import.applied?
   p class="mt-8"
-    = link_to "Save", run_admin_import_path(@import), class: "btn"
+    = link_to "Save", apply_admin_import_path(@import), class: "btn"
 
 

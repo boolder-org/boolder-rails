@@ -155,7 +155,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_12_081452) do
   end
 
   create_table "imports", force: :cascade do |t|
-    t.boolean "processed", default: false, null: false
+    t.datetime "applied_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

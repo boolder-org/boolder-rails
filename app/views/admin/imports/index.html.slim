@@ -7,7 +7,7 @@ div class="flex flex-col my-6"
           thead class="bg-gray-50"
             tr
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Processed
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Applied?
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Date
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
           tbody class="bg-white divide-y divide-gray-200"
@@ -15,14 +15,13 @@ div class="flex flex-col my-6"
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   div class="text-sm text-gray-500"= link_to import.id, [:admin, import]
-                td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  = import.processed
-                td class="px-6 py-2 whitespace-nowrap w-2/12" 
-                  = l(import.updated_at, format: :short)
-                td class="px-6 py-2 whitespace-nowrap w-2/12" 
+                td class="px-6 py-2 whitespace-nowrap w-2/12"
+                  div class="text-sm text-gray-500"= import.applied?
+                td class="px-6 py-2 whitespace-nowrap w-4/12" 
+                  = import.applied_at
+                td class="px-6 py-2 whitespace-nowrap w-5/12" 
                   - if import.associated_audits.count > 0
                     span= "#{import.associated_audits.count} changes"
 
-                td class="px-6 py-2 whitespace-nowrap w-6/12"
 
 p= "#{@imports.count} results"

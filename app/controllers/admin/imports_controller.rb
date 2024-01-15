@@ -21,18 +21,18 @@ class Admin::ImportsController < Admin::BaseController
   def show
     @import = Import.find(params[:id])
 
-    @updates = if @import.processed
+    @updates = if @import.applied?
       @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes, audit] }
     else
       @import.objects_to_update.map{|object| [object, object.changes] }
     end
   end
 
-  def run
+  def apply
     @import = Import.find(params[:id])
 
     if @import.objects_to_update.any?{|object| object.conflicting_updated_at }
-      flash[:error] = "Cannot run import when there is a conflict"
+      flash[:error] = "Cannot apply import when there is a conflict"
       redirect_to admin_import_path(@import)
       return
     end
@@ -43,7 +43,7 @@ class Admin::ImportsController < Admin::BaseController
         object.save!
       end
 
-      @import.update!(processed: true)
+      @import.update!(applied_at: Time.now)
     end
 
     flash[:success] = "Import successful"
@@ -52,6 +52,6 @@ class Admin::ImportsController < Admin::BaseController
 
   private
   def import_params
-    params.require(:import).permit(:processed, :file)
+    params.require(:import).permit(:applied_at, :file)
   end
 end

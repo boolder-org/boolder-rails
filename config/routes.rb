@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       resources :problems, except: :index
       resources :circuits
       resources :imports do
-        get 'run', on: :member
+        get 'apply', on: :member
       end
       resources :topos
       resources :problem_imports
