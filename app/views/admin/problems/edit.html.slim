@@ -33,10 +33,15 @@ div class="mt-10 sm:mt-0"
                 = form.label :parent_id, "Parent id"
                 = form.text_field :parent_id, autocomplete: "off"
 
-            - if @problem.variants.any?
+            - if @problem.parent.present?
               p class="my-4" 
-                div class="font-bold" Variants
-                - @problem.variants.sort_by(&:grade).reverse.each do |variant|
+                div class="font-bold" Parent
+                div= link_to [@problem.parent.name_with_fallback, @problem.parent.grade].compact.join(" - "), edit_admin_problem_path(@problem.parent)
+
+            - if @problem.children.any?
+              p class="my-4" 
+                div class="font-bold" Children
+                - @problem.children.sort_by(&:grade).reverse.each do |variant|
                   div= link_to [variant.name_with_fallback, variant.grade].compact.join(" - "), edit_admin_problem_path(variant)
 
         div class="mt-8 shadow overflow-hidden sm:rounded-md"
