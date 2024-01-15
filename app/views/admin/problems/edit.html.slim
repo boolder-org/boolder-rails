@@ -72,7 +72,7 @@ div class="mt-10 sm:mt-0"
             = render 'shared/topo_with_line', line: line, scope: :admin
         - @problem.lines.unpublished.each do |line|
           = link_to edit_admin_line_path(line) do
-            div class="text-right text-red-500 mt-2"= "unpublished ##{line.id}"
+            div class="text-right text-red-500 mt-2"= "line ##{line.id} (unpublished)"
         - unless @problem.lines.none?
           p class="my-4"
             div class="text-right"= link_to "Add a line", new_admin_line_path(problem_id: @problem.id)
