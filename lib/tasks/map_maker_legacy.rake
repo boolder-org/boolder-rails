@@ -19,7 +19,8 @@ namespace :map_maker_legacy do
       hash[:circuit_id] = problem.circuit_id_simplified
       hash[:circuit_number] = problem.circuit_number_simplified
       
-      tags = problem.tags.present? ? problem.tags : []
+      tags = []
+      tags << "sit_start" if problem.sit_start
       tags << "risky" if problem.risky # FIXME: decide whether to keep this hack when I revamp the risk level info
       hash[:tags] = tags 
 

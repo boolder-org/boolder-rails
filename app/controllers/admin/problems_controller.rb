@@ -37,7 +37,6 @@ class Admin::ProblemsController < Admin::BaseController
   def create
     problem = Problem.new
     problem.assign_attributes(problem_params)
-    problem.tags = params[:problem][:joined_tags].split(',')
 
     problem.save!
 
@@ -60,7 +59,6 @@ class Admin::ProblemsController < Admin::BaseController
     problem = Problem.find(params[:id])
 
     problem.assign_attributes(problem_params)
-    problem.tags = params[:problem][:joined_tags].split(',')
     
     if problem.save
       flash[:notice] = "Problem updated"
@@ -74,7 +72,7 @@ class Admin::ProblemsController < Admin::BaseController
   private 
   def problem_params
     params.require(:problem).
-      permit(:area_id, :name, :grade, :steepness, :height, 
+      permit(:area_id, :name, :grade, :steepness, :height, :sit_start,
         :bleau_info_id, :circuit_number, :circuit_letter, :circuit_id, :risky, :landing, :featured, :parent_id,
       )
   end

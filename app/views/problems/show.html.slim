@@ -22,7 +22,7 @@ div class="max-w-7xl mx-auto pt-6 pb-6 sm:px-6 lg:px-8"
             div class="text-gray-400 text-4xl font-bold"= @problem.grade
 
         div class="text-gray-500 flex space-x-2 mt-2"
-          - if @problem.tags.include?("sit_start")
+          - if @problem.sit_start
             div= t("problem.sit_start")
 
       div class="mt-4"

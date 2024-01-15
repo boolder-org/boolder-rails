@@ -56,12 +56,8 @@ div class="flex flex-col my-6"
                 td class="px-6 py-2 whitespace-nowrap w-4/12"
                   div class="text-sm text-gray-500"
                     = problem.steepness
-                    - if problem.height.present?
-                      = " (#{problem.height}m)"
                   div class="text-sm text-gray-500"
-                    = problem.tags.join(", ")
-                  - if problem.risky
-                    div class="text-sm text-gray-500" risky
+                    = "sit_start" if problem.sit_start
                 td class="px-6 py-0 whitespace-nowrap"
                   
 

@@ -41,10 +41,7 @@ namespace :bleau do
       problem.grade = bleau_problem.grade
       problem.bleau_info_id = bleau_problem.id
       problem.steepness = bleau_problem.steepness
-
-      if bleau_problem.sit_start
-        problem.tags << "sit_start"
-      end
+      problem.sit_start = bleau_problem.sit_start
 
       # TODO: circuit
       # TODO: created_at
