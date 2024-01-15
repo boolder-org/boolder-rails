@@ -16,7 +16,13 @@ div class="mt-10 sm:mt-0"
             div class="grid grid-cols-6 gap-6"
                 = render "form", form: form
 
-          div class="px-4 py-3 bg-gray-50 flex justify-end sm:px-6"
+          div class="px-4 py-3 bg-gray-50 flex justify-between sm:px-6"
+            div class="flex items-center"
+              - items = []
+              - items << { text: "see on map", link: map_path(@problem.area, pid: @problem.id), target: "_blank" }
+              - items << { text: "see on bleau.info", link: bleau_info_url(@problem), target: "_blank" } if @problem.bleau_info_id.present?
+              = render 'shared/dot_menu', items: items, align_class: "bottom-0"
+
             button type="submit" class="btn" Update
 
         div class="mt-8 shadow overflow-hidden sm:rounded-md"
@@ -40,6 +46,18 @@ div class="mt-10 sm:mt-0"
               - @problem.contribution_requests.each do |request|
                 li= link_to "Request ##{request.id} (#{request.state})", admin_contribution_request_path(request)
 
+        div class="text-gray-400 mt-4"
+          div
+            | ascents: 
+            = @problem.ascents
+          div
+            | ratings_average: 
+            = @problem.ratings_average
+          div
+            | popularity: 
+            = @problem.popularity
+
+
     div class="md:col-span-2"
       div class="px-4 sm:px-0"
         - if @problem.lines.none?
@@ -54,7 +72,7 @@ div class="mt-10 sm:mt-0"
             = render 'shared/topo_with_line', line: line, scope: :admin
         - @problem.lines.unpublished.each do |line|
           = link_to edit_admin_line_path(line) do
-            div class="text-red-500 mt-2"= "unpublished ##{line.id}"
+            div class="text-right text-red-500 mt-2"= "unpublished ##{line.id}"
         - unless @problem.lines.none?
           p class="my-4"
             div class="text-right"= link_to "Add a line", new_admin_line_path(problem_id: @problem.id)
