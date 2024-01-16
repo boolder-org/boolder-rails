@@ -28,14 +28,14 @@ class Import < ApplicationRecord
         raise "All problems must have a `problemId` property" 
       end
 
+      problem.conflicting_updated_at = true if problem.location.present? && (problem.updated_at.to_s != feature["updatedAt"])
+
       # TODO: raise if problemId is not present but other attribute is present
       # it might be a mistake when I created the point in josm
 
       problem.assign_attributes(
         location: FACTORY.point(feature.geometry.x, feature.geometry.y)
       )
-
-      problem.conflicting_updated_at = true if problem.updated_at.to_s != feature["updatedAt"]
 
       objects << problem if problem.changes.any?
     end
@@ -63,11 +63,11 @@ class Import < ApplicationRecord
         end
       end
 
+      boulder.conflicting_updated_at = true if boulder.persisted? && boulder.updated_at.to_s != feature["updatedAt"]
+
       boulder.assign_attributes(
         polygon: polygon
       )
-
-      boulder.conflicting_updated_at = true if boulder.persisted? && boulder.updated_at.to_s != feature["updatedAt"]
 
       objects << boulder if boulder.changes.any?
     end
