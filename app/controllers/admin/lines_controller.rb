@@ -3,6 +3,11 @@ class Admin::LinesController < Admin::BaseController
     @line = Line.find(params[:id])
   end
 
+  def show
+    line = Line.find(params[:id])
+    redirect_to edit_admin_line_path(line)
+  end
+
   def new 
     @line = Line.new(
       problem_id: params[:problem_id], 

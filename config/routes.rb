@@ -9,6 +9,7 @@ Rails.application.routes.draw do
         resources :problems, only: :index
       end
       resources :problems, except: :index
+      resources :boulders
       resources :circuits
       resources :imports do
         get 'apply', on: :member
@@ -21,6 +22,7 @@ Rails.application.routes.draw do
       resources :poi_routes
       resources :contribution_requests
       resources :contributions
+      resources :audits
 
       namespace :moderation do
         resources :problems, only: [:index]
