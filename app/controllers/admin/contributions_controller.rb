@@ -3,10 +3,6 @@ class Admin::ContributionsController < Admin::BaseController
     @contributions = Contribution.all.order(id: :desc)
   end
 
-  def show
-    @contribution = Contribution.find(params[:id])
-  end
-
   def edit
     @contribution = Contribution.find(params[:id])
   end

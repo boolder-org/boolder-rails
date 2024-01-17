@@ -16,13 +16,12 @@ div class="flex flex-col my-6"
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   span class="text-sm text-gray-900"
-                    = link_to contribution.id, admin_contribution_path(contribution)
+                    = link_to contribution.id, edit_admin_contribution_path(contribution)
                 td class="px-6 py-2 whitespace-nowrap w-2/12"
                   span class="text-sm font-bold"
-                    = link_to(contribution.problem&.name || contribution.problem_name || "(empty)", admin_contribution_path(contribution))
+                    = link_to(contribution.problem&.name || contribution.problem_name || "(empty)", edit_admin_contribution_path(contribution))
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  = contribution.state
-                  = link_to " (edit)", edit_admin_contribution_path(contribution), class: "text-green-600"
+                  span class="my-4 ml-1 inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 ring-1 ring-inset ring-blue-600/20"= contribution.state
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   div= contribution.contributor_name
                   div class="text-gray-400"= contribution.contributor_email
