@@ -1,9 +1,9 @@
-h2 class="text-2xl font-bold mb-4 pt-4 px-4 sm:px-0" Pending contributions
+h2 class="text-2xl font-bold mb-4 pt-4 px-4 sm:px-0" Contributions
 
 - if Contribution.pending.count > 0
-  = link_to "#{Contribution.pending.count} contributions pending", admin_contributions_path, class: "text-green-700 underline"
+  = link_to "#{Contribution.pending.count} contributions to review", admin_contributions_path, class: "text-green-700 underline"
 - else 
-  div No pending contributions
+  div No contributions to review
   div= link_to "See all", admin_contributions_path, class: "text-green-700 underline"
 
 h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0" Mapping Progress

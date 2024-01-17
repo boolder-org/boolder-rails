@@ -24,9 +24,7 @@ Rails.application.routes.draw do
       resources :contributions
       resources :audits
 
-      namespace :moderation do
-        get "/", to: "problems#dashboard"
-      end
+      get "contribute", to: "contribute#dashboard"
 
       root 'areas#index'
     end

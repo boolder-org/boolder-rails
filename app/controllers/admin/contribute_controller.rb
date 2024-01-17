@@ -1,4 +1,4 @@
-class Admin::Moderation::ProblemsController < Admin::BaseController
+class Admin::ContributeController < Admin::BaseController
   def dashboard
     @areas_with_stats = Area.published.
       map{|a| OpenStruct.new(
