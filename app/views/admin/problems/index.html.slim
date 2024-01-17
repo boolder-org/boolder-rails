@@ -25,7 +25,10 @@ div class="grid grid-cols-12 gap-4"
     - items << { text: "Edit area", link: edit_admin_area_path(@area) }
     - if params[:circuit_id].to_i > 0
       - items << { text: "Edit circuit", link: edit_admin_circuit_path(id: params[:circuit_id]) }
-    = render "shared/dropdown_menu", items: items
+    - items << { text: "Map edit", link: geojson_io_url(@area), target: "_blank" }
+    - items << { text: "Map download", link: geojson_source_url(@area, download: true) }
+    - items << { text: "Map import", link: new_admin_import_path }
+    = render "shared/dropdown_menu", items: items    
 
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
