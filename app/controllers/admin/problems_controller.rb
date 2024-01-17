@@ -13,12 +13,14 @@ class Admin::ProblemsController < Admin::BaseController
       @problems = arel.where(circuit_id: nil).order(ascents: :desc)
     elsif params[:circuit_id] == "all"
       @problems = arel.order(ascents: :desc)
+    elsif params[:circuit_id] == "location_missing"
+      @problems = arel.without_location.order(ascents: :desc)
     else
       @problems = arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
     end
 
     circuits = @area.sorted_circuits
-    @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"])
+    @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"]).push(['location_missing', "Location missing"])
 
     @missing_grade = @area.problems.where("grade IS NULL OR grade = ''")
   end

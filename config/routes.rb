@@ -25,7 +25,6 @@ Rails.application.routes.draw do
       resources :audits
 
       namespace :moderation do
-        resources :problems, only: [:index]
         get "/", to: "problems#dashboard"
       end
 

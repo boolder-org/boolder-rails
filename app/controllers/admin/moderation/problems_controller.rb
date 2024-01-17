@@ -10,15 +10,4 @@ class Admin::Moderation::ProblemsController < Admin::BaseController
       }.
       sort_by(&:ascents).reverse
   end
-
-  def index
-    @area = Area.find(params[:area_id])
-
-    @problems = Problem.all.
-      without_photo.
-      where(problems: { area_id: @area.id }).
-      order("ascents DESC NULLS LAST")
-
-    @problems_with_topo_but_no_location = @area.problems.where(location: nil).joins(:topos).where(topos: { published: true })
-  end
 end
