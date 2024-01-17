@@ -4,7 +4,7 @@
 - if @problems_with_topo_but_no_location.any?
   div class="mb-4"
     = warning_box do 
-      span Location is empty although problem has a topo: 
+      span Location is missing although problem has a topo: 
       ul
         - @problems_with_topo_but_no_location.each do |problem|
           li= link_to "Problem ##{problem.id}", [:admin, problem]

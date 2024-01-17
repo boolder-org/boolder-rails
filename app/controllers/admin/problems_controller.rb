@@ -6,18 +6,16 @@ class Admin::ProblemsController < Admin::BaseController
       redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
     end
 
-    arel = Problem.with_location.where(area_id: @area.id) 
+    arel = Problem.where(area_id: @area.id) 
     session[:area_id] = @area.id
 
     if params[:circuit_id] == "off_circuit"
-      arel = arel.where(circuit_id: nil)
+      @problems = arel.where(circuit_id: nil).order(ascents: :desc)
     elsif params[:circuit_id] == "all"
-      arel = arel
+      @problems = arel.order(ascents: :desc)
     else
-      arel = arel.where(circuit_id: params[:circuit_id]) if params[:circuit_id].present?
+      @problems = arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
     end
-
-    @problems = arel.sort_by(&:enumerable_circuit_number)
 
     circuits = @area.sorted_circuits
     @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"])

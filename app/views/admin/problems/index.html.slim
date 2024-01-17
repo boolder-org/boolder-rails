@@ -21,8 +21,8 @@ div class="grid grid-cols-12 gap-4"
           = link_to name, admin_area_problems_path(circuit_id: id), class: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" 
   div class="col-span-3 flex justify-end"
     - items = []
-    - items << { text: "Edit area", link: edit_admin_area_path(@area) }
     - items << { text: "New problem", link: new_admin_problem_path(area_id: @area.id) }
+    - items << { text: "Edit area", link: edit_admin_area_path(@area) }
     - if params[:circuit_id]
       - items << { text: "Edit circuit", link: edit_admin_circuit_path(id: params[:circuit_id]) }
     = render "shared/dropdown_menu", items: items
@@ -36,30 +36,36 @@ div class="flex flex-col my-6"
             tr
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Info
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Steepness
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Ascents
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Featured
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
           tbody class="bg-white divide-y divide-gray-200"
             - @problems.each do |problem|
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  div class="text-sm text-gray-500"= link_to(problem.id, edit_admin_problem_path(problem), id: problem.id)
-                td class="px-6 py-2 whitespace-nowrap w-3/12"
+                  span class="text-sm text-gray-500"= link_to(problem.id, edit_admin_problem_path(problem), id: problem.id)
+                td class="px-6 py-2 whitespace-nowrap w-2/12"
                   div class="text-sm text-gray-900"
                     = problem_circle_view_with_name(problem)
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  span class="ml-1 text-gray-500"= problem.grade
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  div class="text-sm text-gray-500"
+                    = problem.steepness
+                  / div class="text-sm text-gray-500"
+                  /   = "sit_start" if problem.sit_start
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  span class="text-sm text-gray-500"
+                    = problem.ascents
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   - if problem.featured
                     span class="text-red-400"
                       = render 'svg/heart', width: 24, height: 24
-                td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  span class="ml-1 text-gray-500"= problem.grade
-                td class="px-6 py-2 whitespace-nowrap w-4/12"
-                  div class="text-sm text-gray-500"
-                    = problem.steepness
-                  div class="text-sm text-gray-500"
-                    = "sit_start" if problem.sit_start
-                td class="px-6 py-0 whitespace-nowrap"
+                td class="px-6 py-0 whitespace-nowrap w-6/12"
+                  - if problem.location.nil?
+                    span class="my-4 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" location missing
                   
 
 p= "#{@problems.count} results"

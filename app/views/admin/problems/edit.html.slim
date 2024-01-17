@@ -8,7 +8,7 @@ div class="mt-10 sm:mt-0"
       - if @problem.location.nil?
           div class="mb-4"
             = warning_box do 
-              span Location is empty.
+              span Location is missing
 
       = form_with model: [:admin, @problem] do |form|
         div class="shadow overflow-hidden sm:rounded-md"
