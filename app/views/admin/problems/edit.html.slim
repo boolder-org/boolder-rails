@@ -8,7 +8,7 @@ div class="mt-10 sm:mt-0"
       - if @problem.location.nil?
           div class="mb-4"
             = warning_box do 
-              span Location is missing
+              span Location missing
 
       = form_with model: [:admin, @problem] do |form|
         div class="shadow overflow-hidden sm:rounded-md"
@@ -48,10 +48,11 @@ div class="mt-10 sm:mt-0"
         div class="mt-8 shadow overflow-hidden sm:rounded-md"
           div class="px-4 py-5 bg-white sm:p-6"
             ul class=""
-              - if @problem.contribution_requests.open.count == 0
-                li= link_to "Request contribution", new_admin_contribution_request_path(problem_id: @problem.id)
               - @problem.contribution_requests.each do |request|
-                li= link_to "Request ##{request.id} (#{request.state})", admin_contribution_request_path(request)
+                li= link_to admin_contribution_request_path(request) do
+                  span class="my-4 mr-1 inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 ring-1 ring-inset ring-blue-600/20"= request.state
+                  span= "Contrib request ##{request.id}"
+              li class=""= link_to "Add contribution request", new_admin_contribution_request_path(problem_id: @problem.id)
 
         div class="text-gray-400 mt-4"
           div
