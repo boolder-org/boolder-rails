@@ -52,7 +52,7 @@ div class="mt-10 sm:mt-0"
                 li= link_to admin_contribution_request_path(request) do
                   span class="my-4 mr-1 inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 ring-1 ring-inset ring-blue-600/20"= request.state
                   span= "Contrib request ##{request.id}"
-              li class=""= link_to "Add contribution request", new_admin_contribution_request_path(problem_id: @problem.id)
+              li class=""= link_to "New contribution request", new_admin_contribution_request_path(problem_id: @problem.id)
 
         div class="text-gray-400 mt-4"
           div
