@@ -16,7 +16,7 @@ class Admin::ProblemsController < Admin::BaseController
     end
 
     @problems = if params[:incomplete] == "true"
-      arel.without_photo
+      arel.incomplete
     else
       arel
     end

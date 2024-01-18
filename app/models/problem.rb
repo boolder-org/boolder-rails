@@ -57,7 +57,8 @@ class Problem < ApplicationRecord
   scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
   scope :with_location, -> { where.not(location: nil) }
   scope :without_location, -> { where(location: nil) }
-  scope :without_photo, -> { left_joins(:lines).where(lines: { id: nil }) }
+  scope :complete, -> { where(has_line: true).with_location }
+  scope :incomplete, -> { where("problems.has_line = FALSE OR problems.location IS NULL") }
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
