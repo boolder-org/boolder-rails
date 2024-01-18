@@ -18,6 +18,7 @@ class Area < ApplicationRecord
   normalizes :name, :short_name, :description_fr, :description_en, :warning_fr, :warning_en, with: -> s { s.strip.presence }
 
   validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
+  validates :slug, presence: true
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
