@@ -7,7 +7,7 @@ class Admin::ContributionRequestsController < Admin::BaseController
   def new 
     @problem = Problem.find(params[:problem_id])
 
-    @contribution_request = @problem.contribution_requests.build(location_estimated: location_estimated_in_session)
+    @contribution_request = @problem.contribution_requests.build
   end
 
   def create
@@ -16,16 +16,12 @@ class Admin::ContributionRequestsController < Admin::BaseController
 
     contribution_request.save!
 
-    save_location_estimated_in_session(contribution_request.location_estimated)
-
     flash[:notice] = "Contribution Request created"
     redirect_to [:admin, contribution_request.problem]
   end
 
   def edit
     @contribution_request = ContributionRequest.find(params[:id])
-
-    save_location_estimated_in_session(@contribution_request.location_estimated)
   end
 
   def update
@@ -35,8 +31,6 @@ class Admin::ContributionRequestsController < Admin::BaseController
 
     @contribution_request.save!
 
-    save_location_estimated_in_session(@contribution_request.location_estimated)
-
     flash[:notice] = "Contribution request updated"
     redirect_to [:admin, @contribution_request.problem]
   end
@@ -45,16 +39,5 @@ class Admin::ContributionRequestsController < Admin::BaseController
   def contribution_request_params
     params.require(:contribution_request).
       permit(:problem_id, :location_estimated_lat, :location_estimated_lon, :state)
-  end
-
-  def save_location_estimated_in_session(location)
-    session[:last_location_estimated_lat] = location.lat
-    session[:last_location_estimated_lon] = location.lon
-  end
-
-  def location_estimated_in_session
-    if session[:last_location_estimated_lat].present? && session[:last_location_estimated_lon].present?
-      "POINT(#{session[:last_location_estimated_lon]} #{session[:last_location_estimated_lat]})"
-    end
   end
 end
