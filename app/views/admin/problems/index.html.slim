@@ -30,11 +30,12 @@ div class="grid grid-cols-12 gap-4"
     - items << { text: "Map import", link: new_admin_import_path }
     = render "shared/dropdown_menu", items: items    
 
-div class="my-4"
-  / span class="mr-2" Filter by:
-  span class="mr-2"= link_to "location", admin_area_problems_path(@area, location: true)
-  span class="mr-2"= link_to "line", admin_area_problems_path(@area, line: true)
-  span class="mr-2"= link_to "clear", admin_area_problems_path(@area)
+
+- if params[:circuit_id].nil?
+  = form_with url: admin_area_problems_path(@area), method: :get, class:"my-4" do |form|
+    div class="w-1/2"
+      / label for="missing" class="block text-sm font-medium text-gray-700" Missing?
+      = form.select :missing, [["All", ""],["Missing location","location"], ["Missing line only","line"]], { selected: params[:missing] }, { onchange: 'this.form.submit()', class: "mt-1 block w-full md:w-1/3 rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm" }
 
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"

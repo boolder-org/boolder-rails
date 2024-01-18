@@ -15,9 +15,9 @@ class Admin::ProblemsController < Admin::BaseController
       arel.order(ascents: :desc)
     end
 
-    arel = if params[:line] == "true"
+    arel = if params[:missing] == "line"
       arel.where(has_line: false).with_location
-    elsif params[:location] == "true"
+    elsif params[:missing] == "location"
       arel.without_location
     else
       arel
