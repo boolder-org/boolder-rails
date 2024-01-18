@@ -21,23 +21,30 @@ class Admin::ContributionRequestsController < Admin::BaseController
   end
 
   def edit
-    @contribution_request = ContributionRequest.find(params[:id])
+    set_contribution_request
   end
 
   def update
-    @contribution_request = ContributionRequest.find(params[:id])
+    set_contribution_request
 
     @contribution_request.assign_attributes(contribution_request_params)
 
-    @contribution_request.save!
-
-    flash[:notice] = "Contribution request updated"
-    redirect_to [:admin, @contribution_request.problem]
+    if @contribution_request.save
+      flash[:notice] = "Contribution request updated"
+      redirect_to [:admin, @contribution_request.problem]
+    else
+      flash[:error] = @contribution_request.errors.full_messages.join('; ')
+      render "edit", status: :unprocessable_entity
+    end
   end
 
   private 
   def contribution_request_params
     params.require(:contribution_request).
       permit(:problem_id, :location_estimated_lat, :location_estimated_lon, :state)
+  end
+
+  def set_contribution_request
+    @contribution_request = ContributionRequest.find(params[:id])
   end
 end

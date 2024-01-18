@@ -1,6 +1,6 @@
 class Admin::LinesController < Admin::BaseController
   def edit
-    @line = Line.find(params[:id])
+    set_line
   end
 
   def show
@@ -17,13 +17,17 @@ class Admin::LinesController < Admin::BaseController
   end
 
   def update
-    line = Line.find(params[:id])
+    set_line
 
     coordinates = JSON.parse(params[:line][:coordinates])
-    line.update(coordinates: coordinates)
-
-    flash[:notice] = "Line updated"
-    redirect_to edit_admin_line_path(line)
+    
+    if @line.update(coordinates: coordinates)
+      flash[:notice] = "Line updated"
+      redirect_to edit_admin_line_path(@line)
+    else
+      flash[:error] = @line.errors.full_messages.join('; ')
+      render "edit", status: :unprocessable_entity
+    end
   end
 
   def create
@@ -50,5 +54,9 @@ class Admin::LinesController < Admin::BaseController
   private 
   def line_params
     params.require(:line).permit(:problem_id, :topo_id)
+  end
+
+  def set_line
+    @line = Line.find(params[:id])
   end
 end

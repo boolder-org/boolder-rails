@@ -36,24 +36,27 @@ class Admin::ToposController < Admin::BaseController
   end
 
   def edit
-    @topo = Topo.find(params[:id])
+    set_topo
     session[:last_topo_visited] = @topo.id
   end
 
   def update
-    topo = Topo.find(params[:id])
+    set_topo
 
     metadata = JSON.parse(params[:topo][:metadata])
-    topo.update(metadata: metadata)
+    @topo.update(metadata: metadata)
 
     if photo = params[:topo][:photo]
-      topo.update(photo: params[:topo][:photo])
+      @topo.update(photo: params[:topo][:photo])
     end
 
-    topo.update(topo_params)
-
-    flash[:notice] = "Topo updated"
-    redirect_to edit_admin_topo_path(topo)
+    if @topo.update(topo_params)
+      flash[:notice] = "Topo updated"
+      redirect_to edit_admin_topo_path(@topo)
+    else
+      flash[:error] = @topo.errors.full_messages.join('; ')
+      render "edit", status: :unprocessable_entity
+    end
   end
 
   def destroy
@@ -72,5 +75,9 @@ class Admin::ToposController < Admin::BaseController
   private
   def topo_params
     params.require(:topo).permit(:published)
+  end
+
+  def set_topo
+    @topo = Topo.find(params[:id])
   end
 end

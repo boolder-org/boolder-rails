@@ -15,20 +15,28 @@ class Admin::PoiRoutesController < Admin::BaseController
   end
 
   def edit
-    @poi_route = PoiRoute.find(params[:id])
+    set_poi_route
   end
 
   def update
-    poi_route = PoiRoute.find(params[:id])
-    poi_route.update!(poi_route_params)
-
-    flash[:notice] = "Poi route updated"
-    redirect_to edit_admin_poi_route_path(poi_route)
+    set_poi_route
+    
+    if @poi_route.update(poi_route_params)
+      flash[:notice] = "Poi route updated"
+      redirect_to edit_admin_poi_route_path(@poi_route)
+    else
+      flash[:error] = @poi_route.errors.full_messages.join('; ')
+      render "edit", status: :unprocessable_entity
+    end
   end
 
   private 
   def poi_route_params
     params.require(:poi_route).
       permit(:distance, :transport, :area_id, :poi_id)
+  end
+
+  def set_poi_route
+    @poi_route = PoiRoute.find(params[:id])
   end
 end
