@@ -9,9 +9,13 @@ class Problem < ApplicationRecord
   has_many :contribution_requests
   has_many :contributions
 
-  audited associated_with: :import
+  audited except: :has_line, associated_with: :import
   attr_accessor :import # used by audited associated_with: :import
   include CheckConflicts
+
+  def compute_has_line
+    lines.published.with_coordinates.any?
+  end
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
