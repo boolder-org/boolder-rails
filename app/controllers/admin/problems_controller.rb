@@ -7,7 +7,6 @@ class Admin::ProblemsController < Admin::BaseController
     end
 
     arel = Problem.where(area_id: @area.id) 
-    session[:area_id] = @area.id
 
     arel = if params[:circuit_id].to_i > 0
       arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
@@ -32,7 +31,7 @@ class Admin::ProblemsController < Admin::BaseController
   end
 
   def new
-    area = Area.find(params[:area_id] || session[:area_id])
+    area = Area.find(params[:area_id])
 
     @problem = Problem.new(steepness: :other)
 
@@ -56,22 +55,20 @@ class Admin::ProblemsController < Admin::BaseController
   end
 
   def edit
-    @problem = Problem.find(params[:id])
-    @circuits = @problem.area.sorted_circuits
-    session[:area_id] = @problem.area_id
+    set_problem
   end
 
   def update
-    problem = Problem.find(params[:id])
+    set_problem
 
-    problem.assign_attributes(problem_params)
+    @problem.assign_attributes(problem_params)
     
-    if problem.save
+    if @problem.save
       flash[:notice] = "Problem updated"
-      redirect_to edit_admin_problem_path(problem)
+      redirect_to edit_admin_problem_path(@problem)
     else
-      flash[:error] = problem.errors.full_messages.join('; ')
-      redirect_to edit_admin_problem_path(problem)
+      flash[:error] = @problem.errors.full_messages.join('; ')
+      render "admin/problems/edit", status: :unprocessable_entity
     end
   end
 
@@ -81,5 +78,10 @@ class Admin::ProblemsController < Admin::BaseController
       permit(:area_id, :name, :grade, :steepness, :sit_start,
         :bleau_info_id, :circuit_number, :circuit_letter, :circuit_id, :parent_id,
       )
+  end
+
+  def set_problem
+    @problem = Problem.find(params[:id])
+    @circuits = @problem.area.sorted_circuits
   end
 end
