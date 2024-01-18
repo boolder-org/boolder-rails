@@ -13,10 +13,6 @@ class Problem < ApplicationRecord
   attr_accessor :import # used by audited associated_with: :import
   include CheckConflicts
 
-  def compute_has_line
-    lines.published.with_coordinates.any?
-  end
-
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
     1a 1a+ 1b 1b+ 1c 1c+ 
@@ -162,6 +158,11 @@ class Problem < ApplicationRecord
 
   #   (mapping[landing] * [(height - 2), 0].max).round(1)
   # end
+
+  
+  def update_has_line
+    update(has_line: lines.published.with_coordinates.any?)
+  end
 
   private
 
