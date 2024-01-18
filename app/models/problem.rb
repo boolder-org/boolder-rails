@@ -43,6 +43,7 @@ class Problem < ApplicationRecord
   validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_nil: true
   validates :circuit_letter, inclusion: { in: LETTERS.keys }, allow_blank: true
   validate :validate_circuit_fields
+  validate :validate_parent
 
   Circuit::COLOR_VALUES.each do |color|
     scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
@@ -169,6 +170,12 @@ class Problem < ApplicationRecord
   def validate_circuit_fields
     if circuit_number.present? != circuit_id.present?
       errors.add(:base, "Both circuit number and circuit_id must be present or absent")
+    end
+  end
+
+  def validate_parent
+    if parent_id == id
+      errors.add(:parent_id, "cannot be equal to problem_id")
     end
   end
 
