@@ -31,8 +31,10 @@ div class="grid grid-cols-12 gap-4"
     = render "shared/dropdown_menu", items: items    
 
 div class="my-4"
-  span= link_to "incomplete", admin_area_problems_path(@area, incomplete: true)
-  span class="ml-2"= link_to "all", admin_area_problems_path(@area, incomplete: false)
+  / span class="mr-2" Filter by:
+  span class="mr-2"= link_to "location", admin_area_problems_path(@area, location: true)
+  span class="mr-2"= link_to "line", admin_area_problems_path(@area, line: true)
+  span class="mr-2"= link_to "clear", admin_area_problems_path(@area)
 
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
@@ -79,7 +81,7 @@ div class="flex flex-col my-6"
                     span class="my-4 mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" line
                 td class="px-6 py-0 whitespace-nowrap w-1/12"
                   - if problem.contribution_requests.open.any?
-                    span class="my-4 mr-1 inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 ring-1 ring-inset ring-blue-600/20" contrib 
+                    span class="my-4 mr-1 inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 ring-1 ring-inset ring-blue-600/20" open 
                   
 
 p= "#{@problems.count} results"
