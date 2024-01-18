@@ -59,6 +59,7 @@ class Problem < ApplicationRecord
   scope :without_location, -> { where(location: nil) }
   scope :complete, -> { where(has_line: true).with_location }
   scope :incomplete, -> { where("problems.has_line = FALSE OR problems.location IS NULL") }
+  scope :without_contribution_request, -> { left_joins(:contribution_requests).where(contribution_requests: { id: nil }) }
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child

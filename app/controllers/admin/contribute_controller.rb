@@ -4,8 +4,8 @@ class Admin::ContributeController < Admin::BaseController
       map{|a| OpenStruct.new(
           area: a, 
           ascents: a.problems.sum(:ascents),
-          completion: 1 - a.problems.incomplete.sum(:ascents).to_f / a.problems.sum(:ascents).to_f,
-          upcoming_completion: a.problems.joins(:contribution_requests).where(contribution_requests: { state: "open" }).sum(:ascents).to_f / a.problems.sum(:ascents).to_f
+          completion: 1 - a.problems.without_location.sum(:ascents).to_f / a.problems.sum(:ascents).to_f,
+          upcoming_completion: 1 - a.problems.without_location.without_contribution_request.sum(:ascents).to_f / a.problems.sum(:ascents).to_f
         )
       }.
       sort_by(&:ascents).reverse
