@@ -23,6 +23,7 @@ Rails.application.routes.draw do
       resources :contribution_requests
       resources :contributions
       resources :audits
+      resources :redirects, only: :new
 
       get "contribute", to: "contribute#dashboard"
 

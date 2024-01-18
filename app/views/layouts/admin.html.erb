@@ -16,12 +16,11 @@
       // FIXME: make code more robust
       let locale = "<%= I18n.locale %>";
       window.addEventListener('gotoproblem', function(event) {
-        window.location = `/${locale}/admin/problems/${event.detail.id}/edit`
+        window.location = `/${locale}/admin/redirects/new?problem_id=${event.detail.id}`
       });
-      // FIXME: redirect to correct url (area slug)
-      // window.addEventListener('gotoarea', function(event) {
-      //   window.location = `/${locale}/admin/...`
-      // });
+      window.addEventListener('gotoarea', function(event) {
+        window.location = `/${locale}/admin/redirects/new?area_id=${event.detail.id}`
+      });
     </script>
   </head>
 
