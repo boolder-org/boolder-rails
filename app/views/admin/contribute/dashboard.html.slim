@@ -24,14 +24,13 @@ div class="flex flex-col my-6"
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   span class="text-sm text-gray-900 font-bold"
-                    = link_to(area_with_stats.area.name, admin_area_problems_path(area_with_stats.area, incomplete: true))
+                    = link_to(area_with_stats.area.name, admin_area_problems_path(area_with_stats.area, missing: "location"))
                 td class="px-6 py-2 whitespace-nowrap w-2/12"
                   = "#{(area_with_stats.ascents/1000.0).ceil}K"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   span class="" style="color:#{percentage_color(area_with_stats.completion)}"= "#{(area_with_stats.completion*100).floor} %"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
-                  - new_completion = area_with_stats.completion + area_with_stats.upcoming_completion
-                  span class="" style="color:#{percentage_color(new_completion)}"= "#{(new_completion*100).floor} %"
+                  span class="" style="color:#{percentage_color(area_with_stats.upcoming_completion)}"= "#{(area_with_stats.upcoming_completion*100).floor} %"
                   
 
 p= "#{@areas_with_stats.count} results"

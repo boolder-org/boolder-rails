@@ -9,7 +9,7 @@ class Problem < ApplicationRecord
   has_many :contribution_requests
   has_many :contributions
 
-  audited associated_with: :import
+  audited except: :has_line, associated_with: :import
   attr_accessor :import # used by audited associated_with: :import
   include CheckConflicts
 
@@ -53,7 +53,9 @@ class Problem < ApplicationRecord
   scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
   scope :with_location, -> { where.not(location: nil) }
   scope :without_location, -> { where(location: nil) }
-  scope :without_photo, -> { left_joins(:lines).where(lines: { id: nil }) }
+  scope :complete, -> { where(has_line: true).with_location }
+  scope :incomplete, -> { where("problems.has_line = FALSE OR problems.location IS NULL") }
+  scope :without_contribution_request, -> { left_joins(:contribution_requests).where(contribution_requests: { id: nil }) }
 
   # reindex problems on algolia when area is updated
   # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
@@ -156,6 +158,11 @@ class Problem < ApplicationRecord
 
   #   (mapping[landing] * [(height - 2), 0].max).round(1)
   # end
+
+  
+  def update_has_line
+    update(has_line: lines.published.with_coordinates.any?)
+  end
 
   private
 

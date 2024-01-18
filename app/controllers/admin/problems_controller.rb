@@ -15,11 +15,15 @@ class Admin::ProblemsController < Admin::BaseController
       arel.order(ascents: :desc)
     end
 
-    @problems = if params[:incomplete] == "true"
-      arel.without_photo
+    arel = if params[:missing] == "line"
+      arel.where(has_line: false).with_location
+    elsif params[:missing] == "location"
+      arel.without_location
     else
       arel
     end
+
+    @problems = arel
 
     circuits = @area.sorted_circuits
     @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push([nil, "All"])
