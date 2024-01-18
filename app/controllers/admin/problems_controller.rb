@@ -2,25 +2,21 @@ class Admin::ProblemsController < Admin::BaseController
   def index
     @area = Area.find_by(slug: params[:area_slug])
 
-    if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id || "off_circuit")
+    if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id)
       redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
     end
 
     arel = Problem.where(area_id: @area.id) 
     session[:area_id] = @area.id
 
-    if params[:circuit_id] == "off_circuit"
-      @problems = arel.where(circuit_id: nil).order(ascents: :desc)
-    elsif params[:circuit_id] == "all"
-      @problems = arel.order(ascents: :desc)
-    elsif params[:circuit_id] == "location_missing"
-      @problems = arel.without_location.order(ascents: :desc)
+    @problems = if params[:circuit_id].to_i > 0
+      arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
     else
-      @problems = arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
+      arel.order(ascents: :desc)
     end
 
     circuits = @area.sorted_circuits
-    @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push(["off_circuit", "Off circuit"]).push(['all', "All"]).push(['location_missing', "Location missing"])
+    @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push([nil, "All"])
 
     @missing_grade = @area.problems.where("grade IS NULL OR grade = ''")
   end
