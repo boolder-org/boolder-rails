@@ -177,6 +177,14 @@ class Problem < ApplicationRecord
     if parent_id == id
       errors.add(:parent_id, "cannot be equal to problem_id")
     end
+
+    if parent && parent.area_id != area_id
+      errors.add(:parent_id, "cannot have a different area_id")
+    end
+
+    if parent && parent.parent_id
+      errors.add(:parent_id, "cannot be a parent itself")
+    end
   end
 
   def validate_circuit_letter
