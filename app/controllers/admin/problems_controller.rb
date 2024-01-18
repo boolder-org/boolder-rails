@@ -9,10 +9,16 @@ class Admin::ProblemsController < Admin::BaseController
     arel = Problem.where(area_id: @area.id) 
     session[:area_id] = @area.id
 
-    @problems = if params[:circuit_id].to_i > 0
+    arel = if params[:circuit_id].to_i > 0
       arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
     else
       arel.order(ascents: :desc)
+    end
+
+    @problems = if params[:incomplete] == "true"
+      arel.without_photo
+    else
+      arel
     end
 
     circuits = @area.sorted_circuits
