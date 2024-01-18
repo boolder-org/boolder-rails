@@ -18,7 +18,7 @@ function debouncePromise(fn, time) {
     });
   };
 }
-const debounced = debouncePromise((items) => Promise.resolve(items), 500);
+const debounced = debouncePromise((items) => Promise.resolve(items), 200);
 
 
 export default class extends Controller {
@@ -30,6 +30,7 @@ export default class extends Controller {
     clear: String,
     cancel: String,
     submit: String,
+    showUnpublished: { type: Boolean, default: false },
   }
 
   open() {
@@ -38,6 +39,8 @@ export default class extends Controller {
 
   connect() {
     let locale = this.hasLocaleValue ? this.localeValue : 'en'
+
+    let showUnpublished = this.showUnpublishedValue
 
     const searchClient = algoliasearch(
       'XNJHVMTGMF',
@@ -146,6 +149,9 @@ export default class extends Controller {
                     indexName: 'Problem',
                     query,
                     params: {
+                      facetFilters: [
+                        showUnpublished ? null : 'published:true'
+                      ],
                       hitsPerPage: 20,
                       highlightPreTag: '<strong>',
                       highlightPostTag: '</strong>',

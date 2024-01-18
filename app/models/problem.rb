@@ -63,9 +63,10 @@ class Problem < ApplicationRecord
   after_touch :index!
 
   include AlgoliaSearch
-  algoliasearch if: :published?, enqueue: true do
+  algoliasearch enqueue: true do
     attributes :name, :grade, :popularity
     attribute :area_name do area.name end
+    attribute :published do published? end
     attribute :circuit_number do circuit_number_simplified end
     attribute :circuit_color do circuit&.color end
     attribute :_geoloc do { lat: location&.lat || 0.0, lng: location&.lon || 0.0 } end
@@ -73,6 +74,7 @@ class Problem < ApplicationRecord
     # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
 
     searchableAttributes [:name]
+    attributesForFaceting [:published]
     customRanking ['desc(popularity)']
   end
 
