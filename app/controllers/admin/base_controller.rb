@@ -1,7 +1,7 @@
 class Admin::BaseController < ApplicationController
   default_form_builder DefaultFormBuilder
   layout "admin"
-  before_action :authenticate
+  before_action :authenticate, unless: -> { Rails.env.local? }
   before_action :set_cookie
 
   private 
