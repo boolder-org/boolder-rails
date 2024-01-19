@@ -25,7 +25,7 @@ class Area < ApplicationRecord
   after_save { problems.each(&:touch) if saved_change_to_attribute?(:published) || saved_change_to_attribute?(:name) } 
 
   include AlgoliaSearch
-  algoliasearch if: :published, enqueue: true do
+  algoliasearch if: :published, enqueue: true, disable_indexing: Rails.env.local? do
     attributes :name, :priority
     attribute :bounds do 
       { 

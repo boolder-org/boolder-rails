@@ -63,7 +63,7 @@ class Problem < ApplicationRecord
   after_touch :index!
 
   include AlgoliaSearch
-  algoliasearch enqueue: true do
+  algoliasearch enqueue: true, disable_indexing: Rails.env.local? do
     attributes :name, :grade, :popularity
     attribute :area_name do area.name end
     attribute :published do published? end
