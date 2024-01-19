@@ -2,7 +2,7 @@
 / - set_meta_tags description: t("views.circuits.show.metas.description", circuit: @circuit.name, area: @area.name) 
 
 - if @area.cover.persisted?
-  - set_meta_tags og: { type: "website", image: url_for(@area.cover.variant(:medium)) }
+  - set_meta_tags og: { type: "website", image: cdn_image_url(@area.cover.variant(:medium)) }
 
 div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8"
   div class="px-4 sm:px-0"

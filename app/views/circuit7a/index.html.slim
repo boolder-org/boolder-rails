@@ -2,7 +2,7 @@
 / - set_meta_tags description: t("views.areas.show.metas.description", area: @area.name) 
 
 - if @cover.persisted?
-  - set_meta_tags og: { type: "website", image: url_for(@cover.variant(:medium)) }
+  - set_meta_tags og: { type: "website", image: cdn_image_url(@cover.variant(:medium)) }
 
 
 div class="max-w-7xl mx-auto pt-5 mt-1 px-4 sm:px-6 lg:px-8 bg-gray-100 hidden sm:block mb-4"
@@ -13,7 +13,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class="lg:grid lg:grid-cols-2 lg:gap-16"
     div class="col-span-1"
       div class="aspect-w-16 aspect-h-9 relative overflow-hidden sm:rounded-lg"
-        div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{url_for(@cover.variant(:medium)) if @cover.persisted?});"
+        div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{cdn_image_url(@cover.variant(:medium)) if @cover.persisted?});"
         div class="bg-transparent" style="background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
         div class="absolute" class="flex items-center text-center justify-center" 
           div class="block"

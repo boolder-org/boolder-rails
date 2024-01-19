@@ -7,7 +7,7 @@
   <% set_meta_tags description: t("views.map.area.metas.description", area: @area.name) %>
 
   <% if @area.cover.persisted? %>
-  <% set_meta_tags og: { type: "website", image: url_for(@area.cover.variant(:medium)) } %>
+  <% set_meta_tags og: { type: "website", image: cdn_image_url(@area.cover.variant(:medium)) } %>
   <% end %>
   <% set_meta_tags canonical: map_url(@area) %>
 <% else %>
