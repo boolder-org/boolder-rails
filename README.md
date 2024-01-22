@@ -40,15 +40,17 @@ Import prod data:
 - `dropdb dump-prod && createdb dump-prod`
 - `pg_restore -d dump-prod db/prod.dump`
 
-Run the app:
+### Run the app
+
 - `rails s`
-- `bin/webpack-dev-server` (for JIT compilation)
+- `bin/webpack-dev-server` (for Tailwind JIT compilation)
 
 ### Mapbox credentials
 
 - Create an account on https://www.mapbox.com. 
 - Go to the [Tokens]([url](https://account.mapbox.com/access-tokens/)) page and create a public token with all the public `scopes` (or just use the default token).
-- Back in the Rails app, fill out `MAPBOX_DEV_ACCESS_KEY` in `config/initializers/mapbox.rb`
+- Back in the Rails app, copy the `.env.example` to `.env` and fill out `MAPBOX_DEV_ACCESS_KEY` with your token
+- Restart the server
 
 ### Optional: JOSM
 
