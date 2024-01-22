@@ -44,7 +44,7 @@ More info: https://www.boolder.com/en/about
 ### Run the app
 
 - `rails s`
-- `bin/webpack-dev-server` (for Tailwind JIT compilation)
+- `bin/webpack-dev-server` (for Javascript JIT compilation)
 
 ### Mapbox credentials
 
