@@ -191,7 +191,7 @@ fr:
       report_title: Signaler une erreur
       report_description: Signalez une erreur sur une voie ou un circuit existant.
       dev_title: Pour les développeurs
-      dev_description: Contribuez au code source des applis.
+      dev_description: "Contribuez au code source des applis : Ruby on Rails, iPhone et Android."
       metas:
         title: Contribuer
         description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open source
@@ -230,10 +230,9 @@ fr:
         p1_html: Le code des applis ainsi que les données sont disponibles en open source sur %{link}.
         p2_html: Il est également possible de %{link} en cartographiant les voies manquantes ou en signalant des erreurs.
         contribute_link: contribuer
-      android:
-        title: Vous êtes développeur·se Android ?
-        p1_html: Nous manquons actuellement d'expertise pour notre %{link}. Contactez-nous si vous souhaitez contribuer, nous serons ravis de discuter !
-        android_app: appli Android
+      web_dev:
+        title: Vous êtes développeur·se Web ?
+        p1_html: Venez contribuer au code source de notre application %{link}. 
       faq:
         title: Questions fréquentes
         data:

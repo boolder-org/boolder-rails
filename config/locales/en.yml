@@ -191,7 +191,7 @@ en:
       report_title: Report a mistake
       report_description: Report a mistake on an existing problem or circuit.
       dev_title: For Developers
-      dev_description: Contribute to the source code of our apps.
+      dev_description: "Contribute to the source code of our apps: Ruby on Rails, iPhone and Android."
       metas:
         title: Contribute
         description: Map areas, take photos of boudlers, report mistakes, or contribute to the open source project
@@ -230,10 +230,9 @@ en:
         p1_html: The code and data of the apps are available in open source on %{link}.
         p2_html: You can also %{link} by mapping missing problems or by reporting mistakes.
         contribute_link: contribute
-      android:
-        title: Are you an Android developer?
-        p1_html: We currently lack expertise for our %{link}. Contact us if you want to contribute, we will be happy to talk!
-        android_app: Android app
+      web_dev:
+        title: Are you a Web developer?
+        p1_html: Join us and contribute to our codebase in %{link}.
       faq:
         title: Frequently asked questions
         data:
