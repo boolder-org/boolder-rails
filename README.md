@@ -1,22 +1,37 @@
-# README
+# Boolder Rails
 
-To get started on mac OS:
+Boolder is the best way to discover bouldering in Fontainebleau.
 
-# Basics
+This is the code powering the [Boolder website]([url](https://www.boolder.com)) and all the backend & data processing.
+
+More info: https://www.boolder.com/en/about
+
+# Stack
+
+- Ruby On Rails
+- PostgreSQL
+- Tailwind css
+- Stimulus/Turbo
+
+
+# How to run the app (on a Mac)
+
+## Basics
+
 - install homebrew: https://brew.sh/
 - install rvm: https://rvm.io
 - install yarn: `brew install yarn`
 - install node: `brew install node`
 
 
-# Postgre
+## Install Postgre
 - cd to the app directory
 - `brew install postgres`
 - `brew install postgis`
 - `brew services start postgresql`
 - `createdb dump-prod`
 
-# App
+## Set un the app
 - cd to the app directory
 - install rails: `sudo gem install rails`
 - `bundle install`
@@ -30,36 +45,13 @@ Run the app:
 - `bin/webpack-dev-server` (for JIT compilation)
 
 
-# Optional: Vips (image processing)
-
-- `brew install vips`
-
-## Bug 
-
-If you have an error like this: `Could not open library 'glib-2.0.0': dlopen(glib-2.0.0, 5): image not found.`
-It's probably a bug related to the M1 processor.
-
-Then you can try this:
-`mkdir -p /opt/local/lib`
-`sudo ln -s /opt/homebrew/lib /usr/local/lib`
-
-source: https://github.com/libvips/ruby-vips/issues/284
-
-# Optional: JOSM
+## Optional: JOSM
 
 Josm is an open source tool used by the OpenStreetMap community.
-We use it to edit GeoJson files.
+We use it to edit GeoJSON files.
 
 - Follow the instructions here: `https://josm.openstreetmap.de/wiki/Download#macOS`
 - Go to File > Preferences > Plugins
 - Click on the chexkbox next to `Fastdraw` and `PicLayer`, and then click on OK
 - Restart Josm
 - In the menu bar (on the left), click on `Fast Drawing mode` and then type `Q` to enter the options dialog. Click on `Draw closed polygons only`, choose `3` for `Starting Epsilon` and `Simplify with initial epsilon` for `Enter key mode`
-
-
-# Sources for tailwind install
-
-- `https://davidteren.medium.com/rails-6-and-tailwindcss-getting-started-42ba59e45393`
-- `https://davidteren.medium.com/tailwindcss-2-0-with-rails-6-1-postcss-8-0-9645e235892d`
-- `https://davidteren.medium.com/rails-6-1-tailwindcss-jit-webpacker-postcss-8-16e03dbaebe1`
-- `https://dev.to/davidteren/getting-started-with-rails-6-1-tailwindcss-jit-webpacker-postcss-8-25g7`
