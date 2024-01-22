@@ -36,7 +36,7 @@ More info: https://www.boolder.com/en/about
 - install rails: `sudo gem install rails`
 - `bundle install`
 
-Import prod data:
+### Import prod data
 - `dropdb dump-prod && createdb dump-prod`
 - `pg_restore -d dump-prod db/prod.dump`
 
