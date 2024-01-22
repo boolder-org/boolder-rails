@@ -39,7 +39,7 @@ More info: https://www.boolder.com/en/about
 
 ### Import prod data
 - `dropdb dump-prod && createdb dump-prod`
-- `pg_restore -d dump-prod db/prod.dump`
+- `psql -d dump-prod < db/dump-prod.sql`
 
 ### Run the app
 
