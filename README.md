@@ -10,7 +10,7 @@ More info: https://www.boolder.com/en/about
 
 - Ruby On Rails
 - PostgreSQL
-- Tailwind css
+- Tailwind CSS
 - Stimulus/Turbo
 
 
