@@ -43,6 +43,7 @@ gem 'meta-tags', '~> 2.20.0'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry', "~> 0.14.2"
+  gem 'dotenv-rails'
 
   # scraping
   gem 'nokogiri' #, '~> 1.11.7'

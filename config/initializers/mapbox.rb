@@ -1,2 +1,0 @@
-MAPBOX_PROD_ACCESS_KEY = "pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbHJvb3JnNHgxaTV0MnJvY2FreDA1bWszIn0.Piovbm5BZRpyAPk8OaUiMA" # works only on boolder.com
-MAPBOX_DEV_ACCESS_KEY = "" # create your own access key on https://account.mapbox.com/access-tokens

@@ -39,7 +39,7 @@ data-mapbox-problem-value="<%= @problem.to_json %>"
 data-mapbox-bounds-value="<%= @bounds.to_json %>"
 <% end %>
 
-data-mapbox-token-value="<%= Rails.env.local? ? MAPBOX_DEV_ACCESS_KEY : MAPBOX_PROD_ACCESS_KEY %>"
+data-mapbox-token-value="<%= Rails.env.local? ? ENV['MAPBOX_DEV_ACCESS_KEY'] : Rails.application.credentials.dig(:mapbox, :access_token) %>"
 >
   <%= render "filters" %>
 

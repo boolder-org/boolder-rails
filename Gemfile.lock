@@ -134,6 +134,10 @@ GEM
     crass (1.0.6)
     date (3.3.4)
     differ (0.1.2)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
@@ -386,6 +390,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   colorize (~> 1.1.0)
   differ (~> 0.1.2)
+  dotenv-rails
   httparty (~> 0.21.0)
   image_processing (~> 1.2)
   jbuilder (~> 2.11.5)
