@@ -4,7 +4,7 @@ Boolder is the best way to discover bouldering in Fontainebleau.
 
 This is the code powering the [Boolder website](https://www.boolder.com) and all the backend & data processing.
 
-More info: https://www.boolder.com/en/about
+NB: if you just want a quick access to the data, check out [boolder-data](https://github.com/boolder-org/boolder-data)
 
 ## Stack
 
