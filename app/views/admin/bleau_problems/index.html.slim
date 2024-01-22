@@ -21,7 +21,7 @@ div class="flex flex-col my-6"
                   div class="text-sm text-gray-500"= bleau_problem.id
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   div class="text-sm text-gray-900"
-                    = link_to bleau_problem.name, "https://bleau.info/c/#{bleau_problem.id}.html", target: "_blank"
+                    = link_to bleau_problem.name_with_fallback, "https://bleau.info/c/#{bleau_problem.id}.html", target: "_blank"
                     / = problem_circle_view_with_name(problem)
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
