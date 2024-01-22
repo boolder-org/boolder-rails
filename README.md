@@ -35,6 +35,7 @@ More info: https://www.boolder.com/en/about
 - cd to the app directory
 - install rails: `sudo gem install rails`
 - `bundle install`
+- `rake db:setup`
 
 ### Import prod data
 - `dropdb dump-prod && createdb dump-prod`
