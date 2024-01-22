@@ -46,9 +46,9 @@ Run the app:
 
 ### Mapbox credentials
 
-Create an account on https://www.mapbox.com and go to the [Tokens]([url](https://account.mapbox.com/access-tokens/)) page to create a public token with all the public `scopes` (or use the default token).
-
-
+- Create an account on https://www.mapbox.com. 
+- Go to the [Tokens]([url](https://account.mapbox.com/access-tokens/)) page and create a public token with all the public `scopes` (or just use the default token).
+- Back in the Rails app, fill out `MAPBOX_DEV_ACCESS_KEY` in `config/initializers/mapbox.rb`
 
 ### Optional: JOSM
 
