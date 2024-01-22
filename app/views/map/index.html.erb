@@ -39,12 +39,7 @@ data-mapbox-problem-value="<%= @problem.to_json %>"
 data-mapbox-bounds-value="<%= @bounds.to_json %>"
 <% end %>
 
-<% if Rails.env.production? %> 
-  data-mapbox-token-value="pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbDl5bDZkdDIwNmhhM3BsbnJqbWprcnl5In0.qTno2zICtJfl6UJnNAdmZQ"
-<% else %> 
-  data-mapbox-draft-value="true"
-  data-mapbox-token-value="pk.eyJ1Ijoibm1vbmRvbGxvdCIsImEiOiJjbGE5dTBoYjQwMWpqM3JxbWJxeDBtcTd0In0.ZL6a2hHTBJmk4-_MHuUfHg"
-<% end %>
+data-mapbox-token-value="<%= Rails.env.local? ? MAPBOX_DEV_ACCESS_KEY : MAPBOX_PROD_ACCESS_KEY %>"
 >
   <%= render "filters" %>
 
