@@ -11,7 +11,7 @@ NB: if you just want a quick access to the data, check out [boolder-data](https:
 - Ruby On Rails
 - PostgreSQL
 - Tailwind CSS
-- Stimulus/Turbo
+- [Stimulus](https://stimulus.hotwired.dev) / [Turbo](https://turbo.hotwired.dev)
 
 
 ## How to run the app (on a Mac)
