@@ -176,7 +176,7 @@ class Problem < ApplicationRecord
   end
 
   def validate_parent
-    if parent_id == id
+    if parent_id && parent_id == id
       errors.add(:parent_id, "cannot be equal to problem_id")
     end
 
