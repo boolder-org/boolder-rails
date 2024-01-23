@@ -13,7 +13,7 @@ namespace :popularity do
       ascents = problem.bleau_problem&.ascents || 0
       ratings_average = problem.bleau_problem&.ratings_average || 0
       popularity = ascents * (ratings_average*ratings_average)
-      problem.update(ascents: ascents, ratings_average: ratings_average, popularity: popularity)
+      problem.update!(ascents: ascents, ratings_average: ratings_average, popularity: popularity)
       puts "Computed popularity for problem ##{problem.id}"
     end
     puts "Done".green
@@ -42,7 +42,7 @@ namespace :popularity do
       end
 
       top_problems.sort_by(&:popularity).reverse.take(total).each do |problem|
-        problem.update(featured: true)
+        problem.update!(featured: true)
       end
 
       puts "Computed featured problems for area ##{area.id}"
