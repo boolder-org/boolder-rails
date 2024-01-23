@@ -240,5 +240,6 @@ namespace :app do
 end
 
 def normalize(string)
-  I18n.with_locale(:fr) { I18n.transliterate(string) }.gsub(/[^0-9a-zA-Z]/, '').downcase
+  return nil if string.nil?
+  I18n.with_locale(:fr) { I18n.transliterate(string) }.gsub(/[^0-9a-zA-Z]/, '')&.downcase
 end
