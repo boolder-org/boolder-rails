@@ -20,7 +20,8 @@ class Circuit7aController < ApplicationController
     "Rocher du Potala" => [7878,  3803,  3825,  3806],
     "Rocher Guichot" => [4787],
     "Maunoury" => [9237, 9302,  9310,  9177],
-    "Éléphant" => [2214,  2315,  7756,  2352,  2357,  2295,  2287, 2320],
+    "Éléphant" => [2214,  2315,  7756,  2352,  2357,  2295,  2287],
+    "Bonus" => [2320],
   }
 
   def index
