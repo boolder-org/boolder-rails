@@ -1,6 +1,12 @@
 class Admin::ContributionsController < Admin::BaseController
   def index
-    @contributions = Contribution.all.order(id: :desc)
+    arel = Contribution.all.order(id: :desc)
+
+    if params[:state].in?(Contribution::STATES)
+      arel = arel.where(state: params[:state])
+    end
+
+    @contributions = arel
   end
 
   def edit
