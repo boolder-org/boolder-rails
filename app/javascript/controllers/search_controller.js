@@ -18,7 +18,7 @@ function debouncePromise(fn, time) {
     });
   };
 }
-const debounced = debouncePromise((items) => Promise.resolve(items), 200);
+const debounced = debouncePromise((items) => Promise.resolve(items), 400);
 
 
 export default class extends Controller {
