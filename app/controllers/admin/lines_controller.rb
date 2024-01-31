@@ -32,8 +32,8 @@ class Admin::LinesController < Admin::BaseController
   def create
     @line = Line.new(line_params)
 
-    if coordinates = params[:line][:coordinates]
-      @line.coordinates = JSON.parse(coordinates)
+    if params[:line][:topo_id].present?
+      @line.topo_id = params[:line][:topo_id]
     end
 
     if @line.save
@@ -55,7 +55,7 @@ class Admin::LinesController < Admin::BaseController
 
   private 
   def line_params
-    params.require(:line).permit(:problem_id, :topo_id)
+    params.require(:line).permit(:problem_id, :topo_id, topo_attributes: [:photo])
   end
 
   def set_line
