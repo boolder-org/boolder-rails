@@ -1,5 +1,5 @@
 - add_breadcrumb "Fontainebleau", admin_areas_path
-- add_breadcrumb @line.problem.area.name, admin_area_problems_path(area_slug: @line.problem.area.slug, circuit_id: @line.problem.circuit&.id, anchor: @line.problem.id)
+- add_breadcrumb @line.problem.area.name, admin_area_problems_path(area_slug: @line.problem.area.slug, circuit_id: @line.problem.circuit&.id)
 - add_breadcrumb "Problem ##{@line.problem.id}", edit_admin_problem_path(@line.problem)
 - add_breadcrumb "Line ##{@line.id}", nil, class: "active"
 
