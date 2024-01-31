@@ -37,6 +37,8 @@ class Admin::LinesController < Admin::BaseController
     end
 
     if @line.save
+      @line.problem.contribution_requests.open.first&.update(state: "closed")
+
       flash[:notice] = "Line created"
       redirect_to edit_admin_line_path(@line)
     else
