@@ -5,11 +5,11 @@
 - content_for :options do
   div class="flex items-center"
     - items = []
+    - items << { text: "See on bleau.info", link: bleau_info_url(@problem), target: "_blank" } if @problem.bleau_info_id.present?
     - items << { text: "See on boolder.com (map)", link: map_path(@problem.area, pid: @problem.id), target: "_blank" }
     - items << { text: "See on boolder.com", link: problem_friendly_path(@problem), target: "_blank" }
-    - items << { text: "See on bleau.info", link: bleau_info_url(@problem), target: "_blank" } if @problem.bleau_info_id.present?
     - items << { text: "Request new contributions", link: new_admin_contribution_request_path(problem_id: @problem.id) }
-    = render 'shared/dot_menu', items: items, align_class: "right-0"
+    = render 'shared/dot_menu', items: items
 
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"
