@@ -28,9 +28,14 @@ div class="mt-10 sm:mt-0"
         p class="my-4"
           = @contribution.problem_url
 
-      div class="px-4 sm:px-0"
+      div class="mb-4"
+        div= @contribution.contributor_name
+        div class="text-gray-400 mb-4"= @contribution.contributor_email
+
+      div class="mb-4"
         = simple_format @contribution.comment
 
+      div class="mb-4"
         - if location = @contribution.location
           span GPS : 
           = [location.lat, location.lon].join(",")
