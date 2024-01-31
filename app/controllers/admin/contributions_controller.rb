@@ -10,23 +10,28 @@ class Admin::ContributionsController < Admin::BaseController
   end
 
   def edit
-    @contribution = Contribution.find(params[:id])
+    set_contribution
   end
 
   def update
-    @contribution = Contribution.find(params[:id])
+    set_contribution
 
-    @contribution.assign_attributes(contribution_params)
-
-    @contribution.save!
-
-    flash[:notice] = "Contribution updated"
-    redirect_to admin_contributions_path
+    if @contribution.update(contribution_params)
+      flash[:notice] = "Contribution updated"
+      redirect_to admin_contribution_path(@contribution)
+    else
+      flash[:error] = @contribution.errors.full_messages.join('; ')
+      render "edit", status: :unprocessable_entity
+    end
   end
 
   private 
   def contribution_params
     params.require(:contribution).
       permit(:state)
+  end
+
+  def set_contribution
+    @contribution = Contribution.find(params[:id])
   end
 end
