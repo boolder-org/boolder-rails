@@ -43,13 +43,6 @@ class Admin::ToposController < Admin::BaseController
   def update
     set_topo
 
-    metadata = JSON.parse(params[:topo][:metadata])
-    @topo.update(metadata: metadata)
-
-    if photo = params[:topo][:photo]
-      @topo.update(photo: params[:topo][:photo])
-    end
-
     if @topo.update(topo_params)
       flash[:notice] = "Topo updated"
       redirect_to edit_admin_topo_path(@topo)
@@ -74,7 +67,7 @@ class Admin::ToposController < Admin::BaseController
 
   private
   def topo_params
-    params.require(:topo).permit(:published)
+    params.require(:topo).permit(:published, :photo)
   end
 
   def set_topo

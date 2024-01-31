@@ -13,23 +13,19 @@ div
     = image_tag(@topo.photo)
 
   = form_with model: [:admin, @topo] do |form|
-    div class="form-group form-check"
+    div class="form-group form-check mt-8"
       = form.check_box :published, class: "form-check-input"
       = form.label :published
 
     div class="form-group"
-      = form.label :metadata
-      = form.text_area :metadata, rows: "4", value: @topo.metadata.to_json
-
-    div class="form-group"
-      p
+      p class="my-8"
         div Metadata
         code
           pre
             = JSON.pretty_generate(@topo.metadata)
 
-      p
-        = form.submit("Update", class: "btn btn-primary")
+      p class=""
+        = form.submit("Update", class: "btn btn-primary mt-8")
         - items = []
         - items << { text: "destroy", link: admin_topo_path, method: :delete, data: { confirm: 'Are you sure?' } }
         = render 'shared/dot_menu', items: items, align_class: "bottom-0"
