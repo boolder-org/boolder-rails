@@ -53,15 +53,18 @@ class Admin::ToposController < Admin::BaseController
   end
 
   def destroy
-    topo = Topo.find(params[:id])
-    area = topo.problems.first&.area
-    topo.destroy!
-
-    flash[:notice] = "Topo destroyed"
-    if area
-      redirect_to admin_area_problems_path(area_slug: area.slug, circuit_id: "first")
+    set_topo
+    
+    if @topo.destroy
+      flash[:notice] = "Topo destroyed"
+      if area = @topo.problems.first&.area
+        redirect_to admin_area_problems_path(area_slug: area.slug, circuit_id: "first")
+      else
+        redirect_to admin_areas_path
+      end
     else
-      redirect_to admin_areas_path
+      flash[:error] = @topo.errors.full_messages.join('; ')
+      render "edit", status: :unprocessable_entity
     end
   end
 
