@@ -4,7 +4,7 @@ div class="mt-10 sm:mt-0"
     div class="md:grid md:grid-cols-4 md:gap-6"
       div class="mt-5 md:mt-0 md:col-span-2"
         div class="my-4"
-          h2 class="my-3 text-xl font-semibold" Existing topo
+          h2 class="my-3 text-xl font-semibold" Use an existing topo
           = form_with model: [:admin, @line] do |form|
             = form.hidden_field :problem_id, autocomplete: "off"
             div class="shadow overflow-hidden sm:rounded-md"
@@ -19,7 +19,7 @@ div class="mt-10 sm:mt-0"
                 button type="submit" class="btn" Create
 
         div class="mt-12"
-          h2 class="my-3 text-xl font-semibold" Upload photo
+          h2 class="my-3 text-xl font-semibold" Or upload new photo
           = form_with model: [:admin, @line] do |form|
             = form.hidden_field :problem_id, autocomplete: "off"
             div class="shadow overflow-hidden sm:rounded-md"
