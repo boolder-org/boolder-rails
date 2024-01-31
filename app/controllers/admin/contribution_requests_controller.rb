@@ -11,13 +11,18 @@ class Admin::ContributionRequestsController < Admin::BaseController
   end
 
   def create
-    contribution_request = ContributionRequest.new(what: "photo", state: "open")
-    contribution_request.assign_attributes(contribution_request_params)
+    @problem = Problem.find(params[:contribution_request][:problem_id])
 
-    contribution_request.save!
+    @contribution_request = ContributionRequest.new(what: "photo", state: "open")
+    @contribution_request.assign_attributes(contribution_request_params)
 
-    flash[:notice] = "Contribution Request created"
-    redirect_to [:admin, contribution_request.problem]
+    if @contribution_request.save
+      flash[:notice] = "Contribution Request created"
+      redirect_to [:admin, @contribution_request.problem]
+    else
+      flash[:error] = @contribution_request.errors.full_messages.join('; ')
+      render "new", status: :unprocessable_entity
+    end
   end
 
   def edit
