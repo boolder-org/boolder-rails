@@ -4,15 +4,14 @@ class Admin::LinesController < Admin::BaseController
   end
 
   def show
-    line = Line.find(params[:id])
-    redirect_to edit_admin_line_path(line)
+    set_line
+    redirect_to edit_admin_line_path(@line)
   end
 
   def new 
     @line = Line.new(
       problem_id: params[:problem_id], 
-      topo_id: @ref_line&.topo_id || session[:last_topo_visited],
-      coordinates: @ref_line&.coordinates
+      topo_id: session[:last_topo_visited]
     )
   end
 
@@ -31,16 +30,19 @@ class Admin::LinesController < Admin::BaseController
   end
 
   def create
-    line = Line.new(line_params)
+    @line = Line.new(line_params)
 
     if coordinates = params[:line][:coordinates]
-      line.coordinates = JSON.parse(coordinates)
+      @line.coordinates = JSON.parse(coordinates)
     end
 
-    line.save!
-
-    flash[:notice] = "Line created"
-    redirect_to edit_admin_line_path(line)
+    if @line.save
+      flash[:notice] = "Line created"
+      redirect_to edit_admin_line_path(@line)
+    else
+      flash[:error] = @line.errors.full_messages.join('; ')
+      render "new", status: :unprocessable_entity
+    end
   end
 
   def destroy
