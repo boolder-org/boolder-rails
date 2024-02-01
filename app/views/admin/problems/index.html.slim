@@ -54,11 +54,11 @@ div class="flex flex-col my-6"
             - @problems.each do |problem|
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
-                  span class="text-sm text-gray-500"= link_to(problem.id, edit_admin_problem_path(problem), id: problem.id)
+                  span class="text-sm text-gray-500"= link_to(problem.id, admin_problem_path(problem), id: problem.id)
                 td class="px-6 py-2 whitespace-nowrap w-2/12"
                   div class="text-sm text-gray-900 shrink max-w-16"
                     = problem_circle_view(problem)
-                    span class="ml-2"= link_to problem.name_with_fallback&.truncate(50), edit_admin_problem_path(problem)
+                    span class="ml-2"= link_to problem.name_with_fallback&.truncate(50), admin_problem_path(problem)
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   span class="ml-1 text-gray-500"= problem.grade
                 td class="px-6 py-2 whitespace-nowrap w-1/12"

@@ -52,7 +52,7 @@ class Admin::LinesController < Admin::BaseController
     line.destroy!
 
     flash[:notice] = "Line destroyed"
-    redirect_to edit_admin_problem_path(line.problem)
+    redirect_to admin_problem_path(line.problem)
   end
 
   private 
