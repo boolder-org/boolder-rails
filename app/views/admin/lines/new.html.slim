@@ -4,11 +4,10 @@ div class="mt-10 sm:mt-0"
     div class="md:grid md:grid-cols-4 md:gap-6"
       div class="mt-5 md:mt-0 md:col-span-2"
 
-        - if problem = Problem.find(params[:problem_id])
-          - if request = problem.contribution_requests.open.first
-            div class="my-4"
-              = warning_box
-                span FYI the open contribution request will automatically be closed.
+        - if request = @line.problem.contribution_requests.open.first
+          div class="my-4"
+            = warning_box
+              span FYI the open contribution request will automatically be closed.
 
         div class="my-4"
           h2 class="my-3 text-xl font-semibold" Use an existing topo

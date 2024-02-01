@@ -11,11 +11,10 @@ class Admin::LinesController < Admin::BaseController
   end
 
   def new 
-    @line = Line.new(
-      problem_id: params[:problem_id]
-    )
+    problem = Problem.find(params[:problem_id])
 
-    @line.build_topo
+    @line = Line.new(problem_id: problem.id)
+    @line.build_topo # for topo nested attributes (photo)
   end
 
   def update
@@ -35,16 +34,13 @@ class Admin::LinesController < Admin::BaseController
   def create
     @line = Line.new(line_params)
 
-    if params[:line][:topo_id].present?
-      @line.topo_id = params[:line][:topo_id]
-    end
-
     if @line.save
       @line.problem.contribution_requests.open.first&.update(state: "closed")
 
       flash[:notice] = "Line created"
       redirect_to edit_admin_line_path(@line)
     else
+      @line.build_topo # for topo nested attributes (photo)
       flash[:error] = @line.errors.full_messages.join('; ')
       render "new", status: :unprocessable_entity
     end
