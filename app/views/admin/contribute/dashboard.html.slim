@@ -8,6 +8,11 @@ h2 class="text-2xl font-bold mb-4 pt-4 px-4 sm:px-0" Contributions
 
 h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0" Mapping Progress
 
+= form_with url: admin_contribute_path, method: :get, class:"my-4" do |form|
+  div class="w-1/2"
+    / label for="missing" class="block text-sm font-medium text-gray-700" What's missing?
+    = form.select :missing, [["Missing location","location"], ["Missing line only","line"]], { selected: @missing }, { onchange: 'this.form.submit()', class: "mt-1 block w-full md:w-1/3 rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm" }
+
 div class="flex flex-col my-6"
   div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"
     div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
@@ -24,7 +29,7 @@ div class="flex flex-col my-6"
               tr class="place-content-start align-top h-16"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"
                   span class="text-sm text-gray-900 font-bold"
-                    = link_to(area_with_stats.area.name, admin_area_problems_path(area_with_stats.area, missing: "location"))
+                    = link_to(area_with_stats.area.name, admin_area_problems_path(area_with_stats.area, missing: @missing))
                 td class="px-6 py-2 whitespace-nowrap w-2/12"
                   = "#{(area_with_stats.ascents/1000.0).ceil}K"
                 td class="px-6 py-2 whitespace-nowrap w-3/12"

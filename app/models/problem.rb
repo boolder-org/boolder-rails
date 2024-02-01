@@ -54,6 +54,8 @@ class Problem < ApplicationRecord
   scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
   scope :with_location, -> { where.not(location: nil) }
   scope :without_location, -> { where(location: nil) }
+  scope :with_line, -> { where(has_line: true) }
+  scope :without_line, -> { where(has_line: false) }
   scope :complete, -> { where(has_line: true).with_location }
   scope :incomplete, -> { where("problems.has_line = FALSE OR problems.location IS NULL") }
   scope :without_contribution_request, -> { left_joins(:contribution_requests).where(contribution_requests: { id: nil }) }
