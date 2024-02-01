@@ -23,14 +23,17 @@ div class="flex flex-col my-6"
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
                   = audit.username
                 td class="px-6 py-2 whitespace-nowrap w-1/12" 
-                  - if audit.auditable.class.name == "Problem"
+                  - if audit.auditable&.class&.name == "Line"
+                    div= problem_circle_view_with_name(audit.auditable.problem) 
+                  - if audit.auditable&.class&.name == "Problem"
                     div= problem_circle_view_with_name(audit.auditable) 
                   - else 
                     - auditable_string = "#{audit.auditable_type} ##{audit.auditable_id}"
                     - if audit.auditable
-                      div= link_to auditable_string, [:admin, audit.auditable] 
+                      div class="text-gray-500"= link_to auditable_string, [:admin, audit.auditable] 
                     - else
-                      div= auditable_string
+                      div class="text-gray-500"= auditable_string
+
                 td class="px-6 py-2 whitespace-nowrap w-1/12" 
                   = link_to "#{audit.associated_type} ##{audit.associated_id}", [:admin, audit.associated] if audit.associated_id
                 td class="px-6 py-2 whitespace-nowrap w-2/12" 

@@ -35,6 +35,11 @@ class Admin::ToposController < Admin::BaseController
     end
   end
 
+  def show
+    set_topo
+    redirect_to edit_admin_topo_path(@topo)
+  end
+
   def edit
     set_topo
     session[:last_topo_visited] = @topo.id
