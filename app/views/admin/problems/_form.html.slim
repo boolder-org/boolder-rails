@@ -10,14 +10,14 @@ div class="col-span-6 sm:col-span-2"
   = form.label :circuit_id
   = form.collection_select :circuit_id, @circuits, :id, :color, include_blank: true
 
-div class="col-span-6 sm:col-span-2 sm:col-start-1"
-  = form.label :parent_id, "Parent id"
-  = form.text_field :parent_id, autocomplete: "off"
-
 div data-controller="reveal" class="contents"
   div class="col-span-6 sm:col-start-1"
     a href="javascript:void(0)" class="block text-green-600 font-medium" data-action="reveal#toggle" See more
   div class="hidden contents" data-reveal-target="item"
+    div class="col-span-6 sm:col-span-2 sm:col-start-1"
+      = form.label :bleau_info_id, "Bleau.info id"
+      = form.text_field :bleau_info_id, autocomplete: "off"
+
     div class="col-span-6 sm:col-span-4 sm:col-start-1"
       = form.label :name
       = form.text_field :name, autocomplete: "off"
@@ -35,5 +35,5 @@ div data-controller="reveal" class="contents"
       = form.check_box :sit_start
     
     div class="col-span-6 sm:col-span-2 sm:col-start-1"
-      = form.label :bleau_info_id, "Bleau.info id"
-      = form.text_field :bleau_info_id, autocomplete: "off"
+      = form.label :parent_id, "Parent id"
+      = form.text_field :parent_id, autocomplete: "off"
