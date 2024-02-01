@@ -21,18 +21,18 @@ div class="mb-3 md:grid md:grid-cols-4 md:gap-6"
         span class="mr-2"= problem_circle_view(@problem)
         h1 class="text-2xl font-bold"= @problem.name_with_fallback
         span class="ml-2 text-gray-400 text-2xl font-bold"= @problem.grade
-      - if @problem.location.nil? || !@problem.has_line
-        div
-          span class="text-gray-400 mr-2" missing
+    div class="my-1"
+      
+      span class="text-gray-400 mr-1"
+        span class="mr-2"
+          = "#{@problem.ascents.to_i} ascents"
+        - if @problem.location.nil? || !@problem.has_line
+          / span class="text-gray-400 mr-2" •
           - if @problem.location.nil?
             span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" location 
           - if !@problem.has_line
             span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" line
-    div class=""
-      
-      span class="text-gray-400 mr-1"
-        span class=""
-          = "#{@problem.ascents.to_i} ascents"
+          / span class="text-gray-400 mr-2" missing
   
   div class="md:col-span-2"
 
