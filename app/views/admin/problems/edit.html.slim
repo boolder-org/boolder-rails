@@ -11,14 +11,23 @@
     - items << { text: "Request new contributions", link: new_admin_contribution_request_path(problem_id: @problem.id) }
     = render 'shared/dot_menu', items: items
 
+div class="mb-3 "
+  h1 class="text-2xl font-bold"= @problem.name_with_fallback
+  div
+    span class="text-gray-400 mr-2"
+      span class=""
+        = "#{@problem.ascents.to_i} ascents"
+  - if @problem.location.nil? || !@problem.has_line
+    div
+      span class="text-gray-400 mr-2" Missing:
+      - if @problem.location.nil?
+        span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" location 
+      - if !@problem.has_line
+        span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" line
+
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"
     div class="mt-5 md:mt-0 md:col-span-2"
-      - if @problem.location.nil?
-          div class="mb-4"
-            = warning_box do 
-              span Location missing
-
       = form_with model: [:admin, @problem] do |form|
         div class="shadow overflow-hidden sm:rounded-md"
           div class="px-4 py-5 bg-white sm:p-6"
@@ -60,18 +69,6 @@ div class="mt-10 sm:mt-0"
                     span class="mr-1 inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-800 ring-1 ring-inset ring-blue-600/20"= contribution.state
                     span= "Contrib ##{contribution.id}"
 
-        div class="text-gray-400 mt-4"
-          div
-            | ascents: 
-            = @problem.ascents
-          / div
-          /   | ratings_average: 
-          /   = @problem.ratings_average
-          / div
-          /   | popularity: 
-          /   = @problem.popularity
-
-
     div class="md:col-span-2"
       div class="px-4 sm:px-0"
         - if @problem.lines.none?
@@ -89,4 +86,4 @@ div class="mt-10 sm:mt-0"
             div class="text-right text-red-500 mt-2"= "line ##{line.id} (unpublished)"
         - unless @problem.lines.none?
           p class="my-4"
-            div class="text-right"= link_to "Add a line", new_admin_line_path(problem_id: @problem.id)
+            div class="text-right"= link_to "Add another line", new_admin_line_path(problem_id: @problem.id), class: "text-green-600 font-medium"
