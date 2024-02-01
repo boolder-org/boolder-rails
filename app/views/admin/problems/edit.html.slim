@@ -1,6 +1,7 @@
 - add_breadcrumb "Fontainebleau", admin_areas_path
 - add_breadcrumb @problem.area.name, admin_area_problems_path(area_slug: @problem.area.slug, circuit_id: @problem.circuit&.id)
-- add_breadcrumb "Problem ##{@problem.id}", nil, class: "active"
+- add_breadcrumb "Problem ##{@problem.id}", admin_problem_path(@problem)
+- add_breadcrumb "Edit", nil, class: "active"
 
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"

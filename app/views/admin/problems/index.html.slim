@@ -1,5 +1,5 @@
 - add_breadcrumb "Fontainebleau", admin_areas_path
-- add_breadcrumb @area.name, nil, class: "active"
+- add_breadcrumb "#{@area.name} ##{@area.id}", nil, class: "active"
 
 - content_for :options do
   - items = []
