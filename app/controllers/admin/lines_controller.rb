@@ -1,6 +1,8 @@
 class Admin::LinesController < Admin::BaseController
   def edit
     set_line
+
+    session[:last_topo_visited] = @line.topo.id
   end
 
   def show
@@ -10,9 +12,10 @@ class Admin::LinesController < Admin::BaseController
 
   def new 
     @line = Line.new(
-      problem_id: params[:problem_id], 
-      topo_id: session[:last_topo_visited]
+      problem_id: params[:problem_id]
     )
+
+    @line.build_topo
   end
 
   def update
