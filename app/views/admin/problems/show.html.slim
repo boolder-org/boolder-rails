@@ -36,8 +36,8 @@ div class="mb-3 md:grid md:grid-cols-6 md:gap-6"
           / span class="text-gray-400 mr-2" missing
 
     - if @problem.circuit_letter.blank? && (@problem.previous || @problem.next)
-      div class="px-4 sm:px-0 py-2 flex justify-between items-center"
-        div
+      div class="px-4 sm:px-0 py-2 flex justify-start items-center"
+        div class="mr-4"
           - if previous = @problem.previous
             = link_to [:admin, previous] do
               div class="flex items-center space-x-2 text-green-600"
@@ -65,10 +65,10 @@ div class="mb-3 md:grid md:grid-cols-6 md:gap-6"
           = render 'shared/topo_with_line', line: line, scope: :admin
       - @problem.lines.unpublished.each do |line|
         = link_to edit_admin_line_path(line) do
-          div class="text-right text-yellow-500 mt-2"= "line ##{line.id} (unpublished)"
+          div class="text-left text-yellow-500 mt-2"= "line ##{line.id} (unpublished)"
       - unless @problem.lines.none?
         p class="my-4"
-          div class="text-right"= link_to "Add another line", new_admin_line_path(problem_id: @problem.id), class: "text-green-600 font-medium"
+          div class="text-left"= link_to "Add another line", new_admin_line_path(problem_id: @problem.id), class: "text-green-600 font-medium"
   
   div class="md:col-span-2"
     - if @problem.variants.any?
