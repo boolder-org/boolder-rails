@@ -5,9 +5,6 @@
 - content_for :options do
   div class="flex items-center"
     - items = []
-    - items << { text: "See on bleau.info", link: bleau_info_url(@problem), target: "_blank" } if @problem.bleau_info_id.present?
-    - items << { text: "See on boolder.com (map)", link: map_path(@problem.area, pid: @problem.id), target: "_blank" }
-    - items << { text: "See on boolder.com", link: problem_friendly_path(@problem), target: "_blank" }
     - items << { text: "Request new contributions", link: new_admin_contribution_request_path(problem_id: @problem.id) }
     - items << { text: "Edit", link: edit_admin_problem_path(@problem) }
     = render 'shared/dot_menu', items: items
@@ -71,9 +68,32 @@ div class="mb-3 md:grid md:grid-cols-6 md:gap-6"
           div class="text-left"= link_to "Add another line", new_admin_line_path(problem_id: @problem.id), class: "text-green-600 font-medium"
   
   div class="md:col-span-2"
+    div class="mb-8 shadow overflow-hidden sm:rounded-md"
+        div class="px-4 py-5 bg-white sm:p-6"
+          - if @problem.bleau_info_id.present?
+            = link_to bleau_info_url(@problem), target: "_blank" do
+              div class="flex items-center space-x-2 text-green-600 mb-2"
+                svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                div See on bleau.info
+
+          - if @problem.location.present?
+            = link_to map_path(@problem.area, pid: @problem.id), target: "_blank" do
+              div class="flex items-center space-x-2 text-green-600 mb-2"
+                svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                div See on boolder.com (map)
+
+          = link_to problem_friendly_path(@problem), target: "_blank" do
+            div class="flex items-center space-x-2 text-green-600 mb-2"
+              svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              div See on boolder.com
+
     - if @problem.variants.any?
       - parent = @problem.parent || @problem
-      h2 class="mb-4 text-xl font-semibold" Family tree
+      / h2 class="mb-4 text-xl font-semibold" Family tree
       div class="mb-8 shadow overflow-hidden sm:rounded-md"
         div class="px-4 py-5 bg-white sm:p-6"
           p class="" 
