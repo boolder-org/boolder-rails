@@ -11,19 +11,29 @@
     - items << { text: "Request new contributions", link: new_admin_contribution_request_path(problem_id: @problem.id) }
     = render 'shared/dot_menu', items: items
 
-div class="mb-3 "
-  h1 class="text-2xl font-bold"= @problem.name_with_fallback
-  div
-    span class="text-gray-400 mr-2"
-      span class=""
-        = "#{@problem.ascents.to_i} ascents"
-  - if @problem.location.nil? || !@problem.has_line
-    div
-      span class="text-gray-400 mr-2" Missing:
-      - if @problem.location.nil?
-        span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" location 
-      - if !@problem.has_line
-        span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" line
+div class="mb-3 md:grid md:grid-cols-4 md:gap-6"
+  div class="md:col-span-2"
+    div class="flex"
+      - if @problem.featured
+        span class="text-red-400 mr-1"
+          = render 'svg/heart', width: 24, height: 24
+      h1 class="text-2xl font-bold"= @problem.name_with_fallback
+      span class="ml-2 text-gray-400 text-2xl font-bold"= @problem.grade
+    div class="flex"
+      
+      span class="text-gray-400 mr-1"
+        span class=""
+          = "#{@problem.ascents.to_i} ascents"
+    - if @problem.location.nil? || !@problem.has_line
+      div
+        span class="text-gray-400 mr-2" Missing:
+        - if @problem.location.nil?
+          span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" location 
+        - if !@problem.has_line
+          span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20" line
+  
+  div class="md:col-span-2"
+
 
 div class="mt-10 sm:mt-0"
   div class="md:grid md:grid-cols-4 md:gap-6"
@@ -71,7 +81,7 @@ div class="mt-10 sm:mt-0"
 
     div class="md:col-span-2"
       div class="px-4 sm:px-0"
-        - if @problem.lines.none?
+        - if @problem.lines.published.none?
           = link_to new_admin_line_path(problem_id: @problem.id) do 
             button type="button" class="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 h-64 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
               svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto h-12 w-12 text-gray-400"
