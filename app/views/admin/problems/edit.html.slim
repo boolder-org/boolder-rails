@@ -29,22 +29,18 @@ div class="mt-10 sm:mt-0"
             div
             button type="submit" class="btn" Update
 
-        div class="mt-8 shadow overflow-hidden sm:rounded-md"
-          div class="px-4 py-5 bg-white sm:p-6"
-            - unless @problem.children.any?
-              div class="mb-4 grid grid-cols-6 gap-6"
-                div class="col-span-6 sm:col-span-2"
-                  = form.label :parent_id, "Parent id"
-                  = form.text_field :parent_id, autocomplete: "off"
-
-            - if @problem.parent.present?
+        - if @problem.parent.present?
+          h2 class="mt-8 mb-4 text-xl font-semibold" Parent
+          div class="shadow overflow-hidden sm:rounded-md"
+            div class="px-4 py-5 bg-white sm:p-6"
               p class="" 
-                div class="font-bold" Parent
                 div= link_to [@problem.parent.name_with_fallback, @problem.parent.grade].compact.join(" - "), edit_admin_problem_path(@problem.parent)
 
-            - if @problem.children.any?
+        - if @problem.children.any?
+          h2 class="mt-8 mb-4 text-xl font-semibold" Children
+          div class="shadow overflow-hidden sm:rounded-md"
+            div class="px-4 py-5 bg-white sm:p-6"
               p class="" 
-                div class="font-bold" Children
                 - @problem.children.sort_by(&:grade).reverse.each do |variant|
                   div= link_to [variant.name_with_fallback, variant.grade].compact.join(" - "), edit_admin_problem_path(variant)
 
