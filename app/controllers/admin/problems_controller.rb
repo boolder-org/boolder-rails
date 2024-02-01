@@ -50,8 +50,7 @@ class Admin::ProblemsController < Admin::BaseController
   end
 
   def show
-    problem = Problem.find(params[:id])
-    redirect_to edit_admin_problem_path(problem)
+    set_problem
   end
 
   def edit
@@ -65,7 +64,7 @@ class Admin::ProblemsController < Admin::BaseController
     
     if @problem.save
       flash[:notice] = "Problem updated"
-      redirect_to edit_admin_problem_path(@problem)
+      redirect_to admin_problem_path(@problem)
     else
       flash[:error] = @problem.errors.full_messages.join('; ')
       render "edit", status: :unprocessable_entity
