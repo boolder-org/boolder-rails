@@ -3,27 +3,21 @@ class Mapping::ContributionRequestsController < ApplicationController
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     problem_features = ContributionRequest.open.where.not(location_estimated: nil).group_by(&:location_estimated).map do |location, requests|
-      problems = requests.map(&:problem)
-      problem = problems.sort_by{|p| p.ascents.to_i }.reverse.first
+      problems = requests.map(&:problem).sort_by{|p| p.ascents.to_i }.reverse
+      problem = problems.first
 
       hash = {}.with_indifferent_access
 
-      hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
-      hash[:id] = problem.id
-      # hash[:circuit_color] = problem.circuit&.color
-      # hash[:circuit_id] = problem.circuit_id_simplified
-      # hash[:circuit_number] = problem.circuit_number_simplified
+      hash.merge!(problem.slice(:steepness, :featured, :popularity))
 
-      group_name = if problems.count > 1 
-        "#{problem.name_debug} + #{problems.count - 1}"
-      else
-        problem.name_debug
-      end
+      group_name = problems.count > 1 ? "#{problem.name_debug} + #{problems.count - 1}" : problem.name_debug
 
       name_fr = I18n.with_locale(:fr) { group_name }
       name_en = I18n.with_locale(:en) { group_name }
       hash[:name] = name_fr
       hash[:name_en] = (name_en != name_fr) ? name_en : ""
+
+      hash[:problems] = problems.map{|p| { name: p.name_debug, id: p.id, grade: p.grade } }
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 

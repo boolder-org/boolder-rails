@@ -589,15 +589,22 @@ export default class extends Controller {
     // FIXME: make DRY
     this.map.on('click', ['contribute-problems','contribute-problems-texts'], (e) => {
 
-      let problem = e.features[0].properties
+      let group = e.features[0].properties
 
       // FIXME: make it DRY
       const coordinates = e.features[0].geometry.coordinates.slice();
-      var name = problem.name
-      if(this.localeValue == 'en' && problem.nameEn) {
-        name = problem.nameEn
+      var name = group.name
+      if(this.localeValue == 'en' && group.nameEn) {
+        name = group.nameEn
       }        
-      const html = `<a href="/${this.localeValue}/mapping/problems/${problem.id}" target="_blank">${name || ""}</a><span class="text-gray-400 ml-1">${problem.grade}</span>`;
+
+      let problems = JSON.parse(group.problems)
+      const html = problems.map(
+        problem => `<div>
+        <a href="/${this.localeValue}/mapping/problems/${problem.id}" target="_blank">${problem.name || ""}</a>
+        <span class="text-gray-400 ml-1">${problem.grade}</span>
+        </div>`
+      ).join("");
        
       new mapboxgl.Popup({closeButton:false, focusAfterOpen: false, offset: [0, -8]})
       .setLngLat(coordinates)
