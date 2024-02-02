@@ -60,12 +60,18 @@ div class="mb-3 md:grid md:grid-cols-6 md:gap-6"
       - @problem.lines.published.each do |line|
         = link_to edit_admin_line_path(line) do
           = render 'shared/topo_with_line', line: line, scope: :admin
-      - @problem.lines.unpublished.each do |line|
-        = link_to edit_admin_line_path(line) do
-          div class="text-left text-yellow-500 mt-2"= "line ##{line.id} (unpublished)"
+      
       - unless @problem.lines.none?
         p class="my-4"
           div class="text-left"= link_to "Add another line", new_admin_line_path(problem_id: @problem.id), class: "text-green-600 font-medium"
+
+      - if @problem.lines.unpublished.any?
+        div class="mt-8 pb-4" data-controller="reveal"
+          a href="javascript:void(0)" class="text-yellow-500 font-medium" data-action="reveal#toggle"= "See unpublished lines (#{@problem.lines.unpublished.count})"
+          div class="hidden" data-reveal-target="item"
+            - @problem.lines.unpublished.each do |line|
+              = link_to edit_admin_line_path(line) do
+                = render 'shared/topo_with_line', line: line, scope: :admin
   
   div class="md:col-span-2"
     div class="mb-8 shadow overflow-hidden sm:rounded-md"
