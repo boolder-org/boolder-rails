@@ -23,6 +23,8 @@ class Admin::LinesController < Admin::BaseController
     coordinates = JSON.parse(params[:line][:coordinates])
     
     if @line.update(coordinates: coordinates)
+      auto_close_contribution_request(@line)
+      
       flash[:notice] = "Line updated"
       redirect_to edit_admin_line_path(@line)
     else
@@ -35,7 +37,7 @@ class Admin::LinesController < Admin::BaseController
     @line = Line.new(line_params)
 
     if @line.save
-      @line.problem.contribution_requests.open.first&.update(state: "closed")
+      auto_close_contribution_request(@line)
 
       flash[:notice] = "Line created"
       redirect_to edit_admin_line_path(@line)
@@ -61,5 +63,9 @@ class Admin::LinesController < Admin::BaseController
 
   def set_line
     @line = Line.find(params[:id])
+  end
+
+  def auto_close_contribution_request(line)
+    line.problem.contribution_requests.open.first&.update(state: "closed")
   end
 end
