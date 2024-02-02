@@ -1,6 +1,7 @@
 class Admin::ContributeController < Admin::BaseController
   def dashboard
-    @missing = params[:missing].presence_in(%w( location line )) || "location"
+    @missing = params[:missing].presence_in(%w( location line )) || session[:last_missing] || "location"
+    session[:last_missing] = @missing
 
     @areas_with_stats = Area.published.
       map{|a| OpenStruct.new(
