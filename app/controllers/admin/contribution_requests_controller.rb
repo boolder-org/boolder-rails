@@ -46,7 +46,7 @@ class Admin::ContributionRequestsController < Admin::BaseController
   private 
   def contribution_request_params
     params.require(:contribution_request).
-      permit(:problem_id, :location_estimated_lat, :location_estimated_lon, :state)
+      permit(:problem_id, :location_estimated_lat, :location_estimated_lon, :state, :comment)
   end
 
   def set_contribution_request
