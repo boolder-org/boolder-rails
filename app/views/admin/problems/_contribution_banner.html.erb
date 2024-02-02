@@ -1,13 +1,19 @@
 <a href="<%= admin_contribution_request_path(contribution_request) %>" class="">
-  <div class="rounded-md bg-blue-50 p-4">
-    <div class="flex whitespace-nowrap font-medium text-blue-700 hover:text-blue-600">
+  <div class="rounded-md <%= contribution_request.state == "closed" ? "bg-yellow-50" : "bg-blue-50" %> p-4 mb-2">
+    <div class="flex whitespace-nowrap font-medium <%= contribution_request.state == "closed" ? "text-yellow-700 hover:text-yellow-600" : "text-blue-700 hover:text-blue-600" %>">
       <div class="flex-shrink-0">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       </div>
       <div class="ml-3 flex-1 md:flex md:justify-between">      
-        <p class="text-base font-medium">Requested <%= I18n.with_locale(:en) { time_ago_in_words(contribution_request.created_at) } %> ago</p>
+        <p class="text-base font-medium">
+          <% if contribution_request.state == "closed" %>
+            Request closed
+          <% else %>
+            Requested <%= I18n.with_locale(:en) { time_ago_in_words(contribution_request.created_at) } %> ago
+          <% end %>
+        </p>
       </div> 
     </div>
     <% if contribution_request.comment.present? %>
