@@ -1,7 +1,7 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = ["latitude", "longitude"]
+  static targets = ["latitude", "longitude", "link"]
 
   paste(event) {
     const input = event.clipboardData.getData('text')
@@ -15,5 +15,10 @@ export default class extends Controller {
         event.preventDefault() // Prevent the default paste behavior
       }
     }
+  }
+
+  copy() {
+    navigator.clipboard.writeText([this.latitudeTarget.value, this.longitudeTarget.value].join(","))
+    this.linkTarget.innerHTML = "copied!"
   }
 }
