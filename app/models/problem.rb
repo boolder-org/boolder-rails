@@ -56,6 +56,7 @@ class Problem < ApplicationRecord
   scope :without_location, -> { where(location: nil) }
   scope :with_line, -> { where(has_line: true) }
   scope :without_line, -> { where(has_line: false) }
+  scope :without_line_only, -> { where(has_line: false).with_location }
   scope :complete, -> { where(has_line: true).with_location }
   scope :incomplete, -> { where("problems.has_line = FALSE OR problems.location IS NULL") }
   scope :without_contribution_request, -> { left_joins(:contribution_requests).where(contribution_requests: { id: nil }) }

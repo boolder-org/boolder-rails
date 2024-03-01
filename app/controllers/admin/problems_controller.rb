@@ -15,7 +15,7 @@ class Admin::ProblemsController < Admin::BaseController
     end
 
     arel = if params[:missing] == "line"
-      arel.where(has_line: false).with_location
+      arel.without_line_only
     elsif params[:missing] == "location"
       arel.without_location
     else
