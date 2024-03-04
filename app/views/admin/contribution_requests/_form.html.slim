@@ -8,7 +8,7 @@ div data-controller="coordinates" class="contents"
     = form.text_field :location_estimated_lon, value: @contribution_request.location_estimated&.lon, "data-action": "paste->coordinates#paste", "data-coordinates-target": "longitude"
   
   div class="col-span-6 sm:col-span-2 flex items-end mb-3"
-    = link_to "copy", "javascript: void(0)", "data-action": "coordinates#copy", "data-coordinates-target": "link", class: "text-green-600 font-semibold"
+    = link_to "copy", "javascript: void(0)", "data-action": "coordinates#copy", "data-coordinates-target": "link", class: "text-emerald-600 font-semibold"
 
   div class="col-span-6 sm:col-span-4 sm:col-start-1"
     = form.label :comment, "Comment (admin only)"

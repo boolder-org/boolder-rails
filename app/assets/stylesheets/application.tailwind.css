@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500;
+    @apply inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500;
   }
 
   .btn-danger {
@@ -36,7 +36,7 @@
   }
 
   .turbo-progress-bar {
-    @apply bg-green-600
+    @apply bg-emerald-600
   }
 
   .topo-line-shadow {

@@ -14,7 +14,7 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
 
       = form_with url: problems_path, method: :get, class:"px-4 sm:px-0" do |form|
         label for="location" class="block text-sm font-medium text-gray-700" Niveau
-        = form.select :grade, @grades.keys, { selected: @grade }, { onchange: 'this.form.submit()', class: "mt-1 block w-full md:w-1/3 rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-green-500 focus:outline-none focus:ring-green-500 sm:text-sm" }
+        = form.select :grade, @grades.keys, { selected: @grade }, { onchange: 'this.form.submit()', class: "mt-1 block w-full md:w-1/3 rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-emerald-500 focus:outline-none focus:ring-emerald-500 sm:text-sm" }
 
       h2 class="text-xl font-bold mb-2 pt-8 px-4 sm:px-0"
         | 

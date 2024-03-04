@@ -18,16 +18,16 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
       div class="px-4 sm:px-0 mb-8"
         div class="border-b border-gray-200"
           nav class="-mb-px flex space-x-8" aria-label="Tabs"
-            <!-- Current: "border-green-500 text-green-600", Default: "border-transparent text-gray-500 hover:border-gray-200 hover:text-gray-700" -->
-            - tab_active = "border-green-500 text-green-600"
+            <!-- Current: "border-emerald-500 text-emerald-600", Default: "border-transparent text-gray-500 hover:border-gray-200 hover:text-gray-700" -->
+            - tab_active = "border-emerald-500 text-emerald-600"
             - tab_inactive = "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-800"
-            - badge_active = "bg-green-100 text-green-600"
+            - badge_active = "bg-emerald-100 text-emerald-600"
             - badge_inactive = "bg-gray-200 text-gray-900"
             a href="#{mapping_problems_path(area_id: @area.id, tab: "prio")}" class="#{@tab == :prio ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
               = t("views.mapping.problems.index.tab_prio")
-              <!-- Current: "bg-green-100 text-green-600", Default: "bg-gray-100 text-gray-900" -->
+              <!-- Current: "bg-emerald-100 text-emerald-600", Default: "bg-gray-100 text-gray-900" -->
               span class="#{@tab == :prio ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block"= @locations.map{|location, requests| requests.count }.inject(0, :+)
-            - klass = @tab == :rest ? "border-green-500 text-green-600" : "border-transparent text-gray-500 "
+            - klass = @tab == :rest ? "border-emerald-500 text-emerald-600" : "border-transparent text-gray-500 "
             a href="#{mapping_problems_path(area_id: @area.id, tab: "rest")}" class="#{@tab == :rest ? tab_active : tab_inactive} flex whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
               = t("views.mapping.problems.index.tab_rest")
               span class="#{@tab == :rest ? badge_active : badge_inactive} ml-3 rounded-full py-0.5 px-2.5 text-xs font-medium inline-block" = @problems.count
@@ -43,13 +43,13 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8"
                     = render "mapping/problems/problem", problem: problem
   
         div class="mt-8 px-4 sm:px-0"
-          = link_to t("views.mapping.problems.index.other_problem"), new_mapping_contribution_path, class: "text-green-600"
+          = link_to t("views.mapping.problems.index.other_problem"), new_mapping_contribution_path, class: "text-emerald-600"
   
       - else
 
         div class="px-4 sm:px-0"
           = link_to mapping_map_path(@area) do
-            div class="flex items-center space-x-2 text-green-600 mt-6"
+            div class="flex items-center space-x-2 text-emerald-600 mt-6"
               svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                 path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                 path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"

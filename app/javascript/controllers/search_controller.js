@@ -105,7 +105,7 @@ export default class extends Controller {
               //     dangerouslySetInnerHTML: {
               //       __html: `<div class="">
               //         <div class="flex items-center my-1" aria-hidden="true">
-              //           <div class="w-full border-t border-green-600"></div>
+              //           <div class="w-full border-t border-emerald-600"></div>
               //         </div>
               //       </div>`,
               //     },
@@ -212,7 +212,7 @@ export default class extends Controller {
               //   }
               //   return createElement('div', {
               //     dangerouslySetInnerHTML: {
-              //       __html: `<span class="text-green-600">
+              //       __html: `<span class="text-emerald-600">
               //       Voies
               //       </span>`,
               //     },
