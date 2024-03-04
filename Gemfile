@@ -17,11 +17,14 @@ gem "rorvswild", "~> 1.6.4"
 gem 'bugsnag', '~> 6.25.2'
 gem 'algoliasearch-rails', '~> 2.2.2'
 
+gem "importmap-rails", "~> 2.0"
 gem 'turbo-rails', '~> 1.4.0'
+gem 'stimulus-rails', '~> 1.3'
+# gem "tailwindcss-rails", "~> 2.3"
+
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 5.1.1'
 gem 'slim-rails', '~> 3.6.2'
-gem 'webpacker', '~> 5.4.0'
 gem 'jbuilder', '~> 2.11.5'
 gem 'image_processing', '~> 1.2'
 gem 'rack-cors', '~> 2.0.1'
