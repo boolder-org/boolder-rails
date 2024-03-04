@@ -11,9 +11,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_pack_tag 'application', 'data-turbo-track': 'reload' %>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= stylesheet_link_tag 'algolia_autocomplete', 'data-turbo-track': 'reload' %>
+    <%= javascript_importmap_tags %>
 
     <% if !Rails.env.development? %>
       <script async defer data-domain="boolder.com" src="https://plausible.io/js/plausible.js" data-turbo-track="reload"></script>
