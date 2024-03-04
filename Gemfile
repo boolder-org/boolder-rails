@@ -22,6 +22,7 @@ gem 'turbo-rails', '~> 1.4.0'
 gem 'stimulus-rails', '~> 1.3'
 gem "tailwindcss-rails", "~> 2.3"
 
+gem "sprockets-rails"
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 5.1.1'
 gem 'slim-rails', '~> 3.6.2'
