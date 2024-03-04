@@ -20,7 +20,7 @@ gem 'algoliasearch-rails', '~> 2.2.2'
 gem "importmap-rails", "~> 2.0"
 gem 'turbo-rails', '~> 1.4.0'
 gem 'stimulus-rails', '~> 1.3'
-# gem "tailwindcss-rails", "~> 2.3"
+gem "tailwindcss-rails", "~> 2.3"
 
 gem 'sass-rails', '>= 6'
 gem 'slim', '~> 5.1.1'
