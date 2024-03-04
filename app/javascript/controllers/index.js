@@ -10,7 +10,5 @@ eagerLoadControllersFrom("controllers", application)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
 
-
-
-// import Chart from "stimulus-chartjs"
-// application.register("chart", Chart)
+import Chart from "stimulus-chartjs"
+application.register("chart", Chart)

@@ -11,8 +11,9 @@ chart_data = {
 }
 
 chart_options = {
+  animation: false,
   scales: {
-      yAxes: [{
+      y: {
           ticks: {
               beginAtZero: true,
               max: 150,
@@ -22,19 +23,22 @@ chart_options = {
           gridLines: {
             color: "rgba(200, 200, 200, 0.3)",
           }
-      }],
-      xAxes: [{
+      },
+      x: {
         gridLines: {
           display: false,
         }
-      }]
+      }
   },
-  legend: {
-    display: false
+  plugins: {
+    legend: {
+      display: false
+    },
+    tooltip: {
+      enabled: false
+    },
   },
-  tooltips: {
-    enabled: false
-  },
+  
 }
 %>
 
