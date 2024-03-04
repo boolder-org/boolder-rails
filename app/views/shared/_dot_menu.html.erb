@@ -1,9 +1,9 @@
 <%# locals: (items:, align_class: 'right-0') -%>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative inline-block text-left" data-controller="dropdown">
+<div class="relative inline-block text-left" data-controller="reveal">
   <div>
-    <button type="button" class="rounded-full flex items-center text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-emerald-500" id="options-menu" aria-expanded="true" aria-haspopup="true" data-action="click->dropdown#toggle click@window->dropdown#hide" data-dropdown-target="button" role="button"
+    <button type="button" class="rounded-full flex items-center text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-emerald-500" id="options-menu" aria-expanded="true" aria-haspopup="true" data-action="click->reveal#toggle" data-reveal-target="button" role="button"
       >
       <span class="sr-only">Menu</span>
       <!-- Heroicon name: solid/dots-vertical -->
@@ -23,7 +23,7 @@
       From: "transform opacity-100 scale-100"
       To: "transform opacity-0 scale-95"
   -->
-  <div data-dropdown-target="menu" class="hidden z-50 origin-bottom-right absolute <%= align_class %> mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+  <div data-reveal-target="item" class="hidden z-50 origin-bottom-right absolute <%= align_class %> mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
     <div class="py-1" role="none">
       <% items.each do |item| %>
         <%= link_to item[:text], item[:link], class: "block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900", role: "menuitem", method: item[:method], data: item[:data], target: item[:target], rel: item[:rel]  %>
