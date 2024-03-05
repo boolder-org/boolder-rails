@@ -27,6 +27,6 @@ div
       p class=""
         = form.submit("Update", class: "btn btn-primary mt-8")
         - items = []
-        - items << { text: "destroy", link: admin_topo_path, method: :delete, data: { confirm: 'Are you sure?' } }
+        - items << { text: "destroy", link: admin_topo_path, data: { "turbo-confirm": 'Are you sure?', "turbo-method": :delete } }
         = render 'shared/dot_menu', items: items, align_class: "bottom-0"
 div style="margin-bottom: 300px"
