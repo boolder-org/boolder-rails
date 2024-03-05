@@ -1,19 +1,14 @@
-// Load all the controllers within this directory and all subdirectories. 
-// Controller files must be named *_controller.js.
+// Import and register all your controllers from the importmap under controllers/*
 
-import { Application } from "@hotwired/stimulus"
-import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
+import { application } from "controllers/application"
 
-const application = Application.start()
-const context = require.context("controllers", true, /_controller\.js$/)
-application.load(definitionsFromContext(context))
+// Eager load all controllers defined in the import map under controllers/**/*_controller
+import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
+eagerLoadControllersFrom("controllers", application)
 
-// enable Stimulus debug mode in development
-application.debug = process.env.NODE_ENV === 'development'
+// Lazy load controllers as they appear in the DOM (remember not to preload controllers in import map!)
+// import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
+// lazyLoadControllersFrom("controllers", application)
 
 import Chart from "stimulus-chartjs"
 application.register("chart", Chart)
-
-// import { Dropdown, Tabs } from "tailwindcss-stimulus-components"
-// application.register('dropdown', Dropdown)
-// application.register('tabs', Tabs)

@@ -20,8 +20,6 @@ NB: if you just want a quick access to the data, check out [boolder-data](https:
 
 - install homebrew: https://brew.sh/
 - install rvm: https://rvm.io
-- install yarn: `brew install yarn`
-- install node: `brew install node`
 
 
 ### Install Postgre
@@ -43,8 +41,7 @@ NB: if you just want a quick access to the data, check out [boolder-data](https:
 
 ### Run the app
 
-- `rails s`
-- `bin/webpack-dev-server` (for Javascript JIT compilation)
+- `bin/dev`
 
 ### Mapbox credentials
 
@@ -60,7 +57,7 @@ We use it to edit GeoJSON files.
 
 - Follow the instructions here: `https://josm.openstreetmap.de/wiki/Download#macOS`
 - Go to File > Preferences > Plugins
-- Click on the chexkbox next to `Fastdraw` and `PicLayer`, and then click on OK
+- Click on the checkbox next to `Fastdraw` and `PicLayer`, and then click on OK
 - Restart Josm
 - In the menu bar (on the left), click on `Fast Drawing mode` and then type `Q` to enter the options dialog. Click on `Draw closed polygons only`, choose `3` for `Starting Epsilon` and `Simplify with initial epsilon` for `Enter key mode`
 

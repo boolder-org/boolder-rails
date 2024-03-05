@@ -13,4 +13,4 @@ div class="mt-10 sm:mt-0"
                 = form.file_field :json, multiple: true
 
           div class="px-4 py-3 bg-gray-50 text-right sm:px-6"
-              = form.submit("Import", data: {confirm: "Are you sure?"}, class: "btn btn-danger")
+              = form.submit("Import", data: { "turbo-confirm" "Are you sure?" }, class: "btn btn-danger")
