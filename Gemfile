@@ -18,7 +18,7 @@ gem 'bugsnag', '~> 6.25.2'
 gem 'algoliasearch-rails', '~> 2.2.2'
 
 gem "importmap-rails", "~> 2.0"
-gem 'turbo-rails', '~> 1.4.0'
+gem 'turbo-rails', '~> 2.0'
 gem 'stimulus-rails', '~> 1.3'
 gem "tailwindcss-rails", "~> 2.3"
 
