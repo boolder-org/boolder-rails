@@ -3,7 +3,7 @@ class Admin::ContributeController < Admin::BaseController
     @missing = params[:missing].presence_in(%w( location line )) || session[:last_missing] || "location"
     session[:last_missing] = @missing
 
-    filtered = ->(arel, missing) { missing == "line" ? arel.without_line_only : arel.with_location }
+    filtered = ->(arel, missing) { missing == "line" ? arel.without_line_only : arel.without_location }
 
     @areas_with_stats = Area.published.
       map{|a| OpenStruct.new(
