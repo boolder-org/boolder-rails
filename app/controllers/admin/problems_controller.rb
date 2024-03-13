@@ -11,7 +11,7 @@ class Admin::ProblemsController < Admin::BaseController
     arel = if params[:circuit_id].to_i > 0
       arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
     else
-      arel.order(ascents: :desc)
+      arel.order("ascents DESC NULLS LAST")
     end
 
     arel = if params[:missing] == "line"
