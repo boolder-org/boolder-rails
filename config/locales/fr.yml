@@ -306,6 +306,12 @@ fr:
       index:
         metas:
           title: Tous les circuits à Fontainebleau
+    circuit7a:
+      see_on_map: Voir sur la carte
+      see_movie: Voir le film
+      metas:
+        title: Bleau dans la Peau - Circuit 100 7a
+        description: L'impossible circuit des 100 7a à Fontainebleau réalisé par Seb Berthe et Hugo Parmentier en 2023.
     problems:
       show:
         see_circuit: Voir le circuit
