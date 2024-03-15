@@ -53,6 +53,10 @@ fr:
       popular_areas: Secteurs populaires
       all_areas: Voir tous les secteurs
       promoted:
+        circuit7a:
+          title: Bleau dans la Peau
+          subtitle: Découvrez l'impossible circuit des 100 7a réalisé par Seb Berthe et Hugo Parmentier.
+          cta: Voir le circuit
         app:
           title: Découvrez l'appli Boolder
           subtitle: Le compagnon idéal pour vos sorties à Fontainebleau, disponible sur iPhone et Android.
@@ -307,6 +311,8 @@ fr:
         metas:
           title: Tous les circuits à Fontainebleau
     circuit7a:
+      title: Bleau dans la Peau
+      subtitle_html: L'impossible circuit des 100 7a <br>par Seb Berthe et Hugo Parmentier
       see_on_map: Voir sur la carte
       see_movie: Voir le film
       metas:

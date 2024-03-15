@@ -1,23 +1,21 @@
 - set_meta_tags title: t("views.circuit7a.metas.title")
 - set_meta_tags description: t("views.circuit7a.metas.description")
 
-- set_meta_tags og: { type: "website", image: image_url("circuit7a-cover.#{I18n.locale}.jpg") }
+- set_meta_tags og: { type: "website", image: image_url("circuit7a-cover.jpg") }
 
 
 div class="max-w-7xl mx-auto pt-5 mt-1 px-4 sm:px-6 lg:px-8 bg-gray-100 hidden sm:block mb-4"
-  = link_to areas_path, class: "text-sm font-medium text-gray-500 hover:text-gray-700 flex items-center space-x-1" do
-    div Fontainebleau  
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8"
   div class="lg:grid lg:grid-cols-2 lg:gap-16"
     div class="col-span-1"
       div class="aspect-w-16 aspect-h-9 relative overflow-hidden sm:rounded-lg"
-        div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{image_url("circuit7a-cover.#{I18n.locale}.jpg")});"
+        div class="bg-no-repeat bg-cover bg-center" style="background-image: url(#{image_url("circuit7a-cover.jpg")});"
         div class="bg-transparent" style="background-image: linear-gradient(to top, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 100%);"
-        / div class="absolute" class="flex items-center text-center justify-center" 
-        /   div class="block"
-        /     h1 class="text-4xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)" Bleau dans la Peau
-        /     p class="mt-2 text-gray-500 text-white sm:text-xl" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)" L'impossible circuit des 100 7a
+        div class="absolute" class="flex items-center text-center justify-center" 
+          div class="block"
+            h1 class="text-4xl sm:text-4xl font-bold text-white uppercase px-4" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= t("views.circuit7a.title")
+            p class="mt-2 text-gray-500 text-white sm:text-xl" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.8)"= t("views.circuit7a.subtitle_html")
 
 div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
   div class="lg:grid lg:grid-cols-2 lg:gap-16"
