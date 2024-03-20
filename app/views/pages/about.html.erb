@@ -153,14 +153,7 @@
 
 <div class="pt-4 pb-8" id="web_dev">
   <div class="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8">
-    <div class="rounded-3xl bg-gradient-to-l from-emerald-800 to-emerald-700 py-10 px-6 sm:px-12 lg:flex lg:items-center max-w-3xl">
-      <div class="lg:w-0 lg:flex-1">
-        <h2 class="text-3xl font-bold tracking-tight text-white"><%= t("views.about.web_dev.title") %></h2>
-        <p class="mt-4 text-lg text-emerald-100">
-          <%= t("views.about.web_dev.p1_html", link: link_to("Ruby on Rails", "https://github.com/boolder-org/boolder-rails", class: "font-medium underline text-emerald-200", target: "_blank")) %>
-        </p>
-      </div>
-    </div>
+    <%= render "dev_banner" %>
   </div>
 </div>
 

@@ -235,8 +235,8 @@ en:
         p2_html: You can also %{link} by mapping missing problems or by reporting mistakes.
         contribute_link: contribute
       web_dev:
-        title: Are you a Web developer?
-        p1_html: Join us and contribute to our codebase in %{link}.
+        title: Know how to code?
+        p1_html: We are actively looking for a %{link_web} and an %{link_ios} dev. Come and join us!
       faq:
         title: Frequently asked questions
         data:
