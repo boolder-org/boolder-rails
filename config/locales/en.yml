@@ -112,7 +112,8 @@ en:
       contributions:
         new:
           title: Add a contribution
-          how_to: How should I do it?
+          how_to: Read the instructions
+          warning_horizontal_html: 'Important: photos must be <span class=" underline">horizontal</span>.'
           problem: Problem
           problem_url_label: Link (bleau.info or Boolder)
           boulder: Boulder photo

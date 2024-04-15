@@ -112,7 +112,8 @@ fr:
       contributions:
         new:
           title: Ajouter une contribution
-          how_to: Comment s'y prendre ?
+          how_to: Lire le mode d'emploi
+          warning_horizontal_html: 'Important : les photos doivent être <span class=" underline">horizontales</span>.'
           problem: Voie
           problem_url_label: Lien (bleau.info ou Boolder)
           boulder: Photo du bloc
