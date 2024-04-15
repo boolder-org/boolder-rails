@@ -96,11 +96,11 @@ div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8"
             div class="flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
               = t("views.areas.show.all_problems", count: @area.problems.with_location.count)
         
-      div
-        h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"
-          = t("views.areas.show.access")
-
-        - if @area.poi_routes.any?
+      - if @area.poi_routes.any?
+        div
+          h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0"
+            = t("views.areas.show.access")
+        
           ul class="pt-2 px-4 sm:px-0"
             - @area.poi_routes.order(:distance).each do |poi_route|
               li class="flex justify-between text-gray-700 mb-4"
