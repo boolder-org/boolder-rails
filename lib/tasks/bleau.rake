@@ -6,10 +6,10 @@ namespace :bleau do
     areas = if area_id == "all"
       Area.all
     else
-      Area.where(id: area_id)  
+      Area.where(id: area_id)
     end
 
-    areas.published.all do |area|
+    areas.each do |area|
       bleau_area = area.bleau_area
   
       html = HTTParty.get("https://bleau.info/#{bleau_area.slug}").body
