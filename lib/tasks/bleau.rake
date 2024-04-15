@@ -1,6 +1,15 @@
 namespace :bleau do
   task import: :environment do
-    Area.published.all do |area|
+    area_id = ENV["area_id"]
+    raise "please specify an area_id" unless area_id.present?
+
+    areas = if area_id == "all"
+      Area.all
+    else
+      Area.where(id: area_id)  
+    end
+
+    areas.published.all do |area|
       bleau_area = area.bleau_area
   
       html = HTTParty.get("https://bleau.info/#{bleau_area.slug}").body
