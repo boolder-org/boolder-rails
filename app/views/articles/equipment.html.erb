@@ -56,10 +56,6 @@
             <%= t('views.articles.beginners_guide.equipment.guidebook_tip_html', path: app_path) %>
           </p>
 
-          <p>
-            <%= t('views.articles.beginners_guide.equipment.guidebook_tip2') %>
-          </p>
-
           <h2>
             <%= t('views.articles.beginners_guide.equipment.optional') %>
           </h2>
@@ -67,14 +63,9 @@
           <ul>
             <li><%= t('views.articles.beginners_guide.equipment.optional_item1_html') %></li>
             <li><%= t('views.articles.beginners_guide.equipment.optional_item2_html', path: climb_safely_path) %></li>
-            <li><%= t('views.articles.beginners_guide.equipment.optional_item3_html') %></li>
+            <li><%= t('views.articles.beginners_guide.equipment.optional_item3_html', path: rules_path) %></li>
             <li><%= t('views.articles.beginners_guide.equipment.optional_item4_html') %></li>
           </ul>
-
-          
-          <%= warning_box do %>
-            <%= t('views.articles.beginners_guide.equipment.warning_chalk_html', path: rules_path) %>
-          <% end %>
 
           <p>
             <%= t('views.articles.beginners_guide.equipment.other_tips') %>
