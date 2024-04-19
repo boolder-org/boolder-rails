@@ -83,11 +83,16 @@ fr:
           clean_shoes: Nettoyez vos chaussons
           clean_shoes_p1: Le sable et la terre qui se glissent sous vos chaussons contribuent à polir la roche, ce qui finit par la rendre impraticable à la longue.
           clean_shoes_p2: Pensez à nettoyer vos chaussons avec un paillasson ou un chiffon avant de débuter une voie.
+          rain: Pas de grimpe après la pluie
+          rain_p1: La roche de Fontainebleau est très fragile lorsqu'elle est humide.
+          rain_p2: Pour éviter d'abîmer la roche et/ou de casser des prises il est conseillé d'attendre que la roche soit bien sèche.
           other_rules: Autres règles
-          other_rules_item1: Ne grimpez pas sur des blocs humides (la roche peut casser)
-          other_rules_item2: Ne campez pas, ne faites pas de feu
+          other_rules_item1: Marchez sur les sentiers existants (la faune et la flore vous en remercierons !)
+          other_rules_item2: Portez votre crash pad plutôt que de le trainer par terre
           other_rules_item3: Remportez vos déchets (et pourquoi pas ceux que vous auriez trouvé sur place ?)
-          happy_climbing: Bonne grimpe !
+          other_rules_item4: Ne faites pas de feu, ne fumez pas
+          other_rules_item5_html: Campez uniquement sur les sites autorisés (il est <a href="%{path}" target="_blank">interdit de stationner</a> dans tous les parkings de 22h00 à 6h00)
+          video: En vidéo
           metas:
             title: Les règles de bonne conduite
       top_areas:

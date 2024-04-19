@@ -82,11 +82,16 @@ en:
           clean_shoes: Clean your shoes
           clean_shoes_p1: Sand and dirt under your shoes contribute to polish the rock, which damages it in the long run.
           clean_shoes_p2: Don't forget to clean your shoes with a doormat or a rug before you start climbing.
+          rain: No climbing after rain
+          rain_p1: The rock in Fontainebleau is very fragile when wet.
+          rain_p2: To avoid damaging the rock and/or breaking holds, it is advisable to wait until the rock is thoroughly dry.
           other_rules: Other rules
-          other_rules_item1: Don't climb on wet boulders (the rock can break)
-          other_rules_item2: Don't camp, don't make any fire
-          other_rules_item3: Take your trash with you (or any trash you may find on your way!)
-          happy_climbing: Happy bouldering!
+          other_rules_item1: Walk on existing trails (the wildlife and plants will thank you!)
+          other_rules_item2: Carry your crash mat rather than dragging it on the ground
+          other_rules_item3: Take your trash with you (and why not pick up any you find along the way?)
+          other_rules_item4: Do not build fires, do not smoke
+          other_rules_item5_html: Camp only on authorized sites (it is <a href="%{path}" target="_blank">forbidden to park</a> in all parking areas from 10:00 PM to 6:00 AM)
+          video: In video
           metas:
             title: Rules of good conduct
       top_areas:
