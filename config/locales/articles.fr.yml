@@ -21,7 +21,7 @@ fr:
           optional: En option
           optional_item1_html: un <strong>paillasson</strong> (ou chiffon) pour essuyer vos chaussons avant de commencer une voie
           optional_item2_html: des <strong>crash pads supplémentaires</strong>, cf. <a href="%{path}">“Grimper en sécurité”</a>
-          optional_item3_html: de la <strong>magnésie</strong> (à utiliser avec parcimonie !), cf. <a href="%{path}">“Règles pour protéger la forêt”</a>
+          optional_item3_html: de la <strong>magnésie</strong> (à utiliser avec parcimonie !), cf. <a href="%{path}">“Règles de bonne conduite”</a>
           optional_item4_html: une <strong>brosse souple</strong> pour nettoyer la roche et enlever les traces de magnésie
           warning_chalk_html: N’abusez pas de la magnésie car cela abîme la roche, cf. <a href="%{path}" class="">“Règles à connaitre”</a>.
           other_tips: Pensez également à prendre une tenue sportive qui ne vous gêne pas dans vos mouvements, ainsi que de la nourriture et de l’eau.
@@ -75,7 +75,7 @@ fr:
           metas:
             title: Les règles de sécurité pour le bloc en extérieur
         rules: 
-          title: Règles pour protéger la forêt
+          title: Règles de bonne conduite
           intro: La forêt de Fontainebleau est un environnement unique et fragile. Il est important de respecter certaines règles de bonne conduite pour la protéger.
           chalk: Halte à la magnésie
           chalk_p1: La magnésie abîme la roche, utilisez-la avec parcimonie. Un rocher propre a une meilleure adhérence, il est donc préférable de nettoyer les prises (avec une brosse souple) plutôt que d’utiliser de la magnésie.
@@ -89,7 +89,7 @@ fr:
           other_rules_item3: Remportez vos déchets (et pourquoi pas ceux que vous auriez trouvé sur place ?)
           happy_climbing: Bonne grimpe !
           metas:
-            title: Les règles à respecter pour faire du bloc en forêt
+            title: Les règles de bonne conduite
       top_areas:
         discover_fontainebleau: Découvrir Fontainebleau
         all_areas: Tous les secteurs à Fontainebleau

@@ -21,7 +21,7 @@ en:
           optional: Optional
           optional_item1_html: a <strong>doormat</strong> (or a rag), to clean your shoes before starting a problem
           optional_item2_html: <strong>additional crash mats</strong>, see <a href="%{path}">“Climb safely”</a>
-          optional_item3_html: some <strong>chalk</strong> (to be used sparingly!), see <a href="%{path}">“Rules to protect the forest”</a>
+          optional_item3_html: some <strong>chalk</strong> (to be used sparingly!), see <a href="%{path}">“Rules of good conduct”</a>
           optional_item4_html: a <strong>soft brush</strong> to clean the rock and remove chalk marks
           other_tips: Also, feel free to take a sports outfit that doesn't restrict your movements too much, and some food and water.
           metas:
@@ -74,7 +74,7 @@ en:
           metas:
             title: Safety tips for outdoor bouldering
         rules: 
-          title: Rules to protect the forest
+          title: Rules of good conduct
           intro: The Fontainebleau area is a unique and fragile environment. It is important to respect a few rules to protect it.
           chalk: Use chalk sparingly
           chalk_p1: Chalk damages the rock, so use it sparingly. You can instead clean the rock (with a soft brush) to increase friction.
@@ -88,7 +88,7 @@ en:
           other_rules_item3: Take your trash with you (or any trash you may find on your way!)
           happy_climbing: Happy bouldering!
           metas:
-            title: Rules to follow when bouldering outdoors
+            title: Rules of good conduct
       top_areas:
         discover_fontainebleau: Discover Fontainebleau
         all_areas: All areas in Fontainebleau
