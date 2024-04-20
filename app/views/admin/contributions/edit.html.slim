@@ -21,7 +21,8 @@ div class="mt-10 sm:mt-0"
     div class="mt-5 md:mt-0 md:col-span-2"
       - if problem = @contribution.problem
         p class="my-4"
-          = problem_circle_view_with_name(@contribution.problem) if @contribution.problem
+          = problem_circle_view(problem)
+          = link_to problem.name_with_fallback, admin_problem_path(problem), class: "ml-2", target: "_blank"
       - else
         p class="my-4"
           = @contribution.problem_name
