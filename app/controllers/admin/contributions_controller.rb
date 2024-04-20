@@ -3,6 +3,7 @@ class Admin::ContributionsController < Admin::BaseController
     arel = Contribution.all.order(id: :desc)
 
     if params[:state].in?(Contribution::STATES)
+      session[:contributions_filter] = params[:state]
       arel = arel.where(state: params[:state])
     end
 
