@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_02_02_132547) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_25_074350) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -90,6 +90,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_02_132547) do
     t.string "slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "category"
     t.index ["slug"], name: "index_bleau_areas_on_slug", unique: true
   end
 
