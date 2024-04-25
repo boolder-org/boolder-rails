@@ -28,7 +28,7 @@ namespace :bleau do
   end
   
   task promote: :environment do
-    bleau_problems = BleauProblem.
+    bleau_problems = BleauProblem.joins(:bleau_area => :area).
       left_outer_joins(:problem).where(problems: { id: nil })
 
     bleau_problems.each do |bleau_problem|

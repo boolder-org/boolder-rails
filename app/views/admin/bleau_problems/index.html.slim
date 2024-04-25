@@ -100,9 +100,9 @@ div class="flex flex-col my-6"
             tr
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Id
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Name
-              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Grade
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" Ascents
+              th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
               th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" 
           tbody class="bg-white divide-y divide-gray-200"
             - @bleau_problems.each do |bleau_problem|
@@ -114,11 +114,12 @@ div class="flex flex-col my-6"
                     = link_to bleau_problem.name_with_fallback, "https://bleau.info/c/#{bleau_problem.id}.html", target: "_blank"
                     / = problem_circle_view_with_name(problem)
                 td class="px-6 py-2 whitespace-nowrap w-1/12"
-                td class="px-6 py-2 whitespace-nowrap w-1/12"
                   span class="ml-1 text-gray-500"= bleau_problem.grade
                 td class="px-6 py-2 whitespace-nowrap w-4/12"
                   div class="text-gray-500"
                     = bleau_problem.ascents
+                td class="px-6 py-2 whitespace-nowrap w-1/12"
+                  = bleau_problem.bleau_area.area.name
                 td class="px-6 py-0 whitespace-nowrap"
                   div class="text-sm text-gray-900"
                     
