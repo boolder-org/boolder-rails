@@ -197,6 +197,10 @@ fr:
       report_description: Signalez une erreur sur une voie ou un circuit existant.
       dev_title: Pour les développeurs
       dev_description: "Contribuez au code source des applis : Ruby on Rails, iPhone et Android."
+      meetup:
+        p1: Venez grimper et cartographier avec l'équipe Boolder !
+        p2_html: Le <span class="font-bold tracking-tight text-white">dimanche 26 mai 2024</span> dans les environs de Fontainebleau (secteur à préciser).
+        cta: Rejoindre le groupe Whatsapp
       metas:
         title: Contribuer
         description: Cartographiez des secteurs, prenez des blocs en photos, signalez des erreurs, ou contribuez au projet open source
