@@ -1,3 +1,5 @@
+require 'csv'
+
 namespace :bleau do
   task import: :environment do
     area_id = ENV["area_id"]
@@ -85,5 +87,35 @@ namespace :bleau do
       problem.update!(sit_start: problem.bleau_problem.sit_start)
     end
     puts "done".green
+  end
+
+  task areas: :environment do
+    html = HTTParty.get("https://bleau.info/areas_by_region?locale=en").body
+    doc = Nokogiri::HTML(html)
+
+    areas = doc.css(".area_by_regions a").select{|a| a.attributes["data-method"].nil? }
+
+    data = areas.map{|a| [a.attributes["href"].value.sub(/^\/+/, ""), a.text.strip.split(/\s*\(/)[0].strip, a.css('span').text&.strip&.tr('()', '').presence] }
+    
+    missing = data.select{|slug, name, category| BleauArea.find_by(slug: slug).nil? }
+    raise "missing areas" if missing.any?
+    
+    data.each{|slug, name, category| BleauArea.find_by(slug: slug)&.update!(name: name, category: category) }
+  end
+
+  task csv: :environment do
+    bleau_areas = BleauArea.all
+
+    csv_data = CSV.generate(headers: true) do |csv|
+      csv << ["slug", "name", "category", "problems", "ascents", "mapped"]
+
+      bleau_areas.each do |b|
+        csv << [b.slug, b.name, b.category, b.bleau_problems.count, b.bleau_problems.sum(:ascents), b.area&.published]
+      end
+    end
+
+    File.write("bleau_areas.csv", csv_data)
+
+    puts "Data exported to bleau_areas.csv"
   end
 end
