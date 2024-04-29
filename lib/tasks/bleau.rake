@@ -103,7 +103,7 @@ namespace :bleau do
     data.each{|slug, name, category| BleauArea.find_by(slug: slug)&.update!(name: name, category: category) }
   end
 
-  task csv: :environment do
+  task csv_areas: :environment do
     bleau_areas = BleauArea.all
 
     csv_data = CSV.generate(headers: true) do |csv|
@@ -117,5 +117,21 @@ namespace :bleau do
     File.write("bleau_areas.csv", csv_data)
 
     puts "Data exported to bleau_areas.csv"
+  end
+
+  task csv_problems: :environment do
+    bleau_problems = BleauProblem.left_outer_joins(:problem).where(problems: { id: nil }).where("bleau_problems.ascents > 0").order(ascents: :desc)
+
+    csv_data = CSV.generate(headers: true) do |csv|
+      csv << ["area", "name", "grade", "ascents"]
+
+      bleau_problems.each do |bp|
+        csv << [bp.bleau_area.name, bp.name, bp.grade, bp.ascents]
+      end
+    end
+
+    File.write("bleau_problems.csv", csv_data)
+
+    puts "Data exported to bleau_problems.csv"
   end
 end
