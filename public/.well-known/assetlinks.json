@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.boolder.boolder",
+      "sha256_cert_fingerprints": [
+        "AE:32:15:75:47:7E:5E:46:4B:DE:43:22:91:01:F6:D4:3E:38:D4:E2:2C:FE:7E:FE:B1:DF:F1:C0:23:8F:15:CB"
+      ]
+    }
+  }
+]
