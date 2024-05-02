@@ -15,6 +15,11 @@ class Line < ApplicationRecord
   scope :with_coordinates, -> { where.not(coordinates: nil) }
   default_scope { order(created_at: :asc) } # TODO: use a dedicated order column for multi-topos problems (e.g. traverses)
 
+  def secondary_lines
+    (topo.lines.reject{|l| l.problem.parent_id.present?} - [self]).
+      select{|l| l.problem.lines.published.first.topo_id == self.topo_id } # TODO: simplify once we handle ordering of multiple lines
+  end
+
   private
 
   def validate_line_length

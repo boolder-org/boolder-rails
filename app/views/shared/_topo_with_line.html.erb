@@ -25,7 +25,7 @@
     </div>
   <% end %>
 
-  <% (line.topo.lines.reject{|l| l.problem.parent_id.present?} - [line]).each do |secondary_line| %>
+  <% line.secondary_lines.each do |secondary_line| %>
     <% if secondary_line.coordinates %>
       <div class="absolute" style="left:<%= secondary_line.coordinates.first['x']*100 %>%; top:<%= secondary_line.coordinates.first['y']*100 %>%">
         <div class="relative">
