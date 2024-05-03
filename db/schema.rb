@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_25_074350) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_03_064629) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -169,6 +169,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_25_074350) do
     t.bigint "topo_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "position", null: false
+    t.index ["problem_id", "position"], name: "index_lines_on_problem_id_and_position", unique: true
     t.index ["problem_id"], name: "index_lines_on_problem_id"
     t.index ["topo_id"], name: "index_lines_on_topo_id"
   end

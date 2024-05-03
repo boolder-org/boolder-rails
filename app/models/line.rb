@@ -1,5 +1,6 @@
 class Line < ApplicationRecord
   belongs_to :problem, touch: true
+  positioned on: :problem
   belongs_to :topo
   accepts_nested_attributes_for :topo
 
@@ -13,7 +14,7 @@ class Line < ApplicationRecord
   scope :published, -> { joins(:topo).where(topos: { published: true }) }
   scope :unpublished, -> { joins(:topo).where(topos: { published: false }) }
   scope :with_coordinates, -> { where.not(coordinates: nil) }
-  default_scope { order(created_at: :asc) } # TODO: use a dedicated order column for multi-topos problems (e.g. traverses)
+  default_scope { order(position: :asc) }
 
   def secondary_lines
     (topo.lines.reject{|l| l.problem.parent_id.present?} - [self]).
