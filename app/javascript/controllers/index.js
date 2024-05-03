@@ -12,3 +12,6 @@ eagerLoadControllersFrom("controllers", application)
 
 import Chart from "stimulus-chartjs"
 application.register("chart", Chart)
+
+import Sortable from '@stimulus-components/sortable'
+application.register('sortable', Sortable)

@@ -20,10 +20,10 @@ class Admin::LinesController < Admin::BaseController
   def update
     set_line
 
-    coordinates = JSON.parse(params[:line][:coordinates])
+    # coordinates = JSON.parse(params[:line][:coordinates])
     
-    if @line.update(coordinates: coordinates)
-      auto_close_contribution_request(@line)
+    if @line.update(line_params)
+      # auto_close_contribution_request(@line)
       
       flash[:notice] = "Line updated"
       redirect_to edit_admin_line_path(@line)
@@ -58,7 +58,7 @@ class Admin::LinesController < Admin::BaseController
 
   private 
   def line_params
-    params.require(:line).permit(:problem_id, :topo_id, topo_attributes: [:photo])
+    params.require(:line).permit(:problem_id, :topo_id, :position, topo_attributes: [:photo])
   end
 
   def set_line

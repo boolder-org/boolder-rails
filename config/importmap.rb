@@ -2,7 +2,7 @@
 
 pin "application"
 pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
-pin "@hotwired/stimulus", to: "stimulus.min.js"
+pin "@hotwired/stimulus", to: "@hotwired--stimulus.js" # @3.2.2
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
 
@@ -22,3 +22,6 @@ pin "@algolia/autocomplete-shared/dist/esm/preset-algolia/algoliasearch", to: "h
 pin "@algolia/autocomplete-shared/dist/esm/preset-algolia/createRequester", to: "https://ga.jspm.io/npm:@algolia/autocomplete-shared@1.9.3/dist/esm/preset-algolia/createRequester.js"
 pin "htm", to: "https://ga.jspm.io/npm:htm@3.1.1/dist/htm.module.js"
 pin "preact", to: "https://ga.jspm.io/npm:preact@10.15.1/dist/preact.module.js"
+pin "@rails/request.js", to: "@rails--request.js.js" # @0.0.8
+pin "@stimulus-components/sortable", to: "@stimulus-components--sortable.js" # @5.0.1
+pin "sortablejs" # @1.15.2
