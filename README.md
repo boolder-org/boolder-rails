@@ -24,7 +24,7 @@ NB: if you just want a quick access to the data, check out [boolder-data](https:
 
 ### Install Postgre
 - cd to the app directory
-- `brew install postgres`
+- `brew install postgresql`
 - `brew install postgis`
 - `brew services start postgresql`
 - `createdb dump-prod`
@@ -38,6 +38,7 @@ NB: if you just want a quick access to the data, check out [boolder-data](https:
 ### Import prod data
 - `dropdb dump-prod && createdb dump-prod`
 - `psql -d dump-prod < db/dump-prod.sql`
+- `rake db:migrate`
 
 ### Run the app
 
