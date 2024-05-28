@@ -11,7 +11,7 @@ class Problem < ApplicationRecord
 
   audited except: [:has_line, :ascents, :ratings, :ratings_average, :popularity, :featured], associated_with: :import
   attr_accessor :import # used by audited associated_with: :import
-  include CheckConflicts
+  # include CheckConflicts
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
