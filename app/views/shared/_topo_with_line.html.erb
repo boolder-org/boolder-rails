@@ -15,11 +15,13 @@
 
 
   <% if line.coordinates %>
-    <div class="absolute" style="left:<%= line.coordinates.first['x']*100 %>%; top:<%= line.coordinates.first['y']*100 %>%">
-      <div class="absolute hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
-        <%= circle_view("&nbsp;".html_safe, klass: "h-6 w-6 leading-6 bg-gray-500 topo-line-shadow") %>
+    <% if line.first? %>
+      <div class="absolute" style="left:<%= line.coordinates.first['x']*100 %>%; top:<%= line.coordinates.first['y']*100 %>%">
+        <div class="absolute hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
+          <%= circle_view("&nbsp;".html_safe, klass: "h-6 w-6 leading-6 bg-gray-500 topo-line-shadow") %>
+        </div>
       </div>
-    </div>
+    <% end %>
     <div class="absolute top-0 left-0 w-full pointer-events-none">
       <svg data-topo-line-target="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="topo-line-shadow"></svg>
     </div>
@@ -45,11 +47,12 @@
     <% end %>
   <% end %>
 
-  <% if line.coordinates %>
+  <% if line.coordinates && line.first? %>
     <div class="absolute z-20" style="left:<%= line.coordinates.first['x']*100 %>%; top:<%= line.coordinates.first['y']*100 %>%">
       <div class="absolute hidden" style="top:-12px; left:-12px;" data-topo-line-target="circle">
         <%= problem_circle_view(line.problem) %>
       </div>
     </div>
   <% end %>
+
 </div>

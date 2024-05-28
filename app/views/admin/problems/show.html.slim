@@ -64,8 +64,8 @@ div class="mb-3 md:grid md:grid-cols-6 md:gap-6"
           li data-sortable-update-url="#{admin_line_path(line)}"
             = link_to edit_admin_line_path(line) do
               = render 'shared/topo_with_line', line: line, scope: :admin
-            div
-              = "Position: #{line.position}"
+            / div
+            /   = "Position: #{line.position}"
       
       - unless @problem.lines.none?
         p class="my-4"
