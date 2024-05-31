@@ -1,0 +1,21 @@
+<div class="col-span-6 sm:col-span-3">
+  <%= form.label :area_id, "Area" %>
+  <%= form.collection_select :area_id, Area.order(:id), :id, :name_debug, include_blank: true %>
+</div>
+
+<div class="col-span-6 sm:col-span-3">
+  <%= form.label :poi_id, "Poi" %>
+  <%= form.collection_select :poi_id, Poi.order(:id), :id, :name, include_blank: true %>
+</div>
+
+<div class="col-span-6 sm:col-span-2">
+  <%= form.label :distance, 'Distance (meters)' %>
+  <%= form.text_field :distance, autocomplete: "off" %>
+</div>
+<div class="col-span-6 sm:col-span-4"></div>
+
+<div class="col-span-6 sm:col-span-2">
+  <%= form.label :transport %>
+  <%= form.select :transport, PoiRoute::TRANSPORT_VALUES %>
+</div>
+<div class="col-span-6 sm:col-span-4"></div>

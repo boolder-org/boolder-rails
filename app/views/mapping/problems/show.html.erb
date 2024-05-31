@@ -1,0 +1,108 @@
+<% set_meta_tags nofollow: true %>
+<% set_meta_tags title: t("views.mapping.problems.show.metas.title") %>
+<% set_meta_tags description: t("views.mapping.problems.show.metas.description") %>
+
+<div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8">
+  <div class="px-4 sm:px-0">
+    <%= link_to mapping_problems_path(area_id: @problem.area_id), class: "hover:text-gray-700" do %>
+      <div class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        <span><%= t("views.breadcrumbs.back") %></span>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+  <div class="md:grid md:grid-cols-2 md:gap-16 mb-4">
+    <div class="col-span-1">
+      <div class="flex justify-between items-center px-4 sm:px-0">
+        <div class="flex justify-between items-center w-full mt-2">
+          <h1 class="text-3xl font-bold"><%= @problem.name_with_fallback %></h1>
+          <div class="text-gray-400 text-4xl font-bold"><%= @problem.grade %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8">
+  <div class="md:grid md:grid-cols-2 md:gap-16 mb-4">
+    <div class="col-span-1">
+      <div class="px-4 sm:px-0">
+        <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow">
+          <div class="px-4 py-5 sm:px-6 flex space-x-2">
+            <span class="font-bold">①</span>
+            <span class="font-bold"><%= t("views.mapping.problems.show.step1") %></span>
+          </div>
+          <div class="bg-gray-50 px-4 py-5 sm:p-6">
+            <% if @problem.contribution_requests.where.not(location_estimated: nil).any? %>
+              <%= link_to mapping_map_path(pid: @problem.id), rel: "nofollow" do %>
+                <div class="flex items-center space-x-2 text-emerald-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div><%= t("views.mapping.see_on_map") %></div>
+                </div>
+              <% end %>
+            <% else %>
+              <div class="flex items-center space-x-2 text-gray-500"><%= t("views.mapping.problems.show.no_location") %></div>
+            <% end %>
+
+            <% if @problem.bleau_info_id.present? %>
+              <%= link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do %>
+                <div class="flex items-center space-x-2 text-emerald-600 mt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  <div><%= t("views.mapping.problems.show.see_on_bleau_info") %></div>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-4 sm:px-0 mb-4">
+        <div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow mt-4">
+          <div class="px-4 py-5 sm:px-6 flex space-x-2">
+            <span class="font-bold">②</span>
+            <span class="font-bold"><%= t("views.mapping.problems.show.step2") %></span>
+          </div>
+          <div class="bg-gray-50 px-4 py-5 sm:p-6">
+            <ul class="list-disc px-6">
+              <li><%= t("views.mapping.problems.show.photo") %></li>
+              <li><%= t("views.mapping.problems.show.line") %></li>
+              <li><%= t("views.mapping.problems.show.location") %></li>
+            </ul>
+            <div class="rounded-md shadow mt-4">
+              <%= link_to new_mapping_contribution_path(problem_id: @problem.id), class: "flex w-full items-center justify-center rounded-md border border-transparent bg-emerald-600 px-8 py-3 text-base font-medium text-white hover:bg-emerald-700 md:py-4 md:px-10 md:text-lg" do %>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="ml-2"><%= t("views.mapping.problems.show.add_contribution") %></span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% if @contributions.any? %>
+        <h2 class="text-xl font-bold mt-8 px-4 sm:px-0"><%= t("views.mapping.problems.show.pending_contributions") %></h2>
+        <div class="mt-4 px-4 sm:px-0">
+          <ul role="list" class="list-disc px-4">
+            <% @contributions.each do |contribution| %>
+              <li>
+                <%= link_to I18n.l(contribution.created_at, format: :long), [:mapping, contribution] %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

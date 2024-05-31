@@ -1,0 +1,8 @@
+<div class="h-20 lg:h-28 rounded-lg <%= color %>">
+  <div class="h-full p-4 flex items-center space-x-4 text-center justify-center text-white">
+    <%= capture(&block) %>
+    <h1 class="flex-initial text-sm sm:text-base font-bold uppercase" style="text-shadow: 0px 0px 20px rgba(0,0,0,0.2)">
+      <%= title.html_safe %>
+    </h1>
+  </div>
+</div>

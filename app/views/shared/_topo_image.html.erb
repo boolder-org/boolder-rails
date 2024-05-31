@@ -1,0 +1,4 @@
+<div class="w-full aspect-w-4 aspect-h-3 <%= klass %>">
+  <div class="bg-gray-300 animate-pulse <%= klass %>"></div>
+  <%= cdn_image_tag(topo.photo.variant(:medium), class: "w-full object-cover #{klass}", data: { 'topo-line-target': 'image' }) %>
+</div>

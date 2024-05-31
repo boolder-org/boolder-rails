@@ -1,0 +1,58 @@
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :published %>
+  <%= form.check_box :published %>
+</div>
+<div class="col-span-6 sm:col-span-2"></div>
+
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :name %>
+  <%= form.text_field :name, autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :short_name %>
+  <%= form.text_field :short_name, autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :slug %>
+  <%= form.text_field :slug, autocomplete: "off" %>
+</div>
+<div class="col-span-6 sm:col-span-2"></div>
+
+<div class="col-span-6 sm:col-span-2">
+  <%= form.label :priority %>
+  <%= form.select :priority, [["1", 1], ["2", 2], ["3", 3]] %>
+</div>
+<div class="col-span-6 sm:col-span-4"></div>
+
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :joined_tags, 'Tags' %>
+  <%= form.text_field :joined_tags, value: @area.tags.join(","), autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-6">
+  <%= form.label :description_fr %>
+  <%= form.text_area :description_fr, rows: 5 %>
+</div>
+
+<div class="col-span-6 sm:col-span-6">
+  <%= form.label :description_en %>
+  <%= form.text_area :description_en, rows: 5 %>
+</div>
+
+<div class="col-span-6 sm:col-span-6">
+  <%= form.label :warning_fr %>
+  <%= form.text_area :warning_fr, rows: 3 %>
+</div>
+
+<div class="col-span-6 sm:col-span-6">
+  <%= form.label :warning_en %>
+  <%= form.text_area :warning_en, rows: 3 %>
+</div>
+
+<div class="col-span-6 sm:col-span-4">
+  <%= image_tag(@area.cover) if @area.cover&.persisted? %>
+  <%= form.label :cover %>
+  <%= form.file_field :cover %>
+</div>

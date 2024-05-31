@@ -1,0 +1,73 @@
+<% problem = @contribution.problem %>
+
+<% add_breadcrumb "Fontainebleau", admin_areas_path %>
+<% add_breadcrumb problem.area.name, admin_area_problems_path(area_slug: problem.area.slug, circuit_id: problem.circuit&.id) if problem %>
+<% add_breadcrumb "Problem ##{problem.id}", admin_problem_path(problem) if problem %>
+<% add_breadcrumb "Contribution ##{@contribution.id}", nil, class: "active" %>
+
+<div class="mb-4">
+  <%= link_to "<- contributions", admin_contributions_path(state: session[:contributions_filter].presence), class: "text-emerald-600" %>
+</div>
+
+<div class="mt-10 sm:mt-0">
+  <div class="md:grid md:grid-cols-4 md:gap-6">
+    <div class="mt-5 md:mt-0 md:col-span-2">
+      <%= form_with model: [:admin, @contribution] do |form| %>
+        <div class="shadow overflow-hidden sm:rounded-md">
+          <div class="px-4 py-5 bg-white sm:p-6">
+            <div class="grid grid-cols-6 gap-6">
+              <%= render "form", form: form %>
+            </div>
+          </div>
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit" class="btn">Update</button>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="mt-5 md:mt-0 md:col-span-2">
+      <% if problem = @contribution.problem %>
+        <p class="my-4">
+          <%= problem_circle_view(problem) %>
+          <%= link_to problem.name_with_fallback, admin_problem_path(problem), class: "ml-2", target: "_blank" %>
+        </p>
+      <% else %>
+        <p class="my-4">
+          <%= @contribution.problem_name %>
+        </p>
+        <p class="my-4">
+          <%= @contribution.problem_url %>
+        </p>
+      <% end %>
+
+      <div class="mb-4">
+        <div><%= @contribution.contributor_name %></div>
+        <div class="text-gray-400 mb-4"><%= @contribution.contributor_email %></div>
+      </div>
+
+      <div class="mb-4">
+        <%= simple_format @contribution.comment %>
+      </div>
+
+      <div class="mb-4">
+        <% if location = @contribution.location %>
+          <span>GPS: </span>
+          <%= [location.lat, location.lon].join(",") %>
+        <% end %>
+      </div>
+
+      <% @contribution.photos.each do |photo| %>
+        <%= image_tag(photo, class: "w-full object-cover") %>
+      <% end %>
+
+      <% @contribution.line_drawings.each do |line_drawing| %>
+        <%= image_tag(line_drawing, class: "w-full object-cover") %>
+      <% end %>
+
+      <% @contribution.location_drawings.each do |location_drawing| %>
+        <%= image_tag(location_drawing, class: "w-full object-cover") %>
+      <% end %>
+    </div>
+  </div>
+</div>

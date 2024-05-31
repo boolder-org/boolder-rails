@@ -1,0 +1,22 @@
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :name %>
+  <%= form.text_field :name, autocomplete: "off" %>
+</div>
+<div class="col-span-6 sm:col-span-2"></div>
+
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :short_name %>
+  <%= form.text_field :short_name, autocomplete: "off" %>
+</div>
+<div class="col-span-6 sm:col-span-2"></div>
+
+<div class="col-span-6 sm:col-span-3">
+  <%= form.label :poi_type %>
+  <%= form.select :poi_type, Poi::TYPE_VALUES %>
+</div>
+<div class="col-span-6 sm:col-span-3"></div>
+
+<div class="col-span-6 sm:col-span-6">
+  <%= form.label :google_url %>
+  <%= form.text_field :google_url, autocomplete: "off" %>
+</div>
