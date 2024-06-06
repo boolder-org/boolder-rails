@@ -1,0 +1,26 @@
+<div data-controller="coordinates" class="contents">
+  <div class="col-span-6 sm:col-span-2">
+    <%= form.label :location_estimated_lat, "Latitude estimated" %>
+    <%= form.text_field :location_estimated_lat, value: @contribution_request.location_estimated&.lat, "data-action": "paste->coordinates#paste", "data-coordinates-target": "latitude" %>
+  </div>
+  <div class="col-span-6 sm:col-span-2">
+    <%= form.label :location_estimated_lon, "Longitude estimated" %>
+    <%= form.text_field :location_estimated_lon, value: @contribution_request.location_estimated&.lon, "data-action": "paste->coordinates#paste", "data-coordinates-target": "longitude" %>
+  </div>
+  
+  <div class="col-span-6 sm:col-span-2 flex items-end mb-3">
+    <%= link_to "copy", "javascript: void(0)", "data-action": "coordinates#copy", "data-coordinates-target": "link", class: "text-emerald-600 font-semibold" %>
+  </div>
+  
+  <div class="col-span-6 sm:col-span-4 sm:col-start-1">
+    <%= form.label :comment, "Comment (admin only)" %>
+    <%= form.text_area :comment, rows: 5 %>
+  </div>
+  
+  <% if @contribution_request.persisted? %>
+    <div class="col-span-6 sm:col-span-2 sm:col-start-1">
+      <%= form.label :state %>
+      <%= form.select :state, ContributionRequest::STATES %>
+    </div>
+  <% end %>
+</div>

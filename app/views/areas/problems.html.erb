@@ -1,0 +1,36 @@
+<div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8">
+  <div class="px-4 sm:px-0">
+    <div class="flex items-center space-x-1 text-sm font-medium text-gray-500">
+      <div><%= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700" %></div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      <div><%= link_to @area.name, area_path(@area), class: "hover:text-gray-700" %></div>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8">
+  <div class="lg:grid lg:grid-cols-2 lg:gap-16 mt-4">
+    <div class="col-span-1">
+      <div>
+        <h2 class="text-2xl font-bold mb-4 px-4 sm:px-0">
+          <%= t('views.areas.show.problems_in', area: @area.name) %><%-
+          -%><span class="font-semibold text-gray-400 ml-2"><%= "(#{@area.problems.with_location.count})" %></span>
+        </h2>
+        <div>
+          <% @problems.each do |grade, problems| %>
+            <h3 class="px-4 sm:px-0 text-xl font-semibold mt-4 mb-4"><%= grade %></h3>
+            <ul role="list">
+              <% problems.each do |problem| %>
+                <% cache [problem, I18n.locale, "v2", "show_featured=true"] do %>
+                  <%= render problem, show_featured: true %>
+                <% end %>
+              <% end %>
+            </ul>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

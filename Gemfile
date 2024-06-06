@@ -24,8 +24,6 @@ gem "tailwindcss-rails", "~> 2.3"
 
 gem "sprockets-rails"
 gem 'sass-rails', '>= 6'
-gem 'slim', '~> 5.1.1'
-gem 'slim-rails', '~> 3.6.2'
 gem 'jbuilder', '~> 2.11.5'
 gem 'image_processing', '~> 1.2'
 gem 'rack-cors', '~> 2.0.1'

@@ -1,0 +1,35 @@
+<% set_meta_tags nofollow: true %>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8">
+  <div class="mt-10 sm:mt-0">
+    <h1 class="text-3xl font-bold mt-8 mb-4 px-4 sm:px-0">Contribution</h1>
+
+    <div class="px-4 sm:px-0">
+      <p class="my-4">
+        <%= @contribution.problem_name %>
+      </p>
+      <p class="my-4">
+        <%= @contribution.problem_url %>
+      </p>
+        
+      <%= simple_format @contribution.comment %>
+
+      <% if (location = @contribution.location) %>
+        <span>GPS : </span>
+        <%= [location.lat, location.lon].join(",") %>
+      <% end %>
+    </div>
+
+    <% @contribution.photos.each do |photo| %>
+      <%= image_tag(photo, class: "w-full object-cover") %>
+    <% end %>
+
+    <% @contribution.line_drawings.each do |line_drawing| %>
+      <%= image_tag(line_drawing, class: "w-full object-cover") %>
+    <% end %>
+
+    <% @contribution.location_drawings.each do |location_drawing| %>
+      <%= image_tag(location_drawing, class: "w-full object-cover") %>
+    <% end %>
+  </div>
+</div>

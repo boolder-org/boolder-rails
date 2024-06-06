@@ -1,0 +1,40 @@
+<div class="flex flex-col my-6">
+  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Id</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Applied?</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"></th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <% @imports.take(200).each do |import| %>
+              <tr class="place-content-start align-top h-16">
+                <td class="px-6 py-2 whitespace-nowrap w-1/12">
+                  <div class="text-sm text-gray-500"><%= link_to import.id, [:admin, import] %></div>
+                </td>
+                <td class="px-6 py-2 whitespace-nowrap w-2/12">
+                  <div class="text-sm text-gray-500"><%= import.applied? %></div>
+                </td>
+                <td class="px-6 py-2 whitespace-nowrap w-4/12">
+                  <%= import.applied_at %>
+                </td>
+                <td class="px-6 py-2 whitespace-nowrap w-5/12">
+                  <% if import.associated_audits.count > 0 %>
+                    <span><%= "#{import.associated_audits.count} changes" %></span>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><%= "#{@imports.count} results" %></p>

@@ -1,0 +1,44 @@
+<div class="col-span-6 sm:col-span-1">
+  <%= form.label :circuit_number, "Number" %>
+  <%= form.text_field :circuit_number, autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-1">
+  <%= form.label :circuit_letter, "Bis" %>
+  <%= form.select :circuit_letter, Problem::LETTERS.invert, { include_blank: true } %>
+</div>
+
+<div class="col-span-6 sm:col-span-2">
+  <%= form.label :circuit_id %>
+  <%= form.collection_select :circuit_id, @circuits, :id, :color, include_blank: true %>
+</div>
+
+<div class="col-span-6 sm:col-span-2 sm:col-start-1">
+  <%= form.label :bleau_info_id, "Bleau.info id" %>
+  <%= form.text_field :bleau_info_id, autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-4 sm:col-start-1">
+  <%= form.label :name %>
+  <%= form.text_field :name, autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-1">
+  <%= form.label :grade %>
+  <%= form.text_field :grade, autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-2">
+  <%= form.label :steepness %>
+  <%= form.select :steepness, Problem::STEEPNESS_VALUES, { include_blank: false, default: :other } %>
+</div>
+
+<div class="col-span-6 sm:col-span-4">
+  <%= form.label :sit_start %>
+  <%= form.check_box :sit_start %>
+</div>
+
+<div class="col-span-6 sm:col-span-2 sm:col-start-1">
+  <%= form.label :parent_id, "Parent id" %>
+  <%= form.text_field :parent_id, autocomplete: "off" %>
+</div>

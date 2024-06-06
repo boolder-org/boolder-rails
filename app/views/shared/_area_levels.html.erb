@@ -1,0 +1,6 @@
+<% area.levels.each do |level, enabled| %>
+  <% background_color = enabled ? "rgba(5, 150, 105, 0.8)" : "rgba(204, 204, 204, .5)" %>
+  <span class="ml-1 rounded-sm text-sm h-4 w-4 leading-4 inline-flex justify-center" style="background-color: <%= background_color %>; color: #FFF">
+    <%= level %>
+  </span>
+<% end %>

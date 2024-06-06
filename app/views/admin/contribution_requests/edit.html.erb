@@ -1,0 +1,41 @@
+<% problem = @contribution_request.problem %>
+
+<% add_breadcrumb "Fontainebleau", admin_areas_path %>
+<% add_breadcrumb problem.area.name, admin_area_problems_path(area_slug: problem.area.slug, circuit_id: problem.circuit&.id) %>
+<% add_breadcrumb "Problem ##{problem.id}", admin_problem_path(problem) %>
+<% add_breadcrumb "Contribution Request ##{@contribution_request.id}", nil, class: "active" %>
+
+<div class="mt-10 sm:mt-0">
+  <div class="md:grid md:grid-cols-6 md:gap-6">
+    <div class="mt-5 md:mt-0 md:col-span-3">
+      <%= form_with model: [:admin, @contribution_request] do |form| %>
+        <div class="shadow overflow-hidden sm:rounded-md">
+          <div class="px-4 py-5 bg-white sm:p-6">
+            <div class="grid grid-cols-6 gap-6">
+              <%= render "form", form: form %>
+            </div>
+          </div>
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit" class="btn">Update</button>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="mt-5 md:mt-0 md:col-span-2 md:col-start-5">
+      <div class="mb-8 shadow overflow-hidden sm:rounded-md">
+        <div class="px-4 py-5 bg-white sm:p-6">
+          <%= link_to mapping_map_path(pid: @contribution_request.problem.id), target: "_blank" do %>
+            <div class="flex items-center space-x-2 text-emerald-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <div>See on contribute map</div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

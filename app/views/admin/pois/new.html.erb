@@ -1,0 +1,25 @@
+<h1 class="my-3">New Poi</h1>
+
+<div class="mt-10 sm:mt-0">
+  <div class="md:grid md:grid-cols-4 md:gap-6">
+    <div class="mt-5 md:mt-0 md:col-span-2">
+      <%= form_with model: [:admin, @poi] do |form| %>
+        <div class="shadow overflow-hidden sm:rounded-md">
+          <div class="px-4 py-5 bg-white sm:p-6">
+            <div class="grid grid-cols-6 gap-6">
+              <%= render "form", form: form %>
+            </div>
+          </div>
+
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit" class="btn">Save</button>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="md:col-span-2">
+      <div class="px-4 sm:px-0"></div>
+    </div>
+  </div>
+</div>

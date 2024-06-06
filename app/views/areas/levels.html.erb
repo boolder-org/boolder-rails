@@ -1,0 +1,69 @@
+<% set_meta_tags title: t("views.areas.levels.metas.title") %>
+<% set_meta_tags description: t("views.areas.levels.metas.description") %>
+<% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-6">
+  <div class="px-4 sm:px-0">
+    <div class="flex items-center space-x-1 text-sm font-medium text-gray-500">
+      <div><%= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700" %></div>
+    </div>
+    <!-- Uncomment the next line if you need the h1 heading -->
+    <!-- <h1 class="text-3xl font-bold mt-4">Secteurs par niveau</h1> -->
+  </div>
+
+  <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+    <div class="col-span-1">
+      <h2 class="pt-4 pb-1 px-4 sm:px-0 text-2xl font-bold text-gray-900">
+        <%= t("views.areas.levels.beginner_friendly") %>
+      </h2>
+
+      <div class="relative">
+        <div class="flex flex-nowrap overflow-x-auto py-2 space-x-2 px-4 sm:px-0">
+          <% Area.with_ids_keep_order(@beginner_areas_ids).each do |area| %>
+            <%= link_to area_path(area) do %>
+              <%= render 'shared/area_card', area: area %>
+            <% end %>
+          <% end %>
+          <div class="pr-16">&nbsp;</div>
+        </div>
+        <div class="hidden lg:block inset-y-0 right-0 flex bg-gradient-to-l from-gray-100 pl-8 pr-8 pointer-events-none absolute"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8">
+  <div class="lg:grid lg:grid-cols-2 lg:gap-16 mb-4">
+    <div class="col-span-1">
+      <h2 class="py-4 px-4 sm:px-0 text-2xl font-bold text-gray-900">
+        <%= t("views.areas.levels.areas") %>
+      </h2>
+
+      <div class="overflow-hidden bg-white shadow ring-1 ring-black ring-opacity-5 md:rounded-lg text-sm sm:text-base">
+        <ul role="list" class="divide-y divide-gray-200">
+          <% @areas_with_count.each do |area, count| %>
+            <li>
+              <%= link_to area_path(area), class: "block hover:bg-gray-50" do %>
+                <div class="px-4 py-4 sm:px-6">
+                  <div class="flex justify-between">
+                    <p class="pr-2"><%= area.name %></p>
+                    <!-- Uncomment the next line if you need to display the count -->
+                    <!-- <span class="ml-1 text-gray-400"><%= "(#{count})" %></span> -->
+                    <div class="flex shrink-0 items-center space-x-2 text-gray-400">
+                      <% cache area do %>
+                        <span class="flex shrink-0"><%= render "shared/area_levels", area: area %></span>
+                      <% end %>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

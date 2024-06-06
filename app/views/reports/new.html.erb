@@ -1,0 +1,29 @@
+<% set_meta_tags title: t("views.reports.new.metas.title") %>
+
+<div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8">
+  <div class="px-4 sm:px-0">
+    <%= link_to contribute_path, class: "hover:text-gray-700" do %>
+      <div class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        <span><%= t("views.breadcrumbs.back") %></span>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8">
+  <div class="md:grid md:grid-cols-2 md:gap-16 mb-4">
+    <div class="">
+      <h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0"><%= t("views.reports.new.title") %></h1>
+    </div>
+  </div>
+
+  <div class="mt-8">
+    <%= form_with model: @contribution, url: reports_path do |form| %>
+      <%# = form.hidden_field :problem_id %>
+      <%= render "form", form: form %>
+    <% end %>
+  </div>
+</div>

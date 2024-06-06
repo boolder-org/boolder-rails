@@ -1,0 +1,21 @@
+<h1>New topo</h1>
+
+<div class="my-4">
+  <%= form_with model: [:admin, @topo] do |form| %>
+    <div class="my-4">
+      <%= form.label :photo %>
+      <%= form.file_field :photo %>
+    </div>
+    <div class="my-4">
+      <%= form.label :metadata %>
+      <%= form.file_field :metadata %>
+    </div>
+    <div class="my-4">
+      <%= form.label :ignore_metadata %>
+      <%= form.check_box :ignore_metadata %>
+    </div>
+    <div class="my-4">
+      <%= form.submit("Create", class: "btn") %>
+    </div>
+  <% end %>
+</div>

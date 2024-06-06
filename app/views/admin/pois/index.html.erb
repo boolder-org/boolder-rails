@@ -1,0 +1,43 @@
+<div class="flex justify-end">
+  <% items = [] %>
+  <% items << { text: "New poi", link: new_admin_poi_path } %>
+  <% items << { text: "New poi route", link: new_admin_poi_route_path } %>
+  <%= render "shared/dropdown_menu", items: items %>
+</div>
+
+<div class="flex flex-col my-6">
+  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Id</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"></th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"></th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <% @pois.each do |poi| %>
+              <tr class="place-content-start align-top h-16">
+                <td class="px-6 py-2 whitespace-nowrap w-1/12">
+                  <div class="text-sm text-gray-500"><%= link_to poi.id, edit_admin_poi_path(poi) %></div>
+                </td>
+                <td class="px-6 py-2 whitespace-nowrap w-3/12">
+                  <span class="text-sm text-gray-900 font-bold">
+                    <%= link_to poi.name, edit_admin_poi_path(poi) %>
+                  </span>
+                </td>
+                <td class="px-6 py-2 whitespace-nowrap w-2/12"></td>
+                <td class="px-6 py-2 whitespace-nowrap w-6/12"></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><%= "#{@pois.count} results" %></p>
