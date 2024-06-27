@@ -1,4 +1,6 @@
 class Area < ApplicationRecord
+  include PgSearchable
+
   has_many :boulders
   has_many :problems
   has_many :circuits, -> { distinct }, through: :problems
@@ -20,22 +22,11 @@ class Area < ApplicationRecord
   validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
   validates :slug, presence: true
 
-  # reindex problems on algolia when area is updated
-  # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
-  after_save { problems.each(&:touch) if saved_change_to_attribute?(:published) || saved_change_to_attribute?(:name) } 
-
-  include AlgoliaSearch
-  algoliasearch if: :published, enqueue: true, disable_indexing: Rails.env.local? do
-    attributes :name, :priority
-    attribute :bounds do 
-      { 
-        south_west: { lat: bounds[:south_west]&.lat || 0.0, lng: bounds[:south_west]&.lon || 0.0 },
-        north_east:  { lat: bounds[:north_east]&.lat || 0.0, lng: bounds[:north_east]&.lon || 0.0 },
-      }
-    end
-    searchableAttributes [:name]
-    synonyms [['bas cuvier', 'cuvier']]
-    customRanking ['asc(priority)']
+  def serialized_bounds
+    {
+      south_west: { lat: bounds[:south_west]&.lat || 0.0, lng: bounds[:south_west]&.lon || 0.0 },
+      north_east: { lat: bounds[:north_east]&.lat || 0.0, lng: bounds[:north_east]&.lon || 0.0 },
+    }
   end
 
   def levels

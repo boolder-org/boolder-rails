@@ -84,7 +84,7 @@ Rails.application.routes.draw do
     get 'circuit7a/problems', to: 'circuit7a#problems', as: :circuit7a_problems
     get 'circuit7a/map', to: 'map#index', as: :circuit7a_map, defaults: { circuit7a: true }
 
-    resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
+    resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox
 
     # Permalinks (don't remove!)
     get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
@@ -97,6 +97,7 @@ Rails.application.routes.draw do
           resources :topos, only: :index
           get "map", to: "maps#show", as: :area_map
         end
+        get "search", to: "search#search", as: :search
       end
     end
 
