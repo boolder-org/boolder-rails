@@ -3,6 +3,7 @@ class Area < ApplicationRecord
   has_many :problems
   has_many :circuits, -> { distinct }, through: :problems
   has_many :poi_routes
+  belongs_to :cluster
   belongs_to :bleau_area
 
   has_one_attached :cover do |attachable|

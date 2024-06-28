@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_25_074350) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_28_153658) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -60,6 +60,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_25_074350) do
     t.text "warning_fr"
     t.text "warning_en"
     t.integer "bleau_area_id", null: false
+    t.integer "cluster_id"
+    t.string "cluster_section"
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
   end
@@ -128,6 +130,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_25_074350) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "risk", limit: 2
+  end
+
+  create_table "clusters", force: :cascade do |t|
+    t.string "name"
+    t.integer "priority", limit: 2, default: 2, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "contribution_requests", force: :cascade do |t|

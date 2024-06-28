@@ -54,41 +54,18 @@ namespace :mapbox do
   task clusters: :environment do
     puts "exporting clusters"
 
-    clusters = [
-      { id: 1, name: "Trois Pignons Est", area_ids: [13,21,26,57,61] },
-      { id: 2, name: "Trois Pignons", area_ids: [10,12,14,15,16,17,18,19,2,22,25,27,28,30,35,54,55,56,58,59,71,8] },
-      { id: 3, name: "Franchard", area_ids: [11,31,34,36,37,38,39,5] },
-      { id: 4, name: "Apremont", area_ids: [104,20,46,48,49,62,63,69,7,99] },
-      { id: 5, name: "Cuvier", area_ids: [4,40,43,44,45,6,64,66,67] },
-      { id: 6, name: "Larchant", area_ids: [41, 42, 9] },
-      { id: 7, name: "Buthiers", area_ids: [23, 77, 78] },
-      { id: 8, name: "Beauvais", area_ids: [29, 80, 81, 82, 83] },
-      { id: 9, name: "Nemours", area_ids: [32,75,84] },
-      { id: 10, name: "Restant du Long Rocher", area_ids: [51, 86] },
-      { id: 11, name: "Orsay", area_ids: [94, 95] },
-      { id: 12, name: "Rocher Canon", area_ids: [1, 47] },
-      { id: 13, name: "Rocher Saint Germain", area_ids: [24] },
-      { id: 14, name: "Mont Ussy / Calvaire", area_ids: [53, 72, 76, 96] },
-      { id: 15, name: "Corne Biche", area_ids: [60] },
-      { id: 16, name: "Mont Aigu", area_ids: [73] },
-      { id: 17, name: "Rocher d'Avon", area_ids: [50, 70] },
-      { id: 18, name: "Bouligny", area_ids: [52] },
-      { id: 19, name: "Demoiselles", area_ids: [33] },
-      { id: 20, name: "Haute Pierre", area_ids: [91] },
-    ]
-
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     cluster_features = []
     hull_features = []
 
-    clusters.each do |cluster|
-      hull = Boulder.where(area_id: cluster[:area_ids]).where(ignore_for_area_hull: false).
+    Cluster.all.each do |cluster|
+      hull = Boulder.where(area_id: cluster.areas.map(&:id)).where(ignore_for_area_hull: false).
         select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.00007) as hull").to_a.first.hull
 
       hash = {}.with_indifferent_access
-      hash[:cluster_id] = cluster[:id]
-      hash[:name] = cluster[:name]
+      hash[:cluster_id] = cluster.id
+      hash[:name] = cluster.name
       # # we store lat/lon as strings to make it easier to edit the geojson in tools like JOSM
       # hash[:south_west_lat] = area.bounds[:south_west].lat.to_s
       # hash[:south_west_lon] = area.bounds[:south_west].lon.to_s
