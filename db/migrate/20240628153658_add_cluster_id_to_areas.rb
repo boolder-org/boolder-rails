@@ -4,8 +4,11 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
     add_column :areas, :cluster_section, :string
 
     clusters = [
-      { id: 1,  priority: 2, name: "Trois Pignons Est", area_ids: [13,21,26,57,61] },
-      { id: 2,  priority: 1, name: "Trois Pignons", area_ids: [10,12,14,15,16,17,18,19,2,22,25,27,28,30,35,54,55,56,58,59,71,8] },
+      { id: 1,  priority: 1, name: "Trois Pignons Est", area_ids: [13,21,26,57,61] },
+      { id: 2,  priority: 1, name: "Trois Pignons Ouest", area_ids: [12,16,2,25,28] },
+      { id: 2,  priority: 1, name: "Trois Pignons Sud", area_ids: [14,17,18,30,35,54,56,8] },
+      { id: 2,  priority: 1, name: "Trois Pignons Nord", area_ids: [10,15,19,22,27,55,58,59,71] },
+      # { id: 2,  priority: 1, name: "Trois Pignons", area_ids: [10,12,14,15,16,17,18,19,2,22,25,27,28,30,35,54,55,56,58,59,71,8] },
       { id: 3,  priority: 1, name: "Franchard", area_ids: [11,31,34,36,37,38,39,5] },
       { id: 4,  priority: 1, name: "Apremont", area_ids: [104,20,46,48,49,62,63,69,7,99] },
       { id: 5,  priority: 1, name: "Cuvier", area_ids: [4,40,43,44,45,6,64,66,67] },
