@@ -77,7 +77,8 @@ namespace :app do
           level7_count INTEGER NOT NULL,
           level8_count INTEGER NOT NULL,
           problems_count INTEGER NOT NULL,
-          cluster_id INTEGER
+          cluster_id INTEGER,
+          photos_size REAL NOT NULL
         );
         CREATE INDEX area_idx ON areas(id);
       SQL
@@ -85,8 +86,8 @@ namespace :app do
       Area.published.each do |a|
         db.execute(
           "INSERT INTO areas (id, name, name_searchable, priority, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon, 
-                              level1_count, level2_count, level3_count, level4_count, level5_count, level6_count, level7_count, level8_count, problems_count, cluster_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+                              level1_count, level2_count, level3_count, level4_count, level5_count, level6_count, level7_count, level8_count, problems_count, cluster_id, photos_size)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
             a.id, 
             a.name, 
@@ -99,7 +100,8 @@ namespace :app do
             a.problems.with_location.level(1).count, a.problems.with_location.level(2).count, a.problems.with_location.level(3).count, a.problems.with_location.level(4).count, 
             a.problems.with_location.level(5).count, a.problems.with_location.level(6).count, a.problems.with_location.level(7).count, a.problems.with_location.level(8).count, 
             a.problems.with_location.count,
-            a.cluster_id
+            a.cluster_id,
+            a.photos_size
           ]
         )
       end

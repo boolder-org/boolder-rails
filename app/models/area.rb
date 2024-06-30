@@ -39,6 +39,15 @@ class Area < ApplicationRecord
     customRanking ['asc(priority)']
   end
 
+  # TODO: check this method
+  def photos_size
+    topos_count.to_f * 0.15
+  end
+
+  def topos_count
+    Topo.published.joins(:lines => :problem).where(problems: { area_id: id }).uniq.count
+  end
+
   def levels
     @levels ||= 1.upto(8).map{|level| [level, problems.with_location.level(level).count >= 20] }.to_h
   end
