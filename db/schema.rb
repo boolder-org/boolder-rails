@@ -134,6 +134,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_28_153658) do
 
   create_table "clusters", force: :cascade do |t|
     t.string "name"
+    t.integer "main_area_id"
     t.integer "priority", limit: 2, default: 2, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
