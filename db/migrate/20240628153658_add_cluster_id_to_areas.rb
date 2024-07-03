@@ -4,13 +4,11 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
     add_column :areas, :cluster_section, :string
 
     clusters = [
+      { name: "Trois Pignons", area_ids: [12,16,2,25,28,14,17,18,30,35,54,56,8,10,19,22,27,58,59,71,15,55], main_area_id: 2 },
       { name: "Trois Pignons Est", area_ids: [13,21,26,57,61], main_area_id: 26 },
-      { name: "Trois Pignons Ouest", area_ids: [12,16,2,25,28], main_area_id: 16 },
-      { name: "Trois Pignons Sud", area_ids: [14,17,18,30,35,54,56,8], main_area_id: 17 },
-      { name: "Trois Pignons Nord", area_ids: [10,19,22,27,58,59,71,15,55], main_area_id: 10 },
-      # name: "Justice de Chambergeot", area_ids: [55], main_area_id: },
-      # name: "Gorge aux Chats", area_ids: [15], main_area_id: },
-      # name: "Trois Pignons", area_ids: [10,12,14,15,16,17,18,19,2,22,25,27,28,30,35,54,55,56,58,59,71,8], main_area_id: },
+      # { name: "Trois Pignons Ouest", area_ids: [12,16,2,25,28], main_area_id: 16 },
+      # { name: "Trois Pignons Sud", area_ids: [14,17,18,30,35,54,56,8], main_area_id: 17 },
+      # { name: "Trois Pignons Nord", area_ids: [10,19,22,27,58,59,71,15,55], main_area_id: 10 },
       { name: "Franchard", area_ids: [11,31,34,36,37,38,39,5], main_area_id: 5 },
       { name: "Apremont", area_ids: [104,20,46,48,49,62,63,69,7,99], main_area_id: 7 },
       { name: "Cuvier", area_ids: [4,40,43,44,45,6,64,66,67], main_area_id: 4 },
