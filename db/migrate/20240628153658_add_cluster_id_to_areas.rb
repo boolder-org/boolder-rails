@@ -17,7 +17,7 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
       { name: "Larchant", area_ids: [41, 42, 9], main_area_id: 9 },
       { name: "Buthiers", area_ids: [23, 77, 78], main_area_id: 23 },
       { name: "Beauvais", area_ids: [29, 80, 81, 82, 83], main_area_id: 29 },
-      { name: "Nemours", area_ids: [32,75,84], main_area_id: 32 },
+      { name: "Nemours", area_ids: [32,75,84, 92], main_area_id: 32 },
       { name: "Restant du Long Rocher", area_ids: [51, 86], main_area_id: 51 },
       { name: "Orsay", area_ids: [94, 95], main_area_id: 94 },
       { name: "Rocher Canon", area_ids: [1, 47], main_area_id: 1 },
