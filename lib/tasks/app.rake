@@ -110,7 +110,6 @@ namespace :app do
         create table clusters (
           id INTEGER NOT NULL PRIMARY KEY,
           name TEXT NOT NULL,
-          priority INTEGER NOT NULL,
           main_area_id INTEGER NOT NULL
         );
         CREATE INDEX cluster_idx ON clusters(id);
@@ -118,12 +117,11 @@ namespace :app do
 
       Cluster.all.each do |c|
         db.execute(
-          "INSERT INTO clusters (id, name, priority, main_area_id)
-          VALUES (?, ?, ?, ?)", 
+          "INSERT INTO clusters (id, name, main_area_id)
+          VALUES (?, ?, ?)", 
           [
             c.id, 
             c.name, 
-            c.priority, 
             c.main_area_id
           ]
         )
