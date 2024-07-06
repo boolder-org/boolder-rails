@@ -40,7 +40,7 @@ class Area < ApplicationRecord
   end
 
   # TODO: check this method
-  def photos_size
+  def download_size
     topos_count.to_f * 0.15
   end
 
