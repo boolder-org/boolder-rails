@@ -1,11 +1,11 @@
 class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
   def change
     add_column :areas, :cluster_id, :integer
-    add_column :areas, :cluster_section, :string
+    # add_column :areas, :cluster_section, :string
 
     clusters = [
-      { name: "Trois Pignons", area_ids: [12,16,2,25,28,14,17,18,30,35,54,56,8,10,19,22,27,58,59,71,15,55], main_area_id: 2 },
-      { name: "Trois Pignons Est", area_ids: [13,21,26,57,61], main_area_id: 26 },
+      { name: "Trois Pignons", area_ids: [12,16,2,25,28,14,17,18,30,35,54,56,8,10,19,22,27,58,59,71,15,55,13,21,26,57,61], main_area_id: 2 },
+      # { name: "Trois Pignons Est", area_ids: [13,21,26,57,61], main_area_id: 26 },
       # { name: "Trois Pignons Ouest", area_ids: [12,16,2,25,28], main_area_id: 16 },
       # { name: "Trois Pignons Sud", area_ids: [14,17,18,30,35,54,56,8], main_area_id: 17 },
       # { name: "Trois Pignons Nord", area_ids: [10,19,22,27,58,59,71,15,55], main_area_id: 10 },
@@ -33,5 +33,10 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
       cluster = Cluster.create!(name: c[:name], main_area_id: c[:main_area_id])
       c[:area_ids].each {|id| Area.find(id).update!(cluster_id: cluster.id) }
     end
+
+    # [13,21,26,57,61].each{|id| Area.find(id).update!(cluster_section: "Parking Est (Canche / Drei Zinnen)") }
+    # [10,19,22,27,58,59,71,15,55].each{|id| Area.find(id).update!(cluster_section: "Parking Nord (Croix St Jérôme)") }
+    # [12,16,2,25,28].each{|id| Area.find(id).update!(cluster_section: "Parking Ouest (Roche aux Sabots)") }
+    # [14,17,18,30,35,54,56,8].each{|id| Area.find(id).update!(cluster_section: "Parking Sud (Rocher Guichot)") }
   end
 end
