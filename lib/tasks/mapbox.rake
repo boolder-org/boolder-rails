@@ -66,22 +66,33 @@ namespace :mapbox do
       hash = {}.with_indifferent_access
       hash[:cluster_id] = cluster.id
       hash[:name] = cluster.name
-      # # we store lat/lon as strings to make it easier to edit the geojson in tools like JOSM
-      # hash[:south_west_lat] = area.bounds[:south_west].lat.to_s
-      # hash[:south_west_lon] = area.bounds[:south_west].lon.to_s
-      # hash[:north_east_lat] = area.bounds[:north_east].lat.to_s
-      # hash[:north_east_lon] = area.bounds[:north_east].lon.to_s
+
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
       hull_features << factory.feature(hull, nil, hash)
+
+      if cluster.sw && cluster.ne && cluster.center
+        hash = {}.with_indifferent_access
+        hash[:cluster_id] = cluster.id
+        hash[:name] = cluster.name
+        hash[:south_west_lat] = cluster.sw.lat.to_s
+        hash[:south_west_lon] = cluster.sw.lon.to_s
+        hash[:north_east_lat] = cluster.ne.lat.to_s
+        hash[:north_east_lon] = cluster.ne.lon.to_s
+
+        # binding.pry
+
+        hash.deep_transform_keys! { |key| key.camelize(:lower) }
+        cluster_features << factory.feature(cluster.center, nil, hash)
+      end
     end
 
     feature_collection = factory.feature_collection(
-      hull_features
+      cluster_features + hull_features
     )
 
     geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
 
-    file_name = Rails.root.join("..", "boolder-maps", "mapbox", "clusters-v2.geojson")
+    file_name = Rails.root.join("..", "boolder-maps", "mapbox", "clusters.geojson")
 
     File.open(file_name,"w") do |f|
       f.write(geo_json)
