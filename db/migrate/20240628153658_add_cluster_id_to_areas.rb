@@ -57,8 +57,8 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
       cluster = Cluster.create!(name: c[:name], main_area_id: c[:main_area_id])
       c[:area_ids].each {|id| Area.find(id).update!(cluster_id: cluster.id) }
 
-      if c[:sw].present? && c[:ne].present?
-        cluster.update!(sw: c[:sw], ne: c[:ne])
+      if c[:sw] && c[:ne] && c[:center]
+        cluster.update!(sw: c[:sw], ne: c[:ne], center: c[:center])
       end
     end
   end
