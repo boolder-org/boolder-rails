@@ -60,7 +60,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_28_153658) do
     t.text "warning_fr"
     t.text "warning_en"
     t.integer "bleau_area_id", null: false
-    t.string "cluster_section"
     t.integer "cluster_id"
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
