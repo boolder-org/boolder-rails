@@ -79,8 +79,6 @@ namespace :mapbox do
         hash[:north_east_lat] = cluster.ne.lat.to_s
         hash[:north_east_lon] = cluster.ne.lon.to_s
 
-        # binding.pry
-
         hash.deep_transform_keys! { |key| key.camelize(:lower) }
         cluster_features << factory.feature(cluster.center, nil, hash)
       end

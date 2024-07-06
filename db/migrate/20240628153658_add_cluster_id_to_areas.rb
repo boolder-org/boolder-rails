@@ -1,7 +1,6 @@
 class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
   def change
     add_column :areas, :cluster_id, :integer
-    # add_column :areas, :cluster_section, :string
 
     clusters = [
       { 
