@@ -4,14 +4,34 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
     # add_column :areas, :cluster_section, :string
 
     clusters = [
-      { name: "Trois Pignons", area_ids: [12,16,2,25,28,14,17,18,30,35,54,56,8,10,19,22,27,58,59,71,15,55,13,21,26,57,61], main_area_id: 2 },
-      # { name: "Trois Pignons Est", area_ids: [13,21,26,57,61], main_area_id: 26 },
-      # { name: "Trois Pignons Ouest", area_ids: [12,16,2,25,28], main_area_id: 16 },
-      # { name: "Trois Pignons Sud", area_ids: [14,17,18,30,35,54,56,8], main_area_id: 17 },
-      # { name: "Trois Pignons Nord", area_ids: [10,19,22,27,58,59,71,15,55], main_area_id: 10 },
-      { name: "Franchard", area_ids: [11,31,34,36,37,38,39,5], main_area_id: 5 },
-      { name: "Apremont", area_ids: [104,20,46,48,49,62,63,69,7,99], main_area_id: 7 },
-      { name: "Cuvier", area_ids: [4,40,43,44,45,6,64,66,67], main_area_id: 4 },
+      { 
+        name: "Trois Pignons", 
+        area_ids: [12,16,2,25,28,14,17,18,30,35,54,56,8,10,19,22,27,58,59,71,15,55,13,21,26,57,61], 
+        main_area_id: 2,
+        sw: "POINT(2.5083128 48.3586603)",
+        ne: "POINT(2.548881 48.3953245)"
+      },
+      { 
+        name: "Franchard", 
+        area_ids: [11,31,34,36,37,38,39,5], 
+        main_area_id: 5,
+        sw: "POINT(2.5947046 48.4071053)",
+        ne: "POINT(2.6145744 48.4109511)"
+      },
+      { 
+        name: "Apremont", 
+        area_ids: [104,20,46,48,49,62,63,69,7,99], 
+        main_area_id: 7,
+        sw: "POINT(2.6195097 48.4336142)",
+        ne: "POINT(2.6357746 48.4406325)"
+      },
+      { 
+        name: "Cuvier", 
+        area_ids: [4,40,43,44,45,6,64,66,67], 
+        main_area_id: 4,
+        sw: "POINT(2.6327276 48.4446751)",
+        ne: "POINT(2.6508808 48.4493008)"
+      },
       { name: "Larchant", area_ids: [41, 42, 9], main_area_id: 9 },
       { name: "Buthiers", area_ids: [23, 77, 78], main_area_id: 23 },
       { name: "Beauvais", area_ids: [29, 80, 81, 82, 83], main_area_id: 29 },
@@ -32,11 +52,10 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
     clusters.each do |c|
       cluster = Cluster.create!(name: c[:name], main_area_id: c[:main_area_id])
       c[:area_ids].each {|id| Area.find(id).update!(cluster_id: cluster.id) }
-    end
 
-    # [13,21,26,57,61].each{|id| Area.find(id).update!(cluster_section: "Parking Est (Canche / Drei Zinnen)") }
-    # [10,19,22,27,58,59,71,15,55].each{|id| Area.find(id).update!(cluster_section: "Parking Nord (Croix St Jérôme)") }
-    # [12,16,2,25,28].each{|id| Area.find(id).update!(cluster_section: "Parking Ouest (Roche aux Sabots)") }
-    # [14,17,18,30,35,54,56,8].each{|id| Area.find(id).update!(cluster_section: "Parking Sud (Rocher Guichot)") }
+      if c[:sw].present? && c[:ne].present?
+        cluster.update!(sw: c[:sw], ne: c[:ne])
+      end
+    end
   end
 end
