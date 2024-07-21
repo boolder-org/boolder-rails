@@ -100,9 +100,6 @@ Rails.application.routes.draw do
     end
   end
 
-  # Permalinks (don't remove!)
-  get '/t/:id', to: "welcome#topo_permalink" # used to generate guessable urls for topos hosted on cloudfront
-
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: 'welcome#root'
 
