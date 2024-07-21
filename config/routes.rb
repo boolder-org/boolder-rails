@@ -100,6 +100,11 @@ Rails.application.routes.draw do
     end
   end
 
+  # Proxy used to generate guessable urls for files hosted on cloudfront
+  # inspired by https://edgeguides.rubyonrails.org/active_storage_overview.html#putting-a-cdn-in-front-of-active-storage
+  # more info: https://github.com/rails/rails/tree/main/activestorage/app/controllers
+  get '/proxy/topos/:id', to: "proxy#show" # used by the apps
+
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: 'welcome#root'
 
