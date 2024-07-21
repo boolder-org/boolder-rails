@@ -100,17 +100,22 @@ Rails.application.routes.draw do
     end
   end
 
-  # Proxy used to generate guessable urls for files hosted on cloudfront
-  # inspired by https://edgeguides.rubyonrails.org/active_storage_overview.html#putting-a-cdn-in-front-of-active-storage
-  # more info: https://github.com/rails/rails/tree/main/activestorage/app/controllers
-  get '/proxy/topos/:id', to: "proxy#show" # used by the apps
-
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: 'welcome#root'
 
   mount Sidekiq::Web => "/sidekiqq"
 
+  # =============
+  # Proxy routes 
+  # =============
+  # Use proxy mode (=streaming) instead of redirects to allow CDNs to easily cache our assets
   # inspired by https://edgeguides.rubyonrails.org/active_storage_overview.html#putting-a-cdn-in-front-of-active-storage
+  # more info: https://github.com/rails/rails/tree/main/activestorage/app/controllers
+
+  # Guessable urls (used by the mobile apps)
+  get '/proxy/topos/:id', to: "proxy#show", as: :topo_proxy
+
+  # General solution
   direct :cdn_image do |model, options|
     expires_in = options.delete(:expires_in) { ActiveStorage.urls_expire_in }
     options = options.merge(host: Rails.application.config.asset_host) unless Rails.env.local?
