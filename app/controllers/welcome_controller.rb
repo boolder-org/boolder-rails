@@ -21,6 +21,11 @@ class WelcomeController < ApplicationController
     redirect_to helpers.problem_friendly_path(problem)
   end
 
+  def topo_permalink
+    topo = Topo.find(params[:id])
+    redirect_to cdn_image_url(topo.photo.variant(:medium))
+  end
+
   private
     def extract_locale_from_accept_language_header
       request.env['HTTP_ACCEPT_LANGUAGE']&.scan(/^[a-z]{2}/)&.first

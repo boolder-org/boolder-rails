@@ -88,6 +88,7 @@ Rails.application.routes.draw do
 
     # Permalinks (don't remove!)
     get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
+    get '/t/:id', to: "welcome#topo_permalink" # used to generate guessable urls for topos hosted on cloudfront
   end
 
   namespace :api do
