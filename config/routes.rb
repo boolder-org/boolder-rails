@@ -87,19 +87,21 @@ Rails.application.routes.draw do
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox or algolia search
 
     # Permalinks (don't remove!)
-    get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
-    get '/t/:id', to: "welcome#topo_permalink" # used to generate guessable urls for topos hosted on cloudfront
+    get '/p/:id', to: "welcome#problem_permalink" # used by the apps to redirect to a problem webpage
   end
 
   namespace :api do
-      namespace :v1 do
-        resources :topos, only: :show
-        resources :areas do
-          resources :topos, only: :index
-          get "map", to: "maps#show", as: :area_map
-        end
+    namespace :v1 do
+      resources :topos, only: :show
+      resources :areas do
+        resources :topos, only: :index
+        get "map", to: "maps#show", as: :area_map
       end
     end
+  end
+
+  # Permalinks (don't remove!)
+  get '/t/:id', to: "welcome#topo_permalink" # used to generate guessable urls for topos hosted on cloudfront
 
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: 'welcome#root'
