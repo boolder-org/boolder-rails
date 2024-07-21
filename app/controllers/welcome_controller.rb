@@ -23,7 +23,7 @@ class WelcomeController < ApplicationController
 
   def topo_permalink
     topo = Topo.find(params[:id])
-    redirect_to cdn_image_url(topo.photo.variant(:medium)), allow_other_host: true
+    redirect_to cdn_image_url(topo.photo.variant(:medium)), allow_other_host: true, status: :moved_permanently
   end
 
   private
