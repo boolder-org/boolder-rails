@@ -11,8 +11,8 @@ namespace :geo do
       size = problems.length
 
       problems.each_with_index do |problem, index|
-        previous = problems[(index-1)%size]
-        nexxt = problems[(index+1)%size]
+        previous = problems[(index+1)%size]
+        nexxt = problems[(index-1)%size]
         problem.update_columns(previous_id: previous.id) if previous && previous.id != problem.id
         problem.update_columns(next_id: nexxt.id) if nexxt && nexxt.id != problem.id
       end
