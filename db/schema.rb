@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_28_153658) do
+ActiveRecord::Schema[7.1].define(version: 2024_08_02_064404) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -226,6 +226,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_28_153658) do
     t.string "circuit_letter"
     t.boolean "sit_start", default: false, null: false
     t.boolean "has_line", default: false, null: false
+    t.integer "next_id"
+    t.integer "previous_id"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"

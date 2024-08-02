@@ -1,0 +1,23 @@
+namespace :geo do
+  task compute: :environment do
+    Boulder.all.find_each do |boulder|
+      centroid = Boulder.where(id: boulder.id).select("ST_Centroid(polygon::geometry) as centroid").to_a.first.centroid
+
+      problems = Problem.
+        select("problems.*, degrees(ST_Azimuth('SRID=4326;#{centroid.to_s}'::geometry, location::geometry)) AS degrees").
+        where("ST_Distance('SRID=4326;#{boulder.polygon.to_s}'::geometry, location::geometry) <= ?", BigDecimal("1e-06")).
+        order("degrees").to_a
+
+      problems.each_with_index do |problem, index|
+        previous = problems[index-1]
+        nexxt = problems[index+1]
+        problem.update_columns(previous_id: previous.id) if previous && previous.id != problem.id
+        problem.update_columns(next_id: nexxt.id) if nexxt && nexxt.id != problem.id
+      end
+
+      puts "Boulder ##{boulder.id}: #{problems.length} problems processed"
+    end
+
+    puts "Done".green
+  end
+end
