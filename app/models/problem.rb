@@ -34,6 +34,8 @@ class Problem < ApplicationRecord
 
   normalizes :name, :circuit_number, :circuit_letter, with: -> s { s.strip.presence }
 
+  # TODO: validate next/previous
+
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
@@ -131,12 +133,14 @@ class Problem < ApplicationRecord
     circuit_number.to_i + boost.fetch(circuit_letter, 0)
   end
 
+  # TODO: rename
   def next
     if circuit_number.present?
       Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1), circuit_letter: [nil, '']).first
     end
   end
 
+  # TODO: rename
   def previous
     if circuit_number.present?
       if circuit_number == "1"
