@@ -228,6 +228,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_02_064404) do
     t.boolean "has_line", default: false, null: false
     t.integer "next_id"
     t.integer "previous_id"
+    t.integer "topo_next_id"
+    t.integer "topo_previous_id"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"
