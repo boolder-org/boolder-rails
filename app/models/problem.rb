@@ -5,6 +5,8 @@ class Problem < ApplicationRecord
   has_many :topos, through: :lines
   has_many :children, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
+  has_many :start_children, class_name: "Problem", foreign_key: "start_parent_id"
+  belongs_to :start_parent, class_name: "Problem", optional: true
   belongs_to :bleau_problem, foreign_key: "bleau_info_id", optional: true
   has_many :contribution_requests
   has_many :contributions
@@ -89,6 +91,14 @@ class Problem < ApplicationRecord
 
   def to_param
     [id, name&.parameterize].compact.join("-")
+  end
+
+  def start_topo_id
+    lines.published.first&.topo_id
+  end
+
+  def start_coordinates
+    lines.published.first&.coordinates.first
   end
 
   def name_with_fallback

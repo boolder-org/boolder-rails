@@ -1,4 +1,18 @@
 namespace :geo do
+  task starts: :environment do 
+    Topo.published.find_each do |topo|
+      topo.problems.group_by{|p| [p.start_topo_id, p.start_coordinates] }.each do |(topo_id, coordinates), problems|
+        circuit_problem = problems.select{|p| p.circuit_number.present? }.first
+        main_problem = circuit_problem || problems.sort_by(&:popularity).reverse.first
+        
+        # binding.pry
+        problems.each do |p|
+          p.update_columns(start_parent_id: main_problem.id) unless p.id == main_problem.id
+        end
+      end
+    end
+  end
+
   task compute: :environment do
     Boulder.all.find_each do |boulder|
       puts "Processing boulder ##{boulder.id}"
