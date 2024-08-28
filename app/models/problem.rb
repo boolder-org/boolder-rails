@@ -98,6 +98,7 @@ class Problem < ApplicationRecord
   end
 
   def start_coordinates
+    # TODO: round
     lines.published.first&.coordinates&.first
   end
 
