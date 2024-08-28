@@ -35,8 +35,18 @@ namespace :geo do
         # TODO: scope by topo_id ?
         previous = problems[(index-1)%problems.length]
         nexxt = problems[(index+1)%problems.length]
-        problem.update_columns(previous_id: previous.id) if previous && previous.id != problem.id
-        problem.update_columns(next_id: nexxt.id) if nexxt && nexxt.id != problem.id
+
+        if !problem.last_variant? && problem.all_variants.length > 1
+          problem.update_columns(next_id: problem.next_variant.id)
+        else
+          problem.update_columns(next_id: nexxt.id) if nexxt && nexxt.id != problem.id  
+        end
+
+        if !problem.first_variant? && problem.all_variants.length > 1
+          problem.update_columns(previous_id: problem.previous_variant.id)
+        else
+          problem.update_columns(previous_id: previous.id) if previous && previous.id != problem.id
+        end
 
         # TODO: set columns for variants too
       end

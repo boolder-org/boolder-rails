@@ -93,6 +93,35 @@ class Problem < ApplicationRecord
     [id, name&.parameterize].compact.join("-")
   end
 
+  # TODO: merge with variants
+  def all_variants
+    if parent.present?
+      parent.all_variants
+    else
+      [self] + children
+    end
+  end
+
+  def variant_index
+    all_variants.find_index(self)
+  end
+
+  def next_variant
+    all_variants[(variant_index + 1) % all_variants.length]
+  end
+
+  def previous_variant
+    all_variants[(variant_index - 1) % all_variants.length]
+  end
+
+  def first_variant?
+    variant_index == 0
+  end
+
+  def last_variant?
+    variant_index == all_variants.length - 1
+  end
+
   def start_topo_id
     lines.published.first&.topo_id
   end
