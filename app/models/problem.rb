@@ -97,9 +97,13 @@ class Problem < ApplicationRecord
     lines.published.first&.topo_id
   end
 
-  def start_coordinates
-    # TODO: round
-    lines.published.first&.coordinates&.first
+  def start_coordinates_rounded
+    if start_coordinates = lines.published.first&.coordinates&.first
+      { 
+        x: (start_coordinates["x"]*100).to_i/5*5,
+        y: (start_coordinates["y"]*100).to_i/5*5,
+      }
+    end
   end
 
   def name_with_fallback

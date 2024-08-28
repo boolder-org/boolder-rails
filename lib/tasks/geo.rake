@@ -1,7 +1,7 @@
 namespace :geo do
   task starts: :environment do 
     Topo.published.find_each do |topo|
-      topo.problems.group_by{|p| [p.start_topo_id, p.start_coordinates] }.each do |(topo_id, coordinates), problems|
+      topo.problems.group_by{|p| [p.start_topo_id, p.start_coordinates_rounded] }.each do |(topo_id, coordinates), problems|
         puts "Topo #{topo.id}"
         if coordinates
           circuit_problem = problems.select{|p| p.circuit_number.present? }.first
