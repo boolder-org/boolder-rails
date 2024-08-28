@@ -98,7 +98,7 @@ class Problem < ApplicationRecord
   end
 
   def start_coordinates
-    lines.published.first&.coordinates.first
+    lines.published.first&.coordinates&.first
   end
 
   def name_with_fallback
