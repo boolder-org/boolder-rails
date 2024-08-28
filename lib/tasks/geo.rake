@@ -36,15 +36,16 @@ namespace :geo do
         previous = problems[(index-1)%problems.length]
         nexxt = problems[(index+1)%problems.length]
 
-        if !problem.last_variant? && problem.all_variants.length > 1
-          problem.update_columns(next_id: problem.next_variant.id)
-        else
+        problem.all_variants.each do |variant|
+          variant.update_columns(next_id: variant.next_variant.id)
+          variant.update_columns(previous_id: variant.previous_variant.id)
+        end
+
+        if problem.last_variant? || problem.all_variants.length <= 1
           problem.update_columns(next_id: nexxt.id) if nexxt && nexxt.id != problem.id  
         end
 
-        if !problem.first_variant? && problem.all_variants.length > 1
-          problem.update_columns(previous_id: problem.previous_variant.id)
-        else
+        if problem.first_variant? || problem.all_variants.length <= 1
           problem.update_columns(previous_id: previous.id) if previous && previous.id != problem.id
         end
 
