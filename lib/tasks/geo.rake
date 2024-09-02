@@ -1,16 +1,47 @@
+class StartGroup
+  attr_reader :problems
+
+  def initialize(problem)
+    @problems = [problem]
+  end
+
+  def overlaps?(problem)
+    @problems.any?{|p| (problem.start_coordinates["x"] - p.start_coordinates["x"]).abs < 0.05 && (problem.start_coordinates["y"] - p.start_coordinates["y"]).abs < 0.05 }
+  end
+
+  def add_problem(problem)
+    @problems << problem if overlaps?(problem)
+  end
+
+  def to_s
+    @problems.map(&:name_debug).join(", ")
+  end
+end
+
 namespace :geo do
   task starts: :environment do 
-    Topo.published.where(id: 3741).find_each do |topo|
+    Topo.published.find_each do |topo|
       puts "Topo #{topo.id}"
       problems = topo.problems.select{|p| p.start_topo_id == topo.id && p.start_coordinates.present? }
-      starts = []
+      start_groups = []
+      
       problems.each do |problem|
-        if starts.include?()
-        # if coordinates
-        #   circuit_problem = problems.select{|p| p.circuit_number.present? }.first
-        #   main_problem = circuit_problem || problems.sort_by(&:popularity).reverse.first
-        # end
-        # p.update_columns(start_parent_id: main_problem.id) unless p.id == main_problem.id
+        group = start_groups.find{|group| group.overlaps?(problem) }
+
+        if group
+          group.add_problem(problem)
+        else
+          start_groups << StartGroup.new(problem)
+        end
+      end
+
+      start_groups.each do |group|
+        circuit_problem = group.problems.find{|p| p.circuit_number.present? }
+        main_problem = circuit_problem || group.problems.sort_by(&:popularity).reverse.first
+
+        group.problems.each do |p|
+          p.update_columns(start_parent_id: main_problem.id) unless p.id == main_problem.id
+        end
       end
     end
 

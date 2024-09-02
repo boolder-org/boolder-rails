@@ -160,6 +160,10 @@ class Problem < ApplicationRecord
     [circuit_debug, name].compact.join(" ")
   end
 
+  def to_s
+    name_debug
+  end
+
   def circuit_number_simplified
     circuit_letter.present? ? nil : circuit_number
   end
