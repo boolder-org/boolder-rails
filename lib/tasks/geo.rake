@@ -1,17 +1,16 @@
 namespace :geo do
   task starts: :environment do 
-    Topo.published.find_each do |topo|
-      topo.problems.group_by{|p| [p.start_topo_id, p.start_coordinates_rounded] }.each do |(topo_id, coordinates), problems|
-        puts "Topo #{topo.id}"
-        if coordinates
-          circuit_problem = problems.select{|p| p.circuit_number.present? }.first
-          main_problem = circuit_problem || problems.sort_by(&:popularity).reverse.first
-        
-          # binding.pry
-          problems.each do |p|
-            p.update_columns(start_parent_id: main_problem.id) unless p.id == main_problem.id
-          end
-        end
+    Topo.published.where(id: 3741).find_each do |topo|
+      puts "Topo #{topo.id}"
+      problems = topo.problems.select{|p| p.start_topo_id == topo.id && p.start_coordinates.present? }
+      starts = []
+      problems.each do |problem|
+        if starts.include?()
+        # if coordinates
+        #   circuit_problem = problems.select{|p| p.circuit_number.present? }.first
+        #   main_problem = circuit_problem || problems.sort_by(&:popularity).reverse.first
+        # end
+        # p.update_columns(start_parent_id: main_problem.id) unless p.id == main_problem.id
       end
     end
 
@@ -35,7 +34,7 @@ namespace :geo do
 
       problems.each do |o|
         problems_with_children << o
-        problems_with_children.concat o.children 
+        # problems_with_children.concat o.children 
       end
 
       problems_with_children.each_with_index do |problem, index|

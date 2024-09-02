@@ -126,6 +126,10 @@ class Problem < ApplicationRecord
     lines.published.first&.topo_id
   end
 
+  def start_coordinates
+    @start_coordinates ||= lines.published.first&.coordinates&.first
+  end
+
   def start_coordinates_rounded
     if start_coordinates = lines.published.first&.coordinates&.first
       { 
