@@ -23,7 +23,8 @@ class Api::V1::ToposController < ActionController::Base
   end
 
   private
-  def url_for_topo(topo) 
-    cdn_image_url(topo.photo.variant(:medium))
+  def url_for_topo(topo, options = {}) 
+    options = options.merge(host: Rails.application.config.asset_host) unless Rails.env.local?
+    topo_proxy_url(topo, options)
   end
 end

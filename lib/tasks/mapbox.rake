@@ -51,6 +51,54 @@ namespace :mapbox do
     puts "exported areas.geojson".green
   end
 
+  task clusters: :environment do
+    puts "exporting clusters"
+
+    factory = RGeo::GeoJSON::EntityFactory.instance
+
+    cluster_features = []
+    hull_features = []
+
+    Cluster.all.each do |cluster|
+      hull = Boulder.where(area_id: cluster.areas.map(&:id)).where(ignore_for_area_hull: false).
+        select("st_buffer(st_convexhull(st_collect(polygon::geometry)),0.00007) as hull").to_a.first.hull
+
+      hash = {}.with_indifferent_access
+      hash[:cluster_id] = cluster.id
+      hash[:name] = cluster.name
+
+      hash.deep_transform_keys! { |key| key.camelize(:lower) }
+      hull_features << factory.feature(hull, nil, hash)
+
+      if cluster.sw && cluster.ne && cluster.center
+        hash = {}.with_indifferent_access
+        hash[:cluster_id] = cluster.id
+        hash[:name] = cluster.name
+        hash[:south_west_lat] = cluster.sw.lat.to_s
+        hash[:south_west_lon] = cluster.sw.lon.to_s
+        hash[:north_east_lat] = cluster.ne.lat.to_s
+        hash[:north_east_lon] = cluster.ne.lon.to_s
+
+        hash.deep_transform_keys! { |key| key.camelize(:lower) }
+        cluster_features << factory.feature(cluster.center, nil, hash)
+      end
+    end
+
+    feature_collection = factory.feature_collection(
+      cluster_features + hull_features
+    )
+
+    geo_json = JSON.pretty_generate(RGeo::GeoJSON.encode(feature_collection))
+
+    file_name = Rails.root.join("..", "boolder-maps", "mapbox", "clusters.geojson")
+
+    File.open(file_name,"w") do |f|
+      f.write(geo_json)
+    end
+
+    puts "exported clusters.geojson".green
+  end
+
   task problems: :environment do
     puts "exporting problems"
 

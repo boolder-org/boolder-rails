@@ -76,7 +76,9 @@ namespace :app do
           level6_count INTEGER NOT NULL,
           level7_count INTEGER NOT NULL,
           level8_count INTEGER NOT NULL,
-          problems_count INTEGER NOT NULL
+          problems_count INTEGER NOT NULL,
+          cluster_id INTEGER,
+          download_size REAL NOT NULL
         );
         CREATE INDEX area_idx ON areas(id);
       SQL
@@ -84,8 +86,8 @@ namespace :app do
       Area.published.each do |a|
         db.execute(
           "INSERT INTO areas (id, name, name_searchable, priority, description_fr, description_en, warning_fr, warning_en, tags, south_west_lat, south_west_lon, north_east_lat, north_east_lon, 
-                              level1_count, level2_count, level3_count, level4_count, level5_count, level6_count, level7_count, level8_count, problems_count)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+                              level1_count, level2_count, level3_count, level4_count, level5_count, level6_count, level7_count, level8_count, problems_count, cluster_id, download_size)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [
             a.id, 
             a.name, 
@@ -97,7 +99,30 @@ namespace :app do
             a.bounds[:south_west]&.lat, a.bounds[:south_west]&.lon, a.bounds[:north_east]&.lat, a.bounds[:north_east]&.lon,
             a.problems.with_location.level(1).count, a.problems.with_location.level(2).count, a.problems.with_location.level(3).count, a.problems.with_location.level(4).count, 
             a.problems.with_location.level(5).count, a.problems.with_location.level(6).count, a.problems.with_location.level(7).count, a.problems.with_location.level(8).count, 
-            a.problems.with_location.count
+            a.problems.with_location.count,
+            a.cluster_id,
+            a.download_size
+          ]
+        )
+      end
+
+      db.execute <<-SQL
+        create table clusters (
+          id INTEGER NOT NULL PRIMARY KEY,
+          name TEXT NOT NULL,
+          main_area_id INTEGER NOT NULL
+        );
+        CREATE INDEX cluster_idx ON clusters(id);
+      SQL
+
+      Cluster.all.each do |c|
+        db.execute(
+          "INSERT INTO clusters (id, name, main_area_id)
+          VALUES (?, ?, ?)", 
+          [
+            c.id, 
+            c.name, 
+            c.main_area_id
           ]
         )
       end

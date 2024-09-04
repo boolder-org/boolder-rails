@@ -36,9 +36,6 @@
   </head>
 
   <body class="bg-white">
-    <% if !cookies[:contribute_launch].present?  %>  
-       <%= render "layouts/contribute_banner" %> 
-     <% end %>
 
     <div class="bg-gray-100">
       <%= render "layouts/nav" unless @hide_nav %>

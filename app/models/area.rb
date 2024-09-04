@@ -7,6 +7,7 @@ class Area < ApplicationRecord
   has_many :problems
   has_many :circuits, -> { distinct }, through: :problems
   has_many :poi_routes
+  belongs_to :cluster
   belongs_to :bleau_area
 
   has_one_attached :cover do |attachable|
@@ -69,5 +70,13 @@ class Area < ApplicationRecord
 
   def sorted_circuits
     circuits.sort_by(&:average_grade)
+  end
+
+  def download_size
+    topos_count.to_f * 0.15
+  end
+
+  def topos_count
+    Topo.published.joins(:lines => :problem).where(problems: { area_id: id }).uniq.count
   end
 end

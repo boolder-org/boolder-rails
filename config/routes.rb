@@ -87,18 +87,18 @@ Rails.application.routes.draw do
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox
 
     # Permalinks (don't remove!)
-    get '/p/:id', to: "welcome#problem_permalink" # used by the iPhone app
+    get '/p/:id', to: "welcome#problem_permalink" # used by the apps to redirect to a problem webpage
   end
 
   namespace :api do
-      namespace :v1 do
-        resources :topos, only: :show
-        resources :areas do
-          resources :topos, only: :index
-          get "map", to: "maps#show", as: :area_map
-        end
+    namespace :v1 do
+      resources :topos, only: :show
+      resources :areas do
+        resources :topos, only: :index
+        get "map", to: "maps#show", as: :area_map
       end
     end
+  end
 
   get "search", to: "search#search", as: :search
   get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
@@ -106,7 +106,17 @@ Rails.application.routes.draw do
 
   mount Sidekiq::Web => "/sidekiqq"
 
+  # =============
+  # Proxy routes 
+  # =============
+  # Use proxy mode (=streaming) instead of redirects to allow CDNs to easily cache our assets
   # inspired by https://edgeguides.rubyonrails.org/active_storage_overview.html#putting-a-cdn-in-front-of-active-storage
+  # more info: https://github.com/rails/rails/tree/main/activestorage/app/controllers
+
+  # Guessable urls (used by the mobile apps)
+  get '/proxy/topos/:id', to: "proxy#show", as: :topo_proxy
+
+  # General solution
   direct :cdn_image do |model, options|
     expires_in = options.delete(:expires_in) { ActiveStorage.urls_expire_in }
     options = options.merge(host: Rails.application.config.asset_host) unless Rails.env.local?
