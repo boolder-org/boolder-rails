@@ -359,7 +359,6 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   colorize (~> 1.1.0)
-  concurrent-ruby (~> 1.2.3)
   differ (~> 0.1.2)
   dotenv-rails
   httparty (~> 0.21.0)
