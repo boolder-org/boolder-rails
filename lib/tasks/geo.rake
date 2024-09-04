@@ -6,7 +6,7 @@ class StartGroup
   end
 
   def overlaps?(problem)
-    @problems.any?{|p| (problem.start_coordinates["x"] - p.start_coordinates["x"]).abs <= 0.02 && (problem.start_coordinates["y"] - p.start_coordinates["y"]).abs <= 0.02 }
+    @problems.any?{|p| (problem.start_coordinates["x"] - p.start_coordinates["x"]).abs <= 0.05 && (problem.start_coordinates["y"] - p.start_coordinates["y"]).abs <= 0.05 }
   end
 
   def add_problem(problem)
