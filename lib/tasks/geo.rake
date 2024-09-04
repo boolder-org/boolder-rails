@@ -6,7 +6,7 @@ class StartGroup
   end
 
   def overlaps?(problem)
-    @problems.any?{|p| (problem.start_coordinates["x"] - p.start_coordinates["x"]).abs < 0.05 && (problem.start_coordinates["y"] - p.start_coordinates["y"]).abs < 0.05 }
+    @problems.any?{|p| (problem.start_coordinates["x"] - p.start_coordinates["x"]).abs <= 0.02 && (problem.start_coordinates["y"] - p.start_coordinates["y"]).abs <= 0.02 }
   end
 
   def add_problem(problem)
@@ -70,7 +70,7 @@ namespace :geo do
 
       problems.each do |o|
         problems_with_children << o
-        problems_with_children.concat o.children 
+        # problems_with_children.concat o.children 
       end
 
       problems_with_children.each_with_index do |problem, index|
