@@ -24,7 +24,7 @@ namespace :geo do
 
     Topo.published.find_each do |topo|
       puts "Topo #{topo.id}"
-      problems = topo.problems.select{|p| p.start_topo_id == topo.id && p.start_coordinates.present? }
+      problems = topo.problems.where(parent: nil).select{|p| p.start_topo_id == topo.id && p.start_coordinates.present? }
       start_groups = []
       
       problems.each do |problem|
