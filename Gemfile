@@ -15,7 +15,7 @@ gem 'sidekiq', '~> 7.1.2'
 gem 'redis', '~> 4.2.5'
 gem "rorvswild", "~> 1.6.4"
 gem 'bugsnag', '~> 6.25.2'
-gem 'algoliasearch-rails', '~> 2.2.2'
+gem 'pg_search', '~> 2.3.6'
 
 gem "importmap-rails", "~> 2.0"
 gem 'turbo-rails', '~> 2.0'

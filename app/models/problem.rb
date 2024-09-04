@@ -1,4 +1,8 @@
 class Problem < ApplicationRecord
+  include PgSearchable
+
+  init_pg_searchable
+
   belongs_to :circuit, optional: true
   belongs_to :area
   has_many :lines, dependent: :destroy
@@ -60,25 +64,14 @@ class Problem < ApplicationRecord
   scope :complete, -> { where(has_line: true).with_location }
   scope :incomplete, -> { where("problems.has_line = FALSE OR problems.location IS NULL") }
   scope :without_contribution_request, -> { left_joins(:contribution_requests).where(contribution_requests: { id: nil }) }
+  scope :with_unpublished, ->(include_unpublished = false) { include_unpublished ? all : joins(:area).where(areas: { published: true }).where.not(location: nil) }
 
-  # reindex problems on algolia when area is updated
-  # https://github.com/algolia/algoliasearch-rails#propagating-the-change-from-a-nested-child
-  after_touch :index!
+  def geolocation
+    { lat: location&.lat || 0.0, lng: location&.lon || 0.0 }
+  end
 
-  include AlgoliaSearch
-  algoliasearch enqueue: true, disable_indexing: Rails.env.local? do
-    attributes :name, :grade, :popularity
-    attribute :area_name do area.name end
-    attribute :published do published? end
-    attribute :circuit_number do circuit_number_simplified end
-    attribute :circuit_color do circuit&.color end
-    attribute :_geoloc do { lat: location&.lat || 0.0, lng: location&.lon || 0.0 } end
-    # TODO: implement custom attributes callback to trigger a reindex
-    # https://github.com/algolia/algoliasearch-rails#custom-attribute-definition
-
-    searchableAttributes [:name]
-    attributesForFaceting [:published]
-    customRanking ['desc(popularity)']
+  def area_name
+    area.name
   end
 
   def published?
