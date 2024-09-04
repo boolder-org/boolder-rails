@@ -20,6 +20,8 @@ end
 
 namespace :geo do
   task starts: :environment do 
+    Problem.all.update_all(start_parent_id: nil)
+
     Topo.published.find_each do |topo|
       puts "Topo #{topo.id}"
       problems = topo.problems.select{|p| p.start_topo_id == topo.id && p.start_coordinates.present? }
@@ -49,6 +51,9 @@ namespace :geo do
   end
 
   task compute: :environment do
+    Problem.all.update_all(next_id: nil)
+    Problem.all.update_all(previous_id: nil)
+
     Boulder.all.find_each do |boulder|
       puts "Processing boulder ##{boulder.id}"
 
@@ -65,7 +70,7 @@ namespace :geo do
 
       problems.each do |o|
         problems_with_children << o
-        # problems_with_children.concat o.children 
+        problems_with_children.concat o.children 
       end
 
       problems_with_children.each_with_index do |problem, index|
