@@ -29,6 +29,7 @@ namespace :app do
           featured INTEGER NOT NULL,
           popularity INTEGER,
           parent_id INTEGER,
+          variant_type TEXT,
           start_parent_id INTEGER,
           previous_id INTEGER,
           next_id INTEGER
@@ -45,8 +46,8 @@ namespace :app do
         db.execute(
           "INSERT INTO problems (id, name, name_en, name_searchable, grade, latitude, longitude, circuit_id, circuit_number, 
           circuit_color, steepness, sit_start, area_id, bleau_info_id, 
-          featured, popularity, parent_id, start_parent_id, previous_id, next_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+          featured, popularity, parent_id, variant_type, start_parent_id, previous_id, next_id)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
           [p.id, 
             I18n.with_locale(:fr) { p.name_with_fallback }, 
             I18n.with_locale(:en) { p.name_with_fallback }, 
@@ -56,7 +57,8 @@ namespace :app do
             p.steepness, p.sit_start ? 1 : 0, p.area_id, p.bleau_info_id.to_s, 
             p.featured ? 1 : 0, 
             p.popularity, 
-            p.parent_id,
+            p.variant_parent_id,
+            p.variant_type,
             p.start_parent_id,
             p.previous_id,
             p.next_id

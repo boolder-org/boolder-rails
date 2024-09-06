@@ -43,7 +43,7 @@ namespace :geo do
     Problem.find_each do |problem|
       puts "Problem #{problem.id}"
 
-      if !problem.sit_start && problem.name.present?
+      if problem.name.present?
         if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "assis").first
           variant.update_columns(variant_type: "sit", variant_parent_id: problem.id)
         end
