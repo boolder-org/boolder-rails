@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_09_06_154506) do
+ActiveRecord::Schema[7.1].define(version: 2024_09_06_164119) do
   create_schema "heroku_ext"
 
   # These are extensions that must be enabled in order to support this database
@@ -235,6 +235,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_06_154506) do
     t.integer "start_parent_id"
     t.string "name_canonical"
     t.string "name_suffix"
+    t.string "variant_type"
+    t.integer "variant_parent_id"
     t.index ["area_id"], name: "index_problems_on_area_id"
     t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"
@@ -243,6 +245,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_06_154506) do
     t.index ["name_canonical"], name: "index_problems_on_name_canonical"
     t.index ["name_suffix"], name: "index_problems_on_name_suffix"
     t.index ["start_parent_id"], name: "index_problems_on_start_parent_id"
+    t.index ["variant_parent_id"], name: "index_problems_on_variant_parent_id"
+    t.index ["variant_type"], name: "index_problems_on_variant_type"
   end
 
   create_table "topos", force: :cascade do |t|

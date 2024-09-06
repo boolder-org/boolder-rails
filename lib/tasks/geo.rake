@@ -6,7 +6,7 @@ class StartGroup
   end
 
   def overlaps?(problem)
-    @problems.any?{|p| (problem.start_coordinates["x"] - p.start_coordinates["x"]).abs <= 0.05 && (problem.start_coordinates["y"] - p.start_coordinates["y"]).abs <= 0.05 }
+    @problems.any?{|p| (problem.start_coordinates["x"] - p.start_coordinates["x"]).abs <= 0.02 && (problem.start_coordinates["y"] - p.start_coordinates["y"]).abs <= 0.02 }
   end
 
   def add_problem(problem)
@@ -38,7 +38,46 @@ namespace :geo do
   end
 
   task variant_types: :environment do 
-    # Problem.all.update_all(: nil)
+    Problem.all.update_all(variant_type: nil, variant_parent_id: nil)
+
+    Problem.find_each do |problem|
+      puts "Problem #{problem.id}"
+
+      if !problem.sit_start && problem.name.present?
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "assis").first
+          variant.update_columns(variant_type: "sit", variant_parent_id: problem.id)
+        end
+
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "droite").first
+          variant.update_columns(variant_type: "right", variant_parent_id: problem.id)
+        end
+
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "gauche").first
+          variant.update_columns(variant_type: "left", variant_parent_id: problem.id)
+        end
+
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "retour").first
+          variant.update_columns(variant_type: "back", variant_parent_id: problem.id)
+        end
+
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "en traversée").first
+          variant.update_columns(variant_type: "traverse", variant_parent_id: problem.id)
+        end
+
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "rallongé").first
+          variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
+        end
+
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "prolongé").first
+          variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
+        end
+
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "raccourci").first
+          variant.update_columns(variant_type: "short", variant_parent_id: problem.id)
+        end
+        
+      end
+    end
 
     puts "Done".green
   end
