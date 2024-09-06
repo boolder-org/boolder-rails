@@ -19,6 +19,30 @@ class StartGroup
 end
 
 namespace :geo do
+  task split_names: :environment do 
+    Problem.all.update_all(name_canonical: nil, name_suffix: nil)
+
+    Problem.find_each do |problem|
+      puts "Problem #{problem.id}"
+
+      if problem.name.present?
+        match = problem.name.match(/^(.*?)(?:\s*\((.*?)\))?$/)
+        canonical_name = match[1]
+        suffix = match[2]
+
+        problem.update_columns(name_canonical: canonical_name, name_suffix: suffix)
+      end
+    end
+
+    puts "Done".green
+  end
+
+  task variant_types: :environment do 
+    # Problem.all.update_all(: nil)
+
+    puts "Done".green
+  end
+
   task starts: :environment do 
     Problem.all.update_all(start_parent_id: nil)
 
