@@ -44,23 +44,23 @@ namespace :geo do
       puts "Problem #{problem.id}"
 
       if problem.name.present?
-        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "assis").first
+        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "assis").where.not(id: problem.id).first
           variant.update_columns(variant_type: "sit", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "droite").first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "droite").where.not(id: problem.id).first
           variant.update_columns(variant_type: "right", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "gauche").first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "gauche").where.not(id: problem.id).first
           variant.update_columns(variant_type: "left", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "retour").first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "retour").where.not(id: problem.id).first
           variant.update_columns(variant_type: "back", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "en traversée").first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "en traversée").where.not(id: problem.id).first
           variant.update_columns(variant_type: "traverse", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "rallongé").first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "rallongé").where.not(id: problem.id).first
           variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "prolongé").first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "prolongé").where.not(id: problem.id).first
           variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "raccourci").first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "raccourci").where.not(id: problem.id).first
           variant.update_columns(variant_type: "short", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name).first
+        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name).where.not(id: problem.id).first
           variant.update_columns(variant_type: "other", variant_parent_id: problem.id)
         end
         
