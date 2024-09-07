@@ -44,24 +44,26 @@ namespace :geo do
       puts "Problem #{problem.id}"
 
       if problem.name.present?
-        if variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "assis").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "sit", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "droite").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "right", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "gauche").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "left", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "retour").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "back", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "en traversée").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "traverse", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "rallongé").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "prolongé").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name, name_suffix: "raccourci").where.not(id: problem.id).first
-          variant.update_columns(variant_type: "short", variant_parent_id: problem.id)
-        elsif variant = Problem.where(area_id: problem.area_id, name_canonical: problem.name).where.not(id: problem.id).first
-          variant.update_columns(variant_type: "other", variant_parent_id: problem.id)
+        Problem.where(area_id: problem.area_id, name_canonical: problem.name).where.not(id: problem.id).each do |variant|
+          if variant.name_suffix == "assis"
+            variant.update_columns(variant_type: "sit", variant_parent_id: problem.id)
+          elsif variant.name_suffix == "droite"
+            variant.update_columns(variant_type: "right", variant_parent_id: problem.id)
+          elsif variant.name_suffix == "gauche"
+            variant.update_columns(variant_type: "left", variant_parent_id: problem.id)
+          elsif variant.name_suffix == "retour"
+            variant.update_columns(variant_type: "back", variant_parent_id: problem.id)
+          elsif variant.name_suffix == "en traversée"
+            variant.update_columns(variant_type: "traverse", variant_parent_id: problem.id)
+          elsif variant.name_suffix == "rallongé"
+            variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
+          elsif variant.name_suffix == "prolongé"
+            variant.update_columns(variant_type: "extended", variant_parent_id: problem.id)
+          elsif variant.name_suffix == "raccourci"
+            variant.update_columns(variant_type: "short", variant_parent_id: problem.id)
+          else
+            variant.update_columns(variant_type: "other", variant_parent_id: problem.id)
+          end
         end
         
       end

@@ -42,6 +42,8 @@ class Problem < ApplicationRecord
 
   # TODO: validate next/previous
 
+  # FIXME: validate that parent_id != self.id
+
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
