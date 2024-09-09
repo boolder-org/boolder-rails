@@ -142,7 +142,7 @@ namespace :app do
         CREATE INDEX circuit_idx ON circuits(id);
       SQL
 
-      Circuit.all.each do |c|
+      Circuit.all.select{|c| c.problems.count > 0}.each do |c|
         db.execute(
           "INSERT INTO circuits (id, color, average_grade, beginner_friendly, dangerous, south_west_lat, south_west_lon, north_east_lat, north_east_lon)
           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", 
