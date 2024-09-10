@@ -34,7 +34,7 @@ namespace :bleau do
     bleau_problems = BleauProblem.joins(:bleau_area => :area).
       left_outer_joins(:problem).where(problems: { id: nil })
 
-    bleau_problems.each do |bleau_problem|
+    bleau_problems.uniq.each do |bleau_problem|
       puts "Promoting bleau_problem_id=#{bleau_problem.id}"
 
       problem = Problem.new
