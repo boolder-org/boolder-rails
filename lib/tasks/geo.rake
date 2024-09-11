@@ -2,7 +2,7 @@ namespace :geo do
   task compute: :environment do
     Topo.update_all(boulder_id: nil, position: nil)
 
-    Boulder.where(id: 710).find_each do |boulder|
+    Boulder.all.find_each do |boulder|
       puts "Processing boulder ##{boulder.id}"
 
       centroid = Boulder.where(id: boulder.id).select("ST_Centroid(polygon::geometry) as centroid").to_a.first.centroid
