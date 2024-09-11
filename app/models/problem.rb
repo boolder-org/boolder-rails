@@ -103,6 +103,10 @@ class Problem < ApplicationRecord
     [circuit_debug, name].compact.join(" ")
   end
 
+  def inspect
+    ["Problem ##{id}", name_debug].join(" - ")
+  end
+
   def circuit_number_simplified
     circuit_letter.present? ? nil : circuit_number
   end
