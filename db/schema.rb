@@ -241,6 +241,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_11_070210) do
     t.integer "boulder_id"
     t.integer "position"
     t.index ["boulder_id", "position"], name: "index_topos_on_boulder_id_and_position", unique: true
+    t.index ["boulder_id"], name: "index_topos_on_boulder_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

@@ -1,6 +1,6 @@
 namespace :geo do 
   task compute: :environment do
-    # TODO: reset data
+    Topo.update_all(boulder_id: nil, position: nil)
 
     Boulder.where(id: 710).find_each do |boulder|
       puts "Processing boulder ##{boulder.id}"
@@ -19,7 +19,9 @@ namespace :geo do
         map{|topo_id, array| [topo_id, array.map(&:index).min] }.
         reject{|topo_id, index| topo_id == nil  }
 
-      
+      topos_with_index.each do |topo_id, index|
+        Topo.find(topo_id).update_columns(boulder_id: boulder.id, position: index)
+      end
 
       puts "Boulder ##{boulder.id}: #{problems.length} problems processed"
     end
