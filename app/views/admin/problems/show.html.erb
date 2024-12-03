@@ -1,5 +1,5 @@
-<% add_breadcrumb "Fontainebleau", admin_areas_path %>
-<% add_breadcrumb @problem.area.name, admin_area_problems_path(area_slug: @problem.area.slug, circuit_id: @problem.circuit&.id) %>
+<% add_breadcrumb "Wicklow", admin_areas_path %>
+<% add_breadcrumb @problem.area.name, admin_area_problems_path(area_slug: @problem.area.slug, sector_id: @problem.sector&.id) %>
 <% add_breadcrumb "Problem ##{@problem.id}", nil, class: "active" %>
 
 <% content_for :options do %>
@@ -46,7 +46,7 @@
       </span>
     </div>
 
-    <% if @problem.circuit_letter.blank? && (@problem.previous || @problem.next) %>
+    <% if @problem.sector_letter.blank? && (@problem.previous || @problem.next) %>
       <div class="px-4 sm:px-0 py-2 flex justify-start items-center">
         <div class="mr-4">
           <% if previous = @problem.previous %>

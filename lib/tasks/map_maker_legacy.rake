@@ -15,9 +15,9 @@ namespace :map_maker_legacy do
       hash[:name] = problem.name
       hash[:bleau_info_id] = problem.bleau_info_id.to_s
       hash[:parent_id] = problem.parent_id
-      hash[:circuit_color] = problem.circuit&.color
-      hash[:circuit_id] = problem.circuit_id_simplified
-      hash[:circuit_number] = problem.circuit_number_simplified
+      hash[:sector_color] = problem.sector&.color
+      hash[:sector_id] = problem.sector_id_simplified
+      hash[:sector_number] = problem.sector_number_simplified
       
       tags = []
       tags << "sit_start" if problem.sit_start
@@ -33,17 +33,17 @@ namespace :map_maker_legacy do
       factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
     end
 
-    circuit_features = Area.find(area_id).circuits.map do |circuit|
-      problems = circuit.problems.exclude_bis.with_location.sort_by(&:enumerable_circuit_number)
+    sector_features = Area.find(area_id).sectors.map do |sector|
+      problems = sector.problems.exclude_bis.with_location.sort_by(&:enumerable_sector_number)
       line_string = FACTORY.line_string(problems.map(&:location))
-      factory.feature(line_string, "circuit_#{circuit.id}", { color: circuit.color })
+      factory.feature(line_string, "sector_#{sector.id}", { color: sector.color })
     end
 
     readme = "****PLEASE READ ME***** This data belongs to boolder.com. Want to use it in your app? Let's discuss: hello@boolder.com"
     readme_feature = factory.feature("POINT(0 0)", nil, { readme: readme })
 
     feature_collection = factory.feature_collection(
-      [readme_feature] + problem_features + boulder_features + circuit_features
+      [readme_feature] + problem_features + boulder_features + sector_features
     )
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)

@@ -22,12 +22,12 @@
               <tr class="place-content-start align-top h-16">
                 <td class="px-6 py-2 whitespace-nowrap w-1/12">
                   <div class="text-sm text-gray-500">
-                    <%= link_to area.id, admin_area_problems_path(area_slug: area.slug, circuit_id: "first") %>
+                    <%= link_to area.id, admin_area_problems_path(area_slug: area.slug, sector_id: "first") %>
                   </div>
                 </td>
                 <td class="px-6 py-2 whitespace-nowrap w-4/12">
                   <span class="text-sm text-gray-900 font-bold">
-                    <%= link_to area.name, admin_area_problems_path(area_slug: area.slug, circuit_id: "first") %>
+                    <%= link_to area.name, admin_area_problems_path(area_slug: area.slug, sector_id: "first") %>
                   </span>
                   <% if !area.published? %>
                     <div class="text-yellow-500 text-sm">not published</div>

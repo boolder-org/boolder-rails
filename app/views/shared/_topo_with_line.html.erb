@@ -1,4 +1,4 @@
-<div class="relative" data-controller="topo-line" data-action="turbo:before-cache@window->topo-line#hidePath" data-topo-line-coordinates-value="<%= line.coordinates.to_json %>" data-topo-line-color-value="<%= uicolor(line.problem.circuit&.color) %>">
+<div class="relative" data-controller="topo-line" data-action="turbo:before-cache@window->topo-line#hidePath" data-topo-line-coordinates-value="<%= line.coordinates.to_json %>" data-topo-line-color-value="<%= uicolor(line.problem.sector&.color) %>">
   <%= render 'shared/topo_image', topo: line.topo, klass: "sm:rounded-lg" %>
 
   <% 
@@ -7,7 +7,7 @@
     # a few rules of thumb:
     # - shadows must not be on top of any lines or circles
     # - the main line should always be on top of everything
-    # - circuits should probably take precendence when possible
+    # - sectors should probably take precendence when possible
 
     # example of complex overlapping: 
     # /fr/fontainebleau/cuvier/448-le-surplomb-du-reveil-matin
@@ -32,7 +32,7 @@
           <div class="absolute hidden z-0" style="top:-12px; left:-12px;" data-topo-line-target="circle">
             <%= circle_view("&nbsp;".html_safe, klass: "h-6 w-6 leading-6 bg-gray-500 topo-line-shadow") %>
           </div>
-          <% move_on_top = (secondary_line.id != line.id) && secondary_line.problem.circuit_number.present? %>
+          <% move_on_top = (secondary_line.id != line.id) && secondary_line.problem.sector_number.present? %>
           <div class="absolute hidden <%= move_on_top ? "z-10" : "z-0" %>" style="top:-12px; left:-12px;" data-topo-line-target="circle">
             <% path = (scope == :admin) ? admin_problem_path(secondary_line.problem) : problem_friendly_path(secondary_line.problem) %>
             <%= link_to path do %>

@@ -57,11 +57,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_04_091012) do
     t.string "tags", default: [], null: false, array: true
     t.string "short_name"
     t.integer "priority", limit: 2, default: 3, null: false
-    t.text "description_fr"
     t.text "description_en"
-    t.text "warning_fr"
     t.text "warning_en"
-    t.integer "bleau_area_id", null: false
     t.integer "cluster_id"
     t.index ["slug"], name: "index_areas_on_slug", unique: true
     t.index ["tags"], name: "index_areas_on_tags", using: :gin
@@ -89,34 +86,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_04_091012) do
     t.index ["user_id", "user_type"], name: "user_index"
   end
 
-  create_table "bleau_areas", force: :cascade do |t|
-    t.string "slug"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "name"
-    t.string "category"
-    t.index ["slug"], name: "index_bleau_areas_on_slug", unique: true
-  end
-
-  create_table "bleau_problems", force: :cascade do |t|
-    t.string "name"
-    t.string "grade"
-    t.string "steepness"
-    t.boolean "sit_start"
-    t.string "tags", default: [], null: false, array: true
-    t.bigint "bleau_circuit_id"
-    t.string "circuit_number"
-    t.string "circuit_letter"
-    t.integer "ascents"
-    t.integer "ratings"
-    t.decimal "ratings_average"
-    t.bigint "bleau_area_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["bleau_area_id"], name: "index_bleau_problems_on_bleau_area_id"
-    t.index ["bleau_circuit_id"], name: "index_bleau_problems_on_bleau_circuit_id"
-  end
-
   create_table "boulders", force: :cascade do |t|
     t.geography "polygon", limit: {:srid=>4326, :type=>"st_polygon", :geographic=>true}
     t.datetime "created_at", null: false
@@ -124,13 +93,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_04_091012) do
     t.bigint "area_id"
     t.boolean "ignore_for_area_hull", default: false, null: false
     t.index ["area_id"], name: "index_boulders_on_area_id"
-  end
-
-  create_table "circuits", force: :cascade do |t|
-    t.string "color"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "risk", limit: 2
   end
 
   create_table "clusters", force: :cascade do |t|
@@ -212,27 +174,25 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_04_091012) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
-    t.bigint "circuit_id"
-    t.string "circuit_number"
+    t.bigint "sector_id"
     t.string "steepness", null: false
     t.integer "height"
     t.bigint "area_id"
-    t.integer "bleau_info_id"
     t.string "landing"
     t.boolean "featured", default: false, null: false
     t.bigint "parent_id"
-    t.decimal "ratings_average"
-    t.integer "ratings"
-    t.integer "ascents"
-    t.integer "popularity"
-    t.string "circuit_letter"
     t.boolean "sit_start", default: false, null: false
     t.boolean "has_line", default: false, null: false
     t.index ["area_id"], name: "index_problems_on_area_id"
-    t.index ["circuit_id"], name: "index_problems_on_circuit_id"
     t.index ["grade"], name: "index_problems_on_grade"
     t.index ["has_line"], name: "index_problems_on_has_line"
     t.index ["location"], name: "index_problems_on_location", using: :gist
+  end
+
+  create_table "sectors", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "topos", force: :cascade do |t|

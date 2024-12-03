@@ -111,9 +111,9 @@ namespace :mapbox do
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
       hash[:id] = problem.id
-      hash[:circuit_color] = problem.circuit&.color
-      hash[:circuit_id] = problem.circuit_id_simplified
-      hash[:circuit_number] = problem.circuit_number_simplified
+      hash[:sector_color] = problem.sector&.color
+      hash[:sector_id] = problem.sector_id_simplified
+      hash[:sector_number] = problem.sector_number_simplified
 
       name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
       name_en = I18n.with_locale(:en) { problem.name_with_fallback }
@@ -149,26 +149,26 @@ namespace :mapbox do
     puts "exported problems.geojson".green
   end
 
-  task circuits: :environment do 
+  task sectors: :environment do 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    circuit_features = Circuit.all.map do |circuit|
-      problems = circuit.problems.exclude_bis.with_location.sort_by(&:enumerable_circuit_number)
+    sector_features = Sector.all.map do |sector|
+      problems = sector.problems.exclude_bis.with_location.sort_by(&:enumerable_sector_number)
       line_string = FACTORY.line_string(problems.map(&:location))
-      factory.feature(line_string, nil, { id: circuit.id, color: circuit.color })
+      factory.feature(line_string, nil, { id: sector.id, color: sector.color })
     end
 
     feature_collection = factory.feature_collection(
-      circuit_features
+      sector_features
     )
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "circuits.geojson"),"w") do |f|
+    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "sectors.geojson"),"w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 
-    puts "exported circuits.geojson".green
+    puts "exported sectors.geojson".green
   end
 
   # TODO: Revamp the pois task once we migrate to the new POI data model (split pois and poi routes)

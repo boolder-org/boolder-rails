@@ -44,7 +44,7 @@ class ProblemsController < ApplicationController
     @problems = Problem.joins(:area).where(area: { published: true }).
       significant_ascents. 
       where(grade: @grades[@grade]).
-      order(popularity: :desc).
+      order(name: :desc).
       limit(100)
   end
 end

@@ -1,12 +1,12 @@
-<% add_breadcrumb "Fontainebleau", admin_areas_path %>
+<% add_breadcrumb "Wicklow", admin_areas_path %>
 <% add_breadcrumb "#{@area.name} ##{@area.id}", nil, class: "active" %>
 
 <% content_for :options do %>
   <% items = [] %>
   <% items << { text: "New problem", link: new_admin_problem_path(area_id: @area.id) } %>
   <% items << { text: "Edit area", link: edit_admin_area_path(@area) } %>
-  <% if params[:circuit_id].to_i > 0 %>
-    <% items << { text: "Edit circuit", link: edit_admin_circuit_path(id: params[:circuit_id]) } %>
+  <% if params[:sector_id].to_i > 0 %>
+    <% items << { text: "Edit sector", link: edit_admin_sector_path(id: params[:sector_id]) } %>
   <% end %>
   <% items << { text: "Map edit", link: geojson_io_url(@area), target: "_blank" } %>
   <% items << { text: "Map download", link: geojson_source_url(@area, download: true) } %>
@@ -30,18 +30,18 @@
 <div class="">
   <div class="border-b border-gray-200">
     <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-      <% @circuit_tabs.each do |id, name| %>
-        <% if params[:circuit_id].presence == id.to_s.presence %>
-          <%= link_to name, admin_area_problems_path(circuit_id: id), class: "border-emerald-500 text-emerald-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm", aria: {current: "page"} %>
+      <% @sector_tabs.each do |id, name| %>
+        <% if params[:sector_id].presence == id.to_s.presence %>
+          <%= link_to name, admin_area_problems_path(sector_id: id), class: "border-emerald-500 text-emerald-600 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm", aria: {current: "page"} %>
         <% else %>  
-          <%= link_to name, admin_area_problems_path(circuit_id: id), class: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" %>
+          <%= link_to name, admin_area_problems_path(sector_id: id), class: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" %>
         <% end %>
       <% end %>
     </nav>
   </div>
 </div>
 
-<% if params[:circuit_id].nil? %>
+<% if params[:sector_id].nil? %>
   <%= form_with url: admin_area_problems_path(@area), method: :get, class: "my-4" do |form| %>
     <div class="w-1/2">
       <%# <label for="missing" class="block text-sm font-medium text-gray-700">Missing?</label> %>

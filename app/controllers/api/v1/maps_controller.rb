@@ -16,7 +16,7 @@ class Api::V1::MapsController < ActionController::Base
       # simple-style attributes to make the map look nicer on geojson.io
       # https://github.com/mapbox/simplestyle-spec/tree/master/1.1.0
       # Important: keep the key exactly as it it (don't camelize it)
-      hash[:"marker-color"] = uicolor(problem.circuit&.color, fallback: "#ccc")
+      hash[:"marker-color"] = uicolor(problem.sector&.color, fallback: "#ccc")
 
       factory.feature(problem.location, nil, hash)
     end

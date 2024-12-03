@@ -3,13 +3,12 @@ class Problem < ApplicationRecord
 
   init_pg_searchable
 
-  belongs_to :circuit, optional: true
+  belongs_to :sector, optional: true
   belongs_to :area
   has_many :lines, dependent: :destroy
   has_many :topos, through: :lines
   has_many :children, class_name: "Problem", foreign_key: "parent_id"
   belongs_to :parent, class_name: "Problem", optional: true
-  belongs_to :bleau_problem, foreign_key: "bleau_info_id", optional: true
   has_many :contribution_requests
   has_many :contributions
 
@@ -36,26 +35,25 @@ class Problem < ApplicationRecord
   LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter", LETTER_QUATER => "quater" }
   LETTER_START = 'D'
 
-  normalizes :name, :circuit_number, :circuit_letter, with: -> s { s.strip.presence }
+  normalizes :name, :sector_number, :sector_letter, with: -> s { s.strip.presence }
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
-  validates :bleau_info_id, uniqueness: true, allow_blank: true
-  validate :validate_circuit_letter
-  validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_nil: true
-  validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_nil: true
-  validates :circuit_letter, inclusion: { in: LETTERS.keys }, allow_blank: true
-  validate :validate_circuit_fields
+  validate :validate_sector_letter
+  validates :sector_number, uniqueness: { scope: [:sector_letter, :sector_id] }, allow_nil: true
+  validates :sector_letter, uniqueness: { scope: [:sector_number, :sector_id] }, allow_nil: true
+  validates :sector_letter, inclusion: { in: LETTERS.keys }, allow_blank: true
+  validate :validate_sector_fields
   validate :validate_parent
 
-  Circuit::COLOR_VALUES.each do |color|
-    scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
+  Sector::COLOR_VALUES.each do |color|
+    scope color, -> { joins(:sector).where(sectors: { color: color }) } 
   end
 
   scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
-  scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
+  scope :exclude_bis, -> { where(sector_letter: [nil, '']) }
   scope :with_location, -> { where.not(location: nil) }
   scope :without_location, -> { where(location: nil) }
   scope :with_line, -> { where(has_line: true) }
@@ -85,57 +83,57 @@ class Problem < ApplicationRecord
   def name_with_fallback
     if name.present?
       name
-    elsif circuit_number == LETTER_START && circuit.id
-      [circuit.name, I18n.t("problem.start")].join(" ")
-    elsif circuit_number.present? && circuit.id
-      [circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil)].join(" ")
+    elsif sector_number == LETTER_START && sector.id
+      [sector.name, I18n.t("problem.start")].join(" ")
+    elsif sector_number.present? && sector.id
+      [sector.name, sector_number.to_s, LETTERS.fetch(sector_letter, nil)].join(" ")
     else
       I18n.t("problem.no_name")
     end 
   end
 
   def name_debug
-    circuit_debug = nil
-    if circuit_number.present? && circuit.id
-      circuit_debug = [circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil)].join(" ")
+    sector_debug = nil
+    if sector_number.present? && sector.id
+      sector_debug = [sector.name, sector_number.to_s, LETTERS.fetch(sector_letter, nil)].join(" ")
     end
 
-    [circuit_debug, name].compact.join(" ")
+    [sector_debug, name].compact.join(" ")
   end
 
-  def circuit_number_simplified
-    circuit_letter.present? ? nil : circuit_number
+  def sector_number_simplified
+    sector_letter.present? ? nil : sector_number
   end
 
-  def circuit_id_simplified
-    circuit_letter.present? ? nil : circuit&.id
+  def sector_id_simplified
+    sector_letter.present? ? nil : sector&.id
   end
 
   def bis
-    LETTERS.keys.map{|letter| Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: letter).first }.compact
+    LETTERS.keys.map{|letter| Problem.where(sector_id: sector_id).where(sector_number: sector_number.to_i, sector_letter: letter).first }.compact
   end
 
   def main
-    Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: [nil, '']).first
+    Problem.where(sector_id: sector_id).where(sector_number: sector_number.to_i, sector_letter: [nil, '']).first
   end
 
-  def enumerable_circuit_number
+  def enumerable_sector_number
     boost = { LETTER_BIS => 0.1, LETTER_TER => 0.2, LETTER_QUATER => 0.3 }
-    circuit_number.to_i + boost.fetch(circuit_letter, 0)
+    sector_number.to_i + boost.fetch(sector_letter, 0)
   end
 
   def next
-    if circuit_number.present?
-      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1), circuit_letter: [nil, '']).first
+    if sector_number.present?
+      Problem.where(sector_id: sector_id).where(sector_number: (sector_number.to_i + 1), sector_letter: [nil, '']).first
     end
   end
 
   def previous
-    if circuit_number.present?
-      if circuit_number == "1"
-        Problem.where(circuit_id: circuit_id).where(circuit_number: LETTER_START).first
+    if sector_number.present?
+      if sector_number == "1"
+        Problem.where(sector_id: sector_id).where(sector_number: LETTER_START).first
       else
-        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1), circuit_letter: [nil, '']).first
+        Problem.where(sector_id: sector_id).where(sector_number: (sector_number.to_i - 1), sector_letter: [nil, '']).first
       end
     end
   end
@@ -165,9 +163,9 @@ class Problem < ApplicationRecord
 
   private
 
-  def validate_circuit_fields
-    if circuit_number.present? != circuit_id.present?
-      errors.add(:base, "Both circuit number and circuit_id must be present or absent")
+  def validate_sector_fields
+    if sector_number.present? != sector_id.present?
+      errors.add(:base, "Both sector number and sector_id must be present or absent")
     end
   end
 
@@ -185,10 +183,10 @@ class Problem < ApplicationRecord
     end
   end
 
-  def validate_circuit_letter
-    return if circuit_number.blank? || circuit_number == LETTER_START
-    if circuit_number.to_i < 1
-      errors.add(:circuit_number, "must be a number or D (for Départ)")
+  def validate_sector_letter
+    return if sector_number.blank? || sector_number == LETTER_START
+    if sector_number.to_i < 1
+      errors.add(:sector_number, "must be a number or D (for Départ)")
     end
   end
 end

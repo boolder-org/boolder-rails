@@ -1,16 +1,16 @@
 <div class="col-span-6 sm:col-span-1">
-  <%= form.label :circuit_number, "Number" %>
-  <%= form.text_field :circuit_number, autocomplete: "off" %>
+  <%= form.label :sector_number, "Number" %>
+  <%= form.text_field :sector_number, autocomplete: "off" %>
 </div>
 
 <div class="col-span-6 sm:col-span-1">
-  <%= form.label :circuit_letter, "Bis" %>
-  <%= form.select :circuit_letter, Problem::LETTERS.invert, { include_blank: true } %>
+  <%= form.label :sector_letter, "Bis" %>
+  <%= form.select :sector_letter, Problem::LETTERS.invert, { include_blank: true } %>
 </div>
 
 <div class="col-span-6 sm:col-span-2">
-  <%= form.label :circuit_id %>
-  <%= form.collection_select :circuit_id, @circuits, :id, :color, include_blank: true %>
+  <%= form.label :sector_id %>
+  <%= form.collection_select :sector_id, @sectors, :id, :color, include_blank: true %>
 </div>
 
 <div class="col-span-6 sm:col-span-2 sm:col-start-1">

@@ -2,14 +2,14 @@ class Admin::ProblemsController < Admin::BaseController
   def index
     @area = Area.find_by(slug: params[:area_slug])
 
-    if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id)
-      redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
+    if params[:sector_id] == "first" && (id = @area.sorted_sectors.first&.id)
+      redirect_to admin_area_problems_path(area_slug: @area.slug, sector_id: id) 
     end
 
     arel = Problem.where(area_id: @area.id) 
 
-    arel = if params[:circuit_id].to_i > 0
-      arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
+    arel = if params[:sector_id].to_i > 0
+      arel.where(sector_id: params[:sector_id]).sort_by(&:enumerable_sector_number) if params[:sector_id].present?
     else
       arel.order("ascents DESC NULLS LAST")
     end
@@ -24,8 +24,8 @@ class Admin::ProblemsController < Admin::BaseController
 
     @problems = arel
 
-    circuits = @area.sorted_circuits
-    @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push([nil, "All"])
+    sectors = @area.sorted_sectors
+    @sector_tabs = sectors.map{|c| [c.id, c.name] }.push([nil, "All"])
 
     @missing_grade = @area.problems.where("grade IS NULL OR grade = ''")
   end
@@ -36,7 +36,7 @@ class Admin::ProblemsController < Admin::BaseController
     @problem = Problem.new(steepness: :other)
 
     @problem.area = area
-    @circuits = area.sorted_circuits
+    @sectors = area.sorted_sectors
   end
 
   def create
@@ -75,12 +75,12 @@ class Admin::ProblemsController < Admin::BaseController
   def problem_params
     params.require(:problem).
       permit(:area_id, :name, :grade, :steepness, :sit_start,
-        :bleau_info_id, :circuit_number, :circuit_letter, :circuit_id, :parent_id,
+        :bleau_info_id, :sector_number, :sector_letter, :sector_id, :parent_id,
       )
   end
 
   def set_problem
     @problem = Problem.find(params[:id])
-    @circuits = @problem.area.sorted_circuits
+    @sectors = @problem.area.sorted_sectors
   end
 end

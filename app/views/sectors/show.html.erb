@@ -1,0 +1,64 @@
+<% set_meta_tags title: t("views.sectors.show.metas.title", sector: @sector.name, area: @area.name) %>
+<% set_meta_tags description: t("views.sectors.show.metas.description", sector: @sector.name, area: @area.name) %>
+
+<% if @area.cover.persisted? %>
+  <% set_meta_tags og: { type: "website", image: cdn_image_url(@area.cover.variant(:medium)) } %>
+<% end %>
+
+<div class="max-w-7xl mx-auto pt-6 sm:px-6 lg:px-8">
+  <div class="px-4 sm:px-0">
+    <div class="flex items-center space-x-1 text-sm font-medium text-gray-500">
+      <div><%= link_to "Wicklow", areas_path, class: "hover:text-gray-700" %></div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+      </svg>
+      <div><%= link_to @area.name, area_path(@area), class: "hover:text-gray-700" %></div>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pb-8">
+  <div class="md:grid md:grid-cols-2 md:gap-16 mb-4">
+    <div class="col-span-1">
+      <div>
+        <h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0">
+          <%= t("sector.long_name", name: @sector.name) %>
+        </h1>
+
+        <% if @sector.beginner_friendly? %>
+          <span class="flex mb-2 px-4 sm:px-0">
+            <span class="text-emerald-500 mr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </span>
+            <span class="text-emerald-500">
+              <%= t("sector.beginner_friendly") %>
+            </span>
+          </span>
+        <% end %>
+
+        <% if @sector.dangerous? %>
+          <span class="flex mb-2 px-4 sm:px-0">
+            <span class="text-red-500 mr-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </span>
+            <span class="text-red-500">
+              <%= t("sector.dangerous") %>
+            </span>
+          </span>
+        <% end %>
+
+        <ul role="list" class="pt-2">
+          <% @sector.problems.exclude_bis.sort_by(&:enumerable_sector_number).each do |problem| %>
+            <% cache [problem, I18n.locale, "show_featured=true"] do %>
+              <%= render problem, show_featured: true %>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

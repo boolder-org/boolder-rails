@@ -1,7 +1,7 @@
 <% problem = @contribution.problem %>
 
-<% add_breadcrumb "Fontainebleau", admin_areas_path %>
-<% add_breadcrumb problem.area.name, admin_area_problems_path(area_slug: problem.area.slug, circuit_id: problem.circuit&.id) if problem %>
+<% add_breadcrumb "Wicklow", admin_areas_path %>
+<% add_breadcrumb problem.area.name, admin_area_problems_path(area_slug: problem.area.slug, sector_id: problem.sector&.id) if problem %>
 <% add_breadcrumb "Problem ##{problem.id}", admin_problem_path(problem) if problem %>
 <% add_breadcrumb "Contribution ##{@contribution.id}", nil, class: "active" %>
 

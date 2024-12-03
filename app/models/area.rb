@@ -5,10 +5,9 @@ class Area < ApplicationRecord
 
   has_many :boulders
   has_many :problems
-  has_many :circuits, -> { distinct }, through: :problems
+  has_many :sectors, -> { distinct }, through: :problems
   has_many :poi_routes
   belongs_to :cluster
-  belongs_to :bleau_area
 
   has_one_attached :cover do |attachable|
     attachable.variant :thumb, resize_to_limit: [400, 400], saver: { quality: 80, strip: true, interlace: true }, preprocessed: true
@@ -20,7 +19,7 @@ class Area < ApplicationRecord
   scope :published, -> { where(published: true) }
   include HasTagsConcern
 
-  normalizes :name, :short_name, :description_fr, :description_en, :warning_fr, :warning_en, with: -> s { s.strip.presence }
+  normalizes :name, :short_name, :description_en, :warning_en, with: -> s { s.strip.presence }
 
   validates :tags, array: { inclusion: { in: %w(popular beginner_friendly family_friendly dry_fast) } }
   validates :slug, presence: true
@@ -33,7 +32,7 @@ class Area < ApplicationRecord
   def self.beginner_friendly
     published.any_tags(:beginner_friendly).
     map {|area| [area, area.problems.with_location.count]}.sort{|a,b| b.second <=> a.second }.map(&:first).
-    sort_by{|a| -a.circuits.select(&:beginner_friendly?).length }
+    sort_by{|a| -a.sectors.select(&:beginner_friendly?).length }
   end
   
   def self.with_ids_keep_order(ids)
@@ -64,12 +63,12 @@ class Area < ApplicationRecord
   end
 
   # TODO: rewrite in SQL
-  def main_circuits
-    circuits.select{|c| c.problems.where(area_id: id).count >= 10 }.sort_by(&:average_grade)
+  def main_sectors
+    sectors.select{|c| c.problems.where(area_id: id).count >= 10 }.sort_by(&:average_grade)
   end
 
-  def sorted_circuits
-    circuits.sort_by(&:average_grade)
+  def sorted_sectors
+    sectors.sort_by(&:average_grade)
   end
 
   def download_size

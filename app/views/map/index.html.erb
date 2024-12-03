@@ -28,8 +28,8 @@ data-mapbox-locale-value="<%= I18n.locale %>"
 data-mapbox-contribute-source-value="<%= mapping_requests_path(format: :geojson) %>"
 data-mapbox-contribute-value="<%= params[:contribute] ? "true" : "false" %>"
 
-data-mapbox-circuit7a-source-value="<%= circuit7a_problems_path(format: :geojson) %>"
-data-mapbox-circuit7a-value="<%= params[:circuit7a] ? "true" : "false" %>"
+data-mapbox-sector7a-source-value="<%= sector7a_problems_path(format: :geojson) %>"
+data-mapbox-sector7a-value="<%= params[:sector7a] ? "true" : "false" %>"
 
 <% if @problem %> 
 data-mapbox-problem-value="<%= @problem.to_json %>" 

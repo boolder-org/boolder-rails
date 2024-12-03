@@ -10,7 +10,7 @@ class Admin::AreasController < Admin::BaseController
 
   def show
     set_area
-    redirect_to admin_area_problems_path(@area, circuit_id: 'first')
+    redirect_to admin_area_problems_path(@area, sector_id: 'first')
   end
 
   def update

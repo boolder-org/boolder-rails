@@ -1,8 +1,8 @@
 module ProblemsHelper
   def problem_circle_view(problem)
-    circle_view(problem.circuit_number_simplified || "&nbsp;".html_safe, 
-      background_color: uicolor(problem.circuit&.color), 
-      text_color: text_color(problem.circuit&.color)
+    circle_view(problem.sector_number_simplified || "&nbsp;".html_safe, 
+      background_color: uicolor(problem.sector&.color), 
+      text_color: text_color(problem.sector&.color)
     )
   end
 
@@ -11,16 +11,16 @@ module ProblemsHelper
       (link_to problem.name_with_fallback, admin_problem_path(problem), class: "ml-2")
   end
 
-  def circuit_circle_view(circuit, klass: "h-6 w-6 leading-6")
+  def sector_circle_view(sector, klass: "h-6 w-6 leading-6")
     circle_view("&nbsp;".html_safe, 
-      background_color: uicolor(circuit&.color), 
-      text_color: text_color(circuit&.color),
+      background_color: uicolor(sector&.color), 
+      text_color: text_color(sector&.color),
       klass: klass
     )
   end
 
-  def uicolor(circuit_color, fallback: "rgb(80% 80% 80%)")
-    color_mapping[circuit_color] || fallback
+  def uicolor(sector_color, fallback: "rgb(80% 80% 80%)")
+    color_mapping[sector_color] || fallback
   end
 
   def bleau_info_url(problem)
@@ -57,8 +57,8 @@ module ProblemsHelper
     }.with_indifferent_access
   end
 
-  def text_color(circuit_color)
-    if circuit_color.to_s == "white"
+  def text_color(sector_color)
+    if sector_color.to_s == "white"
       "#333"
     else
       "#FFF"

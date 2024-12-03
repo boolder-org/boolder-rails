@@ -1,5 +1,5 @@
 // This file is getting too complex and will eventually need some refactoring
-// Note: we could buy some time by removing/refactoring the "circuit 7a" code introduced here: https://github.com/nmondollot/boolder/pull/26
+// Note: we could buy some time by removing/refactoring the "sector 7a" code introduced here: https://github.com/nmondollot/boolder/pull/26
 // (lots of complexity for such a small feature)
 
 import { Controller } from '@hotwired/stimulus'
@@ -18,8 +18,8 @@ export default class extends Controller {
     draft: { type: Boolean, default: false },
     contribute: { type: Boolean, default: false },
     contributeSource: String,
-    circuit7a: { type: Boolean, default: false },
-    circuit7aSource: String,
+    sector7a: { type: Boolean, default: false },
+    sector7aSource: String,
   }
 
   connect() {
@@ -98,7 +98,7 @@ export default class extends Controller {
         'circle-sort-key': 
           [
             "case",
-            ["has", "circuitId"],
+            ["has", "sectorId"],
             2,
             1
           ]
@@ -116,7 +116,7 @@ export default class extends Controller {
             22,
             [
               "case",
-              ["has", "circuitNumber"],
+              ["has", "sectorNumber"],
               16,
               10
             ]
@@ -127,7 +127,7 @@ export default class extends Controller {
             "case",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "yellow"],
               true,
               false
@@ -135,7 +135,7 @@ export default class extends Controller {
             "#FFCC02",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "purple"],
               true,
               false
@@ -143,7 +143,7 @@ export default class extends Controller {
             "#D783FF",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "orange"],
               true,
               false
@@ -151,7 +151,7 @@ export default class extends Controller {
             "#FF9500",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "green"],
               true,
               false
@@ -159,7 +159,7 @@ export default class extends Controller {
             "#77C344",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "blue"],
               true,
               false
@@ -167,7 +167,7 @@ export default class extends Controller {
             "#017AFF",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "skyblue"],
               true,
               false
@@ -175,7 +175,7 @@ export default class extends Controller {
             "#5AC7FA",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "salmon"],
               true,
               false
@@ -183,7 +183,7 @@ export default class extends Controller {
             "#FDAF8A",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "red"],
               true,
               false
@@ -191,7 +191,7 @@ export default class extends Controller {
             "#FF3B2F",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "black"],
               true,
               false
@@ -199,7 +199,7 @@ export default class extends Controller {
             "#000",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "white"],
               true,
               false
@@ -242,7 +242,7 @@ export default class extends Controller {
         'text-allow-overlap': true,
         'text-field': [
           "to-string",
-          ["get", "circuitNumber"]
+          ["get", "sectorNumber"]
         ],
         'text-size': [
           "interpolate",
@@ -260,7 +260,7 @@ export default class extends Controller {
             "case",
             [
               "match",
-              ["get", "circuitColor"],
+              ["get", "sectorColor"],
               ["", "white"],
               true,
               false
@@ -299,7 +299,7 @@ export default class extends Controller {
         'circle-sort-key': 
           [
             "case",
-            ["has", "circuitId"],
+            ["has", "sectorId"],
             2,
             1
           ]
@@ -383,17 +383,17 @@ export default class extends Controller {
 
     // CIRCUIT 7A LAYERS
 
-    if(this.circuit7aValue) {
+    if(this.sector7aValue) {
 
-      this.map.addSource('circuit7a', {
+      this.map.addSource('sector7a', {
         type: 'geojson',
-        data: this.circuit7aSourceValue,
+        data: this.sector7aSourceValue,
       });
   
       this.map.addLayer({
-      'id': 'circuit7a-problems',
+      'id': 'sector7a-problems',
       'type': 'circle',
-      'source': 'circuit7a',
+      'source': 'sector7a',
       // 'source-layer': '',
       // 'minzoom': 12,
       'layout': {
@@ -401,7 +401,7 @@ export default class extends Controller {
         'circle-sort-key': 
           [
             "case",
-            ["has", "circuitId"],
+            ["has", "sectorId"],
             2,
             1
           ]
@@ -436,9 +436,9 @@ export default class extends Controller {
       );
   
       this.map.addLayer({
-      'id': 'circuit7a-problems-texts',
+      'id': 'sector7a-problems-texts',
       'type': 'symbol',
-      'source': 'circuit7a',
+      'source': 'sector7a',
       // 'source-layer': '',
       'minzoom': 13,
       'layout': {
@@ -470,16 +470,16 @@ export default class extends Controller {
       ],
       });
 
-      this.map.addSource('circuit7a-bike', {
+      this.map.addSource('sector7a-bike', {
         type: 'vector',
         url: 'mapbox://nmondollot.c2qwxo24',
         promoteId: "id"
       });
 
       this.map.addLayer({
-      'id': 'circuit7a-bike',
+      'id': 'sector7a-bike',
       'type': 'line',
-      'source': 'circuit7a-bike',
+      'source': 'sector7a-bike',
       'source-layer': 'top7a-bike-2kosot',
       // 'minzoom': 8,
       'layout': {
@@ -512,7 +512,7 @@ export default class extends Controller {
         speed: 2
       });
 
-      if(!this.contributeValue && !this.circuit7aValue) {
+      if(!this.contributeValue && !this.sector7aValue) {
 
         // FIXME: make it DRY
         const coordinates = [problem.lon, problem.lat];
@@ -539,8 +539,8 @@ export default class extends Controller {
       if(this.contributeValue) {
         url = `/${this.localeValue}/mapping/map`
       }
-      else if(this.circuit7aValue) {
-        url = `/${this.localeValue}/circuit7a/map`
+      else if(this.sector7aValue) {
+        url = `/${this.localeValue}/sector7a/map`
       }
       else {
         url = `/${this.localeValue}/map`
@@ -552,7 +552,7 @@ export default class extends Controller {
 
   setupClickEvents() {
 
-    if(!this.circuit7aValue) {
+    if(!this.sector7aValue) {
       this.map.on('mouseenter', 'problems', () => {
         this.map.getCanvas().style.cursor = 'pointer';
       });
@@ -612,15 +612,15 @@ export default class extends Controller {
       .addTo(this.map);
     });
 
-    this.map.on('mouseenter', ['circuit7a-problems','circuit7a-problems-texts'], () => {
+    this.map.on('mouseenter', ['sector7a-problems','sector7a-problems-texts'], () => {
       this.map.getCanvas().style.cursor = 'pointer';
     });
-    this.map.on('mouseleave', ['circuit7a-problems','circuit7a-problems-texts'], () => {
+    this.map.on('mouseleave', ['sector7a-problems','sector7a-problems-texts'], () => {
       this.map.getCanvas().style.cursor = '';
     });
 
     // FIXME: make DRY
-    this.map.on('click', ['circuit7a-problems','circuit7a-problems-texts'], (e) => {
+    this.map.on('click', ['sector7a-problems','sector7a-problems-texts'], (e) => {
 
       let problem = e.features[0].properties
 

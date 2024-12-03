@@ -11,7 +11,7 @@
     <div class="col-span-2">
       <div class="px-4 sm:px-0">
         <div class="flex items-center space-x-1 text-sm font-medium text-gray-500">
-          <div><%= link_to "Fontainebleau", areas_path, class: "hover:text-gray-700" %></div>
+          <div><%= link_to "Wicklow", areas_path, class: "hover:text-gray-700" %></div>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
@@ -44,7 +44,7 @@
         <% end %>
       </div>
 
-      <% if @problem.circuit_letter.blank? && (@problem.previous || @problem.next) %>
+      <% if @problem.sector_letter.blank? && (@problem.previous || @problem.next) %>
         <div class="px-4 sm:px-0 py-2 flex justify-between items-center">
           <div>
             <% if previous = @problem.previous %>
@@ -86,13 +86,13 @@
           <% end %>
         <% end %>
 
-        <% if @problem.circuit_letter.blank? && @problem.circuit.present? %>
-          <%= link_to circuit_path(@problem.circuit), rel: "nofollow" do %>
+        <% if @problem.sector_letter.blank? && @problem.sector.present? %>
+          <%= link_to sector_path(@problem.sector), rel: "nofollow" do %>
             <div class="flex items-center space-x-2 text-emerald-600 mt-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <div><%= t('views.problems.show.see_circuit') %></div>
+              <div><%= t('views.problems.show.see_sector') %></div>
             </div>
           <% end %>
         <% end %>
@@ -138,7 +138,7 @@
         </div>
       <% end %>
 
-      <% if @problem.circuit_id.present? && @problem.circuit_letter.blank? && @problem.bis.any? %>
+      <% if @problem.sector_id.present? && @problem.sector_letter.blank? && @problem.bis.any? %>
         <div class="px-4 sm:px-0 py-4">
           <h2 class="text-xl font-semibold mb-3"><%= t("views.problems.show.see_also") %></h2>
           <ul class="">
@@ -155,7 +155,7 @@
         </div>
       <% end %>
 
-      <% if @problem.circuit_letter.present? && @problem.main.present? %>
+      <% if @problem.sector_letter.present? && @problem.main.present? %>
         <div class="px-4 sm:px-0 py-4">
           <h2 class="text-xl font-semibold mb-3"><%= t("views.problems.show.see_also") %></h2>
           <ul class="">

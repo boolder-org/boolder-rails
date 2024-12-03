@@ -1,5 +1,5 @@
-class DropCircuitsAreaId < ActiveRecord::Migration[6.1]
+class DropSectorsAreaId < ActiveRecord::Migration[6.1]
   def change
-    remove_column :circuits, :area_id
+    remove_column :sectors, :area_id
   end
 end

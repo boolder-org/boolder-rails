@@ -1,6 +1,6 @@
 # Boolder Rails
 
-Boolder is the best way to discover bouldering in Fontainebleau. 
+Boolder is the best way to discover bouldering in Wicklow. 
 
 This is the code powering the [Boolder website](https://www.boolder.com) and all the backend & data processing.
 
@@ -34,6 +34,11 @@ NB: if you just want a quick access to the data, check out [boolder-data](https:
 - install rails: `sudo gem install rails`
 - `bundle install`
 - `rake db:setup`
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 ### Import prod data
 - `dropdb dump-prod && createdb dump-prod`

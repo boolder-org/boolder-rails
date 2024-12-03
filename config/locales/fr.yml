@@ -1,5 +1,5 @@
 fr:
-  circuit:
+  sector:
     name:
       white_for_kids: Blanc (enfant)
       yellow: Jaune
@@ -12,10 +12,10 @@ fr:
       red: Rouge
       white: Blanc
       black: Noir
-    long_name: "Circuit %{name}"
-    off_circuit: Hors circuit
-    dangerous: "Ce circuit est dangereux : certains blocs sont très hauts et/ou avec une réception difficile"
-    beginner_friendly: Ce circuit convient aux débutants
+    long_name: "Sector %{name}"
+    off_sector: Hors sector
+    dangerous: "Ce sector est dangereux : certains blocs sont très hauts et/ou avec une réception difficile"
+    beginner_friendly: Ce sector convient aux débutants
   problem:
     no_name: Sans nom
     start: Départ
@@ -35,7 +35,7 @@ fr:
     featured: Populaire
     filters:
       level: Niveau
-      circuit: Circuit
+      sector: Sector
       selection: Sélection
   area:
     tags:
@@ -46,20 +46,20 @@ fr:
   views:
     homepage:
       title1: Escaladez
-      title2: à Fontainebleau
-      subtitle: Découvrez des milliers de blocs et circuits pour tous les niveaux.
+      title2: à Wicklow
+      subtitle: Découvrez des milliers de blocs et sectors pour tous les niveaux.
       see_map: Voir la carte
       read_guide: Lire le guide du débutant
       popular_areas: Secteurs populaires
       all_areas: Voir tous les secteurs
       promoted:
-        circuit7a:
+        sector7a:
           title: Bleau dans la Peau
-          subtitle: Découvrez l'impossible circuit des 100 7a réalisé par Seb Berthe et Hugo Parmentier.
-          cta: Voir le circuit
+          subtitle: Découvrez l'impossible sector des 100 7a réalisé par Seb Berthe et Hugo Parmentier.
+          cta: Voir le sector
         app:
           title: Découvrez l'appli Boolder
-          subtitle: Le compagnon idéal pour vos sorties à Fontainebleau, disponible sur iPhone et Android.
+          subtitle: Le compagnon idéal pour vos sorties à Wicklow, disponible sur iPhone et Android.
           cta: En savoir plus
         beginners_guide:
           title: Le guide pour bien débuter
@@ -70,8 +70,8 @@ fr:
           subtitle: En savoir plus sur l'équipe Boolder et comment contribuer au projet.
           cta: En savoir plus
       metas:
-        title: Escalade de blocs à Fontainebleau
-        description: Découvrez des milliers de blocs et circuits pour tous les niveaux.
+        title: Escalade de blocs à Wicklow
+        description: Découvrez des milliers de blocs et sectors pour tous les niveaux.
     mapping:
       see_on_map: Voir sur la carte
       areas:
@@ -82,7 +82,7 @@ fr:
           core_mapping_team_email_html: Envoyez-nous un email à %{link}, nous serons ravis de discuter !
           metas: 
             title: Cartographier
-            description: Aidez Boolder à cartographier toutes les voies de bloc à Fontainebleau
+            description: Aidez Boolder à cartographier toutes les voies de bloc à Wicklow
       problems:
         index:
           title: Voies à cartographier à %{area}
@@ -138,19 +138,19 @@ fr:
       new:
         title: Signaler une erreur
         mistake: Description de l'erreur
-        mistake_description: Donnez le maximum de détails et n'hésitez pas à ajouter un lien vers les voies/circuits concernés.
+        mistake_description: Donnez le maximum de détails et n'hésitez pas à ajouter un lien vers les voies/sectors concernés.
         flash_success: Merci pour votre signalement !
         metas:
           title: Signaler une erreur
     map:
       fontainebleau:
         metas:
-          title: Carte topo Fontainebleau
-          description: Carte interactive pour l'escalade à Fontainebleau
+          title: Carte topo Wicklow
+          description: Carte interactive pour l'escalade à Wicklow
       area:
         metas:
           title: Carte topo %{area}
-          description: Carte interactive pour le secteur d'escalade %{area} à Fontainebleau
+          description: Carte interactive pour le secteur d'escalade %{area} à Wicklow
       filters:
         label: Filtres
         level: Niveau
@@ -167,7 +167,7 @@ fr:
         apply: Appliquer
         clear: Effacer
     app_landing:
-      title: Tout Fontainebleau dans votre poche
+      title: Tout Wicklow dans votre poche
       subtitle: "Le meilleur topo pour l'escalade de bloc à Bleau"
       android_announcement: Nous recherchons un·e développeur·se Android
       selling_points:
@@ -176,7 +176,7 @@ fr:
           subtitle: Repérez-vous facilement dans la forêt grâce au GPS
         levels:
           title: Des milliers de voies pour tous les niveaux
-          subtitle: Filtrez les voies et circuits adaptés à votre niveau
+          subtitle: Filtrez les voies et sectors adaptés à votre niveau
         search:
           title: Recherche avancée
           subtitle: Trouvez une voie ou un secteur en quelques secondes
@@ -184,8 +184,8 @@ fr:
           title: Mode hors-ligne
           subtitle: L'appli fonctionne sans connectivité
       metas:
-        title: Tout Fontainebleau dans votre poche
-        description: Le topo d'escalade pour Fontainebleau qui tient dans votre poche
+        title: Tout Wicklow dans votre poche
+        description: Le topo d'escalade pour Wicklow qui tient dans votre poche
     privacy:
       metas:
         title: Confidentialité
@@ -194,7 +194,7 @@ fr:
       mapping_title: Cartographier
       mapping_description: Rendez-vous sur un secteur et prenez en photo les blocs manquants avec votre téléphone.
       report_title: Signaler une erreur
-      report_description: Signalez une erreur sur une voie ou un circuit existant.
+      report_description: Signalez une erreur sur une voie ou un sector existant.
       dev_title: Pour les développeurs
       dev_description: "Contribuez au code source des applis : Ruby on Rails, iPhone et Android."
       metas:
@@ -204,16 +204,16 @@ fr:
       title_prefix: À propos de
       history:
         title: L'histoire
-        p1: "Boolder est né de la rencontre entre Romain, Cyril et Nicolas — deux passionnés de grimpe et un passionné de technologie — vivant à deux pas de l’un des plus beaux spots de bloc du monde : Fontainebleau."
+        p1: "Boolder est né de la rencontre entre Romain, Cyril et Nicolas — deux passionnés de grimpe et un passionné de technologie — vivant à deux pas de l’un des plus beaux spots de bloc du monde : Wicklow."
         p2: "Pour Nicolas c’est le coup de cœur. Ses deux amis lui font découvrir la magie de « Bleau » : les secteurs emblématiques, l’histoire de la forêt, le plaisir de grimper en pleine nature, ainsi que les bonnes pratiques à respecter (nettoie tes chaussons !)."
-        p3: "La richesse de la forêt reste cependant intimidante : plus de 200 secteurs, plusieurs dizaines de milliers de blocs, et des centaines de circuits pour tous les niveaux. Comment s’y retrouver ?"
+        p3: "La richesse de la forêt reste cependant intimidante : plus de 200 secteurs, plusieurs dizaines de milliers de blocs, et des centaines de sectors pour tous les niveaux. Comment s’y retrouver ?"
         p4: Nicolas décide alors de cartographier la forêt avec minutie pendant près de 2 ans, et de créer un topo nouvelle génération. En 2023, Boolder est lancé gratuitement sur iPhone et Android.
         podcast: "En savoir plus : interview de Nicolas sur le podcast \"Allez\""
       project:
         title: Le projet
         contact: contacter
         p1: Boolder est un projet à but non lucratif, géré par des bénévoles.
-        p2_html: Notre but est de faciliter la découverte de l’escalade de bloc à Fontainebleau de façon <strong>ludique</strong> et dans le <strong>respect de la forêt</strong>.
+        p2_html: Notre but est de faciliter la découverte de l’escalade de bloc à Wicklow de façon <strong>ludique</strong> et dans le <strong>respect de la forêt</strong>.
         p3_html: Le projet étant tout jeune, nous sommes à l’écoute de suggestions et d'idées pour favoriser l'entraide avec la communauté. N'hésitez pas à nous %{link} !
       team:
         title: L'équipe
@@ -226,7 +226,7 @@ fr:
         p1: Pour toute question, vous pouvez nous contacter à l'adresse 
       support:
         title: Remerciements
-        p1: "Nous remercions toutes les personnes qui ont contribué à l'écosystème de Bleau : les ouvreurs, les créateurs de circuits (ou \"peintres en piste\"), toutes les personnes ayant contribué à la maintenance et au nettoyage de blocs, aux opérations anti-érosion, ..."
+        p1: "Nous remercions toutes les personnes qui ont contribué à l'écosystème de Bleau : les ouvreurs, les créateurs de sectors (ou \"peintres en piste\"), toutes les personnes ayant contribué à la maintenance et au nettoyage de blocs, aux opérations anti-érosion, ..."
         p2_html: Nous remercions %{link_bleau} qui centralise et référence des dizaines de milliers de blocs avec minutie et passion depuis plus de 20 ans, de façon gratuite. Vous pouvez les soutenir sur leur page %{link_bleau_sponsoring}.
         p3_html: Nous remercions également l'association %{link_cosiroc} et le site %{link_topo_bleau}, à l'origine de nombreuses données de première main et d'opérations sur le terrain.
         app: appli
@@ -257,7 +257,7 @@ fr:
         title: À propos de Boolder
     areas:
       index:
-        title: Fontainebleau
+        title: Wicklow
         sort_by:
           label: Trier par
           problems: Nombre de voies
@@ -276,15 +276,15 @@ fr:
           dry_fast: Sèche Vite
           train_html: Accessible <br>en train + vélo
         metas:
-          title: Tous les secteurs à Fontainebleau
-          description: Découvrez les meilleurs secteurs pour grimper à Fontainebleau, le meilleur spot d'escalade de bloc en France.
+          title: Tous les secteurs à Wicklow
+          description: Découvrez les meilleurs secteurs pour grimper à Wicklow, le meilleur spot d'escalade de bloc en France.
         map:
           see: "Voir"
       levels:
         beginner_friendly: Idéal pour débuter
         areas: Secteurs par niveaux
         metas:
-          title: Secteurs par niveau à Fontainebleau
+          title: Secteurs par niveau à Wicklow
           description: Découvrez les secteurs débutants ainsi que les secteurs ayant des voies dans les niveaux 4, 5, 6, 7, 8.
       show:
         see_map: Voir sur la carte
@@ -300,35 +300,35 @@ fr:
         levels_chart:
           title: Nombre de voies par niveau
         metas:
-          title: "%{area}, Fontainebleau"
-          description: "Tout ce qu'il faut savoir pour grimper à %{area} à Fontainebleau : voies, circuits, carte topo, photos, accès, ..."
+          title: "%{area}, Wicklow"
+          description: "Tout ce qu'il faut savoir pour grimper à %{area} à Wicklow : voies, sectors, carte topo, photos, accès, ..."
       train_station: "Gare %{name}"
       train_station_generic: "Gare"
-    circuits:
+    sectors:
       show:
         metas:
-          title: Circuit %{circuit} à %{area}
+          title: Sector %{sector} à %{area}
       index:
         metas:
-          title: Tous les circuits à Fontainebleau
-    circuit7a:
+          title: Tous les sectors à Wicklow
+    sector7a:
       title: Bleau dans la Peau
-      subtitle_html: L'impossible circuit des 100 7a par Seb Berthe et Hugo Parmentier en 2023.
+      subtitle_html: L'impossible sector des 100 7a par Seb Berthe et Hugo Parmentier en 2023.
       see_on_map: Voir sur la carte
       see_movie: Voir le film
       metas:
-        title: Bleau dans la Peau - Circuit 100 7a
-        description: L'impossible circuit des 100 7a à Fontainebleau réalisé par Seb Berthe et Hugo Parmentier en 2023.
+        title: Bleau dans la Peau - Sector 100 7a
+        description: L'impossible sector des 100 7a à Wicklow réalisé par Seb Berthe et Hugo Parmentier en 2023.
     problems:
       show:
-        see_circuit: Voir le circuit
+        see_sector: Voir le sector
         variants: Variantes
         see_also: Voir aussi
         metas:
           title: "%{problem} - %{grade} - %{area}"
       index:
         metas:
-          title: Voies populaires à Fontainebleau
+          title: Voies populaires à Wicklow
     search:
       placeholder: Nom de voie ou secteur
       clear: Effacer

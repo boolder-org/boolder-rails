@@ -1,6 +1,6 @@
-class CreateCircuits < ActiveRecord::Migration[6.0]
+class CreateSectors < ActiveRecord::Migration[6.0]
   def change
-    create_table :circuits do |t|
+    create_table :sectors do |t|
       t.string :color
 
       t.timestamps

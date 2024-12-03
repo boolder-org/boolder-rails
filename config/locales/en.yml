@@ -1,5 +1,5 @@
 en:
-  circuit:
+  sector:
     name:
       white_for_kids: White (kids)
       yellow: Yellow
@@ -12,10 +12,10 @@ en:
       red: Red
       white: White
       black: Black
-    long_name: "%{name} circuit"
-    off_circuit: Other
-    dangerous: "This circuit is dangerous : some boulders are very high and/or with difficult landings"
-    beginner_friendly: This circuit is suited for beginners
+    long_name: "%{name} sector"
+    off_sector: Other
+    dangerous: "This sector is dangerous : some boulders are very high and/or with difficult landings"
+    beginner_friendly: This sector is suited for beginners
   problem:
     no_name: No name
     start: Start
@@ -35,7 +35,7 @@ en:
     featured: Popular
     filters:
       level: Level
-      circuit: Circuit
+      sector: Sector
       selection: Selection
   area:
     tags:
@@ -46,20 +46,20 @@ en:
   views:
     homepage:
       title1: Bouldering
-      title2: in Fontainebleau
-      subtitle: Discover thousands of problems & circuits for all levels.
+      title2: in Wicklow
+      subtitle: Discover thousands of problems & sectors for all levels.
       see_map: See the map
       read_guide: Read the beginner's guide
       popular_areas: Popular areas
       all_areas: See all areas
       promoted:
-        circuit7a:
+        sector7a:
           title: Fond of Font
-          subtitle: Discover the impossible circuit of 100 7a by Seb Berthe and Hugo Parmentier
-          cta: See the circuit
+          subtitle: Discover the impossible sector of 100 7a by Seb Berthe and Hugo Parmentier
+          cta: See the sector
         app:
           title: Discover the Boolder app
-          subtitle: The best way to enjoy bouldering in Fontainebleau, available on iPhone and Android.
+          subtitle: The best way to enjoy bouldering in Wicklow, available on iPhone and Android.
           cta: More info
         beginners_guide:
           title: The beginner's guide
@@ -70,8 +70,8 @@ en:
           subtitle: Discover more about the team and how to contribute to the project.
           cta: More info
       metas:
-        title: Bouldering in Fontainebleau
-        description: Discover thousands of problems & circuits for all levels.
+        title: Bouldering in Wicklow
+        description: Discover thousands of problems & sectors for all levels.
     mapping:
       see_on_map: See on the map
       areas:
@@ -82,7 +82,7 @@ en:
           core_mapping_team_email_html: Drop us a line at %{link}, we'll be happy to discuss!
           metas: 
             title: Mapping
-            description: Help Boolder map all the bouldering routes in Fontainebleau
+            description: Help Boolder map all the bouldering routes in Wicklow
       problems:
         index:
           title: Problems to map in %{area}
@@ -133,24 +133,24 @@ en:
       map:
         metas:
           title: Contribute to Boolder
-          description: Help us map all problems in Fontainebleau
+          description: Help us map all problems in Wicklow
     reports:
       new:
         title: Report a mistake
         mistake: Mistake description
-        mistake_description: Give as much details as possible and feel free to add links to the relevant problems/circuits.
+        mistake_description: Give as much details as possible and feel free to add links to the relevant problems/sectors.
         flash_success: Thank you for your report!
         metas:
           title: Report a mistake
     map:
       fontainebleau:
         metas:
-          title: Map with topos for Fontainebleau
-          description: Interactive map for climbing in Fontainebleau
+          title: Map with topos for Wicklow
+          description: Interactive map for climbing in Wicklow
       area:
         metas:
           title: Map with topos for %{area}
-          description: Interactive map for climbing in %{area} in Fontainebleau
+          description: Interactive map for climbing in %{area} in Wicklow
       filters:
         label: Filters
         level: Level
@@ -167,7 +167,7 @@ en:
         apply: Apply
         clear: Clear
     app_landing:
-      title: All Fontainebleau in your pocket
+      title: All Wicklow in your pocket
       subtitle: "The best guide to enjoy bouldering in Font"
       android_announcement: We are looking for an Android developer
       selling_points:
@@ -176,7 +176,7 @@ en:
           subtitle: Find your way in the forest thanks to the GPS
         levels:
           title: Thousands of problems or all levels
-          subtitle: Filter problems and circuits for your level
+          subtitle: Filter problems and sectors for your level
         search:
           title: Advanced search
           subtitle: Find any problem or area in a few seconds
@@ -184,8 +184,8 @@ en:
           title: Offline mode
           subtitle: The app works even in airplane mode
       metas:
-        title: All Fontainebleau in your pocket
-        description: The bouldering guide for Fontainebleau that fits in your pocket
+        title: All Wicklow in your pocket
+        description: The bouldering guide for Wicklow that fits in your pocket
     privacy:
       metas:
         title: Privacy
@@ -194,7 +194,7 @@ en:
       mapping_title: Mapping
       mapping_description: Go to an area and take pictures of the missing boulders with your phone.
       report_title: Report a mistake
-      report_description: Report a mistake on an existing problem or circuit.
+      report_description: Report a mistake on an existing problem or sector.
       dev_title: For Developers
       dev_description: "Contribute to the source code of our apps: Ruby on Rails, iPhone and Android."
       metas:
@@ -204,16 +204,16 @@ en:
       title_prefix: About
       history:
         title: The story
-        p1: "Boolder was born from the meeting between Romain, Cyril and Nicolas - two climbing enthusiasts and one technology enthusiast - living just a stone's throw from one of the most beautiful bouldering spots in the world: Fontainebleau."
+        p1: "Boolder was born from the meeting between Romain, Cyril and Nicolas - two climbing enthusiasts and one technology enthusiast - living just a stone's throw from one of the most beautiful bouldering spots in the world: Wicklow."
         p2: 'For Nicolas, it was love at first sight. His two friends made him discover the magic of "Font": the emblematic sectors, the history of the forest, the joy of climbing in the middle of nature, as well as the rules to respect (clean your shoes!).'
-        p3: "The richness of the forest remained however intimidating: more than 200 sectors, several tens of thousands of boulders, and hundreds of circuits for all levels. How to find your way around?"
+        p3: "The richness of the forest remained however intimidating: more than 200 sectors, several tens of thousands of boulders, and hundreds of sectors for all levels. How to find your way around?"
         p4: Nicolas then decided to map the forest in detail for nearly 2 years and create a modern guidebook. In 2023, Boolder launched as a free app on iPhone and Android.
         podcast: "Learn more: Nicolas's interview on the podcast \"Allez\" (in French)"
       project:
         title: The Project
         contact: contact
         p1: Boolder is a non-profit project, managed by volunteers.
-        p2_html: Our goal is to make discovering bouldering in Fontainebleau <strong>fun</strong> and <strong>respectful of the forest</strong>.
+        p2_html: Our goal is to make discovering bouldering in Wicklow <strong>fun</strong> and <strong>respectful of the forest</strong>.
         p3_html: The project is still very young, we welcome suggestions and ideas to foster help within the climbing community. Feel free to %{link} us!
       team:
         title: The team
@@ -226,7 +226,7 @@ en:
         p1: For any questions, you can contact us at 
       support:
         title: Thanks
-        p1: "We extend our thanks to everyone who has contributed to the Font ecosystem: the route setters, the circuit creators (aka \"track painters\"), and all those who have contributed to the maintenance and cleaning of boulders, anti-erosion operations, ..."
+        p1: "We extend our thanks to everyone who has contributed to the Font ecosystem: the route setters, the sector creators (aka \"track painters\"), and all those who have contributed to the maintenance and cleaning of boulders, anti-erosion operations, ..."
         p2_html: Special thanks to %{link_bleau}, whose team has referenced almost 50.000 problems with great care and passion for the past 20 years, and made it free for everyone. You can support them on their %{link_bleau_sponsoring} page.
         p3_html: We also extend our thanks to the %{link_cosiroc} association and the %{link_topo_bleau} website, which have provided a wealth of firsthand data and carried out numerous on-the-ground operations.
         app: app
@@ -257,7 +257,7 @@ en:
         title: About Boolder
     areas:
       index:
-        title: Fontainebleau
+        title: Wicklow
         sort_by:
           label: Sort by
           problems: Number of problems
@@ -276,15 +276,15 @@ en:
           dry_fast: Dries fast
           train_html: Accessible <br>by train + bike
         metas: 
-          title: All areas in Fontainebleau
-          description: Discover the best bouldering areas in Fontainebleau, the best spot in the world.
+          title: All areas in Wicklow
+          description: Discover the best bouldering areas in Wicklow, the best spot in the world.
         map:
           see: "See"
       levels:
         beginner_friendly: Beginner friendly
         areas: All areas by levels
         metas:
-          title: Areas by levels Fontainebleau
+          title: Areas by levels Wicklow
           description: Discover beginner friendly areas, and areas with the most problems graded 4, 5, 6, 7 or 8.
       show:
         see_map: See on the map
@@ -300,35 +300,35 @@ en:
         levels_chart:
           title: Number of problems by level
         metas:
-          title: "%{area}, Fontainebleau"
-          description: "All you need to know to climb in %{area} in Fontainebleau : problems, circuits, map, topos, access, ..."
+          title: "%{area}, Wicklow"
+          description: "All you need to know to climb in %{area} in Wicklow : problems, sectors, map, topos, access, ..."
       train_station: "%{name} train station"
       train_station_generic: "Train station"
-    circuits:
+    sectors:
       show:
         metas:
-          title: "%{circuit} circuit at %{area}"
+          title: "%{sector} sector at %{area}"
       index:
         metas:
-          title: All Fontainebleau circuits
-    circuit7a:
+          title: All Wicklow sectors
+    sector7a:
       title: Fond of Font
-      subtitle_html: The impossible circuit of 100 7a by Seb Berthe and Hugo Parmentier in 2023.
+      subtitle_html: The impossible sector of 100 7a by Seb Berthe and Hugo Parmentier in 2023.
       see_on_map: See on map
       see_movie: See the movie
       metas:
-        title: Fond of Font - 100 7a circuit
-        description: The impossible circuit of 100 7a in Fontainebleau by Seb Berthe and Hugo Parmentier.
+        title: Fond of Font - 100 7a sector
+        description: The impossible sector of 100 7a in Wicklow by Seb Berthe and Hugo Parmentier.
     problems:
       show:
-        see_circuit: See the circuit
+        see_sector: See the sector
         variants: Variants
         see_also: See also
         metas:
           title: "%{problem} - %{grade} - %{area}"
       index:
         metas:
-          title: Popular problems in Fontainebleau
+          title: Popular problems in Wicklow
     search:
       placeholder: Name of problem or area
       clear: Clear

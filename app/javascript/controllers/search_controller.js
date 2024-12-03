@@ -29,12 +29,12 @@ const colorMapping = {
   white: "#FFFFFF",
 };
 
-function bgColor(circuit_color) {
-  return colorMapping[circuit_color] || "rgb(80% 80% 80%)";
+function bgColor(sector_color) {
+  return colorMapping[sector_color] || "rgb(80% 80% 80%)";
 }
 
-function textColor(circuit_color) {
-  return circuit_color === "white" ? "#333" : "#FFF";
+function textColor(sector_color) {
+  return sector_color === "white" ? "#333" : "#FFF";
 }
 
 export default class extends Controller {
@@ -172,8 +172,8 @@ export default class extends Controller {
       return `
         <div class="flex justify-between items-center">
           <div class="flex items-center">
-            <span style="background: ${bgColor(item.circuit_color)}; color: ${textColor(item.circuit_color)}" class="rounded-full h-6 w-6 leading-6 inline-flex justify-center flex-shrink-0">
-              ${item.circuit_number || "&nbsp;"}
+            <span style="background: ${bgColor(item.sector_color)}; color: ${textColor(item.sector_color)}" class="rounded-full h-6 w-6 leading-6 inline-flex justify-center flex-shrink-0">
+              ${item.sector_number || "&nbsp;"}
             </span>
             <span class="ml-2">${item.name}</span>
             <span class="ml-2 text-gray-400">${item.grade}</span>

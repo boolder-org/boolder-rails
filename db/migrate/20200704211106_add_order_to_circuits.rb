@@ -1,5 +1,5 @@
-class AddOrderToCircuits < ActiveRecord::Migration[6.0]
+class AddOrderToSectors < ActiveRecord::Migration[6.0]
   def change
-    add_column :circuits, :order, :integer
+    add_column :sectors, :order, :integer
   end
 end

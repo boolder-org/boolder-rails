@@ -4,7 +4,7 @@ class Admin::RedirectsController < Admin::BaseController
       redirect_to admin_problem_path(id: problem_id)
     elsif area_id = params[:area_id]
       area = Area.find area_id
-      redirect_to admin_area_problems_path(area, circuit_id: "first")
+      redirect_to admin_area_problems_path(area, sector_id: "first")
     else
       redirect_to admin_areas_path
     end

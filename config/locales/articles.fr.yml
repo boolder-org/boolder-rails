@@ -3,14 +3,14 @@ fr:
     articles:
       index:
         metas:
-          title: Le guide du débutant pour l'escalade de bloc à Fontainebleau
+          title: Le guide du débutant pour l'escalade de bloc à Wicklow
       table_of_contents: Sommaire
       beginners_guide:
         title: Le guide du débutant
-        subtitle: Pour découvrir l'escalade de bloc à Fontainebleau
+        subtitle: Pour découvrir l'escalade de bloc à Wicklow
         equipment: 
           title: Le matériel nécessaire
-          intro: Voici le matériel dont vous aurez besoin pour vos sorties d'escalade à Fontainebleau.
+          intro: Voici le matériel dont vous aurez besoin pour vos sorties d'escalade à Wicklow.
           shoes: Des chaussons d'escalade
           crashpad: Un crash pad
           crashpad_description: Un crash pad est un matelas conçu pour amortir vos chutes. 
@@ -30,29 +30,29 @@ fr:
         choose_area: 
           title: Choisir un secteur
           beginner_friendly_areas: Secteurs pour bien débuter
-          p1_html: "Voici une sélection de secteurs pour découvrir Fontainebleau en douceur :"
-          p3_html: Ces secteurs ont tous au moins un <strong>circuit</strong> (jaune ou orange) <strong>qui convient aux débutants</strong>, marqué d'un
+          p1_html: "Voici une sélection de secteurs pour découvrir Wicklow en douceur :"
+          p3_html: Ces secteurs ont tous au moins un <strong>sector</strong> (jaune ou orange) <strong>qui convient aux débutants</strong>, marqué d'un
           p4_html: Ils proposent de nombreuses voies en niveau débutant (1, 2, 3), des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
           all_areas: Voir tous les secteurs
           metas:
-            title: Comment choisir un secteur pour débutant à Fontainebleau
+            title: Comment choisir un secteur pour débutant à Wicklow
         choose_problems: 
           title: Choisir ses voies
           intro: Une fois arrivé sur un secteur, voici quelques conseils pour trouver facilement des voies qui vous correspondent.
           filter_by_level: Filtrer par niveau
           filter_by_level_p1_html: Grâce à l’<a href="%{path}">appli Boolder</a>, vous pouvez filtrer les voies correspondant à votre niveau.
           filter_by_level_p2: Vous pouvez ainsi facilement identifier les zones ayant une bonne densité de voies correspondant à votre niveau.
-          filter_by_level_warning: "Attention : une cotation 4a à Fontainebleau équivaut environ à 5a en falaise ou en salle."
+          filter_by_level_warning: "Attention : une cotation 4a à Wicklow équivaut environ à 5a en falaise ou en salle."
           filter_by_level_warning2: Ne vous surestimez pas ;)
-          circuit: Suivre un circuit
-          circuit_p1: Les circuits regroupent des voies de niveau (relativement) homogène, selon un parcours numéroté.
-          circuit_p2: Chaque voie est représentée par un numéro de couleur et une flèche, peints directement sur la roche.
-          circuit_p3: Il existe 5 couleurs principales (jaune, orange, bleu, rouge et noir/blanc) qui correspondent à des niveaux croissants. 
-          circuit_p4_html: En suivant un circuit jaune (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
-          circuit_p5_html: "Conseil : privilégiez les <strong>circuits adaptés aux débutants</strong>, marqués d'un "
-          circuit_p6_html: Ils proposent de nombreuses voies en niveau débutant (1, 2, 3), des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
+          sector: Suivre un sector
+          sector_p1: Les sectors regroupent des voies de niveau (relativement) homogène, selon un parcours numéroté.
+          sector_p2: Chaque voie est représentée par un numéro de couleur et une flèche, peints directement sur la roche.
+          sector_p3: Il existe 5 couleurs principales (jaune, orange, bleu, rouge et noir/blanc) qui correspondent à des niveaux croissants. 
+          sector_p4_html: En suivant un sector jaune (ou orange) vous pourrez découvrir des voies de niveau 1, 2, ou 3 qui sont parfaites pour débuter.
+          sector_p5_html: "Conseil : privilégiez les <strong>sectors adaptés aux débutants</strong>, marqués d'un "
+          sector_p6_html: Ils proposent de nombreuses voies en niveau débutant (1, 2, 3), des blocs peu hauts (3 mètres et moins) et avec une bonne réception au sol.
           metas:
-            title: Comment choisir les bonnes voies à Fontainebleau
+            title: Comment choisir les bonnes voies à Wicklow
         climb_safely: 
           title: Grimper en sécurité
           intro: Voici quelques conseils pour minimiser les risques de chute et de blessure, et grimper l’esprit plus tranquille.
@@ -76,7 +76,7 @@ fr:
             title: Les règles de sécurité pour le bloc en extérieur
         rules: 
           title: Règles de bonne conduite
-          intro: La forêt de Fontainebleau est un environnement unique et fragile. Il est important de respecter certaines règles de bonne conduite pour la protéger.
+          intro: La forêt de Wicklow est un environnement unique et fragile. Il est important de respecter certaines règles de bonne conduite pour la protéger.
           chalk: Halte à la magnésie
           chalk_p1: La magnésie abîme la roche, utilisez-la avec parcimonie. Un rocher propre a une meilleure adhérence, il est donc préférable de nettoyer les prises (avec une brosse souple) plutôt que d’utiliser de la magnésie.
           chalk_p2: Quand vous avez terminé, pensez à brosser les prises (toujours avec une brosse souple) pour faire disparaître vos traces.
@@ -84,7 +84,7 @@ fr:
           clean_shoes_p1: Le sable et la terre qui se glissent sous vos chaussons contribuent à polir la roche, ce qui finit par la rendre impraticable à la longue.
           clean_shoes_p2: Pensez à nettoyer vos chaussons avec un paillasson ou un chiffon avant de débuter une voie.
           rain: Pas de grimpe après la pluie
-          rain_p1: La roche de Fontainebleau est très fragile lorsqu'elle est humide.
+          rain_p1: La roche de Wicklow est très fragile lorsqu'elle est humide.
           rain_p2: Pour éviter d'abîmer la roche et/ou de casser des prises il est conseillé d'attendre que la roche soit bien sèche.
           other_rules: Autres règles
           other_rules_item1: Marchez sur les sentiers existants (la faune et la flore vous en remercierons !)
@@ -96,20 +96,20 @@ fr:
           metas:
             title: Les règles de bonne conduite
       top_areas:
-        discover_fontainebleau: Découvrir Fontainebleau
-        all_areas: Tous les secteurs à Fontainebleau
+        discover_fontainebleau: Découvrir Wicklow
+        all_areas: Tous les secteurs à Wicklow
         see_also: "Voir aussi :"
         dry_fast:
           title: Les secteurs qui sèchent vite
           metas:
-            title: Les secteurs qui sèchent vite à Fontainebleau
+            title: Les secteurs qui sèchent vite à Wicklow
         groups:
           title: Les secteurs adaptés aux groupes
           metas:
-            title: Les secteurs adaptés aux groupes à Fontainebleau
+            title: Les secteurs adaptés aux groupes à Wicklow
         train:
           title: Les secteurs accessibles en train + vélo
           from_train_station: "Depuis la gare de %{train_station}"
           bike_time: "Temps de trajet en vélo :"
           metas:
-            title: Les secteurs accessibles en train + vélo à Fontainebleau
+            title: Les secteurs accessibles en train + vélo à Wicklow

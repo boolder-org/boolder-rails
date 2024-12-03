@@ -1,0 +1,11 @@
+<div class="col-span-6 sm:col-span-2">
+  <%= form.label :color %>
+  <%= form.select :color, Sector::COLOR_VALUES, { include_blank: true } %>
+</div>
+
+<div class="col-span-6 sm:col-span-4"></div>
+
+<div class="col-span-6 sm:col-span-3">
+  <%= form.label :risk %>
+  <%= form.select :risk, [['0 - kids', 0], ['1 - beginner friendly', 1], ['2 - careful', 2], ['3 - dangerous', 3]], { include_blank: true } %>
+</div>

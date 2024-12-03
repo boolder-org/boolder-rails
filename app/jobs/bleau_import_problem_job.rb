@@ -29,12 +29,12 @@ class BleauImportProblemJob < ApplicationJob
       :other
     end
 
-    circuit = doc.css('.bcircuit a').select { |link| link['href'].include?(".html") }.first
-    circuit_number_and_letter = circuit&.text&.split(":")&.second&.strip
-    circuit_number, circuit_letter_full = circuit_number_and_letter&.split(" ")
-    circuit_letter = Problem::LETTERS.invert[circuit_letter_full]
-    bleau_circuit_id = if circuit
-      circuit.attributes["href"].value.match(/\d+/)[0]
+    sector = doc.css('.bsector a').select { |link| link['href'].include?(".html") }.first
+    sector_number_and_letter = sector&.text&.split(":")&.second&.strip
+    sector_number, sector_letter_full = sector_number_and_letter&.split(" ")
+    sector_letter = Problem::LETTERS.invert[sector_letter_full]
+    bleau_sector_id = if sector
+      sector.attributes["href"].value.match(/\d+/)[0]
     end
 
     ratings_text = doc.css(".bdetails .bopins")[0]&.text || ""
@@ -55,9 +55,9 @@ class BleauImportProblemJob < ApplicationJob
       sit_start: sit_start,
       steepness: steepness,
       tags: tags,
-      bleau_circuit_id: bleau_circuit_id,
-      circuit_number: circuit_number,
-      circuit_letter: circuit_letter,
+      bleau_sector_id: bleau_sector_id,
+      sector_number: sector_number,
+      sector_letter: sector_letter,
       ratings_average: ratings_average, 
       ratings: ratings_number, 
       ascents: ascents_number 

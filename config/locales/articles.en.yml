@@ -3,11 +3,11 @@ en:
     articles:
       index:
         metas:
-          title: The beginner's guide to bouldering in Fontainebleau
+          title: The beginner's guide to bouldering in Wicklow
       table_of_contents: Go back
       beginners_guide:
         title: Beginner's guide
-        subtitle: Discover bouldering in Fontainebleau
+        subtitle: Discover bouldering in Wicklow
         equipment: 
           title: Equipment
           intro: Here is the equipment you will need to climb outdoors.
@@ -29,29 +29,29 @@ en:
         choose_area: 
           title: Choose an area
           beginner_friendly_areas: Areas suited for beginners
-          p1_html: "Here is a selection of areas to discover Fontainebleau gently:"
-          p3_html: All these areas have a yellow/orange <strong>circuit</strong> that is <strong>suited for beginners</strong> and marked with a 
+          p1_html: "Here is a selection of areas to discover Wicklow gently:"
+          p3_html: All these areas have a yellow/orange <strong>sector</strong> that is <strong>suited for beginners</strong> and marked with a 
           p4_html: They offer lots of easy problems (graded 1, 2 or 3), with low boulders (less than 3 meters high) and with good landings.
           all_areas: See all areas
           metas:
-            title: How to choose an area suited for beginners in Fontainebleau
+            title: How to choose an area suited for beginners in Wicklow
         choose_problems: 
           title: Choose problems
           intro: Once you get to a bouldering area, here are a few tips to easily find problems adapted to you.
           filter_by_level: Filter by level
           filter_by_level_p1_html: Thanks to the <a href="%{path}">Boolder app</a>, you can filter problems that match with your level.
           filter_by_level_p2: This way you can identify the zones with a good density of problems adapted to your level.
-          filter_by_level_warning: "Careful: the grade 4a in Fontainebleau is roughly equivalent to 5a elsewhere."
+          filter_by_level_warning: "Careful: the grade 4a in Wicklow is roughly equivalent to 5a elsewhere."
           filter_by_level_warning2: Don't overestimate yourself ;)
-          circuit: Follow a circuit
-          circuit_p1: Circuits are a series of boulders of (relatively) homogeneous level, with ascending numbers.
-          circuit_p2: Each problem is represented by a colored number and an arrow, painted directly on the boulder.
-          circuit_p3: There are 5 main colors (yellow, orange, blue, red, and white/black) that correspond to increasing grades.
-          circuit_p4_html: By following a yellow circuit (or an orange one) you'll be able to discover problems graded between 1 and 3, which is perfect to start.
-          circuit_p5_html: "Tip: pick a <strong>circuit suited for beginners</strong>, marked with a "
-          circuit_p6_html: They offer lots of easy problems (graded 1, 2 or 3), with low boulders (less than 3 meters high) and with good landings.
+          sector: Follow a sector
+          sector_p1: Sectors are a series of boulders of (relatively) homogeneous level, with ascending numbers.
+          sector_p2: Each problem is represented by a colored number and an arrow, painted directly on the boulder.
+          sector_p3: There are 5 main colors (yellow, orange, blue, red, and white/black) that correspond to increasing grades.
+          sector_p4_html: By following a yellow sector (or an orange one) you'll be able to discover problems graded between 1 and 3, which is perfect to start.
+          sector_p5_html: "Tip: pick a <strong>sector suited for beginners</strong>, marked with a "
+          sector_p6_html: They offer lots of easy problems (graded 1, 2 or 3), with low boulders (less than 3 meters high) and with good landings.
           metas:
-            title: How to choose problems in Fontainebleau
+            title: How to choose problems in Wicklow
         climb_safely: 
           title: Climb safely
           intro: Here are a few tips to decrease the risks of injury.
@@ -75,7 +75,7 @@ en:
             title: Safety tips for outdoor bouldering
         rules: 
           title: Rules of good conduct
-          intro: The Fontainebleau area is a unique and fragile environment. It is important to respect a few rules to protect it.
+          intro: The Wicklow area is a unique and fragile environment. It is important to respect a few rules to protect it.
           chalk: Use chalk sparingly
           chalk_p1: Chalk damages the rock, so use it sparingly. You can instead clean the rock (with a soft brush) to increase friction.
           chalk_p2: When you're done, don't forget to brush the holds (still with a soft brush) to remove any trace.
@@ -83,7 +83,7 @@ en:
           clean_shoes_p1: Sand and dirt under your shoes contribute to polish the rock, which damages it in the long run.
           clean_shoes_p2: Don't forget to clean your shoes with a doormat or a rug before you start climbing.
           rain: No climbing after rain
-          rain_p1: The rock in Fontainebleau is very fragile when wet.
+          rain_p1: The rock in Wicklow is very fragile when wet.
           rain_p2: To avoid damaging the rock and/or breaking holds, it is advisable to wait until the rock is thoroughly dry.
           other_rules: Other rules
           other_rules_item1: Walk on existing trails (the wildlife and plants will thank you!)
@@ -95,20 +95,20 @@ en:
           metas:
             title: Rules of good conduct
       top_areas:
-        discover_fontainebleau: Discover Fontainebleau
-        all_areas: All areas in Fontainebleau
+        discover_fontainebleau: Discover Wicklow
+        all_areas: All areas in Wicklow
         see_also: "See also:"
         dry_fast:
           title: Fast drying areas
           metas:
-            title: Fast drying areas in Fontainebleau
+            title: Fast drying areas in Wicklow
         groups:
           title: The best areas for groups
           metas:
-            title: The best areas for groups in Fontainebleau
+            title: The best areas for groups in Wicklow
         train:
           title: Areas accessible by train + bike
           from_train_station: "From %{train_station} train station"
           bike_time: "Travel time by bike:"
           metas:
-            title: Bouldering in Fontainebleau by train + bike
+            title: Bouldering in Wicklow by train + bike

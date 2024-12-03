@@ -21,10 +21,10 @@ class SearchController < ApplicationController
   end
 
   def perform_problem_search(query, show_unpublished)
-    tsearch_results = Problem.tsearch_search(query).with_unpublished(show_unpublished).includes(:area, :circuit).limit(10).to_a
+    tsearch_results = Problem.tsearch_search(query).with_unpublished(show_unpublished).includes(:area, :sector).limit(10).to_a
     return tsearch_results if tsearch_results.present?
 
-    trigram_low_results = Problem.trigram_search_low_threshold(query).with_unpublished(show_unpublished).includes(:area, :circuit).limit(9).to_a
+    trigram_low_results = Problem.trigram_search_low_threshold(query).with_unpublished(show_unpublished).includes(:area, :sector).limit(9).to_a
     trigram_low_results
   end
 
@@ -44,8 +44,8 @@ class SearchController < ApplicationController
         name: problem.name,
         area_name: problem.area.name,
         published: problem.published?,
-        circuit_number: problem.circuit_number_simplified,
-        circuit_color: problem.circuit&.color,
+        sector_number: problem.sector_number_simplified,
+        sector_color: problem.sector&.color,
         geolocation: problem.geolocation,
         grade: problem.grade,
         type: 'Problem'

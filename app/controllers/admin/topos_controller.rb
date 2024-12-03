@@ -63,7 +63,7 @@ class Admin::ToposController < Admin::BaseController
     if @topo.destroy
       flash[:notice] = "Topo destroyed"
       if area = @topo.problems.first&.area
-        redirect_to admin_area_problems_path(area_slug: area.slug, circuit_id: "first")
+        redirect_to admin_area_problems_path(area_slug: area.slug, sector_id: "first")
       else
         redirect_to admin_areas_path
       end

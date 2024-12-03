@@ -1,0 +1,23 @@
+<% set_meta_tags title: t("views.sectors.index.metas.title") %>
+<% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
+
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-8">
+  <div class="px-4 sm:px-0 pt-6">
+    <div class="flex items-center space-x-1 text-sm font-medium text-gray-500">
+      <div><%= link_to "Wicklow", areas_path, class: "hover:text-gray-700" %></div>
+    </div>
+  </div>
+
+  <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+    <div class="col-span-1">
+      <div>
+        <h1 class="text-3xl font-bold mb-4 mt-2 px-4 sm:px-0">Sectors</h1>
+        <ul role="list">
+          <% @sectors.each do |sector| %>
+            <%= render sector, show_area: true %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

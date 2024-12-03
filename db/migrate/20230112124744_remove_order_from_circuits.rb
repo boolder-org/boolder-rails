@@ -1,5 +1,5 @@
-class RemoveOrderFromCircuits < ActiveRecord::Migration[6.1]
+class RemoveOrderFromSectors < ActiveRecord::Migration[6.1]
   def change
-    remove_column :circuits, :order
+    remove_column :sectors, :order
   end
 end
