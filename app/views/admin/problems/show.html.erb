@@ -27,7 +27,6 @@
     </div>
     <div class="my-1">
       <span class="text-gray-400 mr-1">
-        <span class="mr-2"><%= "#{@problem.ascents.to_i} ascents" %></span>
         
         <% if @problem.sit_start %>
           <span class="text-gray-400">sit start</span>
@@ -93,12 +92,6 @@
         <% end %>
       <% end %>
 
-      <% unless @problem.lines.none? %>
-        <p class="my-4">
-          <div class="text-left"><%= link_to "Add another line", new_admin_line_path(problem_id: @problem.id), class: "text-emerald-600 font-medium" %></div>
-        </p>
-      <% end %>
-
       <% if @problem.lines.unpublished.any? %>
         <div class="mt-8 pb-4" data-controller="reveal">
           <a href="javascript:void(0)" class="text-yellow-500 font-medium" data-action="reveal#toggle"><%= "See unpublished lines (#{@problem.lines.unpublished.count})" %></a>
@@ -117,17 +110,6 @@
   <div class="md:col-span-2">
     <div class="mb-8 shadow overflow-hidden sm:rounded-md">
       <div class="px-4 py-5 bg-white sm:p-6">
-        <% if @problem.bleau_info_id.present? %>
-          <%= link_to bleau_info_url(@problem), target: "_blank" do %>
-            <div class="flex items-center space-x-2 text-emerald-600 mb-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-              </svg>
-              <div>See on bleau.info</div>
-            </div>
-          <% end %>
-        <% end %>
-
         <% if @problem.location.present? %>
           <%= link_to map_path(@problem.area, pid: @problem.id), target: "_blank" do %>
             <div class="flex items-center space-x-2 text-emerald-600 mb-2">

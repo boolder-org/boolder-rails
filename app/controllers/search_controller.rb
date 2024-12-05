@@ -44,7 +44,7 @@ class SearchController < ApplicationController
         name: problem.name,
         area_name: problem.area.name,
         published: problem.published?,
-        sector_number: problem.sector_number_simplified,
+        sector_number: problem.problem_number_simplified,
         sector_color: problem.sector&.color,
         geolocation: problem.geolocation,
         grade: problem.grade,

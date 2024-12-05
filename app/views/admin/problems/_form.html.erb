@@ -13,14 +13,14 @@
   <%= form.collection_select :sector_id, @sectors, :id, :color, include_blank: true %>
 </div>
 
-<div class="col-span-6 sm:col-span-2 sm:col-start-1">
-  <%= form.label :bleau_info_id, "Bleau.info id" %>
-  <%= form.text_field :bleau_info_id, autocomplete: "off" %>
-</div>
-
 <div class="col-span-6 sm:col-span-4 sm:col-start-1">
   <%= form.label :name %>
   <%= form.text_field :name, autocomplete: "off" %>
+</div>
+
+<div class="col-span-6 sm:col-span-4 sm:col-start-1">
+  <%= form.label :description %>
+  <%= form.text_field :description, autocomplete: "off" %>
 </div>
 
 <div class="col-span-6 sm:col-span-1">

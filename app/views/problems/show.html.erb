@@ -44,6 +44,16 @@
         <% end %>
       </div>
 
+      <% if @problem.description.present? %>
+        <div class="px-4 sm:px-0 pt-2">
+          <div class="pt-4">
+            <div class="prose text-justify">
+              <%= simple_format @problem.description %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
       <% if @problem.sector_letter.blank? && (@problem.previous || @problem.next) %>
         <div class="px-4 sm:px-0 py-2 flex justify-between items-center">
           <div>
@@ -93,17 +103,6 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div><%= t('views.problems.show.see_sector') %></div>
-            </div>
-          <% end %>
-        <% end %>
-
-        <% if @problem.bleau_info_id.present? %>
-          <%= link_to bleau_info_url(@problem), rel: "nofollow", target: "_blank" do %>
-            <div class="flex items-center space-x-2 text-emerald-600 mt-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-              <div><%= t("problem.see_on_bleau_info") %></div>
             </div>
           <% end %>
         <% end %>

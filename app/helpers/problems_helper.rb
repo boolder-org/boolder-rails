@@ -1,8 +1,8 @@
 module ProblemsHelper
   def problem_circle_view(problem)
-    circle_view(problem.sector_number_simplified || "&nbsp;".html_safe, 
-      background_color: uicolor(problem.sector&.color), 
-      text_color: text_color(problem.sector&.color)
+    circle_view(problem.problem_number_simplified || "&nbsp;".html_safe, 
+      background_color: uicolor(problem.problem_color), 
+      text_color: text_color(problem.problem_color)
     )
   end
 

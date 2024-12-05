@@ -81,11 +81,6 @@
                 <% requests.each do |request| %>
                   <% problem = request.problem %>
                   <li class="px-4 sm:-mx-2 sm:px-2 hover:bg-gray-50 rounded-lg">
-                    <% if problem.bleau_info_id.present? %>
-                      <%= link_to [:mapping, problem] do %>
-                        <%= render "mapping/problems/problem", problem: problem %>
-                      <% end %>
-                    <% end %>
                   </li>
                 <% end %>
               </ul>

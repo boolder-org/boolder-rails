@@ -38,9 +38,9 @@ Rails.application.routes.draw do
         get 'rules', to: "articles#rules", as: :rules
       end
       scope "top-areas" do
-        get '/', to: redirect("/%{locale}/fontainebleau")
-        get 'level', to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_level # keep until end of 2023
-        get 'groups', to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_groups # keep until end of 2023
+        get '/', to: redirect("/%{locale}/wicklow")
+        get 'level', to: redirect("/%{locale}/wicklow"), as: :legacy_top_areas_level # keep until end of 2023
+        get 'groups', to: redirect("/%{locale}/wicklow"), as: :legacy_top_areas_groups # keep until end of 2023
         get 'beginner', to: redirect("/%{locale}/articles/beginners-guide/choose-area"), as: :legacy_top_areas_beginner # keep until end of 2023
         get 'train', to: "articles#top_areas_train", as: :top_areas_train
         get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
@@ -59,13 +59,13 @@ Rails.application.routes.draw do
     end
     get "contribute/map", to: redirect('/%{locale}/mapping/map'), as: :map_contribute_legacy_redirect # can be removed as soon as 2024-01-01
 
-    scope 'fontainebleau' do
+    scope 'wicklow' do
       resources :sectors, only: [:show, :index]
       resources :problems, only: [:index]
 
       get "/levels", to: "areas#levels", as: :areas_levels
 
-      get "/areas", to: redirect("/%{locale}/fontainebleau"), as: :areas_legacy # keep until ??
+      get "/areas", to: redirect("/%{locale}/wicklow"), as: :areas_legacy # keep until ??
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
       get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023

@@ -35,7 +35,7 @@ class Problem < ApplicationRecord
   LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter", LETTER_QUATER => "quater" }
   LETTER_START = 'D'
 
-  normalizes :name, :sector_number, :sector_letter, with: -> s { s.strip.presence }
+  normalizes :name, :description, :sector_number, :sector_letter, with: -> s { s.strip.presence }
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
@@ -101,8 +101,23 @@ class Problem < ApplicationRecord
     [sector_debug, name].compact.join(" ")
   end
 
-  def sector_number_simplified
-    sector_letter.present? ? nil : sector_number
+
+  def problem_number_simplified
+    id
+  end
+
+  def problem_color
+    if grade.start_with?("5")
+      "green"
+    elsif grade.start_with?("6")
+      "blue"
+    elsif grade.start_with?("7")
+      "red"
+    elsif grade.start_with?("8")
+      "black"
+    else
+      "yellow"
+    end
   end
 
   def sector_id_simplified

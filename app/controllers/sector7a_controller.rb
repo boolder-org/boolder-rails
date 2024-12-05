@@ -43,7 +43,7 @@ class Sector7aController < ApplicationController
       hash[:id] = problem.id
       hash[:sector_color] = problem.sector&.color
       hash[:sector_id] = problem.sector_id_simplified
-      hash[:sector_number] = problem.sector_number_simplified
+      hash[:sector_number] = problem.problem_number_simplified
 
       name_fr = I18n.with_locale(:fr) { problem.name_with_fallback }
       name_en = I18n.with_locale(:en) { problem.name_with_fallback }

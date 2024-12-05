@@ -1,4 +1,4 @@
-<div class="relative" data-controller="topo-line" data-action="turbo:before-cache@window->topo-line#hidePath" data-topo-line-coordinates-value="<%= line.coordinates.to_json %>" data-topo-line-color-value="<%= uicolor(line.problem.sector&.color) %>">
+<div class="relative" data-controller="topo-line" data-action="turbo:before-cache@window->topo-line#hidePath" data-topo-line-coordinates-value="<%= line.coordinates.to_json %>" data-topo-line-color-value="<%= uicolor(line.problem.problem_color) %>">
   <%= render 'shared/topo_image', topo: line.topo, klass: "sm:rounded-lg" %>
 
   <% 
@@ -10,7 +10,7 @@
     # - sectors should probably take precendence when possible
 
     # example of complex overlapping: 
-    # /fr/fontainebleau/cuvier/448-le-surplomb-du-reveil-matin
+    # /fr/wicklow/cuvier/448-le-surplomb-du-reveil-matin
   %>
 
 

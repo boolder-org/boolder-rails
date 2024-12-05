@@ -11,7 +11,7 @@ class Admin::ProblemsController < Admin::BaseController
     arel = if params[:sector_id].to_i > 0
       arel.where(sector_id: params[:sector_id]).sort_by(&:enumerable_sector_number) if params[:sector_id].present?
     else
-      arel.order("ascents DESC NULLS LAST")
+      arel.order("name DESC NULLS LAST")
     end
 
     arel = if params[:missing] == "line"
@@ -74,9 +74,7 @@ class Admin::ProblemsController < Admin::BaseController
   private 
   def problem_params
     params.require(:problem).
-      permit(:area_id, :name, :grade, :steepness, :sit_start,
-        :bleau_info_id, :sector_number, :sector_letter, :sector_id, :parent_id,
-      )
+      permit(:area_id, :name, :grade, :steepness, :sit_start, :description)
   end
 
   def set_problem

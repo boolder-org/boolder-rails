@@ -29,28 +29,9 @@
               <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">With upcoming contributions</th>
             </tr>
           </thead>
-          <tbody class="bg-white divide-y divide-gray-200">
-            <% @areas_with_stats.each do |area_with_stats| %>
-              <tr class="place-content-start align-top h-16">
-                <td class="px-6 py-2 whitespace-nowrap w-3/12">
-                  <span class="text-sm text-gray-900 font-bold">
-                    <%= link_to area_with_stats.area.name, admin_area_problems_path(area_with_stats.area, missing: @missing) %>
-                  </span>
-                </td>
-                <td class="px-6 py-2 whitespace-nowrap w-2/12"><%= "#{(area_with_stats.ascents / 1000.0).ceil}K" %></td>
-                <td class="px-6 py-2 whitespace-nowrap w-3/12">
-                  <span style="color:<%= percentage_color(area_with_stats.completion) %>"><%= "#{(area_with_stats.completion * 100).floor} %" %></span>
-                </td>
-                <td class="px-6 py-2 whitespace-nowrap w-3/12">
-                  <span style="color:<%= percentage_color(area_with_stats.upcoming_completion) %>"><%= "#{(area_with_stats.upcoming_completion * 100).floor} %" %></span>
-                </td>
-              </tr>
-            <% end %>
-          </tbody>
         </table>
       </div>
     </div>
   </div>
 </div>
 
-<p><%= "#{@areas_with_stats.count} results" %></p>
