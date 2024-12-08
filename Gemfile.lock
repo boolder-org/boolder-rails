@@ -392,5 +392,8 @@ DEPENDENCIES
   web-console (>= 4.1.0)
   webdrivers
 
+RUBY VERSION
+   ruby 3.3.5p100
+
 BUNDLED WITH
    2.4.5
