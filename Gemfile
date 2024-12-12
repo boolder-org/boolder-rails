@@ -3,13 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.5'
 
-gem 'rails', '~> 7.1'
+gem 'rails', '~> 7.2'
 gem 'bootsnap', '~> 1.15.0', require: false
 
 gem 'puma', '~> 6.3.0'
 gem 'pg','~> 1.5.3'
 gem 'rails_12factor', '~> 0.0.3', group: :production
-gem 'activerecord-postgis-adapter', '~> 9.0.1'
+gem 'activerecord-postgis-adapter', ">= 10"
 gem 'aws-sdk-s3', '~> 1.126.0'
 gem 'sidekiq', '~> 7.1.2'
 gem 'redis', '~> 4.2.5'
@@ -31,7 +31,7 @@ gem 'rack-cors', '~> 2.0.1'
 gem 'kaminari', '~> 1.2.2'
 gem 'httparty', '~> 0.21.0'
 gem 'colorize', '~> 1.1.0'
-gem "audited", '~> 5.4.2'
+gem "audited"
 
 gem 'rgeo-geojson', '~> 2.1.1'
 
@@ -40,7 +40,7 @@ gem 'rgeo-geojson', '~> 2.1.1'
 
 gem 'differ', '~> 0.1.2'
 gem "breadcrumbs_on_rails", '~> 4.1.0'
-gem 'meta-tags', '~> 2.20.0'
+gem 'meta-tags'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
