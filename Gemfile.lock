@@ -90,10 +90,10 @@ GEM
     aws-sdk-kms (1.96.0)
       aws-sdk-core (~> 3, >= 3.210.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.126.0)
-      aws-sdk-core (~> 3, >= 3.174.0)
+    aws-sdk-s3 (1.176.1)
+      aws-sdk-core (~> 3, >= 3.210.0)
       aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.4)
+      aws-sigv4 (~> 1.5)
     aws-sigv4 (1.10.1)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
@@ -104,7 +104,7 @@ GEM
       msgpack (~> 1.2)
     breadcrumbs_on_rails (4.1.0)
       railties (>= 5.0)
-    bugsnag (6.25.2)
+    bugsnag (6.27.1)
       concurrent-ruby (~> 1.0)
     builder (3.3.0)
     capybara (3.40.0)
@@ -121,6 +121,7 @@ GEM
     concurrent-ruby (1.3.4)
     connection_pool (2.4.1)
     crass (1.0.6)
+    csv (3.3.0)
     date (3.4.1)
     debug (1.9.2)
       irb (~> 1.10)
@@ -135,7 +136,8 @@ GEM
     ffi (1.17.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    httparty (0.21.0)
+    httparty (0.22.0)
+      csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (1.14.6)
@@ -332,24 +334,24 @@ PLATFORMS
 DEPENDENCIES
   activerecord-postgis-adapter (>= 10)
   audited
-  aws-sdk-s3 (~> 1.126.0)
+  aws-sdk-s3
   bootsnap
   breadcrumbs_on_rails
-  bugsnag (~> 6.25.2)
+  bugsnag
   capybara
-  colorize (~> 1.1.0)
+  colorize
   debug
   differ
   dotenv-rails
-  httparty (~> 0.21.0)
+  httparty
   image_processing (~> 1.2)
   importmap-rails (~> 2.0)
   jbuilder (~> 2.11.5)
-  kaminari (~> 1.2.2)
+  kaminari
   meta-tags
   nokogiri
   pg (~> 1.5.3)
-  pg_search (~> 2.3.6)
+  pg_search
   pry
   puma (>= 5.0)
   rack-cors (~> 2.0.1)
