@@ -38,8 +38,8 @@ gem 'rgeo-geojson', '~> 2.1.1'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'differ', '~> 0.1.2'
-gem "breadcrumbs_on_rails", '~> 4.1.0'
+gem 'differ'
+gem "breadcrumbs_on_rails"
 gem 'meta-tags'
 
 group :development, :test do

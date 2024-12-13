@@ -126,9 +126,9 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     differ (0.1.2)
-    dotenv (3.1.5)
-    dotenv-rails (3.1.5)
-      dotenv (= 3.1.5)
+    dotenv (3.1.6)
+    dotenv-rails (3.1.6)
+      dotenv (= 3.1.6)
       railties (>= 6.1)
     drb (2.2.1)
     erubi (1.13.0)
@@ -334,12 +334,12 @@ DEPENDENCIES
   audited
   aws-sdk-s3 (~> 1.126.0)
   bootsnap
-  breadcrumbs_on_rails (~> 4.1.0)
+  breadcrumbs_on_rails
   bugsnag (~> 6.25.2)
   capybara
   colorize (~> 1.1.0)
   debug
-  differ (~> 0.1.2)
+  differ
   dotenv-rails
   httparty (~> 0.21.0)
   image_processing (~> 1.2)
