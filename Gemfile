@@ -7,8 +7,7 @@ gem 'rails', '~> 7.2'
 gem 'bootsnap', require: false
 
 gem 'puma', ">= 5.0"
-gem 'pg','~> 1.5.3'
-gem 'rails_12factor', '~> 0.0.3', group: :production # TODO: remove
+gem 'pg'
 gem 'activerecord-postgis-adapter', ">= 10"
 gem 'aws-sdk-s3'
 gem 'sidekiq', '~> 7.1.2' # TODO: remove
