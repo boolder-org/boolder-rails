@@ -100,7 +100,7 @@ GEM
     benchmark (0.4.0)
     bigdecimal (3.1.8)
     bindex (0.8.1)
-    bootsnap (1.15.0)
+    bootsnap (1.18.4)
       msgpack (~> 1.2)
     breadcrumbs_on_rails (4.1.0)
       railties (>= 5.0)
@@ -214,7 +214,7 @@ GEM
       date
       stringio
     public_suffix (6.0.1)
-    puma (6.3.1)
+    puma (6.5.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.8)
@@ -351,7 +351,7 @@ DEPENDENCIES
   activerecord-postgis-adapter (>= 10)
   audited
   aws-sdk-s3 (~> 1.126.0)
-  bootsnap (~> 1.15.0)
+  bootsnap
   breadcrumbs_on_rails (~> 4.1.0)
   bugsnag (~> 6.25.2)
   byebug
@@ -371,7 +371,7 @@ DEPENDENCIES
   pg (~> 1.5.3)
   pg_search (~> 2.3.6)
   pry (~> 0.14.2)
-  puma (~> 6.3.0)
+  puma (>= 5.0)
   rack-cors (~> 2.0.1)
   rails (~> 7.2)
   rails_12factor (~> 0.0.3)

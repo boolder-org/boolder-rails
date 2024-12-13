@@ -4,9 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.3.5'
 
 gem 'rails', '~> 7.2'
-gem 'bootsnap', '~> 1.15.0', require: false
+gem 'bootsnap', require: false
 
-gem 'puma', '~> 6.3.0'
+gem 'puma', ">= 5.0"
 gem 'pg','~> 1.5.3'
 gem 'rails_12factor', '~> 0.0.3', group: :production
 gem 'activerecord-postgis-adapter', ">= 10"
