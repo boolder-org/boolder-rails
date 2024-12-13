@@ -16,23 +16,24 @@ gem "rorvswild", "~> 1.6.4" # TODO: remove
 gem 'bugsnag'
 gem 'pg_search'
 
-gem "importmap-rails", "~> 2.0"
-gem 'turbo-rails', '~> 2.0'
-gem 'stimulus-rails', '~> 1.3'
-gem "tailwindcss-rails", "~> 2.3"
+gem "importmap-rails"
+gem 'turbo-rails'
+gem 'stimulus-rails'
+gem "tailwindcss-rails"
+# gem "tailwindcss-ruby", "3.4.13" # pin to tailwindcss version 3.4.13
 
 gem "sprockets-rails"
 gem 'sass-rails', '>= 6'
-gem 'jbuilder', '~> 2.11.5' # TODO: remove
+gem 'jbuilder', '~> 2.11.5' # TODO: remove?
 gem 'image_processing', '~> 1.2'
-gem 'rack-cors', '~> 2.0.1'
+gem 'rack-cors'
 
 gem 'kaminari'
 gem 'httparty'
 gem 'colorize'
 gem "audited"
 
-gem 'rgeo-geojson', '~> 2.1.1'
+gem 'rgeo-geojson', '~> 2.1.1' # TODO: update
 
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
