@@ -3,8 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.5'
 
-gem 'ostruct' # temporary
-
 gem 'rails', '~> 8.0'
 gem 'bootsnap', require: false
 
@@ -33,6 +31,7 @@ gem 'httparty'
 gem 'colorize'
 gem "audited"
 
+gem 'ostruct' # TODO: remove
 gem 'rgeo-geojson', '~> 2.1.1' # TODO: update
 
 # Use Active Model has_secure_password
