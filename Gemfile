@@ -3,12 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.5'
 
-gem 'rails', '~> 7.2'
+gem 'rails', '~> 8.0'
 gem 'bootsnap', require: false
 
 gem 'puma', ">= 5.0"
 gem 'pg'
-gem 'activerecord-postgis-adapter', ">= 10"
+gem 'activerecord-postgis-adapter', github: "StoneGod/activerecord-postgis-adapter", branch: "rails-8"
 gem 'aws-sdk-s3'
 gem 'sidekiq', '~> 7.1.2' # TODO: remove
 gem 'redis', '~> 4.2.5' # TODO: remove
