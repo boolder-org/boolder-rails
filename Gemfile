@@ -8,7 +8,7 @@ gem 'bootsnap', require: false
 
 gem 'puma', ">= 5.0"
 gem 'pg'
-gem 'activerecord-postgis-adapter', github: "StoneGod/activerecord-postgis-adapter", branch: "rails-8"
+gem 'activerecord-postgis-adapter', github: "boolder-org/activerecord-postgis-adapter", branch: "rails-8" # waiting for official Rails 8 support
 gem 'aws-sdk-s3'
 gem 'sidekiq', '~> 7.1.2' # TODO: remove
 gem 'redis', '~> 4.2.5' # TODO: remove
