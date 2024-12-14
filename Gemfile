@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.5'
 
+gem 'ostruct' # temporary
+
 gem 'rails', '~> 8.0'
 gem 'bootsnap', require: false
 
@@ -24,7 +26,7 @@ gem "tailwindcss-rails"
 
 gem "sprockets-rails"
 gem 'sass-rails', '>= 6'
-gem 'jbuilder', '~> 2.11.5' # TODO: remove?
+gem 'jbuilder' # TODO: remove?
 gem 'image_processing', '~> 1.2'
 gem 'rack-cors'
 
