@@ -18,15 +18,13 @@ gem "rorvswild", "~> 1.6.4" # TODO: remove
 gem 'bugsnag'
 gem 'pg_search'
 
+gem "propshaft"
 gem "importmap-rails"
 gem 'turbo-rails'
 gem 'stimulus-rails'
 gem "tailwindcss-rails"
 # gem "tailwindcss-ruby", "3.4.13" # pin to tailwindcss version 3.4.13
 
-gem "sprockets-rails"
-gem 'sass-rails', '>= 6'
-gem 'jbuilder' # TODO: remove?
 gem 'image_processing', '~> 1.2'
 gem 'rack-cors'
 
