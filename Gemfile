@@ -10,7 +10,7 @@ gem 'puma', ">= 5.0"
 gem 'pg'
 gem 'activerecord-postgis-adapter', github: "boolder-org/activerecord-postgis-adapter", branch: "rails-8" # waiting for official Rails 8 support
 gem 'aws-sdk-s3'
-gem 'sidekiq', '~> 7.1.2' # TODO: remove
+gem 'sidekiq', '~> 7.3.6' # TODO: remove
 gem 'redis', '~> 4.2.5' # TODO: remove
 gem "rorvswild", "~> 1.6.4" # TODO: remove
 gem 'bugsnag'
