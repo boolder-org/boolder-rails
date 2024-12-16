@@ -6,7 +6,7 @@ class ContributionRequest < ApplicationRecord
 
   audited
 
-  STATES = %w(open closed)
+  STATES = %w[open closed]
   scope :open, -> { where(state: "open") }
   scope :closed, -> { where(state: "closed") }
 

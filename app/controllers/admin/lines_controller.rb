@@ -28,7 +28,7 @@ class Admin::LinesController < Admin::BaseController
       flash[:notice] = "Line updated"
       redirect_to edit_admin_line_path(@line)
     else
-      flash[:error] = @line.errors.full_messages.join('; ')
+      flash[:error] = @line.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end
@@ -43,7 +43,7 @@ class Admin::LinesController < Admin::BaseController
       redirect_to edit_admin_line_path(@line)
     else
       @line.build_topo # for topo nested attributes (photo)
-      flash[:error] = @line.errors.full_messages.join('; ')
+      flash[:error] = @line.errors.full_messages.join("; ")
       render "new", status: :unprocessable_entity
     end
   end

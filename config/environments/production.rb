@@ -1,5 +1,5 @@
 require "active_support/core_ext/integer/time"
-require 'active_support/core_ext/numeric/bytes'
+require "active_support/core_ext/numeric/bytes"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -20,7 +20,7 @@ Rails.application.configure do
   config.public_file_server.headers = { "cache-control" => "public, max-age=#{1.year.to_i}" }
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  config.asset_host = 'assets.boolder.com'
+  config.asset_host = "assets.boolder.com"
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :amazon
@@ -48,7 +48,7 @@ Rails.application.configure do
   config.active_support.report_deprecations = false
 
   # Replace the default in-process memory cache store with a durable alternative.
-  config.cache_store = :redis_cache_store, { url: ENV['REDIS_URL'], size: 20.megabytes }
+  config.cache_store = :redis_cache_store, { url: ENV["REDIS_URL"], size: 20.megabytes }
 
   # Replace the default in-process and non-durable queuing backend for Active Job.
   config.active_job.queue_adapter = :sidekiq
@@ -62,11 +62,11 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address => 'email-smtp.eu-north-1.amazonaws.com',
-    :port => '587',
-    :authentication => :plain,
-    :user_name => Rails.application.credentials.dig(:amazon_smtp, :username),
-    :password => Rails.application.credentials.dig(:amazon_smtp, :password),
+    address: "email-smtp.eu-north-1.amazonaws.com",
+    port: "587",
+    authentication: :plain,
+    user_name: Rails.application.credentials.dig(:amazon_smtp, :username),
+    password: Rails.application.credentials.dig(:amazon_smtp, :password)
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to

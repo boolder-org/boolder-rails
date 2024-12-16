@@ -34,7 +34,7 @@ class SearchController < ApplicationController
         id: area.id,
         name: area.name,
         bounds: area.serialized_bounds,
-        type: 'Area'
+        type: "Area"
       }
     end
 
@@ -48,7 +48,7 @@ class SearchController < ApplicationController
         circuit_color: problem.circuit&.color,
         geolocation: problem.geolocation,
         grade: problem.grade,
-        type: 'Problem'
+        type: "Problem"
       }
     end
 

@@ -4,7 +4,7 @@ class Poi < ApplicationRecord
 
   audited
 
-  TYPE_VALUES = %w(parking train_station)
+  TYPE_VALUES = %w[parking train_station]
 
   validates :poi_type, inclusion: { in: TYPE_VALUES }
 

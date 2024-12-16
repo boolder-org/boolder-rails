@@ -20,7 +20,7 @@ class Admin::ContributionRequestsController < Admin::BaseController
       flash[:notice] = "Contribution Request created"
       redirect_to [ :admin, @contribution_request.problem ]
     else
-      flash[:error] = @contribution_request.errors.full_messages.join('; ')
+      flash[:error] = @contribution_request.errors.full_messages.join("; ")
       render "new", status: :unprocessable_entity
     end
   end
@@ -38,7 +38,7 @@ class Admin::ContributionRequestsController < Admin::BaseController
       flash[:notice] = "Contribution request updated"
       redirect_to [ :admin, @contribution_request.problem ]
     else
-      flash[:error] = @contribution_request.errors.full_messages.join('; ')
+      flash[:error] = @contribution_request.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end

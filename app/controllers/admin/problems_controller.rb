@@ -66,7 +66,7 @@ class Admin::ProblemsController < Admin::BaseController
       flash[:notice] = "Problem updated"
       redirect_to admin_problem_path(@problem)
     else
-      flash[:error] = @problem.errors.full_messages.join('; ')
+      flash[:error] = @problem.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end

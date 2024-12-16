@@ -10,8 +10,8 @@ module Geolocatable
       before_validation do
         if send("#{column_name}_lat").present? && send("#{column_name}_lon").present?
           location = RGeo::Geographic.spherical_factory(srid: 4326).point(
-            send("#{column_name}_lon").gsub(',', '.').to_f,
-            send("#{column_name}_lat").gsub(',', '.').to_f
+            send("#{column_name}_lon").gsub(",", ".").to_f,
+            send("#{column_name}_lat").gsub(",", ".").to_f
           )
           send("#{column_name}=", location)
         end

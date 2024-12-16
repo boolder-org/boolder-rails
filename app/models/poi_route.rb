@@ -4,7 +4,7 @@ class PoiRoute < ApplicationRecord
 
   audited
 
-  TRANSPORT_VALUES = %w(walking bike)
+  TRANSPORT_VALUES = %w[walking bike]
 
   validates :transport, inclusion: { in: TRANSPORT_VALUES }
 

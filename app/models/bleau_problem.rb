@@ -8,7 +8,7 @@ class BleauProblem < ApplicationRecord
   validates :circuit_letter, inclusion: { in: Problem::LETTERS.keys }, allow_blank: true
   validate :validate_circuit_number_is_numeric
 
-  normalizes :name, with: ->s { s.strip.gsub(/\A-\z/, '').presence }
+  normalizes :name, with: ->(s) { s.strip.gsub(/\A-\z/, "").presence }
 
   def name_with_fallback
     if name.present?

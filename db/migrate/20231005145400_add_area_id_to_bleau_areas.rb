@@ -85,7 +85,7 @@ class AddAreaIdToBleauAreas < ActiveRecord::Migration[7.0]
       'beauvais-roches-noires' => 'rochesnoires',
       'beauvais-hameau' => 'hameau',
       'puiselet-mont-sarrasin' => 'sarrazin',
-      'long-boyau' => 'longboyau',
+      'long-boyau' => 'longboyau'
     }
 
     slugs.each do |slug, slug_bleau|

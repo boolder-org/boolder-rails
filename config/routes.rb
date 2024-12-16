@@ -1,4 +1,4 @@
-require 'sidekiq/web'
+require "sidekiq/web"
 
 Rails.application.routes.draw do
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       resources :boulders
       resources :circuits
       resources :imports do
-        get 'apply', on: :member
+        get "apply", on: :member
       end
       resources :topos
       resources :problem_imports
@@ -25,25 +25,25 @@ Rails.application.routes.draw do
 
       get "contribute", to: "contribute#dashboard"
 
-      root 'areas#index'
+      root "areas#index"
     end
 
     scope "articles" do
       scope "beginners-guide" do
-        get '/', to: "articles#beginners_guide", as: :beginners_guide
-        get 'equipment', to: "articles#equipment", as: :equipment
-        get 'choose-area', to: "articles#choose_area", as: :choose_area
-        get 'choose-problems', to: "articles#choose_problems", as: :choose_problems
-        get 'climb-safely', to: "articles#climb_safely", as: :climb_safely
-        get 'rules', to: "articles#rules", as: :rules
+        get "/", to: "articles#beginners_guide", as: :beginners_guide
+        get "equipment", to: "articles#equipment", as: :equipment
+        get "choose-area", to: "articles#choose_area", as: :choose_area
+        get "choose-problems", to: "articles#choose_problems", as: :choose_problems
+        get "climb-safely", to: "articles#climb_safely", as: :climb_safely
+        get "rules", to: "articles#rules", as: :rules
       end
       scope "top-areas" do
-        get '/', to: redirect("/%{locale}/fontainebleau")
-        get 'level', to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_level # keep until end of 2023
-        get 'groups', to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_groups # keep until end of 2023
-        get 'beginner', to: redirect("/%{locale}/articles/beginners-guide/choose-area"), as: :legacy_top_areas_beginner # keep until end of 2023
-        get 'train', to: "articles#top_areas_train", as: :top_areas_train
-        get 'dry_fast', to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
+        get "/", to: redirect("/%{locale}/fontainebleau")
+        get "level", to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_level # keep until end of 2023
+        get "groups", to: redirect("/%{locale}/fontainebleau"), as: :legacy_top_areas_groups # keep until end of 2023
+        get "beginner", to: redirect("/%{locale}/articles/beginners-guide/choose-area"), as: :legacy_top_areas_beginner # keep until end of 2023
+        get "train", to: "articles#top_areas_train", as: :top_areas_train
+        get "dry_fast", to: "articles#top_areas_dry_fast", as: :top_areas_dry_fast
       end
       root to: redirect("/%{locale}/articles/beginners-guide"), as: :articles
     end
@@ -54,12 +54,12 @@ Rails.application.routes.draw do
       resources :problems, only: [ :show, :index ]
       resources :contributions, only: [ :show, :new, :create ]
       resources :requests, controller: "contribution_requests", only: [ :index ]
-      get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
+      get "map(/:slug)", to: "/map#index", as: :map, defaults: { contribute: true }
       get "/", to: "areas#index"
     end
-    get "contribute/map", to: redirect('/%{locale}/mapping/map'), as: :map_contribute_legacy_redirect # can be removed as soon as 2024-01-01
+    get "contribute/map", to: redirect("/%{locale}/mapping/map"), as: :map_contribute_legacy_redirect # can be removed as soon as 2024-01-01
 
-    scope 'fontainebleau' do
+    scope "fontainebleau" do
       resources :circuits, only: [ :show, :index ]
       resources :problems, only: [ :index ]
 
@@ -68,26 +68,26 @@ Rails.application.routes.draw do
       get "/areas", to: redirect("/%{locale}/fontainebleau"), as: :areas_legacy # keep until ??
 
       get ":slug/:id", to: "problems#show", as: :area_problem, id: /\d.*/
-      get ":slug/map", to: redirect('/%{locale}/map/%{slug}'), as: :map_area_legacy_redirect # keep until end of 2023
+      get ":slug/map", to: redirect("/%{locale}/map/%{slug}"), as: :map_area_legacy_redirect # keep until end of 2023
       get ":slug/problems", to: "areas#problems", as: :area_problems
       get ":slug", to: "areas#show", as: :area
 
       get "/", to: "areas#index", as: :areas
     end
 
-    get 'map(/:slug)', to: 'map#index', as: :map
-    get 'app', to: 'pages#app', as: :app
-    get 'privacy', to: 'pages#privacy', as: :privacy
-    get 'about', to: 'pages#about', as: :about
-    get 'contribute', to: 'pages#contribute', as: :contribute
-    get 'circuit7a', to: 'circuit7a#index', as: :circuit7a
-    get 'circuit7a/problems', to: 'circuit7a#problems', as: :circuit7a_problems
-    get 'circuit7a/map', to: 'map#index', as: :circuit7a_map, defaults: { circuit7a: true }
+    get "map(/:slug)", to: "map#index", as: :map
+    get "app", to: "pages#app", as: :app
+    get "privacy", to: "pages#privacy", as: :privacy
+    get "about", to: "pages#about", as: :about
+    get "contribute", to: "pages#contribute", as: :contribute
+    get "circuit7a", to: "circuit7a#index", as: :circuit7a
+    get "circuit7a/problems", to: "circuit7a#problems", as: :circuit7a_problems
+    get "circuit7a/map", to: "map#index", as: :circuit7a_map, defaults: { circuit7a: true }
 
     resources :redirects, only: :new # useful for redirects where we only know the problem_id or area_id, eg. mapbox
 
     # Permalinks (don't remove!)
-    get '/p/:id', to: "welcome#problem_permalink" # used by the apps to redirect to a problem webpage
+    get "/p/:id", to: "welcome#problem_permalink" # used by the apps to redirect to a problem webpage
   end
 
   namespace :api do
@@ -101,8 +101,8 @@ Rails.application.routes.draw do
   end
 
   get "search", to: "search#search", as: :search
-  get '/:locale', to: 'welcome#index', locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
-  root to: 'welcome#root'
+  get "/:locale", to: "welcome#index", locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
+  root to: "welcome#root"
 
   mount Sidekiq::Web => "/sidekiqq"
 
@@ -114,7 +114,7 @@ Rails.application.routes.draw do
   # more info: https://github.com/rails/rails/tree/main/activestorage/app/controllers
 
   # Guessable urls (used by the mobile apps)
-  get '/proxy/topos/:id', to: "proxy#show", as: :topo_proxy
+  get "/proxy/topos/:id", to: "proxy#show", as: :topo_proxy
 
   # General solution
   direct :cdn_image do |model, options|

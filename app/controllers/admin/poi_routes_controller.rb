@@ -25,7 +25,7 @@ class Admin::PoiRoutesController < Admin::BaseController
       flash[:notice] = "Poi route updated"
       redirect_to edit_admin_poi_route_path(@poi_route)
     else
-      flash[:error] = @poi_route.errors.full_messages.join('; ')
+      flash[:error] = @poi_route.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end

@@ -15,8 +15,8 @@ class ApplicationController < ActionController::Base
 
   def set_alternate_tags
     set_meta_tags alternate: {
-      "fr" => request.original_url.sub("/#{I18n.locale}", '/fr'),
-      "en" => request.original_url.sub("/#{I18n.locale}", '/en'),
+      "fr" => request.original_url.sub("/#{I18n.locale}", "/fr"),
+      "en" => request.original_url.sub("/#{I18n.locale}", "/en")
       # "x-default" => root_url(locale: nil),
     }
   end

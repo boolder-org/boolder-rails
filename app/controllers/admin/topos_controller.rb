@@ -15,7 +15,7 @@ class Admin::ToposController < Admin::BaseController
         metadata = params[:topo][:metadata]
         metadata_hash = JSON.parse(metadata.read)
 
-        if Pathname(photo.original_filename).sub_ext('').to_s != Pathname(metadata.original_filename).sub_ext('').to_s
+        if Pathname(photo.original_filename).sub_ext("").to_s != Pathname(metadata.original_filename).sub_ext("").to_s
           raise "filenames don't match"
         end
 
@@ -52,7 +52,7 @@ class Admin::ToposController < Admin::BaseController
       flash[:notice] = "Topo updated"
       redirect_to edit_admin_topo_path(@topo)
     else
-      flash[:error] = @topo.errors.full_messages.join('; ')
+      flash[:error] = @topo.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end
@@ -68,7 +68,7 @@ class Admin::ToposController < Admin::BaseController
         redirect_to admin_areas_path
       end
     else
-      flash[:error] = @topo.errors.full_messages.join('; ')
+      flash[:error] = @topo.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end

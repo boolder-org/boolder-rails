@@ -15,7 +15,7 @@ class Api::V1::ToposController < ActionController::Base
     results = Topo.published.joins(:problems).where(problems: { area_id: area.id }).uniq.map do |topo|
       {
         topo_id: topo.id,
-        url: url_for_topo(topo),
+        url: url_for_topo(topo)
       }
     end
 

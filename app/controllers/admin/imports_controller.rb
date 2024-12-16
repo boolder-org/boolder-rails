@@ -13,7 +13,7 @@ class Admin::ImportsController < Admin::BaseController
     if @import.save
       redirect_to [ :admin, @import ]
     else
-      flash[:error] = @import.errors.full_messages.join('; ')
+      flash[:error] = @import.errors.full_messages.join("; ")
       render :new
     end
   end

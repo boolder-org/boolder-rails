@@ -17,8 +17,8 @@ class Problem < ApplicationRecord
   attr_accessor :import # used by audited associated_with: :import
   include CheckConflicts
 
-  STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
-  GRADE_VALUES = %w(
+  STEEPNESS_VALUES = %w[wall slab overhang roof traverse other]
+  GRADE_VALUES = %w[
     1a 1a+ 1b 1b+ 1c 1c+
     2a 2a+ 2b 2b+ 2c 2c+
     3a 3a+ 3b 3b+ 3c 3c+
@@ -28,15 +28,15 @@ class Problem < ApplicationRecord
     7a 7a+ 7b 7b+ 7c 7c+
     8a 8a+ 8b 8b+ 8c 8c+
     9a 9a+ 9b 9b+ 9c 9c+
-  )
-  LANDING_VALUES = %w(easy medium hard)
-  LETTER_BIS = 'b'
-  LETTER_TER = 't'
-  LETTER_QUATER = 'q'
+  ]
+  LANDING_VALUES = %w[easy medium hard]
+  LETTER_BIS = "b"
+  LETTER_TER = "t"
+  LETTER_QUATER = "q"
   LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter", LETTER_QUATER => "quater" }
-  LETTER_START = 'D'
+  LETTER_START = "D"
 
-  normalizes :name, :circuit_number, :circuit_letter, with: ->s { s.strip.presence }
+  normalizes :name, :circuit_number, :circuit_letter, with: ->(s) { s.strip.presence }
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
@@ -55,7 +55,7 @@ class Problem < ApplicationRecord
 
   scope :level, ->(i) { where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap { raise unless i.in?(1..8) } }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
-  scope :exclude_bis, -> { where(circuit_letter: [ nil, '' ]) }
+  scope :exclude_bis, -> { where(circuit_letter: [ nil, "" ]) }
   scope :with_location, -> { where.not(location: nil) }
   scope :without_location, -> { where(location: nil) }
   scope :with_line, -> { where(has_line: true) }
@@ -116,7 +116,7 @@ class Problem < ApplicationRecord
   end
 
   def main
-    Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: [ nil, '' ]).first
+    Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: [ nil, "" ]).first
   end
 
   def enumerable_circuit_number
@@ -126,7 +126,7 @@ class Problem < ApplicationRecord
 
   def next
     if circuit_number.present?
-      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1), circuit_letter: [ nil, '' ]).first
+      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1), circuit_letter: [ nil, "" ]).first
     end
   end
 
@@ -135,7 +135,7 @@ class Problem < ApplicationRecord
       if circuit_number == "1"
         Problem.where(circuit_id: circuit_id).where(circuit_number: LETTER_START).first
       else
-        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1), circuit_letter: [ nil, '' ]).first
+        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1), circuit_letter: [ nil, "" ]).first
       end
     end
   end

@@ -53,7 +53,7 @@ module ProblemsHelper
       salmon:   "#FDAF8A",
       red:      "#FF3B2F",
       black:    "#000000",
-      white:    "#FFFFFF",
+      white:    "#FFFFFF"
     }.with_indifferent_access
   end
 

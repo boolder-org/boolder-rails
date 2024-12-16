@@ -4,7 +4,7 @@ class Circuit < ApplicationRecord
 
   audited
 
-  COLOR_VALUES = %w(yellow purple orange green blue skyblue salmon red black white)
+  COLOR_VALUES = %w[yellow purple orange green blue skyblue salmon red black white]
 
   COLOR_VALUES.each do |color|
     scope color, -> { where(color: color) }
@@ -40,7 +40,7 @@ class Circuit < ApplicationRecord
 
   def beginner_friendly?
     risk.present? && risk <= 1 &&
-    average_grade < '4a' &&
+    average_grade < "4a" &&
     !id.in?([ 89, 155, 156, 14 ]) # other reasons (eg. paint is not visible enough)
   end
 

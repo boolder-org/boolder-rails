@@ -1,6 +1,6 @@
 namespace :dev do
   task dump: :environment do
-    raise 'You cannot run this in production' unless Rails.env.local?
+    raise "You cannot run this in production" unless Rails.env.local?
 
     db = "dump-prod"
     schema_file = "schema_dump.sql"

@@ -39,7 +39,7 @@ class Api::V1::MapsController < ActionController::Base
     respond_to do |format|
       format.geojson do
         if params[:download].present?
-          send_data json, filename: "area-#{area.id}-#{area.slug}.geojson", type: 'application/geo+json'
+          send_data json, filename: "area-#{area.id}-#{area.slug}.geojson", type: "application/geo+json"
         else
           render json: json
         end

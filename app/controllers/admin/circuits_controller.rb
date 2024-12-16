@@ -14,7 +14,7 @@ class Admin::CircuitsController < Admin::BaseController
       flash[:notice] = "Circuit updated"
       redirect_to edit_admin_circuit_path(@circuit)
     else
-      flash[:error] = @circuit.errors.full_messages.join('; ')
+      flash[:error] = @circuit.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end

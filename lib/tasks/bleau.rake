@@ -1,4 +1,4 @@
-require 'csv'
+require "csv"
 
 namespace :bleau do
   task import: :environment do
@@ -31,7 +31,7 @@ namespace :bleau do
 
   task promote: :environment do
     # TODO: make this code DRY with bleau_problems_controller.rb
-    bleau_problems = BleauProblem.joins(:bleau_area => :area).
+    bleau_problems = BleauProblem.joins(bleau_area: :area).
       left_outer_joins(:problem).where(problems: { id: nil })
 
     bleau_problems.uniq.each do |bleau_problem|
@@ -95,7 +95,7 @@ namespace :bleau do
 
     areas = doc.css(".area_by_regions a").select { |a| a.attributes["data-method"].nil? }
 
-    data = areas.map { |a| [ a.attributes["href"].value.sub(/^\/+/, ""), a.text.strip.split(/\s*\(/)[0].strip, a.css('span').text&.strip&.tr('()', '').presence ] }
+    data = areas.map { |a| [ a.attributes["href"].value.sub(/^\/+/, ""), a.text.strip.split(/\s*\(/)[0].strip, a.css("span").text&.strip&.tr("()", "").presence ] }
 
     missing = data.select { |slug, name, category| BleauArea.find_by(slug: slug).nil? }
     raise "missing areas" if missing.any?

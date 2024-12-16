@@ -10,14 +10,14 @@ class Admin::AreasController < Admin::BaseController
 
   def show
     set_area
-    redirect_to admin_area_problems_path(@area, circuit_id: 'first')
+    redirect_to admin_area_problems_path(@area, circuit_id: "first")
   end
 
   def update
     set_area
 
     @area.assign_attributes(area_params)
-    @area.tags = params[:area][:joined_tags].split(',')
+    @area.tags = params[:area][:joined_tags].split(",")
 
     if cover = params[:area][:cover]
       @area.cover = params[:area][:cover]
@@ -27,7 +27,7 @@ class Admin::AreasController < Admin::BaseController
       flash[:notice] = "Area updated"
       redirect_to edit_admin_area_path(@area)
     else
-      flash[:error] = @area.errors.full_messages.join('; ')
+      flash[:error] = @area.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end

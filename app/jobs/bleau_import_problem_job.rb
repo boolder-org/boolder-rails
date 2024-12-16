@@ -29,7 +29,7 @@ class BleauImportProblemJob < ApplicationJob
       :other
     end
 
-    circuit = doc.css('.bcircuit a').select { |link| link['href'].include?(".html") }.first
+    circuit = doc.css(".bcircuit a").select { |link| link["href"].include?(".html") }.first
     circuit_number_and_letter = circuit&.text&.split(":")&.second&.strip
     circuit_number, circuit_letter_full = circuit_number_and_letter&.split(" ")
     circuit_letter = Problem::LETTERS.invert[circuit_letter_full]
@@ -86,5 +86,5 @@ BLEAU_INFO_GRADE_MAPPING = {
   "4+" => "4c",
   "5-" => "5a",
   "5"  => "5b",
-  "5+" => "5c",
+  "5+" => "5c"
 }

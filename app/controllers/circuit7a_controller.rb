@@ -21,7 +21,7 @@ class Circuit7aController < ApplicationController
     "Rocher Guichot" => [ 4787 ],
     "Maunoury" => [ 9237, 9302,  9310,  9177 ],
     "Éléphant" => [ 2214,  2315,  7756,  2352,  2357,  2295,  2287 ],
-    "Bonus" => [ 2320 ],
+    "Bonus" => [ 2320 ]
   }
 
   def index

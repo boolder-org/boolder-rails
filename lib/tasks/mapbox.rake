@@ -1,4 +1,4 @@
-require 'rgeo/geo_json'
+require "rgeo/geo_json"
 
 namespace :mapbox do
   task areas: :environment do

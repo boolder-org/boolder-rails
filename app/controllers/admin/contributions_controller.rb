@@ -21,7 +21,7 @@ class Admin::ContributionsController < Admin::BaseController
       flash[:notice] = "Contribution updated"
       redirect_to edit_admin_contribution_path(@contribution)
     else
-      flash[:error] = @contribution.errors.full_messages.join('; ')
+      flash[:error] = @contribution.errors.full_messages.join("; ")
       render "edit", status: :unprocessable_entity
     end
   end

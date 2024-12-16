@@ -1,4 +1,4 @@
-require 'rgeo/geo_json'
+require "rgeo/geo_json"
 
 namespace :map_maker_legacy do
   task export: :environment do
@@ -48,7 +48,7 @@ namespace :map_maker_legacy do
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join('export', 'app', "area-#{area_id}-data.geojson"), "w") do |f|
+    File.open(Rails.root.join("export", "app", "area-#{area_id}-data.geojson"), "w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 

@@ -2,7 +2,7 @@
 
 namespace :app do
   task db: :environment do
-    file_name = Rails.root.join('export', "app", "boolder.db")
+    file_name = Rails.root.join("export", "app", "boolder.db")
 
     File.delete(file_name) if File.exist?(file_name)
 
@@ -206,7 +206,7 @@ namespace :app do
         CREATE INDEX line_topo_idx ON lines(topo_id);
       SQL
 
-      Line.joins(:problem => :area).joins(:topo).where(area: { published: true }, topo: { published: true }).find_each do |l|
+      Line.joins(problem: :area).joins(:topo).where(area: { published: true }, topo: { published: true }).find_each do |l|
         db.execute(
           "INSERT INTO lines (id, problem_id, topo_id, coordinates)
           VALUES (?, ?, ?, ?)",
@@ -232,7 +232,7 @@ namespace :app do
 
     Line.published.joins(:problem).where(problems: { area_id: area_id }).each do |line|
       puts "processing photo for line ##{line.id}"
-      output_file = Rails.root.join('export', 'app', "topos", "area-#{area_id}", "topo-#{line.topo.id}.jpg").to_s
+      output_file = Rails.root.join("export", "app", "topos", "area-#{area_id}", "topo-#{line.topo.id}.jpg").to_s
 
       if File.exist?(output_file)
         puts "topo-#{line.topo.id}.jpg already exists"
@@ -266,5 +266,5 @@ end
 
 def normalize(string)
   return nil if string.nil?
-  I18n.with_locale(:fr) { I18n.transliterate(string) }.gsub(/[^0-9a-zA-Z]/, '')&.downcase
+  I18n.with_locale(:fr) { I18n.transliterate(string) }.gsub(/[^0-9a-zA-Z]/, "")&.downcase
 end

@@ -9,7 +9,7 @@ class Contribution < ApplicationRecord
 
   audited
 
-  STATES = %w(pending accepted closed)
+  STATES = %w[pending accepted closed]
   scope :pending, -> { where(state: "pending") }
   scope :accepted, -> { where(state: "accepted") }
   scope :closed, -> { where(state: "closed") }
