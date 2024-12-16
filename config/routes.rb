@@ -2,7 +2,7 @@ require 'sidekiq/web'
 
 Rails.application.routes.draw do
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
-    namespace :admin do 
+    namespace :admin do
       resources :areas, param: :slug do
         resources :problems, only: :index
       end
@@ -51,17 +51,17 @@ Rails.application.routes.draw do
     resources :reports
 
     namespace :mapping do
-      resources :problems, only: [:show, :index]
-      resources :contributions, only: [:show, :new, :create]
-      resources :requests, controller: "contribution_requests", only: [:index]
+      resources :problems, only: [ :show, :index ]
+      resources :contributions, only: [ :show, :new, :create ]
+      resources :requests, controller: "contribution_requests", only: [ :index ]
       get 'map(/:slug)', to: '/map#index', as: :map, defaults: { contribute: true }
       get "/", to: "areas#index"
     end
     get "contribute/map", to: redirect('/%{locale}/mapping/map'), as: :map_contribute_legacy_redirect # can be removed as soon as 2024-01-01
 
     scope 'fontainebleau' do
-      resources :circuits, only: [:show, :index]
-      resources :problems, only: [:index]
+      resources :circuits, only: [ :show, :index ]
+      resources :problems, only: [ :index ]
 
       get "/levels", to: "areas#levels", as: :areas_levels
 
@@ -107,7 +107,7 @@ Rails.application.routes.draw do
   mount Sidekiq::Web => "/sidekiqq"
 
   # =============
-  # Proxy routes 
+  # Proxy routes
   # =============
   # Use proxy mode (=streaming) instead of redirects to allow CDNs to easily cache our assets
   # inspired by https://edgeguides.rubyonrails.org/active_storage_overview.html#putting-a-cdn-in-front-of-active-storage

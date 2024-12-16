@@ -5,7 +5,7 @@ class AreasController < ApplicationController
       Area.published.any_tags(:popular).pluck(:id).shuffle
     end
 
-    @areas_with_count = Area.published.sort_by{|a| I18n.transliterate(a.name) }
+    @areas_with_count = Area.published.sort_by { |a| I18n.transliterate(a.name) }
   end
 
   def levels
@@ -14,7 +14,7 @@ class AreasController < ApplicationController
       Area.beginner_friendly.pluck(:id)
     end
 
-    @areas_with_count = Area.published.map {|area| [area, area.problems.with_location.count]}.sort{|a,b| b.second <=> a.second }
+    @areas_with_count = Area.published.map { |area| [ area, area.problems.with_location.count ] }.sort { |a, b| b.second <=> a.second }
   end
 
   def show
@@ -27,7 +27,7 @@ class AreasController < ApplicationController
 
   def problems
     @area = Area.find_by(slug: params[:slug])
-    
-    @problems = @area.problems.with_location.order(popularity: :desc).group_by{|p| p.grade }.sort_by{|grade, _| grade }.reverse
+
+    @problems = @area.problems.with_location.order(popularity: :desc).group_by { |p| p.grade }.sort_by { |grade, _| grade }.reverse
   end
 end

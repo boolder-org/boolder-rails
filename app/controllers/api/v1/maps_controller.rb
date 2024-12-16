@@ -42,7 +42,7 @@ class Api::V1::MapsController < ActionController::Base
           send_data json, filename: "area-#{area.id}-#{area.slug}.geojson", type: 'application/geo+json'
         else
           render json: json
-        end 
+        end
       end
     end
   end

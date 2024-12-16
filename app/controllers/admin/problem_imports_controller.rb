@@ -1,8 +1,8 @@
 class Admin::ProblemImportsController < Admin::BaseController
   def create
-    files = params[:import][:json].select{|f| f.present? }
+    files = params[:import][:json].select { |f| f.present? }
 
-    files.sort_by{|file| file.original_filename }.each do |file|
+    files.sort_by { |file| file.original_filename }.each do |file|
       hash = JSON.parse(file.read)
       problem = Problem.find hash["problemId"]
 

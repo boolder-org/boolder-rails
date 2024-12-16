@@ -4,7 +4,7 @@ class MapController < ApplicationController
   def index
     if params[:slug] && (area = Area.find_by(slug: params[:slug]))
       @area = area # FIXME: don't forget to refactor _map_nav when changing this
-      @bounds = { 
+      @bounds = {
         south_west_lat: area.bounds[:south_west].lat,
         south_west_lon: area.bounds[:south_west].lon,
         north_east_lat: area.bounds[:north_east].lat,
@@ -19,10 +19,10 @@ class MapController < ApplicationController
       else
         problem.location
       end
-      
+
       return unless location.present?
-      
-      @problem = { 
+
+      @problem = {
         id: problem.id, # FIXME: don't forget to refactor _map_nav when changing this
         lat: location.lat,
         lon: location.lon,

@@ -26,7 +26,7 @@ class Admin::ContributionsController < Admin::BaseController
     end
   end
 
-  private 
+  private
   def contribution_params
     params.require(:contribution).
       permit(:state)

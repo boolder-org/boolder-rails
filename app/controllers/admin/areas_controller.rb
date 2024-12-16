@@ -15,7 +15,7 @@ class Admin::AreasController < Admin::BaseController
 
   def update
     set_area
-    
+
     @area.assign_attributes(area_params)
     @area.tags = params[:area][:joined_tags].split(',')
 
@@ -32,7 +32,7 @@ class Admin::AreasController < Admin::BaseController
     end
   end
 
-  private 
+  private
   def area_params
     params.require(:area).
       permit(:name, :slug, :published, :priority, :short_name, :description_fr, :description_en, :warning_fr, :warning_en)

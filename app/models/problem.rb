@@ -13,20 +13,20 @@ class Problem < ApplicationRecord
   has_many :contribution_requests
   has_many :contributions
 
-  audited except: [:has_line, :ascents, :ratings, :ratings_average, :popularity, :featured], associated_with: :import
+  audited except: [ :has_line, :ascents, :ratings, :ratings_average, :popularity, :featured ], associated_with: :import
   attr_accessor :import # used by audited associated_with: :import
   include CheckConflicts
 
   STEEPNESS_VALUES = %w(wall slab overhang roof traverse other)
   GRADE_VALUES = %w(
-    1a 1a+ 1b 1b+ 1c 1c+ 
-    2a 2a+ 2b 2b+ 2c 2c+ 
-    3a 3a+ 3b 3b+ 3c 3c+ 
-    4a 4a+ 4b 4b+ 4c 4c+ 
-    5a 5a+ 5b 5b+ 5c 5c+ 
-    6a 6a+ 6b 6b+ 6c 6c+ 
-    7a 7a+ 7b 7b+ 7c 7c+ 
-    8a 8a+ 8b 8b+ 8c 8c+ 
+    1a 1a+ 1b 1b+ 1c 1c+
+    2a 2a+ 2b 2b+ 2c 2c+
+    3a 3a+ 3b 3b+ 3c 3c+
+    4a 4a+ 4b 4b+ 4c 4c+
+    5a 5a+ 5b 5b+ 5c 5c+
+    6a 6a+ 6b 6b+ 6c 6c+
+    7a 7a+ 7b 7b+ 7c 7c+
+    8a 8a+ 8b 8b+ 8c 8c+
     9a 9a+ 9b 9b+ 9c 9c+
   )
   LANDING_VALUES = %w(easy medium hard)
@@ -36,26 +36,26 @@ class Problem < ApplicationRecord
   LETTERS = { LETTER_BIS => "bis", LETTER_TER => "ter", LETTER_QUATER => "quater" }
   LETTER_START = 'D'
 
-  normalizes :name, :circuit_number, :circuit_letter, with: -> s { s.strip.presence }
+  normalizes :name, :circuit_number, :circuit_letter, with: ->s { s.strip.presence }
 
   validates :steepness, inclusion: { in: STEEPNESS_VALUES }
   validates :grade, inclusion: { in: GRADE_VALUES }, allow_blank: true
   validates :landing, inclusion: { in: LANDING_VALUES }, allow_blank: true
   validates :bleau_info_id, uniqueness: true, allow_blank: true
   validate :validate_circuit_letter
-  validates :circuit_number, uniqueness: { scope: [:circuit_letter, :circuit_id] }, allow_nil: true
-  validates :circuit_letter, uniqueness: { scope: [:circuit_number, :circuit_id] }, allow_nil: true
+  validates :circuit_number, uniqueness: { scope: [ :circuit_letter, :circuit_id ] }, allow_nil: true
+  validates :circuit_letter, uniqueness: { scope: [ :circuit_number, :circuit_id ] }, allow_nil: true
   validates :circuit_letter, inclusion: { in: LETTERS.keys }, allow_blank: true
   validate :validate_circuit_fields
   validate :validate_parent
 
   Circuit::COLOR_VALUES.each do |color|
-    scope color, -> { joins(:circuit).where(circuits: { color: color }) } 
+    scope color, -> { joins(:circuit).where(circuits: { color: color }) }
   end
 
-  scope :level, -> (i){ where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap{raise unless i.in?(1..8)} }
+  scope :level, ->(i) { where("grade >= '#{i}a' AND grade < '#{i+1}a'").tap { raise unless i.in?(1..8) } }
   scope :significant_ascents, -> { where("ascents >= ?", 20) }
-  scope :exclude_bis, -> { where(circuit_letter: [nil, '']) }
+  scope :exclude_bis, -> { where(circuit_letter: [ nil, '' ]) }
   scope :with_location, -> { where.not(location: nil) }
   scope :without_location, -> { where(location: nil) }
   scope :with_line, -> { where(has_line: true) }
@@ -79,28 +79,28 @@ class Problem < ApplicationRecord
   end
 
   def to_param
-    [id, name&.parameterize].compact.join("-")
+    [ id, name&.parameterize ].compact.join("-")
   end
 
   def name_with_fallback
     if name.present?
       name
     elsif circuit_number == LETTER_START && circuit.id
-      [circuit.name, I18n.t("problem.start")].join(" ")
+      [ circuit.name, I18n.t("problem.start") ].join(" ")
     elsif circuit_number.present? && circuit.id
-      [circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil)].join(" ")
+      [ circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil) ].join(" ")
     else
       I18n.t("problem.no_name")
-    end 
+    end
   end
 
   def name_debug
     circuit_debug = nil
     if circuit_number.present? && circuit.id
-      circuit_debug = [circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil)].join(" ")
+      circuit_debug = [ circuit.name, circuit_number.to_s, LETTERS.fetch(circuit_letter, nil) ].join(" ")
     end
 
-    [circuit_debug, name].compact.join(" ")
+    [ circuit_debug, name ].compact.join(" ")
   end
 
   def circuit_number_simplified
@@ -112,11 +112,11 @@ class Problem < ApplicationRecord
   end
 
   def bis
-    LETTERS.keys.map{|letter| Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: letter).first }.compact
+    LETTERS.keys.map { |letter| Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: letter).first }.compact
   end
 
   def main
-    Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: [nil, '']).first
+    Problem.where(circuit_id: circuit_id).where(circuit_number: circuit_number.to_i, circuit_letter: [ nil, '' ]).first
   end
 
   def enumerable_circuit_number
@@ -126,7 +126,7 @@ class Problem < ApplicationRecord
 
   def next
     if circuit_number.present?
-      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1), circuit_letter: [nil, '']).first
+      Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i + 1), circuit_letter: [ nil, '' ]).first
     end
   end
 
@@ -135,14 +135,14 @@ class Problem < ApplicationRecord
       if circuit_number == "1"
         Problem.where(circuit_id: circuit_id).where(circuit_number: LETTER_START).first
       else
-        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1), circuit_letter: [nil, '']).first
+        Problem.where(circuit_id: circuit_id).where(circuit_number: (circuit_number.to_i - 1), circuit_letter: [ nil, '' ]).first
       end
     end
   end
 
   def variants
     if parent
-      [parent] + parent.children - [self]
+      [ parent ] + parent.children - [ self ]
     else
       children
     end
@@ -158,7 +158,7 @@ class Problem < ApplicationRecord
   #   (mapping[landing] * [(height - 2), 0].max).round(1)
   # end
 
-  
+
   def update_has_line
     update(has_line: lines.published.with_coordinates.any?)
   end

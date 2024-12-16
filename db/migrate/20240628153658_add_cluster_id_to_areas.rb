@@ -3,33 +3,33 @@ class AddClusterIdToAreas < ActiveRecord::Migration[7.1]
     add_column :areas, :cluster_id, :integer
 
     # clusters = [
-    #   { 
-    #     name: "Trois Pignons", 
-    #     area_ids: [12,16,2,25,28,14,17,18,30,35,54,56,8,10,19,22,27,58,59,71,15,55,13,21,26,57,61], 
+    #   {
+    #     name: "Trois Pignons",
+    #     area_ids: [12,16,2,25,28,14,17,18,30,35,54,56,8,10,19,22,27,58,59,71,15,55,13,21,26,57,61],
     #     main_area_id: 2,
     #     center: "POINT(2.5298686 48.3794617)",
     #     sw: "POINT(2.5083128 48.3586603)",
     #     ne: "POINT(2.548881 48.3953245)"
     #   },
-    #   { 
-    #     name: "Franchard", 
-    #     area_ids: [11,31,34,36,37,38,39,5], 
+    #   {
+    #     name: "Franchard",
+    #     area_ids: [11,31,34,36,37,38,39,5],
     #     main_area_id: 5,
     #     center: "POINT(2.6021719 48.4090354)",
     #     sw: "POINT(2.5947046 48.4071053)",
     #     ne: "POINT(2.6145744 48.4109511)"
     #   },
-    #   { 
-    #     name: "Apremont", 
-    #     area_ids: [104,20,46,48,49,62,63,69,7,99], 
+    #   {
+    #     name: "Apremont",
+    #     area_ids: [104,20,46,48,49,62,63,69,7,99],
     #     main_area_id: 7,
     #     center: "POINT(2.627685 48.4371021)",
     #     sw: "POINT(2.6195097 48.4336142)",
     #     ne: "POINT(2.6357746 48.4406325)"
     #   },
-    #   { 
-    #     name: "Cuvier", 
-    #     area_ids: [4,40,43,44,45,6,64,66,67], 
+    #   {
+    #     name: "Cuvier",
+    #     area_ids: [4,40,43,44,45,6,64,66,67],
     #     main_area_id: 4,
     #     center: "POINT(2.6402807 48.4468243)",
     #     sw: "POINT(2.6327276 48.4446751)",

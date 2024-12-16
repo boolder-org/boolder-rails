@@ -1,19 +1,19 @@
 module ProblemsHelper
   def problem_circle_view(problem)
-    circle_view(problem.circuit_number_simplified || "&nbsp;".html_safe, 
-      background_color: uicolor(problem.circuit&.color), 
+    circle_view(problem.circuit_number_simplified || "&nbsp;".html_safe,
+      background_color: uicolor(problem.circuit&.color),
       text_color: text_color(problem.circuit&.color)
     )
   end
 
   def problem_circle_view_with_name(problem)
-    problem_circle_view(problem) + 
+    problem_circle_view(problem) +
       (link_to problem.name_with_fallback, admin_problem_path(problem), class: "ml-2")
   end
 
   def circuit_circle_view(circuit, klass: "h-6 w-6 leading-6")
-    circle_view("&nbsp;".html_safe, 
-      background_color: uicolor(circuit&.color), 
+    circle_view("&nbsp;".html_safe,
+      background_color: uicolor(circuit&.color),
       text_color: text_color(circuit&.color),
       klass: klass
     )
@@ -32,7 +32,7 @@ module ProblemsHelper
   end
 
   def circle_view(content, background_color: "", text_color: "", klass: "h-6 w-6 leading-6")
-    content_tag(:span, content, 
+    content_tag(:span, content,
       style: "background-color: #{background_color}; color: #{text_color}",
       class: "rounded-full #{klass} inline-flex justify-center")
   end

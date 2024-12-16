@@ -4,7 +4,7 @@ class Admin::ContributionRequestsController < Admin::BaseController
     redirect_to edit_admin_contribution_request_path(contribution_request)
   end
 
-  def new 
+  def new
     @problem = Problem.find(params[:problem_id])
 
     @contribution_request = @problem.contribution_requests.build
@@ -18,7 +18,7 @@ class Admin::ContributionRequestsController < Admin::BaseController
 
     if @contribution_request.save
       flash[:notice] = "Contribution Request created"
-      redirect_to [:admin, @contribution_request.problem]
+      redirect_to [ :admin, @contribution_request.problem ]
     else
       flash[:error] = @contribution_request.errors.full_messages.join('; ')
       render "new", status: :unprocessable_entity
@@ -36,14 +36,14 @@ class Admin::ContributionRequestsController < Admin::BaseController
 
     if @contribution_request.save
       flash[:notice] = "Contribution request updated"
-      redirect_to [:admin, @contribution_request.problem]
+      redirect_to [ :admin, @contribution_request.problem ]
     else
       flash[:error] = @contribution_request.errors.full_messages.join('; ')
       render "edit", status: :unprocessable_entity
     end
   end
 
-  private 
+  private
   def contribution_request_params
     params.require(:contribution_request).
       permit(:problem_id, :location_estimated_lat, :location_estimated_lon, :state, :comment)

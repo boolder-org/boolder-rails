@@ -3,7 +3,7 @@ class Mapping::ContributionRequestsController < ApplicationController
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     problem_features = ContributionRequest.open.where.not(location_estimated: nil).group_by(&:location_estimated).map do |location, requests|
-      problems = requests.map(&:problem).sort_by{|p| p.ascents.to_i }.reverse
+      problems = requests.map(&:problem).sort_by { |p| p.ascents.to_i }.reverse
       problem = problems.first
 
       hash = {}.with_indifferent_access
@@ -17,7 +17,7 @@ class Mapping::ContributionRequestsController < ApplicationController
       hash[:name] = name_fr
       hash[:name_en] = (name_en != name_fr) ? name_en : ""
 
-      hash[:problems] = problems.map{|p| { name: p.name_debug, id: p.id, grade: p.grade } }
+      hash[:problems] = problems.map { |p| { name: p.name_debug, id: p.id, grade: p.grade } }
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 

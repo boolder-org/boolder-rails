@@ -38,6 +38,6 @@ class PoiRoute < ApplicationRecord
   end
 
   def round_up(n, increment)
-    increment * (( n + increment - 1) / increment)
+    increment * ((n + increment - 1) / increment)
   end
 end

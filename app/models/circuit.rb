@@ -7,7 +7,7 @@ class Circuit < ApplicationRecord
   COLOR_VALUES = %w(yellow purple orange green blue skyblue salmon red black white)
 
   COLOR_VALUES.each do |color|
-    scope color, -> { where(color: color) } 
+    scope color, -> { where(color: color) }
   end
 
   validates :color, inclusion: { in: COLOR_VALUES }
@@ -28,8 +28,8 @@ class Circuit < ApplicationRecord
   end
 
   def average_grade
-    problems_with_grade = problems.select{|p| p.grade.in?(Problem::GRADE_VALUES)}
-    grades_int = problems_with_grade.map{|p| Problem::GRADE_VALUES.index(p.grade) }
+    problems_with_grade = problems.select { |p| p.grade.in?(Problem::GRADE_VALUES) }
+    grades_int = problems_with_grade.map { |p| Problem::GRADE_VALUES.index(p.grade) }
     average_int = average(grades_int).round
     Problem::GRADE_VALUES[average_int].gsub("+", "")
   end
@@ -39,9 +39,9 @@ class Circuit < ApplicationRecord
   end
 
   def beginner_friendly?
-    risk.present? && risk <= 1 && 
+    risk.present? && risk <= 1 &&
     average_grade < '4a' &&
-    !id.in?([89, 155, 156, 14]) # other reasons (eg. paint is not visible enough)
+    !id.in?([ 89, 155, 156, 14 ]) # other reasons (eg. paint is not visible enough)
   end
 
   # def estimated_risk

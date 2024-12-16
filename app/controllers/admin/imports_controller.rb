@@ -11,7 +11,7 @@ class Admin::ImportsController < Admin::BaseController
     @import = Import.new(import_params)
 
     if @import.save
-      redirect_to [:admin, @import]
+      redirect_to [ :admin, @import ]
     else
       flash[:error] = @import.errors.full_messages.join('; ')
       render :new
@@ -22,16 +22,16 @@ class Admin::ImportsController < Admin::BaseController
     @import = Import.find(params[:id])
 
     @updates = if @import.applied?
-      @import.associated_audits.map{|audit| [audit.auditable, audit.audited_changes, audit] }
+      @import.associated_audits.map { |audit| [ audit.auditable, audit.audited_changes, audit ] }
     else
-      @import.objects_to_update.map{|object| [object, object.changes] }
+      @import.objects_to_update.map { |object| [ object, object.changes ] }
     end
   end
 
   def apply
     @import = Import.find(params[:id])
 
-    if @import.objects_to_update.any?{|object| object.conflicting_updated_at }
+    if @import.objects_to_update.any? { |object| object.conflicting_updated_at }
       flash[:error] = "Cannot apply import when there is a conflict"
       redirect_to admin_import_path(@import)
       return

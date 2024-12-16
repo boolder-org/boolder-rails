@@ -88,7 +88,7 @@ class AddAreaIdToBleauAreas < ActiveRecord::Migration[7.0]
       'long-boyau' => 'longboyau',
     }
 
-    slugs.each do |slug, slug_bleau| 
+    slugs.each do |slug, slug_bleau|
       area = Area.find_by(slug: slug)
       bleau_area = BleauArea.find_by(slug: slug_bleau)
       area.update!(bleau_area_id: bleau_area.id)

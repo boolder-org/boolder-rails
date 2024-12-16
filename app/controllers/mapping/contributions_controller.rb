@@ -22,7 +22,7 @@ class Mapping::ContributionsController < ApplicationController
 
       ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
 
-      redirect_to [:mapping, @contribution.problem]
+      redirect_to [ :mapping, @contribution.problem ]
     else
       # flash[:error] = "Error"
       render "new", status: :unprocessable_entity

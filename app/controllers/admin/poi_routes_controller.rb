@@ -20,7 +20,7 @@ class Admin::PoiRoutesController < Admin::BaseController
 
   def update
     set_poi_route
-    
+
     if @poi_route.update(poi_route_params)
       flash[:notice] = "Poi route updated"
       redirect_to edit_admin_poi_route_path(@poi_route)
@@ -30,7 +30,7 @@ class Admin::PoiRoutesController < Admin::BaseController
     end
   end
 
-  private 
+  private
   def poi_route_params
     params.require(:poi_route).
       permit(:distance, :transport, :area_id, :poi_id)

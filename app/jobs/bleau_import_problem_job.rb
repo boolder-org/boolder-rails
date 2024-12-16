@@ -49,7 +49,7 @@ class BleauImportProblemJob < ApplicationJob
     # TODO: move to attributes
     bleau_problem.bleau_area = BleauArea.find_by(slug: slug)
 
-    attributes = { 
+    attributes = {
       name: name,
       grade: grade,
       sit_start: sit_start,
@@ -58,13 +58,13 @@ class BleauImportProblemJob < ApplicationJob
       bleau_circuit_id: bleau_circuit_id,
       circuit_number: circuit_number,
       circuit_letter: circuit_letter,
-      ratings_average: ratings_average, 
-      ratings: ratings_number, 
-      ascents: ascents_number 
+      ratings_average: ratings_average,
+      ratings: ratings_number,
+      ascents: ascents_number
     }
 
     # binding.pry
-    
+
     bleau_problem.update!(attributes)
 
     Rails.logger.debug "Updated bleau_problem ##{id}"

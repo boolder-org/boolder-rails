@@ -3,10 +3,10 @@ class Admin::ProblemsController < Admin::BaseController
     @area = Area.find_by(slug: params[:area_slug])
 
     if params[:circuit_id] == "first" && (id = @area.sorted_circuits.first&.id)
-      redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id) 
+      redirect_to admin_area_problems_path(area_slug: @area.slug, circuit_id: id)
     end
 
-    arel = Problem.where(area_id: @area.id) 
+    arel = Problem.where(area_id: @area.id)
 
     arel = if params[:circuit_id].to_i > 0
       arel.where(circuit_id: params[:circuit_id]).sort_by(&:enumerable_circuit_number) if params[:circuit_id].present?
@@ -25,7 +25,7 @@ class Admin::ProblemsController < Admin::BaseController
     @problems = arel
 
     circuits = @area.sorted_circuits
-    @circuit_tabs = circuits.map{|c| [c.id, c.name] }.push([nil, "All"])
+    @circuit_tabs = circuits.map { |c| [ c.id, c.name ] }.push([ nil, "All" ])
 
     @missing_grade = @area.problems.where("grade IS NULL OR grade = ''")
   end
@@ -46,7 +46,7 @@ class Admin::ProblemsController < Admin::BaseController
     problem.save!
 
     flash[:notice] = "Problem created"
-    redirect_to [:admin, problem]
+    redirect_to [ :admin, problem ]
   end
 
   def show
@@ -61,7 +61,7 @@ class Admin::ProblemsController < Admin::BaseController
     set_problem
 
     @problem.assign_attributes(problem_params)
-    
+
     if @problem.save
       flash[:notice] = "Problem updated"
       redirect_to admin_problem_path(@problem)
@@ -71,7 +71,7 @@ class Admin::ProblemsController < Admin::BaseController
     end
   end
 
-  private 
+  private
   def problem_params
     params.require(:problem).
       permit(:area_id, :name, :grade, :steepness, :sit_start,

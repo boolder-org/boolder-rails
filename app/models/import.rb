@@ -30,7 +30,7 @@ class ImportParser
       if feature["problemId"].present?
         problem = Problem.find(feature["problemId"])
       else
-        raise "All problems must have a `problemId` property" 
+        raise "All problems must have a `problemId` property"
       end
 
       problem.conflicting_updated_at = true if problem.location.present? && (problem.updated_at.to_s != feature["updatedAt"])
@@ -45,7 +45,6 @@ class ImportParser
 
   def parse_boulders
     boulder_features.each do |feature|
-      
       # some editors use LineString and some use Polygon => we need to handle both
       line_string = case feature.geometry
       when ::RGeo::Feature::LineString
@@ -79,8 +78,8 @@ class ImportParser
   private
 
   def infer_area_id
-    problems = problem_features.map{|feature| Problem.find_by(id: feature["problemId"]) }
-    boulders = boulder_features.map{|feature| Boulder.find_by(id: feature["boulderId"]) }
+    problems = problem_features.map { |feature| Problem.find_by(id: feature["problemId"]) }
+    boulders = boulder_features.map { |feature| Boulder.find_by(id: feature["boulderId"]) }
 
     ids = (problems + boulders).compact.map(&:area_id).uniq
 
@@ -90,11 +89,11 @@ class ImportParser
   end
 
   def problem_features
-    @problem_features ||= @features.select{|f| f.geometry.geometry_type == ::RGeo::Feature::Point }
+    @problem_features ||= @features.select { |f| f.geometry.geometry_type == ::RGeo::Feature::Point }
   end
 
   # some editors use LineString and some use Polygon => we need to handle both
   def boulder_features
-    @boulder_features ||= @features.select{|f| f.geometry.geometry_type.in?([::RGeo::Feature::LineString, ::RGeo::Feature::Polygon]) }
+    @boulder_features ||= @features.select { |f| f.geometry.geometry_type.in?([ ::RGeo::Feature::LineString, ::RGeo::Feature::Polygon ]) }
   end
 end

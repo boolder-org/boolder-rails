@@ -18,19 +18,19 @@ namespace :map_maker_legacy do
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit_id_simplified
       hash[:circuit_number] = problem.circuit_number_simplified
-      
+
       tags = []
       tags << "sit_start" if problem.sit_start
-      hash[:tags] = tags 
+      hash[:tags] = tags
 
-      hash[:lines] = problem.lines.published.map{|line| {id: line.id} } if problem.lines.any?
+      hash[:lines] = problem.lines.published.map { |line| { id: line.id } } if problem.lines.any?
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
       factory.feature(problem.location, "problem_#{problem.id}", hash)
     end
 
     boulder_features = Boulder.where(area_id: area_id).map do |boulder|
-      factory.feature(boulder.polygon, "boulder_#{boulder.id}", { })
+      factory.feature(boulder.polygon, "boulder_#{boulder.id}", {})
     end
 
     circuit_features = Area.find(area_id).circuits.map do |circuit|
@@ -43,12 +43,12 @@ namespace :map_maker_legacy do
     readme_feature = factory.feature("POINT(0 0)", nil, { readme: readme })
 
     feature_collection = factory.feature_collection(
-      [readme_feature] + problem_features + boulder_features + circuit_features
+      [ readme_feature ] + problem_features + boulder_features + circuit_features
     )
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join('export', 'app', "area-#{area_id}-data.geojson"),"w") do |f|
+    File.open(Rails.root.join('export', 'app', "area-#{area_id}-data.geojson"), "w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 

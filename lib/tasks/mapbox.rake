@@ -44,7 +44,7 @@ namespace :mapbox do
 
     file_name = Rails.root.join("..", "boolder-maps", "mapbox", "areas.geojson")
 
-    File.open(file_name,"w") do |f|
+    File.open(file_name, "w") do |f|
       f.write(geo_json)
     end
 
@@ -92,7 +92,7 @@ namespace :mapbox do
 
     file_name = Rails.root.join("..", "boolder-maps", "mapbox", "clusters.geojson")
 
-    File.open(file_name,"w") do |f|
+    File.open(file_name, "w") do |f|
       f.write(geo_json)
     end
 
@@ -107,7 +107,7 @@ namespace :mapbox do
 
     factory = RGeo::GeoJSON::EntityFactory.instance
 
-    problem_features = Problem.with_location.joins(:area).where(area: {published: true}).map do |problem|
+    problem_features = Problem.with_location.joins(:area).where(area: { published: true }).map do |problem|
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
       hash[:id] = problem.id
@@ -126,8 +126,8 @@ namespace :mapbox do
     end
 
     # Extract boulders alongside problems to ensure we always upload both at the same time to mapbox
-    boulder_features = Boulder.where.not(area_id: [45,75,79, 104]).joins(:area).where(area: {published: true}).map do |boulder|
-      factory.feature(boulder.polygon, nil, { })
+    boulder_features = Boulder.where.not(area_id: [ 45, 75, 79, 104 ]).joins(:area).where(area: { published: true }).map do |boulder|
+      factory.feature(boulder.polygon, nil, {})
     end
 
     if include_boulders
@@ -142,14 +142,14 @@ namespace :mapbox do
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "problems#{"-without-boulders" if !include_boulders}.geojson"),"w") do |f|
+    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "problems#{"-without-boulders" if !include_boulders}.geojson"), "w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 
     puts "exported problems.geojson".green
   end
 
-  task circuits: :environment do 
+  task circuits: :environment do
     factory = RGeo::GeoJSON::EntityFactory.instance
 
     circuit_features = Circuit.all.map do |circuit|
@@ -164,7 +164,7 @@ namespace :mapbox do
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "circuits.geojson"),"w") do |f|
+    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "circuits.geojson"), "w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 

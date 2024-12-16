@@ -21,7 +21,7 @@ class Admin::ToposController < Admin::BaseController
 
         topo.update(photo: photo)
         topo.update(metadata: metadata_hash)
-        
+
         problems = Problem.find(metadata_hash["problem_ids"])
         problems = problems + problems.flat_map(&:variants)
 
@@ -59,7 +59,7 @@ class Admin::ToposController < Admin::BaseController
 
   def destroy
     set_topo
-    
+
     if @topo.destroy
       flash[:notice] = "Topo destroyed"
       if area = @topo.problems.first&.area

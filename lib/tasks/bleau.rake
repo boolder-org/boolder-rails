@@ -13,22 +13,22 @@ namespace :bleau do
 
     areas.each do |area|
       bleau_area = area.bleau_area
-  
+
       html = HTTParty.get("https://bleau.info/#{bleau_area.slug}").body
       doc = Nokogiri::HTML(html)
-  
+
       doc.css(".vsr").each do |row|
         a = row.css("a").first
         link = a.attributes["href"].value
-        id = link[/([\w-]+).html/,1]
-  
+        id = link[/([\w-]+).html/, 1]
+
         puts "Created import job for bleau_problem_id=#{id}"
-        
+
         BleauImportProblemJob.perform_later(id)
       end
     end
   end
-  
+
   task promote: :environment do
     # TODO: make this code DRY with bleau_problems_controller.rb
     bleau_problems = BleauProblem.joins(:bleau_area => :area).
@@ -53,7 +53,7 @@ namespace :bleau do
       problem.ratings = bleau_problem.ratings
       problem.ratings_average = bleau_problem.ratings_average
       problem.ascents = bleau_problem.ascents
-      
+
       # TODO : compute popularity
 
       problem.save!
@@ -82,7 +82,7 @@ namespace :bleau do
 
   task update_sit_starts: :environment do
     # TODO: make this code DRY with bleau_problems_controller.rb
-    Problem.joins(:bleau_problem).where("problems.sit_start IS DISTINCT FROM bleau_problems.sit_start").reject{|p| p.sit_start && p.name&.include?("assis)") }.each do |problem|
+    Problem.joins(:bleau_problem).where("problems.sit_start IS DISTINCT FROM bleau_problems.sit_start").reject { |p| p.sit_start && p.name&.include?("assis)") }.each do |problem|
       puts "updating sit_start for problem ##{problem.id}"
       problem.update!(sit_start: problem.bleau_problem.sit_start)
     end
@@ -93,24 +93,24 @@ namespace :bleau do
     html = HTTParty.get("https://bleau.info/areas_by_region?locale=en").body
     doc = Nokogiri::HTML(html)
 
-    areas = doc.css(".area_by_regions a").select{|a| a.attributes["data-method"].nil? }
+    areas = doc.css(".area_by_regions a").select { |a| a.attributes["data-method"].nil? }
 
-    data = areas.map{|a| [a.attributes["href"].value.sub(/^\/+/, ""), a.text.strip.split(/\s*\(/)[0].strip, a.css('span').text&.strip&.tr('()', '').presence] }
-    
-    missing = data.select{|slug, name, category| BleauArea.find_by(slug: slug).nil? }
+    data = areas.map { |a| [ a.attributes["href"].value.sub(/^\/+/, ""), a.text.strip.split(/\s*\(/)[0].strip, a.css('span').text&.strip&.tr('()', '').presence ] }
+
+    missing = data.select { |slug, name, category| BleauArea.find_by(slug: slug).nil? }
     raise "missing areas" if missing.any?
-    
-    data.each{|slug, name, category| BleauArea.find_by(slug: slug)&.update!(name: name, category: category) }
+
+    data.each { |slug, name, category| BleauArea.find_by(slug: slug)&.update!(name: name, category: category) }
   end
 
   task csv_areas: :environment do
     bleau_areas = BleauArea.all
 
     csv_data = CSV.generate(headers: true) do |csv|
-      csv << ["slug", "name", "category", "problems", "ascents", "mapped"]
+      csv << [ "slug", "name", "category", "problems", "ascents", "mapped" ]
 
       bleau_areas.each do |b|
-        csv << [b.slug, b.name, b.category, b.bleau_problems.count, b.bleau_problems.sum(:ascents), b.area&.published]
+        csv << [ b.slug, b.name, b.category, b.bleau_problems.count, b.bleau_problems.sum(:ascents), b.area&.published ]
       end
     end
 
@@ -123,10 +123,10 @@ namespace :bleau do
     bleau_problems = BleauProblem.left_outer_joins(:problem).where(problems: { id: nil }).where("bleau_problems.ascents > 0").order(ascents: :desc)
 
     csv_data = CSV.generate(headers: true) do |csv|
-      csv << ["area", "name", "grade", "ascents"]
+      csv << [ "area", "name", "grade", "ascents" ]
 
       bleau_problems.each do |bp|
-        csv << [bp.bleau_area.name, bp.name, bp.grade, bp.ascents]
+        csv << [ bp.bleau_area.name, bp.name, bp.grade, bp.ascents ]
       end
     end
 

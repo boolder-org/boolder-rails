@@ -9,7 +9,7 @@ class Admin::CircuitsController < Admin::BaseController
 
   def update
     set_circuit
-    
+
     if @circuit.update(circuit_params)
       flash[:notice] = "Circuit updated"
       redirect_to edit_admin_circuit_path(@circuit)
@@ -19,7 +19,7 @@ class Admin::CircuitsController < Admin::BaseController
     end
   end
 
-  private 
+  private
   def circuit_params
     params.require(:circuit).
       permit(:color, :risk)

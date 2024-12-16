@@ -1,5 +1,4 @@
 class CustomBreadcrumbsBuilder < BreadcrumbsOnRails::Breadcrumbs::Builder
-
   def render
     @elements.collect do |element|
       render_element(element)
@@ -14,11 +13,10 @@ class CustomBreadcrumbsBuilder < BreadcrumbsOnRails::Breadcrumbs::Builder
     end
     if @options[:tag]
       @context.content_tag(
-        @options[:tag], content, class: [@options[:class], element.options[:class]].join(" ")
+        @options[:tag], content, class: [ @options[:class], element.options[:class] ].join(" ")
       )
     else
       ERB::Util.h(content)
     end
   end
-
 end

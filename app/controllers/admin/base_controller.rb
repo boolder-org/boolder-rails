@@ -4,7 +4,7 @@ class Admin::BaseController < ApplicationController
   before_action :authenticate, unless: -> { Rails.env.local? }
   before_action :set_cookie
 
-  private 
+  private
   def authenticate
     authenticate_or_request_with_http_basic("admin") do |id, password|
       if accounts.has_key?(id.to_s)
@@ -16,7 +16,7 @@ class Admin::BaseController < ApplicationController
 
   def accounts
     {
-      "nico"  => Rails.application.credentials.dig(:admin, :nico_password), 
+      "nico"  => Rails.application.credentials.dig(:admin, :nico_password),
       "emile" => Rails.application.credentials.dig(:admin, :emile_password),
       "gael" => Rails.application.credentials.dig(:admin, :gael_password),
     }
