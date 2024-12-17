@@ -18,6 +18,10 @@ gem "tailwindcss-rails"
 # gem "tailwindcss-ruby", "3.4.13" # pin to tailwindcss version 3.4.13
 gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "solid_cache"
+# gem "solid_queue"
+# gem "solid_cable"
+# gem "mission_control-jobs"
 
 gem "bootsnap", require: false
 gem "kamal", require: false

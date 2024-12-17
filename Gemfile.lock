@@ -338,6 +338,10 @@ GEM
       ffi (~> 1.12)
       logger
     securerandom (0.4.0)
+    solid_cache (1.0.6)
+      activejob (>= 7.2)
+      activerecord (>= 7.2)
+      railties (>= 7.2)
     sshkit (1.23.2)
       base64
       net-scp (>= 1.1.2)
@@ -410,6 +414,7 @@ DEPENDENCIES
   rails (~> 8.0)
   rgeo-geojson (~> 2.1.1)
   rubocop-rails-omakase
+  solid_cache
   stimulus-rails
   tailwindcss-rails
   thruster
