@@ -277,7 +277,6 @@ GEM
     rake (13.2.1)
     rdoc (6.9.0)
       psych (>= 4.0.0)
-    redis (4.2.5)
     regexp_parser (2.9.3)
     reline (0.5.12)
       io-console (~> 0.5)
@@ -381,7 +380,6 @@ DEPENDENCIES
   puma (>= 5.0)
   rack-cors
   rails (~> 8.0)
-  redis (~> 4.2.5)
   rgeo-geojson (~> 2.1.1)
   rubocop-rails-omakase
   stimulus-rails

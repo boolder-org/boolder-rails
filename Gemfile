@@ -10,7 +10,6 @@ gem "puma", ">= 5.0"
 gem "pg"
 gem "activerecord-postgis-adapter", github: "boolder-org/activerecord-postgis-adapter", branch: "rails-8" # waiting for official Rails 8 support
 gem "aws-sdk-s3"
-gem "redis", "~> 4.2.5" # TODO: remove
 gem "bugsnag"
 gem "pg_search"
 
