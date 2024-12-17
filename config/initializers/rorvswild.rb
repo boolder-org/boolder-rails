@@ -1,1 +1,0 @@
-RorVsWild.start(api_key: Rails.application.credentials.dig(:rorvswild, :api_key)) unless Rails.env.local?

@@ -12,7 +12,6 @@ gem "activerecord-postgis-adapter", github: "boolder-org/activerecord-postgis-ad
 gem "aws-sdk-s3"
 gem "sidekiq", "~> 7.1.2" # TODO: remove
 gem "redis", "~> 4.2.5" # TODO: remove
-gem "rorvswild", "~> 1.6.4" # TODO: remove
 gem "bugsnag"
 gem "pg_search"
 
