@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount MissionControl::Jobs::Engine, at: "/jobs"
+
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
     namespace :admin do
       resources :areas, param: :slug do
