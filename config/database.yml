@@ -7,6 +7,11 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
+sqlite: &sqlite
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
 development:
   <<: *default
   database: dump-prod
@@ -19,6 +24,11 @@ test:
   database: boolder-test
 
 production:
-  <<: *default
-  database: boolder-production
-  url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
+  primary:
+    <<: *default
+    database: boolder-production
+    url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
+  cache:
+    <<: *sqlite
+    database: storage/production_cache.sqlite3
+    migrations_paths: db/cache_migrate

@@ -342,6 +342,8 @@ GEM
       activejob (>= 7.2)
       activerecord (>= 7.2)
       railties (>= 7.2)
+    sqlite3 (2.4.1)
+      mini_portile2 (~> 2.8.0)
     sshkit (1.23.2)
       base64
       net-scp (>= 1.1.2)
@@ -415,6 +417,7 @@ DEPENDENCIES
   rgeo-geojson (~> 2.1.1)
   rubocop-rails-omakase
   solid_cache
+  sqlite3 (>= 2.1)
   stimulus-rails
   tailwindcss-rails
   thruster
