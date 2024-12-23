@@ -5,7 +5,6 @@ ruby "3.3.5"
 
 gem "rails", "~> 8.0"
 gem "puma", ">= 5.0"
-gem "sqlite3", ">= 2.1"
 gem "pg"
 gem "pg_search"
 gem "activerecord-postgis-adapter", github: "boolder-org/activerecord-postgis-adapter", branch: "rails-8" # waiting for official Rails 8 support
