@@ -98,7 +98,7 @@ asset_path: /rails/public/assets
 #
 accessories:
   db:
-    image: postgis/postgis:16-3.5
+    image: postgis/postgis:16-3.5 # <POSTGRES_MAJOR_VERSION>-<POSTGIS_MAJOR_VERSION>
     host: 78.47.66.219
     port: "127.0.0.1:3306:3306"
     env:
