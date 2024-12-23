@@ -16,11 +16,8 @@ WORKDIR /rails
 
 # Install base packages
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 && \
+    apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 libpq-dev postgis && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
-
-# Install postgre extensions
-RUN apt-get install --no-install-recommends -y libpq-dev postgis
 
 # Set production environment
 ENV RAILS_ENV="production" \
