@@ -20,7 +20,7 @@ RUN apt-get update -qq && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Install postgre extensions
-apt-get install --no-install-recommends -y libpq-dev postgis
+RUN apt-get install --no-install-recommends -y libpq-dev postgis
 
 # Set production environment
 ENV RAILS_ENV="production" \
