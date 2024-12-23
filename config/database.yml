@@ -22,16 +22,27 @@ production:
   primary:
     <<: *default
     database: boolder-production
-    url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
+    username: boolder
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
+    host: <%= ENV["DB_HOST"] %>
   cache:
     <<: *default
     database: boolder-cache
     migrations_paths: db/cache_migrate
+    username: boolder
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
+    host: <%= ENV["DB_HOST"] %>
   queue:
     <<: *default
     database: boolder-queue
     migrations_paths: db/queue_migrate
+    username: boolder
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
+    host: <%= ENV["DB_HOST"] %>
   cable:
     <<: *default
     database: boolder-cable
     migrations_paths: db/cable_migrate
+    username: boolder
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
+    host: <%= ENV["DB_HOST"] %>
