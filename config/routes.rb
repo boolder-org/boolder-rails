@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "up" => "rails/health#show", as: :rails_health_check
   mount MissionControl::Jobs::Engine, at: "/jobs"
 
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
