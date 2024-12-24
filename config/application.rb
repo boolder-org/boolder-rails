@@ -26,6 +26,6 @@ module Boolder
 
     config.time_zone = "Paris"
 
-    config.mission_control.jobs.base_controller_class = "Admin::BaseController"
+    # config.mission_control.jobs.base_controller_class = "Admin::BaseController"
   end
 end
