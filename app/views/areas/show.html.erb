@@ -59,46 +59,48 @@
             </li>
           </ul>
         </div>
-        <div class="px-4 sm:px-0 pt-2">
-          <% if @area.tags.any? %>
-            <div class="pt-4 pb-2 flex flex-wrap">
-              <% @area.tags.each do |tag| %>
-                <span class="mt-2 mr-2 px-2.5 py-0.5 rounded-full border border-gray-700 text-gray-700 bg-gray-50 font-light text-sm">
-                  <%= t("area.tags.#{tag}") %>
-                </span>
-              <% end %>
-            </div>
-          <% end %>
-
-          <% if (I18n.locale == :fr && @area.description_fr.present?) || (I18n.locale == :en && @area.description_en.present?) %>
-            <div class="pt-4">
-              <div class="prose text-justify">
-                <% desc = I18n.locale == :en ? @area.description_en : @area.description_fr %>
-                <%= simple_format(desc) %>
+        <div class="pt-2">
+          <div class="px-4 sm:px-0 pt-2">
+            <% if @area.tags.any? %>
+              <div class="pt-4 pb-2 flex flex-wrap">
+                <% @area.tags.each do |tag| %>
+                  <span class="mt-2 mr-2 px-2.5 py-0.5 rounded-full border border-gray-700 text-gray-700 bg-gray-50 font-light text-sm">
+                    <%= t("area.tags.#{tag}") %>
+                  </span>
+                <% end %>
               </div>
-            </div>
-          <% end %>
-
-          <% if (I18n.locale == :fr && @area.warning_fr.present?) || (I18n.locale == :en && @area.warning_en.present?) %>
-            <div class="pt-4">
-              <% warning = I18n.locale == :en ? @area.warning_en : @area.warning_fr %>
-              <%= warning_box do %>
-                <div>
-                  <%= simple_format(warning) %>
+            <% end %>
+  
+            <% if (I18n.locale == :fr && @area.description_fr.present?) || (I18n.locale == :en && @area.description_en.present?) %>
+              <div class="pt-4">
+                <div class="prose text-justify">
+                  <% desc = I18n.locale == :en ? @area.description_en : @area.description_fr %>
+                  <%= simple_format(desc) %>
                 </div>
-              <% end %>
-            </div>
-          <% end %>
-
-          <%= link_to map_path(@area) do %>
-            <div class="flex items-center space-x-2 text-emerald-600 mt-6">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              <div><%= t('views.areas.show.see_map') %></div>
-            </div>
-          <% end %>
+              </div>
+            <% end %>
+  
+            <% if (I18n.locale == :fr && @area.warning_fr.present?) || (I18n.locale == :en && @area.warning_en.present?) %>
+              <div class="pt-4">
+                <% warning = I18n.locale == :en ? @area.warning_en : @area.warning_fr %>
+                <%= warning_box do %>
+                  <div>
+                    <%= simple_format(warning) %>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+  
+            <%= link_to map_path(@area) do %>
+              <div class="flex items-center space-x-2 text-emerald-600 mt-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <div><%= t('views.areas.show.see_map') %></div>
+              </div>
+            <% end %>
+          </div>
 
           <% if @circuits.any? %>
             <div>
