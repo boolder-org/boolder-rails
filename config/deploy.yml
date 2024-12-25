@@ -55,7 +55,7 @@ env:
     # JOB_CONCURRENCY: 3
 
     # Set number of cores available to the application on each server (default: 1).
-    # WEB_CONCURRENCY: 2
+    WEB_CONCURRENCY: 2
 
     # Match this to any external database server to configure Active Record correctly
     # Use boolder-db for a db accessory server on same machine via local kamal docker network.
