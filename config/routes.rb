@@ -1,6 +1,7 @@
-require "sidekiq/web"
-
 Rails.application.routes.draw do
+  get "up" => "rails/health#show", as: :rails_health_check
+  mount MissionControl::Jobs::Engine, at: "/jobs"
+
   scope "/:locale", locale: /#{I18n.available_locales.join('|')}/ do
     namespace :admin do
       resources :areas, param: :slug do
@@ -103,8 +104,6 @@ Rails.application.routes.draw do
   get "search", to: "search#search", as: :search
   get "/:locale", to: "welcome#index", locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: "welcome#root"
-
-  mount Sidekiq::Web => "/sidekiqq"
 
   # =============
   # Proxy routes
