@@ -11,16 +11,19 @@ NB: if you just want a quick access to the data, check out [boolder-data](https:
 - Ruby On Rails
 - PostgreSQL
 - Tailwind CSS
-- [Stimulus](https://stimulus.hotwired.dev) / [Turbo](https://turbo.hotwired.dev)
+- [Stimulus](https://stimulus.hotwired.dev) and [Turbo](https://turbo.hotwired.dev)
 
 
 ## How to run the app (on a Mac)
 
-### Basics
+### Install homebrew
 
-- install homebrew: https://brew.sh/
-- install rvm: https://rvm.io
+- See https://brew.sh/
 
+### Install Ruby
+
+- `brew install rbenv libyaml`
+- `rbenv install 3.3.5` (replace `3.3.5` with the content of `.ruby-version`)
 
 ### Install Postgre
 - cd to the app directory
