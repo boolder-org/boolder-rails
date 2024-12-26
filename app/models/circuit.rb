@@ -17,7 +17,7 @@ class Circuit < ApplicationRecord
   end
 
   def main_area
-    problems.order(:circuit_number).first.area
+    problems.order(:circuit_number).first&.area
   end
 
   def bounds
@@ -53,6 +53,7 @@ class Circuit < ApplicationRecord
 
   private
   def average(array)
+    return 0 if array.empty?
     array.reduce(:+) / array.size.to_f
   end
 end
