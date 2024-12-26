@@ -44,6 +44,7 @@ group :development, :test do
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
   gem "pry"
+  gem "dotenv-rails"
 end
 
 group :development do
