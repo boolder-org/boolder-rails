@@ -43,8 +43,3 @@ yarn-debug.log*
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
-
-/.kamal/registry-password
-/.kamal/postgres-password
-/.kamal/s3-access-key
-/.kamal/s3-secret-access-key
