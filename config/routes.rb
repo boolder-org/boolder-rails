@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     namespace :admin do
       resources :areas, param: :slug do
         resources :problems, only: :index
+        get "map", to: "maps#show"
       end
       resources :problems, except: :index
       resources :boulders
@@ -91,12 +92,12 @@ Rails.application.routes.draw do
     get "/p/:id", to: "welcome#problem_permalink" # used by the apps to redirect to a problem webpage
   end
 
+  # Deprecated
   namespace :api do
     namespace :v1 do
       resources :topos, only: :show
       resources :areas do
         resources :topos, only: :index
-        get "map", to: "maps#show", as: :area_map
       end
     end
   end

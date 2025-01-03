@@ -1,4 +1,5 @@
-class Api::V1::MapsController < ActionController::Base
+# TODO: inherit from Admin::BaseController and handle authorization for geojson_source_url
+class Admin::MapsController < ApplicationController
   include ProblemsHelper
 
   def show
