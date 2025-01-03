@@ -29,6 +29,9 @@ Rails.application.routes.draw do
       root "areas#index"
     end
 
+    resource :session
+    resources :passwords, param: :token
+
     scope "articles" do
       scope "beginners-guide" do
         get "/", to: "articles#beginners_guide", as: :beginners_guide
