@@ -6,6 +6,7 @@ class Admin::BaseController < ApplicationController
 
   private
 
+  # TODO: update
   # used by audited gem (see config/initializers/audited.rb)
   def authenticated_user
     session[:admin_user_name]
