@@ -1,5 +1,11 @@
 class Api::V1::ToposController < ActionController::Base
   def show
+    begin
+      raise "Topos#show is deprecated"
+    rescue => exception
+      Bugsnag.notify(exception)
+    end
+
     topo = Topo.find(params[:id])
 
     result = {
@@ -10,6 +16,12 @@ class Api::V1::ToposController < ActionController::Base
   end
 
   def index
+    begin
+      raise "Topos#index is deprecated"
+    rescue => exception
+      Bugsnag.notify(exception)
+    end
+
     area = Area.find(params[:area_id])
 
     results = Topo.published.joins(:problems).where(problems: { area_id: area.id }).uniq.map do |topo|
