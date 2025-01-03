@@ -3,9 +3,9 @@
 <% # Trick to make the page full height even on mobile: https://stackoverflow.com/a/24979148 %>
 <html lang="<%= I18n.locale %>" class="h-full m-0">
   <head>
-    <link rel="icon" href="<%= image_path('logo.svg') %>">
-    <link rel="mask-icon" href="<%= image_path('logo.svg') %>" color="#059669">
-    <link rel="apple-touch-icon" href="<%= image_path('apple-touch-icon.png') %>">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
 
     <%= display_meta_tags site: 'Boolder', reverse: true %>
     <%= csrf_meta_tags %>
