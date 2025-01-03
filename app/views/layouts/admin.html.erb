@@ -46,6 +46,7 @@
 
                 <div class="flex md:hidden">
                   <%= render 'shared/search_modal', show_button: true %>
+                  <%= link_to 'Logout', session_path, data: { turbo_method: :delete }, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
                 </div>
 
                 <!-- <%= link_to "Pois", admin_pois_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %> -->
@@ -63,8 +64,9 @@
                   </div>
                 </div> -->
               </div>
-              <div class="hidden md:flex">
+              <div class="hidden md:flex md:items-center">
                 <%= render 'shared/search_modal', show_button: false %>
+                <%= link_to 'Logout', session_path, data: { turbo_method: :delete }, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
               </div>
             </div>
           </div>
