@@ -48,6 +48,10 @@ class Area < ApplicationRecord
     [ id, name ].join(" - ")
   end
 
+  def inspect
+    name_debug
+  end
+
   def bounds
     relevant_boulders = boulders.where(ignore_for_area_hull: false)
     @bounds ||= {
