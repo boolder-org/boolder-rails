@@ -214,6 +214,27 @@ namespace :app do
         )
       end
 
+      db.execute <<-SQL
+        create table topos (
+          id INTEGER NOT NULL PRIMARY KEY,
+          area_id INTEGER NOT NULL,
+          boulder_id INTEGER,
+          position INTEGER
+        );
+        CREATE INDEX topo_idx ON topos(id);
+        CREATE INDEX topo_area_idx ON topos(area_id);
+        CREATE INDEX topo_boulder_idx ON topos(boulder_id);
+        # TODO: add index on (boulder, position)
+      SQL
+
+      Topo.published.find_each do |t|
+        db.execute(
+          "INSERT INTO topos (id, area_id, boulder_id, position)
+          VALUES (?, ?, ?, ?)",
+          [ t.id, t.area.id, t.boulder_id, t.position ]
+        )
+      end
+
       puts "exported boolder.db".green
 
     rescue SQLite3::Exception => e
