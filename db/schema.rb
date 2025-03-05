@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_09_04_091012) do
+ActiveRecord::Schema[8.0].define(version: 2025_03_05_151531) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
   enable_extension "pg_stat_statements"
@@ -238,6 +238,10 @@ ActiveRecord::Schema[8.0].define(version: 2024_09_04_091012) do
     t.datetime "updated_at", null: false
     t.boolean "published", default: true, null: false
     t.json "metadata"
+    t.integer "boulder_id"
+    t.integer "position"
+    t.index ["boulder_id", "position"], name: "index_topos_on_boulder_id_and_position", unique: true
+    t.index ["boulder_id"], name: "index_topos_on_boulder_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
