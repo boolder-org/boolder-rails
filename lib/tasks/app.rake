@@ -227,11 +227,11 @@ namespace :app do
         # TODO: add index on (boulder, position)
       SQL
 
-      Topo.published.find_each do |t|
+      Topo.published.joins(:problems).group("topos.id").each do |t|
         db.execute(
           "INSERT INTO topos (id, area_id, boulder_id, position)
           VALUES (?, ?, ?, ?)",
-          [ t.id, t.area.id, t.boulder_id, t.position ]
+          [ t.id, t.area_id, t.boulder_id, t.position ]
         )
       end
 
