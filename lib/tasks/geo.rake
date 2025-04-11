@@ -30,13 +30,13 @@ namespace :geo do
   end
 
   task compute_line_starts: :environment do
-    Topo.published.where(id: 1804).find_each do |topo|
+    Topo.published.find_each do |topo|
       puts "Processing topo ##{topo.id}"
 
       topo.lines.each { |l| l.update_columns(start_id: nil) }
       topo.line_starts.destroy_all
       topo.lines.published.each do |line|
-        puts "Processing line ##{line.id}"
+        # puts "Processing line ##{line.id}"
 
         existing_start = topo.line_starts.to_a.find { |start| start.overlaps?(line) }
 
