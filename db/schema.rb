@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_04_11_073209) do
+ActiveRecord::Schema[8.0].define(version: 2025_04_11_075251) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
   enable_extension "pg_stat_statements"
@@ -189,7 +189,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_11_073209) do
     t.bigint "topo_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "start_id"
     t.index ["problem_id"], name: "index_lines_on_problem_id"
+    t.index ["start_id"], name: "index_lines_on_start_id"
     t.index ["topo_id"], name: "index_lines_on_topo_id"
   end
 
@@ -257,5 +259,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_04_11_073209) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "boulders", "areas"
   add_foreign_key "line_starts", "topos"
+  add_foreign_key "lines", "line_starts", column: "start_id"
   add_foreign_key "problems", "areas"
 end
