@@ -21,6 +21,10 @@ class Line < ApplicationRecord
       select { |l| l.problem.lines.published.first&.topo_id == self.topo_id } # TODO: simplify once we handle ordering of multiple lines
   end
 
+  def start_point
+    coordinates&.first
+  end
+
   private
 
   def validate_line_length
