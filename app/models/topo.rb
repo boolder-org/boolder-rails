@@ -5,7 +5,6 @@ class Topo < ApplicationRecord
 
   has_many :lines, dependent: :destroy
   has_many :problems, through: :lines
-  has_many :line_starts # , dependent: :destroy
 
   audited
 
