@@ -152,6 +152,10 @@ class Problem < ApplicationRecord
     end
   end
 
+  def twin_id
+    parent_id if parent&.lines&.published&.first&.coordinates == lines&.published&.first&.coordinates
+  end
+
   # # FIXME: document & test
   # def risk_score
   #   return nil unless height && landing

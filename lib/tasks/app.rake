@@ -49,7 +49,10 @@ namespace :app do
             p.grade, p.location&.lat, p.location&.lon,
             p.circuit_id_simplified, p.circuit_number_simplified, p.circuit&.color,
             p.steepness, p.sit_start ? 1 : 0, p.area_id, p.bleau_info_id.to_s,
-            p.featured ? 1 : 0, p.popularity, p.parent_id ]
+            p.featured ? 1 : 0,
+            p.popularity,
+            p.twin_id
+          ]
         )
       end
 
