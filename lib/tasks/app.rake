@@ -28,7 +28,8 @@ namespace :app do
           bleau_info_id TEXT,
           featured INTEGER NOT NULL,
           popularity INTEGER,
-          parent_id INTEGER
+          parent_id INTEGER,
+          start_id INTEGER
         );
         CREATE INDEX problem_idx ON problems(id);
         CREATE INDEX problem_area_idx ON problems(area_id);
@@ -40,8 +41,8 @@ namespace :app do
         db.execute(
           "INSERT INTO problems (id, name, name_en, name_searchable, grade, latitude, longitude, circuit_id, circuit_number,
           circuit_color, steepness, sit_start, area_id, bleau_info_id,
-          featured, popularity, parent_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+          featured, popularity, parent_id, start_id)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
           [ p.id,
             I18n.with_locale(:fr) { p.name_with_fallback },
             I18n.with_locale(:en) { p.name_with_fallback },
@@ -51,7 +52,8 @@ namespace :app do
             p.steepness, p.sit_start ? 1 : 0, p.area_id, p.bleau_info_id.to_s,
             p.featured ? 1 : 0,
             p.popularity,
-            p.parent_id
+            p.parent_id,
+            p.start_id
           ]
         )
       end
