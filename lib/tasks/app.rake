@@ -202,20 +202,18 @@ namespace :app do
           id INTEGER NOT NULL PRIMARY KEY,
           problem_id INTEGER NOT NULL,
           topo_id INTEGER NOT NULL,
-          start_id INTEGER,
           coordinates TEXT
         );
         CREATE INDEX line_idx ON lines(id);
         CREATE INDEX line_problem_idx ON lines(problem_id);
         CREATE INDEX line_topo_idx ON lines(topo_id);
-        CREATE INDEX line_start_idx ON lines(start_id);
       SQL
 
       Line.joins(problem: :area).joins(:topo).where(area: { published: true }, topo: { published: true }).find_each do |l|
         db.execute(
-          "INSERT INTO lines (id, problem_id, topo_id, start_id, coordinates)
-          VALUES (?, ?, ?, ?, ?)",
-          [ l.id, l.problem_id, l.topo_id, l.start_id, l.coordinates.to_json ]
+          "INSERT INTO lines (id, problem_id, topo_id, coordinates)
+          VALUES (?, ?, ?, ?)",
+          [ l.id, l.problem_id, l.topo_id, l.coordinates.to_json ]
         )
       end
 
