@@ -32,6 +32,7 @@
           <div class="absolute hidden z-0" style="top:-12px; left:-12px;" data-topo-line-target="circle">
             <%= circle_view("&nbsp;".html_safe, klass: "h-6 w-6 leading-6 bg-gray-500 topo-line-shadow") %>
           </div>
+          <% # FIXME: refactor this %>
           <% move_on_top = (secondary_line.id != line.id) && secondary_line.problem.circuit_number.present? %>
           <div class="absolute hidden <%= move_on_top ? "z-10" : "z-0" %>" style="top:-12px; left:-12px;" data-topo-line-target="circle">
             <% path = (scope == :admin) ? admin_problem_path(secondary_line.problem) : problem_friendly_path(secondary_line.problem) %>
