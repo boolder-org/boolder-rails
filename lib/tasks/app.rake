@@ -51,7 +51,7 @@ namespace :app do
             p.steepness, p.sit_start ? 1 : 0, p.area_id, p.bleau_info_id.to_s,
             p.featured ? 1 : 0,
             p.popularity,
-            p.twin_id
+            p.parent_id
           ]
         )
       end
