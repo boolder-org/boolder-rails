@@ -29,19 +29,36 @@ namespace :geo do
     puts "Done".green
   end
 
-  task compute_line_starts: :environment do
+  # task compute_line_starts: :environment do
+  #   Topo.published.find_each do |topo|
+  #     puts "Processing topo ##{topo.id}"
+
+  #     topo.lines.each { |l| l.update_columns(start_id: nil) }
+  #     topo.line_starts.destroy_all
+  #     topo.lines.published.each do |line|
+  #       # puts "Processing line ##{line.id}"
+
+  #       existing_start = topo.line_starts.to_a.find { |start| start.overlaps?(line) }
+
+  #       line.start = existing_start || topo.line_starts.create!
+  #       line.save!
+  #     end
+  #   end
+
+  #   puts "Done".green
+  # end
+
+  task compute_starts: :environment do
+    Problem.update_all(start_id: nil)
+
     Topo.published.find_each do |topo|
       puts "Processing topo ##{topo.id}"
 
-      topo.lines.each { |l| l.update_columns(start_id: nil) }
-      topo.line_starts.destroy_all
-      topo.lines.published.each do |line|
-        # puts "Processing line ##{line.id}"
+      topo.problems.sort_by(&:z_index).reverse.each do |problem|
+        # FIXME: check if it's the first line
+        overlapping = topo.problems.to_a.select { |p| p.start_id.nil? && p.overlaps?(problem) }
 
-        existing_start = topo.line_starts.to_a.find { |start| start.overlaps?(line) }
-
-        line.start = existing_start || topo.line_starts.create!
-        line.save!
+        overlapping.each { |p| p.update_columns(start_id: problem.id) }
       end
     end
 

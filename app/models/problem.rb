@@ -152,6 +152,26 @@ class Problem < ApplicationRecord
     end
   end
 
+  def overlaps?(other)
+    return false if other.topos.published.first != topos.published.first
+
+    other_start_point = other.lines.published.first&.start_point
+    return false if other_start_point.blank?
+
+    lines.published.map { |l| l.start_point }.compact.any? do |point|
+      dx = point["x"] - other_start_point["x"]
+      dy = point["y"] - other_start_point["y"]
+      Math.sqrt(dx * dx + dy * dy) < 0.03
+    end
+  end
+
+  def z_index
+    bonus_circuit = circuit_id.present? ? 10_000 : 0
+    tie_breaker = id.to_f / 100
+    popularity + bonus_circuit + tie_breaker
+  end
+
+
   # def twin_id
   #   parent_id if parent&.lines&.published&.first&.coordinates == lines&.published&.first&.coordinates
   # end
