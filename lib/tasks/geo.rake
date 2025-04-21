@@ -54,12 +54,16 @@ namespace :geo do
     Topo.published.find_each do |topo|
       puts "Processing topo ##{topo.id}"
 
+      # TODO: rewrite using merge of groups
+
+      # TODO: take into account parent_id in the z_index
+      # or better: take the problem that is the closest to the boulder's border
       topo.problems.sort_by(&:z_index).reverse.each do |problem|
         # FIXME: make sure it's not a multi-line
         overlapping = topo.problems.to_a.select { |p| p.start_id.nil? && p.overlaps?(problem) }
 
         overlapping.each { |p| p.update_columns(start_id: problem.id) }
-        # FIXME: don't set start_id if it's the problem itself
+        # FIXME: don't set start_id if it's the problem itself?
       end
     end
 
