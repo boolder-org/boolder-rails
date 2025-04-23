@@ -171,6 +171,22 @@ class Problem < ApplicationRecord
     popularity + bonus_circuit + tie_breaker
   end
 
+  def start_location
+    start_id.present? ? Problem.find(start_id).location : location
+  end
+
+  def start?
+    start_children.any?
+  end
+
+  def start_children
+    Problem.where(start_id: id).where.not(id: id)
+  end
+
+  def start_parent
+    Problem.find_by(id: start_id)
+  end
+
 
   # def twin_id
   #   parent_id if parent&.lines&.published&.first&.coordinates == lines&.published&.first&.coordinates

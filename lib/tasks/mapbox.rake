@@ -111,6 +111,8 @@ namespace :mapbox do
       hash = {}.with_indifferent_access
       hash.merge!(problem.slice(:grade, :steepness, :featured, :popularity))
       hash[:id] = problem.id
+      hash[:start_id] = problem.start_id
+      hash[:start] = problem.start?
       hash[:circuit_color] = problem.circuit&.color
       hash[:circuit_id] = problem.circuit_id_simplified
       hash[:circuit_number] = problem.circuit_number_simplified
@@ -122,7 +124,7 @@ namespace :mapbox do
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
-      factory.feature(problem.location, nil, hash)
+      factory.feature(problem.start_location, nil, hash)
     end
 
     # Extract boulders alongside problems to ensure we always upload both at the same time to mapbox
@@ -142,7 +144,7 @@ namespace :mapbox do
 
     geo_json = RGeo::GeoJSON.encode(feature_collection)
 
-    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "problems#{"-without-boulders" if !include_boulders}.geojson"), "w") do |f|
+    File.open(Rails.root.join("..", "boolder-maps", "mapbox", "problems#{"-without-boulders" if !include_boulders}-v2.geojson"), "w") do |f|
       f.write(JSON.pretty_generate(geo_json))
     end
 
