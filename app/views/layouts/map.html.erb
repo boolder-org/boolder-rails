@@ -21,9 +21,10 @@
     <% end %>
 
     <!-- FIXME: load async -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v3.9.2/mapbox-gl.js' data-turbo-track="reload"></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v3.9.2/mapbox-gl.css' rel='stylesheet' data-turbo-track="reload" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.css" rel="stylesheet" data-turbo-track="reload">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.11.0/mapbox-gl.js" data-turbo-track="reload"></script>
     <style>
+      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
       /* FIXME: put in css stylesheet */
       .mapboxgl-popup-content {
         font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
