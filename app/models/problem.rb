@@ -165,6 +165,19 @@ class Problem < ApplicationRecord
     end
   end
 
+  def end_overlaps?(other)
+    return false if other.topos.published.first != topos.published.first
+
+    other_end_point = other.lines.published.first&.end_point
+    return false if other_end_point.blank?
+
+    lines.published.map { |l| l.end_point }.compact.any? do |point|
+      dx = point["x"] - other_end_point["x"]
+      dy = point["y"] - other_end_point["y"]
+      Math.sqrt(dx * dx + dy * dy) < 0.03
+    end
+  end
+
   def z_index
     bonus_circuit = circuit_id.present? ? 10_000 : 0
     tie_breaker = id.to_f / 100

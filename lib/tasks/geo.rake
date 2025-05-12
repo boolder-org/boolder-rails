@@ -60,10 +60,14 @@ namespace :geo do
       # or better: take the problem that is the closest to the boulder's border
       topo.problems.sort_by(&:z_index).reverse.each do |problem|
         # FIXME: make sure it's not a multi-line
-        overlapping = topo.problems.to_a.select { |p| p.start_id.nil? && p.start_overlaps?(problem) }
+        start_overlapping = topo.problems.to_a.select { |p| p.start_id.nil? && p.start_overlaps?(problem) }
 
-        overlapping.each { |p| p.update_columns(start_id: problem.id) }
+        start_overlapping.each { |p| p.update_columns(start_id: problem.id) }
         # FIXME: don't set start_id if it's the problem itself?
+
+        end_overlapping = topo.problems.to_a.select { |p| p.end_id.nil? && p.end_overlaps?(problem) }
+
+        end_overlapping.each { |p| p.update_columns(end_id: problem.id) }
       end
     end
 

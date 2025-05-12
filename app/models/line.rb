@@ -24,6 +24,10 @@ class Line < ApplicationRecord
     coordinates&.first
   end
 
+  def end_point
+    coordinates&.last
+  end
+
   private
 
   def validate_line_length
