@@ -152,7 +152,7 @@ class Problem < ApplicationRecord
     end
   end
 
-  def overlaps?(other)
+  def start_overlaps?(other)
     return false if other.topos.published.first != topos.published.first
 
     other_start_point = other.lines.published.first&.start_point

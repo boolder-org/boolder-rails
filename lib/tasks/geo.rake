@@ -38,7 +38,7 @@ namespace :geo do
   #     topo.lines.published.each do |line|
   #       # puts "Processing line ##{line.id}"
 
-  #       existing_start = topo.line_starts.to_a.find { |start| start.overlaps?(line) }
+  #       existing_start = topo.line_starts.to_a.find { |start| start.start_overlaps?(line) }
 
   #       line.start = existing_start || topo.line_starts.create!
   #       line.save!
@@ -60,7 +60,7 @@ namespace :geo do
       # or better: take the problem that is the closest to the boulder's border
       topo.problems.sort_by(&:z_index).reverse.each do |problem|
         # FIXME: make sure it's not a multi-line
-        overlapping = topo.problems.to_a.select { |p| p.start_id.nil? && p.overlaps?(problem) }
+        overlapping = topo.problems.to_a.select { |p| p.start_id.nil? && p.start_overlaps?(problem) }
 
         overlapping.each { |p| p.update_columns(start_id: problem.id) }
         # FIXME: don't set start_id if it's the problem itself?
