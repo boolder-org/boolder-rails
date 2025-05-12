@@ -29,20 +29,23 @@ namespace :app do
           featured INTEGER NOT NULL,
           popularity INTEGER,
           parent_id INTEGER,
-          start_id INTEGER
+          start_id INTEGER,
+          end_id INTEGER
         );
         CREATE INDEX problem_idx ON problems(id);
         CREATE INDEX problem_area_idx ON problems(area_id);
         CREATE INDEX problem_circuit_idx ON problems(circuit_id);
         CREATE INDEX problem_grade_idx ON problems(grade);
+        CREATE INDEX problem_start_idx ON problems(start_id);
+        CREATE INDEX problem_end_idx ON problems(end_id);
       SQL
 
       Problem.with_location.joins(:area).where(area: { published: true }).find_each do |p|
         db.execute(
           "INSERT INTO problems (id, name, name_en, name_searchable, grade, latitude, longitude, circuit_id, circuit_number,
           circuit_color, steepness, sit_start, area_id, bleau_info_id,
-          featured, popularity, parent_id, start_id)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+          featured, popularity, parent_id, start_id, end_id)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
           [ p.id,
             I18n.with_locale(:fr) { p.name_with_fallback },
             I18n.with_locale(:en) { p.name_with_fallback },
@@ -53,7 +56,8 @@ namespace :app do
             p.featured ? 1 : 0,
             p.popularity,
             p.parent_id,
-            p.start_id
+            p.start_id,
+            p.end_id
           ]
         )
       end
