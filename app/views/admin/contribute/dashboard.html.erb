@@ -1,13 +1,4 @@
-<h2 class="text-2xl font-bold mb-4 pt-4 px-4 sm:px-0">Contributions</h2>
-
-<% if Contribution.pending.count > 0 %>
-  <%= link_to "#{Contribution.pending.count} contributions to review", admin_contributions_path(state: "pending"), class: "text-emerald-700 underline" %>
-<% else %>
-  <div>No contributions to review</div>
-  <div><%= link_to "See all", admin_contributions_path, class: "text-emerald-700 underline" %></div>
-<% end %>
-
-<h2 class="text-2xl font-bold mt-8 mb-4 pt-4 px-4 sm:px-0">Mapping Progress</h2>
+<h2 class="text-2xl font-bold mb-4 pt-4 px-4 sm:px-0">Dashboard</h2>
 
 <%= form_with url: admin_contribute_path, method: :get, class: "my-4" do |form| %>
   <div class="w-1/2">

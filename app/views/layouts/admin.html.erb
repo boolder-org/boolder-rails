@@ -42,7 +42,9 @@
 
                 <%= link_to "Areas", admin_areas_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
 
-                <%= link_to "Contribute", admin_contribute_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+                <%= link_to "Dashboard", admin_contribute_path, class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
+
+                <%= link_to "Contributions (#{Contribution.pending.count})", admin_contributions_path(state: "pending"), class: "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" %>
 
                 <div class="flex md:hidden">
                   <%= render 'shared/search_modal', show_button: true %>
