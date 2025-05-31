@@ -168,7 +168,7 @@ class Problem < ApplicationRecord
   def end_overlaps?(other)
     return false if other.topos.published.first != topos.published.first
 
-    other_end_point = other.lines.published.first&.end_point
+    other_end_point = other.lines.published.first&.end_point # FIXME: use the last point if there are multiple
     return false if other_end_point.blank?
 
     lines.published.map { |l| l.end_point }.compact.any? do |point|
