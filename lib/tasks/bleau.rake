@@ -31,7 +31,7 @@ namespace :bleau do
 
   task promote: :environment do
     # TODO: make this code DRY with bleau_problems_controller.rb
-    bleau_problems = BleauProblem.joins(bleau_area: :area).
+    bleau_problems = BleauProblem.joins(bleau_area: :area).where(ignore: false).
       left_outer_joins(:problem).where(problems: { id: nil })
 
     bleau_problems.uniq.each do |bleau_problem|

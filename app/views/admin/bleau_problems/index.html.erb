@@ -147,7 +147,12 @@
                 </td>
                 <td class="px-6 py-2 whitespace-nowrap w-1/12"><%= bleau_problem.bleau_area.area.name %></td>
                 <td class="px-6 py-0 whitespace-nowrap">
-                  <div class="text-sm text-gray-900"></div>
+                  <div class="text-sm text-gray-900">
+                    <%= button_to bleau_problem.ignore ? "Unignore" : "Ignore",
+                        toggle_ignore_admin_bleau_problem_path(bleau_problem, ignore: !bleau_problem.ignore),
+                        method: :post,
+                        class: "text-emerald-600 hover:text-emerald-900" %>
+                  </div>
                 </td>
               </tr>
             <% end %>
