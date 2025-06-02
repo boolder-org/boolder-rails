@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_09_04_091012) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_02_113239) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
   enable_extension "pg_stat_statements"
@@ -111,6 +111,7 @@ ActiveRecord::Schema[8.0].define(version: 2024_09_04_091012) do
     t.bigint "bleau_area_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "ignore", default: false
     t.index ["bleau_area_id"], name: "index_bleau_problems_on_bleau_area_id"
     t.index ["bleau_circuit_id"], name: "index_bleau_problems_on_bleau_circuit_id"
   end
