@@ -171,6 +171,30 @@
       </div>
     <% end %>
 
+    <% if @related_problems.any? %>
+      <%# <h2 class="mb-4 text-xl font-semibold">Family tree</h2> %>
+      <div class="mb-8 shadow overflow-hidden sm:rounded-md">
+        <div class="px-4 py-5 bg-white sm:p-6">
+          <p>
+            <div class="font-bold mb-4">Related problems</div>
+          </p>
+          <p>
+            <% @related_problems.each do |problem| %>
+              <div class="">
+                <%= link_to problem.name_with_fallback, admin_problem_path(problem.id) %>
+                <% if problem.location.nil? %>
+                    <span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">location</span>
+                  <% end %>
+                  <% if !problem.has_line %>
+                    <span class="mr-1 inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">line</span>
+                  <% end %>
+                </div>
+            <% end %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+
     <% if @problem.contributions.any? || @problem.contribution_requests.any? %>
       <h2 class="mb-4 text-xl font-semibold">Contributions</h2>
       <div class="mb-8 shadow overflow-hidden sm:rounded-md">
