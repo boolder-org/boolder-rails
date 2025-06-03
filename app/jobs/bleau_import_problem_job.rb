@@ -46,7 +46,7 @@ class BleauImportProblemJob < ApplicationJob
 
     slug = doc.css("h3 a")[0].attributes["href"].value.gsub("/", "")
 
-    related_ids = doc.css("a").map { |link| link["href"].match(%r{^/#{slug}/(\d+)\.html$})&.[](1) }.compact
+    related_ids = doc.css("a").map { |link| link["href"]&.match(%r{^/#{slug}/(\d+)\.html$})&.[](1) }.compact
     bleau_problem.related_ids = related_ids
 
     # TODO: move to attributes
