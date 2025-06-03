@@ -30,10 +30,10 @@
                 </td>
                 <td class="px-6 py-2 whitespace-nowrap w-2/12"><%= "#{(area_with_stats.ascents / 1000.0).ceil}K" %></td>
                 <td class="px-6 py-2 whitespace-nowrap w-3/12">
-                  <span style="color:<%= percentage_color(area_with_stats.completion) %>"><%= "#{(area_with_stats.completion * 100).floor} %" %></span>
+                  <span style="color:<%= percentage_color(area_with_stats.completion) %>"><%= "#{number_to_percentage(area_with_stats.completion * 100, precision: 1)}" %></span>
                 </td>
                 <td class="px-6 py-2 whitespace-nowrap w-3/12">
-                  <span style="color:<%= percentage_color(area_with_stats.upcoming_completion) %>"><%= "#{(area_with_stats.upcoming_completion * 100).floor} %" %></span>
+                  <span style="color:<%= percentage_color(area_with_stats.upcoming_completion) %>"><%= "#{number_to_percentage(area_with_stats.upcoming_completion * 100, precision: 1)}" %></span>
                 </td>
               </tr>
             <% end %>
