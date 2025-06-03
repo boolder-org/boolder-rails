@@ -29,7 +29,7 @@ Rails.application.routes.draw do
       resources :audits
       resources :redirects, only: :new
 
-      get "contribute", to: "contribute#dashboard"
+      get "mapping", to: "mapping#dashboard"
 
       root "areas#index"
     end
