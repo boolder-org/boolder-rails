@@ -5,7 +5,7 @@
 <% content_for :options do %>
   <div class="flex items-center">
     <% items = [] %>
-    <% items << { text: "Request new contributions", link: new_admin_contribution_request_path(problem_id: @problem.id) } %>
+    <% items << { text: "Request contributions", link: new_admin_contribution_request_path(problem_id: @problem.id) } %>
     <% items << { text: "Edit", link: edit_admin_problem_path(@problem) } %>
     <%= render 'shared/dot_menu', items: items %>
   </div>
