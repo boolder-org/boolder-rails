@@ -52,7 +52,11 @@ class Admin::ProblemsController < Admin::BaseController
   def show
     set_problem
 
-    @related_problems = Problem.where(bleau_info_id: @problem.bleau_problem&.related_ids)
+    @related_problems = if @problem.bleau_problem.present?
+      Problem.where(bleau_info_id: @problem.bleau_problem&.related_ids)
+    else
+      []
+    end
   end
 
   def edit
