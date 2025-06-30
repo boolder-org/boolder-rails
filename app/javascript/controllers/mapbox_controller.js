@@ -603,6 +603,7 @@ export default class extends Controller {
         problem => `<div>
         <a href="/${this.localeValue}/mapping/problems/${problem.id}" target="_blank">${problem.name || ""}</a>
         <span class="text-gray-400 ml-1">${problem.grade}</span>
+        <span class="text-gray-400 ml-1 font-semibold">(${problem.ascents})</span>
         </div>`
       ).join("");
        

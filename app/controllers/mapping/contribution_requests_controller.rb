@@ -17,7 +17,7 @@ class Mapping::ContributionRequestsController < ApplicationController
       hash[:name] = name_fr
       hash[:name_en] = (name_en != name_fr) ? name_en : ""
 
-      hash[:problems] = problems.map { |p| { name: p.name_debug, id: p.id, grade: p.grade } }
+      hash[:problems] = problems.map { |p| { name: p.name_debug, id: p.id, grade: p.grade, ascents: (p.ascents || 0) } }
 
       hash.deep_transform_keys! { |key| key.camelize(:lower) }
 
