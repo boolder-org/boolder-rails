@@ -31,11 +31,11 @@ class Admin::ImportsController < Admin::BaseController
   def apply
     @import = Import.find(params[:id])
 
-    # if @import.objects_to_update.any? { |object| object.conflicting_updated_at }
-    #   flash[:error] = "Cannot apply import when there is a conflict"
-    #   redirect_to admin_import_path(@import)
-    #   return
-    # end
+    if @import.objects_to_update.any? { |object| object.conflicting_updated_at }
+      flash[:error] = "Cannot apply import when there is a conflict"
+      redirect_to admin_import_path(@import)
+      return
+    end
 
     ActiveRecord::Base.transaction do
       @import.objects_to_update.each do |object|
