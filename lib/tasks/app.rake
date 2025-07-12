@@ -158,16 +158,18 @@ namespace :app do
           poi_type TEXT NOT NULL,
           name TEXT NOT NULL,
           short_name TEXT NOT NULL,
-          google_url TEXT NOT NULL
+          google_url TEXT NOT NULL,
+          latitude REAL NOT NULL,
+          longitude REAL NOT NULL
         );
         CREATE INDEX poi_idx ON pois(id);
       SQL
 
       Poi.all.each do |p|
         db.execute(
-          "INSERT INTO pois (id, poi_type, name, short_name, google_url)
-          VALUES (?, ?, ?, ?, ?)",
-          [ p.id, p.poi_type, p.name, p.short_name, p.google_url ]
+          "INSERT INTO pois (id, poi_type, name, short_name, google_url, latitude, longitude)
+          VALUES (?, ?, ?, ?, ?, ?, ?)",
+          [ p.id, p.poi_type, p.name, p.short_name, p.google_url, p.location&.lat, p.location&.lon ]
         )
       end
 
