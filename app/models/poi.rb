@@ -2,6 +2,9 @@ class Poi < ApplicationRecord
   has_many :poi_routes
   has_many :areas
 
+  include Geolocatable
+  geolocatable :location
+
   audited
 
   TYPE_VALUES = %w[parking train_station]

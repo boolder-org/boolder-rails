@@ -1,3 +1,4 @@
+
 <div class="col-span-6 sm:col-span-4">
   <%= form.label :name %>
   <%= form.text_field :name, autocomplete: "off" %>
@@ -19,4 +20,19 @@
 <div class="col-span-6 sm:col-span-6">
   <%= form.label :google_url %>
   <%= form.text_field :google_url, autocomplete: "off" %>
+</div>
+
+<div data-controller="coordinates" class="contents">
+  <div class="col-span-6 sm:col-span-2">
+    <%= form.label :location_lat, "Latitude" %>
+    <%= form.text_field :location_lat, value: @poi.location&.lat, "data-action": "paste->coordinates#paste", "data-coordinates-target": "latitude" %>
+  </div>
+  <div class="col-span-6 sm:col-span-2">
+    <%= form.label :location_lon, "Longitude" %>
+    <%= form.text_field :location_lon, value: @poi.location&.lon, "data-action": "paste->coordinates#paste", "data-coordinates-target": "longitude" %>
+  </div>
+  
+  <div class="col-span-6 sm:col-span-2 flex items-end mb-3">
+    <%= link_to "copy", "javascript: void(0)", "data-action": "coordinates#copy", "data-coordinates-target": "link", class: "text-emerald-600 font-semibold" %>
+  </div>
 </div>

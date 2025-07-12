@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_03_143411) do
+ActiveRecord::Schema[8.0].define(version: 2025_07_12_192123) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
   enable_extension "pg_stat_statements"
@@ -204,6 +204,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_03_143411) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "poi_type", default: "parking", null: false
+    t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
   end
 
   create_table "problems", force: :cascade do |t|
