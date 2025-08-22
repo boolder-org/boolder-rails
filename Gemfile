@@ -33,7 +33,7 @@ gem "httparty"
 gem "colorize"
 gem "audited"
 gem "ostruct" # TODO: remove
-gem "rgeo-geojson", "~> 2.1.1" # TODO: update
+gem "rgeo-geojson", "~> 2.2.0" # TODO: update
 gem "differ"
 gem "breadcrumbs_on_rails"
 gem "meta-tags"
