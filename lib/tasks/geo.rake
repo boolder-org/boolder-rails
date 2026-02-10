@@ -11,7 +11,24 @@ namespace :geo do
         # where(parent_id: nil).
         select("problems.*, degrees(ST_Azimuth('SRID=4326;#{centroid}'::geometry, location::geometry)) AS degrees").
         where("ST_Distance('SRID=4326;#{boulder.polygon}'::geometry, location::geometry) <= ?", BigDecimal("1e-06")).
-        order("degrees DESC").to_a
+        order("degrees ASC").to_a
+
+      # Reorder problems anti-clockwise, starting after the biggest angular gap
+      # (the gap represents the "back" of the boulder; we start from the leftmost problem)
+      if problems.length >= 2
+        gaps = problems.each_cons(2).map { |a, b| b.degrees.to_f - a.degrees.to_f }
+        gaps << (problems.first.degrees.to_f + 360 - problems.last.degrees.to_f)
+
+        max_gap_idx = gaps.each_with_index.max_by { |gap, _| gap }.last
+
+        reordered = []
+        idx = max_gap_idx
+        problems.length.times do
+          reordered << problems[idx]
+          idx = (idx - 1) % problems.length
+        end
+        problems = reordered
+      end
 
       topos_with_index = problems.each_with_index.
         map { |p, i| OpenStruct.new(problem: p, index: i)  }.
