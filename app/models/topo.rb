@@ -12,6 +12,10 @@ class Topo < ApplicationRecord
 
   validates :photo, presence: true
 
+  def area_id
+    problems.first&.area_id
+  end
+
   def metadata_latitude
     metadata["latitude"]
   end
