@@ -38,6 +38,7 @@
   <body class="bg-white">
 
     <div class="bg-gray-100">
+      <%= render "layouts/site_banner" %>
       <%= render "layouts/nav" unless @hide_nav %>
       <%= render "layouts/flash" %>
       <%= yield %>

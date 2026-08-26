@@ -335,6 +335,9 @@ fr:
       cancel: Annuler
       submit: Chercher
     layout:
+      site_banner:
+        text_html: "Suite aux incendies de Juillet de nombreux secteurs sont fermés, notamment toute la forêt des Trois Pignons %{link}"
+        learn_more: En savoir plus
       nav:
         open_menu: Ouvrir le menu principal
         discover: Découvrir
