@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "XXXXXXXXX.com.XXXXXX.boolder"
+        ],
+        "components": [
+          {
+            "/" : "/en/*",
+            "comment": "Matches any URL whose path starts with /en/ (this is just an example)"
+          }
+        ]
+      }
+    ]
+  }
+}
