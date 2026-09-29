@@ -20,7 +20,7 @@ class Mapping::ContributionsController < ApplicationController
     if @contribution.save
       flash[:notice] = t("views.mapping.contributions.new.flash_success")
 
-      ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
+      # ContributeMailer.with(contribution: @contribution).new_contribution_email.deliver_later
 
       redirect_to [ :mapping, @contribution.problem ]
     else
