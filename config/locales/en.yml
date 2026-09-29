@@ -234,8 +234,6 @@ en:
       open:
         title: A collaborative platform
         p1_html: The code and data of the apps are available in open source on %{link}.
-        p2_html: You can also %{link} by mapping missing problems or by reporting mistakes.
-        contribute_link: contribute
       web_dev:
         title: Know how to code?
         p1_html: We are actively looking for a %{link_web} and an %{link_ios} dev. Come and join us!

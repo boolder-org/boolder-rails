@@ -234,8 +234,6 @@ fr:
       open:
         title: Une plateforme collaborative
         p1_html: Le code des applis ainsi que les données sont disponibles en open source sur %{link}.
-        p2_html: Il est également possible de %{link} en cartographiant les voies manquantes ou en signalant des erreurs.
-        contribute_link: contribuer
       web_dev:
         title: Vous savez coder ?
         p1_html: Nous recherchons activement un·e développeur·se %{link_web} et %{link_ios}. Venez contribuer !
