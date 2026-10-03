@@ -6,4 +6,3 @@ class AddTopoBoulderAndIndex < ActiveRecord::Migration[8.0]
     add_index :topos, :boulder_id
   end
 end
-

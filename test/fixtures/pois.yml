@@ -1,15 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  subtitle: MyString
-  description: MyString
-  location: MyString
-  route: MyString
+  name: MyString
+  short_name: MyString
+  google_url: MyString
+  poi_type: parking
 
 two:
-  title: MyString
-  subtitle: MyString
-  description: MyString
-  location: MyString
-  route: MyString
+  name: MyString
+  short_name: MyString
+  google_url: MyString
+  poi_type: parking
