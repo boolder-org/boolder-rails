@@ -107,6 +107,7 @@ Rails.application.routes.draw do
   end
 
   get "search", to: "search#search", as: :search
+  get "bleau-info-partnership", to: "pages#bleau_info_partnership", as: :bleau_info_partnership, defaults: { locale: "fr" }
   get "/:locale", to: "welcome#index", locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: "welcome#root"
 
