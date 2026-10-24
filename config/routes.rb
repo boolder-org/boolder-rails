@@ -85,6 +85,7 @@ Rails.application.routes.draw do
     get "app", to: "pages#app", as: :app
     get "privacy", to: "pages#privacy", as: :privacy
     get "about", to: "pages#about", as: :about
+    get "bleau-info-partnership", to: "pages#bleau_info_partnership", as: :bleau_info_partnership
     get "contribute", to: "pages#contribute", as: :contribute
     get "circuit7a", to: "circuit7a#index", as: :circuit7a
     get "circuit7a/problems", to: "circuit7a#problems", as: :circuit7a_problems
@@ -107,7 +108,7 @@ Rails.application.routes.draw do
   end
 
   get "search", to: "search#search", as: :search
-  get "bleau-info-partnership", to: "pages#bleau_info_partnership", as: :bleau_info_partnership, defaults: { locale: "fr" }
+  get "bleau-info-partnership", to: redirect("/fr/bleau-info-partnership")
   get "/:locale", to: "welcome#index", locale: /#{I18n.available_locales.join('|')}/, as: :root_localized
   root to: "welcome#root"
 
