@@ -84,6 +84,7 @@ Rails.application.routes.draw do
     get "map(/:slug)", to: "map#index", as: :map
     get "app", to: "pages#app", as: :app
     get "privacy", to: "pages#privacy", as: :privacy
+    get "terms", to: "pages#terms", as: :terms
     get "about", to: "pages#about", as: :about
     get "bleau-info-partnership", to: "pages#bleau_info_partnership", as: :bleau_info_partnership
     get "contribute", to: "pages#contribute", as: :contribute
