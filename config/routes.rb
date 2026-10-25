@@ -84,6 +84,7 @@ Rails.application.routes.draw do
     get "map(/:slug)", to: "map#index", as: :map
     get "app", to: "pages#app", as: :app
     get "privacy", to: "pages#privacy", as: :privacy
+    get "terms", to: "pages#terms", as: :terms
     get "about", to: "pages#about", as: :about
     get "contribute", to: "pages#contribute", as: :contribute
     get "circuit7a", to: "circuit7a#index", as: :circuit7a
