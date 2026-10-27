@@ -247,10 +247,6 @@ fr:
           p1: Les photos et données géographiques (GPS) ont été récoltées par l'équipe Boolder.  
           p2_html: Les noms de voies et cotations viennent essentiellement de %{link_bleau}, %{link_cosiroc}, et %{link_topo_bleau}.
           p3: Certains dessins de blocs (en vue de dessus) s'inspirent de topos existants. Nous travaillons à les remplacer par des dessins originaux.
-        why_free:
-          question: Pourquoi l'appli est-elle gratuite ?
-          p1: Car nous voulons que le plus grand nombre puisse en profiter ! 
-          p2: Nicolas a profité d'une année sabbatique pour cartographier de nombreux secteurs et coder la première version de l'application. Grâce à cela, très peu de frais ont été engagés. Nous comptons rester dans cette dynamique dans le futur en reposant sur un modèle de bénévolat open source.
         privacy:
           question: Quelles données personnelles récoltez-vous ?
           p1_html: Vous pouvez consulter notre %{link}.
