@@ -3,6 +3,13 @@
 
 <% set_meta_tags og: { type: "website", image: image_url("hero-homepage.jpg") } %>
 
+<%= link_to bleau_info_partnership_path, class: "flex items-center justify-center gap-2 bg-emerald-50 px-4 py-3 text-center text-sm font-medium text-emerald-800 hover:bg-emerald-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-600" do %>
+  <span><%= t("views.homepage.partnership_announcement") %></span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 flex-shrink-0" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+  </svg>
+<% end %>
+
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto relative">
     <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-20 xl:pb-24 ">
